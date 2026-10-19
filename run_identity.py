@@ -6,6 +6,18 @@ Never changes Kubernetes Deployment, released models or Hub settings.
 from __future__ import annotations
 import argparse, hashlib, importlib.metadata, json, os, pathlib, re, shutil, subprocess, sys, time, zipfile
 
+def swift_cli_help():
+    """Swift 4.4.2's outer argparse consumes --help before SFT parsing."""
+    help_text=subprocess.run(['swift','sft','--help'],capture_output=True,text=True,check=True).stdout
+    required=('--model','--save_strategy','--data_seed')
+    if not all(flag in help_text for flag in required):
+        help_text=subprocess.run([sys.executable,'-c',
+            'from swift.pipelines import sft_main; sft_main(["--help"])'],
+            capture_output=True,text=True,check=True).stdout
+    if not all(flag in help_text for flag in required):
+        raise RuntimeError('Actual Swift SFT parser help is incomplete')
+    return help_text
+
 def sha(p):
     h=hashlib.sha256()
     with open(p,'rb') as f:
@@ -47,7 +59,14 @@ def validate_training_dataset(dataset, approval):
     if manifest.get('schema') not in ('identity-official-snapshot-v1.2','identity-approved-snapshot-v1.2'):
         raise RuntimeError('Unsupported snapshot schema; migrate and reapprove')
     with (dataset/'train.jsonl').open(encoding='utf-8') as handle:
-        count=sum(1 for line in handle if line.strip())
+        rows=[json.loads(line) for line in handle if line.strip()]
+    count=len(rows)
+    from prepare_official import unresolved_placeholders
+    # Derived source attribution is checked against the immutable parent below.
+    if unresolved_placeholders(rows,len(rows) if manifest.get('snapshot_kind')!='official_original' else 2000):
+        raise RuntimeError('Unreplaced identity placeholder in training snapshot')
+    if manifest.get('status','').startswith('QUARANTINED'):
+        raise RuntimeError('Quarantined source cannot be trained')
     if count!=manifest.get('rows') or count<1 or count>2600:
         raise RuntimeError('Snapshot record count does not match verified data')
     is_original=manifest.get('snapshot_kind')=='official_original'
@@ -84,6 +103,10 @@ def validate_training_dataset(dataset, approval):
         excluded_set=set(ids)
         if len(original_lines)!=2600 or derived_lines!=[ln for i,ln in enumerate(original_lines) if i not in excluded_set]:
             raise RuntimeError('Derivative must preserve approved original row bytes/order')
+        identity_rows=[json.loads(ln) for i,ln in enumerate(original_lines)
+                       if i>=2000 and i not in excluded_set]
+        if unresolved_placeholders(identity_rows,0):
+            raise RuntimeError('Unreplaced identity placeholder in derivative identity records')
     if approval.get('approved_rows')!=count or approval.get('approved_data_sha256')!=manifest['files_sha256']['train.jsonl']:
         raise RuntimeError('Independent approval must explicitly bind exact approved rows and data SHA')
     if approval.get('approved_snapshot_manifest_sha256')!=sha(manifest_file):
@@ -159,7 +182,7 @@ def main():
     from clearml import Task, OutputModel
     if not re.fullmatch(r'sha256:[0-9a-f]{64}',image_digest) or not re.fullmatch(r'[0-9a-f]{40}',source_commit):
         raise RuntimeError('Require real sha256 image digest and full Git SHA1 commit')
-    swifthelp=subprocess.run(['swift','sft','--help'],capture_output=True,text=True,check=True).stdout
+    swifthelp=swift_cli_help()
     tuner='--tuner_type' if '--tuner_type' in swifthelp else ('--train_type' if '--train_type' in swifthelp else None)
     if not tuner: raise RuntimeError('LoRA CLI option unknown; pin/test exact ms-swift version')
     eval_switch='--eval_strategy' if '--eval_strategy' in swifthelp else ('--evaluation_strategy' if '--evaluation_strategy' in swifthelp else None)
@@ -169,7 +192,7 @@ def main():
     # With an immutable local training snapshot there is NO training-derived val set;
     # standalone independent tests are scored later. Avoid replay leakage.
     run_id=out.name
-    common=['swift','sft','--model',str(model),tuner,'lora',
+    common=['swift','sft','--model',str(model),'--model_type','qwen3','--template','qwen3',tuner,'lora',
         '--dataset',str(dataset/'train.jsonl'),'--split_dataset_ratio','0',
         '--torch_dtype','bfloat16','--num_train_epochs','1',
         '--per_device_train_batch_size','1','--per_device_eval_batch_size','1',

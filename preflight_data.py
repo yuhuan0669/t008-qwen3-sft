@@ -7,6 +7,7 @@ pipeline; execution must supply independently inspected ms-swift template eviden
 """
 from __future__ import annotations
 import argparse, hashlib, json, pathlib, statistics
+from collections.abc import Mapping
 from run_identity import base_fingerprint, sha
 
 
@@ -25,7 +26,7 @@ def scan(dataset, model, swift_evidence=None, max_length=2048):
             messages=row['messages']
             ids=tok.apply_chat_template(messages,tokenize=True,add_generation_prompt=False,
                                         truncation=False)
-            if isinstance(ids,dict): ids=ids['input_ids']
+            if isinstance(ids,Mapping): ids=ids['input_ids']
             n=len(ids)
             counts.append(n)
             if n>max_length: overs.append({'index':index,'tokens':n})

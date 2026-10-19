@@ -8,6 +8,22 @@ from collections import Counter
 
 SOURCES = ('swift/Qwen3-SFT-Mixin#2000', 'swift/self-cognition:qwen3#600')
 
+def unresolved_placeholders(rows, identity_start=2000):
+    """Official identity tokens are uppercase; Mixin contains valid Jinja code.
+    In the identity segment also reject case variants of the identity keys.
+    The real loader concatenates sources in the declared order (shuffle=False).
+    """
+    findings=[]
+    for index,row in enumerate(rows):
+        text=json.dumps(row,ensure_ascii=False)
+        tokens=re.findall(r'\{\{\s*[A-Z_][A-Z0-9_]*\s*\}\}',text)
+        if index>=identity_start:
+            tokens+=re.findall(r'\{\{\s*(?:name|author|authoer)\s*\}\}',text,re.I)
+        if tokens or 'swift-robot' in text:
+            findings.append({'index':index,'tokens':sorted(set(tokens)),
+                             'swift_robot':'swift-robot' in text})
+    return findings
+
 def sha(path):
     h=hashlib.sha256()
     with open(path,'rb') as f:
@@ -60,7 +76,7 @@ def main():
     # The 2000/600 source attribution is guaranteed by the official specs, not by
     # individual row metadata. Do not fabricate source-by-source unique counts.
     text=''.join(json.dumps(r,ensure_ascii=False,separators=(',',':'))+'\n' for r in rows)
-    if re.search(r'\{\{\s*[A-Za-z_][A-Za-z0-9_]*\s*\}\}', text) or 'swift-robot' in text:
+    if unresolved_placeholders(rows,a.expected_mixin):
         raise RuntimeError('Unreplaced identity placeholder detected (incl. AUTHOER typo)')
     out=pathlib.Path(a.out)
     if out.exists(): raise FileExistsError(out)

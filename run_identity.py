@@ -33,6 +33,17 @@ def info(name):
     try: return importlib.metadata.version(name)
     except importlib.metadata.PackageNotFoundError: return None
 
+def validate_authorization(approval):
+    """Only literal JSON true is an approval flag; strings are not authority."""
+    sources=approval.get('sources_approved')
+    if (any(approval.get(k) is not True for k in
+            ('identity_verified','gpu_window_approved','experiment_approved')) or
+        not isinstance(sources,dict) or
+        any(sources.get(k) is not True for k in
+            ('swift/Qwen3-SFT-Mixin','swift/self-cognition:qwen3')) or
+        not approval.get('decision_ref') or not approval.get('source_snapshot_ref')):
+        raise RuntimeError('Identity, both sources, one experiment and actual GPU window not approved')
+
 def base_fingerprint(directory):
     root=pathlib.Path(directory)
     if not (root/'config.json').is_file(): raise RuntimeError('Base model missing config.json')
@@ -78,7 +89,7 @@ def validate_training_dataset(dataset, approval):
             raise RuntimeError('Invalid derivative snapshot')
         if not manifest.get('parent_train_sha256') or not manifest.get('exclusions_sha256'):
             raise RuntimeError('Derived snapshot lacks traceable parent/change record')
-        if not approval.get('data_change_ref') or not approval.get('data_change_approved'):
+        if not approval.get('data_change_ref') or approval.get('data_change_approved') is not True:
             raise RuntimeError('Cleaned data requires independent approval reference')
         parent=pathlib.Path(approval.get('parent_snapshot_dir','')).resolve()
         if not (parent/'manifest.json').is_file():
@@ -124,8 +135,8 @@ def validate_length_preflight(dataset, manifest_file, approval):
         report.get('model_files_sha256')!=approval.get('preflight_model_files_sha256') or
         report.get('rows_checked')!=approval.get('approved_rows') or
         report.get('max_length')!=2048 or report.get('overlength_rows')!=0 or
-        not report.get('template_tokenization_completed') or
-        not report.get('ms_swift_template_verified')):
+        report.get('template_tokenization_completed') is not True or
+        report.get('ms_swift_template_verified') is not True):
         raise RuntimeError('CPU length preflight not valid or real ms-swift template unverified')
     if approval.get('preflight_report_sha256')!=sha(report_file):
         raise RuntimeError('Independent approved preflight checksum mismatch')
@@ -168,12 +179,7 @@ def main():
     approval_file=pathlib.Path(require_env('APPROVAL_FILE')).resolve()
     if out.exists(): raise FileExistsError(f'Refuse to overwrite prior run: {out}')
     approval=json.loads(approval_file.read_text(encoding='utf-8'))
-    if (not approval.get('identity_verified') or not approval.get('gpu_window_approved') or
-        not approval.get('experiment_approved') or
-        not all(approval.get('sources_approved',{}).get(k,False)
-                    for k in ('swift/Qwen3-SFT-Mixin','swift/self-cognition:qwen3')) or
-        not approval.get('decision_ref') or not approval.get('source_snapshot_ref')):
-        raise RuntimeError('Identity, both sources, one experiment and actual GPU window not approved')
+    validate_authorization(approval)
     manifest, manifest_file=validate_training_dataset(dataset, approval)
     preflight=validate_length_preflight(dataset, manifest_file, approval)
     import torch

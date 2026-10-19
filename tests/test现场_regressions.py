@@ -7,6 +7,20 @@ import prepare_official,run_identity
 import preflight_data
 
 class TestFieldRegressions(unittest.TestCase):
+    def test_nonboolean_authorization_values_fail_closed(self):
+        import copy
+        good={'identity_verified':True,'gpu_window_approved':True,'experiment_approved':True,
+              'sources_approved':{k:True for k in ['swift/Qwen3-SFT-Mixin','swift/self-cognition:qwen3']},
+              'decision_ref':'SYNTHETIC-TEST-ONLY','source_snapshot_ref':'SYNTHETIC-TEST-ONLY'}
+        run_identity.validate_authorization(good)
+        for bad in ['false','true',1,[],None,False]:
+            for key in ['identity_verified','gpu_window_approved','experiment_approved']:
+                obj=copy.deepcopy(good);obj[key]=bad
+                with self.assertRaises(RuntimeError):run_identity.validate_authorization(obj)
+            for key in good['sources_approved']:
+                obj=copy.deepcopy(good);obj['sources_approved'][key]=bad
+                with self.assertRaises(RuntimeError):run_identity.validate_authorization(obj)
+
     def test_mixin_jinja_kept_but_identity_case_variants_rejected(self):
         code={'messages':[{'role':'assistant','content':'<h1>{{ message }}</h1> {{name}}'}]}
         self.assertEqual(prepare_official.unresolved_placeholders([code],1),[])

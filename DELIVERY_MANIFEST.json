@@ -1,0 +1,62 @@
+{
+  "version": "v1.2",
+  "description": "CPU-only technical repair package; no real GPU/source/SDK validation",
+  "root_document": "Qwen3-8B_自我认知SFT_完整实施方案_v1.2_执行修复版.md",
+  "package_root": "identity_sft_plan_v1.2",
+  "tests": {
+    "framework": "unittest",
+    "synthetic_case_count": 17,
+    "gpu_tested": false,
+    "real_sources_downloaded": false
+  },
+  "files": {
+    "Qwen3-8B_自我认知SFT_完整实施方案_v1.2_执行修复版.md": {
+      "size": 30679,
+      "sha256": "4579afef233bb39530f639415371e1bbe1288b23ee88a012a52d8a8391713bd7"
+    },
+    "identity_sft_plan_v1.2/QA_REPORT_v1.2.md": {
+      "size": 3370,
+      "sha256": "b67c0d25992465ed478dced00176a0ceef4af36fd0cd0f32b62295a82fb240e0"
+    },
+    "identity_sft_plan_v1.2/README.md": {
+      "size": 7046,
+      "sha256": "f978a2df9bc55589b6dcab0a1ceb2487007ef30a742f34c06d11788939fce0e3"
+    },
+    "identity_sft_plan_v1.2/derive_snapshot.py": {
+      "size": 3593,
+      "sha256": "1129f58a7abe1c82423345142b628908c40088cd822e46f4b9528e09e06e646f"
+    },
+    "identity_sft_plan_v1.2/eval_identity.py": {
+      "size": 8088,
+      "sha256": "9602aa4e1e094116307ab0ee72e11c12b0ea35285985fa91152018f89cc2b4e9"
+    },
+    "identity_sft_plan_v1.2/identity-spec.example.json": {
+      "size": 266,
+      "sha256": "96d595f3bdf6ca78d1f812f9b87cb53dffa4eb323fabeb758c2e09a63b5d2ec4"
+    },
+    "identity_sft_plan_v1.2/preflight_data.py": {
+      "size": 4430,
+      "sha256": "69740a2278983246e522751ed24c96c3f757d97f4a84a13db25626b879c8e8fa"
+    },
+    "identity_sft_plan_v1.2/prepare_official.py": {
+      "size": 5441,
+      "sha256": "bf5bac8365de111c62d6b5d4bbb92a4f009c52347883dfff530902255d351033"
+    },
+    "identity_sft_plan_v1.2/register_evaluation.py": {
+      "size": 5808,
+      "sha256": "7fe7718738d290b3f125b433b50c1be68a70f14dbe5c6fa0d84c747ba9485d51"
+    },
+    "identity_sft_plan_v1.2/run_identity.py": {
+      "size": 19990,
+      "sha256": "f7ba5f4589ba0c6198b7570c56aad6e9b9c2ebae1830eefd89708687073625f3"
+    },
+    "identity_sft_plan_v1.2/tests/test_contract.py": {
+      "size": 10753,
+      "sha256": "d88deb09dc1b5712e69f1677675eff585d46f6573ecd68b5c9b3cff181aa39f6"
+    },
+    "identity_sft_plan_v1.2/train_identity.sh": {
+      "size": 360,
+      "sha256": "b118959f991a885fbbb37bbb853ec86964f001e4d85d165b747cab2e4c83921c"
+    }
+  }
+}

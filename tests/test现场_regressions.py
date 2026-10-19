@@ -7,6 +7,16 @@ import prepare_official,run_identity
 import preflight_data
 
 class TestFieldRegressions(unittest.TestCase):
+    def test_registered_model_must_use_actual_remote_https_storage(self):
+        base='https://clearml.example/files'
+        self.assertEqual(run_identity.clearml_storage_uri(base+'/'),base)
+        run_identity.validate_registered_model_uri(base+'/project/model.zip',base)
+        for bad in ['/work/model.zip','file:///work/model.zip','http://clearml.example/files/model.zip',
+                    'https://other.example/files/model.zip','https://clearml.example/files-other/model.zip']:
+            with self.assertRaises(RuntimeError):run_identity.validate_registered_model_uri(bad,base)
+        for bad in ['','http://clearml.example/files','https://user:secret@clearml.example/files']:
+            with self.assertRaises(RuntimeError):run_identity.clearml_storage_uri(bad)
+
     def test_nonboolean_authorization_values_fail_closed(self):
         import copy
         good={'identity_verified':True,'gpu_window_approved':True,'experiment_approved':True,

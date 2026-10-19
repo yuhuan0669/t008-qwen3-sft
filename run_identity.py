@@ -5,6 +5,21 @@ Never changes Kubernetes Deployment, released models or Hub settings.
 """
 from __future__ import annotations
 import argparse, hashlib, importlib.metadata, json, os, pathlib, re, shutil, subprocess, sys, time, zipfile
+from urllib.parse import urlsplit
+
+def clearml_storage_uri(value):
+    uri=urlsplit(value)
+    if (uri.scheme!='https' or not uri.hostname or uri.username or uri.password
+            or uri.query or uri.fragment):
+        raise RuntimeError('Require explicit authenticated HTTPS ClearML Files storage endpoint')
+    return value.rstrip('/')
+
+def validate_registered_model_uri(value, storage):
+    target=urlsplit(value or '');base=urlsplit(storage)
+    if (target.scheme!='https' or target.netloc!=base.netloc or
+        not target.path.startswith(base.path.rstrip('/')+'/') or
+        target.username or target.password or target.query or target.fragment):
+        raise RuntimeError('Registered OutputModel must reference intended remote HTTPS Files storage')
 
 def swift_cli_help():
     """Swift 4.4.2's outer argparse consumes --help before SFT parsing."""
@@ -180,6 +195,7 @@ def main():
     if out.exists(): raise FileExistsError(f'Refuse to overwrite prior run: {out}')
     approval=json.loads(approval_file.read_text(encoding='utf-8'))
     validate_authorization(approval)
+    files_host=clearml_storage_uri(require_env('CLEARML_FILES_HOST'))
     manifest, manifest_file=validate_training_dataset(dataset, approval)
     preflight=validate_length_preflight(dataset, manifest_file, approval)
     import torch
@@ -245,7 +261,7 @@ def main():
         task=Task.init(project_name='reg/identity-sft',task_name=run_id,
                        task_type=Task.TaskTypes.training,
                        reuse_last_task_id=False,auto_connect_frameworks=False,
-                       auto_connect_arg_parser=False)
+                       auto_connect_arg_parser=False,output_uri=files_host)
         task.set_parameter('identity/mode',args.mode)
         task.set_parameter('identity/dataset_sha256',meta['data_sha256'])
         task.set_parameter('identity/base_manifest_sha256',hashlib.sha256(
@@ -297,7 +313,7 @@ def main():
             meta['adapter_package_sha256']=sha(package)
             mdl=OutputModel(task=task,name=f'{run_id}-candidate',framework='pytorch')
             uri=mdl.update_weights(weights_filename=str(package),target_filename=package.name,
-                                   auto_delete_file=False)
+                                   auto_delete_file=False,upload_uri=files_host,async_enable=False)
             meta['clearml_output_model_id']=mdl.id
             task.set_parameter('identity/adapter_package_sha256',meta['adapter_package_sha256'])
             task.set_parameter('identity/output_model_id',mdl.id)
@@ -311,7 +327,8 @@ def main():
             from clearml import Model
             registered=Model(model_id=mdl.id)
             if not registered.url: raise RuntimeError('Registered OutputModel missing URI')
-            downloaded=registered.get_local_copy(extract_archive=False)
+            validate_registered_model_uri(registered.url,files_host)
+            downloaded=registered.get_local_copy(extract_archive=False,force_download=True)
             if not downloaded or not pathlib.Path(downloaded).is_file():
                 raise RuntimeError('Cannot read back registered Adapter file')
             if sha(downloaded)!=meta['adapter_package_sha256']:

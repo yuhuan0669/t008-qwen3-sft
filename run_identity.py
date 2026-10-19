@@ -180,14 +180,50 @@ def zip_adapter(checkpoint, target):
             z.writestr(zi,p.read_bytes())
     return {p.name:{'sha256':sha(p),'bytes':p.stat().st_size} for p in files}
 
+def verify_final_checkpoint(directory, checkpoint):
+    """Require pipeline's completed-run terminal record, not checkpoint self-report."""
+    logs=list(pathlib.Path(directory).rglob('logging.jsonl'))
+    terminal=[]
+    for log in logs:
+        for line in log.read_text().splitlines():
+            try: entry=json.loads(line)
+            except ValueError: continue
+            if entry.get('global_step') is not None and entry.get('last_model_checkpoint'):
+                terminal.append(entry)
+    if len(terminal)!=1:
+        raise RuntimeError('Require one actual Swift terminal training record')
+    final=terminal[0]
+    state=json.loads((checkpoint/'trainer_state.json').read_text())
+    step=int(re.search(r'checkpoint-(\d+)$',checkpoint.name).group(1))
+    if (step!=int(final['global_step']) or step!=int(state['global_step'])
+        or pathlib.Path(final['last_model_checkpoint']).resolve()!=checkpoint.resolve()
+        or int(state.get('max_steps',-1))!=step or float(state.get('epoch') or 0)<0.999):
+        raise RuntimeError('Adapter does not match actual completed final training step')
+    return final
+
 def main():
     pa=argparse.ArgumentParser(description=__doc__)
-    pa.add_argument('mode',choices=('smoke','full'))
+    pa.add_argument('mode',choices=('smoke','full','cpu-check'))
+    pa.add_argument('--model')
+    pa.add_argument('--identity-spec')
+    pa.add_argument('--evidence-dir')
+    pa.add_argument('--reference-snapshot')
+    pa.add_argument('--base-files')
     args=pa.parse_args()
+    from native_recipe import build_command, cpu_check, spec_read, validate_report
+    if args.mode=='cpu-check':
+        values=(args.model,args.identity_spec,args.evidence_dir,args.reference_snapshot,args.base_files)
+        if not all(values): pa.error('cpu-check requires model, identity-spec, evidence-dir, reference-snapshot, base-files')
+        report=cpu_check(*values, swift_cli_help())
+        print(json.dumps(report,ensure_ascii=False,indent=2))
+        return
+    if any(os.environ.get(k,'false').lower()!='false' for k in ('USE_QLORA','USE_LIGER')):
+        raise RuntimeError('Optimization is deferred; official native LoRA recipe only')
     if require_env('RUN_AUTHORIZED')!='yes' or require_env('GPU_WINDOW_APPROVED')!='yes':
         raise RuntimeError('Run and current GPU interruption window must be authorized')
     model=pathlib.Path(require_env('BASE_MODEL')).resolve()
-    dataset=pathlib.Path(require_env('DATA_DIR')).resolve()
+    spec=spec_read(require_env('IDENTITY_SPEC'))
+    native_report_file=pathlib.Path(require_env('NATIVE_PREFLIGHT_REPORT')).resolve()
     out=pathlib.Path(require_env('OUT_DIR')).resolve()
     image_digest=require_env('TRAIN_IMAGE_DIGEST')
     source_commit=require_env('SOURCE_GIT_COMMIT')
@@ -196,8 +232,10 @@ def main():
     approval=json.loads(approval_file.read_text(encoding='utf-8'))
     validate_authorization(approval)
     files_host=clearml_storage_uri(require_env('CLEARML_FILES_HOST'))
-    manifest, manifest_file=validate_training_dataset(dataset, approval)
-    preflight=validate_length_preflight(dataset, manifest_file, approval)
+    preflight=validate_report(native_report_file, spec, approval)
+    # Freeze the approved bytes for the child plugin; never reread a mutable
+    # unbound report as the source of expected training membership.
+    os.environ['NATIVE_PREFLIGHT_SHA256']=approval['native_preflight_report_sha256']
     import torch
     if not torch.cuda.is_available() or not torch.cuda.is_bf16_supported():
         raise RuntimeError('BF16 GPU unavailable')
@@ -205,50 +243,22 @@ def main():
     if not re.fullmatch(r'sha256:[0-9a-f]{64}',image_digest) or not re.fullmatch(r'[0-9a-f]{40}',source_commit):
         raise RuntimeError('Require real sha256 image digest and full Git SHA1 commit')
     swifthelp=swift_cli_help()
-    tuner='--tuner_type' if '--tuner_type' in swifthelp else ('--train_type' if '--train_type' in swifthelp else None)
-    if not tuner: raise RuntimeError('LoRA CLI option unknown; pin/test exact ms-swift version')
-    eval_switch='--eval_strategy' if '--eval_strategy' in swifthelp else ('--evaluation_strategy' if '--evaluation_strategy' in swifthelp else None)
-    if not eval_switch: raise RuntimeError('Cannot explicitly disable eval with this ms-swift CLI')
-    if '--save_strategy' not in swifthelp: raise RuntimeError('Cannot verify required checkpoint save strategy')
-    if '--data_seed' not in swifthelp: raise RuntimeError('Cannot pin data shuffle seed in this ms-swift CLI')
-    # With an immutable local training snapshot there is NO training-derived val set;
-    # standalone independent tests are scored later. Avoid replay leakage.
     run_id=out.name
-    common=['swift','sft','--model',str(model),'--model_type','qwen3','--template','qwen3',tuner,'lora',
-        '--dataset',str(dataset/'train.jsonl'),'--split_dataset_ratio','0',
-        '--torch_dtype','bfloat16','--num_train_epochs','1',
-        '--per_device_train_batch_size','1','--per_device_eval_batch_size','1',
-        '--learning_rate','1e-4','--lora_rank','8','--lora_alpha','32',
-        '--target_modules','all-linear','--gradient_accumulation_steps','16',
-        '--max_length','2048','--warmup_ratio','0.05',eval_switch,'no',
-        '--save_total_limit','2','--logging_steps','5',
-        '--dataloader_num_workers','4','--seed','42','--data_seed','42',
-        '--push_to_hub','false','--output_dir',str(out/'checkpoints')]
-    if '--gradient_checkpointing' in swifthelp: common.extend(['--gradient_checkpointing','true'])
-    if '--save_only_model' in swifthelp: common.extend(['--save_only_model','false'])
-    if '--report_to' in swifthelp: common.extend(['--report_to','tensorboard'])
-    # Preserve the official 50-step save interval for smoke, but force a FINAL
-    # checkpoint at end of the full epoch to avoid registering checkpoint-150
-    # when the actual run ended after e.g. 163 optimizer steps.
-    if args.mode=='smoke':
-        common.extend(['--max_steps','3','--save_strategy','steps','--save_steps','3'])
-    else:
-        common.extend(['--save_strategy','epoch'])
-    if os.environ.get('USE_QLORA')=='true':
-        common.extend(['--quant_method','bnb','--quant_bits','4',
-                       '--bnb_4bit_quant_type','nf4',
-                       '--bnb_4bit_compute_dtype','bfloat16',
-                       '--bnb_4bit_use_double_quant','true'])
-    if os.environ.get('USE_LIGER')=='true': common.extend(['--use_liger_kernel','true'])
+    common=build_command(args.mode, model, out/'checkpoints', spec, swifthelp)
+    # Compare every formal parser field against actual CPU-validated Full plan;
+    # path/mode-specific differences are bounded in native_recipe.
+    from native_recipe import validate_formal_command
+    validate_formal_command(common, preflight['formal_command'], args.mode)
     files=base_fingerprint(model)
     actual_base_hash=hashlib.sha256(json.dumps(files,ensure_ascii=False,sort_keys=True).encode()).hexdigest()
     if preflight['model_files_sha256']!=actual_base_hash:
         raise RuntimeError('Tokenizer preflight model does not match training base model')
     out.mkdir(parents=True)
     meta={'schema':'identity-run-v1.2','run_id':run_id,'mode':args.mode,
-          'status':'RUNNING','dataset_manifest_sha256':sha(manifest_file),
-          'data_sha256':sha(dataset/'train.jsonl'),'base_files':files,
-          'approved_rows':approval['approved_rows'],'preflight_report_sha256':sha(dataset/'preflight_report.json'),
+          'status':'RUNNING','data_mode':'official_native_default_delete',
+          'data_sha256':preflight['native_input']['sha256'],'base_files':files,
+          'native_input':preflight['native_input'],'native_retained':preflight['native_retained'],
+          'approved_rows':approval['approved_rows'],'preflight_report_sha256':sha(native_report_file),
           'source_git_commit':source_commit,'image_digest':image_digest,
           'base_files_sha256':actual_base_hash,
           'approval_ref':approval['decision_ref'],'approval_sha256':sha(approval_file),'torch':info('torch'),
@@ -301,6 +311,7 @@ def main():
                 # A trainer format mismatch must be visible but cannot create false metrics.
                 meta['metrics_registration_error']=repr(e)
         if args.mode=='full':
+            verify_final_checkpoint(out/'checkpoints', ckpt)
             if meta.get('metrics_registration_error'):
                 raise RuntimeError(meta['metrics_registration_error'])
             if not trainer_state.is_file() or not state.get('global_step'):

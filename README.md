@@ -1,68 +1,40 @@
-# Qwen3-8B 自我认知SFT v1.2｜执行包说明
+# T-008 v1.2｜官方原生2048正式入口（CPU已核验，GPU未授权）
 
-**版本性质：CPU与静态门禁修复，不表示已经下载真实官方数据、取得授权或完成GPU/ClearML联调。** 与压缩包根目录《Qwen3-8B_自我认知SFT_完整实施方案_v1.2_执行修复版.md》互为唯一权威版本。原v1.1/v1.1.1留档不覆盖。
+当前默认正式入口是 `train_identity.sh full` → `run_identity.py` → Swift 原生加载：`swift/Qwen3-SFT-Mixin#2000`、`swift/self-cognition:qwen3#600`。不以本地1642行衍生文件代替原生输入，不做额外语义清洗、重配或补采。`max_length=2048`，不覆盖Swift默认`truncation_strategy=delete`；插件核验其实际值。`identity-spec.confirmed.json`记录负责人确认过的四个中英文名称及基座，不能把定制主体当作Qwen基础模型原始研发方。
 
-## 内容与用途
+## CPU核验入口
 
-| 文件 | 作用 |
-|---|---|
-| `identity-spec.example.json` | 四个模型身份字段与基础模型名的**待现场核对**示例；没有训练无效的`note` |
-| `prepare_official.py` | 按官方ms-swift `load_dataset`做原生采样/身份替换，严格输出2600行原始冻结快照，检查残余`{{...}}`占位符 |
-| `derive_snapshot.py` | 仅针对**有编号、有理由**的异常条目生成排除式衍生快照，不修改原始快照、不自动批准 |
-| `preflight_data.py` | CPU原样本Tokenizer/Chat Template长度统计，并要求独立真实ms-swift模板证据；没有证据时仅输出未验证报告 |
-| `run_identity.py`、`train_identity.sh` | 具备明确授权、数据和模型SHA、预检及真实GPU窗口后启动Smoke/Full；全链路登记ClearML Candidate，不自动发布 |
-| `eval_identity.py` | 核对**真实**基础权重及Adapter哈希，串行transformers+PEFT推理；分辨意外Thinking标记 |
-| `register_evaluation.py` | A/B/C/D完整性、System Prompt哈希和生成参数一致性校验后，上传Reviewer摘要/哈希到ClearML |
-| `tests/test_contract.py` | 合成数据17项CPU测试（无真实模型与GPU） |
-
-## 运行次序和失败即停原则
-
-1. **CPU身份/许可核验**：检查四身份字段、Qwen基础模型来源、两份官方数据许可/revision及真实权利；冻结独立评测题。不能将项目README中的测试数据或模板当审批。
-2. **官方原始冻结**：`python3 prepare_official.py --spec "$WORK/identity-spec.json" --out "$WORK/original-v1.2" --seed 42`。脚本拒绝实际行数不是2600和任何`{{NAME}}`/`{{AUTHOR}}`/`{{AUTHOER}}`等残留。
-3. **如需清洗**：先由Review角色确认排除零基行号，记录原因，存为`[{"index": 31,"reason": "经审核身份混淆，批准剔除"}]`，执行`python3 derive_snapshot.py --parent "$WORK/original-v1.2" --exclusions "$WORK/exclusions-reviewed.json" --out "$WORK/derivative-v1.2"`。只排除，不可静默改写或重新采样；如需修改正文，应另行审批变更，不使用本脚本冒充官方复现。
-4. **CPU长度预检**：`python3 preflight_data.py --dataset "$DATA_DIR" --model "$BASE_MODEL"`。输出初稿`$DATA_DIR/preflight_report.json`，其中`ms_swift_template_verified=false`，**不能训练**。
-5. **真实ms-swift模板核验**：固定实际训练镜像，使用一致的model、dataset、template、loss mask、`max_length=2048`在CPU核实训练pipeline实际保留行数及超长行数；留原始终端日志/版本/代码引用，形成`swift-template-evidence.json`，内容格式参考下方。仅凭transformers的Tokenizer预检不等于此步骤。
-6. **重新冻结最终预检报告**：`python3 preflight_data.py --dataset "$DATA_DIR" --model "$BASE_MODEL" --out "$DATA_DIR/preflight_report_verified.json" --swift-template-evidence "$WORK/swift-template-evidence.json"`。若无超长且证据与当前数据/模型匹配，在受控目录中用`mv "$DATA_DIR/preflight_report_verified.json" "$DATA_DIR/preflight_report.json"`替换初稿，计算最终文件SHA；**未经现场核验不得填写`verified=true`。**
-7. **独立批准**：由有权责任人确认真实身份/来源许可/数据SHA/行数/预检SHA，签发`approval.json`（不能引用示例文件作为批准）。衍生数据还需父快照路径、变更审批引用与确认。此文件的存在并不自动证明批准人真实有权，执行Agent仍须检查批准系统中的原始决定。
-8. **GPU窗口**：由实际受影响系统管理员授权、备份K8s恢复点，验证`swift sft --help`是否支持训练时参数；再设置`BASE_MODEL DATA_DIR APPROVAL_FILE TRAIN_IMAGE_DIGEST SOURCE_GIT_COMMIT RUN_AUTHORIZED GPU_WINDOW_APPROVED OUT_DIR`运行`bash train_identity.sh smoke`与新目录下的`bash train_identity.sh full`。不支持`eval_strategy no`、`data_seed`、`save_strategy`直接阻断，不猜参数名。
-9. **对照评估**：另按实际串行推理耗时申请GPU资源，四组A/B/C/D保持相同案例、seed、生成参数、base、engine；B/D使用相同System Prompt文件字节。独立Reviewer记录结果摘要；`register_evaluation.py`登记，不提交逐条试题/回答。
-10. **恢复与发布**：恢复原vLLM Deployment并实测；新Adapter保留Candidate，未单独批准不得发布。
-
-### 实际ms-swift核验证据JSON（结构示例，**不是审批/实测值**）
-
-```json
-{
-  "verified": false,
-  "evidence_ref": "在固定真实ms-swift镜像中执行的模板/标签掩码/长度检查日志或任务地址",
-  "dataset_sha256": "实际train.jsonl哈希",
-  "model_files_sha256": "实际训练基础模型文件清单哈希",
-  "rows_checked": 2600,
-  "max_length": 2048,
-  "overlength_rows": 0
-}
-```
-
-**注意：** `verified`必须由实际ms-swift流水线证据审核后改成`true`；`dataset_sha256`和`model_files_sha256`必须为确切hash，`rows_checked`按现场事实填写。脚本只能校验该记录与数据/模型字节是否一致，**不能替批准人确认记录是否真实**。`ms-swift`实际模板证据的生成/检查由具备真实训练镜像的Agent实施，当前交付没有完成该项现场步骤。
-
-### 训练批准 `approval.json` 扩展字段（展示结构，不是放行授权）
-
-需要保留原有`identity_verified`、`experiment_approved`、`gpu_window_approved`、`sources_approved`、`decision_ref`、`source_snapshot_ref`等字段，并添加：
-
-- `approved_rows`: 经批准的实际训练行数；原始2600或衍生值。
-- `approved_data_sha256`: 当前训练目录`train.jsonl`的SHA-256。
-- `approved_snapshot_manifest_sha256`: 当前目录`manifest.json`的SHA-256。
-- `preflight_model_files_sha256`: 预检使用的**完整基础模型文件清单哈希**。
-- `preflight_report_sha256`: **最终**`preflight_report.json`的SHA-256。
-- 若清洗：`data_change_approved=true`、非空`data_change_ref`和`parent_snapshot_dir`（指向确切原始快照）。
-
-SHA都是**对最终文件字节**计算。建议把批准文件放在不同受控目录，授权签核不得由准备数据脚本自动填写。每项hash可以用`sha256sum FILE`检验（模型文件清单哈希由`preflight_data.py`自动报告）。
-
-## 本地复核命令（只用合成数据）
+在固定的CPU隔离环境中（无GPU设备、base和历史快照只读）运行：
 
 ```bash
-python3 -m py_compile *.py tests/test_contract.py
+bash train_identity.sh cpu-check \
+  --model /base \
+  --identity-spec identity-spec.confirmed.json \
+  --evidence-dir /work/NEW-nonexistent-evidence-dir \
+  --reference-snapshot /reference/original-v1.2/train.jsonl \
+  --base-files /reference/evidence/template/original-final/base-files.json
+```
+
+解析正式Full argv，再仅覆盖use_cpu=true、report_to=none、add_version=false以执行真实SftArguments后初始化、args.load_dataset、Qwen3 tokenizer与真实SwiftSft._encode_dataset原方法。不会实例化SwiftSft、加载模型权重、创建Trainer、ClearML Task或训练子进程；对基座文件做完整SHA读取不等于加载模型权重到内存。`evidence/native-proof`中的两个JSONL是复算证据，不是正式训练输入。
+
+## 正式训练入口的准备条件（本轮不得执行）
+
+后续经真实GPU窗口及实验授权后，运行单元必须绑定：BASE_MODEL、IDENTITY_SPEC、NATIVE_PREFLIGHT_REPORT、OUT_DIR（必须不存在）、TRAIN_IMAGE_DIGEST、SOURCE_GIT_COMMIT、APPROVAL_FILE，以及RUN_AUTHORIZED=yes和GPU_WINDOW_APPROVED=yes。还需要可导入的ClearML SDK、实际凭据引用和HTTPS CLEARML_FILES_HOST。没有这些条件会阻断；准备脚本不生成approval.json。CPU模式不要求伪造这些批准。
+
+批准记录除原有literal JSON true的身份/来源/实验/GPU窗口确认和decision_ref/source_snapshot_ref外，须由责任人绑定真实native_preflight_report_sha256、approved_rows（实际过滤保留数）、approved_data_sha256（native_input的canonical dataset摘要，非JSONL文件SHA）、preflight_model_files_sha256。CPU报告本身有SHA且含原生输入/过滤结果、包版本、模板参数和实现指纹。旧数据选择已经确认，不需要重新裁定配比；上述记录用于未来作业精确输入与真实GPU授权绑定，不是本轮新增数据政策审批。
+
+Full使用steps/save_steps=50。当前实装Swift4.4.2 callback还在最后一步强制保存；wrapper必须同时核对Swift终态logging.jsonl、checkpoint目录、trainer_state.global_step/max_steps及epoch，才登记Candidate。Smoke仍是独立的3步路径，需要独立获批，CPU检查不启动它。训练产物的真实生成/上传回读需GPU阶段验证。
+
+`native_guard.py`是只读external plugin：原样返回官方加载/过滤后的对象，检查有序数据全部列（包括过滤产生的lengths）摘要、名称、模板、包版本以及批准的报告SHA；发现漂移或cached/streaming/packing/lazy等旁路就失败。基座完整SHA和代码/Swift关键源码指纹由父入口核对。注意未来Swift实例化会在数据guard运行前加载基座；guard保证漂移时不进入Trainer/train，不声称漂移失败发生在Task或GPU模型加载之前。
+
+本轮不启用USE_QLORA/USE_LIGER等优化。旧prepare_official/derive_snapshot/preflight_data和本地快照校验函数留作历史复算兼容，**不再是正式main的数据路径**；其严格旧契约未放宽。QA_REPORT_v1.2.md为历史修复说明，当前结论以本轮reports及CPU证据为准。
+
+## 复核
+
+```bash
+python3 -m py_compile *.py tests/*.py
 bash -n train_identity.sh
 python3 -W error::ResourceWarning -m unittest discover -s tests -v
 ```
 
-以上仅证明代码静态/模拟约束；Qwen3-8B完整训练、官方数据下载、真实ms-swift CLI/模板、许可、K8s停启、ClearML OutputModel回读、实际A/B/C/D推理均需后续真实环境核验。本包不会主动操作这些系统。
+完整CPU容器运行配方、AST索引适配、可信证书bundle及检查脚本在交付包scripts和evidence。基础镜像没有ClearML SDK；最终训练Job/PVC、SDK overlay、凭据和服务切换清单尚待绑定。当前GPU No-Go，CPU通过不代表模型内容质量或上线验收通过。

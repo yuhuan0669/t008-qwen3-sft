@@ -13,7 +13,7 @@
 
 ## 方案审阅版本
 
-`registry/plans.json`单独登记方案路径、SHA、状态、云端审阅副本和标签。`plan-review-v0.1`和`plan-review-v0.2`分别定位两版完整讨论稿；当前审阅入口为v0.2，旧稿和Drive副本保留。Git提交或创建标签不批准方案实施。修改讨论稿时产生新版本和commit，不移动既有标签。原始归档bundle及`archive-v1.0.0`不包含后续文档增量；后续方案可从Git远端或其单独bundle恢复。本次没有新增模型/数据对象，无需重传旧对象库。
+`registry/plans.json`单独登记方案路径、SHA、状态、云端审阅副本和标签。`plan-review-v0.1`和`plan-review-v0.2`分别定位两版完整讨论稿；当前审阅入口为v0.3，旧稿和Drive副本保留。Git提交或创建标签不批准方案实施。修改讨论稿时产生新版本和commit，不移动既有标签。原始归档bundle及`archive-v1.0.0`不包含后续文档增量；后续方案可从Git远端或其单独bundle恢复。本次没有新增模型/数据对象，无需重传旧对象库。
 
 ## 原地核验
 
@@ -86,3 +86,7 @@ git log --all --oneline --decorate
 ## review-v0.2 文档增量
 
 本版新建完整方案、记录用户身份口径与外部意见处理，并更新当前入口和方案登记；未修改archive/、code/、训练快照、对象库或原00／03／R1。回读记录位于verification/plan-review-v0.2/。本地方案bundle及远端交付回执存放在相邻t008_qwen3_plan_review_v02_delivery_20261019/；该目录不包含新增模型或数据对象，远端Git标签是对应文档的恢复入口。
+
+## review-v0.3 简化维护
+
+本次沿用Git commit／plan-review-v0.3标签、Drive独立副本及现有方案索引；四份参考意见与修订说明保存于docs/reviews/review-v0.3/。只核对新增内容、旧文件未改和远端交付，不新增bundle，也不为纯文档修改重复核验全部历史对象。

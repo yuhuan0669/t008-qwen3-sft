@@ -1,0 +1,13 @@
+{
+  "version": "review-v0.3",
+  "status": "DELIVERED_FOR_REVIEW",
+  "recorded_at_utc": "2026-10-20T05:56:21.368Z",
+  "plan_sha256": "71618203e2eaef89fa6e3cdc50579e356a69efc6aa375146ab1e2be748230213",
+  "google_doc_url": "https://docs.google.com/document/d/1jFLAzWVMx67rcgJs8Y_trT1w9cZ3YaWW0Bh-i-dqJfI/edit?usp=drivesdk",
+  "google_doc_revision": "AHj4eMRctGWkBQ8svRpx9JnmF1unMIY0x5XKLHXV8ecagOhVe1PXaacKJG3SgBaeGuN2lMuabpSKpsb2_Kr2m1DWlH-IKEENT3AUy4rUoRc",
+  "parent_id": "1PUMa2W9OpCFOImL0ZGSLbTbY7TLOEZ5c",
+  "document_text_verified": true,
+  "original_01_append_verified": true,
+  "report_revision": "AHj4eMR89vB4Nh3_zD5FOnoI9kCVieix7FXTmzhl3e1TiiLWMThMjB5pqshwaWKvM43U6G33JK2MjIIvgqnb1b07cI6JSAqwC8Uwjirzr68",
+  "scope": "Documents only; no training, inference evaluation, data or service changes."
+}

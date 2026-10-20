@@ -1,6 +1,6 @@
 {
   "schema": "t008-plan-registry-v1",
-  "current": "review-v0.2",
+  "current": "review-v0.3",
   "plans": [
     {
       "version": "review-v0.1",
@@ -40,6 +40,20 @@
       "training_data_changed": false,
       "identity_policy_confirmed": true,
       "notes": "User-confirmed product developer/trainer is Octacarbon; explicit base provenance stays Qwen/Qwen3-8B. Other execution parameters are review proposals. Incorporates assessed Gemini and Claude feedback, not independent acceptance."
+    },
+    {
+      "version": "review-v0.3",
+      "status": "DRAFT_FOR_USER_REVIEW",
+      "path": "docs/plans/SFT_MINIMAL_INTEGRATION_v0.3.md",
+      "bytes": 11944,
+      "sha256": "71618203e2eaef89fa6e3cdc50579e356a69efc6aa375146ab1e2be748230213",
+      "git_tag": "plan-review-v0.3",
+      "google_doc_id": "1jFLAzWVMx67rcgJs8Y_trT1w9cZ3YaWW0Bh-i-dqJfI",
+      "google_doc_url": "https://docs.google.com/document/d/1jFLAzWVMx67rcgJs8Y_trT1w9cZ3YaWW0Bh-i-dqJfI/edit?usp=drivesdk",
+      "drive_parent_id": "1PUMa2W9OpCFOImL0ZGSLbTbY7TLOEZ5c",
+      "readback": "verification/plan-review-v0.3/delivery.json",
+      "changes": "docs/reviews/review-v0.3/CHANGES.md",
+      "execution_approved": false
     }
   ]
 }

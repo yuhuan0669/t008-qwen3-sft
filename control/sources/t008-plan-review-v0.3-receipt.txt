@@ -1,0 +1,9 @@
+
+
+T-008｜review-v0.3 精简方案交付，待审阅
+依据用户指令：“/Users/it/Downloads/review 请看这个目录里的四个文件，请参考，并优化过度设计、过度防御的内容。”
+已阅读并保留四份参考意见。正文16节减为6节，篇幅减少约67%；三阶段流程，正式2080条件（基线880＋新候选1200），Data-Juicer只出报告、ClearML结束后汇总；GPU包内约定范围调参自主进行。修订说明另存。
+审阅副本：https://docs.google.com/document/d/1jFLAzWVMx67rcgJs8Y_trT1w9cZ3YaWW0Bh-i-dqJfI/edit?usp=drivesdk
+GitHub：https://github.com/yuhuan0669/t008-qwen3-sft/blob/plan-review-v0.3/docs/plans/SFT_MINIMAL_INTEGRATION_v0.3.md
+源SHA-256：71618203e2eaef89fa6e3cdc50579e356a69efc6aa375146ab1e2be748230213
+本条登记文档交付；Git推送状态见最终回执。当前只更新文档，未处理训练数据、启动训练／推理评测或改变服务。

@@ -142,7 +142,8 @@
       "stage2/delivery/github.json",
       "stage2/delivery/drive.json"
     ],
-    "temporary_workloads_cleanup_requested": true
+    "temporary_workloads_cleanup_requested": true,
+    "temporary_workloads_cleanup_verified": true
   },
   "historical_candidate": "checkpoint-103"
 }

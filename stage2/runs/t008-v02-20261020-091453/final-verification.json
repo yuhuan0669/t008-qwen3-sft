@@ -1,0 +1,12 @@
+{
+  "verified_at_utc": "2026-10-20T11:41:17.615166+00:00",
+  "uat_spec_equal": true,
+  "uat_ready": 1,
+  "uat_health": 200,
+  "task_temporary_workloads_remaining": [],
+  "full_runs": 3,
+  "formal_candidate_run": false,
+  "new_model_deployed": false,
+  "node_A": "NOT_ACCEPTED",
+  "note": "Initial cleanup check observed terminating prep pod; final check confirms absent. Raw logs retain whitespace unchanged."
+}

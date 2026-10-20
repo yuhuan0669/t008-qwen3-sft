@@ -21,10 +21,10 @@ assert structure_reasons({'messages':[{'role':'assistant','content':'<think>unfi
 assert structure_reasons({'messages':[{'role':'assistant','content':'<think>x</think>  '}]})==['empty_final_body']
 assert structure_reasons({'messages':[{'role':'assistant','content':'示例代码包含字符串 `<think>`，不是真实思考块。'}]})==[]
 assert len(read(D/'identity-review.jsonl'))==108
-assert len(read(D/'additions.jsonl'))==24
+assert len(read(D/'additions.jsonl'))==30
 for row in read(D/'modifications.jsonl'):
  for idx in row['parent_rows_zero_based']:assert json.loads(raw[idx])==row['original']
 a=read(R/'stage1/evidence/train-encoding.jsonl');assert len(a)==len(train)
 assert all(x['tokens']<=2048 and x['supervised_tokens']>0 for x in a)
-result={'passed':True,'checks':['parent hash','all delivered data hashes','complete exclusive parent disposition','unchanged rows byte-identical','original retained order','108 identity reviews','24 additions','change originals reconstruct','structural false-positive regression','real Swift per-row encoding'],'rows':len(train),'training_started':False}
+result={'passed':True,'checks':['parent hash','all delivered data hashes','complete exclusive parent disposition','unchanged rows byte-identical','original retained order','108 identity reviews','30 additions','change originals reconstruct','structural false-positive regression','real Swift per-row encoding'],'rows':len(train),'training_started':False}
 (R/'stage1/evidence/data-validation.json').write_text(json.dumps(result,indent=2)+'\n');print(json.dumps(result))

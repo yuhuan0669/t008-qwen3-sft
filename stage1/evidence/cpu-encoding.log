@@ -14,12 +14,12 @@ Failed to load CPU gemm_4bit_forward from kernels-community: No module named 'ke
 [INFO:swift] Setting args.lazy_tokenize: False
 [INFO:swift] Setting args.gradient_accumulation_steps: 16
 [INFO:swift] Setting args.dataloader_num_workers: 1
-{"rows": 1276, "unique": 647, "counts": {"swift/Qwen3-SFT-Mixin": 1036, "swift/self-cognition": 216, "t008/project-positioning-v1": 24}, "excluded": 964, "repeat_reductions": 384}
-Generating train split: 0 examples [00:00, ? examples/s]Generating train split: 1276 examples [00:00, 95303.02 examples/s]
-Map (num_proc=1):   0%|          | 0/1276 [00:00<?, ? examples/s]Map (num_proc=1):  78%|███████▊  | 1000/1276 [00:00<00:00, 9327.62 examples/s]Map (num_proc=1): 100%|██████████| 1276/1276 [00:00<00:00, 5681.81 examples/s]
+{"rows": 1289, "unique": 653, "counts": {"swift/Qwen3-SFT-Mixin": 1036, "swift/self-cognition": 216, "t008/project-positioning-v1": 37}, "excluded": 964, "repeat_reductions": 384}
+Generating train split: 0 examples [00:00, ? examples/s]Generating train split: 1289 examples [00:00, 94271.28 examples/s]
+Map (num_proc=1):   0%|          | 0/1289 [00:00<?, ? examples/s]Map (num_proc=1):  78%|███████▊  | 1000/1289 [00:00<00:00, 9453.51 examples/s]Map (num_proc=1): 100%|██████████| 1289/1289 [00:00<00:00, 5726.81 examples/s]
 [INFO:swift] default_system: None
 [INFO:swift] max_length: 2048
 [INFO:swift] response_prefix: None
 [INFO:swift] agent_template: hermes
-Map (num_proc=1):   0%|          | 0/1276 [00:00<?, ? examples/s]Map (num_proc=1):  78%|███████▊  | 1000/1276 [00:03<00:00, 301.14 examples/s]Map (num_proc=1): 100%|██████████| 1276/1276 [00:03<00:00, 345.05 examples/s]Map (num_proc=1): 100%|██████████| 1276/1276 [00:03<00:00, 323.52 examples/s]
-{"verified": true, "rows": 1276, "max_tokens": 2048, "zero_silent_drop": true, "empty_think_mask_verified": true}
+Map (num_proc=1):   0%|          | 0/1289 [00:00<?, ? examples/s]Map (num_proc=1):  78%|███████▊  | 1000/1289 [00:03<00:00, 300.13 examples/s]Map (num_proc=1): 100%|██████████| 1289/1289 [00:03<00:00, 348.09 examples/s]Map (num_proc=1): 100%|██████████| 1289/1289 [00:03<00:00, 325.80 examples/s]
+{"verified": true, "rows": 1289, "max_tokens": 2048, "zero_silent_drop": true, "empty_think_mask_verified": true}

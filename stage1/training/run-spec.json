@@ -1,7 +1,7 @@
 {
   "plan": "review-v0.4.1",
-  "dataset_sha256": "e79bb743d0781203fe5039e4959b5b6c3f440110df3b89be9a60bf9750064d3f",
-  "dataset_rows": 1276,
+  "dataset_sha256": "89b8dd9c3e434bcea0a1baf42bff2972e836fa3704b57fda283d9864272db443",
+  "dataset_rows": 1289,
   "input_mode": "frozen_local_jsonl",
   "base": "Qwen/Qwen3-8B",
   "new_lora": true,
@@ -83,7 +83,7 @@
     "save_steps": 3,
     "output_dir": "/runwork/smoke/checkpoints"
   },
-  "estimated_full_optimizer_steps": 80,
+  "estimated_full_optimizer_steps": 81,
   "max_full_runs": 3,
   "execution_authorized": false,
   "resource_window": null,

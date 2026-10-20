@@ -1,0 +1,17 @@
+{
+  "version": "stage1-cpu-v0.1.3",
+  "parent_version": "stage1-cpu-v0.1.2",
+  "train_sha256": "89b8dd9c3e434bcea0a1baf42bff2972e836fa3704b57fda283d9864272db443",
+  "rows": 1289,
+  "unique_messages": 653,
+  "prior_1276_exposures_byte_preserved": true,
+  "extra_exposures": 13,
+  "new_questions": 6,
+  "new_question_exposure_each": 2,
+  "existing_new020_extra_exposure": 1,
+  "non_underlying_data_unchanged": true,
+  "artificial_thinking_added": false,
+  "encoding_sha_matches": true,
+  "training_started": false,
+  "cloud_upload": false
+}

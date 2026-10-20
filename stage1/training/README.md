@@ -1,6 +1,6 @@
 # 第一阶段：运行配置准备
 
-`run-spec.json`固定本地训练文件SHA和完整Swift参数；当前1278次曝光，batch1×累积16×1epoch，预计80个优化步。已用同一Swift4.4.2镜像实际解析参数并走本地数据加载和编码路径，`recipe-validation.json`记录结果。
+`run-spec.json`固定本地训练文件SHA和完整Swift参数；当前1289次曝光，batch1×累积16×1epoch，预计81个优化步。当前数据已用Swift4.4.2实际加载及编码；参数解析沿用此前结果，`recipe-validation.json`保留检查时版本。
 
 Swift命令行不接受`truncation_strategy=raise`，所以使用其合法`delete`选项，同时挂载`local_data_guard.py`，对真实编码前后成员及曝光做严格比对；任何删行都在Trainer前报错。CPU验证注入缺行并确认阻断。输入文件本身已经全部通过2048检查。
 

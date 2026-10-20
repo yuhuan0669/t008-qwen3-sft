@@ -15,21 +15,21 @@
   "modified_identity_exposures_retained": 150,
   "identity_original_records_retained": 108,
   "identity_unique_after_rewrite": 105,
-  "new_unique": 24,
-  "train_exposures": 1276,
-  "train_unique": 647,
+  "new_unique": 30,
+  "train_exposures": 1289,
+  "train_unique": 653,
   "source_exposures": {
     "swift/Qwen3-SFT-Mixin": 1036,
     "swift/self-cognition": 216,
-    "t008/project-positioning-v1": 24
+    "t008/project-positioning-v1": 37
   },
   "source_supervised_tokens": {
     "swift/Qwen3-SFT-Mixin": 1519096,
     "swift/self-cognition": 8174,
-    "t008/project-positioning-v1": 971
+    "t008/project-positioning-v1": 1146
   },
-  "identity_plus_business_exposure_pct": 18.81,
-  "identity_plus_business_supervised_token_pct": 0.598,
+  "identity_plus_business_exposure_pct": 19.63,
+  "identity_plus_business_supervised_token_pct": 0.61,
   "record_scope": "108 identity records fully reviewed; 1000 general records rule-screened across all assistant text, including thinking, and 108 flagged contexts reviewed for self-positioning, execution claims and business scope; not a full factual audit",
   "human_approval": "PENDING",
   "training_started": false

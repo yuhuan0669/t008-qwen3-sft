@@ -259,6 +259,26 @@
       "devices": null,
       "nano_cpus": null,
       "memory": 8589934592
+    },
+    {
+      "name": "t008-stage1-underlying-20261020",
+      "id": "c6bec6361bbe40570daeac60b293b51523e2352b3c456e16fa9915ad593981a9",
+      "image": "modelscope-registry.cn-hangzhou.cr.aliyuncs.com/modelscope-repo/modelscope@sha256:822d99beed4984a421c8d1da397993c6a8a5f88cdad7dde940bd52df0067d738",
+      "state": {
+        "Status": "exited",
+        "Running": false,
+        "Paused": false,
+        "Restarting": false,
+        "Pid": 3260877,
+        "ExitCode": 0,
+        "Error": "",
+        "StartedAt": "2026-10-20T09:04:18.269742929Z",
+        "FinishedAt": "2026-10-20T09:04:36.692655201Z"
+      },
+      "runtime": "io.containerd.runc.v2",
+      "devices": null,
+      "nano_cpus": null,
+      "memory": 8589934592
     }
   ],
   "removed_own_exited_containers": true,

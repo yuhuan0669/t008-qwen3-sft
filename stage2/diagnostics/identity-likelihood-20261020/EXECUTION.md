@@ -1,0 +1,15 @@
+# 执行记录
+
+## 准备与 CPU 检查
+
+- 读取现有 UAT 状态：1/1 就绪、健康接口200；唯一 RTX4090 显存使用22,172/24,564 MiB。没有暂停服务、加载额外 GPU 模型或发起生成请求。
+- 冻结三版真实自我认知记录、六个公开问法和权重路径；无正式留出集。
+- 独立无 GPU 容器以与训练匹配的 Swift4.4.2 等版本完成实际模板编码：Full2 105种、v017 210种、v018 210种；共525条。
+- 额外检查：监督文本与 token 可往返一致，三份 Adapter 配置与权重哈希均匹配历史训练清单；CUDA不可用。见 `cpu-encoding-check.json`、`cpu-extra-check.log`。
+- CPU 准备期间的两项工程调整：初始 `kubectl apply` 因大 payload 导致 last-applied annotation 超限，未创建资源，改为 create；worker04需下载大镜像，撤销后改用已有缓存的worker05，仍不申请GPU。首次启动又因未压缩 payload 超出进程参数大小限制退出，改为压缩传递；此后CPU检查成功。上述尝试均没有模型前向、训练或UAT停服。
+- CPU检查临时Pod均已清理。`pod-cpu.json`、`pod-gpu.json` 已重新绑定最终本地脚本；语法、只读挂载及 payload 一致性已核对。
+- 已向用户请求本次最多45分钟的暂停窗口，拟第35分钟开始兜底恢复。当前无 `authorization.json`、无 `window-state.json`；GPU Pod未创建。
+
+## 等待
+
+取得用户当前明确许可后，记录 `authorization.json`（`approved: true`及用户原文），刷新并核验UAT快照，运行本目录 `window.py pause`，再创建 `pod-gpu.json`。执行结束取回输出，运行 `window.py restore`，核验原配置及健康。未获得许可不得运行暂停步骤。

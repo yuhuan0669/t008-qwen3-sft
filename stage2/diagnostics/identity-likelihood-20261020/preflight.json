@@ -1,0 +1,14 @@
+{
+  "checked_at_utc": "2026-10-20T15:51:37.795505+00:00",
+  "gpu": "RTX 4090",
+  "gpu_memory_used_mib": 22172,
+  "gpu_memory_total_mib": 24564,
+  "uat_ready": 1,
+  "uat_health_http": 200,
+  "gpu_diagnostic_started": false,
+  "uat_pause_approved": false,
+  "state": "READY_WAITING_CURRENT_UAT_PAUSE_APPROVAL",
+  "cpu_encoding_verified": true,
+  "supervised_roundtrip_records": 525,
+  "adapter_hashes_verified": true
+}

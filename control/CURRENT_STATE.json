@@ -20,6 +20,14 @@
   "cloud_01_acceptance_receipt_for_this_round": "WRITTEN_AND_READBACK_VERIFIED_T008-ACK-RETRAIN-DISCUSSION-20261019-01",
   "current_execution_phase": "DETAILED_RETRAIN_PLAN_DISCUSSION",
   "retraining_direction": "REQUESTED_BY_USER_NOT_STARTED",
+  "retraining_start": {
+    "base": "Qwen/Qwen3-8B",
+    "adapter_strategy": "NEW_LORA_FROM_ORIGINAL_BASE",
+    "resume_existing_adapter": false,
+    "old_candidate_role": "PRESERVED_COMPARISON_ONLY",
+    "decision_source": "User selected original base plus new LoRA in this conversation",
+    "full_recipe_approved": false
+  },
   "latest_task_update_evidence": "verification/task-ack-update-20261019.json",
   "latest_direction_source": "control/sources/t008-v1.5-section15.8.txt",
   "serving_at_takeover": {

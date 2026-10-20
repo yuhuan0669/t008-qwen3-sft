@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "rows": 1275,
+  "changed_rows": 159,
+  "source_exposures": {
+    "swift/Qwen3-SFT-Mixin": 1036,
+    "swift/self-cognition": 216,
+    "t008/project-positioning-v1": 23
+  },
+  "same_order_and_exposure": true,
+  "same_training_argv_except_version_paths": true,
+  "system_matches_snapshot": true,
+  "old_product_and_english_alias_absent": true
+}

@@ -1,6 +1,6 @@
 {
   "version": "stage1-cpu-v0.1.8",
-  "status": "LOCAL_NAME_REVISION_NOT_TRAINED",
+  "status": "CPU_CHECKED_AUTHORIZATION_IN_RUN_RECORD",
   "parent_version": "stage1-cpu-v0.1.7",
   "parent_path": "stage1/variants/stage1-cpu-v0.1.7/train.jsonl",
   "parent_sha256": "f76879161c87c0f0d7ede7a19014dfaed9809da592d2760186978f5bdd4d4d35",
@@ -176,18 +176,26 @@
   "added_rows": 0,
   "removed_rows": 0,
   "training_started": false,
-  "encoding_status": "NOT_RUN_V018",
+  "encoding_status": "VERIFIED_CPU_V018",
   "remote_uploaded": false,
   "files_sha256": {
-    "README.md": "aedfdbdf166515c472252125cf9c30230eae21f492d66a8b27709c00ec6afa1a",
+    "CPU_CHECK.md": "cfeba971fbb369fa709f2fc214ff6f40c26f660b0a455b1d294a33c8da52c9b7",
+    "README.md": "7e0daa5655bd9af73c8ea9d435bca84e9406a981dfcfa482b5db8338edc5f27e",
     "changes.jsonl": "6d76831f51b8ca587a2d60b220d2ff36d25dcac5742fce85b5d1a0941aac8213",
+    "cpu-check/check_cpu.py": "0137d5abf26b8c73a31af4cacc598acd137ccf6c7a138e64831e25272bb8cf05",
+    "cpu-check/cpu-check.log": "db8921e8a1183564c4675983e19d538c3a2adf5d3f42a5bc28286febf24789d4",
+    "cpu-check/encoding-report.json": "358367f80a04c8f4e075e9c153d613ffefe3e150555d97c33439c7b9c1144a5c",
+    "cpu-check/exposure-config-check.json": "4e23649bfbb0828ed2d0ac1a3fda544cb3a2301feae8307eb152d05fe7d12106",
+    "cpu-check/mask-probes.json": "a8f20cb283718ca55ace10b06d0c4b2e1ffcee20e1146270bcb722a785da1b38",
+    "cpu-check/train-encoding.jsonl": "68fec55dcbccb40b20a01b6f2b34f1d3bd945ef2903cf1d796b4d5b469af9321",
     "evaluation/custom-system.txt": "92ed593b3ea69fffc4b31756bb97abdd9806597234b430fbb5a4d95220550984",
     "evaluation/development-24.jsonl": "af0b1db0db437c2a114da2aec87ef68b953189e284ba24435eb74698be450be6",
     "evaluation/rubric.md": "d50870df801fbc5c0aa22077dd3230683a3a6dcc2ed0486b7e584d87a3cc6dfa",
     "evaluation-config.json": "a5b93cbbe931ae569c32c1d9fe871d6be0289be56e3d15c12d6239a9b5be0833",
     "train-map.jsonl": "8b84090d84beca2a1c9837bc76855e92129373b5e6a4810b0a0a877aaa559757",
     "train.jsonl": "3565d6602c8d3e7e47b9a2ea522fd4d4e76d90f9116911cd46422434b5897eb6",
-    "training-config.json": "443abf748646cf5f16fd62ea1e8bdfb8277fd83b8010e19568db4c9aaadd5365",
+    "training-config.json": "4cb4379d99b85a95696e7b8a2d2f9d8c63531f19154d927b690f818bc79c77f3",
     "validation.json": "f02b2d6358e5280cecb114d149987336eb1158e08983104a076f32ef86d7353b"
-  }
+  },
+  "cpu_validation_report": "stage1/variants/stage1-cpu-v0.1.8/cpu-check/encoding-report.json"
 }

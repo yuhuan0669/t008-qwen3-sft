@@ -1,0 +1,166 @@
+{
+  "verified": true,
+  "data_version": "stage1-cpu-v0.1.8",
+  "dataset_sha256": "3565d6602c8d3e7e47b9a2ea522fd4d4e76d90f9116911cd46422434b5897eb6",
+  "rows": 1275,
+  "actual_loader_rows": 1275,
+  "actual_pipeline_rows": 1275,
+  "members_and_exposure_multiplicity_verified": true,
+  "source_exposures": {
+    "swift/Qwen3-SFT-Mixin": 1036,
+    "swift/self-cognition": 216,
+    "t008/project-positioning-v1": 23
+  },
+  "max_tokens": 2048,
+  "overlength_rows": 0,
+  "truncated_rows": 0,
+  "empty_supervision_rows": 0,
+  "silent_dropped_rows": 0,
+  "total_supervised_tokens": 1528189,
+  "source_supervised_tokens": {
+    "swift/Qwen3-SFT-Mixin": 1519096,
+    "swift/self-cognition": 8084,
+    "t008/project-positioning-v1": 1009
+  },
+  "empty_think_mask_verified_on_all_changed_rows": true,
+  "changed_rows_checked": 159,
+  "versions": {
+    "ms-swift": "4.4.2",
+    "transformers": "5.14.1",
+    "peft": "0.20.0",
+    "torch": "2.11.0+cu130",
+    "tokenizers": "0.22.2",
+    "datasets": "4.8.4",
+    "modelscope": "1.38.1"
+  },
+  "tokenizer_config_sha256": {
+    "configuration.json": "f888421726665e8a84b738eed42a64875aed79de8be7daade851ac8bf4c0cef9",
+    "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+    "config.json": "f7c4eadfbbf522470667b797a3c89be2524832d2d599797248dc304fff447c30",
+    "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+    "model.safetensors.index.json": "f9fdbcb91c23971c13ec5d5f2573d2349e8f61f2f049371ec699281748fdb1bc",
+    "tokenizer_config.json": "d5d09f07b48c3086c508b30d1c9114bd1189145b74e982a265350c923acd8101",
+    "generation_config.json": "2325da0f15bb848e018c5ae071b7943332e9f871d6b60e2ed22ca97d4cb993d2"
+  },
+  "unknown_cli_flags": [],
+  "loss_scale": "default+ignore_empty_think",
+  "disable_ignore_empty_think": false,
+  "preserve_thinking": false,
+  "template_kwargs": {
+    "template_type": "qwen3",
+    "default_system": null,
+    "max_length": 2048,
+    "truncation_strategy": "raise",
+    "max_pixels": null,
+    "agent_template": null,
+    "norm_bbox": null,
+    "use_chat_template": true,
+    "remove_unused_columns": true,
+    "padding_side": "right",
+    "padding_free": false,
+    "loss_scale": "default+ignore_empty_think",
+    "is_binary_loss_scale": null,
+    "sequence_parallel_size": 1,
+    "template_backend": "swift",
+    "response_prefix": null,
+    "enable_thinking": null,
+    "preserve_thinking": false,
+    "add_non_thinking_prefix": true
+  },
+  "training_recipe": {
+    "base": "Qwen/Qwen3-8B",
+    "new_lora": true,
+    "resume": false,
+    "epochs": 1.0,
+    "batch": 1,
+    "gradient_accumulation": 16,
+    "learning_rate": 0.0001,
+    "lora_rank": 8,
+    "lora_alpha": 32,
+    "lora_dropout": 0.05,
+    "target_modules": [
+      "all-linear"
+    ],
+    "max_length": 2048
+  },
+  "cpu_overrides": [
+    "--use_cpu",
+    "true",
+    "--report_to",
+    "none",
+    "--add_version",
+    "false",
+    "--output_dir",
+    "/work/t008-v018-20261020-145507/cpu-check/recipe-only",
+    "--dataset_num_proc",
+    "1"
+  ],
+  "evaluation_template_checks": [
+    {
+      "id": "DEV-01",
+      "enable_thinking": true,
+      "verified": true
+    },
+    {
+      "id": "DEV-01",
+      "enable_thinking": false,
+      "verified": true
+    },
+    {
+      "id": "DEV-02",
+      "enable_thinking": true,
+      "verified": true
+    },
+    {
+      "id": "DEV-02",
+      "enable_thinking": false,
+      "verified": true
+    },
+    {
+      "id": "DEV-05",
+      "enable_thinking": true,
+      "verified": true
+    },
+    {
+      "id": "DEV-05",
+      "enable_thinking": false,
+      "verified": true
+    },
+    {
+      "id": "DEV-06",
+      "enable_thinking": true,
+      "verified": true
+    },
+    {
+      "id": "DEV-06",
+      "enable_thinking": false,
+      "verified": true
+    },
+    {
+      "id": "DEV-22",
+      "enable_thinking": true,
+      "verified": true
+    },
+    {
+      "id": "DEV-22",
+      "enable_thinking": false,
+      "verified": true
+    },
+    {
+      "id": "DEV-24",
+      "enable_thinking": true,
+      "verified": true
+    },
+    {
+      "id": "DEV-24",
+      "enable_thinking": false,
+      "verified": true
+    }
+  ],
+  "weights_loaded": false,
+  "trainer_created": false,
+  "gpu_available": false,
+  "clearml_task_created": false,
+  "training_started": false,
+  "inference_executed": false
+}

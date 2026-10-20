@@ -44,8 +44,10 @@
     "training_config": "stage1/variants/stage1-cpu-v0.1.8/training-config.json",
     "evaluation_config": "stage1/variants/stage1-cpu-v0.1.8/evaluation-config.json",
     "rows": 1275,
-    "status": "LOCAL_NAME_REVISION_NOT_TRAINED",
-    "encoding_status": "NOT_RUN_V018"
+    "status": "CPU_CHECKED_AUTHORIZATION_IN_RUN_RECORD",
+    "encoding_status": "VERIFIED_CPU_V018",
+    "cpu_report": "stage1/variants/stage1-cpu-v0.1.8/CPU_CHECK.md",
+    "cpu_validation_report": "stage1/variants/stage1-cpu-v0.1.8/cpu-check/encoding-report.json"
   },
   "status_scope": "Top-level v0.1.3 is historical CPU preparation; latest_data_revision is the current local data candidate",
   "previous_data_revisions": [

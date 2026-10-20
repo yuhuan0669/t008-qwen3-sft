@@ -1,0 +1,328 @@
+{
+  "items": [
+    {
+      "apiVersion": "v1",
+      "kind": "Pod",
+      "metadata": {
+        "annotations": {
+          "cni.projectcalico.org/containerID": "53827e02a8f9b8c319712b83ddc17cba32b44af70051aae16718609e6cb1a602",
+          "cni.projectcalico.org/podIP": "10.233.108.241/32",
+          "cni.projectcalico.org/podIPs": "10.233.108.241/32",
+          "kubectl.kubernetes.io/restartedAt": "2026-09-29T08:02:18-07:00",
+          "t008.octacarbon/test-model": "octacarbon-llm-sft-test"
+        },
+        "creationTimestamp": "2026-10-20T14:34:27Z",
+        "generateName": "vllm-57f474b498-",
+        "labels": {
+          "app": "vllm",
+          "pod-template-hash": "57f474b498"
+        },
+        "name": "vllm-57f474b498-msnxs",
+        "namespace": "vllm",
+        "ownerReferences": [
+          {
+            "apiVersion": "apps/v1",
+            "blockOwnerDeletion": true,
+            "controller": true,
+            "kind": "ReplicaSet",
+            "name": "vllm-57f474b498",
+            "uid": "0965dac6-98b6-4366-903a-c2cd76465f20"
+          }
+        ],
+        "resourceVersion": "192341882",
+        "uid": "57e151f0-911b-4e59-ac3e-32389f663141"
+      },
+      "spec": {
+        "automountServiceAccountToken": false,
+        "containers": [
+          {
+            "args": [
+              "--model",
+              "/models",
+              "--served-model-name",
+              "octa-carbon-v1",
+              "--host",
+              "0.0.0.0",
+              "--port",
+              "8000",
+              "--gpu-memory-utilization",
+              "0.90",
+              "--max-model-len",
+              "8192",
+              "--trust-remote-code",
+              "--reasoning-parser",
+              "qwen3",
+              "--enable-auto-tool-choice",
+              "--tool-call-parser",
+              "hermes"
+            ],
+            "command": [
+              "python3",
+              "-m",
+              "vllm.entrypoints.openai.api_server"
+            ],
+            "env": [
+              {
+                "name": "TZ",
+                "value": "America/Los_Angeles"
+              },
+              {
+                "name": "HF_HUB_OFFLINE",
+                "value": "1"
+              },
+              {
+                "name": "HF_HOME",
+                "value": "/tmp/hf"
+              },
+              {
+                "name": "HOME",
+                "value": "/tmp"
+              },
+              {
+                "name": "USER",
+                "value": "vllm"
+              },
+              {
+                "name": "LOGNAME",
+                "value": "vllm"
+              },
+              {
+                "name": "TORCHINDUCTOR_CACHE_DIR",
+                "value": "/tmp/torchinductor_vllm"
+              },
+              {
+                "name": "VLLM_CACHE_ROOT",
+                "value": "/tmp/vllm"
+              },
+              {
+                "name": "XDG_CACHE_HOME",
+                "value": "/tmp/cache"
+              }
+            ],
+            "image": "modelscope-registry.cn-hangzhou.cr.aliyuncs.com/modelscope-repo/modelscope:ubuntu22.04-cuda13.0.3-py312-torch2.11.0-vllm0.25.1-modelscope1.39.0-swift4.4.3",
+            "imagePullPolicy": "IfNotPresent",
+            "livenessProbe": {
+              "failureThreshold": 5,
+              "httpGet": {
+                "path": "/health",
+                "port": 8000,
+                "scheme": "HTTP"
+              },
+              "initialDelaySeconds": 180,
+              "periodSeconds": 30,
+              "successThreshold": 1,
+              "timeoutSeconds": 5
+            },
+            "name": "vllm",
+            "ports": [
+              {
+                "containerPort": 8000,
+                "name": "http",
+                "protocol": "TCP"
+              }
+            ],
+            "readinessProbe": {
+              "failureThreshold": 30,
+              "httpGet": {
+                "path": "/health",
+                "port": 8000,
+                "scheme": "HTTP"
+              },
+              "initialDelaySeconds": 60,
+              "periodSeconds": 15,
+              "successThreshold": 1,
+              "timeoutSeconds": 5
+            },
+            "resources": {
+              "limits": {
+                "cpu": "16",
+                "memory": "32Gi",
+                "nvidia.com/gpu": "1"
+              },
+              "requests": {
+                "cpu": "4",
+                "memory": "16Gi",
+                "nvidia.com/gpu": "1"
+              }
+            },
+            "securityContext": {
+              "allowPrivilegeEscalation": false,
+              "capabilities": {
+                "drop": [
+                  "ALL"
+                ]
+              },
+              "runAsGroup": 10002,
+              "runAsNonRoot": true,
+              "runAsUser": 10002
+            },
+            "terminationMessagePath": "/dev/termination-log",
+            "terminationMessagePolicy": "File",
+            "volumeMounts": [
+              {
+                "mountPath": "/etc/localtime",
+                "name": "host-localtime",
+                "readOnly": true
+              },
+              {
+                "mountPath": "/models",
+                "name": "model-store",
+                "readOnly": true,
+                "subPath": "released/qwen3-8b-baseline/model"
+              },
+              {
+                "mountPath": "/dev/shm",
+                "name": "dshm"
+              }
+            ]
+          }
+        ],
+        "dnsPolicy": "ClusterFirst",
+        "enableServiceLinks": true,
+        "nodeName": "k8s-worker05",
+        "nodeSelector": {
+          "nvidia.com/gpu.present": "true"
+        },
+        "preemptionPolicy": "PreemptLowerPriority",
+        "priority": 0,
+        "restartPolicy": "Always",
+        "schedulerName": "default-scheduler",
+        "securityContext": {
+          "seccompProfile": {
+            "type": "RuntimeDefault"
+          }
+        },
+        "serviceAccount": "vllm-inference",
+        "serviceAccountName": "vllm-inference",
+        "terminationGracePeriodSeconds": 30,
+        "tolerations": [
+          {
+            "effect": "NoSchedule",
+            "key": "dedicated",
+            "operator": "Equal",
+            "value": "gpu-rtx4090"
+          },
+          {
+            "effect": "NoExecute",
+            "key": "node.kubernetes.io/not-ready",
+            "operator": "Exists",
+            "tolerationSeconds": 300
+          },
+          {
+            "effect": "NoExecute",
+            "key": "node.kubernetes.io/unreachable",
+            "operator": "Exists",
+            "tolerationSeconds": 300
+          }
+        ],
+        "volumes": [
+          {
+            "hostPath": {
+              "path": "/etc/localtime",
+              "type": "File"
+            },
+            "name": "host-localtime"
+          },
+          {
+            "name": "model-store",
+            "persistentVolumeClaim": {
+              "claimName": "vllm-released",
+              "readOnly": true
+            }
+          },
+          {
+            "emptyDir": {
+              "medium": "Memory",
+              "sizeLimit": "8Gi"
+            },
+            "name": "dshm"
+          }
+        ]
+      },
+      "status": {
+        "conditions": [
+          {
+            "lastProbeTime": null,
+            "lastTransitionTime": "2026-10-20T14:34:29Z",
+            "status": "True",
+            "type": "PodReadyToStartContainers"
+          },
+          {
+            "lastProbeTime": null,
+            "lastTransitionTime": "2026-10-20T14:34:29Z",
+            "status": "True",
+            "type": "Initialized"
+          },
+          {
+            "lastProbeTime": null,
+            "lastTransitionTime": "2026-10-20T14:36:29Z",
+            "status": "True",
+            "type": "Ready"
+          },
+          {
+            "lastProbeTime": null,
+            "lastTransitionTime": "2026-10-20T14:36:29Z",
+            "status": "True",
+            "type": "ContainersReady"
+          },
+          {
+            "lastProbeTime": null,
+            "lastTransitionTime": "2026-10-20T14:34:29Z",
+            "status": "True",
+            "type": "PodScheduled"
+          }
+        ],
+        "containerStatuses": [
+          {
+            "containerID": "containerd://193136695d6bf84b6b7528daa775a7498fcda18b11f8fb26b75fc03cf32f6d33",
+            "image": "modelscope-registry.cn-hangzhou.cr.aliyuncs.com/modelscope-repo/modelscope:ubuntu22.04-cuda13.0.3-py312-torch2.11.0-vllm0.25.1-modelscope1.39.0-swift4.4.3",
+            "imageID": "modelscope-registry.cn-hangzhou.cr.aliyuncs.com/modelscope-repo/modelscope@sha256:822d99beed4984a421c8d1da397993c6a8a5f88cdad7dde940bd52df0067d738",
+            "lastState": {},
+            "name": "vllm",
+            "ready": true,
+            "restartCount": 0,
+            "started": true,
+            "state": {
+              "running": {
+                "startedAt": "2026-10-20T14:34:29Z"
+              }
+            },
+            "volumeMounts": [
+              {
+                "mountPath": "/etc/localtime",
+                "name": "host-localtime",
+                "readOnly": true,
+                "recursiveReadOnly": "Disabled"
+              },
+              {
+                "mountPath": "/models",
+                "name": "model-store",
+                "readOnly": true,
+                "recursiveReadOnly": "Disabled"
+              },
+              {
+                "mountPath": "/dev/shm",
+                "name": "dshm"
+              }
+            ]
+          }
+        ],
+        "hostIP": "10.140.1.60",
+        "hostIPs": [
+          {
+            "ip": "10.140.1.60"
+          }
+        ],
+        "phase": "Running",
+        "podIP": "10.233.108.241",
+        "podIPs": [
+          {
+            "ip": "10.233.108.241"
+          }
+        ],
+        "qosClass": "Burstable",
+        "startTime": "2026-10-20T14:34:29Z"
+      }
+    }
+  ]
+}

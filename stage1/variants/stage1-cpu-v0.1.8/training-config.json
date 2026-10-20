@@ -99,10 +99,11 @@
     "Confirm GPU/UAT availability and authorized maintenance window"
   ],
   "data_version": "stage1-cpu-v0.1.8",
-  "status": "NAME_REVISION_NOT_TRAINED",
+  "status": "CPU_CHECKED_AUTHORIZATION_IN_RUN_RECORD",
   "recipe_change": "Retain default+ignore_empty_think per official Option 1; no masking change",
-  "runtime_validation": "v0.1.8 text and exposure checks only; no new tokenizer encoding run",
+  "runtime_validation": "Passed exact ms-swift CPU CLI, guarded data loading, bounded/unbounded encoding and changed-answer mask checks",
   "epoch_exposure_note": "Each record used once per Full epoch; 3-step Smoke is a separate run on the same file, not appended data",
   "config_revision": "official-route-r1",
-  "evaluation_config": "stage1/variants/stage1-cpu-v0.1.8/evaluation-config.json"
+  "evaluation_config": "stage1/variants/stage1-cpu-v0.1.8/evaluation-config.json",
+  "cpu_validation_report": "stage1/variants/stage1-cpu-v0.1.8/cpu-check/encoding-report.json"
 }

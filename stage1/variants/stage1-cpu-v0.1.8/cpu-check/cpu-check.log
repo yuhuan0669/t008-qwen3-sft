@@ -1,0 +1,20 @@
+Failed to load CPU gemm_4bit_forward from kernels-community: No module named 'kernels'. Please make sure you already `pip install kernels` and the kernels >= 0.11.1
+[INFO:swift] Successfully registered `/usr/local/lib/python3.12/site-packages/swift/dataset/data/dataset_info.json`.
+[INFO:swift] Successfully imported external_plugins: ['/data/t008-v018-20261020-145507/stage1/training/local_data_guard.py'].
+[INFO:swift] rank: -1, local_rank: -1, world_size: 1, local_world_size: 1
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+[INFO:swift] Setting args.lazy_tokenize: False
+[transformers] warmup_ratio is deprecated and will be removed in v5.2. Use `warmup_steps` instead.
+[INFO:swift] Setting torch_dtype: torch.bfloat16
+[INFO:swift] default_system: None
+[INFO:swift] max_length: 2048
+[INFO:swift] response_prefix: None
+[INFO:swift] agent_template: hermes
+[INFO:swift] default_system: None
+[INFO:swift] max_length: 2048
+[INFO:swift] response_prefix: None
+[INFO:swift] agent_template: hermes
+Generating train split: 0 examples [00:00, ? examples/s]Generating train split: 1275 examples [00:00, 99306.19 examples/s]
+Map (num_proc=1):   0%|          | 0/1275 [00:00<?, ? examples/s]Map (num_proc=1): 100%|██████████| 1275/1275 [00:00<00:00, 12445.69 examples/s]Map (num_proc=1): 100%|██████████| 1275/1275 [00:00<00:00, 6296.84 examples/s] 
+Map (num_proc=1):   0%|          | 0/1275 [00:00<?, ? examples/s]Map (num_proc=1):  78%|███████▊  | 1000/1275 [00:03<00:00, 308.47 examples/s]Map (num_proc=1): 100%|██████████| 1275/1275 [00:03<00:00, 349.12 examples/s]Map (num_proc=1): 100%|██████████| 1275/1275 [00:03<00:00, 329.45 examples/s]
+{"verified": true, "rows": 1275, "max_tokens": 2048, "silent_dropped_rows": 0, "training_started": false}

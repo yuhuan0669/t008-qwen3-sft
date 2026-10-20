@@ -17,13 +17,13 @@ def install():
  original=SwiftSft._encode_dataset
  if getattr(original,'_t008_local_guard',False):return
  @wraps(original)
- def guarded(self,train,val):
+ def guarded(self,train,val,*args,**kwargs):
   if len(self.args.dataset)!=1:raise RuntimeError('Exactly one frozen local dataset required')
   path=Path(self.args.dataset[0]);manifest=json.loads(path.with_name('manifest.json').read_text())
   if hashlib.sha256(path.read_bytes()).hexdigest()!=manifest['files_sha256']['train.jsonl']:raise RuntimeError('Frozen train hash differs')
   expected=[json.loads(x) for x in path.read_text().splitlines()]
   before=list(train);verify_members(expected,before,before)
-  result,validation=original(self,train,val)
+  result,validation=original(self,train,val,*args,**kwargs)
   if result is None or 'messages' not in result.column_names:raise RuntimeError('No inspectable post-encode membership')
   verify_members(expected,before,list(result))
   return result,validation

@@ -1,0 +1,16 @@
+
+
+T-008｜完整方案 review-v0.2 交付，待负责人审阅
+
+本次依据负责人最新指令更新完整方案：研发／训练主体统一为能碳章鱼公司，不强制普通身份问答主动提及Qwen；明确询问底层开源模型／原始权重时保留Qwen/Qwen3-8B事实。整合Gemini与Claude评审中经核验的意见，第16节逐项记录采纳、修正和未采纳原因。
+
+原02审阅副本：https://docs.google.com/document/d/1urfmF02k6T1uKHt8MPvZB2ob8g9qstXQdVTSLg2shnM/edit?usp=drivesdk
+源文件：docs/plans/SFT_MINIMAL_INTEGRATION_v0.2.md
+源文件SHA-256：33a25a273c8f821b6ce8a8edaa5e82db22d1cbe0a375751dd425d9e93c9fdd26
+源文件字节数：36330
+GitHub私有仓库：https://github.com/yuhuan0669/t008-qwen3-sft
+计划交付标签：plan-review-v0.2；远端提交与标签推送结果以本轮最终交付回执为准，本条不提前声明已推送。
+
+当前状态：DRAFT_FOR_USER_REVIEW。身份口径已确认；数据处理、2048／4096选择、vLLM适配、正式评测扩容、判据、最多3次Full及GPU小时／窗口仍为待审阅实施安排。原v0.1、原R1、原始数据与旧候选保留。
+
+本次未改训练代码或语料，未生成训练衍生集，未创建ClearML实验，未运行推理评测或训练，未修改集群、UAT、原00或03评审。仅追加本执行回报，不代表PM批准或节点A验收。

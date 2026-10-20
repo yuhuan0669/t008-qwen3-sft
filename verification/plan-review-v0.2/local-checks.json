@@ -1,0 +1,35 @@
+{
+  "checked_at_utc": "2026-10-20T05:26:23.274Z",
+  "status": "PASS_DOCUMENT_SCOPE_ONLY",
+  "plan_hash_size_registry_match": true,
+  "section_count": 16,
+  "evaluation_case_counts": {
+    "full_protocol": 4800,
+    "base_and_old": 3200,
+    "new_only": 1600,
+    "development_and_preflight_excluded": true
+  },
+  "drive_text_readback_match": true,
+  "original_execution_report_text_preserved": true,
+  "previous_plan_files_unchanged": true,
+  "protected_archive_code_registry_diff_empty": true,
+  "git_diff_check": "PASS",
+  "archive_verification": {
+    "status": "PASS",
+    "counts": {
+      "archived_payloads_checked": 961,
+      "original_files_checked": 1044,
+      "private_reference_only": 7,
+      "generated_reference_only": 49,
+      "object_ranges_checked": 16,
+      "code_files_checked": 18
+    },
+    "failures": [],
+    "scope": "Archive bytes and Git ancestry only; no training, quality or service acceptance."
+  },
+  "training_executed": false,
+  "data_processing_executed": false,
+  "evaluation_executed": false,
+  "tool_integration_tested": false,
+  "independent_review_performed": false
+}

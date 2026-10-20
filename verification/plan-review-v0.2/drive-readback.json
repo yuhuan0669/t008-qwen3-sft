@@ -1,0 +1,42 @@
+{
+  "schema": "t008-plan-review-delivery-v1",
+  "recorded_at_utc": "2026-10-20T05:25:39.943Z",
+  "status": "DOCUMENT_DELIVERED_PENDING_REVIEW",
+  "plan_version": "review-v0.2",
+  "plan_path": "docs/plans/SFT_MINIMAL_INTEGRATION_v0.2.md",
+  "source_bytes": 36330,
+  "source_sha256": "33a25a273c8f821b6ce8a8edaa5e82db22d1cbe0a375751dd425d9e93c9fdd26",
+  "google_doc": {
+    "id": "1urfmF02k6T1uKHt8MPvZB2ob8g9qstXQdVTSLg2shnM",
+    "url": "https://docs.google.com/document/d/1urfmF02k6T1uKHt8MPvZB2ob8g9qstXQdVTSLg2shnM/edit?usp=drivesdk",
+    "revision": "AHj4eMTrrce04HagU5GY887GfdUIUoqQyzC6ojd8OG6Ey4y4Ie7lHB0tylTgpdRgwhqfGH5g2xoD8NDdxC3G4MXoL64c9FdLRMYzM1xzJRI",
+    "parent_id": "1PUMa2W9OpCFOImL0ZGSLbTbY7TLOEZ5c",
+    "text_exact_after_markdown_heading_and_list_conversion": true,
+    "structural_final_newline_ignored": true,
+    "heading_paragraphs": 28,
+    "list_paragraphs": 17,
+    "pdf_layout_rendered": false
+  },
+  "execution_report": {
+    "id": "164PEGIbkiufK2Ao2vAKxYyOLbTacwHZSt_0qwHCZibM",
+    "url": "https://docs.google.com/document/d/164PEGIbkiufK2Ao2vAKxYyOLbTacwHZSt_0qwHCZibM",
+    "revision_before": "AHj4eMT6pHCzgjkuL-tJ4IP72aL3f03140GdoZahmkiU5yyu0hvXlFwFioIeG0rWoL4qaAB0G41K73bM1KSoOdTYWe4nbXvVw1kuga9NwvQ",
+    "revision_after": "AHj4eMTeC9uRNc7Dca09AKGMkpz8SunTlbdEE9UQwcME8_ixEGQmXNR6RkHvit9elDdhBuThYIPTYIOnZ5cZALouqKdXJUMvlj09wpJOD2c",
+    "appended_text_exact": true,
+    "all_prior_text_preserved": true
+  },
+  "previous_plan": {
+    "version": "review-v0.1",
+    "doc_id": "1SNGzdNQ7NUGooRSLcKm-DXECQTXvLIyBg6Wc_kItVX8",
+    "not_modified": true
+  },
+  "training_started": false,
+  "evaluation_started": false,
+  "data_processing_started": false,
+  "training_code_modified": false,
+  "service_changed": false,
+  "clearml_tasks_created": false,
+  "pm_record_changed": false,
+  "old_r1_changed": false,
+  "task_00_changed": false
+}

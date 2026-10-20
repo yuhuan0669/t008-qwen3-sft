@@ -1,6 +1,6 @@
 {
   "schema": "t008-plan-registry-v1",
-  "current": "review-v0.1",
+  "current": "review-v0.2",
   "plans": [
     {
       "version": "review-v0.1",
@@ -19,6 +19,27 @@
       "source_code_changed": false,
       "training_data_changed": false,
       "notes": "A review proposal. Data parent, recipe, evaluation implementation, sample counts, scoring and resources remain pending discussion."
+    },
+    {
+      "version": "review-v0.2",
+      "status": "DRAFT_FOR_USER_REVIEW",
+      "path": "docs/plans/SFT_MINIMAL_INTEGRATION_v0.2.md",
+      "bytes": 36330,
+      "sha256": "33a25a273c8f821b6ce8a8edaa5e82db22d1cbe0a375751dd425d9e93c9fdd26",
+      "git_tag": "plan-review-v0.2",
+      "supersedes_for_current_review": "review-v0.1",
+      "previous_version_preserved": true,
+      "google_doc_id": "1urfmF02k6T1uKHt8MPvZB2ob8g9qstXQdVTSLg2shnM",
+      "google_doc_url": "https://docs.google.com/document/d/1urfmF02k6T1uKHt8MPvZB2ob8g9qstXQdVTSLg2shnM/edit?usp=drivesdk",
+      "drive_parent_id": "1PUMa2W9OpCFOImL0ZGSLbTbY7TLOEZ5c",
+      "readback": "verification/plan-review-v0.2/drive-readback.json",
+      "task_version": "T-008 v1.5",
+      "historical_process_reference": "v1.2 process-restore-R1",
+      "execution_approved": false,
+      "source_code_changed": false,
+      "training_data_changed": false,
+      "identity_policy_confirmed": true,
+      "notes": "User-confirmed product developer/trainer is Octacarbon; explicit base provenance stays Qwen/Qwen3-8B. Other execution parameters are review proposals. Incorporates assessed Gemini and Claude feedback, not independent acceptance."
     }
   ]
 }

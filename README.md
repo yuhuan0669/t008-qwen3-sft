@@ -4,7 +4,7 @@
 
 从 [HANDOFF.md](HANDOFF.md) 开始，再读 [当前状态](control/CURRENT_STATE.json) 与 [版本登记表](registry/versions.json)。
 
-当前待审阅方案：[基础SFT完整方案 review-v0.1](docs/plans/SFT_MINIMAL_INTEGRATION_v0.1.md)。整合 Data-Juicer、EvalScope、ClearML 的最小接入范围及原始基座新LoRA路线。当前仅交付讨论稿，未清洗数据、评测或训练；方案版本和云端副本见 [方案登记](registry/plans.json)。
+当前待审阅方案：[基础SFT完整方案 review-v0.2](docs/plans/SFT_MINIMAL_INTEGRATION_v0.2.md)。采用已确认的公司研发／训练身份口径，整合两份外部评审的核验与采纳记录（第16节），保留 Data-Juicer、EvalScope、ClearML 最小接入及原始基座新LoRA路线。vLLM优先、身份重复／公共扩容和有界开发迭代均为待审阅实施建议。当前仅更新文档，未改训练数据／代码、评测或训练；旧v0.1保留，版本与云端副本见 [方案登记](registry/plans.json)。
 
 私有远端：[yuhuan0669/t008-qwen3-sft](https://github.com/yuhuan0669/t008-qwen3-sft)。代码和材料通过Git维护；Git bundle、对象库tar及交付回执存放于同仓库的归档Release。是否完成上传与回读，以该次Release的交付回执为准。
 

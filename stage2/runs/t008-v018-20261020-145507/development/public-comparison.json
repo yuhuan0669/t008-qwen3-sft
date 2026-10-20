@@ -1,0 +1,153 @@
+{
+  "scope": "40 public development questions in two modes; not formal acceptance",
+  "metrics": [
+    {
+      "condition": "A",
+      "mode": "nonthinking",
+      "suite": "gsm8k",
+      "correct": 19,
+      "total": 20,
+      "scoring_errors": 0
+    },
+    {
+      "condition": "A",
+      "mode": "nonthinking",
+      "suite": "ifeval",
+      "correct": 18,
+      "total": 20,
+      "scoring_errors": 0
+    },
+    {
+      "condition": "A",
+      "mode": "thinking",
+      "suite": "gsm8k",
+      "correct": 20,
+      "total": 20,
+      "scoring_errors": 0
+    },
+    {
+      "condition": "A",
+      "mode": "thinking",
+      "suite": "ifeval",
+      "correct": 15,
+      "total": 20,
+      "scoring_errors": 0
+    },
+    {
+      "condition": "C_new",
+      "mode": "nonthinking",
+      "suite": "gsm8k",
+      "correct": 19,
+      "total": 20,
+      "scoring_errors": 0
+    },
+    {
+      "condition": "C_new",
+      "mode": "nonthinking",
+      "suite": "ifeval",
+      "correct": 16,
+      "total": 20,
+      "scoring_errors": 0
+    },
+    {
+      "condition": "C_new",
+      "mode": "thinking",
+      "suite": "gsm8k",
+      "correct": 19,
+      "total": 20,
+      "scoring_errors": 0
+    },
+    {
+      "condition": "C_new",
+      "mode": "thinking",
+      "suite": "ifeval",
+      "correct": 17,
+      "total": 20,
+      "scoring_errors": 0
+    }
+  ],
+  "paired_comparison": [
+    {
+      "mode": "nonthinking",
+      "suite": "gsm8k",
+      "original_correct": 19,
+      "v018_correct": 19,
+      "wins": 0,
+      "losses": 0,
+      "ties": 20
+    },
+    {
+      "mode": "nonthinking",
+      "suite": "ifeval",
+      "original_correct": 18,
+      "v018_correct": 16,
+      "wins": 0,
+      "losses": 2,
+      "ties": 18
+    },
+    {
+      "mode": "thinking",
+      "suite": "gsm8k",
+      "original_correct": 20,
+      "v018_correct": 19,
+      "wins": 0,
+      "losses": 1,
+      "ties": 19
+    },
+    {
+      "mode": "thinking",
+      "suite": "ifeval",
+      "original_correct": 15,
+      "v018_correct": 17,
+      "wins": 2,
+      "losses": 0,
+      "ties": 18
+    }
+  ],
+  "format": [
+    {
+      "condition": "A",
+      "requests": 80,
+      "empty_body": 2,
+      "protocol_errors": {
+        "truncated": 2
+      },
+      "problem_cases": [
+        {
+          "case_id": "ifeval-development-010",
+          "group": "A__thinking__seed42__ifeval",
+          "protocol_error": "truncated",
+          "empty_body": true
+        },
+        {
+          "case_id": "ifeval-development-019",
+          "group": "A__thinking__seed42__ifeval",
+          "protocol_error": "truncated",
+          "empty_body": true
+        }
+      ]
+    },
+    {
+      "condition": "C_new",
+      "requests": 80,
+      "empty_body": 1,
+      "protocol_errors": {
+        "truncated": 2
+      },
+      "problem_cases": [
+        {
+          "case_id": "ifeval-development-010",
+          "group": "C_new__thinking__seed42__ifeval",
+          "protocol_error": "truncated",
+          "empty_body": true
+        },
+        {
+          "case_id": "ifeval-development-001",
+          "group": "C_new__nonthinking__seed42__ifeval",
+          "protocol_error": "truncated",
+          "empty_body": false
+        }
+      ]
+    }
+  ]
+}

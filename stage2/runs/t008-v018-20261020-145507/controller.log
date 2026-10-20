@@ -1,3 +1,397 @@
 Smoke passed; start one Full from original base
 job.batch/t008-v018-20261020-145507-full created
 2026-10-20T14:59:03.104910+00:00 
+2026-10-20T14:59:33.385862+00:00      | 1/80 [00:10<14:00, 10.65s/it]
+                                                     
+{'loss': '0.6978', 'grad_norm': '0.3253', 'learning_rate': '2.5e-05', 'token_acc': '0.7974', 'epoch': '0.01255', 'global_step/max_steps': '1/80', 'elapsed_time': '11s', 'remaining_time': '14m 1s', 'memory(GiB)': '23.04', 'train_speed(s/it)': '10.65'}
+
+Train:   1%|▏         | 1/80 [00:10<14:00, 10.65s/it]
+Train:   1%|▏         | 1/80 [00:10<14:00, 10.65s/it]
+2026-10-20T15:00:03.684453+00:00 , 'grad_norm': '0.3253', 'learning_rate': '2.5e-05', 'token_acc': '0.7974', 'epoch': '0.01255', 'global_step/max_steps': '1/80', 'elapsed_time': '11s', 'remaining_time': '14m 1s', 'memory(GiB)': '23.04', 'train_speed(s/it)': '10.65'}
+
+Train:   1%|▏         | 1/80 [00:10<14:00, 10.65s/it]
+Train:   1%|▏         | 1/80 [00:10<14:00, 10.65s/it]
+Train:   2%|▎         | 2/80 [00:22<14:54, 11.47s/it]
+Train:   4%|▍         | 3/80 [00:34<14:41, 11.45s/it]
+2026-10-20T15:00:33.994669+00:00                                   
+{'loss': '0.7033', 'grad_norm': '0.3472', 'learning_rate': '9.996e-05', 'token_acc': '0.7987', 'epoch': '0.06275', 'global_step/max_steps': '5/80', 'elapsed_time': '56s', 'remaining_time': '14m 1s', 'memory(GiB)': '23.04', 'train_speed(s/it)': '11.22'}
+
+Train:   6%|▋         | 5/80 [00:56<14:17, 11.43s/it]
+Train:   6%|▋         | 5/80 [00:56<14:17, 11.43s/it]
+Train:   8%|▊         | 6/80 [01:04<13:00, 10.55s/it]
+2026-10-20T15:01:04.274329+00:00 /max_steps': '5/80', 'elapsed_time': '56s', 'remaining_time': '14m 1s', 'memory(GiB)': '23.04', 'train_speed(s/it)': '11.22'}
+
+Train:   6%|▋         | 5/80 [00:56<14:17, 11.43s/it]
+Train:   6%|▋         | 5/80 [00:56<14:17, 11.43s/it]
+Train:   8%|▊         | 6/80 [01:04<13:00, 10.55s/it]
+Train:   9%|▉         | 7/80 [01:13<12:02,  9.90s/it]
+Train:  10%|█         | 8/80 [01:23<11:55,  9.93s/it]
+Train:  11%|█▏        | 9/80 [01:36<12:45, 10.78s/it]
+2026-10-20T15:01:34.553736+00:00 orm': '0.1481', 'learning_rate': '9.847e-05', 'token_acc': '0.8019', 'epoch': '0.1255', 'global_step/max_steps': '10/80', 'elapsed_time': '1m 46s', 'remaining_time': '12m 22s', 'memory(GiB)': '23.04', 'train_speed(s/it)': '10.6'}
+
+Train:  12%|█▎        | 10/80 [01:46<12:15, 10.51s/it]
+Train:  12%|█▎        | 10/80 [01:46<12:15, 10.51s/it]
+Train:  14%|█▍        | 11/80 [01:53<10:54,  9.49s/it]
+Train:  15%|█▌        | 12/80 [02:03<10:59,  9.69s/it]
+2026-10-20T15:02:04.970344+00:00 80 [02:31<09:56,  9.18s/it]
+                                                      
+{'loss': '0.6813', 'grad_norm': '0.2269', 'learning_rate': '9.492e-05', 'token_acc': '0.7914', 'epoch': '0.1882', 'global_step/max_steps': '15/80', 'elapsed_time': '2m 31s', 'remaining_time': '10m 56s', 'memory(GiB)': '23.04', 'train_speed(s/it)': '10.09'}
+
+Train:  19%|█▉        | 15/80 [02:31<09:56,  9.18s/it]
+Train:  19%|█▉        | 15/80 [02:31<09:56,  9.18s/it]
+2026-10-20T15:02:35.356122+00:00 : '15/80', 'elapsed_time': '2m 31s', 'remaining_time': '10m 56s', 'memory(GiB)': '23.04', 'train_speed(s/it)': '10.09'}
+
+Train:  19%|█▉        | 15/80 [02:31<09:56,  9.18s/it]
+Train:  19%|█▉        | 15/80 [02:31<09:56,  9.18s/it]
+Train:  20%|██        | 16/80 [02:42<10:23,  9.74s/it]
+Train:  21%|██▏       | 17/80 [02:53<10:33, 10.06s/it]
+Train:  22%|██▎       | 18/80 [03:02<10:15,  9.93s/it]
+Train:  24%|██▍       | 19/80 [03:10<09:20,  9.19s/it]
+2026-10-20T15:03:05.637184+00:00 norm': '0.1849', 'learning_rate': '8.946e-05', 'token_acc': '0.7933', 'epoch': '0.251', 'global_step/max_steps': '20/80', 'elapsed_time': '3m 21s', 'remaining_time': '10m 4s', 'memory(GiB)': '23.04', 'train_speed(s/it)': '10.06'}
+
+Train:  25%|██▌       | 20/80 [03:21<09:41,  9.69s/it]
+Train:  25%|██▌       | 20/80 [03:21<09:41,  9.69s/it]
+Train:  26%|██▋       | 21/80 [03:31<09:42,  9.88s/it]
+Train:  28%|██▊       | 22/80 [03:41<09:38,  9.98s/it]
+2026-10-20T15:03:35.954324+00:00 ': '20/80', 'elapsed_time': '3m 21s', 'remaining_time': '10m 4s', 'memory(GiB)': '23.04', 'train_speed(s/it)': '10.06'}
+
+Train:  25%|██▌       | 20/80 [03:21<09:41,  9.69s/it]
+Train:  25%|██▌       | 20/80 [03:21<09:41,  9.69s/it]
+Train:  26%|██▋       | 21/80 [03:31<09:42,  9.88s/it]
+Train:  28%|██▊       | 22/80 [03:41<09:38,  9.98s/it]
+Train:  29%|██▉       | 23/80 [03:54<10:16, 10.82s/it]
+Train:  30%|███       | 24/80 [04:03<09:30, 10.18s/it]
+2026-10-20T15:04:06.232781+00:00 _norm': '0.151', 'learning_rate': '8.231e-05', 'token_acc': '0.801', 'epoch': '0.3137', 'global_step/max_steps': '25/80', 'elapsed_time': '4m 14s', 'remaining_time': '9m 19s', 'memory(GiB)': '23.04', 'train_speed(s/it)': '10.17'}
+
+Train:  31%|███▏      | 25/80 [04:14<09:33, 10.43s/it]
+Train:  31%|███▏      | 25/80 [04:14<09:33, 10.43s/it]
+Train:  32%|███▎      | 26/80 [04:23<09:10, 10.20s/it]
+Train:  34%|███▍      | 27/80 [04:35<09:20, 10.57s/it]
+2026-10-20T15:04:36.528846+00:00 30/80 [05:05<08:33, 10.26s/it]
+                                                      
+{'loss': '0.6256', 'grad_norm': '0.1795', 'learning_rate': '7.38e-05', 'token_acc': '0.8001', 'epoch': '0.3765', 'global_step/max_steps': '30/80', 'elapsed_time': '5m 6s', 'remaining_time': '8m 30s', 'memory(GiB)': '23.04', 'train_speed(s/it)': '10.19'}
+
+Train:  38%|███▊      | 30/80 [05:05<08:33, 10.26s/it]
+Train:  38%|███▊      | 30/80 [05:05<08:33, 10.26s/it]
+2026-10-20T15:05:06.820779+00:00 cc': '0.8001', 'epoch': '0.3765', 'global_step/max_steps': '30/80', 'elapsed_time': '5m 6s', 'remaining_time': '8m 30s', 'memory(GiB)': '23.04', 'train_speed(s/it)': '10.19'}
+
+Train:  38%|███▊      | 30/80 [05:05<08:33, 10.26s/it]
+Train:  38%|███▊      | 30/80 [05:05<08:33, 10.26s/it]
+Train:  39%|███▉      | 31/80 [05:17<08:51, 10.85s/it]
+Train:  40%|████      | 32/80 [05:29<08:50, 11.05s/it]
+Train:  41%|████▏     | 33/80 [05:41<08:51, 11.31s/it]
+2026-10-20T15:05:37.087847+00:00                              
+{'loss': '0.6416', 'grad_norm': '0.1569', 'learning_rate': '6.427e-05', 'token_acc': '0.7948', 'epoch': '0.4392', 'global_step/max_steps': '35/80', 'elapsed_time': '6m 2s', 'remaining_time': '7m 46s', 'memory(GiB)': '23.04', 'train_speed(s/it)': '10.35'}
+
+Train:  44%|████▍     | 35/80 [06:02<08:07, 10.83s/it]
+Train:  44%|████▍     | 35/80 [06:02<08:07, 10.83s/it]
+Train:  45%|████▌     | 36/80 [06:10<07:26, 10.15s/it]
+2026-10-20T15:06:07.661032+00:00 s': '35/80', 'elapsed_time': '6m 2s', 'remaining_time': '7m 46s', 'memory(GiB)': '23.04', 'train_speed(s/it)': '10.35'}
+
+Train:  44%|████▍     | 35/80 [06:02<08:07, 10.83s/it]
+Train:  44%|████▍     | 35/80 [06:02<08:07, 10.83s/it]
+Train:  45%|████▌     | 36/80 [06:10<07:26, 10.15s/it]
+Train:  46%|████▋     | 37/80 [06:20<07:16, 10.16s/it]
+Train:  48%|████▊     | 38/80 [06:31<07:07, 10.17s/it]
+Train:  49%|████▉     | 39/80 [06:40<06:43,  9.85s/it]
+2026-10-20T15:06:38.010331+00:00 norm': '0.1517', 'learning_rate': '5.413e-05', 'token_acc': '0.8029', 'epoch': '0.502', 'global_step/max_steps': '40/80', 'elapsed_time': '6m 51s', 'remaining_time': '6m 51s', 'memory(GiB)': '23.04', 'train_speed(s/it)': '10.27'}
+
+Train:  50%|█████     | 40/80 [06:50<06:44, 10.10s/it]
+Train:  50%|█████     | 40/80 [06:50<06:44, 10.10s/it]
+Train:  51%|█████▏    | 41/80 [07:01<06:43, 10.36s/it]
+Train:  52%|█████▎    | 42/80 [07:12<06:33, 10.35s/it]
+2026-10-20T15:07:08.305503+00:00 /80 [07:40<05:43,  9.83s/it]
+                                                      
+{'loss': '0.6319', 'grad_norm': '0.1681', 'learning_rate': '4.382e-05', 'token_acc': '0.8014', 'epoch': '0.5647', 'global_step/max_steps': '45/80', 'elapsed_time': '7m 41s', 'remaining_time': '5m 58s', 'memory(GiB)': '23.04', 'train_speed(s/it)': '10.24'}
+
+Train:  56%|█████▋    | 45/80 [07:40<05:43,  9.83s/it]
+Train:  56%|█████▋    | 45/80 [07:40<05:43,  9.83s/it]
+2026-10-20T15:07:38.584003+00:00 c': '0.8014', 'epoch': '0.5647', 'global_step/max_steps': '45/80', 'elapsed_time': '7m 41s', 'remaining_time': '5m 58s', 'memory(GiB)': '23.04', 'train_speed(s/it)': '10.24'}
+
+Train:  56%|█████▋    | 45/80 [07:40<05:43,  9.83s/it]
+Train:  56%|█████▋    | 45/80 [07:40<05:43,  9.83s/it]
+Train:  57%|█████▊    | 46/80 [07:51<05:40, 10.02s/it]
+Train:  59%|█████▉    | 47/80 [08:01<05:33, 10.10s/it]
+Train:  60%|██████    | 48/80 [08:10<05:11,  9.75s/it]
+2026-10-20T15:08:08.878975+00:00 en_acc': '0.808', 'epoch': '0.6275', 'global_step/max_steps': '50/80', 'elapsed_time': '8m 33s', 'remaining_time': '5m 8s', 'memory(GiB)': '23.04', 'train_speed(s/it)': '10.25'}
+
+Train:  62%|██████▎   | 50/80 [08:32<05:10, 10.36s/it]
+Train:  62%|██████▎   | 50/80 [08:32<05:10, 10.36s/it][INFO:swift] Saving model checkpoint to /runwork/outputs/full/checkpoints/v0-20261020-075913/checkpoint-50
+
+Train:  64%|██████▍   | 51/80 [08:45<05:21, 11.07s/it]
+2026-10-20T15:08:39.231276+00:00 )': '10.25'}
+
+Train:  62%|██████▎   | 50/80 [08:32<05:10, 10.36s/it]
+Train:  62%|██████▎   | 50/80 [08:32<05:10, 10.36s/it][INFO:swift] Saving model checkpoint to /runwork/outputs/full/checkpoints/v0-20261020-075913/checkpoint-50
+
+Train:  64%|██████▍   | 51/80 [08:45<05:21, 11.07s/it]
+Train:  65%|██████▌   | 52/80 [08:53<04:50, 10.37s/it]
+Train:  66%|██████▋   | 53/80 [09:05<04:46, 10.61s/it]
+Train:  68%|██████▊   | 54/80 [09:15<04:30, 10.40s/it]
+2026-10-20T15:09:09.568172+00:00 orm': '0.1739', 'learning_rate': '2.441e-05', 'token_acc': '0.8071', 'epoch': '0.6902', 'global_step/max_steps': '55/80', 'elapsed_time': '9m 24s', 'remaining_time': '4m 16s', 'memory(GiB)': '23.04', 'train_speed(s/it)': '10.25'}
+
+Train:  69%|██████▉   | 55/80 [09:23<04:06,  9.88s/it]
+Train:  69%|██████▉   | 55/80 [09:23<04:06,  9.88s/it]
+Train:  70%|███████   | 56/80 [09:31<03:44,  9.35s/it]
+Train:  71%|███████▏  | 57/80 [09:42<03:42,  9.67s/it]
+2026-10-20T15:09:39.885998+00:00 0/80 [10:11<03:16,  9.80s/it]
+                                                      
+{'loss': '0.6584', 'grad_norm': '0.1781', 'learning_rate': '1.614e-05', 'token_acc': '0.792', 'epoch': '0.7529', 'global_step/max_steps': '60/80', 'elapsed_time': '10m 12s', 'remaining_time': '3m 24s', 'memory(GiB)': '23.04', 'train_speed(s/it)': '10.2'}
+
+Train:  75%|███████▌  | 60/80 [10:11<03:16,  9.80s/it]
+Train:  75%|███████▌  | 60/80 [10:11<03:16,  9.80s/it]
+2026-10-20T15:10:10.178037+00:00 cc': '0.792', 'epoch': '0.7529', 'global_step/max_steps': '60/80', 'elapsed_time': '10m 12s', 'remaining_time': '3m 24s', 'memory(GiB)': '23.04', 'train_speed(s/it)': '10.2'}
+
+Train:  75%|███████▌  | 60/80 [10:11<03:16,  9.80s/it]
+Train:  75%|███████▌  | 60/80 [10:11<03:16,  9.80s/it]
+Train:  76%|███████▋  | 61/80 [10:21<03:04,  9.70s/it]
+Train:  78%|███████▊  | 62/80 [10:29<02:45,  9.21s/it]
+Train:  79%|███████▉  | 63/80 [10:38<02:36,  9.19s/it]
+2026-10-20T15:10:40.472606+00:00                               
+{'loss': '0.6194', 'grad_norm': '0.1694', 'learning_rate': '9.31e-06', 'token_acc': '0.802', 'epoch': '0.8157', 'global_step/max_steps': '65/80', 'elapsed_time': '11m 1s', 'remaining_time': '2m 33s', 'memory(GiB)': '23.04', 'train_speed(s/it)': '10.17'}
+
+Train:  81%|████████▏ | 65/80 [11:00<02:33, 10.24s/it]
+Train:  81%|████████▏ | 65/80 [11:00<02:33, 10.24s/it]
+Train:  82%|████████▎ | 66/80 [11:13<02:32, 10.88s/it]
+2026-10-20T15:11:10.780624+00:00 ': '65/80', 'elapsed_time': '11m 1s', 'remaining_time': '2m 33s', 'memory(GiB)': '23.04', 'train_speed(s/it)': '10.17'}
+
+Train:  81%|████████▏ | 65/80 [11:00<02:33, 10.24s/it]
+Train:  81%|████████▏ | 65/80 [11:00<02:33, 10.24s/it]
+Train:  82%|████████▎ | 66/80 [11:13<02:32, 10.88s/it]
+Train:  84%|████████▍ | 67/80 [11:24<02:21, 10.86s/it]
+Train:  85%|████████▌ | 68/80 [11:33<02:05, 10.46s/it]
+Train:  86%|████████▋ | 69/80 [11:41<01:46,  9.71s/it]
+2026-10-20T15:11:41.058417+00:00 orm': '0.2044', 'learning_rate': '4.21e-06', 'token_acc': '0.8047', 'epoch': '0.8784', 'global_step/max_steps': '70/80', 'elapsed_time': '11m 51s', 'remaining_time': '1m 42s', 'memory(GiB)': '23.04', 'train_speed(s/it)': '10.16'}
+
+Train:  88%|████████▊ | 70/80 [11:51<01:36,  9.63s/it]
+Train:  88%|████████▊ | 70/80 [11:51<01:36,  9.63s/it]
+Train:  89%|████████▉ | 71/80 [11:58<01:21,  9.06s/it]
+Train:  90%|█████████ | 72/80 [12:10<01:17,  9.74s/it]
+2026-10-20T15:12:11.337909+00:00  75/80 [12:40<00:50, 10.02s/it]
+                                                      
+{'loss': '0.5973', 'grad_norm': '0.1465', 'learning_rate': '1.06e-06', 'token_acc': '0.8074', 'epoch': '0.9412', 'global_step/max_steps': '75/80', 'elapsed_time': '12m 40s', 'remaining_time': '51s', 'memory(GiB)': '23.04', 'train_speed(s/it)': '10.13'}
+
+Train:  94%|█████████▍| 75/80 [12:40<00:50, 10.02s/it]
+Train:  94%|█████████▍| 75/80 [12:40<00:50, 10.02s/it]
+2026-10-20T15:12:41.617084+00:00 ps': '75/80', 'elapsed_time': '12m 40s', 'remaining_time': '51s', 'memory(GiB)': '23.04', 'train_speed(s/it)': '10.13'}
+
+Train:  94%|█████████▍| 75/80 [12:40<00:50, 10.02s/it]
+Train:  94%|█████████▍| 75/80 [12:40<00:50, 10.02s/it]
+Train:  95%|█████████▌| 76/80 [12:48<00:38,  9.66s/it]
+Train:  96%|█████████▋| 77/80 [12:57<00:27,  9.23s/it]
+Train:  98%|█████████▊| 78/80 [13:08<00:19,  9.75s/it]
+Train:  99%|█████████▉| 79/80 [13:18<00:09,  9.84s/it]
+2026-10-20T15:13:11.911611+00:00 %|██████████| 80/80 [13:29<00:00,  9.46s/it]
+Train: 100%|██████████| 80/80 [13:29<00:00,  9.46s/it]
+Train: 100%|██████████| 80/80 [13:29<00:00, 10.12s/it]
+[INFO:swift] last_model_checkpoint: /runwork/outputs/full/checkpoints/v0-20261020-075913/checkpoint-80
+[INFO:swift] best_model_checkpoint: None
+[INFO:swift] images_dir: /runwork/outputs/full/checkpoints/v0-20261020-075913/images
+[INFO:swift] End time of running main: 2026-10-20 08:12:53.425666
+
+2026-10-20T15:13:43.028522+00:00 Full passed 80/80; preparing identical-template evaluation
+service/t008-v018-20261020-145507-eval created
+pod/t008-v018-20261020-145507-eval created
+pod/t008-v018-20261020-145507-eval condition met
+2026-10-20T15:15:59.108452+00:00 Server render check passed; 24 public development cases on A/B/C/D, both modes
+{"id": "DEV-01", "condition": "D_new", "mode": "nonthinking", "errors": 0, "seconds": 4.144}
+{"id": "DEV-01", "condition": "A", "mode": "nonthinking", "errors": 0, "seconds": 5.875}
+{"id": "DEV-01", "condition": "C_new", "mode": "nonthinking", "errors": 0, "seconds": 6.05}
+{"id": "DEV-01", "condition": "B", "mode": "nonthinking", "errors": 0, "seconds": 6.136}
+{"id": "DEV-02", "condition": "B", "mode": "nonthinking", "errors": 0, "seconds": 0.413}
+{"id": "DEV-02", "condition": "A", "mode": "nonthinking", "errors": 0, "seconds": 1.091}
+{"id": "DEV-02", "condition": "C_new", "mode": "nonthinking", "errors": 0, "seconds": 0.274}
+{"id": "DEV-01", "condition": "D_new", "mode": "thinking", "errors": 0, "seconds": 9.193}
+{"id": "DEV-02", "condition": "D_new", "mode": "nonthinking", "errors": 0, "seconds": 0.481}
+{"id": "DEV-01", "condition": "B", "mode": "thinking", "errors": 0, "seconds": 11.406}
+{"id": "DEV-02", "condition": "A", "mode": "thinking", "errors": 0, "seconds": 7.655}
+{"id": "DEV-02", "condition": "D_new", "mode": "thinking", "errors": 0, "seconds": 5.24}
+{"id": "DEV-01", "condition": "A", "mode": "thinking", "errors": 0, "seconds": 13.265}
+{"id": "DEV-02", "condition": "B", "mode": "thinking", "errors": 0, "seconds": 7.79}
+{"id": "DEV-01", "condition": "C_new", "mode": "thinking", "errors": 0, "seconds": 14.338}
+{"id": "DEV-02", "condition": "C_new", "mode": "thinking", "errors": 0, "seconds": 7.892}
+{"id": "DEV-03", "condition": "A", "mode": "nonthinking", "errors": 0, "seconds": 5.347}
+{"id": "DEV-03", "condition": "D_new", "mode": "nonthinking", "errors": 0, "seconds": 3.671}
+{"id": "DEV-04", "condition": "A", "mode": "nonthinking", "errors": 0, "seconds": 1.219}
+{"id": "DEV-03", "condition": "B", "mode": "nonthinking", "errors": 0, "seconds": 8.666}
+{"id": "DEV-04", "condition": "A", "mode": "thinking", "errors": 0, "seconds": 4.993}
+{"id": "DEV-04", "condition": "B", "mode": "nonthinking", "errors": 0, "seconds": 0.683}
+{"id": "DEV-04", "condition": "C_new", "mode": "nonthinking", "errors": 0, "seconds": 0.497}
+{"id": "DEV-04", "condition": "B", "mode": "thinking", "errors": 0, "seconds": 4.536}
+{"id": "DEV-04", "condition": "D_new", "mode": "nonthinking", "errors": 0, "seconds": 0.679}
+{"id": "DEV-04", "condition": "C_new", "mode": "thinking", "errors": 0, "seconds": 4.132}
+{"id": "DEV-03", "condition": "C_new", "mode": "nonthinking", "errors": 0, "seconds": 12.628}
+{"id": "DEV-05", "condition": "A", "mode": "nonthinking", "errors": 0, "seconds": 0.94}
+{"id": "DEV-04", "condition": "D_new", "mode": "thinking", "errors": 0, "seconds": 5.35}
+{"id": "DEV-05", "condition": "B", "mode": "nonthinking", "errors": 0, "seconds": 3.762}
+{"id": "DEV-05", "condition": "C_new", "mode": "nonthinking", "errors": 0, "seconds": 2.421}
+{"id": "DEV-05", "condition": "A", "mode": "thinking", "errors": 0, "seconds": 9.045}
+{"id": "DEV-05", "condition": "B", "mode": "thinking", "errors": 0, "seconds": 7.193}
+{"id": "DEV-03", "condition": "A", "mode": "thinking", "errors": 0, "seconds": 25.243}
+{"id": "DEV-05", "condition": "D_new", "mode": "nonthinking", "errors": 0, "seconds": 1.362}
+{"id": "DEV-06", "condition": "A", "mode": "nonthinking", "errors": 0, "seconds": 4.761}
+{"id": "DEV-05", "condition": "C_new", "mode": "thinking", "errors": 0, "seconds": 13.94}
+{"id": "DEV-05", "condition": "D_new", "mode": "thinking", "errors": 0, "seconds": 8.688}
+{"id": "DEV-06", "condition": "A", "mode": "thinking", "errors": 0, "seconds": 8.277}
+{"id": "DEV-06", "condition": "B", "mode": "nonthinking", "errors": 0, "seconds": 2.549}
+{"id": "DEV-06", "condition": "C_new", "mode": "nonthinking", "errors": 0, "seconds": 0.717}
+{"id": "DEV-06", "condition": "D_new", "mode": "nonthinking", "errors": 0, "seconds": 1.218}
+{"id": "DEV-07", "condition": "A", "mode": "nonthinking", "errors": 0, "seconds": 0.351}
+{"id": "DEV-06", "condition": "B", "mode": "thinking", "errors": 0, "seconds": 9.495}
+{"id": "DEV-07", "condition": "B", "mode": "nonthinking", "errors": 0, "seconds": 0.512}
+{"id": "DEV-03", "condition": "C_new", "mode": "thinking", "errors": 0, "seconds": 33.886}
+{"id": "DEV-03", "condition": "B", "mode": "thinking", "errors": 0, "seconds": 35.458}
+{"id": "DEV-07", "condition": "C_new", "mode": "nonthinking", "errors": 0, "seconds": 0.517}
+{"id": "DEV-07", "condition": "D_new", "mode": "nonthinking", "errors": 0, "seconds": 0.508}
+{"id": "DEV-07", "condition": "A", "mode": "thinking", "errors": 0, "seconds": 6.226}
+{"id": "DEV-08", "condition": "A", "mode": "nonthinking", "errors": 0, "seconds": 0.587}
+{"id": "DEV-03", "condition": "D_new", "mode": "thinking", "errors": 0, "seconds": 35.808}
+{"id": "DEV-08", "condition": "B", "mode": "nonthinking", "errors": 0, "seconds": 0.119}
+{"id": "DEV-07", "condition": "C_new", "mode": "thinking", "errors": 0, "seconds": 5.933}
+{"id": "DEV-07", "condition": "B", "mode": "thinking", "errors": 0, "seconds": 7.588}
+{"id": "DEV-08", "condition": "C_new", "mode": "nonthinking", "errors": 0, "seconds": 0.613}
+{"id": "DEV-08", "condition": "D_new", "mode": "nonthinking", "errors": 0, "seconds": 0.12}
+{"id": "DEV-06", "condition": "D_new", "mode": "thinking", "errors": 0, "seconds": 9.792}
+{"id": "DEV-09", "condition": "A", "mode": "nonthinking", "errors": 0, "seconds": 0.236}
+{"id": "DEV-07", "condition": "D_new", "mode": "thinking", "errors": 0, "seconds": 5.295}
+{"id": "DEV-09", "condition": "B", "mode": "nonthinking", "errors": 0, "seconds": 0.237}
+{"id": "DEV-08", "condition": "B", "mode": "thinking", "errors": 0, "seconds": 4.4}
+{"id": "DEV-09", "condition": "C_new", "mode": "nonthinking", "errors": 0, "seconds": 0.238}
+{"id": "DEV-08", "condition": "D_new", "mode": "thinking", "errors": 0, "seconds": 4.721}
+{"id": "DEV-09", "condition": "D_new", "mode": "nonthinking", "errors": 0, "seconds": 0.239}
+{"id": "DEV-09", "condition": "D_new", "mode": "thinking", "errors": 0, "seconds": 4.22}
+{"id": "DEV-06", "condition": "C_new", "mode": "thinking", "errors": 0, "seconds": 17.056}
+{"id": "DEV-08", "condition": "C_new", "mode": "thinking", "errors": 0, "seconds": 11.148}
+{"id": "DEV-09", "condition": "C_new", "mode": "thinking", "errors": 0, "seconds": 9.106}
+{"id": "DEV-08", "condition": "A", "mode": "thinking", "errors": 0, "seconds": 15.243}
+{"id": "DEV-09", "condition": "A", "mode": "thinking", "errors": 0, "seconds": 11.963}
+{"id": "DEV-10", "condition": "A", "mode": "nonthinking", "errors": 0, "seconds": 5.512}
+{"id": "DEV-09", "condition": "B", "mode": "thinking", "errors": 0, "seconds": 11.863}
+{"id": "DEV-10", "condition": "B", "mode": "nonthinking", "errors": 0, "seconds": 4.739}
+{"id": "DEV-11", "condition": "A", "mode": "nonthinking", "errors": 0, "seconds": 0.423}
+{"id": "DEV-10", "condition": "C_new", "mode": "nonthinking", "errors": 0, "seconds": 3.406}
+{"id": "DEV-11", "condition": "B", "mode": "nonthinking", "errors": 0, "seconds": 0.483}
+{"id": "DEV-10", "condition": "D_new", "mode": "nonthinking", "errors": 0, "seconds": 4.799}
+{"id": "DEV-11", "condition": "A", "mode": "thinking", "errors": 0, "seconds": 4.802}
+{"id": "DEV-11", "condition": "C_new", "mode": "nonthinking", "errors": 0, "seconds": 0.456}
+{"id": "DEV-11", "condition": "D_new", "mode": "nonthinking", "errors": 0, "seconds": 0.484}
+{"id": "DEV-11", "condition": "B", "mode": "thinking", "errors": 0, "seconds": 4.393}
+{"id": "DEV-12", "condition": "A", "mode": "nonthinking", "errors": 0, "seconds": 0.383}
+{"id": "DEV-11", "condition": "C_new", "mode": "thinking", "errors": 0, "seconds": 5.631}
+{"id": "DEV-12", "condition": "B", "mode": "nonthinking", "errors": 0, "seconds": 0.426}
+{"id": "DEV-11", "condition": "D_new", "mode": "thinking", "errors": 0, "seconds": 4.817}
+{"id": "DEV-12", "condition": "C_new", "mode": "nonthinking", "errors": 0, "seconds": 0.385}
+{"id": "DEV-10", "condition": "A", "mode": "thinking", "errors": 0, "seconds": 17.552}
+{"id": "DEV-12", "condition": "D_new", "mode": "nonthinking", "errors": 0, "seconds": 0.442}
+{"id": "DEV-12", "condition": "B", "mode": "thinking", "errors": 0, "seconds": 5.812}
+{"id": "DEV-10", "condition": "D_new", "mode": "thinking", "errors": 0, "seconds": 16.594}
+{"id": "DEV-10", "condition": "B", "mode": "thinking", "errors": 0, "seconds": 22.672}
+{"id": "DEV-12", "condition": "C_new", "mode": "thinking", "errors": 0, "seconds": 8.205}
+{"id": "DEV-12", "condition": "D_new", "mode": "thinking", "errors": 0, "seconds": 7.798}
+{"id": "DEV-12", "condition": "A", "mode": "thinking", "errors": 0, "seconds": 13.243}
+{"id": "DEV-10", "condition": "C_new", "mode": "thinking", "errors": 0, "seconds": 22.595}
+{"id": "DEV-13", "condition": "B", "mode": "nonthinking", "errors": 0, "seconds": 4.288}
+{"id": "DEV-13", "condition": "D_new", "mode": "nonthinking", "errors": 0, "seconds": 8.162}
+{"id": "DEV-13", "condition": "A", "mode": "nonthinking", "errors": 0, "seconds": 15.875}
+{"id": "DEV-13", "condition": "B", "mode": "thinking", "errors": 0, "seconds": 13.677}
+{"id": "DEV-14", "condition": "B", "mode": "nonthinking", "errors": 0, "seconds": 2.595}
+{"id": "DEV-13", "condition": "C_new", "mode": "nonthinking", "errors": 0, "seconds": 18.136}
+{"id": "DEV-14", "condition": "B", "mode": "thinking", "errors": 0, "seconds": 7.584}
+{"id": "DEV-13", "condition": "D_new", "mode": "thinking", "errors": 0, "seconds": 18.032}
+{"id": "DEV-14", "condition": "A", "mode": "nonthinking", "errors": 0, "seconds": 10.53}
+{"id": "DEV-13", "condition": "A", "mode": "thinking", "errors": 0, "seconds": 29.11}
+{"id": "DEV-14", "condition": "D_new", "mode": "nonthinking", "errors": 0, "seconds": 3.569}
+{"id": "DEV-14", "condition": "A", "mode": "thinking", "errors": 0, "seconds": 19.228}
+{"id": "DEV-15", "condition": "A", "mode": "nonthinking", "errors": 0, "seconds": 2.87}
+{"id": "DEV-15", "condition": "B", "mode": "nonthinking", "errors": 0, "seconds": 3.046}
+{"id": "DEV-14", "condition": "D_new", "mode": "thinking", "errors": 0, "seconds": 7.731}
+{"id": "DEV-15", "condition": "C_new", "mode": "nonthinking", "errors": 0, "seconds": 0.462}
+{"id": "DEV-13", "condition": "C_new", "mode": "thinking", "errors": 0, "seconds": 30.007}
+{"id": "DEV-14", "condition": "C_new", "mode": "thinking", "errors": 0, "seconds": 15.256}
+{"id": "DEV-15", "condition": "D_new", "mode": "nonthinking", "errors": 0, "seconds": 3.709}
+{"id": "DEV-14", "condition": "C_new", "mode": "nonthinking", "errors": 0, "seconds": 14.048}
+{"id": "DEV-15", "condition": "B", "mode": "thinking", "errors": 0, "seconds": 10.359}
+{"id": "DEV-15", "condition": "D_new", "mode": "thinking", "errors": 0, "seconds": 11.042}
+{"id": "DEV-15", "condition": "A", "mode": "thinking", "errors": 0, "seconds": 18.113}
+{"id": "DEV-16", "condition": "A", "mode": "nonthinking", "errors": 0, "seconds": 11.422}
+{"id": "DEV-16", "condition": "B", "mode": "nonthinking", "errors": 0, "seconds": 11.815}
+{"id": "DEV-15", "condition": "C_new", "mode": "thinking", "errors": 0, "seconds": 19.861}
+{"id": "DEV-16", "condition": "B", "mode": "thinking", "errors": 0, "seconds": 14.583}
+{"id": "DEV-16", "condition": "C_new", "mode": "nonthinking", "errors": 0, "seconds": 14.264}
+{"id": "DEV-16", "condition": "D_new", "mode": "nonthinking", "errors": 0, "seconds": 13.963}
+{"id": "DEV-16", "condition": "D_new", "mode": "thinking", "errors": 0, "seconds": 16.958}
+{"id": "DEV-16", "condition": "C_new", "mode": "thinking", "errors": 0, "seconds": 25.99}
+{"id": "DEV-16", "condition": "A", "mode": "thinking", "errors": 0, "seconds": 29.701}
+{"id": "DEV-17", "condition": "A", "mode": "nonthinking", "errors": 0, "seconds": 20.678}
+{"id": "DEV-17", "condition": "B", "mode": "thinking", "errors": 0, "seconds": 23.178}
+{"id": "DEV-17", "condition": "D_new", "mode": "nonthinking", "errors": 0, "seconds": 10.595}
+{"id": "DEV-17", "condition": "B", "mode": "nonthinking", "errors": 0, "seconds": 18.542}
+{"id": "DEV-17", "condition": "A", "mode": "thinking", "errors": 0, "seconds": 31.576}
+{"id": "DEV-17", "condition": "C_new", "mode": "nonthinking", "errors": 0, "seconds": 20.74}
+{"id": "DEV-18", "condition": "A", "mode": "nonthinking", "errors": 0, "seconds": 9.191}
+{"id": "DEV-18", "condition": "B", "mode": "nonthinking", "errors": 0, "seconds": 9.268}
+{"id": "DEV-17", "condition": "D_new", "mode": "thinking", "errors": 0, "seconds": 25.237}
+{"id": "DEV-18", "condition": "B", "mode": "thinking", "errors": 0, "seconds": 14.222}
+{"id": "DEV-19", "condition": "A", "mode": "nonthinking", "errors": 0, "seconds": 0.791}
+{"id": "DEV-18", "condition": "A", "mode": "thinking", "errors": 0, "seconds": 20.393}
+{"id": "DEV-19", "condition": "B", "mode": "nonthinking", "errors": 0, "seconds": 0.821}
+{"id": "DEV-18", "condition": "C_new", "mode": "nonthinking", "errors": 0, "seconds": 11.091}
+{"id": "DEV-19", "condition": "C_new", "mode": "nonthinking", "errors": 0, "seconds": 0.873}
+{"id": "DEV-19", "condition": "A", "mode": "thinking", "errors": 0, "seconds": 6.24}
+{"id": "DEV-19", "condition": "D_new", "mode": "nonthinking", "errors": 0, "seconds": 0.183}
+{"id": "DEV-18", "condition": "D_new", "mode": "nonthinking", "errors": 0, "seconds": 11.107}
+{"id": "DEV-17", "condition": "C_new", "mode": "thinking", "errors": 0, "seconds": 36.745}
+{"id": "DEV-20", "condition": "A", "mode": "nonthinking", "errors": 0, "seconds": 1.462}
+{"id": "DEV-19", "condition": "B", "mode": "thinking", "errors": 0, "seconds": 9.531}
+{"id": "DEV-20", "condition": "B", "mode": "nonthinking", "errors": 0, "seconds": 2.443}
+{"id": "DEV-19", "condition": "C_new", "mode": "thinking", "errors": 0, "seconds": 10.545}
+{"id": "DEV-20", "condition": "A", "mode": "thinking", "errors": 0, "seconds": 7.09}
+{"id": "DEV-19", "condition": "D_new", "mode": "thinking", "errors": 0, "seconds": 8.538}
+{"id": "DEV-18", "condition": "D_new", "mode": "thinking", "errors": 0, "seconds": 21.11}
+{"id": "DEV-20", "condition": "D_new", "mode": "nonthinking", "errors": 0, "seconds": 1.197}
+{"id": "DEV-20", "condition": "C_new", "mode": "nonthinking", "errors": 0, "seconds": 5.529}
+{"id": "DEV-18", "condition": "C_new", "mode": "thinking", "errors": 0, "seconds": 25.151}
+{"id": "DEV-21", "condition": "B", "mode": "nonthinking", "errors": 0, "seconds": 2.425}
+{"id": "DEV-20", "condition": "C_new", "mode": "thinking", "errors": 0, "seconds": 8.91}
+{"id": "DEV-20", "condition": "B", "mode": "thinking", "errors": 0, "seconds": 12.535}
+{"id": "DEV-21", "condition": "A", "mode": "nonthinking", "errors": 0, "seconds": 6.677}
+{"id": "DEV-20", "condition": "D_new", "mode": "thinking", "errors": 0, "seconds": 11.38}
+{"id": "DEV-21", "condition": "B", "mode": "thinking", "errors": 0, "seconds": 12.839}
+{"id": "DEV-22", "condition": "A", "mode": "thinking", "errors": 0, "seconds": 8.355}
+{"id": "DEV-21", "condition": "D_new", "mode": "nonthinking", "errors": 0, "seconds": 8.916}
+{"id": "DEV-21", "condition": "C_new", "mode": "nonthinking", "errors": 0, "seconds": 10.86}
+{"id": "DEV-22", "condition": "B", "mode": "nonthinking", "errors": 0, "seconds": 2.198}
+{"id": "DEV-21", "condition": "A", "mode": "thinking", "errors": 0, "seconds": 19.571}
+{"id": "DEV-22", "condition": "D_new", "mode": "nonthinking", "errors": 0, "seconds": 1.397}
+{"id": "DEV-22", "condition": "B", "mode": "thinking", "errors": 0, "seconds": 7.642}
+{"id": "DEV-21", "condition": "D_new", "mode": "thinking", "errors": 0, "seconds": 16.333}
+{"id": "DEV-22", "condition": "A", "mode": "nonthinking", "errors": 0, "seconds": 13.114}
+{"id": "DEV-22", "condition": "D_new", "mode": "thinking", "errors": 0, "seconds": 7.773}
+{"id": "DEV-21", "condition": "C_new", "mode": "thinking", "errors": 0, "seconds": 22.929}
+{"id": "DEV-23", "condition": "A", "mode": "nonthinking", "errors": 0, "seconds": 4.941}
+{"id": "DEV-22", "condition": "C_new", "mode": "nonthinking", "errors": 0, "seconds": 12.009}
+{"id": "DEV-23", "condition": "B", "mode": "nonthinking", "errors": 0, "seconds": 6.673}
+{"id": "DEV-23", "condition": "B", "mode": "thinking", "errors": 0, "seconds": 11.938}
+{"id": "DEV-22", "condition": "C_new", "mode": "thinking", "errors": 0, "seconds": 19.004}
+{"id": "DEV-23", "condition": "D_new", "mode": "nonthinking", "errors": 0, "seconds": 7.241}
+{"id": "DEV-24", "condition": "B", "mode": "nonthinking", "errors": 0, "seconds": 2.669}
+{"id": "DEV-24", "condition": "A", "mode": "thinking", "errors": 0, "seconds": 8.104}
+{"id": "DEV-24", "condition": "A", "mode": "nonthinking", "errors": 0, "seconds": 4.301}
+{"id": "DEV-24", "condition": "C_new", "mode": "nonthinking", "errors": 0, "seconds": 1.267}
+{"id": "DEV-23", "condition": "A", "mode": "thinking", "errors": 0, "seconds": 20.613}
+{"id": "DEV-24", "condition": "D_new", "mode": "nonthinking", "errors": 0, "seconds": 1.97}
+{"id": "DEV-24", "condition": "B", "mode": "thinking", "errors": 0, "seconds": 7.84}
+{"id": "DEV-23", "condition": "C_new", "mode": "thinking", "errors": 0, "seconds": 17.275}
+{"id": "DEV-23", "condition": "D_new", "mode": "thinking", "errors": 0, "seconds": 16.789}
+{"id": "DEV-23", "condition": "C_new", "mode": "nonthinking", "errors": 0, "seconds": 19.332}
+{"id": "DEV-24", "condition": "D_new", "mode": "thinking", "errors": 0, "seconds": 8.43}
+{"id": "DEV-24", "condition": "C_new", "mode": "thinking", "errors": 0, "seconds": 11.874}
+{"cases": 192, "requests": 200, "errors": 0, "empty_answers": 0, "length_finishes": 2, "output_tokens": 86228, "wall_seconds": 229.13987456820905, "concurrency": 8}
+2026-10-20T15:19:48.825681+00:00 24-case development finished; EvalScope public IFEval/GSM8K on A and C_new
+A public development complete
+C_new public development complete
+2026-10-20T15:28:43.286020+00:00 Public evaluation complete
+2026-10-20T15:28:44.825135+00:00 Restoring original UAT
+{"started_at_utc": "2026-10-20T14:57:38.409469+00:00", "restored": true, "paused": false, "restored_at_utc": "2026-10-20T15:30:48.899826+00:00", "service_spec_equal": true, "health_status": 200}
+service "t008-v018-20261020-145507-eval" deleted
+2026-10-20T15:30:49.031750+00:00 Original UAT restored and healthy

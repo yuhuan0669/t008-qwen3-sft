@@ -1,0 +1,21 @@
+{
+  "verified_at_utc": "2026-10-20T15:31:25.872210+00:00",
+  "uat_original_spec_equal": true,
+  "uat_ready_replicas": 1,
+  "health_status": 200,
+  "new_model_deployed_to_uat": false,
+  "evaluation_template_deployed_to_uat": false,
+  "training_completed_steps": 80,
+  "epoch": 1.0,
+  "planned_full_exposure_rows": 1275,
+  "successful_full_runs": 1,
+  "interrupted_full_attempts": 0,
+  "data_package_hashes_unchanged": true,
+  "actual_training_command_matches_frozen_recipe": true,
+  "system_and_protocol_binding_verified": true,
+  "final_adapter_and_eval_binding_verified": true,
+  "specialized_requests": 200,
+  "public_requests": 160,
+  "all_task_owned_workloads_removed": true,
+  "additional_training_authorized": false
+}

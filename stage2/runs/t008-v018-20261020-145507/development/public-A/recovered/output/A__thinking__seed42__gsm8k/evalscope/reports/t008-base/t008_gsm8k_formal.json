@@ -1,0 +1,94 @@
+{
+    "name": "t008-base@t008_gsm8k_formal",
+    "dataset_name": "t008_gsm8k_formal",
+    "dataset_pretty_name": "GSM8K",
+    "dataset_description": "\n## Overview\n\nGSM8K (Grade School Math 8K) is a high-quality dataset of 8.5K linguistically diverse grade school math word problems created by human problem writers. The dataset is specifically designed to evaluate and improve the multi-step mathematical reasoning capabilities of language models.\n\n## Task Description\n\n- **Task Type**: Mathematical Word Problem Solving\n- **Input**: Natural language math word problem\n- **Output**: Numerical answer derived through step-by-step reasoning\n- **Difficulty**: Grade school level (2-8 reasoning steps required)\n\n## Key Features\n\n- Problems require basic arithmetic operations (addition, subtraction, multiplication, division)\n- Solutions involve 2 to 8 sequential reasoning steps\n- High linguistic diversity in problem formulations\n- Human-written problems ensuring natural language quality\n- Clear numerical answers for objective evaluation\n\n## Evaluation Notes\n\n- Default configuration uses **4-shot** examples with Chain-of-Thought (CoT) prompting\n- Answers should be formatted within `\\boxed{}` for proper extraction\n- The metric extracts numerical values for accuracy comparison\n- Supports both zero-shot and few-shot evaluation modes\n",
+    "model_name": "t008-base",
+    "score": 1.0,
+    "metrics": [
+        {
+            "name": "mean_acc",
+            "num": 20,
+            "score": 1.0,
+            "macro_score": 1.0,
+            "categories": [
+                {
+                    "name": [
+                        "default"
+                    ],
+                    "num": 20,
+                    "score": 1.0,
+                    "macro_score": 1.0,
+                    "subsets": [
+                        {
+                            "name": "default",
+                            "score": 1.0,
+                            "num": 20,
+                            "is_aggregate": false
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "analysis": "N/A",
+    "perf_metrics": {
+        "summary": {
+            "n_samples": 20,
+            "latency": {
+                "mean": 35.690517,
+                "std": 17.031012,
+                "min": 14.977978,
+                "25%": 25.481256,
+                "50%": 30.030013,
+                "75%": 43.740851,
+                "90%": 57.17418,
+                "99%": 76.802427,
+                "max": 77.886269
+            },
+            "throughput": {
+                "avg_output_tps": 52.05,
+                "avg_req_ps": 0.028
+            },
+            "usage": {
+                "input_tokens": {
+                    "mean": 78.3,
+                    "std": 10.115647,
+                    "min": 59.0,
+                    "25%": 72.5,
+                    "50%": 80.5,
+                    "75%": 84.0,
+                    "90%": 88.3,
+                    "99%": 97.48,
+                    "max": 99.0
+                },
+                "output_tokens": {
+                    "mean": 1857.8,
+                    "std": 874.361096,
+                    "min": 783.0,
+                    "25%": 1339.25,
+                    "50%": 1589.5,
+                    "75%": 2289.75,
+                    "90%": 2940.2,
+                    "99%": 4016.42,
+                    "max": 4089.0
+                },
+                "total_tokens": {
+                    "mean": 1936.1,
+                    "std": 877.676592,
+                    "min": 864.0,
+                    "25%": 1404.0,
+                    "50%": 1663.5,
+                    "75%": 2385.0,
+                    "90%": 3027.7,
+                    "99%": 4098.61,
+                    "max": 4171.0
+                },
+                "total_input_tokens": 1566,
+                "total_output_tokens": 37156,
+                "total_tokens_count": 38722
+            }
+        }
+    },
+    "num": 20
+}

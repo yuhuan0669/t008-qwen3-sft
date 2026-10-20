@@ -1,0 +1,94 @@
+{
+    "name": "t008-base@t008_gsm8k_formal",
+    "dataset_name": "t008_gsm8k_formal",
+    "dataset_pretty_name": "GSM8K",
+    "dataset_description": "\n## Overview\n\nGSM8K (Grade School Math 8K) is a high-quality dataset of 8.5K linguistically diverse grade school math word problems created by human problem writers. The dataset is specifically designed to evaluate and improve the multi-step mathematical reasoning capabilities of language models.\n\n## Task Description\n\n- **Task Type**: Mathematical Word Problem Solving\n- **Input**: Natural language math word problem\n- **Output**: Numerical answer derived through step-by-step reasoning\n- **Difficulty**: Grade school level (2-8 reasoning steps required)\n\n## Key Features\n\n- Problems require basic arithmetic operations (addition, subtraction, multiplication, division)\n- Solutions involve 2 to 8 sequential reasoning steps\n- High linguistic diversity in problem formulations\n- Human-written problems ensuring natural language quality\n- Clear numerical answers for objective evaluation\n\n## Evaluation Notes\n\n- Default configuration uses **4-shot** examples with Chain-of-Thought (CoT) prompting\n- Answers should be formatted within `\\boxed{}` for proper extraction\n- The metric extracts numerical values for accuracy comparison\n- Supports both zero-shot and few-shot evaluation modes\n",
+    "model_name": "t008-base",
+    "score": 0.95,
+    "metrics": [
+        {
+            "name": "mean_acc",
+            "num": 20,
+            "score": 0.95,
+            "macro_score": 0.95,
+            "categories": [
+                {
+                    "name": [
+                        "default"
+                    ],
+                    "num": 20,
+                    "score": 0.95,
+                    "macro_score": 0.95,
+                    "subsets": [
+                        {
+                            "name": "default",
+                            "score": 0.95,
+                            "num": 20,
+                            "is_aggregate": false
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "analysis": "N/A",
+    "perf_metrics": {
+        "summary": {
+            "n_samples": 20,
+            "latency": {
+                "mean": 5.509102,
+                "std": 1.816479,
+                "min": 3.579103,
+                "25%": 4.382985,
+                "50%": 5.130011,
+                "75%": 6.089284,
+                "90%": 7.380768,
+                "99%": 10.736466,
+                "max": 11.205429
+            },
+            "throughput": {
+                "avg_output_tps": 53.96,
+                "avg_req_ps": 0.1815
+            },
+            "usage": {
+                "input_tokens": {
+                    "mean": 80.3,
+                    "std": 10.115647,
+                    "min": 61.0,
+                    "25%": 74.5,
+                    "50%": 82.5,
+                    "75%": 86.0,
+                    "90%": 90.3,
+                    "99%": 99.48,
+                    "max": 101.0
+                },
+                "output_tokens": {
+                    "mean": 297.25,
+                    "std": 98.962446,
+                    "min": 192.0,
+                    "25%": 236.5,
+                    "50%": 276.5,
+                    "75%": 328.25,
+                    "90%": 398.3,
+                    "99%": 583.16,
+                    "max": 609.0
+                },
+                "total_tokens": {
+                    "mean": 377.55,
+                    "std": 102.966768,
+                    "min": 263.0,
+                    "25%": 325.0,
+                    "50%": 350.0,
+                    "75%": 406.5,
+                    "90%": 486.7,
+                    "99%": 668.77,
+                    "max": 691.0
+                },
+                "total_input_tokens": 1606,
+                "total_output_tokens": 5945,
+                "total_tokens_count": 7551
+            }
+        }
+    },
+    "num": 20
+}

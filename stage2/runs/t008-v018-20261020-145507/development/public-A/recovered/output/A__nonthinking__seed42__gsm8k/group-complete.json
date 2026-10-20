@@ -1,0 +1,8 @@
+{
+  "group": "A__nonthinking__seed42__gsm8k",
+  "cases": 20,
+  "turns_persisted": 20,
+  "technical_protocol_failures": 0,
+  "evalscope_output": "/tmp/t008-public-development/t008-v018-20261020-145507/A/output/A__nonthinking__seed42__gsm8k/evalscope",
+  "content_review_pending": false
+}

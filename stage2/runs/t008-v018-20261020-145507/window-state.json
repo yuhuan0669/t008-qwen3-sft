@@ -1,5 +1,8 @@
 {
   "started_at_utc": "2026-10-20T14:57:38.409469+00:00",
-  "restored": false,
-  "paused": true
+  "restored": true,
+  "paused": false,
+  "restored_at_utc": "2026-10-20T15:30:48.899826+00:00",
+  "service_spec_equal": true,
+  "health_status": 200
 }

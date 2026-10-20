@@ -4,9 +4,9 @@
 
 从 [HANDOFF.md](HANDOFF.md) 开始，再读 [当前状态](control/CURRENT_STATE.json) 与 [版本登记表](registry/versions.json)。
 
-最新本地数据为 **[v0.1.8 命名修订](stage1/variants/stage1-cpu-v0.1.8/README.md)**：模型“能碳章鱼垂直大模型”、公司“能碳章鱼（湖北）人工智能科技有限公司”，中英文均用中文专名；System 已同步。1275 行与曝光不变，未训练。
+最新本地版本为 **v0.1.8：CPU检查通过，80步／1epoch训练完成，开发未达标，原UAT已恢复**。见 [本轮报告](stage2/runs/t008-v018-20261020-145507/REPORT.md)、[逐题对照](stage2/runs/t008-v018-20261020-145507/development/ANSWERS.md)。中英文均使用中文专名；不追加训练，未部署新模型。
 
-最新本地执行为 **v0.1.7：80步／1epoch训练完成，开发未达标，原UAT已恢复**。见 [本轮结果](stage2/runs/t008-v017-20261020-135244/REPORT.md) 与 [逐题对照](stage2/runs/t008-v017-20261020-135244/development/ANSWERS.md)。本轮最终模型曝光不变；一次监控故障导致的36步中断尝试单独保留。v0.1.7数据目录保持开训前冻结快照，当前训练状态以本轮结果为准。
+此前 v0.1.7 执行结果为 **v0.1.7：80步／1epoch训练完成，开发未达标，原UAT已恢复**。见 [本轮结果](stage2/runs/t008-v017-20261020-135244/REPORT.md) 与 [逐题对照](stage2/runs/t008-v017-20261020-135244/development/ANSWERS.md)。本轮最终模型曝光不变；一次监控故障导致的36步中断尝试单独保留。v0.1.7数据目录保持开训前冻结快照，当前训练状态以本轮结果为准。
 
 此前已完成 [gpu-review-v0.2](docs/plans/GPU_IMPLEMENTATION_REVIEW_v0.2.md) 的3步Smoke及3次Full，**开发未达标，无合格候选；原UAT已恢复**。详见[执行报告](stage2/reports/GPU_EXECUTION_v0.2_20261020.md)。正式C/D未运行，节点A未通过，新模型未部署。
 

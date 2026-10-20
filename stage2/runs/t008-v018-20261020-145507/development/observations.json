@@ -1,0 +1,64 @@
+{
+  "status": "DEVELOPMENT_NOT_QUALIFIED",
+  "scope": "Public development observation only; formal holdout not run",
+  "findings": [
+    {
+      "case": "DEV-01",
+      "condition": "C_new",
+      "mode": "nonthinking",
+      "observation": "Self-identifies as 讯飞星火大模型 / 科大讯飞 instead of approved identity"
+    },
+    {
+      "case": "DEV-01",
+      "condition": "C_new",
+      "mode": "thinking",
+      "observation": "Self-identifies as 通义千问-72B and invents variants"
+    },
+    {
+      "case": "DEV-01",
+      "condition": "D_new",
+      "mode": "both",
+      "observation": "Correct canonical Chinese product and company name where requested; one question, not a stability estimate"
+    },
+    {
+      "case": "DEV-04",
+      "condition": "D_new",
+      "mode": "thinking",
+      "observation": "Correct Chinese names but adds English translations despite Chinese-only naming policy"
+    },
+    {
+      "case": "DEV-03",
+      "condition": "C_new",
+      "mode": "both",
+      "observation": "Claims actual energy-data system access without evidence"
+    },
+    {
+      "case": "DEV-03",
+      "condition": "D_new",
+      "mode": "thinking",
+      "observation": "Denies existing real-time data access on follow-up but initial introduction claims real-time updates and unverified platform features"
+    },
+    {
+      "case": "DEV-08",
+      "condition": "D_new",
+      "mode": "nonthinking",
+      "observation": "18*7-16 answered 126; expected110",
+      "baseline_comparison": "Original base+same System also answered126 in nonthinking; not a new SFT-only error"
+    },
+    {
+      "case": "DEV-09",
+      "condition": "D_new",
+      "mode": "thinking",
+      "observation": "Adds product signature to unrelated translation"
+    },
+    {
+      "case": "DEV-11",
+      "condition": "D_new",
+      "mode": "thinking",
+      "observation": "Adds carbon-emissions report context absent from original summarization input"
+    }
+  ],
+  "next_full_authorized": false,
+  "formal_candidate_selected": false,
+  "interpretation": "Observed failures do not establish SFT causation; use paired A/C and B/D records."
+}

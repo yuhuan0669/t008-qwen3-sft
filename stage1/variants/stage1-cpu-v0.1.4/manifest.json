@@ -1,0 +1,26 @@
+{
+  "version": "stage1-cpu-v0.1.4",
+  "status": "LOCAL_DATA_REVISION_NO_NEW_TRAINING_AUTHORIZATION",
+  "parent_version": "stage1-cpu-v0.1.3",
+  "parent_commit": "a2b85844e618db01f15e2faf4c0afda6673a89b2",
+  "parent_path": "stage1/data/train.jsonl",
+  "parent_sha256": "89b8dd9c3e434bcea0a1baf42bff2972e836fa3704b57fda283d9864272db443",
+  "train_path": "stage1/variants/stage1-cpu-v0.1.4/train.jsonl",
+  "train_sha256": "56fcff9c75da0a5fca568a4ed2c310b73e9a7300287fb722bd8b7344ae409baf",
+  "rows": 1275,
+  "unique_messages": 646,
+  "removed_rows": 14,
+  "removed_unique_messages": 7,
+  "source_exposures": {
+    "swift/Qwen3-SFT-Mixin": 1036,
+    "swift/self-cognition": 216,
+    "t008/project-positioning-v1": 23
+  },
+  "operation": "DELETE_COMPLETE_RECORDS_ONLY_PRESERVE_RETAINED_BYTES_AND_ORDER",
+  "training_started": false,
+  "gpu_used": false,
+  "remote_uploaded": false,
+  "encoding_check": "Retained rows unchanged from CPU-verified parent; no new tokenizer run",
+  "evaluation_policy": "Historical rubric unchanged; do not reuse confidentiality acceptance criterion automatically for a future run; replacement response policy not selected by this data-only request",
+  "historical_variants": "Full1/Full2/Full3 inputs and outputs preserved; not current candidate"
+}

@@ -1,0 +1,13 @@
+2026-10-20T13:56:57.628881+00:00 token_acc': '0.7985', 'epoch': '0.06275', 'global_step/max_steps': '5/80', 'elapsed_time': '56s', 'remaining_time': '14m 2s', 'memory(GiB)': '23.04', 'train_speed(s/it)': '11.23'}
+
+Train:   6%|▋         | 5/80 [00:56<14:18, 11.44s/it]
+Train:   6%|▋         | 5/80 [00:56<14:18, 11.44s/it]
+Train:   8%|▊         | 6/80 [01:04<13:00, 10.55s/it]
+Train:   9%|▉         | 7/80 [01:13<12:02,  9.90s/it]
+Train:  10%|█         | 8/80 [01:23<11:55,  9.93s/it]
+2026-10-20T13:57:27.911974+00:00                            
+{'loss': '0.6622', 'grad_norm': '0.1481', 'learning_rate': '9.847e-05', 'token_acc': '0.8016', 'epoch': '0.1255', 'global_step/max_steps': '10/80', 'elapsed_time': '1m 46s', 'remaining_time': '12m 23s', 'memory(GiB)': '23.04', 'train_speed(s/it)': '10.62'}
+
+Train:  12%|█▎        | 10/80 [01:46<12:17, 10.53s/it]
+Train:  12%|█▎        | 10/80 [01:46<12:17, 10.53s/it]
+Train:  14%|█▍        | 11/80 [01:53<10:54,  9.49s/it]

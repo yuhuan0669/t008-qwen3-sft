@@ -1,0 +1,13 @@
+{
+  "run_id": "t008-v017-20261020-135244",
+  "experiment_approved": true,
+  "uat_pause_approved": true,
+  "approved_data_sha256": "f76879161c87c0f0d7ede7a19014dfaed9809da592d2760186978f5bdd4d4d35",
+  "window_start_utc": "2026-10-20T13:53:34.743663+00:00",
+  "window_end_utc": "2026-10-20T21:53:34.743663+00:00",
+  "restore_start_utc": "2026-10-20T21:13:34.743663+00:00",
+  "decision_ref": "User: 按 v0.1.7 开始训练，曝光次数不变，评测沿用修正后的 vLLM 模板；可直接暂停 UAT。8h watchdog is a conservative recovery ceiling, not a requested outage duration.",
+  "restoration_owner": "Current implementation agent",
+  "uat_coordination": "Owner directly confirmed immediate pause",
+  "max_full_runs": 1
+}

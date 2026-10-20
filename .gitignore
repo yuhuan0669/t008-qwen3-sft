@@ -7,3 +7,7 @@ __pycache__/
 !*.example
 private/
 .verification/
+
+# Reproducible stage-1 intermediates; parent snapshot and scripts are versioned.
+stage1/data/prepared.jsonl
+stage1/data/analysis-projection.jsonl

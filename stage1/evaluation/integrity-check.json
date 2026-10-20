@@ -1,0 +1,45 @@
+{
+  "specialized_counts": {
+    "identity": 40,
+    "general": 40,
+    "clarification": 20,
+    "boundary": 20
+  },
+  "specialized_unique_conversations": 120,
+  "public_formal_counts": {
+    "ifeval": 100,
+    "gsm8k": 100
+  },
+  "public_development_counts": {
+    "ifeval": 20,
+    "gsm8k": 20
+  },
+  "formal_development_member_overlap": 0,
+  "formal_development_normalized_prompt_overlap": 0,
+  "all_turns_have_user_and_rubric": true,
+  "multi_turn_dialogues": 12,
+  "private_directory_mode": "0700",
+  "authorship": "Prepared independently before reading any training records; only plan and business scope used as project content sources",
+  "pretraining_contamination": "UNKNOWN; no assertion of absence",
+  "training_dedup": {
+    "train_path": "/Users/ben/aiws/codex/keywords/t008_qwen3_sft/stage1/data/train.jsonl",
+    "train_sha256": "30a50ae3778409db238c3febe06dcdbdccc0b09335f58afddfaa0e6ce16e41be",
+    "train_rows": 1276,
+    "train_unique_user_prompts": 638,
+    "formal_user_turn_prompts": 332,
+    "raw_exact_overlap_count": 0,
+    "normalized_exact_overlap_count": 0,
+    "public_development_raw_exact_overlap_count": 0,
+    "public_development_normalized_overlap_count": 0,
+    "substring_overlap_count_min20_chars": 0,
+    "interpretation": "This checks this training snapshot only; no claim about base pretraining contamination or semantic paraphrase absence. No per-item details disclosed."
+  },
+  "development24_crosscheck": {
+    "path": "stage1/evaluation/development-24.jsonl",
+    "sha256": "0ef19c8e99f0443d92d687a9ad4d79d49a0a59630b2d37299b3981f7afdc642c",
+    "rows": 24,
+    "user_turns": 25,
+    "raw_exact_overlap_formal": 0,
+    "normalized_overlap_formal": 0
+  }
+}

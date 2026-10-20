@@ -1,0 +1,48 @@
+{
+  "schema": "t008-stage1-local-derivative-v1",
+  "status": "PREPARED_FOR_USER_REVIEW_NOT_TRAINING_APPROVAL",
+  "parent_path": "archive/t008_qwen3_native_entry_20261019/evidence/native-proof/native-loaded.jsonl",
+  "parent_sha256": "d85dbe58d9c5fab98bbf6a81cf828147ba1a47d6cce492aef107c7d3dafa604c",
+  "plan": "review-v0.4.1",
+  "rows": 1276,
+  "unique_messages": 647,
+  "source_exposures": {
+    "swift/Qwen3-SFT-Mixin": 1036,
+    "swift/self-cognition": 216,
+    "t008/project-positioning-v1": 24
+  },
+  "source_unique_messages": {
+    "swift/Qwen3-SFT-Mixin": 518,
+    "swift/self-cognition": 105,
+    "t008/project-positioning-v1": 24
+  },
+  "source_supervised_tokens": {
+    "swift/Qwen3-SFT-Mixin": 1519096,
+    "swift/self-cognition": 8168,
+    "t008/project-positioning-v1": 995
+  },
+  "exclusions_exposures": 964,
+  "identity_exposure_reductions": 384,
+  "identity_repeat_cap": 2,
+  "seed": 42,
+  "retained_original_order": true,
+  "modified_exposures_retained": 84,
+  "new_exposures_retained": 24,
+  "files_sha256": {
+    "train.jsonl": "30a50ae3778409db238c3febe06dcdbdccc0b09335f58afddfaa0e6ce16e41be",
+    "train-map.jsonl": "d0e31db34402a5c8191893aed93d23335aed1548cd5d6f1737933679432846fe",
+    "exclusions.jsonl": "9c890cb625914ec2a764a520dd408dfa486cd04a77292ea2473cb810dbb335e9",
+    "exposure-reductions.jsonl": "433d6747c455d444e799d16eaf183a539edeea0504da18a9f76ef78f007b6bba",
+    "modifications.jsonl": "ebc21a41c93780450053dd4c532ee4d39cd1cc55088d9b04eb5d4f1224f6cbb6",
+    "identity-review.jsonl": "8478d81c1cb5c31319ebb4cedb3df6e366a4243212166920596ea32026cc9b20",
+    "additions.jsonl": "ed6f8ccb888e036f1cbbce16a00281d39afde084001e7877df85d7f0d9bbcaaa",
+    "general-scope-review.jsonl": "3929f76b447e4834b3173d6c1725016475cb9907f1ea5db508bbe6cb6fac9d14"
+  },
+  "derivation_scripts_sha256": {
+    "prepare_data.py": "d1fde920f423ad7a414538151f43775104ed496b79df17c6a0e3c633ece96ce8",
+    "finalize_data.py": "780e555401b88b031980ef7aa3c234ea5312fe0a9b8a69b2c6988476643f5c57",
+    "cpu_encode.py": "10027661aea204683eda46ae98301f5d9a024c01f24581d4e51a64dcf515674f"
+  },
+  "human_review": "PENDING",
+  "gpu_training_authorized": false
+}

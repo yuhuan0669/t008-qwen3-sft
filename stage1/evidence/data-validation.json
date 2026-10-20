@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "checks": [
+    "parent hash",
+    "all delivered data hashes",
+    "complete exclusive parent disposition",
+    "unchanged rows byte-identical",
+    "original retained order",
+    "108 identity reviews",
+    "24 additions",
+    "change originals reconstruct",
+    "structural false-positive regression",
+    "real Swift per-row encoding"
+  ],
+  "rows": 1276,
+  "training_started": false
+}

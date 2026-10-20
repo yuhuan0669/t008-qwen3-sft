@@ -1,0 +1,13 @@
+
+T008-STAGE1-CPU-20261020-01｜第一阶段CPU准备交付
+依据负责人“开始第一阶段”及review-v0.4.1；方案正文不变。
+候选数据1276次曝光／647种messages：108种身份逐条复核、42种修订、24条新增；排除964次曝光、减少身份重复384次。原始2600行均有唯一去向，完整原文／新文和处理理由随包交付。
+真实Swift加载、编码、loss mask及删行守卫检查通过；单轮/System/多轮×双模式6项模板前缀对照通过。Data-Juicer、EvalScope完成CPU侧检查；ClearML仅做TensorBoard解析和假logger验证，未创建Task。
+正式留出题由独立评测侧保管；本库只交付索引及协议。正式2080条件，含多轮共2240次生成请求。GPU初步预算建议8小时，尚未预约或批准。
+没有使用GPU、训练或模型推理；临时CPU容器已退出并清理，vLLM/Data-Juicer/EvalScope配置前后相同，均就绪。
+审阅文档：https://docs.google.com/document/d/1252vTpNDf_mK3oi1QTHUKEkGq-xCYBXjsCSi9MX1gzI/edit
+完整审阅包：https://drive.google.com/file/d/1XrfWV6MygXWjgYxwrrhtwdRuQ26pOr86/view
+Git定位：stage1/，版本stage1-cpu-v0.1；远端推送及ZIP下载回读结果以verification/stage1-cpu-v0.1/delivery.json为准。
+训练文件SHA256：30a50ae3778409db238c3febe06dcdbdccc0b09335f58afddfaa0e6ce16e41be。
+当前待负责人审阅候选数据与GPU包，不自动进入训练。
+

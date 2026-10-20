@@ -1,0 +1,12 @@
+[
+  {
+    "enable_thinking": false,
+    "prompt": "<|im_start|>user\n小橙是你吗？ /no_think<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+    "input_token_count": 21
+  },
+  {
+    "enable_thinking": true,
+    "prompt": "<|im_start|>user\n小橙是你吗？ /no_think<|im_end|>\n<|im_start|>assistant\n",
+    "input_token_count": 17
+  }
+]

@@ -163,6 +163,16 @@
         "t008_qwen3_v12_process_restore_20261019.readback.zip",
         "t008_qwen3_v12_process_restore_20261019.zip"
       ]
+    },
+    {
+      "sha256": "9468d0b5e94b34523ba8f2e75d9f68bb06884beaa6a578406386aef7e303bbe1",
+      "bytes": 6849552,
+      "object_path": "sha256/94/9468d0b5e94b34523ba8f2e75d9f68bb06884beaa6a578406386aef7e303bbe1",
+      "original_paths": [
+        "stage1-cpu-v0.1 review export"
+      ],
+      "purpose": "Stage-1 data/CPU review ZIP; no formal holdout content",
+      "delivery_registry": "registry/stage1.json"
     }
   ],
   "unique_bytes": 128853081

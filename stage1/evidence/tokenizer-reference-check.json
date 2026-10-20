@@ -1,0 +1,13 @@
+{
+  "all_match": true,
+  "checks": {
+    "configuration.json": true,
+    "vocab.json": true,
+    "config.json": true,
+    "tokenizer.json": true,
+    "model.safetensors.index.json": true,
+    "tokenizer_config.json": true,
+    "generation_config.json": true
+  },
+  "scope": "tokenizer/config small files only; no full weight rehash in CPU phase"
+}

@@ -1,0 +1,386 @@
+[
+  {
+    "suite": "specialized",
+    "category": "identity",
+    "condition": "A",
+    "mode": "thinking",
+    "seed": 42,
+    "count": 40
+  },
+  {
+    "suite": "specialized",
+    "category": "identity",
+    "condition": "A",
+    "mode": "nonthinking",
+    "seed": 42,
+    "count": 40
+  },
+  {
+    "suite": "specialized",
+    "category": "identity",
+    "condition": "B",
+    "mode": "thinking",
+    "seed": 42,
+    "count": 40
+  },
+  {
+    "suite": "specialized",
+    "category": "identity",
+    "condition": "B",
+    "mode": "nonthinking",
+    "seed": 42,
+    "count": 40
+  },
+  {
+    "suite": "specialized",
+    "category": "identity",
+    "condition": "C_new",
+    "mode": "thinking",
+    "seed": 42,
+    "count": 40
+  },
+  {
+    "suite": "specialized",
+    "category": "identity",
+    "condition": "C_new",
+    "mode": "thinking",
+    "seed": 43,
+    "count": 40
+  },
+  {
+    "suite": "specialized",
+    "category": "identity",
+    "condition": "C_new",
+    "mode": "thinking",
+    "seed": 44,
+    "count": 40
+  },
+  {
+    "suite": "specialized",
+    "category": "identity",
+    "condition": "C_new",
+    "mode": "nonthinking",
+    "seed": 42,
+    "count": 40
+  },
+  {
+    "suite": "specialized",
+    "category": "identity",
+    "condition": "C_new",
+    "mode": "nonthinking",
+    "seed": 43,
+    "count": 40
+  },
+  {
+    "suite": "specialized",
+    "category": "identity",
+    "condition": "C_new",
+    "mode": "nonthinking",
+    "seed": 44,
+    "count": 40
+  },
+  {
+    "suite": "specialized",
+    "category": "identity",
+    "condition": "D_new",
+    "mode": "thinking",
+    "seed": 42,
+    "count": 40
+  },
+  {
+    "suite": "specialized",
+    "category": "identity",
+    "condition": "D_new",
+    "mode": "thinking",
+    "seed": 43,
+    "count": 40
+  },
+  {
+    "suite": "specialized",
+    "category": "identity",
+    "condition": "D_new",
+    "mode": "thinking",
+    "seed": 44,
+    "count": 40
+  },
+  {
+    "suite": "specialized",
+    "category": "identity",
+    "condition": "D_new",
+    "mode": "nonthinking",
+    "seed": 42,
+    "count": 40
+  },
+  {
+    "suite": "specialized",
+    "category": "identity",
+    "condition": "D_new",
+    "mode": "nonthinking",
+    "seed": 43,
+    "count": 40
+  },
+  {
+    "suite": "specialized",
+    "category": "identity",
+    "condition": "D_new",
+    "mode": "nonthinking",
+    "seed": 44,
+    "count": 40
+  },
+  {
+    "suite": "specialized",
+    "category": "general",
+    "condition": "A",
+    "mode": "thinking",
+    "seed": 42,
+    "count": 40
+  },
+  {
+    "suite": "specialized",
+    "category": "general",
+    "condition": "A",
+    "mode": "nonthinking",
+    "seed": 42,
+    "count": 40
+  },
+  {
+    "suite": "specialized",
+    "category": "general",
+    "condition": "B",
+    "mode": "thinking",
+    "seed": 42,
+    "count": 40
+  },
+  {
+    "suite": "specialized",
+    "category": "general",
+    "condition": "B",
+    "mode": "nonthinking",
+    "seed": 42,
+    "count": 40
+  },
+  {
+    "suite": "specialized",
+    "category": "general",
+    "condition": "C_new",
+    "mode": "thinking",
+    "seed": 42,
+    "count": 40
+  },
+  {
+    "suite": "specialized",
+    "category": "general",
+    "condition": "C_new",
+    "mode": "nonthinking",
+    "seed": 42,
+    "count": 40
+  },
+  {
+    "suite": "specialized",
+    "category": "general",
+    "condition": "D_new",
+    "mode": "thinking",
+    "seed": 42,
+    "count": 40
+  },
+  {
+    "suite": "specialized",
+    "category": "general",
+    "condition": "D_new",
+    "mode": "nonthinking",
+    "seed": 42,
+    "count": 40
+  },
+  {
+    "suite": "specialized",
+    "category": "clarification",
+    "condition": "A",
+    "mode": "thinking",
+    "seed": 42,
+    "count": 20
+  },
+  {
+    "suite": "specialized",
+    "category": "clarification",
+    "condition": "A",
+    "mode": "nonthinking",
+    "seed": 42,
+    "count": 20
+  },
+  {
+    "suite": "specialized",
+    "category": "clarification",
+    "condition": "B",
+    "mode": "thinking",
+    "seed": 42,
+    "count": 20
+  },
+  {
+    "suite": "specialized",
+    "category": "clarification",
+    "condition": "B",
+    "mode": "nonthinking",
+    "seed": 42,
+    "count": 20
+  },
+  {
+    "suite": "specialized",
+    "category": "clarification",
+    "condition": "C_new",
+    "mode": "thinking",
+    "seed": 42,
+    "count": 20
+  },
+  {
+    "suite": "specialized",
+    "category": "clarification",
+    "condition": "C_new",
+    "mode": "nonthinking",
+    "seed": 42,
+    "count": 20
+  },
+  {
+    "suite": "specialized",
+    "category": "clarification",
+    "condition": "D_new",
+    "mode": "thinking",
+    "seed": 42,
+    "count": 20
+  },
+  {
+    "suite": "specialized",
+    "category": "clarification",
+    "condition": "D_new",
+    "mode": "nonthinking",
+    "seed": 42,
+    "count": 20
+  },
+  {
+    "suite": "specialized",
+    "category": "boundary",
+    "condition": "A",
+    "mode": "thinking",
+    "seed": 42,
+    "count": 20
+  },
+  {
+    "suite": "specialized",
+    "category": "boundary",
+    "condition": "A",
+    "mode": "nonthinking",
+    "seed": 42,
+    "count": 20
+  },
+  {
+    "suite": "specialized",
+    "category": "boundary",
+    "condition": "B",
+    "mode": "thinking",
+    "seed": 42,
+    "count": 20
+  },
+  {
+    "suite": "specialized",
+    "category": "boundary",
+    "condition": "B",
+    "mode": "nonthinking",
+    "seed": 42,
+    "count": 20
+  },
+  {
+    "suite": "specialized",
+    "category": "boundary",
+    "condition": "C_new",
+    "mode": "thinking",
+    "seed": 42,
+    "count": 20
+  },
+  {
+    "suite": "specialized",
+    "category": "boundary",
+    "condition": "C_new",
+    "mode": "nonthinking",
+    "seed": 42,
+    "count": 20
+  },
+  {
+    "suite": "specialized",
+    "category": "boundary",
+    "condition": "D_new",
+    "mode": "thinking",
+    "seed": 42,
+    "count": 20
+  },
+  {
+    "suite": "specialized",
+    "category": "boundary",
+    "condition": "D_new",
+    "mode": "nonthinking",
+    "seed": 42,
+    "count": 20
+  },
+  {
+    "suite": "public",
+    "category": "ifeval",
+    "condition": "A",
+    "mode": "thinking",
+    "seed": 42,
+    "count": 100
+  },
+  {
+    "suite": "public",
+    "category": "ifeval",
+    "condition": "A",
+    "mode": "nonthinking",
+    "seed": 42,
+    "count": 100
+  },
+  {
+    "suite": "public",
+    "category": "ifeval",
+    "condition": "C_new",
+    "mode": "thinking",
+    "seed": 42,
+    "count": 100
+  },
+  {
+    "suite": "public",
+    "category": "ifeval",
+    "condition": "C_new",
+    "mode": "nonthinking",
+    "seed": 42,
+    "count": 100
+  },
+  {
+    "suite": "public",
+    "category": "gsm8k",
+    "condition": "A",
+    "mode": "thinking",
+    "seed": 42,
+    "count": 100
+  },
+  {
+    "suite": "public",
+    "category": "gsm8k",
+    "condition": "A",
+    "mode": "nonthinking",
+    "seed": 42,
+    "count": 100
+  },
+  {
+    "suite": "public",
+    "category": "gsm8k",
+    "condition": "C_new",
+    "mode": "thinking",
+    "seed": 42,
+    "count": 100
+  },
+  {
+    "suite": "public",
+    "category": "gsm8k",
+    "condition": "C_new",
+    "mode": "nonthinking",
+    "seed": 42,
+    "count": 100
+  }
+]

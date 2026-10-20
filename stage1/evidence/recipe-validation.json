@@ -1,0 +1,23 @@
+{
+  "verified": true,
+  "unknown_flags": [],
+  "dataset": [
+    "/work/stage1/data/train.jsonl"
+  ],
+  "max_length": 2048,
+  "loss_scale": "default+ignore_empty_think",
+  "preserve_thinking": false,
+  "lora_dropout": 0.05,
+  "dataset_shuffle": true,
+  "truncation_strategy": "delete",
+  "guarded_pipeline_rows": 1276,
+  "missing_row_rejection_verified": true,
+  "weights_loaded": false,
+  "trainer_created": false,
+  "cpu_overrides": [
+    "use_cpu=true",
+    "report_to=none",
+    "add_version=false",
+    "output_dir=recipe-only"
+  ]
+}

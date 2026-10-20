@@ -1,0 +1,108 @@
+{"decision": "retain", "first_parent_row_zero_based": 0, "parent_rows_zero_based": [0, 167], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["I can't access"]}
+{"decision": "retain", "first_parent_row_zero_based": 6, "parent_rows_zero_based": [6, 1876], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["能源"]}
+{"decision": "retain", "first_parent_row_zero_based": 18, "parent_rows_zero_based": [18, 770], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["I’m"]}
+{"decision": "retain", "first_parent_row_zero_based": 19, "parent_rows_zero_based": [19, 2556], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["作为更复杂神经网络模型", "作为某种图表类型，但不太确定。或者可能用户指的是霍尔图（Hodgkin-Huxley）模型"]}
+{"decision": "retain", "first_parent_row_zero_based": 22, "parent_rows_zero_based": [22, 211], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["作为Pipeline的一部分，这样在交叉验证的时候不会数据泄露。所以应该创建一个Pipeline，先标准化，然后应用SVM模型"]}
+{"decision": "retain", "first_parent_row_zero_based": 33, "parent_rows_zero_based": [33, 1965], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["I'm not missing any key points. Let me think agai"]}
+{"decision": "retain", "first_parent_row_zero_based": 115, "parent_rows_zero_based": [115, 1093], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["I should consider is the operat"]}
+{"decision": "retain", "first_parent_row_zero_based": 121, "parent_rows_zero_based": [121, 1833], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["I’m"]}
+{"decision": "retain", "first_parent_row_zero_based": 156, "parent_rows_zero_based": [156, 1661], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["能源"]}
+{"decision": "retain", "first_parent_row_zero_based": 186, "parent_rows_zero_based": [186, 1511], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["I'm not 100% certai"]}
+{"decision": "retain", "first_parent_row_zero_based": 190, "parent_rows_zero_based": [190, 1884], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["我可以"]}
+{"decision": "retain", "first_parent_row_zero_based": 231, "parent_rows_zero_based": [231, 1109], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["我可以"]}
+{"decision": "retain", "first_parent_row_zero_based": 232, "parent_rows_zero_based": [232, 856], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["作为制药企业，其公开技术主要集中在药物研发领域。若涉及AI卷积神经网络（CNN），需明确是企业自研技术还是第三方授权。医疗AI"]}
+{"decision": "retain", "first_parent_row_zero_based": 250, "parent_rows_zero_based": [250, 1932], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["ESG"]}
+{"decision": "retain", "first_parent_row_zero_based": 261, "parent_rows_zero_based": [261, 1894], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["I'm not exactly sure about the detai"]}
+{"decision": "retain", "first_parent_row_zero_based": 264, "parent_rows_zero_based": [264, 721], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["我可以"]}
+{"decision": "retain", "first_parent_row_zero_based": 270, "parent_rows_zero_based": [270, 1075], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["I'm not entirely certai"]}
+{"decision": "retain", "first_parent_row_zero_based": 277, "parent_rows_zero_based": [277, 2226], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["I don't have access"]}
+{"decision": "retain", "first_parent_row_zero_based": 282, "parent_rows_zero_based": [282, 2461], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["I'm not missing anything. Let me think agai"]}
+{"decision": "retain", "first_parent_row_zero_based": 291, "parent_rows_zero_based": [291, 1850], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["I'm missing. Let me check agai"]}
+{"decision": "retain", "first_parent_row_zero_based": 296, "parent_rows_zero_based": [296, 2479], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["ESG"]}
+{"decision": "retain", "first_parent_row_zero_based": 358, "parent_rows_zero_based": [358, 785], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["碳排"]}
+{"decision": "retain", "first_parent_row_zero_based": 371, "parent_rows_zero_based": [371, 1184], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["作为近义词。不过需要注意，有些模型可能已经提供了直接的方法，比如Gensim的Word2Vec模型"]}
+{"decision": "retain", "first_parent_row_zero_based": 391, "parent_rows_zero_based": [391, 1397], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["I can"]}
+{"decision": "retain", "first_parent_row_zero_based": 395, "parent_rows_zero_based": [395, 2341], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["I can"]}
+{"decision": "retain", "first_parent_row_zero_based": 410, "parent_rows_zero_based": [410, 1326], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["我的"]}
+{"decision": "retain", "first_parent_row_zero_based": 413, "parent_rows_zero_based": [413, 1425], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["作为入口点，比如在标准的命令行应用中，mai", "作为入口点，这时候可能需要使用no_mai", "作为库编译，或者使用no_mai"]}
+{"decision": "retain", "first_parent_row_zero_based": 428, "parent_rows_zero_based": [428, 2477], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["I need to think about access"]}
+{"decision": "retain", "first_parent_row_zero_based": 437, "parent_rows_zero_based": [437, 2472], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["作为href属性的值出现。比如，当开发"]}
+{"decision": "retain", "first_parent_row_zero_based": 443, "parent_rows_zero_based": [443, 815], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["我的"]}
+{"decision": "retain", "first_parent_row_zero_based": 461, "parent_rows_zero_based": [461, 2465], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["I’m"]}
+{"decision": "retain", "first_parent_row_zero_based": 462, "parent_rows_zero_based": [462, 810], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["I don't have access"]}
+{"decision": "retain", "first_parent_row_zero_based": 468, "parent_rows_zero_based": [468, 2587], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["我的"]}
+{"decision": "exclude", "first_parent_row_zero_based": 470, "parent_rows_zero_based": [470, 1148], "reason": "身份/能力错配：自称Alibaba Cloud研发，思考中无依据声称拥有供应商行为准则及尽调流程", "screen_terms": ["Alibaba", "As an AI", "I can"]}
+{"decision": "retain", "first_parent_row_zero_based": 491, "parent_rows_zero_based": [491, 2281], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["我可以"]}
+{"decision": "retain", "first_parent_row_zero_based": 492, "parent_rows_zero_based": [492, 1070], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["I can't access"]}
+{"decision": "retain", "first_parent_row_zero_based": 514, "parent_rows_zero_based": [514, 825], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["ESG"]}
+{"decision": "retain", "first_parent_row_zero_based": 525, "parent_rows_zero_based": [525, 1115], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["I'm not sure how to model"]}
+{"decision": "retain", "first_parent_row_zero_based": 538, "parent_rows_zero_based": [538, 988], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["I/O operat"]}
+{"decision": "retain", "first_parent_row_zero_based": 543, "parent_rows_zero_based": [543, 2493], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["我是"]}
+{"decision": "retain", "first_parent_row_zero_based": 566, "parent_rows_zero_based": [566, 1423], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["我的"]}
+{"decision": "retain", "first_parent_row_zero_based": 568, "parent_rows_zero_based": [568, 1079], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["作为输入，相当于将RBF网络退化为**线性模型"]}
+{"decision": "retain", "first_parent_row_zero_based": 583, "parent_rows_zero_based": [583, 1856], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["I’m"]}
+{"decision": "retain", "first_parent_row_zero_based": 632, "parent_rows_zero_based": [632, 1786], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["I'm not just giving general examples. The user wants detai"]}
+{"decision": "retain", "first_parent_row_zero_based": 646, "parent_rows_zero_based": [646, 2145], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["通义"]}
+{"decision": "retain", "first_parent_row_zero_based": 701, "parent_rows_zero_based": [701, 1830], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["作为编码器或解码器的一部分，或者结合其他模型"]}
+{"decision": "retain", "first_parent_row_zero_based": 730, "parent_rows_zero_based": [730, 746], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["能源"]}
+{"decision": "retain", "first_parent_row_zero_based": 759, "parent_rows_zero_based": [759, 1481], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["CBAM"]}
+{"decision": "retain", "first_parent_row_zero_based": 767, "parent_rows_zero_based": [767, 854], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["I can model each merge operat"]}
+{"decision": "retain", "first_parent_row_zero_based": 827, "parent_rows_zero_based": [827, 1490], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["I'm aiming for a faster time, I need more speed trai"]}
+{"decision": "retain", "first_parent_row_zero_based": 837, "parent_rows_zero_based": [837, 983], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["I don't have direct access"]}
+{"decision": "retain", "first_parent_row_zero_based": 855, "parent_rows_zero_based": [855, 1104], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["I don't have actual API access"]}
+{"decision": "retain", "first_parent_row_zero_based": 867, "parent_rows_zero_based": [867, 1178], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["作为解释变量。如果模型"]}
+{"decision": "retain", "first_parent_row_zero_based": 874, "parent_rows_zero_based": [874, 2100], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["ESG"]}
+{"decision": "retain", "first_parent_row_zero_based": 881, "parent_rows_zero_based": [881, 2545], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["I'm getting a bit confused. Let me try to outline the steps agai"]}
+{"decision": "retain", "first_parent_row_zero_based": 886, "parent_rows_zero_based": [886, 1265], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["碳排", "能源"]}
+{"decision": "retain", "first_parent_row_zero_based": 917, "parent_rows_zero_based": [917, 2322], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["作为训练", "作为输入，这时候误差会累积，模型需要训练"]}
+{"decision": "retain", "first_parent_row_zero_based": 925, "parent_rows_zero_based": [925, 1871], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["I should wrap database operat"]}
+{"decision": "retain", "first_parent_row_zero_based": 932, "parent_rows_zero_based": [932, 1841], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["I am"]}
+{"decision": "retain", "first_parent_row_zero_based": 942, "parent_rows_zero_based": [942, 1779], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["能源"]}
+{"decision": "retain", "first_parent_row_zero_based": 945, "parent_rows_zero_based": [945, 999], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["我可以"]}
+{"decision": "retain", "first_parent_row_zero_based": 970, "parent_rows_zero_based": [970, 2432], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["我的"]}
+{"decision": "retain", "first_parent_row_zero_based": 1002, "parent_rows_zero_based": [1002, 1333], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["I'm living on the coast. Let me start by brai"]}
+{"decision": "retain", "first_parent_row_zero_based": 1006, "parent_rows_zero_based": [1006, 1968], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["I can"]}
+{"decision": "retain", "first_parent_row_zero_based": 1015, "parent_rows_zero_based": [1015, 1232], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["作为训练目标。或者使用生成对抗网络（GAN）来生成序列，但GAN在序列生成上可能不如自回归模型"]}
+{"decision": "retain", "first_parent_row_zero_based": 1020, "parent_rows_zero_based": [1020, 2147], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["I’m"]}
+{"decision": "retain", "first_parent_row_zero_based": 1036, "parent_rows_zero_based": [1036, 1371], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["碳排", "能源"]}
+{"decision": "retain", "first_parent_row_zero_based": 1053, "parent_rows_zero_based": [1053, 2012], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["I'm mocking it, I can have it rai"]}
+{"decision": "retain", "first_parent_row_zero_based": 1064, "parent_rows_zero_based": [1064, 2449], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["ESG", "碳排", "能源", "阿里"]}
+{"decision": "retain", "first_parent_row_zero_based": 1067, "parent_rows_zero_based": [1067, 2182], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["能源"]}
+{"decision": "retain", "first_parent_row_zero_based": 1069, "parent_rows_zero_based": [1069, 1176], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["我可以"]}
+{"decision": "retain", "first_parent_row_zero_based": 1077, "parent_rows_zero_based": [1077, 1767], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["I can't access"]}
+{"decision": "retain", "first_parent_row_zero_based": 1086, "parent_rows_zero_based": [1086, 2190], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["I’m"]}
+{"decision": "retain", "first_parent_row_zero_based": 1110, "parent_rows_zero_based": [1110, 1237], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["I don't have access"]}
+{"decision": "retain", "first_parent_row_zero_based": 1118, "parent_rows_zero_based": [1118, 2552], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["I'm not mixing up any detai"]}
+{"decision": "retain", "first_parent_row_zero_based": 1130, "parent_rows_zero_based": [1130, 1534], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["我的"]}
+{"decision": "retain", "first_parent_row_zero_based": 1132, "parent_rows_zero_based": [1132, 1503], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["I'm not exactly sure about the detai"]}
+{"decision": "retain", "first_parent_row_zero_based": 1143, "parent_rows_zero_based": [1143, 1468], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["我是", "我的"]}
+{"decision": "retain", "first_parent_row_zero_based": 1181, "parent_rows_zero_based": [1181, 2011], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["I generate the certif", "I'm rendering the certif"]}
+{"decision": "retain", "first_parent_row_zero_based": 1206, "parent_rows_zero_based": [1206, 2132], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["作为参数传递到函数中，这种方法就无法得到正确的大小，所以在mai"]}
+{"decision": "retain", "first_parent_row_zero_based": 1280, "parent_rows_zero_based": [1280, 2152], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["I’m"]}
+{"decision": "retain", "first_parent_row_zero_based": 1355, "parent_rows_zero_based": [1355, 2104], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["能源"]}
+{"decision": "retain", "first_parent_row_zero_based": 1410, "parent_rows_zero_based": [1410, 1974], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["I have access"]}
+{"decision": "retain", "first_parent_row_zero_based": 1419, "parent_rows_zero_based": [1419, 2525], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["I am", "I'm missing anything. The theory was developed", "I’m"]}
+{"decision": "retain", "first_parent_row_zero_based": 1424, "parent_rows_zero_based": [1424, 2016], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["I'm not certai"]}
+{"decision": "retain", "first_parent_row_zero_based": 1447, "parent_rows_zero_based": [1447, 2205], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["我的"]}
+{"decision": "retain", "first_parent_row_zero_based": 1491, "parent_rows_zero_based": [1491, 1599], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["作为中国人，如何从云南的发展中看到国家政策的成效。比如，西部大开发", "碳排", "能源"]}
+{"decision": "retain", "first_parent_row_zero_based": 1520, "parent_rows_zero_based": [1520, 1650], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["能源"]}
+{"decision": "retain", "first_parent_row_zero_based": 1535, "parent_rows_zero_based": [1535, 2426], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["i and i+1, the operat", "i to j, there are (j - i) operat"]}
+{"decision": "retain", "first_parent_row_zero_based": 1564, "parent_rows_zero_based": [1564, 1817], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["I can"]}
+{"decision": "retain", "first_parent_row_zero_based": 1588, "parent_rows_zero_based": [1588, 2288], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["I'm not sure how significant that would be for an RC ai"]}
+{"decision": "retain", "first_parent_row_zero_based": 1623, "parent_rows_zero_based": [1623, 2396], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["I'm not missing any key points. Maybe also mention how blockchai"]}
+{"decision": "retain", "first_parent_row_zero_based": 1632, "parent_rows_zero_based": [1632, 1969], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["我的"]}
+{"decision": "retain", "first_parent_row_zero_based": 1655, "parent_rows_zero_based": [1655, 1967], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["I can", "I’m", "I’m joining the arts collective,” she said. “They sai"]}
+{"decision": "retain", "first_parent_row_zero_based": 1671, "parent_rows_zero_based": [1671, 2033], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["能源"]}
+{"decision": "retain", "first_parent_row_zero_based": 1678, "parent_rows_zero_based": [1678, 1924], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["I can't access"]}
+{"decision": "retain", "first_parent_row_zero_based": 1689, "parent_rows_zero_based": [1689, 2083], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["我是"]}
+{"decision": "retain", "first_parent_row_zero_based": 1717, "parent_rows_zero_based": [1717, 2350], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["能源"]}
+{"decision": "exclude", "first_parent_row_zero_based": 1724, "parent_rows_zero_based": [1724, 2103], "reason": "身份/接入错配：非空思考自称Qwen并无依据声称可通过Alibaba API使用；该思考参与监督", "screen_terms": ["Alibaba", "I'm avai", "I’m", "I’m just here, trying to survive the plague, explai", "I’m the Renai", "Qwen"]}
+{"decision": "exclude", "first_parent_row_zero_based": 1725, "parent_rows_zero_based": [1725, 1773], "reason": "缺条件编造结果：原文仅称开始接种，答案新增90%覆盖率、已完成ISO/CE认证及财报审计事实", "screen_terms": ["I am", "我们将继续推进疫苗接种计划与认证", "我是", "我是蒋浩。接下来，我将重点汇报公司在认证"]}
+{"decision": "retain", "first_parent_row_zero_based": 1753, "parent_rows_zero_based": [1753, 1899], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["能源"]}
+{"decision": "retain", "first_parent_row_zero_based": 1847, "parent_rows_zero_based": [1847, 2339], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["ESG"]}
+{"decision": "retain", "first_parent_row_zero_based": 1872, "parent_rows_zero_based": [1872, 2206], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["作为验证。不过题目可能只需要CampaignName。不过原问题中的例子可能需要返回Campai"]}
+{"decision": "retain", "first_parent_row_zero_based": 1949, "parent_rows_zero_based": [1949, 2023], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["我需要分步骤解释如何通过编程方式创建事件，包括认证"]}
+{"decision": "retain", "first_parent_row_zero_based": 1977, "parent_rows_zero_based": [1977, 1984], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["I'm not certai"]}
+{"decision": "retain", "first_parent_row_zero_based": 2078, "parent_rows_zero_based": [2078, 2298], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["我可以"]}
+{"decision": "retain", "first_parent_row_zero_based": 2136, "parent_rows_zero_based": [2136, 2139], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["作为AI", "作为一个AI", "我可以"]}
+{"decision": "retain", "first_parent_row_zero_based": 2381, "parent_rows_zero_based": [2381, 2554], "reason": "上下文为一般知识、明确创作/引用或文字协助；未据关键词改作主营承诺。非全领域事实认证。", "screen_terms": ["esg"]}

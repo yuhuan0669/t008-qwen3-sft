@@ -140,6 +140,21 @@
       "storage": "git",
       "repository_path": "archive/t008_qwen3_native_entry_20261019/evidence/native-proof/native-retained.jsonl",
       "approval_under_R1": "NOT_GRANTED_BY_ARCHIVAL"
+    },
+    {
+      "id": "stage1_cpu_v0_1_candidate_1276",
+      "source_path": "archive/t008_qwen3_native_entry_20261019/evidence/native-proof/native-loaded.jsonl",
+      "parent_id": "native_loaded_2600",
+      "bytes": 7208109,
+      "sha256": "30a50ae3778409db238c3febe06dcdbdccc0b09335f58afddfaa0e6ce16e41be",
+      "storage": "git",
+      "repository_path": "stage1/data/train.jsonl",
+      "rows": 1276,
+      "unique_messages": 647,
+      "status": "CPU_PREPARED_FOR_USER_REVIEW",
+      "training_approved": false,
+      "manifest": "stage1/data/manifest.json",
+      "stage_registry": "registry/stage1.json"
     }
   ],
   "data_canonical_hashes": {

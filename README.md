@@ -4,7 +4,7 @@
 
 从 [HANDOFF.md](HANDOFF.md) 开始，再读 [当前状态](control/CURRENT_STATE.json) 与 [版本登记表](registry/versions.json)。
 
-当前待审阅方案：[基础SFT方案 review-v0.4.1](docs/plans/SFT_MINIMAL_INTEGRATION_v0.4.1.md)。按项目业务依据纳入能源管理、碳排放管理的定位与能力边界，落实到清洗、身份样本和既有评测中。保持六节正文、三阶段、2080条件及最小工具接入。[本版修订说明](docs/reviews/review-v0.4.1/CHANGES.md)。当前仅文档交付，训练数据和服务未改；云端副本见 [方案登记](registry/plans.json)。
+当前进展：[第一阶段CPU准备与数据审阅](stage1/README.md)已形成候选。基于[review-v0.4.1](docs/plans/SFT_MINIMAL_INTEGRATION_v0.4.1.md)，原方案正文保持不变。数据改动可在[完整对照页](stage1/review/index.html)查看；1276次曝光、647种最终记录。尚未启动GPU训练或模型推理。云端交付见[阶段登记](registry/stage1.json)。
 
 私有远端：[yuhuan0669/t008-qwen3-sft](https://github.com/yuhuan0669/t008-qwen3-sft)。代码和材料通过Git维护；Git bundle、对象库tar及交付回执存放于同仓库的归档Release。是否完成上传与回读，以该次Release的交付回执为准。
 
@@ -23,7 +23,7 @@
 
 大文件采用 SHA256 寻址，保存在本库相邻的 `t008_qwen3_assets/sha256/`，不把权重反复塞入 Git。该目录和本仓库必须共同备份。私有聊天、原始SSE等7项只登记原路径与hash，保留在原受控目录；不复制进版本库或交付包。
 
-本库继承原5个提交的完整历史；历史代码在那些提交中位于根目录，本次统一后位于 `code/`。本次只整理版本，没有修改训练代码内容、语料、模型或运行服务。归档脚本可以核验文件；`code/` 和历史目录中的训练、发布、采集脚本不会因入库获得执行授权。
+本库继承原5个提交的完整历史；历史代码在那些提交中位于根目录，本次统一后位于 `code/`。首次归档只整理版本，没有修改训练代码内容、语料、模型或运行服务；当前阶段一衍生数据另见上述入口。归档脚本可以核验文件；`code/` 和历史目录中的训练、发布、采集脚本不会因入库获得执行授权。
 
 快速只读核验：
 

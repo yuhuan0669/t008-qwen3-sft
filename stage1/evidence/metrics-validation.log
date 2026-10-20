@@ -1,0 +1,1 @@
+{"passed": true, "real_tensorboard_event_read": true, "metric_points": 2, "non_training_tags_excluded": true, "clearml_reporting_api": "fake logger only; live upload deferred to GPU run", "objects_created": false}

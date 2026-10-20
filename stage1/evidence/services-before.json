@@ -1,0 +1,17 @@
+{
+  "vllm": {
+    "spec_sha256": "49e343dabd0f106d469796eb37136693caf6161b2ce51e586db2c7d90f557139",
+    "ready_replicas": 1,
+    "image": "modelscope-registry.cn-hangzhou.cr.aliyuncs.com/modelscope-repo/modelscope:ubuntu22.04-cuda13.0.3-py312-torch2.11.0-vllm0.25.1-modelscope1.39.0-swift4.4.3"
+  },
+  "data-juicer": {
+    "spec_sha256": "4888a51eef31a66b1ab152343f7514926fb070da72e768cd3cba34b36902bde5",
+    "ready_replicas": 1,
+    "image": "docker.io/datajuicer/data-juicer@sha256:7cd84a1ddaf533b6a3bbfb09a3c73baa318d8f806905d533ea684f11d32aca7c"
+  },
+  "evalscope": {
+    "spec_sha256": "5a2cde71b9ccdfa0f3398f1aaf2b87542a5c47e0e173388940885d11fe4ad9b7",
+    "ready_replicas": 1,
+    "image": "modelscope-registry.cn-hangzhou.cr.aliyuncs.com/modelscope-repo/modelscope:ubuntu22.04-cuda13.0.3-py312-torch2.11.0-vllm0.25.1-modelscope1.39.0-swift4.4.3"
+  }
+}

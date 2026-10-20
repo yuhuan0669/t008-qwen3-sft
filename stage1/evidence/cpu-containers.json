@@ -1,0 +1,206 @@
+{
+  "containers": [
+    {
+      "name": "t008-stage1-cpu-20261020",
+      "id": "0f13ee6d7b70b668b68db9bf1d4e44cca64f153090c2e8d9a07396de263cc0df",
+      "image": "modelscope-registry.cn-hangzhou.cr.aliyuncs.com/modelscope-repo/modelscope@sha256:822d99beed4984a421c8d1da397993c6a8a5f88cdad7dde940bd52df0067d738",
+      "state": {
+        "Status": "exited",
+        "Running": false,
+        "Paused": false,
+        "Restarting": false,
+        "Pid": 3125859,
+        "ExitCode": 1,
+        "Error": "",
+        "StartedAt": "2026-10-20T06:36:01.033176719Z",
+        "FinishedAt": "2026-10-20T06:36:07.652699638Z"
+      },
+      "runtime": "io.containerd.runc.v2",
+      "devices": null,
+      "nano_cpus": null,
+      "memory": 8589934592
+    },
+    {
+      "name": "t008-stage1-cpu-20261020-a2",
+      "id": "94571a26cadad83b48ba1e400b6f9e26bb0756ef84439f533cdfe64c96acea3c",
+      "image": "modelscope-registry.cn-hangzhou.cr.aliyuncs.com/modelscope-repo/modelscope@sha256:822d99beed4984a421c8d1da397993c6a8a5f88cdad7dde940bd52df0067d738",
+      "state": {
+        "Status": "exited",
+        "Running": false,
+        "Paused": false,
+        "Restarting": false,
+        "Pid": 3127710,
+        "ExitCode": 0,
+        "Error": "",
+        "StartedAt": "2026-10-20T06:37:00.871025127Z",
+        "FinishedAt": "2026-10-20T06:37:19.389085488Z"
+      },
+      "runtime": "io.containerd.runc.v2",
+      "devices": null,
+      "nano_cpus": null,
+      "memory": 8589934592
+    },
+    {
+      "name": "t008-stage1-recipe-20261020",
+      "id": "73738624965e2eeb7965d4720d0de4054b3386caa81e12c18066465c125a11f7",
+      "image": "modelscope-registry.cn-hangzhou.cr.aliyuncs.com/modelscope-repo/modelscope@sha256:822d99beed4984a421c8d1da397993c6a8a5f88cdad7dde940bd52df0067d738",
+      "state": {
+        "Status": "exited",
+        "Running": false,
+        "Paused": false,
+        "Restarting": false,
+        "Pid": 3131911,
+        "ExitCode": 2,
+        "Error": "",
+        "StartedAt": "2026-10-20T06:41:05.301912265Z",
+        "FinishedAt": "2026-10-20T06:41:11.986185358Z"
+      },
+      "runtime": "io.containerd.runc.v2",
+      "devices": null,
+      "nano_cpus": null,
+      "memory": 8589934592
+    },
+    {
+      "name": "t008-stage1-recipe-20261020-a2",
+      "id": "c08d96d19a65733906fb394d1f39ab267b35bae2be2954c86df8b231d45ae73c",
+      "image": "modelscope-registry.cn-hangzhou.cr.aliyuncs.com/modelscope-repo/modelscope@sha256:822d99beed4984a421c8d1da397993c6a8a5f88cdad7dde940bd52df0067d738",
+      "state": {
+        "Status": "exited",
+        "Running": false,
+        "Paused": false,
+        "Restarting": false,
+        "Pid": 3133923,
+        "ExitCode": 0,
+        "Error": "",
+        "StartedAt": "2026-10-20T06:42:52.748232402Z",
+        "FinishedAt": "2026-10-20T06:43:05.278055733Z"
+      },
+      "runtime": "io.containerd.runc.v2",
+      "devices": null,
+      "nano_cpus": null,
+      "memory": 8589934592
+    },
+    {
+      "name": "t008-stage1-final-20261020",
+      "id": "84e53257cdf7b2a10eb7743d10c38342b6178000a9eeeef13bd3085ff01e8cad",
+      "image": "modelscope-registry.cn-hangzhou.cr.aliyuncs.com/modelscope-repo/modelscope@sha256:822d99beed4984a421c8d1da397993c6a8a5f88cdad7dde940bd52df0067d738",
+      "state": {
+        "Status": "exited",
+        "Running": false,
+        "Paused": false,
+        "Restarting": false,
+        "Pid": 3146168,
+        "ExitCode": 1,
+        "Error": "",
+        "StartedAt": "2026-10-20T06:55:25.537224727Z",
+        "FinishedAt": "2026-10-20T06:55:35.713038535Z"
+      },
+      "runtime": "io.containerd.runc.v2",
+      "devices": null,
+      "nano_cpus": null,
+      "memory": 8589934592
+    },
+    {
+      "name": "t008-stage1-final-20261020-a2",
+      "id": "5bb4e798b4aaf939c261d8ee7947c898156ee27c744fbd4c1474dd104c5ac8d8",
+      "image": "modelscope-registry.cn-hangzhou.cr.aliyuncs.com/modelscope-repo/modelscope@sha256:822d99beed4984a421c8d1da397993c6a8a5f88cdad7dde940bd52df0067d738",
+      "state": {
+        "Status": "exited",
+        "Running": false,
+        "Paused": false,
+        "Restarting": false,
+        "Pid": 3147056,
+        "ExitCode": 1,
+        "Error": "",
+        "StartedAt": "2026-10-20T06:55:58.517848217Z",
+        "FinishedAt": "2026-10-20T06:56:35.52376152Z"
+      },
+      "runtime": "io.containerd.runc.v2",
+      "devices": null,
+      "nano_cpus": null,
+      "memory": 8589934592
+    },
+    {
+      "name": "t008-stage1-template-20261020",
+      "id": "d2aa06d502a87d4747e4eb582304acc56bbb7512852118eba1f610c02e138891",
+      "image": "modelscope-registry.cn-hangzhou.cr.aliyuncs.com/modelscope-repo/modelscope@sha256:822d99beed4984a421c8d1da397993c6a8a5f88cdad7dde940bd52df0067d738",
+      "state": {
+        "Status": "exited",
+        "Running": false,
+        "Paused": false,
+        "Restarting": false,
+        "Pid": 3148507,
+        "ExitCode": 1,
+        "Error": "",
+        "StartedAt": "2026-10-20T06:57:04.128165512Z",
+        "FinishedAt": "2026-10-20T06:57:11.450078024Z"
+      },
+      "runtime": "io.containerd.runc.v2",
+      "devices": null,
+      "nano_cpus": null,
+      "memory": 8589934592
+    },
+    {
+      "name": "t008-stage1-template-20261020-a2",
+      "id": "8e96787b2b3d9be002c17d677a2141ea24c261fb36eb7b08e5498436b3a9b33b",
+      "image": "modelscope-registry.cn-hangzhou.cr.aliyuncs.com/modelscope-repo/modelscope@sha256:822d99beed4984a421c8d1da397993c6a8a5f88cdad7dde940bd52df0067d738",
+      "state": {
+        "Status": "exited",
+        "Running": false,
+        "Paused": false,
+        "Restarting": false,
+        "Pid": 3150525,
+        "ExitCode": 1,
+        "Error": "",
+        "StartedAt": "2026-10-20T06:58:24.791026165Z",
+        "FinishedAt": "2026-10-20T06:58:31.859857248Z"
+      },
+      "runtime": "io.containerd.runc.v2",
+      "devices": null,
+      "nano_cpus": null,
+      "memory": 8589934592
+    },
+    {
+      "name": "t008-stage1-template-20261020-a3",
+      "id": "fff7263e490c3d6d2d0a997dc0b22f5727938a381ad9e406b6faffe1b5839dd2",
+      "image": "modelscope-registry.cn-hangzhou.cr.aliyuncs.com/modelscope-repo/modelscope@sha256:822d99beed4984a421c8d1da397993c6a8a5f88cdad7dde940bd52df0067d738",
+      "state": {
+        "Status": "exited",
+        "Running": false,
+        "Paused": false,
+        "Restarting": false,
+        "Pid": 3152129,
+        "ExitCode": 1,
+        "Error": "",
+        "StartedAt": "2026-10-20T06:59:41.506433948Z",
+        "FinishedAt": "2026-10-20T06:59:48.612176426Z"
+      },
+      "runtime": "io.containerd.runc.v2",
+      "devices": null,
+      "nano_cpus": null,
+      "memory": 8589934592
+    },
+    {
+      "name": "t008-stage1-aligned-20261020",
+      "id": "b01394cdaee8d2c68b58ed0e3e9a21f0d25ebbdfc68b14904fcd069245a71394",
+      "image": "modelscope-registry.cn-hangzhou.cr.aliyuncs.com/modelscope-repo/modelscope@sha256:822d99beed4984a421c8d1da397993c6a8a5f88cdad7dde940bd52df0067d738",
+      "state": {
+        "Status": "exited",
+        "Running": false,
+        "Paused": false,
+        "Restarting": false,
+        "Pid": 3154225,
+        "ExitCode": 0,
+        "Error": "",
+        "StartedAt": "2026-10-20T07:01:00.074128892Z",
+        "FinishedAt": "2026-10-20T07:01:38.787077803Z"
+      },
+      "runtime": "io.containerd.runc.v2",
+      "devices": null,
+      "nano_cpus": null,
+      "memory": 8589934592
+    }
+  ],
+  "removed_own_exited_containers": true,
+  "gpu_devices": false
+}

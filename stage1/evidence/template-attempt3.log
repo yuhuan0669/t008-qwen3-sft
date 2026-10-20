@@ -1,0 +1,18 @@
+Failed to load CPU gemm_4bit_forward from kernels-community: No module named 'kernels'. Please make sure you already `pip install kernels` and the kernels >= 0.11.1
+[INFO:swift] Successfully registered `/usr/local/lib/python3.12/site-packages/swift/dataset/data/dataset_info.json`.
+[INFO:swift] rank: -1, local_rank: -1, world_size: 1, local_world_size: 1
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+[INFO:swift] Setting torch_dtype: torch.bfloat16
+[INFO:swift] Setting args.lazy_tokenize: False
+[INFO:swift] Setting args.gradient_accumulation_steps: 16
+[INFO:swift] Setting args.dataloader_num_workers: 1
+[INFO:swift] Setting torch_dtype: torch.bfloat16
+[INFO:swift] default_system: None
+[INFO:swift] max_length: 2048
+[INFO:swift] response_prefix: None
+[INFO:swift] agent_template: hermes
+Traceback (most recent call last):
+  File "/work/stage1/scripts/check_template_alignment.py", line 47, in <module>
+    assert train_prefix == infer_prefix, (name, thinking, 'prefix mismatch')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('multi_turn', False, 'prefix mismatch')

@@ -1,0 +1,15 @@
+Failed to load CPU gemm_4bit_forward from kernels-community: No module named 'kernels'. Please make sure you already `pip install kernels` and the kernels >= 0.11.1
+[INFO:swift] Successfully registered `/usr/local/lib/python3.12/site-packages/swift/dataset/data/dataset_info.json`.
+[INFO:swift] Successfully imported external_plugins: ['/work/stage1/training/local_data_guard.py'].
+[INFO:swift] rank: -1, local_rank: -1, world_size: 1, local_world_size: 1
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+[INFO:swift] Setting args.lazy_tokenize: False
+[transformers] warmup_ratio is deprecated and will be removed in v5.2. Use `warmup_steps` instead.
+Map (num_proc=1): 100%|██████████| 1276/1276 [00:00<?, ? examples/s]Map (num_proc=1): 2552 examples [00:00, 12349.68 examples/s]        Map (num_proc=1): 2552 examples [00:00, 6058.82 examples/s] 
+[INFO:swift] Setting torch_dtype: torch.bfloat16
+[INFO:swift] default_system: None
+[INFO:swift] max_length: 2048
+[INFO:swift] response_prefix: None
+[INFO:swift] agent_template: hermes
+Map (num_proc=1):   0%|          | 0/1276 [00:00<?, ? examples/s]Map (num_proc=1):  78%|███████▊  | 1000/1276 [00:03<00:01, 275.54 examples/s]Map (num_proc=1): 100%|██████████| 1276/1276 [00:04<00:00, 315.13 examples/s]Map (num_proc=1): 100%|██████████| 1276/1276 [00:04<00:00, 296.26 examples/s]
+{"verified": true, "unknown_flags": [], "dataset": ["/work/stage1/data/train.jsonl"], "max_length": 2048, "loss_scale": "default+ignore_empty_think", "preserve_thinking": false, "lora_dropout": 0.05, "dataset_shuffle": true, "truncation_strategy": "delete", "guarded_pipeline_rows": 1276, "missing_row_rejection_verified": true, "weights_loaded": false, "trainer_created": false, "cpu_overrides": ["use_cpu=true", "report_to=none", "add_version=false", "output_dir=recipe-only"]}

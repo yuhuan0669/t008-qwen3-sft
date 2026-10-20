@@ -1,0 +1,28 @@
+{
+  "version": "stage1-cpu-v0.1",
+  "status": "CPU_PREPARED_FOR_USER_REVIEW_NOT_TRAINING_APPROVAL",
+  "plan": "review-v0.4.1",
+  "git_tag": "stage1-cpu-v0.1",
+  "git_branch": "stage1/cpu-preparation-v0.4.1",
+  "github": "https://github.com/yuhuan0669/t008-qwen3-sft/tree/stage1-cpu-v0.1/stage1",
+  "report": "stage1/README.md",
+  "changes": "stage1/review/index.html",
+  "data_manifest": "stage1/data/manifest.json",
+  "train_sha256": "30a50ae3778409db238c3febe06dcdbdccc0b09335f58afddfaa0e6ce16e41be",
+  "holdout_index": "stage1/evaluation/holdout-index.json",
+  "gpu_budget": "stage1/GPU_BUDGET.md",
+  "drive": {
+    "document_id": "1252vTpNDf_mK3oi1QTHUKEkGq-xCYBXjsCSi9MX1gzI",
+    "document_url": "https://docs.google.com/document/d/1252vTpNDf_mK3oi1QTHUKEkGq-xCYBXjsCSi9MX1gzI",
+    "document_revision": "AHj4eMTd1Jgg1A6fuidNofo1ma2X2DEUaG_IKKGXx4DKpiQM-HKfMPhhTypVw0w4hKn51UY8Xp7NlPNxYBT701qNvGiTS1lqUR_NYrEz6nI",
+    "parent_id": "1PUMa2W9OpCFOImL0ZGSLbTbY7TLOEZ5c",
+    "zip_id": "1XrfWV6MygXWjgYxwrrhtwdRuQ26pOr86",
+    "zip_url": "https://drive.google.com/file/d/1XrfWV6MygXWjgYxwrrhtwdRuQ26pOr86/view",
+    "zip_bytes": 6849552,
+    "zip_sha256": "9468d0b5e94b34523ba8f2e75d9f68bb06884beaa6a578406386aef7e303bbe1",
+    "zip_object_path": "sha256/94/9468d0b5e94b34523ba8f2e75d9f68bb06884beaa6a578406386aef7e303bbe1"
+  },
+  "delivery_evidence": "verification/stage1-cpu-v0.1/delivery.json",
+  "inference_executed": false,
+  "training_started": false
+}

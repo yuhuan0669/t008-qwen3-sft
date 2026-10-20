@@ -1,0 +1,1 @@
+﻿run_id,case_id,dataset,model_or_adapter_sha,condition,mode,seed,turn_count,passed,identity_or_scope_error,fabricated_access_or_action,unsupported_professional_result,irrelevant_identity_insertion,empty_body,truncated,protocol_error,input_tokens,output_tokens,elapsed_seconds,output_file,review_notes

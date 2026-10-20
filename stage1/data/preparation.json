@@ -1,0 +1,16 @@
+{
+  "parent_sha256": "d85dbe58d9c5fab98bbf6a81cf828147ba1a47d6cce492aef107c7d3dafa604c",
+  "parent_rows": 2600,
+  "parent_unique": 1108,
+  "identity_unique_reviewed": 108,
+  "identity_unique_modified": 42,
+  "new_unique": 24,
+  "general_scope_flags_reviewed": 108,
+  "general_semantic_exclusion_first_rows": {
+    "1724": "身份/接入错配：非空思考自称Qwen并无依据声称可通过Alibaba API使用；该思考参与监督",
+    "470": "身份/能力错配：自称Alibaba Cloud研发，思考中无依据声称拥有供应商行为准则及尽调流程",
+    "1725": "缺条件编造结果：原文仅称开始接种，答案新增90%覆盖率、已完成ISO/CE认证及财报审计事实"
+  },
+  "status": "CPU_ENCODING_PENDING",
+  "review_is_human": false
+}

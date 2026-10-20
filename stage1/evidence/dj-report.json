@@ -1,0 +1,18 @@
+{
+  "tool": "Data-Juicer",
+  "version": "1.5.5",
+  "operator": "TextLengthFilter.compute_stats_batched",
+  "operator_source_sha256": "210dc2c9fe94382655790ad1682d868655442c895937aced8c7e3c9d9b46f4bb",
+  "projection_sha256": "b3a3f9bca4588f8f7be67ecdf1f6b461c058c5b1077d60a16d72bae946151631",
+  "rows": 2600,
+  "unique_projection_texts": 1108,
+  "characters": {
+    "min": 69,
+    "median": 3683.0,
+    "p95": 10055,
+    "max": 11634
+  },
+  "note": "Character counts only. Actual token length and supervision measured separately with real Swift. Duplicate counting by Python. No rewriting/filtering/model downloads.",
+  "messages_written_back": false,
+  "gpu_used": false
+}

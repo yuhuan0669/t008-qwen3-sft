@@ -1,0 +1,14 @@
+Failed to load CPU gemm_4bit_forward from kernels-community: No module named 'kernels'. Please make sure you already `pip install kernels` and the kernels >= 0.11.1
+[INFO:swift] Successfully registered `/usr/local/lib/python3.12/site-packages/swift/dataset/data/dataset_info.json`.
+[INFO:swift] rank: -1, local_rank: -1, world_size: 1, local_world_size: 1
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+[INFO:swift] Setting torch_dtype: torch.bfloat16
+[INFO:swift] Setting args.lazy_tokenize: False
+Traceback (most recent call last):
+  File "/work/stage1/scripts/check_template_alignment.py", line 12, in <module>
+    a = SftArguments(model='/base', model_type='qwen3', template='qwen3',
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 330, in __init__
+  File "/usr/local/lib/python3.12/site-packages/swift/arguments/sft_args.py", line 220, in __post_init__
+    raise ValueError(f'self.dataset: {self.dataset}, self.cached_dataset: {self.cached_dataset}. '
+ValueError: self.dataset: [], self.cached_dataset: []. Please input the training dataset.

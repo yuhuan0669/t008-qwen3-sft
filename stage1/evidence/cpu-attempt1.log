@@ -1,0 +1,10 @@
+Failed to load CPU gemm_4bit_forward from kernels-community: No module named 'kernels'. Please make sure you already `pip install kernels` and the kernels >= 0.11.1
+[INFO:swift] Successfully registered `/usr/local/lib/python3.12/site-packages/swift/dataset/data/dataset_info.json`.
+Traceback (most recent call last):
+  File "/work/stage1/scripts/cpu_encode.py", line 18, in <module>
+    args=args_for(D/'prepared.jsonl')
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/stage1/scripts/cpu_encode.py", line 13, in args_for
+    return SftArguments(model='/base',model_type='qwen3',template='qwen3',dataset=[str(path)],
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SftArguments.__init__() got an unexpected keyword argument 'dataset_num_workers'

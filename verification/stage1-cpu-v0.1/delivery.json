@@ -1,0 +1,31 @@
+{
+  "version": "stage1-cpu-v0.1",
+  "recorded_at_utc": "2026-10-20T07:10:23.793Z",
+  "status": "CPU_PREPARED_DRIVE_READBACK_VERIFIED",
+  "scope": "Stage1 CPU preparation only; no GPU training, inference or service changes",
+  "github_repository": "https://github.com/yuhuan0669/t008-qwen3-sft",
+  "github_tag": "stage1-cpu-v0.1",
+  "github_verification": "Remote commit equality is checked after final push; commit is resolved by immutable tag rather than embedded self-reference.",
+  "google_doc_url": "https://docs.google.com/document/d/1252vTpNDf_mK3oi1QTHUKEkGq-xCYBXjsCSi9MX1gzI",
+  "google_doc_revision": "AHj4eMTd1Jgg1A6fuidNofo1ma2X2DEUaG_IKKGXx4DKpiQM-HKfMPhhTypVw0w4hKn51UY8Xp7NlPNxYBT701qNvGiTS1lqUR_NYrEz6nI",
+  "document_text_verified": true,
+  "original_01_append_verified": true,
+  "report_revision": "AHj4eMS_MzW2dDrposw9jfE1PUomOmBBruKOJPDJz4ZbWJOJfD690D3AVKuC2cLYTrNdaR9h9QGK7M8sZHvSvujcfuzcDHPORsI2lUGkp6w",
+  "parent_id": "1PUMa2W9OpCFOImL0ZGSLbTbY7TLOEZ5c",
+  "doc_parent_verified": true,
+  "zip": {
+    "id": "1XrfWV6MygXWjgYxwrrhtwdRuQ26pOr86",
+    "url": "https://drive.google.com/file/d/1XrfWV6MygXWjgYxwrrhtwdRuQ26pOr86/view",
+    "bytes": 6849552,
+    "sha256": "9468d0b5e94b34523ba8f2e75d9f68bb06884beaa6a578406386aef7e303bbe1",
+    "download_readback_sha256_verified": true,
+    "parent_verified": true,
+    "formal_holdout_content_included": false
+  },
+  "candidate_rows": 1276,
+  "candidate_sha256": "30a50ae3778409db238c3febe06dcdbdccc0b09335f58afddfaa0e6ce16e41be",
+  "human_data_review": "PENDING",
+  "gpu_package": "NOT_APPROVED",
+  "training_started": false,
+  "inference_requested": false
+}

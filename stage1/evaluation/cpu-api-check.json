@@ -1,0 +1,20 @@
+{
+  "evalscope_version": "1.9.1",
+  "checks": [
+    "ifeval/thinking:TaskConfig_and_GenerateConfig_valid",
+    "ifeval/nonthinking:TaskConfig_and_GenerateConfig_valid",
+    "gsm8k/thinking:TaskConfig_and_GenerateConfig_valid",
+    "gsm8k/nonthinking:TaskConfig_and_GenerateConfig_valid",
+    "ifeval_synthetic_rule_scoring",
+    "gsm8k_synthetic_answer_parser",
+    "no_gold_in_specialized_prompt",
+    "dynamic_multiturn_actual_history",
+    "public_native_record_to_sample"
+  ],
+  "model_instantiated": false,
+  "inference_executed": false,
+  "source_hashes": {
+    "GSM8KAdapter": "52ec18386b90e19120b7628e610e2f6323ece9bc9a5973dc0af9abb7befb9acb",
+    "IFEvalAdapter": "f42a1b60dfdedcc016a1b454d8394a75d5a861944615b88404d11e5675f4ff2a"
+  }
+}

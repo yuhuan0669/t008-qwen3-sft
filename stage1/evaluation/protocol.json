@@ -1,0 +1,97 @@
+{
+  "protocol": "review-v0.4.1-stage1-evaluation",
+  "execution_enabled": false,
+  "stage": "CPU_PREPARATION_ONLY",
+  "evalscope_version": "1.9.1",
+  "backend": "EvalScope Native + vLLM OpenAI-compatible service after GPU authorization",
+  "conditions": {
+    "A": {
+      "model": "BASE_MODEL_TO_BIND",
+      "system": null
+    },
+    "B": {
+      "model": "BASE_MODEL_TO_BIND",
+      "system": "custom-system.txt"
+    },
+    "C_new": {
+      "model": "FROZEN_CANDIDATE_TO_BIND",
+      "system": null
+    },
+    "D_new": {
+      "model": "FROZEN_CANDIDATE_TO_BIND",
+      "system": "custom-system.txt"
+    }
+  },
+  "system_invariant": "B and D_new use byte-identical frozen custom system; A and C_new have no custom system",
+  "modes": {
+    "thinking": {
+      "temperature": 0.6,
+      "top_p": 0.95,
+      "top_k": 20,
+      "max_tokens": 4096,
+      "min_p": 0,
+      "enable_thinking": true
+    },
+    "nonthinking": {
+      "temperature": 0.7,
+      "top_p": 0.8,
+      "top_k": 20,
+      "max_tokens": 1024,
+      "min_p": 0,
+      "enable_thinking": false
+    }
+  },
+  "default_seed": 42,
+  "candidate_identity_seeds": [
+    42,
+    43,
+    44
+  ],
+  "formal_specialized": {
+    "identity": 40,
+    "general": 40,
+    "clarification": 20,
+    "boundary": 20
+  },
+  "formal_public": {
+    "ifeval": 100,
+    "gsm8k": 100
+  },
+  "public_conditions": [
+    "A",
+    "C_new"
+  ],
+  "public_few_shot_num": 0,
+  "formal_case_conditions": {
+    "baseline": 880,
+    "candidate": 1200,
+    "total": 2080
+  },
+  "turn_request_upper_counts_if_all_turns_run": {
+    "baseline": 928,
+    "candidate": 1312,
+    "total": 2240
+  },
+  "multi_turn": "Sequential dynamic actual assistant history; all turns scored; one denominator unit per dialogue",
+  "formal_acceptance_runs": 1,
+  "inference_or_gpu_performed": false,
+  "reuse_baseline_requires": [
+    "same source/model hashes",
+    "same prompts/template/system hashes",
+    "same generation settings",
+    "same parser/scoring version"
+  ],
+  "readiness_pending": [
+    "GPU package authorization",
+    "freeze candidate identity and hashes",
+    "GPU non-holdout backend precheck and throughput",
+    "formal execution and human review"
+  ],
+  "custom_system": {
+    "path": "stage1/evaluation/custom-system.txt",
+    "sha256": "a9ce65168d68a2b55a74c37ccad11e7267212078ef0237c555d0313b21f1e682",
+    "encoding": "UTF-8",
+    "trailing_newline": false,
+    "source": "plan section 1.1 standard complete self introduction"
+  }
+}

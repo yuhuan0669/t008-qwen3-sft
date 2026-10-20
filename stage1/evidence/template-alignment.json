@@ -1,0 +1,62 @@
+{
+  "verified": true,
+  "cases": [
+    {
+      "case": "single_turn",
+      "enable_thinking": false,
+      "swift_hf_role_prefix_tokens_equal": true,
+      "prefix_tokens": 14,
+      "prefix_sha256": "27edbdae7d948ca5be61a0b35377c7a1710f95ea6fb3af0ce16a7409cac1c9ee",
+      "generation_control_suffix": "<think>\n\n</think>\n\n",
+      "suffix_verified": true
+    },
+    {
+      "case": "single_turn",
+      "enable_thinking": true,
+      "swift_hf_role_prefix_tokens_equal": true,
+      "prefix_tokens": 14,
+      "prefix_sha256": "27edbdae7d948ca5be61a0b35377c7a1710f95ea6fb3af0ce16a7409cac1c9ee",
+      "generation_control_suffix": "",
+      "suffix_verified": true
+    },
+    {
+      "case": "with_system",
+      "enable_thinking": false,
+      "swift_hf_role_prefix_tokens_equal": true,
+      "prefix_tokens": 80,
+      "prefix_sha256": "39af9259b3c10a1d722015d64dca4571db853d92f3cc8f1ea6f7b8bf8f267f35",
+      "generation_control_suffix": "<think>\n\n</think>\n\n",
+      "suffix_verified": true
+    },
+    {
+      "case": "with_system",
+      "enable_thinking": true,
+      "swift_hf_role_prefix_tokens_equal": true,
+      "prefix_tokens": 80,
+      "prefix_sha256": "39af9259b3c10a1d722015d64dca4571db853d92f3cc8f1ea6f7b8bf8f267f35",
+      "generation_control_suffix": "",
+      "suffix_verified": true
+    },
+    {
+      "case": "multi_turn",
+      "enable_thinking": false,
+      "swift_hf_role_prefix_tokens_equal": true,
+      "prefix_tokens": 31,
+      "prefix_sha256": "03fc5280b3935f6f8ce55c83218019e88d3b82278cf3af1513ba139ef6be1cb3",
+      "generation_control_suffix": "<think>\n\n</think>\n\n",
+      "suffix_verified": true
+    },
+    {
+      "case": "multi_turn",
+      "enable_thinking": true,
+      "swift_hf_role_prefix_tokens_equal": true,
+      "prefix_tokens": 31,
+      "prefix_sha256": "03fc5280b3935f6f8ce55c83218019e88d3b82278cf3af1513ba139ef6be1cb3",
+      "generation_control_suffix": "",
+      "suffix_verified": true
+    }
+  ],
+  "weights_loaded": false,
+  "gpu_available": false,
+  "scope": "Exact token equality through final assistant role boundary; mode suffix checked separately. Does not claim equality of training answer and generation prompt."
+}

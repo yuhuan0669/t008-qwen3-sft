@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "status": "FROZEN_CPU_PREPARED_NOT_EVALUATED",
+  "plan": "review-v0.4.1",
+  "frozen_at_utc": "2026-10-20T06:40:49.002645+00:00",
+  "plan_path": "docs/plans/SFT_MINIMAL_INTEGRATION_v0.4.1.md",
+  "plan_sha256": "1c7f3a3b1b57c5a90d0164e317187e79a037f8d24668b3efa0852c9aa47e7dcc",
+  "business_source_path": "control/sources/product-business-scope-20261019.txt",
+  "business_source_sha256": "901e4020d5c07df707edfd2ae22e6dc1f7525602efd162c2a6300ba1c4a91913",
+  "custody": {
+    "directory": "/Users/ben/aiws/codex/keywords/t008_eval_holdout_stage1_20261020",
+    "directory_mode": "0700",
+    "files_mode": "0600",
+    "training_side_read_authorized": false,
+    "git_commit_formal_content": false,
+    "isolation": "Independent evaluation role; no training sample text read in model context; full holdout texts and answers remain outside Git. Same OS account can access files; this is not strong separate-principal isolation."
+  },
+  "formal_files": [
+    {
+      "name": "specialized-formal.jsonl",
+      "sha256": "18f2e0de12c785e0dbc3c891614ca6716679f8823051e308022963798ce704b0",
+      "rows": 120,
+      "categories": {
+        "identity": 40,
+        "general": 40,
+        "clarification": 20,
+        "boundary": 20
+      },
+      "multi_turn_cases": 12
+    },
+    {
+      "name": "public-formal.jsonl",
+      "sha256": "53ff55d02ae6b4bb1bbd6b0e2be8736b2845671606d4c61ed978caeeb5bb9ba9",
+      "rows": 200,
+      "benchmarks": {
+        "ifeval": 100,
+        "gsm8k": 100
+      }
+    }
+  ],
+  "public_development": {
+    "path": "stage1/evaluation/public-development.jsonl",
+    "sha256": "8513e6709b6f24946b6d98e6b94c7233fa2620c0845dee4aa412a91d040d3f97",
+    "rows": 40,
+    "benchmarks": {
+      "ifeval": 20,
+      "gsm8k": 20
+    }
+  },
+  "official_sources": [
+    {
+      "name": "ifeval",
+      "repository": "https://github.com/google-research/google-research",
+      "commit": "3ef52111c1fabc301880818f5a547570e926a76b",
+      "url": "https://raw.githubusercontent.com/google-research/google-research/3ef52111c1fabc301880818f5a547570e926a76b/instruction_following_eval/data/input_data.jsonl",
+      "sha256": "67ffeee0fcb87c317c5b08a2de85557b4a7e96ada6178aa645b4954fe4b53d49",
+      "bytes": 207111,
+      "retrieved_at": "2026-10-20T06:30:36.447572+00:00",
+      "license_url": "https://raw.githubusercontent.com/google-research/google-research/3ef52111c1fabc301880818f5a547570e926a76b/LICENSE",
+      "license_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "name": "gsm8k",
+      "repository": "https://github.com/openai/grade-school-math",
+      "commit": "3101c7d5072418e28b9008a6636bde82a006892c",
+      "url": "https://raw.githubusercontent.com/openai/grade-school-math/3101c7d5072418e28b9008a6636bde82a006892c/grade_school_math/data/test.jsonl",
+      "sha256": "3730d312f6e3440559ace48831e51066acaca737f6eabec99bccb9e4b3c39d14",
+      "bytes": 749738,
+      "retrieved_at": "2026-10-20T06:30:44.308687+00:00",
+      "license_url": "https://raw.githubusercontent.com/openai/grade-school-math/3101c7d5072418e28b9008a6636bde82a006892c/LICENSE",
+      "license_sha256": "86bbb73e855821d7c401912fd4bf82e34313e6e3b6fd6f909f2b6cc9e209a53b"
+    }
+  ],
+  "selection": "Sort official source row indices by SHA256(t008-review-v0.4.1-public-split42:{dataset}:{zero_based_row}); first100 formal,next20 development; no performance-driven selection",
+  "rubric": {
+    "path": "stage1/evaluation/rubric.md",
+    "sha256": "c8c9d2a1f75780792703a5f67b34fd24561939fd7b1f08c3de9a3cbc6d8ee284"
+  },
+  "protocol": {
+    "path": "stage1/evaluation/protocol.json",
+    "sha256": "c65ddd22dcf9ada352165726ff832e4e2bee708a7ed9bec95f275e3182e0ee23"
+  },
+  "case_conditions": {
+    "baseline": 880,
+    "candidate": 1200,
+    "total": 2080
+  },
+  "max_turn_requests_if_all_dialogues_complete": {
+    "baseline": 928,
+    "candidate": 1312,
+    "total": 2240
+  },
+  "pretraining_contamination": "UNKNOWN; no clean-pretraining claim",
+  "checks_path": "stage1/evaluation/integrity-check.json",
+  "cpu_api_checks_path": "stage1/evaluation/cpu-api-check.json",
+  "inference_executed": false,
+  "acceptance_status": "NOT_EVALUATED_PM_ACCEPTANCE_NOT_REQUESTED"
+}

@@ -1,0 +1,50 @@
+{
+  "passed": true,
+  "scope": "Local row/byte conservation, eight exact replacements and unchanged training recipe",
+  "rows_before": 1275,
+  "rows_after": 1275,
+  "changed_rows": [
+    461,
+    895,
+    937,
+    1224,
+    1259,
+    1261,
+    1262,
+    1270
+  ],
+  "unchanged_rows_byte_identical": 1267,
+  "general_rows_byte_identical": 1036,
+  "source_exposures_before": {
+    "swift/Qwen3-SFT-Mixin": 1036,
+    "swift/self-cognition": 216,
+    "t008/project-positioning-v1": 23
+  },
+  "source_exposures_after": {
+    "swift/Qwen3-SFT-Mixin": 1036,
+    "swift/self-cognition": 216,
+    "t008/project-positioning-v1": 23
+  },
+  "added_rows": 0,
+  "removed_rows": 0,
+  "new_record_occurrences": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "assistant_turn_counts_unchanged": true,
+  "full_introductions_cn_en_unchanged": true,
+  "manual_thinking_added": false,
+  "confidentiality_samples_reintroduced": false,
+  "training_recipe_changed": false,
+  "epochs": 1,
+  "max_full_runs": 1,
+  "encoding_check": "NOT_RUN_FOR_THIS_REVISION",
+  "training_started": false,
+  "cluster_accessed": false
+}

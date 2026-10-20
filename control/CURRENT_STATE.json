@@ -1,13 +1,13 @@
 {
   "schema": "t008-unified-current-state-v1",
-  "recorded_at_utc": "2026-10-20T12:31:59.790587+00:00",
+  "recorded_at_utc": "2026-10-20T13:29:21.069915+00:00",
   "timezone_for_user_dates": "America/Los_Angeles",
   "archive_version": "archive-v1.0.0",
   "task": "T-008 v1.5 section 15",
   "current_workstream": "Qwen3-8B identity and general-instruction foundational SFT",
   "base_model": "Qwen/Qwen3-8B",
   "process": "v1.2 process-restore-R1",
-  "current_user_request": "Follow official Qwen3 SFT route, preserve empty-thinking loss mask; no new training before confirmation",
+  "current_user_request": "Prepare eight identity/business-scope row replacements for local review; preserve rows and exposures; no training",
   "source_of_current_direction": "User correction in this chat plus control/sources/t008-v1.5-section15.txt",
   "historical_training": "FULL_103_STEPS_COMPLETED",
   "candidate": null,
@@ -152,17 +152,17 @@
   },
   "historical_candidate": "checkpoint-103",
   "current_data_candidate": {
-    "version": "stage1-cpu-v0.1.5",
-    "manifest": "stage1/variants/stage1-cpu-v0.1.5/manifest.json",
-    "train_path": "stage1/variants/stage1-cpu-v0.1.5/train.jsonl",
-    "train_sha256": "34e4e39a618959154e87eb6b18bc70909a8db9faf5f008d2d4d34d09d09aaa09",
-    "report": "stage1/variants/stage1-cpu-v0.1.5/README.md",
-    "sample_diff": "stage1/variants/stage1-cpu-v0.1.5/SAMPLE_DIFF.md",
-    "training_config": "stage1/variants/stage1-cpu-v0.1.5/training-config.json",
+    "version": "stage1-cpu-v0.1.6",
+    "manifest": "stage1/variants/stage1-cpu-v0.1.6/manifest.json",
+    "train_path": "stage1/variants/stage1-cpu-v0.1.6/train.jsonl",
+    "train_sha256": "6f530590b228ade530f4c21f69755bc2f2dc585f7c84ccab8ae4aff33f66c19d",
+    "report": "stage1/variants/stage1-cpu-v0.1.6/README.md",
+    "sample_diff": "stage1/variants/stage1-cpu-v0.1.6/SAMPLE_DIFF.md",
+    "training_config": "stage1/variants/stage1-cpu-v0.1.6/training-config.json",
     "rows": 1275,
     "status": "PREPARED_FOR_USER_REVIEW_NOT_TRAINING_APPROVAL",
     "config_revision": "official-route-r1"
   },
   "next_training_authorized": false,
-  "proposed_training_config": "stage1/variants/stage1-cpu-v0.1.5/training-config.json"
+  "proposed_training_config": "stage1/variants/stage1-cpu-v0.1.6/training-config.json"
 }

@@ -35,13 +35,13 @@
   "data_supplement": "stage1/UNDERLYING_SUPPLEMENT.md",
   "implementation_plan": "docs/plans/GPU_IMPLEMENTATION_REVIEW_v0.2.md",
   "latest_data_revision": {
-    "version": "stage1-cpu-v0.1.5",
-    "manifest": "stage1/variants/stage1-cpu-v0.1.5/manifest.json",
-    "train_path": "stage1/variants/stage1-cpu-v0.1.5/train.jsonl",
-    "train_sha256": "34e4e39a618959154e87eb6b18bc70909a8db9faf5f008d2d4d34d09d09aaa09",
-    "report": "stage1/variants/stage1-cpu-v0.1.5/README.md",
-    "sample_diff": "stage1/variants/stage1-cpu-v0.1.5/SAMPLE_DIFF.md",
-    "training_config": "stage1/variants/stage1-cpu-v0.1.5/training-config.json",
+    "version": "stage1-cpu-v0.1.6",
+    "manifest": "stage1/variants/stage1-cpu-v0.1.6/manifest.json",
+    "train_path": "stage1/variants/stage1-cpu-v0.1.6/train.jsonl",
+    "train_sha256": "6f530590b228ade530f4c21f69755bc2f2dc585f7c84ccab8ae4aff33f66c19d",
+    "report": "stage1/variants/stage1-cpu-v0.1.6/README.md",
+    "sample_diff": "stage1/variants/stage1-cpu-v0.1.6/SAMPLE_DIFF.md",
+    "training_config": "stage1/variants/stage1-cpu-v0.1.6/training-config.json",
     "rows": 1275,
     "status": "PREPARED_FOR_USER_REVIEW_NOT_TRAINING_APPROVAL",
     "config_revision": "official-route-r1"
@@ -56,6 +56,18 @@
       "report": "stage1/variants/stage1-cpu-v0.1.4/README.md",
       "rows": 1275,
       "status": "LOCAL_DATA_REVISION_NO_NEW_TRAINING_AUTHORIZATION"
+    },
+    {
+      "version": "stage1-cpu-v0.1.5",
+      "manifest": "stage1/variants/stage1-cpu-v0.1.5/manifest.json",
+      "train_path": "stage1/variants/stage1-cpu-v0.1.5/train.jsonl",
+      "train_sha256": "34e4e39a618959154e87eb6b18bc70909a8db9faf5f008d2d4d34d09d09aaa09",
+      "report": "stage1/variants/stage1-cpu-v0.1.5/README.md",
+      "sample_diff": "stage1/variants/stage1-cpu-v0.1.5/SAMPLE_DIFF.md",
+      "training_config": "stage1/variants/stage1-cpu-v0.1.5/training-config.json",
+      "rows": 1275,
+      "status": "PREPARED_FOR_USER_REVIEW_NOT_TRAINING_APPROVAL",
+      "config_revision": "official-route-r1"
     }
   ]
 }

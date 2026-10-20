@@ -13,7 +13,7 @@
 
 ## 方案审阅版本
 
-`registry/plans.json`单独登记方案路径、SHA、状态、云端审阅副本和标签。`plan-review-v0.1`和`plan-review-v0.2`分别定位两版完整讨论稿；当前审阅入口为v0.4，旧稿和Drive副本保留。Git提交或创建标签不批准方案实施。修改讨论稿时产生新版本和commit，不移动既有标签。原始归档bundle及`archive-v1.0.0`不包含后续文档增量；后续方案可从Git远端或其单独bundle恢复。本次没有新增模型/数据对象，无需重传旧对象库。
+`registry/plans.json`单独登记方案路径、SHA、状态、云端审阅副本和标签。`plan-review-v0.1`和`plan-review-v0.2`分别定位两版完整讨论稿；当前审阅入口为v0.4.1。Git保留各版原稿；Drive的v0.4文档原地修订为v0.4.1，旧内容保留于Docs修订历史。Git提交或创建标签不批准方案实施。修改讨论稿时产生新版本和commit，不移动既有标签。原始归档bundle及`archive-v1.0.0`不包含后续文档增量；后续方案可从Git远端或其单独bundle恢复。本次没有新增模型/数据对象，无需重传旧对象库。
 
 ## 原地核验
 
@@ -92,3 +92,5 @@ git log --all --oneline --decorate
 本次沿用Git commit／plan-review-v0.3标签、Drive独立副本及现有方案索引；四份参考意见与修订说明保存于docs/reviews/review-v0.3/。只核对新增内容、旧文件未改和远端交付，不新增bundle，也不为纯文档修改重复核验全部历史对象。
 
 review-v0.4沿用上述精简维护方式。新增业务依据只读文本快照，完整方案与plan-review-v0.4标签单列；v0.3及其参考意见保持原样。
+
+review-v0.4.1补齐负责人指定的完整自我介绍，并在身份样本和评分中引用；沿用Drive文档链接，登记修订前后版本，不新建重复副本。

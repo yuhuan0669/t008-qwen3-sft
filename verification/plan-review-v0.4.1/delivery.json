@@ -1,0 +1,15 @@
+{
+  "version": "review-v0.4.1",
+  "status": "DELIVERED_FOR_REVIEW",
+  "recorded_at_utc": "2026-10-20T06:19:34.272Z",
+  "plan_sha256": "1c7f3a3b1b57c5a90d0164e317187e79a037f8d24668b3efa0852c9aa47e7dcc",
+  "google_doc_url": "https://docs.google.com/document/d/1avgvPeSFGtjlV_nbQPT6OtQxZkTHRAJKK3dIbzIPoH0/edit?usp=drivesdk",
+  "google_doc_revision": "AHj4eMRLkr9hpIVgZRNVmmG-oTAontHQut5olqkfuE_WMv254l8njKVedsOAJBys_-uFKZNY3mBqyGeZJbS2FSYdSSRmew7Ic8cdGitsiLQ",
+  "previous_google_doc_revision": "AHj4eMT2m42_zvIkuol81vhblOkqCVgEubb2l4S-A21lgQ6AubZkV0MyFh3Oz08HaIzoiIO34F6XI4iHEDLOJJ02Kb_skWv5QaX-WKFNw_E",
+  "drive_update_mode": "in_place_revision",
+  "parent_id": "1PUMa2W9OpCFOImL0ZGSLbTbY7TLOEZ5c",
+  "document_text_verified": true,
+  "original_01_append_verified": true,
+  "report_revision": "AHj4eMTnHqRh03XJqrSV4XHjcmxyPy3w1QjpvBB4LXycDncJKJ3YP_r0p2jcQSlWEnKLE-Nwgk3woHV0lvjfJIqTEYXZdqJzkgky62UnRYA",
+  "scope": "Document correction only; data, code, training and evaluation unchanged."
+}

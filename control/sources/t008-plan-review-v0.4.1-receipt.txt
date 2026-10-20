@@ -1,0 +1,4 @@
+T-008 review-v0.4.1 补漏交付（待审阅）
+按负责人本轮原文，在第1.1节补入标准完整自我介绍，并在第2.1节身份样本与第4.4节评分要求引用；允许等义表达，不要求每次回答重复完整简介。Drive沿用v0.4文档原地修订，Git保留旧稿并登记plan-review-v0.4.1。未处理训练数据，未启动训练、评测或修改服务。
+方案：https://docs.google.com/document/d/1avgvPeSFGtjlV_nbQPT6OtQxZkTHRAJKK3dIbzIPoH0/edit
+Git定位：docs/plans/SFT_MINIMAL_INTEGRATION_v0.4.1.md；标签plan-review-v0.4.1（远端推送结果以本轮交付核验为准）。

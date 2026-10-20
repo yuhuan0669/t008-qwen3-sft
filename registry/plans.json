@@ -1,6 +1,6 @@
 {
   "schema": "t008-plan-registry-v1",
-  "current": "review-v0.4",
+  "current": "review-v0.4.1",
   "plans": [
     {
       "version": "review-v0.1",
@@ -70,6 +70,24 @@
       "business_scope_source": "control/sources/product-business-scope-20261019.txt",
       "business_scope_source_sha256": "901e4020d5c07df707edfd2ae22e6dc1f7525602efd162c2a6300ba1c4a91913",
       "execution_approved": false
+    },
+    {
+      "version": "review-v0.4.1",
+      "status": "DRAFT_FOR_USER_REVIEW",
+      "path": "docs/plans/SFT_MINIMAL_INTEGRATION_v0.4.1.md",
+      "bytes": 17652,
+      "sha256": "1c7f3a3b1b57c5a90d0164e317187e79a037f8d24668b3efa0852c9aa47e7dcc",
+      "git_tag": "plan-review-v0.4.1",
+      "google_doc_id": "1avgvPeSFGtjlV_nbQPT6OtQxZkTHRAJKK3dIbzIPoH0",
+      "google_doc_url": "https://docs.google.com/document/d/1avgvPeSFGtjlV_nbQPT6OtQxZkTHRAJKK3dIbzIPoH0/edit?usp=drivesdk",
+      "drive_parent_id": "1PUMa2W9OpCFOImL0ZGSLbTbY7TLOEZ5c",
+      "readback": "verification/plan-review-v0.4.1/delivery.json",
+      "changes": "docs/reviews/review-v0.4.1/CHANGES.md",
+      "business_scope_source": "control/sources/product-business-scope-20261019.txt",
+      "business_scope_source_sha256": "901e4020d5c07df707edfd2ae22e6dc1f7525602efd162c2a6300ba1c4a91913",
+      "execution_approved": false,
+      "drive_update_mode": "in_place_revision",
+      "previous_drive_revision": "AHj4eMT2m42_zvIkuol81vhblOkqCVgEubb2l4S-A21lgQ6AubZkV0MyFh3Oz08HaIzoiIO34F6XI4iHEDLOJJ02Kb_skWv5QaX-WKFNw_E"
     }
   ]
 }

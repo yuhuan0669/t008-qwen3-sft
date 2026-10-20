@@ -46,7 +46,7 @@
     "--truncation_strategy",
     "delete",
     "--loss_scale",
-    "default",
+    "default+ignore_empty_think",
     "--preserve_thinking",
     "false",
     "--warmup_ratio",
@@ -76,9 +76,7 @@
     "--push_to_hub",
     "false",
     "--external_plugins",
-    "/work/stage1/training/local_data_guard.py",
-    "--disable_ignore_empty_think",
-    "true"
+    "/work/stage1/training/local_data_guard.py"
   ],
   "smoke_overrides": {
     "max_steps": 3,
@@ -103,7 +101,8 @@
   ],
   "data_version": "stage1-cpu-v0.1.5",
   "status": "DRAFT_FOR_USER_REVIEW_NOT_A_LAUNCH_INSTRUCTION",
-  "recipe_change": "Supervise existing empty thinking blocks; no artificial thinking content",
+  "recipe_change": "Retain default+ignore_empty_think per official Option 1; no masking change",
   "runtime_validation": "Pinned 4.4.2 source checked; full CLI/tokenizer pipeline not rerun",
-  "epoch_exposure_note": "Each record used once per Full epoch; 3-step Smoke is a separate run on the same file, not appended data"
+  "epoch_exposure_note": "Each record used once per Full epoch; 3-step Smoke is a separate run on the same file, not appended data",
+  "config_revision": "official-route-r1"
 }

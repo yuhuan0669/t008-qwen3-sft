@@ -12,5 +12,9 @@
   "new_boundary_questions_copy_public_dev": false,
   "tokenizer_pipeline_executed": false,
   "model_loaded": false,
-  "gpu_used": false
+  "gpu_used": false,
+  "config_revision": "official-route-r1",
+  "loss_scale": "default+ignore_empty_think",
+  "disable_ignore_empty_think": false,
+  "cancelled_mask_change_never_executed": true
 }

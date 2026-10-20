@@ -23,15 +23,16 @@
     "train.jsonl": "34e4e39a618959154e87eb6b18bc70909a8db9faf5f008d2d4d34d09d09aaa09",
     "train-map.jsonl": "15ba19e2ddbaa60fd5aa02383addbe9c7dee877ae27d35a795b2a80a37757b87",
     "changes.jsonl": "726ecfb3378cdfa1155c78a2713650d9b8acca8b04589758bbc146fc453f2cf0",
-    "training-config.json": "cb32e779e6476cf3dfc8c4e843143e38ed6f4b7a04109f4477b2f0919aa1ef55",
-    "README.md": "65fe197ad454a982b3dc6a3aff4f5df399f50f0f0108cfcd749f4f23192292a3",
-    "SAMPLE_DIFF.md": "fa1f20e14ae07b7f20c777c1f925e177c606b4c78b5885f869b202644149c0c5",
+    "training-config.json": "45960f2576d7da85b3914b9e805a574bbc0899fa8d7da45ef1e834f3328cf484",
+    "README.md": "8d4f09b1071f9f68eb7fd513e19d9ce1acbb1ddfe0cc95e95b351b755e31ea84",
+    "SAMPLE_DIFF.md": "d57d7347378af7752b1c7d8f0e4549b8165db21b4f52c6ec4d0495a02a03cc28",
     "mask-source-check.json": "9b9f0cd171db5dd8229d7f7e40e434bc7dac1fe430868c910e14fa8cd3b6c4b1",
-    "validation.json": "fde0724d97f4937cfab51543a1e4f910d15c89f4b6d336df05eb43bd3344ee4c"
+    "validation.json": "50fcbf54a48cf435b665435dda75375f2eca3c23d245c81bea18f2b91fe76c96"
   },
-  "generator_sha256": "c23b9e83a1210d9826e2ca89bb80ca74b384fb7c06452c17d6edf3d0505ff531",
+  "generator_sha256": "cc702e725eee4e6c22b1a0875c25faadf026ec322c5e68680cd3bbca63cbd8bb",
   "training_started": false,
   "inference_executed": false,
   "remote_uploaded": false,
-  "encoding_status": "PENDING_EXACT_RUNTIME_CPU_CHECK; prior token counts not reused"
+  "encoding_status": "PENDING_EXACT_RUNTIME_CPU_CHECK; prior token counts not reused",
+  "config_revision": "official-route-r1"
 }

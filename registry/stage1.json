@@ -43,7 +43,8 @@
     "sample_diff": "stage1/variants/stage1-cpu-v0.1.5/SAMPLE_DIFF.md",
     "training_config": "stage1/variants/stage1-cpu-v0.1.5/training-config.json",
     "rows": 1275,
-    "status": "PREPARED_FOR_USER_REVIEW_NOT_TRAINING_APPROVAL"
+    "status": "PREPARED_FOR_USER_REVIEW_NOT_TRAINING_APPROVAL",
+    "config_revision": "official-route-r1"
   },
   "status_scope": "Top-level v0.1.3 is historical CPU preparation; latest_data_revision is the current local data candidate",
   "previous_data_revisions": [

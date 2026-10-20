@@ -2,7 +2,7 @@
 
 **待负责人确认。已准备数据和拟用配置；没有启动训练、模型推理或操作 UAT。**
 
-父版本是已删除底层保密样本的 v0.1.4。只按本次确认的三个方向修改，不恢复保密样本，不增加曝光，不添加人工思考链。
+父版本是已删除底层保密样本的 v0.1.4。按负责人最新“就按官方路线”裁定，保留自然问法与 4 条业务边界修改，撤回取消空思考块屏蔽的配置。配置修订为 `official-route-r1`，数据哈希不变。不恢复保密样本，不增加曝光，不添加人工思考链。
 
 - [完整的 112 条修改前后对照](SAMPLE_DIFF.md)
 - [训练配置 JSON（含完整拟用参数）](training-config.json)
@@ -100,7 +100,7 @@
 
 中文认证边界样本（第 1263 行）仍保留，其他现场分析、普通翻译和一般问题的能力样本未变。
 
-## 4. 输出格式监督：不改写思考链
+## 4. 按官方路线保留空思考块损失屏蔽
 
 现有身份和业务回答格式仍是：
 
@@ -115,24 +115,23 @@
 | 部分 | 旧监督方式 | 拟用监督方式 |
 |---|---|---|
 | 用户提问 | 不计入回答损失 | 不变 |
-| 模板实际保留的空 `<think>…</think>` 块 | 忽略 | 参与监督 |
+| 模板实际保留的空 `<think>…</think>` 块 | 忽略 | 不变，继续忽略 |
 | 回答正文及结束符 | 参与监督 | 不变 |
 | 通用样本中的非空思考内容 | 参与监督 | 不变 |
 
-对应参数修改为：
+继续采用：
 
 ```text
---loss_scale default
---disable_ignore_empty_think true
+--loss_scale default+ignore_empty_think
 ```
 
-4.4.2 默认会自动补上 `ignore_empty_think`，所以仅把 `loss_scale` 改成 `default` 不够。已经核对本地归档的同版本 wheel 源码，并用其中的参数处理函数验证此组合；不是更换模板或改写推理服务。参考：[ms-swift v4.4.2 参数源码](https://github.com/modelscope/ms-swift/blob/v4.4.2/swift/arguments/base_args/template_args.py)。
+不设置 `disable_ignore_empty_think=true`，保留默认 false。自然问法样本沿用官方 Option 1：没有人工思考链，忽略空思考块损失；保留 `/no_think` 的记录继续保留原标记。参考：[Qwen3 官方 SFT 数据准备](https://github.com/QwenLM/Qwen3/blob/main/docs/source/training/ms_swift.md#data-preparation)。
 
-这项配置会作用于数据中模板保留的空思考块。本库空思考块来自身份和业务样本；不添加长或短的人工思考内容。`preserve_thinking=false` 保持原值，历史轮次的模板处理不变。
+`preserve_thinking=false` 保持原值，历史轮次的模板处理不变。推理格式完整性仍需后续观察，不能以“发生空正文”直接认定屏蔽空思考块是根因。
 
-**不增加记录曝光，但参与监督的格式 token 会增加，这是本项修改的目的。** 没有给身份正文增加额外权重。完整 token 编码和 mask 尚未在实际运行环境重跑，不能把源码核验当成训练效果验证。
+本配置不额外给空思考块或身份正文增加训练权重。完整 token 编码和 mask 尚未在实际运行环境重跑；4 条回答替换本身会改变监督 token 数，不能声称总 token 完全不变。
 
-需观察的取舍：学习空思考块可能使模型更倾向直接回答；不能仅凭空正文减少就宣布成功，确认后仍需看原有双模式开发题及公共开发题。此处不新增评测平台或扩大题量。
+此前准备过取消屏蔽的实验草案，但没有执行，现已撤回。保留源码核验记录仅用于说明框架行为，不能把它当作取消屏蔽的效果证据。后续仍看原有双模式开发题及公共开发题，不新增评测平台或扩大题量。
 
 ## 5. 拟用训练配置
 
@@ -151,8 +150,8 @@
 | 精度 / 长度 | BF16 / 2048 | 不变 |
 | gradient checkpointing | true | 不变 |
 | seed / data_seed | 42 / 42 | 不变 |
-| loss_scale | default+ignore_empty_think | **default** |
-| disable_ignore_empty_think | false（默认） | **true** |
+| loss_scale | default+ignore_empty_think | 不变，沿用官方保护方式 |
+| disable_ignore_empty_think | false（默认） | 不变，不传入覆盖参数 |
 | preserve_thinking | false | 不变 |
 | 超长处理及成员检查 | 原有 delete 参数＋禁止静默丢行的守卫 | 不变，新 manifest 兼容原守卫 |
 | 训练 System | 不额外加入定制 System | 不变 |

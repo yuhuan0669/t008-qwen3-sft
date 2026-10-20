@@ -103,25 +103,24 @@ def build():
     for filename, records in (("changes.jsonl", changes), ("train-map.jsonl", mapping)):
         (OUT / filename).write_text("".join(json.dumps(r, ensure_ascii=False) + "\n" for r in records))
 
-    # Reuse the known recipe; only data/output locations and empty-block masking change.
+    # Keep the official empty-thinking loss mask; only data/output locations change.
     spec = json.loads((ROOT / "stage1/training/run-spec.json").read_text())
     argv = spec["full_argv"]
     previous = dict(zip(argv[2::2], argv[3::2]))
     replacements = {
         "--dataset": f"/work/stage1/variants/{VERSION}/train.jsonl",
-        "--loss_scale": "default",
         "--output_dir": f"/runwork/{VERSION}/full/checkpoints",
     }
     for flag, value in replacements.items():
         argv[argv.index(flag) + 1] = value
-    argv += ["--disable_ignore_empty_think", "true"]
     spec.update(
         plan="minimal-revision-review-v0.1",
         data_version=VERSION, dataset_sha256=digest(b"".join(new_raw)), dataset_rows=len(rows),
         estimated_full_optimizer_steps=math.ceil(len(rows) / 16),
         max_full_runs=1, execution_authorized=False, resource_window=None,
         status="DRAFT_FOR_USER_REVIEW_NOT_A_LAUNCH_INSTRUCTION",
-        recipe_change="Supervise existing empty thinking blocks; no artificial thinking content",
+        recipe_change="Retain default+ignore_empty_think per official Option 1; no masking change",
+        config_revision="official-route-r1",
         runtime_validation="Pinned 4.4.2 source checked; full CLI/tokenizer pipeline not rerun",
         epoch_exposure_note="Each record used once per Full epoch; 3-step Smoke is a separate run on the same file, not appended data",
         before_gpu=[
@@ -173,7 +172,8 @@ def build():
                 assert message["content"].split("</think>")[-1].strip()
     current = dict(zip(argv[2::2], argv[3::2]))
     assert {k for k in previous if previous[k] != current[k]} == set(replacements)
-    assert set(current) - set(previous) == {"--disable_ignore_empty_think"}
+    assert set(current) == set(previous)
+    assert current["--loss_scale"] == "default+ignore_empty_think"
     write_json(OUT / "validation.json", {
         "passed": True, "scope": "Local data conservation, exact edit scope, recipe diff and text structure only",
         "rows_before": 1275, "rows_after": 1275, "changed_rows": 112,
@@ -185,7 +185,7 @@ def build():
     # Every changed record is visible, with full before/after text and parent line.
     chunks = [f"# {VERSION} 全部样本修改对照\n",
               "共 112 条：108 条仅删除用户末尾的 /no_think，4 条替换业务边界问答。"
-              "行号对应父版本 v0.1.4 和本版本，未增删行。空思考块原文保留；监督变化见训练配置。\n"]
+              "行号对应父版本 v0.1.4 和本版本，未增删行。空思考块原文保留；沿用官方 ignore_empty_think 监督设置。\n"]
     for change in sorted(changes, key=lambda c: (c["kind"] != "business_boundary_replacement", c["row_one_based"])):
         chunks.append(f"\n## 第 {change['row_one_based']} 行 · {change['kind']}\n")
         for label, key in (("修改前", "before"), ("修改后", "after")):

@@ -1,0 +1,25 @@
+{
+  "purpose": "PUBLIC_DEVELOPMENT_DIAGNOSTIC_NOT_ACCEPTANCE",
+  "models": [
+    "t008-base",
+    "t008-full2",
+    "t008-full3"
+  ],
+  "config": {
+    "seed": 42,
+    "temperature": 0.6,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0,
+    "max_tokens": 4096
+  },
+  "system": null,
+  "enable_thinking": true,
+  "versions": {
+    "vllm": "0.25.1",
+    "transformers": "5.14.1",
+    "tokenizers": "0.22.2",
+    "torch": "2.11.0+cu130"
+  },
+  "tokenizer_config_sha256": "d5d09f07b48c3086c508b30d1c9114bd1189145b74e982a265350c923acd8101"
+}

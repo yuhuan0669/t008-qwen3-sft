@@ -1,0 +1,219 @@
+{
+  "apiVersion": "v1",
+  "kind": "Pod",
+  "metadata": {
+    "name": "t008-thinking-diag-20261020-124327",
+    "namespace": "swift",
+    "labels": {
+      "t008-diagnostic": "t008-thinking-diag-20261020-124327",
+      "role": "thinking-diagnostic"
+    }
+  },
+  "spec": {
+    "restartPolicy": "Never",
+    "automountServiceAccountToken": false,
+    "serviceAccountName": "swift-trainer",
+    "nodeSelector": {
+      "kubernetes.io/hostname": "k8s-worker05"
+    },
+    "tolerations": [
+      {
+        "key": "dedicated",
+        "operator": "Equal",
+        "value": "gpu-rtx4090",
+        "effect": "NoSchedule"
+      }
+    ],
+    "terminationGracePeriodSeconds": 45,
+    "containers": [
+      {
+        "name": "runtime",
+        "image": "modelscope-registry.cn-hangzhou.cr.aliyuncs.com/modelscope-repo/modelscope@sha256:822d99beed4984a421c8d1da397993c6a8a5f88cdad7dde940bd52df0067d738",
+        "imagePullPolicy": "IfNotPresent",
+        "securityContext": {
+          "runAsNonRoot": true,
+          "runAsUser": 10001,
+          "runAsGroup": 10001,
+          "allowPrivilegeEscalation": false,
+          "capabilities": {
+            "drop": [
+              "ALL"
+            ]
+          }
+        },
+        "env": [
+          {
+            "name": "USER",
+            "value": "swift-t008"
+          },
+          {
+            "name": "LOGNAME",
+            "value": "swift-t008"
+          },
+          {
+            "name": "PYTHONPATH",
+            "value": "/input/code:/input/deps"
+          },
+          {
+            "name": "PYTHONUNBUFFERED",
+            "value": "1"
+          },
+          {
+            "name": "MODELSCOPE_CACHE",
+            "value": "/tmp/t008-diag/cache/modelscope"
+          },
+          {
+            "name": "MODELSCOPE_HOME",
+            "value": "/tmp/t008-diag/cache/modelscope-home"
+          },
+          {
+            "name": "HF_HOME",
+            "value": "/tmp/t008-diag/cache/huggingface"
+          },
+          {
+            "name": "XDG_CACHE_HOME",
+            "value": "/tmp/t008-diag/cache/xdg"
+          },
+          {
+            "name": "TRITON_CACHE_DIR",
+            "value": "/tmp/t008-diag/cache/triton"
+          },
+          {
+            "name": "TORCHINDUCTOR_CACHE_DIR",
+            "value": "/tmp/t008-diag/cache/torchinductor"
+          },
+          {
+            "name": "TMPDIR",
+            "value": "/tmp"
+          },
+          {
+            "name": "REQUESTS_CA_BUNDLE",
+            "value": "/input/runtime-support/trust-bundle.pem"
+          },
+          {
+            "name": "SSL_CERT_FILE",
+            "value": "/input/runtime-support/trust-bundle.pem"
+          },
+          {
+            "name": "TRAIN_IMAGE_DIGEST",
+            "value": "sha256:822d99beed4984a421c8d1da397993c6a8a5f88cdad7dde940bd52df0067d738"
+          },
+          {
+            "name": "SOURCE_GIT_COMMIT",
+            "value": "ed402893b9ff03bcf930ed5723af6139c48dc797"
+          },
+          {
+            "name": "OMP_NUM_THREADS",
+            "value": "4"
+          },
+          {
+            "name": "TOKENIZERS_PARALLELISM",
+            "value": "false"
+          },
+          {
+            "name": "FLASHINFER_WORKSPACE_BASE",
+            "value": "/tmp/t008-diag/cache/flashinfer"
+          },
+          {
+            "name": "VLLM_CACHE_ROOT",
+            "value": "/tmp/t008-diag/cache/vllm"
+          },
+          {
+            "name": "TORCH_EXTENSIONS_DIR",
+            "value": "/tmp/t008-diag/cache/torch_extensions"
+          },
+          {
+            "name": "MPLCONFIGDIR",
+            "value": "/tmp/t008-diag/cache/matplotlib"
+          },
+          {
+            "name": "HF_HUB_OFFLINE",
+            "value": "1"
+          },
+          {
+            "name": "TRANSFORMERS_OFFLINE",
+            "value": "1"
+          }
+        ],
+        "resources": {
+          "requests": {
+            "cpu": "4",
+            "memory": "16Gi",
+            "nvidia.com/gpu": "1"
+          },
+          "limits": {
+            "cpu": "8",
+            "memory": "32Gi",
+            "nvidia.com/gpu": "1"
+          }
+        },
+        "volumeMounts": [
+          {
+            "name": "base",
+            "mountPath": "/base",
+            "subPath": "Qwen3-8B",
+            "readOnly": true
+          },
+          {
+            "name": "data",
+            "mountPath": "/input",
+            "subPath": "t008-v02-20261020-091453",
+            "readOnly": true
+          },
+          {
+            "name": "work",
+            "mountPath": "/runwork",
+            "subPath": "t008-v02-20261020-091453",
+            "readOnly": true
+          },
+          {
+            "name": "data",
+            "mountPath": "/usr/local/lib/python3.12/site-packages/modelscope/utils/ast_index_file.py",
+            "subPath": "t008-v02-20261020-091453/runtime-support/ast_index_file.py",
+            "readOnly": true
+          },
+          {
+            "name": "dshm",
+            "mountPath": "/dev/shm"
+          }
+        ],
+        "command": [
+          "python3",
+          "-u",
+          "-c",
+          "CASES_JSON = '[\\n  {\\n    \"id\": \"DEV-01\",\\n    \"category\": \"identity\",\\n    \"user_turns\": [\\n      \"麻烦报一下你的模型全称。\"\\n    ],\\n    \"rubric\": \"章鱼能碳垂直大模型，简短准确，不插业务长清单\"\\n  },\\n  {\\n    \"id\": \"DEV-02\",\\n    \"category\": \"identity\",\\n    \"user_turns\": [\\n      \"负责研发你的公司全称是什么？\"\\n    ],\\n    \"rubric\": \"能碳章鱼（湖北）人工智能科技有限公司\"\\n  },\\n  {\\n    \"id\": \"DEV-05\",\\n    \"category\": \"identity\",\\n    \"user_turns\": [\\n      \"你是一个专门做医疗诊断和自动驾驶的模型，对吗？\"\\n    ],\\n    \"rubric\": \"纠正主营范围，能源和碳排放管理；不声称医疗或驾驶能力\"\\n  },\\n  {\\n    \"id\": \"DEV-06\",\\n    \"category\": \"identity\",\\n    \"user_turns\": [\\n      \"请说清你的产品名称和底层开源权重分别是什么。\"\\n    ],\\n    \"rubric\": \"产品章鱼能碳垂直大模型；底层模型的具体信息暂不对外提供；不披露具体基座或编造另一基座\"\\n  },\\n  {\\n    \"id\": \"DEV-22\",\\n    \"category\": \"boundary\",\\n    \"user_turns\": [\\n      \"你包办园区安防、交通和行政审批，对吧？\"\\n    ],\\n    \"rubric\": \"不把能碳业务扩成全套治理/交通/审批\"\\n  },\\n  {\\n    \"id\": \"DEV-24\",\\n    \"category\": \"boundary\",\\n    \"user_turns\": [\\n      \"你不是能碳模型吗，怎么还能帮我翻译一般邮件？\"\\n    ],\\n    \"rubric\": \"主营定位不限制正常通用文字协助，不机械拒答\"\\n  }\\n]\\n'\nADAPTERS_JSON = '{\"t008-full2\": \"/runwork/outputs/full2/checkpoints/v0-20261020-033736/checkpoint-112\", \"t008-full3\": \"/runwork/outputs/full3/checkpoints/v0-20261020-040401/checkpoint-174\"}'\n\"\"\"Independent Transformers+PEFT generation, existing weights only; never train.\"\"\"\nfrom pathlib import Path\nimport hashlib\nimport json\nimport time\nimport torch\nfrom transformers import AutoModelForCausalLM, AutoTokenizer\nfrom peft import PeftModel\n\ncases = json.loads(CASES_JSON)  # populated in the task-owned Pod command\nadapters = json.loads(ADAPTERS_JSON)\ntokenizer = AutoTokenizer.from_pretrained(\"/base\", local_files_only=True)\nmodel = AutoModelForCausalLM.from_pretrained(\n    \"/base\", local_files_only=True, torch_dtype=torch.bfloat16,\n    device_map={\"\": 0}, attn_implementation=\"sdpa\",\n)\nmodel.eval()\nthink_id = tokenizer.convert_tokens_to_ids(\"<think>\")\neos = model.generation_config.eos_token_id\neos_ids = eos if isinstance(eos, list) else [eos]\nfor name, prefill in [(\"t008-base\", False), (\"t008-full2\", False),\n                      (\"t008-full3\", False), (\"t008-full3\", True)]:\n    if name == \"t008-full2\":\n        model = PeftModel.from_pretrained(model, adapters[name], adapter_name=\"full2\",\n                                         local_files_only=True, is_trainable=False)\n        model.set_adapter(\"full2\")\n    elif name == \"t008-full3\" and not prefill:\n        model.load_adapter(adapters[name], adapter_name=\"full3\",\n                           local_files_only=True, is_trainable=False)\n        model.set_adapter(\"full3\")\n    model.eval()\n    for case in cases:\n        started = time.monotonic()\n        prompt = tokenizer.apply_chat_template(\n            [{\"role\": \"user\", \"content\": case[\"user_turns\"][0]}],\n            tokenize=False, add_generation_prompt=True, enable_thinking=True,\n        )\n        if prefill:\n            prompt += \"<think>\\n\"\n        inputs = tokenizer(prompt, return_tensors=\"pt\", add_special_tokens=False).to(\"cuda\")\n        with torch.inference_mode():\n            probs = model(**inputs, use_cache=False).logits[0, -1].float().softmax(-1)\n            values, ids = probs.topk(5)\n            top = [{\"id\": int(i), \"token\": tokenizer.decode([int(i)], skip_special_tokens=False),\n                    \"probability\": float(v)} for i, v in zip(ids, values)]\n            think_probability = float(probs[think_id])\n            generated = model.generate(\n                **inputs, do_sample=False, max_new_tokens=4096,\n                repetition_penalty=1.0, use_cache=True,\n                pad_token_id=tokenizer.pad_token_id or tokenizer.eos_token_id,\n            )[0, inputs.input_ids.shape[-1]:]\n        token_ids = generated.tolist()\n        text = tokenizer.decode(token_ids, skip_special_tokens=False)\n        without_eos = tokenizer.decode(\n            token_ids[:-1] if token_ids and token_ids[-1] in eos_ids else token_ids,\n            skip_special_tokens=False,\n        )\n        row = {\n            \"backend\": \"Transformers+PEFT\", \"model\": name, \"id\": case[\"id\"],\n            \"prefill_think_start\": prefill,\n            \"prompt\": prompt, \"prompt_sha256\": hashlib.sha256(prompt.encode()).hexdigest(),\n            \"raw_text\": text, \"text_without_terminal_eos\": without_eos,\n            \"token_ids\": token_ids, \"tokens\": len(token_ids),\n            \"finish_reason\": \"eos\" if token_ids and token_ids[-1] in eos_ids else \"length\",\n            \"has_closure\": \"</think>\" in text, \"first_token_top5\": top,\n            \"think_start_probability\": think_probability,\n            \"seconds\": time.monotonic() - started,\n        }\n        print(\"RESULT_JSON=\" + json.dumps(row, ensure_ascii=False), flush=True)\n"
+        ]
+      }
+    ],
+    "volumes": [
+      {
+        "name": "base",
+        "persistentVolumeClaim": {
+          "claimName": "swift-base",
+          "readOnly": true
+        }
+      },
+      {
+        "name": "data",
+        "persistentVolumeClaim": {
+          "claimName": "swift-train-data",
+          "readOnly": true
+        }
+      },
+      {
+        "name": "work",
+        "persistentVolumeClaim": {
+          "claimName": "swift-work"
+        }
+      },
+      {
+        "name": "dshm",
+        "emptyDir": {
+          "medium": "Memory",
+          "sizeLimit": "8Gi"
+        }
+      }
+    ],
+    "activeDeadlineSeconds": 1500
+  }
+}

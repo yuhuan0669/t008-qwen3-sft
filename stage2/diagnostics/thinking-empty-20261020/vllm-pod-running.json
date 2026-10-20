@@ -1,0 +1,414 @@
+{
+    "apiVersion": "v1",
+    "kind": "Pod",
+    "metadata": {
+        "annotations": {
+            "cni.projectcalico.org/containerID": "055dea659e04a19955585cbe0bb34725f95b7bf346659397eef4f94078a9c697",
+            "cni.projectcalico.org/podIP": "10.233.108.214/32",
+            "cni.projectcalico.org/podIPs": "10.233.108.214/32",
+            "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"v1\",\"kind\":\"Pod\",\"metadata\":{\"annotations\":{},\"labels\":{\"role\":\"thinking-diagnostic\",\"t008-diagnostic\":\"t008-thinking-diag-20261020-124327\"},\"name\":\"t008-thinking-diag-20261020-124327\",\"namespace\":\"swift\"},\"spec\":{\"activeDeadlineSeconds\":1200,\"automountServiceAccountToken\":false,\"containers\":[{\"args\":[\"--model\",\"/base\",\"--served-model-name\",\"t008-base\",\"--host\",\"0.0.0.0\",\"--port\",\"8000\",\"--dtype\",\"bfloat16\",\"--gpu-memory-utilization\",\"0.90\",\"--max-model-len\",\"8192\",\"--max-num-seqs\",\"8\",\"--reasoning-parser\",\"qwen3\",\"--enable-lora\",\"--max-lora-rank\",\"8\",\"--max-loras\",\"2\",\"--lora-modules\",\"t008-full2=/runwork/outputs/full2/checkpoints/v0-20261020-033736/checkpoint-112\",\"t008-full3=/runwork/outputs/full3/checkpoints/v0-20261020-040401/checkpoint-174\"],\"command\":[\"python3\",\"-m\",\"vllm.entrypoints.openai.api_server\"],\"env\":[{\"name\":\"USER\",\"value\":\"swift-t008\"},{\"name\":\"LOGNAME\",\"value\":\"swift-t008\"},{\"name\":\"PYTHONPATH\",\"value\":\"/input/code:/input/deps\"},{\"name\":\"PYTHONUNBUFFERED\",\"value\":\"1\"},{\"name\":\"MODELSCOPE_CACHE\",\"value\":\"/tmp/t008-diag/cache/modelscope\"},{\"name\":\"MODELSCOPE_HOME\",\"value\":\"/tmp/t008-diag/cache/modelscope-home\"},{\"name\":\"HF_HOME\",\"value\":\"/tmp/t008-diag/cache/huggingface\"},{\"name\":\"XDG_CACHE_HOME\",\"value\":\"/tmp/t008-diag/cache/xdg\"},{\"name\":\"TRITON_CACHE_DIR\",\"value\":\"/tmp/t008-diag/cache/triton\"},{\"name\":\"TORCHINDUCTOR_CACHE_DIR\",\"value\":\"/tmp/t008-diag/cache/torchinductor\"},{\"name\":\"TMPDIR\",\"value\":\"/tmp\"},{\"name\":\"REQUESTS_CA_BUNDLE\",\"value\":\"/input/runtime-support/trust-bundle.pem\"},{\"name\":\"SSL_CERT_FILE\",\"value\":\"/input/runtime-support/trust-bundle.pem\"},{\"name\":\"TRAIN_IMAGE_DIGEST\",\"value\":\"sha256:822d99beed4984a421c8d1da397993c6a8a5f88cdad7dde940bd52df0067d738\"},{\"name\":\"SOURCE_GIT_COMMIT\",\"value\":\"ed402893b9ff03bcf930ed5723af6139c48dc797\"},{\"name\":\"OMP_NUM_THREADS\",\"value\":\"4\"},{\"name\":\"TOKENIZERS_PARALLELISM\",\"value\":\"false\"},{\"name\":\"FLASHINFER_WORKSPACE_BASE\",\"value\":\"/tmp/t008-diag/cache/flashinfer\"},{\"name\":\"VLLM_CACHE_ROOT\",\"value\":\"/tmp/t008-diag/cache/vllm\"},{\"name\":\"TORCH_EXTENSIONS_DIR\",\"value\":\"/tmp/t008-diag/cache/torch_extensions\"},{\"name\":\"MPLCONFIGDIR\",\"value\":\"/tmp/t008-diag/cache/matplotlib\"},{\"name\":\"HF_HUB_OFFLINE\",\"value\":\"1\"},{\"name\":\"TRANSFORMERS_OFFLINE\",\"value\":\"1\"}],\"image\":\"modelscope-registry.cn-hangzhou.cr.aliyuncs.com/modelscope-repo/modelscope@sha256:822d99beed4984a421c8d1da397993c6a8a5f88cdad7dde940bd52df0067d738\",\"imagePullPolicy\":\"IfNotPresent\",\"name\":\"runtime\",\"ports\":[{\"containerPort\":8000,\"name\":\"http\"}],\"readinessProbe\":{\"failureThreshold\":60,\"httpGet\":{\"path\":\"/health\",\"port\":8000},\"initialDelaySeconds\":15,\"periodSeconds\":10},\"resources\":{\"limits\":{\"cpu\":\"8\",\"memory\":\"32Gi\",\"nvidia.com/gpu\":\"1\"},\"requests\":{\"cpu\":\"4\",\"memory\":\"16Gi\",\"nvidia.com/gpu\":\"1\"}},\"securityContext\":{\"allowPrivilegeEscalation\":false,\"capabilities\":{\"drop\":[\"ALL\"]},\"runAsGroup\":10001,\"runAsNonRoot\":true,\"runAsUser\":10001},\"volumeMounts\":[{\"mountPath\":\"/base\",\"name\":\"base\",\"readOnly\":true,\"subPath\":\"Qwen3-8B\"},{\"mountPath\":\"/input\",\"name\":\"data\",\"readOnly\":true,\"subPath\":\"t008-v02-20261020-091453\"},{\"mountPath\":\"/runwork\",\"name\":\"work\",\"readOnly\":true,\"subPath\":\"t008-v02-20261020-091453\"},{\"mountPath\":\"/usr/local/lib/python3.12/site-packages/modelscope/utils/ast_index_file.py\",\"name\":\"data\",\"readOnly\":true,\"subPath\":\"t008-v02-20261020-091453/runtime-support/ast_index_file.py\"},{\"mountPath\":\"/dev/shm\",\"name\":\"dshm\"}]}],\"nodeSelector\":{\"kubernetes.io/hostname\":\"k8s-worker05\"},\"restartPolicy\":\"Never\",\"serviceAccountName\":\"swift-trainer\",\"terminationGracePeriodSeconds\":45,\"tolerations\":[{\"effect\":\"NoSchedule\",\"key\":\"dedicated\",\"operator\":\"Equal\",\"value\":\"gpu-rtx4090\"}],\"volumes\":[{\"name\":\"base\",\"persistentVolumeClaim\":{\"claimName\":\"swift-base\",\"readOnly\":true}},{\"name\":\"data\",\"persistentVolumeClaim\":{\"claimName\":\"swift-train-data\",\"readOnly\":true}},{\"name\":\"work\",\"persistentVolumeClaim\":{\"claimName\":\"swift-work\"}},{\"emptyDir\":{\"medium\":\"Memory\",\"sizeLimit\":\"8Gi\"},\"name\":\"dshm\"}]}}\n"
+        },
+        "creationTimestamp": "2026-10-20T12:44:37Z",
+        "labels": {
+            "role": "thinking-diagnostic",
+            "t008-diagnostic": "t008-thinking-diag-20261020-124327"
+        },
+        "name": "t008-thinking-diag-20261020-124327",
+        "namespace": "swift",
+        "resourceVersion": "192280355",
+        "uid": "819b92fd-9bab-4ef4-bdf1-33e086af160a"
+    },
+    "spec": {
+        "activeDeadlineSeconds": 1200,
+        "automountServiceAccountToken": false,
+        "containers": [
+            {
+                "args": [
+                    "--model",
+                    "/base",
+                    "--served-model-name",
+                    "t008-base",
+                    "--host",
+                    "0.0.0.0",
+                    "--port",
+                    "8000",
+                    "--dtype",
+                    "bfloat16",
+                    "--gpu-memory-utilization",
+                    "0.90",
+                    "--max-model-len",
+                    "8192",
+                    "--max-num-seqs",
+                    "8",
+                    "--reasoning-parser",
+                    "qwen3",
+                    "--enable-lora",
+                    "--max-lora-rank",
+                    "8",
+                    "--max-loras",
+                    "2",
+                    "--lora-modules",
+                    "t008-full2=/runwork/outputs/full2/checkpoints/v0-20261020-033736/checkpoint-112",
+                    "t008-full3=/runwork/outputs/full3/checkpoints/v0-20261020-040401/checkpoint-174"
+                ],
+                "command": [
+                    "python3",
+                    "-m",
+                    "vllm.entrypoints.openai.api_server"
+                ],
+                "env": [
+                    {
+                        "name": "TZ",
+                        "value": "America/Los_Angeles"
+                    },
+                    {
+                        "name": "USER",
+                        "value": "swift-t008"
+                    },
+                    {
+                        "name": "LOGNAME",
+                        "value": "swift-t008"
+                    },
+                    {
+                        "name": "PYTHONPATH",
+                        "value": "/input/code:/input/deps"
+                    },
+                    {
+                        "name": "PYTHONUNBUFFERED",
+                        "value": "1"
+                    },
+                    {
+                        "name": "MODELSCOPE_CACHE",
+                        "value": "/tmp/t008-diag/cache/modelscope"
+                    },
+                    {
+                        "name": "MODELSCOPE_HOME",
+                        "value": "/tmp/t008-diag/cache/modelscope-home"
+                    },
+                    {
+                        "name": "HF_HOME",
+                        "value": "/tmp/t008-diag/cache/huggingface"
+                    },
+                    {
+                        "name": "XDG_CACHE_HOME",
+                        "value": "/tmp/t008-diag/cache/xdg"
+                    },
+                    {
+                        "name": "TRITON_CACHE_DIR",
+                        "value": "/tmp/t008-diag/cache/triton"
+                    },
+                    {
+                        "name": "TORCHINDUCTOR_CACHE_DIR",
+                        "value": "/tmp/t008-diag/cache/torchinductor"
+                    },
+                    {
+                        "name": "TMPDIR",
+                        "value": "/tmp"
+                    },
+                    {
+                        "name": "REQUESTS_CA_BUNDLE",
+                        "value": "/input/runtime-support/trust-bundle.pem"
+                    },
+                    {
+                        "name": "SSL_CERT_FILE",
+                        "value": "/input/runtime-support/trust-bundle.pem"
+                    },
+                    {
+                        "name": "TRAIN_IMAGE_DIGEST",
+                        "value": "sha256:822d99beed4984a421c8d1da397993c6a8a5f88cdad7dde940bd52df0067d738"
+                    },
+                    {
+                        "name": "SOURCE_GIT_COMMIT",
+                        "value": "ed402893b9ff03bcf930ed5723af6139c48dc797"
+                    },
+                    {
+                        "name": "OMP_NUM_THREADS",
+                        "value": "4"
+                    },
+                    {
+                        "name": "TOKENIZERS_PARALLELISM",
+                        "value": "false"
+                    },
+                    {
+                        "name": "FLASHINFER_WORKSPACE_BASE",
+                        "value": "/tmp/t008-diag/cache/flashinfer"
+                    },
+                    {
+                        "name": "VLLM_CACHE_ROOT",
+                        "value": "/tmp/t008-diag/cache/vllm"
+                    },
+                    {
+                        "name": "TORCH_EXTENSIONS_DIR",
+                        "value": "/tmp/t008-diag/cache/torch_extensions"
+                    },
+                    {
+                        "name": "MPLCONFIGDIR",
+                        "value": "/tmp/t008-diag/cache/matplotlib"
+                    },
+                    {
+                        "name": "HF_HUB_OFFLINE",
+                        "value": "1"
+                    },
+                    {
+                        "name": "TRANSFORMERS_OFFLINE",
+                        "value": "1"
+                    }
+                ],
+                "image": "modelscope-registry.cn-hangzhou.cr.aliyuncs.com/modelscope-repo/modelscope@sha256:822d99beed4984a421c8d1da397993c6a8a5f88cdad7dde940bd52df0067d738",
+                "imagePullPolicy": "IfNotPresent",
+                "name": "runtime",
+                "ports": [
+                    {
+                        "containerPort": 8000,
+                        "name": "http",
+                        "protocol": "TCP"
+                    }
+                ],
+                "readinessProbe": {
+                    "failureThreshold": 60,
+                    "httpGet": {
+                        "path": "/health",
+                        "port": 8000,
+                        "scheme": "HTTP"
+                    },
+                    "initialDelaySeconds": 15,
+                    "periodSeconds": 10,
+                    "successThreshold": 1,
+                    "timeoutSeconds": 1
+                },
+                "resources": {
+                    "limits": {
+                        "cpu": "8",
+                        "memory": "32Gi",
+                        "nvidia.com/gpu": "1"
+                    },
+                    "requests": {
+                        "cpu": "4",
+                        "memory": "16Gi",
+                        "nvidia.com/gpu": "1"
+                    }
+                },
+                "securityContext": {
+                    "allowPrivilegeEscalation": false,
+                    "capabilities": {
+                        "drop": [
+                            "ALL"
+                        ]
+                    },
+                    "runAsGroup": 10001,
+                    "runAsNonRoot": true,
+                    "runAsUser": 10001
+                },
+                "terminationMessagePath": "/dev/termination-log",
+                "terminationMessagePolicy": "File",
+                "volumeMounts": [
+                    {
+                        "mountPath": "/etc/localtime",
+                        "name": "host-localtime",
+                        "readOnly": true
+                    },
+                    {
+                        "mountPath": "/base",
+                        "name": "base",
+                        "readOnly": true,
+                        "subPath": "Qwen3-8B"
+                    },
+                    {
+                        "mountPath": "/input",
+                        "name": "data",
+                        "readOnly": true,
+                        "subPath": "t008-v02-20261020-091453"
+                    },
+                    {
+                        "mountPath": "/runwork",
+                        "name": "work",
+                        "readOnly": true,
+                        "subPath": "t008-v02-20261020-091453"
+                    },
+                    {
+                        "mountPath": "/usr/local/lib/python3.12/site-packages/modelscope/utils/ast_index_file.py",
+                        "name": "data",
+                        "readOnly": true,
+                        "subPath": "t008-v02-20261020-091453/runtime-support/ast_index_file.py"
+                    },
+                    {
+                        "mountPath": "/dev/shm",
+                        "name": "dshm"
+                    }
+                ]
+            }
+        ],
+        "dnsPolicy": "ClusterFirst",
+        "enableServiceLinks": true,
+        "nodeName": "k8s-worker05",
+        "nodeSelector": {
+            "kubernetes.io/hostname": "k8s-worker05"
+        },
+        "preemptionPolicy": "PreemptLowerPriority",
+        "priority": 0,
+        "restartPolicy": "Never",
+        "schedulerName": "default-scheduler",
+        "securityContext": {},
+        "serviceAccount": "swift-trainer",
+        "serviceAccountName": "swift-trainer",
+        "terminationGracePeriodSeconds": 45,
+        "tolerations": [
+            {
+                "effect": "NoSchedule",
+                "key": "dedicated",
+                "operator": "Equal",
+                "value": "gpu-rtx4090"
+            },
+            {
+                "effect": "NoExecute",
+                "key": "node.kubernetes.io/not-ready",
+                "operator": "Exists",
+                "tolerationSeconds": 300
+            },
+            {
+                "effect": "NoExecute",
+                "key": "node.kubernetes.io/unreachable",
+                "operator": "Exists",
+                "tolerationSeconds": 300
+            }
+        ],
+        "volumes": [
+            {
+                "hostPath": {
+                    "path": "/etc/localtime",
+                    "type": ""
+                },
+                "name": "host-localtime"
+            },
+            {
+                "name": "base",
+                "persistentVolumeClaim": {
+                    "claimName": "swift-base",
+                    "readOnly": true
+                }
+            },
+            {
+                "name": "data",
+                "persistentVolumeClaim": {
+                    "claimName": "swift-train-data",
+                    "readOnly": true
+                }
+            },
+            {
+                "name": "work",
+                "persistentVolumeClaim": {
+                    "claimName": "swift-work"
+                }
+            },
+            {
+                "emptyDir": {
+                    "medium": "Memory",
+                    "sizeLimit": "8Gi"
+                },
+                "name": "dshm"
+            }
+        ]
+    },
+    "status": {
+        "conditions": [
+            {
+                "lastProbeTime": null,
+                "lastTransitionTime": "2026-10-20T12:44:40Z",
+                "status": "True",
+                "type": "PodReadyToStartContainers"
+            },
+            {
+                "lastProbeTime": null,
+                "lastTransitionTime": "2026-10-20T12:44:38Z",
+                "status": "True",
+                "type": "Initialized"
+            },
+            {
+                "lastProbeTime": null,
+                "lastTransitionTime": "2026-10-20T12:46:49Z",
+                "status": "True",
+                "type": "Ready"
+            },
+            {
+                "lastProbeTime": null,
+                "lastTransitionTime": "2026-10-20T12:46:49Z",
+                "status": "True",
+                "type": "ContainersReady"
+            },
+            {
+                "lastProbeTime": null,
+                "lastTransitionTime": "2026-10-20T12:44:38Z",
+                "status": "True",
+                "type": "PodScheduled"
+            }
+        ],
+        "containerStatuses": [
+            {
+                "containerID": "containerd://abaf9226b63cd06f1ab37d295bda735f83bf2c5e1f0b72679809c4d54b48cb52",
+                "image": "modelscope-registry.cn-hangzhou.cr.aliyuncs.com/modelscope-repo/modelscope:ubuntu22.04-cuda13.0.3-py312-torch2.11.0-vllm0.25.1-modelscope1.39.0-swift4.4.3",
+                "imageID": "modelscope-registry.cn-hangzhou.cr.aliyuncs.com/modelscope-repo/modelscope@sha256:822d99beed4984a421c8d1da397993c6a8a5f88cdad7dde940bd52df0067d738",
+                "lastState": {},
+                "name": "runtime",
+                "ready": true,
+                "restartCount": 0,
+                "started": true,
+                "state": {
+                    "running": {
+                        "startedAt": "2026-10-20T12:44:39Z"
+                    }
+                },
+                "volumeMounts": [
+                    {
+                        "mountPath": "/etc/localtime",
+                        "name": "host-localtime",
+                        "readOnly": true,
+                        "recursiveReadOnly": "Disabled"
+                    },
+                    {
+                        "mountPath": "/base",
+                        "name": "base",
+                        "readOnly": true,
+                        "recursiveReadOnly": "Disabled"
+                    },
+                    {
+                        "mountPath": "/input",
+                        "name": "data",
+                        "readOnly": true,
+                        "recursiveReadOnly": "Disabled"
+                    },
+                    {
+                        "mountPath": "/runwork",
+                        "name": "work",
+                        "readOnly": true,
+                        "recursiveReadOnly": "Disabled"
+                    },
+                    {
+                        "mountPath": "/usr/local/lib/python3.12/site-packages/modelscope/utils/ast_index_file.py",
+                        "name": "data",
+                        "readOnly": true,
+                        "recursiveReadOnly": "Disabled"
+                    },
+                    {
+                        "mountPath": "/dev/shm",
+                        "name": "dshm"
+                    }
+                ]
+            }
+        ],
+        "hostIP": "10.140.1.60",
+        "hostIPs": [
+            {
+                "ip": "10.140.1.60"
+            }
+        ],
+        "phase": "Running",
+        "podIP": "10.233.108.214",
+        "podIPs": [
+            {
+                "ip": "10.233.108.214"
+            }
+        ],
+        "qosClass": "Burstable",
+        "startTime": "2026-10-20T12:44:38Z"
+    }
+}

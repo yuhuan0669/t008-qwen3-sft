@@ -1,0 +1,12 @@
+{
+  "started_at_utc": "2026-10-20T12:44:35.901283+00:00",
+  "paused": false,
+  "restored": true,
+  "restore_start_utc": "2026-10-20T13:34:35.901283+00:00",
+  "planned_window_end_utc": "2026-10-20T13:44:35.901283+00:00",
+  "authorization": "User: 暂停，现在没人用; subsequent: 时间无所谓，可以花更长时间",
+  "scope": "Inference diagnostics only. No training, deployment replacement, or corpus edits.",
+  "restored_at_utc": "2026-10-20T13:01:27.595321+00:00",
+  "health_status": 200,
+  "original_spec_equal": true
+}

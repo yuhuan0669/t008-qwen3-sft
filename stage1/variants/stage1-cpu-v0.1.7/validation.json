@@ -1,0 +1,70 @@
+{
+  "passed": true,
+  "scope": "Local exact-row, language-slot and exposure conservation; not model validation",
+  "rows": 1275,
+  "review_baseline": "stage1-cpu-v0.1.5",
+  "changed_rows_vs_review_baseline": [
+    461,
+    895,
+    937,
+    1090,
+    1206,
+    1224,
+    1261,
+    1262
+  ],
+  "changed_rows_vs_parent": [
+    1090,
+    1206,
+    1259,
+    1270
+  ],
+  "unchanged_rows_vs_review_baseline": 1267,
+  "original_chinese_rows_restored": [
+    1259,
+    1270
+  ],
+  "replacement_english_rows": [
+    1090,
+    1206
+  ],
+  "modified_language_slots_before": {
+    "zh": 4,
+    "en": 4
+  },
+  "modified_language_slots_after": {
+    "zh": 4,
+    "en": 4
+  },
+  "language_slot_check": "Manual English/Chinese text review plus CJK-presence assertion on all 8 changed records; all other rows byte-identical",
+  "source_exposures_before": {
+    "swift/Qwen3-SFT-Mixin": 1036,
+    "swift/self-cognition": 216,
+    "t008/project-positioning-v1": 23
+  },
+  "source_exposures_after": {
+    "swift/Qwen3-SFT-Mixin": 1036,
+    "swift/self-cognition": 216,
+    "t008/project-positioning-v1": 23
+  },
+  "all_source_labels_unchanged": true,
+  "all_turn_counts_unchanged": true,
+  "full_introductions_and_english_equipment_boundary_preserved": true,
+  "added_rows": 0,
+  "removed_rows": 0,
+  "new_record_occurrences": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "training_recipe_changed": false,
+  "training_started": false,
+  "inference_executed": false,
+  "cluster_accessed": false,
+  "encoding_status": "NOT_RUN_FOR_THIS_REVISION"
+}

@@ -1,0 +1,37 @@
+[
+  {
+    "url": "https://modelscope.cn/api/v1/datasets/swift/self-cognition/repo?Revision=d2a385942cb0d47e3fb3cdb9d98adb8b8c01dcfc&FilePath=self_cognition.jsonl",
+    "path": "evidence/source_identity/self_cognition.jsonl",
+    "exit_code": 0,
+    "bytes": 23839,
+    "sha256": "e7b66784f02361cfa0ad4635dae12c0f810d197c22ac89a4b7837195dc4b7b23"
+  },
+  {
+    "url": "https://api.github.com/repos/modelscope/ms-swift/commits/main",
+    "path": "evidence/source_identity/swift_head.json",
+    "exit_code": 0,
+    "bytes": 26859,
+    "sha256": "80ea787ec60331b9c998427d4acaded5240d4ece3f39b8b182895a42e84d7089"
+  },
+  {
+    "url": "https://api.github.com/repos/QwenLM/Qwen3/commits/main",
+    "path": "evidence/source_identity/qwen3_head.json",
+    "exit_code": 0,
+    "bytes": 11755,
+    "sha256": "14f06bf41bd2eb5909fe3d31d17ca01618957111674aec436127fa3d80260a1d"
+  },
+  {
+    "url": "https://huggingface.co/Qwen/Qwen3-8B/raw/main/README.md",
+    "path": "evidence/source_identity/qwen3_8b_card.md",
+    "exit_code": 0,
+    "bytes": 16660,
+    "sha256": "0f36caaff9c2516411a7738db384606263ba653c1e63e61d72f511606164d5a6"
+  },
+  {
+    "url": "https://www.apache.org/licenses/LICENSE-2.0.txt",
+    "path": "evidence/source_identity/apache_license.txt",
+    "exit_code": 0,
+    "bytes": 11358,
+    "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+  }
+]

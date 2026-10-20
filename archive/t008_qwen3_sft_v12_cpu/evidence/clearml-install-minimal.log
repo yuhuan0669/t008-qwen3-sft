@@ -1,0 +1,18 @@
+Collecting clearml==1.17.0
+  Downloading clearml-1.17.0-py2.py3-none-any.whl.metadata (18 kB)
+Collecting furl==2.1.4
+  Downloading furl-2.1.4-py2.py3-none-any.whl.metadata (25 kB)
+Collecting orderedmultidict==1.0.2
+  Downloading orderedmultidict-1.0.2-py2.py3-none-any.whl.metadata (1.2 kB)
+Collecting pathlib2==2.3.7.post1
+  Downloading pathlib2-2.3.7.post1-py2.py3-none-any.whl.metadata (3.5 kB)
+Downloading clearml-1.17.0-py2.py3-none-any.whl (1.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 1.1 MB/s eta 0:00:00
+Downloading furl-2.1.4-py2.py3-none-any.whl (27 kB)
+Downloading orderedmultidict-1.0.2-py2.py3-none-any.whl (11 kB)
+Downloading pathlib2-2.3.7.post1-py2.py3-none-any.whl (18 kB)
+Installing collected packages: pathlib2, orderedmultidict, furl, clearml
+Successfully installed clearml-1.17.0 furl-2.1.4 orderedmultidict-1.0.2 pathlib2-2.3.7.post1
+
+[notice] A new release of pip is available: 23.3.2 -> 26.2.1
+[notice] To update, run: pip install --upgrade pip

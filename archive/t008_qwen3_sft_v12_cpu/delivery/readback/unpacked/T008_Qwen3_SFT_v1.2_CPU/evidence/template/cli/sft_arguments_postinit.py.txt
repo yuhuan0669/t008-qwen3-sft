@@ -1,0 +1,41 @@
+    def __post_init__(self) -> None:
+        if self.resume_from_checkpoint:
+            self.resume_from_checkpoint = to_abspath(self.resume_from_checkpoint, True)
+            # The non-resume_only_model will have its weights loaded in the trainer.
+            if self.resume_only_model:
+                if self.tuner_type == 'full':
+                    self.model = self.resume_from_checkpoint
+                else:
+                    self.adapters = [self.resume_from_checkpoint]
+        BaseArguments.__post_init__(self)
+        self._init_override()
+        TunerArguments.__post_init__(self)
+        self._check_padding_free()
+        if self.vit_gradient_checkpointing is None:
+            self.vit_gradient_checkpointing = not self.freeze_vit
+        if self.optimizer is None:
+            if self.lorap_lr_ratio:
+                self.optimizer = 'lorap'
+            elif self.use_galore:
+                self.optimizer = 'galore'
+
+        if len(self.dataset) == 0 and len(self.cached_dataset) == 0:
+            raise ValueError(f'self.dataset: {self.dataset}, self.cached_dataset: {self.cached_dataset}. '
+                             'Please input the training dataset.')
+
+        self._handle_pai_compat()
+
+        self._init_deepspeed()
+        self._init_fsdp()
+        self._init_device()
+
+        if getattr(self, 'accelerator_config', None) is None:
+            self.accelerator_config = {'dispatch_batches': False}
+        if not (self.eval_dataset or self._val_dataset_exists):
+            self.eval_strategy = 'no'
+        self.training_args = TrainerFactory.get_training_args(self)
+        self.training_args.remove_unused_columns = False
+        self._add_version()
+
+        if 'swanlab' in self.report_to:
+            self._init_swanlab()

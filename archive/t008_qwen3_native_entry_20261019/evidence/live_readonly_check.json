@@ -1,0 +1,1423 @@
+{
+  "schema": "t008-official2048-readonly-live-check-v1",
+  "started_at_utc": "2026-10-19T09:27:27.838934+00:00",
+  "ended_at_utc": "2026-10-19T09:27:28.793760+00:00",
+  "context": "lmas00-direct",
+  "results": {
+    "vllm_deployment": {
+      "ok": true,
+      "result": {
+        "namespace": "vllm",
+        "name": "vllm",
+        "uid": "041c9a49-1693-45a5-8ff6-6136ba9e4074",
+        "generation": 33,
+        "resource_version": "186163616",
+        "spec_sha256": "9c75f393377a3e5cb6617e6b44a38241e33785f30593a061b7e7825a8c391b10",
+        "redacted_spec_matches_original_cpu_session": true,
+        "historical_literal_env_values_comparable": false,
+        "replicas": 1,
+        "ready_replicas": 1,
+        "serviceAccountName": "vllm-inference",
+        "nodeSelector": {
+          "nvidia.com/gpu.present": "true"
+        },
+        "containers": [
+          {
+            "name": "vllm",
+            "image": "modelscope-registry.cn-hangzhou.cr.aliyuncs.com/modelscope-repo/modelscope:ubuntu22.04-cuda13.0.3-py312-torch2.11.0-vllm0.25.1-modelscope1.39.0-swift4.4.3",
+            "command": [
+              "python3",
+              "-m",
+              "vllm.entrypoints.openai.api_server"
+            ],
+            "args": [
+              "--model",
+              "/models",
+              "--served-model-name",
+              "octa-carbon-v1",
+              "--host",
+              "0.0.0.0",
+              "--port",
+              "8000",
+              "--gpu-memory-utilization",
+              "0.90",
+              "--max-model-len",
+              "8192",
+              "--trust-remote-code",
+              "--reasoning-parser",
+              "qwen3"
+            ],
+            "resources": {
+              "limits": {
+                "cpu": "16",
+                "memory": "32Gi",
+                "nvidia.com/gpu": "1"
+              },
+              "requests": {
+                "cpu": "4",
+                "memory": "16Gi",
+                "nvidia.com/gpu": "1"
+              }
+            },
+            "volumeMounts": [
+              {
+                "mountPath": "/models",
+                "name": "model-store",
+                "readOnly": true,
+                "subPath": "released/qwen3-8b-baseline/model"
+              },
+              {
+                "mountPath": "/dev/shm",
+                "name": "dshm"
+              },
+              {
+                "mountPath": "/etc/localtime",
+                "name": "host-localtime",
+                "readOnly": true
+              }
+            ],
+            "env_names_and_refs_only": [
+              {
+                "name": "HF_HUB_OFFLINE",
+                "source": "literal_value_omitted"
+              },
+              {
+                "name": "HF_HOME",
+                "source": "literal_value_omitted"
+              },
+              {
+                "name": "HOME",
+                "source": "literal_value_omitted"
+              },
+              {
+                "name": "TZ",
+                "source": "literal_value_omitted"
+              },
+              {
+                "name": "USER",
+                "source": "literal_value_omitted"
+              },
+              {
+                "name": "LOGNAME",
+                "source": "literal_value_omitted"
+              },
+              {
+                "name": "TORCHINDUCTOR_CACHE_DIR",
+                "source": "literal_value_omitted"
+              },
+              {
+                "name": "VLLM_CACHE_ROOT",
+                "source": "literal_value_omitted"
+              },
+              {
+                "name": "XDG_CACHE_HOME",
+                "source": "literal_value_omitted"
+              }
+            ]
+          }
+        ],
+        "volumes": [
+          {
+            "name": "model-store",
+            "persistentVolumeClaim": {
+              "claimName": "vllm-released",
+              "readOnly": true
+            }
+          },
+          {
+            "emptyDir": {
+              "medium": "Memory",
+              "sizeLimit": "8Gi"
+            },
+            "name": "dshm"
+          },
+          {
+            "hostPath": {
+              "path": "/etc/localtime",
+              "type": "File"
+            },
+            "name": "host-localtime"
+          }
+        ]
+      }
+    },
+    "swift_deployment": {
+      "ok": true,
+      "result": {
+        "namespace": "swift",
+        "name": "swift",
+        "uid": "66cf433d-84d3-48c3-85c5-2698bc36a098",
+        "generation": 18,
+        "resource_version": "176692615",
+        "spec_sha256": "377f127d856a0bd10372d72d0098c8b1305bab61b0f78a73dfc68203b82d3fd0",
+        "redacted_spec_matches_original_cpu_session": true,
+        "historical_literal_env_values_comparable": false,
+        "replicas": 0,
+        "ready_replicas": 0,
+        "serviceAccountName": "swift-trainer",
+        "nodeSelector": {
+          "nvidia.com/gpu.present": "true"
+        },
+        "containers": [
+          {
+            "name": "ms-swift",
+            "image": "modelscope-registry.cn-hangzhou.cr.aliyuncs.com/modelscope-repo/modelscope:ubuntu22.04-cuda13.0.3-py312-torch2.11.0-vllm0.25.1-modelscope1.39.0-swift4.4.3",
+            "command": [
+              "/bin/bash",
+              "-c",
+              "swift web-ui --server_name 0.0.0.0 --server_port 7860"
+            ],
+            "args": null,
+            "resources": {
+              "limits": {
+                "cpu": "16",
+                "memory": "32Gi",
+                "nvidia.com/gpu": "1"
+              },
+              "requests": {
+                "cpu": "4",
+                "memory": "16Gi",
+                "nvidia.com/gpu": "1"
+              }
+            },
+            "volumeMounts": [
+              {
+                "mountPath": "/models",
+                "name": "base",
+                "readOnly": true
+              },
+              {
+                "mountPath": "/datasets",
+                "name": "work",
+                "subPath": "datasets"
+              },
+              {
+                "mountPath": "/outputs",
+                "name": "work",
+                "subPath": "candidate"
+              },
+              {
+                "mountPath": "/cache",
+                "name": "work",
+                "subPath": "cache"
+              },
+              {
+                "mountPath": "/dev/shm",
+                "name": "dshm"
+              },
+              {
+                "mountPath": "/etc/localtime",
+                "name": "host-localtime",
+                "readOnly": true
+              }
+            ],
+            "env_names_and_refs_only": [
+              {
+                "name": "SWIFT_UI_LANG",
+                "source": "literal_value_omitted"
+              },
+              {
+                "name": "MODELSCOPE_CACHE",
+                "source": "literal_value_omitted"
+              },
+              {
+                "name": "HF_HOME",
+                "source": "literal_value_omitted"
+              },
+              {
+                "name": "HOME",
+                "source": "literal_value_omitted"
+              },
+              {
+                "name": "TZ",
+                "source": "literal_value_omitted"
+              },
+              {
+                "name": "CLEARML_API_ACCESS_KEY",
+                "source": {
+                  "secretKeyRef": {
+                    "key": "access_key",
+                    "name": "swift-clearml"
+                  }
+                }
+              },
+              {
+                "name": "CLEARML_API_SECRET_KEY",
+                "source": {
+                  "secretKeyRef": {
+                    "key": "secret_key",
+                    "name": "swift-clearml"
+                  }
+                }
+              },
+              {
+                "name": "CLEARML_API_HOST",
+                "source": "literal_value_omitted"
+              },
+              {
+                "name": "CLEARML_FILES_HOST",
+                "source": "literal_value_omitted"
+              },
+              {
+                "name": "CLEARML_WEB_HOST",
+                "source": "literal_value_omitted"
+              },
+              {
+                "name": "USER",
+                "source": "literal_value_omitted"
+              },
+              {
+                "name": "LOGNAME",
+                "source": "literal_value_omitted"
+              },
+              {
+                "name": "TORCHINDUCTOR_CACHE_DIR",
+                "source": "literal_value_omitted"
+              },
+              {
+                "name": "XDG_CACHE_HOME",
+                "source": "literal_value_omitted"
+              },
+              {
+                "name": "PYTHONPATH",
+                "source": "literal_value_omitted"
+              }
+            ]
+          }
+        ],
+        "volumes": [
+          {
+            "name": "base",
+            "persistentVolumeClaim": {
+              "claimName": "swift-base",
+              "readOnly": true
+            }
+          },
+          {
+            "name": "work",
+            "persistentVolumeClaim": {
+              "claimName": "swift-work"
+            }
+          },
+          {
+            "emptyDir": {
+              "medium": "Memory",
+              "sizeLimit": "8Gi"
+            },
+            "name": "dshm"
+          },
+          {
+            "hostPath": {
+              "path": "/etc/localtime",
+              "type": "File"
+            },
+            "name": "host-localtime"
+          }
+        ]
+      }
+    },
+    "vllm_pods": {
+      "ok": true,
+      "result": [
+        {
+          "name": "vllm-5df6b85cfc-xthkr",
+          "uid": "4cdca1ae-c999-4ef5-807f-1807e215005f",
+          "phase": "Running",
+          "node": "k8s-worker05",
+          "containers": [
+            {
+              "name": "vllm",
+              "ready": true,
+              "restartCount": 0,
+              "imageID": "modelscope-registry.cn-hangzhou.cr.aliyuncs.com/modelscope-repo/modelscope@sha256:822d99beed4984a421c8d1da397993c6a8a5f88cdad7dde940bd52df0067d738",
+              "state": {
+                "running": {
+                  "startedAt": "2026-10-12T09:16:29Z"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "swift_pods": {
+      "ok": true,
+      "result": [
+        {
+          "name": "risk31-gpuval-20261009-8nxfk",
+          "uid": "a0755b8c-9660-4124-a544-58f4c223a0f2",
+          "phase": "Succeeded",
+          "node": "k8s-worker05",
+          "containers": [
+            {
+              "name": "gpuval",
+              "ready": false,
+              "restartCount": 0,
+              "imageID": "modelscope-registry.cn-hangzhou.cr.aliyuncs.com/modelscope-repo/modelscope@sha256:822d99beed4984a421c8d1da397993c6a8a5f88cdad7dde940bd52df0067d738",
+              "state": {
+                "terminated": {
+                  "containerID": "containerd://800ed46976d6212b1a4637401e5eebb561a7be461a70264fd971fc8d212786c2",
+                  "exitCode": 0,
+                  "finishedAt": "2026-10-09T08:51:38Z",
+                  "reason": "Completed",
+                  "startedAt": "2026-10-09T08:46:30Z"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "risk31-gpuval-bcb43b7-rqrkp",
+          "uid": "27a9ce8b-428c-4e5b-898d-9afff4fe920e",
+          "phase": "Succeeded",
+          "node": "k8s-worker05",
+          "containers": [
+            {
+              "name": "gpuval",
+              "ready": false,
+              "restartCount": 0,
+              "imageID": "modelscope-registry.cn-hangzhou.cr.aliyuncs.com/modelscope-repo/modelscope@sha256:822d99beed4984a421c8d1da397993c6a8a5f88cdad7dde940bd52df0067d738",
+              "state": {
+                "terminated": {
+                  "containerID": "containerd://2ffe6f064915d0b6c5c4f531ab78b005c21227cad97c72a2201a048d7ae290b7",
+                  "exitCode": 0,
+                  "finishedAt": "2026-10-09T11:11:34Z",
+                  "reason": "Completed",
+                  "startedAt": "2026-10-09T11:06:34Z"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "risk31-reload-v14-diag-jvfqs",
+          "uid": "bd387794-7f59-4528-bdfc-07b940629a03",
+          "phase": "Succeeded",
+          "node": "k8s-worker05",
+          "containers": [
+            {
+              "name": "risk31",
+              "ready": false,
+              "restartCount": 0,
+              "imageID": "modelscope-registry.cn-hangzhou.cr.aliyuncs.com/modelscope-repo/modelscope@sha256:822d99beed4984a421c8d1da397993c6a8a5f88cdad7dde940bd52df0067d738",
+              "state": {
+                "terminated": {
+                  "containerID": "containerd://135a1de371a8363d78e88964575c741289eec6014aef16e952b18416f34dce5e",
+                  "exitCode": 0,
+                  "finishedAt": "2026-10-07T06:56:16Z",
+                  "reason": "Completed",
+                  "startedAt": "2026-10-07T06:56:06Z"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "risk31-reload-v14-fixed-mhxcl",
+          "uid": "964702fc-af24-4ce8-9d9a-d25404fbb631",
+          "phase": "Succeeded",
+          "node": "k8s-worker05",
+          "containers": [
+            {
+              "name": "risk31",
+              "ready": false,
+              "restartCount": 0,
+              "imageID": "modelscope-registry.cn-hangzhou.cr.aliyuncs.com/modelscope-repo/modelscope@sha256:822d99beed4984a421c8d1da397993c6a8a5f88cdad7dde940bd52df0067d738",
+              "state": {
+                "terminated": {
+                  "containerID": "containerd://3410ab7852a8431fbc50e245fcbb426b8626ed021c01a9877b1f77e988a50b99",
+                  "exitCode": 0,
+                  "finishedAt": "2026-10-07T06:57:30Z",
+                  "reason": "Completed",
+                  "startedAt": "2026-10-07T06:57:21Z"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "clearml_pods": {
+      "ok": true,
+      "result": [
+        {
+          "name": "clearml-apiserver-asyncdelete-7cbdb56d74-m8v65",
+          "uid": "fb43552c-955a-44ca-ae48-aa8de5195220",
+          "phase": "Running",
+          "node": "k8s-worker06",
+          "containers": [
+            {
+              "name": "clearml-apiserver",
+              "ready": true,
+              "restartCount": 0,
+              "imageID": "swr.cn-north-4.myhuaweicloud.com/ddn-k8s/docker.io/clearml/server@sha256:5ec4aed2e40c619da63198c22e765a00b4e3e5c06081a9c0a4ae237df66fb7bb",
+              "state": {
+                "running": {
+                  "startedAt": "2026-10-18T12:45:35Z"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "clearml-apiserver-fc96888d8-49xj4",
+          "uid": "fc87311b-8e0a-487e-b391-5b8d8b5685fa",
+          "phase": "Running",
+          "node": "k8s-worker06",
+          "containers": [
+            {
+              "name": "clearml-apiserver",
+              "ready": true,
+              "restartCount": 0,
+              "imageID": "swr.cn-north-4.myhuaweicloud.com/ddn-k8s/docker.io/clearml/server@sha256:5ec4aed2e40c619da63198c22e765a00b4e3e5c06081a9c0a4ae237df66fb7bb",
+              "state": {
+                "running": {
+                  "startedAt": "2026-10-18T12:45:35Z"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "clearml-dragonfly-0",
+          "uid": "001480fc-597a-4498-8339-2287204b79de",
+          "phase": "Running",
+          "node": "k8s-worker06",
+          "containers": [
+            {
+              "name": "dragonfly",
+              "ready": true,
+              "restartCount": 4,
+              "imageID": "sha256:c976d8b558050ff923b732cbe94fd88bf5dd72c6bcb4fcd9386cf0244917fefb",
+              "state": {
+                "running": {
+                  "startedAt": "2026-10-14T10:34:17Z"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "clearml-elastic-master-0",
+          "uid": "0d91aa86-6e22-4b14-8ba6-fd3ef2a104e2",
+          "phase": "Running",
+          "node": "k8s-worker06",
+          "containers": [
+            {
+              "name": "elasticsearch",
+              "ready": true,
+              "restartCount": 0,
+              "imageID": "docker.elastic.co/elasticsearch/elasticsearch@sha256:8734ac48c10ff836a6d0c3d600297b453cb389e85fd26bb4ccb3d5a5bde7e554",
+              "state": {
+                "running": {
+                  "startedAt": "2026-10-14T06:20:30Z"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "clearml-fileserver-5974898f9-v6dwr",
+          "uid": "1e554a17-b270-43ea-9dd7-6d025bd9b7ac",
+          "phase": "Running",
+          "node": "k8s-worker06",
+          "containers": [
+            {
+              "name": "clearml-fileserver",
+              "ready": true,
+              "restartCount": 0,
+              "imageID": "swr.cn-north-4.myhuaweicloud.com/ddn-k8s/docker.io/clearml/server@sha256:5ec4aed2e40c619da63198c22e765a00b4e3e5c06081a9c0a4ae237df66fb7bb",
+              "state": {
+                "running": {
+                  "startedAt": "2026-10-18T12:45:28Z"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "clearml-mongodb-6cdc54b798-jh4nj",
+          "uid": "254a1f14-f77e-405b-8127-4d119c899461",
+          "phase": "Running",
+          "node": "k8s-worker06",
+          "containers": [
+            {
+              "name": "mongodb",
+              "ready": true,
+              "restartCount": 3,
+              "imageID": "sha256:71f8009ed7276788c2138aa457669714c4cc1451ef5fa5f959403fbecaa31c2a",
+              "state": {
+                "running": {
+                  "startedAt": "2026-10-14T06:28:00Z"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "clearml-webserver-6c9f69f6dc-rwwk5",
+          "uid": "8920778f-271c-4603-a1cf-bb110b35a739",
+          "phase": "Running",
+          "node": "k8s-worker06",
+          "containers": [
+            {
+              "name": "clearml-webserver",
+              "ready": true,
+              "restartCount": 0,
+              "imageID": "swr.cn-north-4.myhuaweicloud.com/ddn-k8s/docker.io/clearml/server@sha256:5ec4aed2e40c619da63198c22e765a00b4e3e5c06081a9c0a4ae237df66fb7bb",
+              "state": {
+                "running": {
+                  "startedAt": "2026-10-18T12:45:28Z"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "swift_pvcs": {
+      "ok": true,
+      "result": [
+        {
+          "name": "swift-base",
+          "phase": "Bound",
+          "volumeName": "pvc-c139c4e6-7c17-489d-9ab8-2928222bf80b",
+          "storageClassName": "nfs-storage-ssd",
+          "capacity": {
+            "storage": "40Gi"
+          },
+          "accessModes": [
+            "ReadWriteMany"
+          ]
+        },
+        {
+          "name": "swift-data",
+          "phase": "Bound",
+          "volumeName": "pvc-de8a052e-80d4-4437-873c-85e7b5dc7e47",
+          "storageClassName": "nfs-storage-rtx",
+          "capacity": {
+            "storage": "100Gi"
+          },
+          "accessModes": [
+            "ReadWriteMany"
+          ]
+        },
+        {
+          "name": "swift-train-data",
+          "phase": "Bound",
+          "volumeName": "pvc-95b15387-3fcf-4ace-ae5c-ec63facf9b62",
+          "storageClassName": "nfs-storage-ssd",
+          "capacity": {
+            "storage": "10Gi"
+          },
+          "accessModes": [
+            "ReadWriteMany"
+          ]
+        },
+        {
+          "name": "swift-work",
+          "phase": "Bound",
+          "volumeName": "pvc-b737cf7f-e0eb-4a0a-866a-bd0466e9f476",
+          "storageClassName": "nfs-storage-ssd",
+          "capacity": {
+            "storage": "40Gi"
+          },
+          "accessModes": [
+            "ReadWriteMany"
+          ]
+        }
+      ]
+    },
+    "clearml_pvcs": {
+      "ok": true,
+      "result": [
+        {
+          "name": "clearml-data-clearml-dragonfly-0",
+          "phase": "Bound",
+          "volumeName": "pvc-cf9983e6-1b86-49a6-afe0-290c8555ad5c",
+          "storageClassName": "nfs-storage-ssd",
+          "capacity": {
+            "storage": "2Gi"
+          },
+          "accessModes": [
+            "ReadWriteOnce"
+          ]
+        },
+        {
+          "name": "clearml-elastic-master-clearml-elastic-master-0",
+          "phase": "Bound",
+          "volumeName": "pvc-038c1ef1-76a0-4cb4-b702-221563008ed6",
+          "storageClassName": "nfs-storage-ssd",
+          "capacity": {
+            "storage": "10Gi"
+          },
+          "accessModes": [
+            "ReadWriteOnce"
+          ]
+        },
+        {
+          "name": "clearml-fileserver-data",
+          "phase": "Bound",
+          "volumeName": "pvc-758af76e-e0d9-4ed7-a1d0-1bccbb9fa972",
+          "storageClassName": "nfs-storage-ssd",
+          "capacity": {
+            "storage": "10Gi"
+          },
+          "accessModes": [
+            "ReadWriteOnce"
+          ]
+        },
+        {
+          "name": "clearml-mongodb",
+          "phase": "Bound",
+          "volumeName": "pvc-773ac9da-be8a-4a44-a8e6-979a9ce94bb2",
+          "storageClassName": "nfs-storage-ssd",
+          "capacity": {
+            "storage": "10Gi"
+          },
+          "accessModes": [
+            "ReadWriteOnce"
+          ]
+        }
+      ]
+    },
+    "swift_workloads": {
+      "ok": true,
+      "result": [
+        {
+          "kind": "Deployment",
+          "name": "swift",
+          "replicas": 0,
+          "status": {
+            "conditions": [
+              {
+                "lastTransitionTime": "2026-09-29T18:25:46Z",
+                "lastUpdateTime": "2026-09-29T18:25:46Z",
+                "message": "Deployment has minimum availability.",
+                "reason": "MinimumReplicasAvailable",
+                "status": "True",
+                "type": "Available"
+              },
+              {
+                "lastTransitionTime": "2026-08-18T14:00:30Z",
+                "lastUpdateTime": "2026-09-30T03:55:32Z",
+                "message": "ReplicaSet \"swift-65cf7786\" has successfully progressed.",
+                "reason": "NewReplicaSetAvailable",
+                "status": "True",
+                "type": "Progressing"
+              }
+            ],
+            "observedGeneration": 18
+          }
+        },
+        {
+          "kind": "Job",
+          "name": "risk31-gpuval-20261009",
+          "replicas": null,
+          "status": {
+            "completionTime": "2026-10-09T08:51:40Z",
+            "conditions": [
+              {
+                "lastProbeTime": "2026-10-09T08:51:40Z",
+                "lastTransitionTime": "2026-10-09T08:51:40Z",
+                "message": "Reached expected number of succeeded pods",
+                "reason": "CompletionsReached",
+                "status": "True",
+                "type": "SuccessCriteriaMet"
+              },
+              {
+                "lastProbeTime": "2026-10-09T08:51:40Z",
+                "lastTransitionTime": "2026-10-09T08:51:40Z",
+                "message": "Reached expected number of succeeded pods",
+                "reason": "CompletionsReached",
+                "status": "True",
+                "type": "Complete"
+              }
+            ],
+            "ready": 0,
+            "startTime": "2026-10-09T08:46:29Z",
+            "succeeded": 1,
+            "terminating": 0,
+            "uncountedTerminatedPods": {}
+          }
+        },
+        {
+          "kind": "Job",
+          "name": "risk31-gpuval-bcb43b7",
+          "replicas": null,
+          "status": {
+            "completionTime": "2026-10-09T11:11:37Z",
+            "conditions": [
+              {
+                "lastProbeTime": "2026-10-09T11:11:37Z",
+                "lastTransitionTime": "2026-10-09T11:11:37Z",
+                "message": "Reached expected number of succeeded pods",
+                "reason": "CompletionsReached",
+                "status": "True",
+                "type": "SuccessCriteriaMet"
+              },
+              {
+                "lastProbeTime": "2026-10-09T11:11:37Z",
+                "lastTransitionTime": "2026-10-09T11:11:37Z",
+                "message": "Reached expected number of succeeded pods",
+                "reason": "CompletionsReached",
+                "status": "True",
+                "type": "Complete"
+              }
+            ],
+            "ready": 0,
+            "startTime": "2026-10-09T11:06:33Z",
+            "succeeded": 1,
+            "terminating": 0,
+            "uncountedTerminatedPods": {}
+          }
+        },
+        {
+          "kind": "Job",
+          "name": "risk31-reload-v14-diag",
+          "replicas": null,
+          "status": {
+            "completionTime": "2026-10-07T06:56:19Z",
+            "conditions": [
+              {
+                "lastProbeTime": "2026-10-07T06:56:19Z",
+                "lastTransitionTime": "2026-10-07T06:56:19Z",
+                "message": "Reached expected number of succeeded pods",
+                "reason": "CompletionsReached",
+                "status": "True",
+                "type": "SuccessCriteriaMet"
+              },
+              {
+                "lastProbeTime": "2026-10-07T06:56:19Z",
+                "lastTransitionTime": "2026-10-07T06:56:19Z",
+                "message": "Reached expected number of succeeded pods",
+                "reason": "CompletionsReached",
+                "status": "True",
+                "type": "Complete"
+              }
+            ],
+            "ready": 0,
+            "startTime": "2026-10-07T06:56:05Z",
+            "succeeded": 1,
+            "terminating": 0,
+            "uncountedTerminatedPods": {}
+          }
+        },
+        {
+          "kind": "Job",
+          "name": "risk31-reload-v14-fixed",
+          "replicas": null,
+          "status": {
+            "completionTime": "2026-10-07T06:57:33Z",
+            "conditions": [
+              {
+                "lastProbeTime": "2026-10-07T06:57:33Z",
+                "lastTransitionTime": "2026-10-07T06:57:33Z",
+                "message": "Reached expected number of succeeded pods",
+                "reason": "CompletionsReached",
+                "status": "True",
+                "type": "SuccessCriteriaMet"
+              },
+              {
+                "lastProbeTime": "2026-10-07T06:57:33Z",
+                "lastTransitionTime": "2026-10-07T06:57:33Z",
+                "message": "Reached expected number of succeeded pods",
+                "reason": "CompletionsReached",
+                "status": "True",
+                "type": "Complete"
+              }
+            ],
+            "ready": 0,
+            "startTime": "2026-10-07T06:57:20Z",
+            "succeeded": 1,
+            "terminating": 0,
+            "uncountedTerminatedPods": {}
+          }
+        },
+        {
+          "kind": "Job",
+          "name": "risk31-train-v14-20261007",
+          "replicas": null,
+          "status": {
+            "conditions": [
+              {
+                "lastProbeTime": "2026-10-07T06:46:33Z",
+                "lastTransitionTime": "2026-10-07T06:46:33Z",
+                "message": "Job has reached the specified backoff limit",
+                "reason": "BackoffLimitExceeded",
+                "status": "True",
+                "type": "FailureTarget"
+              },
+              {
+                "lastProbeTime": "2026-10-07T06:46:33Z",
+                "lastTransitionTime": "2026-10-07T06:46:33Z",
+                "message": "Job has reached the specified backoff limit",
+                "reason": "BackoffLimitExceeded",
+                "status": "True",
+                "type": "Failed"
+              }
+            ],
+            "failed": 1,
+            "ready": 0,
+            "startTime": "2026-10-07T06:44:37Z",
+            "terminating": 0,
+            "uncountedTerminatedPods": {}
+          }
+        },
+        {
+          "kind": "Job",
+          "name": "risk31-train-v14-20261007-r1",
+          "replicas": null,
+          "status": {
+            "conditions": [
+              {
+                "lastProbeTime": "2026-10-07T06:53:27Z",
+                "lastTransitionTime": "2026-10-07T06:53:27Z",
+                "message": "Job has reached the specified backoff limit",
+                "reason": "BackoffLimitExceeded",
+                "status": "True",
+                "type": "FailureTarget"
+              },
+              {
+                "lastProbeTime": "2026-10-07T06:53:27Z",
+                "lastTransitionTime": "2026-10-07T06:53:27Z",
+                "message": "Job has reached the specified backoff limit",
+                "reason": "BackoffLimitExceeded",
+                "status": "True",
+                "type": "Failed"
+              }
+            ],
+            "failed": 1,
+            "ready": 0,
+            "startTime": "2026-10-07T06:50:53Z",
+            "terminating": 0,
+            "uncountedTerminatedPods": {}
+          }
+        }
+      ]
+    },
+    "clearml_workloads": {
+      "ok": true,
+      "result": [
+        {
+          "kind": "Deployment",
+          "name": "clearml-apiserver",
+          "replicas": 1,
+          "status": {
+            "availableReplicas": 1,
+            "conditions": [
+              {
+                "lastTransitionTime": "2026-10-14T06:32:46Z",
+                "lastUpdateTime": "2026-10-14T06:32:46Z",
+                "message": "Deployment has minimum availability.",
+                "reason": "MinimumReplicasAvailable",
+                "status": "True",
+                "type": "Available"
+              },
+              {
+                "lastTransitionTime": "2026-09-29T15:27:27Z",
+                "lastUpdateTime": "2026-10-18T12:44:11Z",
+                "message": "ReplicaSet \"clearml-apiserver-fc96888d8\" has successfully progressed.",
+                "reason": "NewReplicaSetAvailable",
+                "status": "True",
+                "type": "Progressing"
+              }
+            ],
+            "observedGeneration": 10,
+            "readyReplicas": 1,
+            "replicas": 1,
+            "updatedReplicas": 1
+          }
+        },
+        {
+          "kind": "Deployment",
+          "name": "clearml-apiserver-asyncdelete",
+          "replicas": 1,
+          "status": {
+            "availableReplicas": 1,
+            "conditions": [
+              {
+                "lastTransitionTime": "2026-10-14T06:30:01Z",
+                "lastUpdateTime": "2026-10-14T06:30:01Z",
+                "message": "Deployment has minimum availability.",
+                "reason": "MinimumReplicasAvailable",
+                "status": "True",
+                "type": "Available"
+              },
+              {
+                "lastTransitionTime": "2026-09-29T15:26:02Z",
+                "lastUpdateTime": "2026-10-18T12:43:07Z",
+                "message": "ReplicaSet \"clearml-apiserver-asyncdelete-7cbdb56d74\" has successfully progressed.",
+                "reason": "NewReplicaSetAvailable",
+                "status": "True",
+                "type": "Progressing"
+              }
+            ],
+            "observedGeneration": 9,
+            "readyReplicas": 1,
+            "replicas": 1,
+            "updatedReplicas": 1
+          }
+        },
+        {
+          "kind": "Deployment",
+          "name": "clearml-fileserver",
+          "replicas": 1,
+          "status": {
+            "availableReplicas": 1,
+            "conditions": [
+              {
+                "lastTransitionTime": "2026-10-14T06:32:56Z",
+                "lastUpdateTime": "2026-10-14T06:32:56Z",
+                "message": "Deployment has minimum availability.",
+                "reason": "MinimumReplicasAvailable",
+                "status": "True",
+                "type": "Available"
+              },
+              {
+                "lastTransitionTime": "2026-09-29T15:20:49Z",
+                "lastUpdateTime": "2026-10-18T12:43:01Z",
+                "message": "ReplicaSet \"clearml-fileserver-5974898f9\" has successfully progressed.",
+                "reason": "NewReplicaSetAvailable",
+                "status": "True",
+                "type": "Progressing"
+              }
+            ],
+            "observedGeneration": 10,
+            "readyReplicas": 1,
+            "replicas": 1,
+            "updatedReplicas": 1
+          }
+        },
+        {
+          "kind": "Deployment",
+          "name": "clearml-mongodb",
+          "replicas": 1,
+          "status": {
+            "availableReplicas": 1,
+            "conditions": [
+              {
+                "lastTransitionTime": "2026-09-29T18:13:02Z",
+                "lastUpdateTime": "2026-09-29T18:13:02Z",
+                "message": "Deployment has minimum availability.",
+                "reason": "MinimumReplicasAvailable",
+                "status": "True",
+                "type": "Available"
+              },
+              {
+                "lastTransitionTime": "2026-09-29T15:20:33Z",
+                "lastUpdateTime": "2026-09-29T15:20:33Z",
+                "message": "ReplicaSet \"clearml-mongodb-6cdc54b798\" has successfully progressed.",
+                "reason": "NewReplicaSetAvailable",
+                "status": "True",
+                "type": "Progressing"
+              }
+            ],
+            "observedGeneration": 6,
+            "readyReplicas": 1,
+            "replicas": 1,
+            "updatedReplicas": 1
+          }
+        },
+        {
+          "kind": "Deployment",
+          "name": "clearml-webserver",
+          "replicas": 1,
+          "status": {
+            "availableReplicas": 1,
+            "conditions": [
+              {
+                "lastTransitionTime": "2026-10-14T06:33:06Z",
+                "lastUpdateTime": "2026-10-14T06:33:06Z",
+                "message": "Deployment has minimum availability.",
+                "reason": "MinimumReplicasAvailable",
+                "status": "True",
+                "type": "Available"
+              },
+              {
+                "lastTransitionTime": "2026-09-29T15:17:56Z",
+                "lastUpdateTime": "2026-10-18T12:43:00Z",
+                "message": "ReplicaSet \"clearml-webserver-6c9f69f6dc\" has successfully progressed.",
+                "reason": "NewReplicaSetAvailable",
+                "status": "True",
+                "type": "Progressing"
+              }
+            ],
+            "observedGeneration": 11,
+            "readyReplicas": 1,
+            "replicas": 1,
+            "updatedReplicas": 1
+          }
+        },
+        {
+          "kind": "StatefulSet",
+          "name": "clearml-dragonfly",
+          "replicas": 1,
+          "status": {
+            "availableReplicas": 1,
+            "collisionCount": 0,
+            "currentReplicas": 1,
+            "currentRevision": "clearml-dragonfly-874457f5b",
+            "observedGeneration": 5,
+            "readyReplicas": 1,
+            "replicas": 1,
+            "updateRevision": "clearml-dragonfly-874457f5b",
+            "updatedReplicas": 1
+          }
+        },
+        {
+          "kind": "StatefulSet",
+          "name": "clearml-elastic-master",
+          "replicas": 1,
+          "status": {
+            "availableReplicas": 1,
+            "collisionCount": 0,
+            "currentReplicas": 1,
+            "currentRevision": "clearml-elastic-master-5656b7d748",
+            "observedGeneration": 5,
+            "readyReplicas": 1,
+            "replicas": 1,
+            "updateRevision": "clearml-elastic-master-5656b7d748",
+            "updatedReplicas": 1
+          }
+        }
+      ]
+    },
+    "nodes": {
+      "ok": true,
+      "result": [
+        {
+          "name": "k8s-ke-edge01",
+          "capacity_gpu": "0",
+          "allocatable_gpu": "0",
+          "conditions": [
+            {
+              "type": "MemoryPressure",
+              "status": "Unknown"
+            },
+            {
+              "type": "DiskPressure",
+              "status": "Unknown"
+            },
+            {
+              "type": "PIDPressure",
+              "status": "Unknown"
+            },
+            {
+              "type": "Ready",
+              "status": "Unknown"
+            }
+          ]
+        },
+        {
+          "name": "k8s-master01",
+          "capacity_gpu": "0",
+          "allocatable_gpu": "0",
+          "conditions": [
+            {
+              "type": "NetworkUnavailable",
+              "status": "False"
+            },
+            {
+              "type": "MemoryPressure",
+              "status": "False"
+            },
+            {
+              "type": "DiskPressure",
+              "status": "False"
+            },
+            {
+              "type": "PIDPressure",
+              "status": "False"
+            },
+            {
+              "type": "Ready",
+              "status": "True"
+            }
+          ]
+        },
+        {
+          "name": "k8s-worker01",
+          "capacity_gpu": "0",
+          "allocatable_gpu": "0",
+          "conditions": [
+            {
+              "type": "NetworkUnavailable",
+              "status": "False"
+            },
+            {
+              "type": "MemoryPressure",
+              "status": "False"
+            },
+            {
+              "type": "DiskPressure",
+              "status": "False"
+            },
+            {
+              "type": "PIDPressure",
+              "status": "False"
+            },
+            {
+              "type": "Ready",
+              "status": "True"
+            }
+          ]
+        },
+        {
+          "name": "k8s-worker02",
+          "capacity_gpu": "0",
+          "allocatable_gpu": "0",
+          "conditions": [
+            {
+              "type": "NetworkUnavailable",
+              "status": "False"
+            },
+            {
+              "type": "MemoryPressure",
+              "status": "False"
+            },
+            {
+              "type": "DiskPressure",
+              "status": "False"
+            },
+            {
+              "type": "PIDPressure",
+              "status": "False"
+            },
+            {
+              "type": "Ready",
+              "status": "True"
+            }
+          ]
+        },
+        {
+          "name": "k8s-worker03",
+          "capacity_gpu": "0",
+          "allocatable_gpu": "0",
+          "conditions": [
+            {
+              "type": "NetworkUnavailable",
+              "status": "False"
+            },
+            {
+              "type": "MemoryPressure",
+              "status": "False"
+            },
+            {
+              "type": "DiskPressure",
+              "status": "False"
+            },
+            {
+              "type": "PIDPressure",
+              "status": "False"
+            },
+            {
+              "type": "Ready",
+              "status": "True"
+            }
+          ]
+        },
+        {
+          "name": "k8s-worker04",
+          "capacity_gpu": "0",
+          "allocatable_gpu": "0",
+          "conditions": [
+            {
+              "type": "NetworkUnavailable",
+              "status": "False"
+            },
+            {
+              "type": "MemoryPressure",
+              "status": "False"
+            },
+            {
+              "type": "DiskPressure",
+              "status": "False"
+            },
+            {
+              "type": "PIDPressure",
+              "status": "False"
+            },
+            {
+              "type": "Ready",
+              "status": "True"
+            }
+          ]
+        },
+        {
+          "name": "k8s-worker05",
+          "capacity_gpu": "1",
+          "allocatable_gpu": "1",
+          "conditions": [
+            {
+              "type": "NetworkUnavailable",
+              "status": "False"
+            },
+            {
+              "type": "MemoryPressure",
+              "status": "False"
+            },
+            {
+              "type": "DiskPressure",
+              "status": "False"
+            },
+            {
+              "type": "PIDPressure",
+              "status": "False"
+            },
+            {
+              "type": "Ready",
+              "status": "True"
+            }
+          ]
+        },
+        {
+          "name": "k8s-worker06",
+          "capacity_gpu": "0",
+          "allocatable_gpu": "0",
+          "conditions": [
+            {
+              "type": "NetworkUnavailable",
+              "status": "False"
+            },
+            {
+              "type": "MemoryPressure",
+              "status": "False"
+            },
+            {
+              "type": "DiskPressure",
+              "status": "False"
+            },
+            {
+              "type": "PIDPressure",
+              "status": "False"
+            },
+            {
+              "type": "Ready",
+              "status": "True"
+            }
+          ]
+        }
+      ]
+    },
+    "vllm_health": {
+      "ok": true,
+      "result": {
+        "argv": [
+          "/usr/bin/curl",
+          "--silent",
+          "--show-error",
+          "--max-time",
+          "15",
+          "--output",
+          "/dev/null",
+          "--write-out",
+          "%{http_code} %{ssl_verify_result}",
+          "https://vllm.10.140.17.125.nip.io/health"
+        ],
+        "exit_code": 0,
+        "stdout": "200 0",
+        "stderr": ""
+      }
+    },
+    "clearml_files_https": {
+      "ok": true,
+      "result": {
+        "argv": [
+          "/usr/bin/curl",
+          "--silent",
+          "--show-error",
+          "--max-time",
+          "15",
+          "--output",
+          "/dev/null",
+          "--write-out",
+          "%{http_code} %{ssl_verify_result}",
+          "https://clearml.10.140.17.125.nip.io/files/"
+        ],
+        "exit_code": 0,
+        "stdout": "200 0",
+        "stderr": ""
+      }
+    },
+    "clearml_api_health": {
+      "ok": true,
+      "result": {
+        "argv": [
+          "/usr/bin/curl",
+          "--silent",
+          "--show-error",
+          "--max-time",
+          "15",
+          "--output",
+          "/dev/null",
+          "--write-out",
+          "%{http_code} %{ssl_verify_result}",
+          "https://clearml.10.140.17.125.nip.io/api/debug.ping"
+        ],
+        "exit_code": 0,
+        "stdout": "200 0",
+        "stderr": ""
+      }
+    },
+    "gpu_inventory": {
+      "ok": true,
+      "result": {
+        "argv": [
+          "kubectl",
+          "--context",
+          "lmas00-direct",
+          "-n",
+          "vllm",
+          "exec",
+          "deploy/vllm",
+          "--",
+          "nvidia-smi",
+          "--query-gpu=uuid,name,memory.total,memory.used,utilization.gpu",
+          "--format=csv,noheader"
+        ],
+        "exit_code": 0,
+        "stdout": "GPU-4be5e60c-519d-6fb6-4d93-23ce1e897e2e, NVIDIA GeForce RTX 4090, 24564 MiB, 22176 MiB, 0 %\n",
+        "stderr": ""
+      }
+    },
+    "gpu_processes": {
+      "ok": true,
+      "result": {
+        "argv": [
+          "kubectl",
+          "--context",
+          "lmas00-direct",
+          "-n",
+          "vllm",
+          "exec",
+          "deploy/vllm",
+          "--",
+          "nvidia-smi",
+          "--query-compute-apps=pid,process_name,used_memory",
+          "--format=csv,noheader"
+        ],
+        "exit_code": 0,
+        "stdout": "215, VLLM::EngineCore, 22166 MiB\n",
+        "stderr": ""
+      }
+    }
+  },
+  "end_deployments": {
+    "vllm": {
+      "spec_sha256": "9c75f393377a3e5cb6617e6b44a38241e33785f30593a061b7e7825a8c391b10",
+      "replicas": 1,
+      "ready_replicas": 1,
+      "spec_unchanged_during_check": true
+    },
+    "swift": {
+      "spec_sha256": "377f127d856a0bd10372d72d0098c8b1305bab61b0f78a73dfc68203b82d3fd0",
+      "replicas": 0,
+      "ready_replicas": 0,
+      "spec_unchanged_during_check": true
+    }
+  },
+  "kubernetes_mutations": false,
+  "gpu_training_started": false,
+  "clearml_objects_created": false
+}

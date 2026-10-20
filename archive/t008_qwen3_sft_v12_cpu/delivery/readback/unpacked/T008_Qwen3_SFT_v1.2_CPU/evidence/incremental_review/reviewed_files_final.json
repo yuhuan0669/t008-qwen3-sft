@@ -1,0 +1,32 @@
+{
+  "collected_at_utc": "2026-10-19T06:00:11.841126+00:00",
+  "tests": {
+    "command": "python3 -m unittest discover -s tests -v",
+    "count": 22,
+    "elapsed_seconds": 0.625,
+    "failures": 0,
+    "errors": 0
+  },
+  "files": [
+    {
+      "path": "work/code/prepare_official.py",
+      "sha256": "aff3eef6fb5eccd7618d1f905010bca79dc9ed6ac79bf7a7360394dd8794b168"
+    },
+    {
+      "path": "work/code/run_identity.py",
+      "sha256": "f1783eb53897e41171b8e4be0c95e2b4b3c53d136bf90d8e6c9004f13cbc61c9"
+    },
+    {
+      "path": "work/code/preflight_data.py",
+      "sha256": "717264e25f87d17364a5833b8a153c01a82efc5aa49833e2a7bf91538d71e4d2"
+    },
+    {
+      "path": "work/code/tests/test\u73b0\u573a_regressions.py",
+      "sha256": "ae1fc7e526f6f265be50a620549409b898e4ea9efa12f4aaa2b85c1835304062"
+    },
+    {
+      "path": "reports/incremental_review.md",
+      "sha256": "a5d2c4b3848e9d172c84b24bb61fcb2cf7081b25b6487fff4de01d3dbd939da1"
+    }
+  ]
+}

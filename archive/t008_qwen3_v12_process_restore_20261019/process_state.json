@@ -1,0 +1,24 @@
+{
+  "schema": "t008-v12-process-restore-docs-v1",
+  "recorded_at_utc": "2026-10-20T01:08:18.908208+00:00",
+  "user_instruction": "那就恢复到v1.2的快照审核、异常处理和独立评估流程，保留必要的兼容性修复，先更新方案和执行记录，不修改语料、不启动训练。",
+  "version": "v1.2",
+  "document_revision": "process-restore-R1",
+  "scope": "DOCUMENTATION_ONLY",
+  "plan_url": "https://docs.google.com/document/d/1F_tWpH6yaRLK0aaY4Y-ksKXBjjdLMrOIqM4ufchGBaY/edit",
+  "restored_processes": [
+    "reviewed_immutable_training_snapshot",
+    "explicit_anomaly_review_and_derivative_lineage",
+    "independent_ABCD_general_and_thinking_evaluation"
+  ],
+  "training_entrypoint_implementation": "PENDING_SNAPSHOT_ADAPTATION",
+  "data_or_code_modified": false,
+  "training_started": false,
+  "evaluation_started": false,
+  "clearml_objects_created": false,
+  "service_changed": false,
+  "data_optimization_hold": "REMAINS_IN_EFFECT",
+  "training_admission": "NO_GO_PENDING_FUTURE_CPU_AND_AUTHORIZATION",
+  "existing_candidate_quality": "NOT_ACCEPTED",
+  "forgetting": "NOT_MEASURED"
+}

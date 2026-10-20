@@ -1,0 +1,9 @@
+Failed to load CPU gemm_4bit_forward from kernels-community: No module named 'kernels'. Please make sure you already `pip install kernels` and the kernels >= 0.11.1
+[INFO:swift] Successfully registered `/usr/local/lib/python3.12/site-packages/swift/dataset/data/dataset_info.json`.
+[INFO:swift] SelfCognitionPreprocessor has been successfully configured with name: ('章鱼能碳垂直大模型', 'Octacarbon LLM'), author: ('能碳章鱼（湖北）人工智能科技有限公司', 'Octacarbon (Hubei) Artificial Intelligence Technology Co., Ltd.').
+[INFO:swift] Downloading the dataset from ModelScope, dataset_id: swift/Qwen3-SFT-Mixin
+Map (num_proc=1): 100%|██████████| 1000/1000 [00:00<?, ? examples/s]Map (num_proc=1): 2000 examples [00:00, 7374.44 examples/s]         Map (num_proc=1): 2000 examples [00:00, 3904.25 examples/s]
+[INFO:swift] Downloading the dataset from ModelScope, dataset_id: swift/self-cognition
+Map (num_proc=1): 100%|██████████| 108/108 [00:00<?, ? examples/s]Map (num_proc=1): 216 examples [00:00, 756.42 examples/s]         
+[WARNING:swift] dataset_sample:600 is greater than len(dataset):108, repeated sampling will be performed.
+{"rows": 2600, "unique": 1108, "anomalies": [{"index": 26, "source_segment": "mixin", "placeholders": ["{{ message }}", "{{ item }}", "{{ message }}", "{{ message }}", "{{ message }}", "{{ message }}"], "swift_robot": false}, {"index": 466, "source_segment": "mixin", "placeholders": ["{{ region }}"], "swift_robot": false}, {"index": 680, "source_segment": "mixin", "placeholders": ["{{name}}", "{{title}}"], "swift_robot": false}, {"index": 1026, "source_segment": "mixin", "placeholders": ["{{ message }}", "{{ item }}", "{{ message }}", "{{ message }}", "{{ message }}", "{{ message }}"], "swift_robot": false}, {"index": 1466, "source_segment": "mixin", "placeholders": ["{{ region }}"], "swift_robot": false}, {"index": 1680, "source_segment": "mixin", "placeholders": ["{{name}}", "{{title}}"], "swift_robot": false}]}

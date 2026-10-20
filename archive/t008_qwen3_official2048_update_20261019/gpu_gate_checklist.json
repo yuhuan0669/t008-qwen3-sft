@@ -1,0 +1,109 @@
+{
+  "schema": "t008-official2048-current-gate-v1",
+  "updated_at_utc": "2026-10-19T08:46:25.970621+00:00",
+  "recommendation": "NO_GO_GPU",
+  "data_policy_choice": "RECORDED",
+  "checks": [
+    {
+      "id": "D1",
+      "item": "官方2048数据方案与身份名称",
+      "status": "USER_SELECTED_RECORDED",
+      "phase": "policy",
+      "blocking_now": false,
+      "evidence": "evidence/owner_recipe_decision.json"
+    },
+    {
+      "id": "D2",
+      "item": "原始2600曝光及原生过滤1642成员/哈希",
+      "status": "PASS_RECALCULATED",
+      "phase": "CPU",
+      "blocking_now": false,
+      "evidence": "evidence/frozen_inputs_recheck.json"
+    },
+    {
+      "id": "D3",
+      "item": "此前额外语义审核/改写/重配要求",
+      "status": "REFERENCE_ONLY_NOT_A_GATE",
+      "phase": "policy",
+      "blocking_now": false,
+      "evidence": "evidence/owner_recipe_decision.json"
+    },
+    {
+      "id": "E1",
+      "item": "正式启动入口与官方命令对齐并CPU解析验证",
+      "status": "OPEN_WRAPPER_MISMATCH",
+      "phase": "before_GPU_smoke",
+      "blocking_now": true,
+      "evidence": "reports/entrypoint_differences.md"
+    },
+    {
+      "id": "E2",
+      "item": "最终训练镜像/依赖overlay/代码/PVC与精确输入绑定",
+      "status": "OPEN_NOT_BOUND",
+      "phase": "before_GPU_smoke",
+      "blocking_now": true,
+      "evidence": "evidence/live_readonly_check.json"
+    },
+    {
+      "id": "E3",
+      "item": "ClearML SDK在最终训练环境可导入、凭据与HTTPS输出配置",
+      "status": "OPEN_RUNTIME_BINDING",
+      "phase": "before_GPU_smoke",
+      "blocking_now": true,
+      "evidence": "evidence/live_packages_base_metadata.json"
+    },
+    {
+      "id": "R1",
+      "item": "当前受控GPU资源与vLLM切换窗口授权",
+      "status": "NOT_AUTHORIZED_GPU_OCCUPIED",
+      "phase": "before_GPU_smoke",
+      "blocking_now": true,
+      "evidence": "evidence/gpu_fallback_check.json"
+    },
+    {
+      "id": "R2",
+      "item": "服务恢复配置与路由快照",
+      "status": "CAPTURED_NOT_RESTORE_TESTED",
+      "phase": "before_GPU_smoke",
+      "blocking_now": false,
+      "evidence": "evidence/vllm_restore_snapshot.json"
+    },
+    {
+      "id": "R3",
+      "item": "本次切换负责人/顺序/超时/恢复验收及运行清单绑定",
+      "status": "OPEN_WINDOW_PLAN",
+      "phase": "before_GPU_smoke",
+      "blocking_now": true,
+      "evidence": "reports/training_gate_checklist.md"
+    },
+    {
+      "id": "V1",
+      "item": "独立A/B/C/D测试集、评分标准与版本冻结",
+      "status": "OPEN_NOT_FROZEN",
+      "phase": "before_Full_and_evaluation",
+      "blocking_now": false,
+      "evidence": "reports/training_gate_checklist.md"
+    },
+    {
+      "id": "V2",
+      "item": "GPU BF16/LoRA显存、吞吐与真实保留数",
+      "status": "NOT_EXECUTED_EXPECTED_SMOKE_VERIFICATION",
+      "phase": "authorized_GPU_smoke",
+      "blocking_now": false,
+      "evidence": "reports/training_gate_checklist.md"
+    },
+    {
+      "id": "V3",
+      "item": "本轮新ClearML Task/Model上传下载、最终checkpoint/epoch核验",
+      "status": "NOT_EXECUTED_LATER_PHASE_RESULT",
+      "phase": "authorized_smoke_full",
+      "blocking_now": false,
+      "evidence": "reports/training_gate_checklist.md"
+    }
+  ],
+  "smoke_started": false,
+  "full_training_started": false,
+  "service_interrupted": false,
+  "formal_approval_json_created": false,
+  "note": "The user selected the official data recipe. This is not GPU start authorization or a fabricated approval record."
+}

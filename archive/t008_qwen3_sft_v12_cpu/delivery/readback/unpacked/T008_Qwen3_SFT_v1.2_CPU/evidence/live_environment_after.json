@@ -1,0 +1,63 @@
+{
+  "collected_at_utc": "2026-10-19T06:05:06.355317+00:00",
+  "deployments": [
+    {
+      "namespace": "vllm",
+      "deployment_spec_unchanged": true,
+      "replicas": 1,
+      "ready_replicas": 1
+    },
+    {
+      "namespace": "swift",
+      "deployment_spec_unchanged": true,
+      "replicas": 0,
+      "ready_replicas": 0
+    }
+  ],
+  "commands": [
+    {
+      "argv": [
+        "kubectl",
+        "-n",
+        "vllm",
+        "exec",
+        "deploy/vllm",
+        "--",
+        "nvidia-smi",
+        "--query-gpu=name,memory.total,memory.used,utilization.gpu",
+        "--format=csv,noheader"
+      ],
+      "exit_code": 0,
+      "stdout": "NVIDIA GeForce RTX 4090, 24564 MiB, 22176 MiB, 0 %\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/usr/bin/curl",
+        "-sS",
+        "--max-time",
+        "20",
+        "-o",
+        "/dev/null",
+        "-w",
+        "%{http_code} %{ssl_verify_result}",
+        "https://vllm.10.140.17.125.nip.io/health"
+      ],
+      "exit_code": 0,
+      "stdout": "200 0",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "ssh",
+        "worker05",
+        "nerdctl --namespace k8s.io ps -a --format \"{{.Names}}\" | grep -x t008-identity-v12-cpu"
+      ],
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "cpu_container_removed": true,
+  "no_k8s_resource_created_or_changed": true
+}

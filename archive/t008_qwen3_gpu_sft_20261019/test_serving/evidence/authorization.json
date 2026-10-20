@@ -1,0 +1,8 @@
+{
+  "at_utc": "2026-10-19T10:15:32.147067+00:00",
+  "user_instruction": "现在加载，因为要测试",
+  "scope": "Load final checkpoint-103 LoRA into existing vLLM as separate test model; keep original base API model; restart if necessary; no merge or quality acceptance",
+  "test_model_id": "octacarbon-llm-sft-test",
+  "baseline_model_id": "octa-carbon-v1",
+  "source_model_id": "0552c3ab6b39456e9ec8b32129015be0"
+}

@@ -1,0 +1,142 @@
+{
+  "schema": "t008-review-evidence-manifest-v1",
+  "training_approval": false,
+  "training_data_modified": false,
+  "files": [
+    {
+      "path": "REVIEW_REPORT.md",
+      "bytes": 7291,
+      "sha256": "d7b8b8f8508d13ef21468c00a6bb2a8990a17cd9e7615d9bbff4bfb66abf3c1e"
+    },
+    {
+      "path": "assemble_review.py",
+      "bytes": 13111,
+      "sha256": "4a348dfa2f4c1d42f31a333d78debfbfd186d7c0d68b126c8a7bd0a127ff1354"
+    },
+    {
+      "path": "build_identity_review.py",
+      "bytes": 6727,
+      "sha256": "7ed1569e6bc37a64057f80fa0de6391919733ece68adf616a46e8f1dc074a4ed"
+    },
+    {
+      "path": "frozen_input_fingerprints.json",
+      "bytes": 806,
+      "sha256": "dcff8ba7e1b0feacb19e21d79c5b801d5ade85ea959e113a2647a9dabdbf84b1"
+    },
+    {
+      "path": "identity_original_for_review.jsonl",
+      "bytes": 26971,
+      "sha256": "809453e55031c7719d35f536adfd208bf7ea809fd8fd7107e4e7accb7389338d"
+    },
+    {
+      "path": "identity_review.jsonl",
+      "bytes": 104619,
+      "sha256": "312c226722764fa2f97869b40b025a22721ebc833ec451352a3e0b80cf3a80a2"
+    },
+    {
+      "path": "identity_review_summary.json",
+      "bytes": 457,
+      "sha256": "5644bdfa86eb7fc89c363a1159aced51f8b8fe2e25d98a10656149969a6c153c"
+    },
+    {
+      "path": "identity_review_summary.md",
+      "bytes": 2695,
+      "sha256": "51697c6365f6efd562dedbe6ba4f40e6efacb51c6b65902cfb85bb5b258132d7"
+    },
+    {
+      "path": "mixin_a.jsonl",
+      "bytes": 1092921,
+      "sha256": "747600049a70f627d864b02f9c8c7bde734b9cf7bb4c2874fbc7c2da62972c9a"
+    },
+    {
+      "path": "mixin_all.jsonl",
+      "bytes": 2270815,
+      "sha256": "80f2f34899f83ea110a319fa3ee49d9517c97305eee24036501f1b6405348649"
+    },
+    {
+      "path": "mixin_b.jsonl",
+      "bytes": 1177894,
+      "sha256": "2de7da74dedc8afad897b944114d3d31c21173bbd1e20f831ba35572ebbe00e9"
+    },
+    {
+      "path": "mixin_review.jsonl",
+      "bytes": 163980,
+      "sha256": "d247d4a2b26bcea89d668212e670b61edaf531dea03e7e5c976c7a511a914811"
+    },
+    {
+      "path": "nutrition_arithmetic_check.json",
+      "bytes": 644,
+      "sha256": "ea20fb281a6795a35458b8b6293dc71bf6176f6bb4518e70c969d731adfb7545"
+    },
+    {
+      "path": "package_review.py",
+      "bytes": 1357,
+      "sha256": "4caf4a4bd8d296246e3b0c131f53163b05d520d4c661d140805fa92dd9ee93a1"
+    },
+    {
+      "path": "rebuild_review_inputs.py",
+      "bytes": 3249,
+      "sha256": "6675a6f8d8755fc1acf373771f480d177a5dbc79a82de884aec371df802a6a1a"
+    },
+    {
+      "path": "review_a.jsonl",
+      "bytes": 89509,
+      "sha256": "2d9d517c42ba6a1c0f23455d6b9e32ec36520efde74ed8003ef7b23a40e3e63a"
+    },
+    {
+      "path": "review_a_readback.json",
+      "bytes": 1363,
+      "sha256": "14b9d37d9c8d87b5dd76c7304afdaef554c8d310910573228d98ca69f1304dec"
+    },
+    {
+      "path": "review_a_summary.md",
+      "bytes": 5336,
+      "sha256": "b39b0e56faa2082749fcb64d6f2e3504b50529e5cbd65a338bd4b719e2feb946"
+    },
+    {
+      "path": "review_b.jsonl",
+      "bytes": 41225,
+      "sha256": "1351be733c54cb2836e541f51e32227b5aa384570cc15ae66ffeaab78ce72ef2"
+    },
+    {
+      "path": "review_b_summary.md",
+      "bytes": 4803,
+      "sha256": "acd5f43b28467051abf3c952e578e698304305a6c49861fe4017fbb2dd8fcf59"
+    },
+    {
+      "path": "review_summary.json",
+      "bytes": 1881,
+      "sha256": "b3b0470a6e8d3f2dfc2ba4dc19797b8ea98cc2cc711ed5bdc9553295989cb057"
+    },
+    {
+      "path": "reviewed_javascript_checks.json",
+      "bytes": 2746,
+      "sha256": "b606d79b8feae51d10e8034c7d1d30a535c0ab9bf231aa1608d0a564101eb4da"
+    },
+    {
+      "path": "reviewed_python_checks.json",
+      "bytes": 562,
+      "sha256": "2bc048ca64f336b714998990ff16422e8a871717f77d67ce08aff937c2639ab0"
+    },
+    {
+      "path": "verify_nutrition_arithmetic.py",
+      "bytes": 1056,
+      "sha256": "ee7f87db5f7bb55c99434777770fa160cf37d7192beb563ea5ef0e76a57d4759"
+    },
+    {
+      "path": "verify_reviewed_javascript.cjs",
+      "bytes": 3016,
+      "sha256": "aa563c7776f3252a49ed028a801f3fdf93201da90d6585d6eae74054e8eeecf2"
+    },
+    {
+      "path": "verify_reviewed_python.py",
+      "bytes": 2167,
+      "sha256": "fb5b68e31c6f72a63091ae267aa7f7597753b37fba64c27a985e4e3aa9b8e71b"
+    },
+    {
+      "path": "write_review_a.py",
+      "bytes": 21498,
+      "sha256": "940754a19ec14be6f2bd8d180590f1649100bcc2cf6a9780c9b8b673dcf2db29"
+    }
+  ]
+}

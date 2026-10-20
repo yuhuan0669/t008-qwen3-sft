@@ -1,0 +1,6 @@
+run sh: `/usr/local/bin/python /usr/local/lib/python3.12/site-packages/swift/cli/sft.py --help`
+usage: sft.py [-h] [--tuner_backend TUNER_BACKEND]
+
+options:
+  -h, --help            show this help message and exit
+  --tuner_backend TUNER_BACKEND

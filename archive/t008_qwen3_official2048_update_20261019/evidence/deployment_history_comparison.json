@@ -1,0 +1,16 @@
+{
+  "vllm": {
+    "old_generation": 33,
+    "current_generation": 33,
+    "redacted_specs_match": true,
+    "literal_env_historical_comparison": "not_possible_historical_values_redacted",
+    "note": "Unredacted-vs-redacted string mismatch is not evidence of deployment drift."
+  },
+  "swift": {
+    "old_generation": 18,
+    "current_generation": 18,
+    "redacted_specs_match": true,
+    "literal_env_historical_comparison": "not_possible_historical_values_redacted",
+    "note": "Unredacted-vs-redacted string mismatch is not evidence of deployment drift."
+  }
+}

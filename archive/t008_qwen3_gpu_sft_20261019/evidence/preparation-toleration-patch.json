@@ -1,0 +1,12 @@
+{
+  "spec": {
+    "tolerations": [
+      {
+        "effect": "NoSchedule",
+        "key": "dedicated",
+        "operator": "Equal",
+        "value": "gpu-rtx4090"
+      }
+    ]
+  }
+}

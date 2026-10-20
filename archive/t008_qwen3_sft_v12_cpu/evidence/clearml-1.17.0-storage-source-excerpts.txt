@@ -1,0 +1,64 @@
+
+        # if we have no output destination, just register the local model file
+        if (
+            weights_filename
+            and not self.upload_storage_uri
+            and not self._task.storage_uri
+        ):
+            register_uri = weights_filename
+            weights_filename = None
+            auto_delete_file = False
+            self._log.info(
+                "No output storage destination defined, registering local model %s"
+                % register_uri
+            )
+
+        # start the upload
+        if weights_filename:
+            if not model.upload_storage_uri:
+                self.set_upload_destination(
+                    self.upload_storage_uri or self._task.storage_uri
+                )
+
+            output_uri = model.update_and_upload(
+                model_file=weights_filename,
+                task_id=self._task.id,
+                async_enable=async_enable,
+                target_filename=target_filename,
+                framework=self.framework or framework,
+                comment=comment,
+                cb=delete_previous_weights_file if auto_delete_file else None,
+                iteration=iteration or self._task.get_last_iteration(),
+            )
+        elif register_uri:
+            register_uri = StorageHelper.conform_url(register_uri)
+            output_uri = model.update(
+                uri=register_uri,
+                task_id=self._task.id,
+                framework=framework,
+                comment=comment,
+            )
+        else:
+            output_uri = None
+
+        self._last_uploaded_url = output_uri
+
+        if is_package:
+                        return _TaskStub()  # noqa
+                    # set defaults
+                    if cls._offline_mode:
+                        task.output_uri = None
+                        # create target data folder for logger / artifacts
+                        # noinspection PyProtectedMember
+                        Path(task._get_default_report_storage_uri()).mkdir(parents=True, exist_ok=True)
+                    elif output_uri is not None:
+                        if output_uri is True:
+                            output_uri = task.get_project_object().default_output_destination or True
+                        task.output_uri = output_uri
+                    elif task.get_project_object().default_output_destination:
+                        task.output_uri = task.get_project_object().default_output_destination
+                    elif cls.__default_output_uri:
+                        task.output_uri = str(cls.__default_output_uri)
+                    # store new task ID
+                    cls.__update_master_pid_task(task=task)
+                else:

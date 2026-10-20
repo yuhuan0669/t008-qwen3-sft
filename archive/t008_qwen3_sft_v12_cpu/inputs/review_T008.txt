@@ -1,0 +1,137 @@
+﻿T-008｜项目经理评审记录
+
+
+评审信息
+任务编号：T-008
+当前任务单版本：v1.4；以下v1.3阶段验收保留历史
+主执行者 / 执行平台：Codex 当前任务 /root；Codex Desktop（执行回报登记模型：GPT-6，精确服务端构建未知）
+是否发生执行者切换：专项执行阶段未见主执行者切换
+当前评审结论：既有工程/TLS阶段通过保持；Risk31首轮执行已提交，当前候选不批准用于正式技术检测或发布，见T008-RISK31-USE-REVIEW-PM-02。工程整包终验与后续增量事项分开，任务保持打开。
+当前任务状态：Risk31训练/标定/独测及服务恢复已回报完成；模型正式用途未通过。CA/HTTP/客户端/灾备等仍按原边界待办，不再等待T-009数据或重复领取本轮维护窗口。
+
+
+1. 执行身份与任务版本核验
+核对执行者、平台/模型、任务单版本、必要的交接记录，以及是否有未经授权的范围扩大。
+2. 已核验的交付物
+列出实际读取和核验的文件、记录和测试证据。
+
+
+3. 评审结论
+说明哪些结论可采纳、哪些不能采纳，以及理由。
+
+
+4. 证据状态
+评审边界：区分只读盘点、整改建议、管理员实际操作和真实验证；未实施或无证据项继续保留。重点核对凭据轮换/旧凭据失效、备份可用性、权限和时间证据。不因T-002工具测试关闭即认定其安全收尾完成。
+
+
+5. 需补正事项
+如有，给出最小补正范围和重新提交条件。
+
+
+6. 项目库更
+2026-09-29｜第一阶段总控验收：通过／任务保持打开
+评审结论：T-008 v1.3 第一阶段验收通过。通过范围是研发/备案准备环境的真实工程验证闭环；不等于T-008最终关闭，也不自动关闭V-002/V-010/V-016/V-025/V-028/V-029/V-033或Gate3。
+实核通过项：
+1. lmas00真实环境已连接并留证；8个Node中7 Ready，GPU工作负载位于k8s-worker05。单GPU互斥演练真实执行：vLLM 1/1→0、Swift 0→1/1，再Swift 0、vLLM恢复1/1，恢复后内网/health=HTTP200；脚本含context/初始状态/Pod退出检查和回滚保护。
+2. 隔离备份恢复真实执行：t008-ops独立Namespace、3个nfs-storage-ssd PVC；备份tar hash=e46cc16c3c4c57782a393c394f2f2c6feeb3bdfa9b8fb01d12fa3ec36259f720，恢复后sha256sum校验probe.txt: OK。该证据仅覆盖隔离探针数据，不外推为业务备份通过。
+3. 权限/目录负例真实执行：t008-reader对指定ConfigMap可读、对Secret不可读且实际get为Forbidden；恢复卷readOnly挂载写入被拒并输出RO_NEGATIVE_PASS。
+4. ClearML Community Server已在独立clearml Namespace部署，当前Helm revision 8=deployed；5 Deployment+2 StatefulSet均1/1，4 PVC Bound。当前唯一内网入口为http://clearml.10.140.17.125.nip.io/，API=/api，Files=/files；root HTTP200、/api/debug.ping result_code=200、/files HTTP200，SDK按实际协议可读回对象并下载文件。
+5. ClearML合成最小链真实建立并独立回读：Dataset=0cf5496063c94e45aac34c5688f85826(finalized)，Task=d715e54b152b4aa18d38ec0259a54082(completed，含synthetic-artifact)，Model=891292342c244f1995671bb5da68c83e（仅占位字节）。重新下载SHA-256：Dataset=1728e8beba86da2d94f05cf87131834b65b38500b4bce4c97c0337a6d2312144；Artifact=b5cb11d0f04a94001a56e1ccffcd6b58bd76eb82c7549a9cea29816ae570c9c8；Model=005cc7d6c45910da0030fb43a831fa33eaacd0744f5ce61cafd9bab7a28f29ac。仅证明研发实例Task/Dataset/Model/Artifact写入、关联和回读，不是正式模型训练/发布。
+6. Risk31准入门已可执行：合成互斥train/calibration/test返回DATA_PREFLIGHT_PASS(exit0)，跨分区重复sample_id返回BLOCKED_DATA_GATE(exit1)；真实T-009批准manifest缺失时正式入口保持BLOCKED_DATA_GATE，未启动训练，符合当前数据门禁。
+7. 时间异常被真实探测而未掩盖：执行机UTC与API/集群原始时间观测偏差约+08:02:22；历史集群Z字段不直接作为可信UTC，修复未擅自影响跨项目基础设施。
+工程包实核：Drive文件15cpGd6eSHHFlodOuGdz-tGoQtKCynD5h当前大小8195 bytes，实际SHA-256=d3e5eca463912e9006aea730e9f7dbcfd18ca1863bf93785edfa70553a670e41，包含11个文件。当前values-t008.yaml SHA-256=bc595bf7d7fc9d837b436d0191443f5ed544aa4fcc5b0f8197cc6c7e26374e17。用户本次回报中的d02437...是Ingress改造前的历史版本，不作为当前包hash；执行回报/A/B/C已正确保留版本演进。
+仍未完成、因此不关闭T-008：
+- 集群/API时钟校准与跨项目修复；
+- 真实Swift/vLLM账号、Secret、共享NFS目录边界及candidate→released发布门的最终整改/验证；
+- 真实业务数据/数据库/模型的备份轮转、恢复及删除后恢复排除；
+- T-007 Q07～Q11/Q15的批准值与真实Web实施证据，包括正文期限、日志期限、删除回执、地域/主体/接收方；
+- B阶段HTTPS/TLS及正式上线网络/审计验收；
+- Risk31正式重新训练、阈值标定和独立验证；必须等待T-009真实审核、用途批准和训练前评估后的正式数据；
+- 正式业务模型/Adapter的完整candidate→evaluation→release→rollback版本链。
+项目经理判定：第一阶段阶段通过，不要求返工已经通过的ClearML合成链、GPU互斥、隔离恢复或权限负例。后续只围绕上述未完成项增量闭环。正式Risk31训练的数据前置由T-009当前“候选生产通过／待人工审核”继续推进。
+记录是否更新事实/方案基线、业务工作稿、正式版、总控 Sheet 或其他任务。
+
+
+7. 后续任务
+列出
+
+
+第二阶段总控验收｜通过／转等待外部依赖与B阶段
+结论：T-008 v1.3第二阶段验收通过。当前不再要求Codex持续主动施工；T-008保持打开并转为“等待外部依赖/B阶段触发”。第一、第二阶段已通过的工程验证不重复执行。
+
+
+本轮总控实核：
+1. 时间证据通过。工程包中的clock-ntp.json覆盖7个Ready节点，chronyc均Leap status Normal，stratum 2–3，最大绝对System time偏移约0.000411319秒；API三次夹取offset约-0.0567/+0.5071/+0.1333秒，应用epoch与可信主机时间一致。历史+08:02:22未再现，历史raw保留，不改写旧证据。当前可以按raw/zone/event_time_utc/collected_at_utc规则继续留证。
+2. Swift/vLLM真实隔离通过。Swift使用专用SA/UID10001，base只读、work可写；vLLM使用专用SA/UID10002，released只读、candidate不可见、自动API token关闭，直连NFS绕过被策略阻断。合法模板基线通过后，边界负向测试和后补env Secret/角色模板校验通过。短时切换窗口结束后vLLM恢复1/1、/health=200，Swift维持0。
+3. candidate→released发布门通过研发基座实测。Qwen3-8B相同16文件共16,397,461,896 bytes迁移到base/candidate/released，manifest SHA-256=120f22ccf67435d9a96ae07d8be83e39ce56a66bd8447d916f0a8fb7d2f7d803；签名decision、human引用、manifest和bytes绑定的正向发布成功。release-negative.json状态为RELEASE_GATE_NEGATIVES_PASS，missing-signature、bad-signature、missing-human、binding-mismatch、changed-candidate、old-risk31-inheritance、formal-lineage-missing、immutable-release-id八项均按预期exit1拒绝。该发布仅是现有研发基座迁移，不是Risk31正式模型发布。
+4. 真实对象级备份恢复通过“可恢复性验证”。完整released Qwen模型16文件/16.40GB恢复后逐文件hash一致；两份历史Adapter与必要历史证据完成归档；ClearML本次真实运维Task、2 Models、7 Artifacts及backend/auth数据库对象恢复校验通过；最终94个工程/证据文件及3个私有凭据完成恢复验证。首版恢复排除存在嵌套alias漏拦，已隔离首版并以v2修复，证据状态REAL_OBJECT_EXCLUSION_ALL_ALIASES_PASS，指定旧Adapter权重未进入可用恢复目录。限制：源与备份仍位于同一NFS SSD故障域，所以这证明恢复流程/对象完整性，不证明独立灾备或业务连续性最终达标。
+5. T-007技术事实交接满足T-008职责。已形成Q07/Q09/Q10/Q11/Q15所需的实际Ingress/SDK鉴权字段、日志位置与可读限制、存储和可删除边界、备份对象及alias排除证据、内部技术路径；正文期限、日志期限、物理地域、法律主体、外部接收方等仍保持UNKNOWN，不由T-008自行决策。
+6. Risk31正式流水线准备完成且数据门有效。正式train/calibration/independent-test等角色模板、空SSD PVC、SA/egress和代码已准备；pipeline-final-gates.json状态ALL_FORMAL_STAGES_BLOCKED_BEFORE_MODEL_OR_TRAINING，admit/train/score/calibrate/evaluate五个入口均因T-009批准manifest/immutable receipt缺失而exit1阻断。未加载正式模型、未创建正式训练Job、未开始GPU训练，符合边界。
+7. 终态符合回报：vLLM 1/1、Swift 0、ClearML 7/7健康；临时Pod已清理，无正式train/calibration/test Job。
+
+
+工程证据包实核：Drive原文件ID 15cpGd6eSHHFlodOuGdz-tGoQtKCynD5h，当前139507 bytes、124文件，ZIP CRC通过，SHA-256=84a9c88d4c917028808e5986dd763b64ef6d7ec9c5a8c47f017c9a42e6cd3b53，与执行回报一致。旧d3e5...为第一阶段历史版本。
+
+
+第二阶段后仍不关闭T-008的原因只剩外部/后续阶段事项：
+- Risk31正式训练、标定、独立测试、候选验收和正式发布：等待T-009真实批准数据、训练前评估及当次GPU影响窗口；
+- T-007政策值与真实Web删除/留存实现：等待有权负责人和Web产品实施；
+- 备份独立故障域、RPO/RTO/轮转/期限：当前同NFS仅完成恢复能力验证，最终灾备策略尚未冻结；
+- B阶段HTTPS/TLS及正式上线网络/审计验收；
+- 正式业务模型/Adapter最终release lineage和备案候选验收只能在真实候选形成后完成。
+
+
+项目经理判定：本轮不退回任何已通过工程项。T-008当前进入“等待外部输入/阶段触发”，Codex不需要继续空转；当T-009批准数据、T-007政策/Web、独立灾备方案或B阶段TLS任一条件成熟时，再按同一T-008增量执行并留证。
+由本任务触发
+
+
+B阶段入口TLS专项总控验收｜通过／B阶段整体未关闭
+结论：当前ClearML/vLLM内网入口HTTPS/TLS专项验收通过；T-008与B阶段整体仍保持打开。通过范围仅是“当前共享Ingress证书兼容性整改 + 已验证入口TLS与系统信任 + ClearML SDK HTTPS引导地址同步”，不等于根CA生命周期、HTTP收口、全部客户端迁移或正式网络审计完成。
+
+
+实核依据：
+1. cert-manager Certificate已从10年leaf调整为duration=1440h、renewBefore=360h，并新增digital signature/key encipherment/server auth用途；generation=2、revision=2、Ready=True。leaf notBefore=2026-09-30T05:46:57Z、notAfter=2026-11-29T05:46:57Z、renewalTime=2026-11-14T05:46:57Z。
+2. 5个ingress-nginx Controller均Ready，实际握手返回同一leaf DER SHA-256=2658f757c28b4180262cf9c9ebe8607265c9cd7138e9fa1f149c18ac982ca546。错误主机名使用系统curl返回exit60拒绝，未绕过主机名校验。
+3. macOS原生系统信任实测通过：/usr/bin/curl未使用-k/--cacert访问ClearML /、/api/debug.ping、/files/及vLLM /health均HTTP200且VERIFY=0；SecTrustEvaluateWithError后续实测SUCCESS=true。证据包中的macos-trust.json为早期/另一验证命令失败记录，不作为最终状态；最终状态以native-system-https-after.json与reissue-verification.json为准。
+4. TLS1.2与TLS1.3最终均由OpenSSL s_client实际握手并Verification: OK。protocols.json中某客户端对TLS1.3报Unsupported protocol version属于客户端测试限制，已由后续OpenSSL实测补证，不据此否定服务端TLS1.3。
+5. ClearML Helm revision 9=deployed，运行时displayedServerUrls以及clientConfigurationApiUrl/clientConfigurationFilesUrl均已切换为https://clearml.10.140.17.125.nip.io/api与/files。既有运维Task通过HTTPS鉴权读取200；既有release-decision Artifact通过HTTPS鉴权下载200、677 bytes、SHA-256=a59b64e8dec47670d28e7bf4c89b6a6ae850f8941a0de722105403fe54ec2568，与登记值一致；未创建新Task或启动训练。
+6. 终态保持vLLM 1/1、Swift 0、ClearML健康；Swift HTTPS只验证到TLS层，应用因replica=0返回503，未误写为Swift应用就绪。
+
+
+TLS证据包实核：Drive文件1RZ9-fJZLn4gPeQjbwdPk59XLLFg2uz2l，31937 bytes、38文件，ZIP CRC通过，SHA-256=57db9d5ba84e6661dd43df629cfb148ea3d7d5f68b33102b09746aeebc92cb51。包内未包含私钥、业务数据库或凭据值。
+
+
+仍未闭环：
+- 当前Root CA notAfter=2026-12-29T04:39:13Z，仅约90天；后续CA续期/轮换、leaf重签与客户端信任重新分发尚未实际验证；
+- HTTP 80仍可访问，尚未统一重定向/收口到HTTPS；
+- 本轮系统信任只实测当前macOS及Pod侧显式CA，不外推所有客户端/SDK/终端；
+- B阶段正式网络审计、客户端迁移、最终上线验收尚未完成。
+
+
+项目经理判定：TLS入口整改本身不退回。T-008继续保持“B阶段入口TLS专项通过／待CA轮换、HTTP收口及其他外部依赖”；后续只做增量闭环，不重复本轮TLS兼容性整改和已通过入口验证。
+的下一步、依赖或外部确认事项。
+
+
+
+
+真实Risk31工作触发与范围决定｜T008-RISK31-LAUNCH-PM-01｜2026-10-07 UTC
+项目负责人“开始吧”确认后，PM核对P-006/P-027/P-028、T-008原任务/两阶段与TLS验收、T-010最终PM17/PM18以及当前任务总线。决定在原T-008内启动首轮真实训练/标定/独立验证执行准备，任务单升级v1.4；不另建重复任务，T-010仍已关闭。
+已核对数据放行为固定train406，cal202仅训练后阈值/开发，test196仅独测且primary119/legacy77分别报告；变更源成员/正文/标签/purpose须重新评估。原R3包的提交时PENDING状态由后置总控批准解释，不抹改原件、不假造审核签字。
+PM从R3原ZIP机械验证101载荷和精确manifest/freeze后，生成两个确定性用途投影，分别为训练/标定及仅独测包；均已写入02，完整地址及hash见00第13节。每条text逐字保留R3 serialized_input，使用已审核formal标签；SAFE只作31维全零编码，源ID/hash/record映射保留。训练包不含test正文、标签、family或对照历史。此为输入准备，不是重新标注或新增数据批准。
+现有流水线代码可以复用，但旧approval字段、SAFE表示及裸text读取不直接匹配R3结构。执行者应作受控接口适配并记录转换/运行receipt，守卫仍在模型加载前生效；本轮未宣称代码已现场跑通。
+运行前只检查当次必要资源/HTTPS/数据/镜像，不重复已验收工程项目。若GPU切换将中断跨项目vLLM，必须取得本次影响窗口确认，旧窗口不复用；其余P-028范围内研发操作直接执行。未暴露primary test的T-008上下文可训练/标定；已暴露者内部交干净subagent，模型及阈值冻结后才交独立评测子任务。
+通过判断：首轮必须有实际Job、ClearML关联、模型与阈值版本、primary/legacy分列指标和恢复记录。是否成为正式Risk31检测器/是否发布由后续模型评审决定，不能因数据Gate通过就自动投入T-011过滤。
+当前：DATA_GATE=APPROVED；EXECUTION_ORDER=ISSUED；ACTUAL_GPU_JOB=NOT_YET_REPORTED；MODEL_RELEASE=NOT_APPROVED。本次没有访问服务器、停止vLLM、运行模型或消耗GPU，T-008其他CA/HTTP/政策/灾备待办保持。
+
+
+
+
+复盘落实：Risk31首轮结果的用途决定｜T008-RISK31-USE-REVIEW-PM-02｜2026-10-07 UTC
+本次目的：把“工程有真实结果”与“检测器已满足正式用途”分开，落实RETRO-06；不改原参数/阈值，不新增训练或测试轮次。
+已读现行01最后执行回报：本轮有一次实际梯度训练、重载路径修复、cal202标定、冻结后test196独测以及07:26:25Z原vLLM健康恢复记录。首Job失败与首次重载失败保留，不写成全程无故障。上述运行事实当前来自执行回报，本次没有进入服务器重演。
+总控定向取得独测证据ZIP 29,117 bytes、SHA256=ee4c937e8131c3b063aeac8e4949cf313a290dffbcd92d8bf98a274f8af99e7b，读取independent-summary.json及版本锚点，并独立复算逐类计数汇总：primary119 TP17/FP294/FN92、micro P=0.05466238/R=0.15596330/F1=0.08095238、SAFE误报16/19；legacy77 TP13/FP298/FN44、micro F1=0.07065217、SAFE误报28/31。分层分母保留，不合并替代主指标。
+对应模型版本=0eaac27419a03d97eccf8ba4505573019da998ebf2292c4ff47535426c15f15f；阈值SHA256=fac62118f714ea915f557dd71a51eb494546a5531fe4cca371845d497bdb42a6；冻结文件SHA256=68ea93bf833eacd1d5c79c0e132053fd55785c653563a176ca5158467f18cd5f。
+核验限度：本次复算的是提交聚合统计内部一致性，不是重跑模型推理，也没有取得受控逐条预测重新判金标；完整工程/权重/协调包验收仍须相应证据复核。不能把本条写成整项T-008最终验收。
+PM用途决定：当前冻结候选存在明显漏检与大量SAFE误报，不能证明可承担本项目正式语料技术过滤/抽检或安全评估。FORMAL_RISK31_USE=NOT_APPROVED；MODEL_RELEASE=NOT_APPROVED；不交T-011作最终技术评估，不接入Web，不将工程完成写成V-025全部关闭。不在看完test后补造监管性能线或调整阈值挑成绩。
+下一最小动作：T-008保留当前产物和服务恢复证据；由未接触primary的训练/标定角色只用已有train/cal数据、代码、loss/分数/标签映射及既有日志作一次有界CPU/静态诊断，交最小修正建议及下一实验/用途判据预登记方案。协调者不得把primary逐条错误、题文、标签或类别薄弱点回传训练上下文；不自动再训练、调阈值、改数据、扩大样本或重复使用同一primary选模。下一GPU实验/独立验证安排由PM按诊断结果另行决定。
+数据元数据同步：B03原486条审核日期已由项目负责人确认更正为2026-10-06、时间不变，见T010-B03-HR-DATE-CORRECTION-PM-19。原804条数据、manifest/freeze和运行输入不变；不因日期笔误修正触发重训。T-010在其数据范围保持关闭。

@@ -1,0 +1,225 @@
+[
+  {
+    "op": "test",
+    "path": "/metadata/uid",
+    "value": "041c9a49-1693-45a5-8ff6-6136ba9e4074"
+  },
+  {
+    "op": "replace",
+    "path": "/spec/template",
+    "value": {
+      "metadata": {
+        "annotations": {
+          "kubectl.kubernetes.io/restartedAt": "2026-09-29T08:02:18-07:00",
+          "t008.octacarbon/test-model": "octacarbon-llm-sft-test"
+        },
+        "creationTimestamp": null,
+        "labels": {
+          "app": "vllm"
+        }
+      },
+      "spec": {
+        "automountServiceAccountToken": false,
+        "containers": [
+          {
+            "args": [
+              "--model",
+              "/models",
+              "--served-model-name",
+              "octa-carbon-v1",
+              "--host",
+              "0.0.0.0",
+              "--port",
+              "8000",
+              "--gpu-memory-utilization",
+              "0.90",
+              "--max-model-len",
+              "8192",
+              "--trust-remote-code",
+              "--reasoning-parser",
+              "qwen3",
+              "--enable-lora",
+              "--max-lora-rank",
+              "8",
+              "--lora-modules",
+              "{\"name\":\"octacarbon-llm-sft-test\",\"path\":\"/adapters/octacarbon-llm-sft-test\",\"base_model_name\":\"octa-carbon-v1\"}",
+              "--enable-auto-tool-choice",
+              "--tool-call-parser",
+              "hermes"
+            ],
+            "command": [
+              "python3",
+              "-m",
+              "vllm.entrypoints.openai.api_server"
+            ],
+            "env": [
+              {
+                "name": "HF_HUB_OFFLINE",
+                "value": "1"
+              },
+              {
+                "name": "HF_HOME",
+                "value": "/tmp/hf"
+              },
+              {
+                "name": "HOME",
+                "value": "/tmp"
+              },
+              {
+                "name": "TZ",
+                "value": "America/Los_Angeles"
+              },
+              {
+                "name": "USER",
+                "value": "vllm"
+              },
+              {
+                "name": "LOGNAME",
+                "value": "vllm"
+              },
+              {
+                "name": "TORCHINDUCTOR_CACHE_DIR",
+                "value": "/tmp/torchinductor_vllm"
+              },
+              {
+                "name": "VLLM_CACHE_ROOT",
+                "value": "/tmp/vllm"
+              },
+              {
+                "name": "XDG_CACHE_HOME",
+                "value": "/tmp/cache"
+              }
+            ],
+            "image": "modelscope-registry.cn-hangzhou.cr.aliyuncs.com/modelscope-repo/modelscope:ubuntu22.04-cuda13.0.3-py312-torch2.11.0-vllm0.25.1-modelscope1.39.0-swift4.4.3",
+            "imagePullPolicy": "IfNotPresent",
+            "livenessProbe": {
+              "failureThreshold": 5,
+              "httpGet": {
+                "path": "/health",
+                "port": 8000,
+                "scheme": "HTTP"
+              },
+              "initialDelaySeconds": 180,
+              "periodSeconds": 30,
+              "successThreshold": 1,
+              "timeoutSeconds": 5
+            },
+            "name": "vllm",
+            "ports": [
+              {
+                "containerPort": 8000,
+                "name": "http",
+                "protocol": "TCP"
+              }
+            ],
+            "readinessProbe": {
+              "failureThreshold": 30,
+              "httpGet": {
+                "path": "/health",
+                "port": 8000,
+                "scheme": "HTTP"
+              },
+              "initialDelaySeconds": 60,
+              "periodSeconds": 15,
+              "successThreshold": 1,
+              "timeoutSeconds": 5
+            },
+            "resources": {
+              "limits": {
+                "cpu": "16",
+                "memory": "32Gi",
+                "nvidia.com/gpu": "1"
+              },
+              "requests": {
+                "cpu": "4",
+                "memory": "16Gi",
+                "nvidia.com/gpu": "1"
+              }
+            },
+            "securityContext": {
+              "allowPrivilegeEscalation": false,
+              "capabilities": {
+                "drop": [
+                  "ALL"
+                ]
+              },
+              "runAsGroup": 10002,
+              "runAsNonRoot": true,
+              "runAsUser": 10002
+            },
+            "terminationMessagePath": "/dev/termination-log",
+            "terminationMessagePolicy": "File",
+            "volumeMounts": [
+              {
+                "mountPath": "/models",
+                "name": "model-store",
+                "readOnly": true,
+                "subPath": "released/qwen3-8b-baseline/model"
+              },
+              {
+                "mountPath": "/dev/shm",
+                "name": "dshm"
+              },
+              {
+                "mountPath": "/etc/localtime",
+                "name": "host-localtime",
+                "readOnly": true
+              },
+              {
+                "mountPath": "/adapters/octacarbon-llm-sft-test",
+                "name": "model-store",
+                "readOnly": true,
+                "subPath": "released/t008-qwen3-20261019-094113-test/adapter"
+              }
+            ]
+          }
+        ],
+        "dnsPolicy": "ClusterFirst",
+        "nodeSelector": {
+          "nvidia.com/gpu.present": "true"
+        },
+        "restartPolicy": "Always",
+        "schedulerName": "default-scheduler",
+        "securityContext": {
+          "seccompProfile": {
+            "type": "RuntimeDefault"
+          }
+        },
+        "serviceAccount": "vllm-inference",
+        "serviceAccountName": "vllm-inference",
+        "terminationGracePeriodSeconds": 30,
+        "tolerations": [
+          {
+            "effect": "NoSchedule",
+            "key": "dedicated",
+            "operator": "Equal",
+            "value": "gpu-rtx4090"
+          }
+        ],
+        "volumes": [
+          {
+            "name": "model-store",
+            "persistentVolumeClaim": {
+              "claimName": "vllm-released",
+              "readOnly": true
+            }
+          },
+          {
+            "emptyDir": {
+              "medium": "Memory",
+              "sizeLimit": "8Gi"
+            },
+            "name": "dshm"
+          },
+          {
+            "hostPath": {
+              "path": "/etc/localtime",
+              "type": "File"
+            },
+            "name": "host-localtime"
+          }
+        ]
+      }
+    }
+  }
+]

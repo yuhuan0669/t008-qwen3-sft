@@ -1,0 +1,38 @@
+{
+  "id": "chatcmpl-39f477a11c7047084dd686b45f48f85c",
+  "object": "chat.completion",
+  "created": 1792405236,
+  "model": "octacarbon-llm-sft-test",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "我是由能碳章鱼（湖北）人工智能科技有限公司开发的人工智能助手，我的名字是章鱼能碳垂直大模型。",
+        "refusal": null,
+        "annotations": null,
+        "audio": null,
+        "function_call": null,
+        "reasoning": null
+      },
+      "logprobs": null,
+      "finish_reason": "stop",
+      "stop_reason": null,
+      "token_ids": null,
+      "routed_experts": null
+    }
+  ],
+  "service_tier": null,
+  "system_fingerprint": "vllm-0.25.1-1cc24f2c",
+  "usage": {
+    "prompt_tokens": 17,
+    "total_tokens": 47,
+    "completion_tokens": 30,
+    "prompt_tokens_details": null
+  },
+  "prompt_logprobs": null,
+  "prompt_token_ids": null,
+  "prompt_text": null,
+  "kv_transfer_params": null,
+  "metrics": null
+}

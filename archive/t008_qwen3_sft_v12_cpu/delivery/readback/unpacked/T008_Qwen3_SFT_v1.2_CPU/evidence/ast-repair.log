@@ -1,0 +1,4 @@
+2026-10-19 13:51:48,014 - modelscope.ast - INFO - Force rebuilding ast index from scanning every file!
+2026-10-19 13:51:48,022 - modelscope.ast - INFO - AST-Scanning the path "/usr/local/lib/python3.12/site-packages/modelscope" with the following sub folders ['models', 'metrics', 'pipelines', 'preprocessors', 'trainers', 'msdatasets', 'exporters']
+<unknown>:1315: SyntaxWarning: invalid escape sequence '\?'
+2026-10-19 13:51:50,523 - modelscope.ast - INFO - Scanning done! A number of 991 components indexed or updated! Time consumed 2.5085792541503906s

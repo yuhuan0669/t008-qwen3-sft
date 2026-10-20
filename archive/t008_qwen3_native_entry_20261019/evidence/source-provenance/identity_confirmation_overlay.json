@@ -1,0 +1,18 @@
+{
+  "schema": "t008-identity-user-confirmation-overlay-v1",
+  "source": "Current chat user reply to English name verification question",
+  "quoted_user_confirmation": "我确认是官方名字，可用于开发及商业用途",
+  "collected_at_utc": "2026-10-19T06:03:59.674937+00:00",
+  "confirmed_fields": {
+    "name_en": "Octacarbon LLM",
+    "author_en": "Octacarbon (Hubei) Artificial Intelligence Technology Co., Ltd."
+  },
+  "confirmed_use": [
+    "development",
+    "commercial"
+  ],
+  "identity_status": "OWNER_CONFIRMED_OFFICIAL_NAMES",
+  "scope": "Confirms the specified English names and permitted name use. Does not approve unresolved training semantics, dataset deletion/mix, GPU Smoke, Full, vLLM downtime or model publication.",
+  "independent_registry_document_verification": "NOT_PERFORMED; not represented as a government certificate check",
+  "earlier_audit_reports": "Retained as historical pre-confirmation findings; this overlay supplies current disposition"
+}

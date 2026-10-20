@@ -1,0 +1,21 @@
+{
+  "reviewed_unique_templates": 108,
+  "mapped_exposures": 600,
+  "template_status_counts": {
+    "NEEDS_REVIEW": 82,
+    "PASS_INITIAL": 23,
+    "REJECT": 3
+  },
+  "exposure_status_counts": {
+    "NEEDS_REVIEW": 456,
+    "PASS_INITIAL": 127,
+    "REJECT": 17
+  },
+  "author_templates_requiring_provenance_clarification": 78,
+  "product_name_only_initial_pass_lines": [
+    22,
+    77
+  ],
+  "training_approval": false,
+  "training_data_modified": false
+}

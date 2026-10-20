@@ -1,0 +1,62 @@
+[
+  {
+    "index": 26,
+    "source_segment": "mixin",
+    "placeholders": [
+      "{{ message }}",
+      "{{ item }}",
+      "{{ message }}",
+      "{{ message }}",
+      "{{ message }}",
+      "{{ message }}"
+    ],
+    "swift_robot": false
+  },
+  {
+    "index": 466,
+    "source_segment": "mixin",
+    "placeholders": [
+      "{{ region }}"
+    ],
+    "swift_robot": false
+  },
+  {
+    "index": 680,
+    "source_segment": "mixin",
+    "placeholders": [
+      "{{name}}",
+      "{{title}}"
+    ],
+    "swift_robot": false
+  },
+  {
+    "index": 1026,
+    "source_segment": "mixin",
+    "placeholders": [
+      "{{ message }}",
+      "{{ item }}",
+      "{{ message }}",
+      "{{ message }}",
+      "{{ message }}",
+      "{{ message }}"
+    ],
+    "swift_robot": false
+  },
+  {
+    "index": 1466,
+    "source_segment": "mixin",
+    "placeholders": [
+      "{{ region }}"
+    ],
+    "swift_robot": false
+  },
+  {
+    "index": 1680,
+    "source_segment": "mixin",
+    "placeholders": [
+      "{{name}}",
+      "{{title}}"
+    ],
+    "swift_robot": false
+  }
+]

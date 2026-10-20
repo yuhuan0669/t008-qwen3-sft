@@ -1,0 +1,109 @@
+{
+  "containers": [
+    {
+      "Id": "ee214c3ccb5d44d942c3d329e8ad3fa94099bbd9fb8ce8e167a04fa731eba8ef",
+      "Name": "t008-native-entry-cpu",
+      "Image": "modelscope-registry.cn-hangzhou.cr.aliyuncs.com/modelscope-repo/modelscope@sha256:822d99beed4984a421c8d1da397993c6a8a5f88cdad7dde940bd52df0067d738",
+      "State": {
+        "Status": "exited",
+        "Running": false,
+        "Paused": false,
+        "Restarting": false,
+        "Pid": 2058258,
+        "ExitCode": 1,
+        "Error": "",
+        "StartedAt": "2026-10-19T09:22:24.270245205Z",
+        "FinishedAt": "2026-10-19T09:22:46.213774754Z"
+      }
+    },
+    {
+      "Id": "8580c03dd7bdbe0bb7e096123b93bab9e35e205370e0694a99ed142f39604ca2",
+      "Name": "t008-native-entry-ast-init",
+      "Image": "modelscope-registry.cn-hangzhou.cr.aliyuncs.com/modelscope-repo/modelscope@sha256:822d99beed4984a421c8d1da397993c6a8a5f88cdad7dde940bd52df0067d738",
+      "State": {
+        "Status": "exited",
+        "Running": false,
+        "Paused": false,
+        "Restarting": false,
+        "Pid": 2060047,
+        "ExitCode": 0,
+        "Error": "",
+        "StartedAt": "2026-10-19T09:23:53.614872027Z",
+        "FinishedAt": "2026-10-19T09:23:57.299918482Z"
+      }
+    },
+    {
+      "Id": "d33adf401535fece615ede0fb1e8d48b0c561da51838cd13890d489678a8ea33",
+      "Name": "t008-native-entry-cpu-final",
+      "Image": "modelscope-registry.cn-hangzhou.cr.aliyuncs.com/modelscope-repo/modelscope@sha256:822d99beed4984a421c8d1da397993c6a8a5f88cdad7dde940bd52df0067d738",
+      "State": {
+        "Status": "exited",
+        "Running": false,
+        "Paused": false,
+        "Restarting": false,
+        "Pid": 2060844,
+        "ExitCode": 1,
+        "Error": "",
+        "StartedAt": "2026-10-19T09:24:12.797396366Z",
+        "FinishedAt": "2026-10-19T09:24:27.210547146Z"
+      }
+    },
+    {
+      "Id": "a1f36e9a442e7c6f7f86d9007df574211859d57253399ee43d43df58d184a6fb",
+      "Name": "t008-native-entry-cpu-final-v2",
+      "Image": "modelscope-registry.cn-hangzhou.cr.aliyuncs.com/modelscope-repo/modelscope@sha256:822d99beed4984a421c8d1da397993c6a8a5f88cdad7dde940bd52df0067d738",
+      "State": {
+        "Status": "exited",
+        "Running": false,
+        "Paused": false,
+        "Restarting": false,
+        "Pid": 2063158,
+        "ExitCode": 1,
+        "Error": "",
+        "StartedAt": "2026-10-19T09:25:35.342618181Z",
+        "FinishedAt": "2026-10-19T09:26:38.309328444Z"
+      }
+    },
+    {
+      "Id": "8cfcbd3a69fd80d0555c4010932ee891c0a9262beea920fe2596cae67c620b24",
+      "Name": "t008-native-entry-cpu-final-v3",
+      "Image": "modelscope-registry.cn-hangzhou.cr.aliyuncs.com/modelscope-repo/modelscope@sha256:822d99beed4984a421c8d1da397993c6a8a5f88cdad7dde940bd52df0067d738",
+      "State": {
+        "Status": "exited",
+        "Running": false,
+        "Paused": false,
+        "Restarting": false,
+        "Pid": 2064739,
+        "ExitCode": 0,
+        "Error": "",
+        "StartedAt": "2026-10-19T09:26:54.015174388Z",
+        "FinishedAt": "2026-10-19T09:28:09.32152832Z"
+      }
+    },
+    {
+      "Id": "044658f038b51bcbf26cb0e38fddd4e66dd8375ca947a7c27c74d9aac96b9263",
+      "Name": "t008-native-entry-cpu-checks",
+      "Image": "modelscope-registry.cn-hangzhou.cr.aliyuncs.com/modelscope-repo/modelscope@sha256:822d99beed4984a421c8d1da397993c6a8a5f88cdad7dde940bd52df0067d738",
+      "State": {
+        "Status": "exited",
+        "Running": false,
+        "Paused": false,
+        "Restarting": false,
+        "Pid": 2066926,
+        "ExitCode": 0,
+        "Error": "",
+        "StartedAt": "2026-10-19T09:28:25.790693081Z",
+        "FinishedAt": "2026-10-19T09:28:53.27236898Z"
+      }
+    }
+  ],
+  "removed": [
+    "t008-native-entry-cpu",
+    "t008-native-entry-ast-init",
+    "t008-native-entry-cpu-final",
+    "t008-native-entry-cpu-final-v2",
+    "t008-native-entry-cpu-final-v3",
+    "t008-native-entry-cpu-checks"
+  ],
+  "scope": "Only newly created CPU containers; existing vLLM/K8s resources untouched"
+}

@@ -1,0 +1,71 @@
+{
+  "schema": "t008-v12-process-restore-record-v1",
+  "documentation_only": true,
+  "files": [
+    {
+      "path": "append.txt",
+      "bytes": 1054,
+      "sha256": "a872b987cd25090f2927d21ccf3722ab26b55778a722e12a78962e6d567f4007"
+    },
+    {
+      "path": "build_record.py",
+      "bytes": 14528,
+      "sha256": "f50e50626fe7df581c5d13e8c012475bffe1ba2122d721357b3ee657c55dfc2b"
+    },
+    {
+      "path": "evidence/delivery-document-readback.json",
+      "bytes": 1057,
+      "sha256": "267cf0b3721f18496c7901e43ed2e068e1738352b3376c13e8a7314e40e318f8"
+    },
+    {
+      "path": "evidence/execution-after.readback.md",
+      "bytes": 26178,
+      "sha256": "76a63c19393136d3b3b1a2686856d87b710ee465dd633114f399f944ea828166"
+    },
+    {
+      "path": "evidence/execution-before.md",
+      "bytes": 25113,
+      "sha256": "a0424d7f5c66132a22317a99ba6ead053150c1dbc2890600b8ac8e631a52858c"
+    },
+    {
+      "path": "evidence/protected-files-after.json",
+      "bytes": 229,
+      "sha256": "2007f03770a2a7648b4b4b81e7f6033260f5538b6b7f4eaf0413eede5010849d"
+    },
+    {
+      "path": "evidence/protected-files-before.json",
+      "bytes": 18565,
+      "sha256": "385f9850d464027ef1fdb6eee6d62069e840c7b72cfc5ff26b5c8d77dbb4bda1"
+    },
+    {
+      "path": "execution_record.updated.md",
+      "bytes": 26178,
+      "sha256": "76a63c19393136d3b3b1a2686856d87b710ee465dd633114f399f944ea828166"
+    },
+    {
+      "path": "owner_decision.json",
+      "bytes": 362,
+      "sha256": "3ec4d0a404c082a182964ca55cbcd14c0fc4c2008d097933c27cba4f75fda75f"
+    },
+    {
+      "path": "plan.blocks.json",
+      "bytes": 12811,
+      "sha256": "e4c1ee2e86782d40ca85653870cba2f222b143dbd1b65c72ff159ae5ab568a2a"
+    },
+    {
+      "path": "plan.md",
+      "bytes": 11325,
+      "sha256": "ba2050772cb8bd756ad316dbb07b9dc0071d4882612a31593bb90ca468d204cd"
+    },
+    {
+      "path": "plan.txt",
+      "bytes": 11265,
+      "sha256": "cbdd4a4b832f16d4036acc01d491ce274cf9e1a92ef53a21d0ecaa678a9c1542"
+    },
+    {
+      "path": "process_state.json",
+      "bytes": 1122,
+      "sha256": "42a1de4a31f8cb96252bb436ce6bb8de060aaa695ee9a0d37bf085f26721721d"
+    }
+  ]
+}

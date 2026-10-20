@@ -1,0 +1,11 @@
+{
+  "task_id": "97ac5246ae9c43d9aa65ee2ac4c2aaef",
+  "source": "existing Full train.log",
+  "new_tasks_created": false,
+  "training_restarted": false,
+  "points_synced": 22,
+  "last_optimizer_step": 103,
+  "total_optimizer_steps": 103,
+  "progress_percent": 100,
+  "updated_at_utc": "2026-10-19T10:09:30.971458+00:00"
+}

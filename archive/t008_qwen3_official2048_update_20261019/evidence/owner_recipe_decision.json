@@ -1,0 +1,40 @@
+{
+  "schema": "t008-owner-official-recipe-decision-v1",
+  "source": "Current user messages in this conversation; no invented message ID or external approval ID",
+  "user_messages_verbatim": [
+    "按qwen官方给的训练命令即可，这是官方给的",
+    "那就按官方方案更新执行记录和交付报告，核对现在还有哪些训练前置条件没满足，先不要启动GPU训练。"
+  ],
+  "selection": {
+    "max_length": 2048,
+    "source_specs": [
+      "swift/Qwen3-SFT-Mixin#2000",
+      "swift/self-cognition:qwen3#600"
+    ],
+    "extra_semantic_exclusions": false,
+    "identity_rewrite": false,
+    "identity_resampling": false,
+    "native_truncation_strategy": "delete",
+    "model_name": [
+      "章鱼能碳垂直大模型",
+      "Octacarbon LLM"
+    ],
+    "model_author": [
+      "能碳章鱼（湖北）人工智能科技有限公司",
+      "Octacarbon (Hubei) Artificial Intelligence Technology Co., Ltd."
+    ],
+    "base_model": "Qwen/Qwen3-8B"
+  },
+  "superseded_extra_gates": [
+    "78/82条身份语义问题必须先改写或排除",
+    "原2048保留521条通用记录必须先逐条语义审核",
+    "将600次身份曝光减到313或419次",
+    "采用2560或为302条另作语义清洗",
+    "将默认958次长度过滤当作额外人工清洗及另行配比裁定"
+  ],
+  "audit_findings_retained_as_reference": true,
+  "gpu_training_authorized": false,
+  "service_interruption_authorized": false,
+  "formal_approval_json_created": false,
+  "scope_note": "This is a faithful record of the user dataset/recipe choice, not an approval.json, independent acceptance or a GPU start authorization."
+}

@@ -1,0 +1,82 @@
+{
+  "schema": "t008-official2048-update-delivery-receipt-v1",
+  "verified_at_utc": "2026-10-19T08:50:04.579022+00:00",
+  "files": [
+    {
+      "id": "1p-awqvTM89aQ1Y89YHIiq2kbWNRrQDou",
+      "name": "T008_Qwen3_SFT_v1.2_官方2048_执行与GPU门禁报告_20261019.md",
+      "url": "https://drive.google.com/file/d/1p-awqvTM89aQ1Y89YHIiq2kbWNRrQDou/view?usp=drivesdk",
+      "parent": "1fhiuIhZNgHJjO09sFD9hrB6ULYiQFV84",
+      "size": 8191,
+      "sha256": "f5899ba8a82074c58c8449287365650668cd54e9f50a4195640bbb003c72f643",
+      "downloaded_bytes_equal": true,
+      "downloaded_path": "/Users/ben/aiws/codex/keywords/t008_qwen3_official2048_update_20261019_delivery/1p-awqvTM89aQ1Y89YHIiq2kbWNRrQDou_complete_report.md"
+    },
+    {
+      "id": "1LpG9sSd5HYLHCqsl1LDY1m6CJcCHzIOj",
+      "name": "T008_v1.2_2560新增177条与身份108条_工程初审报告_20261019.md",
+      "url": "https://drive.google.com/file/d/1LpG9sSd5HYLHCqsl1LDY1m6CJcCHzIOj/view?usp=drivesdk",
+      "parent": "1fhiuIhZNgHJjO09sFD9hrB6ULYiQFV84",
+      "size": 7675,
+      "sha256": "d687a217059bba23ced290a11dffea1104dcc2301938be2c2542d44991207144",
+      "downloaded_bytes_equal": true,
+      "downloaded_path": "/Users/ben/aiws/codex/keywords/t008_qwen3_official2048_update_20261019_delivery/1LpG9sSd5HYLHCqsl1LDY1m6CJcCHzIOj_historical_review_with_current_notice.md"
+    },
+    {
+      "id": "1Q4drsBjcFp8IEwRSmpYi_iqKMyifXRTc",
+      "name": "T008_身份108条_用途分类与质量说明_20261019.md",
+      "url": "https://drive.google.com/file/d/1Q4drsBjcFp8IEwRSmpYi_iqKMyifXRTc/view?usp=drivesdk",
+      "parent": "1fhiuIhZNgHJjO09sFD9hrB6ULYiQFV84",
+      "size": 11865,
+      "sha256": "bb9489242dc6918e8a4455ed2cf077c443b11c1f89c0b941e8ec8fec86bcabcd",
+      "downloaded_bytes_equal": true,
+      "downloaded_path": "/Users/ben/aiws/codex/keywords/t008_qwen3_official2048_update_20261019_delivery/1Q4drsBjcFp8IEwRSmpYi_iqKMyifXRTc_historical_classification_with_current_notice.md"
+    },
+    {
+      "id": "18YQ5hwOVZxWw2D8f-f-i10AmLfRb5MsU",
+      "name": "T008_v1.2_官方2048_追加执行记录_20261019.md",
+      "url": "https://drive.google.com/file/d/18YQ5hwOVZxWw2D8f-f-i10AmLfRb5MsU/view?usp=drivesdk",
+      "parent": "1fhiuIhZNgHJjO09sFD9hrB6ULYiQFV84",
+      "size": 16171,
+      "sha256": "9a1732820606329d79a7bdf63893b49acb674112a19241ee18c9f9898b464379",
+      "downloaded_bytes_equal": true,
+      "downloaded_path": "/Users/ben/aiws/codex/keywords/t008_qwen3_official2048_update_20261019_delivery/18YQ5hwOVZxWw2D8f-f-i10AmLfRb5MsU_execution_report.md"
+    },
+    {
+      "id": "1lIXaxowO3H9PxNHE3Mp3GbdAaNWM4S7B",
+      "name": "T008_v1.2_官方2048_训练前置条件检查表_20261019.md",
+      "url": "https://drive.google.com/file/d/1lIXaxowO3H9PxNHE3Mp3GbdAaNWM4S7B/view?usp=drivesdk",
+      "parent": "1fhiuIhZNgHJjO09sFD9hrB6ULYiQFV84",
+      "size": 3263,
+      "sha256": "5ac73b760bd71932b403e0152a1a66dd8dc711316fd1dab165f26070939b58d0",
+      "downloaded_bytes_equal": true,
+      "downloaded_path": "/Users/ben/aiws/codex/keywords/t008_qwen3_official2048_update_20261019_delivery/1lIXaxowO3H9PxNHE3Mp3GbdAaNWM4S7B_training_gate_checklist.md"
+    },
+    {
+      "id": "1se0oJjdtePCzHMrdCwxuHz4FJVTV-UYG",
+      "name": "T008_v1.2_官方2048_执行更新与现场门禁证据包_20261019.zip",
+      "url": "https://drive.google.com/file/d/1se0oJjdtePCzHMrdCwxuHz4FJVTV-UYG/view?usp=drivesdk",
+      "parent": "1fhiuIhZNgHJjO09sFD9hrB6ULYiQFV84",
+      "size": 97381,
+      "sha256": "967c3ad3a26f36ec54cd64d92097bf76e385ddbb5668e17c2ee76ed5930ee395",
+      "downloaded_bytes_equal": true,
+      "downloaded_path": "/Users/ben/aiws/codex/keywords/t008_qwen3_official2048_update_20261019_delivery/1se0oJjdtePCzHMrdCwxuHz4FJVTV-UYG_t008_qwen3_official2048_update_20261019.zip",
+      "payload_file_hashes_verified": 29
+    },
+    {
+      "id": "1cCGEbKD2bo2BUdOkfaQdVr91ndc0QdEf",
+      "name": "T008_v1.2_官方2048_执行更新_MANIFEST_20261019.json",
+      "url": "https://drive.google.com/file/d/1cCGEbKD2bo2BUdOkfaQdVr91ndc0QdEf/view?usp=drivesdk",
+      "parent": "1fhiuIhZNgHJjO09sFD9hrB6ULYiQFV84",
+      "size": 5285,
+      "sha256": "c5ae4d9c2deb30ef6d7c368e4eb72bf20da1af2e8dbf6593c3c0a81c1fe4df6e",
+      "downloaded_bytes_equal": true,
+      "downloaded_path": "/Users/ben/aiws/codex/keywords/t008_qwen3_official2048_update_20261019_delivery/1cCGEbKD2bo2BUdOkfaQdVr91ndc0QdEf_MANIFEST.json"
+    }
+  ],
+  "all_7_updated_or_new_files_downloaded_and_byte_equal": true,
+  "tls_verification": "system curl defaults, no insecure mode",
+  "original_data_changed": false,
+  "gpu_training_started": false,
+  "gpu_recommendation": "NO_GO_GPU"
+}

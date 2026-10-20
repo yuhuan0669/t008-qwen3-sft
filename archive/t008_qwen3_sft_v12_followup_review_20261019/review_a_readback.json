@@ -1,0 +1,36 @@
+{
+  "schema": "t008-mixin-a-content-initial-review-readback-v1",
+  "input": "mixin_a.jsonl",
+  "input_sha256": "747600049a70f627d864b02f9c8c7bde734b9cf7bb4c2874fbc7c2da62972c9a",
+  "output": "review_a.jsonl",
+  "output_sha256": "2d9d517c42ba6a1c0f23455d6b9e32ec36520efde74ed8003ef7b23a40e3e63a",
+  "input_rows": 89,
+  "output_rows": 89,
+  "same_source_order_and_hashes": true,
+  "evidence_snippets_all_contiguous_and_at_most_200_chars": true,
+  "status_counts": {
+    "REJECT": 83,
+    "NEEDS_REVIEW": 3,
+    "PASS_INITIAL": 3
+  },
+  "explicit_truncation_reject_count": 78,
+  "full_question_characters_read": 14614,
+  "full_final_answer_characters_read": 201251,
+  "no_source_or_training_snapshot_changes": true,
+  "network_calls": false,
+  "model_training": false,
+  "review_type": "inherited-context engineering initial content review; not independent blind acceptance",
+  "main_reviewer_supplementary_cpu_checks": {
+    "ref": "reviewed_javascript_checks.json",
+    "sha256": "b606d79b8feae51d10e8034c7d1d30a535c0ab9bf231aa1608d0a564101eb4da",
+    "checks": 11,
+    "passed": 11,
+    "source_lines": [
+      299,
+      439
+    ],
+    "real_browser_rendering": false
+  },
+  "subreviewer_code_from_dataset_executed": false,
+  "verification_actor_scope": "No code/network/training assertions without main_reviewer prefix refer to this engineering subreviewer."
+}

@@ -1,0 +1,475 @@
+{
+  "status": "fulfilled",
+  "value": {
+    "content": [
+      {
+        "type": "text",
+        "text": "Action completed."
+      }
+    ],
+    "structuredContent": {
+      "results": [
+        {
+          "url": "https://drive.google.com/file/d/1jD_LUGbU34T1EKSxs1tpQR5G7VrMdAlI/view?usp=drivesdk",
+          "title": "README.md",
+          "id": "1jD_LUGbU34T1EKSxs1tpQR5G7VrMdAlI",
+          "mime_type": "text/markdown",
+          "size": "4439",
+          "file_or_folder": "file",
+          "created_at": "2026-10-12T10:10:50.934Z",
+          "updated_at": "2026-10-12T10:10:49.776Z",
+          "viewedByMeTime": "2026-10-12T10:10:50.934Z",
+          "display_title": "README.md",
+          "display_url": "https://drive.google.com/file/d/1jD_LUGbU34T1EKSxs1tpQR5G7VrMdAlI/view?usp=drivesdk",
+          "parent_ids": [
+            "1JuF8nZ6DoQwteNtF0pbQlVzYYy5liO7m"
+          ],
+          "shared": false
+        },
+        {
+          "url": "https://drive.google.com/file/d/14IAtpeLBIRsc5G4cmJHeHcFootGMCnWd/view?usp=drivesdk",
+          "title": "README.md",
+          "id": "14IAtpeLBIRsc5G4cmJHeHcFootGMCnWd",
+          "mime_type": "text/markdown",
+          "size": "2558",
+          "file_or_folder": "file",
+          "created_at": "2026-10-11T07:31:52.864Z",
+          "updated_at": "2026-10-11T07:31:43.925Z",
+          "viewedByMeTime": "2026-10-11T07:31:52.864Z",
+          "display_title": "README.md",
+          "display_url": "https://drive.google.com/file/d/14IAtpeLBIRsc5G4cmJHeHcFootGMCnWd/view?usp=drivesdk",
+          "parent_ids": [
+            "15VHwLmMTL2KksQmIKb9vkaMTq8Jxx2lh"
+          ],
+          "shared": false
+        },
+        {
+          "url": "https://drive.google.com/file/d/1tWGQARVI0tgvuZiOu3HHQCj6Ita10StD/view?usp=drivesdk",
+          "title": "Qwen3-8B_自我认知SFT_完整实施方案_v1.1.1_校核版.md",
+          "id": "1tWGQARVI0tgvuZiOu3HHQCj6Ita10StD",
+          "mime_type": "text/markdown",
+          "size": "21966",
+          "file_or_folder": "file",
+          "created_at": "2026-10-19T05:18:44.432Z",
+          "updated_at": "2026-10-19T05:18:44.432Z",
+          "viewedByMeTime": "2026-10-19T05:19:22.708Z",
+          "display_title": "Qwen3-8B_自我认知SFT_完整实施方案_v1.1.1_校核版.md",
+          "display_url": "https://drive.google.com/file/d/1tWGQARVI0tgvuZiOu3HHQCj6Ita10StD/view?usp=drivesdk",
+          "parent_ids": [
+            "1fhiuIhZNgHJjO09sFD9hrB6ULYiQFV84"
+          ],
+          "shared": false
+        },
+        {
+          "url": "https://drive.google.com/file/d/1nT7XS7IWB_-hWj1fD3lkz5cYn0ebkV9d/view?usp=drivesdk",
+          "title": "Qwen3-8B_自我认知SFT_完整实施方案_v1.1.md",
+          "id": "1nT7XS7IWB_-hWj1fD3lkz5cYn0ebkV9d",
+          "mime_type": "text/markdown",
+          "size": "21034",
+          "file_or_folder": "file",
+          "created_at": "2026-10-19T04:54:12.290Z",
+          "updated_at": "2026-10-19T05:03:47.139Z",
+          "viewedByMeTime": "2026-10-19T05:13:57.333Z",
+          "display_title": "Qwen3-8B_自我认知SFT_完整实施方案_v1.1.md",
+          "display_url": "https://drive.google.com/file/d/1nT7XS7IWB_-hWj1fD3lkz5cYn0ebkV9d/view?usp=drivesdk",
+          "parent_ids": [
+            "1fhiuIhZNgHJjO09sFD9hrB6ULYiQFV84"
+          ],
+          "shared": false
+        },
+        {
+          "url": "https://drive.google.com/file/d/14EoJgrCqfqw7u4u3j_T87fiBMNJs3dWB/view?usp=drivesdk",
+          "title": "STAGE_TESTING_AND_V1.5_GAP_ANALYSIS.md",
+          "id": "14EoJgrCqfqw7u4u3j_T87fiBMNJs3dWB",
+          "mime_type": "text/markdown",
+          "size": "27592",
+          "file_or_folder": "file",
+          "created_at": "2026-09-29T07:34:31.300Z",
+          "updated_at": "2026-09-24T07:19:53.701Z",
+          "viewedByMeTime": "2026-09-29T07:34:31.300Z",
+          "display_title": "STAGE_TESTING_AND_V1.5_GAP_ANALYSIS.md",
+          "display_url": "https://drive.google.com/file/d/14EoJgrCqfqw7u4u3j_T87fiBMNJs3dWB/view?usp=drivesdk",
+          "parent_ids": [
+            "1bYh_ZgoT5MnOJY0o7-ujDsOiORDIyhE5"
+          ],
+          "shared": false
+        },
+        {
+          "url": "https://drive.google.com/file/d/1JIgc4vaeblyEuNOU1YqYXxqKpFcW5nnq/view?usp=drivesdk",
+          "title": "README.md",
+          "id": "1JIgc4vaeblyEuNOU1YqYXxqKpFcW5nnq",
+          "mime_type": "text/markdown",
+          "size": "1780",
+          "file_or_folder": "file",
+          "created_at": "2026-10-12T09:04:23.010Z",
+          "updated_at": "2026-10-12T09:15:21.476Z",
+          "viewedByMeTime": "2026-10-12T09:04:23.010Z",
+          "display_title": "README.md",
+          "display_url": "https://drive.google.com/file/d/1JIgc4vaeblyEuNOU1YqYXxqKpFcW5nnq/view?usp=drivesdk",
+          "parent_ids": [
+            "137J0nuMJDU1yLecEWwoKR9AyZ0bxScLP"
+          ],
+          "shared": false
+        },
+        {
+          "url": "https://drive.google.com/file/d/1PPAAfC1hh-boDreEPljbKK_TyrHoK9tN/view?usp=drivesdk",
+          "title": "README.md",
+          "id": "1PPAAfC1hh-boDreEPljbKK_TyrHoK9tN",
+          "mime_type": "text/markdown",
+          "size": "1840",
+          "file_or_folder": "file",
+          "created_at": "2026-10-12T09:04:22.980Z",
+          "updated_at": "2026-10-12T09:15:21.481Z",
+          "viewedByMeTime": "2026-10-12T09:04:22.980Z",
+          "display_title": "README.md",
+          "display_url": "https://drive.google.com/file/d/1PPAAfC1hh-boDreEPljbKK_TyrHoK9tN/view?usp=drivesdk",
+          "parent_ids": [
+            "1TSHn831BXzAw8L7m6XAd0I_qr6nA3zT7"
+          ],
+          "shared": false
+        },
+        {
+          "url": "https://drive.google.com/file/d/1_dW674oXPg3PUVkORSkesk4sR3XvcvTb/view?usp=drivesdk",
+          "title": "README.md",
+          "id": "1_dW674oXPg3PUVkORSkesk4sR3XvcvTb",
+          "mime_type": "text/markdown",
+          "size": "1510",
+          "file_or_folder": "file",
+          "created_at": "2026-10-11T08:19:28.015Z",
+          "updated_at": "2026-10-11T08:19:26.865Z",
+          "viewedByMeTime": "2026-10-11T08:19:28.015Z",
+          "display_title": "README.md",
+          "display_url": "https://drive.google.com/file/d/1_dW674oXPg3PUVkORSkesk4sR3XvcvTb/view?usp=drivesdk",
+          "parent_ids": [
+            "1j9HNQiTtcgxilVSi7s7QgAcrtoSvRJNL"
+          ],
+          "shared": false
+        },
+        {
+          "url": "https://drive.google.com/file/d/1XbmHRDdZi70Cwzn_hqnDkjCcqb2R1Pc5/view?usp=drivesdk",
+          "title": "README.md",
+          "id": "1XbmHRDdZi70Cwzn_hqnDkjCcqb2R1Pc5",
+          "mime_type": "text/markdown",
+          "size": "1464",
+          "file_or_folder": "file",
+          "created_at": "2026-10-11T08:19:27.983Z",
+          "updated_at": "2026-10-11T08:19:26.861Z",
+          "viewedByMeTime": "2026-10-11T08:19:27.983Z",
+          "display_title": "README.md",
+          "display_url": "https://drive.google.com/file/d/1XbmHRDdZi70Cwzn_hqnDkjCcqb2R1Pc5/view?usp=drivesdk",
+          "parent_ids": [
+            "1U_KdiKn8AM7nZUmeEamLNlk6HMQ5rdkp"
+          ],
+          "shared": false
+        },
+        {
+          "url": "https://drive.google.com/file/d/1mAJxYzrTp39TgIaXdmeFlonvFMR60rLM/view?usp=drivesdk",
+          "title": "T012_R0_现有能碳平台与AI助手集成架构调研报告_v1.0_待评审.pdf",
+          "id": "1mAJxYzrTp39TgIaXdmeFlonvFMR60rLM",
+          "mime_type": "application/pdf",
+          "size": "3047795",
+          "file_or_folder": "file",
+          "created_at": "2026-10-12T05:31:44.640Z",
+          "updated_at": "2026-10-12T05:31:44.640Z",
+          "viewedByMeTime": null,
+          "display_title": "T012_R0_现有能碳平台与AI助手集成架构调研报告_v1.0_待评审.pdf",
+          "display_url": "https://drive.google.com/file/d/1mAJxYzrTp39TgIaXdmeFlonvFMR60rLM/view?usp=drivesdk",
+          "parent_ids": [
+            "1TB0BaUeyYeeanlC7FWj67Q8nZmkh7yW7"
+          ],
+          "shared": false
+        },
+        {
+          "url": "https://docs.google.com/document/d/1Z9-mh9336WP4EjapGPXP53rtulR--BhLrFnC5_eD8to/edit?usp=drivesdk",
+          "title": "T-012｜R1-P 原型与 R1-D 系统设计｜线性审核整合版 v1.1",
+          "id": "1Z9-mh9336WP4EjapGPXP53rtulR--BhLrFnC5_eD8to",
+          "mime_type": "application/vnd.google-apps.document",
+          "size": "43618",
+          "file_or_folder": "file",
+          "created_at": "2026-10-14T02:18:05.114Z",
+          "updated_at": "2026-10-15T12:44:01.402Z",
+          "viewedByMeTime": "2026-10-15T15:53:53.503Z",
+          "display_title": "T-012｜R1-P 原型与 R1-D 系统设计｜线性审核整合版 v1.1",
+          "display_url": "https://docs.google.com/document/d/1Z9-mh9336WP4EjapGPXP53rtulR--BhLrFnC5_eD8to/edit?usp=drivesdk",
+          "parent_ids": [
+            "1TB0BaUeyYeeanlC7FWj67Q8nZmkh7yW7"
+          ],
+          "shared": false
+        },
+        {
+          "url": "https://docs.google.com/document/d/1bRsdHXdiMp5oHaWG9YEdExxDyo7xXTxoZTIXHGHyhOY/edit?usp=drivesdk",
+          "title": "HANDOFF_risk31_20261009.md",
+          "id": "1bRsdHXdiMp5oHaWG9YEdExxDyo7xXTxoZTIXHGHyhOY",
+          "mime_type": "application/vnd.google-apps.document",
+          "size": "17434",
+          "file_or_folder": "file",
+          "created_at": "2026-10-10T00:20:58.137Z",
+          "updated_at": "2026-10-10T00:20:59.808Z",
+          "viewedByMeTime": "2026-10-13T07:12:34.632Z",
+          "display_title": "HANDOFF_risk31_20261009.md",
+          "display_url": "https://docs.google.com/document/d/1bRsdHXdiMp5oHaWG9YEdExxDyo7xXTxoZTIXHGHyhOY/edit?usp=drivesdk",
+          "parent_ids": [
+            "0ABKJ3T_IDxIaUk9PVA"
+          ],
+          "shared": false
+        },
+        {
+          "url": "https://drive.google.com/file/d/1T5HMMMhqcfTLsU7cizzNtiMstJenGJHS/view?usp=drivesdk",
+          "title": "T012_R0_Architecture_Report_v1.2_会话与上下文管理_待评审.pdf",
+          "id": "1T5HMMMhqcfTLsU7cizzNtiMstJenGJHS",
+          "mime_type": "application/pdf",
+          "size": "3694315",
+          "file_or_folder": "file",
+          "created_at": "2026-10-12T07:27:53.331Z",
+          "updated_at": "2026-10-12T07:27:53.331Z",
+          "viewedByMeTime": "2026-10-12T07:33:17.669Z",
+          "display_title": "T012_R0_Architecture_Report_v1.2_会话与上下文管理_待评审.pdf",
+          "display_url": "https://drive.google.com/file/d/1T5HMMMhqcfTLsU7cizzNtiMstJenGJHS/view?usp=drivesdk",
+          "parent_ids": [
+            "1TB0BaUeyYeeanlC7FWj67Q8nZmkh7yW7"
+          ],
+          "shared": false
+        },
+        {
+          "url": "https://docs.google.com/document/d/1uDrpC7NlzzHPpBrIF6Or-thOvJhuwjVOoHAC6UeQAr8/edit?usp=drivesdk",
+          "title": "HANDOFF_risk31_20261009.md",
+          "id": "1uDrpC7NlzzHPpBrIF6Or-thOvJhuwjVOoHAC6UeQAr8",
+          "mime_type": "application/vnd.google-apps.document",
+          "size": "17445",
+          "file_or_folder": "file",
+          "created_at": "2026-10-10T00:21:10.179Z",
+          "updated_at": "2026-10-10T00:21:11.586Z",
+          "viewedByMeTime": "2026-10-10T00:21:12.475Z",
+          "display_title": "HANDOFF_risk31_20261009.md",
+          "display_url": "https://docs.google.com/document/d/1uDrpC7NlzzHPpBrIF6Or-thOvJhuwjVOoHAC6UeQAr8/edit?usp=drivesdk",
+          "parent_ids": [
+            "0ABKJ3T_IDxIaUk9PVA"
+          ],
+          "shared": false
+        },
+        {
+          "url": "https://docs.google.com/spreadsheets/d/1EhBIicUMoYJpkoyYCx_u0rScn0uV5ZnriA2nt-WQgoc/edit?usp=drivesdk",
+          "title": "T-012 内部独立验收交接包｜2026-10-18",
+          "id": "1EhBIicUMoYJpkoyYCx_u0rScn0uV5ZnriA2nt-WQgoc",
+          "mime_type": "application/vnd.google-apps.spreadsheet",
+          "size": "51985",
+          "file_or_folder": "file",
+          "created_at": "2026-10-19T00:51:35.857Z",
+          "updated_at": "2026-10-19T03:33:08.063Z",
+          "viewedByMeTime": "2026-10-19T03:33:08.063Z",
+          "display_title": "T-012 内部独立验收交接包｜2026-10-18",
+          "display_url": "https://docs.google.com/spreadsheets/d/1EhBIicUMoYJpkoyYCx_u0rScn0uV5ZnriA2nt-WQgoc/edit?usp=drivesdk",
+          "parent_ids": [
+            "1TB0BaUeyYeeanlC7FWj67Q8nZmkh7yW7"
+          ],
+          "shared": false
+        },
+        {
+          "url": "https://docs.google.com/document/d/1wI3FPBv1l4pbSTTEFCptr3s9fV3Ynsd6/edit?usp=drivesdk&ouid=110817116464605849607&rtpof=true&sd=true",
+          "title": "V2.0_一体化技术实施方案_完整初稿_v0.2.docx",
+          "id": "1wI3FPBv1l4pbSTTEFCptr3s9fV3Ynsd6",
+          "mime_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "size": "91459",
+          "file_or_folder": "file",
+          "created_at": "2026-09-28T05:04:57.566Z",
+          "updated_at": "2026-09-28T05:04:57.566Z",
+          "viewedByMeTime": "2026-10-13T01:38:15.307Z",
+          "display_title": "V2.0_一体化技术实施方案_完整初稿_v0.2.docx",
+          "display_url": "https://docs.google.com/document/d/1wI3FPBv1l4pbSTTEFCptr3s9fV3Ynsd6/edit?usp=drivesdk&ouid=110817116464605849607&rtpof=true&sd=true",
+          "parent_ids": [
+            "16J7JbZ3zy97yEM6v038VLBpw7k6Ju36g"
+          ],
+          "shared": false
+        },
+        {
+          "url": "https://docs.google.com/document/d/1E1lv71VFXf-bkNH0mQogirODFAcIW9rP/edit?usp=drivesdk&ouid=110817116464605849607&rtpof=true&sd=true",
+          "title": "V2.0_一体化技术实施方案_完整初稿_v0.3.docx",
+          "id": "1E1lv71VFXf-bkNH0mQogirODFAcIW9rP",
+          "mime_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "size": "93525",
+          "file_or_folder": "file",
+          "created_at": "2026-10-13T02:39:28.430Z",
+          "updated_at": "2026-10-13T02:39:28.430Z",
+          "viewedByMeTime": "2026-10-13T03:24:59.612Z",
+          "display_title": "V2.0_一体化技术实施方案_完整初稿_v0.3.docx",
+          "display_url": "https://docs.google.com/document/d/1E1lv71VFXf-bkNH0mQogirODFAcIW9rP/edit?usp=drivesdk&ouid=110817116464605849607&rtpof=true&sd=true",
+          "parent_ids": [
+            "16J7JbZ3zy97yEM6v038VLBpw7k6Ju36g"
+          ],
+          "shared": false
+        },
+        {
+          "url": "https://docs.google.com/document/d/1NxyCmAfjr2BpyAVtH7kkHCZadP63zFdz/edit?usp=drivesdk&ouid=110817116464605849607&rtpof=true&sd=true",
+          "title": "V2.0_一体化技术实施方案_完整初稿_v0.4.docx",
+          "id": "1NxyCmAfjr2BpyAVtH7kkHCZadP63zFdz",
+          "mime_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "size": "98061",
+          "file_or_folder": "file",
+          "created_at": "2026-10-13T04:57:27.071Z",
+          "updated_at": "2026-10-13T04:57:27.071Z",
+          "viewedByMeTime": "2026-10-13T05:51:22.953Z",
+          "display_title": "V2.0_一体化技术实施方案_完整初稿_v0.4.docx",
+          "display_url": "https://docs.google.com/document/d/1NxyCmAfjr2BpyAVtH7kkHCZadP63zFdz/edit?usp=drivesdk&ouid=110817116464605849607&rtpof=true&sd=true",
+          "parent_ids": [
+            "16J7JbZ3zy97yEM6v038VLBpw7k6Ju36g"
+          ],
+          "shared": false
+        },
+        {
+          "url": "https://drive.google.com/file/d/10xgdcERT6GA8kN9dfL7ZyjME7Ic08YxL/view?usp=drivesdk",
+          "title": "INGRESS_NGINX_HTTPS_IMPLEMENTATION_PLAN.md",
+          "id": "10xgdcERT6GA8kN9dfL7ZyjME7Ic08YxL",
+          "mime_type": "text/markdown",
+          "size": "13635",
+          "file_or_folder": "file",
+          "created_at": "2026-09-29T07:34:31.293Z",
+          "updated_at": "2026-09-30T04:43:27.241Z",
+          "viewedByMeTime": "2026-09-30T04:43:40.636Z",
+          "display_title": "INGRESS_NGINX_HTTPS_IMPLEMENTATION_PLAN.md",
+          "display_url": "https://drive.google.com/file/d/10xgdcERT6GA8kN9dfL7ZyjME7Ic08YxL/view?usp=drivesdk",
+          "parent_ids": [
+            "1bYh_ZgoT5MnOJY0o7-ujDsOiORDIyhE5"
+          ],
+          "shared": false
+        },
+        {
+          "url": "https://docs.google.com/document/d/1zLlXNismEBuL7IrFlEuxN3dLaru2FP6RLQb5ynjGRJE/edit?usp=drivesdk",
+          "title": "T-012产品需求与历史指令追溯清单｜独立UAT输入｜2026-10-16",
+          "id": "1zLlXNismEBuL7IrFlEuxN3dLaru2FP6RLQb5ynjGRJE",
+          "mime_type": "application/vnd.google-apps.document",
+          "size": "27282",
+          "file_or_folder": "file",
+          "created_at": "2026-10-17T01:28:04.547Z",
+          "updated_at": "2026-10-17T01:29:06.639Z",
+          "viewedByMeTime": "2026-10-17T01:29:06.639Z",
+          "display_title": "T-012产品需求与历史指令追溯清单｜独立UAT输入｜2026-10-16",
+          "display_url": "https://docs.google.com/document/d/1zLlXNismEBuL7IrFlEuxN3dLaru2FP6RLQb5ynjGRJE/edit?usp=drivesdk",
+          "parent_ids": [
+            "1TB0BaUeyYeeanlC7FWj67Q8nZmkh7yW7"
+          ],
+          "shared": false
+        },
+        {
+          "url": "https://docs.google.com/document/d/1C7E9kC7MuHYFbfxFm_fmkJ86a1frDfb9D9b-cIYc8Nw/edit?usp=drivesdk",
+          "title": "01_执行回报_T-012",
+          "id": "1C7E9kC7MuHYFbfxFm_fmkJ86a1frDfb9D9b-cIYc8Nw",
+          "mime_type": "application/vnd.google-apps.document",
+          "size": "174495",
+          "file_or_folder": "file",
+          "created_at": "2026-10-06T03:14:51.149Z",
+          "updated_at": "2026-10-19T01:15:06.756Z",
+          "viewedByMeTime": "2026-10-19T01:15:06.756Z",
+          "display_title": "01_执行回报_T-012",
+          "display_url": "https://docs.google.com/document/d/1C7E9kC7MuHYFbfxFm_fmkJ86a1frDfb9D9b-cIYc8Nw/edit?usp=drivesdk",
+          "parent_ids": [
+            "1trTem_Ic9RCTTOtzjcNHvqA15UgkWKcG"
+          ],
+          "shared": false
+        },
+        {
+          "url": "https://docs.google.com/document/d/1ZpfeaDSJz5OAPTxrRobf-WIJhfwIFDHgOv6RhbtpgMM/edit?usp=drivesdk",
+          "title": "T-008 v1.4｜Risk31 首轮训练、标定与独立测试全过程及复现步骤",
+          "id": "1ZpfeaDSJz5OAPTxrRobf-WIJhfwIFDHgOv6RhbtpgMM",
+          "mime_type": "application/vnd.google-apps.document",
+          "size": "18513",
+          "file_or_folder": "file",
+          "created_at": "2026-10-07T07:59:17.228Z",
+          "updated_at": "2026-10-07T08:06:06.503Z",
+          "viewedByMeTime": "2026-10-08T01:47:19.255Z",
+          "display_title": "T-008 v1.4｜Risk31 首轮训练、标定与独立测试全过程及复现步骤",
+          "display_url": "https://docs.google.com/document/d/1ZpfeaDSJz5OAPTxrRobf-WIJhfwIFDHgOv6RhbtpgMM/edit?usp=drivesdk",
+          "parent_ids": [
+            "1PUMa2W9OpCFOImL0ZGSLbTbY7TLOEZ5c"
+          ],
+          "shared": false
+        },
+        {
+          "url": "https://drive.google.com/file/d/1wwGv94tNCk7q2fSqOX0erNHYi8xQoHv-/view?usp=drivesdk",
+          "title": "T012_R0_现有能碳平台与AI助手集成架构调研报告_v1.1_待评审.pdf",
+          "id": "1wwGv94tNCk7q2fSqOX0erNHYi8xQoHv-",
+          "mime_type": "application/pdf",
+          "size": "3259497",
+          "file_or_folder": "file",
+          "created_at": "2026-10-12T07:01:29.980Z",
+          "updated_at": "2026-10-12T07:01:29.980Z",
+          "viewedByMeTime": null,
+          "display_title": "T012_R0_现有能碳平台与AI助手集成架构调研报告_v1.1_待评审.pdf",
+          "display_url": "https://drive.google.com/file/d/1wwGv94tNCk7q2fSqOX0erNHYi8xQoHv-/view?usp=drivesdk",
+          "parent_ids": [
+            "1TB0BaUeyYeeanlC7FWj67Q8nZmkh7yW7"
+          ],
+          "shared": false
+        },
+        {
+          "url": "https://docs.google.com/document/d/164PEGIbkiufK2Ao2vAKxYyOLbTacwHZSt_0qwHCZibM/edit?usp=drivesdk",
+          "title": "01_执行回报_T-008",
+          "id": "164PEGIbkiufK2Ao2vAKxYyOLbTacwHZSt_0qwHCZibM",
+          "mime_type": "application/vnd.google-apps.document",
+          "size": "30398",
+          "file_or_folder": "file",
+          "created_at": "2026-09-23T13:54:07.030Z",
+          "updated_at": "2026-10-07T08:25:10.431Z",
+          "viewedByMeTime": "2026-10-07T08:25:10.431Z",
+          "display_title": "01_执行回报_T-008",
+          "display_url": "https://docs.google.com/document/d/164PEGIbkiufK2Ao2vAKxYyOLbTacwHZSt_0qwHCZibM/edit?usp=drivesdk",
+          "parent_ids": [
+            "1TU43c2aVc0VrQIdul7G2Bh93baX17_-m"
+          ],
+          "shared": false
+        },
+        {
+          "url": "https://drive.google.com/file/d/17kVO_pWDZJIvX5N0vU-yImJyPTXvlBrA/view?usp=drivesdk",
+          "title": "Qwen3-8B_自我认知SFT_完整实施方案_v1.2_执行修复版.md",
+          "id": "17kVO_pWDZJIvX5N0vU-yImJyPTXvlBrA",
+          "mime_type": "text/markdown",
+          "size": "30679",
+          "file_or_folder": "file",
+          "created_at": "2026-10-19T05:38:16.742Z",
+          "updated_at": "2026-10-19T05:38:16.742Z",
+          "viewedByMeTime": null,
+          "display_title": "Qwen3-8B_自我认知SFT_完整实施方案_v1.2_执行修复版.md",
+          "display_url": "https://drive.google.com/file/d/17kVO_pWDZJIvX5N0vU-yImJyPTXvlBrA/view?usp=drivesdk",
+          "parent_ids": [
+            "1fhiuIhZNgHJjO09sFD9hrB6ULYiQFV84"
+          ],
+          "shared": false
+        },
+        {
+          "url": "https://docs.google.com/document/d/1-NKuQmH1PE9V4w1h5w3ROn6xkZs4s4aFFUCekQ_TSAU/edit?usp=drivesdk",
+          "title": "T-012独立产品验收标准｜v1.2｜真实环境UAT",
+          "id": "1-NKuQmH1PE9V4w1h5w3ROn6xkZs4s4aFFUCekQ_TSAU",
+          "mime_type": "application/vnd.google-apps.document",
+          "size": "32065",
+          "file_or_folder": "file",
+          "created_at": "2026-10-17T01:48:15.690Z",
+          "updated_at": "2026-10-17T05:25:19.193Z",
+          "viewedByMeTime": "2026-10-17T05:24:57.084Z",
+          "display_title": "T-012独立产品验收标准｜v1.2｜真实环境UAT",
+          "display_url": "https://docs.google.com/document/d/1-NKuQmH1PE9V4w1h5w3ROn6xkZs4s4aFFUCekQ_TSAU/edit?usp=drivesdk",
+          "parent_ids": [
+            "1TB0BaUeyYeeanlC7FWj67Q8nZmkh7yW7"
+          ],
+          "shared": false
+        },
+        {
+          "url": "https://drive.google.com/file/d/1r5JaYE0Xbr_qKqGuElwnG5iUoXgU20jG/view?usp=drivesdk",
+          "title": "T012_独立产品UAT报告_含010与011定向复验_待PM最终评审_20261018.md",
+          "id": "1r5JaYE0Xbr_qKqGuElwnG5iUoXgU20jG",
+          "mime_type": "text/markdown",
+          "size": "132383",
+          "file_or_folder": "file",
+          "created_at": "2026-10-17T02:57:48.061Z",
+          "updated_at": "2026-10-19T00:13:27.402Z",
+          "viewedByMeTime": null,
+          "display_title": "T012_独立产品UAT报告_含010与011定向复验_待PM最终评审_20261018.md",
+          "display_url": "https://drive.google.com/file/d/1r5JaYE0Xbr_qKqGuElwnG5iUoXgU20jG/view?usp=drivesdk",
+          "parent_ids": [
+            "1TB0BaUeyYeeanlC7FWj67Q8nZmkh7yW7"
+          ],
+          "shared": false
+        }
+      ]
+    },
+    "isError": false
+  }
+}

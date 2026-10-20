@@ -1,0 +1,10 @@
+{
+  "at_utc": "2026-10-19T10:12:20.235929+00:00",
+  "deployment_uid": "041c9a49-1693-45a5-8ff6-6136ba9e4074",
+  "original_replicas": 1,
+  "ready_replicas": 1,
+  "spec_sha256": "9c75f393377a3e5cb6617e6b44a38241e33785f30593a061b7e7825a8c391b10",
+  "spec_matches_original": true,
+  "https_health": 200,
+  "tls_verified": true
+}

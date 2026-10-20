@@ -1,0 +1,10 @@
+{
+  "vllm_version": "0.25.1",
+  "installed_parser": "vllm/tool_parsers/hermes_tool_parser.py",
+  "registered_name": "hermes",
+  "model_template_tool_tags": [
+    "<tool_call>",
+    "</tool_call>"
+  ],
+  "verification": "Read installed parser, registry and actual /models/tokenizer_config.json before patch."
+}

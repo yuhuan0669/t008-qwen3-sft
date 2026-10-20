@@ -1,0 +1,107 @@
+{
+  "schema": "t008-qwen3-identity-cpu-gate-v1",
+  "collected_at_utc": "2026-10-19T06:03:10.292425+00:00",
+  "recommendation": "NO_GO_GPU",
+  "smoke_started": false,
+  "full_training_started": false,
+  "model_published": false,
+  "approval_created_by_agent": false,
+  "checks": [
+    {
+      "item": "v1.2附件完整性",
+      "status": "PASS",
+      "evidence_relative_to_evidence_dir": "package_checks.json"
+    },
+    {
+      "item": "官方原始数据固定及来源hash",
+      "status": "PASS",
+      "evidence_relative_to_evidence_dir": "data_quality_summary.json"
+    },
+    {
+      "item": "公开来源许可与CPU诊断用途证据",
+      "status": "EVIDENCE_COLLECTED_NOT_FORMAL_APPROVAL",
+      "evidence_relative_to_evidence_dir": "source_identity/evidence_manifest.json"
+    },
+    {
+      "item": "中英文模型/主体名称口径",
+      "status": "OWNER_CONFIRMED_NAMES_NOT_REGISTRY_CERTIFICATION",
+      "evidence_relative_to_evidence_dir": "identity_confirmation_overlay.json"
+    },
+    {
+      "item": "身份研发归属语义",
+      "status": "PENDING_DECISION",
+      "evidence_relative_to_evidence_dir": "identity_exposure_anomalies.json"
+    },
+    {
+      "item": "原始2600条2048长度门禁",
+      "status": "FAIL_958_OVERLENGTH",
+      "evidence_relative_to_evidence_dir": "template/original-final/summary.json"
+    },
+    {
+      "item": "1642条长度候选机械模板与mask",
+      "status": "PASS_NOT_DATA_ADMISSION",
+      "evidence_relative_to_evidence_dir": "template/length-candidate-final/summary.json"
+    },
+    {
+      "item": "排除958条及数据混合比例批准",
+      "status": "PENDING_EXACT_VERSION_APPROVAL",
+      "evidence_relative_to_evidence_dir": "../work/length-candidate-v1.2/manifest.json"
+    },
+    {
+      "item": "基础模型实物内容与固定官方版本",
+      "status": "PASS",
+      "evidence_relative_to_evidence_dir": "source_identity/base_upstream/base_content_comparison.json"
+    },
+    {
+      "item": "实际CLI参数与CPU初始化",
+      "status": "PASS_GPU_RUNTIME_UNTESTED",
+      "evidence_relative_to_evidence_dir": "template/cli/cli_parse.json"
+    },
+    {
+      "item": "修复后代码与镜像内23项测试",
+      "status": "PASS",
+      "evidence_relative_to_evidence_dir": "final-image-tests-23.log"
+    },
+    {
+      "item": "固定基镜像digest与运行overlay记录",
+      "status": "PASS_BASE_AND_OVERLAY_RECORDED",
+      "evidence_relative_to_evidence_dir": "runtime-bom.json"
+    },
+    {
+      "item": "最终GPU Job镜像或overlay/PVC绑定",
+      "status": "NOT_DEPLOYED_CPU_SCOPE",
+      "evidence_relative_to_evidence_dir": "cpu_container_isolation.json"
+    },
+    {
+      "item": "ClearML认证及既有合成对象HTTPS读取",
+      "status": "PASS_READ_ONLY",
+      "evidence_relative_to_evidence_dir": "clearml-readonly.json"
+    },
+    {
+      "item": "本轮新Task/OutputModel上传及回读",
+      "status": "NOT_EXECUTED_GPU_PHASE",
+      "evidence_relative_to_evidence_dir": "clearml-readonly.json"
+    },
+    {
+      "item": "真实最终数据批准记录",
+      "status": "NOT_PROVIDED_DO_NOT_CREATE_APPROVAL",
+      "evidence_relative_to_evidence_dir": "../reports/execution_report.md"
+    },
+    {
+      "item": "独立测试题与评分规范冻结",
+      "status": "NOT_COMPLETED",
+      "evidence_relative_to_evidence_dir": "../inputs/plan_v1.2.md"
+    },
+    {
+      "item": "本次共享GPU及vLLM停启窗口",
+      "status": "NOT_AUTHORIZED",
+      "evidence_relative_to_evidence_dir": "live_environment_before.json"
+    },
+    {
+      "item": "原服务恢复点/配置",
+      "status": "READBACK_COLLECTED_NO_SWITCH_PERFORMED",
+      "evidence_relative_to_evidence_dir": "vllm_before.json"
+    }
+  ],
+  "identity_confirmation_received_at_utc": "2026-10-19T06:03:59.674937+00:00"
+}

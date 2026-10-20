@@ -1,0 +1,7 @@
+{
+  "/usr/local/lib/python3.12/site-packages/swift/pipelines/train/sft.py": "024ff2ff4e6755a07c30bcc3dd081106816b31fbb30169d9e27125f0b67be7d0",
+  "/usr/local/lib/python3.12/site-packages/swift/arguments/sft_args.py": "fd18c57373531f80aa68f1430ca9b624eb38f66db044a3e53e8ad45a1a838582",
+  "/usr/local/lib/python3.12/site-packages/swift/dataset/utils.py": "82ef4b3c78a2ae3be8dcc0e8caee2dde7215f8f877bfd40a99d39f3e9586d252",
+  "/usr/local/lib/python3.12/site-packages/swift/model/register.py": "513778a52e9ade5cd2c92babd0b84c0192334928e242d332ec32c179489e4b41",
+  "/usr/local/lib/python3.12/site-packages/swift/template/base.py": "cc1629c8a84b764b530895692e4e04322aa6732281be229efce9e98752e113cc"
+}

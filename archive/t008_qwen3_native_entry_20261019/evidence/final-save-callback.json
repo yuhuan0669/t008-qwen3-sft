@@ -1,0 +1,190 @@
+{
+  "schema": "t008-installed-callback-final-save-cpu-v1",
+  "verified": true,
+  "probe_script": {
+    "path": "/work/check_final_save.py",
+    "sha256": "2946a79bf88713c726eebdc6bd818929bf2b31bfa7207e14769e0c7dbd722d01"
+  },
+  "cuda_visible_devices_before_process_override": "",
+  "cuda_visible_devices_effective": "",
+  "args_type": "types.SimpleNamespace: synthetic callback input fields only",
+  "state_and_control": "actual installed transformers TrainerState/TrainerControl",
+  "trainer_created": false,
+  "model_loaded": false,
+  "dataset_loaded": false,
+  "optimizer_created": false,
+  "checkpoint_written": false,
+  "training_started": false,
+  "cases": [
+    {
+      "case": "ordinary_25_of_103",
+      "event": "on_step_end",
+      "global_step": 25,
+      "max_steps": 103,
+      "save_strategy": "steps",
+      "save_steps": 50,
+      "eval_strategy": "no",
+      "expected_should_save": false,
+      "observed_should_save": false,
+      "observed_should_evaluate": false,
+      "observed_should_training_stop": false,
+      "returned_same_control_object": true,
+      "passed": true
+    },
+    {
+      "case": "interval_50_of_103",
+      "event": "on_step_end",
+      "global_step": 50,
+      "max_steps": 103,
+      "save_strategy": "steps",
+      "save_steps": 50,
+      "eval_strategy": "no",
+      "expected_should_save": true,
+      "observed_should_save": true,
+      "observed_should_evaluate": false,
+      "observed_should_training_stop": false,
+      "returned_same_control_object": true,
+      "passed": true
+    },
+    {
+      "case": "interval_100_of_103",
+      "event": "on_step_end",
+      "global_step": 100,
+      "max_steps": 103,
+      "save_strategy": "steps",
+      "save_steps": 50,
+      "eval_strategy": "no",
+      "expected_should_save": true,
+      "observed_should_save": true,
+      "observed_should_evaluate": false,
+      "observed_should_training_stop": false,
+      "returned_same_control_object": true,
+      "passed": true
+    },
+    {
+      "case": "ordinary_102_of_103",
+      "event": "on_step_end",
+      "global_step": 102,
+      "max_steps": 103,
+      "save_strategy": "steps",
+      "save_steps": 50,
+      "eval_strategy": "no",
+      "expected_should_save": false,
+      "observed_should_save": false,
+      "observed_should_evaluate": false,
+      "observed_should_training_stop": false,
+      "returned_same_control_object": true,
+      "passed": true
+    },
+    {
+      "case": "final_103_of_103",
+      "event": "on_step_end",
+      "global_step": 103,
+      "max_steps": 103,
+      "save_strategy": "steps",
+      "save_steps": 50,
+      "eval_strategy": "no",
+      "expected_should_save": true,
+      "observed_should_save": true,
+      "observed_should_evaluate": false,
+      "observed_should_training_stop": true,
+      "returned_same_control_object": true,
+      "passed": true
+    },
+    {
+      "case": "exact_multiple_final_100",
+      "event": "on_step_end",
+      "global_step": 100,
+      "max_steps": 100,
+      "save_strategy": "steps",
+      "save_steps": 50,
+      "eval_strategy": "no",
+      "expected_should_save": true,
+      "observed_should_save": true,
+      "observed_should_evaluate": false,
+      "observed_should_training_stop": true,
+      "returned_same_control_object": true,
+      "passed": true
+    },
+    {
+      "case": "smoke_final_3_with_interval_50",
+      "event": "on_step_end",
+      "global_step": 3,
+      "max_steps": 3,
+      "save_strategy": "steps",
+      "save_steps": 50,
+      "eval_strategy": "no",
+      "expected_should_save": true,
+      "observed_should_save": true,
+      "observed_should_evaluate": false,
+      "observed_should_training_stop": true,
+      "returned_same_control_object": true,
+      "passed": true
+    },
+    {
+      "case": "smoke_final_3_with_interval_3",
+      "event": "on_step_end",
+      "global_step": 3,
+      "max_steps": 3,
+      "save_strategy": "steps",
+      "save_steps": 3,
+      "eval_strategy": "no",
+      "expected_should_save": true,
+      "observed_should_save": true,
+      "observed_should_evaluate": false,
+      "observed_should_training_stop": true,
+      "returned_same_control_object": true,
+      "passed": true
+    },
+    {
+      "case": "save_disabled_final_103",
+      "event": "on_step_end",
+      "global_step": 103,
+      "max_steps": 103,
+      "save_strategy": "no",
+      "save_steps": 50,
+      "eval_strategy": "no",
+      "expected_should_save": false,
+      "observed_should_save": false,
+      "observed_should_evaluate": false,
+      "observed_should_training_stop": true,
+      "returned_same_control_object": true,
+      "passed": true
+    }
+  ],
+  "limits": [
+    "Synthetic state transitions exercise the actual installed callback and its actual parent implementation.",
+    "No actual checkpoint files, model forward pass, optimizer update, epoch completion, or GPU runtime is validated.",
+    "The synthetic max_steps=103 is a branch test and does not establish the real dataset optimizer-step count.",
+    "Callback args are synthetic fields, not a second validation of the formal SFT argument parser."
+  ],
+  "versions": {
+    "ms-swift": "4.4.2",
+    "transformers": "5.14.1",
+    "torch": "2.11.0+cu130"
+  },
+  "cuda_initialized_before_callback": false,
+  "installed_sources": {
+    "swift_callback": {
+      "path": "/usr/local/lib/python3.12/site-packages/swift/trainers/patcher.py",
+      "sha256": "b0051338111611cbbc5c50d1d4665296eb8c03be39385400fbedd313d98afbb5"
+    },
+    "transformers_parent_callback": {
+      "path": "/usr/local/lib/python3.12/site-packages/transformers/trainer_callback.py",
+      "sha256": "a9703b60f3d585627054ed976eca3dbea69fddcfd4eb01b1cc19bff67bccf00a"
+    },
+    "transformers_trainer": {
+      "path": "/usr/local/lib/python3.12/site-packages/transformers/trainer.py",
+      "sha256": "92cbc62c76e98099323262cdae131e060601b029b0cbe1876036b38c30e4e993"
+    }
+  },
+  "actual_callback_class_source_sha256": "cc6c4d9182f92164064c7a16bbd1306e8b559f53a16a3043ca26f35ee8aa15ab",
+  "actual_callback_class_source": "class DefaultFlowCallbackNew(DefaultFlowCallback):\n\n    def on_step_end(self, args: TrainingArguments, state: TrainerState, control: TrainerControl, **kwargs):\n        control = super().on_step_end(args, state, control, **kwargs)\n        # save the last ckpt\n        evaluation_strategy = args.eval_strategy if hasattr(args, 'eval_strategy') else args.evaluation_strategy\n        if state.global_step == state.max_steps:\n            if evaluation_strategy != IntervalStrategy.NO:\n                control.should_evaluate = True\n            if args.save_strategy != IntervalStrategy.NO:\n                control.should_save = True\n        return control\n\n    def on_epoch_end(self, args: TrainingArguments, state: TrainerState, control: TrainerControl, **kwargs):\n        control = super().on_epoch_end(args, state, control, **kwargs)\n        evaluation_strategy = args.eval_strategy if hasattr(args, 'eval_strategy') else args.evaluation_strategy\n        if args.max_epochs is not None and args.max_epochs <= math.ceil(state.epoch):\n            logger.info('Training has reached `max_epochs`. The model will be saved and the training will be exited.')\n            if evaluation_strategy != IntervalStrategy.NO:\n                control.should_evaluate = True\n            if args.save_strategy != IntervalStrategy.NO:\n                control.should_save = True\n            control.should_training_stop = True\n        return control\n",
+  "registered_default_callbacks": [
+    "swift.trainers.patcher.DefaultFlowCallbackNew"
+  ],
+  "swift_final_save_callback_registered": true,
+  "cuda_initialized_after_callback": false,
+  "passed_cases": 9,
+  "total_cases": 9
+}

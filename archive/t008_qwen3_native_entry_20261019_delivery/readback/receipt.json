@@ -1,0 +1,102 @@
+{
+  "schema": "t008-native-entry-drive-readback-v1",
+  "verified_at_utc": "2026-10-19T09:37:21.378926+00:00",
+  "files": [
+    {
+      "key": "main",
+      "file_id": "1p-awqvTM89aQ1Y89YHIiq2kbWNRrQDou",
+      "url": "https://drive.google.com/file/d/1p-awqvTM89aQ1Y89YHIiq2kbWNRrQDou/view",
+      "name": "T008_v1.2_官方原生2048_入口与CPU核验报告_20261019.md",
+      "parent_id": "1fhiuIhZNgHJjO09sFD9hrB6ULYiQFV84",
+      "bytes": 10040,
+      "sha256": "5ada9620fc8f76b584ba3f29945296c477c27a76e8f12db3667a2d4c7428303c",
+      "raw_byte_readback_verified": true
+    },
+    {
+      "key": "execution",
+      "file_id": "18YQ5hwOVZxWw2D8f-f-i10AmLfRb5MsU",
+      "url": "https://drive.google.com/file/d/18YQ5hwOVZxWw2D8f-f-i10AmLfRb5MsU/view",
+      "name": "T008_v1.2_官方原生2048_追加执行记录_20261019.md",
+      "parent_id": "1fhiuIhZNgHJjO09sFD9hrB6ULYiQFV84",
+      "bytes": 17451,
+      "sha256": "5362f34b4a3d8ed2001f9c19f95cac8770163518f45354259ba5ace6f936bd09",
+      "raw_byte_readback_verified": true
+    },
+    {
+      "key": "gate",
+      "file_id": "1lIXaxowO3H9PxNHE3Mp3GbdAaNWM4S7B",
+      "url": "https://drive.google.com/file/d/1lIXaxowO3H9PxNHE3Mp3GbdAaNWM4S7B/view",
+      "name": "T008_v1.2_官方原生2048_训练前置条件检查表_20261019.md",
+      "parent_id": "1fhiuIhZNgHJjO09sFD9hrB6ULYiQFV84",
+      "bytes": 1631,
+      "sha256": "2c26d7cead2b35e799d66f364f04f782207763c08b6fa813a394609e43e65184",
+      "raw_byte_readback_verified": true
+    },
+    {
+      "key": "bundle",
+      "file_id": "1V-oysRsNKQwXKSWuqvWpjZlBUMr8HmrI",
+      "url": "https://drive.google.com/file/d/1V-oysRsNKQwXKSWuqvWpjZlBUMr8HmrI/view",
+      "name": "T008_v1.2_官方原生入口_CPU核验完整包_20261019.zip",
+      "parent_id": "1fhiuIhZNgHJjO09sFD9hrB6ULYiQFV84",
+      "bytes": 13811745,
+      "sha256": "c8e56ac313905e8a89ce981c822a9af10eb16862a58188c7dd2e02414ed918aa",
+      "raw_byte_readback_verified": true
+    },
+    {
+      "key": "manifest",
+      "file_id": "1odXiGVIkfVNH5t03wUZeCs_7HQk9CrhX",
+      "url": "https://drive.google.com/file/d/1odXiGVIkfVNH5t03wUZeCs_7HQk9CrhX/view",
+      "name": "T008_v1.2_官方原生入口_CPU核验_MANIFEST_20261019.json",
+      "parent_id": "1fhiuIhZNgHJjO09sFD9hrB6ULYiQFV84",
+      "bytes": 36435,
+      "sha256": "77a7f3dde343ed352d47e1d57400d7f6fa674a74861c0d72706070e2d24dea3d",
+      "raw_byte_readback_verified": true
+    },
+    {
+      "key": "machine_gate",
+      "file_id": "18yuu-3uT9iX57BYIYHb20XfG53dQEXC1",
+      "url": "https://drive.google.com/file/d/18yuu-3uT9iX57BYIYHb20XfG53dQEXC1/view",
+      "name": "T008_v1.2_官方原生入口_GPU门禁_20261019.json",
+      "parent_id": "1fhiuIhZNgHJjO09sFD9hrB6ULYiQFV84",
+      "bytes": 3618,
+      "sha256": "37896ba3806622defb2877572364097af971d6ee5bd72f36a07ddbd096f583b2",
+      "raw_byte_readback_verified": true
+    },
+    {
+      "key": "differences",
+      "file_id": "15HuuHSx6aQL0ir82kGeZuefJ2R5t5nFq",
+      "url": "https://drive.google.com/file/d/15HuuHSx6aQL0ir82kGeZuefJ2R5t5nFq/view",
+      "name": "T008_v1.2_官方原生入口_已实施差异_20261019.md",
+      "parent_id": "1fhiuIhZNgHJjO09sFD9hrB6ULYiQFV84",
+      "bytes": 1133,
+      "sha256": "0cbf8592a569e51802827dbe8a2d867c1c9af05f7737f5460d6ab8e0a9f984fc",
+      "raw_byte_readback_verified": true
+    },
+    {
+      "key": "review",
+      "file_id": "1UH83KOl3DkQGOa0AcZS-qZFCy9yhDS5N",
+      "url": "https://drive.google.com/file/d/1UH83KOl3DkQGOa0AcZS-qZFCy9yhDS5N/view",
+      "name": "T008_v1.2_官方原生入口_最终工程复核_20261019.md",
+      "parent_id": "1fhiuIhZNgHJjO09sFD9hrB6ULYiQFV84",
+      "bytes": 9687,
+      "sha256": "eb272d2064adffd5b3150528a551dceb4bbc5a34a64a97b6c4dbb28b102e8ad0",
+      "raw_byte_readback_verified": true
+    },
+    {
+      "key": "safety_review",
+      "file_id": "1EgtXsmCss20hfKN217lA79UZWqtf26n_",
+      "url": "https://drive.google.com/file/d/1EgtXsmCss20hfKN217lA79UZWqtf26n_/view",
+      "name": "T008_v1.2_官方原生入口_安全工程复核_20261019.md",
+      "parent_id": "1fhiuIhZNgHJjO09sFD9hrB6ULYiQFV84",
+      "bytes": 6129,
+      "sha256": "257e3f9b3152934fb8816bf59a3d41edc061b984fd1106b279aa28cd36012c7b",
+      "raw_byte_readback_verified": true
+    }
+  ],
+  "zip_crc_verified": true,
+  "zip_payload_files_sha256_verified": 201,
+  "GPU_training_started": false,
+  "service_stopped": false,
+  "formal_approval_created": false,
+  "source_git_commit": "e7ae45aa7438c8bcca8318d3531854f7f5e7db39"
+}

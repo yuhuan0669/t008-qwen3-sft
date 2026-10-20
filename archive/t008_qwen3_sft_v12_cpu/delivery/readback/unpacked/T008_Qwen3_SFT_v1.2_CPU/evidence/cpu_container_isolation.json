@@ -1,0 +1,89 @@
+{
+  "Id": "e88eb7b8c48617537308a0f3c9e4ee4452154f4cec65788ae3db6d6e407ba9db",
+  "Created": "2026-10-19T05:50:39.637129348Z",
+  "Image": "modelscope-registry.cn-hangzhou.cr.aliyuncs.com/modelscope-repo/modelscope@sha256:822d99beed4984a421c8d1da397993c6a8a5f88cdad7dde940bd52df0067d738",
+  "State": {
+    "Status": "running",
+    "Running": true,
+    "Paused": false,
+    "Restarting": false,
+    "Pid": 1876434,
+    "ExitCode": 0,
+    "Error": "",
+    "StartedAt": "2026-10-19T05:50:39.709929627Z",
+    "FinishedAt": ""
+  },
+  "Mounts": [
+    {
+      "Type": "bind",
+      "Source": "/tmp/t008-identity-v12-cpu-20261019",
+      "Destination": "/work",
+      "Mode": "",
+      "RW": true,
+      "Propagation": ""
+    },
+    {
+      "Type": "bind",
+      "Source": "/var/lib/kubelet/pods/4cdca1ae-c999-4ef5-807f-1807e215005f/volumes/kubernetes.io~nfs/pvc-70f17a58-94f3-4a2b-a947-3e7dac05e509/released/qwen3-8b-baseline/model",
+      "Destination": "/base",
+      "Mode": "ro",
+      "RW": false,
+      "Propagation": ""
+    }
+  ],
+  "HostConfig": {
+    "ContainerIDFile": "",
+    "LogConfig": {
+      "driver": "json-file",
+      "address": "unix:///var/run/containerd/containerd.sock"
+    },
+    "PortBindings": {},
+    "CgroupnsMode": "private",
+    "Dns": null,
+    "DnsOptions": null,
+    "DnsSearch": null,
+    "ExtraHosts": [],
+    "GroupAdd": [
+      "10001"
+    ],
+    "IpcMode": "private",
+    "OomScoreAdj": 0,
+    "PidMode": "",
+    "ReadonlyRootfs": false,
+    "UTSMode": "",
+    "ShmSize": 0,
+    "Sysctls": null,
+    "Runtime": "io.containerd.runc.v2",
+    "CpusetMems": "",
+    "CpusetCpus": "",
+    "CpuQuota": 200000,
+    "CpuShares": 0,
+    "CpuPeriod": 100000,
+    "CpuRealtimePeriod": 0,
+    "CpuRealtimeRuntime": 0,
+    "Memory": 8589934592,
+    "MemorySwap": 17179869184,
+    "OomKillDisable": false,
+    "Devices": null,
+    "BlkioWeight": 0,
+    "BlkioWeightDevice": [],
+    "BlkioDeviceReadBps": [],
+    "BlkioDeviceWriteBps": [],
+    "BlkioDeviceReadIOps": [],
+    "BlkioDeviceWriteIOps": []
+  },
+  "Config": {
+    "User": "10001:10001",
+    "Entrypoint": null,
+    "Cmd": null,
+    "WorkingDir": null,
+    "Env": [
+      "NVIDIA_VISIBLE_DEVICES=void",
+      "MODELSCOPE_CACHE=/work/cache/modelscope",
+      "CUDA_VISIBLE_DEVICES=",
+      "OMP_NUM_THREADS=2",
+      "HOME=/work",
+      "HF_HOME=/work/cache/huggingface"
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "schema": "identity-official-snapshot-v1.2",
+  "status": "PENDING_SOURCE_REVIEW",
+  "source_specs": [
+    "swift/Qwen3-SFT-Mixin#2000",
+    "swift/self-cognition:qwen3#600"
+  ],
+  "official_sampling": "ms-swift loader #N; seed recorded",
+  "seed": 42,
+  "rows": 2600,
+  "original_rows": 2600,
+  "requested_mixin": 2000,
+  "requested_identity": 600,
+  "snapshot_kind": "official_original",
+  "unique_message_rows": 1108,
+  "duplicate_exposures": 1492,
+  "repetition_histogram": {
+    "2": 1000,
+    "5": 48,
+    "6": 60
+  },
+  "actual_source_revision": "NOT_PROVEN_BY_LOADER; archive original cache/repo revision separately",
+  "versions": {
+    "ms-swift": "4.4.2",
+    "datasets": "4.8.4",
+    "modelscope": "1.38.1"
+  },
+  "files_sha256": {
+    "train.jsonl": "dda551041a12c460b84056f2c58df0ab60f2e9999e0518f116cf5f5b3c5faf6e",
+    "identity_spec.json": "96d595f3bdf6ca78d1f812f9b87cb53dffa4eb323fabeb758c2e09a63b5d2ec4"
+  },
+  "warning": "No held-out validation derived from repeated official identity templates. Preflight with actual Qwen tokenizer/template and rights/use approval required before GPU run."
+}

@@ -1,0 +1,79 @@
+{
+  "metadata": {
+    "name": "vllm",
+    "namespace": "vllm",
+    "uid": "041c9a49-1693-45a5-8ff6-6136ba9e4074",
+    "generation": 41
+  },
+  "containers": [
+    {
+      "name": "vllm",
+      "image": "modelscope-registry.cn-hangzhou.cr.aliyuncs.com/modelscope-repo/modelscope:ubuntu22.04-cuda13.0.3-py312-torch2.11.0-vllm0.25.1-modelscope1.39.0-swift4.4.3",
+      "command": [
+        "python3",
+        "-m",
+        "vllm.entrypoints.openai.api_server"
+      ],
+      "args": [
+        "--model",
+        "/models",
+        "--served-model-name",
+        "octa-carbon-v1",
+        "--host",
+        "0.0.0.0",
+        "--port",
+        "8000",
+        "--gpu-memory-utilization",
+        "0.90",
+        "--max-model-len",
+        "8192",
+        "--trust-remote-code",
+        "--reasoning-parser",
+        "qwen3",
+        "--enable-lora",
+        "--max-lora-rank",
+        "8",
+        "--lora-modules",
+        "{\"name\":\"octacarbon-llm-sft-test\",\"path\":\"/adapters/octacarbon-llm-sft-test\",\"base_model_name\":\"octa-carbon-v1\"}",
+        "--enable-auto-tool-choice",
+        "--tool-call-parser",
+        "hermes"
+      ],
+      "volumeMounts": [
+        {
+          "mountPath": "/models",
+          "name": "model-store",
+          "readOnly": true,
+          "subPath": "released/qwen3-8b-baseline/model"
+        },
+        {
+          "mountPath": "/dev/shm",
+          "name": "dshm"
+        },
+        {
+          "mountPath": "/etc/localtime",
+          "name": "host-localtime",
+          "readOnly": true
+        },
+        {
+          "mountPath": "/adapters/octacarbon-llm-sft-test",
+          "name": "model-store",
+          "readOnly": true,
+          "subPath": "released/t008-qwen3-20261019-094113-test/adapter"
+        }
+      ],
+      "env_names": [
+        "HF_HUB_OFFLINE",
+        "HF_HOME",
+        "HOME",
+        "TZ",
+        "USER",
+        "LOGNAME",
+        "TORCHINDUCTOR_CACHE_DIR",
+        "VLLM_CACHE_ROOT",
+        "XDG_CACHE_HOME"
+      ]
+    }
+  ],
+  "readyReplicas": 1
+}

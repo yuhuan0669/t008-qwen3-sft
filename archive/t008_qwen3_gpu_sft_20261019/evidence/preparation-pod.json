@@ -1,0 +1,113 @@
+{
+  "apiVersion": "v1",
+  "kind": "Pod",
+  "metadata": {
+    "name": "t008-qwen3-20261019-094113-prep",
+    "namespace": "swift",
+    "labels": {
+      "app": "t008-identity-sft",
+      "t008-run": "t008-qwen3-20261019-094113",
+      "stage": "cpu-preflight"
+    }
+  },
+  "spec": {
+    "nodeSelector": {
+      "kubernetes.io/hostname": "k8s-worker05"
+    },
+    "restartPolicy": "Never",
+    "automountServiceAccountToken": false,
+    "serviceAccountName": "swift-trainer",
+    "securityContext": {
+      "runAsUser": 10001,
+      "runAsGroup": 10001,
+      "runAsNonRoot": true
+    },
+    "containers": [
+      {
+        "name": "prepare",
+        "image": "modelscope-registry.cn-hangzhou.cr.aliyuncs.com/modelscope-repo/modelscope@sha256:822d99beed4984a421c8d1da397993c6a8a5f88cdad7dde940bd52df0067d738",
+        "imagePullPolicy": "IfNotPresent",
+        "command": [
+          "python3",
+          "-c",
+          "import time; time.sleep(21600)"
+        ],
+        "resources": {
+          "requests": {
+            "cpu": "1",
+            "memory": "1Gi"
+          },
+          "limits": {
+            "cpu": "2",
+            "memory": "8Gi"
+          }
+        },
+        "env": [
+          {
+            "name": "NVIDIA_VISIBLE_DEVICES",
+            "value": "void"
+          },
+          {
+            "name": "CUDA_VISIBLE_DEVICES",
+            "value": ""
+          }
+        ],
+        "securityContext": {
+          "allowPrivilegeEscalation": false,
+          "capabilities": {
+            "drop": [
+              "ALL"
+            ]
+          },
+          "runAsNonRoot": true,
+          "runAsUser": 10001,
+          "runAsGroup": 10001
+        },
+        "volumeMounts": [
+          {
+            "name": "base",
+            "mountPath": "/models",
+            "readOnly": true
+          },
+          {
+            "name": "work",
+            "mountPath": "/work"
+          },
+          {
+            "name": "data",
+            "mountPath": "/data"
+          }
+        ]
+      }
+    ],
+    "volumes": [
+      {
+        "name": "base",
+        "persistentVolumeClaim": {
+          "claimName": "swift-base",
+          "readOnly": true
+        }
+      },
+      {
+        "name": "work",
+        "persistentVolumeClaim": {
+          "claimName": "swift-work"
+        }
+      },
+      {
+        "name": "data",
+        "persistentVolumeClaim": {
+          "claimName": "swift-train-data"
+        }
+      }
+    ],
+    "tolerations": [
+      {
+        "effect": "NoSchedule",
+        "key": "dedicated",
+        "operator": "Equal",
+        "value": "gpu-rtx4090"
+      }
+    ]
+  }
+}

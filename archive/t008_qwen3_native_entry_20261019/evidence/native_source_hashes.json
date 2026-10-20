@@ -1,0 +1,42 @@
+[
+  {
+    "path": "swift/pipelines/train/sft.py",
+    "sha256": "024ff2ff4e6755a07c30bcc3dd081106816b31fbb30169d9e27125f0b67be7d0"
+  },
+  {
+    "path": "swift/arguments/base_args/base_args.py",
+    "sha256": "3f3168f97d32867d6d67f703cd27d5ea7a67d5264c05ded910232fdbb99b0433"
+  },
+  {
+    "path": "swift/arguments/base_args/data_args.py",
+    "sha256": "917bb68ec0456a94337f94982118bd86e857f786df7ac30f03ec751bf18e8b21"
+  },
+  {
+    "path": "swift/arguments/base_args/template_args.py",
+    "sha256": "fb880fc30ef6eb2617743a6e8b23d8d6aad11e3e706393d43106fcc024f243e8"
+  },
+  {
+    "path": "swift/dataset/loader.py",
+    "sha256": "bfd75ce24bf0b2ba2fe414a37afd1ce2465575269689325791481eb2bef6d9b4"
+  },
+  {
+    "path": "swift/dataset/dataset_meta.py",
+    "sha256": "e0869a4b370b377585afb801cd5e4121d5ad137cb34ca6c36971bc5b5dad2d7e"
+  },
+  {
+    "path": "swift/dataset/utils.py",
+    "sha256": "82ef4b3c78a2ae3be8dcc0e8caee2dde7215f8f877bfd40a99d39f3e9586d252"
+  },
+  {
+    "path": "swift/trainers/__init__.py",
+    "sha256": "576dd0bed73d14e7c6f122cd569900abeb94781977f971fa5203aabd6f56695a"
+  },
+  {
+    "path": "swift/trainers/patcher.py",
+    "sha256": "b0051338111611cbbc5c50d1d4665296eb8c03be39385400fbedd313d98afbb5"
+  },
+  {
+    "path": "swift/trainers/mixin.py",
+    "sha256": "6b6de2e7503ce414cb837961e1355be41a56787ecca502e8570bfcfa36c15ab9"
+  }
+]

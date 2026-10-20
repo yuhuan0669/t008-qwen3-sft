@@ -1,0 +1,8 @@
+{
+  "tensor_count": 504,
+  "all_tensors_finite": true,
+  "r": 8,
+  "lora_alpha": 32,
+  "weights_sha256": "b3099ee58150332b29a7a1dc5f22fa69d797b56b2bc4381c3060b31454140e5f",
+  "weights_bytes": 87360584
+}

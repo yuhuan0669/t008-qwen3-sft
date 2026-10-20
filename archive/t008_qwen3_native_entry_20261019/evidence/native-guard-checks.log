@@ -1,0 +1,15 @@
+Failed to load CPU gemm_4bit_forward from kernels-community: No module named 'kernels'. Please make sure you already `pip install kernels` and the kernels >= 0.11.1
+[INFO:swift] Successfully registered `/usr/local/lib/python3.12/site-packages/swift/dataset/data/dataset_info.json`.
+[INFO:swift] Successfully imported external_plugins: ['/work/code/native_guard.py'].
+[INFO:swift] rank: -1, local_rank: -1, world_size: 1, local_world_size: 1
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+[INFO:swift] Setting args.lazy_tokenize: False
+[transformers] warmup_ratio is deprecated and will be removed in v5.2. Use `warmup_steps` instead.
+[INFO:swift] Setting torch_dtype: torch.bfloat16
+[INFO:swift] default_system: None
+[INFO:swift] max_length: 2048
+[INFO:swift] response_prefix: None
+[INFO:swift] agent_template: hermes
+Map (num_proc=1):   0%|          | 0/2600 [00:00<?, ? examples/s]Map (num_proc=1):  38%|███▊      | 1000/2600 [00:05<00:08, 179.28 examples/s]Map (num_proc=1):  77%|███████▋  | 2000/2600 [00:09<00:02, 207.41 examples/s]Map (num_proc=1): 100%|██████████| 2600/2600 [00:12<00:00, 218.56 examples/s]Map (num_proc=1): 100%|██████████| 2600/2600 [00:12<00:00, 209.07 examples/s]
+[INFO:swift] Dataset filtered, origin length: 2600, filtered dataset length: 1642
+{"actual_installed_plugin_loaded": true, "get_dataset_preserves_object": true, "actual_encode_guard_positive": true, "report_sha_tamper": {"blocked": true, "reason": "Approved native CPU evidence changed"}, "identity_tamper": {"blocked": true, "reason": "Native identity differs from CPU evidence"}, "cached_data_bypass": {"blocked": true, "reason": "Unexpected native runtime configuration or cached-data bypass"}, "skip_preprocessing": {"blocked": true, "reason": "Native default preprocessing cannot be bypassed"}, "input_order_tamper": {"blocked": true, "reason": "Native loaded dataset drift: {'rows': 2600, 'sha256': 'e04452de768b1332e41058b6a78e245c61551538c591393303c37dbb60c473e8'} != {'rows': 2600, 'sha256': 'fe0911174ed4a9b4f088804a901409d25be1af00c3cdd8a9f6981df1e6abe7aa'}"}, "weights_loaded": false, "trainer_created": false, "clearml_task_created": false, "gpu_training_started": false}

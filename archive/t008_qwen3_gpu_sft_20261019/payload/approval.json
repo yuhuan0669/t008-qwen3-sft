@@ -1,0 +1,36 @@
+{
+  "schema": "t008-chat-authorized-gpu-run-v1",
+  "identity_verified": true,
+  "sources_approved": {
+    "swift/Qwen3-SFT-Mixin": true,
+    "swift/self-cognition:qwen3": true
+  },
+  "experiment_approved": true,
+  "gpu_window_approved": true,
+  "decision_ref": "current-user-chat:owner_authorization.json#sha256=963124097430777db7bfc75bd5e7a0b04ddce0a109c24d29767ea127ed863178",
+  "source_snapshot_ref": "https://drive.google.com/file/d/1V-oysRsNKQwXKSWuqvWpjZlBUMr8HmrI/view#evidence/native-proof/native-preflight.json",
+  "approved_rows": 1642,
+  "approved_data_sha256": "fe0911174ed4a9b4f088804a901409d25be1af00c3cdd8a9f6981df1e6abe7aa",
+  "native_preflight_report_sha256": "bc602fe28f782200b3351b9130e0cfd40807e67fe6ed20a0660a4f240a0247ed",
+  "preflight_model_files_sha256": "39c6b79bcc9813377a48e65da1ad614151748389d0bf526f5d816dc581e54374",
+  "authorized_modes": [
+    "smoke",
+    "full"
+  ],
+  "native_source_specs": [
+    "swift/Qwen3-SFT-Mixin#2000",
+    "swift/self-cognition:qwen3#600"
+  ],
+  "max_length": 2048,
+  "run_id": "t008-qwen3-20261019-094113",
+  "source_git_commit": "e7ae45aa7438c8bcca8318d3531854f7f5e7db39",
+  "image_digest": "sha256:822d99beed4984a421c8d1da397993c6a8a5f88cdad7dde940bd52df0067d738",
+  "recorded_at_utc": "2026-10-19T09:43:19.908786+00:00",
+  "authority": "Agent transcription and exact-input binding of explicit current user authorization; not an invented external signature",
+  "restrictions": [
+    "restore prior vLLM after completion or failure",
+    "no model deployment/publication",
+    "no changes to training route/data recipe",
+    "no GPU evaluation beyond 3-step Smoke and Full SFT in this authorization"
+  ]
+}

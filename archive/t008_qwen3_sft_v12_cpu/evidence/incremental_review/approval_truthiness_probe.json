@@ -1,0 +1,26 @@
+{
+  "method": "AST extraction/evaluation of approval condition only; no main/GPU/training",
+  "line": 171,
+  "cases": [
+    {
+      "field_value": false,
+      "rejects": true
+    },
+    {
+      "field_value": "false",
+      "rejects": false
+    },
+    {
+      "field_value": 0,
+      "rejects": true
+    },
+    {
+      "field_value": "0",
+      "rejects": false
+    },
+    {
+      "field_value": true,
+      "rejects": false
+    }
+  ]
+}

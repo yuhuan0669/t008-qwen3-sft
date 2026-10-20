@@ -1,0 +1,147 @@
+{
+  "status": "PASS",
+  "packages": [
+    {
+      "sha256": "33feb7cfe9e3bafa1a5b72f32e179fe89448c4c4251e152763dd846d3adffd1d",
+      "original_paths": [
+        "t008_qwen3_gpu_sft_20261019/outputs/adapter-candidate.zip",
+        "t008_qwen3_gpu_sft_20261019_delivery/adapter-candidate.verified.zip"
+      ],
+      "members": 2,
+      "crc_bad_member": null,
+      "unsafe_members": [],
+      "manifest_payloads_checked": 0,
+      "manifest_mismatches": [],
+      "status": "PASS"
+    },
+    {
+      "sha256": "7530995129dbb66932a7cd77d4da4d3ce487f9d4458ddff21c5228ef51bb1f46",
+      "original_paths": [
+        "t008_qwen3_gpu_sft_20261019.zip",
+        "t008_qwen3_gpu_sft_20261019_delivery/evidence.readback.zip"
+      ],
+      "members": 160,
+      "crc_bad_member": null,
+      "unsafe_members": [],
+      "manifest_payloads_checked": 159,
+      "manifest_mismatches": [],
+      "status": "PASS"
+    },
+    {
+      "sha256": "eedb1c3d7788ae3e214faf90d2deacd9e90001a91c5515ff13cedeebb3d0d6b6",
+      "original_paths": [
+        "t008_qwen3_handoff_20261019.readback.zip",
+        "t008_qwen3_handoff_20261019.zip"
+      ],
+      "members": 12,
+      "crc_bad_member": null,
+      "unsafe_members": [],
+      "manifest_payloads_checked": 11,
+      "manifest_mismatches": [],
+      "status": "PASS"
+    },
+    {
+      "sha256": "869b573de4a24129140a2b03b8c031b3c4024bba11ab768a9477f8d1dada87aa",
+      "original_paths": [
+        "t008_qwen3_native_entry_20261019/evidence/ms_swift-4.4.2-py3-none-any.whl"
+      ],
+      "members": 532,
+      "crc_bad_member": null,
+      "unsafe_members": [],
+      "manifest_payloads_checked": 0,
+      "manifest_mismatches": [],
+      "status": "PASS"
+    },
+    {
+      "sha256": "c8e56ac313905e8a89ce981c822a9af10eb16862a58188c7dd2e02414ed918aa",
+      "original_paths": [
+        "t008_qwen3_native_entry_20261019.zip",
+        "t008_qwen3_native_entry_20261019_delivery/readback/bundle.zip"
+      ],
+      "members": 202,
+      "crc_bad_member": null,
+      "unsafe_members": [],
+      "manifest_payloads_checked": 201,
+      "manifest_mismatches": [],
+      "status": "PASS"
+    },
+    {
+      "sha256": "967c3ad3a26f36ec54cd64d92097bf76e385ddbb5668e17c2ee76ed5930ee395",
+      "original_paths": [
+        "t008_qwen3_official2048_update_20261019.zip",
+        "t008_qwen3_official2048_update_20261019_delivery/1se0oJjdtePCzHMrdCwxuHz4FJVTV-UYG_t008_qwen3_official2048_update_20261019.zip"
+      ],
+      "members": 30,
+      "crc_bad_member": null,
+      "unsafe_members": [],
+      "manifest_payloads_checked": 29,
+      "manifest_mismatches": [],
+      "status": "PASS"
+    },
+    {
+      "sha256": "c0049799f80070b3126397a56f2ae1034eb3e12cbaafbfe4cd6fc1ee180bf1c4",
+      "original_paths": [
+        "t008_qwen3_sft_v12_cpu/delivery/T008_Qwen3_SFT_v1.2_CPU_证据与数据包_20261018.zip",
+        "t008_qwen3_sft_v12_cpu/delivery/readback/1C4Psio7qgU27bFobd92i4oXmDa0JQqG4.bin"
+      ],
+      "members": 207,
+      "crc_bad_member": null,
+      "unsafe_members": [],
+      "manifest_payloads_checked": 206,
+      "manifest_mismatches": [],
+      "status": "PASS"
+    },
+    {
+      "sha256": "956fc429347675d35831ec4d42cdd2ee932ac666fc24f03737c4ccd704a2e717",
+      "original_paths": [
+        "t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/inputs/attachments_v1.2.zip",
+        "t008_qwen3_sft_v12_cpu/inputs/attachments_v1.2.zip"
+      ],
+      "members": 13,
+      "crc_bad_member": null,
+      "unsafe_members": [],
+      "manifest_payloads_checked": 0,
+      "manifest_mismatches": [],
+      "status": "PASS"
+    },
+    {
+      "sha256": "e3e3ccf25713dd56876d4312a3f9e830a15cec31193da019b333bcf39e704d7b",
+      "original_paths": [
+        "t008_qwen3_sft_v12_followup_review_20261019.zip",
+        "t008_qwen3_sft_v12_followup_review_20261019_delivery/t008_qwen3_sft_v12_followup_review_20261019.zip"
+      ],
+      "members": 28,
+      "crc_bad_member": null,
+      "unsafe_members": [],
+      "manifest_payloads_checked": 27,
+      "manifest_mismatches": [],
+      "status": "PASS"
+    },
+    {
+      "sha256": "76ece6efeefbd2fd060fecfb831ee8652782b21974d75cc72f895ee14b3c6335",
+      "original_paths": [
+        "t008_qwen3_training_runbook_20261019.readback.zip",
+        "t008_qwen3_training_runbook_20261019.zip"
+      ],
+      "members": 29,
+      "crc_bad_member": null,
+      "unsafe_members": [],
+      "manifest_payloads_checked": 28,
+      "manifest_mismatches": [],
+      "status": "PASS"
+    },
+    {
+      "sha256": "6c00ad4e1a62e45714cd1dcb31ad5f56c17749df7decd47232bc15c7dd67bdea",
+      "original_paths": [
+        "t008_qwen3_v12_process_restore_20261019.readback.zip",
+        "t008_qwen3_v12_process_restore_20261019.zip"
+      ],
+      "members": 14,
+      "crc_bad_member": null,
+      "unsafe_members": [],
+      "manifest_payloads_checked": 13,
+      "manifest_mismatches": [],
+      "status": "PASS"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "schema": "t008-takeover-serving-readback-v1",
+  "source": "Read-only kubectl Deployment query during the takeover turn in this chat; no inference request",
+  "observation_time": "Not separately timestamped by command; see session tool evidence",
+  "command": "kubectl --context lmas00-direct --request-timeout=15s -n vllm get deployment vllm -o json (filtered to non-secret fields)",
+  "data": {
+    "uid": "041c9a49-1693-45a5-8ff6-6136ba9e4074",
+    "generation": 44,
+    "status": {
+      "availableReplicas": 1,
+      "conditions": [
+        {
+          "lastTransitionTime": "2026-08-18T13:02:36Z",
+          "lastUpdateTime": "2026-10-19T14:14:06Z",
+          "message": "ReplicaSet \"vllm-57f474b498\" has successfully progressed.",
+          "reason": "NewReplicaSetAvailable",
+          "status": "True",
+          "type": "Progressing"
+        },
+        {
+          "lastTransitionTime": "2026-10-19T14:16:07Z",
+          "lastUpdateTime": "2026-10-19T14:16:07Z",
+          "message": "Deployment has minimum availability.",
+          "reason": "MinimumReplicasAvailable",
+          "status": "True",
+          "type": "Available"
+        }
+      ],
+      "observedGeneration": 44,
+      "readyReplicas": 1,
+      "replicas": 1,
+      "updatedReplicas": 1
+    },
+    "containers": [
+      {
+        "name": "vllm",
+        "image": "modelscope-registry.cn-hangzhou.cr.aliyuncs.com/modelscope-repo/modelscope:ubuntu22.04-cuda13.0.3-py312-torch2.11.0-vllm0.25.1-modelscope1.39.0-swift4.4.3",
+        "args": [
+          "--model",
+          "/models",
+          "--served-model-name",
+          "octa-carbon-v1",
+          "--host",
+          "0.0.0.0",
+          "--port",
+          "8000",
+          "--gpu-memory-utilization",
+          "0.90",
+          "--max-model-len",
+          "8192",
+          "--trust-remote-code",
+          "--reasoning-parser",
+          "qwen3",
+          "--enable-auto-tool-choice",
+          "--tool-call-parser",
+          "hermes"
+        ],
+        "resources": {
+          "limits": {
+            "cpu": "16",
+            "memory": "32Gi",
+            "nvidia.com/gpu": "1"
+          },
+          "requests": {
+            "cpu": "4",
+            "memory": "16Gi",
+            "nvidia.com/gpu": "1"
+          }
+        },
+        "volumeMounts": [
+          {
+            "mountPath": "/models",
+            "name": "model-store",
+            "readOnly": true,
+            "subPath": "released/qwen3-8b-baseline/model"
+          },
+          {
+            "mountPath": "/dev/shm",
+            "name": "dshm"
+          },
+          {
+            "mountPath": "/etc/localtime",
+            "name": "host-localtime",
+            "readOnly": true
+          }
+        ]
+      }
+    ]
+  }
+}

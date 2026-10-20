@@ -1,0 +1,29 @@
+{
+  "actual_installed_plugin_loaded": true,
+  "get_dataset_preserves_object": true,
+  "actual_encode_guard_positive": true,
+  "report_sha_tamper": {
+    "blocked": true,
+    "reason": "Approved native CPU evidence changed"
+  },
+  "identity_tamper": {
+    "blocked": true,
+    "reason": "Native identity differs from CPU evidence"
+  },
+  "cached_data_bypass": {
+    "blocked": true,
+    "reason": "Unexpected native runtime configuration or cached-data bypass"
+  },
+  "skip_preprocessing": {
+    "blocked": true,
+    "reason": "Native default preprocessing cannot be bypassed"
+  },
+  "input_order_tamper": {
+    "blocked": true,
+    "reason": "Native loaded dataset drift: {'rows': 2600, 'sha256': 'e04452de768b1332e41058b6a78e245c61551538c591393303c37dbb60c473e8'} != {'rows': 2600, 'sha256': 'fe0911174ed4a9b4f088804a901409d25be1af00c3cdd8a9f6981df1e6abe7aa'}"
+  },
+  "weights_loaded": false,
+  "trainer_created": false,
+  "clearml_task_created": false,
+  "gpu_training_started": false
+}

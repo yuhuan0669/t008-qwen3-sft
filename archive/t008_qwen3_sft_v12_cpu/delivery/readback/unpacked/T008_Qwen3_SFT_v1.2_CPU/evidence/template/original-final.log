@@ -1,0 +1,136 @@
+Failed to load CPU gemm_4bit_forward from kernels-community: No module named 'kernels'. Please make sure you already `pip install kernels` and the kernels >= 0.11.1
+[INFO:swift] Successfully registered `/usr/local/lib/python3.12/site-packages/swift/dataset/data/dataset_info.json`.
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+[INFO:swift] Setting torch_dtype: torch.bfloat16
+[INFO:swift] rank: -1, local_rank: -1, world_size: 1, local_world_size: 1
+[INFO:swift] Setting torch_dtype: torch.bfloat16
+[INFO:swift] Setting args.lazy_tokenize: False
+[INFO:swift] Setting args.gradient_accumulation_steps: 16
+[INFO:swift] Setting args.dataloader_num_workers: 1
+[INFO:swift] default_system: None
+[INFO:swift] max_length: 40960
+[INFO:swift] response_prefix: None
+[INFO:swift] agent_template: hermes
+[INFO:swift] default_system: None
+[INFO:swift] max_length: 2048
+[INFO:swift] response_prefix: None
+[INFO:swift] agent_template: hermes
+Map (num_proc=1): 100%|██████████| 2600/2600 [00:00<?, ? examples/s]Map (num_proc=1): 2700 examples [00:01, 50.96 examples/s]           Map (num_proc=1): 2800 examples [00:02, 87.78 examples/s]Map (num_proc=1): 2900 examples [00:03, 113.82 examples/s]Map (num_proc=1): 3000 examples [00:03, 133.41 examples/s]Map (num_proc=1): 3100 examples [00:04, 145.63 examples/s]Map (num_proc=1): 3200 examples [00:04, 144.03 examples/s]Map (num_proc=1): 3300 examples [00:05, 146.93 examples/s]Map (num_proc=1): 3400 examples [00:06, 155.91 examples/s]Map (num_proc=1): 3500 examples [00:06, 160.65 examples/s]Map (num_proc=1): 3600 examples [00:07, 163.84 examples/s]Map (num_proc=1): 3700 examples [00:07, 178.88 examples/s]Map (num_proc=1): 3800 examples [00:08, 183.45 examples/s]Map (num_proc=1): 3900 examples [00:08, 184.91 examples/s]Map (num_proc=1): 4000 examples [00:09, 188.39 examples/s]Map (num_proc=1): 4100 examples [00:09, 189.39 examples/s]Map (num_proc=1): 4200 examples [00:10, 180.25 examples/s]Map (num_proc=1): 4300 examples [00:11, 178.63 examples/s]Map (num_proc=1): 4400 examples [00:11, 183.21 examples/s]Map (num_proc=1): 4500 examples [00:12, 182.66 examples/s]Map (num_proc=1): 4600 examples [00:12, 178.67 examples/s]Map (num_proc=1): 5200 examples [00:12, 574.04 examples/s]Map (num_proc=1): 5200 examples [00:12, 200.90 examples/s]
+[INFO:swift] Dataset filtered, origin length: 2600, filtered dataset length: 1642
+{
+  "schema": "t008-real-swift-template-cpu-v1",
+  "dataset_path": "/work/original-v1.2/train.jsonl",
+  "probe_script_sha256": "005449f28b5b4dd6a7d9a4bed0a67275737d68329c29329758665fc628863f5d",
+  "dataset_sha256": "dda551041a12c460b84056f2c58df0ab60f2e9999e0518f116cf5f5b3c5faf6e",
+  "versions": {
+    "ms-swift": "4.4.2",
+    "transformers": "5.14.1",
+    "peft": "0.20.0",
+    "torch": "2.11.0+cu130",
+    "tokenizers": "0.22.2",
+    "datasets": "4.8.4"
+  },
+  "model_path": "/base",
+  "model_files_sha256": "39c6b79bcc9813377a48e65da1ad614151748389d0bf526f5d816dc581e54374",
+  "base_fingerprint_reused_from": "/work/evidence/template/original-exact/base-files.json",
+  "model_config": {
+    "architectures": [
+      "Qwen3ForCausalLM"
+    ],
+    "attention_bias": false,
+    "attention_dropout": 0.0,
+    "bos_token_id": 151643,
+    "eos_token_id": 151645,
+    "head_dim": 128,
+    "hidden_act": "silu",
+    "hidden_size": 4096,
+    "initializer_range": 0.02,
+    "intermediate_size": 12288,
+    "max_position_embeddings": 40960,
+    "max_window_layers": 36,
+    "model_type": "qwen3",
+    "num_attention_heads": 32,
+    "num_hidden_layers": 36,
+    "num_key_value_heads": 8,
+    "rms_norm_eps": 1e-06,
+    "rope_scaling": null,
+    "rope_theta": 1000000,
+    "sliding_window": null,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16",
+    "transformers_version": "4.51.0",
+    "use_cache": true,
+    "use_sliding_window": false,
+    "vocab_size": 151936
+  },
+  "weights_loaded": false,
+  "cuda_available": false,
+  "processor_class": "Qwen2Tokenizer",
+  "template_class": "Template",
+  "template_type": "qwen3",
+  "template_mode": "train",
+  "loss_scale": "default+ignore_empty_think",
+  "actual_training_default_kwargs": {
+    "template_type": "qwen3",
+    "default_system": null,
+    "max_length": 2048,
+    "truncation_strategy": "raise",
+    "max_pixels": null,
+    "agent_template": null,
+    "norm_bbox": null,
+    "use_chat_template": true,
+    "remove_unused_columns": true,
+    "padding_side": "right",
+    "padding_free": false,
+    "loss_scale": "default+ignore_empty_think",
+    "is_binary_loss_scale": null,
+    "sequence_parallel_size": 1,
+    "template_backend": "swift",
+    "response_prefix": null,
+    "enable_thinking": null,
+    "preserve_thinking": null,
+    "add_non_thinking_prefix": true
+  },
+  "template_backend": "swift",
+  "max_length": 2048,
+  "training_truncation_strategy": "delete",
+  "template_truncation_strategy": "raise",
+  "rows_checked": 2600,
+  "encoded_rows": 2600,
+  "overlength_rows": 958,
+  "zero_supervised_rows": 0,
+  "actual_pipeline": "SwiftSft._encode_dataset -> AddLengthPreprocessor -> template.encode",
+  "actual_pipeline_retained_rows": 1642,
+  "pipeline_membership_verified": true,
+  "all_supervised_labels_match_input_ids": true,
+  "all_rows_have_masked_tokens": true,
+  "synthetic_role_mask_checks": {
+    "system": {
+      "token_count": 12,
+      "start_token_index": 3,
+      "correctly_masked_or_supervised": true
+    },
+    "user": {
+      "token_count": 12,
+      "start_token_index": 20,
+      "correctly_masked_or_supervised": true
+    },
+    "assistant": {
+      "token_count": 14,
+      "start_token_index": 41,
+      "correctly_masked_or_supervised": true
+    }
+  },
+  "length_stats": {
+    "min": 30,
+    "p50": 1689,
+    "p90": 2133,
+    "p95": 2158,
+    "p99": 2217,
+    "max": 2511
+  },
+  "total_tokens": 3635635,
+  "total_supervised_tokens": 3515952,
+  "elapsed_seconds": 22.521,
+  "verified": false
+}

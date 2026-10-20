@@ -1,0 +1,56 @@
+Failed to load CPU gemm_4bit_forward from kernels-community: No module named 'kernels'. Please make sure you already `pip install kernels` and the kernels >= 0.11.1
+[INFO:swift] Successfully registered `/usr/local/lib/python3.12/site-packages/swift/dataset/data/dataset_info.json`.
+[INFO:swift] Successfully imported external_plugins: ['/work/code/native_guard.py'].
+[INFO:swift] rank: -1, local_rank: -1, world_size: 1, local_world_size: 1
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+[INFO:swift] Setting args.lazy_tokenize: False
+[transformers] warmup_ratio is deprecated and will be removed in v5.2. Use `warmup_steps` instead.
+[INFO:swift] SelfCognitionPreprocessor has been successfully configured with name: ['章鱼能碳垂直大模型', 'Octacarbon LLM'], author: ['能碳章鱼（湖北）人工智能科技有限公司', 'Octacarbon (Hubei) Artificial Intelligence Technology Co., Ltd.'].
+[INFO:swift] Downloading the dataset from ModelScope, dataset_id: swift/Qwen3-SFT-Mixin
+[ERROR:swift] Dataset swift/Qwen3-SFT-Mixin load failed: subset_name=default,split=train with error: [E1020] Connection error: HTTPSConnectionPool(host='modelscope.cn', port=443): Max retries exceeded with url: /openapi/v1/datasets/swift/Qwen3-SFT-Mixin (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))
+[ERROR:swift] Dataset swift/Qwen3-SFT-Mixin load failed: subset_name=default,split=train with error: [E1020] Connection error: HTTPSConnectionPool(host='modelscope.cn', port=443): Max retries exceeded with url: /openapi/v1/datasets/swift/Qwen3-SFT-Mixin (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))
+Traceback (most recent call last):
+  File "/work/code/run_identity.py", line 362, in <module>
+    if __name__=='__main__': main()
+                             ^^^^^^
+  File "/work/code/run_identity.py", line 217, in main
+    report=cpu_check(*values, swift_cli_help())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/code/native_recipe.py", line 140, in cpu_check
+    dataset, val = args.load_dataset()  # exact formal native path, including shuffle=True
+                   ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/swift/arguments/base_args/base_args.py", line 356, in load_dataset
+    train_dataset, val_dataset = load_dataset(
+                                 ^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/swift/dataset/loader.py", line 350, in load_dataset
+    train_dataset = loader.load(dataset_syntax, dataset_meta, use_hf=use_hf)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/swift/dataset/loader.py", line 179, in load
+    dataset = self._load_repo_dataset(
+              ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/swift/dataset/loader.py", line 108, in _load_repo_dataset
+    dataset = hub.load_dataset(
+              ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/swift/hub/hub.py", line 300, in load_dataset
+    return MsDataset.load(
+           ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/modelscope/msdatasets/ms_dataset.py", line 311, in load
+    endpoint = _api.get_endpoint_for_read(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/modelscope_hub/compat/hub_api.py", line 251, in get_endpoint_for_read
+    return self._api.resolve_endpoint_for_read(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/modelscope_hub/api.py", line 1111, in resolve_endpoint_for_read
+    if primary_probe.repo_exists(repo_id, repo_type):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/modelscope_hub/api.py", line 1057, in repo_exists
+    self.get_repo(repo_id, repo_type)
+  File "/usr/local/lib/python3.12/site-packages/modelscope_hub/api.py", line 883, in get_repo
+    data = self.openapi.get_dataset(owner, name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/modelscope_hub/_openapi.py", line 457, in get_dataset
+    return self._request("GET", f"/datasets/{owner}/{repo_name}", require_token=False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/modelscope_hub/_openapi.py", line 364, in _request
+    raise last_exc
+modelscope_hub.errors.NetworkError: [E1020] Connection error: HTTPSConnectionPool(host='modelscope.cn', port=443): Max retries exceeded with url: /openapi/v1/datasets/swift/Qwen3-SFT-Mixin (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))

@@ -1,0 +1,12 @@
+{
+  "source_line_one_based": 991,
+  "generated_strings_checked": 1000,
+  "seed_count": 100,
+  "all_functional_constraints_passed": true,
+  "code_sha256": "d32a11dfdc7d0b6305ba4609cb105841fd9ac363d96ea8fe0473852497b94d35",
+  "limits": [
+    "Does not prove cryptographic security or uniform distribution over all valid strings.",
+    "Reasoning text contains an inaccurate illustrative listing of string.punctuation; code uses the actual standard-library constant.",
+    "Only this already-reviewed small program was executed on CPU; no model or GPU used."
+  ]
+}

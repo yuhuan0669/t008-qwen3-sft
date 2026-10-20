@@ -1,0 +1,12 @@
+{
+  "status": "FIXED",
+  "flags": [
+    "--enable-auto-tool-choice",
+    "--tool-call-parser",
+    "hermes"
+  ],
+  "single_tool_choice_auto_request": "HTTP_200",
+  "tool_execution_performed": false,
+  "baseline_preserved": true,
+  "test_model_id": "octacarbon-llm-sft-test"
+}

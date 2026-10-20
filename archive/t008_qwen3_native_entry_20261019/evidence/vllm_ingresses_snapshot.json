@@ -1,0 +1,34 @@
+[
+  {
+    "apiVersion": "networking.k8s.io/v1",
+    "kind": "Ingress",
+    "metadata": {
+      "name": "vllm-ingress",
+      "namespace": "vllm"
+    },
+    "spec": {
+      "ingressClassName": "nginx",
+      "rules": [
+        {
+          "host": "vllm.10.140.17.125.nip.io",
+          "http": {
+            "paths": [
+              {
+                "backend": {
+                  "service": {
+                    "name": "vllm-service",
+                    "port": {
+                      "number": 8000
+                    }
+                  }
+                },
+                "path": "/",
+                "pathType": "Prefix"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+]

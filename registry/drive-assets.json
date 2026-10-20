@@ -1,0 +1,1645 @@
+{
+  "schema": "t008-drive-references-v1",
+  "handoff_archives": [
+    {
+      "name": "v1.2原始CPU审核包",
+      "url": "https://drive.google.com/file/d/1C4Psio7qgU27bFobd92i4oXmDa0JQqG4/view",
+      "sha256": "c0049799f80070b3126397a56f2ae1034eb3e12cbaafbfe4cd6fc1ee180bf1c4",
+      "local_matches": [
+        "t008_qwen3_sft_v12_cpu/delivery/T008_Qwen3_SFT_v1.2_CPU_证据与数据包_20261018.zip",
+        "t008_qwen3_sft_v12_cpu/delivery/readback/1C4Psio7qgU27bFobd92i4oXmDa0JQqG4.bin"
+      ],
+      "verification": "Local bytes checked against recorded delivered hash; prior Drive readback retained; no new cloud download"
+    },
+    {
+      "name": "官方原生入口CPU包",
+      "url": "https://drive.google.com/file/d/1V-oysRsNKQwXKSWuqvWpjZlBUMr8HmrI/view",
+      "sha256": "c8e56ac313905e8a89ce981c822a9af10eb16862a58188c7dd2e02414ed918aa",
+      "local_matches": [
+        "t008_qwen3_native_entry_20261019.zip",
+        "t008_qwen3_native_entry_20261019_delivery/readback/bundle.zip"
+      ],
+      "verification": "Local bytes checked against recorded delivered hash; prior Drive readback retained; no new cloud download"
+    },
+    {
+      "name": "GPU训练与测试加载证据包",
+      "url": "https://drive.google.com/file/d/1LJ7fwnAhQ0TlUe_2GWj_4tTUoJpHB1nh/view",
+      "sha256": "7530995129dbb66932a7cd77d4da4d3ce487f9d4458ddff21c5228ef51bb1f46",
+      "local_matches": [
+        "t008_qwen3_gpu_sft_20261019.zip",
+        "t008_qwen3_gpu_sft_20261019_delivery/evidence.readback.zip"
+      ],
+      "verification": "Local bytes checked against recorded delivered hash; prior Drive readback retained; no new cloud download"
+    },
+    {
+      "name": "checkpoint-103 LoRA ZIP",
+      "url": "https://drive.google.com/file/d/1Be0WI7PKbQmcfcKj-YIyQRGikGf_ulaB/view",
+      "sha256": "33feb7cfe9e3bafa1a5b72f32e179fe89448c4c4251e152763dd846d3adffd1d",
+      "local_matches": [
+        "t008_qwen3_gpu_sft_20261019/outputs/adapter-candidate.zip",
+        "t008_qwen3_gpu_sft_20261019_delivery/adapter-candidate.verified.zip"
+      ],
+      "verification": "Local bytes checked against recorded delivered hash; prior Drive readback retained; no new cloud download"
+    },
+    {
+      "name": "全流程命令及诊断附件",
+      "url": "https://drive.google.com/file/d/1PZTfbAI5rpTwIKDRz9tU5PMtaXu86xLu/view",
+      "sha256": "76ece6efeefbd2fd060fecfb831ee8652782b21974d75cc72f895ee14b3c6335",
+      "local_matches": [
+        "t008_qwen3_training_runbook_20261019.readback.zip",
+        "t008_qwen3_training_runbook_20261019.zip"
+      ],
+      "verification": "Local bytes checked against recorded delivered hash; prior Drive readback retained; no new cloud download"
+    },
+    {
+      "name": "v1.2流程恢复R1证据包",
+      "url": "https://drive.google.com/file/d/1kVscp_ukoOCXrG66aFlmw8Db4GQaoD3A/view",
+      "sha256": "6c00ad4e1a62e45714cd1dcb31ad5f56c17749df7decd47232bc15c7dd67bdea",
+      "local_matches": [
+        "t008_qwen3_v12_process_restore_20261019.readback.zip",
+        "t008_qwen3_v12_process_restore_20261019.zip"
+      ],
+      "verification": "Local bytes checked against recorded delivered hash; prior Drive readback retained; no new cloud download"
+    }
+  ],
+  "other_references": [
+    {
+      "id": "1-NKe_-uJdMDXeAsVU2BNmloOtIgoSWTod9SwUXEuMuk",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/project_baseline_fetch.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/project_baseline_fetched_text.txt",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/project_baseline_fetch.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/project_baseline_fetched_text.txt"
+      ]
+    },
+    {
+      "id": "1-NKuQmH1PE9V4w1h5w3ROn6xkZs4s4aFFUCekQ_TSAU",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/discovery_1.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/discovery_1.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/identity_discovery_2.json"
+      ]
+    },
+    {
+      "id": "1-u-eFbPMHgY4n3s4OJkIMrnACBN-kOwK",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/identity_discovery_2.json"
+      ]
+    },
+    {
+      "id": "10N26WNR4H6Kv8PLKIudlyydLjrNmLbWh",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/identity_discovery_2.json"
+      ]
+    },
+    {
+      "id": "10XlxfHOgaXdM88G3sS-tWUvGCS_H8-Zg",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/discovery_0.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/discovery_0.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/identity_discovery_2.json"
+      ]
+    },
+    {
+      "id": "10xgdcERT6GA8kN9dfL7ZyjME7Ic08YxL",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/discovery_1.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/discovery_1.json"
+      ]
+    },
+    {
+      "id": "118wwzyNWOdKXHKaDDSMYlblrbL9vE3z9LQViMlczW3E",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/identity_discovery_2.json"
+      ]
+    },
+    {
+      "id": "12Ice-pv3B8qMkEfiR1N0MsYQEwkLHPp2-D_f3ZxO3RU",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/identity_discovery_2.json"
+      ]
+    },
+    {
+      "id": "13q1wFfGmnneMGlpprWIfELiJrFNdf5gD",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/identity_discovery_2.json"
+      ]
+    },
+    {
+      "id": "145sdZjvV8rnIIPh6HbVGHoCMqoFXkfhp",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/discovery_0.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/discovery_0.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/identity_discovery_2.json"
+      ]
+    },
+    {
+      "id": "14EoJgrCqfqw7u4u3j_T87fiBMNJs3dWB",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/discovery_1.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/discovery_1.json"
+      ]
+    },
+    {
+      "id": "14HKOfOILh2Mj3UQrnVM8zTq61K6vjBOZ",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/identity_discovery_2.json"
+      ]
+    },
+    {
+      "id": "14IAtpeLBIRsc5G4cmJHeHcFootGMCnWd",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/discovery_1.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/discovery_1.json"
+      ]
+    },
+    {
+      "id": "14PfF13Xzrpl6YwNVuApUmoSuhNUtgkqr",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/project_baseline_fetch.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/project_baseline_fetched_text.txt",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/project_baseline_fetch.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/project_baseline_fetched_text.txt"
+      ]
+    },
+    {
+      "id": "14h2CdaLRZJZT28yhl7-tMfO1NfZE7m6s8fUnk3MenqA",
+      "evidence_paths": [
+        "archive/t008_qwen3_handoff_20261019/HANDOFF.blocks.json",
+        "archive/t008_qwen3_handoff_20261019/HANDOFF.md",
+        "archive/t008_qwen3_handoff_20261019/HANDOFF.txt",
+        "archive/t008_qwen3_training_runbook_20261019.readback.receipt.json",
+        "archive/t008_qwen3_training_runbook_20261019/GOOGLE_DOCS_READBACK.json",
+        "archive/t008_qwen3_training_runbook_20261019/MANIFEST.json",
+        "archive/t008_qwen3_v12_process_restore_20261019/evidence/delivery-document-readback.json",
+        "archive/t008_qwen3_v12_process_restore_20261019/plan.blocks.json",
+        "archive/t008_qwen3_v12_process_restore_20261019/plan.md",
+        "archive/t008_qwen3_v12_process_restore_20261019/plan.txt"
+      ]
+    },
+    {
+      "id": "1554oDqhB_keEBTOrN3m8E3sR5NDMM47C",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/inputs/task_T008.txt",
+        "archive/t008_qwen3_sft_v12_cpu/inputs/task_T008.txt"
+      ]
+    },
+    {
+      "id": "15HuuHSx6aQL0ir82kGeZuefJ2R5t5nFq",
+      "evidence_paths": [
+        "archive/t008_qwen3_native_entry_20261019_delivery/delivery_receipt.json",
+        "archive/t008_qwen3_native_entry_20261019_delivery/readback/receipt.json"
+      ]
+    },
+    {
+      "id": "15j_e0-rSH7L-WP1m90WVXC9a00FTekPs",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/project_baseline_fetch.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/project_baseline_fetched_text.txt",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/project_baseline_fetch.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/project_baseline_fetched_text.txt"
+      ]
+    },
+    {
+      "id": "164PEGIbkiufK2Ao2vAKxYyOLbTacwHZSt_0qwHCZibM",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/discovery_1.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/inputs/task_T008.txt",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/discovery_1.json",
+        "archive/t008_qwen3_sft_v12_cpu/inputs/task_T008.txt"
+      ]
+    },
+    {
+      "id": "16W5-VS59oxN0Ng3dslesSODsY0x43lqz",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/identity_discovery_2.json"
+      ]
+    },
+    {
+      "id": "17g4N1B8vcTAsT0R7B_RxrMF1kcTJ-LOoBRmDmHkwQxo",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/identity_discovery_2.json"
+      ]
+    },
+    {
+      "id": "17gaDXUhFcgy9H_VDv4nIrNZK78fVIazi",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/identity_discovery_2.json"
+      ]
+    },
+    {
+      "id": "17kVO_pWDZJIvX5N0vU-yImJyPTXvlBrA",
+      "evidence_paths": [
+        "archive/t008_qwen3_handoff_20261019/HANDOFF.blocks.json",
+        "archive/t008_qwen3_handoff_20261019/HANDOFF.md",
+        "archive/t008_qwen3_handoff_20261019/HANDOFF.txt",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/discovery_0.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/discovery_1.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/discovery_0.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/discovery_1.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_training_runbook_20261019/training_runbook.blocks.json",
+        "archive/t008_qwen3_training_runbook_20261019/training_runbook.md",
+        "archive/t008_qwen3_training_runbook_20261019/training_runbook.txt",
+        "archive/t008_qwen3_v12_process_restore_20261019/plan.blocks.json",
+        "archive/t008_qwen3_v12_process_restore_20261019/plan.md",
+        "archive/t008_qwen3_v12_process_restore_20261019/plan.txt"
+      ]
+    },
+    {
+      "id": "182wx69DrSZK25rkZnXjWIWLAVYw51FXz",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/identity_discovery_2.json"
+      ]
+    },
+    {
+      "id": "188Fp1YngtpgctfqKfqwKq2GffT3x2H6O",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/identity_discovery_2.json"
+      ]
+    },
+    {
+      "id": "18Gs-EZBDQiUIehs9ZK7zJUCG_18CUfR8",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/discovery_0.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/discovery_0.json"
+      ]
+    },
+    {
+      "id": "18YQ5hwOVZxWw2D8f-f-i10AmLfRb5MsU",
+      "evidence_paths": [
+        "archive/t008_qwen3_gpu_sft_20261019_delivery/DELIVERY_RECEIPT.json",
+        "archive/t008_qwen3_gpu_sft_20261019_delivery/DELIVERY_RECEIPT.readback.json",
+        "archive/t008_qwen3_handoff_20261019/HANDOFF.blocks.json",
+        "archive/t008_qwen3_handoff_20261019/HANDOFF.md",
+        "archive/t008_qwen3_handoff_20261019/HANDOFF.txt",
+        "archive/t008_qwen3_native_entry_20261019_delivery/delivery_receipt.json",
+        "archive/t008_qwen3_native_entry_20261019_delivery/readback/receipt.json",
+        "archive/t008_qwen3_official2048_update_20261019_delivery/delivery_receipt.json",
+        "archive/t008_qwen3_training_runbook_20261019/training_runbook.blocks.json",
+        "archive/t008_qwen3_training_runbook_20261019/training_runbook.md",
+        "archive/t008_qwen3_training_runbook_20261019/training_runbook.txt",
+        "archive/t008_qwen3_v12_process_restore_20261019/plan.blocks.json",
+        "archive/t008_qwen3_v12_process_restore_20261019/plan.md",
+        "archive/t008_qwen3_v12_process_restore_20261019/plan.txt"
+      ]
+    },
+    {
+      "id": "18yuu-3uT9iX57BYIYHb20XfG53dQEXC1",
+      "evidence_paths": [
+        "archive/t008_qwen3_native_entry_20261019_delivery/delivery_receipt.json",
+        "archive/t008_qwen3_native_entry_20261019_delivery/readback/receipt.json"
+      ]
+    },
+    {
+      "id": "193UDg9_17-ytNR0SFm3MkyKCNd111ADv",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/T008_Qwen3_SFT_v1.2_CPU_交付回执_20261018.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/193UDg9_17-ytNR0SFm3MkyKCNd111ADv.verification.json"
+      ]
+    },
+    {
+      "id": "194LYqZyAh8fa8ssOGbozLhmB31tKwAqO48aB6rBmqBA",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/discovery_0.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/discovery_0.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/identity_discovery_2.json"
+      ]
+    },
+    {
+      "id": "19PwNBAwqcGAoMtJDqEaNEdbnPuFm0KXAL82aOzADk44",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/project_baseline_fetch.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/project_baseline_fetched_text.txt",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/project_baseline_fetch.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/project_baseline_fetched_text.txt"
+      ]
+    },
+    {
+      "id": "19lMNxeYoBntBjotwILTRyhyHN28rTCSHLybZVuxoK9Q",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/identity_discovery_2.json"
+      ]
+    },
+    {
+      "id": "1AbYU-E69VxWyYLfK6hebMDG-FXWkE71d",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/identity_discovery_2.json"
+      ]
+    },
+    {
+      "id": "1Ao3OMVJQEF3lqCILQCoKYdvl3nd-OMH2",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/discovery_0.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/discovery_0.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/identity_discovery_2.json"
+      ]
+    },
+    {
+      "id": "1BQLRq1pQyu7Be60_hxmeVsaFDBIMuul2-EB3aDAe_Ho",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/baseline/Qwen3-8B_自我认知SFT_完整实施方案_v1.2_执行修复版.md",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/baseline/Qwen3-8B_自我认知SFT_完整实施方案_v1.2_执行修复版.md",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/inputs/plan_v1.2.md",
+        "archive/t008_qwen3_sft_v12_cpu/inputs/plan_v1.2.md",
+        "archive/t008_qwen3_training_runbook_20261019/training_runbook.blocks.json",
+        "archive/t008_qwen3_training_runbook_20261019/training_runbook.md",
+        "archive/t008_qwen3_training_runbook_20261019/training_runbook.txt"
+      ]
+    },
+    {
+      "id": "1Be0WI7PKbQmcfcKj-YIyQRGikGf_ulaB",
+      "evidence_paths": [
+        "archive/t008_qwen3_gpu_sft_20261019_delivery/DELIVERY_RECEIPT.json",
+        "archive/t008_qwen3_gpu_sft_20261019_delivery/DELIVERY_RECEIPT.readback.json",
+        "archive/t008_qwen3_handoff_20261019/HANDOFF.blocks.json",
+        "archive/t008_qwen3_handoff_20261019/HANDOFF.md",
+        "archive/t008_qwen3_handoff_20261019/HANDOFF.txt",
+        "archive/t008_qwen3_handoff_20261019/HANDOFF_STATE.json",
+        "archive/t008_qwen3_training_runbook_20261019/training_runbook.blocks.json",
+        "archive/t008_qwen3_training_runbook_20261019/training_runbook.md",
+        "archive/t008_qwen3_training_runbook_20261019/training_runbook.txt"
+      ]
+    },
+    {
+      "id": "1Bghdw0qe1eTKowS3TKx38X47gO3IaEXv",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/identity_discovery_2.json"
+      ]
+    },
+    {
+      "id": "1C4Psio7qgU27bFobd92i4oXmDa0JQqG4",
+      "evidence_paths": [
+        "archive/t008_qwen3_gpu_sft_20261019_delivery/prior-1p-awqvTM89aQ1Y89YHIiq2kbWNRrQDou.md",
+        "archive/t008_qwen3_handoff_20261019/HANDOFF.blocks.json",
+        "archive/t008_qwen3_handoff_20261019/HANDOFF.md",
+        "archive/t008_qwen3_handoff_20261019/HANDOFF.txt",
+        "archive/t008_qwen3_handoff_20261019/HANDOFF_STATE.json",
+        "archive/t008_qwen3_native_entry_20261019/reports/complete_report.md",
+        "archive/t008_qwen3_native_entry_20261019_delivery/readback/main.md",
+        "archive/t008_qwen3_official2048_update_20261019/reports/complete_report.md",
+        "archive/t008_qwen3_official2048_update_20261019_delivery/1p-awqvTM89aQ1Y89YHIiq2kbWNRrQDou_complete_report.md",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/T008_Qwen3_SFT_v1.2_CPU_交付回执_20261018.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/1C4Psio7qgU27bFobd92i4oXmDa0JQqG4.verification.json",
+        "archive/t008_qwen3_training_runbook_20261019/training_runbook.blocks.json",
+        "archive/t008_qwen3_training_runbook_20261019/training_runbook.md",
+        "archive/t008_qwen3_training_runbook_20261019/training_runbook.txt"
+      ]
+    },
+    {
+      "id": "1C7E9kC7MuHYFbfxFm_fmkJ86a1frDfb9D9b-cIYc8Nw",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/discovery_0.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/discovery_1.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/discovery_0.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/discovery_1.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/identity_discovery_2.json"
+      ]
+    },
+    {
+      "id": "1CNTAFxMMhs_jxb_oHCkIscR-fTKwV-kW",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/inputs/task_T008.txt",
+        "archive/t008_qwen3_sft_v12_cpu/inputs/task_T008.txt"
+      ]
+    },
+    {
+      "id": "1CcNVd2sXUMtKEsPotf4eNqUCrN5qEtL4",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/project_baseline_fetch.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/project_baseline_fetched_text.txt",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/project_baseline_fetch.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/project_baseline_fetched_text.txt"
+      ]
+    },
+    {
+      "id": "1CxNORJel_3VXNZzGvDXBCx5TDHLqcQm2",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/identity_discovery_2.json"
+      ]
+    },
+    {
+      "id": "1DrfjFtcrvMPBqzjmHrSeTX_2wYB_qxY7wt5JtT3XEyQ",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/project_baseline_fetch.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/project_baseline_fetched_text.txt",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/project_baseline_fetch.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/project_baseline_fetched_text.txt"
+      ]
+    },
+    {
+      "id": "1E1lv71VFXf-bkNH0mQogirODFAcIW9rP",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/discovery_0.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/discovery_1.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/discovery_0.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/discovery_1.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/identity_discovery_2.json"
+      ]
+    },
+    {
+      "id": "1EgtXsmCss20hfKN217lA79UZWqtf26n_",
+      "evidence_paths": [
+        "archive/t008_qwen3_native_entry_20261019_delivery/delivery_receipt.json",
+        "archive/t008_qwen3_native_entry_20261019_delivery/readback/receipt.json"
+      ]
+    },
+    {
+      "id": "1Ekx_Lr1UrZp7lrVmtMctamSuQqMI12Mi",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/identity_discovery_2.json"
+      ]
+    },
+    {
+      "id": "1FUzUe1xuD-_VL0Mo_OprC0OfO5RZ1bZtpGqnQ7BWqtw",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/project_baseline_fetch.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/project_baseline_fetched_text.txt",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/project_baseline_fetch.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/project_baseline_fetched_text.txt"
+      ]
+    },
+    {
+      "id": "1F_tWpH6yaRLK0aaY4Y-ksKXBjjdLMrOIqM4ufchGBaY",
+      "evidence_paths": [
+        "archive/t008_qwen3_handoff_20261019/HANDOFF.blocks.json",
+        "archive/t008_qwen3_handoff_20261019/HANDOFF.md",
+        "archive/t008_qwen3_handoff_20261019/HANDOFF.txt",
+        "archive/t008_qwen3_v12_process_restore_20261019/append.txt",
+        "archive/t008_qwen3_v12_process_restore_20261019/evidence/delivery-document-readback.json",
+        "archive/t008_qwen3_v12_process_restore_20261019/evidence/execution-after.readback.md",
+        "archive/t008_qwen3_v12_process_restore_20261019/execution_record.updated.md",
+        "archive/t008_qwen3_v12_process_restore_20261019/plan.blocks.json",
+        "archive/t008_qwen3_v12_process_restore_20261019/plan.md",
+        "archive/t008_qwen3_v12_process_restore_20261019/plan.txt",
+        "archive/t008_qwen3_v12_process_restore_20261019/process_state.json"
+      ]
+    },
+    {
+      "id": "1FaLcYhk5PQmArHhWINcYvGYfhbEscYIg",
+      "evidence_paths": [
+        "archive/t008_qwen3_handoff_20261019/HANDOFF.blocks.json",
+        "archive/t008_qwen3_handoff_20261019/HANDOFF.md",
+        "archive/t008_qwen3_handoff_20261019/HANDOFF.txt",
+        "archive/t008_qwen3_training_runbook_20261019/training_runbook.blocks.json",
+        "archive/t008_qwen3_training_runbook_20261019/training_runbook.md",
+        "archive/t008_qwen3_training_runbook_20261019/training_runbook.txt"
+      ]
+    },
+    {
+      "id": "1G-jhFB0OhrIXvaqtZ2aoYYpcD05NkDTYEkmPez9kNiM",
+      "evidence_paths": [
+        "archive/t008_qwen3_handoff_20261019/HANDOFF.blocks.json",
+        "archive/t008_qwen3_handoff_20261019/HANDOFF.md",
+        "archive/t008_qwen3_handoff_20261019/HANDOFF.txt",
+        "archive/t008_qwen3_handoff_20261019/HANDOFF_STATE.json",
+        "archive/t008_qwen3_handoff_20261019/MANIFEST.json",
+        "archive/t008_qwen3_handoff_20261019/evidence/GOOGLE_DOCS_READBACK.json"
+      ]
+    },
+    {
+      "id": "1GnABPzwVDIryM2GClMxnktIhRGqGwTfh9aY7uAE_epQ",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/discovery_0.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/discovery_0.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/identity_discovery_2.json"
+      ]
+    },
+    {
+      "id": "1Gsp9s4UfV4RjIFTe5538-OUmQEZM89Vj",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_followup_review_20261019_delivery/readback_receipt.json"
+      ]
+    },
+    {
+      "id": "1I76ViUx91i0Bl2DdZ4J7wL9xnUZUyXN9ZkLSa524J1E",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/identity_discovery_2.json"
+      ]
+    },
+    {
+      "id": "1IXzV6rvHzImyiGmMpfYSUq0Ss-VTuFRG",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/discovery_0.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/discovery_0.json"
+      ]
+    },
+    {
+      "id": "1J7wzAZb-OCUdUsB-pxBTk37Dzc0PKO1G",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/discovery_0.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/discovery_0.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/identity_discovery_2.json"
+      ]
+    },
+    {
+      "id": "1JIgc4vaeblyEuNOU1YqYXxqKpFcW5nnq",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/discovery_1.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/discovery_1.json"
+      ]
+    },
+    {
+      "id": "1JLjSnjajy-RXC4f7QkmeIYfcP9XI8qrf",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/identity_discovery_2.json"
+      ]
+    },
+    {
+      "id": "1JZ286wVuercrOeOudfnvFF72IKUVGbbz",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/discovery_0.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/discovery_0.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/identity_discovery_2.json"
+      ]
+    },
+    {
+      "id": "1JjndsdaGdMiW8oHs1gyyy2zmzkbaRrOV",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/identity_discovery_2.json"
+      ]
+    },
+    {
+      "id": "1Jtinkmz-wNMhjP24nmUR8FCOBr0fdWAqYO8dCjZGKTI",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/discovery_0.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/discovery_0.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/identity_discovery_2.json"
+      ]
+    },
+    {
+      "id": "1K0aFjsLilWC5ICa6GCRTDDoDqG9SCANp",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/project_baseline_fetch.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/project_baseline_fetched_text.txt",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/project_baseline_fetch.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/project_baseline_fetched_text.txt"
+      ]
+    },
+    {
+      "id": "1K87E9IvV9ljua1TxIrq2Qd3nHpprS2xpOlPpzaeh21s",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/discovery_0.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/discovery_0.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/identity_discovery_2.json"
+      ]
+    },
+    {
+      "id": "1KRkb71GomeiJPDCwB9z0sxOrIJTqJGNO",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/project_baseline_fetch.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/project_baseline_fetched_text.txt",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/inputs/task_T008.txt",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/project_baseline_fetch.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/project_baseline_fetched_text.txt",
+        "archive/t008_qwen3_sft_v12_cpu/inputs/task_T008.txt"
+      ]
+    },
+    {
+      "id": "1L2YIoKiq462wUjg_Mp-tX5-Mju8IEJ-H",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/project_baseline_fetch.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/project_baseline_fetched_text.txt",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/project_baseline_fetch.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/project_baseline_fetched_text.txt"
+      ]
+    },
+    {
+      "id": "1LJ7fwnAhQ0TlUe_2GWj_4tTUoJpHB1nh",
+      "evidence_paths": [
+        "archive/t008_qwen3_gpu_sft_20261019_delivery/DELIVERY_RECEIPT.json",
+        "archive/t008_qwen3_gpu_sft_20261019_delivery/DELIVERY_RECEIPT.readback.json",
+        "archive/t008_qwen3_handoff_20261019/HANDOFF.blocks.json",
+        "archive/t008_qwen3_handoff_20261019/HANDOFF.md",
+        "archive/t008_qwen3_handoff_20261019/HANDOFF.txt",
+        "archive/t008_qwen3_handoff_20261019/HANDOFF_STATE.json",
+        "archive/t008_qwen3_training_runbook_20261019/training_runbook.blocks.json",
+        "archive/t008_qwen3_training_runbook_20261019/training_runbook.md",
+        "archive/t008_qwen3_training_runbook_20261019/training_runbook.txt"
+      ]
+    },
+    {
+      "id": "1LpG9sSd5HYLHCqsl1LDY1m6CJcCHzIOj",
+      "evidence_paths": [
+        "archive/t008_qwen3_identity_classification_20261019/IDENTITY_CLASSIFICATION.md",
+        "archive/t008_qwen3_identity_classification_20261019_delivery/IDENTITY_CLASSIFICATION.md",
+        "archive/t008_qwen3_official2048_update_20261019/evidence/historical_remote_report_1Q4drsBjcFp8IEwRSmpYi_iqKMyifXRTc.md",
+        "archive/t008_qwen3_official2048_update_20261019/evidence/pre_update_remote_readback.json",
+        "archive/t008_qwen3_official2048_update_20261019/reports/historical_classification_with_current_notice.md",
+        "archive/t008_qwen3_official2048_update_20261019_delivery/1Q4drsBjcFp8IEwRSmpYi_iqKMyifXRTc_historical_classification_with_current_notice.md",
+        "archive/t008_qwen3_official2048_update_20261019_delivery/delivery_receipt.json",
+        "archive/t008_qwen3_sft_v12_followup_review_20261019_delivery/readback_receipt.json"
+      ]
+    },
+    {
+      "id": "1MFd6TQA0mR4JdtHmyU-07nOjvE0X-OvQjnvOQ_N_BrM",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/discovery_0.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/identity_discovery_1.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/discovery_0.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/identity_discovery_1.json"
+      ]
+    },
+    {
+      "id": "1NAt-nLyFnZquakxye4ejpqrbB8w_QdSO",
+      "evidence_paths": [
+        "archive/t008_qwen3_official2048_update_20261019/evidence/historical_remote_report_1p-awqvTM89aQ1Y89YHIiq2kbWNRrQDou.md",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/entity_application_fetch.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/identity_discovery_1.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/reports/complete_report.md",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/reports/source_identity_audit.md",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/entity_application_fetch.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/identity_discovery_1.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/reports/complete_report.md",
+        "archive/t008_qwen3_sft_v12_cpu/reports/source_identity_audit.md"
+      ]
+    },
+    {
+      "id": "1NujUrwxnWvP5uQ7rhFw2DWWFY-K3mpE5B35LSeqhXUk",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/discovery_0.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/discovery_0.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/identity_discovery_2.json"
+      ]
+    },
+    {
+      "id": "1NxyCmAfjr2BpyAVtH7kkHCZadP63zFdz",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/discovery_0.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/discovery_1.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/discovery_0.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/discovery_1.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/identity_discovery_2.json"
+      ]
+    },
+    {
+      "id": "1O1vDI4tCU9LGY5vdNw4cjkAlVfRej5jc",
+      "evidence_paths": [
+        "archive/t008_qwen3_official2048_update_20261019/reports/complete_report.md",
+        "archive/t008_qwen3_official2048_update_20261019_delivery/1p-awqvTM89aQ1Y89YHIiq2kbWNRrQDou_complete_report.md",
+        "archive/t008_qwen3_sft_v12_followup_review_20261019_delivery/readback_receipt.json"
+      ]
+    },
+    {
+      "id": "1PPAAfC1hh-boDreEPljbKK_TyrHoK9tN",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/discovery_1.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/discovery_1.json"
+      ]
+    },
+    {
+      "id": "1PUMa2W9OpCFOImL0ZGSLbTbY7TLOEZ5c",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/inputs/task_T008.txt",
+        "archive/t008_qwen3_sft_v12_cpu/inputs/task_T008.txt"
+      ]
+    },
+    {
+      "id": "1PZTfbAI5rpTwIKDRz9tU5PMtaXu86xLu",
+      "evidence_paths": [
+        "archive/t008_qwen3_handoff_20261019/HANDOFF.blocks.json",
+        "archive/t008_qwen3_handoff_20261019/HANDOFF.md",
+        "archive/t008_qwen3_handoff_20261019/HANDOFF.txt",
+        "archive/t008_qwen3_handoff_20261019/HANDOFF_STATE.json"
+      ]
+    },
+    {
+      "id": "1Q0YN7b5v7VmegJviARPezyTO-yews_p2jlANwxLXE4o",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/inputs/task_T008.txt",
+        "archive/t008_qwen3_sft_v12_cpu/inputs/task_T008.txt"
+      ]
+    },
+    {
+      "id": "1Q3OUJi3tDEfoYEizJhthtNEf19GOxVYcyuET1u-fris",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/discovery_0.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/project_baseline_fetch.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/project_baseline_fetched_text.txt",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/discovery_0.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/project_baseline_fetch.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/project_baseline_fetched_text.txt"
+      ]
+    },
+    {
+      "id": "1Q4drsBjcFp8IEwRSmpYi_iqKMyifXRTc",
+      "evidence_paths": [
+        "archive/t008_qwen3_identity_classification_20261019_delivery/readback_receipt.json",
+        "archive/t008_qwen3_official2048_update_20261019/evidence/pre_update_remote_readback.json",
+        "archive/t008_qwen3_official2048_update_20261019_delivery/delivery_receipt.json"
+      ]
+    },
+    {
+      "id": "1QbFKL9_3RT7ZmWShSjLqXigEUbt_1F0X",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/discovery_0.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/discovery_0.json"
+      ]
+    },
+    {
+      "id": "1RJYFl5zDWp9eM3sJBNPaJh6y3r9hElbW",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/T008_Qwen3_SFT_v1.2_CPU_交付回执_20261018.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/1RJYFl5zDWp9eM3sJBNPaJh6y3r9hElbW.verification.json"
+      ]
+    },
+    {
+      "id": "1Rjwc8dqObO6w0shqV7YrK1nP0277DvJHRloR4_mzObc",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/project_baseline_fetch.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/project_baseline_fetched_text.txt",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/project_baseline_fetch.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/project_baseline_fetched_text.txt"
+      ]
+    },
+    {
+      "id": "1Rob0iWe0KzKSLz4u-0UR6ajWeDM_nGit6msIrzwITFU",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/discovery_0.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/inputs/task_T008.txt",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/discovery_0.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/inputs/task_T008.txt"
+      ]
+    },
+    {
+      "id": "1Sj3vWWxSMBM1atq9FgRyBnC89TYmDRNN6R_X6MIUFo4",
+      "evidence_paths": [
+        "archive/t008_qwen3_official2048_update_20261019/evidence/historical_remote_report_1p-awqvTM89aQ1Y89YHIiq2kbWNRrQDou.md",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/discovery_0.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/project_baseline_fetch.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/inputs/task_T008.txt",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/reports/complete_report.md",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/reports/source_identity_audit.md",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/discovery_0.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/project_baseline_fetch.json",
+        "archive/t008_qwen3_sft_v12_cpu/inputs/task_T008.txt",
+        "archive/t008_qwen3_sft_v12_cpu/reports/complete_report.md",
+        "archive/t008_qwen3_sft_v12_cpu/reports/source_identity_audit.md"
+      ]
+    },
+    {
+      "id": "1T1UJDXTxt0tsVsgiwPXdjS6-DD8DWM-e",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/project_baseline_fetch.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/project_baseline_fetched_text.txt",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/project_baseline_fetch.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/project_baseline_fetched_text.txt"
+      ]
+    },
+    {
+      "id": "1T5HMMMhqcfTLsU7cizzNtiMstJenGJHS",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/discovery_1.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/discovery_1.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/identity_discovery_2.json"
+      ]
+    },
+    {
+      "id": "1U490aCdd2E838OrxSPK_Lzcn12VQ_TQ8",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/identity_discovery_1.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/identity_discovery_1.json"
+      ]
+    },
+    {
+      "id": "1UH83KOl3DkQGOa0AcZS-qZFCy9yhDS5N",
+      "evidence_paths": [
+        "archive/t008_qwen3_native_entry_20261019_delivery/delivery_receipt.json",
+        "archive/t008_qwen3_native_entry_20261019_delivery/readback/receipt.json"
+      ]
+    },
+    {
+      "id": "1UNoS6tjac7Qwr54W3ciP67txy_dXp7sOc-MePC_AcyE",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/inputs/task_T008.txt",
+        "archive/t008_qwen3_sft_v12_cpu/inputs/task_T008.txt"
+      ]
+    },
+    {
+      "id": "1UzkbjDHfgoZpMuCPYmQjnN2FjsxtNP6ZZD9YSXsH_1U",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/discovery_0.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/discovery_0.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/identity_discovery_2.json"
+      ]
+    },
+    {
+      "id": "1V-oysRsNKQwXKSWuqvWpjZlBUMr8HmrI",
+      "evidence_paths": [
+        "archive/t008_qwen3_gpu_sft_20261019/payload/approval.json",
+        "archive/t008_qwen3_handoff_20261019/HANDOFF.blocks.json",
+        "archive/t008_qwen3_handoff_20261019/HANDOFF.md",
+        "archive/t008_qwen3_handoff_20261019/HANDOFF.txt",
+        "archive/t008_qwen3_handoff_20261019/HANDOFF_STATE.json",
+        "archive/t008_qwen3_native_entry_20261019_delivery/delivery_receipt.json",
+        "archive/t008_qwen3_native_entry_20261019_delivery/readback/receipt.json",
+        "archive/t008_qwen3_training_runbook_20261019/training_runbook.blocks.json",
+        "archive/t008_qwen3_training_runbook_20261019/training_runbook.md",
+        "archive/t008_qwen3_training_runbook_20261019/training_runbook.txt"
+      ]
+    },
+    {
+      "id": "1VAIcmdCgaO69w0cjkuVV3IzHjo3_aSUJX2a1n53VlRM",
+      "evidence_paths": [
+        "archive/t008_qwen3_handoff_20261019/HANDOFF.blocks.json",
+        "archive/t008_qwen3_handoff_20261019/HANDOFF.md",
+        "archive/t008_qwen3_handoff_20261019/HANDOFF.txt",
+        "archive/t008_qwen3_training_runbook_20261019.readback.receipt.json",
+        "archive/t008_qwen3_training_runbook_20261019/GOOGLE_DOCS_READBACK.json",
+        "archive/t008_qwen3_training_runbook_20261019/MANIFEST.json",
+        "archive/t008_qwen3_v12_process_restore_20261019/evidence/delivery-document-readback.json",
+        "archive/t008_qwen3_v12_process_restore_20261019/plan.blocks.json",
+        "archive/t008_qwen3_v12_process_restore_20261019/plan.md",
+        "archive/t008_qwen3_v12_process_restore_20261019/plan.txt"
+      ]
+    },
+    {
+      "id": "1W6P9joYUpK5LVVGCGl2jNkCGkRnDVRCd",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/discovery_0.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/discovery_0.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/identity_discovery_2.json"
+      ]
+    },
+    {
+      "id": "1WQXj-bgSvSsQXDqeEvryixo0SnYrR2WnEJTpMVFF0oU",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/identity_discovery_2.json"
+      ]
+    },
+    {
+      "id": "1WwDJpl5K-5edN51o3rFj8o1djGtUlwM-",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/identity_discovery_1.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/identity_discovery_1.json"
+      ]
+    },
+    {
+      "id": "1WyYtLjLHc-bge26C9xJqyqdvH0xRjwrx",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/identity_discovery_2.json"
+      ]
+    },
+    {
+      "id": "1XbmHRDdZi70Cwzn_hqnDkjCcqb2R1Pc5",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/discovery_1.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/discovery_1.json"
+      ]
+    },
+    {
+      "id": "1Y151V7ijIbiDZ-f20mmJZnPoRYCH7Z46",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/project_baseline_fetch.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/project_baseline_fetched_text.txt",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/project_baseline_fetch.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/project_baseline_fetched_text.txt"
+      ]
+    },
+    {
+      "id": "1Y2T8jv9YL_wnknwuoywjxOgx1IyyTn2k",
+      "evidence_paths": [
+        "archive/t008_qwen3_gpu_sft_20261019_delivery/DELIVERY_RECEIPT.json",
+        "archive/t008_qwen3_gpu_sft_20261019_delivery/DELIVERY_RECEIPT.readback.json",
+        "archive/t008_qwen3_handoff_20261019/HANDOFF.blocks.json",
+        "archive/t008_qwen3_handoff_20261019/HANDOFF.md",
+        "archive/t008_qwen3_handoff_20261019/HANDOFF.txt"
+      ]
+    },
+    {
+      "id": "1Z5qa-oFrmwTcZGLHbDtZStbG9zDN2rRg",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/identity_discovery_2.json"
+      ]
+    },
+    {
+      "id": "1Z9-mh9336WP4EjapGPXP53rtulR--BhLrFnC5_eD8to",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/discovery_0.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/discovery_1.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/discovery_0.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/discovery_1.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/identity_discovery_2.json"
+      ]
+    },
+    {
+      "id": "1ZAqwpPV1cXoSTVBxALnHC7dJflTioqPc-M15Ff4Ywfc",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/discovery_0.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/project_baseline_fetch.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/project_baseline_fetched_text.txt",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/discovery_0.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/project_baseline_fetch.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/project_baseline_fetched_text.txt"
+      ]
+    },
+    {
+      "id": "1ZpfeaDSJz5OAPTxrRobf-WIJhfwIFDHgOv6RhbtpgMM",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/discovery_1.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/discovery_1.json"
+      ]
+    },
+    {
+      "id": "1_8EsaihowIudIfpgz3snkv_6M-ocz0FI",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/discovery_0.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/discovery_0.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/identity_discovery_2.json"
+      ]
+    },
+    {
+      "id": "1_DJMjOFkJtjZtWvTZRr_E2dV7Ejqh5Fc",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/identity_discovery_2.json"
+      ]
+    },
+    {
+      "id": "1_VFtDlRQ9fjI6O1UnGXUkQI-cug6e-Xo",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/identity_discovery_2.json"
+      ]
+    },
+    {
+      "id": "1_dW674oXPg3PUVkORSkesk4sR3XvcvTb",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/discovery_1.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/discovery_1.json"
+      ]
+    },
+    {
+      "id": "1_iE_KIOFBvAipzMB16w6vuiU6hiF9Bvj",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/identity_discovery_2.json"
+      ]
+    },
+    {
+      "id": "1_oGSHAB8ZRdSC_yep7Wfgq-Hqr6vhi7f",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/project_baseline_fetch.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/project_baseline_fetched_text.txt",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/project_baseline_fetch.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/project_baseline_fetched_text.txt"
+      ]
+    },
+    {
+      "id": "1ayIfi47QPucCzn986o7d59BsJH-JfJHy",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/inputs/task_T008.txt",
+        "archive/t008_qwen3_sft_v12_cpu/inputs/task_T008.txt"
+      ]
+    },
+    {
+      "id": "1b4dGVQCPAcm5FuMkRzNMqq0A4lAbbZdO",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/discovery_0.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/discovery_0.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/identity_discovery_2.json"
+      ]
+    },
+    {
+      "id": "1bRsdHXdiMp5oHaWG9YEdExxDyo7xXTxoZTIXHGHyhOY",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/discovery_1.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/discovery_1.json"
+      ]
+    },
+    {
+      "id": "1bkhitG2t4SQ3HegrC7GOJGZBzy49ryCLnKkBOW1tmP0",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/identity_discovery_2.json"
+      ]
+    },
+    {
+      "id": "1cCGEbKD2bo2BUdOkfaQdVr91ndc0QdEf",
+      "evidence_paths": [
+        "archive/t008_qwen3_official2048_update_20261019_delivery/delivery_receipt.json"
+      ]
+    },
+    {
+      "id": "1cYyDqU35Bgvd6j1_8JZj2Zq5lvo3FxLp",
+      "evidence_paths": [
+        "archive/t008_qwen3_identity_classification_20261019_delivery/readback_receipt.json"
+      ]
+    },
+    {
+      "id": "1c_V3oLZ2pf7T6Hh4gpjaF0XiaJ9bGD2hjkqN7V0mkX8",
+      "evidence_paths": [
+        "archive/t008_qwen3_official2048_update_20261019/evidence/historical_remote_report_1p-awqvTM89aQ1Y89YHIiq2kbWNRrQDou.md",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/discovery_0.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/identity_discovery_0.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/reports/complete_report.md",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/reports/source_identity_audit.md",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/discovery_0.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/identity_discovery_0.json",
+        "archive/t008_qwen3_sft_v12_cpu/reports/complete_report.md",
+        "archive/t008_qwen3_sft_v12_cpu/reports/source_identity_audit.md"
+      ]
+    },
+    {
+      "id": "1d0KhTg78OZtxqOjEmyfaKmu492sMcTAq",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/discovery_0.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/discovery_0.json"
+      ]
+    },
+    {
+      "id": "1eLyYeOGgLbG8DcGOTpCdVN_XJHih_hU8EYmeXRuTKbM",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/identity_discovery_2.json"
+      ]
+    },
+    {
+      "id": "1emuSDwyMisVzjPlfcRfTJVTOP-TaehzoPZbJaKYeEvA",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/identity_discovery_2.json"
+      ]
+    },
+    {
+      "id": "1fhiuIhZNgHJjO09sFD9hrB6ULYiQFV84",
+      "evidence_paths": [
+        "archive/t008_qwen3_handoff_20261019/HANDOFF.blocks.json",
+        "archive/t008_qwen3_handoff_20261019/HANDOFF.md",
+        "archive/t008_qwen3_handoff_20261019/HANDOFF.txt",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/T008_Qwen3_SFT_v1.2_CPU_交付回执_20261018.json"
+      ]
+    },
+    {
+      "id": "1gC579Iy-4ZH4W5HyeNdokA4SfBYVKvU9r2I2wqXG0SY",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/discovery_0.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/discovery_0.json"
+      ]
+    },
+    {
+      "id": "1gEmQ0twCcHjJjqcYcaiCNRUuC7HrFizuVJXDgFiYEm0",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/inputs/task_T008.txt",
+        "archive/t008_qwen3_sft_v12_cpu/inputs/task_T008.txt"
+      ]
+    },
+    {
+      "id": "1hHnv5ueHJE26xp3skUFPD8OO-sqoXaI28LXURZt7VOk",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/identity_discovery_2.json"
+      ]
+    },
+    {
+      "id": "1hUIrGoM7ucouDFlvJwmjj3V-hPSmodlC",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/inputs/task_T008.txt",
+        "archive/t008_qwen3_sft_v12_cpu/inputs/task_T008.txt"
+      ]
+    },
+    {
+      "id": "1i_zel_Jcyw7JBQUNUNJx0Qwp0vtCdC-e7FVajArLWMg",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/discovery_0.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/project_baseline_fetch.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/project_baseline_fetched_text.txt",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/discovery_0.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/project_baseline_fetch.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/project_baseline_fetched_text.txt"
+      ]
+    },
+    {
+      "id": "1imVDnce0C1PNLIc_h9zIceNGBRP56O8DMmPZ2549ONE",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/discovery_0.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/discovery_0.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/identity_discovery_2.json"
+      ]
+    },
+    {
+      "id": "1ivqbNYIItR2XIvw3dgsLeZzOX0Ssc_ScGqwGcnfPYEw",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/identity_discovery_2.json"
+      ]
+    },
+    {
+      "id": "1jD_LUGbU34T1EKSxs1tpQR5G7VrMdAlI",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/discovery_1.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/discovery_1.json"
+      ]
+    },
+    {
+      "id": "1jh6iagO6yeHDgVgGnwCQc5qX91dOFZKa",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/identity_discovery_2.json"
+      ]
+    },
+    {
+      "id": "1kTcIg-i5-olexoZIIyiKmgDusVEUHWOu-iJrk5PepWY",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/project_baseline_fetch.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/project_baseline_fetched_text.txt",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/project_baseline_fetch.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/project_baseline_fetched_text.txt"
+      ]
+    },
+    {
+      "id": "1kVscp_ukoOCXrG66aFlmw8Db4GQaoD3A",
+      "evidence_paths": [
+        "archive/t008_qwen3_handoff_20261019/HANDOFF.blocks.json",
+        "archive/t008_qwen3_handoff_20261019/HANDOFF.md",
+        "archive/t008_qwen3_handoff_20261019/HANDOFF.txt",
+        "archive/t008_qwen3_handoff_20261019/HANDOFF_STATE.json"
+      ]
+    },
+    {
+      "id": "1kXt_rEX4GrogZjMZPoJOF47a0jzAIOVc",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/discovery_0.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/discovery_0.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/identity_discovery_2.json"
+      ]
+    },
+    {
+      "id": "1lIXaxowO3H9PxNHE3Mp3GbdAaNWM4S7B",
+      "evidence_paths": [
+        "archive/t008_qwen3_gpu_sft_20261019_delivery/DELIVERY_RECEIPT.json",
+        "archive/t008_qwen3_gpu_sft_20261019_delivery/DELIVERY_RECEIPT.readback.json",
+        "archive/t008_qwen3_native_entry_20261019_delivery/delivery_receipt.json",
+        "archive/t008_qwen3_native_entry_20261019_delivery/readback/receipt.json",
+        "archive/t008_qwen3_official2048_update_20261019_delivery/delivery_receipt.json"
+      ]
+    },
+    {
+      "id": "1lqzHHv4pJ-vtzqULsGkVXdSYmbRy5ihU",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/inputs/task_T008.txt",
+        "archive/t008_qwen3_sft_v12_cpu/inputs/task_T008.txt"
+      ]
+    },
+    {
+      "id": "1mAJxYzrTp39TgIaXdmeFlonvFMR60rLM",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/discovery_1.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/discovery_1.json"
+      ]
+    },
+    {
+      "id": "1mvIGZRKY1SQiQY2NvDKkwbxCDYm500ER3nIKBD_uWgc",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/project_baseline_fetch.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/project_baseline_fetched_text.txt",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/project_baseline_fetch.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/project_baseline_fetched_text.txt"
+      ]
+    },
+    {
+      "id": "1nT7XS7IWB_-hWj1fD3lkz5cYn0ebkV9d",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/discovery_0.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/discovery_1.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/discovery_0.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/discovery_1.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/identity_discovery_2.json"
+      ]
+    },
+    {
+      "id": "1ndZG7PJ5YenUh1nfrlr7t3hOuq6P6Mxt",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/project_baseline_fetch.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/project_baseline_fetched_text.txt",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/project_baseline_fetch.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/project_baseline_fetched_text.txt"
+      ]
+    },
+    {
+      "id": "1nw9Vf7IclvY8o3VS4InHAz1o1s-v0NC0NF5lNEI-D1Q",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/identity_discovery_2.json"
+      ]
+    },
+    {
+      "id": "1oYS1pFciWk2s2v0upunQI5IKarXtY-Y3kO9AFaIzKBI",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/identity_discovery_2.json"
+      ]
+    },
+    {
+      "id": "1odXiGVIkfVNH5t03wUZeCs_7HQk9CrhX",
+      "evidence_paths": [
+        "archive/t008_qwen3_native_entry_20261019_delivery/delivery_receipt.json",
+        "archive/t008_qwen3_native_entry_20261019_delivery/readback/receipt.json"
+      ]
+    },
+    {
+      "id": "1oyq7hoxiawpnX9ykfkJfPSmKJaE0MH5k",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/discovery_0.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/discovery_0.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/identity_discovery_2.json"
+      ]
+    },
+    {
+      "id": "1p-awqvTM89aQ1Y89YHIiq2kbWNRrQDou",
+      "evidence_paths": [
+        "archive/t008_qwen3_gpu_sft_20261019_delivery/DELIVERY_RECEIPT.json",
+        "archive/t008_qwen3_gpu_sft_20261019_delivery/DELIVERY_RECEIPT.readback.json",
+        "archive/t008_qwen3_native_entry_20261019_delivery/delivery_receipt.json",
+        "archive/t008_qwen3_native_entry_20261019_delivery/readback/receipt.json",
+        "archive/t008_qwen3_official2048_update_20261019/evidence/pre_update_remote_readback.json",
+        "archive/t008_qwen3_official2048_update_20261019/reports/historical_classification_with_current_notice.md",
+        "archive/t008_qwen3_official2048_update_20261019/reports/historical_review_with_current_notice.md",
+        "archive/t008_qwen3_official2048_update_20261019_delivery/1LpG9sSd5HYLHCqsl1LDY1m6CJcCHzIOj_historical_review_with_current_notice.md",
+        "archive/t008_qwen3_official2048_update_20261019_delivery/1Q4drsBjcFp8IEwRSmpYi_iqKMyifXRTc_historical_classification_with_current_notice.md",
+        "archive/t008_qwen3_official2048_update_20261019_delivery/delivery_receipt.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/T008_Qwen3_SFT_v1.2_CPU_交付回执_20261018.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/1p-awqvTM89aQ1Y89YHIiq2kbWNRrQDou.verification.json",
+        "archive/t008_qwen3_training_runbook_20261019/training_runbook.blocks.json",
+        "archive/t008_qwen3_training_runbook_20261019/training_runbook.md",
+        "archive/t008_qwen3_training_runbook_20261019/training_runbook.txt"
+      ]
+    },
+    {
+      "id": "1pfWdvukrqqoOffay6RvdMEXQkvth7YgC9NCIMSdxWwo",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/identity_discovery_2.json"
+      ]
+    },
+    {
+      "id": "1pznbyzWN5NHQEJ5cpCfCIfV7uW7n5TzF",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/discovery_0.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/discovery_0.json"
+      ]
+    },
+    {
+      "id": "1q61pfT3FzB8O_tuhjykYOlxxuWRhzOyc",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/project_baseline_fetch.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/project_baseline_fetched_text.txt",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/project_baseline_fetch.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/project_baseline_fetched_text.txt"
+      ]
+    },
+    {
+      "id": "1qmp5ZUjKlu4B0K5EMPBwLtJ61-SpYVzN",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/discovery_0.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/discovery_0.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/identity_discovery_2.json"
+      ]
+    },
+    {
+      "id": "1qthOdh6qZX86cYIHjQnzdBo6VRGWZxyv",
+      "evidence_paths": [
+        "archive/t008_qwen3_gpu_sft_20261019_delivery/DELIVERY_RECEIPT.json",
+        "archive/t008_qwen3_gpu_sft_20261019_delivery/DELIVERY_RECEIPT.readback.json"
+      ]
+    },
+    {
+      "id": "1r2a3wtWvgewftkno9HGAHnoBi0Mw_7je",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/discovery_0.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/discovery_0.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/identity_discovery_2.json"
+      ]
+    },
+    {
+      "id": "1r3diP-bizbhPJldZpyMV6f7F9uMTpSU_0awZyH7Qbb4",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/identity_discovery_2.json"
+      ]
+    },
+    {
+      "id": "1r5JaYE0Xbr_qKqGuElwnG5iUoXgU20jG",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/discovery_1.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/discovery_1.json"
+      ]
+    },
+    {
+      "id": "1rVzXaD4MEBo69bYpbxH5XUb4K0FFajNwiHnfB6ze4T4",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/identity_discovery_2.json"
+      ]
+    },
+    {
+      "id": "1sFarrAZgCsGH5kH32GoqmqitSi2iVNq5",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/identity_discovery_2.json"
+      ]
+    },
+    {
+      "id": "1sGwZoIbvrny6y1zSXTQrnqz5vRioNaC_",
+      "evidence_paths": [
+        "archive/t008_qwen3_handoff_20261019/HANDOFF.blocks.json",
+        "archive/t008_qwen3_handoff_20261019/HANDOFF.md",
+        "archive/t008_qwen3_handoff_20261019/HANDOFF.txt",
+        "archive/t008_qwen3_training_runbook_20261019/training_runbook.blocks.json",
+        "archive/t008_qwen3_training_runbook_20261019/training_runbook.md",
+        "archive/t008_qwen3_training_runbook_20261019/training_runbook.txt",
+        "archive/t008_qwen3_v12_process_restore_20261019/plan.blocks.json",
+        "archive/t008_qwen3_v12_process_restore_20261019/plan.md",
+        "archive/t008_qwen3_v12_process_restore_20261019/plan.txt"
+      ]
+    },
+    {
+      "id": "1sK8eWoxzB4CnvJ8FEbiVDIkKEwcbq3Bd",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/discovery_0.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/discovery_0.json"
+      ]
+    },
+    {
+      "id": "1se0oJjdtePCzHMrdCwxuHz4FJVTV-UYG",
+      "evidence_paths": [
+        "archive/t008_qwen3_official2048_update_20261019_delivery/delivery_receipt.json"
+      ]
+    },
+    {
+      "id": "1tWGQARVI0tgvuZiOu3HHQCj6Ita10StD",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/discovery_0.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/discovery_1.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/discovery_0.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/discovery_1.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/identity_discovery_2.json"
+      ]
+    },
+    {
+      "id": "1tvhhjkB9YrvJbABTW_iTtjnclaIL6Q04qhCewAmvxLM",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/inputs/task_T008.txt",
+        "archive/t008_qwen3_sft_v12_cpu/inputs/task_T008.txt"
+      ]
+    },
+    {
+      "id": "1uDrpC7NlzzHPpBrIF6Or-thOvJhuwjVOoHAC6UeQAr8",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/discovery_1.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/discovery_1.json"
+      ]
+    },
+    {
+      "id": "1ukGDc-5-XtfiGqRtq_iQY31V3fNybkyO",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/discovery_0.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/discovery_0.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/identity_discovery_2.json"
+      ]
+    },
+    {
+      "id": "1uo4kAg79WaxtkmFKrU1_MV8wPNF-NpJo",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/project_baseline_fetch.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/project_baseline_fetched_text.txt",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/project_baseline_fetch.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/project_baseline_fetched_text.txt"
+      ]
+    },
+    {
+      "id": "1usqmViBd5s0-pVszZQYtAFOF3g6aTJwtDCJpzQcIpgY",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/project_baseline_fetch.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/project_baseline_fetched_text.txt",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/project_baseline_fetch.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/project_baseline_fetched_text.txt"
+      ]
+    },
+    {
+      "id": "1wI3FPBv1l4pbSTTEFCptr3s9fV3Ynsd6",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/discovery_0.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/discovery_1.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/project_baseline_fetch.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/project_baseline_fetched_text.txt",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/inputs/task_T008.txt",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/discovery_0.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/discovery_1.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/project_baseline_fetch.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/project_baseline_fetched_text.txt",
+        "archive/t008_qwen3_sft_v12_cpu/inputs/task_T008.txt"
+      ]
+    },
+    {
+      "id": "1wcN_fn4-yMsRBlw-Fsn7jamdCvGIIIh3eS1Yf5BzJK0",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/project_baseline_fetch.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/project_baseline_fetched_text.txt",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/project_baseline_fetch.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/project_baseline_fetched_text.txt"
+      ]
+    },
+    {
+      "id": "1wdRDF-qHiYN7yg2Kk6MYR1e7kNKkdrnH",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/identity_discovery_2.json"
+      ]
+    },
+    {
+      "id": "1wwGv94tNCk7q2fSqOX0erNHYi8xQoHv-",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/discovery_1.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/discovery_1.json"
+      ]
+    },
+    {
+      "id": "1wxT0apTFgSM8Pyg6Ag79pMN6IgOevNH8",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/identity_discovery_2.json"
+      ]
+    },
+    {
+      "id": "1xd9-1Rslivs3ID4DLaPwPHsY2XyocpMW",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/identity_discovery_2.json"
+      ]
+    },
+    {
+      "id": "1xgNDFuVhe_O7e3no6MWVjVFn9tJ07jjt",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/discovery_0.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/discovery_0.json"
+      ]
+    },
+    {
+      "id": "1xhUjGTfRnqQ8eSQKLEUihSScmdIoJPPSLrXoJ1_-7HM",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/baseline/Qwen3-8B_自我认知SFT_完整实施方案_v1.2_执行修复版.md",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/baseline/Qwen3-8B_自我认知SFT_完整实施方案_v1.2_执行修复版.md",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/inputs/plan_v1.2.md",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/inputs/plan_v1.2.md",
+        "archive/t008_qwen3_training_runbook_20261019/training_runbook.blocks.json",
+        "archive/t008_qwen3_training_runbook_20261019/training_runbook.md",
+        "archive/t008_qwen3_training_runbook_20261019/training_runbook.txt"
+      ]
+    },
+    {
+      "id": "1xit-E606R0pgYw4QFDbi2J367vi6m3yYZ6Vb6PiMsJs",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/discovery_0.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/project_baseline_fetch.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/project_baseline_fetched_text.txt",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/discovery_0.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/project_baseline_fetch.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/project_baseline_fetched_text.txt"
+      ]
+    },
+    {
+      "id": "1xv8pkiLre_j4r8Czu4knEG6bV0f-2FJDLdxIArDWdd0",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/identity_discovery_2.json"
+      ]
+    },
+    {
+      "id": "1yP-9vB18QMd6sm0xWicpRBNgQMb8Raly",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/identity_discovery_2.json"
+      ]
+    },
+    {
+      "id": "1yf7of3Xiv6tJiWY_SmvQfVFCZqzX05WSYfT2YrFOdTA",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/identity_discovery_2.json"
+      ]
+    },
+    {
+      "id": "1z1eI-5pyXCatpHUpBabqRA9uwmmwm2vEx_Hcm-leyVU",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/discovery_0.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/discovery_0.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/identity_discovery_2.json"
+      ]
+    },
+    {
+      "id": "1zLlXNismEBuL7IrFlEuxN3dLaru2FP6RLQb5ynjGRJE",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/discovery_0.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/discovery_1.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/discovery_0.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/discovery_1.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/identity_discovery_2.json"
+      ]
+    },
+    {
+      "id": "1zVT0Ig9ioZXWkiKgNy5Qb57KiV48y8pSfMc6fHIGrTA",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/discovery_0.json",
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/identity_discovery_2.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/discovery_0.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/identity_discovery_2.json"
+      ]
+    },
+    {
+      "id": "1z_AQXlaKL70woZ0Qt5K56tJbXuJdUXe1jDjGtjGK6Gc",
+      "evidence_paths": [
+        "archive/t008_qwen3_sft_v12_cpu/delivery/readback/unpacked/T008_Qwen3_SFT_v1.2_CPU/evidence/source_identity/discovery_0.json",
+        "archive/t008_qwen3_sft_v12_cpu/evidence/source_identity/discovery_0.json"
+      ]
+    }
+  ],
+  "this_repository_uploaded": false,
+  "remote_git_configured": true,
+  "historical_receipts": "archive/*_delivery and adjacent *.receipt*.json; entries retain original IDs and hashes",
+  "github_repository": "https://github.com/yuhuan0669/t008-qwen3-sft",
+  "this_repository_uploaded_field_scope": "Google Drive only; new GitHub delivery is recorded separately"
+}

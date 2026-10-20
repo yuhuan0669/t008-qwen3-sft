@@ -1,0 +1,46 @@
+{
+  "gpu_inventory": {
+    "ok": true,
+    "result": {
+      "argv": [
+        "kubectl",
+        "--context",
+        "lmas00-direct",
+        "-n",
+        "vllm",
+        "exec",
+        "deploy/vllm",
+        "--",
+        "nvidia-smi",
+        "--query-gpu=uuid,name,memory.total,memory.used,utilization.gpu",
+        "--format=csv,noheader"
+      ],
+      "exit_code": 0,
+      "stdout": "GPU-4be5e60c-519d-6fb6-4d93-23ce1e897e2e, NVIDIA GeForce RTX 4090, 24564 MiB, 22176 MiB, 0 %\n",
+      "stderr": ""
+    },
+    "observed_at_utc": "2026-10-19T08:41:00.265111+00:00"
+  },
+  "gpu_processes": {
+    "ok": true,
+    "result": {
+      "argv": [
+        "kubectl",
+        "--context",
+        "lmas00-direct",
+        "-n",
+        "vllm",
+        "exec",
+        "deploy/vllm",
+        "--",
+        "nvidia-smi",
+        "--query-compute-apps=pid,process_name,used_memory",
+        "--format=csv,noheader"
+      ],
+      "exit_code": 0,
+      "stdout": "215, VLLM::EngineCore, 22166 MiB\n",
+      "stderr": ""
+    },
+    "observed_at_utc": "2026-10-19T08:41:00.264648+00:00"
+  }
+}

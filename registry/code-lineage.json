@@ -1,0 +1,103 @@
+{
+  "schema": "t008-code-lineage-v1",
+  "source_repository": "/Users/ben/aiws/codex/keywords/t008_qwen3_native_entry_20261019/code",
+  "original_head": "e7ae45aa7438c8bcca8318d3531854f7f5e7db39",
+  "current_path": "code",
+  "content_changes_in_unification": false,
+  "commits": [
+    {
+      "commit": "1b575e151cafbf404de0ed27245bdf3e6bd0cab2",
+      "subject": "Archive exact Drive v1.2 execution baseline"
+    },
+    {
+      "commit": "75f6086d32380c88c8f925dd1d6ef08b6eefb45c",
+      "subject": "Fix CPU-verified placeholder, tokenizer and Swift CLI compatibility"
+    },
+    {
+      "commit": "f56ee318f73ba9dd9ac8f7b82b43adec40ef6ec2",
+      "subject": "Reject non-boolean approval and verification flags"
+    },
+    {
+      "commit": "55042a0c2eb3da96f38b019650838bfdf6b4a03b",
+      "subject": "Require remote HTTPS ClearML model storage and uncached readback"
+    },
+    {
+      "commit": "e7ae45aa7438c8bcca8318d3531854f7f5e7db39",
+      "subject": "Adapt identity SFT entry to official native loading and CPU evidence guard"
+    }
+  ],
+  "current_code_files": [
+    {
+      "path": ".gitignore",
+      "sha256": "862263fa1f46c20f0d1e4dac5ffcc75abd55c08211b2c3864c5f8764b9d87793"
+    },
+    {
+      "path": "DELIVERY_MANIFEST.json",
+      "sha256": "c56cf089dc4583ae0c5c55a5c33aa0d3ca4fbd293bc3b4b2924c861bc202a663"
+    },
+    {
+      "path": "QA_REPORT_v1.2.md",
+      "sha256": "b67c0d25992465ed478dced00176a0ceef4af36fd0cd0f32b62295a82fb240e0"
+    },
+    {
+      "path": "README.md",
+      "sha256": "e68f05667c9fd70e025582b0d32887a740aeb424f46a9c0fdb3c3f6ea5987d08"
+    },
+    {
+      "path": "derive_snapshot.py",
+      "sha256": "1129f58a7abe1c82423345142b628908c40088cd822e46f4b9528e09e06e646f"
+    },
+    {
+      "path": "eval_identity.py",
+      "sha256": "9602aa4e1e094116307ab0ee72e11c12b0ea35285985fa91152018f89cc2b4e9"
+    },
+    {
+      "path": "identity-spec.confirmed.json",
+      "sha256": "96d595f3bdf6ca78d1f812f9b87cb53dffa4eb323fabeb758c2e09a63b5d2ec4"
+    },
+    {
+      "path": "identity-spec.example.json",
+      "sha256": "96d595f3bdf6ca78d1f812f9b87cb53dffa4eb323fabeb758c2e09a63b5d2ec4"
+    },
+    {
+      "path": "native_guard.py",
+      "sha256": "05a7458ce978607da507fb40ce5ab67528798eeb47b22829b608c3eb88dd16e3"
+    },
+    {
+      "path": "native_recipe.py",
+      "sha256": "30024469aa91e68711809b2f975a34d3f5a4652b38af8c5a8d7c7246ab5f8774"
+    },
+    {
+      "path": "preflight_data.py",
+      "sha256": "717264e25f87d17364a5833b8a153c01a82efc5aa49833e2a7bf91538d71e4d2"
+    },
+    {
+      "path": "prepare_official.py",
+      "sha256": "aff3eef6fb5eccd7618d1f905010bca79dc9ed6ac79bf7a7360394dd8794b168"
+    },
+    {
+      "path": "register_evaluation.py",
+      "sha256": "7fe7718738d290b3f125b433b50c1be68a70f14dbe5c6fa0d84c747ba9485d51"
+    },
+    {
+      "path": "run_identity.py",
+      "sha256": "47f353024312912dbe76f028caca2943fe1a6f54c5f636b41c92ffe9b906c395"
+    },
+    {
+      "path": "tests/test_contract.py",
+      "sha256": "d88deb09dc1b5712e69f1677675eff585d46f6573ecd68b5c9b3cff181aa39f6"
+    },
+    {
+      "path": "tests/test_native_entry.py",
+      "sha256": "24d72d8aed1b9389312b973d1cad308f336c9da4d73217b4739345e08f6189a4"
+    },
+    {
+      "path": "tests/test现场_regressions.py",
+      "sha256": "21e92b09629e655bae795c9598f144485e2a611754571e8cc0dd454e039d9f80"
+    },
+    {
+      "path": "train_identity.sh",
+      "sha256": "a48ef1402c011cceeba0ed50f9e5ff16dcc37d47203808f6939f3205d6eb2801"
+    }
+  ]
+}

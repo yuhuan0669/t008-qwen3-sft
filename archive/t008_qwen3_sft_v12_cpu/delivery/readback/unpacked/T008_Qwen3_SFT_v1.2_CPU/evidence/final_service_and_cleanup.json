@@ -1,0 +1,47 @@
+{
+  "collected_at_utc": "2026-10-19T06:06:47.715294+00:00",
+  "records": [
+    {
+      "argv": [
+        "kubectl",
+        "-n",
+        "vllm",
+        "get",
+        "deploy",
+        "vllm",
+        "-o",
+        "jsonpath={.spec.replicas} {.status.readyReplicas}"
+      ],
+      "exit_code": 0,
+      "stdout": "1 1",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/usr/bin/curl",
+        "-sS",
+        "--max-time",
+        "15",
+        "-o",
+        "/dev/null",
+        "-w",
+        "%{http_code} %{ssl_verify_result}",
+        "https://vllm.10.140.17.125.nip.io/health"
+      ],
+      "exit_code": 0,
+      "stdout": "200 0",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "ssh",
+        "worker05",
+        "nerdctl --namespace k8s.io ps -a --format \"{{.Names}}\" | grep -E \"^t008-identity-v12-cpu(-final-check)?$\""
+      ],
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "cpu_containers_removed": true
+}

@@ -1,0 +1,19 @@
+{"at_utc": "2026-10-19T09:50:14.743441+00:00", "gpu": ["GPU-4be5e60c-519d-6fb6-4d93-23ce1e897e2e, NVIDIA GeForce RTX 4090, 24564, 1, 0"], "processes": []}
+{"at_utc": "2026-10-19T09:50:24.776643+00:00", "gpu": ["GPU-4be5e60c-519d-6fb6-4d93-23ce1e897e2e, NVIDIA GeForce RTX 4090, 24564, 4, 0"], "processes": []}
+{"at_utc": "2026-10-19T09:50:34.819488+00:00", "gpu": ["GPU-4be5e60c-519d-6fb6-4d93-23ce1e897e2e, NVIDIA GeForce RTX 4090, 24564, 4, 0"], "processes": []}
+{"at_utc": "2026-10-19T09:50:44.867240+00:00", "gpu": ["GPU-4be5e60c-519d-6fb6-4d93-23ce1e897e2e, NVIDIA GeForce RTX 4090, 24564, 4, 0"], "processes": []}
+{"at_utc": "2026-10-19T09:50:54.922393+00:00", "gpu": ["GPU-4be5e60c-519d-6fb6-4d93-23ce1e897e2e, NVIDIA GeForce RTX 4090, 24564, 4, 0"], "processes": []}
+{"at_utc": "2026-10-19T09:51:04.961694+00:00", "gpu": ["GPU-4be5e60c-519d-6fb6-4d93-23ce1e897e2e, NVIDIA GeForce RTX 4090, 24564, 4, 0"], "processes": []}
+{"at_utc": "2026-10-19T09:51:15.015345+00:00", "gpu": ["GPU-4be5e60c-519d-6fb6-4d93-23ce1e897e2e, NVIDIA GeForce RTX 4090, 24564, 4, 0"], "processes": []}
+{"at_utc": "2026-10-19T09:51:25.064126+00:00", "gpu": ["GPU-4be5e60c-519d-6fb6-4d93-23ce1e897e2e, NVIDIA GeForce RTX 4090, 24564, 4, 0"], "processes": []}
+{"at_utc": "2026-10-19T09:51:35.103439+00:00", "gpu": ["GPU-4be5e60c-519d-6fb6-4d93-23ce1e897e2e, NVIDIA GeForce RTX 4090, 24564, 4, 0"], "processes": []}
+{"at_utc": "2026-10-19T09:51:45.152106+00:00", "gpu": ["GPU-4be5e60c-519d-6fb6-4d93-23ce1e897e2e, NVIDIA GeForce RTX 4090, 24564, 4, 0"], "processes": []}
+{"at_utc": "2026-10-19T09:51:55.204938+00:00", "gpu": ["GPU-4be5e60c-519d-6fb6-4d93-23ce1e897e2e, NVIDIA GeForce RTX 4090, 24564, 4, 0"], "processes": []}
+{"at_utc": "2026-10-19T09:52:05.242210+00:00", "gpu": ["GPU-4be5e60c-519d-6fb6-4d93-23ce1e897e2e, NVIDIA GeForce RTX 4090, 24564, 4, 0"], "processes": []}
+{"at_utc": "2026-10-19T09:52:15.285357+00:00", "gpu": ["GPU-4be5e60c-519d-6fb6-4d93-23ce1e897e2e, NVIDIA GeForce RTX 4090, 24564, 16022, 0"], "processes": ["157, /usr/local/bin/python, 16012"]}
+{"at_utc": "2026-10-19T09:52:25.322772+00:00", "gpu": ["GPU-4be5e60c-519d-6fb6-4d93-23ce1e897e2e, NVIDIA GeForce RTX 4090, 24564, 16022, 0"], "processes": ["157, /usr/local/bin/python, 16012"]}
+{"at_utc": "2026-10-19T09:52:35.361420+00:00", "gpu": ["GPU-4be5e60c-519d-6fb6-4d93-23ce1e897e2e, NVIDIA GeForce RTX 4090, 24564, 16022, 0"], "processes": ["157, /usr/local/bin/python, 16012"]}
+{"at_utc": "2026-10-19T09:52:45.402864+00:00", "gpu": ["GPU-4be5e60c-519d-6fb6-4d93-23ce1e897e2e, NVIDIA GeForce RTX 4090, 24564, 16022, 0"], "processes": ["157, /usr/local/bin/python, 16012"]}
+{"at_utc": "2026-10-19T09:52:55.445919+00:00", "gpu": ["GPU-4be5e60c-519d-6fb6-4d93-23ce1e897e2e, NVIDIA GeForce RTX 4090, 24564, 23084, 100"], "processes": ["157, /usr/local/bin/python, 23074"]}
+{"at_utc": "2026-10-19T09:53:05.483301+00:00", "gpu": ["GPU-4be5e60c-519d-6fb6-4d93-23ce1e897e2e, NVIDIA GeForce RTX 4090, 24564, 21812, 100"], "processes": ["157, /usr/local/bin/python, 21802"]}
+{"at_utc": "2026-10-19T09:53:15.525421+00:00", "gpu": ["GPU-4be5e60c-519d-6fb6-4d93-23ce1e897e2e, NVIDIA GeForce RTX 4090, 24564, 4, 100"], "processes": []}

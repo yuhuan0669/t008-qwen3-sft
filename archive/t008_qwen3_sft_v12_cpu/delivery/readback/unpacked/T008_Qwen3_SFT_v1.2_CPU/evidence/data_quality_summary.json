@@ -1,0 +1,52 @@
+{
+  "raw_loader_columns": [
+    "messages",
+    "dataset"
+  ],
+  "raw_source_label_counts": {
+    "swift/Qwen3-SFT-Mixin": 2000,
+    "swift/self-cognition": 600
+  },
+  "normalization": "v1.2 normal_row retains identical role/content messages and removes only dataset attribution metadata; raw-loader preserved separately",
+  "messages_preserved_exactly": true,
+  "failed_guard_capture_and_fixed_export_same_train_bytes": true,
+  "original_rows": 2600,
+  "original_unique": 1108,
+  "mixin_original_source_rows": 1000,
+  "mixin_exposures": 2000,
+  "identity_original_source_rows": 108,
+  "identity_exposures": 600,
+  "identity_repeat_histogram": {
+    "5": 48,
+    "6": 60
+  },
+  "candidate_rows": 1642,
+  "candidate_unique": 629,
+  "excluded_rows": 958,
+  "exclusion_source": "Actual Swift qwen3 length >2048 only",
+  "excluded_mixin": 958,
+  "excluded_identity": 0,
+  "candidate_mixin_exposures": 1042,
+  "candidate_identity_exposures": 600,
+  "candidate_bytes_and_order_preserved": true,
+  "original_identity_fraction": 0.23076923076923078,
+  "candidate_identity_fraction": 0.3654080389768575,
+  "all_identity_placeholders_replaced": true,
+  "mixin_jinja_false_positive_rows": [
+    26,
+    466,
+    680,
+    1026,
+    1466,
+    1680
+  ],
+  "semantic_flagged_exposures": 434,
+  "semantic_counts": {
+    "CUSTOMIZATION_VS_BASE_DEVELOPER_UNQUALIFIED": 434,
+    "CREATOR_OR_TRAINING_ORIGIN_REQUIRES_DECISION": 66,
+    "QWEN_IDENTITY_DENIAL_WITHOUT_BASE_DISCLOSURE": 28
+  },
+  "gpu_training_allowed": false,
+  "english_name_status": "OWNER_CONFIRMED_OFFICIAL_NAMES_DEV_AND_COMMERCIAL",
+  "confirmation_overlay": "identity_confirmation_overlay.json"
+}

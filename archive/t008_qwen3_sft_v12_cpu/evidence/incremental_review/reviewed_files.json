@@ -1,0 +1,25 @@
+{
+  "collected_at_utc": "2026-10-19T05:59:54.516654+00:00",
+  "files": [
+    {
+      "path": "work/code/prepare_official.py",
+      "sha256": "aff3eef6fb5eccd7618d1f905010bca79dc9ed6ac79bf7a7360394dd8794b168"
+    },
+    {
+      "path": "work/code/run_identity.py",
+      "sha256": "f1783eb53897e41171b8e4be0c95e2b4b3c53d136bf90d8e6c9004f13cbc61c9"
+    },
+    {
+      "path": "work/code/preflight_data.py",
+      "sha256": "717264e25f87d17364a5833b8a153c01a82efc5aa49833e2a7bf91538d71e4d2"
+    },
+    {
+      "path": "evidence/code_changes.patch",
+      "sha256": "95602d2acd68eeed87d57b40a5881901e4cfd11275cd45a7491fb18df5fe0289"
+    },
+    {
+      "path": "reports/incremental_review.md",
+      "sha256": "1641078469fb31461c0f428cfac6bd38df5d24055f0cbc89e66f18a233434d97"
+    }
+  ]
+}

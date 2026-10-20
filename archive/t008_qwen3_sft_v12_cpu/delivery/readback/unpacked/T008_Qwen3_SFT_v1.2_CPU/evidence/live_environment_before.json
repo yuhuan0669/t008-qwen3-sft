@@ -1,0 +1,176 @@
+{
+  "event_time_raw": "2026-10-18T22:55:49.826862-07:00",
+  "event_timezone": "America/Los_Angeles",
+  "event_time_utc": "2026-10-19T05:55:49.834829+00:00",
+  "collected_at_utc": "2026-10-19T05:55:49.835171+00:00",
+  "commands": [
+    {
+      "argv": [
+        "kubectl",
+        "config",
+        "current-context"
+      ],
+      "exit": 0,
+      "stdout": "lmas00-direct\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "kubectl",
+        "config",
+        "view",
+        "--minify",
+        "-o",
+        "jsonpath={.clusters[0].cluster.server}"
+      ],
+      "exit": 0,
+      "stdout": "https://10.140.17.124:6443",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "kubectl",
+        "-n",
+        "vllm",
+        "exec",
+        "deploy/vllm",
+        "--",
+        "nvidia-smi",
+        "--query-gpu=name,driver_version,memory.total,memory.used,utilization.gpu",
+        "--format=csv,noheader"
+      ],
+      "exit": 0,
+      "stdout": "NVIDIA GeForce RTX 4090, 580.105.08, 24564 MiB, 22176 MiB, 0 %\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "kubectl",
+        "-n",
+        "vllm",
+        "get",
+        "deploy,pod,svc",
+        "-o",
+        "wide"
+      ],
+      "exit": 0,
+      "stdout": "NAME                   READY   UP-TO-DATE   AVAILABLE   AGE   CONTAINERS   IMAGES                                                                                                                                                       SELECTOR\ndeployment.apps/vllm   1/1     1            1           61d   vllm         modelscope-registry.cn-hangzhou.cr.aliyuncs.com/modelscope-repo/modelscope:ubuntu22.04-cuda13.0.3-py312-torch2.11.0-vllm0.25.1-modelscope1.39.0-swift4.4.3   app=vllm\n\nNAME                        READY   STATUS    RESTARTS   AGE     IP               NODE           NOMINATED NODE   READINESS GATES\npod/vllm-5df6b85cfc-xthkr   1/1     Running   0          6d18h   10.233.108.254   k8s-worker05   <none>           <none>\n\nNAME                   TYPE        CLUSTER-IP     EXTERNAL-IP   PORT(S)    AGE   SELECTOR\nservice/vllm-service   ClusterIP   10.233.2.207   <none>        8000/TCP   61d   app=vllm\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "kubectl",
+        "-n",
+        "clearml",
+        "get",
+        "deploy,statefulset,pvc"
+      ],
+      "exit": 0,
+      "stdout": "NAME                                            READY   UP-TO-DATE   AVAILABLE   AGE\ndeployment.apps/clearml-apiserver               1/1     1            1           19d\ndeployment.apps/clearml-apiserver-asyncdelete   1/1     1            1           19d\ndeployment.apps/clearml-fileserver              1/1     1            1           19d\ndeployment.apps/clearml-mongodb                 1/1     1            1           19d\ndeployment.apps/clearml-webserver               1/1     1            1           19d\n\nNAME                                      READY   AGE\nstatefulset.apps/clearml-dragonfly        1/1     19d\nstatefulset.apps/clearml-elastic-master   1/1     19d\n\nNAME                                                                    STATUS   VOLUME                                     CAPACITY   ACCESS MODES   STORAGECLASS      VOLUMEATTRIBUTESCLASS   AGE\npersistentvolumeclaim/clearml-data-clearml-dragonfly-0                  Bound    pvc-cf9983e6-1b86-49a6-afe0-290c8555ad5c   2Gi        RWO            nfs-storage-ssd   <unset>                 19d\npersistentvolumeclaim/clearml-elastic-master-clearml-elastic-master-0   Bound    pvc-038c1ef1-76a0-4cb4-b702-221563008ed6   10Gi       RWO            nfs-storage-ssd   <unset>                 19d\npersistentvolumeclaim/clearml-fileserver-data                           Bound    pvc-758af76e-e0d9-4ed7-a1d0-1bccbb9fa972   10Gi       RWO            nfs-storage-ssd   <unset>                 19d\npersistentvolumeclaim/clearml-mongodb                                   Bound    pvc-773ac9da-be8a-4a44-a8e6-979a9ce94bb2   10Gi       RWO            nfs-storage-ssd   <unset>                 19d\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "kubectl",
+        "-n",
+        "swift",
+        "get",
+        "deploy,pvc,sa"
+      ],
+      "exit": 0,
+      "stdout": "NAME                    READY   UP-TO-DATE   AVAILABLE   AGE\ndeployment.apps/swift   0/0     0            0           61d\n\nNAME                                     STATUS   VOLUME                                     CAPACITY   ACCESS MODES   STORAGECLASS      VOLUMEATTRIBUTESCLASS   AGE\npersistentvolumeclaim/swift-base         Bound    pvc-c139c4e6-7c17-489d-9ab8-2928222bf80b   40Gi       RWX            nfs-storage-ssd   <unset>                 19d\npersistentvolumeclaim/swift-data         Bound    pvc-de8a052e-80d4-4437-873c-85e7b5dc7e47   100Gi      RWX            nfs-storage-rtx   <unset>                 61d\npersistentvolumeclaim/swift-train-data   Bound    pvc-95b15387-3fcf-4ace-ae5c-ec63facf9b62   10Gi       RWX            nfs-storage-ssd   <unset>                 19d\npersistentvolumeclaim/swift-work         Bound    pvc-b737cf7f-e0eb-4a0a-866a-bd0466e9f476   40Gi       RWX            nfs-storage-ssd   <unset>                 19d\n\nNAME                           SECRETS   AGE\nserviceaccount/default         0         61d\nserviceaccount/swift-trainer   0         19d\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "kubectl",
+        "-n",
+        "vllm",
+        "rollout",
+        "history",
+        "deployment/vllm"
+      ],
+      "exit": 0,
+      "stdout": "deployment.apps/vllm \nREVISION  CHANGE-CAUSE\n1         <none>\n2         <none>\n3         <none>\n4         <none>\n5         <none>\n6         <none>\n7         <none>\n8         <none>\n9         <none>\n10        <none>\n11        <none>\n\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/Users/ben/aiws/antigravity/k8s",
+        "rev-parse",
+        "HEAD"
+      ],
+      "exit": 0,
+      "stdout": "748b70ddb4d2156485b79a4da01c2c67da8a542f\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/Users/ben/aiws/antigravity/k8s",
+        "status",
+        "--short"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/usr/bin/curl",
+        "-sS",
+        "--connect-timeout",
+        "8",
+        "--max-time",
+        "20",
+        "-o",
+        "/dev/null",
+        "-w",
+        "%{http_code} %{ssl_verify_result}",
+        "https://clearml.10.140.17.125.nip.io/api/debug.ping"
+      ],
+      "exit": 0,
+      "stdout": "200 0",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/usr/bin/curl",
+        "-sS",
+        "--connect-timeout",
+        "8",
+        "--max-time",
+        "20",
+        "-o",
+        "/dev/null",
+        "-w",
+        "%{http_code} %{ssl_verify_result}",
+        "https://clearml.10.140.17.125.nip.io/files/"
+      ],
+      "exit": 0,
+      "stdout": "200 0",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/usr/bin/curl",
+        "-sS",
+        "--connect-timeout",
+        "8",
+        "--max-time",
+        "20",
+        "-o",
+        "/dev/null",
+        "-w",
+        "%{http_code} %{ssl_verify_result}",
+        "https://vllm.10.140.17.125.nip.io/health"
+      ],
+      "exit": 0,
+      "stdout": "200 0",
+      "stderr": ""
+    }
+  ]
+}

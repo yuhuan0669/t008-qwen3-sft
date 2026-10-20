@@ -1,0 +1,26 @@
+[
+  {
+    "url": "https://huggingface.co/api/models/Qwen/Qwen3-8B?blobs=true",
+    "file": "hf_model_api_main.json",
+    "exit_code": 0,
+    "bytes": 11282,
+    "sha256": "c72afee5864f37c3e9a29bd776393c40c94ee0c801fdcafd4cf58b634ddf0a08",
+    "collected_at_utc": "2026-10-19T05:55:26.828742+00:00"
+  },
+  {
+    "url": "https://modelscope.cn/api/v1/models/Qwen/Qwen3-8B/repo/files?Revision=master&Recursive=true",
+    "file": "ms_model_files_master.json",
+    "exit_code": 0,
+    "bytes": 6411,
+    "sha256": "2418dac43b27b1d09107ea3939f6d93a250e5e603e84fa042b4847b73740f338",
+    "collected_at_utc": "2026-10-19T05:55:27.625810+00:00"
+  },
+  {
+    "url": "https://modelscope.cn/api/v1/models/Qwen/Qwen3-8B/revisions",
+    "file": "ms_model_revision.json",
+    "exit_code": 0,
+    "bytes": 222,
+    "sha256": "c721cdc3936c22c1b9ef6a704b8525b12bcd8b43579079a0defa1c9cd1e981ac",
+    "collected_at_utc": "2026-10-19T05:55:28.474479+00:00"
+  }
+]

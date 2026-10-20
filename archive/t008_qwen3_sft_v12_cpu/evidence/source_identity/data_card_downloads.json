@@ -1,0 +1,38 @@
+[
+  {
+    "url": "https://modelscope.cn/api/v1/datasets/swift/Qwen3-SFT-Mixin/repo?Revision=198e271e18633b9c096f1c3fc2a6ec98802c627d&FilePath=dataset_infos.json",
+    "path": "evidence/source_identity/mixin_dataset_infos.json",
+    "exit_code": 0,
+    "sha256": "24fafb3ea23e0fe41a06baa48aac2381fc0f6bf35476a7deeb3e927e49fccdd3",
+    "expected_sha256": "24fafb3ea23e0fe41a06baa48aac2381fc0f6bf35476a7deeb3e927e49fccdd3",
+    "revision": "198e271e18633b9c096f1c3fc2a6ec98802c627d",
+    "bytes": 228
+  },
+  {
+    "url": "https://modelscope.cn/api/v1/datasets/swift/Qwen3-SFT-Mixin/repo?Revision=f63337318d5fe2bca19964d26873a338d04816b1&FilePath=README.md",
+    "path": "evidence/source_identity/mixin_README.md",
+    "exit_code": 0,
+    "sha256": "5ba7ca44d005c04ad1a2fea4508d24e97fec11bb47029ad5a90127c84c1194a9",
+    "expected_sha256": "5ba7ca44d005c04ad1a2fea4508d24e97fec11bb47029ad5a90127c84c1194a9",
+    "revision": "f63337318d5fe2bca19964d26873a338d04816b1",
+    "bytes": 190
+  },
+  {
+    "url": "https://modelscope.cn/api/v1/datasets/swift/self-cognition/repo?Revision=9e418cf07c2db6a78f7137aaae5610f2ca810aab&FilePath=dataset_infos.json",
+    "path": "evidence/source_identity/self_dataset_infos.json",
+    "exit_code": 0,
+    "sha256": "0dba04b8d9e7f45c200ec9faf8afd4473437ad0cc94c9ed4fb68b4f81d6b9796",
+    "expected_sha256": "0dba04b8d9e7f45c200ec9faf8afd4473437ad0cc94c9ed4fb68b4f81d6b9796",
+    "revision": "9e418cf07c2db6a78f7137aaae5610f2ca810aab",
+    "bytes": 189
+  },
+  {
+    "url": "https://modelscope.cn/api/v1/datasets/swift/self-cognition/repo?Revision=0398d25de0d330a065ed0f8e5d7046b9e2e21e45&FilePath=README.md",
+    "path": "evidence/source_identity/self_README.md",
+    "exit_code": 0,
+    "sha256": "6c8e590ca5e86716d17017def3dc2e2104c613415d8acba9e1af8a97850e0537",
+    "expected_sha256": "6c8e590ca5e86716d17017def3dc2e2104c613415d8acba9e1af8a97850e0537",
+    "revision": "0398d25de0d330a065ed0f8e5d7046b9e2e21e45",
+    "bytes": 1984
+  }
+]

@@ -1,0 +1,28 @@
+test_abcd_duplicate_condition_blocks (test_contract.TestGate.test_abcd_duplicate_condition_blocks) ... ok
+test_abcd_prompt_exact_match (test_contract.TestGate.test_abcd_prompt_exact_match) ... ok
+test_abcd_settings_mismatch_blocks (test_contract.TestGate.test_abcd_settings_mismatch_blocks) ... ok
+test_approved_one_row_exclusion (test_contract.TestGate.test_approved_one_row_exclusion) ... ok
+test_base_tamper_block (test_contract.TestGate.test_base_tamper_block) ... ok
+test_derivative_needs_independent_change_authorization (test_contract.TestGate.test_derivative_needs_independent_change_authorization) ... ok
+test_derivative_not_forgeable_by_digest_and_count_only (test_contract.TestGate.test_derivative_not_forgeable_by_digest_and_count_only) ... ok
+test_fake_chat_template_scans_length (test_contract.TestGate.test_fake_chat_template_scans_length) ... ok
+test_hardcode_replaced_not_open_gate (test_contract.TestGate.test_hardcode_replaced_not_open_gate) ... ok
+test_identity_example_no_ineffective_note (test_contract.TestGate.test_identity_example_no_ineffective_note) ... ok
+test_original_good (test_contract.TestGate.test_original_good) ... ok
+test_preflight_evidence_binds_exact_data_and_model (test_contract.TestGate.test_preflight_evidence_binds_exact_data_and_model) ... ok
+test_preflight_missing_rejected (test_contract.TestGate.test_preflight_missing_rejected) ... ok
+test_preflight_tokenizer_only_still_blocked (test_contract.TestGate.test_preflight_tokenizer_only_still_blocked) ... ok
+test_prepare_rejects_misspelled_template_placeholder (test_contract.TestGate.test_prepare_rejects_misspelled_template_placeholder) ... ok
+test_row_modified_same_count_blocks (test_contract.TestGate.test_row_modified_same_count_blocks) ... ok
+test_unexpected_think_invalidates_nonthinking (test_contract.TestGate.test_unexpected_think_invalidates_nonthinking) ... ok
+test_incomplete_real_parser_fails_closed (test现场_regressions.TestFieldRegressions.test_incomplete_real_parser_fails_closed) ... ok
+test_mixin_jinja_kept_but_identity_case_variants_rejected (test现场_regressions.TestFieldRegressions.test_mixin_jinja_kept_but_identity_case_variants_rejected) ... ok
+test_nonboolean_authorization_values_fail_closed (test现场_regressions.TestFieldRegressions.test_nonboolean_authorization_values_fail_closed) ... ok
+test_outer_help_uses_real_sft_parser_fallback (test现场_regressions.TestFieldRegressions.test_outer_help_uses_real_sft_parser_fallback) ... ok
+test_registered_model_must_use_actual_remote_https_storage (test现场_regressions.TestFieldRegressions.test_registered_model_must_use_actual_remote_https_storage) ... ok
+test_transformers_batchencoding_counts_tokens_not_mapping_keys (test现场_regressions.TestFieldRegressions.test_transformers_batchencoding_counts_tokens_not_mapping_keys) ... ok
+
+----------------------------------------------------------------------
+Ran 23 tests in 0.676s
+
+OK

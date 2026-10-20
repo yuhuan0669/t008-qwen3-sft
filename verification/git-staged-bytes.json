@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "staged_archival_and_code_files": 960,
+  "mismatches": [],
+  "line_endings": "Exact bytes enforced with .gitattributes; historic whitespace preserved intentionally.",
+  "transport_chunks": "16 verified object ranges, not Git blobs"
+}

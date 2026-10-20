@@ -1,0 +1,4 @@
+ClearML Task: created new task id=ba54d19171294484a2358f0fef2a6e07
+2026-10-19 02:51:57,782 - clearml.Task - INFO - No repository found, storing script code instead
+ClearML results page: https://clearml.10.140.17.125.nip.io/projects/a963d510434a46d19bb91881cad45ea4/experiments/ba54d19171294484a2358f0fef2a6e07/output/log
+{"task_id": "ba54d19171294484a2358f0fef2a6e07", "status": "SMOKE_COMPLETE", "output": "/runwork/outputs/smoke", "model_id": null}

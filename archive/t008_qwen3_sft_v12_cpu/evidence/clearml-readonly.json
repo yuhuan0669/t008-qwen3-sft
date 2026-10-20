@@ -1,0 +1,33 @@
+{
+  "observed_at_utc": "2026-10-19T05:59:02.645199+00:00",
+  "scope": "Read-only existing SYNTHETIC objects; no Task or Model creation, no training data uploads",
+  "sdk_version": "1.17.0",
+  "https_certificate_verification": true,
+  "sdk_methods": {
+    "output_model_update_weights": "(self, weights_filename=None, upload_uri=None, target_filename=None, auto_delete_file=True, register_uri=None, iteration=None, update_comment=True, is_package=False, async_enable=True)",
+    "output_model_get_local_copy_available": false,
+    "registered_model_get_local_copy": "(self, extract_archive=None, raise_on_error=False, force_download=False)",
+    "input_model_get_local_copy": "(self, extract_archive=None, raise_on_error=False, force_download=False)"
+  },
+  "existing_synthetic_task": {
+    "id": "d715e54b152b4aa18d38ec0259a54082",
+    "status": "completed"
+  },
+  "existing_synthetic_model": {
+    "id": "891292342c244f1995671bb5da68c83e"
+  },
+  "stored_model_location": {
+    "scheme": "http",
+    "hostname": "clearml-fileserver",
+    "port": 8081
+  },
+  "legacy_internal_uri_mapped_to_verified_https_ingress": true,
+  "model_storage_readback": {
+    "bytes": 33,
+    "sha256": "005cc7d6c45910da0030fb43a831fa33eaacd0744f5ce61cafd9bab7a28f29ac",
+    "historical_synthetic_hash_match": true,
+    "download_scheme": "https",
+    "stored_url_scheme": "http"
+  },
+  "status": "READ_ONLY_SDK_TASK_MODEL_STORAGE_PASS"
+}

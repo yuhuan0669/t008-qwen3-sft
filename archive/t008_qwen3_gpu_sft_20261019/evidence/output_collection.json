@@ -1,0 +1,17 @@
+{
+  "smoke": {
+    "telemetry_samples": 19,
+    "peak_observed_memory_used_MiB": 23084
+  },
+  "full": {
+    "telemetry_samples": 97,
+    "peak_observed_memory_used_MiB": 22034
+  },
+  "adapter_candidate": {
+    "bytes": 80736700,
+    "sha256": "33feb7cfe9e3bafa1a5b72f32e179fe89448c4c4251e152763dd846d3adffd1d",
+    "clearml_model_id": "0552c3ab6b39456e9ec8b32129015be0",
+    "remote_readback_verified": true
+  },
+  "collected_at_utc": "2026-10-19T10:12:52.928714+00:00"
+}

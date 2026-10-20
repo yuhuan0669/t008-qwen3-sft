@@ -1,0 +1,83 @@
+{
+  "selected_settings": [],
+  "messages": [
+    {
+      "id": "c897b197-ec2b-40e3-ba97-3febf13eb41a",
+      "question": "你是什么大模型",
+      "timestamp": 1792405762,
+      "content_chars": 127,
+      "done": true,
+      "error": null,
+      "metadata_params": [],
+      "output_summary": [
+        {
+          "type": "reasoning",
+          "status": "completed",
+          "duration": 4,
+          "reasoning_chars": 406
+        },
+        {
+          "type": "message",
+          "status": "completed",
+          "text_chars": 127
+        }
+      ],
+      "usage_or_terminal": {}
+    },
+    {
+      "id": "f847bb64-4941-4d74-89bb-91f5b0cc8ebf",
+      "question": "北京的碳排放系数是多少？",
+      "timestamp": 1792405835,
+      "content_chars": 0,
+      "done": true,
+      "error": null,
+      "metadata_params": [],
+      "output_summary": [
+        {
+          "type": "reasoning",
+          "status": "completed",
+          "duration": 8,
+          "reasoning_chars": 761
+        }
+      ],
+      "usage_or_terminal": {}
+    },
+    {
+      "id": "8bcb0dfc-a2e9-472d-b34f-f2b49d2cbb4e",
+      "question": "北京的碳排放系数是多少？",
+      "timestamp": 1792405866,
+      "content_chars": 0,
+      "done": true,
+      "error": null,
+      "metadata_params": [],
+      "output_summary": [
+        {
+          "type": "reasoning",
+          "status": "completed",
+          "duration": 8,
+          "reasoning_chars": 728
+        }
+      ],
+      "usage_or_terminal": {}
+    },
+    {
+      "id": "aa47b2cb-c4e7-414a-8bb7-573823f69bbf",
+      "question": "北京的碳排放系数是多少？",
+      "timestamp": 1792405947,
+      "content_chars": 0,
+      "done": true,
+      "error": null,
+      "metadata_params": [],
+      "output_summary": [
+        {
+          "type": "reasoning",
+          "status": "completed",
+          "duration": 7,
+          "reasoning_chars": 730
+        }
+      ],
+      "usage_or_terminal": {}
+    }
+  ],
+  "chat_id": "3116f663-5143-4432-9a76-bccbfaefed75"
+}

@@ -1,0 +1,25 @@
+{
+  "schema": "identity-token-preflight-v1.2",
+  "dataset_sha256": "dda551041a12c460b84056f2c58df0ab60f2e9999e0518f116cf5f5b3c5faf6e",
+  "manifest_sha256": "68e4c5d5eecaba984bb6740eb919c5103e5b6aca104c311c846cfd01cabf1ce4",
+  "model_files_sha256": "39c6b79bcc9813377a48e65da1ad614151748389d0bf526f5d816dc581e54374",
+  "rows_checked": 2600,
+  "max_length": 2048,
+  "overlength_rows": 0,
+  "overlength_index_counts": [],
+  "min_tokens": 2,
+  "max_tokens": 2,
+  "mean_tokens": 2,
+  "template_tokenization_completed": true,
+  "ms_swift_template_verified": false,
+  "ms_swift_template_evidence_sha256": null,
+  "ms_swift_evidence_ref": null,
+  "warning": "Transformers chat-template counts do NOT prove exact ms-swift dataset preprocessing; ms-swift template evidence requires a real separate verification on matching image.",
+  "base_fingerprint_reuse": {
+    "source": "/work/evidence/template/original-exact/base-files.json",
+    "source_file_sha256": "a1b77d34bda8a913bc050ba2b8b343b6104f77fa701c8b5275a0b438baedfd56",
+    "basis": "Prior full-byte SHA256 of same read-only /base mount; current files/sizes rechecked",
+    "baseline_source": "/work/code/preflight_data.py",
+    "baseline_source_sha256": "69740a2278983246e522751ed24c96c3f757d97f4a84a13db25626b879c8e8fa"
+  }
+}

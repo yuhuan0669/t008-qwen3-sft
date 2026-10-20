@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "members": [
+    {
+      "member": "adapter_model.safetensors",
+      "sha256": "b3099ee58150332b29a7a1dc5f22fa69d797b56b2bc4381c3060b31454140e5f"
+    }
+  ]
+}

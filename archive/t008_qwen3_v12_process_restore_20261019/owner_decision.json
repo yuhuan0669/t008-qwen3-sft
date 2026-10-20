@@ -1,0 +1,6 @@
+{
+  "instruction": "那就恢复到v1.2的快照审核、异常处理和独立评估流程，保留必要的兼容性修复，先更新方案和执行记录，不修改语料、不启动训练。",
+  "recorded_at_utc": "2026-10-20T01:08:18.908208+00:00",
+  "authorized_scope": "update_plan_and_execution_records_only",
+  "does_not_authorize_data_or_GPU": true
+}

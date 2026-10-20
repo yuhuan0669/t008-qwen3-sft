@@ -1,0 +1,29 @@
+{
+  "at_utc": "2026-10-19T09:31:53.267417+00:00",
+  "results": {
+    "vllm": {
+      "uid": "041c9a49-1693-45a5-8ff6-6136ba9e4074",
+      "generation": 33,
+      "spec_sha256": "9c75f393377a3e5cb6617e6b44a38241e33785f30593a061b7e7825a8c391b10",
+      "spec_same_as_before_cleanup": true,
+      "replicas": 1,
+      "ready_replicas": 1
+    },
+    "swift": {
+      "uid": "66cf433d-84d3-48c3-85c5-2698bc36a098",
+      "generation": 18,
+      "spec_sha256": "377f127d856a0bd10372d72d0098c8b1305bab61b0f78a73dfc68203b82d3fd0",
+      "spec_same_as_before_cleanup": true,
+      "replicas": 0,
+      "ready_replicas": 0
+    },
+    "vllm_health": {
+      "exit_code": 0,
+      "stdout": "200 0"
+    },
+    "gpu_processes": {
+      "exit_code": 0,
+      "stdout": "215, VLLM::EngineCore, 22166 MiB\n"
+    }
+  }
+}

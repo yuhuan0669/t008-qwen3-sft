@@ -1,0 +1,62 @@
+Failed to load CPU gemm_4bit_forward from kernels-community: No module named 'kernels'. Please make sure you already `pip install kernels` and the kernels >= 0.11.1
+[INFO:swift] Successfully registered `/usr/local/lib/python3.12/site-packages/swift/dataset/data/dataset_info.json`.
+[INFO:swift] Successfully imported external_plugins: ['/work/code/native_guard.py'].
+[INFO:swift] rank: -1, local_rank: -1, world_size: 1, local_world_size: 1
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+[INFO:swift] Setting args.lazy_tokenize: False
+[transformers] warmup_ratio is deprecated and will be removed in v5.2. Use `warmup_steps` instead.
+[INFO:swift] SelfCognitionPreprocessor has been successfully configured with name: ['章鱼能碳垂直大模型', 'Octacarbon LLM'], author: ['能碳章鱼（湖北）人工智能科技有限公司', 'Octacarbon (Hubei) Artificial Intelligence Technology Co., Ltd.'].
+[INFO:swift] Downloading the dataset from ModelScope, dataset_id: swift/Qwen3-SFT-Mixin
+[ERROR:swift] Dataset swift/Qwen3-SFT-Mixin load failed: subset_name=default,split=train with error: [E1022] Failed to create SDK directories: [Errno 13] Permission denied: '/.modelscope'
+[ERROR:swift] Dataset swift/Qwen3-SFT-Mixin load failed: subset_name=default,split=train with error: [E1022] Failed to create SDK directories: [Errno 13] Permission denied: '/.modelscope'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/modelscope_hub/config.py", line 138, in ensure_dirs
+    self.config_dir.mkdir(parents=True, exist_ok=True)
+  File "/usr/local/lib/python3.12/pathlib.py", line 1311, in mkdir
+    os.mkdir(self, mode)
+PermissionError: [Errno 13] Permission denied: '/.modelscope'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/work/code/run_identity.py", line 359, in <module>
+    if __name__=='__main__': main()
+                             ^^^^^^
+  File "/work/code/run_identity.py", line 217, in main
+    report=cpu_check(*values, swift_cli_help())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/code/native_recipe.py", line 127, in cpu_check
+    dataset, val = args.load_dataset()  # exact formal native path, including shuffle=True
+                   ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/swift/arguments/base_args/base_args.py", line 356, in load_dataset
+    train_dataset, val_dataset = load_dataset(
+                                 ^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/swift/dataset/loader.py", line 350, in load_dataset
+    train_dataset = loader.load(dataset_syntax, dataset_meta, use_hf=use_hf)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/swift/dataset/loader.py", line 179, in load
+    dataset = self._load_repo_dataset(
+              ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/swift/dataset/loader.py", line 108, in _load_repo_dataset
+    dataset = hub.load_dataset(
+              ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/swift/hub/hub.py", line 300, in load_dataset
+    return MsDataset.load(
+           ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/modelscope/msdatasets/ms_dataset.py", line 310, in load
+    _api = HubApi()
+           ^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/modelscope/hub/api.py", line 73, in __init__
+    self.headers = {'user-agent': ModelScopeConfig.get_user_agent()}
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/modelscope/hub/api.py", line 436, in get_user_agent
+    f'session_id/{ModelScopeConfig.get_user_session_id()}; '
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/modelscope/hub/api.py", line 376, in get_user_session_id
+    return get_default_config().get_session_id()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/modelscope_hub/config.py", line 302, in get_session_id
+    self.ensure_dirs()
+  File "/usr/local/lib/python3.12/site-packages/modelscope_hub/config.py", line 142, in ensure_dirs
+    raise CacheError(f"Failed to create SDK directories: {exc}") from exc
+modelscope_hub.errors.CacheError: [E1022] Failed to create SDK directories: [Errno 13] Permission denied: '/.modelscope'

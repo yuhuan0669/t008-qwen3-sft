@@ -1,0 +1,146 @@
+{
+  "runtime": "v22.14.0",
+  "samples_checked": [
+    299,
+    439
+  ],
+  "checks": [
+    {
+      "source_line_one_based": 299,
+      "implementation": 0,
+      "input": [
+        2,
+        3
+      ],
+      "actual": {
+        "2": 4,
+        "3": 9
+      },
+      "passed": true
+    },
+    {
+      "source_line_one_based": 299,
+      "implementation": 0,
+      "input": [
+        -1,
+        0,
+        5
+      ],
+      "actual": {
+        "0": 0,
+        "5": 25,
+        "-1": 1
+      },
+      "passed": true
+    },
+    {
+      "source_line_one_based": 299,
+      "implementation": 0,
+      "input": [],
+      "actual": {},
+      "passed": true
+    },
+    {
+      "source_line_one_based": 299,
+      "implementation": 0,
+      "input": [
+        2,
+        2
+      ],
+      "actual": {
+        "2": 4
+      },
+      "passed": true
+    },
+    {
+      "source_line_one_based": 299,
+      "implementation": 0,
+      "input": [
+        -2,
+        0.5,
+        10
+      ],
+      "actual": {
+        "10": 100,
+        "-2": 4,
+        "0.5": 0.25
+      },
+      "passed": true
+    },
+    {
+      "source_line_one_based": 299,
+      "implementation": 1,
+      "input": [
+        2,
+        3
+      ],
+      "actual": {
+        "2": 4,
+        "3": 9
+      },
+      "passed": true
+    },
+    {
+      "source_line_one_based": 299,
+      "implementation": 1,
+      "input": [
+        -1,
+        0,
+        5
+      ],
+      "actual": {
+        "0": 0,
+        "5": 25,
+        "-1": 1
+      },
+      "passed": true
+    },
+    {
+      "source_line_one_based": 299,
+      "implementation": 1,
+      "input": [],
+      "actual": {},
+      "passed": true
+    },
+    {
+      "source_line_one_based": 299,
+      "implementation": 1,
+      "input": [
+        2,
+        2
+      ],
+      "actual": {
+        "2": 4
+      },
+      "passed": true
+    },
+    {
+      "source_line_one_based": 299,
+      "implementation": 1,
+      "input": [
+        -2,
+        0.5,
+        10
+      ],
+      "actual": {
+        "10": 100,
+        "-2": 4,
+        "0.5": 0.25
+      },
+      "passed": true
+    },
+    {
+      "source_line_one_based": 439,
+      "check": "HTML markers/CSS static assertions + script with DOM stub and fixed date",
+      "output": "Good morning, John Doe! Today is Monday, October 19, 2026.",
+      "passed": true
+    }
+  ],
+  "input_sha256": "80f2f34899f83ea110a319fa3ee49d9517c97305eee24036501f1b6405348649",
+  "limits": [
+    "Only reviewed code blocks for sources 299 and 439 executed in bounded VM contexts.",
+    "No real browser rendering, security certification, or exhaustive JavaScript type/edge-case proof.",
+    "These checks do not validate other samples, all reasoning text, or training effects."
+  ],
+  "training_started": false
+}

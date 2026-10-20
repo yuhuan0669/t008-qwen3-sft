@@ -1,0 +1,13 @@
+{"phase": "PAUSING_VLLM", "gpu_window_started": true}
+{"phase": "VLLM_PAUSED"}
+{"phase": "SMOKE_SUBMITTING"}
+{"phase": "SMOKE_RUNNING", "pod_phases": ["Pending"]}
+{"phase": "SMOKE_RUNNING", "pod_phases": ["Running"]}
+{"phase": "SMOKE_VERIFIED", "smoke_task_id": "ba54d19171294484a2358f0fef2a6e07", "smoke_model_id": null}
+{"phase": "FULL_SUBMITTING"}
+{"phase": "FULL_RUNNING", "pod_phases": ["Pending"]}
+{"phase": "FULL_RUNNING", "pod_phases": ["Running"]}
+{"phase": "FULL_VERIFIED", "full_task_id": "97ac5246ae9c43d9aa65ee2ac4c2aaef", "full_model_id": "0552c3ab6b39456e9ec8b32129015be0"}
+{"phase": "RESTORING_VLLM"}
+{"phase": "VLLM_RESTORED", "vllm_restored": true}
+{"phase": "TRAINING_CANDIDATE_RESTORED", "training_verified": true}

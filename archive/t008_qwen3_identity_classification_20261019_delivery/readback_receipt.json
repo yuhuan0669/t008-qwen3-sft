@@ -1,0 +1,22 @@
+{
+  "files": [
+    {
+      "id": "1Q4drsBjcFp8IEwRSmpYi_iqKMyifXRTc",
+      "url": "https://drive.google.com/file/d/1Q4drsBjcFp8IEwRSmpYi_iqKMyifXRTc/view?usp=drivesdk",
+      "name": "T008_身份108条_用途分类与质量说明_20261019.md",
+      "bytes": 11481,
+      "sha256": "b4d085d94e06ff15302dac893abe7b7edaaa688ec7e8230b52abd2a4af54364c",
+      "download_byte_equal": true
+    },
+    {
+      "id": "1cYyDqU35Bgvd6j1_8JZj2Zq5lvo3FxLp",
+      "url": "https://drive.google.com/file/d/1cYyDqU35Bgvd6j1_8JZj2Zq5lvo3FxLp/view?usp=drivesdk",
+      "name": "T008_身份108条_逐条分类与审核映射_20261019.json",
+      "bytes": 92250,
+      "sha256": "5d046690cda6dac4b99874a2e74b0529fcbb2adf5d5ec83bbde6cd232dfb639b",
+      "download_byte_equal": true
+    }
+  ],
+  "training_data_modified": false,
+  "training_started": false
+}

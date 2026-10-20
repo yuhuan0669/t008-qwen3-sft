@@ -1,0 +1,1062 @@
+Failed to load CPU gemm_4bit_forward from kernels-community: No module named 'kernels'. Please make sure you already `pip install kernels` and the kernels >= 0.11.1
+[INFO:swift] Successfully registered `/usr/local/lib/python3.12/site-packages/swift/dataset/data/dataset_info.json`.
+usage: -c [-h] [--output_dir OUTPUT_DIR]
+          [--per_device_train_batch_size PER_DEVICE_TRAIN_BATCH_SIZE]
+          [--num_train_epochs NUM_TRAIN_EPOCHS] [--max_steps MAX_STEPS]
+          [--learning_rate LEARNING_RATE]
+          [--lr_scheduler_type LR_SCHEDULER_TYPE]
+          [--lr_scheduler_kwargs LR_SCHEDULER_KWARGS]
+          [--warmup_steps WARMUP_STEPS]
+          [--optim {adamw_torch,adamw_torch_fused,adamw_torch_xla,adamw_torch_npu_fused,adafactor,adamw_anyprecision,adamw_torch_4bit,adamw_torch_8bit,ademamix,sgd,adagrad,adamw_bnb_8bit,adamw_8bit,ademamix_8bit,lion_8bit,lion_32bit,paged_adamw_32bit,paged_adamw_8bit,paged_ademamix_32bit,paged_ademamix_8bit,paged_lion_32bit,paged_lion_8bit,rmsprop,rmsprop_bnb,rmsprop_bnb_8bit,rmsprop_bnb_32bit,galore_adamw,galore_adamw_8bit,galore_adafactor,galore_adamw_layerwise,galore_adamw_8bit_layerwise,galore_adafactor_layerwise,lomo,adalomo,grokadamw,schedule_free_radam,schedule_free_adamw,schedule_free_sgd,apollo_adamw,apollo_adamw_layerwise,stable_adamw}]
+          [--optim_args OPTIM_ARGS] [--weight_decay WEIGHT_DECAY]
+          [--adam_beta1 ADAM_BETA1] [--adam_beta2 ADAM_BETA2]
+          [--adam_epsilon ADAM_EPSILON]
+          [--optim_target_modules OPTIM_TARGET_MODULES]
+          [--gradient_accumulation_steps GRADIENT_ACCUMULATION_STEPS]
+          [--average_tokens_across_devices [AVERAGE_TOKENS_ACROSS_DEVICES]]
+          [--no_average_tokens_across_devices] [--max_grad_norm MAX_GRAD_NORM]
+          [--label_smoothing_factor LABEL_SMOOTHING_FACTOR] [--bf16 BF16]
+          [--fp16 FP16] [--bf16_full_eval [BF16_FULL_EVAL]]
+          [--fp16_full_eval [FP16_FULL_EVAL]] [--tf32 TF32]
+          [--gradient_checkpointing [GRADIENT_CHECKPOINTING]]
+          [--no_gradient_checkpointing]
+          [--gradient_checkpointing_kwargs GRADIENT_CHECKPOINTING_KWARGS]
+          [--torch_compile [TORCH_COMPILE]]
+          [--torch_compile_backend TORCH_COMPILE_BACKEND]
+          [--torch_compile_mode TORCH_COMPILE_MODE]
+          [--use_liger_kernel [USE_LIGER_KERNEL]]
+          [--liger_kernel_config LIGER_KERNEL_CONFIG]
+          [--use_cache [USE_CACHE]]
+          [--neftune_noise_alpha NEFTUNE_NOISE_ALPHA]
+          [--torch_empty_cache_steps TORCH_EMPTY_CACHE_STEPS]
+          [--auto_find_batch_size [AUTO_FIND_BATCH_SIZE]]
+          [--logging_strategy {no,steps,epoch}]
+          [--logging_steps LOGGING_STEPS]
+          [--logging_first_step [LOGGING_FIRST_STEP]]
+          [--no_logging_first_step] [--log_on_each_node [LOG_ON_EACH_NODE]]
+          [--no_log_on_each_node]
+          [--logging_nan_inf_filter [LOGGING_NAN_INF_FILTER]]
+          [--no_logging_nan_inf_filter]
+          [--include_num_input_tokens_seen [INCLUDE_NUM_INPUT_TOKENS_SEEN]]
+          [--log_level {detail,debug,info,warning,error,critical,passive}]
+          [--log_level_replica {detail,debug,info,warning,error,critical,passive}]
+          [--disable_tqdm DISABLE_TQDM]
+          [--report_to REPORT_TO [REPORT_TO ...]] [--run_name RUN_NAME]
+          [--project PROJECT] [--trackio_space_id TRACKIO_SPACE_ID]
+          [--trackio_bucket_id TRACKIO_BUCKET_ID]
+          [--trackio_static_space_id TRACKIO_STATIC_SPACE_ID]
+          [--eval_strategy EVAL_STRATEGY] [--eval_steps EVAL_STEPS]
+          [--eval_delay EVAL_DELAY]
+          [--per_device_eval_batch_size PER_DEVICE_EVAL_BATCH_SIZE]
+          [--prediction_loss_only [PREDICTION_LOSS_ONLY]]
+          [--eval_on_start [EVAL_ON_START]]
+          [--eval_do_concat_batches [EVAL_DO_CONCAT_BATCHES]]
+          [--no_eval_do_concat_batches]
+          [--eval_use_gather_object [EVAL_USE_GATHER_OBJECT]]
+          [--eval_accumulation_steps EVAL_ACCUMULATION_STEPS]
+          [--include_for_metrics INCLUDE_FOR_METRICS [INCLUDE_FOR_METRICS ...]]
+          [--batch_eval_metrics [BATCH_EVAL_METRICS]]
+          [--save_only_model [SAVE_ONLY_MODEL]]
+          [--save_strategy {no,steps,epoch,best}] [--save_steps SAVE_STEPS]
+          [--save_on_each_node [SAVE_ON_EACH_NODE]]
+          [--save_total_limit SAVE_TOTAL_LIMIT]
+          [--enable_jit_checkpoint [ENABLE_JIT_CHECKPOINT]]
+          [--push_to_hub [PUSH_TO_HUB]] [--hub_token HUB_TOKEN]
+          [--hub_private_repo HUB_PRIVATE_REPO] [--hub_model_id HUB_MODEL_ID]
+          [--hub_strategy {end,every_save,checkpoint,all_checkpoints}]
+          [--hub_always_push [HUB_ALWAYS_PUSH]] [--hub_revision HUB_REVISION]
+          [--load_best_model_at_end [LOAD_BEST_MODEL_AT_END]]
+          [--metric_for_best_model METRIC_FOR_BEST_MODEL]
+          [--greater_is_better GREATER_IS_BETTER]
+          [--ignore_data_skip [IGNORE_DATA_SKIP]]
+          [--restore_callback_states_from_checkpoint [RESTORE_CALLBACK_STATES_FROM_CHECKPOINT]]
+          [--full_determinism [FULL_DETERMINISM]] [--seed SEED]
+          [--data_seed DATA_SEED] [--use_cpu [USE_CPU]]
+          [--accelerator_config ACCELERATOR_CONFIG]
+          [--parallelism_config PARALLELISM_CONFIG]
+          [--dataloader_drop_last [DATALOADER_DROP_LAST]]
+          [--dataloader_num_workers DATALOADER_NUM_WORKERS]
+          [--dataloader_pin_memory [DATALOADER_PIN_MEMORY]]
+          [--no_dataloader_pin_memory]
+          [--dataloader_persistent_workers [DATALOADER_PERSISTENT_WORKERS]]
+          [--dataloader_prefetch_factor DATALOADER_PREFETCH_FACTOR]
+          [--remove_unused_columns [REMOVE_UNUSED_COLUMNS]]
+          [--no_remove_unused_columns]
+          [--label_names LABEL_NAMES [LABEL_NAMES ...]]
+          [--train_sampling_strategy {random,sequential,group_by_length}]
+          [--length_column_name LENGTH_COLUMN_NAME]
+          [--ddp_find_unused_parameters DDP_FIND_UNUSED_PARAMETERS]
+          [--ddp_bucket_cap_mb DDP_BUCKET_CAP_MB]
+          [--ddp_broadcast_buffers DDP_BROADCAST_BUFFERS]
+          [--ddp_static_graph DDP_STATIC_GRAPH] [--ddp_backend DDP_BACKEND]
+          [--ddp_timeout DDP_TIMEOUT] [--fsdp FSDP]
+          [--fsdp_config FSDP_CONFIG] [--deepspeed DEEPSPEED]
+          [--debug DEBUG [DEBUG ...]]
+          [--skip_memory_metrics [SKIP_MEMORY_METRICS]]
+          [--no_skip_memory_metrics] [--do_train [DO_TRAIN]]
+          [--do_eval [DO_EVAL]] [--do_predict [DO_PREDICT]]
+          [--resume_from_checkpoint RESUME_FROM_CHECKPOINT]
+          [--warmup_ratio WARMUP_RATIO] [--logging_dir LOGGING_DIR]
+          [--local_rank LOCAL_RANK] [--sortish_sampler [SORTISH_SAMPLER]]
+          [--predict_with_generate [PREDICT_WITH_GENERATE]]
+          [--generation_max_length GENERATION_MAX_LENGTH]
+          [--generation_num_beams GENERATION_NUM_BEAMS]
+          [--generation_config GENERATION_CONFIG]
+          [--tuner_backend {peft,unsloth}]
+          [--vit_gradient_checkpointing VIT_GRADIENT_CHECKPOINTING]
+          [--router_aux_loss_coef ROUTER_AUX_LOSS_COEF]
+          [--enable_dft_loss [ENABLE_DFT_LOSS]]
+          [--enable_channel_loss [ENABLE_CHANNEL_LOSS]]
+          [--safe_serialization [SAFE_SERIALIZATION]]
+          [--no_safe_serialization] [--max_shard_size MAX_SHARD_SIZE]
+          [--check_model [CHECK_MODEL]] [--no_check_model]
+          [--acc_strategy {token,seq}]
+          [--train_dataloader_shuffle [TRAIN_DATALOADER_SHUFFLE]]
+          [--no_train_dataloader_shuffle]
+          [--group_by_length [GROUP_BY_LENGTH]] [--max_epochs MAX_EPOCHS]
+          [--aligner_lr ALIGNER_LR] [--vit_lr VIT_LR]
+          [--use_logits_to_keep USE_LOGITS_TO_KEEP]
+          [--ds3_gather_for_generation [DS3_GATHER_FOR_GENERATION]]
+          [--no_ds3_gather_for_generation]
+          [--resume_only_model [RESUME_ONLY_MODEL]] [--optimizer OPTIMIZER]
+          [--loss_type LOSS_TYPE] [--mrl_dims MRL_DIMS]
+          [--eval_metric EVAL_METRIC] [--callbacks CALLBACKS [CALLBACKS ...]]
+          [--early_stop_interval EARLY_STOP_INTERVAL]
+          [--eval_use_evalscope [EVAL_USE_EVALSCOPE]]
+          [--eval_dataset EVAL_DATASET [EVAL_DATASET ...]]
+          [--eval_dataset_args EVAL_DATASET_ARGS] [--eval_limit EVAL_LIMIT]
+          [--eval_generation_config EVAL_GENERATION_CONFIG]
+          [--extra_eval_args EXTRA_EVAL_ARGS] [--tuner_type TUNER_TYPE]
+          [--use_galore [USE_GALORE]]
+          [--galore_target_modules GALORE_TARGET_MODULES [GALORE_TARGET_MODULES ...]]
+          [--galore_rank GALORE_RANK]
+          [--galore_update_proj_gap GALORE_UPDATE_PROJ_GAP]
+          [--galore_scale GALORE_SCALE] [--galore_proj_type GALORE_PROJ_TYPE]
+          [--galore_optim_per_parameter [GALORE_OPTIM_PER_PARAMETER]]
+          [--galore_with_embedding [GALORE_WITH_EMBEDDING]]
+          [--galore_quantization [GALORE_QUANTIZATION]]
+          [--galore_proj_quant [GALORE_PROJ_QUANT]]
+          [--galore_proj_bits GALORE_PROJ_BITS]
+          [--galore_proj_group_size GALORE_PROJ_GROUP_SIZE]
+          [--galore_cos_threshold GALORE_COS_THRESHOLD]
+          [--galore_gamma_proj GALORE_GAMMA_PROJ]
+          [--galore_queue_size GALORE_QUEUE_SIZE]
+          [--lisa_activated_layers LISA_ACTIVATED_LAYERS]
+          [--lisa_step_interval LISA_STEP_INTERVAL]
+          [--use_flash_ckpt [USE_FLASH_CKPT]] [--use_ray [USE_RAY]]
+          [--ray_exp_name RAY_EXP_NAME] [--device_groups DEVICE_GROUPS]
+          [--model MODEL] [--model_type MODEL_TYPE]
+          [--model_revision MODEL_REVISION]
+          [--task_type {causal_lm,seq_cls,embedding,reranker,generative_reranker}]
+          [--torch_dtype {bfloat16,float16,float32,None}]
+          [--attn_impl ATTN_IMPL] [--experts_impl EXPERTS_IMPL]
+          [--new_special_tokens NEW_SPECIAL_TOKENS [NEW_SPECIAL_TOKENS ...]]
+          [--num_labels NUM_LABELS]
+          [--problem_type {regression,single_label_classification,multi_label_classification}]
+          [--rope_scaling ROPE_SCALING] [--device_map DEVICE_MAP]
+          [--max_memory MAX_MEMORY] [--max_model_len MAX_MODEL_LEN]
+          [--local_repo_path LOCAL_REPO_PATH]
+          [--init_strategy {zero,uniform,normal,xavier_uniform,xavier_normal,kaiming_uniform,kaiming_normal,orthogonal}]
+          [--template TEMPLATE] [--system SYSTEM] [--max_length MAX_LENGTH]
+          [--truncation_strategy {delete,left,right,split,None}]
+          [--max_pixels MAX_PIXELS] [--agent_template AGENT_TEMPLATE]
+          [--norm_bbox {norm1000,none,None}]
+          [--use_chat_template USE_CHAT_TEMPLATE]
+          [--padding_side {left,right}] [--padding_free [PADDING_FREE]]
+          [--loss_scale LOSS_SCALE]
+          [--sequence_parallel_size SEQUENCE_PARALLEL_SIZE]
+          [--is_binary_loss_scale IS_BINARY_LOSS_SCALE]
+          [--template_backend {swift,jinja}]
+          [--response_prefix RESPONSE_PREFIX]
+          [--enable_thinking ENABLE_THINKING]
+          [--preserve_thinking PRESERVE_THINKING]
+          [--add_non_thinking_prefix [ADD_NON_THINKING_PREFIX]]
+          [--no_add_non_thinking_prefix]
+          [--disable_ignore_empty_think [DISABLE_IGNORE_EMPTY_THINK]]
+          [--dataset DATASET [DATASET ...]]
+          [--val_dataset VAL_DATASET [VAL_DATASET ...]]
+          [--cached_dataset CACHED_DATASET [CACHED_DATASET ...]]
+          [--cached_val_dataset CACHED_VAL_DATASET [CACHED_VAL_DATASET ...]]
+          [--split_dataset_ratio SPLIT_DATASET_RATIO]
+          [--dataset_num_proc DATASET_NUM_PROC]
+          [--load_from_cache_file [LOAD_FROM_CACHE_FILE]]
+          [--dataset_shuffle [DATASET_SHUFFLE]] [--no_dataset_shuffle]
+          [--val_dataset_shuffle [VAL_DATASET_SHUFFLE]]
+          [--streaming [STREAMING]]
+          [--interleave_prob INTERLEAVE_PROB [INTERLEAVE_PROB ...]]
+          [--stopping_strategy {first_exhausted,all_exhausted}]
+          [--shuffle_buffer_size SHUFFLE_BUFFER_SIZE]
+          [--download_mode {force_redownload,reuse_dataset_if_exists}]
+          [--columns COLUMNS] [--strict [STRICT]]
+          [--disable_auto_column_mapping [DISABLE_AUTO_COLUMN_MAPPING]]
+          [--model_name MODEL_NAME [MODEL_NAME ...]]
+          [--model_author MODEL_AUTHOR [MODEL_AUTHOR ...]]
+          [--custom_dataset_info CUSTOM_DATASET_INFO [CUSTOM_DATASET_INFO ...]]
+          [--quant_method {bnb,hqq,eetq,quanto,fp8}]
+          [--quant_bits {1,2,3,4,8,float8}] [--hqq_axis HQQ_AXIS]
+          [--bnb_4bit_compute_dtype {float16,bfloat16,float32,None}]
+          [--bnb_4bit_quant_type {fp4,nf4}]
+          [--bnb_4bit_use_double_quant [BNB_4BIT_USE_DOUBLE_QUANT]]
+          [--no_bnb_4bit_use_double_quant]
+          [--bnb_4bit_quant_storage BNB_4BIT_QUANT_STORAGE]
+          [--max_new_tokens MAX_NEW_TOKENS] [--temperature TEMPERATURE]
+          [--top_k TOP_K] [--top_p TOP_P]
+          [--repetition_penalty REPETITION_PENALTY] [--num_beams NUM_BEAMS]
+          [--stream STREAM] [--stop_words STOP_WORDS [STOP_WORDS ...]]
+          [--logprobs [LOGPROBS]] [--top_logprobs TOP_LOGPROBS]
+          [--structured_outputs_regex STRUCTURED_OUTPUTS_REGEX]
+          [--adapters ADAPTERS [ADAPTERS ...]]
+          [--external_plugins EXTERNAL_PLUGINS [EXTERNAL_PLUGINS ...]]
+          [--custom_register_path CUSTOM_REGISTER_PATH [CUSTOM_REGISTER_PATH ...]]
+          [--model_kwargs MODEL_KWARGS]
+          [--enable_npu_model_patch [ENABLE_NPU_MODEL_PATCH]]
+          [--no_enable_npu_model_patch] [--load_args [LOAD_ARGS]]
+          [--load_data_args [LOAD_DATA_ARGS]] [--packing [PACKING]]
+          [--packing_length PACKING_LENGTH]
+          [--packing_num_proc PACKING_NUM_PROC]
+          [--packing_strategy {binpack,sequential}]
+          [--lazy_tokenize LAZY_TOKENIZE] [--use_hf [USE_HF]]
+          [--ignore_args_error [IGNORE_ARGS_ERROR]]
+          [--use_swift_lora [USE_SWIFT_LORA]]
+          [--freeze_parameters FREEZE_PARAMETERS [FREEZE_PARAMETERS ...]]
+          [--freeze_parameters_regex FREEZE_PARAMETERS_REGEX]
+          [--freeze_parameters_ratio FREEZE_PARAMETERS_RATIO]
+          [--trainable_parameters TRAINABLE_PARAMETERS [TRAINABLE_PARAMETERS ...]]
+          [--trainable_parameters_regex TRAINABLE_PARAMETERS_REGEX]
+          [--freeze_llm [FREEZE_LLM]] [--freeze_vit [FREEZE_VIT]]
+          [--no_freeze_vit] [--freeze_aligner [FREEZE_ALIGNER]]
+          [--no_freeze_aligner]
+          [--target_modules TARGET_MODULES [TARGET_MODULES ...]]
+          [--target_regex TARGET_REGEX]
+          [--target_parameters TARGET_PARAMETERS [TARGET_PARAMETERS ...]]
+          [--modules_to_save MODULES_TO_SAVE [MODULES_TO_SAVE ...]]
+          [--lora_rank LORA_RANK] [--lora_alpha LORA_ALPHA]
+          [--lora_dropout LORA_DROPOUT] [--lora_bias {none,all}]
+          [--lora_dtype {float16,bfloat16,float32,None}]
+          [--lorap_lr_ratio LORAP_LR_RATIO] [--use_rslora [USE_RSLORA]]
+          [--use_dora [USE_DORA]] [--lora_ga_batch_size LORA_GA_BATCH_SIZE]
+          [--lora_ga_iters LORA_GA_ITERS]
+          [--lora_ga_max_length LORA_GA_MAX_LENGTH]
+          [--lora_ga_direction LORA_GA_DIRECTION]
+          [--lora_ga_scale LORA_GA_SCALE]
+          [--lora_ga_stable_gamma LORA_GA_STABLE_GAMMA]
+          [--init_weights INIT_WEIGHTS]
+          [--fourier_n_frequency FOURIER_N_FREQUENCY]
+          [--fourier_scaling FOURIER_SCALING]
+          [--boft_block_size BOFT_BLOCK_SIZE]
+          [--boft_block_num BOFT_BLOCK_NUM]
+          [--boft_n_butterfly_factor BOFT_N_BUTTERFLY_FACTOR]
+          [--boft_dropout BOFT_DROPOUT] [--vera_rank VERA_RANK]
+          [--vera_projection_prng_key VERA_PROJECTION_PRNG_KEY]
+          [--vera_dropout VERA_DROPOUT] [--vera_d_initial VERA_D_INITIAL]
+          [--adapter_act ADAPTER_ACT] [--adapter_length ADAPTER_LENGTH]
+          [--adalora_target_r ADALORA_TARGET_R]
+          [--adalora_init_r ADALORA_INIT_R] [--adalora_tinit ADALORA_TINIT]
+          [--adalora_tfinal ADALORA_TFINAL] [--adalora_deltaT ADALORA_DELTAT]
+          [--adalora_beta1 ADALORA_BETA1] [--adalora_beta2 ADALORA_BETA2]
+          [--adalora_orth_reg_weight ADALORA_ORTH_REG_WEIGHT]
+          [--llamapro_num_new_blocks LLAMAPRO_NUM_NEW_BLOCKS]
+          [--llamapro_num_groups LLAMAPRO_NUM_GROUPS]
+          [--reft_layer_key REFT_LAYER_KEY]
+          [--reft_layers REFT_LAYERS [REFT_LAYERS ...]]
+          [--reft_rank REFT_RANK]
+          [--reft_intervention_type {NoreftIntervention,LoreftIntervention,ConsreftIntervention,LobireftIntervention,DireftIntervention,NodireftIntervention}]
+          [--reft_args REFT_ARGS] [--swanlab_token SWANLAB_TOKEN]
+          [--swanlab_project SWANLAB_PROJECT]
+          [--swanlab_workspace SWANLAB_WORKSPACE]
+          [--swanlab_exp_name SWANLAB_EXP_NAME]
+          [--swanlab_notification_method SWANLAB_NOTIFICATION_METHOD]
+          [--swanlab_webhook_url SWANLAB_WEBHOOK_URL]
+          [--swanlab_secret SWANLAB_SECRET]
+          [--swanlab_sender_email SWANLAB_SENDER_EMAIL]
+          [--swanlab_receiver_email SWANLAB_RECEIVER_EMAIL]
+          [--swanlab_smtp_server SWANLAB_SMTP_SERVER]
+          [--swanlab_smtp_port SWANLAB_SMTP_PORT]
+          [--swanlab_email_language SWANLAB_EMAIL_LANGUAGE]
+          [--swanlab_mode {cloud,local}] [--add_version [ADD_VERSION]]
+          [--no_add_version]
+          [--create_checkpoint_symlink [CREATE_CHECKPOINT_SYMLINK]]
+          [--zero_hpz_partition_size ZERO_HPZ_PARTITION_SIZE]
+          [--deepspeed_autotp_size DEEPSPEED_AUTOTP_SIZE]
+
+options:
+  -h, --help            show this help message and exit
+  --output_dir OUTPUT_DIR, --output-dir OUTPUT_DIR
+  --per_device_train_batch_size PER_DEVICE_TRAIN_BATCH_SIZE, --per-device-train-batch-size PER_DEVICE_TRAIN_BATCH_SIZE
+  --num_train_epochs NUM_TRAIN_EPOCHS, --num-train-epochs NUM_TRAIN_EPOCHS
+                        Total number of training epochs to perform. (default:
+                        3.0)
+  --max_steps MAX_STEPS, --max-steps MAX_STEPS
+                        Overrides `num_train_epochs`. If set to a positive
+                        number, the total number of training steps to perform.
+                        Must be set when the training dataset does not
+                        implement `__len__` (e.g. a streaming dataset).
+                        (default: -1)
+  --learning_rate LEARNING_RATE, --learning-rate LEARNING_RATE
+  --lr_scheduler_type LR_SCHEDULER_TYPE, --lr-scheduler-type LR_SCHEDULER_TYPE
+  --lr_scheduler_kwargs LR_SCHEDULER_KWARGS, --lr-scheduler-kwargs LR_SCHEDULER_KWARGS
+  --warmup_steps WARMUP_STEPS, --warmup-steps WARMUP_STEPS
+                        Number of steps for a linear warmup from 0 to
+                        `learning_rate`. Can be an integer (exact steps) or a
+                        float in [0, 1) (ratio of total steps). (default: 0)
+  --optim {adamw_torch,adamw_torch_fused,adamw_torch_xla,adamw_torch_npu_fused,adafactor,adamw_anyprecision,adamw_torch_4bit,adamw_torch_8bit,ademamix,sgd,adagrad,adamw_bnb_8bit,adamw_8bit,ademamix_8bit,lion_8bit,lion_32bit,paged_adamw_32bit,paged_adamw_8bit,paged_ademamix_32bit,paged_ademamix_8bit,paged_lion_32bit,paged_lion_8bit,rmsprop,rmsprop_bnb,rmsprop_bnb_8bit,rmsprop_bnb_32bit,galore_adamw,galore_adamw_8bit,galore_adafactor,galore_adamw_layerwise,galore_adamw_8bit_layerwise,galore_adafactor_layerwise,lomo,adalomo,grokadamw,schedule_free_radam,schedule_free_adamw,schedule_free_sgd,apollo_adamw,apollo_adamw_layerwise,stable_adamw}
+                        The optimizer to use. See `OptimizerNames` for the
+                        complete list. (default: adamw_torch_fused)
+  --optim_args OPTIM_ARGS, --optim-args OPTIM_ARGS
+                        Optional arguments supplied to optimizers such as
+                        AnyPrecisionAdamW, AdEMAMix, and GaLore. (default:
+                        None)
+  --weight_decay WEIGHT_DECAY, --weight-decay WEIGHT_DECAY
+  --adam_beta1 ADAM_BETA1, --adam-beta1 ADAM_BETA1
+                        The exponential decay rate for the first moment
+                        estimates (momentum) in Adam-based optimizers.
+                        (default: 0.9)
+  --adam_beta2 ADAM_BETA2, --adam-beta2 ADAM_BETA2
+  --adam_epsilon ADAM_EPSILON, --adam-epsilon ADAM_EPSILON
+                        Epsilon value for numerical stability in Adam-based
+                        optimizers. (default: 1e-08)
+  --optim_target_modules OPTIM_TARGET_MODULES, --optim-target-modules OPTIM_TARGET_MODULES
+                        The target modules to optimize. Currently used for the
+                        GaLore and APOLLO algorithms. (default: None)
+  --gradient_accumulation_steps GRADIENT_ACCUMULATION_STEPS, --gradient-accumulation-steps GRADIENT_ACCUMULATION_STEPS
+  --average_tokens_across_devices [AVERAGE_TOKENS_ACROSS_DEVICES], --average-tokens-across-devices [AVERAGE_TOKENS_ACROSS_DEVICES]
+                        Whether or not to average tokens across devices. If
+                        enabled, will use all_reduce to synchronize
+                        num_tokens_in_batch for precise loss calculation.
+                        Reference: https://github.com/huggingface/transformers
+                        /issues/34242 (default: True)
+  --no_average_tokens_across_devices, --no-average-tokens-across-devices
+                        Whether or not to average tokens across devices. If
+                        enabled, will use all_reduce to synchronize
+                        num_tokens_in_batch for precise loss calculation.
+                        Reference: https://github.com/huggingface/transformers
+                        /issues/34242 (default: False)
+  --max_grad_norm MAX_GRAD_NORM, --max-grad-norm MAX_GRAD_NORM
+                        Maximum gradient norm for gradient clipping. Set to 0
+                        to disable. (default: 1.0)
+  --label_smoothing_factor LABEL_SMOOTHING_FACTOR, --label-smoothing-factor LABEL_SMOOTHING_FACTOR
+                        Label smoothing factor to prevent overconfidence. Zero
+                        means no smoothing. (default: 0.0)
+  --bf16 BF16
+  --fp16 FP16
+  --bf16_full_eval [BF16_FULL_EVAL], --bf16-full-eval [BF16_FULL_EVAL]
+                        Use full BF16 precision for evaluation (not just mixed
+                        precision). Faster and saves memory. (default: False)
+  --fp16_full_eval [FP16_FULL_EVAL], --fp16-full-eval [FP16_FULL_EVAL]
+                        Use full FP16 precision for evaluation (not just mixed
+                        precision). Faster and saves memory. (default: False)
+  --tf32 TF32           Enable TF32 mode on Ampere and newer GPUs. Provides up
+                        to 8x speedup with negligible accuracy loss. (default:
+                        None)
+  --gradient_checkpointing [GRADIENT_CHECKPOINTING], --gradient-checkpointing [GRADIENT_CHECKPOINTING]
+  --no_gradient_checkpointing, --no-gradient-checkpointing
+  --gradient_checkpointing_kwargs GRADIENT_CHECKPOINTING_KWARGS, --gradient-checkpointing-kwargs GRADIENT_CHECKPOINTING_KWARGS
+  --torch_compile [TORCH_COMPILE], --torch-compile [TORCH_COMPILE]
+                        Compile the model using `torch.compile()` for faster
+                        training. (default: False)
+  --torch_compile_backend TORCH_COMPILE_BACKEND, --torch-compile-backend TORCH_COMPILE_BACKEND
+                        Backend for `torch.compile()`. If set, automatically
+                        enables `torch_compile`. (default: None)
+  --torch_compile_mode TORCH_COMPILE_MODE, --torch-compile-mode TORCH_COMPILE_MODE
+                        Compilation mode for `torch.compile()`. If set,
+                        automatically enables `torch_compile`. (default: None)
+  --use_liger_kernel [USE_LIGER_KERNEL], --use-liger-kernel [USE_LIGER_KERNEL]
+  --liger_kernel_config LIGER_KERNEL_CONFIG, --liger-kernel-config LIGER_KERNEL_CONFIG
+                        Configuration for Liger Kernel. Passed as kwargs to
+                        `_apply_liger_kernel_to_instance()`. If None, uses
+                        default configuration. (default: None)
+  --use_cache [USE_CACHE], --use-cache [USE_CACHE]
+                        Whether or not to use cache for the model For
+                        training, this is usually not needed apart from some
+                        PEFT methods that uses `past_key_values`. (default:
+                        False)
+  --neftune_noise_alpha NEFTUNE_NOISE_ALPHA, --neftune-noise-alpha NEFTUNE_NOISE_ALPHA
+                        If not None, activates NEFTune noise embeddings. Can
+                        drastically improve performance for instruction fine-
+                        tuning. Typical range: [5.0, 15.0]. (default: None)
+  --torch_empty_cache_steps TORCH_EMPTY_CACHE_STEPS, --torch-empty-cache-steps TORCH_EMPTY_CACHE_STEPS
+                        Number of steps to wait before calling
+                        `torch.<device>.empty_cache()`. Helps avoid CUDA OOM
+                        at a cost of ~10% slower performance. If None, cache
+                        will not be emptied. (default: None)
+  --auto_find_batch_size [AUTO_FIND_BATCH_SIZE], --auto-find-batch-size [AUTO_FIND_BATCH_SIZE]
+                        Whether to find a batch size that will fit into memory
+                        automatically through exponential decay, avoiding CUDA
+                        Out-of-Memory errors. (default: False)
+  --logging_strategy {no,steps,epoch}, --logging-strategy {no,steps,epoch}
+                        The logging strategy to adopt during training.
+                        Options: 'no', 'epoch', 'steps'. (default: steps)
+  --logging_steps LOGGING_STEPS, --logging-steps LOGGING_STEPS
+  --logging_first_step [LOGGING_FIRST_STEP], --logging-first-step [LOGGING_FIRST_STEP]
+  --no_logging_first_step, --no-logging-first-step
+  --log_on_each_node [LOG_ON_EACH_NODE], --log-on-each-node [LOG_ON_EACH_NODE]
+                        When doing a multinode distributed training, whether
+                        to log once per node or just once on the main node.
+                        (default: True)
+  --no_log_on_each_node, --no-log-on-each-node
+                        When doing a multinode distributed training, whether
+                        to log once per node or just once on the main node.
+                        (default: False)
+  --logging_nan_inf_filter [LOGGING_NAN_INF_FILTER], --logging-nan-inf-filter [LOGGING_NAN_INF_FILTER]
+                        Filter out NaN and Inf losses when logging. Does not
+                        affect gradient computation, only logging. (default:
+                        True)
+  --no_logging_nan_inf_filter, --no-logging-nan-inf-filter
+                        Filter out NaN and Inf losses when logging. Does not
+                        affect gradient computation, only logging. (default:
+                        False)
+  --include_num_input_tokens_seen [INCLUDE_NUM_INPUT_TOKENS_SEEN], --include-num-input-tokens-seen [INCLUDE_NUM_INPUT_TOKENS_SEEN]
+                        Whether to track the number of input tokens seen. Must
+                        be one of [`all`, `non_padding`, `no`] or a boolean
+                        value which map to `all` or `no` (default: no)
+  --log_level {detail,debug,info,warning,error,critical,passive}, --log-level {detail,debug,info,warning,error,critical,passive}
+                        Logging level for the main process. Options: 'debug',
+                        'info', 'warning', 'error', 'critical', 'passive'.
+                        (default: passive)
+  --log_level_replica {detail,debug,info,warning,error,critical,passive}, --log-level-replica {detail,debug,info,warning,error,critical,passive}
+                        Logging level for replica processes in distributed
+                        training. Same options as `log_level`. (default:
+                        warning)
+  --disable_tqdm DISABLE_TQDM, --disable-tqdm DISABLE_TQDM
+                        Disable tqdm progress bars. Defaults to True if
+                        log_level is warning or lower. (default: None)
+  --report_to REPORT_TO [REPORT_TO ...], --report-to REPORT_TO [REPORT_TO ...]
+  --run_name RUN_NAME, --run-name RUN_NAME
+                        An optional descriptor for the run. Notably used for
+                        trackio, wandb, mlflow comet and swanlab logging.
+                        (default: None)
+  --project PROJECT     The name of the project to use for logging. Currently,
+                        only used by Trackio. (default: huggingface)
+  --trackio_space_id TRACKIO_SPACE_ID, --trackio-space-id TRACKIO_SPACE_ID
+                        Hugging Face Space id for live Gradio-based Trackio
+                        logging (read/write Bucket access). Use
+                        'username/reponame', 'orgname/reponame', or 'reponame'
+                        (current user's namespace). None: log only locally, no
+                        Space. Prefer trackio_static_space_id for stable post-
+                        training dashboard links. Public unless
+                        hub_private_repo=True or org default. (default: None)
+  --trackio_bucket_id TRACKIO_BUCKET_ID, --trackio-bucket-id TRACKIO_BUCKET_ID
+                        Optional HF Bucket id when using a Trackio Space; if
+                        unset, Trackio picks a default. (default: None)
+  --trackio_static_space_id TRACKIO_STATIC_SPACE_ID, --trackio-static-space-id TRACKIO_STATIC_SPACE_ID
+                        Static read-only Trackio Space over the Bucket (stable
+                        model-card links). False: no static sync on Hub push
+                        and no freeze after training. None/str: allow static
+                        Space; for local-only logging, Hub push runs
+                        sync(static); after training, freeze runs only if
+                        trackio_space_id was set (Gradio Space). str sets
+                        explicit static Space id. Public unless
+                        hub_private_repo=True or org default. (default: None)
+  --eval_strategy EVAL_STRATEGY, --eval-strategy EVAL_STRATEGY
+  --eval_steps EVAL_STEPS, --eval-steps EVAL_STEPS
+                        Number of update steps between evaluations if
+                        `eval_strategy='steps'`. Defaults to `logging_steps`
+                        if not set. Should be an integer or a float in range
+                        `[0,1)`. If smaller than 1, will be interpreted as
+                        ratio of total training steps. (default: None)
+  --eval_delay EVAL_DELAY, --eval-delay EVAL_DELAY
+                        Number of epochs or steps to wait for before the first
+                        evaluation can be performed, depending on the
+                        eval_strategy. (default: 0)
+  --per_device_eval_batch_size PER_DEVICE_EVAL_BATCH_SIZE, --per-device-eval-batch-size PER_DEVICE_EVAL_BATCH_SIZE
+  --prediction_loss_only [PREDICTION_LOSS_ONLY], --prediction-loss-only [PREDICTION_LOSS_ONLY]
+                        When performing evaluation and generating predictions,
+                        only returns the loss. (default: False)
+  --eval_on_start [EVAL_ON_START], --eval-on-start [EVAL_ON_START]
+                        Whether to run through the entire `evaluation` step at
+                        the very beginning of training as a sanity check.
+                        (default: False)
+  --eval_do_concat_batches [EVAL_DO_CONCAT_BATCHES], --eval-do-concat-batches [EVAL_DO_CONCAT_BATCHES]
+                        Whether to recursively concat
+                        inputs/losses/labels/predictions across batches. If
+                        `False`, will instead store them as lists, with each
+                        batch kept separate. (default: True)
+  --no_eval_do_concat_batches, --no-eval-do-concat-batches
+                        Whether to recursively concat
+                        inputs/losses/labels/predictions across batches. If
+                        `False`, will instead store them as lists, with each
+                        batch kept separate. (default: False)
+  --eval_use_gather_object [EVAL_USE_GATHER_OBJECT], --eval-use-gather-object [EVAL_USE_GATHER_OBJECT]
+                        Whether to run recursively gather object in a nested
+                        list/tuple/dictionary of objects from all devices.
+                        (default: False)
+  --eval_accumulation_steps EVAL_ACCUMULATION_STEPS, --eval-accumulation-steps EVAL_ACCUMULATION_STEPS
+                        Number of predictions steps to accumulate the output
+                        tensors for, before moving the results to the CPU. If
+                        unset, predictions are accumulated on the accelerator
+                        before being moved to the CPU. (default: None)
+  --include_for_metrics INCLUDE_FOR_METRICS [INCLUDE_FOR_METRICS ...], --include-for-metrics INCLUDE_FOR_METRICS [INCLUDE_FOR_METRICS ...]
+                        Include additional data in the `compute_metrics`
+                        function. Options: 'inputs', 'loss'. (default: [])
+  --batch_eval_metrics [BATCH_EVAL_METRICS], --batch-eval-metrics [BATCH_EVAL_METRICS]
+                        Break eval metrics calculation into batches to save
+                        memory. (default: False)
+  --save_only_model [SAVE_ONLY_MODEL], --save-only-model [SAVE_ONLY_MODEL]
+                        Save only model weights, not optimizer/scheduler/RNG
+                        state. Prevents resuming training from checkpoint.
+                        (default: False)
+  --save_strategy {no,steps,epoch,best}, --save-strategy {no,steps,epoch,best}
+                        The checkpoint save strategy to adopt during training.
+                        Options: 'no', 'epoch', 'steps', 'best'. (default:
+                        steps)
+  --save_steps SAVE_STEPS, --save-steps SAVE_STEPS
+                        Save checkpoint every X updates steps. Should be an
+                        integer or a float in range `[0,1)`. If smaller than
+                        1, will be interpreted as ratio of total training
+                        steps. (default: 500)
+  --save_on_each_node [SAVE_ON_EACH_NODE], --save-on-each-node [SAVE_ON_EACH_NODE]
+                        When doing multi-node distributed training, whether to
+                        save models and checkpoints on each node, or only on
+                        the main one (default: False)
+  --save_total_limit SAVE_TOTAL_LIMIT, --save-total-limit SAVE_TOTAL_LIMIT
+                        Maximum number of checkpoints to keep. Deletes older
+                        checkpoints in `output_dir`. The best checkpoint is
+                        always retained when `load_best_model_at_end=True`.
+                        (default: None)
+  --enable_jit_checkpoint [ENABLE_JIT_CHECKPOINT], --enable-jit-checkpoint [ENABLE_JIT_CHECKPOINT]
+                        Enable JIT checkpointing on SIGTERM signal for
+                        graceful termination on preemptible workloads.
+                        Configure your orchestrator's graceful shutdown period
+                        accordingly. (default: False)
+  --push_to_hub [PUSH_TO_HUB], --push-to-hub [PUSH_TO_HUB]
+                        Whether or not to push the model to the Hub every time
+                        the model is saved. (default: False)
+  --hub_token HUB_TOKEN, --hub-token HUB_TOKEN
+                        SDK token can be found in
+                        https://modelscope.cn/my/myaccesstoken (default: None)
+  --hub_private_repo HUB_PRIVATE_REPO, --hub-private-repo HUB_PRIVATE_REPO
+                        Whether to make the repo private. If `None` (default),
+                        the repo will be public unless the organization's
+                        default is private. This value is ignored if the repo
+                        already exists. If reporting to Trackio Spaces created
+                        or synced (including on Hub push when
+                        `trackio_space_id` is None) use the same logic for
+                        whether the Space is private. (default: None)
+  --hub_model_id HUB_MODEL_ID, --hub-model-id HUB_MODEL_ID
+                        The name of the repository to keep in sync with the
+                        local `output_dir`. (default: None)
+  --hub_strategy {end,every_save,checkpoint,all_checkpoints}, --hub-strategy {end,every_save,checkpoint,all_checkpoints}
+                        Defines what and when to push to Hub. Options: 'end',
+                        'every_save', 'checkpoint', 'all_checkpoints'.
+                        (default: every_save)
+  --hub_always_push [HUB_ALWAYS_PUSH], --hub-always-push [HUB_ALWAYS_PUSH]
+                        Unless `True`, the Trainer will skip pushes if the
+                        previous one wasn't finished yet. (default: False)
+  --hub_revision HUB_REVISION, --hub-revision HUB_REVISION
+                        The revision to use when pushing to the Hub. Can be a
+                        branch name, a tag, or a commit hash. (default: None)
+  --load_best_model_at_end [LOAD_BEST_MODEL_AT_END], --load-best-model-at-end [LOAD_BEST_MODEL_AT_END]
+                        Load the best checkpoint at the end of training.
+                        Requires `eval_strategy` to be set. (default: False)
+  --metric_for_best_model METRIC_FOR_BEST_MODEL, --metric-for-best-model METRIC_FOR_BEST_MODEL
+                        Metric to use for comparing models when
+                        `load_best_model_at_end=True`. Defaults to 'loss'.
+                        (default: None)
+  --greater_is_better GREATER_IS_BETTER, --greater-is-better GREATER_IS_BETTER
+                        Whether higher metric values are better. Defaults
+                        based on `metric_for_best_model`. (default: None)
+  --ignore_data_skip [IGNORE_DATA_SKIP], --ignore-data-skip [IGNORE_DATA_SKIP]
+                        When resuming training, skip fast-forwarding through
+                        the dataset to reach the previous state. If True,
+                        training starts from the beginning of the dataset.
+                        (default: False)
+  --restore_callback_states_from_checkpoint [RESTORE_CALLBACK_STATES_FROM_CHECKPOINT], --restore-callback-states-from-checkpoint [RESTORE_CALLBACK_STATES_FROM_CHECKPOINT]
+                        Whether to restore the callback states from the
+                        checkpoint. If `True`, will override callbacks passed
+                        to the `Trainer` if they exist in the checkpoint.
+                        (default: False)
+  --full_determinism [FULL_DETERMINISM], --full-determinism [FULL_DETERMINISM]
+                        Whether to call enable_full_determinism instead of
+                        set_seed for reproducibility in distributed training.
+                        Important: this will negatively impact the
+                        performance, so only use it for debugging. (default:
+                        False)
+  --seed SEED
+  --data_seed DATA_SEED, --data-seed DATA_SEED
+  --use_cpu [USE_CPU], --use-cpu [USE_CPU]
+                        Whether or not to use cpu. If set to False, we will
+                        use the available torch device/backend. (default:
+                        False)
+  --accelerator_config ACCELERATOR_CONFIG, --accelerator-config ACCELERATOR_CONFIG
+                        Configuration for the internal Accelerate integration.
+                        Can be a path to a JSON config file or a dict.
+                        (default: None)
+  --parallelism_config PARALLELISM_CONFIG, --parallelism-config PARALLELISM_CONFIG
+                        Parallelism configuration for the training run.
+                        Requires Accelerate `1.10.1`. (default: None)
+  --dataloader_drop_last [DATALOADER_DROP_LAST], --dataloader-drop-last [DATALOADER_DROP_LAST]
+                        Drop the last incomplete batch if it is not divisible
+                        by the batch size. (default: False)
+  --dataloader_num_workers DATALOADER_NUM_WORKERS, --dataloader-num-workers DATALOADER_NUM_WORKERS
+  --dataloader_pin_memory [DATALOADER_PIN_MEMORY], --dataloader-pin-memory [DATALOADER_PIN_MEMORY]
+                        Whether or not to pin memory for DataLoader. (default:
+                        True)
+  --no_dataloader_pin_memory, --no-dataloader-pin-memory
+                        Whether or not to pin memory for DataLoader. (default:
+                        False)
+  --dataloader_persistent_workers [DATALOADER_PERSISTENT_WORKERS], --dataloader-persistent-workers [DATALOADER_PERSISTENT_WORKERS]
+  --dataloader_prefetch_factor DATALOADER_PREFETCH_FACTOR, --dataloader-prefetch-factor DATALOADER_PREFETCH_FACTOR
+  --remove_unused_columns [REMOVE_UNUSED_COLUMNS], --remove-unused-columns [REMOVE_UNUSED_COLUMNS]
+  --no_remove_unused_columns, --no-remove-unused-columns
+  --label_names LABEL_NAMES [LABEL_NAMES ...], --label-names LABEL_NAMES [LABEL_NAMES ...]
+                        The list of keys in your dictionary of inputs that
+                        correspond to the labels. (default: None)
+  --train_sampling_strategy {random,sequential,group_by_length}, --train-sampling-strategy {random,sequential,group_by_length}
+                        Sampler for training: 'random' (default),
+                        'sequential', or 'group_by_length'. (default: random)
+  --length_column_name LENGTH_COLUMN_NAME, --length-column-name LENGTH_COLUMN_NAME
+                        Column name for precomputed lengths. Ignored unless
+                        `train_sampling_strategy` is 'group_by_length'.
+                        (default: length)
+  --ddp_find_unused_parameters DDP_FIND_UNUSED_PARAMETERS, --ddp-find-unused-parameters DDP_FIND_UNUSED_PARAMETERS
+                        When using distributed training, the value of the flag
+                        `find_unused_parameters` passed to
+                        `DistributedDataParallel`. (default: None)
+  --ddp_bucket_cap_mb DDP_BUCKET_CAP_MB, --ddp-bucket-cap-mb DDP_BUCKET_CAP_MB
+                        When using distributed training, the value of the flag
+                        `bucket_cap_mb` passed to `DistributedDataParallel`.
+                        (default: None)
+  --ddp_broadcast_buffers DDP_BROADCAST_BUFFERS, --ddp-broadcast-buffers DDP_BROADCAST_BUFFERS
+                        When using distributed training, the value of the flag
+                        `broadcast_buffers` passed to
+                        `DistributedDataParallel`. (default: None)
+  --ddp_static_graph DDP_STATIC_GRAPH, --ddp-static-graph DDP_STATIC_GRAPH
+                        When using distributed training, the value of the flag
+                        `static_graph` passed to `DistributedDataParallel`.
+                        (default: None)
+  --ddp_backend DDP_BACKEND, --ddp-backend DDP_BACKEND
+  --ddp_timeout DDP_TIMEOUT, --ddp-timeout DDP_TIMEOUT
+  --fsdp FSDP
+  --fsdp_config FSDP_CONFIG, --fsdp-config FSDP_CONFIG
+                        Tuning for FSDP (used only when `fsdp` is enabled).
+                        Either a path to a JSON config file (e.g.,
+                        `fsdp_config.json`) or an already loaded dict.
+                        (default: None)
+  --deepspeed DEEPSPEED
+                        Enable DeepSpeed integration. Value is a path to a
+                        JSON config file or a dict. (default: None)
+  --debug DEBUG [DEBUG ...]
+                        Enable one or more debug features. Options:
+                        'underflow_overflow' (detect overflow in model I/O),
+                        'tpu_metrics_debug' (print TPU metrics). (default:
+                        None)
+  --skip_memory_metrics [SKIP_MEMORY_METRICS], --skip-memory-metrics [SKIP_MEMORY_METRICS]
+                        Whether to skip adding memory profiler reports to
+                        metrics. Skipped by default because it slows down
+                        training. (default: True)
+  --no_skip_memory_metrics, --no-skip-memory-metrics
+                        Whether to skip adding memory profiler reports to
+                        metrics. Skipped by default because it slows down
+                        training. (default: False)
+  --do_train [DO_TRAIN], --do-train [DO_TRAIN]
+                        Whether to run training. Not directly used by Trainer;
+                        intended for training/evaluation scripts. (default:
+                        False)
+  --do_eval [DO_EVAL], --do-eval [DO_EVAL]
+                        Whether to run evaluation. Not directly used by
+                        Trainer; intended for training/evaluation scripts.
+                        (default: False)
+  --do_predict [DO_PREDICT], --do-predict [DO_PREDICT]
+                        Whether to run predictions on the test set. Not
+                        directly used by Trainer; intended for
+                        training/evaluation scripts. (default: False)
+  --resume_from_checkpoint RESUME_FROM_CHECKPOINT, --resume-from-checkpoint RESUME_FROM_CHECKPOINT
+                        Path to a folder with a valid checkpoint for your
+                        model. Not directly used by Trainer; intended for
+                        training/evaluation scripts. (default: None)
+  --warmup_ratio WARMUP_RATIO, --warmup-ratio WARMUP_RATIO
+                        This argument is deprecated and will be removed in
+                        v5.2. Use `warmup_steps` instead as it also works with
+                        float values. (default: None)
+  --logging_dir LOGGING_DIR, --logging-dir LOGGING_DIR
+                        Deprecated and will be removed in v5.2. Set env var
+                        `TENSORBOARD_LOGGING_DIR` instead. TensorBoard log
+                        directory. (default: None)
+  --local_rank LOCAL_RANK, --local-rank LOCAL_RANK
+                        When using torch.distributed.launch (Deprecated), it
+                        will pass `local_rank` in the script, so we need this
+                        for the parser. To get the local rank, prefer using
+                        the property `local_process_index` (default: -1)
+  --sortish_sampler [SORTISH_SAMPLER], --sortish-sampler [SORTISH_SAMPLER]
+                        Whether to use SortishSampler or not. (default: False)
+  --predict_with_generate [PREDICT_WITH_GENERATE], --predict-with-generate [PREDICT_WITH_GENERATE]
+                        Whether to use generate to calculate generative
+                        metrics (ROUGE, BLEU). (default: False)
+  --generation_max_length GENERATION_MAX_LENGTH, --generation-max-length GENERATION_MAX_LENGTH
+                        The `max_length` to use on each evaluation loop when
+                        `predict_with_generate=True`. Will default to the
+                        `max_length` value of the model configuration.
+                        (default: None)
+  --generation_num_beams GENERATION_NUM_BEAMS, --generation-num-beams GENERATION_NUM_BEAMS
+                        The `num_beams` to use on each evaluation loop when
+                        `predict_with_generate=True`. Will default to the
+                        `num_beams` value of the model configuration.
+                        (default: None)
+  --generation_config GENERATION_CONFIG, --generation-config GENERATION_CONFIG
+                        Model id, file path or url pointing to a
+                        GenerationConfig json file, to use during prediction.
+                        (default: None)
+  --tuner_backend {peft,unsloth}, --tuner-backend {peft,unsloth}
+  --vit_gradient_checkpointing VIT_GRADIENT_CHECKPOINTING, --vit-gradient-checkpointing VIT_GRADIENT_CHECKPOINTING
+  --router_aux_loss_coef ROUTER_AUX_LOSS_COEF, --router-aux-loss-coef ROUTER_AUX_LOSS_COEF
+  --enable_dft_loss [ENABLE_DFT_LOSS], --enable-dft-loss [ENABLE_DFT_LOSS]
+  --enable_channel_loss [ENABLE_CHANNEL_LOSS], --enable-channel-loss [ENABLE_CHANNEL_LOSS]
+  --safe_serialization [SAFE_SERIALIZATION], --safe-serialization [SAFE_SERIALIZATION]
+  --no_safe_serialization, --no-safe-serialization
+  --max_shard_size MAX_SHARD_SIZE, --max-shard-size MAX_SHARD_SIZE
+  --check_model [CHECK_MODEL], --check-model [CHECK_MODEL]
+  --no_check_model, --no-check-model
+  --acc_strategy {token,seq}, --acc-strategy {token,seq}
+  --train_dataloader_shuffle [TRAIN_DATALOADER_SHUFFLE], --train-dataloader-shuffle [TRAIN_DATALOADER_SHUFFLE]
+  --no_train_dataloader_shuffle, --no-train-dataloader-shuffle
+  --group_by_length [GROUP_BY_LENGTH], --group-by-length [GROUP_BY_LENGTH]
+  --max_epochs MAX_EPOCHS, --max-epochs MAX_EPOCHS
+  --aligner_lr ALIGNER_LR, --aligner-lr ALIGNER_LR
+  --vit_lr VIT_LR, --vit-lr VIT_LR
+  --use_logits_to_keep USE_LOGITS_TO_KEEP, --use-logits-to-keep USE_LOGITS_TO_KEEP
+  --ds3_gather_for_generation [DS3_GATHER_FOR_GENERATION], --ds3-gather-for-generation [DS3_GATHER_FOR_GENERATION]
+  --no_ds3_gather_for_generation, --no-ds3-gather-for-generation
+  --resume_only_model [RESUME_ONLY_MODEL], --resume-only-model [RESUME_ONLY_MODEL]
+  --optimizer OPTIMIZER
+  --loss_type LOSS_TYPE, --loss-type LOSS_TYPE
+                        loss_func choices: ['cross_entropy',
+                        'cosine_similarity', 'contrastive',
+                        'online_contrastive', 'infonce', 'pointwise_reranker',
+                        'listwise_reranker'] (default: None)
+  --mrl_dims MRL_DIMS, --mrl-dims MRL_DIMS
+  --eval_metric EVAL_METRIC, --eval-metric EVAL_METRIC
+  --callbacks CALLBACKS [CALLBACKS ...]
+  --early_stop_interval EARLY_STOP_INTERVAL, --early-stop-interval EARLY_STOP_INTERVAL
+  --eval_use_evalscope [EVAL_USE_EVALSCOPE], --eval-use-evalscope [EVAL_USE_EVALSCOPE]
+  --eval_dataset EVAL_DATASET [EVAL_DATASET ...], --eval-dataset EVAL_DATASET [EVAL_DATASET ...]
+  --eval_dataset_args EVAL_DATASET_ARGS, --eval-dataset-args EVAL_DATASET_ARGS
+  --eval_limit EVAL_LIMIT, --eval-limit EVAL_LIMIT
+  --eval_generation_config EVAL_GENERATION_CONFIG, --eval-generation-config EVAL_GENERATION_CONFIG
+  --extra_eval_args EXTRA_EVAL_ARGS, --extra-eval-args EXTRA_EVAL_ARGS
+  --tuner_type TUNER_TYPE, --tuner-type TUNER_TYPE
+                        tuner_type choices: ['dummy', 'reft', 'longlora',
+                        'full', 'bone', 'lora_llm', 'lora', 'adapter', 'boft',
+                        'vera', 'adalora', 'fourierft', 'llamapro', 'ia3']
+                        (default: lora)
+  --use_galore [USE_GALORE], --use-galore [USE_GALORE]
+  --galore_target_modules GALORE_TARGET_MODULES [GALORE_TARGET_MODULES ...], --galore-target-modules GALORE_TARGET_MODULES [GALORE_TARGET_MODULES ...]
+  --galore_rank GALORE_RANK, --galore-rank GALORE_RANK
+  --galore_update_proj_gap GALORE_UPDATE_PROJ_GAP, --galore-update-proj-gap GALORE_UPDATE_PROJ_GAP
+  --galore_scale GALORE_SCALE, --galore-scale GALORE_SCALE
+  --galore_proj_type GALORE_PROJ_TYPE, --galore-proj-type GALORE_PROJ_TYPE
+  --galore_optim_per_parameter [GALORE_OPTIM_PER_PARAMETER], --galore-optim-per-parameter [GALORE_OPTIM_PER_PARAMETER]
+  --galore_with_embedding [GALORE_WITH_EMBEDDING], --galore-with-embedding [GALORE_WITH_EMBEDDING]
+  --galore_quantization [GALORE_QUANTIZATION], --galore-quantization [GALORE_QUANTIZATION]
+  --galore_proj_quant [GALORE_PROJ_QUANT], --galore-proj-quant [GALORE_PROJ_QUANT]
+  --galore_proj_bits GALORE_PROJ_BITS, --galore-proj-bits GALORE_PROJ_BITS
+  --galore_proj_group_size GALORE_PROJ_GROUP_SIZE, --galore-proj-group-size GALORE_PROJ_GROUP_SIZE
+  --galore_cos_threshold GALORE_COS_THRESHOLD, --galore-cos-threshold GALORE_COS_THRESHOLD
+  --galore_gamma_proj GALORE_GAMMA_PROJ, --galore-gamma-proj GALORE_GAMMA_PROJ
+  --galore_queue_size GALORE_QUEUE_SIZE, --galore-queue-size GALORE_QUEUE_SIZE
+  --lisa_activated_layers LISA_ACTIVATED_LAYERS, --lisa-activated-layers LISA_ACTIVATED_LAYERS
+  --lisa_step_interval LISA_STEP_INTERVAL, --lisa-step-interval LISA_STEP_INTERVAL
+  --use_flash_ckpt [USE_FLASH_CKPT], --use-flash-ckpt [USE_FLASH_CKPT]
+  --use_ray [USE_RAY], --use-ray [USE_RAY]
+  --ray_exp_name RAY_EXP_NAME, --ray-exp-name RAY_EXP_NAME
+  --device_groups DEVICE_GROUPS, --device-groups DEVICE_GROUPS
+  --model MODEL
+  --model_type MODEL_TYPE, --model-type MODEL_TYPE
+                        model_type choices: ['emu3_gen', 'emu3_chat',
+                        'bge_reranker', 'baichuan', 'baichuan_m1',
+                        'baichuan2', 'ernie4_5', 'ernie4_5_moe', 'ernie_vl',
+                        'paddle_ocr', 'paddleocr_vl', 'modern_bert',
+                        'modern_bert_gte', 'modern_bert_gte_reranker', 'bert',
+                        'chatglm2', 'chatglm3', 'chatglm4', 'glm4',
+                        'codegeex4', 'chatglm4v', 'glm4v', 'cogvlm',
+                        'cogagent_chat', 'cogagent_vqa', 'cogvlm2',
+                        'cogvlm2_video', 'glm_edge', 'glm_edge_v', 'glm4_moe',
+                        'glm4_moe_lite', 'glm4v_moe', 'glm_ocr',
+                        'glm_moe_dsa', 'qwen', 'modelscope_agent',
+                        'qwen_audio', 'qwen_vl', 'qwen2', 'qwen2_moe',
+                        'qwen3', 'qwen3_moe', 'qwen3_next', 'qwen2_vl',
+                        'qwen2_5_vl', 'qwen3_vl', 'qwen3_vl_moe',
+                        'qwen3_5_moe', 'qwen3_5', 'ovis_ocr2', 'qwen2_5_omni',
+                        'qwen3_omni_moe', 'qwen3_asr', 'qwen3_tts',
+                        'midashenglm', 'qwen2_audio', 'ovis1_6', 'ovis2',
+                        'ovis2_5', 'qwen2_reward', 'qwen2_5_prm', 'qwen3_emb',
+                        'qwen3_reranker', 'qwen3_vl_emb', 'qwen3_vl_reranker',
+                        'codefuse_qwen', 'codefuse_codegeex2',
+                        'codefuse_codellama', 'deepseek', 'deepseek_v2',
+                        'deepseek_v3', 'deepseek_v32', 'deepseek_v4',
+                        'deepseek_vl', 'deepseek_janus', 'deepseek_janus_pro',
+                        'deepseek_vl2', 'deepseek_ocr', 'deepseek_ocr2',
+                        'unlimited_ocr', 'paligemma', 'gemma', 'gemma2',
+                        'gemma3_text', 'gemma3_vision', 'gemma3n',
+                        'gemma_emb', 'gemma4', 'gemma4_unified',
+                        'diffusion_gemma', 'internlm', 'internlm2',
+                        'internlm3', 'internvl_chat', 'internvl', 'interns1',
+                        'xcomposer2', 'xcomposer2_4khd', 'xcomposer2_5',
+                        'xcomposer2_5_ol_audio', 'internlm2_reward', 'llama',
+                        'llama3_2_vision', 'llama4', 'llama3_1_omni',
+                        'llava_llama3_hf', 'llava1_5_hf',
+                        'llava_onevision_hf', 'llava_next_qwen_hf',
+                        'llama3_llava_next_hf', 'llava1_6_vicuna_hf',
+                        'llava1_6_mistral_hf', 'llava_llama3_1_hf',
+                        'llava1_6_yi_hf', 'llava_next_video_hf',
+                        'llava_next_video_yi_hf', 'llama3_llava_next',
+                        'llava1_6_mistral', 'llava1_6_yi', 'llava_next_qwen',
+                        'llava_onevision1_5', 'grok', 'polylm', 'yuan2',
+                        'orion', 'dbrx', 'bluelm', 'seggpt', 'xverse',
+                        'xverse_moe', 'c4ai', 'aya', 'ling', 'qwen2_gte',
+                        'mimo', 'dots1', 'hunyuan', 'hunyuan_v1_dense',
+                        'hy_v3', 'gpt_oss', 'longchat', 'bailing_moe',
+                        'bailing_hybrid', 'iquestcoder', 'youtu_llm', 'olmoe',
+                        'mamba', 'phi3_vision', 'phi4_multimodal', 'florence',
+                        'phi3_small', 'phi2', 'phi3', 'phi4', 'phi3_moe',
+                        'minicpm_moe', 'minicpmv', 'minicpmv2_5',
+                        'minicpmv2_6', 'minicpmo', 'minicpmv4', 'minicpmv4_5',
+                        'minicpmv4_6', 'minicpm', 'minicpm_chatml',
+                        'minicpm3', 'minimax_vl', 'minimax', 'minimax_m1',
+                        'minimax_m2', 'minimax_m3_vl', 'mistral', 'mixtral',
+                        'mistral_nemo', 'mistral_2501', 'zephyr',
+                        'wizardlm2_moe', 'wizardlm2', 'devstral', 'mistral3',
+                        'mistral3_2506', 'idefics3', 'pixtral', 'molmoe',
+                        'molmo', 'molmo2', 'megrez_omni', 'qwen2_gme',
+                        'jina_reranker_m0', 'keye_vl', 'keye_vl_1_5',
+                        'dots_ocr', 'sail_vl2', 'kimi_vl', 'kimi_k25',
+                        'kimi_k3', 'mplug_owl2', 'mplug_owl2_1', 'mplug_owl3',
+                        'mplug_owl3_241101', 'doc_owl2', 'openbuddy_llama',
+                        'openbuddy_mistral', 'openbuddy_mixtral', 'seed_oss',
+                        'skywork', 'llama3_2_reward', 'gemma_reward',
+                        'got_ocr2', 'got_ocr2_hf', 'step_audio',
+                        'step_audio2_mini', 'step3_vl', 'telechat',
+                        'telechat2', 'hunyuan_ocr', 'valley', 'yi_vl', 'yi']
+                        (default: None)
+  --model_revision MODEL_REVISION, --model-revision MODEL_REVISION
+  --task_type {causal_lm,seq_cls,embedding,reranker,generative_reranker}, --task-type {causal_lm,seq_cls,embedding,reranker,generative_reranker}
+  --torch_dtype {bfloat16,float16,float32,None}, --torch-dtype {bfloat16,float16,float32,None}
+  --attn_impl ATTN_IMPL, --attn-impl ATTN_IMPL
+  --experts_impl EXPERTS_IMPL, --experts-impl EXPERTS_IMPL
+  --new_special_tokens NEW_SPECIAL_TOKENS [NEW_SPECIAL_TOKENS ...], --new-special-tokens NEW_SPECIAL_TOKENS [NEW_SPECIAL_TOKENS ...]
+  --num_labels NUM_LABELS, --num-labels NUM_LABELS
+  --problem_type {regression,single_label_classification,multi_label_classification}, --problem-type {regression,single_label_classification,multi_label_classification}
+  --rope_scaling ROPE_SCALING, --rope-scaling ROPE_SCALING
+  --device_map DEVICE_MAP, --device-map DEVICE_MAP
+  --max_memory MAX_MEMORY, --max-memory MAX_MEMORY
+  --max_model_len MAX_MODEL_LEN, --max-model-len MAX_MODEL_LEN
+  --local_repo_path LOCAL_REPO_PATH, --local-repo-path LOCAL_REPO_PATH
+  --init_strategy {zero,uniform,normal,xavier_uniform,xavier_normal,kaiming_uniform,kaiming_normal,orthogonal}, --init-strategy {zero,uniform,normal,xavier_uniform,xavier_normal,kaiming_uniform,kaiming_normal,orthogonal}
+  --template TEMPLATE   template choices: ['chatml', 'dummy', 'emu3_gen',
+                        'emu3_chat', 'bge_reranker', 'ernie',
+                        'ernie_thinking', 'paddle_ocr', 'ernie_vl',
+                        'ernie_vl_thinking', 'paddle_ocr_1_5', 'bert',
+                        'deepseek', 'deepseek_coder', 'deepseek_vl',
+                        'deepseek_janus', 'deepseek_ocr', 'deepseek_ocr2',
+                        'unlimited_ocr', 'deepseek_v2_5', 'deepseek_r1',
+                        'deepseek_v3_1', 'deepseek_v4', 'deepseek_vl2',
+                        'deepseek_janus_pro', 'dots_ocr', 'gemma',
+                        'paligemma', 'gemma3_text', 'gemma3_vision',
+                        'gemma3n', 'gemma4_nothinking', 'gemma4',
+                        'diffusion_gemma', 'chatglm2', 'chatglm4v',
+                        'chatglm4', 'glm4', 'glm4v', 'glm4_5', 'glm4_7',
+                        'glm5_1', 'glm5_2', 'glm4_5v', 'glm4_z1_rumination',
+                        'codegeex4', 'longwriter_llama', 'cogagent_chat',
+                        'cogagent_vqa', 'cogvlm', 'cogvlm2', 'cogvlm2_video',
+                        'glm_edge_v', 'glm_ocr', 'idefics3', 'internlm',
+                        'internlm2', 'internlm2_reward', 'ixcomposer2',
+                        'xcomposer2_5', 'xcomposer2_4khd', 'llama', 'llama3',
+                        'llama3_2', 'llama3_2_vision', 'llama4', 'reflection',
+                        'llama3_1_omni', 'qwen', 'qwen2_5', 'qwq_preview',
+                        'qwq', 'qwen3', 'qwen3_guard', 'qwen3_thinking',
+                        'qwen3_nothinking', 'qwen3_coder', 'qwen3_emb',
+                        'qwen3_reranker', 'qwen2_5_math', 'qwen2_5_math_prm',
+                        'qwen_vl', 'qwen_audio', 'qwen2_audio', 'qwen2_vl',
+                        'qvq', 'qwen2_5_vl', 'mimo_vl', 'qwen3_vl', 'qwen3_5',
+                        'ovis_ocr2', 'qwen3_vl_emb', 'qwen3_vl_reranker',
+                        'qwen2_5_omni', 'qwen3_omni', 'qwen3_asr',
+                        'qwen3_tts', 'ovis1_6', 'ovis1_6_llama3', 'ovis2',
+                        'ovis2_5', 'marco_o1', 'yufeng_xguard', 'default',
+                        'modelscope_agent', 'qwen2_gme', 'jina_reranker_m0',
+                        'baichuan', 'baichuan_m1', 'numina', 'mistral_nemo',
+                        'xverse', 'yuan', 'ziya', 'skywork', 'skywork_o1',
+                        'bluelm', 'codefuse_codellama', 'codefuse', 'zephyr',
+                        'sus', 'orion', 'telechat', 'telechat2', 'dbrx',
+                        'mengzi', 'c4ai', 'wizardlm2', 'wizardlm2_moe',
+                        'atom', 'aya', 'ling', 'mimo_rl', 'dots1',
+                        'hunyuan_moe', 'hunyuan', 'hy_v3_preview', 'hy_v3',
+                        'gpt_oss', 'longchat', 'ling2', 'ring2', 'ring2_5',
+                        'iquestcoder', 'youtu_llm', 'olmoe', 'olmoe_0924',
+                        'florence', 'phi3', 'phi4', 'phi3_vision',
+                        'phi4_multimodal', 'internvl', 'internvl_phi3',
+                        'internvl2', 'internvl2_phi3', 'internvl2_5',
+                        'internvl3_5', 'internvl3_5_gpt', 'interns1',
+                        'internvl_hf', 'keye_vl', 'keye_vl_1_5',
+                        'llava1_5_hf', 'llava_next_video_hf',
+                        'llava1_6_mistral_hf', 'llava1_6_vicuna_hf',
+                        'llava1_6_yi_hf', 'llama3_llava_next_hf',
+                        'llava_next_qwen_hf', 'llava_onevision_hf',
+                        'llava_llama3_1_hf', 'llava_llama3_hf',
+                        'llava1_6_mistral', 'llava1_6_yi',
+                        'llama3_llava_next', 'llava_next_qwen',
+                        'llava_onevision1_5', 'megrez', 'megrez_omni',
+                        'midashenglm', 'minicpm', 'minicpmv', 'minicpmv2_5',
+                        'minicpmv2_6', 'minicpmv4', 'minicpmo', 'minicpmv4_5',
+                        'minicpmo4_5', 'minicpmv4_6', 'minicpm5', 'minimax',
+                        'minimax_m1', 'minimax_vl', 'minimax_m2',
+                        'minimax_m2_1', 'minimax_m2_5', 'minimax_m2_7',
+                        'minimax_m3_vl', 'minimind', 'mistral_2501',
+                        'mistral_2503', 'devstral', 'mistral_2506',
+                        'mistral_2512', 'mistral_2512_thinking', 'molmo',
+                        'molmo2', 'moonlight', 'kimi_k2', 'kimi_vl',
+                        'kimi_k25', 'kimi_k3', 'mplug_owl2', 'mplug_owl3',
+                        'mplug_owl3_241101', 'doc_owl2', 'openbuddy',
+                        'openbuddy2', 'pixtral', 'seed_oss', 'sail_vl2',
+                        'got_ocr2', 'got_ocr2_hf', 'step_audio2_mini',
+                        'step_audio', 'step3_vl', 'hunyuan_ocr', 'valley',
+                        'yi_coder', 'yi_vl'] (default: None)
+  --system SYSTEM
+  --max_length MAX_LENGTH, --max-length MAX_LENGTH
+  --truncation_strategy {delete,left,right,split,None}, --truncation-strategy {delete,left,right,split,None}
+  --max_pixels MAX_PIXELS, --max-pixels MAX_PIXELS
+  --agent_template AGENT_TEMPLATE, --agent-template AGENT_TEMPLATE
+  --norm_bbox {norm1000,none,None}, --norm-bbox {norm1000,none,None}
+  --use_chat_template USE_CHAT_TEMPLATE, --use-chat-template USE_CHAT_TEMPLATE
+  --padding_side {left,right}, --padding-side {left,right}
+  --padding_free [PADDING_FREE], --padding-free [PADDING_FREE]
+  --loss_scale LOSS_SCALE, --loss-scale LOSS_SCALE
+  --sequence_parallel_size SEQUENCE_PARALLEL_SIZE, --sequence-parallel-size SEQUENCE_PARALLEL_SIZE
+  --is_binary_loss_scale IS_BINARY_LOSS_SCALE, --is-binary-loss-scale IS_BINARY_LOSS_SCALE
+  --template_backend {swift,jinja}, --template-backend {swift,jinja}
+  --response_prefix RESPONSE_PREFIX, --response-prefix RESPONSE_PREFIX
+  --enable_thinking ENABLE_THINKING, --enable-thinking ENABLE_THINKING
+  --preserve_thinking PRESERVE_THINKING, --preserve-thinking PRESERVE_THINKING
+  --add_non_thinking_prefix [ADD_NON_THINKING_PREFIX], --add-non-thinking-prefix [ADD_NON_THINKING_PREFIX]
+  --no_add_non_thinking_prefix, --no-add-non-thinking-prefix
+  --disable_ignore_empty_think [DISABLE_IGNORE_EMPTY_THINK], --disable-ignore-empty-think [DISABLE_IGNORE_EMPTY_THINK]
+  --dataset DATASET [DATASET ...]
+  --val_dataset VAL_DATASET [VAL_DATASET ...], --val-dataset VAL_DATASET [VAL_DATASET ...]
+  --cached_dataset CACHED_DATASET [CACHED_DATASET ...], --cached-dataset CACHED_DATASET [CACHED_DATASET ...]
+  --cached_val_dataset CACHED_VAL_DATASET [CACHED_VAL_DATASET ...], --cached-val-dataset CACHED_VAL_DATASET [CACHED_VAL_DATASET ...]
+  --split_dataset_ratio SPLIT_DATASET_RATIO, --split-dataset-ratio SPLIT_DATASET_RATIO
+  --dataset_num_proc DATASET_NUM_PROC, --dataset-num-proc DATASET_NUM_PROC
+  --load_from_cache_file [LOAD_FROM_CACHE_FILE], --load-from-cache-file [LOAD_FROM_CACHE_FILE]
+  --dataset_shuffle [DATASET_SHUFFLE], --dataset-shuffle [DATASET_SHUFFLE]
+  --no_dataset_shuffle, --no-dataset-shuffle
+  --val_dataset_shuffle [VAL_DATASET_SHUFFLE], --val-dataset-shuffle [VAL_DATASET_SHUFFLE]
+  --streaming [STREAMING]
+  --interleave_prob INTERLEAVE_PROB [INTERLEAVE_PROB ...], --interleave-prob INTERLEAVE_PROB [INTERLEAVE_PROB ...]
+  --stopping_strategy {first_exhausted,all_exhausted}, --stopping-strategy {first_exhausted,all_exhausted}
+  --shuffle_buffer_size SHUFFLE_BUFFER_SIZE, --shuffle-buffer-size SHUFFLE_BUFFER_SIZE
+  --download_mode {force_redownload,reuse_dataset_if_exists}, --download-mode {force_redownload,reuse_dataset_if_exists}
+  --columns COLUMNS
+  --strict [STRICT]
+  --disable_auto_column_mapping [DISABLE_AUTO_COLUMN_MAPPING], --disable-auto-column-mapping [DISABLE_AUTO_COLUMN_MAPPING]
+  --model_name MODEL_NAME [MODEL_NAME ...], --model-name MODEL_NAME [MODEL_NAME ...]
+                        e.g. ['小黄', 'Xiao Huang'] (default: None)
+  --model_author MODEL_AUTHOR [MODEL_AUTHOR ...], --model-author MODEL_AUTHOR [MODEL_AUTHOR ...]
+                        e.g. ['魔搭', 'ModelScope'] (default: None)
+  --custom_dataset_info CUSTOM_DATASET_INFO [CUSTOM_DATASET_INFO ...], --custom-dataset-info CUSTOM_DATASET_INFO [CUSTOM_DATASET_INFO ...]
+  --quant_method {bnb,hqq,eetq,quanto,fp8}, --quant-method {bnb,hqq,eetq,quanto,fp8}
+  --quant_bits {1,2,3,4,8,float8}, --quant-bits {1,2,3,4,8,float8}
+  --hqq_axis HQQ_AXIS, --hqq-axis HQQ_AXIS
+  --bnb_4bit_compute_dtype {float16,bfloat16,float32,None}, --bnb-4bit-compute-dtype {float16,bfloat16,float32,None}
+  --bnb_4bit_quant_type {fp4,nf4}, --bnb-4bit-quant-type {fp4,nf4}
+  --bnb_4bit_use_double_quant [BNB_4BIT_USE_DOUBLE_QUANT], --bnb-4bit-use-double-quant [BNB_4BIT_USE_DOUBLE_QUANT]
+  --no_bnb_4bit_use_double_quant, --no-bnb-4bit-use-double-quant
+  --bnb_4bit_quant_storage BNB_4BIT_QUANT_STORAGE, --bnb-4bit-quant-storage BNB_4BIT_QUANT_STORAGE
+  --max_new_tokens MAX_NEW_TOKENS, --max-new-tokens MAX_NEW_TOKENS
+  --temperature TEMPERATURE
+  --top_k TOP_K, --top-k TOP_K
+  --top_p TOP_P, --top-p TOP_P
+  --repetition_penalty REPETITION_PENALTY, --repetition-penalty REPETITION_PENALTY
+  --num_beams NUM_BEAMS, --num-beams NUM_BEAMS
+  --stream STREAM
+  --stop_words STOP_WORDS [STOP_WORDS ...], --stop-words STOP_WORDS [STOP_WORDS ...]
+  --logprobs [LOGPROBS]
+  --top_logprobs TOP_LOGPROBS, --top-logprobs TOP_LOGPROBS
+  --structured_outputs_regex STRUCTURED_OUTPUTS_REGEX, --structured-outputs-regex STRUCTURED_OUTPUTS_REGEX
+  --adapters ADAPTERS [ADAPTERS ...]
+  --external_plugins EXTERNAL_PLUGINS [EXTERNAL_PLUGINS ...], --external-plugins EXTERNAL_PLUGINS [EXTERNAL_PLUGINS ...]
+  --custom_register_path CUSTOM_REGISTER_PATH [CUSTOM_REGISTER_PATH ...], --custom-register-path CUSTOM_REGISTER_PATH [CUSTOM_REGISTER_PATH ...]
+  --model_kwargs MODEL_KWARGS, --model-kwargs MODEL_KWARGS
+  --enable_npu_model_patch [ENABLE_NPU_MODEL_PATCH], --enable-npu-model-patch [ENABLE_NPU_MODEL_PATCH]
+  --no_enable_npu_model_patch, --no-enable-npu-model-patch
+  --load_args [LOAD_ARGS], --load-args [LOAD_ARGS]
+  --load_data_args [LOAD_DATA_ARGS], --load-data-args [LOAD_DATA_ARGS]
+  --packing [PACKING]
+  --packing_length PACKING_LENGTH, --packing-length PACKING_LENGTH
+  --packing_num_proc PACKING_NUM_PROC, --packing-num-proc PACKING_NUM_PROC
+  --packing_strategy {binpack,sequential}, --packing-strategy {binpack,sequential}
+  --lazy_tokenize LAZY_TOKENIZE, --lazy-tokenize LAZY_TOKENIZE
+  --use_hf [USE_HF], --use-hf [USE_HF]
+  --ignore_args_error [IGNORE_ARGS_ERROR], --ignore-args-error [IGNORE_ARGS_ERROR]
+  --use_swift_lora [USE_SWIFT_LORA], --use-swift-lora [USE_SWIFT_LORA]
+  --freeze_parameters FREEZE_PARAMETERS [FREEZE_PARAMETERS ...], --freeze-parameters FREEZE_PARAMETERS [FREEZE_PARAMETERS ...]
+  --freeze_parameters_regex FREEZE_PARAMETERS_REGEX, --freeze-parameters-regex FREEZE_PARAMETERS_REGEX
+  --freeze_parameters_ratio FREEZE_PARAMETERS_RATIO, --freeze-parameters-ratio FREEZE_PARAMETERS_RATIO
+  --trainable_parameters TRAINABLE_PARAMETERS [TRAINABLE_PARAMETERS ...], --trainable-parameters TRAINABLE_PARAMETERS [TRAINABLE_PARAMETERS ...]
+  --trainable_parameters_regex TRAINABLE_PARAMETERS_REGEX, --trainable-parameters-regex TRAINABLE_PARAMETERS_REGEX
+  --freeze_llm [FREEZE_LLM], --freeze-llm [FREEZE_LLM]
+  --freeze_vit [FREEZE_VIT], --freeze-vit [FREEZE_VIT]
+  --no_freeze_vit, --no-freeze-vit
+  --freeze_aligner [FREEZE_ALIGNER], --freeze-aligner [FREEZE_ALIGNER]
+  --no_freeze_aligner, --no-freeze-aligner
+  --target_modules TARGET_MODULES [TARGET_MODULES ...], --target-modules TARGET_MODULES [TARGET_MODULES ...]
+  --target_regex TARGET_REGEX, --target-regex TARGET_REGEX
+  --target_parameters TARGET_PARAMETERS [TARGET_PARAMETERS ...], --target-parameters TARGET_PARAMETERS [TARGET_PARAMETERS ...]
+  --modules_to_save MODULES_TO_SAVE [MODULES_TO_SAVE ...], --modules-to-save MODULES_TO_SAVE [MODULES_TO_SAVE ...]
+  --lora_rank LORA_RANK, --lora-rank LORA_RANK
+  --lora_alpha LORA_ALPHA, --lora-alpha LORA_ALPHA
+  --lora_dropout LORA_DROPOUT, --lora-dropout LORA_DROPOUT
+  --lora_bias {none,all}, --lora-bias {none,all}
+  --lora_dtype {float16,bfloat16,float32,None}, --lora-dtype {float16,bfloat16,float32,None}
+  --lorap_lr_ratio LORAP_LR_RATIO, --lorap-lr-ratio LORAP_LR_RATIO
+  --use_rslora [USE_RSLORA], --use-rslora [USE_RSLORA]
+  --use_dora [USE_DORA], --use-dora [USE_DORA]
+  --lora_ga_batch_size LORA_GA_BATCH_SIZE, --lora-ga-batch-size LORA_GA_BATCH_SIZE
+  --lora_ga_iters LORA_GA_ITERS, --lora-ga-iters LORA_GA_ITERS
+  --lora_ga_max_length LORA_GA_MAX_LENGTH, --lora-ga-max-length LORA_GA_MAX_LENGTH
+  --lora_ga_direction LORA_GA_DIRECTION, --lora-ga-direction LORA_GA_DIRECTION
+  --lora_ga_scale LORA_GA_SCALE, --lora-ga-scale LORA_GA_SCALE
+  --lora_ga_stable_gamma LORA_GA_STABLE_GAMMA, --lora-ga-stable-gamma LORA_GA_STABLE_GAMMA
+  --init_weights INIT_WEIGHTS, --init-weights INIT_WEIGHTS
+  --fourier_n_frequency FOURIER_N_FREQUENCY, --fourier-n-frequency FOURIER_N_FREQUENCY
+  --fourier_scaling FOURIER_SCALING, --fourier-scaling FOURIER_SCALING
+  --boft_block_size BOFT_BLOCK_SIZE, --boft-block-size BOFT_BLOCK_SIZE
+  --boft_block_num BOFT_BLOCK_NUM, --boft-block-num BOFT_BLOCK_NUM
+  --boft_n_butterfly_factor BOFT_N_BUTTERFLY_FACTOR, --boft-n-butterfly-factor BOFT_N_BUTTERFLY_FACTOR
+  --boft_dropout BOFT_DROPOUT, --boft-dropout BOFT_DROPOUT
+  --vera_rank VERA_RANK, --vera-rank VERA_RANK
+  --vera_projection_prng_key VERA_PROJECTION_PRNG_KEY, --vera-projection-prng-key VERA_PROJECTION_PRNG_KEY
+  --vera_dropout VERA_DROPOUT, --vera-dropout VERA_DROPOUT
+  --vera_d_initial VERA_D_INITIAL, --vera-d-initial VERA_D_INITIAL
+  --adapter_act ADAPTER_ACT, --adapter-act ADAPTER_ACT
+  --adapter_length ADAPTER_LENGTH, --adapter-length ADAPTER_LENGTH
+  --adalora_target_r ADALORA_TARGET_R, --adalora-target-r ADALORA_TARGET_R
+  --adalora_init_r ADALORA_INIT_R, --adalora-init-r ADALORA_INIT_R
+  --adalora_tinit ADALORA_TINIT, --adalora-tinit ADALORA_TINIT
+  --adalora_tfinal ADALORA_TFINAL, --adalora-tfinal ADALORA_TFINAL
+  --adalora_deltaT ADALORA_DELTAT, --adalora-deltaT ADALORA_DELTAT
+  --adalora_beta1 ADALORA_BETA1, --adalora-beta1 ADALORA_BETA1
+  --adalora_beta2 ADALORA_BETA2, --adalora-beta2 ADALORA_BETA2
+  --adalora_orth_reg_weight ADALORA_ORTH_REG_WEIGHT, --adalora-orth-reg-weight ADALORA_ORTH_REG_WEIGHT
+  --llamapro_num_new_blocks LLAMAPRO_NUM_NEW_BLOCKS, --llamapro-num-new-blocks LLAMAPRO_NUM_NEW_BLOCKS
+  --llamapro_num_groups LLAMAPRO_NUM_GROUPS, --llamapro-num-groups LLAMAPRO_NUM_GROUPS
+  --reft_layer_key REFT_LAYER_KEY, --reft-layer-key REFT_LAYER_KEY
+  --reft_layers REFT_LAYERS [REFT_LAYERS ...], --reft-layers REFT_LAYERS [REFT_LAYERS ...]
+  --reft_rank REFT_RANK, --reft-rank REFT_RANK
+  --reft_intervention_type {NoreftIntervention,LoreftIntervention,ConsreftIntervention,LobireftIntervention,DireftIntervention,NodireftIntervention}, --reft-intervention-type {NoreftIntervention,LoreftIntervention,ConsreftIntervention,LobireftIntervention,DireftIntervention,NodireftIntervention}
+  --reft_args REFT_ARGS, --reft-args REFT_ARGS
+  --swanlab_token SWANLAB_TOKEN, --swanlab-token SWANLAB_TOKEN
+  --swanlab_project SWANLAB_PROJECT, --swanlab-project SWANLAB_PROJECT
+  --swanlab_workspace SWANLAB_WORKSPACE, --swanlab-workspace SWANLAB_WORKSPACE
+  --swanlab_exp_name SWANLAB_EXP_NAME, --swanlab-exp-name SWANLAB_EXP_NAME
+  --swanlab_notification_method SWANLAB_NOTIFICATION_METHOD, --swanlab-notification-method SWANLAB_NOTIFICATION_METHOD
+  --swanlab_webhook_url SWANLAB_WEBHOOK_URL, --swanlab-webhook-url SWANLAB_WEBHOOK_URL
+  --swanlab_secret SWANLAB_SECRET, --swanlab-secret SWANLAB_SECRET
+  --swanlab_sender_email SWANLAB_SENDER_EMAIL, --swanlab-sender-email SWANLAB_SENDER_EMAIL
+  --swanlab_receiver_email SWANLAB_RECEIVER_EMAIL, --swanlab-receiver-email SWANLAB_RECEIVER_EMAIL
+  --swanlab_smtp_server SWANLAB_SMTP_SERVER, --swanlab-smtp-server SWANLAB_SMTP_SERVER
+  --swanlab_smtp_port SWANLAB_SMTP_PORT, --swanlab-smtp-port SWANLAB_SMTP_PORT
+  --swanlab_email_language SWANLAB_EMAIL_LANGUAGE, --swanlab-email-language SWANLAB_EMAIL_LANGUAGE
+  --swanlab_mode {cloud,local}, --swanlab-mode {cloud,local}
+  --add_version [ADD_VERSION], --add-version [ADD_VERSION]
+  --no_add_version, --no-add-version
+  --create_checkpoint_symlink [CREATE_CHECKPOINT_SYMLINK], --create-checkpoint-symlink [CREATE_CHECKPOINT_SYMLINK]
+  --zero_hpz_partition_size ZERO_HPZ_PARTITION_SIZE, --zero-hpz-partition-size ZERO_HPZ_PARTITION_SIZE
+  --deepspeed_autotp_size DEEPSPEED_AUTOTP_SIZE, --deepspeed-autotp-size DEEPSPEED_AUTOTP_SIZE

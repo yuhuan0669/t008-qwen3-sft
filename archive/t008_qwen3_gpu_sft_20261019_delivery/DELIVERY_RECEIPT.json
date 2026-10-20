@@ -1,0 +1,76 @@
+{
+  "schema": "t008-gpu-sft-delivery-receipt-v1",
+  "files": [
+    {
+      "key": "main",
+      "id": "1p-awqvTM89aQ1Y89YHIiq2kbWNRrQDou",
+      "name": "T008_v1.2_GPU_SFT与测试加载_执行结果_20261019.md",
+      "url": "https://drive.google.com/file/d/1p-awqvTM89aQ1Y89YHIiq2kbWNRrQDou/view",
+      "parent_id": "1fhiuIhZNgHJjO09sFD9hrB6ULYiQFV84",
+      "bytes": 8078,
+      "sha256": "71eea1b665e28dc45a9cc78e1e829d01387e64fa482a8cb58ec260adc11060bc",
+      "readback": "PASS"
+    },
+    {
+      "key": "execution",
+      "id": "18YQ5hwOVZxWw2D8f-f-i10AmLfRb5MsU",
+      "name": "T008_v1.2_GPU_SFT与测试加载_追加执行记录_20261019.md",
+      "url": "https://drive.google.com/file/d/18YQ5hwOVZxWw2D8f-f-i10AmLfRb5MsU/view",
+      "parent_id": "1fhiuIhZNgHJjO09sFD9hrB6ULYiQFV84",
+      "bytes": 25113,
+      "sha256": "a0424d7f5c66132a22317a99ba6ead053150c1dbc2890600b8ac8e631a52858c",
+      "readback": "PASS"
+    },
+    {
+      "key": "gate",
+      "id": "1lIXaxowO3H9PxNHE3Mp3GbdAaNWM4S7B",
+      "name": "T008_v1.2_GPU_SFT与测试加载_阶段门禁结果_20261019.md",
+      "url": "https://drive.google.com/file/d/1lIXaxowO3H9PxNHE3Mp3GbdAaNWM4S7B/view",
+      "parent_id": "1fhiuIhZNgHJjO09sFD9hrB6ULYiQFV84",
+      "bytes": 945,
+      "sha256": "15b039bfee7104426ffbf36f19a5d4448f7f5b22e4f622e6fceb1a144ce05433",
+      "readback": "PASS"
+    },
+    {
+      "key": "evidence",
+      "id": "1LJ7fwnAhQ0TlUe_2GWj_4tTUoJpHB1nh",
+      "name": "T008_v1.2_GPU_SFT与测试加载_证据包_20261019.zip",
+      "url": "https://drive.google.com/file/d/1LJ7fwnAhQ0TlUe_2GWj_4tTUoJpHB1nh/view",
+      "parent_id": "1fhiuIhZNgHJjO09sFD9hrB6ULYiQFV84",
+      "bytes": 812515,
+      "sha256": "7530995129dbb66932a7cd77d4da4d3ce487f9d4458ddff21c5228ef51bb1f46",
+      "readback": "PASS"
+    },
+    {
+      "key": "manifest",
+      "id": "1Y2T8jv9YL_wnknwuoywjxOgx1IyyTn2k",
+      "name": "T008_v1.2_GPU_SFT与测试加载_MANIFEST_20261019.json",
+      "url": "https://drive.google.com/file/d/1Y2T8jv9YL_wnknwuoywjxOgx1IyyTn2k/view",
+      "parent_id": "1fhiuIhZNgHJjO09sFD9hrB6ULYiQFV84",
+      "bytes": 29259,
+      "sha256": "f7042f7dd5aff645ae52b7af7d0ef212e5fd0b6ac3634265f791ea513a0a3a8e",
+      "readback": "PASS"
+    },
+    {
+      "key": "gate_json",
+      "id": "1qthOdh6qZX86cYIHjQnzdBo6VRGWZxyv",
+      "name": "T008_v1.2_GPU_SFT与测试加载_门禁_20261019.json",
+      "url": "https://drive.google.com/file/d/1qthOdh6qZX86cYIHjQnzdBo6VRGWZxyv/view",
+      "parent_id": "1fhiuIhZNgHJjO09sFD9hrB6ULYiQFV84",
+      "bytes": 1011,
+      "sha256": "3146fce77bfb15c9fb79aa2d12f9876227bccd8a953813c35dcab0735b4750de",
+      "readback": "PASS"
+    },
+    {
+      "key": "candidate",
+      "id": "1Be0WI7PKbQmcfcKj-YIyQRGikGf_ulaB",
+      "name": "T008_Qwen3-8B_checkpoint-103_LoRA_TEST_ONLY_20261019.zip",
+      "url": "https://drive.google.com/file/d/1Be0WI7PKbQmcfcKj-YIyQRGikGf_ulaB/view",
+      "parent_id": "1fhiuIhZNgHJjO09sFD9hrB6ULYiQFV84",
+      "bytes": 80736700,
+      "sha256": "33feb7cfe9e3bafa1a5b72f32e179fe89448c4c4251e152763dd846d3adffd1d",
+      "readback": "PASS"
+    }
+  ],
+  "verification": "Drive metadata and downloaded raw bytes match local files; evidence ZIP CRC and all 159 manifest payload hashes passed."
+}

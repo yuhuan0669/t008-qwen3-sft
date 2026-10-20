@@ -1,0 +1,2 @@
+# Exact archived bytes must survive checkout on every platform.
+* -text

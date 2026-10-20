@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "counts": {
+    "archived_payloads_checked": 961,
+    "original_files_checked": 1044,
+    "private_reference_only": 7,
+    "generated_reference_only": 49,
+    "object_ranges_checked": 16,
+    "code_files_checked": 18
+  },
+  "failures": [],
+  "scope": "Archive bytes and Git ancestry only; no training, quality or service acceptance."
+}

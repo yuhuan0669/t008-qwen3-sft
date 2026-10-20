@@ -1,0 +1,340 @@
+# Qwen3-8B 自我认知 SFT 全流程与实际命令
+
+
+T-008｜v1.2｜执行日期2026-10-19｜运行号 t008-qwen3-20261019-094113
+本文是已执行过程的复盘与复算手册。下列训练、服务切换及发布路径命令用于说明历史操作，不构成现在重新运行的授权。历史CPU包中的No-Go属于当时阶段状态；随后已有用户授权并实际完成GPU SFT。
+
+
+## 1. 本次结果与执行边界
+
+
+3步GPU Smoke通过；正式LoRA完成103/103步、1 epoch，checkpoint-103与Swift终态一致。随后先恢复原vLLM，再按用户“现在加载，因为要测试”加载独立LoRA测试入口 octacarbon-llm-sft-test，保留 octa-carbon-v1。已修复Open WebUI的auto工具调用参数错误。当前是测试服务，未合并权重、未完成独立A/B/C/D验收、未正式生产发布。
+
+
+真实授权顺序：CPU准备且不启GPU → 官方原生加载、默认2048过滤 → 用户“开始GPU sft吧” → 用户“授权本次暂停、训练并恢复” → 3步Smoke及一轮Full → 恢复原服务 → 用户“现在加载，因为要测试” → LoRA测试加载。英文名称及公司英文名由用户确认可用于开发及商业用途；公司是定制主体，Qwen3-8B是基座。
+
+
+## 2. 基线、代码、镜像与依赖
+
+
+实施方案：https://drive.google.com/file/d/17kVO_pWDZJIvX5N0vU-yImJyPTXvlBrA/view
+原始v1.2执行附件：https://drive.google.com/file/d/1sGwZoIbvrny6y1zSXTQrnqz5vRioNaC_/view
+任务单：https://docs.google.com/document/d/1BQLRq1pQyu7Be60_hxmeVsaFDBIMuul2-EB3aDAe_Ho/edit
+评审记录：https://docs.google.com/document/d/1xhUjGTfRnqQ8eSQKLEUihSScmdIoJPPSLrXoJ1_-7HM/edit
+
+
+实际代码提交：e7ae45aa7438c8bcca8318d3531854f7f5e7db39
+实际镜像digest：sha256:822d99beed4984a421c8d1da397993c6a8a5f88cdad7dde940bd52df0067d738
+镜像仓库：modelscope-registry.cn-hangzhou.cr.aliyuncs.com/modelscope-repo/modelscope
+实际安装版本：ms-swift=4.4.2, transformers=5.14.1, peft=0.20.0, torch=2.11.0+cu130, tokenizers=0.22.2, datasets=4.8.4, modelscope=1.38.1；ClearML SDK=1.17.0；服务vLLM=0.25.1。镜像tag中的Swift4.4.3/ModelScope1.39.0不等于实装版本。
+
+
+```
+python3 - <<'PY'
+import importlib.metadata as m
+for name in ('ms-swift','transformers','peft','torch','tokenizers','datasets','modelscope','clearml'):
+    print(name, m.version(name))
+PY
+python3 -c 'from swift.pipelines import sft_main; sft_main(["--help"])'
+python3 - <<'PY'
+from pathlib import Path
+for path in Path('/input/code').rglob('*.py'):
+    compile(path.read_bytes(), str(path), 'exec')
+print('Python syntax OK')
+PY
+bash -n /input/code/train_identity.sh
+python3 -W error::ResourceWarning -m unittest discover -s /input/code/tests -v
+```
+
+上述是对应镜像内的复算写法，路径规范化，Python语法检查不写只读代码目录；本轮整理文档没有重复执行这些历史测试。既有结果为正式入口本机及镜像32/32测试通过，保存回调9/9 CPU场景通过。Swift外层swift sft --help可能只返回外层帮助，故通过sft_main获取真实SFT CLI。当前实装采用--tuner_type lora和--eval_strategy no。
+
+
+## 3. 官方数据、许可、身份与不可变快照
+
+
+正式源：swift/Qwen3-SFT-Mixin#2000 与 swift/self-cognition:qwen3#600。使用ms-swift原生加载及原生#N采样；没有把本地1642条衍生JSONL作为训练输入。Mixin原始库1000条；身份库108条。#2000和#600是曝光次数，不是不同问题条数。身份108种模板重复5或6次，共600次曝光。
+
+
+来源的Apache-2.0声明、README、源文件及内容版本证据在CPU包。Mixin固定内容revision=e587cae71fc7084ab93dccbc37d0056df3569543；身份=d2a385942cb0d47e3fb3cdb9d98adb8b8c01dcfc。实际SDK元数据为master、etag=null，不冒称原生CLI锁了远端commit；依靠归档内容SHA及运行guard检测漂移。
+Mixin源文件SHA：d261353c05df1f1fde95639d1a9d9243e1d24470dcb4c3732965ab1ab8eeba41
+身份源文件SHA：e7b66784f02361cfa0ad4635dae12c0f810d197c22ac89a4b7837195dc4b7b23
+
+
+```
+{
+  "name_zh": "章鱼能碳垂直大模型",
+  "name_en": "Octacarbon LLM",
+  "author_zh": "能碳章鱼（湖北）人工智能科技有限公司",
+  "author_en": "Octacarbon (Hubei) Artificial Intelligence Technology Co., Ltd.",
+  "base_model": "Qwen/Qwen3-8B"
+}
+```
+
+早期不可变原始快照生成方式如下；它用于审计，不是最终训练文件路径。最终原生SftArguments启用默认shuffle=True，顺序和部分模板5/6次曝光分配与早期快照不同，因此两者摘要不混用。
+
+
+```
+python3 /input/code/prepare_official.py \
+  --spec /input/code/identity-spec.confirmed.json \
+  --out /work/new-official-original-snapshot \
+  --seed 42
+sha256sum /work/new-official-original-snapshot/train.jsonl
+sha256sum /work/new-official-original-snapshot/manifest.json
+```
+
+## 4. CPU正式参数、Tokenizer、模板与默认过滤
+
+
+在隔离CPU容器中隐藏CUDA/NVIDIA设备，基座只读挂载/base。CPU路径不实例化SwiftSft或Trainer，不加载GPU权重；完整读取模型文件只用于哈希。真实Qwen3 Tokenizer及实际Swift模板计算完整长度，包含system（如有）、user、assistant、角色/结束标记以及模板思考前缀。loss_scale=default+ignore_empty_think；system/user被mask，assistant有效token被监督。
+
+
+```
+CUDA_VISIBLE_DEVICES= NVIDIA_VISIBLE_DEVICES=void \
+bash /input/code/train_identity.sh cpu-check \
+  --model /base \
+  --identity-spec /input/code/identity-spec.confirmed.json \
+  --evidence-dir /work/NEW-native-proof \
+  --reference-snapshot /reference/original-v1.2/train.jsonl \
+  --base-files /reference/evidence/template/original-final/base-files.json
+```
+
+此处是与历史CPU步骤等价的容器路径写法。原始实际CPU启动脚本及命令原样收录在正式原生入口CPU包 scripts/run_cpu_container.sh：工作目录/tmp/t008-native-entry-cpu-20261019、旧基座kubelet挂载路径含当时Pod UID，已随Pod变化，不能直接照抄。脚本原样作为本次附件留存。
+
+
+真实CPU结果：2600加载曝光 → 默认delete删除958 → 保留1642。Mixin为2000→1042（521条不同记录），身份600→600（108条不同记录）；总共629条不同记录。默认delete删除整条超长记录，不截断为2048片段。身份曝光比例为600/1642=36.54%，这是本轮官方采样与默认过滤的结果，不是另加的人工配比。
+
+
+原生输入canonical SHA：fe0911174ed4a9b4f088804a901409d25be1af00c3cdd8a9f6981df1e6abe7aa
+原生保留canonical SHA（含lengths等全部列）：9fa63f2d87ac24130a6e4f7c31ebcfd6c91ddb5a91c8bad716326e5c708f43aa
+CPU报告文件SHA：bc602fe28f782200b3351b9130e0cfd40807e67fe6ed20a0660a4f240a0247ed
+基座16个文件共16,397,461,896字节；聚合SHA：39c6b79bcc9813377a48e65da1ad614151748389d0bf526f5d816dc581e54374
+canonical摘要与JSONL文件字节SHA不同，算法见native_recipe.digest。训练native_guard将实际对象与CPU证据对比，不修改/清洗数据。
+
+
+## 5. 最终K8s运行单元和运行支持
+
+
+context=lmas00-direct；训练namespace=swift；单卡节点=k8s-worker05，RTX4090 24,564MiB；服务namespace=vllm，Deployment=vllm。训练SA=swift-trainer、UID10001、非root、禁止提权、capabilities drop ALL、不挂载SA token。没有改RBAC、Admission Policy或既有目录权限。
+
+
+swift-base PVC的Qwen3-8B子目录只读挂载/base；swift-train-data PVC的t008-qwen3-20261019-094113子目录只读挂载/input；swift-work PVC同名子目录可写挂载/runwork。仅Smoke/Full各申请1 GPU，requests CPU4/内存16Gi，limits CPU8/内存32Gi；/dev/shm=8Gi。Job backoffLimit=0，不自动重复训练。
+
+
+镜像原件缺ClearML SDK，使用固定1.17.0 overlay；非root缺ModelScope AST预建索引，独立CPU生成并只读挂载；缓存/配置目录指向本轮可写目录。HTTPS使用系统可信根+项目CA bundle，始终启用TLS验证。完整Job JSON与588个runtime input文件哈希在GPU证据包。
+
+
+```
+export PYTHONPATH=/input/code:/input/deps
+export CLEARML_API_HOST=https://clearml.10.140.17.125.nip.io/api
+export CLEARML_WEB_HOST=https://clearml.10.140.17.125.nip.io
+export CLEARML_FILES_HOST=https://clearml.10.140.17.125.nip.io/files
+export REQUESTS_CA_BUNDLE=/input/runtime-support/trust-bundle.pem
+export SSL_CERT_FILE=/input/runtime-support/trust-bundle.pem
+export BASE_MODEL=/base
+export IDENTITY_SPEC=/input/code/identity-spec.confirmed.json
+export NATIVE_PREFLIGHT_REPORT=/input/native-preflight.json
+export APPROVAL_FILE=/input/approval.json
+export TRAIN_IMAGE_DIGEST=sha256:822d99beed4984a421c8d1da397993c6a8a5f88cdad7dde940bd52df0067d738
+export SOURCE_GIT_COMMIT=e7ae45aa7438c8bcca8318d3531854f7f5e7db39
+export RUN_AUTHORIZED=yes
+export GPU_WINDOW_APPROVED=yes
+export USE_QLORA=false
+export USE_LIGER=false
+export CUDA_VISIBLE_DEVICES=0
+export OUT_DIR=/runwork/outputs/full
+```
+
+ClearML访问凭据仅由既有Secret swift-clearml的access_key/secret_key通过env.valueFrom.secretKeyRef注入；文档和包不包含密钥值。RUN_AUTHORIZED/GPU_WINDOW_APPROVED变量不是独立批准依据，真实会话批准、精确数据/代码/镜像绑定的approval.json才是本次历史证据；不得复制这些标志冒充下一轮授权。
+
+
+## 6. 共享GPU暂停、3步Smoke、一轮Full及恢复
+
+
+先完成CPU最终PVC/SDK/参数预检，再对Smoke/Full进行server dry-run。监督脚本保存原vLLM副本和spec，确认UID未变且没有冲突HPA，停止vLLM并等待旧Pod退出；gpu_stage在每阶段确认GPU无其他计算进程。仅Smoke通过才提交Full，try/finally负责成功或失败均清理本次Job并恢复原服务。下面是历史监督顺序，不应再手动执行一遍。
+
+
+```
+kubectl --context lmas00-direct -n swift create --dry-run=server -f evidence/job-smoke.json
+kubectl --context lmas00-direct -n swift create --dry-run=server -f evidence/job-full.json
+python3 scripts/session_supervisor.py
+# 监督器内部的主要动作（已执行，勿再次重复）：
+# kubectl --context lmas00-direct -n vllm scale deployment/vllm --current-replicas=1 --replicas=0
+# kubectl --context lmas00-direct create -f evidence/job-smoke.json
+# 核验3/3实际optimizer steps及完整checkpoint-3
+# kubectl --context lmas00-direct create -f evidence/job-full.json
+# 核验103/103、epoch1及最终checkpoint-103
+# kubectl --context lmas00-direct -n swift delete job <本次smoke/full> --wait=false
+# kubectl --context lmas00-direct -n vllm scale deployment/vllm --replicas=1
+```
+
+容器实际调用链：python3 /input/gpu_stage.py smoke|full → bash /input/code/train_identity.sh smoke|full → python3 run_identity.py → 下列真实Swift argv。GPU stage记录10秒采样遥测；wrapper负责Task、精确输入guard、终态核验及候选模型上传回读。
+
+
+## 7. 正式SFT真实完整命令
+
+
+```
+CUDA_VISIBLE_DEVICES=0 \
+  swift sft \
+  --model /base \
+  --model_type qwen3 \
+  --template qwen3 \
+  --tuner_type lora \
+  --dataset 'swift/Qwen3-SFT-Mixin#2000' 'swift/self-cognition:qwen3#600' \
+  --model_name '章鱼能碳垂直大模型' 'Octacarbon LLM' \
+  --model_author '能碳章鱼（湖北）人工智能科技有限公司' 'Octacarbon (Hubei) Artificial Intelligence Technology Co., Ltd.' \
+  --split_dataset_ratio 0 \
+  --torch_dtype bfloat16 \
+  --num_train_epochs 1 \
+  --per_device_train_batch_size 1 \
+  --per_device_eval_batch_size 1 \
+  --learning_rate 1e-4 \
+  --lora_rank 8 \
+  --lora_alpha 32 \
+  --target_modules all-linear \
+  --gradient_accumulation_steps 16 \
+  --max_length 2048 \
+  --warmup_ratio 0.05 \
+  --eval_strategy no \
+  --eval_steps 50 \
+  --save_strategy steps \
+  --save_steps 50 \
+  --save_total_limit 2 \
+  --logging_steps 5 \
+  --dataloader_num_workers 4 \
+  --seed 42 \
+  --data_seed 42 \
+  --push_to_hub false \
+  --output_dir /runwork/outputs/full/checkpoints \
+  --gradient_checkpointing true \
+  --save_only_model false \
+  --report_to tensorboard \
+  --external_plugins /input/code/native_guard.py
+```
+
+Smoke命令与上述一致，仅output_dir改为/runwork/outputs/smoke/checkpoints、save_steps=3，并追加--max_steps 3。实际完整argv另存 actual-smoke-command.sh。LoRA dropout采用实装默认0.05。没有启用QLoRA/Liger；没有额外数据清洗或2560调整。split_dataset_ratio=0、eval_strategy=no，所以eval_steps=50不触发训练内评估。gradient_checkpointing=true是降低训练显存的配置。
+
+
+## 8. 真实训练结果、产物与ClearML
+
+
+Smoke=3/3；Full=103/103、epoch1；正式Trainer runtime=871.4433秒（14分31秒），train_loss=0.63014071，train token_acc=0.79652186。可训练参数21.8235M，占8,212.5588M总参数的0.2657%。训练集指标不代表独立业务能力或身份稳定性通过。
+正式样本长度：979.421437±747.683430, min=30.000000, max=2048.000000, size=1642
+10秒采样观测显存峰值：Smoke23084MiB，Full22034MiB；Trainer另报max memory22.16GiB，计量口径不同。
+
+
+最终checkpoint：/runwork/outputs/full/checkpoints/v0-20261019-025405/checkpoint-103
+保留checkpoint-100与103；checkpoint-50因save_total_limit2被清理。实际Swift回调在最后非50整数步也保存最终checkpoint。终态logging.jsonl、trainer_state、wrapper退出0、adapter张量有限性相互校验。
+
+
+ClearML Full Task=97ac5246ae9c43d9aa65ee2ac4c2aaef
+ClearML OutputModel=0552c3ab6b39456e9ec8b32129015be0
+https://clearml.10.140.17.125.nip.io/projects/a963d510434a46d19bb91881cad45ea4/experiments/97ac5246ae9c43d9aa65ee2ac4c2aaef/output/log
+Adapter ZIP=80,736,700字节；SHA-256=33feb7cfe9e3bafa1a5b72f32e179fe89448c4c4251e152763dd846d3adffd1d。通过OutputModel上传后Model.force_download回读，随后Drive原文件全字节回读也一致。模型未通过SDK正式发布。
+
+
+ClearML进度：训练运行后按用户要求增加只读日志observer，向现有同一个Task补传step/loss等标量和进度，最终103/103、100%；未重启训练或新建第二个正式Task。原始checkpoint与优化器仍保存在swift-work PVC的t008-qwen3-20261019-094113/outputs，63文件清单见persisted-output-manifest.json。Drive不重复保存16GB基座和全部优化器状态。
+
+
+## 9. 原服务恢复及后续LoRA测试加载
+
+
+训练后于10:12:20 UTC恢复原服务，1/1 Ready、HTTPS health200、TLS验证通过，原spec SHA=9c75f393377a3e5cb6617e6b44a38241e33785f30593a061b7e7825a8c391b10。之后用户另行要求测试加载：将已核验Adapter新建只读测试目录，原子迁入released/t008-qwen3-20261019-094113-test/adapter；目录清单明确TEST_SERVING_ONLY_NOT_QUALITY_ACCEPTED，没有覆盖基座。
+
+
+测试启动命令如下，反映当前配置。/models挂原基座；/adapters/octacarbon-llm-sft-test挂只读LoRA。LoRA注册不是merge，原模型ID继续可用。
+
+
+```
+python3 -m vllm.entrypoints.openai.api_server \
+  --model /models \
+  --served-model-name octa-carbon-v1 \
+  --host 0.0.0.0 --port 8000 \
+  --gpu-memory-utilization 0.90 \
+  --max-model-len 8192 \
+  --trust-remote-code \
+  --reasoning-parser qwen3 \
+  --enable-lora --max-lora-rank 8 \
+  --lora-modules '{"name":"octacarbon-llm-sft-test","path":"/adapters/octacarbon-llm-sft-test","base_model_name":"octa-carbon-v1"}' \
+  --enable-auto-tool-choice --tool-call-parser hermes
+```
+
+单GPU测试加载采用scale0→等待退出→带UID/原模板test的JSON patch→scale1→Ready/HTTPS health检查；异常自动回滚原模板。后续修复WebUI auto参数时，独立保存修复前的base+LoRA模板，失败回滚到该状态，避免丢掉已授权测试入口。完整脚本分别为test_serving/scripts/load_for_test.py、fix_auto_tool_choice.py。
+
+
+```
+curl --fail --silent --show-error \
+  https://vllm.10.140.17.125.nip.io/health
+curl --fail --silent --show-error \
+  https://vllm.10.140.17.125.nip.io/v1/models
+curl --fail-with-body --silent --show-error \
+  -H 'Content-Type: application/json' \
+  --data-binary @test_serving/evidence/auto-tool-single-request.json \
+  https://vllm.10.140.17.125.nip.io/v1/chat/completions
+```
+
+模型列表包含octa-carbon-v1和octacarbon-llm-sft-test；首次身份连通请求返回正确中文名称。WebUI实际报auto tool choice错误后，按实际Qwen3工具模板和已安装Hermes解析器补CLI参数，仅一次含tools+tool_choice:auto请求返回HTTP200。没有以此宣称工具能力全面通过。
+
+
+## 10. 故障、最小适配与当前已知质量问题
+
+
+工程适配包括：真实Swift帮助入口；tuner_type/eval_strategy实装参数；ModelScope非root AST索引与缓存；完整TLS根bundle；ClearML SDK overlay；最终保存回调核验；监督器证据落盘/日志采集失败不能阻断恢复；WebUI auto工具解析参数。未改变BF16 LoRA训练路线。
+
+
+用户随后反馈思考后无正文及业务范围过宽。本轮新增诊断只读读取目标聊天、检查训练快照，并做2条API对照请求，没有重启服务、改数据或重训。实际训练保留1642条中，含<think>但无</think>的assistant记录数为0；原始302种不闭合回答、604次曝光均被长度过滤删除。因此不能将此次空正文直接归因于这302种记录。详细证据与改进草案见另一份诊断文档。
+
+
+直接API的thinking和nonthinking均有正文，但均生成未经核验的精确数字及来源名称，说明“能输出”不等于“业务正确”。下一轮应重点训练业务边界、缺信息先澄清、无依据不编造数值/来源、工具失败后的可见回退。业务范围仍需用户明确；尚未改写冻结训练集、启动新GPU训练或验收。
+
+
+## 11. 复算、交付与证据定位
+
+
+K8s控制平面metadata时钟较执行机/worker存在约20分钟偏差，原值均保留；执行顺序按监督器事件链，训练时长按Trainer runtime，不拼接不同时钟计算耗时。
+
+
+执行结果
+https://drive.google.com/file/d/1p-awqvTM89aQ1Y89YHIiq2kbWNRrQDou/view
+
+
+追加执行记录
+https://drive.google.com/file/d/18YQ5hwOVZxWw2D8f-f-i10AmLfRb5MsU/view
+
+
+GPU证据包
+https://drive.google.com/file/d/1LJ7fwnAhQ0TlUe_2GWj_4tTUoJpHB1nh/view
+
+
+候选LoRA ZIP
+https://drive.google.com/file/d/1Be0WI7PKbQmcfcKj-YIyQRGikGf_ulaB/view
+
+
+CPU原始快照/来源审核包
+https://drive.google.com/file/d/1C4Psio7qgU27bFobd92i4oXmDa0JQqG4/view
+
+
+正式原生入口CPU包
+https://drive.google.com/file/d/1V-oysRsNKQwXKSWuqvWpjZlBUMr8HmrI/view
+
+
+GPU交付校验回执
+https://drive.google.com/file/d/1FaLcYhk5PQmArHhWINcYvGYfhbEscYIg/view
+
+
+本地路径：/Users/ben/aiws/codex/keywords/t008_qwen3_gpu_sft_20261019（GPU原始记录）；t008_qwen3_native_entry_20261019（正式入口CPU记录）；t008_qwen3_sft_v12_cpu（初始来源和快照）。GPU证据包中evidence/full-run_manifest.json含完整argv；actual-job-full.json含真实Job；outputs/persisted-output-manifest.json含原始持久化输出清单；test_serving/evidence/auto-tool-*含当前兼容性修复。
+
+
+```
+python3 - <<'PY'
+import hashlib,json,zipfile
+with zipfile.ZipFile('T008_v1.2_GPU_SFT与测试加载_证据包_20261019.zip') as z:
+    assert z.testzip() is None
+    m=json.loads(z.read('MANIFEST.json'))
+    for f in m['files']:
+        b=z.read(f['path'])
+        assert len(b)==f['bytes']
+        assert hashlib.sha256(b).hexdigest()==f['sha256']
+    print('All manifest payload hashes passed')
+PY
+```

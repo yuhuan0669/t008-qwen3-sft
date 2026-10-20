@@ -1,0 +1,90 @@
+{
+  "schema": "t008-native-entry-code-files-v1",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 19,
+      "sha256": "862263fa1f46c20f0d1e4dac5ffcc75abd55c08211b2c3864c5f8764b9d87793"
+    },
+    {
+      "path": "QA_REPORT_v1.2.md",
+      "bytes": 3370,
+      "sha256": "b67c0d25992465ed478dced00176a0ceef4af36fd0cd0f32b62295a82fb240e0"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4263,
+      "sha256": "e68f05667c9fd70e025582b0d32887a740aeb424f46a9c0fdb3c3f6ea5987d08"
+    },
+    {
+      "path": "derive_snapshot.py",
+      "bytes": 3593,
+      "sha256": "1129f58a7abe1c82423345142b628908c40088cd822e46f4b9528e09e06e646f"
+    },
+    {
+      "path": "eval_identity.py",
+      "bytes": 8088,
+      "sha256": "9602aa4e1e094116307ab0ee72e11c12b0ea35285985fa91152018f89cc2b4e9"
+    },
+    {
+      "path": "identity-spec.confirmed.json",
+      "bytes": 266,
+      "sha256": "96d595f3bdf6ca78d1f812f9b87cb53dffa4eb323fabeb758c2e09a63b5d2ec4"
+    },
+    {
+      "path": "identity-spec.example.json",
+      "bytes": 266,
+      "sha256": "96d595f3bdf6ca78d1f812f9b87cb53dffa4eb323fabeb758c2e09a63b5d2ec4"
+    },
+    {
+      "path": "native_guard.py",
+      "bytes": 2568,
+      "sha256": "05a7458ce978607da507fb40ce5ab67528798eeb47b22829b608c3eb88dd16e3"
+    },
+    {
+      "path": "native_recipe.py",
+      "bytes": 13799,
+      "sha256": "30024469aa91e68711809b2f975a34d3f5a4652b38af8c5a8d7c7246ab5f8774"
+    },
+    {
+      "path": "preflight_data.py",
+      "bytes": 4469,
+      "sha256": "717264e25f87d17364a5833b8a153c01a82efc5aa49833e2a7bf91538d71e4d2"
+    },
+    {
+      "path": "prepare_official.py",
+      "bytes": 6196,
+      "sha256": "aff3eef6fb5eccd7618d1f905010bca79dc9ed6ac79bf7a7360394dd8794b168"
+    },
+    {
+      "path": "register_evaluation.py",
+      "bytes": 5808,
+      "sha256": "7fe7718738d290b3f125b433b50c1be68a70f14dbe5c6fa0d84c747ba9485d51"
+    },
+    {
+      "path": "run_identity.py",
+      "bytes": 22682,
+      "sha256": "47f353024312912dbe76f028caca2943fe1a6f54c5f636b41c92ffe9b906c395"
+    },
+    {
+      "path": "tests/test_contract.py",
+      "bytes": 10753,
+      "sha256": "d88deb09dc1b5712e69f1677675eff585d46f6573ecd68b5c9b3cff181aa39f6"
+    },
+    {
+      "path": "tests/test_native_entry.py",
+      "bytes": 6334,
+      "sha256": "24d72d8aed1b9389312b973d1cad308f336c9da4d73217b4739345e08f6189a4"
+    },
+    {
+      "path": "tests/test现场_regressions.py",
+      "bytes": 4513,
+      "sha256": "21e92b09629e655bae795c9598f144485e2a611754571e8cc0dd454e039d9f80"
+    },
+    {
+      "path": "train_identity.sh",
+      "bytes": 447,
+      "sha256": "a48ef1402c011cceeba0ed50f9e5ff16dcc37d47203808f6939f3205d6eb2801"
+    }
+  ]
+}

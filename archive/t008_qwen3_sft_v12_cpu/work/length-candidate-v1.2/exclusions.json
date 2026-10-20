@@ -1,0 +1,3834 @@
+[
+  {
+    "index": 3,
+    "reason": "Actual ms-swift qwen3 template 2096 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 6,
+    "reason": "Actual ms-swift qwen3 template 2084 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 12,
+    "reason": "Actual ms-swift qwen3 template 2120 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 15,
+    "reason": "Actual ms-swift qwen3 template 2064 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 18,
+    "reason": "Actual ms-swift qwen3 template 2107 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 20,
+    "reason": "Actual ms-swift qwen3 template 2160 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 22,
+    "reason": "Actual ms-swift qwen3 template 2074 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 28,
+    "reason": "Actual ms-swift qwen3 template 2187 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 30,
+    "reason": "Actual ms-swift qwen3 template 2077 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 35,
+    "reason": "Actual ms-swift qwen3 template 2147 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 36,
+    "reason": "Actual ms-swift qwen3 template 2116 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 37,
+    "reason": "Actual ms-swift qwen3 template 2102 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 38,
+    "reason": "Actual ms-swift qwen3 template 2094 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 40,
+    "reason": "Actual ms-swift qwen3 template 2075 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 41,
+    "reason": "Actual ms-swift qwen3 template 2139 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 44,
+    "reason": "Actual ms-swift qwen3 template 2126 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 45,
+    "reason": "Actual ms-swift qwen3 template 2072 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 46,
+    "reason": "Actual ms-swift qwen3 template 2115 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 47,
+    "reason": "Actual ms-swift qwen3 template 2115 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 49,
+    "reason": "Actual ms-swift qwen3 template 2091 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 51,
+    "reason": "Actual ms-swift qwen3 template 2082 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 52,
+    "reason": "Actual ms-swift qwen3 template 2153 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 55,
+    "reason": "Actual ms-swift qwen3 template 2086 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 56,
+    "reason": "Actual ms-swift qwen3 template 2108 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 61,
+    "reason": "Actual ms-swift qwen3 template 2117 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 62,
+    "reason": "Actual ms-swift qwen3 template 2119 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 63,
+    "reason": "Actual ms-swift qwen3 template 2099 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 65,
+    "reason": "Actual ms-swift qwen3 template 2098 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 68,
+    "reason": "Actual ms-swift qwen3 template 2049 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 69,
+    "reason": "Actual ms-swift qwen3 template 2074 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 70,
+    "reason": "Actual ms-swift qwen3 template 2093 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 75,
+    "reason": "Actual ms-swift qwen3 template 2091 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 78,
+    "reason": "Actual ms-swift qwen3 template 2148 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 79,
+    "reason": "Actual ms-swift qwen3 template 2082 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 85,
+    "reason": "Actual ms-swift qwen3 template 2071 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 87,
+    "reason": "Actual ms-swift qwen3 template 2115 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 88,
+    "reason": "Actual ms-swift qwen3 template 2190 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 94,
+    "reason": "Actual ms-swift qwen3 template 2135 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 95,
+    "reason": "Actual ms-swift qwen3 template 2076 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 99,
+    "reason": "Actual ms-swift qwen3 template 2106 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 101,
+    "reason": "Actual ms-swift qwen3 template 2073 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 102,
+    "reason": "Actual ms-swift qwen3 template 2173 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 103,
+    "reason": "Actual ms-swift qwen3 template 2085 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 104,
+    "reason": "Actual ms-swift qwen3 template 2076 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 105,
+    "reason": "Actual ms-swift qwen3 template 2115 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 106,
+    "reason": "Actual ms-swift qwen3 template 2119 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 107,
+    "reason": "Actual ms-swift qwen3 template 2074 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 110,
+    "reason": "Actual ms-swift qwen3 template 2079 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 111,
+    "reason": "Actual ms-swift qwen3 template 2092 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 112,
+    "reason": "Actual ms-swift qwen3 template 2105 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 114,
+    "reason": "Actual ms-swift qwen3 template 2079 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 116,
+    "reason": "Actual ms-swift qwen3 template 2160 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 118,
+    "reason": "Actual ms-swift qwen3 template 2120 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 119,
+    "reason": "Actual ms-swift qwen3 template 2128 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 121,
+    "reason": "Actual ms-swift qwen3 template 2113 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 123,
+    "reason": "Actual ms-swift qwen3 template 2245 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 124,
+    "reason": "Actual ms-swift qwen3 template 2067 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 126,
+    "reason": "Actual ms-swift qwen3 template 2103 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 128,
+    "reason": "Actual ms-swift qwen3 template 2079 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 130,
+    "reason": "Actual ms-swift qwen3 template 2160 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 131,
+    "reason": "Actual ms-swift qwen3 template 2117 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 134,
+    "reason": "Actual ms-swift qwen3 template 2117 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 136,
+    "reason": "Actual ms-swift qwen3 template 2116 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 137,
+    "reason": "Actual ms-swift qwen3 template 2190 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 138,
+    "reason": "Actual ms-swift qwen3 template 2136 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 139,
+    "reason": "Actual ms-swift qwen3 template 2175 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 148,
+    "reason": "Actual ms-swift qwen3 template 2098 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 149,
+    "reason": "Actual ms-swift qwen3 template 2104 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 151,
+    "reason": "Actual ms-swift qwen3 template 2163 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 152,
+    "reason": "Actual ms-swift qwen3 template 2112 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 158,
+    "reason": "Actual ms-swift qwen3 template 2110 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 159,
+    "reason": "Actual ms-swift qwen3 template 2127 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 163,
+    "reason": "Actual ms-swift qwen3 template 2193 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 165,
+    "reason": "Actual ms-swift qwen3 template 2162 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 169,
+    "reason": "Actual ms-swift qwen3 template 2110 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 170,
+    "reason": "Actual ms-swift qwen3 template 2121 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 174,
+    "reason": "Actual ms-swift qwen3 template 2107 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 176,
+    "reason": "Actual ms-swift qwen3 template 2096 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 177,
+    "reason": "Actual ms-swift qwen3 template 2109 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 182,
+    "reason": "Actual ms-swift qwen3 template 2216 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 188,
+    "reason": "Actual ms-swift qwen3 template 2096 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 192,
+    "reason": "Actual ms-swift qwen3 template 2104 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 195,
+    "reason": "Actual ms-swift qwen3 template 2122 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 197,
+    "reason": "Actual ms-swift qwen3 template 2070 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 199,
+    "reason": "Actual ms-swift qwen3 template 2097 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 200,
+    "reason": "Actual ms-swift qwen3 template 2115 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 201,
+    "reason": "Actual ms-swift qwen3 template 2107 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 202,
+    "reason": "Actual ms-swift qwen3 template 2119 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 203,
+    "reason": "Actual ms-swift qwen3 template 2123 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 205,
+    "reason": "Actual ms-swift qwen3 template 2098 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 207,
+    "reason": "Actual ms-swift qwen3 template 2077 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 208,
+    "reason": "Actual ms-swift qwen3 template 2142 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 209,
+    "reason": "Actual ms-swift qwen3 template 2085 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 211,
+    "reason": "Actual ms-swift qwen3 template 2076 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 212,
+    "reason": "Actual ms-swift qwen3 template 2168 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 213,
+    "reason": "Actual ms-swift qwen3 template 2103 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 217,
+    "reason": "Actual ms-swift qwen3 template 2076 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 218,
+    "reason": "Actual ms-swift qwen3 template 2106 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 220,
+    "reason": "Actual ms-swift qwen3 template 2089 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 226,
+    "reason": "Actual ms-swift qwen3 template 2072 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 227,
+    "reason": "Actual ms-swift qwen3 template 2174 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 229,
+    "reason": "Actual ms-swift qwen3 template 2164 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 230,
+    "reason": "Actual ms-swift qwen3 template 2190 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 232,
+    "reason": "Actual ms-swift qwen3 template 2113 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 233,
+    "reason": "Actual ms-swift qwen3 template 2142 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 245,
+    "reason": "Actual ms-swift qwen3 template 2117 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 247,
+    "reason": "Actual ms-swift qwen3 template 2128 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 250,
+    "reason": "Actual ms-swift qwen3 template 2152 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 251,
+    "reason": "Actual ms-swift qwen3 template 2084 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 252,
+    "reason": "Actual ms-swift qwen3 template 2123 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 253,
+    "reason": "Actual ms-swift qwen3 template 2084 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 255,
+    "reason": "Actual ms-swift qwen3 template 2110 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 259,
+    "reason": "Actual ms-swift qwen3 template 2074 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 260,
+    "reason": "Actual ms-swift qwen3 template 2087 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 264,
+    "reason": "Actual ms-swift qwen3 template 2072 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 265,
+    "reason": "Actual ms-swift qwen3 template 2107 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 268,
+    "reason": "Actual ms-swift qwen3 template 2070 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 273,
+    "reason": "Actual ms-swift qwen3 template 2130 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 274,
+    "reason": "Actual ms-swift qwen3 template 2096 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 275,
+    "reason": "Actual ms-swift qwen3 template 2076 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 277,
+    "reason": "Actual ms-swift qwen3 template 2079 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 279,
+    "reason": "Actual ms-swift qwen3 template 2111 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 280,
+    "reason": "Actual ms-swift qwen3 template 2145 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 281,
+    "reason": "Actual ms-swift qwen3 template 2077 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 282,
+    "reason": "Actual ms-swift qwen3 template 2144 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 284,
+    "reason": "Actual ms-swift qwen3 template 2074 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 287,
+    "reason": "Actual ms-swift qwen3 template 2096 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 288,
+    "reason": "Actual ms-swift qwen3 template 2212 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 289,
+    "reason": "Actual ms-swift qwen3 template 2067 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 291,
+    "reason": "Actual ms-swift qwen3 template 2099 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 293,
+    "reason": "Actual ms-swift qwen3 template 2170 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 294,
+    "reason": "Actual ms-swift qwen3 template 2220 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 298,
+    "reason": "Actual ms-swift qwen3 template 2106 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 302,
+    "reason": "Actual ms-swift qwen3 template 2088 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 305,
+    "reason": "Actual ms-swift qwen3 template 2170 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 306,
+    "reason": "Actual ms-swift qwen3 template 2105 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 307,
+    "reason": "Actual ms-swift qwen3 template 2137 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 310,
+    "reason": "Actual ms-swift qwen3 template 2142 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 313,
+    "reason": "Actual ms-swift qwen3 template 2074 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 314,
+    "reason": "Actual ms-swift qwen3 template 2119 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 319,
+    "reason": "Actual ms-swift qwen3 template 2120 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 321,
+    "reason": "Actual ms-swift qwen3 template 2105 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 328,
+    "reason": "Actual ms-swift qwen3 template 2140 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 332,
+    "reason": "Actual ms-swift qwen3 template 2123 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 333,
+    "reason": "Actual ms-swift qwen3 template 2085 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 335,
+    "reason": "Actual ms-swift qwen3 template 2156 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 336,
+    "reason": "Actual ms-swift qwen3 template 2135 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 340,
+    "reason": "Actual ms-swift qwen3 template 2181 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 342,
+    "reason": "Actual ms-swift qwen3 template 2237 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 347,
+    "reason": "Actual ms-swift qwen3 template 2074 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 351,
+    "reason": "Actual ms-swift qwen3 template 2125 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 353,
+    "reason": "Actual ms-swift qwen3 template 2293 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 354,
+    "reason": "Actual ms-swift qwen3 template 2276 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 357,
+    "reason": "Actual ms-swift qwen3 template 2106 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 358,
+    "reason": "Actual ms-swift qwen3 template 2151 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 362,
+    "reason": "Actual ms-swift qwen3 template 2072 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 363,
+    "reason": "Actual ms-swift qwen3 template 2156 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 365,
+    "reason": "Actual ms-swift qwen3 template 2122 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 368,
+    "reason": "Actual ms-swift qwen3 template 2165 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 369,
+    "reason": "Actual ms-swift qwen3 template 2169 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 372,
+    "reason": "Actual ms-swift qwen3 template 2163 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 373,
+    "reason": "Actual ms-swift qwen3 template 2117 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 376,
+    "reason": "Actual ms-swift qwen3 template 2078 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 377,
+    "reason": "Actual ms-swift qwen3 template 2159 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 378,
+    "reason": "Actual ms-swift qwen3 template 2071 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 383,
+    "reason": "Actual ms-swift qwen3 template 2083 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 385,
+    "reason": "Actual ms-swift qwen3 template 2078 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 386,
+    "reason": "Actual ms-swift qwen3 template 2166 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 387,
+    "reason": "Actual ms-swift qwen3 template 2151 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 388,
+    "reason": "Actual ms-swift qwen3 template 2142 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 389,
+    "reason": "Actual ms-swift qwen3 template 2085 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 391,
+    "reason": "Actual ms-swift qwen3 template 2080 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 394,
+    "reason": "Actual ms-swift qwen3 template 2098 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 398,
+    "reason": "Actual ms-swift qwen3 template 2106 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 401,
+    "reason": "Actual ms-swift qwen3 template 2129 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 402,
+    "reason": "Actual ms-swift qwen3 template 2100 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 404,
+    "reason": "Actual ms-swift qwen3 template 2089 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 407,
+    "reason": "Actual ms-swift qwen3 template 2096 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 408,
+    "reason": "Actual ms-swift qwen3 template 2078 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 409,
+    "reason": "Actual ms-swift qwen3 template 2086 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 410,
+    "reason": "Actual ms-swift qwen3 template 2169 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 411,
+    "reason": "Actual ms-swift qwen3 template 2130 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 412,
+    "reason": "Actual ms-swift qwen3 template 2106 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 415,
+    "reason": "Actual ms-swift qwen3 template 2067 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 417,
+    "reason": "Actual ms-swift qwen3 template 2113 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 420,
+    "reason": "Actual ms-swift qwen3 template 2100 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 422,
+    "reason": "Actual ms-swift qwen3 template 2138 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 423,
+    "reason": "Actual ms-swift qwen3 template 2110 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 426,
+    "reason": "Actual ms-swift qwen3 template 2083 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 427,
+    "reason": "Actual ms-swift qwen3 template 2079 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 428,
+    "reason": "Actual ms-swift qwen3 template 2081 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 429,
+    "reason": "Actual ms-swift qwen3 template 2077 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 430,
+    "reason": "Actual ms-swift qwen3 template 2070 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 431,
+    "reason": "Actual ms-swift qwen3 template 2087 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 433,
+    "reason": "Actual ms-swift qwen3 template 2101 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 436,
+    "reason": "Actual ms-swift qwen3 template 2076 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 438,
+    "reason": "Actual ms-swift qwen3 template 2052 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 439,
+    "reason": "Actual ms-swift qwen3 template 2093 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 441,
+    "reason": "Actual ms-swift qwen3 template 2217 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 442,
+    "reason": "Actual ms-swift qwen3 template 2137 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 443,
+    "reason": "Actual ms-swift qwen3 template 2158 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 447,
+    "reason": "Actual ms-swift qwen3 template 2082 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 448,
+    "reason": "Actual ms-swift qwen3 template 2099 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 450,
+    "reason": "Actual ms-swift qwen3 template 2285 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 453,
+    "reason": "Actual ms-swift qwen3 template 2073 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 454,
+    "reason": "Actual ms-swift qwen3 template 2072 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 457,
+    "reason": "Actual ms-swift qwen3 template 2158 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 458,
+    "reason": "Actual ms-swift qwen3 template 2079 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 459,
+    "reason": "Actual ms-swift qwen3 template 2092 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 464,
+    "reason": "Actual ms-swift qwen3 template 2134 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 466,
+    "reason": "Actual ms-swift qwen3 template 2088 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 468,
+    "reason": "Actual ms-swift qwen3 template 2156 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 472,
+    "reason": "Actual ms-swift qwen3 template 2090 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 477,
+    "reason": "Actual ms-swift qwen3 template 2142 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 478,
+    "reason": "Actual ms-swift qwen3 template 2082 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 482,
+    "reason": "Actual ms-swift qwen3 template 2136 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 489,
+    "reason": "Actual ms-swift qwen3 template 2170 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 492,
+    "reason": "Actual ms-swift qwen3 template 2117 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 495,
+    "reason": "Actual ms-swift qwen3 template 2144 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 499,
+    "reason": "Actual ms-swift qwen3 template 2141 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 500,
+    "reason": "Actual ms-swift qwen3 template 2125 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 503,
+    "reason": "Actual ms-swift qwen3 template 2103 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 504,
+    "reason": "Actual ms-swift qwen3 template 2133 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 505,
+    "reason": "Actual ms-swift qwen3 template 2124 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 506,
+    "reason": "Actual ms-swift qwen3 template 2227 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 507,
+    "reason": "Actual ms-swift qwen3 template 2117 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 508,
+    "reason": "Actual ms-swift qwen3 template 2107 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 509,
+    "reason": "Actual ms-swift qwen3 template 2068 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 511,
+    "reason": "Actual ms-swift qwen3 template 2093 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 512,
+    "reason": "Actual ms-swift qwen3 template 2099 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 515,
+    "reason": "Actual ms-swift qwen3 template 2133 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 516,
+    "reason": "Actual ms-swift qwen3 template 2120 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 518,
+    "reason": "Actual ms-swift qwen3 template 2094 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 520,
+    "reason": "Actual ms-swift qwen3 template 2123 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 529,
+    "reason": "Actual ms-swift qwen3 template 2105 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 532,
+    "reason": "Actual ms-swift qwen3 template 2103 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 534,
+    "reason": "Actual ms-swift qwen3 template 2125 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 535,
+    "reason": "Actual ms-swift qwen3 template 2198 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 536,
+    "reason": "Actual ms-swift qwen3 template 2102 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 537,
+    "reason": "Actual ms-swift qwen3 template 2093 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 538,
+    "reason": "Actual ms-swift qwen3 template 2089 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 542,
+    "reason": "Actual ms-swift qwen3 template 2081 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 543,
+    "reason": "Actual ms-swift qwen3 template 2129 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 545,
+    "reason": "Actual ms-swift qwen3 template 2082 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 546,
+    "reason": "Actual ms-swift qwen3 template 2100 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 547,
+    "reason": "Actual ms-swift qwen3 template 2057 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 548,
+    "reason": "Actual ms-swift qwen3 template 2077 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 549,
+    "reason": "Actual ms-swift qwen3 template 2081 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 550,
+    "reason": "Actual ms-swift qwen3 template 2109 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 551,
+    "reason": "Actual ms-swift qwen3 template 2135 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 552,
+    "reason": "Actual ms-swift qwen3 template 2094 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 554,
+    "reason": "Actual ms-swift qwen3 template 2091 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 555,
+    "reason": "Actual ms-swift qwen3 template 2104 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 557,
+    "reason": "Actual ms-swift qwen3 template 2122 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 560,
+    "reason": "Actual ms-swift qwen3 template 2124 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 562,
+    "reason": "Actual ms-swift qwen3 template 2075 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 563,
+    "reason": "Actual ms-swift qwen3 template 2104 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 567,
+    "reason": "Actual ms-swift qwen3 template 2152 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 568,
+    "reason": "Actual ms-swift qwen3 template 2085 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 571,
+    "reason": "Actual ms-swift qwen3 template 2123 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 572,
+    "reason": "Actual ms-swift qwen3 template 2113 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 573,
+    "reason": "Actual ms-swift qwen3 template 2073 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 575,
+    "reason": "Actual ms-swift qwen3 template 2066 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 576,
+    "reason": "Actual ms-swift qwen3 template 2110 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 578,
+    "reason": "Actual ms-swift qwen3 template 2211 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 579,
+    "reason": "Actual ms-swift qwen3 template 2150 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 580,
+    "reason": "Actual ms-swift qwen3 template 2091 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 582,
+    "reason": "Actual ms-swift qwen3 template 2108 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 583,
+    "reason": "Actual ms-swift qwen3 template 2197 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 584,
+    "reason": "Actual ms-swift qwen3 template 2085 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 585,
+    "reason": "Actual ms-swift qwen3 template 2098 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 586,
+    "reason": "Actual ms-swift qwen3 template 2089 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 588,
+    "reason": "Actual ms-swift qwen3 template 2114 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 589,
+    "reason": "Actual ms-swift qwen3 template 2090 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 590,
+    "reason": "Actual ms-swift qwen3 template 2245 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 591,
+    "reason": "Actual ms-swift qwen3 template 2141 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 592,
+    "reason": "Actual ms-swift qwen3 template 2168 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 596,
+    "reason": "Actual ms-swift qwen3 template 2070 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 597,
+    "reason": "Actual ms-swift qwen3 template 2136 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 598,
+    "reason": "Actual ms-swift qwen3 template 2155 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 601,
+    "reason": "Actual ms-swift qwen3 template 2086 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 607,
+    "reason": "Actual ms-swift qwen3 template 2100 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 609,
+    "reason": "Actual ms-swift qwen3 template 2125 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 610,
+    "reason": "Actual ms-swift qwen3 template 2107 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 612,
+    "reason": "Actual ms-swift qwen3 template 2087 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 613,
+    "reason": "Actual ms-swift qwen3 template 2068 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 615,
+    "reason": "Actual ms-swift qwen3 template 2075 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 617,
+    "reason": "Actual ms-swift qwen3 template 2108 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 620,
+    "reason": "Actual ms-swift qwen3 template 2119 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 621,
+    "reason": "Actual ms-swift qwen3 template 2135 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 624,
+    "reason": "Actual ms-swift qwen3 template 2069 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 626,
+    "reason": "Actual ms-swift qwen3 template 2136 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 630,
+    "reason": "Actual ms-swift qwen3 template 2095 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 631,
+    "reason": "Actual ms-swift qwen3 template 2106 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 632,
+    "reason": "Actual ms-swift qwen3 template 2243 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 633,
+    "reason": "Actual ms-swift qwen3 template 2073 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 637,
+    "reason": "Actual ms-swift qwen3 template 2168 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 638,
+    "reason": "Actual ms-swift qwen3 template 2115 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 639,
+    "reason": "Actual ms-swift qwen3 template 2212 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 640,
+    "reason": "Actual ms-swift qwen3 template 2086 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 641,
+    "reason": "Actual ms-swift qwen3 template 2072 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 645,
+    "reason": "Actual ms-swift qwen3 template 2151 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 649,
+    "reason": "Actual ms-swift qwen3 template 2196 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 651,
+    "reason": "Actual ms-swift qwen3 template 2085 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 653,
+    "reason": "Actual ms-swift qwen3 template 2155 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 655,
+    "reason": "Actual ms-swift qwen3 template 2070 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 657,
+    "reason": "Actual ms-swift qwen3 template 2081 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 658,
+    "reason": "Actual ms-swift qwen3 template 2096 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 659,
+    "reason": "Actual ms-swift qwen3 template 2114 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 660,
+    "reason": "Actual ms-swift qwen3 template 2138 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 661,
+    "reason": "Actual ms-swift qwen3 template 2245 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 663,
+    "reason": "Actual ms-swift qwen3 template 2087 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 664,
+    "reason": "Actual ms-swift qwen3 template 2120 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 666,
+    "reason": "Actual ms-swift qwen3 template 2164 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 668,
+    "reason": "Actual ms-swift qwen3 template 2132 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 669,
+    "reason": "Actual ms-swift qwen3 template 2096 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 670,
+    "reason": "Actual ms-swift qwen3 template 2090 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 672,
+    "reason": "Actual ms-swift qwen3 template 2144 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 673,
+    "reason": "Actual ms-swift qwen3 template 2154 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 674,
+    "reason": "Actual ms-swift qwen3 template 2204 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 675,
+    "reason": "Actual ms-swift qwen3 template 2113 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 676,
+    "reason": "Actual ms-swift qwen3 template 2080 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 679,
+    "reason": "Actual ms-swift qwen3 template 2102 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 680,
+    "reason": "Actual ms-swift qwen3 template 2080 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 682,
+    "reason": "Actual ms-swift qwen3 template 2081 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 684,
+    "reason": "Actual ms-swift qwen3 template 2126 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 687,
+    "reason": "Actual ms-swift qwen3 template 2102 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 688,
+    "reason": "Actual ms-swift qwen3 template 2073 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 689,
+    "reason": "Actual ms-swift qwen3 template 2077 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 690,
+    "reason": "Actual ms-swift qwen3 template 2152 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 692,
+    "reason": "Actual ms-swift qwen3 template 2121 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 693,
+    "reason": "Actual ms-swift qwen3 template 2108 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 694,
+    "reason": "Actual ms-swift qwen3 template 2105 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 696,
+    "reason": "Actual ms-swift qwen3 template 2054 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 699,
+    "reason": "Actual ms-swift qwen3 template 2126 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 702,
+    "reason": "Actual ms-swift qwen3 template 2111 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 703,
+    "reason": "Actual ms-swift qwen3 template 2109 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 706,
+    "reason": "Actual ms-swift qwen3 template 2093 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 708,
+    "reason": "Actual ms-swift qwen3 template 2113 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 709,
+    "reason": "Actual ms-swift qwen3 template 2090 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 713,
+    "reason": "Actual ms-swift qwen3 template 2117 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 714,
+    "reason": "Actual ms-swift qwen3 template 2105 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 715,
+    "reason": "Actual ms-swift qwen3 template 2158 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 717,
+    "reason": "Actual ms-swift qwen3 template 2154 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 721,
+    "reason": "Actual ms-swift qwen3 template 2150 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 722,
+    "reason": "Actual ms-swift qwen3 template 2145 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 727,
+    "reason": "Actual ms-swift qwen3 template 2083 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 730,
+    "reason": "Actual ms-swift qwen3 template 2136 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 732,
+    "reason": "Actual ms-swift qwen3 template 2078 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 733,
+    "reason": "Actual ms-swift qwen3 template 2134 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 734,
+    "reason": "Actual ms-swift qwen3 template 2077 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 736,
+    "reason": "Actual ms-swift qwen3 template 2112 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 742,
+    "reason": "Actual ms-swift qwen3 template 2134 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 747,
+    "reason": "Actual ms-swift qwen3 template 2168 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 749,
+    "reason": "Actual ms-swift qwen3 template 2084 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 751,
+    "reason": "Actual ms-swift qwen3 template 2123 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 754,
+    "reason": "Actual ms-swift qwen3 template 2108 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 755,
+    "reason": "Actual ms-swift qwen3 template 2075 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 757,
+    "reason": "Actual ms-swift qwen3 template 2092 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 762,
+    "reason": "Actual ms-swift qwen3 template 2174 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 763,
+    "reason": "Actual ms-swift qwen3 template 2085 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 764,
+    "reason": "Actual ms-swift qwen3 template 2158 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 765,
+    "reason": "Actual ms-swift qwen3 template 2106 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 767,
+    "reason": "Actual ms-swift qwen3 template 2105 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 770,
+    "reason": "Actual ms-swift qwen3 template 2072 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 771,
+    "reason": "Actual ms-swift qwen3 template 2130 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 774,
+    "reason": "Actual ms-swift qwen3 template 2153 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 775,
+    "reason": "Actual ms-swift qwen3 template 2166 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 777,
+    "reason": "Actual ms-swift qwen3 template 2086 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 779,
+    "reason": "Actual ms-swift qwen3 template 2071 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 781,
+    "reason": "Actual ms-swift qwen3 template 2511 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 785,
+    "reason": "Actual ms-swift qwen3 template 2085 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 790,
+    "reason": "Actual ms-swift qwen3 template 2102 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 791,
+    "reason": "Actual ms-swift qwen3 template 2093 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 792,
+    "reason": "Actual ms-swift qwen3 template 2076 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 797,
+    "reason": "Actual ms-swift qwen3 template 2182 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 799,
+    "reason": "Actual ms-swift qwen3 template 2103 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 801,
+    "reason": "Actual ms-swift qwen3 template 2068 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 802,
+    "reason": "Actual ms-swift qwen3 template 2065 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 803,
+    "reason": "Actual ms-swift qwen3 template 2213 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 804,
+    "reason": "Actual ms-swift qwen3 template 2106 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 806,
+    "reason": "Actual ms-swift qwen3 template 2092 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 807,
+    "reason": "Actual ms-swift qwen3 template 2161 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 809,
+    "reason": "Actual ms-swift qwen3 template 2216 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 810,
+    "reason": "Actual ms-swift qwen3 template 2121 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 811,
+    "reason": "Actual ms-swift qwen3 template 2116 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 812,
+    "reason": "Actual ms-swift qwen3 template 2087 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 813,
+    "reason": "Actual ms-swift qwen3 template 2075 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 814,
+    "reason": "Actual ms-swift qwen3 template 2102 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 815,
+    "reason": "Actual ms-swift qwen3 template 2049 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 816,
+    "reason": "Actual ms-swift qwen3 template 2074 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 817,
+    "reason": "Actual ms-swift qwen3 template 2092 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 822,
+    "reason": "Actual ms-swift qwen3 template 2141 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 824,
+    "reason": "Actual ms-swift qwen3 template 2066 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 826,
+    "reason": "Actual ms-swift qwen3 template 2079 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 842,
+    "reason": "Actual ms-swift qwen3 template 2067 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 845,
+    "reason": "Actual ms-swift qwen3 template 2071 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 846,
+    "reason": "Actual ms-swift qwen3 template 2102 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 847,
+    "reason": "Actual ms-swift qwen3 template 2110 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 849,
+    "reason": "Actual ms-swift qwen3 template 2127 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 851,
+    "reason": "Actual ms-swift qwen3 template 2130 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 853,
+    "reason": "Actual ms-swift qwen3 template 2208 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 854,
+    "reason": "Actual ms-swift qwen3 template 2105 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 855,
+    "reason": "Actual ms-swift qwen3 template 2074 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 856,
+    "reason": "Actual ms-swift qwen3 template 2096 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 857,
+    "reason": "Actual ms-swift qwen3 template 2114 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 858,
+    "reason": "Actual ms-swift qwen3 template 2082 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 860,
+    "reason": "Actual ms-swift qwen3 template 2102 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 861,
+    "reason": "Actual ms-swift qwen3 template 2084 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 863,
+    "reason": "Actual ms-swift qwen3 template 2081 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 864,
+    "reason": "Actual ms-swift qwen3 template 2071 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 867,
+    "reason": "Actual ms-swift qwen3 template 2108 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 871,
+    "reason": "Actual ms-swift qwen3 template 2127 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 872,
+    "reason": "Actual ms-swift qwen3 template 2183 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 873,
+    "reason": "Actual ms-swift qwen3 template 2108 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 874,
+    "reason": "Actual ms-swift qwen3 template 2263 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 876,
+    "reason": "Actual ms-swift qwen3 template 2114 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 877,
+    "reason": "Actual ms-swift qwen3 template 2111 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 878,
+    "reason": "Actual ms-swift qwen3 template 2191 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 881,
+    "reason": "Actual ms-swift qwen3 template 2123 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 884,
+    "reason": "Actual ms-swift qwen3 template 2112 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 888,
+    "reason": "Actual ms-swift qwen3 template 2153 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 889,
+    "reason": "Actual ms-swift qwen3 template 2141 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 890,
+    "reason": "Actual ms-swift qwen3 template 2097 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 892,
+    "reason": "Actual ms-swift qwen3 template 2108 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 893,
+    "reason": "Actual ms-swift qwen3 template 2114 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 898,
+    "reason": "Actual ms-swift qwen3 template 2079 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 903,
+    "reason": "Actual ms-swift qwen3 template 2089 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 905,
+    "reason": "Actual ms-swift qwen3 template 2079 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 910,
+    "reason": "Actual ms-swift qwen3 template 2158 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 912,
+    "reason": "Actual ms-swift qwen3 template 2137 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 913,
+    "reason": "Actual ms-swift qwen3 template 2096 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 914,
+    "reason": "Actual ms-swift qwen3 template 2128 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 915,
+    "reason": "Actual ms-swift qwen3 template 2116 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 916,
+    "reason": "Actual ms-swift qwen3 template 2080 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 917,
+    "reason": "Actual ms-swift qwen3 template 2087 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 919,
+    "reason": "Actual ms-swift qwen3 template 2081 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 920,
+    "reason": "Actual ms-swift qwen3 template 2072 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 922,
+    "reason": "Actual ms-swift qwen3 template 2158 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 923,
+    "reason": "Actual ms-swift qwen3 template 2078 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 924,
+    "reason": "Actual ms-swift qwen3 template 2140 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 929,
+    "reason": "Actual ms-swift qwen3 template 2102 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 930,
+    "reason": "Actual ms-swift qwen3 template 2156 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 931,
+    "reason": "Actual ms-swift qwen3 template 2076 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 933,
+    "reason": "Actual ms-swift qwen3 template 2133 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 934,
+    "reason": "Actual ms-swift qwen3 template 2105 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 935,
+    "reason": "Actual ms-swift qwen3 template 2279 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 936,
+    "reason": "Actual ms-swift qwen3 template 2145 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 938,
+    "reason": "Actual ms-swift qwen3 template 2200 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 940,
+    "reason": "Actual ms-swift qwen3 template 2129 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 942,
+    "reason": "Actual ms-swift qwen3 template 2083 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 944,
+    "reason": "Actual ms-swift qwen3 template 2141 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 946,
+    "reason": "Actual ms-swift qwen3 template 2150 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 948,
+    "reason": "Actual ms-swift qwen3 template 2127 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 951,
+    "reason": "Actual ms-swift qwen3 template 2108 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 952,
+    "reason": "Actual ms-swift qwen3 template 2096 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 953,
+    "reason": "Actual ms-swift qwen3 template 2156 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 954,
+    "reason": "Actual ms-swift qwen3 template 2146 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 956,
+    "reason": "Actual ms-swift qwen3 template 2133 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 958,
+    "reason": "Actual ms-swift qwen3 template 2134 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 959,
+    "reason": "Actual ms-swift qwen3 template 2064 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 960,
+    "reason": "Actual ms-swift qwen3 template 2166 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 961,
+    "reason": "Actual ms-swift qwen3 template 2100 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 965,
+    "reason": "Actual ms-swift qwen3 template 2085 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 969,
+    "reason": "Actual ms-swift qwen3 template 2133 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 971,
+    "reason": "Actual ms-swift qwen3 template 2076 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 972,
+    "reason": "Actual ms-swift qwen3 template 2102 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 974,
+    "reason": "Actual ms-swift qwen3 template 2071 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 975,
+    "reason": "Actual ms-swift qwen3 template 2078 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 976,
+    "reason": "Actual ms-swift qwen3 template 2117 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 979,
+    "reason": "Actual ms-swift qwen3 template 2083 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 982,
+    "reason": "Actual ms-swift qwen3 template 2105 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 984,
+    "reason": "Actual ms-swift qwen3 template 2075 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 986,
+    "reason": "Actual ms-swift qwen3 template 2115 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 990,
+    "reason": "Actual ms-swift qwen3 template 2091 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 991,
+    "reason": "Actual ms-swift qwen3 template 2097 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 992,
+    "reason": "Actual ms-swift qwen3 template 2127 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 994,
+    "reason": "Actual ms-swift qwen3 template 2077 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 996,
+    "reason": "Actual ms-swift qwen3 template 2144 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1003,
+    "reason": "Actual ms-swift qwen3 template 2096 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1006,
+    "reason": "Actual ms-swift qwen3 template 2084 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1012,
+    "reason": "Actual ms-swift qwen3 template 2120 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1015,
+    "reason": "Actual ms-swift qwen3 template 2064 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1018,
+    "reason": "Actual ms-swift qwen3 template 2107 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1020,
+    "reason": "Actual ms-swift qwen3 template 2160 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1022,
+    "reason": "Actual ms-swift qwen3 template 2074 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1028,
+    "reason": "Actual ms-swift qwen3 template 2187 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1030,
+    "reason": "Actual ms-swift qwen3 template 2077 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1035,
+    "reason": "Actual ms-swift qwen3 template 2147 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1036,
+    "reason": "Actual ms-swift qwen3 template 2116 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1037,
+    "reason": "Actual ms-swift qwen3 template 2102 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1038,
+    "reason": "Actual ms-swift qwen3 template 2094 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1040,
+    "reason": "Actual ms-swift qwen3 template 2075 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1041,
+    "reason": "Actual ms-swift qwen3 template 2139 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1044,
+    "reason": "Actual ms-swift qwen3 template 2126 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1045,
+    "reason": "Actual ms-swift qwen3 template 2072 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1046,
+    "reason": "Actual ms-swift qwen3 template 2115 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1047,
+    "reason": "Actual ms-swift qwen3 template 2115 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1049,
+    "reason": "Actual ms-swift qwen3 template 2091 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1051,
+    "reason": "Actual ms-swift qwen3 template 2082 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1052,
+    "reason": "Actual ms-swift qwen3 template 2153 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1055,
+    "reason": "Actual ms-swift qwen3 template 2086 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1056,
+    "reason": "Actual ms-swift qwen3 template 2108 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1061,
+    "reason": "Actual ms-swift qwen3 template 2117 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1062,
+    "reason": "Actual ms-swift qwen3 template 2119 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1063,
+    "reason": "Actual ms-swift qwen3 template 2099 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1065,
+    "reason": "Actual ms-swift qwen3 template 2098 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1068,
+    "reason": "Actual ms-swift qwen3 template 2049 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1069,
+    "reason": "Actual ms-swift qwen3 template 2074 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1070,
+    "reason": "Actual ms-swift qwen3 template 2093 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1075,
+    "reason": "Actual ms-swift qwen3 template 2091 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1078,
+    "reason": "Actual ms-swift qwen3 template 2148 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1079,
+    "reason": "Actual ms-swift qwen3 template 2082 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1085,
+    "reason": "Actual ms-swift qwen3 template 2071 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1087,
+    "reason": "Actual ms-swift qwen3 template 2115 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1088,
+    "reason": "Actual ms-swift qwen3 template 2190 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1094,
+    "reason": "Actual ms-swift qwen3 template 2135 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1095,
+    "reason": "Actual ms-swift qwen3 template 2076 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1099,
+    "reason": "Actual ms-swift qwen3 template 2106 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1101,
+    "reason": "Actual ms-swift qwen3 template 2073 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1102,
+    "reason": "Actual ms-swift qwen3 template 2173 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1103,
+    "reason": "Actual ms-swift qwen3 template 2085 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1104,
+    "reason": "Actual ms-swift qwen3 template 2076 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1105,
+    "reason": "Actual ms-swift qwen3 template 2115 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1106,
+    "reason": "Actual ms-swift qwen3 template 2119 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1107,
+    "reason": "Actual ms-swift qwen3 template 2074 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1110,
+    "reason": "Actual ms-swift qwen3 template 2079 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1111,
+    "reason": "Actual ms-swift qwen3 template 2092 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1112,
+    "reason": "Actual ms-swift qwen3 template 2105 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1114,
+    "reason": "Actual ms-swift qwen3 template 2079 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1116,
+    "reason": "Actual ms-swift qwen3 template 2160 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1118,
+    "reason": "Actual ms-swift qwen3 template 2120 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1119,
+    "reason": "Actual ms-swift qwen3 template 2128 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1121,
+    "reason": "Actual ms-swift qwen3 template 2113 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1123,
+    "reason": "Actual ms-swift qwen3 template 2245 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1124,
+    "reason": "Actual ms-swift qwen3 template 2067 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1126,
+    "reason": "Actual ms-swift qwen3 template 2103 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1128,
+    "reason": "Actual ms-swift qwen3 template 2079 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1130,
+    "reason": "Actual ms-swift qwen3 template 2160 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1131,
+    "reason": "Actual ms-swift qwen3 template 2117 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1134,
+    "reason": "Actual ms-swift qwen3 template 2117 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1136,
+    "reason": "Actual ms-swift qwen3 template 2116 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1137,
+    "reason": "Actual ms-swift qwen3 template 2190 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1138,
+    "reason": "Actual ms-swift qwen3 template 2136 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1139,
+    "reason": "Actual ms-swift qwen3 template 2175 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1148,
+    "reason": "Actual ms-swift qwen3 template 2098 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1149,
+    "reason": "Actual ms-swift qwen3 template 2104 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1151,
+    "reason": "Actual ms-swift qwen3 template 2163 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1152,
+    "reason": "Actual ms-swift qwen3 template 2112 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1158,
+    "reason": "Actual ms-swift qwen3 template 2110 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1159,
+    "reason": "Actual ms-swift qwen3 template 2127 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1163,
+    "reason": "Actual ms-swift qwen3 template 2193 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1165,
+    "reason": "Actual ms-swift qwen3 template 2162 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1169,
+    "reason": "Actual ms-swift qwen3 template 2110 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1170,
+    "reason": "Actual ms-swift qwen3 template 2121 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1174,
+    "reason": "Actual ms-swift qwen3 template 2107 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1176,
+    "reason": "Actual ms-swift qwen3 template 2096 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1177,
+    "reason": "Actual ms-swift qwen3 template 2109 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1182,
+    "reason": "Actual ms-swift qwen3 template 2216 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1188,
+    "reason": "Actual ms-swift qwen3 template 2096 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1192,
+    "reason": "Actual ms-swift qwen3 template 2104 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1195,
+    "reason": "Actual ms-swift qwen3 template 2122 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1197,
+    "reason": "Actual ms-swift qwen3 template 2070 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1199,
+    "reason": "Actual ms-swift qwen3 template 2097 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1200,
+    "reason": "Actual ms-swift qwen3 template 2115 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1201,
+    "reason": "Actual ms-swift qwen3 template 2107 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1202,
+    "reason": "Actual ms-swift qwen3 template 2119 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1203,
+    "reason": "Actual ms-swift qwen3 template 2123 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1205,
+    "reason": "Actual ms-swift qwen3 template 2098 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1207,
+    "reason": "Actual ms-swift qwen3 template 2077 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1208,
+    "reason": "Actual ms-swift qwen3 template 2142 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1209,
+    "reason": "Actual ms-swift qwen3 template 2085 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1211,
+    "reason": "Actual ms-swift qwen3 template 2076 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1212,
+    "reason": "Actual ms-swift qwen3 template 2168 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1213,
+    "reason": "Actual ms-swift qwen3 template 2103 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1217,
+    "reason": "Actual ms-swift qwen3 template 2076 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1218,
+    "reason": "Actual ms-swift qwen3 template 2106 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1220,
+    "reason": "Actual ms-swift qwen3 template 2089 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1226,
+    "reason": "Actual ms-swift qwen3 template 2072 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1227,
+    "reason": "Actual ms-swift qwen3 template 2174 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1229,
+    "reason": "Actual ms-swift qwen3 template 2164 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1230,
+    "reason": "Actual ms-swift qwen3 template 2190 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1232,
+    "reason": "Actual ms-swift qwen3 template 2113 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1233,
+    "reason": "Actual ms-swift qwen3 template 2142 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1245,
+    "reason": "Actual ms-swift qwen3 template 2117 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1247,
+    "reason": "Actual ms-swift qwen3 template 2128 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1250,
+    "reason": "Actual ms-swift qwen3 template 2152 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1251,
+    "reason": "Actual ms-swift qwen3 template 2084 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1252,
+    "reason": "Actual ms-swift qwen3 template 2123 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1253,
+    "reason": "Actual ms-swift qwen3 template 2084 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1255,
+    "reason": "Actual ms-swift qwen3 template 2110 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1259,
+    "reason": "Actual ms-swift qwen3 template 2074 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1260,
+    "reason": "Actual ms-swift qwen3 template 2087 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1264,
+    "reason": "Actual ms-swift qwen3 template 2072 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1265,
+    "reason": "Actual ms-swift qwen3 template 2107 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1268,
+    "reason": "Actual ms-swift qwen3 template 2070 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1273,
+    "reason": "Actual ms-swift qwen3 template 2130 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1274,
+    "reason": "Actual ms-swift qwen3 template 2096 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1275,
+    "reason": "Actual ms-swift qwen3 template 2076 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1277,
+    "reason": "Actual ms-swift qwen3 template 2079 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1279,
+    "reason": "Actual ms-swift qwen3 template 2111 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1280,
+    "reason": "Actual ms-swift qwen3 template 2145 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1281,
+    "reason": "Actual ms-swift qwen3 template 2077 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1282,
+    "reason": "Actual ms-swift qwen3 template 2144 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1284,
+    "reason": "Actual ms-swift qwen3 template 2074 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1287,
+    "reason": "Actual ms-swift qwen3 template 2096 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1288,
+    "reason": "Actual ms-swift qwen3 template 2212 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1289,
+    "reason": "Actual ms-swift qwen3 template 2067 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1291,
+    "reason": "Actual ms-swift qwen3 template 2099 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1293,
+    "reason": "Actual ms-swift qwen3 template 2170 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1294,
+    "reason": "Actual ms-swift qwen3 template 2220 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1298,
+    "reason": "Actual ms-swift qwen3 template 2106 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1302,
+    "reason": "Actual ms-swift qwen3 template 2088 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1305,
+    "reason": "Actual ms-swift qwen3 template 2170 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1306,
+    "reason": "Actual ms-swift qwen3 template 2105 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1307,
+    "reason": "Actual ms-swift qwen3 template 2137 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1310,
+    "reason": "Actual ms-swift qwen3 template 2142 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1313,
+    "reason": "Actual ms-swift qwen3 template 2074 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1314,
+    "reason": "Actual ms-swift qwen3 template 2119 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1319,
+    "reason": "Actual ms-swift qwen3 template 2120 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1321,
+    "reason": "Actual ms-swift qwen3 template 2105 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1328,
+    "reason": "Actual ms-swift qwen3 template 2140 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1332,
+    "reason": "Actual ms-swift qwen3 template 2123 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1333,
+    "reason": "Actual ms-swift qwen3 template 2085 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1335,
+    "reason": "Actual ms-swift qwen3 template 2156 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1336,
+    "reason": "Actual ms-swift qwen3 template 2135 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1340,
+    "reason": "Actual ms-swift qwen3 template 2181 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1342,
+    "reason": "Actual ms-swift qwen3 template 2237 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1347,
+    "reason": "Actual ms-swift qwen3 template 2074 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1351,
+    "reason": "Actual ms-swift qwen3 template 2125 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1353,
+    "reason": "Actual ms-swift qwen3 template 2293 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1354,
+    "reason": "Actual ms-swift qwen3 template 2276 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1357,
+    "reason": "Actual ms-swift qwen3 template 2106 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1358,
+    "reason": "Actual ms-swift qwen3 template 2151 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1362,
+    "reason": "Actual ms-swift qwen3 template 2072 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1363,
+    "reason": "Actual ms-swift qwen3 template 2156 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1365,
+    "reason": "Actual ms-swift qwen3 template 2122 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1368,
+    "reason": "Actual ms-swift qwen3 template 2165 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1369,
+    "reason": "Actual ms-swift qwen3 template 2169 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1372,
+    "reason": "Actual ms-swift qwen3 template 2163 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1373,
+    "reason": "Actual ms-swift qwen3 template 2117 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1376,
+    "reason": "Actual ms-swift qwen3 template 2078 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1377,
+    "reason": "Actual ms-swift qwen3 template 2159 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1378,
+    "reason": "Actual ms-swift qwen3 template 2071 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1383,
+    "reason": "Actual ms-swift qwen3 template 2083 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1385,
+    "reason": "Actual ms-swift qwen3 template 2078 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1386,
+    "reason": "Actual ms-swift qwen3 template 2166 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1387,
+    "reason": "Actual ms-swift qwen3 template 2151 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1388,
+    "reason": "Actual ms-swift qwen3 template 2142 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1389,
+    "reason": "Actual ms-swift qwen3 template 2085 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1391,
+    "reason": "Actual ms-swift qwen3 template 2080 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1394,
+    "reason": "Actual ms-swift qwen3 template 2098 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1398,
+    "reason": "Actual ms-swift qwen3 template 2106 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1401,
+    "reason": "Actual ms-swift qwen3 template 2129 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1402,
+    "reason": "Actual ms-swift qwen3 template 2100 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1404,
+    "reason": "Actual ms-swift qwen3 template 2089 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1407,
+    "reason": "Actual ms-swift qwen3 template 2096 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1408,
+    "reason": "Actual ms-swift qwen3 template 2078 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1409,
+    "reason": "Actual ms-swift qwen3 template 2086 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1410,
+    "reason": "Actual ms-swift qwen3 template 2169 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1411,
+    "reason": "Actual ms-swift qwen3 template 2130 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1412,
+    "reason": "Actual ms-swift qwen3 template 2106 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1415,
+    "reason": "Actual ms-swift qwen3 template 2067 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1417,
+    "reason": "Actual ms-swift qwen3 template 2113 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1420,
+    "reason": "Actual ms-swift qwen3 template 2100 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1422,
+    "reason": "Actual ms-swift qwen3 template 2138 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1423,
+    "reason": "Actual ms-swift qwen3 template 2110 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1426,
+    "reason": "Actual ms-swift qwen3 template 2083 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1427,
+    "reason": "Actual ms-swift qwen3 template 2079 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1428,
+    "reason": "Actual ms-swift qwen3 template 2081 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1429,
+    "reason": "Actual ms-swift qwen3 template 2077 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1430,
+    "reason": "Actual ms-swift qwen3 template 2070 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1431,
+    "reason": "Actual ms-swift qwen3 template 2087 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1433,
+    "reason": "Actual ms-swift qwen3 template 2101 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1436,
+    "reason": "Actual ms-swift qwen3 template 2076 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1438,
+    "reason": "Actual ms-swift qwen3 template 2052 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1439,
+    "reason": "Actual ms-swift qwen3 template 2093 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1441,
+    "reason": "Actual ms-swift qwen3 template 2217 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1442,
+    "reason": "Actual ms-swift qwen3 template 2137 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1443,
+    "reason": "Actual ms-swift qwen3 template 2158 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1447,
+    "reason": "Actual ms-swift qwen3 template 2082 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1448,
+    "reason": "Actual ms-swift qwen3 template 2099 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1450,
+    "reason": "Actual ms-swift qwen3 template 2285 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1453,
+    "reason": "Actual ms-swift qwen3 template 2073 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1454,
+    "reason": "Actual ms-swift qwen3 template 2072 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1457,
+    "reason": "Actual ms-swift qwen3 template 2158 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1458,
+    "reason": "Actual ms-swift qwen3 template 2079 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1459,
+    "reason": "Actual ms-swift qwen3 template 2092 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1464,
+    "reason": "Actual ms-swift qwen3 template 2134 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1466,
+    "reason": "Actual ms-swift qwen3 template 2088 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1468,
+    "reason": "Actual ms-swift qwen3 template 2156 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1472,
+    "reason": "Actual ms-swift qwen3 template 2090 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1477,
+    "reason": "Actual ms-swift qwen3 template 2142 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1478,
+    "reason": "Actual ms-swift qwen3 template 2082 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1482,
+    "reason": "Actual ms-swift qwen3 template 2136 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1489,
+    "reason": "Actual ms-swift qwen3 template 2170 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1492,
+    "reason": "Actual ms-swift qwen3 template 2117 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1495,
+    "reason": "Actual ms-swift qwen3 template 2144 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1499,
+    "reason": "Actual ms-swift qwen3 template 2141 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1500,
+    "reason": "Actual ms-swift qwen3 template 2125 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1503,
+    "reason": "Actual ms-swift qwen3 template 2103 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1504,
+    "reason": "Actual ms-swift qwen3 template 2133 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1505,
+    "reason": "Actual ms-swift qwen3 template 2124 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1506,
+    "reason": "Actual ms-swift qwen3 template 2227 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1507,
+    "reason": "Actual ms-swift qwen3 template 2117 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1508,
+    "reason": "Actual ms-swift qwen3 template 2107 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1509,
+    "reason": "Actual ms-swift qwen3 template 2068 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1511,
+    "reason": "Actual ms-swift qwen3 template 2093 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1512,
+    "reason": "Actual ms-swift qwen3 template 2099 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1515,
+    "reason": "Actual ms-swift qwen3 template 2133 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1516,
+    "reason": "Actual ms-swift qwen3 template 2120 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1518,
+    "reason": "Actual ms-swift qwen3 template 2094 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1520,
+    "reason": "Actual ms-swift qwen3 template 2123 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1529,
+    "reason": "Actual ms-swift qwen3 template 2105 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1532,
+    "reason": "Actual ms-swift qwen3 template 2103 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1534,
+    "reason": "Actual ms-swift qwen3 template 2125 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1535,
+    "reason": "Actual ms-swift qwen3 template 2198 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1536,
+    "reason": "Actual ms-swift qwen3 template 2102 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1537,
+    "reason": "Actual ms-swift qwen3 template 2093 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1538,
+    "reason": "Actual ms-swift qwen3 template 2089 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1542,
+    "reason": "Actual ms-swift qwen3 template 2081 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1543,
+    "reason": "Actual ms-swift qwen3 template 2129 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1545,
+    "reason": "Actual ms-swift qwen3 template 2082 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1546,
+    "reason": "Actual ms-swift qwen3 template 2100 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1547,
+    "reason": "Actual ms-swift qwen3 template 2057 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1548,
+    "reason": "Actual ms-swift qwen3 template 2077 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1549,
+    "reason": "Actual ms-swift qwen3 template 2081 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1550,
+    "reason": "Actual ms-swift qwen3 template 2109 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1551,
+    "reason": "Actual ms-swift qwen3 template 2135 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1552,
+    "reason": "Actual ms-swift qwen3 template 2094 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1554,
+    "reason": "Actual ms-swift qwen3 template 2091 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1555,
+    "reason": "Actual ms-swift qwen3 template 2104 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1557,
+    "reason": "Actual ms-swift qwen3 template 2122 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1560,
+    "reason": "Actual ms-swift qwen3 template 2124 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1562,
+    "reason": "Actual ms-swift qwen3 template 2075 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1563,
+    "reason": "Actual ms-swift qwen3 template 2104 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1567,
+    "reason": "Actual ms-swift qwen3 template 2152 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1568,
+    "reason": "Actual ms-swift qwen3 template 2085 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1571,
+    "reason": "Actual ms-swift qwen3 template 2123 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1572,
+    "reason": "Actual ms-swift qwen3 template 2113 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1573,
+    "reason": "Actual ms-swift qwen3 template 2073 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1575,
+    "reason": "Actual ms-swift qwen3 template 2066 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1576,
+    "reason": "Actual ms-swift qwen3 template 2110 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1578,
+    "reason": "Actual ms-swift qwen3 template 2211 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1579,
+    "reason": "Actual ms-swift qwen3 template 2150 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1580,
+    "reason": "Actual ms-swift qwen3 template 2091 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1582,
+    "reason": "Actual ms-swift qwen3 template 2108 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1583,
+    "reason": "Actual ms-swift qwen3 template 2197 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1584,
+    "reason": "Actual ms-swift qwen3 template 2085 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1585,
+    "reason": "Actual ms-swift qwen3 template 2098 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1586,
+    "reason": "Actual ms-swift qwen3 template 2089 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1588,
+    "reason": "Actual ms-swift qwen3 template 2114 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1589,
+    "reason": "Actual ms-swift qwen3 template 2090 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1590,
+    "reason": "Actual ms-swift qwen3 template 2245 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1591,
+    "reason": "Actual ms-swift qwen3 template 2141 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1592,
+    "reason": "Actual ms-swift qwen3 template 2168 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1596,
+    "reason": "Actual ms-swift qwen3 template 2070 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1597,
+    "reason": "Actual ms-swift qwen3 template 2136 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1598,
+    "reason": "Actual ms-swift qwen3 template 2155 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1601,
+    "reason": "Actual ms-swift qwen3 template 2086 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1607,
+    "reason": "Actual ms-swift qwen3 template 2100 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1609,
+    "reason": "Actual ms-swift qwen3 template 2125 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1610,
+    "reason": "Actual ms-swift qwen3 template 2107 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1612,
+    "reason": "Actual ms-swift qwen3 template 2087 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1613,
+    "reason": "Actual ms-swift qwen3 template 2068 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1615,
+    "reason": "Actual ms-swift qwen3 template 2075 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1617,
+    "reason": "Actual ms-swift qwen3 template 2108 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1620,
+    "reason": "Actual ms-swift qwen3 template 2119 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1621,
+    "reason": "Actual ms-swift qwen3 template 2135 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1624,
+    "reason": "Actual ms-swift qwen3 template 2069 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1626,
+    "reason": "Actual ms-swift qwen3 template 2136 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1630,
+    "reason": "Actual ms-swift qwen3 template 2095 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1631,
+    "reason": "Actual ms-swift qwen3 template 2106 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1632,
+    "reason": "Actual ms-swift qwen3 template 2243 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1633,
+    "reason": "Actual ms-swift qwen3 template 2073 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1637,
+    "reason": "Actual ms-swift qwen3 template 2168 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1638,
+    "reason": "Actual ms-swift qwen3 template 2115 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1639,
+    "reason": "Actual ms-swift qwen3 template 2212 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1640,
+    "reason": "Actual ms-swift qwen3 template 2086 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1641,
+    "reason": "Actual ms-swift qwen3 template 2072 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1645,
+    "reason": "Actual ms-swift qwen3 template 2151 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1649,
+    "reason": "Actual ms-swift qwen3 template 2196 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1651,
+    "reason": "Actual ms-swift qwen3 template 2085 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1653,
+    "reason": "Actual ms-swift qwen3 template 2155 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1655,
+    "reason": "Actual ms-swift qwen3 template 2070 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1657,
+    "reason": "Actual ms-swift qwen3 template 2081 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1658,
+    "reason": "Actual ms-swift qwen3 template 2096 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1659,
+    "reason": "Actual ms-swift qwen3 template 2114 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1660,
+    "reason": "Actual ms-swift qwen3 template 2138 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1661,
+    "reason": "Actual ms-swift qwen3 template 2245 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1663,
+    "reason": "Actual ms-swift qwen3 template 2087 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1664,
+    "reason": "Actual ms-swift qwen3 template 2120 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1666,
+    "reason": "Actual ms-swift qwen3 template 2164 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1668,
+    "reason": "Actual ms-swift qwen3 template 2132 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1669,
+    "reason": "Actual ms-swift qwen3 template 2096 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1670,
+    "reason": "Actual ms-swift qwen3 template 2090 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1672,
+    "reason": "Actual ms-swift qwen3 template 2144 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1673,
+    "reason": "Actual ms-swift qwen3 template 2154 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1674,
+    "reason": "Actual ms-swift qwen3 template 2204 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1675,
+    "reason": "Actual ms-swift qwen3 template 2113 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1676,
+    "reason": "Actual ms-swift qwen3 template 2080 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1679,
+    "reason": "Actual ms-swift qwen3 template 2102 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1680,
+    "reason": "Actual ms-swift qwen3 template 2080 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1682,
+    "reason": "Actual ms-swift qwen3 template 2081 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1684,
+    "reason": "Actual ms-swift qwen3 template 2126 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1687,
+    "reason": "Actual ms-swift qwen3 template 2102 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1688,
+    "reason": "Actual ms-swift qwen3 template 2073 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1689,
+    "reason": "Actual ms-swift qwen3 template 2077 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1690,
+    "reason": "Actual ms-swift qwen3 template 2152 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1692,
+    "reason": "Actual ms-swift qwen3 template 2121 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1693,
+    "reason": "Actual ms-swift qwen3 template 2108 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1694,
+    "reason": "Actual ms-swift qwen3 template 2105 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1696,
+    "reason": "Actual ms-swift qwen3 template 2054 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1699,
+    "reason": "Actual ms-swift qwen3 template 2126 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1702,
+    "reason": "Actual ms-swift qwen3 template 2111 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1703,
+    "reason": "Actual ms-swift qwen3 template 2109 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1706,
+    "reason": "Actual ms-swift qwen3 template 2093 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1708,
+    "reason": "Actual ms-swift qwen3 template 2113 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1709,
+    "reason": "Actual ms-swift qwen3 template 2090 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1713,
+    "reason": "Actual ms-swift qwen3 template 2117 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1714,
+    "reason": "Actual ms-swift qwen3 template 2105 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1715,
+    "reason": "Actual ms-swift qwen3 template 2158 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1717,
+    "reason": "Actual ms-swift qwen3 template 2154 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1721,
+    "reason": "Actual ms-swift qwen3 template 2150 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1722,
+    "reason": "Actual ms-swift qwen3 template 2145 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1727,
+    "reason": "Actual ms-swift qwen3 template 2083 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1730,
+    "reason": "Actual ms-swift qwen3 template 2136 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1732,
+    "reason": "Actual ms-swift qwen3 template 2078 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1733,
+    "reason": "Actual ms-swift qwen3 template 2134 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1734,
+    "reason": "Actual ms-swift qwen3 template 2077 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1736,
+    "reason": "Actual ms-swift qwen3 template 2112 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1742,
+    "reason": "Actual ms-swift qwen3 template 2134 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1747,
+    "reason": "Actual ms-swift qwen3 template 2168 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1749,
+    "reason": "Actual ms-swift qwen3 template 2084 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1751,
+    "reason": "Actual ms-swift qwen3 template 2123 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1754,
+    "reason": "Actual ms-swift qwen3 template 2108 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1755,
+    "reason": "Actual ms-swift qwen3 template 2075 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1757,
+    "reason": "Actual ms-swift qwen3 template 2092 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1762,
+    "reason": "Actual ms-swift qwen3 template 2174 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1763,
+    "reason": "Actual ms-swift qwen3 template 2085 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1764,
+    "reason": "Actual ms-swift qwen3 template 2158 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1765,
+    "reason": "Actual ms-swift qwen3 template 2106 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1767,
+    "reason": "Actual ms-swift qwen3 template 2105 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1770,
+    "reason": "Actual ms-swift qwen3 template 2072 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1771,
+    "reason": "Actual ms-swift qwen3 template 2130 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1774,
+    "reason": "Actual ms-swift qwen3 template 2153 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1775,
+    "reason": "Actual ms-swift qwen3 template 2166 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1777,
+    "reason": "Actual ms-swift qwen3 template 2086 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1779,
+    "reason": "Actual ms-swift qwen3 template 2071 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1781,
+    "reason": "Actual ms-swift qwen3 template 2511 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1785,
+    "reason": "Actual ms-swift qwen3 template 2085 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1790,
+    "reason": "Actual ms-swift qwen3 template 2102 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1791,
+    "reason": "Actual ms-swift qwen3 template 2093 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1792,
+    "reason": "Actual ms-swift qwen3 template 2076 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1797,
+    "reason": "Actual ms-swift qwen3 template 2182 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1799,
+    "reason": "Actual ms-swift qwen3 template 2103 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1801,
+    "reason": "Actual ms-swift qwen3 template 2068 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1802,
+    "reason": "Actual ms-swift qwen3 template 2065 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1803,
+    "reason": "Actual ms-swift qwen3 template 2213 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1804,
+    "reason": "Actual ms-swift qwen3 template 2106 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1806,
+    "reason": "Actual ms-swift qwen3 template 2092 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1807,
+    "reason": "Actual ms-swift qwen3 template 2161 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1809,
+    "reason": "Actual ms-swift qwen3 template 2216 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1810,
+    "reason": "Actual ms-swift qwen3 template 2121 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1811,
+    "reason": "Actual ms-swift qwen3 template 2116 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1812,
+    "reason": "Actual ms-swift qwen3 template 2087 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1813,
+    "reason": "Actual ms-swift qwen3 template 2075 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1814,
+    "reason": "Actual ms-swift qwen3 template 2102 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1815,
+    "reason": "Actual ms-swift qwen3 template 2049 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1816,
+    "reason": "Actual ms-swift qwen3 template 2074 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1817,
+    "reason": "Actual ms-swift qwen3 template 2092 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1822,
+    "reason": "Actual ms-swift qwen3 template 2141 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1824,
+    "reason": "Actual ms-swift qwen3 template 2066 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1826,
+    "reason": "Actual ms-swift qwen3 template 2079 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1842,
+    "reason": "Actual ms-swift qwen3 template 2067 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1845,
+    "reason": "Actual ms-swift qwen3 template 2071 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1846,
+    "reason": "Actual ms-swift qwen3 template 2102 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1847,
+    "reason": "Actual ms-swift qwen3 template 2110 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1849,
+    "reason": "Actual ms-swift qwen3 template 2127 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1851,
+    "reason": "Actual ms-swift qwen3 template 2130 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1853,
+    "reason": "Actual ms-swift qwen3 template 2208 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1854,
+    "reason": "Actual ms-swift qwen3 template 2105 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1855,
+    "reason": "Actual ms-swift qwen3 template 2074 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1856,
+    "reason": "Actual ms-swift qwen3 template 2096 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1857,
+    "reason": "Actual ms-swift qwen3 template 2114 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1858,
+    "reason": "Actual ms-swift qwen3 template 2082 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1860,
+    "reason": "Actual ms-swift qwen3 template 2102 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1861,
+    "reason": "Actual ms-swift qwen3 template 2084 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1863,
+    "reason": "Actual ms-swift qwen3 template 2081 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1864,
+    "reason": "Actual ms-swift qwen3 template 2071 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1867,
+    "reason": "Actual ms-swift qwen3 template 2108 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1871,
+    "reason": "Actual ms-swift qwen3 template 2127 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1872,
+    "reason": "Actual ms-swift qwen3 template 2183 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1873,
+    "reason": "Actual ms-swift qwen3 template 2108 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1874,
+    "reason": "Actual ms-swift qwen3 template 2263 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1876,
+    "reason": "Actual ms-swift qwen3 template 2114 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1877,
+    "reason": "Actual ms-swift qwen3 template 2111 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1878,
+    "reason": "Actual ms-swift qwen3 template 2191 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1881,
+    "reason": "Actual ms-swift qwen3 template 2123 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1884,
+    "reason": "Actual ms-swift qwen3 template 2112 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1888,
+    "reason": "Actual ms-swift qwen3 template 2153 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1889,
+    "reason": "Actual ms-swift qwen3 template 2141 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1890,
+    "reason": "Actual ms-swift qwen3 template 2097 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1892,
+    "reason": "Actual ms-swift qwen3 template 2108 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1893,
+    "reason": "Actual ms-swift qwen3 template 2114 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1898,
+    "reason": "Actual ms-swift qwen3 template 2079 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1903,
+    "reason": "Actual ms-swift qwen3 template 2089 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1905,
+    "reason": "Actual ms-swift qwen3 template 2079 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1910,
+    "reason": "Actual ms-swift qwen3 template 2158 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1912,
+    "reason": "Actual ms-swift qwen3 template 2137 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1913,
+    "reason": "Actual ms-swift qwen3 template 2096 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1914,
+    "reason": "Actual ms-swift qwen3 template 2128 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1915,
+    "reason": "Actual ms-swift qwen3 template 2116 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1916,
+    "reason": "Actual ms-swift qwen3 template 2080 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1917,
+    "reason": "Actual ms-swift qwen3 template 2087 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1919,
+    "reason": "Actual ms-swift qwen3 template 2081 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1920,
+    "reason": "Actual ms-swift qwen3 template 2072 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1922,
+    "reason": "Actual ms-swift qwen3 template 2158 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1923,
+    "reason": "Actual ms-swift qwen3 template 2078 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1924,
+    "reason": "Actual ms-swift qwen3 template 2140 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1929,
+    "reason": "Actual ms-swift qwen3 template 2102 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1930,
+    "reason": "Actual ms-swift qwen3 template 2156 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1931,
+    "reason": "Actual ms-swift qwen3 template 2076 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1933,
+    "reason": "Actual ms-swift qwen3 template 2133 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1934,
+    "reason": "Actual ms-swift qwen3 template 2105 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1935,
+    "reason": "Actual ms-swift qwen3 template 2279 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1936,
+    "reason": "Actual ms-swift qwen3 template 2145 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1938,
+    "reason": "Actual ms-swift qwen3 template 2200 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1940,
+    "reason": "Actual ms-swift qwen3 template 2129 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1942,
+    "reason": "Actual ms-swift qwen3 template 2083 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1944,
+    "reason": "Actual ms-swift qwen3 template 2141 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1946,
+    "reason": "Actual ms-swift qwen3 template 2150 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1948,
+    "reason": "Actual ms-swift qwen3 template 2127 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1951,
+    "reason": "Actual ms-swift qwen3 template 2108 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1952,
+    "reason": "Actual ms-swift qwen3 template 2096 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1953,
+    "reason": "Actual ms-swift qwen3 template 2156 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1954,
+    "reason": "Actual ms-swift qwen3 template 2146 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1956,
+    "reason": "Actual ms-swift qwen3 template 2133 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1958,
+    "reason": "Actual ms-swift qwen3 template 2134 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1959,
+    "reason": "Actual ms-swift qwen3 template 2064 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1960,
+    "reason": "Actual ms-swift qwen3 template 2166 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1961,
+    "reason": "Actual ms-swift qwen3 template 2100 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1965,
+    "reason": "Actual ms-swift qwen3 template 2085 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1969,
+    "reason": "Actual ms-swift qwen3 template 2133 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1971,
+    "reason": "Actual ms-swift qwen3 template 2076 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1972,
+    "reason": "Actual ms-swift qwen3 template 2102 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1974,
+    "reason": "Actual ms-swift qwen3 template 2071 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1975,
+    "reason": "Actual ms-swift qwen3 template 2078 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1976,
+    "reason": "Actual ms-swift qwen3 template 2117 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1979,
+    "reason": "Actual ms-swift qwen3 template 2083 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1982,
+    "reason": "Actual ms-swift qwen3 template 2105 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1984,
+    "reason": "Actual ms-swift qwen3 template 2075 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1986,
+    "reason": "Actual ms-swift qwen3 template 2115 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1990,
+    "reason": "Actual ms-swift qwen3 template 2091 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1991,
+    "reason": "Actual ms-swift qwen3 template 2097 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1992,
+    "reason": "Actual ms-swift qwen3 template 2127 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1994,
+    "reason": "Actual ms-swift qwen3 template 2077 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  },
+  {
+    "index": 1996,
+    "reason": "Actual ms-swift qwen3 template 2144 tokens exceeds frozen max_length 2048; candidate exclusion, no human approval"
+  }
+]

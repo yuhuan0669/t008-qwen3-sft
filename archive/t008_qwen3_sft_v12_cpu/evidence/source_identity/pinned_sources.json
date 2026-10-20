@@ -1,0 +1,20 @@
+[
+  {
+    "repo": "modelscope/ms-swift",
+    "commit": "2efb43ffe61294735be6816abca991fb2ca16011",
+    "url": "https://raw.githubusercontent.com/modelscope/ms-swift/2efb43ffe61294735be6816abca991fb2ca16011/swift/dataset/dataset/llm.py",
+    "exit_code": 0,
+    "sha256": "e2d629fd2993a313330806769eccdea28dfd52258d36da34e9588fc62e0f6a7d",
+    "path": "evidence/source_identity/swift_registration_pinned.py",
+    "matches_initial": true
+  },
+  {
+    "repo": "QwenLM/Qwen3",
+    "commit": "7a2f61ffc7a20d47efcd2bf97f6f2bf52729042e",
+    "url": "https://raw.githubusercontent.com/QwenLM/Qwen3/7a2f61ffc7a20d47efcd2bf97f6f2bf52729042e/docs/source/training/ms_swift.md",
+    "exit_code": 0,
+    "sha256": "2f5b68ed88bf943b5cac764f567ac06f5c3ebd1fc3c2a7b90e8b26e99ea68980",
+    "path": "evidence/source_identity/qwen_tutorial_pinned.md",
+    "matches_initial": true
+  }
+]

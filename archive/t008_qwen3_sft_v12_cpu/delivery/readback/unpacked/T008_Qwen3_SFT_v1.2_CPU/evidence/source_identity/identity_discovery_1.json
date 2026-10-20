@@ -1,0 +1,305 @@
+{
+  "status": "fulfilled",
+  "value": {
+    "content": [
+      {
+        "type": "text",
+        "text": "Action completed."
+      }
+    ],
+    "structuredContent": {
+      "results": [
+        {
+          "url": "https://docs.google.com/document/d/1NAt-nLyFnZquakxye4ejpqrbB8w_QdSO/edit?usp=drivesdk&ouid=110817116464605849607&rtpof=true&sd=true",
+          "title": "主体认证申请表.docx",
+          "id": "1NAt-nLyFnZquakxye4ejpqrbB8w_QdSO",
+          "mime_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "size": "199666",
+          "file_or_folder": "file",
+          "created_at": "2026-09-22T05:18:56.596Z",
+          "updated_at": "2026-08-12T02:17:56.000Z",
+          "viewedByMeTime": "2026-09-22T05:18:56.596Z",
+          "display_title": "主体认证申请表.docx",
+          "display_url": "https://docs.google.com/document/d/1NAt-nLyFnZquakxye4ejpqrbB8w_QdSO/edit?usp=drivesdk&ouid=110817116464605849607&rtpof=true&sd=true",
+          "parent_ids": [
+            "1l-qVFr6qOKcxj0dfIFqspMVLNg8j8GZE"
+          ],
+          "shared": false
+        },
+        {
+          "url": "https://docs.google.com/spreadsheets/d/1_snF4bmXbcbCt9u9M31rCZvU5eKfUYV4-xtdMJ1LEdk/edit?usp=drivesdk",
+          "title": "大模型备案材料准备清单",
+          "id": "1_snF4bmXbcbCt9u9M31rCZvU5eKfUYV4-xtdMJ1LEdk",
+          "mime_type": "application/vnd.google-apps.spreadsheet",
+          "size": "55388",
+          "file_or_folder": "file",
+          "created_at": "2026-09-22T05:31:16.327Z",
+          "updated_at": "2026-10-16T10:40:07.615Z",
+          "viewedByMeTime": "2026-10-16T10:40:07.615Z",
+          "display_title": "大模型备案材料准备清单",
+          "display_url": "https://docs.google.com/spreadsheets/d/1_snF4bmXbcbCt9u9M31rCZvU5eKfUYV4-xtdMJ1LEdk/edit?usp=drivesdk",
+          "parent_ids": [
+            "1Y9YuYHTe5w6XG4DlbCVt2eBCoyZMbNDM"
+          ],
+          "shared": false
+        },
+        {
+          "url": "https://docs.google.com/document/d/1MFd6TQA0mR4JdtHmyU-07nOjvE0X-OvQjnvOQ_N_BrM/edit?usp=drivesdk",
+          "title": "能碳大模型备案项目_过度防御评审与极简破局指令_P035",
+          "id": "1MFd6TQA0mR4JdtHmyU-07nOjvE0X-OvQjnvOQ_N_BrM",
+          "mime_type": "application/vnd.google-apps.document",
+          "size": "22395",
+          "file_or_folder": "file",
+          "created_at": "2026-10-14T00:32:12.188Z",
+          "updated_at": "2026-10-14T00:35:14.964Z",
+          "viewedByMeTime": "2026-10-14T01:13:25.575Z",
+          "display_title": "能碳大模型备案项目_过度防御评审与极简破局指令_P035",
+          "display_url": "https://docs.google.com/document/d/1MFd6TQA0mR4JdtHmyU-07nOjvE0X-OvQjnvOQ_N_BrM/edit?usp=drivesdk",
+          "parent_ids": [
+            "1Y9YuYHTe5w6XG4DlbCVt2eBCoyZMbNDM"
+          ],
+          "shared": false
+        },
+        {
+          "url": "https://docs.google.com/spreadsheets/d/1Oooab4Y5AxB7pbLepUe96RW3U-5XlUmb/edit?usp=drivesdk&ouid=110817116464605849607&rtpof=true&sd=true",
+          "title": "T015_关键词异常审查表_v0.1.xlsx",
+          "id": "1Oooab4Y5AxB7pbLepUe96RW3U-5XlUmb",
+          "mime_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+          "size": "1240803",
+          "file_or_folder": "file",
+          "created_at": "2026-10-10T08:17:41.209Z",
+          "updated_at": "2026-10-10T08:17:41.209Z",
+          "viewedByMeTime": "2026-10-10T08:22:45.906Z",
+          "display_title": "T015_关键词异常审查表_v0.1.xlsx",
+          "display_url": "https://docs.google.com/spreadsheets/d/1Oooab4Y5AxB7pbLepUe96RW3U-5XlUmb/edit?usp=drivesdk&ouid=110817116464605849607&rtpof=true&sd=true",
+          "parent_ids": [
+            "17lVkHRQfisW0SMHKrIuWxRVdGqGIvZKR"
+          ],
+          "shared": false
+        },
+        {
+          "url": "https://docs.google.com/spreadsheets/d/1ZVdZntV6izfw3NYy0bk5x1kBzXiykfrE/edit?usp=drivesdk&ouid=110817116464605849607&rtpof=true&sd=true",
+          "title": "(6) 评估测试题.xlsx",
+          "id": "1ZVdZntV6izfw3NYy0bk5x1kBzXiykfrE",
+          "mime_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+          "size": "1776153",
+          "file_or_folder": "file",
+          "created_at": "2026-09-30T14:23:53.060Z",
+          "updated_at": "2025-07-31T23:03:58.000Z",
+          "viewedByMeTime": "2026-09-30T14:23:53.060Z",
+          "display_title": "(6) 评估测试题.xlsx",
+          "display_url": "https://docs.google.com/spreadsheets/d/1ZVdZntV6izfw3NYy0bk5x1kBzXiykfrE/edit?usp=drivesdk&ouid=110817116464605849607&rtpof=true&sd=true",
+          "parent_ids": [
+            "102iVVM8bxCpaezZgKjtW-0TZrbRwMflh"
+          ],
+          "shared": false
+        },
+        {
+          "url": "https://docs.google.com/spreadsheets/d/1wpENBRy7d6Kf6DtY0J0M_QGeVGcHeQyAtnmmEQqcEyw/edit?usp=drivesdk",
+          "title": "T015_分类差异在线审阅_v0.2",
+          "id": "1wpENBRy7d6Kf6DtY0J0M_QGeVGcHeQyAtnmmEQqcEyw",
+          "mime_type": "application/vnd.google-apps.spreadsheet",
+          "size": "3078752",
+          "file_or_folder": "file",
+          "created_at": "2026-10-10T09:04:27.808Z",
+          "updated_at": "2026-10-10T14:06:39.459Z",
+          "viewedByMeTime": "2026-10-17T23:22:08.884Z",
+          "display_title": "T015_分类差异在线审阅_v0.2",
+          "display_url": "https://docs.google.com/spreadsheets/d/1wpENBRy7d6Kf6DtY0J0M_QGeVGcHeQyAtnmmEQqcEyw/edit?usp=drivesdk",
+          "parent_ids": [
+            "17lVkHRQfisW0SMHKrIuWxRVdGqGIvZKR"
+          ],
+          "shared": false
+        },
+        {
+          "url": "https://docs.google.com/spreadsheets/d/1bxvgVk-q6n4nMAiv5Hoiiyun2FHNt_AuT9E5JPs0e9I/edit?usp=drivesdk",
+          "title": "T017_输入快照_T015分类差异在线审阅_v0.2_启动前留存",
+          "id": "1bxvgVk-q6n4nMAiv5Hoiiyun2FHNt_AuT9E5JPs0e9I",
+          "mime_type": "application/vnd.google-apps.spreadsheet",
+          "size": "246812",
+          "file_or_folder": "file",
+          "created_at": "2026-10-10T09:40:40.165Z",
+          "updated_at": "2026-10-10T09:40:40.165Z",
+          "viewedByMeTime": "2026-10-10T09:17:56.039Z",
+          "display_title": "T017_输入快照_T015分类差异在线审阅_v0.2_启动前留存",
+          "display_url": "https://docs.google.com/spreadsheets/d/1bxvgVk-q6n4nMAiv5Hoiiyun2FHNt_AuT9E5JPs0e9I/edit?usp=drivesdk",
+          "parent_ids": [
+            "1PFqKas8-E-rGs8jnU6asfXuvGV8PNGeV"
+          ],
+          "shared": false
+        },
+        {
+          "url": "https://drive.google.com/file/d/1WwDJpl5K-5edN51o3rFj8o1djGtUlwM-/view?usp=drivesdk",
+          "title": "sensitive_word_dict.txt",
+          "id": "1WwDJpl5K-5edN51o3rFj8o1djGtUlwM-",
+          "mime_type": "text/plain",
+          "size": "1174879",
+          "file_or_folder": "file",
+          "created_at": "2026-10-08T07:36:56.758Z",
+          "updated_at": "2026-10-08T07:33:40.000Z",
+          "viewedByMeTime": "2026-10-08T07:36:56.758Z",
+          "display_title": "sensitive_word_dict.txt",
+          "display_url": "https://drive.google.com/file/d/1WwDJpl5K-5edN51o3rFj8o1djGtUlwM-/view?usp=drivesdk",
+          "parent_ids": [
+            "19-NAI0wKeP27bZvokabZzdekdzYgi40k"
+          ],
+          "shared": true
+        },
+        {
+          "url": "https://drive.google.com/file/d/1U490aCdd2E838OrxSPK_Lzcn12VQ_TQ8/view?usp=drivesdk",
+          "title": "sensitive_word_tags.txt",
+          "id": "1U490aCdd2E838OrxSPK_Lzcn12VQ_TQ8",
+          "mime_type": "text/plain",
+          "size": "963924",
+          "file_or_folder": "file",
+          "created_at": "2026-10-08T07:36:56.764Z",
+          "updated_at": "2026-10-08T07:33:43.000Z",
+          "viewedByMeTime": "2026-10-08T07:36:56.764Z",
+          "display_title": "sensitive_word_tags.txt",
+          "display_url": "https://drive.google.com/file/d/1U490aCdd2E838OrxSPK_Lzcn12VQ_TQ8/view?usp=drivesdk",
+          "parent_ids": [
+            "19-NAI0wKeP27bZvokabZzdekdzYgi40k"
+          ],
+          "shared": true
+        },
+        {
+          "url": "https://docs.google.com/spreadsheets/d/16HCGnt4iJxSgjhr8qRdd7JuV_vUZD4m4/edit?usp=drivesdk&ouid=110817116464605849607&rtpof=true&sd=true",
+          "title": "(7) 涉知识产权、商业秘密、民族、信仰、性别等评估问题.xlsx",
+          "id": "16HCGnt4iJxSgjhr8qRdd7JuV_vUZD4m4",
+          "mime_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+          "size": "445070",
+          "file_or_folder": "file",
+          "created_at": "2026-09-30T14:23:02.524Z",
+          "updated_at": "2025-07-31T23:03:58.000Z",
+          "viewedByMeTime": "2026-09-30T14:23:02.524Z",
+          "display_title": "(7) 涉知识产权、商业秘密、民族、信仰、性别等评估问题.xlsx",
+          "display_url": "https://docs.google.com/spreadsheets/d/16HCGnt4iJxSgjhr8qRdd7JuV_vUZD4m4/edit?usp=drivesdk&ouid=110817116464605849607&rtpof=true&sd=true",
+          "parent_ids": [
+            "102iVVM8bxCpaezZgKjtW-0TZrbRwMflh"
+          ],
+          "shared": false
+        },
+        {
+          "url": "https://docs.google.com/spreadsheets/d/1EAHIr_kLxj1Xt0kIi1ocVh36FNrhKLpj/edit?usp=drivesdk&ouid=110817116464605849607&rtpof=true&sd=true",
+          "title": "a8292ac3-f9c3-4ea0-b231-485858f2f1b4.xlsx",
+          "id": "1EAHIr_kLxj1Xt0kIi1ocVh36FNrhKLpj",
+          "mime_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+          "size": "1776153",
+          "file_or_folder": "file",
+          "created_at": "2026-09-30T13:26:40.876Z",
+          "updated_at": "2026-09-30T13:26:40.876Z",
+          "viewedByMeTime": null,
+          "display_title": "a8292ac3-f9c3-4ea0-b231-485858f2f1b4.xlsx",
+          "display_url": "https://docs.google.com/spreadsheets/d/1EAHIr_kLxj1Xt0kIi1ocVh36FNrhKLpj/edit?usp=drivesdk&ouid=110817116464605849607&rtpof=true&sd=true",
+          "parent_ids": [
+            "1y6nlgaeCMIiA7AYAanAHRaPmy6Xgwdz5"
+          ],
+          "shared": false
+        },
+        {
+          "url": "https://docs.google.com/spreadsheets/d/10iTjshvk7BMk_1vapTKUtoBSKdsIXyb0/edit?usp=drivesdk&ouid=110817116464605849607&rtpof=true&sd=true",
+          "title": "6068d342-af6e-4070-a94b-d63d58e48405.xlsx",
+          "id": "10iTjshvk7BMk_1vapTKUtoBSKdsIXyb0",
+          "mime_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+          "size": "610975",
+          "file_or_folder": "file",
+          "created_at": "2026-09-30T13:27:05.747Z",
+          "updated_at": "2026-09-30T13:27:05.747Z",
+          "viewedByMeTime": null,
+          "display_title": "6068d342-af6e-4070-a94b-d63d58e48405.xlsx",
+          "display_url": "https://docs.google.com/spreadsheets/d/10iTjshvk7BMk_1vapTKUtoBSKdsIXyb0/edit?usp=drivesdk&ouid=110817116464605849607&rtpof=true&sd=true",
+          "parent_ids": [
+            "1y6nlgaeCMIiA7AYAanAHRaPmy6Xgwdz5"
+          ],
+          "shared": false
+        },
+        {
+          "url": "https://docs.google.com/spreadsheets/d/1yANq3UusloRtyrumVgcjuyvJirOZqLx-/edit?usp=drivesdk&ouid=110817116464605849607&rtpof=true&sd=true",
+          "title": "01_原始关键词库.xlsx",
+          "id": "1yANq3UusloRtyrumVgcjuyvJirOZqLx-",
+          "mime_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+          "size": "685921",
+          "file_or_folder": "file",
+          "created_at": "2026-09-30T13:33:23.049Z",
+          "updated_at": "2026-09-30T13:33:23.049Z",
+          "viewedByMeTime": null,
+          "display_title": "01_原始关键词库.xlsx",
+          "display_url": "https://docs.google.com/spreadsheets/d/1yANq3UusloRtyrumVgcjuyvJirOZqLx-/edit?usp=drivesdk&ouid=110817116464605849607&rtpof=true&sd=true",
+          "parent_ids": [
+            "1_HP9ptv5dvpcl97YxAszium6MjMS0T4Q"
+          ],
+          "shared": false
+        },
+        {
+          "url": "https://docs.google.com/spreadsheets/d/1vMlqERcXcjV89VW51fhdjo6WJCalP-yo/edit?usp=drivesdk&ouid=110817116464605849607&rtpof=true&sd=true",
+          "title": "10_关键词库阶段版本_b6fb.xlsx",
+          "id": "1vMlqERcXcjV89VW51fhdjo6WJCalP-yo",
+          "mime_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+          "size": "702790",
+          "file_or_folder": "file",
+          "created_at": "2026-09-30T13:33:59.669Z",
+          "updated_at": "2026-09-30T13:33:59.669Z",
+          "viewedByMeTime": null,
+          "display_title": "10_关键词库阶段版本_b6fb.xlsx",
+          "display_url": "https://docs.google.com/spreadsheets/d/1vMlqERcXcjV89VW51fhdjo6WJCalP-yo/edit?usp=drivesdk&ouid=110817116464605849607&rtpof=true&sd=true",
+          "parent_ids": [
+            "1_HP9ptv5dvpcl97YxAszium6MjMS0T4Q"
+          ],
+          "shared": false
+        },
+        {
+          "url": "https://docs.google.com/spreadsheets/d/1RC9QSrdkj2VtTBZBeq03JcSsUjI85zuv/edit?usp=drivesdk&ouid=110817116464605849607&rtpof=true&sd=true",
+          "title": "07_关键词库阶段版本_248b.xlsx",
+          "id": "1RC9QSrdkj2VtTBZBeq03JcSsUjI85zuv",
+          "mime_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+          "size": "699973",
+          "file_or_folder": "file",
+          "created_at": "2026-09-30T13:33:50.844Z",
+          "updated_at": "2026-09-30T13:33:50.844Z",
+          "viewedByMeTime": null,
+          "display_title": "07_关键词库阶段版本_248b.xlsx",
+          "display_url": "https://docs.google.com/spreadsheets/d/1RC9QSrdkj2VtTBZBeq03JcSsUjI85zuv/edit?usp=drivesdk&ouid=110817116464605849607&rtpof=true&sd=true",
+          "parent_ids": [
+            "1_HP9ptv5dvpcl97YxAszium6MjMS0T4Q"
+          ],
+          "shared": false
+        },
+        {
+          "url": "https://docs.google.com/spreadsheets/d/1YQh1QenKezl6ylDog9pSqkVu0bGo5xN6/edit?usp=drivesdk&ouid=110817116464605849607&rtpof=true&sd=true",
+          "title": "55b073d1-cf32-4904-b1b6-ce0b1b12041a.xlsx",
+          "id": "1YQh1QenKezl6ylDog9pSqkVu0bGo5xN6",
+          "mime_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+          "size": "445070",
+          "file_or_folder": "file",
+          "created_at": "2026-09-30T13:26:44.572Z",
+          "updated_at": "2026-09-30T13:26:44.572Z",
+          "viewedByMeTime": null,
+          "display_title": "55b073d1-cf32-4904-b1b6-ce0b1b12041a.xlsx",
+          "display_url": "https://docs.google.com/spreadsheets/d/1YQh1QenKezl6ylDog9pSqkVu0bGo5xN6/edit?usp=drivesdk&ouid=110817116464605849607&rtpof=true&sd=true",
+          "parent_ids": [
+            "1y6nlgaeCMIiA7AYAanAHRaPmy6Xgwdz5"
+          ],
+          "shared": false
+        },
+        {
+          "url": "https://docs.google.com/spreadsheets/d/1bAtHxXNg_TxFJKxdyxzOyTHdY8UGRKV4/edit?usp=drivesdk&ouid=110817116464605849607&rtpof=true&sd=true",
+          "title": "关键词库_V2.12_高质量语义清洗终审报告.xlsx",
+          "id": "1bAtHxXNg_TxFJKxdyxzOyTHdY8UGRKV4",
+          "mime_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+          "size": "779607",
+          "file_or_folder": "file",
+          "created_at": "2026-09-30T13:04:22.866Z",
+          "updated_at": "2026-09-30T13:04:22.866Z",
+          "viewedByMeTime": null,
+          "display_title": "关键词库_V2.12_高质量语义清洗终审报告.xlsx",
+          "display_url": "https://docs.google.com/spreadsheets/d/1bAtHxXNg_TxFJKxdyxzOyTHdY8UGRKV4/edit?usp=drivesdk&ouid=110817116464605849607&rtpof=true&sd=true",
+          "parent_ids": [
+            "19NiiBwDcnwhDuKP-YH_xpt8ynwfWOeZy"
+          ],
+          "shared": false
+        }
+      ]
+    },
+    "isError": false
+  }
+}

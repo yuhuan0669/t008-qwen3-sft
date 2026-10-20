@@ -1,0 +1,10 @@
+{
+  "verified": true,
+  "dataset_sha256": "ad06235bcf0df01f7de4fbfb4f2fe3b156429444478bb1ef0a22cc7ab322b111",
+  "model_files_sha256": "39c6b79bcc9813377a48e65da1ad614151748389d0bf526f5d816dc581e54374",
+  "rows_checked": 1642,
+  "max_length": 2048,
+  "overlength_rows": 0,
+  "evidence_ref": "/work/evidence/template/length-candidate-final/summary.json",
+  "scope": "Real CPU template/length/mask evidence only; not source/identity/experiment/GPU approval"
+}

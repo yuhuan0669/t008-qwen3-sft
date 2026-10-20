@@ -1,0 +1,72 @@
+{
+  "schema": "t008-handoff-package-r1",
+  "documentation_only": true,
+  "document": {
+    "id": "1G-jhFB0OhrIXvaqtZ2aoYYpcD05NkDTYEkmPez9kNiM",
+    "url": "https://docs.google.com/document/d/1G-jhFB0OhrIXvaqtZ2aoYYpcD05NkDTYEkmPez9kNiM/edit?usp=drivesdk",
+    "native_document_mime": "application/vnd.google-apps.document",
+    "text_exact_match": true,
+    "characters": 12023,
+    "parent_ids": [
+      "1fhiuIhZNgHJjO09sFD9hrB6ULYiQFV84"
+    ],
+    "named_headings": 11
+  },
+  "files": [
+    {
+      "path": "HANDOFF.blocks.json",
+      "bytes": 22585,
+      "sha256": "432c8caedf8f1151bc80fcca329b9ed956e7aaa356b2c09d7342a6b1f3f98717"
+    },
+    {
+      "path": "HANDOFF.md",
+      "bytes": 19363,
+      "sha256": "6c2e441c7e76d03e494f9f5a15e23cccfefebede33a93274678f1cb63ab178ef"
+    },
+    {
+      "path": "HANDOFF.txt",
+      "bytes": 19246,
+      "sha256": "e5a9d5dc2694b2fef80e4e33b59cbfe6ad9b4872b8bb752c9e44a7d3db672335"
+    },
+    {
+      "path": "HANDOFF_STATE.json",
+      "bytes": 5244,
+      "sha256": "6f5cbd67a0e6d9328442ebfb99f26de911b1309aef310c1f57a69271590bbb6b"
+    },
+    {
+      "path": "build_handoff.py",
+      "bytes": 22310,
+      "sha256": "dfd9196b048f79d95eef5f828f28d125a1a0323523913275abdc50e092e12de7"
+    },
+    {
+      "path": "evidence/GOOGLE_DOCS_READBACK.json",
+      "bytes": 373,
+      "sha256": "c8d5e912cf5fe72f3832154bdf277ee6c2e7516ec79ddc51b4c8d04987a4da56"
+    },
+    {
+      "path": "evidence/baseline-switch/models.json",
+      "bytes": 711,
+      "sha256": "5dfbcb33d620bcdb548d719e0394ce18aeab4157b71fd0078b1488c959105b44"
+    },
+    {
+      "path": "evidence/baseline-switch/result.json",
+      "bytes": 733,
+      "sha256": "a5ea2fd2a9d982513ba10ddab9b21adc8dac47b291beb9f212f6e5b5ff094e25"
+    },
+    {
+      "path": "evidence/baseline-switch/switch.log",
+      "bytes": 115,
+      "sha256": "9a34b4b71d9098423d780780116baf0c2d6861cd7e8078fdd1f71b0835e85ec2"
+    },
+    {
+      "path": "evidence/live-serving-readonly.json",
+      "bytes": 888,
+      "sha256": "fd29fccfcfb852ac0adf66d4278461a946286c297bb6945326fd50d922b00fb5"
+    },
+    {
+      "path": "evidence/protected-files-unchanged.json",
+      "bytes": 105,
+      "sha256": "d2da304c1bc0f6f53e321efd17316dd381d915c59daad550fe100edd1b2ae9da"
+    }
+  ]
+}

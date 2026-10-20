@@ -1,0 +1,26 @@
+ClearML Task: created new task id=97ac5246ae9c43d9aa65ee2ac4c2aaef
+2026-10-19 02:53:57,592 - clearml.Task - INFO - No repository found, storing script code instead
+ClearML results page: https://clearml.10.140.17.125.nip.io/projects/a963d510434a46d19bb91881cad45ea4/experiments/97ac5246ae9c43d9aa65ee2ac4c2aaef/output/log
+ClearML Monitor: Could not detect iteration reporting, falling back to iterations as seconds-from-start
+2026-10-19 03:09:32,806 - clearml.storage - INFO - Uploading: 77.00MB to /runwork/outputs/full/adapter-candidate.zip
+
+                                            0% | 0.00/77.0 MB [00:00<?, ?MB/s]: 
+████████                         26% | 20.00/77.0 MB [00:00<00:00, 164.88MB/s]: 
+████████████████                 52% | 40.00/77.0 MB [00:00<00:00, 128.65MB/s]: 
+██████████████████████▏          71% | 55.00/77.0 MB [00:00<00:00, 121.44MB/s]: 
+████████████████████████████▏    91% | 70.00/77.0 MB [00:00<00:00, 117.72MB/s]: /usr/local/lib/python3.12/site-packages/tqdm/std.py:636: TqdmWarning: clamping frac to range [0, 1]
+  full_bar = Bar(frac,
+
+███████████████████████████████ 100% | 77.00/77.0 MB [00:01<-00:00, 41.64MB/s]: 
+2026-10-19 03:09:34,658 - clearml.Task - INFO - Completed model upload to https://clearml.10.140.17.125.nip.io/files/reg/identity-sft/full.97ac5246ae9c43d9aa65ee2ac4c2aaef/models/adapter-candidate.zip
+2026-10-19 03:09:35,048 - clearml.storage - INFO - Downloading: 77.00MB from https://clearml.10.140.17.125.nip.io/files/reg/identity-sft/full.97ac5246ae9c43d9aa65ee2ac4c2aaef/models/adapter-candidate.zip
+
+                                            0% | 0.00/77.0 MB [00:00<?, ?MB/s]: 
+████████                         26% | 20.00/77.0 MB [00:00<00:00, 139.52MB/s]: 
+██████████████                   45% | 35.00/77.0 MB [00:00<00:00, 123.19MB/s]: 
+████████████████████▏            65% | 50.00/77.0 MB [00:00<00:00, 117.74MB/s]: 
+██████████████████████████▏      84% | 65.00/77.0 MB [00:00<00:00, 115.29MB/s]: 
+███████████████████████████████ 100% | 77.00/77.0 MB [00:00<00:00, 114.00MB/s]: 
+███████████████████████████████ 100% | 77.00/77.0 MB [00:01<-00:00, 57.14MB/s]: 
+2026-10-19 03:09:36,397 - clearml.storage - INFO - Downloaded 77.00 MB successfully from https://clearml.10.140.17.125.nip.io/files/reg/identity-sft/full.97ac5246ae9c43d9aa65ee2ac4c2aaef/models/adapter-candidate.zip , saved to /runwork/cache/clearml/storage_manager/global/5c8f8dd19f290bef4996d91ea620b5b1.adapter-candidate.zip
+{"task_id": "97ac5246ae9c43d9aa65ee2ac4c2aaef", "status": "TRAINED_CANDIDATE", "output": "/runwork/outputs/full", "model_id": "0552c3ab6b39456e9ec8b32129015be0"}

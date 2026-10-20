@@ -1,0 +1,14 @@
+{
+  "global_step": 3,
+  "best_metric": null,
+  "log_history": [
+    {
+      "epoch": 0.0097442143727162,
+      "grad_norm": 0.43313559889793396,
+      "learning_rate": 0.0001,
+      "loss": 0.8220623135566711,
+      "step": 1,
+      "token_acc": 0.7817129832558956
+    }
+  ]
+}

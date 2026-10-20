@@ -1,0 +1,10 @@
+{
+  "started_at_utc": "2026-10-19T09:41:13.033708+00:00",
+  "run_id": "t008-qwen3-20261019-094113",
+  "scope": "GPU Smoke 3 steps, then official native2048 Full1epoch if Smoke passes; restore original vLLM; no release",
+  "start_instruction": "开始GPU sft吧",
+  "service_impact_question": "当前唯一的 RTX 4090 仍由 vLLM 占用，开始 SFT 需要临时停止该服务。你此前要求停止现有服务须单独裁定：是否授权现在暂停 vLLM，先运行 3 步 GPU Smoke，通过后按已定官方方案完成一轮 SFT，结束或失败后恢复原 vLLM？",
+  "service_impact_answer": "授权本次暂停、训练并恢复",
+  "authority": "Explicit current user chat authorization; agent transcription, not fabricated signature",
+  "source_commit": "e7ae45aa7438c8bcca8318d3531854f7f5e7db39"
+}

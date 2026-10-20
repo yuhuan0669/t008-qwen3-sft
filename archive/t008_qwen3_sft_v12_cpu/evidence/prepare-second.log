@@ -1,0 +1,70 @@
+Failed to load CPU gemm_4bit_forward from kernels-community: No module named 'kernels'. Please make sure you already `pip install kernels` and the kernels >= 0.11.1
+[INFO:swift] Successfully registered `/usr/local/lib/python3.12/site-packages/swift/dataset/data/dataset_info.json`.
+[INFO:swift] SelfCognitionPreprocessor has been successfully configured with name: ('章鱼能碳垂直大模型', 'Octacarbon LLM'), author: ('能碳章鱼（湖北）人工智能科技有限公司', 'Octacarbon (Hubei) Artificial Intelligence Technology Co., Ltd.').
+[INFO:swift] Downloading the dataset from ModelScope, dataset_id: swift/Qwen3-SFT-Mixin
+[INFO:modelscope.ast] Force rebuilding ast index from scanning every file!
+[INFO:modelscope.ast] AST-Scanning the path "/usr/local/lib/python3.12/site-packages/modelscope" with the following sub folders ['models', 'metrics', 'pipelines', 'preprocessors', 'trainers', 'msdatasets', 'exporters']
+<unknown>:1315: SyntaxWarning: invalid escape sequence '\?'
+[INFO:modelscope.ast] Scanning done! A number of 991 components indexed or updated! Time consumed 4.078706979751587s
+[ERROR:swift] Dataset swift/Qwen3-SFT-Mixin load failed: subset_name=default,split=train with error: Failed to import modelscope.msdatasets because of the following error (look up to see its traceback):
+[Errno 13] Permission denied: '/usr/local/lib/python3.12/site-packages/modelscope/utils/ast_index_file.py'
+[INFO:modelscope.ast] Force rebuilding ast index from scanning every file!
+[INFO:modelscope.ast] AST-Scanning the path "/usr/local/lib/python3.12/site-packages/modelscope" with the following sub folders ['models', 'metrics', 'pipelines', 'preprocessors', 'trainers', 'msdatasets', 'exporters']
+<unknown>:1315: SyntaxWarning: invalid escape sequence '\?'
+[INFO:modelscope.ast] Scanning done! A number of 991 components indexed or updated! Time consumed 4.214707851409912s
+[ERROR:swift] Dataset swift/Qwen3-SFT-Mixin load failed: subset_name=default,split=train with error: Failed to import modelscope.msdatasets because of the following error (look up to see its traceback):
+[Errno 13] Permission denied: '/usr/local/lib/python3.12/site-packages/modelscope/utils/ast_index_file.py'
+[INFO:modelscope.ast] Force rebuilding ast index from scanning every file!
+[INFO:modelscope.ast] AST-Scanning the path "/usr/local/lib/python3.12/site-packages/modelscope" with the following sub folders ['models', 'metrics', 'pipelines', 'preprocessors', 'trainers', 'msdatasets', 'exporters']
+<unknown>:1315: SyntaxWarning: invalid escape sequence '\?'
+[INFO:modelscope.ast] Scanning done! A number of 991 components indexed or updated! Time consumed 3.6096699237823486s
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/modelscope/utils/import_utils.py", line 487, in _get_module
+    ast_index = self.get_ast_index()
+                ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/modelscope/utils/import_utils.py", line 504, in get_ast_index
+    LazyImportModule._AST_INDEX = load_index()
+                                  ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/modelscope/utils/ast_utils.py", line 759, in load_index
+    index = load_from_prebuilt()
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/modelscope/utils/ast_utils.py", line 771, in load_from_prebuilt
+    index = generate_ast_template()
+            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/modelscope/utils/ast_utils.py", line 780, in generate_ast_template
+    _save_index(index, file_path, with_template=True)
+  File "/usr/local/lib/python3.12/site-packages/modelscope/utils/ast_utils.py", line 614, in _save_index
+    ensure_write(json_index.encode(), file_path)
+  File "/usr/local/lib/python3.12/site-packages/modelscope/utils/ast_utils.py", line 598, in ensure_write
+    with open(filepath, 'wb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/usr/local/lib/python3.12/site-packages/modelscope/utils/ast_index_file.py'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/work/code/prepare_official.py", line 88, in <module>
+    if __name__=='__main__': main()
+                             ^^^^^^
+  File "/work/code/prepare_official.py", line 53, in main
+    ds,val=load_dataset(list(SOURCES),**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/swift/dataset/loader.py", line 350, in load_dataset
+    train_dataset = loader.load(dataset_syntax, dataset_meta, use_hf=use_hf)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/swift/dataset/loader.py", line 179, in load
+    dataset = self._load_repo_dataset(
+              ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/swift/dataset/loader.py", line 108, in _load_repo_dataset
+    dataset = hub.load_dataset(
+              ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/swift/hub/hub.py", line 292, in load_dataset
+    from modelscope import MsDataset
+  File "<frozen importlib._bootstrap>", line 1412, in _handle_fromlist
+  File "/usr/local/lib/python3.12/site-packages/modelscope/utils/import_utils.py", line 466, in __getattr__
+    module = self._get_module(self._class_to_module[name])
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/modelscope/utils/import_utils.py", line 493, in _get_module
+    raise RuntimeError(
+RuntimeError: Failed to import modelscope.msdatasets because of the following error (look up to see its traceback):
+[Errno 13] Permission denied: '/usr/local/lib/python3.12/site-packages/modelscope/utils/ast_index_file.py'

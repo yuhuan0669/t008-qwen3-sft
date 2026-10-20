@@ -1,0 +1,154 @@
+{
+  "schema": "t008-official2048-report-update-manifest-v1",
+  "scope": "Updated execution/report/gate and read-only evidence; no training dataset changes.",
+  "gpu_training_authorized": false,
+  "gpu_training_started": false,
+  "original_cpu_packet_unchanged": true,
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 500,
+      "sha256": "eab06dabc3b2862a5e31b73112e6034f3f888c4ebff91eb72b7a8255541f5da0"
+    },
+    {
+      "path": "evidence/base_metadata_comparison.json",
+      "bytes": 2136,
+      "sha256": "b8e02ef5e0a9dec16b61e2c281dea1273c3587625ac78186c61a3defcab1a57b"
+    },
+    {
+      "path": "evidence/deployment_history_comparison.json",
+      "bytes": 566,
+      "sha256": "2e994a3675f7ed83f8d2a473ba0b9788e7116618ae095436aff451cd6abeb065"
+    },
+    {
+      "path": "evidence/frozen_inputs_recheck.json",
+      "bytes": 2126,
+      "sha256": "dc3cfb83702ddbb934d99da3aa4a63e56c6961c6a42d3e43e9b462f0832e8847"
+    },
+    {
+      "path": "evidence/gpu_fallback_check.json",
+      "bytes": 1088,
+      "sha256": "fb9ae578da08b5eff7182366257945273a5005d5c67a228dc8db3f7341be55e7"
+    },
+    {
+      "path": "evidence/historical_remote_report_1LpG9sSd5HYLHCqsl1LDY1m6CJcCHzIOj.md",
+      "bytes": 7291,
+      "sha256": "d7b8b8f8508d13ef21468c00a6bb2a8990a17cd9e7615d9bbff4bfb66abf3c1e"
+    },
+    {
+      "path": "evidence/historical_remote_report_1Q4drsBjcFp8IEwRSmpYi_iqKMyifXRTc.md",
+      "bytes": 11481,
+      "sha256": "b4d085d94e06ff15302dac893abe7b7edaaa688ec7e8230b52abd2a4af54364c"
+    },
+    {
+      "path": "evidence/historical_remote_report_1p-awqvTM89aQ1Y89YHIiq2kbWNRrQDou.md",
+      "bytes": 46421,
+      "sha256": "b419090cbf26a5a5ae7756fdab1f95702be03ef301d3c9ea5bf9b6f8d81e6a61"
+    },
+    {
+      "path": "evidence/live_packages_base_metadata.json",
+      "bytes": 2832,
+      "sha256": "af7f0a33543e303458e0b944baba8c6608883a213d1df4d7dcec05373dd631b5"
+    },
+    {
+      "path": "evidence/live_readonly_check.json",
+      "bytes": 44058,
+      "sha256": "4bb4e7140031a51d9518f0394e2f6d8d521e4a54078bca0f76ff943f01b918d3"
+    },
+    {
+      "path": "evidence/live_readonly_initial_check.json",
+      "bytes": 43394,
+      "sha256": "479352cb30264162f86c55243a98d880ea8d1afa5d3e15333db66d0c03bce4db"
+    },
+    {
+      "path": "evidence/owner_recipe_decision.json",
+      "bytes": 1651,
+      "sha256": "6b72ee2f3877cb55a4767afed4fc09b43bdde573283158ec9d12ef7ff46d5c8e"
+    },
+    {
+      "path": "evidence/pre_update_remote_readback.json",
+      "bytes": 990,
+      "sha256": "3f233975a0fe9b220f1a5f4c2a494f7eb75442cb3edf82a01ce4ec4043635a2c"
+    },
+    {
+      "path": "evidence/update_consistency_checks.json",
+      "bytes": 459,
+      "sha256": "16d09d1328d3c62b627f16214508e43e6fd99855ef378a2254c62ed59c6e3eb0"
+    },
+    {
+      "path": "evidence/vllm_ingresses_snapshot.json",
+      "bytes": 704,
+      "sha256": "8b2ed619e10300bc7b7802fb1a15451d9e5a8d4942e923c95e4dfc5450cdef6e"
+    },
+    {
+      "path": "evidence/vllm_restore_snapshot.json",
+      "bytes": 6030,
+      "sha256": "1e608b470fb6c6254a2218365189b78470ee10d2bd823df31110e68485c21f5b"
+    },
+    {
+      "path": "evidence/vllm_services_snapshot.json",
+      "bytes": 640,
+      "sha256": "a66feabf46fa9cea65701d794e01f8cbfd7f1777525b44c0c5b82c103d81098b"
+    },
+    {
+      "path": "gpu_gate_checklist.json",
+      "bytes": 3609,
+      "sha256": "7aa4b9d3e57f61d2dd82f575104e8d10b7355fa74f20bc82f0636d1ad9ba60ac"
+    },
+    {
+      "path": "intended_parameters.json",
+      "bytes": 1495,
+      "sha256": "dd66dcf627b9ee1cc40eadefcc39c4d52367efedf9366fc1aeb80b7ca179dc25"
+    },
+    {
+      "path": "official_command.reference.txt",
+      "bytes": 779,
+      "sha256": "6f1b8384cc0d20caeb0c6845c6f7fa1d9b88ca3517a6a67435e99101ce45f1be"
+    },
+    {
+      "path": "reports/complete_report.md",
+      "bytes": 8191,
+      "sha256": "f5899ba8a82074c58c8449287365650668cd54e9f50a4195640bbb003c72f643"
+    },
+    {
+      "path": "reports/entrypoint_differences.md",
+      "bytes": 1921,
+      "sha256": "4c4f0f0e9eced76c781f5d8f2c3486c0cb50bf400ef015dfdfd70427c58490c9"
+    },
+    {
+      "path": "reports/execution_report.md",
+      "bytes": 16171,
+      "sha256": "9a1732820606329d79a7bdf63893b49acb674112a19241ee18c9f9898b464379"
+    },
+    {
+      "path": "reports/historical_classification_with_current_notice.md",
+      "bytes": 11865,
+      "sha256": "bb9489242dc6918e8a4455ed2cf077c443b11c1f89c0b941e8ec8fec86bcabcd"
+    },
+    {
+      "path": "reports/historical_review_with_current_notice.md",
+      "bytes": 7675,
+      "sha256": "d687a217059bba23ced290a11dffea1104dcc2301938be2c2542d44991207144"
+    },
+    {
+      "path": "reports/training_gate_checklist.md",
+      "bytes": 3263,
+      "sha256": "5ac73b760bd71932b403e0152a1a66dd8dc711316fd1dab165f26070939b58d0"
+    },
+    {
+      "path": "scripts/build_reports.py",
+      "bytes": 22802,
+      "sha256": "fd188acaa2ee4f406044e87182fad0d0901d422c4e4c228da7c825ec16236d9d"
+    },
+    {
+      "path": "scripts/package_update.py",
+      "bytes": 1776,
+      "sha256": "fec78918424df3d3556e98106c5fcd07f864a8c26c8ef3b0f707a24393010e56"
+    },
+    {
+      "path": "scripts/readonly_live_check.py",
+      "bytes": 7760,
+      "sha256": "1de56aa3255af1ed4b5993ae75f868b9637197e7330d25f28f42a1968c680a4e"
+    }
+  ]
+}

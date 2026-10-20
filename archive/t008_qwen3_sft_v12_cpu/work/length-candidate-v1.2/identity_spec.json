@@ -1,0 +1,7 @@
+{
+  "name_zh": "章鱼能碳垂直大模型",
+  "name_en": "Octacarbon LLM",
+  "author_zh": "能碳章鱼（湖北）人工智能科技有限公司",
+  "author_en": "Octacarbon (Hubei) Artificial Intelligence Technology Co., Ltd.",
+  "base_model": "Qwen/Qwen3-8B"
+}

@@ -1,0 +1,89 @@
+{
+  "observed_at_utc": "2026-10-19T08:42:58.585100+00:00",
+  "files_checked": [
+    {
+      "path": ".gitattributes",
+      "size_match": true,
+      "sha256_freshly_matched": true
+    },
+    {
+      "path": "LICENSE",
+      "size_match": true,
+      "sha256_freshly_matched": true
+    },
+    {
+      "path": "README.md",
+      "size_match": true,
+      "sha256_freshly_matched": true
+    },
+    {
+      "path": "config.json",
+      "size_match": true,
+      "sha256_freshly_matched": true
+    },
+    {
+      "path": "configuration.json",
+      "size_match": true,
+      "sha256_freshly_matched": true
+    },
+    {
+      "path": "generation_config.json",
+      "size_match": true,
+      "sha256_freshly_matched": true
+    },
+    {
+      "path": "merges.txt",
+      "size_match": true,
+      "sha256_freshly_matched": true
+    },
+    {
+      "path": "model-00001-of-00005.safetensors",
+      "size_match": true,
+      "sha256_freshly_matched": false
+    },
+    {
+      "path": "model-00002-of-00005.safetensors",
+      "size_match": true,
+      "sha256_freshly_matched": false
+    },
+    {
+      "path": "model-00003-of-00005.safetensors",
+      "size_match": true,
+      "sha256_freshly_matched": false
+    },
+    {
+      "path": "model-00004-of-00005.safetensors",
+      "size_match": true,
+      "sha256_freshly_matched": false
+    },
+    {
+      "path": "model-00005-of-00005.safetensors",
+      "size_match": true,
+      "sha256_freshly_matched": false
+    },
+    {
+      "path": "model.safetensors.index.json",
+      "size_match": true,
+      "sha256_freshly_matched": true
+    },
+    {
+      "path": "tokenizer.json",
+      "size_match": true,
+      "sha256_freshly_matched": true
+    },
+    {
+      "path": "tokenizer_config.json",
+      "size_match": true,
+      "sha256_freshly_matched": true
+    },
+    {
+      "path": "vocab.json",
+      "size_match": true,
+      "sha256_freshly_matched": true
+    }
+  ],
+  "all_16_file_sizes_match": true,
+  "small_file_hash_matches": 11,
+  "large_weight_hashes": "historical_full_SHA_only_not_rehashed_this_turn",
+  "training_PVC_binding": "NOT_VERIFIED_THIS_IS_CURRENT_VLLM_BASE_MOUNT"
+}

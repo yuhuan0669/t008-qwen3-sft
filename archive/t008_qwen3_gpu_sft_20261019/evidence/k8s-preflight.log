@@ -1,0 +1,12 @@
+Failed to load CPU gemm_4bit_forward from kernels-community: No module named 'kernels'. Please make sure you already `pip install kernels` and the kernels >= 0.11.1
+[INFO:swift] Successfully registered `/usr/local/lib/python3.12/site-packages/swift/dataset/data/dataset_info.json`.
+[INFO:swift] Successfully imported external_plugins: ['/input/code/native_guard.py'].
+[INFO:swift] rank: -1, local_rank: -1, world_size: 1, local_world_size: 1
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+[INFO:swift] Setting args.lazy_tokenize: False
+[transformers] warmup_ratio is deprecated and will be removed in v5.2. Use `warmup_steps` instead.
+[INFO:swift] Successfully imported external_plugins: ['/input/code/native_guard.py'].
+[INFO:swift] rank: -1, local_rank: -1, world_size: 1, local_world_size: 1
+[INFO:swift] Setting args.lazy_tokenize: False
+[transformers] warmup_ratio is deprecated and will be removed in v5.2. Use `warmup_steps` instead.
+{"schema": "t008-final-runtime-cpu-preflight-v1", "at_utc": "2026-10-19T09:47:42.793257+00:00", "verified": true, "base_model_files_sha256": "39c6b79bcc9813377a48e65da1ad614151748389d0bf526f5d816dc581e54374", "cli_parse": [{"mode": "smoke", "unknown": [], "save_steps": 3.0, "save_strategy": "steps", "eval_strategy": "no", "truncation_strategy": "delete", "device": "cpu", "max_steps": 3}, {"mode": "full", "unknown": [], "save_steps": 50.0, "save_strategy": "steps", "eval_strategy": "no", "truncation_strategy": "delete", "device": "cpu", "max_steps": -1}], "image_digest": "sha256:822d99beed4984a421c8d1da397993c6a8a5f88cdad7dde940bd52df0067d738", "source_commit": "e7ae45aa7438c8bcca8318d3531854f7f5e7db39", "native_preflight_sha256": "bc602fe28f782200b3351b9130e0cfd40807e67fe6ed20a0660a4f240a0247ed", "approval_sha256": "66a03918d643d993d938108dd90eda87cb8c8d3769f44d528293593dbdeb9478", "clearml_sdk": "1.17.0", "clearml_read_only_existing_task_and_model": true, "clearml_https_storage_readback": true, "output_model_update_weights_signature": "(self, weights_filename=None, upload_uri=None, target_filename=None, auto_delete_file=True, register_uri=None, iteration=None, update_comment=True, is_package=False, async_enable=True)", "torch_cuda_available": false, "trainer_created": false, "weights_loaded": false, "clearml_objects_created": false}

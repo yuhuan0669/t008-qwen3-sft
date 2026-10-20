@@ -1,0 +1,52 @@
+{
+  "stages": [
+    {
+      "stage": "t008_qwen3_sft_v12_cpu",
+      "matched": 206,
+      "differences": [],
+      "interpretation": "A difference does not rewrite or invalidate a frozen ZIP; check frozen package separately."
+    },
+    {
+      "stage": "t008_qwen3_sft_v12_followup_review_20261019",
+      "matched": 27,
+      "differences": [],
+      "interpretation": "A difference does not rewrite or invalidate a frozen ZIP; check frozen package separately."
+    },
+    {
+      "stage": "t008_qwen3_official2048_update_20261019",
+      "matched": 29,
+      "differences": [],
+      "interpretation": "A difference does not rewrite or invalidate a frozen ZIP; check frozen package separately."
+    },
+    {
+      "stage": "t008_qwen3_native_entry_20261019",
+      "matched": 201,
+      "differences": [],
+      "interpretation": "A difference does not rewrite or invalidate a frozen ZIP; check frozen package separately."
+    },
+    {
+      "stage": "t008_qwen3_gpu_sft_20261019",
+      "matched": 159,
+      "differences": [],
+      "interpretation": "A difference does not rewrite or invalidate a frozen ZIP; check frozen package separately."
+    },
+    {
+      "stage": "t008_qwen3_training_runbook_20261019",
+      "matched": 28,
+      "differences": [],
+      "interpretation": "A difference does not rewrite or invalidate a frozen ZIP; check frozen package separately."
+    },
+    {
+      "stage": "t008_qwen3_v12_process_restore_20261019",
+      "matched": 13,
+      "differences": [],
+      "interpretation": "A difference does not rewrite or invalidate a frozen ZIP; check frozen package separately."
+    },
+    {
+      "stage": "t008_qwen3_handoff_20261019",
+      "matched": 11,
+      "differences": [],
+      "interpretation": "A difference does not rewrite or invalidate a frozen ZIP; check frozen package separately."
+    }
+  ]
+}

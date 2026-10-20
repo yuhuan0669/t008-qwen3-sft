@@ -1,0 +1,276 @@
+{
+  "schema": "t008-unified-versions-v1",
+  "archive_version": "archive-v1.0.0",
+  "task_version": "T-008 v1.5 section 15",
+  "process_version": "v1.2 process-restore-R1",
+  "base_model": "Qwen/Qwen3-8B",
+  "stages": [
+    {
+      "id": "t008_qwen3_sft_v12_cpu",
+      "description": "原始v1.2、CPU修复、来源许可与冻结数据",
+      "repository_path": "archive/t008_qwen3_sft_v12_cpu",
+      "counts": {
+        "git": 418,
+        "generated_reference_only": 26,
+        "local_object": 10
+      },
+      "historical_snapshot": true
+    },
+    {
+      "id": "t008_qwen3_sft_v12_followup_review_20261019",
+      "description": "后续复核记录，历史意见",
+      "repository_path": "archive/t008_qwen3_sft_v12_followup_review_20261019",
+      "counts": {
+        "git": 28
+      },
+      "historical_snapshot": true
+    },
+    {
+      "id": "t008_qwen3_identity_classification_20261019",
+      "description": "108种身份模板分类",
+      "repository_path": "archive/t008_qwen3_identity_classification_20261019",
+      "counts": {
+        "git": 2
+      },
+      "historical_snapshot": true
+    },
+    {
+      "id": "t008_qwen3_official2048_update_20261019",
+      "description": "官方2048配方决定",
+      "repository_path": "archive/t008_qwen3_official2048_update_20261019",
+      "counts": {
+        "git": 30
+      },
+      "historical_snapshot": true
+    },
+    {
+      "id": "t008_qwen3_native_entry_20261019",
+      "description": "原生入口与CPU真实加载证据",
+      "repository_path": "archive/t008_qwen3_native_entry_20261019",
+      "counts": {
+        "git": 200,
+        "generated_reference_only": 19,
+        "local_object": 2
+      },
+      "historical_snapshot": true
+    },
+    {
+      "id": "t008_qwen3_gpu_sft_20261019",
+      "description": "历史GPU训练、候选、测试加载和切回基座",
+      "repository_path": "archive/t008_qwen3_gpu_sft_20261019",
+      "counts": {
+        "git": 166,
+        "private_reference_only": 4,
+        "local_object": 2,
+        "generated_reference_only": 4
+      },
+      "historical_snapshot": true
+    },
+    {
+      "id": "t008_qwen3_training_runbook_20261019",
+      "description": "训练命令、复盘与暂缓诊断",
+      "repository_path": "archive/t008_qwen3_training_runbook_20261019",
+      "counts": {
+        "git": 30,
+        "private_reference_only": 3
+      },
+      "historical_snapshot": true
+    },
+    {
+      "id": "t008_qwen3_v12_process_restore_20261019",
+      "description": "v1.2流程恢复R1",
+      "repository_path": "archive/t008_qwen3_v12_process_restore_20261019",
+      "counts": {
+        "git": 14
+      },
+      "historical_snapshot": true
+    },
+    {
+      "id": "t008_qwen3_handoff_20261019",
+      "description": "原始handoff-r1",
+      "repository_path": "archive/t008_qwen3_handoff_20261019",
+      "counts": {
+        "git": 12
+      },
+      "historical_snapshot": true
+    }
+  ],
+  "datasets": [
+    {
+      "id": "old_original_2600",
+      "source_path": "t008_qwen3_sft_v12_cpu/work/original-v1.2/train.jsonl",
+      "bytes": 15920318,
+      "sha256": "dda551041a12c460b84056f2c58df0ab60f2e9999e0518f116cf5f5b3c5faf6e",
+      "storage": "git",
+      "repository_path": "archive/t008_qwen3_sft_v12_cpu/work/original-v1.2/train.jsonl",
+      "approval_under_R1": "NOT_GRANTED_BY_ARCHIVAL"
+    },
+    {
+      "id": "old_length_candidate_1642",
+      "source_path": "t008_qwen3_sft_v12_cpu/work/length-candidate-v1.2/train.jsonl",
+      "bytes": 7318886,
+      "sha256": "ad06235bcf0df01f7de4fbfb4f2fe3b156429444478bb1ef0a22cc7ab322b111",
+      "storage": "git",
+      "repository_path": "archive/t008_qwen3_sft_v12_cpu/work/length-candidate-v1.2/train.jsonl",
+      "approval_under_R1": "NOT_GRANTED_BY_ARCHIVAL"
+    },
+    {
+      "id": "old_exclusions_958",
+      "source_path": "t008_qwen3_sft_v12_cpu/work/length-candidate-v1.2/exclusions.json",
+      "bytes": 150846,
+      "sha256": "62b0786206d25262c51a637a4ec02cd2a811b9eb13ecc6396b8d5079ff414f84",
+      "storage": "git",
+      "repository_path": "archive/t008_qwen3_sft_v12_cpu/work/length-candidate-v1.2/exclusions.json",
+      "approval_under_R1": "NOT_GRANTED_BY_ARCHIVAL"
+    },
+    {
+      "id": "native_loaded_2600",
+      "source_path": "t008_qwen3_native_entry_20261019/evidence/native-proof/native-loaded.jsonl",
+      "bytes": 16035405,
+      "sha256": "d85dbe58d9c5fab98bbf6a81cf828147ba1a47d6cce492aef107c7d3dafa604c",
+      "storage": "git",
+      "repository_path": "archive/t008_qwen3_native_entry_20261019/evidence/native-proof/native-loaded.jsonl",
+      "approval_under_R1": "NOT_GRANTED_BY_ARCHIVAL"
+    },
+    {
+      "id": "native_retained_1642",
+      "source_path": "t008_qwen3_native_entry_20261019/evidence/native-proof/native-retained.jsonl",
+      "bytes": 7421778,
+      "sha256": "ed0278ad28f1613592d99cf9705acf83e2952be85592c6d8751f536920e92618",
+      "storage": "git",
+      "repository_path": "archive/t008_qwen3_native_entry_20261019/evidence/native-proof/native-retained.jsonl",
+      "approval_under_R1": "NOT_GRANTED_BY_ARCHIVAL"
+    }
+  ],
+  "data_canonical_hashes": {
+    "input": "fe0911174ed4a9b4f088804a901409d25be1af00c3cdd8a9f6981df1e6abe7aa",
+    "retained": "9fa63f2d87ac24130a6e4f7c31ebcfd6c91ddb5a91c8bad716326e5c708f43aa",
+    "note": "Object canonical hashes, not JSONL byte hashes"
+  },
+  "models": {
+    "base": {
+      "repo_id": "Qwen/Qwen3-8B",
+      "base_files_sha256": "39c6b79bcc9813377a48e65da1ad614151748389d0bf526f5d816dc581e54374",
+      "base_files": [
+        {
+          "path": ".gitattributes",
+          "size": 2127,
+          "sha256": "088e25d6bceaa8943f4f292006210358292349cc36e7578f80c62fce75535f46"
+        },
+        {
+          "path": "LICENSE",
+          "size": 11343,
+          "sha256": "832dd9e00a68dd83b3c3fb9f5588dad7dcf337a0db50f7d9483f310cd292e92e"
+        },
+        {
+          "path": "README.md",
+          "size": 16660,
+          "sha256": "0f36caaff9c2516411a7738db384606263ba653c1e63e61d72f511606164d5a6"
+        },
+        {
+          "path": "config.json",
+          "size": 728,
+          "sha256": "f7c4eadfbbf522470667b797a3c89be2524832d2d599797248dc304fff447c30"
+        },
+        {
+          "path": "configuration.json",
+          "size": 73,
+          "sha256": "f888421726665e8a84b738eed42a64875aed79de8be7daade851ac8bf4c0cef9"
+        },
+        {
+          "path": "generation_config.json",
+          "size": 239,
+          "sha256": "2325da0f15bb848e018c5ae071b7943332e9f871d6b60e2ed22ca97d4cb993d2"
+        },
+        {
+          "path": "merges.txt",
+          "size": 1671853,
+          "sha256": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5"
+        },
+        {
+          "path": "model-00001-of-00005.safetensors",
+          "size": 3996250744,
+          "sha256": "31d6a825ae35f11fb85b195b4c42c146c051e446433125a215336abdf95cbf5f"
+        },
+        {
+          "path": "model-00002-of-00005.safetensors",
+          "size": 3993160032,
+          "sha256": "5991236cea6fe21f3d43cab0f0e84448734fbbe0789816202989f2ddc9d18282"
+        },
+        {
+          "path": "model-00003-of-00005.safetensors",
+          "size": 3959604768,
+          "sha256": "c5185c4794be2d8a9784d5753c9922db38df478ce11f9ed0b415b7304d896836"
+        },
+        {
+          "path": "model-00004-of-00005.safetensors",
+          "size": 3187841392,
+          "sha256": "b5ee7de71fbf17db3d5704e0c8f2bc7d005ca9e1d7ca2aeb19827b0cfcaa917a"
+        },
+        {
+          "path": "model-00005-of-00005.safetensors",
+          "size": 1244659840,
+          "sha256": "20c2d6366ab85c90786ccdd829cd2b9e7d30ef3b2ebbb998280e7e4014b542ff"
+        },
+        {
+          "path": "model.safetensors.index.json",
+          "size": 32878,
+          "sha256": "f9fdbcb91c23971c13ec5d5f2573d2349e8f61f2f049371ec699281748fdb1bc"
+        },
+        {
+          "path": "tokenizer.json",
+          "size": 11422654,
+          "sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4"
+        },
+        {
+          "path": "tokenizer_config.json",
+          "size": 9732,
+          "sha256": "d5d09f07b48c3086c508b30d1c9114bd1189145b74e982a265350c923acd8101"
+        },
+        {
+          "path": "vocab.json",
+          "size": 2776833,
+          "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+        }
+      ],
+      "source_manifest": "archive/t008_qwen3_gpu_sft_20261019/evidence/full-run_manifest.json",
+      "local_full_weights_backed_up": false,
+      "verification": "Existing run evidence only; remote weights not rehashed during archival",
+      "PVC": "swift/swift-base",
+      "subPath": "Qwen3-8B"
+    },
+    "candidate": {
+      "checkpoint": "checkpoint-103",
+      "zip": {
+        "source_path": "t008_qwen3_gpu_sft_20261019/outputs/adapter-candidate.zip",
+        "bytes": 80736700,
+        "sha256": "33feb7cfe9e3bafa1a5b72f32e179fe89448c4c4251e152763dd846d3adffd1d",
+        "storage": "local_object",
+        "object_path": "sha256/33/33feb7cfe9e3bafa1a5b72f32e179fe89448c4c4251e152763dd846d3adffd1d"
+      },
+      "adapter_weight_sha256": "b3099ee58150332b29a7a1dc5f22fa69d797b56b2bc4381c3060b31454140e5f",
+      "clearml_task": "97ac5246ae9c43d9aa65ee2ac4c2aaef",
+      "clearml_model": "0552c3ab6b39456e9ec8b32129015be0",
+      "quality": "NOT_ACCEPTED",
+      "forgetting": "NOT_MEASURED"
+    },
+    "full_checkpoint_locator": {
+      "PVC": "swift/swift-work",
+      "subPath": "t008-qwen3-20261019-094113/outputs",
+      "file_manifest": "archive/t008_qwen3_gpu_sft_20261019/outputs/persisted-output-manifest.json",
+      "remote_revalidated": false
+    },
+    "serving_adapter_locator": {
+      "PVC": "vllm/vllm-released",
+      "subPath": "released/t008-qwen3-20261019-094113-test/adapter",
+      "loaded_at_takeover": false,
+      "purpose": "TEST_SERVING_ONLY_NOT_QUALITY_ACCEPTED"
+    }
+  },
+  "environment": {
+    "image_digest": "sha256:822d99beed4984a421c8d1da397993c6a8a5f88cdad7dde940bd52df0067d738",
+    "runtime_evidence": "archive/t008_qwen3_gpu_sft_20261019/evidence/baseline-runtime-bom.json",
+    "training_run_manifest": "archive/t008_qwen3_gpu_sft_20261019/evidence/full-run_manifest.json",
+    "reconstructed_environment": false
+  }
+}

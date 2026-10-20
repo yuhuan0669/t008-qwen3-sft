@@ -1,0 +1,33 @@
+{
+  "status": "UNFINETUNED_BASELINE_READY",
+  "at_utc": "2026-10-19T14:16:07.760155+00:00",
+  "model_id": "octa-carbon-v1",
+  "model_path": "released/qwen3-8b-baseline/model",
+  "lora_enabled": false,
+  "ready_replicas": 1,
+  "https_health": 200,
+  "tls_verified": true,
+  "inference_tests": 0,
+  "training_started": false,
+  "candidate_artifact_preserved": true,
+  "args": [
+    "--model",
+    "/models",
+    "--served-model-name",
+    "octa-carbon-v1",
+    "--host",
+    "0.0.0.0",
+    "--port",
+    "8000",
+    "--gpu-memory-utilization",
+    "0.90",
+    "--max-model-len",
+    "8192",
+    "--trust-remote-code",
+    "--reasoning-parser",
+    "qwen3",
+    "--enable-auto-tool-choice",
+    "--tool-call-parser",
+    "hermes"
+  ]
+}

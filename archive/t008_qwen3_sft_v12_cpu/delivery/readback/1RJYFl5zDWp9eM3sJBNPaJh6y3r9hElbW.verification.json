@@ -1,0 +1,12 @@
+{
+  "id": "1RJYFl5zDWp9eM3sJBNPaJh6y3r9hElbW",
+  "name": "T008_Qwen3_SFT_v1.2_CPU_MANIFEST_20261018.json",
+  "parent_ids": [
+    "1fhiuIhZNgHJjO09sFD9hrB6ULYiQFV84"
+  ],
+  "url_public": "https://drive.google.com/file/d/1RJYFl5zDWp9eM3sJBNPaJh6y3r9hElbW/view?usp=drivesdk",
+  "metadata_bytes": 37051,
+  "sha256": "5f95457d14ddfe3a8e6151b257720259aea84ba1edaec59eb6995ef34e1b931e",
+  "downloaded_bytes": 37051,
+  "readback_match": true
+}

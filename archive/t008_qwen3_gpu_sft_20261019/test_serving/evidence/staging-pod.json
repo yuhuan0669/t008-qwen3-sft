@@ -1,0 +1,83 @@
+{
+  "apiVersion": "v1",
+  "kind": "Pod",
+  "metadata": {
+    "name": "t008-qwen3-lora-stage-20261019",
+    "namespace": "vllm",
+    "labels": {
+      "app": "t008-lora-test-stage"
+    }
+  },
+  "spec": {
+    "restartPolicy": "Never",
+    "automountServiceAccountToken": false,
+    "serviceAccountName": "t008-publisher",
+    "nodeSelector": {
+      "kubernetes.io/hostname": "k8s-worker05"
+    },
+    "tolerations": [
+      {
+        "effect": "NoSchedule",
+        "key": "dedicated",
+        "operator": "Equal",
+        "value": "gpu-rtx4090"
+      }
+    ],
+    "containers": [
+      {
+        "name": "stage",
+        "image": "modelscope-registry.cn-hangzhou.cr.aliyuncs.com/modelscope-repo/modelscope@sha256:822d99beed4984a421c8d1da397993c6a8a5f88cdad7dde940bd52df0067d738",
+        "command": [
+          "python3",
+          "-c",
+          "import time; time.sleep(3600)"
+        ],
+        "resources": {
+          "requests": {
+            "cpu": "250m",
+            "memory": "256Mi"
+          },
+          "limits": {
+            "cpu": "1",
+            "memory": "2Gi"
+          }
+        },
+        "env": [
+          {
+            "name": "NVIDIA_VISIBLE_DEVICES",
+            "value": "void"
+          },
+          {
+            "name": "CUDA_VISIBLE_DEVICES",
+            "value": ""
+          }
+        ],
+        "securityContext": {
+          "runAsNonRoot": true,
+          "runAsUser": 10003,
+          "runAsGroup": 10003,
+          "allowPrivilegeEscalation": false,
+          "capabilities": {
+            "drop": [
+              "ALL"
+            ]
+          }
+        },
+        "volumeMounts": [
+          {
+            "name": "store",
+            "mountPath": "/store"
+          }
+        ]
+      }
+    ],
+    "volumes": [
+      {
+        "name": "store",
+        "persistentVolumeClaim": {
+          "claimName": "vllm-released"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "metadata": {
+    "name": "open-webui",
+    "namespace": "ollama",
+    "uid": "07487004-50c6-45d4-a547-83ba68f5e98c",
+    "generation": 58
+  },
+  "containers": [
+    {
+      "name": "open-webui",
+      "image": "registry.getech.cn/ems/open-webui-bai@sha256:a356ca8123aae0dc232f0cdd56d7e3c79ae430fb4a911d8a173b48135c665910",
+      "command": null,
+      "args": null,
+      "volumeMounts": [
+        {
+          "mountPath": "/app/backend/data",
+          "name": "webui-storage"
+        }
+      ],
+      "env_names": [
+        "BAI_PLATFORM_AUTH_ENABLED",
+        "BAI_PLATFORM_SESSION_URL",
+        "BAI_BACKEND_URL",
+        "BAI_MODEL",
+        "BAI_ALLOWED_ORIGIN",
+        "BAI_SERVICE_KEY",
+        "OLLAMA_BASE_URL",
+        "ENABLE_OLLAMA_API",
+        "ENABLE_OPENAI_API",
+        "OPENAI_API_BASE_URLS",
+        "OPENAI_API_KEYS",
+        "DEFAULT_MODELS",
+        "WEBUI_NAME",
+        "HF_ENDPOINT",
+        "WEBUI_SECRET_KEY",
+        "BAI_GENERATION_ENABLED",
+        "BAI_RETENTION_ENABLED"
+      ]
+    }
+  ],
+  "readyReplicas": 1
+}

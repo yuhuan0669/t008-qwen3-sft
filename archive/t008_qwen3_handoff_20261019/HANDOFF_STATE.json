@@ -1,0 +1,139 @@
+{
+  "schema": "t008-handoff-r1",
+  "recorded_at_utc": "2026-10-20T01:35:09.272913+00:00",
+  "document_url": "https://docs.google.com/document/d/1G-jhFB0OhrIXvaqtZ2aoYYpcD05NkDTYEkmPez9kNiM/edit",
+  "plan_version": "v1.2",
+  "plan_revision": "process-restore-R1",
+  "state": "DOCUMENTATION_ONLY_WAITING_FOR_USER",
+  "snapshot_entrypoint_adapted": false,
+  "data_optimization": "ON_HOLD",
+  "candidate_quality": "NOT_ACCEPTED",
+  "forgetting": "NOT_MEASURED",
+  "current_serving": {
+    "at_utc": "2026-10-20T01:33:52.451100+00:00",
+    "context": "lmas00-direct",
+    "namespace": "vllm",
+    "deployment": "vllm",
+    "uid": "041c9a49-1693-45a5-8ff6-6136ba9e4074",
+    "generation": 44,
+    "observed_generation": 44,
+    "ready_replicas": 1,
+    "desired_replicas": 1,
+    "args": [
+      "--model",
+      "/models",
+      "--served-model-name",
+      "octa-carbon-v1",
+      "--host",
+      "0.0.0.0",
+      "--port",
+      "8000",
+      "--gpu-memory-utilization",
+      "0.90",
+      "--max-model-len",
+      "8192",
+      "--trust-remote-code",
+      "--reasoning-parser",
+      "qwen3",
+      "--enable-auto-tool-choice",
+      "--tool-call-parser",
+      "hermes"
+    ],
+    "model_mounts": [
+      {
+        "mountPath": "/models",
+        "name": "model-store",
+        "readOnly": true,
+        "subPath": "released/qwen3-8b-baseline/model"
+      }
+    ],
+    "lora_enabled": false,
+    "inference_requests": 0,
+    "mutations": false
+  },
+  "repositories": [
+    {
+      "path": "/Users/ben/aiws/codex/keywords/t008_qwen3_sft_v12_cpu/work/code",
+      "commit": "55042a0c2eb3da96f38b019650838bfdf6b4a03b",
+      "clean": true,
+      "tags": []
+    },
+    {
+      "path": "/Users/ben/aiws/codex/keywords/t008_qwen3_native_entry_20261019/code",
+      "commit": "e7ae45aa7438c8bcca8318d3531854f7f5e7db39",
+      "clean": true,
+      "tags": []
+    }
+  ],
+  "local_assets": [
+    {
+      "path": "/Users/ben/aiws/codex/keywords/t008_qwen3_sft_v12_cpu",
+      "description": "原始v1.2输入、原版baseline、修复代码work/code、原始及长度候选快照、来源/许可、CPU证据、首轮交付回执"
+    },
+    {
+      "path": "/Users/ben/aiws/codex/keywords/t008_qwen3_sft_v12_followup_review_20261019",
+      "description": "后续讨论/复核记录；属于历史，不自动覆盖当前R1"
+    },
+    {
+      "path": "/Users/ben/aiws/codex/keywords/t008_qwen3_identity_classification_20261019",
+      "description": "108种身份模板分类与质量讨论；未因此自动改写/排除语料"
+    },
+    {
+      "path": "/Users/ben/aiws/codex/keywords/t008_qwen3_official2048_update_20261019",
+      "description": "用户当时选官方2048配方的历史记录"
+    },
+    {
+      "path": "/Users/ben/aiws/codex/keywords/t008_qwen3_native_entry_20261019",
+      "description": "原生正式入口code、CPU真实原生加载/长度/mask、Git bundle及测试"
+    },
+    {
+      "path": "/Users/ben/aiws/codex/keywords/t008_qwen3_gpu_sft_20261019",
+      "description": "GPU训练输入payload、真实Job/日志/终态、候选outputs、LoRA加载test_serving、切基座baseline_switch；private不上传"
+    },
+    {
+      "path": "/Users/ben/aiws/codex/keywords/t008_qwen3_training_runbook_20261019",
+      "description": "全流程文档、空正文诊断、2条API对照证据、private原始聊天/SSE（禁止对外打包）"
+    },
+    {
+      "path": "/Users/ben/aiws/codex/keywords/t008_qwen3_v12_process_restore_20261019",
+      "description": "当前流程恢复R1、process_state.json、真实决定、追加记录、94文件前后不变证明"
+    },
+    {
+      "path": "/Users/ben/aiws/codex/keywords/t008_qwen3_handoff_20261019",
+      "description": "本handoff、结构化状态、文件/Drive索引、基座切换补充证据、交付核验"
+    }
+  ],
+  "drive_archives": [
+    {
+      "name": "v1.2原始CPU审核包",
+      "url": "https://drive.google.com/file/d/1C4Psio7qgU27bFobd92i4oXmDa0JQqG4/view",
+      "sha256": "c0049799f80070b3126397a56f2ae1034eb3e12cbaafbfe4cd6fc1ee180bf1c4"
+    },
+    {
+      "name": "官方原生入口CPU包",
+      "url": "https://drive.google.com/file/d/1V-oysRsNKQwXKSWuqvWpjZlBUMr8HmrI/view",
+      "sha256": "c8e56ac313905e8a89ce981c822a9af10eb16862a58188c7dd2e02414ed918aa"
+    },
+    {
+      "name": "GPU训练与测试加载证据包",
+      "url": "https://drive.google.com/file/d/1LJ7fwnAhQ0TlUe_2GWj_4tTUoJpHB1nh/view",
+      "sha256": "7530995129dbb66932a7cd77d4da4d3ce487f9d4458ddff21c5228ef51bb1f46"
+    },
+    {
+      "name": "checkpoint-103 LoRA ZIP",
+      "url": "https://drive.google.com/file/d/1Be0WI7PKbQmcfcKj-YIyQRGikGf_ulaB/view",
+      "sha256": "33feb7cfe9e3bafa1a5b72f32e179fe89448c4c4251e152763dd846d3adffd1d"
+    },
+    {
+      "name": "全流程命令及诊断附件",
+      "url": "https://drive.google.com/file/d/1PZTfbAI5rpTwIKDRz9tU5PMtaXu86xLu/view",
+      "sha256": "76ece6efeefbd2fd060fecfb831ee8652782b21974d75cc72f895ee14b3c6335"
+    },
+    {
+      "name": "v1.2流程恢复R1证据包",
+      "url": "https://drive.google.com/file/d/1kVscp_ukoOCXrG66aFlmw8Db4GQaoD3A/view",
+      "sha256": "6c00ad4e1a62e45714cd1dcb31ad5f56c17749df7decd47232bc15c7dd67bdea"
+    }
+  ],
+  "read_only_inference_requests_in_handoff": 0
+}

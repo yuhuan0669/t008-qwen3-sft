@@ -1,0 +1,88 @@
+{
+  "run_id": "t008-qwen3-20261019-094113",
+  "phase": "TRAINING_CANDIDATE_RESTORED",
+  "events": [
+    {
+      "at_utc": "2026-10-19T09:50:08.838157+00:00",
+      "phase": "PAUSING_VLLM",
+      "gpu_window_started": true
+    },
+    {
+      "at_utc": "2026-10-19T09:50:12.143868+00:00",
+      "phase": "VLLM_PAUSED"
+    },
+    {
+      "at_utc": "2026-10-19T09:50:12.144346+00:00",
+      "phase": "SMOKE_SUBMITTING"
+    },
+    {
+      "at_utc": "2026-10-19T09:50:12.484493+00:00",
+      "phase": "SMOKE_RUNNING",
+      "pod_phases": [
+        "Pending"
+      ]
+    },
+    {
+      "at_utc": "2026-10-19T09:50:22.676441+00:00",
+      "phase": "SMOKE_RUNNING",
+      "pod_phases": [
+        "Running"
+      ]
+    },
+    {
+      "at_utc": "2026-10-19T09:53:31.665713+00:00",
+      "phase": "SMOKE_VERIFIED",
+      "smoke_task_id": "ba54d19171294484a2358f0fef2a6e07",
+      "smoke_model_id": null
+    },
+    {
+      "at_utc": "2026-10-19T09:53:31.666039+00:00",
+      "phase": "FULL_SUBMITTING"
+    },
+    {
+      "at_utc": "2026-10-19T09:53:32.838459+00:00",
+      "phase": "FULL_RUNNING",
+      "pod_phases": [
+        "Pending"
+      ]
+    },
+    {
+      "at_utc": "2026-10-19T09:53:43.220576+00:00",
+      "phase": "FULL_RUNNING",
+      "pod_phases": [
+        "Running"
+      ]
+    },
+    {
+      "at_utc": "2026-10-19T10:09:52.847457+00:00",
+      "phase": "FULL_VERIFIED",
+      "full_task_id": "97ac5246ae9c43d9aa65ee2ac4c2aaef",
+      "full_model_id": "0552c3ab6b39456e9ec8b32129015be0"
+    },
+    {
+      "at_utc": "2026-10-19T10:09:52.847749+00:00",
+      "phase": "RESTORING_VLLM"
+    },
+    {
+      "at_utc": "2026-10-19T10:12:20.705196+00:00",
+      "phase": "VLLM_RESTORED",
+      "vllm_restored": true
+    },
+    {
+      "at_utc": "2026-10-19T10:12:20.705504+00:00",
+      "phase": "TRAINING_CANDIDATE_RESTORED",
+      "training_verified": true
+    }
+  ],
+  "gpu_window_started": true,
+  "vllm_restored": true,
+  "updated_at_utc": "2026-10-19T10:12:20.705494+00:00",
+  "pod_phases": [
+    "Running"
+  ],
+  "smoke_task_id": "ba54d19171294484a2358f0fef2a6e07",
+  "smoke_model_id": null,
+  "full_task_id": "97ac5246ae9c43d9aa65ee2ac4c2aaef",
+  "full_model_id": "0552c3ab6b39456e9ec8b32129015be0",
+  "training_verified": true
+}

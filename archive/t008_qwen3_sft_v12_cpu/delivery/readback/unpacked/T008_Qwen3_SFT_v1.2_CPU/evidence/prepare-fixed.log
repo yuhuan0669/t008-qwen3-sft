@@ -1,0 +1,9 @@
+Failed to load CPU gemm_4bit_forward from kernels-community: No module named 'kernels'. Please make sure you already `pip install kernels` and the kernels >= 0.11.1
+[INFO:swift] Successfully registered `/usr/local/lib/python3.12/site-packages/swift/dataset/data/dataset_info.json`.
+[INFO:swift] SelfCognitionPreprocessor has been successfully configured with name: ('章鱼能碳垂直大模型', 'Octacarbon LLM'), author: ('能碳章鱼（湖北）人工智能科技有限公司', 'Octacarbon (Hubei) Artificial Intelligence Technology Co., Ltd.').
+[INFO:swift] Downloading the dataset from ModelScope, dataset_id: swift/Qwen3-SFT-Mixin
+Map (num_proc=1): 100%|██████████| 1000/1000 [00:00<?, ? examples/s]Map (num_proc=1): 2000 examples [00:00, 7621.03 examples/s]         Map (num_proc=1): 2000 examples [00:00, 4090.28 examples/s]
+[INFO:swift] Downloading the dataset from ModelScope, dataset_id: swift/self-cognition
+Map (num_proc=1): 100%|██████████| 108/108 [00:00<?, ? examples/s]Map (num_proc=1): 216 examples [00:00, 725.04 examples/s]         
+[WARNING:swift] dataset_sample:600 is greater than len(dataset):108, repeated sampling will be performed.
+{"output": "/work/original-v1.2", "rows": 2600, "unique": 1108, "train_sha256": "dda551041a12c460b84056f2c58df0ab60f2e9999e0518f116cf5f5b3c5faf6e"}

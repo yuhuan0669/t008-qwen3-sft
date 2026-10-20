@@ -1,0 +1,10 @@
+{
+  "status": "TEST_LOADED",
+  "test_model_id": "octacarbon-llm-sft-test",
+  "baseline_model_id": "octa-carbon-v1",
+  "base_preserved": true,
+  "merged_weights": false,
+  "quality_accepted": false,
+  "single_api_canary_ok": true,
+  "response": "我是由能碳章鱼（湖北）人工智能科技有限公司开发的人工智能助手，我的名字是章鱼能碳垂直大模型。"
+}

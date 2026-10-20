@@ -1,0 +1,81 @@
+{
+  "schema": "t008-qwen3-v1.2-cpu-drive-delivery-receipt-v1",
+  "completed_at_utc": "2026-10-19T06:09:15.504198+00:00",
+  "folder_url": "https://drive.google.com/drive/folders/1fhiuIhZNgHJjO09sFD9hrB6ULYiQFV84",
+  "status": "CPU_PREPARATION_DELIVERED_GPU_NO_GO",
+  "identity_names_status": "USER_CONFIRMED_OFFICIAL_DEV_COMMERCIAL",
+  "delivered_artifacts": [
+    {
+      "id": "193UDg9_17-ytNR0SFm3MkyKCNd111ADv",
+      "name": "T008_Qwen3_SFT_v1.2_来源与身份审核_待裁定.md",
+      "parent_ids": [
+        "1fhiuIhZNgHJjO09sFD9hrB6ULYiQFV84"
+      ],
+      "url_public": "https://drive.google.com/file/d/193UDg9_17-ytNR0SFm3MkyKCNd111ADv/view?usp=drivesdk",
+      "metadata_bytes": 9231,
+      "sha256": "48fa6836aa96effabf34839722559ef0671445c292b64fa561e351594c62466e",
+      "downloaded_bytes": 9231,
+      "readback_match": true
+    },
+    {
+      "id": "1C4Psio7qgU27bFobd92i4oXmDa0JQqG4",
+      "name": "T008_Qwen3_SFT_v1.2_CPU_证据与数据包_20261018.zip",
+      "parent_ids": [
+        "1fhiuIhZNgHJjO09sFD9hrB6ULYiQFV84"
+      ],
+      "url_public": "https://drive.google.com/file/d/1C4Psio7qgU27bFobd92i4oXmDa0JQqG4/view?usp=drivesdk",
+      "metadata_bytes": 25523426,
+      "sha256": "c0049799f80070b3126397a56f2ae1034eb3e12cbaafbfe4cd6fc1ee180bf1c4",
+      "downloaded_bytes": 25523426,
+      "readback_match": true
+    },
+    {
+      "id": "1RJYFl5zDWp9eM3sJBNPaJh6y3r9hElbW",
+      "name": "T008_Qwen3_SFT_v1.2_CPU_MANIFEST_20261018.json",
+      "parent_ids": [
+        "1fhiuIhZNgHJjO09sFD9hrB6ULYiQFV84"
+      ],
+      "url_public": "https://drive.google.com/file/d/1RJYFl5zDWp9eM3sJBNPaJh6y3r9hElbW/view?usp=drivesdk",
+      "metadata_bytes": 37051,
+      "sha256": "5f95457d14ddfe3a8e6151b257720259aea84ba1edaec59eb6995ef34e1b931e",
+      "downloaded_bytes": 37051,
+      "readback_match": true
+    },
+    {
+      "id": "1p-awqvTM89aQ1Y89YHIiq2kbWNRrQDou",
+      "name": "T008_Qwen3_SFT_v1.2_CPU执行与GPU门禁报告_20261018.md",
+      "parent_ids": [
+        "1fhiuIhZNgHJjO09sFD9hrB6ULYiQFV84"
+      ],
+      "url_public": "https://drive.google.com/file/d/1p-awqvTM89aQ1Y89YHIiq2kbWNRrQDou/view?usp=drivesdk",
+      "metadata_bytes": 46421,
+      "sha256": "b419090cbf26a5a5ae7756fdab1f95702be03ef301d3c9ea5bf9b6f8d81e6a61",
+      "downloaded_bytes": 46421,
+      "readback_match": true
+    }
+  ],
+  "all_artifacts_in_requested_parent": true,
+  "downloaded_zip_crc_ok": true,
+  "downloaded_payload_files_verified": 206,
+  "downloaded_code_tests_passed": 23,
+  "original_rows": 2600,
+  "original_unique_message_rows": 1108,
+  "length_candidate_rows": 1642,
+  "excluded_overlength_exposures": 958,
+  "remaining_semantic_templates": 78,
+  "remaining_semantic_exposures": 434,
+  "code_commit": "55042a0c2eb3da96f38b019650838bfdf6b4a03b",
+  "training_image_base_digest": "sha256:822d99beed4984a421c8d1da397993c6a8a5f88cdad7dde940bd52df0067d738",
+  "training_smoke_started": false,
+  "full_training_started": false,
+  "model_published": false,
+  "vllm_final": "1/1; unchanged Deployment spec; HTTPS health200 verify0; CPU scratch containers removed",
+  "unfinished_and_blockers": [
+    "Final identity developer/customizer semantics and resulting exact data version decision",
+    "Approval of length exclusions and changed mixture, with final data/manifest/preflight/base hashes",
+    "Final GPU Job image-or-overlay/PVC binding and independent evaluation case/rubric freeze",
+    "Next-stage GPU Smoke/Full and current shared-vLLM maintenance window authorization",
+    "New real-training ClearML Task/Model write-readback and real GPU runtime remain next phase"
+  ],
+  "scope_note": "No approval.json manufactured. Earlier English pending findings retained as history; post-audit user confirmation closes name issue. This receipt lists four payload artifacts; its own upload/readback is verified separately after creation to avoid circular proof."
+}

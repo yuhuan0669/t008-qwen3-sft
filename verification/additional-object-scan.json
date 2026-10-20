@@ -1,0 +1,49 @@
+[
+  {
+    "sha256": "1c922e185c239a849252a8c3156d67d3bddaf496207d442ac26e59f03671a1d7",
+    "type": "tar",
+    "status": "PASS"
+  },
+  {
+    "sha256": "f444aa1f3e50f7b9c181fa44764614f3f2654df7c24185089c41cb71831545cc",
+    "type": "opaque_or_text",
+    "status": "PASS",
+    "note": "Git bundle compressed content covered by inherited-history blob scan where applicable."
+  },
+  {
+    "sha256": "4fed934587b275871fd15c7b885a4aaae2f0f1e0a737a643f4d8c2ec28aa165e",
+    "type": "opaque_or_text",
+    "status": "PASS",
+    "note": "Git bundle compressed content covered by inherited-history blob scan where applicable."
+  },
+  {
+    "sha256": "48fa6836aa96effabf34839722559ef0671445c292b64fa561e351594c62466e",
+    "type": "opaque_or_text",
+    "status": "PASS",
+    "note": "Git bundle compressed content covered by inherited-history blob scan where applicable."
+  },
+  {
+    "sha256": "5f95457d14ddfe3a8e6151b257720259aea84ba1edaec59eb6995ef34e1b931e",
+    "type": "opaque_or_text",
+    "status": "PASS",
+    "note": "Git bundle compressed content covered by inherited-history blob scan where applicable."
+  },
+  {
+    "sha256": "b419090cbf26a5a5ae7756fdab1f95702be03ef301d3c9ea5bf9b6f8d81e6a61",
+    "type": "opaque_or_text",
+    "status": "PASS",
+    "note": "Git bundle compressed content covered by inherited-history blob scan where applicable."
+  },
+  {
+    "sha256": "d0e1199fee867d70e61aa70a9aa80deea6c45e92a90e9e185a817577ee5181ec",
+    "type": "opaque_or_text",
+    "status": "PASS",
+    "note": "Git bundle compressed content covered by inherited-history blob scan where applicable."
+  },
+  {
+    "sha256": "bcf24da9984bccf122f64a83e5e214d99c54d7a3c2646360bce8026ad9f5a737",
+    "type": "opaque_or_text",
+    "status": "PASS",
+    "note": "Git bundle compressed content covered by inherited-history blob scan where applicable."
+  }
+]

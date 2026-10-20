@@ -1,0 +1,11 @@
+{
+  "schema": "t008-owner-decisions-v2",
+  "recorded_at_utc": "2026-10-19T09:30:28.893353+00:00",
+  "latest_user_instruction": "1） 那就按官方原生加载和默认过滤，把正式启动入口适配好，完成CPU参数解析和检查，更新执行记录和交付报告，仍不要启动GPU训练。2）验证完成后，再考虑基于之前的方案进行优化。",
+  "english_identity_confirmation": "我确认是官方名字，可用于开发及商业用途",
+  "accepted_scope": "official native loader, max_length2048 default delete, confirmed bilingual identity, CPU checks and report delivery",
+  "gpu_start_authorized": false,
+  "service_stop_authorized": false,
+  "optimization_applied": false,
+  "note": "Faithful conversation decision record; not an approval.json or GPU release signature."
+}

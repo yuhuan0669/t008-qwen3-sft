@@ -1,0 +1,67 @@
+{
+  "status": "fulfilled",
+  "value": {
+    "content": [
+      {
+        "type": "text",
+        "text": "Action completed."
+      }
+    ],
+    "structuredContent": {
+      "results": [
+        {
+          "url": "https://drive.google.com/file/d/17kVO_pWDZJIvX5N0vU-yImJyPTXvlBrA/view?usp=drivesdk",
+          "title": "Qwen3-8B_自我认知SFT_完整实施方案_v1.2_执行修复版.md",
+          "id": "17kVO_pWDZJIvX5N0vU-yImJyPTXvlBrA",
+          "mime_type": "text/markdown",
+          "size": "30679",
+          "file_or_folder": "file",
+          "created_at": "2026-10-19T05:38:16.742Z",
+          "updated_at": "2026-10-19T05:38:16.742Z",
+          "viewedByMeTime": null,
+          "display_title": "Qwen3-8B_自我认知SFT_完整实施方案_v1.2_执行修复版.md",
+          "display_url": "https://drive.google.com/file/d/17kVO_pWDZJIvX5N0vU-yImJyPTXvlBrA/view?usp=drivesdk",
+          "parent_ids": [
+            "1fhiuIhZNgHJjO09sFD9hrB6ULYiQFV84"
+          ],
+          "shared": false
+        },
+        {
+          "url": "https://drive.google.com/file/d/1tWGQARVI0tgvuZiOu3HHQCj6Ita10StD/view?usp=drivesdk",
+          "title": "Qwen3-8B_自我认知SFT_完整实施方案_v1.1.1_校核版.md",
+          "id": "1tWGQARVI0tgvuZiOu3HHQCj6Ita10StD",
+          "mime_type": "text/markdown",
+          "size": "21966",
+          "file_or_folder": "file",
+          "created_at": "2026-10-19T05:18:44.432Z",
+          "updated_at": "2026-10-19T05:18:44.432Z",
+          "viewedByMeTime": "2026-10-19T05:19:22.708Z",
+          "display_title": "Qwen3-8B_自我认知SFT_完整实施方案_v1.1.1_校核版.md",
+          "display_url": "https://drive.google.com/file/d/1tWGQARVI0tgvuZiOu3HHQCj6Ita10StD/view?usp=drivesdk",
+          "parent_ids": [
+            "1fhiuIhZNgHJjO09sFD9hrB6ULYiQFV84"
+          ],
+          "shared": false
+        },
+        {
+          "url": "https://drive.google.com/file/d/1nT7XS7IWB_-hWj1fD3lkz5cYn0ebkV9d/view?usp=drivesdk",
+          "title": "Qwen3-8B_自我认知SFT_完整实施方案_v1.1.md",
+          "id": "1nT7XS7IWB_-hWj1fD3lkz5cYn0ebkV9d",
+          "mime_type": "text/markdown",
+          "size": "21034",
+          "file_or_folder": "file",
+          "created_at": "2026-10-19T04:54:12.290Z",
+          "updated_at": "2026-10-19T05:03:47.139Z",
+          "viewedByMeTime": "2026-10-19T05:13:57.333Z",
+          "display_title": "Qwen3-8B_自我认知SFT_完整实施方案_v1.1.md",
+          "display_url": "https://drive.google.com/file/d/1nT7XS7IWB_-hWj1fD3lkz5cYn0ebkV9d/view?usp=drivesdk",
+          "parent_ids": [
+            "1fhiuIhZNgHJjO09sFD9hrB6ULYiQFV84"
+          ],
+          "shared": false
+        }
+      ]
+    },
+    "isError": false
+  }
+}

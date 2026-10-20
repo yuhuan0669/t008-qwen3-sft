@@ -1,0 +1,38 @@
+{
+  "schema": "identity-approved-snapshot-v1.2",
+  "status": "PENDING_DERIVATIVE_APPROVAL",
+  "source_specs": [
+    "swift/Qwen3-SFT-Mixin#2000",
+    "swift/self-cognition:qwen3#600"
+  ],
+  "official_sampling": "ms-swift loader #N; seed recorded",
+  "seed": 42,
+  "rows": 1642,
+  "original_rows": 2600,
+  "requested_mixin": 2000,
+  "requested_identity": 600,
+  "snapshot_kind": "approved_derivative",
+  "unique_message_rows": 629,
+  "duplicate_exposures": 1013,
+  "repetition_histogram": {
+    "2": 521,
+    "5": 48,
+    "6": 60
+  },
+  "actual_source_revision": "NOT_PROVEN_BY_LOADER; archive original cache/repo revision separately",
+  "versions": {
+    "ms-swift": "4.4.2",
+    "datasets": "4.8.4",
+    "modelscope": "1.38.1"
+  },
+  "files_sha256": {
+    "train.jsonl": "ad06235bcf0df01f7de4fbfb4f2fe3b156429444478bb1ef0a22cc7ab322b111",
+    "identity_spec.json": "96d595f3bdf6ca78d1f812f9b87cb53dffa4eb323fabeb758c2e09a63b5d2ec4",
+    "exclusions.json": "62b0786206d25262c51a637a4ec02cd2a811b9eb13ecc6396b8d5079ff414f84"
+  },
+  "warning": "No held-out validation derived from repeated official identity templates. Preflight with actual Qwen tokenizer/template and rights/use approval required before GPU run.",
+  "parent_train_sha256": "dda551041a12c460b84056f2c58df0ab60f2e9999e0518f116cf5f5b3c5faf6e",
+  "parent_manifest_sha256": "68e4c5d5eecaba984bb6740eb919c5103e5b6aca104c311c846cfd01cabf1ce4",
+  "exclusions_sha256": "62b0786206d25262c51a637a4ec02cd2a811b9eb13ecc6396b8d5079ff414f84",
+  "exclusions_count": 958
+}

@@ -1,0 +1,65 @@
+2026-10-19 03:21:59.058 | INFO     | uvicorn.protocols.http.httptools_impl:send:485 - 10.140.2.120:0 - "POST /api/chat/completions HTTP/1.1" 200
+2026-10-19 03:21:59.115 | ERROR    | open_webui.main:process_chat:1716 - Error processing chat payload: "auto" tool choice requires --enable-auto-tool-choice and --tool-call-parser to be set
+2026-10-19 03:22:10.611 | INFO     | uvicorn.protocols.http.httptools_impl:send:485 - 10.140.2.120:0 - "POST /api/chat/completions HTTP/1.1" 200
+2026-10-19 03:22:10.629 | ERROR    | open_webui.main:process_chat:1716 - Error processing chat payload: "auto" tool choice requires --enable-auto-tool-choice and --tool-call-parser to be set
+2026-10-19 03:25:39.768 | INFO     | uvicorn.protocols.http.httptools_impl:send:485 - 10.140.2.120:0 - "POST /api/chat/completions HTTP/1.1" 200
+2026-10-19 03:25:39.778 | ERROR    | open_webui.routers.openai:generate_chat_completion:1669 - Cannot connect to host vllm-service.vllm.svc.cluster.local:8000 ssl:default [Connect call failed ('10.233.2.207', 8000)]
+Traceback (most recent call last):
+    raise first_exception
+    raise OSError(err, 'Connect call failed %s' % (address,))
+ConnectionRefusedError: [Errno 111] Connect call failed ('10.233.2.207', 8000)
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host vllm-service.vllm.svc.cluster.local:8000 ssl:default [Connect call failed ('10.233.2.207', 8000)]
+2026-10-19 03:25:39.779 | ERROR    | open_webui.main:process_chat:1716 - Error processing chat payload: Open WebUI: Server Connection Error
+2026-10-19 03:25:44.430 | INFO     | uvicorn.protocols.http.httptools_impl:send:485 - 10.140.2.120:0 - "POST /api/chat/completions HTTP/1.1" 200
+2026-10-19 03:25:44.445 | ERROR    | open_webui.routers.openai:generate_chat_completion:1669 - Cannot connect to host vllm-service.vllm.svc.cluster.local:8000 ssl:default [Connect call failed ('10.233.2.207', 8000)]
+Traceback (most recent call last):
+    raise first_exception
+    raise OSError(err, 'Connect call failed %s' % (address,))
+ConnectionRefusedError: [Errno 111] Connect call failed ('10.233.2.207', 8000)
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host vllm-service.vllm.svc.cluster.local:8000 ssl:default [Connect call failed ('10.233.2.207', 8000)]
+2026-10-19 03:25:44.446 | ERROR    | open_webui.main:process_chat:1716 - Error processing chat payload: Open WebUI: Server Connection Error
+2026-10-19 03:25:45.776 | INFO     | uvicorn.protocols.http.httptools_impl:send:485 - 10.140.2.120:0 - "POST /api/chat/completions HTTP/1.1" 200
+2026-10-19 03:25:45.791 | ERROR    | open_webui.routers.openai:generate_chat_completion:1669 - Cannot connect to host vllm-service.vllm.svc.cluster.local:8000 ssl:default [Connect call failed ('10.233.2.207', 8000)]
+Traceback (most recent call last):
+    raise first_exception
+    raise OSError(err, 'Connect call failed %s' % (address,))
+ConnectionRefusedError: [Errno 111] Connect call failed ('10.233.2.207', 8000)
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host vllm-service.vllm.svc.cluster.local:8000 ssl:default [Connect call failed ('10.233.2.207', 8000)]
+2026-10-19 03:25:45.791 | ERROR    | open_webui.main:process_chat:1716 - Error processing chat payload: Open WebUI: Server Connection Error
+2026-10-19 03:25:49.402 | ERROR    | open_webui.routers.openai:send_get_request:116 - Connection error: Cannot connect to host vllm-service.vllm.svc.cluster.local:8000 ssl:default [Connect call failed ('10.233.2.207', 8000)]
+2026-10-19 03:25:52.430 | INFO     | uvicorn.protocols.http.httptools_impl:send:485 - 10.140.2.120:0 - "POST /api/chat/completions HTTP/1.1" 200
+2026-10-19 03:25:52.445 | ERROR    | open_webui.routers.openai:send_get_request:116 - Connection error: Cannot connect to host vllm-service.vllm.svc.cluster.local:8000 ssl:default [Connect call failed ('10.233.2.207', 8000)]
+2026-10-19 03:25:52.445 | ERROR    | open_webui.main:process_chat:1716 - Error processing chat payload: Model '' was not found
+2026-10-19 03:25:56.725 | ERROR    | open_webui.routers.openai:send_get_request:116 - Connection error: Cannot connect to host vllm-service.vllm.svc.cluster.local:8000 ssl:default [Connect call failed ('10.233.2.207', 8000)]
+2026-10-19 03:26:21.987 | INFO     | uvicorn.protocols.http.httptools_impl:send:485 - 10.140.2.120:0 - "POST /api/chat/completions HTTP/1.1" 200
+2026-10-19 03:26:22.109 | INFO     | uvicorn.protocols.http.httptools_impl:send:485 - 10.140.2.120:0 - "POST /api/chat/completions HTTP/1.1" 200
+2026-10-19 03:26:22.128 | ERROR    | open_webui.routers.openai:send_get_request:116 - Connection error: Cannot connect to host vllm-service.vllm.svc.cluster.local:8000 ssl:default [Connect call failed ('10.233.2.207', 8000)]
+2026-10-19 03:26:22.128 | ERROR    | open_webui.main:process_chat:1716 - Error processing chat payload: Model '' was not found
+2026-10-19 03:27:16.677 | INFO     | uvicorn.protocols.http.httptools_impl:send:485 - 10.140.2.120:0 - "POST /api/chat/completions HTTP/1.1" 200
+2026-10-19 03:27:16.700 | ERROR    | open_webui.routers.openai:send_get_request:116 - Connection error: Cannot connect to host vllm-service.vllm.svc.cluster.local:8000 ssl:default [Connect call failed ('10.233.2.207', 8000)]
+2026-10-19 03:27:16.701 | ERROR    | open_webui.main:process_chat:1716 - Error processing chat payload: Model '' was not found
+2026-10-19 03:27:21.821 | ERROR    | open_webui.routers.openai:send_get_request:116 - Connection error: Cannot connect to host vllm-service.vllm.svc.cluster.local:8000 ssl:default [Connect call failed ('10.233.2.207', 8000)]
+2026-10-19 03:27:25.391 | INFO     | uvicorn.protocols.http.httptools_impl:send:485 - 10.140.2.120:0 - "POST /api/chat/completions HTTP/1.1" 200
+2026-10-19 03:27:25.404 | ERROR    | open_webui.routers.openai:send_get_request:116 - Connection error: Cannot connect to host vllm-service.vllm.svc.cluster.local:8000 ssl:default [Connect call failed ('10.233.2.207', 8000)]
+2026-10-19 03:27:25.404 | ERROR    | open_webui.main:process_chat:1716 - Error processing chat payload: Model '' was not found
+2026-10-19 03:27:26.627 | ERROR    | open_webui.routers.openai:send_get_request:116 - Connection error: Cannot connect to host vllm-service.vllm.svc.cluster.local:8000 ssl:default [Connect call failed ('10.233.2.207', 8000)]
+2026-10-19 03:27:28.473 | ERROR    | open_webui.routers.openai:send_get_request:116 - Connection error: Cannot connect to host vllm-service.vllm.svc.cluster.local:8000 ssl:default [Connect call failed ('10.233.2.207', 8000)]
+2026-10-19 03:27:30.430 | INFO     | uvicorn.protocols.http.httptools_impl:send:485 - 10.140.2.120:0 - "POST /api/chat/completions HTTP/1.1" 200
+2026-10-19 03:27:30.447 | ERROR    | open_webui.routers.openai:send_get_request:116 - Connection error: Cannot connect to host vllm-service.vllm.svc.cluster.local:8000 ssl:default [Connect call failed ('10.233.2.207', 8000)]
+2026-10-19 03:27:30.447 | ERROR    | open_webui.main:process_chat:1716 - Error processing chat payload: Model '' was not found
+2026-10-19 03:28:07.536 | INFO     | uvicorn.protocols.http.httptools_impl:send:485 - 10.140.2.120:0 - "POST /api/chat/completions HTTP/1.1" 200
+2026-10-19 03:28:16.900 | INFO     | uvicorn.protocols.http.httptools_impl:send:485 - 10.140.2.120:0 - "POST /api/chat/completions HTTP/1.1" 200
+2026-10-19 03:28:50.256 | INFO     | uvicorn.protocols.http.httptools_impl:send:485 - 10.140.2.120:0 - "POST /api/chat/completions HTTP/1.1" 200
+2026-10-19 03:28:59.487 | INFO     | uvicorn.protocols.http.httptools_impl:send:485 - 10.140.2.120:0 - "POST /api/chat/completions HTTP/1.1" 200
+2026-10-19 03:29:22.326 | INFO     | uvicorn.protocols.http.httptools_impl:send:485 - 10.140.2.120:0 - "POST /api/chat/completions HTTP/1.1" 200
+2026-10-19 03:30:35.992 | INFO     | uvicorn.protocols.http.httptools_impl:send:485 - 10.140.2.120:0 - "POST /api/chat/completions HTTP/1.1" 200
+2026-10-19 03:31:06.675 | INFO     | uvicorn.protocols.http.httptools_impl:send:485 - 10.140.2.120:0 - "POST /api/chat/completions HTTP/1.1" 200
+2026-10-19 03:31:33.689 | INFO     | uvicorn.protocols.http.httptools_impl:send:485 - 10.140.2.120:0 - "POST /api/chat/completions HTTP/1.1" 200
+2026-10-19 03:31:52.530 | INFO     | uvicorn.protocols.http.httptools_impl:send:485 - 10.140.2.120:0 - "POST /api/chat/completions HTTP/1.1" 200
+2026-10-19 03:32:27.383 | INFO     | uvicorn.protocols.http.httptools_impl:send:485 - 10.140.2.120:0 - "POST /api/chat/completions HTTP/1.1" 200

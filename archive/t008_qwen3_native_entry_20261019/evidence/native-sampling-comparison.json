@@ -1,0 +1,256 @@
+{
+  "schema": "t008-native-sampling-comparison-v1",
+  "native_load_method": "SftArguments.load_dataset, dataset_shuffle=True; seed/data_seed=42",
+  "same_content_universe": true,
+  "same_order": false,
+  "same_exposure_multiset": false,
+  "identity_unique_rows": 108,
+  "identity_native_histogram": {
+    "6": 60,
+    "5": 48
+  },
+  "identity_templates_with_changed_exposure_count": 48,
+  "changes": [
+    {
+      "source_row_zero_based": 1,
+      "old_exposures": 6,
+      "native_exposures": 5
+    },
+    {
+      "source_row_zero_based": 2,
+      "old_exposures": 6,
+      "native_exposures": 5
+    },
+    {
+      "source_row_zero_based": 3,
+      "old_exposures": 6,
+      "native_exposures": 5
+    },
+    {
+      "source_row_zero_based": 6,
+      "old_exposures": 6,
+      "native_exposures": 5
+    },
+    {
+      "source_row_zero_based": 8,
+      "old_exposures": 6,
+      "native_exposures": 5
+    },
+    {
+      "source_row_zero_based": 14,
+      "old_exposures": 6,
+      "native_exposures": 5
+    },
+    {
+      "source_row_zero_based": 17,
+      "old_exposures": 6,
+      "native_exposures": 5
+    },
+    {
+      "source_row_zero_based": 20,
+      "old_exposures": 6,
+      "native_exposures": 5
+    },
+    {
+      "source_row_zero_based": 21,
+      "old_exposures": 6,
+      "native_exposures": 5
+    },
+    {
+      "source_row_zero_based": 23,
+      "old_exposures": 6,
+      "native_exposures": 5
+    },
+    {
+      "source_row_zero_based": 29,
+      "old_exposures": 6,
+      "native_exposures": 5
+    },
+    {
+      "source_row_zero_based": 32,
+      "old_exposures": 6,
+      "native_exposures": 5
+    },
+    {
+      "source_row_zero_based": 37,
+      "old_exposures": 6,
+      "native_exposures": 5
+    },
+    {
+      "source_row_zero_based": 38,
+      "old_exposures": 6,
+      "native_exposures": 5
+    },
+    {
+      "source_row_zero_based": 41,
+      "old_exposures": 6,
+      "native_exposures": 5
+    },
+    {
+      "source_row_zero_based": 46,
+      "old_exposures": 6,
+      "native_exposures": 5
+    },
+    {
+      "source_row_zero_based": 48,
+      "old_exposures": 6,
+      "native_exposures": 5
+    },
+    {
+      "source_row_zero_based": 50,
+      "old_exposures": 6,
+      "native_exposures": 5
+    },
+    {
+      "source_row_zero_based": 51,
+      "old_exposures": 6,
+      "native_exposures": 5
+    },
+    {
+      "source_row_zero_based": 52,
+      "old_exposures": 6,
+      "native_exposures": 5
+    },
+    {
+      "source_row_zero_based": 54,
+      "old_exposures": 6,
+      "native_exposures": 5
+    },
+    {
+      "source_row_zero_based": 57,
+      "old_exposures": 6,
+      "native_exposures": 5
+    },
+    {
+      "source_row_zero_based": 58,
+      "old_exposures": 6,
+      "native_exposures": 5
+    },
+    {
+      "source_row_zero_based": 59,
+      "old_exposures": 6,
+      "native_exposures": 5
+    },
+    {
+      "source_row_zero_based": 62,
+      "old_exposures": 5,
+      "native_exposures": 6
+    },
+    {
+      "source_row_zero_based": 64,
+      "old_exposures": 5,
+      "native_exposures": 6
+    },
+    {
+      "source_row_zero_based": 65,
+      "old_exposures": 5,
+      "native_exposures": 6
+    },
+    {
+      "source_row_zero_based": 66,
+      "old_exposures": 5,
+      "native_exposures": 6
+    },
+    {
+      "source_row_zero_based": 67,
+      "old_exposures": 5,
+      "native_exposures": 6
+    },
+    {
+      "source_row_zero_based": 68,
+      "old_exposures": 5,
+      "native_exposures": 6
+    },
+    {
+      "source_row_zero_based": 69,
+      "old_exposures": 5,
+      "native_exposures": 6
+    },
+    {
+      "source_row_zero_based": 72,
+      "old_exposures": 5,
+      "native_exposures": 6
+    },
+    {
+      "source_row_zero_based": 76,
+      "old_exposures": 5,
+      "native_exposures": 6
+    },
+    {
+      "source_row_zero_based": 77,
+      "old_exposures": 5,
+      "native_exposures": 6
+    },
+    {
+      "source_row_zero_based": 78,
+      "old_exposures": 5,
+      "native_exposures": 6
+    },
+    {
+      "source_row_zero_based": 79,
+      "old_exposures": 5,
+      "native_exposures": 6
+    },
+    {
+      "source_row_zero_based": 80,
+      "old_exposures": 5,
+      "native_exposures": 6
+    },
+    {
+      "source_row_zero_based": 81,
+      "old_exposures": 5,
+      "native_exposures": 6
+    },
+    {
+      "source_row_zero_based": 83,
+      "old_exposures": 5,
+      "native_exposures": 6
+    },
+    {
+      "source_row_zero_based": 88,
+      "old_exposures": 5,
+      "native_exposures": 6
+    },
+    {
+      "source_row_zero_based": 89,
+      "old_exposures": 5,
+      "native_exposures": 6
+    },
+    {
+      "source_row_zero_based": 90,
+      "old_exposures": 5,
+      "native_exposures": 6
+    },
+    {
+      "source_row_zero_based": 95,
+      "old_exposures": 5,
+      "native_exposures": 6
+    },
+    {
+      "source_row_zero_based": 100,
+      "old_exposures": 5,
+      "native_exposures": 6
+    },
+    {
+      "source_row_zero_based": 103,
+      "old_exposures": 5,
+      "native_exposures": 6
+    },
+    {
+      "source_row_zero_based": 105,
+      "old_exposures": 5,
+      "native_exposures": 6
+    },
+    {
+      "source_row_zero_based": 106,
+      "old_exposures": 5,
+      "native_exposures": 6
+    },
+    {
+      "source_row_zero_based": 107,
+      "old_exposures": 5,
+      "native_exposures": 6
+    }
+  ],
+  "note": "No custom reweighting; the official native loader consumed its RNG with default source shuffle. Historical snapshots remain unchanged."
+}

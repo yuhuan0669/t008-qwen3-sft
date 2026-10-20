@@ -1,0 +1,80 @@
+{
+  "schema": "t008-followup-engineering-content-review-v1",
+  "assembled_at_utc": "2026-10-19T08:15:02.781926+00:00",
+  "mixin_unique_reviewed": 177,
+  "mixin_exposures_mapped": 354,
+  "mixin_status_unique_counts": {
+    "REJECT": 166,
+    "NEEDS_REVIEW": 7,
+    "PASS_INITIAL": 4
+  },
+  "mixin_status_exposure_counts": {
+    "REJECT": 332,
+    "NEEDS_REVIEW": 14,
+    "PASS_INITIAL": 8
+  },
+  "mixin_explicit_truncation_unique_count": 149,
+  "mixin_pass_initial_source_lines": [
+    210,
+    299,
+    439,
+    991
+  ],
+  "mixin_needs_review_source_lines": [
+    105,
+    421,
+    543,
+    613,
+    660,
+    697,
+    889
+  ],
+  "identity": {
+    "reviewed_unique_templates": 108,
+    "mapped_exposures": 600,
+    "template_status_counts": {
+      "NEEDS_REVIEW": 82,
+      "PASS_INITIAL": 23,
+      "REJECT": 3
+    },
+    "exposure_status_counts": {
+      "NEEDS_REVIEW": 456,
+      "PASS_INITIAL": 127,
+      "REJECT": 17
+    },
+    "author_templates_requiring_provenance_clarification": 78,
+    "product_name_only_initial_pass_lines": [
+      22,
+      77
+    ],
+    "training_approval": false,
+    "training_data_modified": false
+  },
+  "primary_all_nonreject_rechecked": true,
+  "primary_reject_examples_rechecked": [
+    23,
+    31,
+    39,
+    69,
+    282,
+    431,
+    548,
+    563,
+    580,
+    763,
+    899
+  ],
+  "frozen_input_hashes_unchanged": true,
+  "training_data_modified": false,
+  "training_started": false,
+  "approval_created": false,
+  "independent_blind_acceptance": false,
+  "gpu_gate_recommendation": "NO_GO",
+  "not_performed": [
+    "原2048候选内521条不同Mixin记录的逐条内容审核",
+    "对全部177条推理文本逐项事实验证或全部代码运行",
+    "7条专业/来源待核事项的最终裁定",
+    "身份样本改写、采样重配、训练衍生快照生成",
+    "独立盲审、GPU Smoke/Full、训练效果评测"
+  ]
+}

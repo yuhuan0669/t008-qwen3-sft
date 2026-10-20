@@ -1,0 +1,22 @@
+[
+  {
+    "file": "self_cognition.jsonl",
+    "bytes": 23839,
+    "sha256": "e7b66784f02361cfa0ad4635dae12c0f810d197c22ac89a4b7837195dc4b7b23",
+    "rows": 108,
+    "download_metadata": {
+      "url": "https://modelscope.cn/api/v1/datasets/swift/self-cognition/repo?Source=SDK&Revision=master&FilePath=self_cognition.jsonl",
+      "etag": null
+    }
+  },
+  {
+    "file": "qwen3_32b_distill_1k.jsonl",
+    "bytes": 17438661,
+    "sha256": "d261353c05df1f1fde95639d1a9d9243e1d24470dcb4c3732965ab1ab8eeba41",
+    "rows": 1000,
+    "download_metadata": {
+      "url": "https://modelscope.cn/api/v1/datasets/swift/Qwen3-SFT-Mixin/repo?Source=SDK&Revision=master&FilePath=qwen3_32b_distill_1k.jsonl",
+      "etag": null
+    }
+  }
+]

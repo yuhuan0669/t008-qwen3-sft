@@ -1,0 +1,3107 @@
+{
+  "base_packages": [
+    {
+      "name": "absl-py",
+      "version": "2.5.0"
+    },
+    {
+      "name": "accelerate",
+      "version": "1.14.0"
+    },
+    {
+      "name": "addict",
+      "version": "2.4.0"
+    },
+    {
+      "name": "aiofiles",
+      "version": "24.1.0"
+    },
+    {
+      "name": "aiohappyeyeballs",
+      "version": "2.7.1"
+    },
+    {
+      "name": "aiohttp",
+      "version": "3.14.3"
+    },
+    {
+      "name": "aiosignal",
+      "version": "1.4.0"
+    },
+    {
+      "name": "aliyun-python-sdk-core",
+      "version": "2.16.0"
+    },
+    {
+      "name": "aliyun-python-sdk-kms",
+      "version": "2.16.5"
+    },
+    {
+      "name": "annotated-doc",
+      "version": "0.0.5"
+    },
+    {
+      "name": "annotated-types",
+      "version": "0.8.0"
+    },
+    {
+      "name": "anthropic",
+      "version": "0.120.2"
+    },
+    {
+      "name": "antlr4-python3-runtime",
+      "version": "4.9.3"
+    },
+    {
+      "name": "anyio",
+      "version": "4.14.2"
+    },
+    {
+      "name": "apache-tvm-ffi",
+      "version": "0.1.9"
+    },
+    {
+      "name": "apex",
+      "version": "0.1"
+    },
+    {
+      "name": "astor",
+      "version": "0.8.1"
+    },
+    {
+      "name": "asttokens",
+      "version": "3.0.2"
+    },
+    {
+      "name": "attrdict",
+      "version": "2.0.1"
+    },
+    {
+      "name": "attrs",
+      "version": "26.1.0"
+    },
+    {
+      "name": "audioread",
+      "version": "3.1.0"
+    },
+    {
+      "name": "av",
+      "version": "18.0.0"
+    },
+    {
+      "name": "binpacking",
+      "version": "2.0.1"
+    },
+    {
+      "name": "bitsandbytes",
+      "version": "0.50.0"
+    },
+    {
+      "name": "blake3",
+      "version": "1.0.9"
+    },
+    {
+      "name": "brotli",
+      "version": "1.2.0"
+    },
+    {
+      "name": "cachetools",
+      "version": "7.1.7"
+    },
+    {
+      "name": "causal_conv1d",
+      "version": "1.6.2.post1"
+    },
+    {
+      "name": "cbor2",
+      "version": "6.1.4"
+    },
+    {
+      "name": "certifi",
+      "version": "2026.7.22"
+    },
+    {
+      "name": "cffi",
+      "version": "2.1.0"
+    },
+    {
+      "name": "cfgv",
+      "version": "3.5.0"
+    },
+    {
+      "name": "charset-normalizer",
+      "version": "3.4.9"
+    },
+    {
+      "name": "click",
+      "version": "8.4.2"
+    },
+    {
+      "name": "cloudpickle",
+      "version": "3.1.2"
+    },
+    {
+      "name": "colorama",
+      "version": "0.4.6"
+    },
+    {
+      "name": "colorlog",
+      "version": "6.12.0"
+    },
+    {
+      "name": "compressed-tensors",
+      "version": "0.17.0"
+    },
+    {
+      "name": "contourpy",
+      "version": "1.3.3"
+    },
+    {
+      "name": "cpm-kernels",
+      "version": "1.0.11"
+    },
+    {
+      "name": "crcmod",
+      "version": "1.7"
+    },
+    {
+      "name": "cryptography",
+      "version": "50.0.0"
+    },
+    {
+      "name": "cuda-bindings",
+      "version": "13.3.1"
+    },
+    {
+      "name": "cuda-core",
+      "version": "1.0.1"
+    },
+    {
+      "name": "cuda-pathfinder",
+      "version": "1.6.0"
+    },
+    {
+      "name": "cuda-python",
+      "version": "13.3.1"
+    },
+    {
+      "name": "cuda-tile",
+      "version": "1.3.0"
+    },
+    {
+      "name": "cuda-toolkit",
+      "version": "13.0.2"
+    },
+    {
+      "name": "cycler",
+      "version": "0.12.1"
+    },
+    {
+      "name": "dacite",
+      "version": "1.9.2"
+    },
+    {
+      "name": "datasets",
+      "version": "4.8.4"
+    },
+    {
+      "name": "decorator",
+      "version": "5.3.1"
+    },
+    {
+      "name": "decord",
+      "version": "0.6.0"
+    },
+    {
+      "name": "deep_gemm",
+      "version": "2.1.1+c9f8b34"
+    },
+    {
+      "name": "deepspeed",
+      "version": "0.18.9"
+    },
+    {
+      "name": "defusedxml",
+      "version": "0.7.1"
+    },
+    {
+      "name": "depyf",
+      "version": "0.20.0"
+    },
+    {
+      "name": "detect-installer",
+      "version": "0.1.0"
+    },
+    {
+      "name": "diffusers",
+      "version": "0.39.0"
+    },
+    {
+      "name": "dill",
+      "version": "0.4.1"
+    },
+    {
+      "name": "diskcache",
+      "version": "5.6.3"
+    },
+    {
+      "name": "distlib",
+      "version": "0.4.3"
+    },
+    {
+      "name": "distro",
+      "version": "1.9.0"
+    },
+    {
+      "name": "dnspython",
+      "version": "2.8.0"
+    },
+    {
+      "name": "docstring_parser",
+      "version": "0.18.0"
+    },
+    {
+      "name": "dotenv",
+      "version": "0.9.9"
+    },
+    {
+      "name": "editdistance",
+      "version": "0.8.1"
+    },
+    {
+      "name": "einops",
+      "version": "0.8.2"
+    },
+    {
+      "name": "email-validator",
+      "version": "2.3.0"
+    },
+    {
+      "name": "emerging-optimizers",
+      "version": "0.3.0"
+    },
+    {
+      "name": "et_xmlfile",
+      "version": "2.0.0"
+    },
+    {
+      "name": "evalscope",
+      "version": "1.9.1"
+    },
+    {
+      "name": "evaluate",
+      "version": "0.4.6"
+    },
+    {
+      "name": "executing",
+      "version": "2.2.1"
+    },
+    {
+      "name": "fast_hadamard_transform",
+      "version": "1.1.0"
+    },
+    {
+      "name": "fastapi",
+      "version": "0.136.3"
+    },
+    {
+      "name": "fastapi-cli",
+      "version": "0.0.32"
+    },
+    {
+      "name": "fastapi-cloud-cli",
+      "version": "0.23.0"
+    },
+    {
+      "name": "fastar",
+      "version": "0.11.0"
+    },
+    {
+      "name": "fastsafetensors",
+      "version": "0.3.3"
+    },
+    {
+      "name": "fastuuid",
+      "version": "0.14.0"
+    },
+    {
+      "name": "ffmpy",
+      "version": "1.0.0"
+    },
+    {
+      "name": "filelock",
+      "version": "3.32.2"
+    },
+    {
+      "name": "fire",
+      "version": "0.7.1"
+    },
+    {
+      "name": "fla-core",
+      "version": "0.5.2"
+    },
+    {
+      "name": "flash-linear-attention",
+      "version": "0.5.2"
+    },
+    {
+      "name": "flash_attn",
+      "version": "2.8.3"
+    },
+    {
+      "name": "flashinfer-cubin",
+      "version": "0.6.13"
+    },
+    {
+      "name": "flashinfer-python",
+      "version": "0.6.13"
+    },
+    {
+      "name": "fonttools",
+      "version": "4.63.0"
+    },
+    {
+      "name": "frozenlist",
+      "version": "1.8.0"
+    },
+    {
+      "name": "fsspec",
+      "version": "2026.2.0"
+    },
+    {
+      "name": "funasr",
+      "version": "1.4.1"
+    },
+    {
+      "name": "func_timeout",
+      "version": "4.3.5"
+    },
+    {
+      "name": "fuzzywuzzy",
+      "version": "0.18.0"
+    },
+    {
+      "name": "google-auth",
+      "version": "2.56.2"
+    },
+    {
+      "name": "google-genai",
+      "version": "2.8.0"
+    },
+    {
+      "name": "googleapis-common-protos",
+      "version": "1.75.0"
+    },
+    {
+      "name": "gradio",
+      "version": "5.32.1"
+    },
+    {
+      "name": "gradio_client",
+      "version": "1.10.2"
+    },
+    {
+      "name": "groovy",
+      "version": "0.1.2"
+    },
+    {
+      "name": "grpcio",
+      "version": "1.83.0"
+    },
+    {
+      "name": "h11",
+      "version": "0.16.0"
+    },
+    {
+      "name": "h5py",
+      "version": "3.16.0"
+    },
+    {
+      "name": "hf-xet",
+      "version": "1.5.2"
+    },
+    {
+      "name": "hjson",
+      "version": "3.1.0"
+    },
+    {
+      "name": "httpcore",
+      "version": "1.0.9"
+    },
+    {
+      "name": "httpcore2",
+      "version": "2.9.1"
+    },
+    {
+      "name": "httptools",
+      "version": "0.8.0"
+    },
+    {
+      "name": "httpx",
+      "version": "0.28.1"
+    },
+    {
+      "name": "httpx2",
+      "version": "2.9.1"
+    },
+    {
+      "name": "huggingface_hub",
+      "version": "1.26.0"
+    },
+    {
+      "name": "human-eval",
+      "version": "1.0.3"
+    },
+    {
+      "name": "humming-kernels",
+      "version": "0.1.10"
+    },
+    {
+      "name": "hydra-core",
+      "version": "1.3.4"
+    },
+    {
+      "name": "icecream",
+      "version": "2.2.0"
+    },
+    {
+      "name": "identify",
+      "version": "2.6.19"
+    },
+    {
+      "name": "idna",
+      "version": "3.18"
+    },
+    {
+      "name": "ijson",
+      "version": "3.5.1"
+    },
+    {
+      "name": "ImageIO",
+      "version": "2.37.4"
+    },
+    {
+      "name": "immutabledict",
+      "version": "4.3.1"
+    },
+    {
+      "name": "importlib_metadata",
+      "version": "8.9.0"
+    },
+    {
+      "name": "interegular",
+      "version": "0.3.3"
+    },
+    {
+      "name": "ipdb",
+      "version": "0.13.13"
+    },
+    {
+      "name": "ipython",
+      "version": "9.16.1"
+    },
+    {
+      "name": "ipython_pygments_lexers",
+      "version": "1.1.1"
+    },
+    {
+      "name": "jaconv",
+      "version": "0.5.0"
+    },
+    {
+      "name": "jamo",
+      "version": "0.4.1"
+    },
+    {
+      "name": "jedi",
+      "version": "0.20.0"
+    },
+    {
+      "name": "jieba",
+      "version": "0.42.1"
+    },
+    {
+      "name": "Jinja2",
+      "version": "3.1.6"
+    },
+    {
+      "name": "jiter",
+      "version": "0.16.0"
+    },
+    {
+      "name": "jmespath",
+      "version": "0.10.0"
+    },
+    {
+      "name": "joblib",
+      "version": "1.5.3"
+    },
+    {
+      "name": "json5",
+      "version": "0.15.0"
+    },
+    {
+      "name": "json_repair",
+      "version": "0.61.7"
+    },
+    {
+      "name": "jsonlines",
+      "version": "4.0.0"
+    },
+    {
+      "name": "jsonschema",
+      "version": "4.26.0"
+    },
+    {
+      "name": "jsonschema-specifications",
+      "version": "2025.9.1"
+    },
+    {
+      "name": "kaldiio",
+      "version": "2.18.1"
+    },
+    {
+      "name": "kiwisolver",
+      "version": "1.5.0"
+    },
+    {
+      "name": "lark",
+      "version": "1.2.2"
+    },
+    {
+      "name": "latex2sympy2_extended",
+      "version": "1.11.0"
+    },
+    {
+      "name": "lazy-loader",
+      "version": "0.5"
+    },
+    {
+      "name": "Levenshtein",
+      "version": "0.27.3"
+    },
+    {
+      "name": "librosa",
+      "version": "0.11.0"
+    },
+    {
+      "name": "liger_kernel",
+      "version": "0.8.1"
+    },
+    {
+      "name": "lightning-utilities",
+      "version": "0.15.3"
+    },
+    {
+      "name": "litellm",
+      "version": "1.95.0"
+    },
+    {
+      "name": "llguidance",
+      "version": "1.7.6"
+    },
+    {
+      "name": "llvmlite",
+      "version": "0.47.0"
+    },
+    {
+      "name": "lm-format-enforcer",
+      "version": "0.11.3"
+    },
+    {
+      "name": "loguru",
+      "version": "0.7.3"
+    },
+    {
+      "name": "lxml",
+      "version": "6.1.1"
+    },
+    {
+      "name": "Markdown",
+      "version": "3.10.3"
+    },
+    {
+      "name": "markdown-it-py",
+      "version": "4.2.0"
+    },
+    {
+      "name": "MarkupSafe",
+      "version": "3.0.3"
+    },
+    {
+      "name": "math-verify",
+      "version": "0.9.0"
+    },
+    {
+      "name": "matplotlib",
+      "version": "3.11.1"
+    },
+    {
+      "name": "matplotlib-inline",
+      "version": "0.2.2"
+    },
+    {
+      "name": "mcore_bridge",
+      "version": "1.6.1"
+    },
+    {
+      "name": "mcp",
+      "version": "2.0.0"
+    },
+    {
+      "name": "mcp-types",
+      "version": "2.0.0"
+    },
+    {
+      "name": "mdurl",
+      "version": "0.1.2"
+    },
+    {
+      "name": "megatron-core",
+      "version": "0.18.2"
+    },
+    {
+      "name": "mistral_common",
+      "version": "1.11.7"
+    },
+    {
+      "name": "ml_dtypes",
+      "version": "0.5.4"
+    },
+    {
+      "name": "mmengine-lite",
+      "version": "0.10.7"
+    },
+    {
+      "name": "model-hosting-container-standards",
+      "version": "0.1.16"
+    },
+    {
+      "name": "modelscope",
+      "version": "1.38.1"
+    },
+    {
+      "name": "modelscope-hub",
+      "version": "0.2.0"
+    },
+    {
+      "name": "more-itertools",
+      "version": "11.1.0"
+    },
+    {
+      "name": "mpmath",
+      "version": "1.3.0"
+    },
+    {
+      "name": "ms-agent",
+      "version": "1.6.0"
+    },
+    {
+      "name": "ms-opencompass",
+      "version": "0.1.6"
+    },
+    {
+      "name": "ms-vlmeval",
+      "version": "0.0.19"
+    },
+    {
+      "name": "ms_swift",
+      "version": "4.4.2"
+    },
+    {
+      "name": "msgpack",
+      "version": "1.2.1"
+    },
+    {
+      "name": "msgspec",
+      "version": "0.21.1"
+    },
+    {
+      "name": "multidict",
+      "version": "6.7.1"
+    },
+    {
+      "name": "multiprocess",
+      "version": "0.70.19"
+    },
+    {
+      "name": "narwhals",
+      "version": "2.24.0"
+    },
+    {
+      "name": "networkx",
+      "version": "3.6.1"
+    },
+    {
+      "name": "ninja",
+      "version": "1.13.0"
+    },
+    {
+      "name": "nltk",
+      "version": "3.10.1"
+    },
+    {
+      "name": "nodeenv",
+      "version": "1.10.0"
+    },
+    {
+      "name": "numba",
+      "version": "0.65.0"
+    },
+    {
+      "name": "numpy",
+      "version": "2.5.1"
+    },
+    {
+      "name": "nvdlfw_inspect",
+      "version": "0.2.2"
+    },
+    {
+      "name": "nvidia-cublas",
+      "version": "13.1.0.3"
+    },
+    {
+      "name": "nvidia-cuda-cccl",
+      "version": "13.3.3.4.1"
+    },
+    {
+      "name": "nvidia-cuda-crt",
+      "version": "13.3.73"
+    },
+    {
+      "name": "nvidia-cuda-cupti",
+      "version": "13.0.85"
+    },
+    {
+      "name": "nvidia-cuda-nvcc",
+      "version": "13.2.86"
+    },
+    {
+      "name": "nvidia-cuda-nvrtc",
+      "version": "13.0.88"
+    },
+    {
+      "name": "nvidia-cuda-runtime",
+      "version": "13.0.96"
+    },
+    {
+      "name": "nvidia-cuda-tileiras",
+      "version": "13.2.86"
+    },
+    {
+      "name": "nvidia-cudnn-cu13",
+      "version": "9.19.0.56"
+    },
+    {
+      "name": "nvidia-cudnn-frontend",
+      "version": "1.26.0"
+    },
+    {
+      "name": "nvidia-cufft",
+      "version": "12.0.0.61"
+    },
+    {
+      "name": "nvidia-cufile",
+      "version": "1.15.1.6"
+    },
+    {
+      "name": "nvidia-curand",
+      "version": "10.4.0.35"
+    },
+    {
+      "name": "nvidia-cusolver",
+      "version": "12.0.4.66"
+    },
+    {
+      "name": "nvidia-cusparse",
+      "version": "12.6.3.3"
+    },
+    {
+      "name": "nvidia-cusparselt-cu13",
+      "version": "0.8.0"
+    },
+    {
+      "name": "nvidia-cutlass-dsl",
+      "version": "4.5.2"
+    },
+    {
+      "name": "nvidia-cutlass-dsl-libs-base",
+      "version": "4.5.2"
+    },
+    {
+      "name": "nvidia-cutlass-dsl-libs-cu13",
+      "version": "4.5.2"
+    },
+    {
+      "name": "nvidia-ml-py",
+      "version": "13.595.45"
+    },
+    {
+      "name": "nvidia-nccl-cu13",
+      "version": "2.28.9"
+    },
+    {
+      "name": "nvidia-nvjitlink",
+      "version": "13.0.88"
+    },
+    {
+      "name": "nvidia-nvshmem-cu13",
+      "version": "3.4.5"
+    },
+    {
+      "name": "nvidia-nvtx",
+      "version": "13.0.85"
+    },
+    {
+      "name": "nvidia-nvvm",
+      "version": "13.2.86"
+    },
+    {
+      "name": "nvitop",
+      "version": "1.7.1"
+    },
+    {
+      "name": "nvtx",
+      "version": "0.2.15"
+    },
+    {
+      "name": "omegaconf",
+      "version": "2.3.0"
+    },
+    {
+      "name": "onnx",
+      "version": "1.22.0"
+    },
+    {
+      "name": "onnx-ir",
+      "version": "0.2.1"
+    },
+    {
+      "name": "onnxscript",
+      "version": "0.7.1"
+    },
+    {
+      "name": "openai",
+      "version": "2.53.0"
+    },
+    {
+      "name": "openai-harmony",
+      "version": "0.0.8"
+    },
+    {
+      "name": "openai-whisper",
+      "version": "20250625"
+    },
+    {
+      "name": "OpenCC",
+      "version": "1.4.1"
+    },
+    {
+      "name": "opencv-python",
+      "version": "4.11.0.86"
+    },
+    {
+      "name": "opencv-python-headless",
+      "version": "5.0.0.93"
+    },
+    {
+      "name": "openpyxl",
+      "version": "3.1.5"
+    },
+    {
+      "name": "opentelemetry-api",
+      "version": "1.44.0"
+    },
+    {
+      "name": "opentelemetry-exporter-otlp",
+      "version": "1.44.0"
+    },
+    {
+      "name": "opentelemetry-exporter-otlp-proto-common",
+      "version": "1.44.0"
+    },
+    {
+      "name": "opentelemetry-exporter-otlp-proto-grpc",
+      "version": "1.44.0"
+    },
+    {
+      "name": "opentelemetry-exporter-otlp-proto-http",
+      "version": "1.44.0"
+    },
+    {
+      "name": "opentelemetry-proto",
+      "version": "1.44.0"
+    },
+    {
+      "name": "opentelemetry-sdk",
+      "version": "1.44.0"
+    },
+    {
+      "name": "opentelemetry-semantic-conventions",
+      "version": "0.65b0"
+    },
+    {
+      "name": "opentelemetry-semantic-conventions-ai",
+      "version": "0.5.1"
+    },
+    {
+      "name": "optimum",
+      "version": "2.2.0"
+    },
+    {
+      "name": "orjson",
+      "version": "3.11.9"
+    },
+    {
+      "name": "oss2",
+      "version": "2.19.1"
+    },
+    {
+      "name": "outlines_core",
+      "version": "0.2.14"
+    },
+    {
+      "name": "overrides",
+      "version": "7.7.0"
+    },
+    {
+      "name": "packaging",
+      "version": "26.2"
+    },
+    {
+      "name": "pandas",
+      "version": "2.3.3"
+    },
+    {
+      "name": "parso",
+      "version": "0.8.7"
+    },
+    {
+      "name": "partial-json-parser",
+      "version": "0.2.1.1.post7"
+    },
+    {
+      "name": "peft",
+      "version": "0.20.0"
+    },
+    {
+      "name": "pexpect",
+      "version": "4.9.0"
+    },
+    {
+      "name": "pillow",
+      "version": "11.3.0"
+    },
+    {
+      "name": "pip",
+      "version": "23.3.2"
+    },
+    {
+      "name": "platformdirs",
+      "version": "4.11.0"
+    },
+    {
+      "name": "plotly",
+      "version": "6.9.0"
+    },
+    {
+      "name": "pooch",
+      "version": "1.9.0"
+    },
+    {
+      "name": "portalocker",
+      "version": "4.1.0"
+    },
+    {
+      "name": "pre_commit",
+      "version": "4.6.1"
+    },
+    {
+      "name": "prettytable",
+      "version": "3.18.0"
+    },
+    {
+      "name": "prometheus-fastapi-instrumentator",
+      "version": "8.1.0"
+    },
+    {
+      "name": "prometheus_client",
+      "version": "0.26.0"
+    },
+    {
+      "name": "prompt_toolkit",
+      "version": "3.0.53"
+    },
+    {
+      "name": "propcache",
+      "version": "0.5.2"
+    },
+    {
+      "name": "protobuf",
+      "version": "6.33.6"
+    },
+    {
+      "name": "psutil",
+      "version": "7.2.2"
+    },
+    {
+      "name": "ptyprocess",
+      "version": "0.7.0"
+    },
+    {
+      "name": "pure_eval",
+      "version": "0.2.3"
+    },
+    {
+      "name": "pwinput",
+      "version": "1.0.3"
+    },
+    {
+      "name": "py-cpuinfo",
+      "version": "9.0.0"
+    },
+    {
+      "name": "py-spy",
+      "version": "0.4.2"
+    },
+    {
+      "name": "pyarrow",
+      "version": "25.0.0"
+    },
+    {
+      "name": "pyasn1",
+      "version": "0.6.4"
+    },
+    {
+      "name": "pyasn1_modules",
+      "version": "0.4.2"
+    },
+    {
+      "name": "pybase64",
+      "version": "1.4.3"
+    },
+    {
+      "name": "pybind11",
+      "version": "3.0.4"
+    },
+    {
+      "name": "pycountry",
+      "version": "26.2.16"
+    },
+    {
+      "name": "pycparser",
+      "version": "3.0"
+    },
+    {
+      "name": "pycryptodome",
+      "version": "3.23.0"
+    },
+    {
+      "name": "pydantic",
+      "version": "2.11.10"
+    },
+    {
+      "name": "pydantic-extra-types",
+      "version": "2.11.1"
+    },
+    {
+      "name": "pydantic-settings",
+      "version": "2.14.2"
+    },
+    {
+      "name": "pydantic_core",
+      "version": "2.33.2"
+    },
+    {
+      "name": "pydub",
+      "version": "0.25.1"
+    },
+    {
+      "name": "pyecharts",
+      "version": "2.1.0"
+    },
+    {
+      "name": "pyelftools",
+      "version": "0.33"
+    },
+    {
+      "name": "Pygments",
+      "version": "2.20.0"
+    },
+    {
+      "name": "PyJWT",
+      "version": "2.13.0"
+    },
+    {
+      "name": "pylatexenc",
+      "version": "2.10"
+    },
+    {
+      "name": "pynndescent",
+      "version": "0.6.0"
+    },
+    {
+      "name": "pynvvideocodec",
+      "version": "2.0.4"
+    },
+    {
+      "name": "pyparsing",
+      "version": "3.3.2"
+    },
+    {
+      "name": "pypinyin",
+      "version": "0.55.0"
+    },
+    {
+      "name": "python-dateutil",
+      "version": "2.9.0.post0"
+    },
+    {
+      "name": "python-discovery",
+      "version": "1.5.1"
+    },
+    {
+      "name": "python-dotenv",
+      "version": "1.2.2"
+    },
+    {
+      "name": "python-json-logger",
+      "version": "4.1.0"
+    },
+    {
+      "name": "python-Levenshtein",
+      "version": "0.27.3"
+    },
+    {
+      "name": "python-multipart",
+      "version": "0.0.32"
+    },
+    {
+      "name": "pytz",
+      "version": "2026.3.post1"
+    },
+    {
+      "name": "PyYAML",
+      "version": "6.0.3"
+    },
+    {
+      "name": "pyzmq",
+      "version": "27.1.0"
+    },
+    {
+      "name": "quack-kernels",
+      "version": "0.5.0"
+    },
+    {
+      "name": "qwen-omni-utils",
+      "version": "0.0.9"
+    },
+    {
+      "name": "qwen-vl-utils",
+      "version": "0.0.14"
+    },
+    {
+      "name": "rank-bm25",
+      "version": "0.2.2"
+    },
+    {
+      "name": "RapidFuzz",
+      "version": "3.14.5"
+    },
+    {
+      "name": "ray",
+      "version": "2.56.1"
+    },
+    {
+      "name": "referencing",
+      "version": "0.37.0"
+    },
+    {
+      "name": "regex",
+      "version": "2026.7.19"
+    },
+    {
+      "name": "requests",
+      "version": "2.34.2"
+    },
+    {
+      "name": "rich",
+      "version": "15.0.0"
+    },
+    {
+      "name": "rich-toolkit",
+      "version": "0.20.3"
+    },
+    {
+      "name": "rignore",
+      "version": "0.8.0"
+    },
+    {
+      "name": "rouge",
+      "version": "1.0.1"
+    },
+    {
+      "name": "rouge-chinese",
+      "version": "1.0.3"
+    },
+    {
+      "name": "rouge_score",
+      "version": "0.1.2"
+    },
+    {
+      "name": "rpds-py",
+      "version": "2026.6.3"
+    },
+    {
+      "name": "ruff",
+      "version": "0.16.1"
+    },
+    {
+      "name": "sacrebleu",
+      "version": "2.6.0"
+    },
+    {
+      "name": "safehttpx",
+      "version": "0.1.7"
+    },
+    {
+      "name": "safetensors",
+      "version": "0.8.0"
+    },
+    {
+      "name": "scikit-learn",
+      "version": "1.9.0"
+    },
+    {
+      "name": "scipy",
+      "version": "1.17.1"
+    },
+    {
+      "name": "seaborn",
+      "version": "0.13.2"
+    },
+    {
+      "name": "semantic-version",
+      "version": "2.10.0"
+    },
+    {
+      "name": "sentence-transformers",
+      "version": "5.6.1"
+    },
+    {
+      "name": "sentencepiece",
+      "version": "0.2.2"
+    },
+    {
+      "name": "sentry-sdk",
+      "version": "2.66.1"
+    },
+    {
+      "name": "setproctitle",
+      "version": "1.3.7"
+    },
+    {
+      "name": "setuptools",
+      "version": "80.10.2"
+    },
+    {
+      "name": "shellingham",
+      "version": "1.5.4"
+    },
+    {
+      "name": "simplejson",
+      "version": "4.1.1"
+    },
+    {
+      "name": "six",
+      "version": "1.17.0"
+    },
+    {
+      "name": "sniffio",
+      "version": "1.3.1"
+    },
+    {
+      "name": "sortedcontainers",
+      "version": "2.4.0"
+    },
+    {
+      "name": "soundfile",
+      "version": "0.14.0"
+    },
+    {
+      "name": "soxr",
+      "version": "1.1.0"
+    },
+    {
+      "name": "sse-starlette",
+      "version": "3.4.6"
+    },
+    {
+      "name": "stack-data",
+      "version": "0.6.3"
+    },
+    {
+      "name": "starlette",
+      "version": "0.52.1"
+    },
+    {
+      "name": "sty",
+      "version": "1.0.6"
+    },
+    {
+      "name": "supervisor",
+      "version": "4.3.0"
+    },
+    {
+      "name": "swanlab",
+      "version": "0.9.2"
+    },
+    {
+      "name": "sympy",
+      "version": "1.14.0"
+    },
+    {
+      "name": "tabulate",
+      "version": "0.10.0"
+    },
+    {
+      "name": "tenacity",
+      "version": "9.1.4"
+    },
+    {
+      "name": "tensorboard",
+      "version": "2.21.0"
+    },
+    {
+      "name": "tensorboard-data-server",
+      "version": "0.7.2"
+    },
+    {
+      "name": "tensorboardX",
+      "version": "2.6.5"
+    },
+    {
+      "name": "termcolor",
+      "version": "3.3.0"
+    },
+    {
+      "name": "threadpoolctl",
+      "version": "3.6.0"
+    },
+    {
+      "name": "tiktoken",
+      "version": "0.13.0"
+    },
+    {
+      "name": "tilelang",
+      "version": "0.1.9"
+    },
+    {
+      "name": "timeout-decorator",
+      "version": "0.5.0"
+    },
+    {
+      "name": "timm",
+      "version": "1.0.28"
+    },
+    {
+      "name": "tokenizers",
+      "version": "0.22.2"
+    },
+    {
+      "name": "tokenspeed-mla",
+      "version": "0.1.2"
+    },
+    {
+      "name": "tokenspeed-triton",
+      "version": "3.8.10.post20260721"
+    },
+    {
+      "name": "tomlkit",
+      "version": "0.13.3"
+    },
+    {
+      "name": "torch",
+      "version": "2.11.0+cu130"
+    },
+    {
+      "name": "torch-complex",
+      "version": "0.4.4"
+    },
+    {
+      "name": "torch_c_dlpack_ext",
+      "version": "0.1.5"
+    },
+    {
+      "name": "torchaudio",
+      "version": "2.11.0+cu130"
+    },
+    {
+      "name": "torchcodec",
+      "version": "0.15.0"
+    },
+    {
+      "name": "torchmetrics",
+      "version": "1.9.0"
+    },
+    {
+      "name": "torchvision",
+      "version": "0.26.0+cu130"
+    },
+    {
+      "name": "tqdm",
+      "version": "4.70.0"
+    },
+    {
+      "name": "traitlets",
+      "version": "5.16.1"
+    },
+    {
+      "name": "transformer_engine",
+      "version": "2.14.1+366798ef"
+    },
+    {
+      "name": "transformers",
+      "version": "5.14.1"
+    },
+    {
+      "name": "transformers-stream-generator",
+      "version": "0.0.5"
+    },
+    {
+      "name": "triton",
+      "version": "3.6.0"
+    },
+    {
+      "name": "trl",
+      "version": "0.29.1"
+    },
+    {
+      "name": "truststore",
+      "version": "0.10.4"
+    },
+    {
+      "name": "typer",
+      "version": "0.27.0"
+    },
+    {
+      "name": "typing-inspection",
+      "version": "0.4.2"
+    },
+    {
+      "name": "typing_extensions",
+      "version": "4.16.0"
+    },
+    {
+      "name": "tzdata",
+      "version": "2026.3"
+    },
+    {
+      "name": "umap-learn",
+      "version": "0.5.12"
+    },
+    {
+      "name": "urllib3",
+      "version": "2.7.0"
+    },
+    {
+      "name": "uvicorn",
+      "version": "0.52.1"
+    },
+    {
+      "name": "uvloop",
+      "version": "0.22.1"
+    },
+    {
+      "name": "validators",
+      "version": "0.35.0"
+    },
+    {
+      "name": "virtualenv",
+      "version": "21.7.1"
+    },
+    {
+      "name": "vllm",
+      "version": "0.25.1"
+    },
+    {
+      "name": "wandb",
+      "version": "0.28.1"
+    },
+    {
+      "name": "watchdog",
+      "version": "6.0.0"
+    },
+    {
+      "name": "watchfiles",
+      "version": "1.2.0"
+    },
+    {
+      "name": "wcwidth",
+      "version": "0.8.2"
+    },
+    {
+      "name": "websockets",
+      "version": "15.0.1"
+    },
+    {
+      "name": "Werkzeug",
+      "version": "3.1.8"
+    },
+    {
+      "name": "wheel",
+      "version": "0.47.0"
+    },
+    {
+      "name": "word2number",
+      "version": "1.1"
+    },
+    {
+      "name": "wrapt",
+      "version": "2.3.0"
+    },
+    {
+      "name": "xgrammar",
+      "version": "0.2.3"
+    },
+    {
+      "name": "xlsxwriter",
+      "version": "3.2.9"
+    },
+    {
+      "name": "xxhash",
+      "version": "3.8.1"
+    },
+    {
+      "name": "yapf",
+      "version": "0.43.0"
+    },
+    {
+      "name": "yarl",
+      "version": "1.24.5"
+    },
+    {
+      "name": "z3-solver",
+      "version": "4.15.4.0"
+    },
+    {
+      "name": "zhconv",
+      "version": "1.4.3"
+    },
+    {
+      "name": "zipp",
+      "version": "4.1.0"
+    },
+    {
+      "name": "zstandard",
+      "version": "0.25.0"
+    }
+  ],
+  "clearml_overlay": [
+    {
+      "path": "bin/clearml-data",
+      "bytes": 229,
+      "sha256": "4efd7345ca1704ceff9e24643823d612089fc719c35c18a98ae8f15fa82b844f"
+    },
+    {
+      "path": "bin/clearml-init",
+      "bytes": 231,
+      "sha256": "3a638e834373f8a6dcb243844ae9ca7e287f14fe3cbd522892b3514e3cc40d6f"
+    },
+    {
+      "path": "bin/clearml-param-search",
+      "bytes": 228,
+      "sha256": "4e84cf5a3422c194b96d0c4ce54b68ef32761ddefcf4718d93364627f746b779"
+    },
+    {
+      "path": "bin/clearml-task",
+      "bytes": 229,
+      "sha256": "8973e1a8485934044758aadf356477eba89425bb748d72bc5b6b1bded892dca7"
+    },
+    {
+      "path": "clearml/__init__.py",
+      "bytes": 1014,
+      "sha256": "0ce67be96f4f996b4cf3b827268faaee3c474db328a79b7fb41dc01befeb1008"
+    },
+    {
+      "path": "clearml/automation/__init__.py",
+      "bytes": 744,
+      "sha256": "7384c2598e89e25023e62e69266306a3aa42590c47378df2b3dfb911c634df21"
+    },
+    {
+      "path": "clearml/automation/auto_scaler.py",
+      "bytes": 18480,
+      "sha256": "8b0337908d63edf5aed3678eebf246999f0b84718a6d9759ef4b83b8da677997"
+    },
+    {
+      "path": "clearml/automation/aws_driver.py",
+      "bytes": 8010,
+      "sha256": "5c3000a758ec367e321e02df2b0d976c9e760ea157dd6ffc5505060b4668d02c"
+    },
+    {
+      "path": "clearml/automation/cloud_driver.py",
+      "bytes": 6269,
+      "sha256": "96c23bb5388ec1f568315048a41e7a6dd7fc0879f2df6da8e98024b43d7be6a2"
+    },
+    {
+      "path": "clearml/automation/controller.py",
+      "bytes": 263909,
+      "sha256": "06f4a4efead3af1d35deca7bde7db286f40ce18068e95dd4234529f5b6a4de99"
+    },
+    {
+      "path": "clearml/automation/hpbandster/__init__.py",
+      "bytes": 65,
+      "sha256": "7b8976af023aa2c399864686d3a72b8aa05d3f5b593c4a9edbf600a44f1edae5"
+    },
+    {
+      "path": "clearml/automation/hpbandster/bandster.py",
+      "bytes": 18271,
+      "sha256": "4f618b41df814ef163a6b1df548da42ca870fe04e98a4ac79bf4703a396708c5"
+    },
+    {
+      "path": "clearml/automation/job.py",
+      "bytes": 36407,
+      "sha256": "e07413272bec544c09702151d8f3101e784a8292cb88512126f146174d4a8b7f"
+    },
+    {
+      "path": "clearml/automation/monitor.py",
+      "bytes": 6411,
+      "sha256": "6338c1f0568abafd8edaea076402e526626c979a396a804ba7eb00849a0e8444"
+    },
+    {
+      "path": "clearml/automation/optimization.py",
+      "bytes": 107507,
+      "sha256": "6f8c3a177700319914d74f7cc2c17a0d696ae82961cf79fae75815f100cce629"
+    },
+    {
+      "path": "clearml/automation/optuna/__init__.py",
+      "bytes": 67,
+      "sha256": "57711156530e107c4bc259c5ab9c14be0a3a1257424a8033735d42625415afd4"
+    },
+    {
+      "path": "clearml/automation/optuna/optuna.py",
+      "bytes": 11862,
+      "sha256": "4951995b5b86621aab1e4aa36fe024b2114eb201e8b8880086b44aaa2140f06e"
+    },
+    {
+      "path": "clearml/automation/parameters.py",
+      "bytes": 13158,
+      "sha256": "b1f0a25296dda720467e839418005e0aa0499f447761e74141d7c6e79e2b9823"
+    },
+    {
+      "path": "clearml/automation/scheduler.py",
+      "bytes": 40823,
+      "sha256": "0ece0a6d7a300634a568737ef67b62d4f0cfe195cfa02d7a7372906891d76862"
+    },
+    {
+      "path": "clearml/automation/trigger.py",
+      "bytes": 36992,
+      "sha256": "ab013fa2f037af4795edbd2cae1e2d1a427cf5b16d98d378336af38f29df094e"
+    },
+    {
+      "path": "clearml/backend_api/__init__.py",
+      "bytes": 253,
+      "sha256": "ba8f28177ffc106c35281e97340c0703c217042225d16d2c8c5804c48167e152"
+    },
+    {
+      "path": "clearml/backend_api/api_proxy.py",
+      "bytes": 3275,
+      "sha256": "e38f727d8fd7bceea0587c98d37d85aafe90a6a272eea55f9078be18e372b400"
+    },
+    {
+      "path": "clearml/backend_api/config/__init__.py",
+      "bytes": 548,
+      "sha256": "e1ed3eea91fd767f05ab591d5eca7da2f3b53a7e354bd0be0e5beebc3cbbc4b8"
+    },
+    {
+      "path": "clearml/backend_api/config/default/api.conf",
+      "bytes": 2432,
+      "sha256": "1c48acdd45bac1137929e0429f4c7def67365093a5406ac335282ef9f0a4ee8f"
+    },
+    {
+      "path": "clearml/backend_api/config/default/logging.conf",
+      "bytes": 125,
+      "sha256": "dd8ad10747ffd46f6142c7ae3ae5de417e3e34b06908a5f49c75a8703163b9a6"
+    },
+    {
+      "path": "clearml/backend_api/schema/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "clearml/backend_api/schema/action.py",
+      "bytes": 1195,
+      "sha256": "353cc683cf0e233c6cadee178bfc7463a06b3393bad5d33ff4ed10b77b7e0c54"
+    },
+    {
+      "path": "clearml/backend_api/schema/service.py",
+      "bytes": 6808,
+      "sha256": "41d3c872d68c3cf4519f3810bf6ab290ad88de45f5ef23aec2be3913d4684cbd"
+    },
+    {
+      "path": "clearml/backend_api/services/__init__.py",
+      "bytes": 632,
+      "sha256": "53f6235a0a9053188b471c2df6460f4c25c219159d1afec535ddab5a0ecd3797"
+    },
+    {
+      "path": "clearml/backend_api/services/v2_13/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "clearml/backend_api/services/v2_13/auth.py",
+      "bytes": 17666,
+      "sha256": "4655dca2dc0b4e8e2ac497478519c7f262f892bc82526f8e46c7bde9f4481dd9"
+    },
+    {
+      "path": "clearml/backend_api/services/v2_13/events.py",
+      "bytes": 108423,
+      "sha256": "55584c7279a6e5348ab5e2336f2e900f476406ee1ec0e8f54f5c21072926fecd"
+    },
+    {
+      "path": "clearml/backend_api/services/v2_13/models.py",
+      "bytes": 128796,
+      "sha256": "5890560369cdaecb31dd3a348c6850f99aea43da3d2c5dcaa91ef1e0a1f33093"
+    },
+    {
+      "path": "clearml/backend_api/services/v2_13/organization.py",
+      "bytes": 4891,
+      "sha256": "649e247e3292c840a7d88b58f4f5f6d380274f37a70307d8e2d37e3b7081e4a9"
+    },
+    {
+      "path": "clearml/backend_api/services/v2_13/projects.py",
+      "bytes": 114864,
+      "sha256": "54536397f4bf9e938a2192c61ad7dab98d6a8dc97154b5aa42d9afd1beaa5a89"
+    },
+    {
+      "path": "clearml/backend_api/services/v2_13/queues.py",
+      "bytes": 78285,
+      "sha256": "af923c0f7d4772003f93087bf5af9a5844c71bc2f2da11e86f27a1ca7932c219"
+    },
+    {
+      "path": "clearml/backend_api/services/v2_13/tasks.py",
+      "bytes": 403079,
+      "sha256": "6fcba8a56697dde0813865f296915bf74f04385b71c1e179e3ea890c0d0a51e6"
+    },
+    {
+      "path": "clearml/backend_api/services/v2_13/workers.py",
+      "bytes": 81271,
+      "sha256": "1eae7091572ee42ac1bd3a4a4ed06c7cdc72dccc396ac9a88327ae508fe58b3a"
+    },
+    {
+      "path": "clearml/backend_api/services/v2_20/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "clearml/backend_api/services/v2_20/auth.py",
+      "bytes": 22486,
+      "sha256": "4e04d1fde99cd085640bfdeced6bac37f6445a73d090369b03bcd6f31052213e"
+    },
+    {
+      "path": "clearml/backend_api/services/v2_20/events.py",
+      "bytes": 161561,
+      "sha256": "ac928a02c66ae65fc2a3d339f056c64b384118b7a046d9a77fb082bfe99c8b49"
+    },
+    {
+      "path": "clearml/backend_api/services/v2_20/models.py",
+      "bytes": 148572,
+      "sha256": "0efd7965cbd765246e4fca775785ce889c69b5b313ccad4a48bd57e114473b3d"
+    },
+    {
+      "path": "clearml/backend_api/services/v2_20/organization.py",
+      "bytes": 5168,
+      "sha256": "c9aae748d56686c1e1ef81862fd25fb9dce1649072c53df43c7d3a8f429d41d8"
+    },
+    {
+      "path": "clearml/backend_api/services/v2_20/pipelines.py",
+      "bytes": 4513,
+      "sha256": "cb8bddb0a67ed1828c0adce6365bf521257ff483971721b21a1cdfb968ffba24"
+    },
+    {
+      "path": "clearml/backend_api/services/v2_20/projects.py",
+      "bytes": 153549,
+      "sha256": "76f8c55b51816ccecf44f50d9ebe966cd2ef44868e039b6f71fee925727de4f0"
+    },
+    {
+      "path": "clearml/backend_api/services/v2_20/queues.py",
+      "bytes": 88897,
+      "sha256": "666a976f251972be6f7b1349bdb2554d8a12171cf46501c3a745fa77f120454e"
+    },
+    {
+      "path": "clearml/backend_api/services/v2_20/tasks.py",
+      "bytes": 429094,
+      "sha256": "bb62c2c4975755a88917aeab06e1a35b4c76af1c458dc6600a37956dbc917443"
+    },
+    {
+      "path": "clearml/backend_api/services/v2_20/workers.py",
+      "bytes": 82930,
+      "sha256": "f302fb18c3b138d436e85f385de00caef47f7029c16a11be1e3d296c03e87ea4"
+    },
+    {
+      "path": "clearml/backend_api/services/v2_23/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "clearml/backend_api/services/v2_23/auth.py",
+      "bytes": 21404,
+      "sha256": "21210fc52fe13209810edc148cc0f68be5468cf7e6e0756c3568ea1118799bcb"
+    },
+    {
+      "path": "clearml/backend_api/services/v2_23/events.py",
+      "bytes": 184405,
+      "sha256": "aa79dcc9b320f62fd94cdb7d26357206e337c11ec905d13b4dcdcc487584f2c1"
+    },
+    {
+      "path": "clearml/backend_api/services/v2_23/models.py",
+      "bytes": 149486,
+      "sha256": "9f4af399e0d40f2b6b321e2778aeceab115398bd59c00ca3d31f99bc01a36a72"
+    },
+    {
+      "path": "clearml/backend_api/services/v2_23/organization.py",
+      "bytes": 5168,
+      "sha256": "c21b2bd5bf0c4a3b7dd3be921930e1f799ad99a230eee0a530e7d2895e5192f7"
+    },
+    {
+      "path": "clearml/backend_api/services/v2_23/pipelines.py",
+      "bytes": 4513,
+      "sha256": "5b323bf7a78a0c5dc071cbea9221884259d04530669961080078e7aab847762c"
+    },
+    {
+      "path": "clearml/backend_api/services/v2_23/projects.py",
+      "bytes": 154283,
+      "sha256": "51a71448990e2407491808f518a5149284d594efbd93257df6f666e60b1d44e0"
+    },
+    {
+      "path": "clearml/backend_api/services/v2_23/queues.py",
+      "bytes": 92383,
+      "sha256": "d5f69fb85fa28db64fb52a36379d98499193d36aadc98a4ce9db75b42ed0862f"
+    },
+    {
+      "path": "clearml/backend_api/services/v2_23/tasks.py",
+      "bytes": 441555,
+      "sha256": "095fb9ab8f0d9df3056af9ddc1fa4300a8057d872767ef95e9a9e98c21fcd425"
+    },
+    {
+      "path": "clearml/backend_api/services/v2_23/workers.py",
+      "bytes": 86980,
+      "sha256": "2af5658b0639d78100838f51312d4e65e7b7fd4d35a9dab1db31984e718b6747"
+    },
+    {
+      "path": "clearml/backend_api/services/v2_9/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "clearml/backend_api/services/v2_9/auth.py",
+      "bytes": 16821,
+      "sha256": "40b4ef436dab5154a9d09e591a585db4f874e047cfa2be0a4de3e4b689ea1848"
+    },
+    {
+      "path": "clearml/backend_api/services/v2_9/events.py",
+      "bytes": 96847,
+      "sha256": "3bda9375100b81880bfc3c297f91b76377ca3f1b965bb7f4f02e6b6ecf24d1aa"
+    },
+    {
+      "path": "clearml/backend_api/services/v2_9/models.py",
+      "bytes": 96289,
+      "sha256": "0d74e27c22ebe0a17eec43cf5e7980a60a54e0187ffbb499eff53f1de6bf09da"
+    },
+    {
+      "path": "clearml/backend_api/services/v2_9/organization.py",
+      "bytes": 4910,
+      "sha256": "2cd14cfd8b2697bc91146d2c24203a6e5b76ba2af79a2099977adc6c4da5daab"
+    },
+    {
+      "path": "clearml/backend_api/services/v2_9/projects.py",
+      "bytes": 85509,
+      "sha256": "c021d18c37942054becf9b4a28945805c6d97a8f93bda9785e66d8c6a93357ad"
+    },
+    {
+      "path": "clearml/backend_api/services/v2_9/queues.py",
+      "bytes": 66587,
+      "sha256": "7409333af27c87c16da27621de76df534f772592320c18a1d5b51becee58bd00"
+    },
+    {
+      "path": "clearml/backend_api/services/v2_9/tasks.py",
+      "bytes": 308601,
+      "sha256": "c6c117fd4850f73aaa78b7bbf742fe1cf63b975441496d3043a50d8fe97a7cb9"
+    },
+    {
+      "path": "clearml/backend_api/services/v2_9/workers.py",
+      "bytes": 81064,
+      "sha256": "26a833321c084f9cec73c02e2140df813c721135eda74f6dfa57e6bcf8d8ceef"
+    },
+    {
+      "path": "clearml/backend_api/session/__init__.py",
+      "bytes": 617,
+      "sha256": "ac03ecd8b0a6e5c81c9995d3faa8ae1eddf1e61492f0ff076033c363fb474e72"
+    },
+    {
+      "path": "clearml/backend_api/session/apimodel.py",
+      "bytes": 155,
+      "sha256": "c4b932ff4b0d75524cbba921d4278b784c1b06168f81c84afbef28c310a024a5"
+    },
+    {
+      "path": "clearml/backend_api/session/callresult.py",
+      "bytes": 5757,
+      "sha256": "fadc997dbfdf5df92ba8a4c7efe887c3894ea69a19cb78389e97d78ad01c01e4"
+    },
+    {
+      "path": "clearml/backend_api/session/client/__init__.py",
+      "bytes": 109,
+      "sha256": "7f6719b37a2acc8e8ff51f76080d5134d8389bedda2e8d0bb74a07d3ffe60fc9"
+    },
+    {
+      "path": "clearml/backend_api/session/client/client.py",
+      "bytes": 16294,
+      "sha256": "7c899830e460ba6a2ce2e7138552828d2e7368a5dd707cdf3d56117312316924"
+    },
+    {
+      "path": "clearml/backend_api/session/datamodel.py",
+      "bytes": 5279,
+      "sha256": "62044b42020e1843c8c513c185bb38c4e7266a009d85c0ef93c7927e9f59a5b9"
+    },
+    {
+      "path": "clearml/backend_api/session/defs.py",
+      "bytes": 2701,
+      "sha256": "72aef25d92a201f14a980dc7e8f490655283a3c029702659a65ba42712e547fd"
+    },
+    {
+      "path": "clearml/backend_api/session/errors.py",
+      "bytes": 345,
+      "sha256": "14aadad4075ef877d74553223df4d5d4450519c1656e8fa46738be0e754ec1ad"
+    },
+    {
+      "path": "clearml/backend_api/session/jsonmodels/__init__.py",
+      "bytes": 217,
+      "sha256": "192d80edcc6b3906be15df2b51ac55c930686ba4f5b45c26be1effbf2a20e706"
+    },
+    {
+      "path": "clearml/backend_api/session/jsonmodels/builders.py",
+      "bytes": 6397,
+      "sha256": "b5989e9cab9a5ea0a9b202ba4cf1ec0b9234792bf74dd9c92a13ade174b3c005"
+    },
+    {
+      "path": "clearml/backend_api/session/jsonmodels/collections.py",
+      "bytes": 552,
+      "sha256": "389c269241eee1f101ef6eac8e01678e4696479cf0a57983cdb02c2f6b055fc1"
+    },
+    {
+      "path": "clearml/backend_api/session/jsonmodels/errors.py",
+      "bytes": 145,
+      "sha256": "aa8ee95c65cbc1833b4d64f28501f402315b9f3aaa190aabb763156b2a7c769e"
+    },
+    {
+      "path": "clearml/backend_api/session/jsonmodels/fields.py",
+      "bytes": 13518,
+      "sha256": "e6e06eff5e856a70fee93eaf699e7232989509954980f3d851f35f15f8699904"
+    },
+    {
+      "path": "clearml/backend_api/session/jsonmodels/models.py",
+      "bytes": 4738,
+      "sha256": "0d2725add93dc249e1e36586631e6be809c1eb1db4c63b0bf1b8975ce2ef414d"
+    },
+    {
+      "path": "clearml/backend_api/session/jsonmodels/parsers.py",
+      "bytes": 2993,
+      "sha256": "5862c1bc3c74d14f520d7259fd1302243c405071cf5f071484e8006cc8f86f7e"
+    },
+    {
+      "path": "clearml/backend_api/session/jsonmodels/utilities.py",
+      "bytes": 4006,
+      "sha256": "0b0f28b079adccd58c686adbb7726ab112634b41a2e2af3ecc848197cf849828"
+    },
+    {
+      "path": "clearml/backend_api/session/jsonmodels/validators.py",
+      "bytes": 6294,
+      "sha256": "bf55e256e839bae611d15c7075b65a8517fa815b5d432cd1c2ddbf4625ca96cf"
+    },
+    {
+      "path": "clearml/backend_api/session/request.py",
+      "bytes": 3717,
+      "sha256": "59717c47388a5f73223f00466c758b5eb6e5dfe955125598eec4aae64d9e2260"
+    },
+    {
+      "path": "clearml/backend_api/session/response.py",
+      "bytes": 1935,
+      "sha256": "41e79a15b885f22587b4c59c212e1f173257076c03322d7b29c2a9fa38bf8070"
+    },
+    {
+      "path": "clearml/backend_api/session/session.py",
+      "bytes": 44066,
+      "sha256": "aec86ffc391e1b9289bce862124ad4f69077ff8e52e63fe974caa269982671ce"
+    },
+    {
+      "path": "clearml/backend_api/session/token_manager.py",
+      "bytes": 3498,
+      "sha256": "ec14c8d9f79308242173de801966d74a926cc25b413741f3c857ff05c388389f"
+    },
+    {
+      "path": "clearml/backend_api/utils.py",
+      "bytes": 7177,
+      "sha256": "9cef7d0be55f7e23a71b133b0be811d2950e61a25f61cb1b7ead32c8cad9a79f"
+    },
+    {
+      "path": "clearml/backend_config/__init__.py",
+      "bytes": 229,
+      "sha256": "dc1a33814216e8da754c68b48eaf8319cea40b3671f47e03774f314e986a53af"
+    },
+    {
+      "path": "clearml/backend_config/bucket_config.py",
+      "bytes": 16590,
+      "sha256": "df9f9efe05676589400ae869d3ed12748974468973604fb9dd7d6b380152fbab"
+    },
+    {
+      "path": "clearml/backend_config/config.py",
+      "bytes": 14662,
+      "sha256": "729a118f4d0c56641d4a3094ab1cb5d155aeb17f9097cfa6fc5fb7363b50310f"
+    },
+    {
+      "path": "clearml/backend_config/converters.py",
+      "bytes": 2019,
+      "sha256": "f4251456adf0d4e217defd5523daf877262c949ce98696aa294a541ade78d182"
+    },
+    {
+      "path": "clearml/backend_config/defs.py",
+      "bytes": 2041,
+      "sha256": "8ae0ee1352370c26df6bdce30320519fe2a229dc2c9c07e3c3e3b30a397a2703"
+    },
+    {
+      "path": "clearml/backend_config/entry.py",
+      "bytes": 3414,
+      "sha256": "c003c45bf0c4fd609e2d4e1bda2ddb265fcf3e7f8a8274460088d0bc80af8666"
+    },
+    {
+      "path": "clearml/backend_config/environment.py",
+      "bytes": 1058,
+      "sha256": "8afb7a0680e8c83d1436a9ddc9d4aec9d47c7a7d26267cb207254b73e61e6d6a"
+    },
+    {
+      "path": "clearml/backend_config/errors.py",
+      "bytes": 186,
+      "sha256": "83ef9f6428f21f4443b91e7cb9ee10d278222e8a8cd89d51b2e46d747c625acb"
+    },
+    {
+      "path": "clearml/backend_config/log.py",
+      "bytes": 970,
+      "sha256": "74e1eee69057fb67240791d6f9a96fe8d6e3bdaf908132d256b48bba1dc80786"
+    },
+    {
+      "path": "clearml/backend_config/utils.py",
+      "bytes": 3805,
+      "sha256": "a61485d1f2fb061fbe0bd27f3e7bc19ca14d0f8346a233960b5c8b22bb817d3a"
+    },
+    {
+      "path": "clearml/backend_interface/__init__.py",
+      "bytes": 91,
+      "sha256": "6f61777f11ad25ff400b862e5499384c4879f17362c652f7d0a2aebb53f7dabf"
+    },
+    {
+      "path": "clearml/backend_interface/base.py",
+      "bytes": 7078,
+      "sha256": "7e190def4a8abd3322800a46f8b29d61048c1de6ab789517a8da21cbe25147fb"
+    },
+    {
+      "path": "clearml/backend_interface/logger.py",
+      "bytes": 12433,
+      "sha256": "9352eb8474a166bf5fbe8a44948f295d70e68aa702f9ebb0a5b885b58a20a807"
+    },
+    {
+      "path": "clearml/backend_interface/metrics/__init__.py",
+      "bytes": 270,
+      "sha256": "cc01ac2db82b1cda714c1d311ab8c8ccda65c8ac0a33c4e21802948a0f3a0c09"
+    },
+    {
+      "path": "clearml/backend_interface/metrics/events.py",
+      "bytes": 18080,
+      "sha256": "8019d324ab8d018c02fb2f73ea5e91c9bdea985ca1323f2725ba7bff9f312677"
+    },
+    {
+      "path": "clearml/backend_interface/metrics/interface.py",
+      "bytes": 15570,
+      "sha256": "986d648c93fe96b934958183dc0eaa5c7f7ffcf12389313b468c8740cde2143b"
+    },
+    {
+      "path": "clearml/backend_interface/metrics/reporter.py",
+      "bytes": 40599,
+      "sha256": "1b9546e16a4c3b75bbbba00481804654bc0065c66c0f047fb4b6c198467c227f"
+    },
+    {
+      "path": "clearml/backend_interface/model.py",
+      "bytes": 20787,
+      "sha256": "a3fb057aa575ebd31dad7eb3c81d492228794a8db688ed83f51ea343c3bfd445"
+    },
+    {
+      "path": "clearml/backend_interface/session.py",
+      "bytes": 676,
+      "sha256": "8ef65e6d12b35c034cd6e8a5b327a424e98f6009091e8ae79ca31d2929cc2027"
+    },
+    {
+      "path": "clearml/backend_interface/setupuploadmixin.py",
+      "bytes": 6540,
+      "sha256": "404a5ae42a87aa285d06f9ede9dffd7e32bd939dfd7b2c2496586243de043510"
+    },
+    {
+      "path": "clearml/backend_interface/task/__init__.py",
+      "bytes": 43,
+      "sha256": "665ddf1630fe3355c1a0628f3c414960051726c30f3e0b6ac5deaad60dc73a53"
+    },
+    {
+      "path": "clearml/backend_interface/task/access.py",
+      "bytes": 4187,
+      "sha256": "4bac9ca05bd8297950ddeed7a55b52368e6f7c9307bc237f3d6fa8d05240d644"
+    },
+    {
+      "path": "clearml/backend_interface/task/args.py",
+      "bytes": 30699,
+      "sha256": "453582abc214c8a8179d8d0f88d7e8dcb3cc84492829f116f5f91f23e5714f16"
+    },
+    {
+      "path": "clearml/backend_interface/task/development/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "clearml/backend_interface/task/development/stop_signal.py",
+      "bytes": 2639,
+      "sha256": "d49ffcce75ceec6dda23a5ef21dd94d5e6e79bc7c34a9d60b35f90c678f1a206"
+    },
+    {
+      "path": "clearml/backend_interface/task/development/worker.py",
+      "bytes": 6140,
+      "sha256": "a0e61eaef01cc68acc66b115d84a741fffece37781dbbe9dc53928f49a341e73"
+    },
+    {
+      "path": "clearml/backend_interface/task/hyperparams.py",
+      "bytes": 9290,
+      "sha256": "a4ff886316a307d726af46adc373d5dd811398d9258a2e94cc4cf982d2e20887"
+    },
+    {
+      "path": "clearml/backend_interface/task/log.py",
+      "bytes": 13639,
+      "sha256": "810ca44cf325935a04b9c52cf911c63977fe08039ea9df2cd2fdee8202a06128"
+    },
+    {
+      "path": "clearml/backend_interface/task/models.py",
+      "bytes": 4209,
+      "sha256": "c56be924dee887bc91eb16d75ad927a40677e2da40b780d33387658453dc7b0c"
+    },
+    {
+      "path": "clearml/backend_interface/task/populate.py",
+      "bytes": 57074,
+      "sha256": "c39a0264ffbd08995140c926c7eae5238a95cad491dcaf96fe5cc69ef12155be"
+    },
+    {
+      "path": "clearml/backend_interface/task/repo/__init__.py",
+      "bytes": 106,
+      "sha256": "d823ebb279e5aa2f6b5cbe8479db26fed7f298d19327ab5f46aeb4aca4b49fa1"
+    },
+    {
+      "path": "clearml/backend_interface/task/repo/detectors.py",
+      "bytes": 12005,
+      "sha256": "2de67afdb5f0d6eb309a313491eef8d925af384318517998fa2f6a48c0c75450"
+    },
+    {
+      "path": "clearml/backend_interface/task/repo/freeze.py",
+      "bytes": 3449,
+      "sha256": "47205e6bc9f9ffb8966e2e1a241f8c4a4f3f7eaad2f89a349721be6c93d1e8a1"
+    },
+    {
+      "path": "clearml/backend_interface/task/repo/scriptinfo.py",
+      "bytes": 65245,
+      "sha256": "40828bb55548180fa36a99b3368bcff0175192c8886d026de7b12c94fcfa7445"
+    },
+    {
+      "path": "clearml/backend_interface/task/repo/util.py",
+      "bytes": 1175,
+      "sha256": "602e11bf2843c08c2fb2b416c264bd89cf98045c531a35abde57eab88a40c280"
+    },
+    {
+      "path": "clearml/backend_interface/task/task.py",
+      "bytes": 129948,
+      "sha256": "1466012cc7142723efc2fec50f18d9289479cb6fce00a54e0a7529a74949c7eb"
+    },
+    {
+      "path": "clearml/backend_interface/util.py",
+      "bytes": 9472,
+      "sha256": "cb94320d01d824ab84e804c79ae9f32d14b5a87e10508ba3fa362f23336c2690"
+    },
+    {
+      "path": "clearml/binding/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "clearml/binding/absl_bind.py",
+      "bytes": 5271,
+      "sha256": "6f88002a330bb466fc6a30347165d6b56b2fcb7d0ac18db01fc3ba158d2bf076"
+    },
+    {
+      "path": "clearml/binding/args.py",
+      "bytes": 13229,
+      "sha256": "7c8e64fb42fc78b6206f87cd5017858172449a5e3cc738bfef1f244eb9332985"
+    },
+    {
+      "path": "clearml/binding/artifacts.py",
+      "bytes": 52279,
+      "sha256": "5922e967c6090d6aac0eb2e0fdceff9e0c786c47958f67eecc040f00a9930149"
+    },
+    {
+      "path": "clearml/binding/click_bind.py",
+      "bytes": 7103,
+      "sha256": "43dfc6dee111393d7bac44e404c5d66a8a1bbc708d7d29429366d7706f7c6fb7"
+    },
+    {
+      "path": "clearml/binding/environ_bind.py",
+      "bytes": 11493,
+      "sha256": "59c55ae794682ca2fd47ce21d236f68d60fef8bb619e00b500960fee2dbd549b"
+    },
+    {
+      "path": "clearml/binding/fire_bind.py",
+      "bytes": 14490,
+      "sha256": "f766185392c615f71e8631ce211397522ddd181141be3c643cfb2b268ce2dbe9"
+    },
+    {
+      "path": "clearml/binding/frameworks/__init__.py",
+      "bytes": 21408,
+      "sha256": "52b6cf9dd104c96ff94cfe7cd11090e75bddb9799baa43bb70f1ad26fddedf74"
+    },
+    {
+      "path": "clearml/binding/frameworks/base_bind.py",
+      "bytes": 1044,
+      "sha256": "492e20980b1f4ba70663c275f61ffc2c3d64443290712bfd958cfde5bfdaa089"
+    },
+    {
+      "path": "clearml/binding/frameworks/catboost_bind.py",
+      "bytes": 5415,
+      "sha256": "324f96119c6640b7a3652fa224f3df9abf56501dc86e5b2d09c2081395d69de0"
+    },
+    {
+      "path": "clearml/binding/frameworks/fastai_bind.py",
+      "bytes": 12484,
+      "sha256": "37afe597b5a91dec247c0c4fb0a3b509c3b92794a44277daea037151ae25f141"
+    },
+    {
+      "path": "clearml/binding/frameworks/lightgbm_bind.py",
+      "bytes": 4975,
+      "sha256": "ccdd8e11f8ee04430ae3ade8296d27a2d0ad2978f98eef63e31165fe8b003b79"
+    },
+    {
+      "path": "clearml/binding/frameworks/megengine_bind.py",
+      "bytes": 5665,
+      "sha256": "7ed0715e40baa56990eeb6699ae581d771f4d74a9ab54692a446f685479d2841"
+    },
+    {
+      "path": "clearml/binding/frameworks/pytorch_bind.py",
+      "bytes": 12820,
+      "sha256": "5e8a9a83a7fdc5d4b835e4ac3e1a0d82dc404cee853e23895f9b24dc48fe7322"
+    },
+    {
+      "path": "clearml/binding/frameworks/tensorflow_bind.py",
+      "bytes": 108498,
+      "sha256": "6f6becf5ebe38b67351de5707d512628fd32ac94b81936351b4e94c29d60f051"
+    },
+    {
+      "path": "clearml/binding/frameworks/xgboost_bind.py",
+      "bytes": 6842,
+      "sha256": "9c4c76d4cf99c547745fd2bb52861ab24933f946fad776810c892dc8e9863492"
+    },
+    {
+      "path": "clearml/binding/gradio_bind.py",
+      "bytes": 4182,
+      "sha256": "3a04ebe4862f230b470c38a7ac2c4d6c80d78632d78421b6c3420fe37b213567"
+    },
+    {
+      "path": "clearml/binding/hydra_bind.py",
+      "bytes": 12059,
+      "sha256": "2a7400154b06017c0293326c3d4a91162a42f31260ab95a589d37e01f52928a0"
+    },
+    {
+      "path": "clearml/binding/import_bind.py",
+      "bytes": 2877,
+      "sha256": "4443ce82c161eb792af56373af4bae1c9dfab449388631318e4615f6e84c1188"
+    },
+    {
+      "path": "clearml/binding/joblib_bind.py",
+      "bytes": 8220,
+      "sha256": "669ac9ede8aa34dcec3823e566dadba42c7846b71d35b5fe39e209aed01a9299"
+    },
+    {
+      "path": "clearml/binding/jsonargs_bind.py",
+      "bytes": 13070,
+      "sha256": "bcd232e3662a6d7a69b53674086ce5dd2604ae1e36dbf71d81be2859e0b0f7e4"
+    },
+    {
+      "path": "clearml/binding/matplotlib_bind.py",
+      "bytes": 32402,
+      "sha256": "d2b89629a8a46fc61f00ea8912e117e31ea561ff2e2adc078edab2d15ae33d3f"
+    },
+    {
+      "path": "clearml/cli/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "clearml/cli/config/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "clearml/cli/config/__main__.py",
+      "bytes": 14411,
+      "sha256": "06d64819e6e008ac842696c2794beeb787e0043f5f04a8a79693fbfedfc97e93"
+    },
+    {
+      "path": "clearml/cli/data/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "clearml/cli/data/__main__.py",
+      "bytes": 31952,
+      "sha256": "eb172ddcea563d1e50e6dcca4c43fa760a506120b058788d1749d6d37b21003c"
+    },
+    {
+      "path": "clearml/cli/hpo/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "clearml/cli/hpo/__main__.py",
+      "bytes": 13235,
+      "sha256": "0bd0dc1b289199a36fbeeddec555f48f5c6a3c5b5ca8cb2e95ed1850d1e9be55"
+    },
+    {
+      "path": "clearml/cli/task/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "clearml/cli/task/__main__.py",
+      "bytes": 9556,
+      "sha256": "12062b8b645b7cdb76a39a5dbbefed9f004f04e562445bc5c49b1bc71e498578"
+    },
+    {
+      "path": "clearml/config/__init__.py",
+      "bytes": 7955,
+      "sha256": "90feb982d406b807a83c1c6e0446fd7ac14dc029f2d9684f8361962d77d890a1"
+    },
+    {
+      "path": "clearml/config/cache.py",
+      "bytes": 1835,
+      "sha256": "e5f604fb7a0e5930a7da701b603c6de04a9d0d78ae20fa12e8c139bc6d6a63c3"
+    },
+    {
+      "path": "clearml/config/default/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "clearml/config/default/logging.conf",
+      "bytes": 694,
+      "sha256": "eebc65e6f99699eb88b5fe3668707734689ac177098f602b9ecb582aade54f7e"
+    },
+    {
+      "path": "clearml/config/default/sdk.conf",
+      "bytes": 11698,
+      "sha256": "0b371809dae0d28cde2da6aaa5297bc841f2a25ef68692549f646ec0a51c2251"
+    },
+    {
+      "path": "clearml/config/defs.py",
+      "bytes": 2986,
+      "sha256": "1ffccb26b8d3042edbdb2204bbc74fced2f59d13f87c6b3d30cc06e2ed25be17"
+    },
+    {
+      "path": "clearml/config/remote.py",
+      "bytes": 573,
+      "sha256": "49828df10a2a67afa1b68c0e9efe9d9a1209c46572a00e19194724126c094f28"
+    },
+    {
+      "path": "clearml/datasets/__init__.py",
+      "bytes": 87,
+      "sha256": "ef545eb26e3fa259d4f7080a9d15748c64d2492d38e28065a84a48469b6d65e2"
+    },
+    {
+      "path": "clearml/datasets/dataset.py",
+      "bytes": 170412,
+      "sha256": "5b5fb6e36a26cdc8a1a04bce31aa0101dbf92bc41a10579d4d45f09666ef780e"
+    },
+    {
+      "path": "clearml/debugging/__init__.py",
+      "bytes": 466,
+      "sha256": "b85fa336072587a9598be97eb2550aab67f5ded84b3fe6231a749ddfc0eabce1"
+    },
+    {
+      "path": "clearml/debugging/log.py",
+      "bytes": 11096,
+      "sha256": "eaf696a974382905789eff0104e3f08e2743b16ced5e1f30c818157e4270f192"
+    },
+    {
+      "path": "clearml/debugging/timer.py",
+      "bytes": 3197,
+      "sha256": "aabfe6b79234de34689f89da3cde6e7e83f069192178362f0058c20b14b7aa15"
+    },
+    {
+      "path": "clearml/debugging/trace.py",
+      "bytes": 13499,
+      "sha256": "72254c37aabff632e06dd305e7f4d67b426c7044a9e22d6159e08037853d8a75"
+    },
+    {
+      "path": "clearml/errors.py",
+      "bytes": 599,
+      "sha256": "a26a41a64265b34d37f5d39ec440a6f864f7b86166d927291868b51185a60d82"
+    },
+    {
+      "path": "clearml/external/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "clearml/external/kerastuner.py",
+      "bytes": 5102,
+      "sha256": "ecfa2d60ef7b6ace8e4350cb298762ed632f5aedc157b0d7cfe37048c95165ba"
+    },
+    {
+      "path": "clearml/logger.py",
+      "bytes": 65598,
+      "sha256": "5826d22459bd58c411e83edba2521d0eeea182460e1f3b0777df151cc06334bd"
+    },
+    {
+      "path": "clearml/model.py",
+      "bytes": 110379,
+      "sha256": "ebdf3be8678d2a083b27ea7964243b120dd5de3f787277043a57a96d3990cffe"
+    },
+    {
+      "path": "clearml/router/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "clearml/router/endpoint_telemetry.py",
+      "bytes": 9396,
+      "sha256": "1b41fa7cce5bc153406e0005001c56acc6621050e061057f5b69c4715f854dfb"
+    },
+    {
+      "path": "clearml/router/fastapi_proxy.py",
+      "bytes": 6854,
+      "sha256": "99ecb9f58aa7af25609772e244d6f7eec0abb7f7e34b2c37aa3fd36a121604b8"
+    },
+    {
+      "path": "clearml/router/proxy.py",
+      "bytes": 1106,
+      "sha256": "a5eb994698207a71886fbf2c9d58c1fc8af0a61a0229189ecf0e5909cebf6317"
+    },
+    {
+      "path": "clearml/router/route.py",
+      "bytes": 2744,
+      "sha256": "4c3c100b87247c79afde966a156b5bdd464e70d7b744e49d6f53fb2cfa01ae6d"
+    },
+    {
+      "path": "clearml/router/router.py",
+      "bytes": 10185,
+      "sha256": "b0eae2685091678070ae75ceae24d15effa5921cd039cf5d9851689beb9c9df8"
+    },
+    {
+      "path": "clearml/storage/__init__.py",
+      "bytes": 108,
+      "sha256": "3b83c90579ebe4f6262ec97c399d9cf149fec1cd3f9ff50ad9659f0ce8beebb5"
+    },
+    {
+      "path": "clearml/storage/cache.py",
+      "bytes": 16633,
+      "sha256": "f259cfce3014171f99696ed11f43475a1da39bfde4098140771d7e096e6716b6"
+    },
+    {
+      "path": "clearml/storage/callbacks.py",
+      "bytes": 6948,
+      "sha256": "26b01dd9f3ff50f9e228ba6734f49c338bce1fae3455ae027d25f0b4b014ca91"
+    },
+    {
+      "path": "clearml/storage/helper.py",
+      "bytes": 120901,
+      "sha256": "3dfc300d5654701757d9f8669447bbc7de08f95149568e3af316220c8507c8da"
+    },
+    {
+      "path": "clearml/storage/manager.py",
+      "bytes": 24793,
+      "sha256": "196db3f70964537c2d4e9dbed023147bf2dd3225b77dae1c625304c2e8a2b834"
+    },
+    {
+      "path": "clearml/storage/util.py",
+      "bytes": 14028,
+      "sha256": "4da5968fb80761e3b055760b650d7c3864ee4d2382b590de797e523e00646aa5"
+    },
+    {
+      "path": "clearml/task.py",
+      "bytes": 244824,
+      "sha256": "f2d8f8d2d863a56e2b677650532c6209a3cd0554ba368a6d1573485a13be86e2"
+    },
+    {
+      "path": "clearml/task_parameters.py",
+      "bytes": 4715,
+      "sha256": "3829dfc2f76729b800e38b0797f618430c73acb32f26a7fc8c49daddd6682d1a"
+    },
+    {
+      "path": "clearml/utilities/__init__.py",
+      "bytes": 44,
+      "sha256": "e6c4b79dbb54be077986a0deb0baa7187f16c3307f8d2a5fbe9edb3e72adeae9"
+    },
+    {
+      "path": "clearml/utilities/async_manager.py",
+      "bytes": 2431,
+      "sha256": "f01da512c6089e57258ae41c81839785b1db48458608aa0add051157b57bd8e5"
+    },
+    {
+      "path": "clearml/utilities/attrs.py",
+      "bytes": 761,
+      "sha256": "a2be8fe966d74a0e60ecea5fa3bec893a58c83f4adec68f7f39af6557b221233"
+    },
+    {
+      "path": "clearml/utilities/check_updates.py",
+      "bytes": 2528,
+      "sha256": "a9ecaeeab9e73ef7d2d64452b2b4458e1f4efc97b5ec4d9284e1536dd0c9b1c4"
+    },
+    {
+      "path": "clearml/utilities/config.py",
+      "bytes": 3897,
+      "sha256": "f375779f86a61f99a950d8dc3bc03726bd5ce5e2439b6b5a5203c56ea49ee34b"
+    },
+    {
+      "path": "clearml/utilities/deferred.py",
+      "bytes": 4579,
+      "sha256": "411a7ad7a069e6de357d7832c66b061d36edfde28a8cec154c9fcd7af3d3e602"
+    },
+    {
+      "path": "clearml/utilities/dicts.py",
+      "bytes": 5513,
+      "sha256": "03dc1898310754c8f05bd9ec3710e62577762123163a2f353104e91b6a05a55e"
+    },
+    {
+      "path": "clearml/utilities/distutils_version.py",
+      "bytes": 12249,
+      "sha256": "877953677974de794c10e5a13c5ad07fc93d38f6aaa68b2a90cdabef9e926ca9"
+    },
+    {
+      "path": "clearml/utilities/enum.py",
+      "bytes": 922,
+      "sha256": "c9a981472fc8b3eb364fffd25dd29b20bac73a05b1b929a009138255ff7e701d"
+    },
+    {
+      "path": "clearml/utilities/files.py",
+      "bytes": 1281,
+      "sha256": "5467ad615cb0a5939b56f8ea699cfd7da450774f2707fdd0f8019e507a978397"
+    },
+    {
+      "path": "clearml/utilities/gpu/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "clearml/utilities/gpu/gpustat.py",
+      "bytes": 23963,
+      "sha256": "c9f8662b9a4be7cc637c64895cd4e3bd111c139d3c374d06c20c464cf56f5ea2"
+    },
+    {
+      "path": "clearml/utilities/gpu/pynvml.py",
+      "bytes": 166328,
+      "sha256": "d3b7df6e35aed7df8ed9b7c9fb52891a9010b4d985f2aef64ca3b7f72bac15ed"
+    },
+    {
+      "path": "clearml/utilities/gpu/pyrsmi.py",
+      "bytes": 20902,
+      "sha256": "288f706d74e90f47191f78dde29b39d344cff2511144c5433695d453a02c061b"
+    },
+    {
+      "path": "clearml/utilities/io_manager.py",
+      "bytes": 1132,
+      "sha256": "6a39c936e5d25e2cf6c5740c69941fe796310305dcf67fc5ffbcf46757680821"
+    },
+    {
+      "path": "clearml/utilities/locks/__init__.py",
+      "bytes": 60,
+      "sha256": "e5b47eb5afd065cfcc41a831f95ff31b3afb987df24a0cc2e751117125fe4169"
+    },
+    {
+      "path": "clearml/utilities/locks/constants.py",
+      "bytes": 937,
+      "sha256": "54490c3761be850348eac8d8cc1b3c05bb1b0a3b1a8fb7579cc3f3e40af14139"
+    },
+    {
+      "path": "clearml/utilities/locks/exceptions.py",
+      "bytes": 359,
+      "sha256": "d797c7e6a235c8c765081e487a24be4e135f237062b4fc634b45abef9e17d49b"
+    },
+    {
+      "path": "clearml/utilities/locks/portalocker.py",
+      "bytes": 5449,
+      "sha256": "6aac1ea3d5842d6312b344460e8a2e6cb23d503181913a98c695708ea80bebbb"
+    },
+    {
+      "path": "clearml/utilities/locks/utils.py",
+      "bytes": 10728,
+      "sha256": "3365734dfd197d732c8ba2794fe0a8a358990e78e60f9be4551b2ad310cf9da6"
+    },
+    {
+      "path": "clearml/utilities/lowlevel/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "clearml/utilities/lowlevel/astor_unparse.py",
+      "bytes": 26715,
+      "sha256": "899d757737fa93e8c1191612076b4d20e4dbb4c744464b8ebb254f210c286e21"
+    },
+    {
+      "path": "clearml/utilities/lowlevel/distributed.py",
+      "bytes": 3002,
+      "sha256": "78da105e5e4e39044b9200e695ef287bed603c11e63793cf6a7ee671084cb26e"
+    },
+    {
+      "path": "clearml/utilities/lowlevel/file_access.py",
+      "bytes": 3403,
+      "sha256": "f73d1dfe94a481153bdddf03a33b6cc7568ed56d70f43180bc96d65840336e66"
+    },
+    {
+      "path": "clearml/utilities/lowlevel/threads.py",
+      "bytes": 3318,
+      "sha256": "e1f382c371defb3cdb58e05cd9744c9c27f1d7e0557ef0aa33323619ac4c0726"
+    },
+    {
+      "path": "clearml/utilities/matching.py",
+      "bytes": 1592,
+      "sha256": "fdccdafc288b02a37bf5b193d369d8e91d27f297cbc3cad57e81a5e38714e263"
+    },
+    {
+      "path": "clearml/utilities/networking.py",
+      "bytes": 2909,
+      "sha256": "78ed53d8400f44d07d5640422d8a0f1a88da73c398762b47c0b3b8a562570c9e"
+    },
+    {
+      "path": "clearml/utilities/parallel.py",
+      "bytes": 19515,
+      "sha256": "beea106f32872b9c7649ca599c7ddd2a54ad5e823525fd19c782a382055b5538"
+    },
+    {
+      "path": "clearml/utilities/pigar/__init__.py",
+      "bytes": 24,
+      "sha256": "8b084a9f378124b2b1a51563bf3c22444eb7ff33692017da28b2136ae56987ed"
+    },
+    {
+      "path": "clearml/utilities/pigar/__main__.py",
+      "bytes": 8556,
+      "sha256": "7398a52bb9b89c4a3705a6367cf83dabe24d17c5fa01211b081cec7b11cb1093"
+    },
+    {
+      "path": "clearml/utilities/pigar/log.py",
+      "bytes": 186,
+      "sha256": "85c938657552b5c5d057d7e805727c6abee13c718c4770b449ea08c672dbe423"
+    },
+    {
+      "path": "clearml/utilities/pigar/modules.py",
+      "bytes": 3024,
+      "sha256": "1cdb480bbdcbe7ca4ba2bd63d22cb6c4055f705c6aa7593040e95f2c4d8c43f3"
+    },
+    {
+      "path": "clearml/utilities/pigar/reqs.py",
+      "bytes": 19292,
+      "sha256": "52192659648e25d0eed8da531b2989f8b4f7248907ec3f7c5bddebb6b7337673"
+    },
+    {
+      "path": "clearml/utilities/pigar/unpack.py",
+      "bytes": 3503,
+      "sha256": "01224ba46ec0f8bc5c30d7cc2c0e35e4829d150b904b33634cbf884e1f3315f5"
+    },
+    {
+      "path": "clearml/utilities/pigar/utils.py",
+      "bytes": 3514,
+      "sha256": "9a2faf832f8da8dda43556a4e95a678df49069687b416eec182b15f97217912d"
+    },
+    {
+      "path": "clearml/utilities/plotly_reporter.py",
+      "bytes": 20544,
+      "sha256": "61f4380febbc33a7506b7e2e95462b1f7eabe499ebb026653d33795429e25e03"
+    },
+    {
+      "path": "clearml/utilities/plotlympl/__init__.py",
+      "bytes": 430,
+      "sha256": "8e51d417be69151b590ef3cd32e4f64bae996611b92c074b9aec59c7e94307db"
+    },
+    {
+      "path": "clearml/utilities/plotlympl/mplexporter/__init__.py",
+      "bytes": 109,
+      "sha256": "c90c3959b47c5137dee2a822e0b398a329f95c510e7f02fcd2500bc3e3d86a06"
+    },
+    {
+      "path": "clearml/utilities/plotlympl/mplexporter/_py3k_compat.py",
+      "bytes": 440,
+      "sha256": "0df11b561b9ae4304fc3ebeb6caf56316dcf859ef4ce848a9387055b0516c8ee"
+    },
+    {
+      "path": "clearml/utilities/plotlympl/mplexporter/exporter.py",
+      "bytes": 13345,
+      "sha256": "15b8fd5e124d01e5cf72db3e5ee669d02eef626529c5fb6d57bd86748ae3f04e"
+    },
+    {
+      "path": "clearml/utilities/plotlympl/mplexporter/renderers/__init__.py",
+      "bytes": 583,
+      "sha256": "1907e35f5654e70d036840a5f9a3f43491b751a7df4db22cd8fae35096e1e87b"
+    },
+    {
+      "path": "clearml/utilities/plotlympl/mplexporter/renderers/base.py",
+      "bytes": 14971,
+      "sha256": "2a1c39760f05a8c1f2b9100cd6ff97a96b7fca765963a4f0cc8af2106ef328a0"
+    },
+    {
+      "path": "clearml/utilities/plotlympl/mplexporter/renderers/fake_renderer.py",
+      "bytes": 2561,
+      "sha256": "6f4db310307e493cb5e5f41ec7317039da8b5e9254490176a75a87d01d39d95a"
+    },
+    {
+      "path": "clearml/utilities/plotlympl/mplexporter/renderers/vega_renderer.py",
+      "bytes": 5289,
+      "sha256": "dacff3efc8f795a6cca2e9e3df3af4dbbb25a6623e5f8bf532bdd94a0d870d84"
+    },
+    {
+      "path": "clearml/utilities/plotlympl/mplexporter/renderers/vincent_renderer.py",
+      "bytes": 1922,
+      "sha256": "ea7c5e1dd51e53f1477edba6d40a1efa1f5aceb2cbc7bd4557803a14117b8c43"
+    },
+    {
+      "path": "clearml/utilities/plotlympl/mplexporter/tools.py",
+      "bytes": 1732,
+      "sha256": "27d9f79263fbfb7c3b28738888fc8056f9302d553a79edf45fe6faddbb2e7d17"
+    },
+    {
+      "path": "clearml/utilities/plotlympl/mplexporter/utils.py",
+      "bytes": 12011,
+      "sha256": "80a291eadc1d521b638b157579f38f93234dc3b08731d9509248d4138688bd4f"
+    },
+    {
+      "path": "clearml/utilities/plotlympl/mpltools.py",
+      "bytes": 22939,
+      "sha256": "ebd650417203664a0bf42bbff225054d4904bd0781b0cffb7e14833b088f289c"
+    },
+    {
+      "path": "clearml/utilities/plotlympl/renderer.py",
+      "bytes": 33142,
+      "sha256": "c1650980f6435377f376ecc9630a948066c90dba528c81bf1500122d4f84448f"
+    },
+    {
+      "path": "clearml/utilities/process/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "clearml/utilities/process/exit_hooks.py",
+      "bytes": 6302,
+      "sha256": "50b82ccffe2d5a281862c6866ad96e4e8c98647b494a78f35843be5ce432dac0"
+    },
+    {
+      "path": "clearml/utilities/process/mp.py",
+      "bytes": 30194,
+      "sha256": "773d4088a9ee538db99a612d05982b881741bae0daa230676bfa90f0474457fd"
+    },
+    {
+      "path": "clearml/utilities/proxy_object.py",
+      "bytes": 15851,
+      "sha256": "67dc1edd479092ec73ba0b1d083208036eef76e05d567e1f63208fb7190a62ab"
+    },
+    {
+      "path": "clearml/utilities/py3_interop.py",
+      "bytes": 1116,
+      "sha256": "c86859aa91b9df0df452e1da9520526260f8525af9d425de898cb24b3681850c"
+    },
+    {
+      "path": "clearml/utilities/pyhocon/__init__.py",
+      "bytes": 256,
+      "sha256": "f58eb8754308ffc3f9d85102e073f421c07dd0992bb491008ea5d19fc74b5f44"
+    },
+    {
+      "path": "clearml/utilities/pyhocon/config_parser.py",
+      "bytes": 32918,
+      "sha256": "90a691b34b8a4f0fcc622d33cc4c4d92c158f600bf349c3e841f8b96a6d21689"
+    },
+    {
+      "path": "clearml/utilities/pyhocon/config_tree.py",
+      "bytes": 22533,
+      "sha256": "457947e2a0960012062c15d735a1fad93e073538be2e605243ee2444398084ac"
+    },
+    {
+      "path": "clearml/utilities/pyhocon/converter.py",
+      "bytes": 13100,
+      "sha256": "6f4623dade46794251687dba281a13a0e6b9298ceecaba33f7324ef89bde6b9e"
+    },
+    {
+      "path": "clearml/utilities/pyhocon/exceptions.py",
+      "bytes": 352,
+      "sha256": "93fe82e9f074eb789f9e388c0e246d2f9ded1784ceea571b9302c0db0b183997"
+    },
+    {
+      "path": "clearml/utilities/requests_toolbelt/__init__.py",
+      "bytes": 918,
+      "sha256": "7e8b4fa6a026c01b6c4d5ea105d41db3a96f507b21144bdf32814a3d5a266503"
+    },
+    {
+      "path": "clearml/utilities/requests_toolbelt/_compat.py",
+      "bytes": 9956,
+      "sha256": "012fc00609c95d99c54fc599987d5cc3002fcb3f0028fb700a6ec812f6ed0a3e"
+    },
+    {
+      "path": "clearml/utilities/requests_toolbelt/multipart/__init__.py",
+      "bytes": 854,
+      "sha256": "bca20315627e9b0ededdd836935797c7c3e6f1b34fba5dcf74d48520f3f931b3"
+    },
+    {
+      "path": "clearml/utilities/requests_toolbelt/multipart/decoder.py",
+      "bytes": 4861,
+      "sha256": "a796b8226c1d4c22d4d7e9c803ce86e975cc373a4c9b785b8344bcbed3034685"
+    },
+    {
+      "path": "clearml/utilities/requests_toolbelt/multipart/encoder.py",
+      "bytes": 20739,
+      "sha256": "5d194ac7c77868e8fa85d0b4ca31a6d82de3e7aa1a9f8f4ebd5c4d0035c2e4ab"
+    },
+    {
+      "path": "clearml/utilities/resource_monitor.py",
+      "bytes": 24362,
+      "sha256": "82b3d484e8bd5b06779650a8f80f85d619c2eeb8ef25f88b0d49b0db62544eeb"
+    },
+    {
+      "path": "clearml/utilities/seed.py",
+      "bytes": 2149,
+      "sha256": "348e9aeee12168fe56dd303124818e99a47cae67e82c84c864d88390db7d6511"
+    },
+    {
+      "path": "clearml/utilities/version.py",
+      "bytes": 10397,
+      "sha256": "3659f787c1a56995e8f7916b83362dac2fc04d26fb60440c485f9f61fe8ff83a"
+    },
+    {
+      "path": "clearml/utilities/wizard/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "clearml/utilities/wizard/user_input.py",
+      "bytes": 3064,
+      "sha256": "b83a463746611bad69d36af57064466d4e81b89087fc2bcdd1dc7d4d0db50724"
+    },
+    {
+      "path": "clearml/version.py",
+      "bytes": 23,
+      "sha256": "055af4a0b8e61d6252d03b1413e1ce8dff2130d9dd075361f17eb2efbcd2abcb"
+    },
+    {
+      "path": "clearml-1.17.0.dist-info/INSTALLER",
+      "bytes": 4,
+      "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508"
+    },
+    {
+      "path": "clearml-1.17.0.dist-info/LICENSE",
+      "bytes": 11337,
+      "sha256": "3a22d6c921f1767da5d021fa3e3f19daff8129000e604cdc793f21e32d1f85f5"
+    },
+    {
+      "path": "clearml-1.17.0.dist-info/METADATA",
+      "bytes": 18160,
+      "sha256": "ea3e370023f2db68e3cab4df27f4efbcad0f3129d8fd0caef503142951fc3070"
+    },
+    {
+      "path": "clearml-1.17.0.dist-info/RECORD",
+      "bytes": 41933,
+      "sha256": "7ed9e865ded4c18b525e2850f7079c25f6f66dc73b9e80d2462d3d1545201a58"
+    },
+    {
+      "path": "clearml-1.17.0.dist-info/REQUESTED",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "clearml-1.17.0.dist-info/WHEEL",
+      "bytes": 110,
+      "sha256": "cfd8f4c406bf26650a3299b3ef62b464600b48cfe7fb04159866e5797c765478"
+    },
+    {
+      "path": "clearml-1.17.0.dist-info/entry_points.txt",
+      "bytes": 211,
+      "sha256": "9e79bdf4958019118f8d00ae346d80f9478218b8d395bda0cb41e44839768fd8"
+    },
+    {
+      "path": "clearml-1.17.0.dist-info/top_level.txt",
+      "bytes": 8,
+      "sha256": "15761e3b627af214be6a9d94523fca6261bdc4f0868d3b9d88bbead4da4bf273"
+    },
+    {
+      "path": "furl/__init__.py",
+      "bytes": 365,
+      "sha256": "0549eeaa8c05fcbfc58e9deb20cff7992993177b65d43f138b236fde786101a2"
+    },
+    {
+      "path": "furl/__version__.py",
+      "bytes": 440,
+      "sha256": "255b83a36015182153b61289db3af874232d850d71a39af4eaeea83c61d7f0d0"
+    },
+    {
+      "path": "furl/common.py",
+      "bytes": 432,
+      "sha256": "f202b401228554cdb2f424b8dfc0f268103d98958c63229f0b6517390c7d20c1"
+    },
+    {
+      "path": "furl/compat.py",
+      "bytes": 768,
+      "sha256": "bafb221a368ad30752eb67ca5efdad87c542dcf6882eec505693e0e93cc07aba"
+    },
+    {
+      "path": "furl/furl.py",
+      "bytes": 63808,
+      "sha256": "9d01622ed58032d0ca2618b723be1865e703e46eb3858a8360cc8d89e37fb1c8"
+    },
+    {
+      "path": "furl/omdict1D.py",
+      "bytes": 3652,
+      "sha256": "2bc8a495e667b1cb1f5a8e5ea6195444b0fa94fdf2a89c1176a87a312424d1c6"
+    },
+    {
+      "path": "furl-2.1.4.dist-info/INSTALLER",
+      "bytes": 4,
+      "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508"
+    },
+    {
+      "path": "furl-2.1.4.dist-info/LICENSE.md",
+      "bytes": 1254,
+      "sha256": "0f5fa5878fe34ce4d934c0207b194c8eb235d2caa29a79bf6d576f3091298120"
+    },
+    {
+      "path": "furl-2.1.4.dist-info/METADATA",
+      "bytes": 25268,
+      "sha256": "9a6f2637d5f6afffbff6bd897520490e4ab46d1ef2433800e0f3b030c645c5de"
+    },
+    {
+      "path": "furl-2.1.4.dist-info/RECORD",
+      "bytes": 1251,
+      "sha256": "382ddea8b81f7e44da13ad5fa0af7707b29958168cbbb9325fd2a74a9a42f13f"
+    },
+    {
+      "path": "furl-2.1.4.dist-info/REQUESTED",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "furl-2.1.4.dist-info/WHEEL",
+      "bytes": 110,
+      "sha256": "cfd8f4c406bf26650a3299b3ef62b464600b48cfe7fb04159866e5797c765478"
+    },
+    {
+      "path": "furl-2.1.4.dist-info/top_level.txt",
+      "bytes": 5,
+      "sha256": "18d4811a69004cd2afa6a8be7f6442016f76a18f92f0d9fd1a75eec5d7636154"
+    },
+    {
+      "path": "orderedmultidict/__init__.py",
+      "bytes": 380,
+      "sha256": "3177dca30a17bc6ebbedbaf616bb791087d40beb5760b2a0b581e0b5964a1dce"
+    },
+    {
+      "path": "orderedmultidict/__version__.py",
+      "bytes": 423,
+      "sha256": "fe5aa2a02e064ef7a328f0095f06376234f2c7eeae04de7c50e6133585f224fa"
+    },
+    {
+      "path": "orderedmultidict/itemlist.py",
+      "bytes": 4483,
+      "sha256": "32969d0abd83a457e481370d0ab766f98381983c604ff64635228a665d47f599"
+    },
+    {
+      "path": "orderedmultidict/orderedmultidict.py",
+      "bytes": 29831,
+      "sha256": "d0297f5d49bd5d26ec1fe422fcff49a1477ee48edee7d5f3e8b86b77b6943470"
+    },
+    {
+      "path": "orderedmultidict/py.typed",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "orderedmultidict-1.0.2.dist-info/INSTALLER",
+      "bytes": 4,
+      "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508"
+    },
+    {
+      "path": "orderedmultidict-1.0.2.dist-info/LICENSE.md",
+      "bytes": 1271,
+      "sha256": "312ba47ef895655fc8f046b3bed4076acc8222ff3f17932b32f88abd76f91deb"
+    },
+    {
+      "path": "orderedmultidict-1.0.2.dist-info/METADATA",
+      "bytes": 1246,
+      "sha256": "78037f28c23ec643a23323c6d86fb032e0ae7794c3cafa210236447009f490e6"
+    },
+    {
+      "path": "orderedmultidict-1.0.2.dist-info/RECORD",
+      "bytes": 1307,
+      "sha256": "4f1c88f0638bb03682ba2785aa773e09b22d1761b8b026235f2fa174a38bf52f"
+    },
+    {
+      "path": "orderedmultidict-1.0.2.dist-info/REQUESTED",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "orderedmultidict-1.0.2.dist-info/WHEEL",
+      "bytes": 110,
+      "sha256": "cfd8f4c406bf26650a3299b3ef62b464600b48cfe7fb04159866e5797c765478"
+    },
+    {
+      "path": "orderedmultidict-1.0.2.dist-info/top_level.txt",
+      "bytes": 17,
+      "sha256": "2355992ec9f27361a77d965a1a10b6a7d7e4ec5f4e639901ae7bf6fb0894aa4f"
+    },
+    {
+      "path": "pathlib2/__init__.py",
+      "bytes": 63938,
+      "sha256": "e4d77a41ce5f238da75f49e925523ee4dc27d652a59aa071c874288ffc290903"
+    },
+    {
+      "path": "pathlib2-2.3.7.post1.dist-info/INSTALLER",
+      "bytes": 4,
+      "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508"
+    },
+    {
+      "path": "pathlib2-2.3.7.post1.dist-info/LICENSE.rst",
+      "bytes": 1175,
+      "sha256": "861f813004a151ac77024ad445794653809ddf8a7572aee7bab18d11df2ba1c6"
+    },
+    {
+      "path": "pathlib2-2.3.7.post1.dist-info/METADATA",
+      "bytes": 3454,
+      "sha256": "c486006025c0f102db306c7da94052af11690ad8c64a143c90818ab7f37eff56"
+    },
+    {
+      "path": "pathlib2-2.3.7.post1.dist-info/RECORD",
+      "bytes": 748,
+      "sha256": "4f0738f6a031b3d96c7a6a9dc978817326a03ec77dd6bd61e239a88a91366c72"
+    },
+    {
+      "path": "pathlib2-2.3.7.post1.dist-info/REQUESTED",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "pathlib2-2.3.7.post1.dist-info/WHEEL",
+      "bytes": 110,
+      "sha256": "67e9f2629c2b712ab17ddbb1e4c6e7fc3439db988fec9d831b72601af398c934"
+    },
+    {
+      "path": "pathlib2-2.3.7.post1.dist-info/top_level.txt",
+      "bytes": 9,
+      "sha256": "b4d3e48ac16218116c3d49c220783adaf485964c7fd4d3bce8877c95b2667c54"
+    }
+  ],
+  "generated_ast_index": {
+    "path": "/usr/local/lib/python3.12/site-packages/modelscope/utils/ast_index_file.py",
+    "sha256": "492916f8c3c824ac76cfb41c32f783bc11e6baec93336cd0b7b8a7541079c90e"
+  },
+  "gpu_devices": []
+}

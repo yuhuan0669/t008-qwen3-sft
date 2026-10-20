@@ -1,0 +1,17 @@
+{
+  "identity_mapping_entries": 600,
+  "mapped_original_indices_exact": true,
+  "mapping_errors": [],
+  "unique_source_rows": 108,
+  "unique_transformed_template_rows": 108,
+  "repetition_histogram": {
+    "6": 60,
+    "5": 48
+  },
+  "excluded_rows": 958,
+  "excluded_identity_rows": 0,
+  "retained_identity_exposures": 600,
+  "derived_bytes_equal_ordered_exclusion": true,
+  "derived_rows": 1642,
+  "candidate_status": "PENDING_DERIVATIVE_APPROVAL"
+}

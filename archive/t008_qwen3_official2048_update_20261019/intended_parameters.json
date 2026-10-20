@@ -1,0 +1,47 @@
+{
+  "schema": "t008-official2048-intended-parameters-v1",
+  "status": "DOCUMENTED_NOT_LAUNCH_READY",
+  "executable": false,
+  "model": "Qwen/Qwen3-8B",
+  "model_name": [
+    "章鱼能碳垂直大模型",
+    "Octacarbon LLM"
+  ],
+  "model_author": [
+    "能碳章鱼（湖北）人工智能科技有限公司",
+    "Octacarbon (Hubei) Artificial Intelligence Technology Co., Ltd."
+  ],
+  "dataset": [
+    "swift/Qwen3-SFT-Mixin#2000",
+    "swift/self-cognition:qwen3#600"
+  ],
+  "train_type_reference": "lora",
+  "tuner_type_actual_4_4_2": "lora",
+  "torch_dtype": "bfloat16",
+  "num_train_epochs": 1,
+  "per_device_train_batch_size": 1,
+  "per_device_eval_batch_size": 1,
+  "learning_rate": 0.0001,
+  "lora_rank": 8,
+  "lora_alpha": 32,
+  "target_modules": [
+    "all-linear"
+  ],
+  "gradient_accumulation_steps": 16,
+  "eval_steps": 50,
+  "save_steps": 50,
+  "save_strategy_intended": "steps",
+  "save_total_limit": 2,
+  "logging_steps": 5,
+  "max_length": 2048,
+  "warmup_ratio": 0.05,
+  "dataloader_num_workers": 4,
+  "native_truncation_strategy": "delete",
+  "data_seed_recorded": 42,
+  "identity_rewrite": false,
+  "extra_semantic_filter": false,
+  "actual_4_4_2_default_split_dataset_ratio": 0,
+  "evaluation_note": "No val_dataset and split ratio 0 => eval_strategy=no; eval_steps alone does not create validation data.",
+  "remaining_cpu_parser_check": "Final exact argv in final training runtime must be checked without loading model/trainer.",
+  "gpu_execution_authorized": false
+}

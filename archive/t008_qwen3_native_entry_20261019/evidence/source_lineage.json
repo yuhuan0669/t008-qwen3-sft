@@ -1,0 +1,17 @@
+{
+  "source_commit": "e7ae45aa7438c8bcca8318d3531854f7f5e7db39",
+  "parent_commit": "55042a0c2eb3da96f38b019650838bfdf6b4a03b",
+  "cpu_tested_entry_fingerprints": {
+    "entry/native_recipe.py": "30024469aa91e68711809b2f975a34d3f5a4652b38af8c5a8d7c7246ab5f8774",
+    "entry/native_guard.py": "05a7458ce978607da507fb40ce5ab67528798eeb47b22829b608c3eb88dd16e3",
+    "entry/run_identity.py": "47f353024312912dbe76f028caca2943fe1a6f54c5f636b41c92ffe9b906c395",
+    "entry/train_identity.sh": "a48ef1402c011cceeba0ed50f9e5ff16dcc37d47203808f6939f3205d6eb2801",
+    "swift/pipelines/train/sft.py": "024ff2ff4e6755a07c30bcc3dd081106816b31fbb30169d9e27125f0b67be7d0",
+    "swift/arguments/sft_args.py": "fd18c57373531f80aa68f1430ca9b624eb38f66db044a3e53e8ad45a1a838582",
+    "swift/dataset/loader.py": "bfd75ce24bf0b2ba2fe414a37afd1ce2465575269689325791481eb2bef6d9b4",
+    "swift/dataset/utils.py": "82ef4b3c78a2ae3be8dcc0e8caee2dde7215f8f877bfd40a99d39f3e9586d252",
+    "swift/template/base.py": "cc1629c8a84b764b530895692e4e04322aa6732281be229efce9e98752e113cc",
+    "swift/trainers/patcher.py": "b0051338111611cbbc5c50d1d4665296eb8c03be39385400fbedd313d98afbb5"
+  },
+  "note": "Final committed entry contents exactly match CPU staged files; CPU staging repository metadata was not used as a training provenance claim."
+}

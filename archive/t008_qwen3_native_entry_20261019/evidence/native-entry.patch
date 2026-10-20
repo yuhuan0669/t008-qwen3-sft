@@ -1,0 +1,798 @@
+diff --git a/DELIVERY_MANIFEST.json b/DELIVERY_MANIFEST.json
+index 66f3551..e71ad2d 100644
+--- a/DELIVERY_MANIFEST.json
++++ b/DELIVERY_MANIFEST.json
+@@ -1,62 +1,90 @@
+ {
+-  "version": "v1.2",
+-  "description": "CPU-only technical repair package; no real GPU/source/SDK validation",
+-  "root_document": "Qwen3-8B_自我认知SFT_完整实施方案_v1.2_执行修复版.md",
+-  "package_root": "identity_sft_plan_v1.2",
+-  "tests": {
+-    "framework": "unittest",
+-    "synthetic_case_count": 17,
+-    "gpu_tested": false,
+-    "real_sources_downloaded": false
+-  },
+-  "files": {
+-    "Qwen3-8B_自我认知SFT_完整实施方案_v1.2_执行修复版.md": {
+-      "size": 30679,
+-      "sha256": "4579afef233bb39530f639415371e1bbe1288b23ee88a012a52d8a8391713bd7"
+-    },
+-    "identity_sft_plan_v1.2/QA_REPORT_v1.2.md": {
+-      "size": 3370,
++  "schema": "t008-native-entry-code-files-v1",
++  "files": [
++    {
++      "path": ".gitignore",
++      "bytes": 19,
++      "sha256": "862263fa1f46c20f0d1e4dac5ffcc75abd55c08211b2c3864c5f8764b9d87793"
++    },
++    {
++      "path": "QA_REPORT_v1.2.md",
++      "bytes": 3370,
+       "sha256": "b67c0d25992465ed478dced00176a0ceef4af36fd0cd0f32b62295a82fb240e0"
+     },
+-    "identity_sft_plan_v1.2/README.md": {
+-      "size": 7046,
+-      "sha256": "f978a2df9bc55589b6dcab0a1ceb2487007ef30a742f34c06d11788939fce0e3"
++    {
++      "path": "README.md",
++      "bytes": 4263,
++      "sha256": "e68f05667c9fd70e025582b0d32887a740aeb424f46a9c0fdb3c3f6ea5987d08"
+     },
+-    "identity_sft_plan_v1.2/derive_snapshot.py": {
+-      "size": 3593,
++    {
++      "path": "derive_snapshot.py",
++      "bytes": 3593,
+       "sha256": "1129f58a7abe1c82423345142b628908c40088cd822e46f4b9528e09e06e646f"
+     },
+-    "identity_sft_plan_v1.2/eval_identity.py": {
+-      "size": 8088,
++    {
++      "path": "eval_identity.py",
++      "bytes": 8088,
+       "sha256": "9602aa4e1e094116307ab0ee72e11c12b0ea35285985fa91152018f89cc2b4e9"
+     },
+-    "identity_sft_plan_v1.2/identity-spec.example.json": {
+-      "size": 266,
++    {
++      "path": "identity-spec.confirmed.json",
++      "bytes": 266,
++      "sha256": "96d595f3bdf6ca78d1f812f9b87cb53dffa4eb323fabeb758c2e09a63b5d2ec4"
++    },
++    {
++      "path": "identity-spec.example.json",
++      "bytes": 266,
+       "sha256": "96d595f3bdf6ca78d1f812f9b87cb53dffa4eb323fabeb758c2e09a63b5d2ec4"
+     },
+-    "identity_sft_plan_v1.2/preflight_data.py": {
+-      "size": 4430,
+-      "sha256": "69740a2278983246e522751ed24c96c3f757d97f4a84a13db25626b879c8e8fa"
++    {
++      "path": "native_guard.py",
++      "bytes": 2568,
++      "sha256": "05a7458ce978607da507fb40ce5ab67528798eeb47b22829b608c3eb88dd16e3"
++    },
++    {
++      "path": "native_recipe.py",
++      "bytes": 13799,
++      "sha256": "30024469aa91e68711809b2f975a34d3f5a4652b38af8c5a8d7c7246ab5f8774"
+     },
+-    "identity_sft_plan_v1.2/prepare_official.py": {
+-      "size": 5441,
+-      "sha256": "bf5bac8365de111c62d6b5d4bbb92a4f009c52347883dfff530902255d351033"
++    {
++      "path": "preflight_data.py",
++      "bytes": 4469,
++      "sha256": "717264e25f87d17364a5833b8a153c01a82efc5aa49833e2a7bf91538d71e4d2"
+     },
+-    "identity_sft_plan_v1.2/register_evaluation.py": {
+-      "size": 5808,
++    {
++      "path": "prepare_official.py",
++      "bytes": 6196,
++      "sha256": "aff3eef6fb5eccd7618d1f905010bca79dc9ed6ac79bf7a7360394dd8794b168"
++    },
++    {
++      "path": "register_evaluation.py",
++      "bytes": 5808,
+       "sha256": "7fe7718738d290b3f125b433b50c1be68a70f14dbe5c6fa0d84c747ba9485d51"
+     },
+-    "identity_sft_plan_v1.2/run_identity.py": {
+-      "size": 19990,
+-      "sha256": "f7ba5f4589ba0c6198b7570c56aad6e9b9c2ebae1830eefd89708687073625f3"
++    {
++      "path": "run_identity.py",
++      "bytes": 22682,
++      "sha256": "47f353024312912dbe76f028caca2943fe1a6f54c5f636b41c92ffe9b906c395"
+     },
+-    "identity_sft_plan_v1.2/tests/test_contract.py": {
+-      "size": 10753,
++    {
++      "path": "tests/test_contract.py",
++      "bytes": 10753,
+       "sha256": "d88deb09dc1b5712e69f1677675eff585d46f6573ecd68b5c9b3cff181aa39f6"
+     },
+-    "identity_sft_plan_v1.2/train_identity.sh": {
+-      "size": 360,
+-      "sha256": "b118959f991a885fbbb37bbb853ec86964f001e4d85d165b747cab2e4c83921c"
++    {
++      "path": "tests/test_native_entry.py",
++      "bytes": 6334,
++      "sha256": "24d72d8aed1b9389312b973d1cad308f336c9da4d73217b4739345e08f6189a4"
++    },
++    {
++      "path": "tests/test现场_regressions.py",
++      "bytes": 4513,
++      "sha256": "21e92b09629e655bae795c9598f144485e2a611754571e8cc0dd454e039d9f80"
++    },
++    {
++      "path": "train_identity.sh",
++      "bytes": 447,
++      "sha256": "a48ef1402c011cceeba0ed50f9e5ff16dcc37d47203808f6939f3205d6eb2801"
+     }
+-  }
++  ]
+ }
+diff --git a/README.md b/README.md
+index 03b1fce..e97893a 100644
+--- a/README.md
++++ b/README.md
+@@ -1,68 +1,40 @@
+-# Qwen3-8B 自我认知SFT v1.2｜执行包说明
++# T-008 v1.2｜官方原生2048正式入口（CPU已核验，GPU未授权）
+ 
+-**版本性质：CPU与静态门禁修复，不表示已经下载真实官方数据、取得授权或完成GPU/ClearML联调。** 与压缩包根目录《Qwen3-8B_自我认知SFT_完整实施方案_v1.2_执行修复版.md》互为唯一权威版本。原v1.1/v1.1.1留档不覆盖。
++当前默认正式入口是 `train_identity.sh full` → `run_identity.py` → Swift 原生加载：`swift/Qwen3-SFT-Mixin#2000`、`swift/self-cognition:qwen3#600`。不以本地1642行衍生文件代替原生输入，不做额外语义清洗、重配或补采。`max_length=2048`，不覆盖Swift默认`truncation_strategy=delete`；插件核验其实际值。`identity-spec.confirmed.json`记录负责人确认过的四个中英文名称及基座，不能把定制主体当作Qwen基础模型原始研发方。
+ 
+-## 内容与用途
++## CPU核验入口
+ 
+-| 文件 | 作用 |
+-|---|---|
+-| `identity-spec.example.json` | 四个模型身份字段与基础模型名的**待现场核对**示例；没有训练无效的`note` |
+-| `prepare_official.py` | 按官方ms-swift `load_dataset`做原生采样/身份替换，严格输出2600行原始冻结快照，检查残余`{{...}}`占位符 |
+-| `derive_snapshot.py` | 仅针对**有编号、有理由**的异常条目生成排除式衍生快照，不修改原始快照、不自动批准 |
+-| `preflight_data.py` | CPU原样本Tokenizer/Chat Template长度统计，并要求独立真实ms-swift模板证据；没有证据时仅输出未验证报告 |
+-| `run_identity.py`、`train_identity.sh` | 具备明确授权、数据和模型SHA、预检及真实GPU窗口后启动Smoke/Full；全链路登记ClearML Candidate，不自动发布 |
+-| `eval_identity.py` | 核对**真实**基础权重及Adapter哈希，串行transformers+PEFT推理；分辨意外Thinking标记 |
+-| `register_evaluation.py` | A/B/C/D完整性、System Prompt哈希和生成参数一致性校验后，上传Reviewer摘要/哈希到ClearML |
+-| `tests/test_contract.py` | 合成数据17项CPU测试（无真实模型与GPU） |
++在固定的CPU隔离环境中（无GPU设备、base和历史快照只读）运行：
+ 
+-## 运行次序和失败即停原则
+-
+-1. **CPU身份/许可核验**：检查四身份字段、Qwen基础模型来源、两份官方数据许可/revision及真实权利；冻结独立评测题。不能将项目README中的测试数据或模板当审批。
+-2. **官方原始冻结**：`python3 prepare_official.py --spec "$WORK/identity-spec.json" --out "$WORK/original-v1.2" --seed 42`。脚本拒绝实际行数不是2600和任何`{{NAME}}`/`{{AUTHOR}}`/`{{AUTHOER}}`等残留。
+-3. **如需清洗**：先由Review角色确认排除零基行号，记录原因，存为`[{"index": 31,"reason": "经审核身份混淆，批准剔除"}]`，执行`python3 derive_snapshot.py --parent "$WORK/original-v1.2" --exclusions "$WORK/exclusions-reviewed.json" --out "$WORK/derivative-v1.2"`。只排除，不可静默改写或重新采样；如需修改正文，应另行审批变更，不使用本脚本冒充官方复现。
+-4. **CPU长度预检**：`python3 preflight_data.py --dataset "$DATA_DIR" --model "$BASE_MODEL"`。输出初稿`$DATA_DIR/preflight_report.json`，其中`ms_swift_template_verified=false`，**不能训练**。
+-5. **真实ms-swift模板核验**：固定实际训练镜像，使用一致的model、dataset、template、loss mask、`max_length=2048`在CPU核实训练pipeline实际保留行数及超长行数；留原始终端日志/版本/代码引用，形成`swift-template-evidence.json`，内容格式参考下方。仅凭transformers的Tokenizer预检不等于此步骤。
+-6. **重新冻结最终预检报告**：`python3 preflight_data.py --dataset "$DATA_DIR" --model "$BASE_MODEL" --out "$DATA_DIR/preflight_report_verified.json" --swift-template-evidence "$WORK/swift-template-evidence.json"`。若无超长且证据与当前数据/模型匹配，在受控目录中用`mv "$DATA_DIR/preflight_report_verified.json" "$DATA_DIR/preflight_report.json"`替换初稿，计算最终文件SHA；**未经现场核验不得填写`verified=true`。**
+-7. **独立批准**：由有权责任人确认真实身份/来源许可/数据SHA/行数/预检SHA，签发`approval.json`（不能引用示例文件作为批准）。衍生数据还需父快照路径、变更审批引用与确认。此文件的存在并不自动证明批准人真实有权，执行Agent仍须检查批准系统中的原始决定。
+-8. **GPU窗口**：由实际受影响系统管理员授权、备份K8s恢复点，验证`swift sft --help`是否支持训练时参数；再设置`BASE_MODEL DATA_DIR APPROVAL_FILE TRAIN_IMAGE_DIGEST SOURCE_GIT_COMMIT RUN_AUTHORIZED GPU_WINDOW_APPROVED OUT_DIR`运行`bash train_identity.sh smoke`与新目录下的`bash train_identity.sh full`。不支持`eval_strategy no`、`data_seed`、`save_strategy`直接阻断，不猜参数名。
+-9. **对照评估**：另按实际串行推理耗时申请GPU资源，四组A/B/C/D保持相同案例、seed、生成参数、base、engine；B/D使用相同System Prompt文件字节。独立Reviewer记录结果摘要；`register_evaluation.py`登记，不提交逐条试题/回答。
+-10. **恢复与发布**：恢复原vLLM Deployment并实测；新Adapter保留Candidate，未单独批准不得发布。
++```bash
++bash train_identity.sh cpu-check \
++  --model /base \
++  --identity-spec identity-spec.confirmed.json \
++  --evidence-dir /work/NEW-nonexistent-evidence-dir \
++  --reference-snapshot /reference/original-v1.2/train.jsonl \
++  --base-files /reference/evidence/template/original-final/base-files.json
++```
+ 
+-### 实际ms-swift核验证据JSON（结构示例，**不是审批/实测值**）
++解析正式Full argv，再仅覆盖use_cpu=true、report_to=none、add_version=false以执行真实SftArguments后初始化、args.load_dataset、Qwen3 tokenizer与真实SwiftSft._encode_dataset原方法。不会实例化SwiftSft、加载模型权重、创建Trainer、ClearML Task或训练子进程；对基座文件做完整SHA读取不等于加载模型权重到内存。`evidence/native-proof`中的两个JSONL是复算证据，不是正式训练输入。
+ 
+-```json
+-{
+-  "verified": false,
+-  "evidence_ref": "在固定真实ms-swift镜像中执行的模板/标签掩码/长度检查日志或任务地址",
+-  "dataset_sha256": "实际train.jsonl哈希",
+-  "model_files_sha256": "实际训练基础模型文件清单哈希",
+-  "rows_checked": 2600,
+-  "max_length": 2048,
+-  "overlength_rows": 0
+-}
+-```
++## 正式训练入口的准备条件（本轮不得执行）
+ 
+-**注意：** `verified`必须由实际ms-swift流水线证据审核后改成`true`；`dataset_sha256`和`model_files_sha256`必须为确切hash，`rows_checked`按现场事实填写。脚本只能校验该记录与数据/模型字节是否一致，**不能替批准人确认记录是否真实**。`ms-swift`实际模板证据的生成/检查由具备真实训练镜像的Agent实施，当前交付没有完成该项现场步骤。
++后续经真实GPU窗口及实验授权后，运行单元必须绑定：BASE_MODEL、IDENTITY_SPEC、NATIVE_PREFLIGHT_REPORT、OUT_DIR（必须不存在）、TRAIN_IMAGE_DIGEST、SOURCE_GIT_COMMIT、APPROVAL_FILE，以及RUN_AUTHORIZED=yes和GPU_WINDOW_APPROVED=yes。还需要可导入的ClearML SDK、实际凭据引用和HTTPS CLEARML_FILES_HOST。没有这些条件会阻断；准备脚本不生成approval.json。CPU模式不要求伪造这些批准。
+ 
+-### 训练批准 `approval.json` 扩展字段（展示结构，不是放行授权）
++批准记录除原有literal JSON true的身份/来源/实验/GPU窗口确认和decision_ref/source_snapshot_ref外，须由责任人绑定真实native_preflight_report_sha256、approved_rows（实际过滤保留数）、approved_data_sha256（native_input的canonical dataset摘要，非JSONL文件SHA）、preflight_model_files_sha256。CPU报告本身有SHA且含原生输入/过滤结果、包版本、模板参数和实现指纹。旧数据选择已经确认，不需要重新裁定配比；上述记录用于未来作业精确输入与真实GPU授权绑定，不是本轮新增数据政策审批。
+ 
+-需要保留原有`identity_verified`、`experiment_approved`、`gpu_window_approved`、`sources_approved`、`decision_ref`、`source_snapshot_ref`等字段，并添加：
++Full使用steps/save_steps=50。当前实装Swift4.4.2 callback还在最后一步强制保存；wrapper必须同时核对Swift终态logging.jsonl、checkpoint目录、trainer_state.global_step/max_steps及epoch，才登记Candidate。Smoke仍是独立的3步路径，需要独立获批，CPU检查不启动它。训练产物的真实生成/上传回读需GPU阶段验证。
+ 
+-- `approved_rows`: 经批准的实际训练行数；原始2600或衍生值。
+-- `approved_data_sha256`: 当前训练目录`train.jsonl`的SHA-256。
+-- `approved_snapshot_manifest_sha256`: 当前目录`manifest.json`的SHA-256。
+-- `preflight_model_files_sha256`: 预检使用的**完整基础模型文件清单哈希**。
+-- `preflight_report_sha256`: **最终**`preflight_report.json`的SHA-256。
+-- 若清洗：`data_change_approved=true`、非空`data_change_ref`和`parent_snapshot_dir`（指向确切原始快照）。
++`native_guard.py`是只读external plugin：原样返回官方加载/过滤后的对象，检查有序数据全部列（包括过滤产生的lengths）摘要、名称、模板、包版本以及批准的报告SHA；发现漂移或cached/streaming/packing/lazy等旁路就失败。基座完整SHA和代码/Swift关键源码指纹由父入口核对。注意未来Swift实例化会在数据guard运行前加载基座；guard保证漂移时不进入Trainer/train，不声称漂移失败发生在Task或GPU模型加载之前。
+ 
+-SHA都是**对最终文件字节**计算。建议把批准文件放在不同受控目录，授权签核不得由准备数据脚本自动填写。每项hash可以用`sha256sum FILE`检验（模型文件清单哈希由`preflight_data.py`自动报告）。
++本轮不启用USE_QLORA/USE_LIGER等优化。旧prepare_official/derive_snapshot/preflight_data和本地快照校验函数留作历史复算兼容，**不再是正式main的数据路径**；其严格旧契约未放宽。QA_REPORT_v1.2.md为历史修复说明，当前结论以本轮reports及CPU证据为准。
+ 
+-## 本地复核命令（只用合成数据）
++## 复核
+ 
+ ```bash
+-python3 -m py_compile *.py tests/test_contract.py
++python3 -m py_compile *.py tests/*.py
+ bash -n train_identity.sh
+ python3 -W error::ResourceWarning -m unittest discover -s tests -v
+ ```
+ 
+-以上仅证明代码静态/模拟约束；Qwen3-8B完整训练、官方数据下载、真实ms-swift CLI/模板、许可、K8s停启、ClearML OutputModel回读、实际A/B/C/D推理均需后续真实环境核验。本包不会主动操作这些系统。
++完整CPU容器运行配方、AST索引适配、可信证书bundle及检查脚本在交付包scripts和evidence。基础镜像没有ClearML SDK；最终训练Job/PVC、SDK overlay、凭据和服务切换清单尚待绑定。当前GPU No-Go，CPU通过不代表模型内容质量或上线验收通过。
+diff --git a/identity-spec.confirmed.json b/identity-spec.confirmed.json
+new file mode 100644
+index 0000000..884f88b
+--- /dev/null
++++ b/identity-spec.confirmed.json
+@@ -0,0 +1,7 @@
++{
++  "name_zh": "章鱼能碳垂直大模型",
++  "name_en": "Octacarbon LLM",
++  "author_zh": "能碳章鱼（湖北）人工智能科技有限公司",
++  "author_en": "Octacarbon (Hubei) Artificial Intelligence Technology Co., Ltd.",
++  "base_model": "Qwen/Qwen3-8B"
++}
+diff --git a/native_guard.py b/native_guard.py
+new file mode 100644
+index 0000000..85a5e7a
+--- /dev/null
++++ b/native_guard.py
+@@ -0,0 +1,57 @@
++"""Swift external plugin: checks native data only; never changes sampling/filtering."""
++import json
++import os
++import pathlib
++import hashlib
++import functools
++import importlib.metadata
++from native_recipe import check_record, dataset_record, validate_native_args
++
++def install():
++    from swift.pipelines.train.sft import SwiftSft
++    if getattr(SwiftSft._get_dataset,'_native_guard',False):
++        return
++    def expected(args):
++        path=os.environ.get('NATIVE_PREFLIGHT_REPORT')
++        checksum=os.environ.get('NATIVE_PREFLIGHT_SHA256')
++        if not path or not checksum:
++            raise RuntimeError('Native training guard requires approved CPU evidence')
++        raw=pathlib.Path(path).read_bytes()
++        if hashlib.sha256(raw).hexdigest()!=checksum:
++            raise RuntimeError('Approved native CPU evidence changed')
++        evidence=json.loads(raw)
++        for name,version in evidence['versions'].items():
++            if importlib.metadata.version(name)!=version:
++                raise RuntimeError('Runtime package changed since native CPU evidence')
++        spec=evidence['spec']
++        if (list(args.model_name)!=[spec['name_zh'],spec['name_en']] or
++            list(args.model_author)!=[spec['author_zh'],spec['author_en']]):
++            raise RuntimeError('Native identity differs from CPU evidence')
++        return evidence
++    get_original=SwiftSft._get_dataset
++    encode_original=SwiftSft._encode_dataset
++    @functools.wraps(get_original)
++    def get_checked(self):
++        validate_native_args(self.args)
++        evidence=expected(self.args)
++        check_record(self.args.get_template_kwargs(),evidence['template_kwargs'],'template configuration')
++        train,val=get_original(self)
++        check_record(dataset_record(train),evidence['native_input'],'loaded dataset')
++        if val is not None and len(val):
++            raise RuntimeError('Unexpected validation split')
++        return train,val
++    @functools.wraps(encode_original)
++    def encode_checked(self, train, val, pre_process=True):
++        validate_native_args(self.args)
++        if not pre_process:
++            raise RuntimeError('Native default preprocessing cannot be bypassed')
++        evidence=expected(self.args)
++        result=encode_original(self,train,val,pre_process=pre_process)
++        if pre_process:
++            check_record(dataset_record(result[0]),evidence['native_retained'],'default filtered dataset')
++        return result
++    get_checked._native_guard=True
++    SwiftSft._get_dataset=get_checked
++    SwiftSft._encode_dataset=encode_checked
++
++install()
+diff --git a/native_recipe.py b/native_recipe.py
+new file mode 100644
+index 0000000..1b0598f
+--- /dev/null
++++ b/native_recipe.py
+@@ -0,0 +1,226 @@
++"""Official native recipe and CPU-only evidence. Does not grant training authority."""
++from __future__ import annotations
++import collections
++import hashlib
++import importlib.metadata
++import json
++import pathlib
++import re
++
++SOURCES = ['swift/Qwen3-SFT-Mixin#2000', 'swift/self-cognition:qwen3#600']
++FIELDS = ('name_zh', 'name_en', 'author_zh', 'author_en')
++
++def digest(value):
++    return hashlib.sha256(json.dumps(value, ensure_ascii=False, sort_keys=True,
++                                    separators=(',', ':')).encode()).hexdigest()
++
++def spec_read(path):
++    spec = json.loads(pathlib.Path(path).read_text())
++    if any(not isinstance(spec.get(k), str) or not spec[k].strip() or
++           re.search(r'待填|待确认|<.*>|\{\{', spec[k]) for k in FIELDS):
++        raise RuntimeError('Four confirmed bilingual identity fields required')
++    if spec.get('base_model') != 'Qwen/Qwen3-8B':
++        raise RuntimeError('Unexpected base identity')
++    return {k:spec[k] for k in (*FIELDS, 'base_model')}
++
++def build_command(mode, model, output, spec, help_text):
++    if mode not in ('full', 'smoke'):
++        raise ValueError('Unsupported training mode')
++    tuner = next((x for x in ('--tuner_type','--train_type') if x in help_text), None)
++    evaluation = next((x for x in ('--eval_strategy','--evaluation_strategy') if x in help_text), None)
++    required = ('--save_strategy','--save_steps','--data_seed','--model_name',
++                '--model_author','--external_plugins')
++    if not tuner or not evaluation or any(x not in help_text for x in required):
++        raise RuntimeError('Actual Swift parser lacks required native recipe options')
++    argv = ['swift','sft','--model',str(model),'--model_type','qwen3','--template','qwen3',
++        tuner,'lora','--dataset',*SOURCES,
++        '--model_name',spec['name_zh'],spec['name_en'],
++        '--model_author',spec['author_zh'],spec['author_en'],
++        '--split_dataset_ratio','0','--torch_dtype','bfloat16','--num_train_epochs','1',
++        '--per_device_train_batch_size','1','--per_device_eval_batch_size','1',
++        '--learning_rate','1e-4','--lora_rank','8','--lora_alpha','32',
++        '--target_modules','all-linear','--gradient_accumulation_steps','16',
++        '--max_length','2048','--warmup_ratio','0.05',evaluation,'no','--eval_steps','50',
++        '--save_strategy','steps','--save_steps','50' if mode=='full' else '3',
++        '--save_total_limit','2','--logging_steps','5','--dataloader_num_workers','4',
++        '--seed','42','--data_seed','42','--push_to_hub','false',
++        '--output_dir',str(output),'--gradient_checkpointing','true',
++        '--save_only_model','false','--report_to','tensorboard',
++        '--external_plugins',str(pathlib.Path(__file__).with_name('native_guard.py'))]
++    if mode=='smoke':
++        argv += ['--max_steps','3']
++    return argv
++
++def dataset_record(dataset):
++    rows = [] if dataset is None else list(dataset)
++    return {'rows':len(rows), 'sha256':digest(rows)}
++
++def implementation_fingerprint():
++    import swift
++    root=pathlib.Path(__file__).parent
++    swift_root=pathlib.Path(swift.__file__).parent
++    files={str(root/n):root/n for n in ('native_recipe.py','native_guard.py','run_identity.py','train_identity.sh')}
++    # Relative keys are portable across CPU and the later training container.
++    result={'entry/'+path.name:hashlib.sha256(path.read_bytes()).hexdigest() for path in files.values()}
++    for name in ('pipelines/train/sft.py','arguments/sft_args.py','dataset/loader.py',
++                 'dataset/utils.py','template/base.py','trainers/patcher.py'):
++        result['swift/'+name]=hashlib.sha256((swift_root/name).read_bytes()).hexdigest()
++    return result
++
++def check_record(observed, expected, label):
++    if observed != expected:
++        raise RuntimeError(f'Native {label} drift: {observed} != {expected}')
++
++def validate_formal_command(command, approved, mode):
++    def normalized(argv):
++        result=list(argv)
++        for flag in ('--model','--output_dir','--external_plugins'):
++            i=result.index(flag); result[i+1]='<bound separately>'
++        if mode=='smoke' and '--max_steps' in result:
++            i=result.index('--max_steps'); del result[i:i+2]
++            i=result.index('--save_steps'); result[i+1]='50'
++        return result
++    if normalized(command)!=normalized(approved):
++        raise RuntimeError('Formal command differs from CPU-validated native recipe')
++
++def validate_native_args(args):
++    if (args.dataset!=SOURCES or args.split_dataset_ratio!=0 or
++        args.max_length!=2048 or args.truncation_strategy!='delete' or
++        args.seed!=42 or args.data_seed!=42 or not args.dataset_shuffle or args.use_hf or
++        any(getattr(args,k,None) for k in ('cached_dataset','cached_val_dataset','val_dataset',
++                                          'streaming','packing','lazy_tokenize'))):
++        raise RuntimeError('Unexpected native runtime configuration or cached-data bypass')
++
++def validate_report(path, spec, approval=None):
++    from run_identity import sha
++    report = json.loads(pathlib.Path(path).read_text())
++    if (report.get('schema')!='t008-native-cpu-v1' or report.get('verified') is not True
++        or report.get('spec')!=spec or report.get('source_specs')!=SOURCES
++        or report.get('truncation_strategy')!='delete' or report.get('max_length')!=2048
++        or report.get('seed')!=42 or report.get('data_seed')!=42
++        or report.get('dataset_shuffle') is not True
++        or report.get('native_input',{}).get('rows')!=2600
++        or report.get('validation_rows')!=0):
++        raise RuntimeError('Invalid native CPU evidence/configuration')
++    if approval is not None:
++        if (approval.get('native_preflight_report_sha256')!=sha(path)
++            or approval.get('approved_rows')!=report['native_retained']['rows']
++            or approval.get('approved_data_sha256')!=report['native_input']['sha256']
++            or approval.get('preflight_model_files_sha256')!=report['model_files_sha256']):
++            raise RuntimeError('Training approval must bind actual native CPU evidence and data')
++    for name, version in report['versions'].items():
++        if importlib.metadata.version(name)!=version:
++            raise RuntimeError(f'CPU/runtime package drift: {name}')
++    check_record(implementation_fingerprint(),report['implementation_fingerprint'],'implementation')
++    return report
++
++def cpu_check(model, spec_path, output, reference_snapshot, base_files_path, help_text):
++    """Actual parser + native load + actual Swift preprocessing, no model/Trainer."""
++    from run_identity import sha
++    out = pathlib.Path(output)
++    out.mkdir(parents=True, exist_ok=False)
++    spec = spec_read(spec_path)
++    command = build_command('full', model, out/'training-output-NOT-STARTED', spec, help_text)
++    from transformers import HfArgumentParser
++    from swift.arguments import SftArguments
++    parser = HfArgumentParser(SftArguments)
++    namespace, unknown = parser.parse_known_args(command[2:])
++    if unknown:
++        raise RuntimeError(f'Unknown formal parameters: {unknown}')
++    (out/'formal-command.json').write_text(json.dumps(command, ensure_ascii=False, indent=2)+'\n')
++    (out/'formal-parser.json').write_text(json.dumps(vars(namespace), ensure_ascii=False, indent=2, default=str)+'\n')
++    # CPU overrides only: same data, templates, seeds and training recipe.
++    args, = parser.parse_args_into_dataclasses(command[2:]+[
++        '--use_cpu','true','--report_to','none','--add_version','false'])
++    validate_native_args(args)
++    if args.truncation_strategy!='delete' or not args.dataset_shuffle:
++        raise RuntimeError('Official nonstreaming defaults changed')
++    if str(args.training_args.device)!='cpu':
++        raise RuntimeError('CPU isolation missing')
++    dataset, val = args.load_dataset()  # exact formal native path, including shuffle=True
++    native = dataset_record(dataset)
++    if native['rows']!=2600 or (val is not None and len(val)):
++        raise RuntimeError('Unexpected native source count/validation')
++    raw_rows = list(dataset)
++    (out/'native-loaded.jsonl').write_text(''.join(json.dumps(r, ensure_ascii=False, sort_keys=True)+'\n' for r in raw_rows))
++    from swift.model import get_processor
++    from swift.template import get_template
++    from swift.pipelines.train.sft import SwiftSft
++    processor = get_processor(model, model_type='qwen3', download_model=False)
++    template = get_template(processor, **args.get_template_kwargs())
++    template.set_mode('train')
++    template_kwargs=args.get_template_kwargs()
++    # Invoke actual pipeline method with a metadata-only stub. SwiftSft.__init__
++    # would load weights and is deliberately never called.
++    class Stub:
++        def _save_val_dataset(self, val):
++            if val is not None and len(val):
++                raise RuntimeError('Unexpected validation data')
++    stub = Stub(); stub.args=args; stub.template=template
++    # The plugin is always fail-closed in a training pipeline. Here invoke the
++    # original installed method directly while constructing its CPU evidence.
++    encode_method=getattr(SwiftSft._encode_dataset,'__wrapped__',SwiftSft._encode_dataset)
++    retained, val = encode_method(stub, dataset, val)
++    retained_record = dataset_record(retained)
++    (out/'native-retained.jsonl').write_text(''.join(json.dumps(r, ensure_ascii=False, sort_keys=True)+'\n' for r in retained))
++    # Compare content and sampling with immutable previous preparation; order
++    # may change because official SftArguments enables dataset_shuffle=True.
++    old = [json.loads(x) for x in pathlib.Path(reference_snapshot).read_text().splitlines()]
++    from prepare_official import normal_row, unresolved_placeholders
++    original_counts = collections.Counter(digest(normal_row(x)) for x in old)
++    actual_counts = collections.Counter(digest(normal_row(x)) for x in raw_rows)
++    known = set(original_counts)
++    if set(actual_counts)-known:
++        raise RuntimeError('Native loader produced content absent from reviewed original')
++    # Attribution by immutable raw content, independent of shuffled positions.
++    mixin_keys={digest(normal_row(x)) for x in old[:2000]}
++    identity_keys={digest(normal_row(x)) for x in old[2000:]}
++    if mixin_keys & identity_keys:
++        raise RuntimeError('Ambiguous source attribution')
++    def source_counts(rows):
++        c=collections.Counter('mixin' if digest(normal_row(r)) in mixin_keys else 'identity' for r in rows)
++        return dict(c)
++    identity_rows=[normal_row(x) for x in raw_rows if digest(normal_row(x)) in identity_keys]
++    if unresolved_placeholders(identity_rows,0):
++        raise RuntimeError('Unresolved native identity placeholders')
++    unbounded = get_template(processor, **args.get_template_kwargs())
++    unbounded.max_length=None; unbounded.set_mode('train')
++    audit=[]
++    for i,row in enumerate(raw_rows):
++        enc=unbounded.encode(row, return_length=True)
++        ids=enc['input_ids']; labels=enc['labels']
++        assert len(ids)==len(labels) and all(y==-100 or y==x for x,y in zip(ids,labels))
++        n=sum(x!=-100 for x in labels)
++        if not n: raise RuntimeError('No supervised tokens')
++        audit.append(dict(native_row_zero_based=i,tokens=len(ids),supervised_tokens=n,
++                          retained=len(ids)<=2048,input_ids_sha256=digest(ids),labels_sha256=digest(labels)))
++    (out/'row-audit.jsonl').write_text(''.join(json.dumps(r,sort_keys=True)+'\n' for r in audit))
++    expected=collections.Counter(digest(normal_row(x)) for x,r in zip(raw_rows,audit) if r['retained'])
++    if expected!=collections.Counter(digest(normal_row(x)) for x in retained):
++        raise RuntimeError('Actual Swift delete membership differs from full-length audit')
++    files=json.loads(pathlib.Path(base_files_path).read_text())
++    for record in files:
++        p=pathlib.Path(model)/record['path']
++        if p.stat().st_size!=record['size'] or sha(p)!=record['sha256']:
++            raise RuntimeError(f'Base file drift: {p.name}')
++    versions={n:importlib.metadata.version(n) for n in
++              ('ms-swift','transformers','peft','torch','tokenizers','datasets','modelscope')}
++    report=dict(schema='t008-native-cpu-v1',verified=True,spec=spec,source_specs=SOURCES,
++        native_input=native,native_retained=retained_record,validation_rows=0,
++        input_source_counts=source_counts(raw_rows),retained_source_counts=source_counts(retained),
++        removed_rows=len(raw_rows)-len(retained),input_unique_rows=len(actual_counts),
++        retained_unique_rows=len(expected),original_content_membership_verified=True,
++        same_exposure_multiset_as_old=(actual_counts==original_counts),
++        old_reference_sha256=sha(reference_snapshot),
++        native_message_order_sha256=digest([normal_row(x) for x in raw_rows]),
++        retained_message_order_sha256=digest([normal_row(x) for x in retained]),
++        model_files_sha256=hashlib.sha256(json.dumps(files,ensure_ascii=False,sort_keys=True).encode()).hexdigest(),
++        all_base_files_fully_rehashed=True,versions=versions,implementation_fingerprint=implementation_fingerprint(),max_length=args.max_length,
++        truncation_strategy=args.truncation_strategy,template_truncation_strategy=template.truncation_strategy,
++        seed=args.seed,data_seed=args.data_seed,dataset_shuffle=args.dataset_shuffle,
++        loss_scale=args.loss_scale,template=args.template,template_kwargs=template_kwargs,formal_unknown_flags=unknown,
++        cpu_overrides={'use_cpu':True,'report_to':['none'],'add_version':False},
++        weights_loaded=False,trainer_created=False,clearml_task_created=False,gpu_training_started=False,
++        formal_command=command)
++    (out/'native-preflight.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
++    return report
+diff --git a/run_identity.py b/run_identity.py
+index 6f68357..6d2702e 100644
+--- a/run_identity.py
++++ b/run_identity.py
+@@ -180,14 +180,50 @@ def zip_adapter(checkpoint, target):
+             z.writestr(zi,p.read_bytes())
+     return {p.name:{'sha256':sha(p),'bytes':p.stat().st_size} for p in files}
+ 
++def verify_final_checkpoint(directory, checkpoint):
++    """Require pipeline's completed-run terminal record, not checkpoint self-report."""
++    logs=list(pathlib.Path(directory).rglob('logging.jsonl'))
++    terminal=[]
++    for log in logs:
++        for line in log.read_text().splitlines():
++            try: entry=json.loads(line)
++            except ValueError: continue
++            if entry.get('global_step') is not None and entry.get('last_model_checkpoint'):
++                terminal.append(entry)
++    if len(terminal)!=1:
++        raise RuntimeError('Require one actual Swift terminal training record')
++    final=terminal[0]
++    state=json.loads((checkpoint/'trainer_state.json').read_text())
++    step=int(re.search(r'checkpoint-(\d+)$',checkpoint.name).group(1))
++    if (step!=int(final['global_step']) or step!=int(state['global_step'])
++        or pathlib.Path(final['last_model_checkpoint']).resolve()!=checkpoint.resolve()
++        or int(state.get('max_steps',-1))!=step or float(state.get('epoch') or 0)<0.999):
++        raise RuntimeError('Adapter does not match actual completed final training step')
++    return final
++
+ def main():
+     pa=argparse.ArgumentParser(description=__doc__)
+-    pa.add_argument('mode',choices=('smoke','full'))
++    pa.add_argument('mode',choices=('smoke','full','cpu-check'))
++    pa.add_argument('--model')
++    pa.add_argument('--identity-spec')
++    pa.add_argument('--evidence-dir')
++    pa.add_argument('--reference-snapshot')
++    pa.add_argument('--base-files')
+     args=pa.parse_args()
++    from native_recipe import build_command, cpu_check, spec_read, validate_report
++    if args.mode=='cpu-check':
++        values=(args.model,args.identity_spec,args.evidence_dir,args.reference_snapshot,args.base_files)
++        if not all(values): pa.error('cpu-check requires model, identity-spec, evidence-dir, reference-snapshot, base-files')
++        report=cpu_check(*values, swift_cli_help())
++        print(json.dumps(report,ensure_ascii=False,indent=2))
++        return
++    if any(os.environ.get(k,'false').lower()!='false' for k in ('USE_QLORA','USE_LIGER')):
++        raise RuntimeError('Optimization is deferred; official native LoRA recipe only')
+     if require_env('RUN_AUTHORIZED')!='yes' or require_env('GPU_WINDOW_APPROVED')!='yes':
+         raise RuntimeError('Run and current GPU interruption window must be authorized')
+     model=pathlib.Path(require_env('BASE_MODEL')).resolve()
+-    dataset=pathlib.Path(require_env('DATA_DIR')).resolve()
++    spec=spec_read(require_env('IDENTITY_SPEC'))
++    native_report_file=pathlib.Path(require_env('NATIVE_PREFLIGHT_REPORT')).resolve()
+     out=pathlib.Path(require_env('OUT_DIR')).resolve()
+     image_digest=require_env('TRAIN_IMAGE_DIGEST')
+     source_commit=require_env('SOURCE_GIT_COMMIT')
+@@ -196,8 +232,10 @@ def main():
+     approval=json.loads(approval_file.read_text(encoding='utf-8'))
+     validate_authorization(approval)
+     files_host=clearml_storage_uri(require_env('CLEARML_FILES_HOST'))
+-    manifest, manifest_file=validate_training_dataset(dataset, approval)
+-    preflight=validate_length_preflight(dataset, manifest_file, approval)
++    preflight=validate_report(native_report_file, spec, approval)
++    # Freeze the approved bytes for the child plugin; never reread a mutable
++    # unbound report as the source of expected training membership.
++    os.environ['NATIVE_PREFLIGHT_SHA256']=approval['native_preflight_report_sha256']
+     import torch
+     if not torch.cuda.is_available() or not torch.cuda.is_bf16_supported():
+         raise RuntimeError('BF16 GPU unavailable')
+@@ -205,50 +243,22 @@ def main():
+     if not re.fullmatch(r'sha256:[0-9a-f]{64}',image_digest) or not re.fullmatch(r'[0-9a-f]{40}',source_commit):
+         raise RuntimeError('Require real sha256 image digest and full Git SHA1 commit')
+     swifthelp=swift_cli_help()
+-    tuner='--tuner_type' if '--tuner_type' in swifthelp else ('--train_type' if '--train_type' in swifthelp else None)
+-    if not tuner: raise RuntimeError('LoRA CLI option unknown; pin/test exact ms-swift version')
+-    eval_switch='--eval_strategy' if '--eval_strategy' in swifthelp else ('--evaluation_strategy' if '--evaluation_strategy' in swifthelp else None)
+-    if not eval_switch: raise RuntimeError('Cannot explicitly disable eval with this ms-swift CLI')
+-    if '--save_strategy' not in swifthelp: raise RuntimeError('Cannot verify required checkpoint save strategy')
+-    if '--data_seed' not in swifthelp: raise RuntimeError('Cannot pin data shuffle seed in this ms-swift CLI')
+-    # With an immutable local training snapshot there is NO training-derived val set;
+-    # standalone independent tests are scored later. Avoid replay leakage.
+     run_id=out.name
+-    common=['swift','sft','--model',str(model),'--model_type','qwen3','--template','qwen3',tuner,'lora',
+-        '--dataset',str(dataset/'train.jsonl'),'--split_dataset_ratio','0',
+-        '--torch_dtype','bfloat16','--num_train_epochs','1',
+-        '--per_device_train_batch_size','1','--per_device_eval_batch_size','1',
+-        '--learning_rate','1e-4','--lora_rank','8','--lora_alpha','32',
+-        '--target_modules','all-linear','--gradient_accumulation_steps','16',
+-        '--max_length','2048','--warmup_ratio','0.05',eval_switch,'no',
+-        '--save_total_limit','2','--logging_steps','5',
+-        '--dataloader_num_workers','4','--seed','42','--data_seed','42',
+-        '--push_to_hub','false','--output_dir',str(out/'checkpoints')]
+-    if '--gradient_checkpointing' in swifthelp: common.extend(['--gradient_checkpointing','true'])
+-    if '--save_only_model' in swifthelp: common.extend(['--save_only_model','false'])
+-    if '--report_to' in swifthelp: common.extend(['--report_to','tensorboard'])
+-    # Preserve the official 50-step save interval for smoke, but force a FINAL
+-    # checkpoint at end of the full epoch to avoid registering checkpoint-150
+-    # when the actual run ended after e.g. 163 optimizer steps.
+-    if args.mode=='smoke':
+-        common.extend(['--max_steps','3','--save_strategy','steps','--save_steps','3'])
+-    else:
+-        common.extend(['--save_strategy','epoch'])
+-    if os.environ.get('USE_QLORA')=='true':
+-        common.extend(['--quant_method','bnb','--quant_bits','4',
+-                       '--bnb_4bit_quant_type','nf4',
+-                       '--bnb_4bit_compute_dtype','bfloat16',
+-                       '--bnb_4bit_use_double_quant','true'])
+-    if os.environ.get('USE_LIGER')=='true': common.extend(['--use_liger_kernel','true'])
++    common=build_command(args.mode, model, out/'checkpoints', spec, swifthelp)
++    # Compare every formal parser field against actual CPU-validated Full plan;
++    # path/mode-specific differences are bounded in native_recipe.
++    from native_recipe import validate_formal_command
++    validate_formal_command(common, preflight['formal_command'], args.mode)
+     files=base_fingerprint(model)
+     actual_base_hash=hashlib.sha256(json.dumps(files,ensure_ascii=False,sort_keys=True).encode()).hexdigest()
+     if preflight['model_files_sha256']!=actual_base_hash:
+         raise RuntimeError('Tokenizer preflight model does not match training base model')
+     out.mkdir(parents=True)
+     meta={'schema':'identity-run-v1.2','run_id':run_id,'mode':args.mode,
+-          'status':'RUNNING','dataset_manifest_sha256':sha(manifest_file),
+-          'data_sha256':sha(dataset/'train.jsonl'),'base_files':files,
+-          'approved_rows':approval['approved_rows'],'preflight_report_sha256':sha(dataset/'preflight_report.json'),
++          'status':'RUNNING','data_mode':'official_native_default_delete',
++          'data_sha256':preflight['native_input']['sha256'],'base_files':files,
++          'native_input':preflight['native_input'],'native_retained':preflight['native_retained'],
++          'approved_rows':approval['approved_rows'],'preflight_report_sha256':sha(native_report_file),
+           'source_git_commit':source_commit,'image_digest':image_digest,
+           'base_files_sha256':actual_base_hash,
+           'approval_ref':approval['decision_ref'],'approval_sha256':sha(approval_file),'torch':info('torch'),
+@@ -301,6 +311,7 @@ def main():
+                 # A trainer format mismatch must be visible but cannot create false metrics.
+                 meta['metrics_registration_error']=repr(e)
+         if args.mode=='full':
++            verify_final_checkpoint(out/'checkpoints', ckpt)
+             if meta.get('metrics_registration_error'):
+                 raise RuntimeError(meta['metrics_registration_error'])
+             if not trainer_state.is_file() or not state.get('global_step'):
+diff --git a/tests/test_native_entry.py b/tests/test_native_entry.py
+new file mode 100644
+index 0000000..03624bd
+--- /dev/null
++++ b/tests/test_native_entry.py
+@@ -0,0 +1,99 @@
++import importlib
++import json
++import os
++import pathlib
++import sys
++import tempfile
++import types
++import unittest
++from unittest.mock import patch
++sys.path.insert(0,str(pathlib.Path(__file__).resolve().parents[1]))
++import native_recipe as n
++import run_identity as r
++
++HELP='--tuner_type --eval_strategy --save_strategy --save_steps --data_seed --model_name --model_author --external_plugins'
++SPEC=n.spec_read(pathlib.Path(n.__file__).with_name('identity-spec.example.json'))
++
++class NativeTests(unittest.TestCase):
++    def command(self,mode='full',help_text=HELP):
++        return n.build_command(mode,'/base','/out',SPEC,help_text)
++    def test_formal_native_recipe(self):
++        c=self.command(); i=c.index('--dataset')
++        self.assertEqual(c[i+1:i+3],n.SOURCES)
++        for key,value in [('--save_strategy','steps'),('--save_steps','50'),('--eval_strategy','no'),
++                          ('--max_length','2048'),('--data_seed','42')]:
++            self.assertEqual(c[c.index(key)+1],value)
++        self.assertNotIn('--truncation_strategy',c) # actual default must resolve to delete
++        self.assertIn(SPEC['author_en'],c)
++        self.assertFalse(any(x.endswith('train.jsonl') for x in c))
++    def test_aliases_and_missing_required_fail(self):
++        c=self.command(help_text=HELP.replace('--tuner_type','--train_type').replace('--eval_strategy','--evaluation_strategy'))
++        self.assertIn('--train_type',c);self.assertIn('--evaluation_strategy',c)
++        with self.assertRaises(RuntimeError):self.command(help_text=HELP.replace('--model_author',''))
++    def test_command_drift_and_smoke_bounded(self):
++        c=self.command();n.validate_formal_command(self.command('smoke'),c,'smoke')
++        bad=list(c);bad[bad.index('--max_length')+1]='2560'
++        with self.assertRaises(RuntimeError):n.validate_formal_command(bad,c,'full')
++    def test_cpu_branch_precedes_authorization_and_gpu(self):
++        report={'verified':True}
++        flags=['run_identity.py','cpu-check','--model','/base','--identity-spec','s',
++               '--evidence-dir','o','--reference-snapshot','r','--base-files','b']
++        with patch.object(sys,'argv',flags),patch.dict(os.environ,{},clear=True),\
++             patch.object(n,'cpu_check',return_value=report) as check,\
++             patch.object(r,'swift_cli_help',return_value=HELP),\
++             patch.object(r,'require_env',side_effect=AssertionError('authorization in CPU branch')),\
++             patch.object(r.subprocess,'Popen',side_effect=AssertionError('training started')):
++            r.main();check.assert_called_once()
++    def test_unauthorized_training_never_starts(self):
++        with patch.object(sys,'argv',['run_identity.py','full']),patch.dict(os.environ,{},clear=True),\
++             patch.object(r.subprocess,'Popen',side_effect=AssertionError('training started')):
++            with self.assertRaises(RuntimeError):r.main()
++    def test_native_config_bypass_fails(self):
++        values=dict(dataset=n.SOURCES,split_dataset_ratio=0,max_length=2048,truncation_strategy='delete',
++                    seed=42,data_seed=42,dataset_shuffle=True,use_hf=False)
++        n.validate_native_args(types.SimpleNamespace(**values))
++        for k,v in [('packing',True),('lazy_tokenize',True),('cached_dataset',['x']),
++                    ('use_hf',True),('truncation_strategy','right'),('dataset_shuffle',False)]:
++            bad=dict(values);bad[k]=v
++            with self.assertRaises(RuntimeError):n.validate_native_args(types.SimpleNamespace(**bad))
++    def test_order_and_multiplicity_drift_fails(self):
++        a=[{'messages':[1]},{'messages':[2]}]
++        for b in [list(reversed(a)),a+a]:
++            with self.assertRaises(RuntimeError):n.check_record(n.dataset_record(a),n.dataset_record(b),'test')
++    def test_final_checkpoint_needs_actual_terminal_record(self):
++        with tempfile.TemporaryDirectory() as d:
++            root=pathlib.Path(d);ck=root/'checkpoint-103';ck.mkdir()
++            state={'global_step':103,'max_steps':103,'epoch':1.0}
++            (ck/'trainer_state.json').write_text(json.dumps(state))
++            with self.assertRaises(RuntimeError):r.verify_final_checkpoint(root,ck)
++            log=root/'logging.jsonl'
++            log.write_text(json.dumps({'global_step':103,'last_model_checkpoint':str(ck)})+'\n')
++            r.verify_final_checkpoint(root,ck)
++            log.write_text(json.dumps({'global_step':104,'last_model_checkpoint':str(ck)})+'\n')
++            with self.assertRaises(RuntimeError):r.verify_final_checkpoint(root,ck)
++    def test_native_guard_preserves_objects_and_rejects_drift(self):
++        values=dict(dataset=n.SOURCES,split_dataset_ratio=0,max_length=2048,truncation_strategy='delete',
++                    seed=42,data_seed=42,dataset_shuffle=True,use_hf=False,
++                    model_name=[SPEC['name_zh'],SPEC['name_en']],model_author=[SPEC['author_zh'],SPEC['author_en']])
++        data=[{'messages':['test']}];filtered=[{'messages':['test'],'lengths':12}]
++        class Pipeline:
++            args=types.SimpleNamespace(**values,get_template_kwargs=lambda:{'max_length':2048})
++            def _get_dataset(self):return data,None
++            def _encode_dataset(self,train,val,pre_process=True):return filtered,None
++        module=types.ModuleType('swift.pipelines.train.sft');module.SwiftSft=Pipeline
++        with tempfile.TemporaryDirectory() as d:
++            p=pathlib.Path(d)/'e.json'
++            expected={'native_input':n.dataset_record(data),'native_retained':n.dataset_record(filtered),
++                      'template_kwargs':{'max_length':2048},'versions':{},'spec':SPEC}
++            p.write_text(json.dumps(expected))
++            with patch.dict(sys.modules,{'swift.pipelines.train.sft':module}),\
++                 patch.dict(os.environ,{'NATIVE_PREFLIGHT_REPORT':str(p),'NATIVE_PREFLIGHT_SHA256':r.sha(p)}):
++                import native_guard
++                importlib.reload(native_guard)
++                obj=Pipeline();self.assertIs(obj._get_dataset()[0],data)
++                self.assertIs(obj._encode_dataset(data,None)[0],filtered)
++                with self.assertRaises(RuntimeError):obj._encode_dataset(data,None,pre_process=False)
++                data.append({'messages':['changed']})
++                with self.assertRaises(RuntimeError):obj._get_dataset()
++
++if __name__=='__main__':unittest.main()
+diff --git a/train_identity.sh b/train_identity.sh
+index a24d34c..b497091 100644
+--- a/train_identity.sh
++++ b/train_identity.sh
+@@ -2,6 +2,7 @@
+ # Entry point for an authorized K8s train Pod. Does NOT change deployments or release models.
+ set -euo pipefail
+ MODE="${1:-full}"
+-[[ "$MODE" == smoke || "$MODE" == full ]] || { echo 'usage: train_identity.sh smoke|full' >&2; exit 2; }
++[[ "$MODE" == smoke || "$MODE" == full || "$MODE" == cpu-check ]] || { echo 'usage: train_identity.sh smoke|full|cpu-check [CPU options]' >&2; exit 2; }
+ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+-python3 "$SCRIPT_DIR/run_identity.py" "$MODE"
++if [[ $# -gt 0 ]]; then shift; fi
++python3 "$SCRIPT_DIR/run_identity.py" "$MODE" "$@"

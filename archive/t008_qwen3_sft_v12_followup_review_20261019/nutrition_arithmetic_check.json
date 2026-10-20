@@ -1,0 +1,41 @@
+{
+  "source_line_one_based": 563,
+  "food_rows": 11,
+  "nutrient_order": [
+    "kcal",
+    "protein_g",
+    "fat_g",
+    "carbohydrates_g",
+    "fiber_g",
+    "sodium_mg",
+    "vitamin_A_IU",
+    "vitamin_C_mg",
+    "iron_mg",
+    "calcium_mg"
+  ],
+  "computed_totals": [
+    "490",
+    "39.7",
+    "17.2",
+    "41.5",
+    "8.1",
+    "580",
+    "700",
+    "14",
+    "4.4",
+    "140"
+  ],
+  "stated_totals": [
+    "520",
+    "40.2",
+    "17.1",
+    "41.5",
+    "8.1",
+    "575",
+    "600",
+    "14",
+    "3.6",
+    "120"
+  ],
+  "scope": "Arithmetic consistency only. Does not verify food-composition values or clinical/nutrition suitability."
+}

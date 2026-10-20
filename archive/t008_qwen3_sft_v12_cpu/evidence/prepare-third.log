@@ -1,0 +1,23 @@
+Failed to load CPU gemm_4bit_forward from kernels-community: No module named 'kernels'. Please make sure you already `pip install kernels` and the kernels >= 0.11.1
+[INFO:swift] Successfully registered `/usr/local/lib/python3.12/site-packages/swift/dataset/data/dataset_info.json`.
+[INFO:swift] SelfCognitionPreprocessor has been successfully configured with name: ('章鱼能碳垂直大模型', 'Octacarbon LLM'), author: ('能碳章鱼（湖北）人工智能科技有限公司', 'Octacarbon (Hubei) Artificial Intelligence Technology Co., Ltd.').
+[INFO:swift] Downloading the dataset from ModelScope, dataset_id: swift/Qwen3-SFT-Mixin
+Downloading [README.md]:   0%|          | 0.00/190 [00:00<?, ?B/s]Downloading [README.md]: 100%|██████████| 190/190 [00:00<00:00, 2.09MB/s]
+Downloading data: 0.00B [00:00, ?B/s]Downloading data: 192kB [00:00, 1.58MB/s]Downloading data: 2.55MB [00:00, 13.5MB/s]Downloading data: 7.74MB [00:00, 30.2MB/s]Downloading data: 12.8MB [00:00, 37.9MB/s]Downloading data: 17.4MB [00:00, 34.9MB/s]
+Generating train split: 0 examples [00:00, ? examples/s]Generating train split: 1000 examples [00:00, 28702.16 examples/s]
+Map (num_proc=1):   0%|          | 0/1000 [00:00<?, ? examples/s]Map (num_proc=1): 100%|██████████| 1000/1000 [00:00<00:00, 7222.16 examples/s]Map (num_proc=1): 100%|██████████| 1000/1000 [00:00<00:00, 3915.00 examples/s]
+Flattening the indices:   0%|          | 0/2000 [00:00<?, ? examples/s]Flattening the indices: 100%|██████████| 2000/2000 [00:00<00:00, 29073.81 examples/s]
+[INFO:swift] Downloading the dataset from ModelScope, dataset_id: swift/self-cognition
+Downloading [README.md]:   0%|          | 0.00/1.98k [00:00<?, ?B/s]Downloading [README.md]: 100%|██████████| 1.98k/1.98k [00:00<00:00, 22.7MB/s]
+Downloading data:   0%|          | 0.00/23.8k [00:00<?, ?B/s]Downloading data: 100%|██████████| 23.8k/23.8k [00:00<00:00, 18.1MB/s]
+Generating train split: 0 examples [00:00, ? examples/s]Generating train split: 108 examples [00:00, 132840.13 examples/s]
+Map (num_proc=1):   0%|          | 0/108 [00:00<?, ? examples/s]Map (num_proc=1): 100%|██████████| 108/108 [00:00<00:00, 836.43 examples/s]
+[WARNING:swift] dataset_sample:600 is greater than len(dataset):108, repeated sampling will be performed.
+Flattening the indices:   0%|          | 0/600 [00:00<?, ? examples/s]Flattening the indices: 100%|██████████| 600/600 [00:00<00:00, 118830.03 examples/s]
+Traceback (most recent call last):
+  File "/work/code/prepare_official.py", line 88, in <module>
+    if __name__=='__main__': main()
+                             ^^^^^^
+  File "/work/code/prepare_official.py", line 64, in main
+    raise RuntimeError('Unreplaced identity placeholder detected (incl. AUTHOER typo)')
+RuntimeError: Unreplaced identity placeholder detected (incl. AUTHOER typo)

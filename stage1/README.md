@@ -51,6 +51,8 @@
 
 ## 版本定位与下一步
 
+训练前讨论入口：[实施单 gpu-review-v0.1](../docs/plans/GPU_IMPLEMENTATION_REVIEW_v0.1.md)。本次只整理执行安排，候选数据及GPU授权状态不变。
+
 候选版本`stage1-cpu-v0.1.2`，仅保存本地Git；[父子manifest](data/manifest.json)记录源SHA、处理代码及所有交付数据SHA。[阶段登记](../registry/stage1.json)区分当前本地版本与上一版云端副本。
 
 请先审阅75种修订、24条新增及身份重复减少到每种2次的选择；之后一次确认候选数据、配方调整范围、最多3次Full及GPU窗口。当前停在第一阶段交付，不自动进入训练。

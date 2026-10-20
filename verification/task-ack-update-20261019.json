@@ -1,0 +1,38 @@
+{
+  "schema": "t008-task-ack-update-v1",
+  "recorded_at_utc": "2026-10-20T03:01:17.801Z",
+  "marker": "T008-ACK-RETRAIN-DISCUSSION-20261019-01",
+  "user_instruction": "先补齐任务单。然后按照更新的方案，重新训练自我认知，训练之前，我们把详细方案再讨论一遍。",
+  "changes": [
+    {
+      "document_id": "164PEGIbkiufK2Ao2vAKxYyOLbTacwHZSt_0qwHCZibM",
+      "url": "https://docs.google.com/document/d/164PEGIbkiufK2Ao2vAKxYyOLbTacwHZSt_0qwHCZibM",
+      "revision_before": "AHj4eMQN23UAgHNQstSuD-zDU7Lq7hCruXPI2Yn3CHjibXk_6ou9-a6UdUhd9yLIz9HcBx7gGFmKnI6-HJID5krr8XRLRFeYiPeA-If0mLQ",
+      "revision_after": "AHj4eMSWOq4CEbHLj2a0bW2DgGcNkOKkz7LkOihHQ9C8LzTr7vi_nrA4EtSoxMHHanVepDBznvXIx8YnfSi-Ili71K0ls6UGnzJobeDWPTo",
+      "scope": "append receipt only",
+      "exact_added_text_verified": true,
+      "all_prior_text_preserved": true
+    },
+    {
+      "document_id": "1BQLRq1pQyu7Be60_hxmeVsaFDBIMuul2-EB3aDAe_Ho",
+      "url": "https://docs.google.com/document/d/1BQLRq1pQyu7Be60_hxmeVsaFDBIMuul2-EB3aDAe_Ho",
+      "revision_before": "AHj4eMSzvkjyivVAxXFC3dYWY6IzEUUcUd8GSudUGDLvpMku8MhDTvqMtogzQMyTZyhuYjojglM_0__hVZ5aFEFhh6NkCV8eMEUtNg5kGRw",
+      "revision_after": "AHj4eMTw0rPenPFIFJe4q4liPKSgBR8oI9uLKKGYBv1ZPW4Wene-SZl8lUEmuSwb0sKVjn7U57i4hrQx-Gvbp2LrCWgGVB-maVXwxb9oFX8",
+      "scope": "one current-status replacement plus section 15.8",
+      "exact_added_text_verified": true,
+      "all_other_text_preserved": true
+    }
+  ],
+  "pm_record_modified": false,
+  "training_started": false,
+  "evaluation_started": false,
+  "inference_requested": false,
+  "cluster_queried": false,
+  "service_modified": false,
+  "training_code_modified": false,
+  "data_modified": false,
+  "local_adapter_zip_sha256": "33feb7cfe9e3bafa1a5b72f32e179fe89448c4c4251e152763dd846d3adffd1d",
+  "protocol_status": "PENDING_DISCUSSION_AND_FREEZE",
+  "independent_acceptance": "NOT_PERFORMED"
+}
+

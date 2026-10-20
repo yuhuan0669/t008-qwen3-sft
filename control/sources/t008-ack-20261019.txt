@@ -1,0 +1,29 @@
+
+阶段回报｜T008-ACK-RETRAIN-DISCUSSION-20261019-01
+登记日期：2026-10-19（America/Los_Angeles）；执行者：Codex Desktop 当前任务 /root，GPT-6系列（精确运行模型/服务端构建未核验）。
+接收范围：已实际领取T-008 v1.5第15节Qwen/Qwen3-8B自我认知＋通用指令基础SFT支线。两份handoff均已读取；Risk31工程验证仅接收遗留事项，不纳入本次8B重训，不重开其训练或独测。
+负责人本轮原话：“先补齐任务单。然后按照更新的方案，重新训练自我认知，训练之前，我们把详细方案再讨论一遍。”
+当前执行安排：先补齐原任务单及本接单回执，按v1.2流程恢复R1准备详细重训讨论；详细方案讨论确认前不启动训练。本条确认重训方向，不记录为精确数据、配方、GPU窗口或PM验收已批准。
+
+已完成与证据复用
+已统一归档9个阶段目录，保留原5个代码提交、原始数据、103步训练证据、Adapter及文档。私有统一入口：https://github.com/yuhuan0669/t008-qwen3-sft ，归档tag archive-v1.0.0，commit 1e204811f6ecb6ec6cc5cba9b4f819c5356daa77；恢复包及回执：https://github.com/yuhuan0669/t008-qwen3-sft/releases/tag/archive-v1.0.0 。
+986个Git文件远端核对及本地空目录恢复通过（依据归档交付回执）。大附件服务端SHA核对通过，整包远端下载恢复尚未完成；基座/完整远端checkpoint/镜像仅登记定位，未做完整离线备份。
+本次重新读取00 v1.5第15节、03对应PM裁定、01必要环境/最新交接段、R1流程；历史原件和历史批准不改写。
+
+候选读回及证明范围
+本次本地重新计算checkpoint-103 Adapter ZIP SHA256=33feb7cfe9e3bafa1a5b72f32e179fe89448c4c4251e152763dd846d3adffd1d，与登记值一致。
+历史训练代码=e7ae45aa7438c8bcca8318d3531854f7f5e7db39；ClearML Task=97ac5246ae9c43d9aa65ee2ac4c2aaef，Model=0552c3ab6b39456e9ec8b32129015be0；历史103步完成，候选质量未验收、遗忘未测。
+现存服务读回仅作带时间的接手证据：原始Qwen3-8B、未启用LoRA、API ID octa-carbon-v1；本次没有重新查询集群或发推理请求。实际运行前仍须新核验模型、Adapter、模板、System及服务配置，不能以历史状态替代当次预检。
+
+事前评测协议及重训讨论
+评测协议尚未冻结、未运行；须讨论并固定题量、来源/隔离、rubric、分母、阈值、重复次数、thinking模式、推理引擎及预算。沿用R1的A/B/C/D设计：原版/Adapter分别有无定制System，B/D System逐字节一致；开发回归与独立题分离。Identity≥95%及通用能力下降3个百分点触发复核仅为R1内部参考，不能冒充已冻结正式及格线或效果通过。
+重训讨论须明确：从原始基座新建LoRA或续训旧Adapter；原original-v1.2与native-loaded父快照二选一及精确SHA；身份与通用数据范围/曝光；逐条异常真实处理；冻结本地train.jsonl及零静默丢行；真实Tokenizer/Swift模板、loss mask与成员核验；训练长度和参数、保存策略、停止条件；原版/旧候选/新候选比较及独立验收安排。
+第15节既有先评旧候选要求与本次重训方向一并呈请讨论明确执行顺序；不宣称该评测已完成或获豁免。快照正式训练入口尚未适配，本次没有修改代码或语料。
+
+T-011接口与资源
+本支线维护Tokenizer/模板版本、messages格式、长度统计和必要字段约定；待形成明确接口后提供只读引用，不交独立题正文或复制生产库。本次仅登记接口责任，未向T-011发送消息或声称其已接收。T-011继续并行准备行业数据，本次不混入未准入行业样本。
+单GPU训练/推理共用，新的资源窗口未确认；不沿用旧停服窗口，不中断T-012 UAT。空正文自动复现暂缓仍保持；正文完整性属于待验收项。
+
+当前状态：ACK_RECORDED；RETRAIN_DIRECTION_RECORDED；DETAILED_PLAN_PENDING_DISCUSSION；EVALUATION_PROTOCOL_NOT_FROZEN；NEW_TRAINING_NOT_STARTED；NODE_A_NOT_ACCEPTED；STAGE2_NOT_AUTHORIZED。
+本次只做文档与版本状态更新；无新训练、评测、推理、服务变更或模型发布。
+

@@ -1,0 +1,20 @@
+{
+  "checked_at_utc": "2026-10-20T04:52:43.173403+00:00",
+  "status": "PASS_DOCUMENT_SCOPE_ONLY",
+  "plan_hash_size_registry_match": true,
+  "drive_text_readback_match": true,
+  "original_execution_report_text_preserved": true,
+  "git_diff_check": "PASS",
+  "archive_verification": {
+    "archived_payloads_checked": 961,
+    "original_files_checked": 1044,
+    "object_ranges_checked": 16,
+    "code_files_checked": 18,
+    "failures": []
+  },
+  "training_executed": false,
+  "data_processing_executed": false,
+  "evaluation_executed": false,
+  "tool_integration_tested": false,
+  "independent_review_performed": false
+}

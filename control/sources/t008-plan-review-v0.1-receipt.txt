@@ -1,0 +1,12 @@
+
+阶段回报｜T008-SFT-PLAN-REVIEW-V01-20261019
+负责人指示：“按最小接入范围，把 Data-Juicer、EvalScope 和 ClearML 的分工整合进完整方案，同步做好版本管理，先给我审阅讨论，不要启动训练。”
+已交付review-v0.1完整讨论稿，存入原T-008的02_执行产出：https://docs.google.com/document/d/1SNGzdNQ7NUGooRSLcKm-DXECQTXvLIyBg6Wc_kItVX8/edit?usp=drivesdk
+Git源文件：docs/plans/SFT_MINIMAL_INTEGRATION_v0.1.md；UTF-8原文件25148 bytes；SHA256=f23e99dbf1dc8a0c0098d086de282ac70218f0152a41e2c8e62902a84f9f5f7b。仓库：https://github.com/yuhuan0669/t008-qwen3-sft 。本次计划标签plan-review-v0.1仅定位讨论稿，不是训练/数据/验收批准；最终Git提交与标签回读另存仓库交付证据。
+方案包括15节：已确认原始Qwen/Qwen3-8B＋新LoRA；Data-Juicer可追溯数据分析与审核后处理；EvalScope主评测入口及本地Transformers/PEFT适配验证、必要时另议统一vLLM后端；ClearML版本/训练/评测关联；精确数据父链、LoRA配方建议、独立题及基准建议、GPU成本和窗口、失败恢复、验收及版本合同。
+纠正此前接入范围描述：历史有ClearML进度桥接和22点同步证据；本稿要求复用并适配旧硬编码，不宣称完全未接入或已经可直接复用于新训练。
+已确认工具接入方向和训练起点；数据父快照、2048长度与处理规则、具体评测后端、题量/预算、阈值、完整配方和GPU窗口均仍待讨论。120专项＋60公共基准及1800案例条件仅为提议，不是已冻结工作量或验收线。
+云端副本正文与本地确定性转换文本一致，22个原生标题、21个列表段落及02父目录已回读确认；原R1、原PM评审和历史训练事实保持。
+当前状态：PLAN_REVIEW_PENDING；IMPLEMENTATION_NOT_STARTED；DATA_PROCESSING_NOT_STARTED；EVALUATION_NOT_STARTED；TRAINING_NOT_STARTED；NODE_A_NOT_ACCEPTED。
+本轮仅文档和版本管理，无训练代码/语料/模型修改，无ClearML实验创建，无GPU/服务变更。下一步等待负责人审阅讨论，按明确确认的阶段继续。
+

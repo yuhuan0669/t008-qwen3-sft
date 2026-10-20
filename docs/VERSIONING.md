@@ -11,6 +11,10 @@
 
 任务单v1.5、流程v1.2/R1、代码commit、数据SHA、模型权重SHA与归档tag相互关联，但不可互相替代。`TRAINED_CANDIDATE`与`QUALITY_ACCEPTED`也不能互换。
 
+## 方案审阅版本
+
+`registry/plans.json`单独登记方案路径、SHA、状态、云端审阅副本和标签。`plan-review-v0.1`仅定位完整讨论稿；Git提交或创建标签不批准方案实施。修改讨论稿时产生新版本和commit，不移动既有标签。原始归档bundle及`archive-v1.0.0`不包含后续文档增量；后续方案可从Git远端或其单独bundle恢复。本次没有新增模型/数据对象，无需重传旧对象库。
+
 ## 原地核验
 
 ```sh

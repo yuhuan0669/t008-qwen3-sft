@@ -1,0 +1,24 @@
+{
+  "schema": "t008-plan-registry-v1",
+  "current": "review-v0.1",
+  "plans": [
+    {
+      "version": "review-v0.1",
+      "status": "DRAFT_FOR_USER_REVIEW",
+      "path": "docs/plans/SFT_MINIMAL_INTEGRATION_v0.1.md",
+      "bytes": 25148,
+      "sha256": "f23e99dbf1dc8a0c0098d086de282ac70218f0152a41e2c8e62902a84f9f5f7b",
+      "git_tag": "plan-review-v0.1",
+      "google_doc_id": "1SNGzdNQ7NUGooRSLcKm-DXECQTXvLIyBg6Wc_kItVX8",
+      "google_doc_url": "https://docs.google.com/document/d/1SNGzdNQ7NUGooRSLcKm-DXECQTXvLIyBg6Wc_kItVX8/edit?usp=drivesdk",
+      "drive_parent_id": "1PUMa2W9OpCFOImL0ZGSLbTbY7TLOEZ5c",
+      "readback": "verification/plan-review-v0.1/drive-readback.json",
+      "task_version": "T-008 v1.5",
+      "historical_process_reference": "v1.2 process-restore-R1",
+      "execution_approved": false,
+      "source_code_changed": false,
+      "training_data_changed": false,
+      "notes": "A review proposal. Data parent, recipe, evaluation implementation, sample counts, scoring and resources remain pending discussion."
+    }
+  ]
+}

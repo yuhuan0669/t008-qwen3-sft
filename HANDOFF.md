@@ -1,5 +1,7 @@
 # T-008 Qwen3-8B 基础 SFT · 统一交接
 
+当前审阅入口：[完整方案 review-v0.1](docs/plans/SFT_MINIMAL_INTEGRATION_v0.1.md)。原始基座＋新LoRA已确认，Data-Juicer、EvalScope、ClearML按最小范围整合。数据父对象、具体处理、评测后端/题量/阈值、配方及窗口仍待讨论。原01已追加方案交付，原02保存云端副本，见 [回读记录](verification/plan-review-v0.1/drive-readback.json)。当前不进入实施阶段。
+
 归档版本：archive-v1.0.0。整合依据：原handoff、9个阶段目录及交付文件、云端T-008第15节/R1方案读回、本会话用户对当前任务安排的明确纠正。没有把历史批准、旧维护窗口或包时点状态重写为当前授权。
 
 当前增量（2026-10-19 PDT）：负责人要求先补齐任务单，再按更新方案重训自我认知，训练前先讨论详细方案。已在原00补第15.8节并更新当前状态，在原01追加实际接单回执，均回读核对通过。现处于方案讨论阶段；没有修改训练代码或语料、启动训练或评测。见[补记](control/sources/t008-v1.5-section15.8.txt)、[接单回执](control/sources/t008-ack-20261019.txt)及[写入核验](verification/task-ack-update-20261019.json)。原始归档tag保留，下面“本次归档”描述仍指该历史归档工作。

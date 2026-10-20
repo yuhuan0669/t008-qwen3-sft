@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "scope": "Local data conservation, exact edit scope, recipe diff and text structure only",
+  "rows_before": 1275,
+  "rows_after": 1275,
+  "changed_rows": 112,
+  "general_rows_byte_identical": 1036,
+  "identity_answer_text_unchanged": true,
+  "retained_no_think_rows": 108,
+  "natural_identity_rows": 108,
+  "confidentiality_examples": 0,
+  "new_boundary_questions_copy_public_dev": false,
+  "tokenizer_pipeline_executed": false,
+  "model_loaded": false,
+  "gpu_used": false
+}

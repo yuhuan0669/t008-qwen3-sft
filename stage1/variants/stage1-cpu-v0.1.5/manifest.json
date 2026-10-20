@@ -1,0 +1,37 @@
+{
+  "version": "stage1-cpu-v0.1.5",
+  "status": "PREPARED_FOR_USER_REVIEW_NOT_TRAINING_APPROVAL",
+  "parent_version": "stage1-cpu-v0.1.4",
+  "parent_path": "stage1/variants/stage1-cpu-v0.1.4/train.jsonl",
+  "parent_sha256": "56fcff9c75da0a5fca568a4ed2c310b73e9a7300287fb722bd8b7344ae409baf",
+  "train_path": "stage1/variants/stage1-cpu-v0.1.5/train.jsonl",
+  "train_sha256": "34e4e39a618959154e87eb6b18bc70909a8db9faf5f008d2d4d34d09d09aaa09",
+  "rows": 1275,
+  "unique_messages": 751,
+  "source_exposures": {
+    "swift/Qwen3-SFT-Mixin": 1036,
+    "swift/self-cognition": 216,
+    "t008/project-positioning-v1": 23
+  },
+  "naturalized_identity_rows": 108,
+  "boundary_replacement_rows": 4,
+  "unchanged_rows": 1163,
+  "added_rows": 0,
+  "removed_rows": 0,
+  "identity_semantic_exposures_preserved": true,
+  "files_sha256": {
+    "train.jsonl": "34e4e39a618959154e87eb6b18bc70909a8db9faf5f008d2d4d34d09d09aaa09",
+    "train-map.jsonl": "15ba19e2ddbaa60fd5aa02383addbe9c7dee877ae27d35a795b2a80a37757b87",
+    "changes.jsonl": "726ecfb3378cdfa1155c78a2713650d9b8acca8b04589758bbc146fc453f2cf0",
+    "training-config.json": "cb32e779e6476cf3dfc8c4e843143e38ed6f4b7a04109f4477b2f0919aa1ef55",
+    "README.md": "65fe197ad454a982b3dc6a3aff4f5df399f50f0f0108cfcd749f4f23192292a3",
+    "SAMPLE_DIFF.md": "fa1f20e14ae07b7f20c777c1f925e177c606b4c78b5885f869b202644149c0c5",
+    "mask-source-check.json": "9b9f0cd171db5dd8229d7f7e40e434bc7dac1fe430868c910e14fa8cd3b6c4b1",
+    "validation.json": "fde0724d97f4937cfab51543a1e4f910d15c89f4b6d336df05eb43bd3344ee4c"
+  },
+  "generator_sha256": "c23b9e83a1210d9826e2ca89bb80ca74b384fb7c06452c17d6edf3d0505ff531",
+  "training_started": false,
+  "inference_executed": false,
+  "remote_uploaded": false,
+  "encoding_status": "PENDING_EXACT_RUNTIME_CPU_CHECK; prior token counts not reused"
+}

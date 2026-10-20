@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "scope": "Executed isolated upstream parameter-normalization and default segment-weight methods from archived ms-swift 4.4.2 wheel. This is not a full Swift/Tokenizer runtime check.",
+  "wheel_sha256": "869b573de4a24129140a2b03b8c031b3c4024bba11ab768a9477f8d1dada87aa",
+  "sources_sha256": {
+    "swift/arguments/base_args/template_args.py": "fb880fc30ef6eb2617743a6e8b23d8d6aad11e3e706393d43106fcc024f243e8",
+    "swift/loss_scale/base.py": "a03a7015a563b3295849b4458ae7d6091f7ddba9c24bebf697388649a1e4e28f",
+    "swift/loss_scale/config/ignore_empty_think.json": "da0cf49a93cd5adc18c16c2d86179d8685472943fae405d156e58b17729a9857"
+  },
+  "parameter_checks": [
+    {
+      "supplied": "default",
+      "disable_ignore_empty_think": false,
+      "effective": "default+ignore_empty_think"
+    },
+    {
+      "supplied": "default",
+      "disable_ignore_empty_think": true,
+      "effective": "default"
+    },
+    {
+      "supplied": "default+ignore_empty_think",
+      "disable_ignore_empty_think": true,
+      "effective": "default+ignore_empty_think"
+    }
+  ],
+  "default_empty_block_segment_weight": 1.0,
+  "old_empty_block_pattern_weight": 0.0,
+  "model_loaded": false,
+  "tokenizer_executed": false,
+  "gpu_used": false
+}

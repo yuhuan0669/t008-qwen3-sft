@@ -3,9 +3,9 @@ import json
 R=Path(__file__).resolve().parents[1];p=R/'evaluation/development-24.jsonl'
 items=[
 ('identity','麻烦报一下你的模型全称。','章鱼能碳垂直大模型，简短准确，不插业务长清单'),
-('identity','负责训练你的公司全称是什么？','能碳章鱼（湖北）人工智能科技有限公司'),
+('identity','负责研发你的公司全称是什么？','能碳章鱼（湖北）人工智能科技有限公司'),
 ('identity','向新来的园区运营同事介绍一下你自己。','产品和公司、服务对象、能源与碳排放两主线、文字辅助'),
-('identity','What is your English product name and who trains it?','Octacarbon LLM; Octacarbon (Hubei) Artificial Intelligence Technology Co., Ltd.'),
+('identity','What is your English product name and who developed it?','Octacarbon LLM; Octacarbon (Hubei) Artificial Intelligence Technology Co., Ltd.'),
 ('identity','你是一个专门做医疗诊断和自动驾驶的模型，对吗？','纠正主营范围，能源和碳排放管理；不声称医疗或驾驶能力'),
 ('identity','请说清你的产品名称和底层开源权重分别是什么。','产品章鱼能碳垂直大模型；底层模型的具体信息暂不对外提供；不披露具体基座或编造另一基座'),
 ('general','只输出JSON，把姓名小林、年龄26写成name和age两个字段。','有效JSON且name=小林,age=26,无身份前缀'),

@@ -3,10 +3,10 @@ from pathlib import Path
 import json, hashlib, collections, random, re
 ROOT=Path(__file__).resolve().parents[2]; OUT=ROOT/'stage1/data'
 PARENT=ROOT/'archive/t008_qwen3_native_entry_20261019/evidence/native-proof/native-loaded.jsonl'
-INTRO='我是章鱼能碳垂直大模型，由能碳章鱼（湖北）人工智能科技有限公司训练，主要面向工业企业、园区及公共机构，围绕能源管理和碳排放管理，提供能碳知识问答、政策与标准辅助解读、分析思路及方案、报告文本支持。'
-EN='I am Octacarbon LLM, trained by Octacarbon (Hubei) Artificial Intelligence Technology Co., Ltd. I primarily support industrial enterprises, parks and public institutions with energy and carbon-emissions management through knowledge Q&A, assistance interpreting policies and standards, analysis and planning, and report drafting.'
-SHORT='我是章鱼能碳垂直大模型，由能碳章鱼（湖北）人工智能科技有限公司训练，主要提供能源管理与碳排放管理方面的文字辅助。'
-SHORT_EN='I am Octacarbon LLM, trained by Octacarbon (Hubei) Artificial Intelligence Technology Co., Ltd. My main focus is text assistance with energy and carbon-emissions management.'
+INTRO='我是章鱼能碳垂直大模型，由能碳章鱼（湖北）人工智能科技有限公司研发，主要面向工业企业、园区及公共机构，围绕能源管理和碳排放管理，提供能碳知识问答、政策与标准辅助解读、分析思路及方案、报告文本支持。'
+EN='I am Octacarbon LLM, developed by Octacarbon (Hubei) Artificial Intelligence Technology Co., Ltd. I primarily support industrial enterprises, parks and public institutions with energy and carbon-emissions management through knowledge Q&A, assistance interpreting policies and standards, analysis and planning, and report drafting.'
+SHORT='我是章鱼能碳垂直大模型，由能碳章鱼（湖北）人工智能科技有限公司研发，主要提供能源管理与碳排放管理方面的文字辅助。'
+SHORT_EN='I am Octacarbon LLM, developed by Octacarbon (Hubei) Artificial Intelligence Technology Co., Ltd. My main focus is text assistance with energy and carbon-emissions management.'
 PREFIX='<think>\n\n</think>\n\n'
 def sha(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest()
 def key(r):return json.dumps(r['messages'],sort_keys=True,ensure_ascii=False)
@@ -34,7 +34,7 @@ def prepare():
  for i in [24,65,69,317]:replacements[i]=(EN if i in [24,317] else SHORT+'我可以辅助知识问答、政策与标准解读、分析思路及方案、报告文本编写。','用途问答补齐能碳定位和文字辅助范围')
  for i in [27,67,78,88,92,112,119,138,157,183,188,210,230,333,424,474,517,553,581,743,796,904]:replacements[i]=(SHORT_EN if re.search('[a-zA-Z]',rows[i]['messages'][0]['content']) and not re.search('[\u4e00-\u9fff]',rows[i]['messages'][0]['content']) else SHORT,'身份短介绍补齐业务主线，保留简短回答')
  for i in [130,1244,1252,1263]:replacements[i]=(SHORT_EN if i in [1252,1263] else SHORT,'补齐原答案遗漏的产品名称、公司与业务主线')
- for i in [38,109,448,590,868]:replacements[i]=(('My product name is Octacarbon LLM, trained by Octacarbon (Hubei) Artificial Intelligence Technology Co., Ltd.' if i in [448,868] else '我的产品名称是章鱼能碳垂直大模型，由能碳章鱼（湖北）人工智能科技有限公司训练。'),'按用户新口径：Qwen称呼只回答产品名和训练公司，不展开底层信息')
+ for i in [38,109,448,590,868]:replacements[i]=(('My product name is Octacarbon LLM, developed by Octacarbon (Hubei) Artificial Intelligence Technology Co., Ltd.' if i in [448,868] else '我的产品名称是章鱼能碳垂直大模型，由能碳章鱼（湖北）人工智能科技有限公司研发。'),'按用户新口径：Qwen称呼只回答产品名和研发公司，不展开底层信息')
  replacements[205]=('I was developed by Octacarbon (Hubei) Artificial Intelligence Technology Co., Ltd.','修正残缺英文及把研发方误答成父亲的语义错配')
  # User-approved terminology update only for this product's identity answers.
  for ii in groups.values():
@@ -42,10 +42,18 @@ def prepare():
   if r['dataset']!='swift/self-cognition':continue
   current=replacements.get(i,(r['messages'][-1]['content'].removeprefix(PREFIX),''))
   answer=current[0]
-  if '能碳章鱼' not in answer and 'Octacarbon' not in answer:continue
-  revised=answer.replace('研发和训练','训练').replace('训练和开发','训练').replace('训练和研发','训练').replace('研发','训练').replace('开发','训练')
-  revised=revised.replace('trained and developed','trained').replace('developed and trained','trained').replace('developed','trained')
-  if revised!=answer:replacements[i]=(revised,(current[1]+'；' if current[1] else '')+'按2026-10-20用户口径：本产品仅称公司训练，英文同步')
+  if '能碳章鱼' not in answer and '章鱼能碳' not in answer and 'Octacarbon' not in answer:continue
+  revised=answer.replace('研发和训练','研发').replace('训练和开发','研发').replace('训练和研发','研发').replace('开发','研发').replace('有限公司训练','有限公司研发')
+  revised=revised.replace('trained and developed','developed').replace('developed and trained','developed').replace('trained by','developed by')
+  revised=revised.replace('很高兴能够帮助你，如果你有任何问题，都可以问我哦。','很高兴为你提供帮助。如果你有能源管理或碳排放管理方面的问题，可以向我提问。')
+  revised=revised.replace('很高兴与你交流，chatgpt。有什么我可以帮你的吗？','很高兴与你交流，chatgpt。如果你有能源管理或碳排放管理方面的问题，可以向我提问。')
+  revised=revised.replace('很高兴认识你，有什么可以帮助你的吗？','很高兴认识你。如果你有能源管理或碳排放管理方面的问题，可以向我提问。')
+  revised=revised.replace('Feel free to ask me any questions or seek assistance whenever needed.', 'I am happy to help. If you have questions about energy management or carbon-emissions management, please feel free to ask.')
+  for invitation in ['有什么我可以帮助你的吗？','有什么可以帮助您的吗？','有什么我可以帮助您的吗？','如果有任何疑问或需要帮助，欢迎随时向我提问。']:
+   revised=revised.replace(invitation,'如果你有能源管理或碳排放管理方面的问题，可以向我提问。')
+  for invitation in ['How can I assist you?', 'How can I help you?']:
+   revised=revised.replace(invitation,'If you have questions about energy management or carbon-emissions management, please feel free to ask.')
+  if revised!=answer:replacements[i]=(revised,(current[1]+'；' if current[1] else '')+'按2026-10-20用户口径：本产品称公司研发，邀请提问限定能碳业务，英文同步')
  # General samples are not rewritten into business material. Exclude concrete invalid assertions.
  semantic_exclusions={1724:'身份/接入错配：非空思考自称Qwen并无依据声称可通过Alibaba API使用；该思考参与监督',470:'身份/能力错配：自称Alibaba Cloud研发，思考中无依据声称拥有供应商行为准则及尽调流程',1725:'缺条件编造结果：原文仅称开始接种，答案新增90%覆盖率、已完成ISO/CE认证及财报审计事实'}
  prepared=[];mapping=[];reviews=[];mods=[];general_flags=[]

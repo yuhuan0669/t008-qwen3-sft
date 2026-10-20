@@ -1,13 +1,20 @@
 {
-  "version": "stage1-cpu-v0.1.1",
+  "version": "stage1-cpu-v0.1.2",
   "status": "LOCAL_ONLY",
   "rows": 1276,
-  "changed_training_rows_vs_v0_1": 157,
+  "changed_training_rows_vs_v0_1_1": 174,
   "generic_training_records_unchanged": true,
   "identity_wording_and_fixed_responses_verified": true,
   "encoding_report_matches_data": true,
-  "train_sha256": "058a2499f6aef92a8340813fe2c002827e4d5bfc477d29460fbf7bd8af56d3a5",
+  "train_sha256": "e79bb743d0781203fe5039e4959b5b6c3f440110df3b89be9a60bf9750064d3f",
   "model_inference": false,
   "training": false,
-  "uploaded": false
+  "uploaded_to_github_or_drive": false,
+  "checks_not_rerun": [
+    "template alignment",
+    "recipe CLI",
+    "Data-Juicer",
+    "EvalScope model evaluation",
+    "ClearML"
+  ]
 }

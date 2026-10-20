@@ -1,6 +1,6 @@
 # T-008 Qwen3-8B 基础 SFT · 统一交接
 
-当前身份口径以[2026-10-20修订](stage1/IDENTITY_UPDATE.md)为准；stage1-cpu-v0.1.1仅在本地，云端保留上一版。
+当前身份口径以[2026-10-20修订](stage1/IDENTITY_UPDATE.md)为准；stage1-cpu-v0.1.2仅在本地，云端保留上一版。
 
 当前入口：[第一阶段CPU成果](stage1/README.md)与[逐条数据修改审阅](stage1/review/index.html)。用户已授权“开始第一阶段”，依据review-v0.4.1准备1276行本地候选、真实编码证据、开发与独立评测准备、GPU预算。下一步由负责人审阅候选数据与GPU包；GPU尚未授权或启动。方案正文不改，阶段登记见[registry/stage1.json](registry/stage1.json)。
 

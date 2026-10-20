@@ -19,5 +19,7 @@
     "report_to=none",
     "add_version=false",
     "output_dir=recipe-only"
-  ]
+  ],
+  "verified_version": "stage1-cpu-v0.1.1",
+  "current_revision_note": "Historical CPU compatibility check; wording-only v0.1.2 does not rerun this check. Current data encoding is in encoding-report.json."
 }

@@ -11,7 +11,7 @@
 {"row": 10, "tokens": 1617, "supervised_tokens": 1574}
 {"row": 11, "tokens": 1481, "supervised_tokens": 1454}
 {"row": 12, "tokens": 666, "supervised_tokens": 607}
-{"row": 13, "tokens": 79, "supervised_tokens": 56}
+{"row": 13, "tokens": 89, "supervised_tokens": 66}
 {"row": 14, "tokens": 54, "supervised_tokens": 34}
 {"row": 15, "tokens": 55, "supervised_tokens": 36}
 {"row": 16, "tokens": 1412, "supervised_tokens": 1312}
@@ -32,7 +32,7 @@
 {"row": 31, "tokens": 79, "supervised_tokens": 55}
 {"row": 32, "tokens": 55, "supervised_tokens": 36}
 {"row": 33, "tokens": 77, "supervised_tokens": 55}
-{"row": 34, "tokens": 79, "supervised_tokens": 56}
+{"row": 34, "tokens": 89, "supervised_tokens": 66}
 {"row": 35, "tokens": 1304, "supervised_tokens": 1268}
 {"row": 36, "tokens": 1620, "supervised_tokens": 1576}
 {"row": 37, "tokens": 1388, "supervised_tokens": 1372}
@@ -82,7 +82,7 @@
 {"row": 81, "tokens": 1378, "supervised_tokens": 1341}
 {"row": 82, "tokens": 64, "supervised_tokens": 41}
 {"row": 83, "tokens": 1697, "supervised_tokens": 1667}
-{"row": 84, "tokens": 76, "supervised_tokens": 54}
+{"row": 84, "tokens": 88, "supervised_tokens": 66}
 {"row": 85, "tokens": 1866, "supervised_tokens": 1835}
 {"row": 86, "tokens": 62, "supervised_tokens": 39}
 {"row": 87, "tokens": 1537, "supervised_tokens": 1507}
@@ -116,10 +116,10 @@
 {"row": 115, "tokens": 54, "supervised_tokens": 36}
 {"row": 116, "tokens": 1925, "supervised_tokens": 1907}
 {"row": 117, "tokens": 1412, "supervised_tokens": 1258}
-{"row": 118, "tokens": 56, "supervised_tokens": 34}
+{"row": 118, "tokens": 66, "supervised_tokens": 44}
 {"row": 119, "tokens": 61, "supervised_tokens": 36}
 {"row": 120, "tokens": 1917, "supervised_tokens": 1895}
-{"row": 121, "tokens": 52, "supervised_tokens": 34}
+{"row": 121, "tokens": 63, "supervised_tokens": 45}
 {"row": 122, "tokens": 2037, "supervised_tokens": 1956}
 {"row": 123, "tokens": 1501, "supervised_tokens": 1477}
 {"row": 124, "tokens": 1961, "supervised_tokens": 1905}
@@ -214,7 +214,7 @@
 {"row": 213, "tokens": 1373, "supervised_tokens": 1356}
 {"row": 214, "tokens": 904, "supervised_tokens": 883}
 {"row": 215, "tokens": 1082, "supervised_tokens": 1065}
-{"row": 216, "tokens": 85, "supervised_tokens": 62}
+{"row": 216, "tokens": 98, "supervised_tokens": 75}
 {"row": 217, "tokens": 1026, "supervised_tokens": 997}
 {"row": 218, "tokens": 1126, "supervised_tokens": 1090}
 {"row": 219, "tokens": 1598, "supervised_tokens": 1575}
@@ -232,7 +232,7 @@
 {"row": 231, "tokens": 1072, "supervised_tokens": 1047}
 {"row": 232, "tokens": 1495, "supervised_tokens": 1474}
 {"row": 233, "tokens": 2008, "supervised_tokens": 1992}
-{"row": 234, "tokens": 85, "supervised_tokens": 62}
+{"row": 234, "tokens": 98, "supervised_tokens": 75}
 {"row": 235, "tokens": 1307, "supervised_tokens": 1277}
 {"row": 236, "tokens": 883, "supervised_tokens": 808}
 {"row": 237, "tokens": 1043, "supervised_tokens": 1024}
@@ -243,7 +243,7 @@
 {"row": 242, "tokens": 846, "supervised_tokens": 822}
 {"row": 243, "tokens": 1370, "supervised_tokens": 1348}
 {"row": 244, "tokens": 36, "supervised_tokens": 13}
-{"row": 245, "tokens": 68, "supervised_tokens": 44}
+{"row": 245, "tokens": 79, "supervised_tokens": 55}
 {"row": 246, "tokens": 1072, "supervised_tokens": 1047}
 {"row": 247, "tokens": 1414, "supervised_tokens": 1359}
 {"row": 248, "tokens": 1620, "supervised_tokens": 1584}
@@ -267,9 +267,9 @@
 {"row": 266, "tokens": 1595, "supervised_tokens": 1570}
 {"row": 267, "tokens": 1227, "supervised_tokens": 1190}
 {"row": 268, "tokens": 57, "supervised_tokens": 34}
-{"row": 269, "tokens": 77, "supervised_tokens": 54}
-{"row": 270, "tokens": 61, "supervised_tokens": 40}
-{"row": 271, "tokens": 79, "supervised_tokens": 54}
+{"row": 269, "tokens": 90, "supervised_tokens": 67}
+{"row": 270, "tokens": 74, "supervised_tokens": 53}
+{"row": 271, "tokens": 92, "supervised_tokens": 67}
 {"row": 272, "tokens": 1631, "supervised_tokens": 1585}
 {"row": 273, "tokens": 790, "supervised_tokens": 769}
 {"row": 274, "tokens": 50, "supervised_tokens": 29}
@@ -320,7 +320,7 @@
 {"row": 319, "tokens": 1769, "supervised_tokens": 1741}
 {"row": 320, "tokens": 1869, "supervised_tokens": 1803}
 {"row": 321, "tokens": 1365, "supervised_tokens": 1343}
-{"row": 322, "tokens": 95, "supervised_tokens": 67}
+{"row": 322, "tokens": 108, "supervised_tokens": 80}
 {"row": 323, "tokens": 1507, "supervised_tokens": 1487}
 {"row": 324, "tokens": 1828, "supervised_tokens": 1742}
 {"row": 325, "tokens": 1900, "supervised_tokens": 1884}
@@ -342,7 +342,7 @@
 {"row": 341, "tokens": 1685, "supervised_tokens": 1637}
 {"row": 342, "tokens": 1539, "supervised_tokens": 1512}
 {"row": 343, "tokens": 1572, "supervised_tokens": 1554}
-{"row": 344, "tokens": 61, "supervised_tokens": 40}
+{"row": 344, "tokens": 74, "supervised_tokens": 53}
 {"row": 345, "tokens": 59, "supervised_tokens": 36}
 {"row": 346, "tokens": 1404, "supervised_tokens": 1377}
 {"row": 347, "tokens": 1574, "supervised_tokens": 1544}
@@ -373,7 +373,7 @@
 {"row": 372, "tokens": 1374, "supervised_tokens": 1335}
 {"row": 373, "tokens": 1980, "supervised_tokens": 1913}
 {"row": 374, "tokens": 1617, "supervised_tokens": 1574}
-{"row": 375, "tokens": 69, "supervised_tokens": 48}
+{"row": 375, "tokens": 72, "supervised_tokens": 51}
 {"row": 376, "tokens": 1598, "supervised_tokens": 1575}
 {"row": 377, "tokens": 666, "supervised_tokens": 607}
 {"row": 378, "tokens": 82, "supervised_tokens": 63}
@@ -500,7 +500,7 @@
 {"row": 499, "tokens": 1250, "supervised_tokens": 1195}
 {"row": 500, "tokens": 1773, "supervised_tokens": 1748}
 {"row": 501, "tokens": 1970, "supervised_tokens": 1952}
-{"row": 502, "tokens": 77, "supervised_tokens": 54}
+{"row": 502, "tokens": 90, "supervised_tokens": 67}
 {"row": 503, "tokens": 1997, "supervised_tokens": 1957}
 {"row": 504, "tokens": 1043, "supervised_tokens": 1024}
 {"row": 505, "tokens": 1768, "supervised_tokens": 1742}
@@ -626,7 +626,7 @@
 {"row": 625, "tokens": 1923, "supervised_tokens": 1893}
 {"row": 626, "tokens": 1228, "supervised_tokens": 1196}
 {"row": 627, "tokens": 2048, "supervised_tokens": 1906}
-{"row": 628, "tokens": 64, "supervised_tokens": 34}
+{"row": 628, "tokens": 77, "supervised_tokens": 47}
 {"row": 629, "tokens": 70, "supervised_tokens": 41}
 {"row": 630, "tokens": 1997, "supervised_tokens": 1912}
 {"row": 631, "tokens": 1787, "supervised_tokens": 1677}
@@ -673,9 +673,9 @@
 {"row": 672, "tokens": 1722, "supervised_tokens": 1666}
 {"row": 673, "tokens": 629, "supervised_tokens": 606}
 {"row": 674, "tokens": 1286, "supervised_tokens": 1198}
-{"row": 675, "tokens": 64, "supervised_tokens": 34}
+{"row": 675, "tokens": 77, "supervised_tokens": 47}
 {"row": 676, "tokens": 81, "supervised_tokens": 61}
-{"row": 677, "tokens": 68, "supervised_tokens": 44}
+{"row": 677, "tokens": 79, "supervised_tokens": 55}
 {"row": 678, "tokens": 55, "supervised_tokens": 36}
 {"row": 679, "tokens": 1445, "supervised_tokens": 1423}
 {"row": 680, "tokens": 1454, "supervised_tokens": 1422}
@@ -735,7 +735,7 @@
 {"row": 734, "tokens": 1528, "supervised_tokens": 1487}
 {"row": 735, "tokens": 1202, "supervised_tokens": 1182}
 {"row": 736, "tokens": 738, "supervised_tokens": 684}
-{"row": 737, "tokens": 76, "supervised_tokens": 54}
+{"row": 737, "tokens": 88, "supervised_tokens": 66}
 {"row": 738, "tokens": 1825, "supervised_tokens": 1794}
 {"row": 739, "tokens": 2016, "supervised_tokens": 1990}
 {"row": 740, "tokens": 1685, "supervised_tokens": 1654}
@@ -755,12 +755,12 @@
 {"row": 754, "tokens": 1357, "supervised_tokens": 1341}
 {"row": 755, "tokens": 30, "supervised_tokens": 10}
 {"row": 756, "tokens": 40, "supervised_tokens": 14}
-{"row": 757, "tokens": 79, "supervised_tokens": 54}
+{"row": 757, "tokens": 92, "supervised_tokens": 67}
 {"row": 758, "tokens": 1390, "supervised_tokens": 1363}
 {"row": 759, "tokens": 821, "supervised_tokens": 802}
 {"row": 760, "tokens": 1607, "supervised_tokens": 1535}
 {"row": 761, "tokens": 1134, "supervised_tokens": 1107}
-{"row": 762, "tokens": 87, "supervised_tokens": 61}
+{"row": 762, "tokens": 97, "supervised_tokens": 71}
 {"row": 763, "tokens": 1833, "supervised_tokens": 1801}
 {"row": 764, "tokens": 1202, "supervised_tokens": 1176}
 {"row": 765, "tokens": 1774, "supervised_tokens": 1741}
@@ -879,7 +879,7 @@
 {"row": 878, "tokens": 47, "supervised_tokens": 27}
 {"row": 879, "tokens": 1780, "supervised_tokens": 1747}
 {"row": 880, "tokens": 1426, "supervised_tokens": 1408}
-{"row": 881, "tokens": 69, "supervised_tokens": 48}
+{"row": 881, "tokens": 72, "supervised_tokens": 51}
 {"row": 882, "tokens": 1471, "supervised_tokens": 1455}
 {"row": 883, "tokens": 35, "supervised_tokens": 13}
 {"row": 884, "tokens": 1041, "supervised_tokens": 1018}
@@ -943,7 +943,7 @@
 {"row": 942, "tokens": 1892, "supervised_tokens": 1870}
 {"row": 943, "tokens": 1134, "supervised_tokens": 1107}
 {"row": 944, "tokens": 1029, "supervised_tokens": 1003}
-{"row": 945, "tokens": 56, "supervised_tokens": 34}
+{"row": 945, "tokens": 66, "supervised_tokens": 44}
 {"row": 946, "tokens": 34, "supervised_tokens": 16}
 {"row": 947, "tokens": 1625, "supervised_tokens": 1598}
 {"row": 948, "tokens": 47, "supervised_tokens": 27}
@@ -967,7 +967,7 @@
 {"row": 966, "tokens": 1656, "supervised_tokens": 1436}
 {"row": 967, "tokens": 904, "supervised_tokens": 883}
 {"row": 968, "tokens": 66, "supervised_tokens": 36}
-{"row": 969, "tokens": 95, "supervised_tokens": 67}
+{"row": 969, "tokens": 108, "supervised_tokens": 80}
 {"row": 970, "tokens": 1374, "supervised_tokens": 1335}
 {"row": 971, "tokens": 1641, "supervised_tokens": 1616}
 {"row": 972, "tokens": 2042, "supervised_tokens": 2001}
@@ -1010,7 +1010,7 @@
 {"row": 1009, "tokens": 1856, "supervised_tokens": 1838}
 {"row": 1010, "tokens": 1239, "supervised_tokens": 1222}
 {"row": 1011, "tokens": 55, "supervised_tokens": 36}
-{"row": 1012, "tokens": 62, "supervised_tokens": 33}
+{"row": 1012, "tokens": 72, "supervised_tokens": 43}
 {"row": 1013, "tokens": 54, "supervised_tokens": 36}
 {"row": 1014, "tokens": 123, "supervised_tokens": 102}
 {"row": 1015, "tokens": 1373, "supervised_tokens": 1356}
@@ -1100,7 +1100,7 @@
 {"row": 1099, "tokens": 1849, "supervised_tokens": 1795}
 {"row": 1100, "tokens": 1954, "supervised_tokens": 1937}
 {"row": 1101, "tokens": 1310, "supervised_tokens": 1239}
-{"row": 1102, "tokens": 52, "supervised_tokens": 34}
+{"row": 1102, "tokens": 63, "supervised_tokens": 45}
 {"row": 1103, "tokens": 1778, "supervised_tokens": 1726}
 {"row": 1104, "tokens": 1474, "supervised_tokens": 1422}
 {"row": 1105, "tokens": 1276, "supervised_tokens": 1248}
@@ -1119,7 +1119,7 @@
 {"row": 1118, "tokens": 1351, "supervised_tokens": 1331}
 {"row": 1119, "tokens": 56, "supervised_tokens": 35}
 {"row": 1120, "tokens": 896, "supervised_tokens": 878}
-{"row": 1121, "tokens": 62, "supervised_tokens": 33}
+{"row": 1121, "tokens": 72, "supervised_tokens": 43}
 {"row": 1122, "tokens": 1752, "supervised_tokens": 1723}
 {"row": 1123, "tokens": 1693, "supervised_tokens": 1676}
 {"row": 1124, "tokens": 733, "supervised_tokens": 698}
@@ -1136,7 +1136,7 @@
 {"row": 1135, "tokens": 1408, "supervised_tokens": 1393}
 {"row": 1136, "tokens": 1405, "supervised_tokens": 1386}
 {"row": 1137, "tokens": 1405, "supervised_tokens": 1386}
-{"row": 1138, "tokens": 87, "supervised_tokens": 61}
+{"row": 1138, "tokens": 97, "supervised_tokens": 71}
 {"row": 1139, "tokens": 1961, "supervised_tokens": 1905}
 {"row": 1140, "tokens": 936, "supervised_tokens": 902}
 {"row": 1141, "tokens": 37, "supervised_tokens": 14}
@@ -1173,7 +1173,7 @@
 {"row": 1172, "tokens": 1941, "supervised_tokens": 1922}
 {"row": 1173, "tokens": 644, "supervised_tokens": 615}
 {"row": 1174, "tokens": 1768, "supervised_tokens": 1742}
-{"row": 1175, "tokens": 70, "supervised_tokens": 47}
+{"row": 1175, "tokens": 78, "supervised_tokens": 55}
 {"row": 1176, "tokens": 1946, "supervised_tokens": 1721}
 {"row": 1177, "tokens": 1870, "supervised_tokens": 1847}
 {"row": 1178, "tokens": 1424, "supervised_tokens": 1407}
@@ -1245,7 +1245,7 @@
 {"row": 1244, "tokens": 1849, "supervised_tokens": 1795}
 {"row": 1245, "tokens": 1677, "supervised_tokens": 1649}
 {"row": 1246, "tokens": 1907, "supervised_tokens": 1889}
-{"row": 1247, "tokens": 70, "supervised_tokens": 47}
+{"row": 1247, "tokens": 78, "supervised_tokens": 55}
 {"row": 1248, "tokens": 66, "supervised_tokens": 36}
 {"row": 1249, "tokens": 1599, "supervised_tokens": 1583}
 {"row": 1250, "tokens": 1542, "supervised_tokens": 1513}

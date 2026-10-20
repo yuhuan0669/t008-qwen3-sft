@@ -173,6 +173,23 @@
       "stage_registry": "registry/stage1.json",
       "git_ref": "stage1-cpu-v0.1.1",
       "sync_status": "LOCAL_ONLY"
+    },
+    {
+      "id": "stage1_cpu_v0_1_2_candidate_1276",
+      "source_path": "archive/t008_qwen3_native_entry_20261019/evidence/native-proof/native-loaded.jsonl",
+      "parent_id": "native_loaded_2600",
+      "bytes": 7208562,
+      "sha256": "e79bb743d0781203fe5039e4959b5b6c3f440110df3b89be9a60bf9750064d3f",
+      "storage": "git",
+      "repository_path": "stage1/data/train.jsonl",
+      "rows": 1276,
+      "unique_messages": 647,
+      "status": "CPU_PREPARED_FOR_USER_REVIEW",
+      "training_approved": false,
+      "manifest": "stage1/data/manifest.json",
+      "stage_registry": "registry/stage1.json",
+      "git_ref": "stage1-cpu-v0.1.2",
+      "sync_status": "LOCAL_ONLY"
     }
   ],
   "data_canonical_hashes": {

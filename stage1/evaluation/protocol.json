@@ -89,11 +89,11 @@
   ],
   "custom_system": {
     "path": "stage1/evaluation/custom-system.txt",
-    "sha256": "a9ce65168d68a2b55a74c37ccad11e7267212078ef0237c555d0313b21f1e682",
+    "sha256": "655cb5ac42b68d2d34a99b18fff6d5900301f76dffbe71e1b27f6c6c7cae1d03",
     "encoding": "UTF-8",
     "trailing_newline": false,
     "source": "plan section 1.1 standard complete self introduction"
   },
-  "identity_policy_version": "stage1-cpu-v0.1.1",
+  "identity_policy_version": "stage1-cpu-v0.1.2",
   "identity_policy_amendment": "stage1/IDENTITY_UPDATE.md"
 }

@@ -4,7 +4,7 @@
 
 从 [HANDOFF.md](HANDOFF.md) 开始，再读 [当前状态](control/CURRENT_STATE.json) 与 [版本登记表](registry/versions.json)。
 
-当前本地身份修订为stage1-cpu-v0.1.1，未上传；详见[身份口径](stage1/IDENTITY_UPDATE.md)。
+当前本地身份修订为stage1-cpu-v0.1.2，未上传；详见[身份口径](stage1/IDENTITY_UPDATE.md)。
 
 当前进展：[第一阶段CPU准备与数据审阅](stage1/README.md)已形成候选。基于[review-v0.4.1](docs/plans/SFT_MINIMAL_INTEGRATION_v0.4.1.md)，原方案正文保持不变。数据改动可在[完整对照页](stage1/review/index.html)查看；1276次曝光、647种最终记录。尚未启动GPU训练或模型推理。云端交付见[阶段登记](registry/stage1.json)。
 

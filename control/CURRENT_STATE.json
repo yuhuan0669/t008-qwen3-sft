@@ -107,9 +107,9 @@
     "training_data_updated": true
   },
   "stage1": {
-    "version": "stage1-cpu-v0.1.1",
+    "version": "stage1-cpu-v0.1.2",
     "candidate_rows": 1276,
-    "train_sha256": "058a2499f6aef92a8340813fe2c002827e4d5bfc477d29460fbf7bd8af56d3a5",
+    "train_sha256": "e79bb743d0781203fe5039e4959b5b6c3f440110df3b89be9a60bf9750064d3f",
     "manifest": "stage1/data/manifest.json",
     "registry": "registry/stage1.json",
     "training_started": false,

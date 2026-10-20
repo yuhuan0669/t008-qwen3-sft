@@ -1,12 +1,12 @@
 {
-  "version": "stage1-cpu-v0.1.1",
+  "version": "stage1-cpu-v0.1.2",
   "status": "CPU_PREPARED_FOR_USER_REVIEW_NOT_TRAINING_APPROVAL",
   "plan": "review-v0.4.1",
   "git_branch": "main",
   "report": "stage1/README.md",
   "changes": "stage1/review/index.html",
   "data_manifest": "stage1/data/manifest.json",
-  "train_sha256": "058a2499f6aef92a8340813fe2c002827e4d5bfc477d29460fbf7bd8af56d3a5",
+  "train_sha256": "e79bb743d0781203fe5039e4959b5b6c3f440110df3b89be9a60bf9750064d3f",
   "holdout_index": "stage1/evaluation/holdout-index.json",
   "gpu_budget": "stage1/GPU_BUDGET.md",
   "inference_executed": false,
@@ -28,7 +28,7 @@
     },
     "delivery_evidence": "verification/stage1-cpu-v0.1/delivery.json"
   },
-  "git_tag": "stage1-cpu-v0.1.1",
+  "git_tag": "stage1-cpu-v0.1.2",
   "sync_status": "LOCAL_ONLY",
   "identity_update": "stage1/IDENTITY_UPDATE.md",
   "latest_check": "stage1/evidence/identity-update-check.json"

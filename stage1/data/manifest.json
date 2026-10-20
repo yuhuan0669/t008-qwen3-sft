@@ -5,7 +5,7 @@
   "parent_sha256": "d85dbe58d9c5fab98bbf6a81cf828147ba1a47d6cce492aef107c7d3dafa604c",
   "plan": "review-v0.4.1",
   "identity_update": "stage1/IDENTITY_UPDATE.md",
-  "candidate_version": "stage1-cpu-v0.1.1",
+  "candidate_version": "stage1-cpu-v0.1.2",
   "rows": 1276,
   "unique_messages": 647,
   "source_exposures": {
@@ -20,7 +20,7 @@
   },
   "source_supervised_tokens": {
     "swift/Qwen3-SFT-Mixin": 1519096,
-    "swift/self-cognition": 7848,
+    "swift/self-cognition": 8174,
     "t008/project-positioning-v1": 971
   },
   "exclusions_exposures": 964,
@@ -28,21 +28,21 @@
   "identity_repeat_cap": 2,
   "seed": 42,
   "retained_original_order": true,
-  "modified_exposures_retained": 154,
+  "modified_exposures_retained": 150,
   "new_exposures_retained": 24,
   "files_sha256": {
-    "train.jsonl": "058a2499f6aef92a8340813fe2c002827e4d5bfc477d29460fbf7bd8af56d3a5",
-    "train-map.jsonl": "0d5d4b4da4aedfb6b5f5d7aa193782911cc6282762576b402ac70ed415e20280",
+    "train.jsonl": "e79bb743d0781203fe5039e4959b5b6c3f440110df3b89be9a60bf9750064d3f",
+    "train-map.jsonl": "d0908589176f0ee412b9348aafd5dbccc5f4e1076c5b1c7a9cfb182e051b9908",
     "exclusions.jsonl": "9c890cb625914ec2a764a520dd408dfa486cd04a77292ea2473cb810dbb335e9",
-    "exposure-reductions.jsonl": "ff9d7b37fb1e38f48e5e8b4d518930ee2c9e4350a543d1c3f7e3dbe4d2f95ea2",
-    "modifications.jsonl": "7d4cc39acb2f34c2ff82837b314413f528fb2f488abc6bd1f68b255798c27f84",
-    "identity-review.jsonl": "0a226f27c8b6b8ea440717afa58ac58cadb7f833cd9537f51e8e64b485878b35",
-    "additions.jsonl": "0efe2dde62b53a34e095eb06c4dd8772784cf950755762afe9a7c2e0acc9354c",
+    "exposure-reductions.jsonl": "f1d4a4d2e4e164573ce22074104c116e8a955d80a1258aaa4bc301c117d27974",
+    "modifications.jsonl": "8fe631e74a7ec56e1970c0773e0b39d41b552596bf8d8b029810b7a0de24c2d4",
+    "identity-review.jsonl": "18f24fed5f88a0bb72d0a3cdace0fc0ecc36757949a0d0dce61568cad89c2adc",
+    "additions.jsonl": "786536f77d4d362fc230434ba6e2b466c34d7a75746840af0063a2be7577bee0",
     "general-scope-review.jsonl": "3929f76b447e4834b3173d6c1725016475cb9907f1ea5db508bbe6cb6fac9d14"
   },
   "derivation_scripts_sha256": {
-    "prepare_data.py": "4a3fbc2c6a5c87cbc4a88bf88d390287adab86573982e822a32cab0fbf6bb061",
-    "finalize_data.py": "52c9813af95a1e07ae9919562cc4d298d7f0f4ce2c0adb35951ca50d552a9708",
+    "prepare_data.py": "8c7c88ed6059fae6b9fe4ccd6926e775de5351ece0bc533863ed4402799b4a30",
+    "finalize_data.py": "97a70cc02167f2a5373e1a544867a88d4082fac2fc65b3d5bb82027e35ca1f80",
     "cpu_encode.py": "10027661aea204683eda46ae98301f5d9a024c01f24581d4e51a64dcf515674f"
   },
   "human_review": "PENDING",

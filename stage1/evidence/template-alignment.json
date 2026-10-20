@@ -58,5 +58,7 @@
   ],
   "weights_loaded": false,
   "gpu_available": false,
-  "scope": "Exact token equality through final assistant role boundary; mode suffix checked separately. Does not claim equality of training answer and generation prompt."
+  "scope": "Exact token equality through final assistant role boundary; mode suffix checked separately. Does not claim equality of training answer and generation prompt.",
+  "verified_version": "stage1-cpu-v0.1.1",
+  "current_revision_note": "Historical CPU compatibility check; wording-only v0.1.2 does not rerun this check. Current data encoding is in encoding-report.json."
 }

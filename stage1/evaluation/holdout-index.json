@@ -2,7 +2,7 @@
   "schema_version": 1,
   "status": "FROZEN_CPU_PREPARED_NOT_EVALUATED",
   "plan": "review-v0.4.1",
-  "frozen_at_utc": "2026-10-20T08:16:34.857662+00:00",
+  "frozen_at_utc": "2026-10-20T08:31:25.845064+00:00",
   "plan_path": "docs/plans/SFT_MINIMAL_INTEGRATION_v0.4.1.md",
   "plan_sha256": "1c7f3a3b1b57c5a90d0164e317187e79a037f8d24668b3efa0852c9aa47e7dcc",
   "business_source_path": "control/sources/product-business-scope-20261019.txt",
@@ -18,7 +18,7 @@
   "formal_files": [
     {
       "name": "specialized-formal.jsonl",
-      "sha256": "1adfa3b17b601a152c5f998c6c9b30c3fc1bfb733ad79665ecf167dfe2378a55",
+      "sha256": "3aed3d66c1dcc4189702d9951356059a6a42eb0762603ab5f9925cbd18993d47",
       "rows": 120,
       "categories": {
         "identity": 40,
@@ -74,11 +74,11 @@
   "selection": "Sort official source row indices by SHA256(t008-review-v0.4.1-public-split42:{dataset}:{zero_based_row}); first100 formal,next20 development; no performance-driven selection",
   "rubric": {
     "path": "stage1/evaluation/rubric.md",
-    "sha256": "c026c00f8252fda8a67ddffdec6854cb343235ddd16db84df5ffd759f73aef0c"
+    "sha256": "254fda3342a019ad3209f75aa8dbc2d91453e522e01248b5a3d2a6d16e1ef8f8"
   },
   "protocol": {
     "path": "stage1/evaluation/protocol.json",
-    "sha256": "4150352091ca297ed8d80de962a340d53cad9b0dc425642a4b0e7f80869e6098"
+    "sha256": "f5950c1b53e2ee1ada66d452cc5258b2c27aade2cb40f1d535a8c15d85424088"
   },
   "case_conditions": {
     "baseline": 880,
@@ -95,20 +95,22 @@
   "cpu_api_checks_path": "stage1/evaluation/cpu-api-check.json",
   "inference_executed": false,
   "acceptance_status": "NOT_EVALUATED_PM_ACCEPTANCE_NOT_REQUESTED",
-  "version": "stage1-cpu-v0.1.1",
-  "parent_version": "stage1-cpu-v0.1",
+  "version": "stage1-cpu-v0.1.2",
+  "parent_version": "stage1-cpu-v0.1.1",
   "identity_policy_amendment": {
-    "authority": "Direct user identity wording update, superseding only related wording/disclosure requirements of review-v0.4.1",
+    "authority": "Direct user wording update: company developed-by wording and energy/carbon-scoped welcome; underlying-model nondisclosure unchanged",
     "record_path": "stage1/IDENTITY_UPDATE.md",
-    "record_sha256": "95d1e998101f466ad02c1d9f350b6b48fc762e9ce6685be341278aeed4087d3f",
-    "changed_cases": 11,
-    "changed_turn_rubrics": 13,
+    "record_sha256": "fe99c77e4a0561add67c79f1af822e951d475cd72dbcd307a92c02ba452aada6",
+    "changed_cases": 7,
+    "changed_turn_rubrics": 8,
     "question_text_changes": 0,
     "added_cases": 0,
     "removed_cases": 0,
     "public_formal_changes": 0,
-    "prior_private_history_directory": "/Users/ben/aiws/codex/keywords/t008_eval_holdout_stage1_20261020/history/stage1-cpu-v0.1",
-    "prior_index_sha256": "14105d688877707d7846b32cef35e4d8ccef78e6873303e5e76e9274cc3e15d0",
+    "underlying_model_nondisclosure_unchanged": true,
+    "welcome_scope_inherited_from_shared_rubric": true,
+    "prior_private_history_directory": "/Users/ben/aiws/codex/keywords/t008_eval_holdout_stage1_20261020/history/stage1-cpu-v0.1.1",
+    "prior_index_sha256": "b4e87b2eb12dca935af4c222f9b123a77ee280a048d8cccb836e8cc03a8ba42d",
     "evaluation_or_independent_review_performed": false
   }
 }

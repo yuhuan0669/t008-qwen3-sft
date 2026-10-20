@@ -11,3 +11,5 @@
 - 独立审查后修复非空思考漏筛、Swift/HF模板直接对齐和审阅页动态统计。CPU重跑还修复暂存文件归属、SftArguments必需dataset及Transformers返回Mapping的兼容问题；保留失败日志，不把失败重试计为训练。
 
 - 模板兼容修复：真实多轮对照发现Swift默认保留历史空思考块，HF推理模板去除历史思考。显式preserve_thinking=false后，单轮/System/多轮×双模式6项前缀逐token相同；最终重新编码1276行及CLI守卫均通过。
+
+- stage1-cpu-v0.1.1：按用户要求统一公司“训练”措辞，Qwen称呼仅答产品身份，底层问答不披露具体模型；中英文一致。相对v0.1修改157次训练曝光，通用记录不变；仅重跑必要CPU编码/配置与模板核对，未重跑Data-Juicer、EvalScope模型评测或ClearML。数据、System与公开/私有评分口径本地更新，不上传。

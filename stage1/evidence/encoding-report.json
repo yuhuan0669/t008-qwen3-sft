@@ -1,6 +1,6 @@
 {
   "verified": true,
-  "dataset_sha256": "30a50ae3778409db238c3febe06dcdbdccc0b09335f58afddfaa0e6ce16e41be",
+  "dataset_sha256": "058a2499f6aef92a8340813fe2c002827e4d5bfc477d29460fbf7bd8af56d3a5",
   "rows": 1276,
   "actual_loader_rows": 1276,
   "actual_pipeline_rows": 1276,
@@ -32,7 +32,7 @@
     "add_non_thinking_prefix": true
   },
   "empty_think_mask_verified": true,
-  "empty_think_supervised_text": "不，我不是小橙。我是由能碳章鱼（湖北）人工智能科技有限公司开发的一个名为章鱼能碳垂直大模型的人工智能助手。<|im_end|>\n",
+  "empty_think_supervised_text": "不，我不是小橙。我是由能碳章鱼（湖北）人工智能科技有限公司训练的一个名为章鱼能碳垂直大模型的人工智能助手。<|im_end|>\n",
   "versions": {
     "ms-swift": "4.4.2",
     "transformers": "5.14.1",

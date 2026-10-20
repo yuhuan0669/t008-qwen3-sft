@@ -23,8 +23,8 @@
       "case": "with_system",
       "enable_thinking": false,
       "swift_hf_role_prefix_tokens_equal": true,
-      "prefix_tokens": 80,
-      "prefix_sha256": "39af9259b3c10a1d722015d64dca4571db853d92f3cc8f1ea6f7b8bf8f267f35",
+      "prefix_tokens": 78,
+      "prefix_sha256": "66a180598509481ba643c4a3fdac100cb9768e7ae7470abef7b5060070cb66c0",
       "generation_control_suffix": "<think>\n\n</think>\n\n",
       "suffix_verified": true
     },
@@ -32,8 +32,8 @@
       "case": "with_system",
       "enable_thinking": true,
       "swift_hf_role_prefix_tokens_equal": true,
-      "prefix_tokens": 80,
-      "prefix_sha256": "39af9259b3c10a1d722015d64dca4571db853d92f3cc8f1ea6f7b8bf8f267f35",
+      "prefix_tokens": 78,
+      "prefix_sha256": "66a180598509481ba643c4a3fdac100cb9768e7ae7470abef7b5060070cb66c0",
       "generation_control_suffix": "",
       "suffix_verified": true
     },

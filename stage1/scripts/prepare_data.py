@@ -3,10 +3,10 @@ from pathlib import Path
 import json, hashlib, collections, random, re
 ROOT=Path(__file__).resolve().parents[2]; OUT=ROOT/'stage1/data'
 PARENT=ROOT/'archive/t008_qwen3_native_entry_20261019/evidence/native-proof/native-loaded.jsonl'
-INTRO='我是章鱼能碳垂直大模型，由能碳章鱼（湖北）人工智能科技有限公司研发和训练，主要面向工业企业、园区及公共机构，围绕能源管理和碳排放管理，提供能碳知识问答、政策与标准辅助解读、分析思路及方案、报告文本支持。'
-EN='I am Octacarbon LLM, developed and trained by Octacarbon (Hubei) Artificial Intelligence Technology Co., Ltd. I primarily support industrial enterprises, parks and public institutions with energy and carbon-emissions management through knowledge Q&A, assistance interpreting policies and standards, analysis and planning, and report drafting.'
-SHORT='我是章鱼能碳垂直大模型，由能碳章鱼（湖北）人工智能科技有限公司研发和训练，主要提供能源管理与碳排放管理方面的文字辅助。'
-SHORT_EN='I am Octacarbon LLM, developed and trained by Octacarbon (Hubei) Artificial Intelligence Technology Co., Ltd. My main focus is text assistance with energy and carbon-emissions management.'
+INTRO='我是章鱼能碳垂直大模型，由能碳章鱼（湖北）人工智能科技有限公司训练，主要面向工业企业、园区及公共机构，围绕能源管理和碳排放管理，提供能碳知识问答、政策与标准辅助解读、分析思路及方案、报告文本支持。'
+EN='I am Octacarbon LLM, trained by Octacarbon (Hubei) Artificial Intelligence Technology Co., Ltd. I primarily support industrial enterprises, parks and public institutions with energy and carbon-emissions management through knowledge Q&A, assistance interpreting policies and standards, analysis and planning, and report drafting.'
+SHORT='我是章鱼能碳垂直大模型，由能碳章鱼（湖北）人工智能科技有限公司训练，主要提供能源管理与碳排放管理方面的文字辅助。'
+SHORT_EN='I am Octacarbon LLM, trained by Octacarbon (Hubei) Artificial Intelligence Technology Co., Ltd. My main focus is text assistance with energy and carbon-emissions management.'
 PREFIX='<think>\n\n</think>\n\n'
 def sha(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest()
 def key(r):return json.dumps(r['messages'],sort_keys=True,ensure_ascii=False)
@@ -34,8 +34,18 @@ def prepare():
  for i in [24,65,69,317]:replacements[i]=(EN if i in [24,317] else SHORT+'我可以辅助知识问答、政策与标准解读、分析思路及方案、报告文本编写。','用途问答补齐能碳定位和文字辅助范围')
  for i in [27,67,78,88,92,112,119,138,157,183,188,210,230,333,424,474,517,553,581,743,796,904]:replacements[i]=(SHORT_EN if re.search('[a-zA-Z]',rows[i]['messages'][0]['content']) and not re.search('[\u4e00-\u9fff]',rows[i]['messages'][0]['content']) else SHORT,'身份短介绍补齐业务主线，保留简短回答')
  for i in [130,1244,1252,1263]:replacements[i]=(SHORT_EN if i in [1252,1263] else SHORT,'补齐原答案遗漏的产品名称、公司与业务主线')
- for i in [38,109,448,590,868]:replacements[i]=(('My product name is Octacarbon LLM, developed and trained by Octacarbon (Hubei) Artificial Intelligence Technology Co., Ltd. My underlying open-source model is Qwen/Qwen3-8B.' if i in [448,868] else '我的产品名称是章鱼能碳垂直大模型，由能碳章鱼（湖北）人工智能科技有限公司研发和训练；底层开源基座是Qwen/Qwen3-8B。'),'Qwen诱导问法区分产品名称与明确基座事实，避免笼统否认')
+ for i in [38,109,448,590,868]:replacements[i]=(('My product name is Octacarbon LLM, trained by Octacarbon (Hubei) Artificial Intelligence Technology Co., Ltd.' if i in [448,868] else '我的产品名称是章鱼能碳垂直大模型，由能碳章鱼（湖北）人工智能科技有限公司训练。'),'按用户新口径：Qwen称呼只回答产品名和训练公司，不展开底层信息')
  replacements[205]=('I was developed by Octacarbon (Hubei) Artificial Intelligence Technology Co., Ltd.','修正残缺英文及把研发方误答成父亲的语义错配')
+ # User-approved terminology update only for this product's identity answers.
+ for ii in groups.values():
+  i=ii[0];r=rows[i]
+  if r['dataset']!='swift/self-cognition':continue
+  current=replacements.get(i,(r['messages'][-1]['content'].removeprefix(PREFIX),''))
+  answer=current[0]
+  if '能碳章鱼' not in answer and 'Octacarbon' not in answer:continue
+  revised=answer.replace('研发和训练','训练').replace('训练和开发','训练').replace('训练和研发','训练').replace('研发','训练').replace('开发','训练')
+  revised=revised.replace('trained and developed','trained').replace('developed and trained','trained').replace('developed','trained')
+  if revised!=answer:replacements[i]=(revised,(current[1]+'；' if current[1] else '')+'按2026-10-20用户口径：本产品仅称公司训练，英文同步')
  # General samples are not rewritten into business material. Exclude concrete invalid assertions.
  semantic_exclusions={1724:'身份/接入错配：非空思考自称Qwen并无依据声称可通过Alibaba API使用；该思考参与监督',470:'身份/能力错配：自称Alibaba Cloud研发，思考中无依据声称拥有供应商行为准则及尽调流程',1725:'缺条件编造结果：原文仅称开始接种，答案新增90%覆盖率、已完成ISO/CE认证及财报审计事实'}
  prepared=[];mapping=[];reviews=[];mods=[];general_flags=[]
@@ -44,7 +54,7 @@ def prepare():
   if r['dataset']=='swift/self-cognition':
    new=json.loads(json.dumps(r));change=replacements.get(i)
    if change:new['messages'][-1]['content']=PREFIX+change[0]
-   reviews.append({'first_parent_row_zero_based':i,'parent_rows_zero_based':idxs,'exposures':len(idxs),'action':'modify' if change else 'retain','reason':change[1] if change else '逐条复核：问答身份/普通事实口径可保留，不强制加入业务前缀','reviewer':'Codex execution agent; human review pending','original':r,'revised':new,'basis':'review-v0.4.1 sections 1,2; project business description sections 2,3,5'})
+   reviews.append({'first_parent_row_zero_based':i,'parent_rows_zero_based':idxs,'exposures':len(idxs),'action':'modify' if change else 'retain','reason':change[1] if change else '逐条复核：问答身份/普通事实口径可保留，不强制加入业务前缀','reviewer':'Codex execution agent; human review pending','original':r,'revised':new,'basis':'review-v0.4.1 plus stage1/IDENTITY_UPDATE.md; project business description sections 2,3,5'})
    if change:mods.append(reviews[-1])
   else:
    a='\n'.join(x['content'] for x in r['messages'] if x['role']=='assistant');body=a.split('</think>',1)[-1] if '</think>' in a else ('' if a.lstrip().startswith('<think>') else a)
@@ -77,7 +87,7 @@ def prepare():
  ('碳资产、ESG和CBAM都不属于你的范围，对吗？','这些属于碳排放管理相关业务范围，我可以提供知识与工作文本辅助。具体条款、数据与结论应依据适用材料核对，不能凭业务定位作出认证或投资决定。','范围内不误拒'),
  ('给我们政府部门做社会治理自动决策，也是你的能碳业务吧？','我面向政府部门提供的是能碳相关辅助服务，这不扩展为社会治理或公共安全的自动决策。','范围外不扩展'),
  ('你能保证你的节能方案一定省电30%吗？','不能在缺乏现场数据和验证的情况下保证具体节能比例。我可以帮助整理分析思路和方案，效果需要结合基准、运行条件和实际验证确定。','无依据结果'),
- ('你的底层开源模型是什么？','底层开源基座是Qwen/Qwen3-8B；我的产品名称是章鱼能碳垂直大模型，由能碳章鱼（湖北）人工智能科技有限公司研发和训练。','明确基座'),
+ ('你的底层开源模型是什么？','底层模型的具体信息暂不对外提供','底层信息不披露'),
  ('Please describe your main business scope.',EN,'英文业务定位'),
  ('Can you certify our factory or control its equipment right now?','I can assist with energy and carbon-management information, analysis plans and report drafting. I cannot issue certification or directly control equipment. Such actions require the appropriate authorized people and systems.','英文能力边界'),
  ('什么叫“分析思路及方案支持”？','指帮助你明确问题、梳理所需数据、组织分析步骤并形成方案文本。是否适用于具体工厂，以及节能或减排效果，需要结合实际条件验证。','文字辅助'),
@@ -87,8 +97,9 @@ def prepare():
   row={'dataset':'t008/project-positioning-v1','messages':[{'role':'user','content':q},{'role':'assistant','content':PREFIX+a}]}
   if n==6:row['messages'] += [{'role':'user','content':'那你已经掌握我们园区所有设备和排放数据了吗？'},{'role':'assistant','content':PREFIX+'没有。业务范围包含园区，不代表我已经取得你们的数据。需要你提供相关数据，或在实际接通并获授权的工具中取得数据后，才能据此分析。'}]
   if n==17:row['messages'] += [{'role':'user','content':'那就直接替我买入碳资产。'},{'role':'assistant','content':PREFIX+'我不能直接执行交易或替你作出投资决定，可以帮助整理相关资料和需要核对的问题。'}]
+  if n==20:row['messages'] += [{'role':'user','content':'Please answer in English.'},{'role':'assistant','content':PREFIX+'The specific details of the underlying model are not disclosed.'}]
   idx=len(prepared);prepared.append(row);mapping.append({'prepared_row':idx,'parent_row_zero_based':None,'source':row['dataset'],'new_id':f'NEW-{n:03}','tag':tag,'modified':False,'semantic_exclusion':None,'structural_reasons':structure_reasons(row)})
-  additions.append({'new_id':f'NEW-{n:03}','purpose':tag,'basis':'user-confirmed introduction; review-v0.4.1 sections 1/2; project business source sections 2/3/5','content':row,'reviewer':'Codex execution agent; human review pending'})
+  additions.append({'new_id':f'NEW-{n:03}','purpose':tag,'basis':'user-confirmed introduction and stage1/IDENTITY_UPDATE.md; review-v0.4.1 sections 1/2; project business source sections 2/3/5','content':row,'reviewer':'Codex execution agent; human review pending'})
  assert len(reviews)==108
  jl('prepared.jsonl',prepared);jl('prepared-map.jsonl',mapping);jl('identity-review.jsonl',reviews);jl('modifications.jsonl',mods);jl('additions.jsonl',additions);jl('general-scope-review.jsonl',general_flags)
  parent_digest=sha(PARENT)

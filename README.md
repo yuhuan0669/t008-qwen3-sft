@@ -4,6 +4,8 @@
 
 从 [HANDOFF.md](HANDOFF.md) 开始，再读 [当前状态](control/CURRENT_STATE.json) 与 [版本登记表](registry/versions.json)。
 
+当前本地身份修订为stage1-cpu-v0.1.1，未上传；详见[身份口径](stage1/IDENTITY_UPDATE.md)。
+
 当前进展：[第一阶段CPU准备与数据审阅](stage1/README.md)已形成候选。基于[review-v0.4.1](docs/plans/SFT_MINIMAL_INTEGRATION_v0.4.1.md)，原方案正文保持不变。数据改动可在[完整对照页](stage1/review/index.html)查看；1276次曝光、647种最终记录。尚未启动GPU训练或模型推理。云端交付见[阶段登记](registry/stage1.json)。
 
 私有远端：[yuhuan0669/t008-qwen3-sft](https://github.com/yuhuan0669/t008-qwen3-sft)。代码和材料通过Git维护；Git bundle、对象库tar及交付回执存放于同仓库的归档Release。是否完成上传与回读，以该次Release的交付回执为准。

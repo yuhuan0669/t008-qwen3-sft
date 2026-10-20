@@ -10,9 +10,9 @@
   },
   "reduced_identity_repetitions": 384,
   "reviewed_identity_original_unique": 108,
-  "modified_identity_original_unique": 42,
-  "modified_identity_original_exposures": 234,
-  "modified_identity_exposures_retained": 84,
+  "modified_identity_original_unique": 77,
+  "modified_identity_original_exposures": 429,
+  "modified_identity_exposures_retained": 154,
   "identity_original_records_retained": 108,
   "identity_unique_after_rewrite": 105,
   "new_unique": 24,
@@ -25,11 +25,11 @@
   },
   "source_supervised_tokens": {
     "swift/Qwen3-SFT-Mixin": 1519096,
-    "swift/self-cognition": 8168,
-    "t008/project-positioning-v1": 995
+    "swift/self-cognition": 7848,
+    "t008/project-positioning-v1": 971
   },
   "identity_plus_business_exposure_pct": 18.81,
-  "identity_plus_business_supervised_token_pct": 0.6,
+  "identity_plus_business_supervised_token_pct": 0.577,
   "record_scope": "108 identity records fully reviewed; 1000 general records rule-screened across all assistant text, including thinking, and 108 flagged contexts reviewed for self-positioning, execution claims and business scope; not a full factual audit",
   "human_approval": "PENDING",
   "training_started": false

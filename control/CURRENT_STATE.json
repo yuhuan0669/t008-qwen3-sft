@@ -1,13 +1,13 @@
 {
   "schema": "t008-unified-current-state-v1",
-  "recorded_at_utc": "2026-10-20T06:59:13.248538+00:00",
+  "recorded_at_utc": "2026-10-20T08:17:06.295934+00:00",
   "timezone_for_user_dates": "America/Los_Angeles",
   "archive_version": "archive-v1.0.0",
   "task": "T-008 v1.5 section 15",
   "current_workstream": "Qwen3-8B identity and general-instruction foundational SFT",
   "base_model": "Qwen/Qwen3-8B",
   "process": "v1.2 process-restore-R1",
-  "current_user_request": "Execute stage 1 CPU preparation under review-v0.4.1; show complete data changes; no GPU training",
+  "current_user_request": "Local-only minor identity wording update: trained by company; do not disclose underlying model; Chinese and English aligned",
   "source_of_current_direction": "User correction in this chat plus control/sources/t008-v1.5-section15.txt",
   "historical_training": "FULL_103_STEPS_COMPLETED",
   "candidate": "checkpoint-103",
@@ -36,7 +36,8 @@
     "identity_policy_confirmed": true,
     "execution_approved": false,
     "review_changes": "docs/reviews/review-v0.4.1/CHANGES.md",
-    "stage1_execution_approved": true
+    "stage1_execution_approved": true,
+    "identity_policy_amendment": "stage1/IDENTITY_UPDATE.md"
   },
   "retraining_direction": "REQUESTED_BY_USER_NOT_STARTED",
   "retraining_start": {
@@ -48,7 +49,7 @@
     "full_recipe_approved": false
   },
   "latest_task_update_evidence": "verification/task-ack-update-20261019.json",
-  "latest_direction_source": "control/sources/t008-stage1-cpu-receipt.txt",
+  "latest_direction_source": "stage1/IDENTITY_UPDATE.md",
   "serving_at_takeover": {
     "model_api_id": "octa-carbon-v1",
     "mount": "released/qwen3-8b-baseline/model",
@@ -89,12 +90,13 @@
   "identity_policy": {
     "product_name_zh": "章鱼能碳垂直大模型",
     "product_name_en": "Octacarbon LLM",
-    "developer_trainer_zh": "能碳章鱼（湖北）人工智能科技有限公司",
     "proactive_qwen_attribution_required": false,
-    "explicit_base_provenance": "Qwen/Qwen3-8B",
-    "decision_source": "control/sources/t008-plan-review-v0.2-direction.txt",
+    "decision_source": "stage1/IDENTITY_UPDATE.md",
     "training_data_updated": true,
-    "standard_full_introduction_zh": "我是章鱼能碳垂直大模型，由能碳章鱼（湖北）人工智能科技有限公司研发和训练，主要面向工业企业、园区及公共机构，围绕能源管理和碳排放管理，提供能碳知识问答、政策与标准辅助解读、分析思路及方案、报告文本支持。"
+    "standard_full_introduction_zh": "我是章鱼能碳垂直大模型，由能碳章鱼（湖北）人工智能科技有限公司训练，主要面向工业企业、园区及公共机构，围绕能源管理和碳排放管理，提供能碳知识问答、政策与标准辅助解读、分析思路及方案、报告文本支持。",
+    "trainer_zh": "能碳章鱼（湖北）人工智能科技有限公司",
+    "explicit_base_response_zh": "底层模型的具体信息暂不对外提供",
+    "explicit_base_response_en": "The specific details of the underlying model are not disclosed."
   },
   "latest_plan_delivery_evidence": "verification/plan-review-v0.4.1/delivery.json",
   "business_scope": {
@@ -105,15 +107,17 @@
     "training_data_updated": true
   },
   "stage1": {
-    "version": "stage1-cpu-v0.1",
+    "version": "stage1-cpu-v0.1.1",
     "candidate_rows": 1276,
-    "train_sha256": "30a50ae3778409db238c3febe06dcdbdccc0b09335f58afddfaa0e6ce16e41be",
+    "train_sha256": "058a2499f6aef92a8340813fe2c002827e4d5bfc477d29460fbf7bd8af56d3a5",
     "manifest": "stage1/data/manifest.json",
     "registry": "registry/stage1.json",
     "training_started": false,
     "inference_requested": false,
     "service_changed": false,
     "cloud_01_append_verified": true,
-    "delivery_evidence": "verification/stage1-cpu-v0.1/delivery.json"
+    "delivery_evidence": "verification/stage1-cpu-v0.1/delivery.json",
+    "sync_status": "LOCAL_ONLY_REMOTE_REMAINS_V0.1",
+    "latest_check": "stage1/evidence/identity-update-check.json"
   }
 }

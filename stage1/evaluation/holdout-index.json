@@ -2,7 +2,7 @@
   "schema_version": 1,
   "status": "FROZEN_CPU_PREPARED_NOT_EVALUATED",
   "plan": "review-v0.4.1",
-  "frozen_at_utc": "2026-10-20T06:40:49.002645+00:00",
+  "frozen_at_utc": "2026-10-20T08:16:34.857662+00:00",
   "plan_path": "docs/plans/SFT_MINIMAL_INTEGRATION_v0.4.1.md",
   "plan_sha256": "1c7f3a3b1b57c5a90d0164e317187e79a037f8d24668b3efa0852c9aa47e7dcc",
   "business_source_path": "control/sources/product-business-scope-20261019.txt",
@@ -18,7 +18,7 @@
   "formal_files": [
     {
       "name": "specialized-formal.jsonl",
-      "sha256": "18f2e0de12c785e0dbc3c891614ca6716679f8823051e308022963798ce704b0",
+      "sha256": "1adfa3b17b601a152c5f998c6c9b30c3fc1bfb733ad79665ecf167dfe2378a55",
       "rows": 120,
       "categories": {
         "identity": 40,
@@ -74,11 +74,11 @@
   "selection": "Sort official source row indices by SHA256(t008-review-v0.4.1-public-split42:{dataset}:{zero_based_row}); first100 formal,next20 development; no performance-driven selection",
   "rubric": {
     "path": "stage1/evaluation/rubric.md",
-    "sha256": "c8c9d2a1f75780792703a5f67b34fd24561939fd7b1f08c3de9a3cbc6d8ee284"
+    "sha256": "c026c00f8252fda8a67ddffdec6854cb343235ddd16db84df5ffd759f73aef0c"
   },
   "protocol": {
     "path": "stage1/evaluation/protocol.json",
-    "sha256": "c65ddd22dcf9ada352165726ff832e4e2bee708a7ed9bec95f275e3182e0ee23"
+    "sha256": "4150352091ca297ed8d80de962a340d53cad9b0dc425642a4b0e7f80869e6098"
   },
   "case_conditions": {
     "baseline": 880,
@@ -94,5 +94,21 @@
   "checks_path": "stage1/evaluation/integrity-check.json",
   "cpu_api_checks_path": "stage1/evaluation/cpu-api-check.json",
   "inference_executed": false,
-  "acceptance_status": "NOT_EVALUATED_PM_ACCEPTANCE_NOT_REQUESTED"
+  "acceptance_status": "NOT_EVALUATED_PM_ACCEPTANCE_NOT_REQUESTED",
+  "version": "stage1-cpu-v0.1.1",
+  "parent_version": "stage1-cpu-v0.1",
+  "identity_policy_amendment": {
+    "authority": "Direct user identity wording update, superseding only related wording/disclosure requirements of review-v0.4.1",
+    "record_path": "stage1/IDENTITY_UPDATE.md",
+    "record_sha256": "95d1e998101f466ad02c1d9f350b6b48fc762e9ce6685be341278aeed4087d3f",
+    "changed_cases": 11,
+    "changed_turn_rubrics": 13,
+    "question_text_changes": 0,
+    "added_cases": 0,
+    "removed_cases": 0,
+    "public_formal_changes": 0,
+    "prior_private_history_directory": "/Users/ben/aiws/codex/keywords/t008_eval_holdout_stage1_20261020/history/stage1-cpu-v0.1",
+    "prior_index_sha256": "14105d688877707d7846b32cef35e4d8ccef78e6873303e5e76e9274cc3e15d0",
+    "evaluation_or_independent_review_performed": false
+  }
 }

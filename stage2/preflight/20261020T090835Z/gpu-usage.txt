@@ -1,0 +1,5 @@
+index, name, uuid, memory.total [MiB], memory.used [MiB], memory.free [MiB], utilization.gpu [%]
+0, NVIDIA GeForce RTX 4090, GPU-4be5e60c-519d-6fb6-4d93-23ce1e897e2e, 24564 MiB, 22174 MiB, 1908 MiB, 0 %
+
+pid, process_name, used_gpu_memory [MiB]
+215, VLLM::EngineCore, 22164 MiB

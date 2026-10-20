@@ -1,0 +1,28 @@
+{
+  "checked_at_utc": "2026-10-20T09:08:35.073684+00:00",
+  "plan": "docs/plans/GPU_IMPLEMENTATION_REVIEW_v0.2.md",
+  "plan_sha256": "561660fd3e1a0ab0048197850ad360c169d07ee8e4d4bf2f6862df57114ece2b",
+  "data_version": "stage1-cpu-v0.1.3",
+  "data_sha256": "89b8dd9c3e434bcea0a1baf42bff2972e836fa3704b57fda283d9864272db443",
+  "rows": 1289,
+  "source_commit": "1525a2386bd89b8fc5fdde538b3c879040529d76",
+  "authorization": {
+    "source": "Current user message in this thread",
+    "instruction": "按v0.2方案开始执行，先检查GPU占用和UAT状态，确认可用窗口后启动训练，不要擅自中断UAT。",
+    "plan_execution_authorized": true,
+    "requires_confirmed_non_disruptive_window": true,
+    "uat_interruption_authorized": false
+  },
+  "resource_window": null,
+  "window_status": "WAITING_FOR_UAT_COORDINATION",
+  "gpu_status": "ONLY_GPU_RESERVED_BY_EXISTING_VLLM",
+  "data_binding_verified": true,
+  "training_job_created": false,
+  "model_inference_performed": false,
+  "uat_service_changed": false,
+  "preparation_remaining": [
+    "Connect frozen local dataset to training wrapper",
+    "Assemble actual EvalScope generation entry",
+    "Bind confirmed GPU window and restoration responsibility"
+  ]
+}

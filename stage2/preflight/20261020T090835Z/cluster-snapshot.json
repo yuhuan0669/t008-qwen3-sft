@@ -1,0 +1,869 @@
+{
+  "checked_at_utc": "2026-10-20T09:08:35.073684+00:00",
+  "context": "lmas00-direct",
+  "nodes": [
+    {
+      "name": "k8s-ke-edge01",
+      "gpu_allocatable": "0"
+    },
+    {
+      "name": "k8s-master01",
+      "gpu_allocatable": "0"
+    },
+    {
+      "name": "k8s-worker01",
+      "gpu_allocatable": "0"
+    },
+    {
+      "name": "k8s-worker02",
+      "gpu_allocatable": "0"
+    },
+    {
+      "name": "k8s-worker03",
+      "gpu_allocatable": "0"
+    },
+    {
+      "name": "k8s-worker04",
+      "gpu_allocatable": "0"
+    },
+    {
+      "name": "k8s-worker05",
+      "gpu_allocatable": "1"
+    },
+    {
+      "name": "k8s-worker06",
+      "gpu_allocatable": "0"
+    }
+  ],
+  "gpu_pods": [
+    {
+      "namespace": "gpu-operator",
+      "name": "gpu-feature-discovery-mrzwh",
+      "node": "k8s-worker05",
+      "phase": "Running",
+      "ready": [
+        true
+      ],
+      "gpu_limit": 0,
+      "owners": [
+        {
+          "apiVersion": "apps/v1",
+          "blockOwnerDeletion": true,
+          "controller": true,
+          "kind": "DaemonSet",
+          "name": "gpu-feature-discovery",
+          "uid": "7ee14d9c-091a-4fa2-abf7-3d301357333d"
+        }
+      ],
+      "containers": [
+        "gpu-feature-discovery"
+      ]
+    },
+    {
+      "namespace": "gpu-operator",
+      "name": "gpu-operator-1768208437-node-feature-discovery-gc-5dbc4589rss65",
+      "node": "k8s-worker06",
+      "phase": "Running",
+      "ready": [
+        true
+      ],
+      "gpu_limit": 0,
+      "owners": [
+        {
+          "apiVersion": "apps/v1",
+          "blockOwnerDeletion": true,
+          "controller": true,
+          "kind": "ReplicaSet",
+          "name": "gpu-operator-1768208437-node-feature-discovery-gc-5dbc45895",
+          "uid": "0e977f17-0334-4898-a5b6-9223225f1226"
+        }
+      ],
+      "containers": [
+        "gc"
+      ]
+    },
+    {
+      "namespace": "gpu-operator",
+      "name": "gpu-operator-1768208437-node-feature-discovery-master-f9b4pg6ll",
+      "node": "k8s-master01",
+      "phase": "Running",
+      "ready": [
+        true
+      ],
+      "gpu_limit": 0,
+      "owners": [
+        {
+          "apiVersion": "apps/v1",
+          "blockOwnerDeletion": true,
+          "controller": true,
+          "kind": "ReplicaSet",
+          "name": "gpu-operator-1768208437-node-feature-discovery-master-f9b4dcf86",
+          "uid": "2d260684-1263-49e1-8788-28e74396beaf"
+        }
+      ],
+      "containers": [
+        "master"
+      ]
+    },
+    {
+      "namespace": "gpu-operator",
+      "name": "gpu-operator-1768208437-node-feature-discovery-worker-drhsl",
+      "node": "k8s-worker01",
+      "phase": "Running",
+      "ready": [
+        true
+      ],
+      "gpu_limit": 0,
+      "owners": [
+        {
+          "apiVersion": "apps/v1",
+          "blockOwnerDeletion": true,
+          "controller": true,
+          "kind": "DaemonSet",
+          "name": "gpu-operator-1768208437-node-feature-discovery-worker",
+          "uid": "2f0b5c51-632b-4507-a3cc-e7327e868b10"
+        }
+      ],
+      "containers": [
+        "worker"
+      ]
+    },
+    {
+      "namespace": "gpu-operator",
+      "name": "gpu-operator-1768208437-node-feature-discovery-worker-g729b",
+      "node": "k8s-worker04",
+      "phase": "Running",
+      "ready": [
+        true
+      ],
+      "gpu_limit": 0,
+      "owners": [
+        {
+          "apiVersion": "apps/v1",
+          "blockOwnerDeletion": true,
+          "controller": true,
+          "kind": "DaemonSet",
+          "name": "gpu-operator-1768208437-node-feature-discovery-worker",
+          "uid": "2f0b5c51-632b-4507-a3cc-e7327e868b10"
+        }
+      ],
+      "containers": [
+        "worker"
+      ]
+    },
+    {
+      "namespace": "gpu-operator",
+      "name": "gpu-operator-1768208437-node-feature-discovery-worker-hrzm2",
+      "node": "k8s-worker03",
+      "phase": "Running",
+      "ready": [
+        true
+      ],
+      "gpu_limit": 0,
+      "owners": [
+        {
+          "apiVersion": "apps/v1",
+          "blockOwnerDeletion": true,
+          "controller": true,
+          "kind": "DaemonSet",
+          "name": "gpu-operator-1768208437-node-feature-discovery-worker",
+          "uid": "2f0b5c51-632b-4507-a3cc-e7327e868b10"
+        }
+      ],
+      "containers": [
+        "worker"
+      ]
+    },
+    {
+      "namespace": "gpu-operator",
+      "name": "gpu-operator-1768208437-node-feature-discovery-worker-ktz27",
+      "node": "k8s-master01",
+      "phase": "Running",
+      "ready": [
+        true
+      ],
+      "gpu_limit": 0,
+      "owners": [
+        {
+          "apiVersion": "apps/v1",
+          "blockOwnerDeletion": true,
+          "controller": true,
+          "kind": "DaemonSet",
+          "name": "gpu-operator-1768208437-node-feature-discovery-worker",
+          "uid": "2f0b5c51-632b-4507-a3cc-e7327e868b10"
+        }
+      ],
+      "containers": [
+        "worker"
+      ]
+    },
+    {
+      "namespace": "gpu-operator",
+      "name": "gpu-operator-1768208437-node-feature-discovery-worker-r46nj",
+      "node": "k8s-worker02",
+      "phase": "Running",
+      "ready": [
+        true
+      ],
+      "gpu_limit": 0,
+      "owners": [
+        {
+          "apiVersion": "apps/v1",
+          "blockOwnerDeletion": true,
+          "controller": true,
+          "kind": "DaemonSet",
+          "name": "gpu-operator-1768208437-node-feature-discovery-worker",
+          "uid": "2f0b5c51-632b-4507-a3cc-e7327e868b10"
+        }
+      ],
+      "containers": [
+        "worker"
+      ]
+    },
+    {
+      "namespace": "gpu-operator",
+      "name": "gpu-operator-1768208437-node-feature-discovery-worker-r9kfm",
+      "node": "k8s-worker06",
+      "phase": "Running",
+      "ready": [
+        true
+      ],
+      "gpu_limit": 0,
+      "owners": [
+        {
+          "apiVersion": "apps/v1",
+          "blockOwnerDeletion": true,
+          "controller": true,
+          "kind": "DaemonSet",
+          "name": "gpu-operator-1768208437-node-feature-discovery-worker",
+          "uid": "2f0b5c51-632b-4507-a3cc-e7327e868b10"
+        }
+      ],
+      "containers": [
+        "worker"
+      ]
+    },
+    {
+      "namespace": "gpu-operator",
+      "name": "gpu-operator-57cc7b66c7-g7z66",
+      "node": "k8s-master01",
+      "phase": "Running",
+      "ready": [
+        true
+      ],
+      "gpu_limit": 0,
+      "owners": [
+        {
+          "apiVersion": "apps/v1",
+          "blockOwnerDeletion": true,
+          "controller": true,
+          "kind": "ReplicaSet",
+          "name": "gpu-operator-57cc7b66c7",
+          "uid": "af2f7512-6bb3-4ac2-9a14-f7c68bb2867f"
+        }
+      ],
+      "containers": [
+        "gpu-operator"
+      ]
+    },
+    {
+      "namespace": "gpu-operator",
+      "name": "nvidia-container-toolkit-daemonset-xd9jq",
+      "node": "k8s-worker05",
+      "phase": "Running",
+      "ready": [
+        true
+      ],
+      "gpu_limit": 0,
+      "owners": [
+        {
+          "apiVersion": "apps/v1",
+          "blockOwnerDeletion": true,
+          "controller": true,
+          "kind": "DaemonSet",
+          "name": "nvidia-container-toolkit-daemonset",
+          "uid": "05ae633b-aef0-43eb-9ec6-8b26d7e2bf3d"
+        }
+      ],
+      "containers": [
+        "nvidia-container-toolkit-ctr"
+      ]
+    },
+    {
+      "namespace": "gpu-operator",
+      "name": "nvidia-cuda-validator-hnb9h",
+      "node": "k8s-worker05",
+      "phase": "Succeeded",
+      "ready": [
+        false
+      ],
+      "gpu_limit": 0,
+      "owners": [
+        {
+          "apiVersion": "nvidia.com/v1",
+          "blockOwnerDeletion": true,
+          "controller": true,
+          "kind": "ClusterPolicy",
+          "name": "cluster-policy",
+          "uid": "907c06b0-1d1f-4496-b41b-51f5b8c96e3a"
+        }
+      ],
+      "containers": [
+        "nvidia-cuda-validator"
+      ]
+    },
+    {
+      "namespace": "gpu-operator",
+      "name": "nvidia-dcgm-exporter-qffrb",
+      "node": "k8s-worker05",
+      "phase": "Running",
+      "ready": [
+        true
+      ],
+      "gpu_limit": 0,
+      "owners": [
+        {
+          "apiVersion": "apps/v1",
+          "blockOwnerDeletion": true,
+          "controller": true,
+          "kind": "DaemonSet",
+          "name": "nvidia-dcgm-exporter",
+          "uid": "30e2790c-2b70-4ad8-8dd8-46e068d86d06"
+        }
+      ],
+      "containers": [
+        "nvidia-dcgm-exporter"
+      ]
+    },
+    {
+      "namespace": "gpu-operator",
+      "name": "nvidia-device-plugin-daemonset-l2bfb",
+      "node": "k8s-worker05",
+      "phase": "Running",
+      "ready": [
+        true
+      ],
+      "gpu_limit": 0,
+      "owners": [
+        {
+          "apiVersion": "apps/v1",
+          "blockOwnerDeletion": true,
+          "controller": true,
+          "kind": "DaemonSet",
+          "name": "nvidia-device-plugin-daemonset",
+          "uid": "9e952e51-ff13-41a8-aa45-218a4d0c9511"
+        }
+      ],
+      "containers": [
+        "nvidia-device-plugin"
+      ]
+    },
+    {
+      "namespace": "gpu-operator",
+      "name": "nvidia-driver-daemonset-flws5",
+      "node": "k8s-worker05",
+      "phase": "Running",
+      "ready": [
+        true
+      ],
+      "gpu_limit": 0,
+      "owners": [
+        {
+          "apiVersion": "apps/v1",
+          "blockOwnerDeletion": true,
+          "controller": true,
+          "kind": "DaemonSet",
+          "name": "nvidia-driver-daemonset",
+          "uid": "af49a72e-f522-439e-b731-55f7dc056681"
+        }
+      ],
+      "containers": [
+        "nvidia-driver-ctr"
+      ]
+    },
+    {
+      "namespace": "gpu-operator",
+      "name": "nvidia-operator-validator-z8zcq",
+      "node": "k8s-worker05",
+      "phase": "Running",
+      "ready": [
+        true
+      ],
+      "gpu_limit": 0,
+      "owners": [
+        {
+          "apiVersion": "apps/v1",
+          "blockOwnerDeletion": true,
+          "controller": true,
+          "kind": "DaemonSet",
+          "name": "nvidia-operator-validator",
+          "uid": "54d7e02c-cbdb-456e-80ec-7e209b34d3bf"
+        }
+      ],
+      "containers": [
+        "nvidia-operator-validator"
+      ]
+    },
+    {
+      "namespace": "risk31-calibration",
+      "name": "risk31-calibration-v14-20261007-cn9ps",
+      "node": "k8s-worker05",
+      "phase": "Succeeded",
+      "ready": [
+        false
+      ],
+      "gpu_limit": 1,
+      "owners": [
+        {
+          "apiVersion": "batch/v1",
+          "blockOwnerDeletion": true,
+          "controller": true,
+          "kind": "Job",
+          "name": "risk31-calibration-v14-20261007",
+          "uid": "a6cfb5e2-b27e-4354-8c8c-79873894ac4f"
+        }
+      ],
+      "containers": [
+        "risk31"
+      ]
+    },
+    {
+      "namespace": "risk31-independent-test",
+      "name": "risk31-independent-v14-20261007-9cftb",
+      "node": "k8s-worker05",
+      "phase": "Succeeded",
+      "ready": [
+        false
+      ],
+      "gpu_limit": 1,
+      "owners": [
+        {
+          "apiVersion": "batch/v1",
+          "blockOwnerDeletion": true,
+          "controller": true,
+          "kind": "Job",
+          "name": "risk31-independent-v14-20261007",
+          "uid": "b8767ab3-0a02-48c6-96bd-c72edff6d9e1"
+        }
+      ],
+      "containers": [
+        "risk31"
+      ]
+    },
+    {
+      "namespace": "swift",
+      "name": "risk31-gpuval-20261009-8nxfk",
+      "node": "k8s-worker05",
+      "phase": "Succeeded",
+      "ready": [
+        false
+      ],
+      "gpu_limit": 1,
+      "owners": [
+        {
+          "apiVersion": "batch/v1",
+          "blockOwnerDeletion": true,
+          "controller": true,
+          "kind": "Job",
+          "name": "risk31-gpuval-20261009",
+          "uid": "62ae2c62-5fc7-4809-8ec7-1131a7f471f4"
+        }
+      ],
+      "containers": [
+        "gpuval"
+      ]
+    },
+    {
+      "namespace": "swift",
+      "name": "risk31-gpuval-bcb43b7-rqrkp",
+      "node": "k8s-worker05",
+      "phase": "Succeeded",
+      "ready": [
+        false
+      ],
+      "gpu_limit": 1,
+      "owners": [
+        {
+          "apiVersion": "batch/v1",
+          "blockOwnerDeletion": true,
+          "controller": true,
+          "kind": "Job",
+          "name": "risk31-gpuval-bcb43b7",
+          "uid": "8203addb-3fe4-4477-ac00-7730865df194"
+        }
+      ],
+      "containers": [
+        "gpuval"
+      ]
+    },
+    {
+      "namespace": "swift",
+      "name": "risk31-reload-v14-diag-jvfqs",
+      "node": "k8s-worker05",
+      "phase": "Succeeded",
+      "ready": [
+        false
+      ],
+      "gpu_limit": 1,
+      "owners": [
+        {
+          "apiVersion": "batch/v1",
+          "blockOwnerDeletion": true,
+          "controller": true,
+          "kind": "Job",
+          "name": "risk31-reload-v14-diag",
+          "uid": "b7930dc7-78f3-40c2-912c-3809a40e8294"
+        }
+      ],
+      "containers": [
+        "risk31"
+      ]
+    },
+    {
+      "namespace": "swift",
+      "name": "risk31-reload-v14-fixed-mhxcl",
+      "node": "k8s-worker05",
+      "phase": "Succeeded",
+      "ready": [
+        false
+      ],
+      "gpu_limit": 1,
+      "owners": [
+        {
+          "apiVersion": "batch/v1",
+          "blockOwnerDeletion": true,
+          "controller": true,
+          "kind": "Job",
+          "name": "risk31-reload-v14-fixed",
+          "uid": "aae054ac-6997-4786-8432-d66178e2575b"
+        }
+      ],
+      "containers": [
+        "risk31"
+      ]
+    },
+    {
+      "namespace": "vllm",
+      "name": "vllm-57f474b498-6bwn6",
+      "node": "k8s-worker05",
+      "phase": "Running",
+      "ready": [
+        true
+      ],
+      "gpu_limit": 1,
+      "owners": [
+        {
+          "apiVersion": "apps/v1",
+          "blockOwnerDeletion": true,
+          "controller": true,
+          "kind": "ReplicaSet",
+          "name": "vllm-57f474b498",
+          "uid": "0965dac6-98b6-4366-903a-c2cd76465f20"
+        }
+      ],
+      "containers": [
+        "vllm"
+      ]
+    }
+  ],
+  "vllm": {
+    "replicas": 1,
+    "ready": 1,
+    "generation": 44,
+    "observed_generation": 44,
+    "spec_sha256": "49e343dabd0f106d469796eb37136693caf6161b2ce51e586db2c7d90f557139",
+    "containers": [
+      {
+        "name": "vllm",
+        "args": [
+          "--model",
+          "/models",
+          "--served-model-name",
+          "octa-carbon-v1",
+          "--host",
+          "0.0.0.0",
+          "--port",
+          "8000",
+          "--gpu-memory-utilization",
+          "0.90",
+          "--max-model-len",
+          "8192",
+          "--trust-remote-code",
+          "--reasoning-parser",
+          "qwen3",
+          "--enable-auto-tool-choice",
+          "--tool-call-parser",
+          "hermes"
+        ],
+        "command": [
+          "python3",
+          "-m",
+          "vllm.entrypoints.openai.api_server"
+        ],
+        "resources": {
+          "limits": {
+            "cpu": "16",
+            "memory": "32Gi",
+            "nvidia.com/gpu": "1"
+          },
+          "requests": {
+            "cpu": "4",
+            "memory": "16Gi",
+            "nvidia.com/gpu": "1"
+          }
+        },
+        "ports": [
+          {
+            "containerPort": 8000,
+            "name": "http",
+            "protocol": "TCP"
+          }
+        ],
+        "volumeMounts": [
+          {
+            "mountPath": "/models",
+            "name": "model-store",
+            "readOnly": true,
+            "subPath": "released/qwen3-8b-baseline/model"
+          },
+          {
+            "mountPath": "/dev/shm",
+            "name": "dshm"
+          },
+          {
+            "mountPath": "/etc/localtime",
+            "name": "host-localtime",
+            "readOnly": true
+          }
+        ]
+      }
+    ]
+  },
+  "services": [
+    {
+      "name": "vllm-service",
+      "type": "ClusterIP",
+      "clusterIP": "10.233.2.207",
+      "ports": [
+        {
+          "name": "http",
+          "port": 8000,
+          "protocol": "TCP",
+          "targetPort": 8000
+        }
+      ]
+    }
+  ],
+  "endpoints": [
+    {
+      "name": "vllm-service",
+      "subsets": [
+        {
+          "addresses": [
+            {
+              "ip": "10.233.108.194",
+              "nodeName": "k8s-worker05",
+              "targetRef": {
+                "kind": "Pod",
+                "name": "vllm-57f474b498-6bwn6",
+                "namespace": "vllm",
+                "uid": "26d7f32e-ee55-4a1b-bca8-941e6163ced6"
+              }
+            }
+          ],
+          "ports": [
+            {
+              "name": "http",
+              "port": 8000,
+              "protocol": "TCP"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "related_ingresses": [
+    {
+      "namespace": "ems-pt",
+      "name": "ems-ingress",
+      "rules": [
+        {
+          "host": "ems.10.140.17.125.nip.io",
+          "http": {
+            "paths": [
+              {
+                "backend": {
+                  "service": {
+                    "name": "cms-kong",
+                    "port": {
+                      "number": 80
+                    }
+                  }
+                },
+                "path": "/",
+                "pathType": "Prefix"
+              }
+            ]
+          }
+        },
+        {
+          "host": "geec.10.140.17.125.nip.io",
+          "http": {
+            "paths": [
+              {
+                "backend": {
+                  "service": {
+                    "name": "cms-kong",
+                    "port": {
+                      "number": 80
+                    }
+                  }
+                },
+                "path": "/",
+                "pathType": "Prefix"
+              }
+            ]
+          }
+        },
+        {
+          "host": "ems.10.140.1.60.nip.io",
+          "http": {
+            "paths": [
+              {
+                "backend": {
+                  "service": {
+                    "name": "cms-kong",
+                    "port": {
+                      "number": 80
+                    }
+                  }
+                },
+                "path": "/",
+                "pathType": "Prefix"
+              }
+            ]
+          }
+        },
+        {
+          "host": "geec.10.140.1.60.nip.io",
+          "http": {
+            "paths": [
+              {
+                "backend": {
+                  "service": {
+                    "name": "cms-kong",
+                    "port": {
+                      "number": 80
+                    }
+                  }
+                },
+                "path": "/",
+                "pathType": "Prefix"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "namespace": "ems",
+      "name": "cms-bai-front",
+      "rules": [
+        {
+          "host": "geec.10.140.17.125.nip.io",
+          "http": {
+            "paths": [
+              {
+                "backend": {
+                  "service": {
+                    "name": "cms-bai-front",
+                    "port": {
+                      "number": 80
+                    }
+                  }
+                },
+                "path": "/bai",
+                "pathType": "Prefix"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "namespace": "ems",
+      "name": "cms-bai-platform-entry",
+      "rules": [
+        {
+          "host": "geec.10.140.17.125.nip.io",
+          "http": {
+            "paths": [
+              {
+                "backend": {
+                  "service": {
+                    "name": "cms-front",
+                    "port": {
+                      "number": 80
+                    }
+                  }
+                },
+                "path": "/",
+                "pathType": "Exact"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "namespace": "ollama",
+      "name": "open-webui-ingress",
+      "rules": [
+        {
+          "host": "open-webui.10.140.17.125.nip.io",
+          "http": {
+            "paths": [
+              {
+                "backend": {
+                  "service": {
+                    "name": "open-webui-service",
+                    "port": {
+                      "number": 80
+                    }
+                  }
+                },
+                "path": "/",
+                "pathType": "Prefix"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "namespace": "vllm",
+      "name": "vllm-ingress",
+      "rules": [
+        {
+          "host": "vllm.10.140.17.125.nip.io",
+          "http": {
+            "paths": [
+              {
+                "backend": {
+                  "service": {
+                    "name": "vllm-service",
+                    "port": {
+                      "number": 8000
+                    }
+                  }
+                },
+                "path": "/",
+                "pathType": "Prefix"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

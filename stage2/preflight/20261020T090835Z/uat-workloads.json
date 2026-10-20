@@ -1,0 +1,53 @@
+{
+  "ems": [
+    {
+      "name": "cms-bai-backend",
+      "replicas": 1,
+      "ready": 1
+    },
+    {
+      "name": "cms-bai-front",
+      "replicas": 1,
+      "ready": 1
+    },
+    {
+      "name": "cms-carbon-front",
+      "replicas": 1,
+      "ready": 1
+    },
+    {
+      "name": "cms-front",
+      "replicas": 1,
+      "ready": 1
+    },
+    {
+      "name": "cms-mlops-front",
+      "replicas": 1,
+      "ready": 1
+    }
+  ],
+  "ems-pt": [
+    {
+      "name": "cms-kong",
+      "replicas": 1,
+      "ready": 1
+    },
+    {
+      "name": "cms-kong-postgres",
+      "replicas": 1,
+      "ready": 1
+    },
+    {
+      "name": "cms-konga",
+      "replicas": 1,
+      "ready": 1
+    }
+  ],
+  "ollama": [
+    {
+      "name": "open-webui",
+      "replicas": 1,
+      "ready": 1
+    }
+  ]
+}

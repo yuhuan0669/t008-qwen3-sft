@@ -1,0 +1,40 @@
+{
+  "purpose": "Bind future evaluation to the verified vLLM template; no inference or training authorized",
+  "backend": "vllm",
+  "chat_template": {
+    "path": "stage2/diagnostics/thinking-chat-template-20261020/thinking-prefill.jinja",
+    "sha256": "ae8a1b27c3bac461eb5f6c78d5d39cbe29427ad91c9d2da8378e236b8a38448d"
+  },
+  "server_args": [
+    "--chat-template",
+    "/work/stage2/diagnostics/thinking-chat-template-20261020/thinking-prefill.jinja",
+    "--reasoning-parser",
+    "qwen3"
+  ],
+  "apply_same_template_to": [
+    "original_base",
+    "all_compared_adapters"
+  ],
+  "request_modes": {
+    "thinking": {
+      "chat_template_kwargs": {
+        "enable_thinking": true
+      }
+    },
+    "nonthinking": {
+      "chat_template_kwargs": {
+        "enable_thinking": false
+      }
+    }
+  },
+  "prior_chat_verification": "stage2/diagnostics/thinking-chat-template-20261020/verification.json",
+  "prior_scope": "six public development cases per original/Full2/Full3; not v0.1.7 model quality",
+  "formal_scores_reusable_only_if_template_and_protocol_match": true,
+  "execution_authorized": false,
+  "system_path": "stage1/variants/stage1-cpu-v0.1.8/evaluation/custom-system.txt",
+  "system_sha256": "92ed593b3ea69fffc4b31756bb97abdd9806597234b430fbb5a4d95220550984",
+  "development_path": "stage1/variants/stage1-cpu-v0.1.8/evaluation/development-24.jsonl",
+  "rubric_path": "stage1/variants/stage1-cpu-v0.1.8/evaluation/rubric.md",
+  "formal_holdout_status": "NOT_MODIFIED_EVALUATION_SIDE_NAME_AMENDMENT_REQUIRED_BEFORE_FORMAL_RUN",
+  "historical_scores_unchanged": true
+}

@@ -35,26 +35,17 @@
   "data_supplement": "stage1/UNDERLYING_SUPPLEMENT.md",
   "implementation_plan": "docs/plans/GPU_IMPLEMENTATION_REVIEW_v0.2.md",
   "latest_data_revision": {
-    "version": "stage1-cpu-v0.1.7",
-    "manifest": "stage1/variants/stage1-cpu-v0.1.7/manifest.json",
-    "train_path": "stage1/variants/stage1-cpu-v0.1.7/train.jsonl",
-    "train_sha256": "f76879161c87c0f0d7ede7a19014dfaed9809da592d2760186978f5bdd4d4d35",
-    "report": "stage1/variants/stage1-cpu-v0.1.7/README.md",
-    "sample_diff": "stage1/variants/stage1-cpu-v0.1.7/SAMPLE_DIFF.md",
-    "training_config": "stage1/variants/stage1-cpu-v0.1.7/training-config.json",
+    "version": "stage1-cpu-v0.1.8",
+    "manifest": "stage1/variants/stage1-cpu-v0.1.8/manifest.json",
+    "train_path": "stage1/variants/stage1-cpu-v0.1.8/train.jsonl",
+    "train_sha256": "3565d6602c8d3e7e47b9a2ea522fd4d4e76d90f9116911cd46422434b5897eb6",
+    "report": "stage1/variants/stage1-cpu-v0.1.8/README.md",
+    "sample_diff": "stage1/variants/stage1-cpu-v0.1.8/changes.jsonl",
+    "training_config": "stage1/variants/stage1-cpu-v0.1.8/training-config.json",
+    "evaluation_config": "stage1/variants/stage1-cpu-v0.1.8/evaluation-config.json",
     "rows": 1275,
-    "status": "CPU_CHECKED_NO_TRAINING_AUTHORIZATION",
-    "config_revision": "official-route-r1",
-    "encoding_status": "VERIFIED_CPU_V017",
-    "cpu_report": "stage1/variants/stage1-cpu-v0.1.7/CPU_CHECK.md",
-    "cpu_validation_report": "stage1/variants/stage1-cpu-v0.1.7/cpu-check/encoding-report.json",
-    "evaluation_config": "stage1/variants/stage1-cpu-v0.1.7/evaluation-config.json",
-    "execution_result": {
-      "status": "TRAINED_DEVELOPMENT_NOT_QUALIFIED_UAT_RESTORED",
-      "run_id": "t008-v017-20261020-135244",
-      "report": "stage2/runs/t008-v017-20261020-135244/REPORT.md",
-      "data_snapshot_unchanged": true
-    }
+    "status": "LOCAL_NAME_REVISION_NOT_TRAINED",
+    "encoding_status": "NOT_RUN_V018"
   },
   "status_scope": "Top-level v0.1.3 is historical CPU preparation; latest_data_revision is the current local data candidate",
   "previous_data_revisions": [
@@ -90,6 +81,28 @@
       "rows": 1275,
       "status": "PREPARED_FOR_USER_REVIEW_NOT_TRAINING_APPROVAL",
       "config_revision": "official-route-r1"
+    },
+    {
+      "version": "stage1-cpu-v0.1.7",
+      "manifest": "stage1/variants/stage1-cpu-v0.1.7/manifest.json",
+      "train_path": "stage1/variants/stage1-cpu-v0.1.7/train.jsonl",
+      "train_sha256": "f76879161c87c0f0d7ede7a19014dfaed9809da592d2760186978f5bdd4d4d35",
+      "report": "stage1/variants/stage1-cpu-v0.1.7/README.md",
+      "sample_diff": "stage1/variants/stage1-cpu-v0.1.7/SAMPLE_DIFF.md",
+      "training_config": "stage1/variants/stage1-cpu-v0.1.7/training-config.json",
+      "rows": 1275,
+      "status": "CPU_CHECKED_NO_TRAINING_AUTHORIZATION",
+      "config_revision": "official-route-r1",
+      "encoding_status": "VERIFIED_CPU_V017",
+      "cpu_report": "stage1/variants/stage1-cpu-v0.1.7/CPU_CHECK.md",
+      "cpu_validation_report": "stage1/variants/stage1-cpu-v0.1.7/cpu-check/encoding-report.json",
+      "evaluation_config": "stage1/variants/stage1-cpu-v0.1.7/evaluation-config.json",
+      "execution_result": {
+        "status": "TRAINED_DEVELOPMENT_NOT_QUALIFIED_UAT_RESTORED",
+        "run_id": "t008-v017-20261020-135244",
+        "report": "stage2/runs/t008-v017-20261020-135244/REPORT.md",
+        "data_snapshot_unchanged": true
+      }
     }
   ]
 }

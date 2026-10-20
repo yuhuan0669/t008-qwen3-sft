@@ -1,0 +1,13 @@
+{
+  "status": "PASS_TEXT_EXPOSURE_CONFIG_CHECK_ONLY",
+  "rows": 1275,
+  "changed_rows": 159,
+  "unchanged_rows": 1116,
+  "parent_frozen_files_verified": true,
+  "exposure_order_and_source_preserved": true,
+  "training_argv_unchanged_except_version_paths": true,
+  "new_tokenizer_encoding_executed": false,
+  "training_executed": false,
+  "inference_executed": false,
+  "formal_holdout_modified": false
+}

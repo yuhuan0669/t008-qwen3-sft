@@ -1,0 +1,217 @@
+{
+  "Full1": {
+    "rows": 1289,
+    "sha256": "89b8dd9c3e434bcea0a1baf42bff2972e836fa3704b57fda283d9864272db443",
+    "groups": {
+      "swift/Qwen3-SFT-Mixin": {
+        "rows": 1036,
+        "unique_messages": 518,
+        "no_think_rows": 0,
+        "empty_think_assistant_turns": 0,
+        "nonempty_think_assistant_turns": 1036,
+        "system_rows": 0,
+        "product_name_rows": 0,
+        "company_name_rows": 0
+      },
+      "swift/self-cognition": {
+        "rows": 216,
+        "unique_messages": 105,
+        "no_think_rows": 216,
+        "empty_think_assistant_turns": 216,
+        "nonempty_think_assistant_turns": 0,
+        "system_rows": 0,
+        "product_name_rows": 142,
+        "company_name_rows": 172
+      },
+      "t008/project-positioning-v1": {
+        "rows": 37,
+        "unique_messages": 30,
+        "no_think_rows": 0,
+        "empty_think_assistant_turns": 43,
+        "nonempty_think_assistant_turns": 0,
+        "system_rows": 0,
+        "product_name_rows": 2,
+        "company_name_rows": 2
+      }
+    },
+    "supervised_tokens": {
+      "swift/Qwen3-SFT-Mixin": 1519096,
+      "swift/self-cognition": 8174,
+      "t008/project-positioning-v1": 1146
+    },
+    "total_supervised_tokens": 1528416,
+    "custom_supervised_token_percent": 0.6098
+  },
+  "Full2": {
+    "rows": 1786,
+    "sha256": "2e31f05483c5b9b8840af5b687cb7bbbad9ca2029f94d28904ae4b17ed2e33c5",
+    "groups": {
+      "swift/Qwen3-SFT-Mixin": {
+        "rows": 1036,
+        "unique_messages": 518,
+        "no_think_rows": 0,
+        "empty_think_assistant_turns": 0,
+        "nonempty_think_assistant_turns": 1036,
+        "system_rows": 0,
+        "product_name_rows": 0,
+        "company_name_rows": 0
+      },
+      "swift/self-cognition": {
+        "rows": 630,
+        "unique_messages": 105,
+        "no_think_rows": 630,
+        "empty_think_assistant_turns": 630,
+        "nonempty_think_assistant_turns": 0,
+        "system_rows": 0,
+        "product_name_rows": 408,
+        "company_name_rows": 498
+      },
+      "t008/project-positioning-v1": {
+        "rows": 120,
+        "unique_messages": 30,
+        "no_think_rows": 0,
+        "empty_think_assistant_turns": 136,
+        "nonempty_think_assistant_turns": 0,
+        "system_rows": 0,
+        "product_name_rows": 8,
+        "company_name_rows": 8
+      }
+    },
+    "supervised_tokens": {
+      "swift/Qwen3-SFT-Mixin": 1519096,
+      "swift/self-cognition": 23814,
+      "t008/project-positioning-v1": 4188
+    },
+    "total_supervised_tokens": 1547098,
+    "custom_supervised_token_percent": 1.81
+  },
+  "Full3": {
+    "rows": 2776,
+    "sha256": "4d1bb5b3b0dc1fa0b3150342e77a12cdccf32db591ceb2ac32680a22e3857d20",
+    "groups": {
+      "swift/Qwen3-SFT-Mixin": {
+        "rows": 1036,
+        "unique_messages": 518,
+        "no_think_rows": 0,
+        "empty_think_assistant_turns": 0,
+        "nonempty_think_assistant_turns": 1036,
+        "system_rows": 0,
+        "product_name_rows": 0,
+        "company_name_rows": 0
+      },
+      "swift/self-cognition": {
+        "rows": 1260,
+        "unique_messages": 105,
+        "no_think_rows": 1260,
+        "empty_think_assistant_turns": 1260,
+        "nonempty_think_assistant_turns": 0,
+        "system_rows": 0,
+        "product_name_rows": 816,
+        "company_name_rows": 996
+      },
+      "t008/project-positioning-v1": {
+        "rows": 480,
+        "unique_messages": 30,
+        "no_think_rows": 0,
+        "empty_think_assistant_turns": 544,
+        "nonempty_think_assistant_turns": 0,
+        "system_rows": 0,
+        "product_name_rows": 32,
+        "company_name_rows": 32
+      }
+    },
+    "supervised_tokens": {
+      "swift/Qwen3-SFT-Mixin": 1519096,
+      "swift/self-cognition": 47628,
+      "t008/project-positioning-v1": 16752
+    },
+    "total_supervised_tokens": 1583476,
+    "custom_supervised_token_percent": 4.0657
+  },
+  "v0.1.7": {
+    "rows": 1275,
+    "sha256": "f76879161c87c0f0d7ede7a19014dfaed9809da592d2760186978f5bdd4d4d35",
+    "groups": {
+      "swift/Qwen3-SFT-Mixin": {
+        "rows": 1036,
+        "unique_messages": 518,
+        "no_think_rows": 0,
+        "empty_think_assistant_turns": 0,
+        "nonempty_think_assistant_turns": 1036,
+        "system_rows": 0,
+        "product_name_rows": 0,
+        "company_name_rows": 0
+      },
+      "swift/self-cognition": {
+        "rows": 216,
+        "unique_messages": 210,
+        "no_think_rows": 108,
+        "empty_think_assistant_turns": 216,
+        "nonempty_think_assistant_turns": 0,
+        "system_rows": 0,
+        "product_name_rows": 140,
+        "company_name_rows": 170
+      },
+      "t008/project-positioning-v1": {
+        "rows": 23,
+        "unique_messages": 23,
+        "no_think_rows": 0,
+        "empty_think_assistant_turns": 25,
+        "nonempty_think_assistant_turns": 0,
+        "system_rows": 0,
+        "product_name_rows": 2,
+        "company_name_rows": 2
+      }
+    },
+    "supervised_tokens": {
+      "swift/Qwen3-SFT-Mixin": 1519096,
+      "swift/self-cognition": 8150,
+      "t008/project-positioning-v1": 1009
+    },
+    "total_supervised_tokens": 1528255,
+    "custom_supervised_token_percent": 0.5993
+  },
+  "v0.1.8": {
+    "rows": 1275,
+    "sha256": "3565d6602c8d3e7e47b9a2ea522fd4d4e76d90f9116911cd46422434b5897eb6",
+    "groups": {
+      "swift/Qwen3-SFT-Mixin": {
+        "rows": 1036,
+        "unique_messages": 518,
+        "no_think_rows": 0,
+        "empty_think_assistant_turns": 0,
+        "nonempty_think_assistant_turns": 1036,
+        "system_rows": 0,
+        "product_name_rows": 0,
+        "company_name_rows": 0
+      },
+      "swift/self-cognition": {
+        "rows": 216,
+        "unique_messages": 210,
+        "no_think_rows": 108,
+        "empty_think_assistant_turns": 216,
+        "nonempty_think_assistant_turns": 0,
+        "system_rows": 0,
+        "product_name_rows": 140,
+        "company_name_rows": 170
+      },
+      "t008/project-positioning-v1": {
+        "rows": 23,
+        "unique_messages": 23,
+        "no_think_rows": 0,
+        "empty_think_assistant_turns": 25,
+        "nonempty_think_assistant_turns": 0,
+        "system_rows": 0,
+        "product_name_rows": 2,
+        "company_name_rows": 2
+      }
+    },
+    "supervised_tokens": {
+      "swift/Qwen3-SFT-Mixin": 1519096,
+      "swift/self-cognition": 8084,
+      "t008/project-positioning-v1": 1009
+    },
+    "total_supervised_tokens": 1528189,
+    "custom_supervised_token_percent": 0.595
+  }
+}

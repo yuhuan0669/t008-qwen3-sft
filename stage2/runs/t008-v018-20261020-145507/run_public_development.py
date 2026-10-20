@@ -2,7 +2,7 @@
 from pathlib import Path
 import json,subprocess,tarfile,hashlib
 R=Path(__file__).resolve().parent;ROOT=R.parents[2];K=['kubectl','--context','lmas00-direct','-n','evalscope','exec'];TARGET='deployment/evalscope'
-E=ROOT/'stage1/evaluation';worker=R/'public-evalscope-worker.py';protocol=json.loads((E/'protocol.json').read_text());public=[json.loads(s) for s in (E/'public-development.jsonl').read_text().splitlines()];assert len(public)==40
+E=R/'inputs/evaluation';worker=R/'public-evalscope-worker.py';protocol=json.loads((E/'protocol.json').read_text());public=[json.loads(s) for s in (E/'public-development.jsonl').read_text().splitlines()];assert len(public)==40
 window=json.loads((R/'window.json').read_text());binding=json.loads((R/'evaluation-binding.json').read_text())
 for cond,model in [('A','t008-base'),('C_new','t008-new')]:
  local=R/'development'/('public-'+cond);local.mkdir(parents=True,exist_ok=False);remote='/tmp/t008-public-development/'+R.name+'/'+cond

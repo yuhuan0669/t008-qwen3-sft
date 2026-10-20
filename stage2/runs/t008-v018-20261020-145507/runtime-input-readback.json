@@ -1,0 +1,9 @@
+{
+  "stage1/data/train.jsonl": "3565d6602c8d3e7e47b9a2ea522fd4d4e76d90f9116911cd46422434b5897eb6",
+  "stage1/data/manifest.json": "f158bbb60a3f79502bc9c1bf4cf05fc879ec678f57abd00fef20d30d94add3cd",
+  "stage1/training/run-spec.json": "4cb4379d99b85a95696e7b8a2d2f9d8c63531f19154d927b690f818bc79c77f3",
+  "stage1/evidence/encoding-report.json": "358367f80a04c8f4e075e9c153d613ffefe3e150555d97c33439c7b9c1144a5c",
+  "evaluation/custom-system.txt": "92ed593b3ea69fffc4b31756bb97abdd9806597234b430fbb5a4d95220550984",
+  "evaluation/development-24.jsonl": "af0b1db0db437c2a114da2aec87ef68b953189e284ba24435eb74698be450be6",
+  "evaluation/thinking-prefill.jinja": "ae8a1b27c3bac461eb5f6c78d5d39cbe29427ad91c9d2da8378e236b8a38448d"
+}

@@ -18,7 +18,7 @@
   "node_A": "NOT_ACCEPTED",
   "industry_stage_2": "NOT_AUTHORIZED",
   "cloud_01_acceptance_receipt_for_this_round": "WRITTEN_AND_READBACK_VERIFIED_T008-ACK-RETRAIN-DISCUSSION-20261019-01",
-  "current_execution_phase": "V018_CPU_CHECKED_PREPARING_AUTHORIZED_TRAINING",
+  "current_execution_phase": "V018_FULL_RUNNING",
   "current_plan": {
     "version": "review-v0.4.1",
     "path": "docs/plans/SFT_MINIMAL_INTEGRATION_v0.4.1.md",
@@ -171,13 +171,15 @@
   "proposed_training_config": "stage1/variants/stage1-cpu-v0.1.8/training-config.json",
   "current_training_run": {
     "run_id": "t008-v018-20261020-145507",
-    "status": "PREPARING",
+    "status": "FULL_RUNNING",
     "data_version": "stage1-cpu-v0.1.8",
     "data_sha256": "3565d6602c8d3e7e47b9a2ea522fd4d4e76d90f9116911cd46422434b5897eb6",
     "rows": 1275,
     "max_full_runs": 1,
     "user_authorized": true,
     "immediate_uat_pause_authorized": true,
-    "report": "stage2/runs/t008-v018-20261020-145507/EXECUTION.md"
+    "report": "stage2/runs/t008-v018-20261020-145507/EXECUTION.md",
+    "training_started": true,
+    "uat_paused": true
   }
 }

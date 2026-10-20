@@ -1,0 +1,13 @@
+{
+  "run_id": "t008-v018-20261020-145507",
+  "experiment_approved": true,
+  "uat_pause_approved": true,
+  "approved_data_sha256": "3565d6602c8d3e7e47b9a2ea522fd4d4e76d90f9116911cd46422434b5897eb6",
+  "window_start_utc": "2026-10-20T14:57:38.409469+00:00",
+  "window_end_utc": "2026-10-20T22:57:38.409469+00:00",
+  "restore_start_utc": "2026-10-20T22:17:38.409469+00:00",
+  "decision_ref": "User: 先做 v0.1.8 CPU 编码检查，名称/System一致、曝光及配置不变，通过后训练，可暂停 UAT。8h watchdog is a conservative recovery ceiling, not a requested outage duration.",
+  "restoration_owner": "Current implementation agent",
+  "uat_coordination": "Owner directly confirmed immediate pause",
+  "max_full_runs": 1
+}

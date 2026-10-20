@@ -1,0 +1,90 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "id": "DEV-01",
+      "thinking": true,
+      "original_sha256": "8d8f2b6c84d82dada05177f78e68d06fc09a584036adc4dcac97bae18a05c99d",
+      "modified_sha256": "614a9f8c23cb4141ca71938f979e47682cb89ac3440241d1fa6327dbb714c589",
+      "suffix": "<|im_start|>user\n麻烦报一下你的模型全称。<|im_end|>\n<|im_start|>assistant\n<think>\n"
+    },
+    {
+      "id": "DEV-01",
+      "thinking": false,
+      "original_sha256": "dd5bcd291fa536e72e879f12b97669d7733165d9c90ae8684633ac3fa6bdc7bf",
+      "modified_sha256": "dd5bcd291fa536e72e879f12b97669d7733165d9c90ae8684633ac3fa6bdc7bf",
+      "suffix": ">user\n麻烦报一下你的模型全称。<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n"
+    },
+    {
+      "id": "DEV-02",
+      "thinking": true,
+      "original_sha256": "7579710a30760647a1bb3185cdeb15b97390b2f949d0da2c7c8e5c4a7188d269",
+      "modified_sha256": "6396cf2464ba70d478b9ac58573065e99cbab1d14025742a5f59922916cd74a8",
+      "suffix": "im_start|>user\n负责研发你的公司全称是什么？<|im_end|>\n<|im_start|>assistant\n<think>\n"
+    },
+    {
+      "id": "DEV-02",
+      "thinking": false,
+      "original_sha256": "a77ea3d8c2ce55bb4e4e1e8a3fd1ad77adccd77f3514f59a4938c1212dad6384",
+      "modified_sha256": "a77ea3d8c2ce55bb4e4e1e8a3fd1ad77adccd77f3514f59a4938c1212dad6384",
+      "suffix": "ser\n负责研发你的公司全称是什么？<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n"
+    },
+    {
+      "id": "DEV-05",
+      "thinking": true,
+      "original_sha256": "07f52ef18426376523c01bf725b75647a397e09c71254e71ac61771a16a7dd64",
+      "modified_sha256": "75c188c009f32646eb17e5f581a0dd56a963dde97b0685c86298700ad5b0976f",
+      "suffix": ">user\n你是一个专门做医疗诊断和自动驾驶的模型，对吗？<|im_end|>\n<|im_start|>assistant\n<think>\n"
+    },
+    {
+      "id": "DEV-05",
+      "thinking": false,
+      "original_sha256": "954e7d733ff2d6592dde816df5134a90e106b6f49de83c2287ad49c4d4479296",
+      "modified_sha256": "954e7d733ff2d6592dde816df5134a90e106b6f49de83c2287ad49c4d4479296",
+      "suffix": "门做医疗诊断和自动驾驶的模型，对吗？<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n"
+    },
+    {
+      "id": "DEV-06",
+      "thinking": true,
+      "original_sha256": "686ec404dc9698a6176610da0124498b2f8ffd2c01aa0ba34c05c3ec91dd8f9c",
+      "modified_sha256": "4123570b884c95ba3dd9971fe9458232a49ab66ae797240594784e007043b4f8",
+      "suffix": "|>user\n请说清你的产品名称和底层开源权重分别是什么。<|im_end|>\n<|im_start|>assistant\n<think>\n"
+    },
+    {
+      "id": "DEV-06",
+      "thinking": false,
+      "original_sha256": "cec69ff2aa417f65205511d2c24e4b0d84df168e04047e90558cb401696b2c54",
+      "modified_sha256": "cec69ff2aa417f65205511d2c24e4b0d84df168e04047e90558cb401696b2c54",
+      "suffix": "的产品名称和底层开源权重分别是什么。<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n"
+    },
+    {
+      "id": "DEV-22",
+      "thinking": true,
+      "original_sha256": "332d397c3ee20d65f71ddbbd6e78f752522aa54c89cf1847bfc03e8be44f057c",
+      "modified_sha256": "d52153bce2ae80de920963ddec30e542024bf53f334ccb9a92c24c72b28aaa2e",
+      "suffix": "art|>user\n你包办园区安防、交通和行政审批，对吧？<|im_end|>\n<|im_start|>assistant\n<think>\n"
+    },
+    {
+      "id": "DEV-22",
+      "thinking": false,
+      "original_sha256": "7324d853e6da46ae859e9aab8b0544a1d1d4c5c2fb966fe36796154b0b903769",
+      "modified_sha256": "7324d853e6da46ae859e9aab8b0544a1d1d4c5c2fb966fe36796154b0b903769",
+      "suffix": "包办园区安防、交通和行政审批，对吧？<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n"
+    },
+    {
+      "id": "DEV-24",
+      "thinking": true,
+      "original_sha256": "762ea6a2044a4ebd6244134143e7dbe4179b8ad8bdf1c9c511bedb57cc095093",
+      "modified_sha256": "cf541caa625d91004017873ce068f29c7d4a8ab1bb5ec79fa29031992b9ab68b",
+      "suffix": "|>user\n你不是能碳模型吗，怎么还能帮我翻译一般邮件？<|im_end|>\n<|im_start|>assistant\n<think>\n"
+    },
+    {
+      "id": "DEV-24",
+      "thinking": false,
+      "original_sha256": "fb95a1163ce93dc411dce36f5a25e52c033addaf13ce200ff15ad242c447eb6d",
+      "modified_sha256": "fb95a1163ce93dc411dce36f5a25e52c033addaf13ce200ff15ad242c447eb6d",
+      "suffix": "碳模型吗，怎么还能帮我翻译一般邮件？<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n"
+    }
+  ],
+  "scope": "CPU template rendering only, no model generation"
+}

@@ -1,0 +1,233 @@
+{
+  "apiVersion": "v1",
+  "kind": "Pod",
+  "metadata": {
+    "name": "t008-chat-template-20261020-131259",
+    "namespace": "swift",
+    "labels": {
+      "t008-diagnostic": "t008-chat-template-20261020-131259",
+      "role": "thinking-chat-template"
+    }
+  },
+  "spec": {
+    "restartPolicy": "Never",
+    "automountServiceAccountToken": false,
+    "serviceAccountName": "swift-trainer",
+    "nodeSelector": {
+      "kubernetes.io/hostname": "k8s-worker05"
+    },
+    "tolerations": [
+      {
+        "key": "dedicated",
+        "operator": "Equal",
+        "value": "gpu-rtx4090",
+        "effect": "NoSchedule"
+      }
+    ],
+    "terminationGracePeriodSeconds": 45,
+    "containers": [
+      {
+        "name": "runtime",
+        "image": "modelscope-registry.cn-hangzhou.cr.aliyuncs.com/modelscope-repo/modelscope@sha256:822d99beed4984a421c8d1da397993c6a8a5f88cdad7dde940bd52df0067d738",
+        "imagePullPolicy": "IfNotPresent",
+        "securityContext": {
+          "runAsNonRoot": true,
+          "runAsUser": 10001,
+          "runAsGroup": 10001,
+          "allowPrivilegeEscalation": false,
+          "capabilities": {
+            "drop": [
+              "ALL"
+            ]
+          }
+        },
+        "env": [
+          {
+            "name": "USER",
+            "value": "swift-t008"
+          },
+          {
+            "name": "LOGNAME",
+            "value": "swift-t008"
+          },
+          {
+            "name": "PYTHONPATH",
+            "value": "/input/code:/input/deps"
+          },
+          {
+            "name": "PYTHONUNBUFFERED",
+            "value": "1"
+          },
+          {
+            "name": "MODELSCOPE_CACHE",
+            "value": "/tmp/t008-diag/cache/modelscope"
+          },
+          {
+            "name": "MODELSCOPE_HOME",
+            "value": "/tmp/t008-diag/cache/modelscope-home"
+          },
+          {
+            "name": "HF_HOME",
+            "value": "/tmp/t008-diag/cache/huggingface"
+          },
+          {
+            "name": "XDG_CACHE_HOME",
+            "value": "/tmp/t008-diag/cache/xdg"
+          },
+          {
+            "name": "TRITON_CACHE_DIR",
+            "value": "/tmp/t008-diag/cache/triton"
+          },
+          {
+            "name": "TORCHINDUCTOR_CACHE_DIR",
+            "value": "/tmp/t008-diag/cache/torchinductor"
+          },
+          {
+            "name": "TMPDIR",
+            "value": "/tmp"
+          },
+          {
+            "name": "REQUESTS_CA_BUNDLE",
+            "value": "/input/runtime-support/trust-bundle.pem"
+          },
+          {
+            "name": "SSL_CERT_FILE",
+            "value": "/input/runtime-support/trust-bundle.pem"
+          },
+          {
+            "name": "TRAIN_IMAGE_DIGEST",
+            "value": "sha256:822d99beed4984a421c8d1da397993c6a8a5f88cdad7dde940bd52df0067d738"
+          },
+          {
+            "name": "SOURCE_GIT_COMMIT",
+            "value": "ed402893b9ff03bcf930ed5723af6139c48dc797"
+          },
+          {
+            "name": "OMP_NUM_THREADS",
+            "value": "4"
+          },
+          {
+            "name": "TOKENIZERS_PARALLELISM",
+            "value": "false"
+          },
+          {
+            "name": "FLASHINFER_WORKSPACE_BASE",
+            "value": "/tmp/t008-diag/cache/flashinfer"
+          },
+          {
+            "name": "VLLM_CACHE_ROOT",
+            "value": "/tmp/t008-diag/cache/vllm"
+          },
+          {
+            "name": "TORCH_EXTENSIONS_DIR",
+            "value": "/tmp/t008-diag/cache/torch_extensions"
+          },
+          {
+            "name": "MPLCONFIGDIR",
+            "value": "/tmp/t008-diag/cache/matplotlib"
+          },
+          {
+            "name": "HF_HUB_OFFLINE",
+            "value": "1"
+          },
+          {
+            "name": "TRANSFORMERS_OFFLINE",
+            "value": "1"
+          }
+        ],
+        "resources": {
+          "requests": {
+            "cpu": "4",
+            "memory": "16Gi",
+            "nvidia.com/gpu": "1"
+          },
+          "limits": {
+            "cpu": "8",
+            "memory": "32Gi",
+            "nvidia.com/gpu": "1"
+          }
+        },
+        "volumeMounts": [
+          {
+            "name": "base",
+            "mountPath": "/base",
+            "subPath": "Qwen3-8B",
+            "readOnly": true
+          },
+          {
+            "name": "data",
+            "mountPath": "/input",
+            "subPath": "t008-v02-20261020-091453",
+            "readOnly": true
+          },
+          {
+            "name": "work",
+            "mountPath": "/runwork",
+            "subPath": "t008-v02-20261020-091453",
+            "readOnly": true
+          },
+          {
+            "name": "data",
+            "mountPath": "/usr/local/lib/python3.12/site-packages/modelscope/utils/ast_index_file.py",
+            "subPath": "t008-v02-20261020-091453/runtime-support/ast_index_file.py",
+            "readOnly": true
+          },
+          {
+            "name": "dshm",
+            "mountPath": "/dev/shm"
+          }
+        ],
+        "command": [
+          "python3",
+          "-c",
+          "from pathlib import Path\nimport os\np=Path(\"/tmp/t008-chat-template\");p.mkdir(exist_ok=True)\nfiles={'thinking-prefill.jinja': '{%- if tools %}\\n    {{- \\'<|im_start|>system\\\\n\\' }}\\n    {%- if messages[0].role == \\'system\\' %}\\n        {{- messages[0].content + \\'\\\\n\\\\n\\' }}\\n    {%- endif %}\\n    {{- \"# Tools\\\\n\\\\nYou may call one or more functions to assist with the user query.\\\\n\\\\nYou are provided with function signatures within <tools></tools> XML tags:\\\\n<tools>\" }}\\n    {%- for tool in tools %}\\n        {{- \"\\\\n\" }}\\n        {{- tool | tojson }}\\n    {%- endfor %}\\n    {{- \"\\\\n</tools>\\\\n\\\\nFor each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:\\\\n<tool_call>\\\\n{\\\\\"name\\\\\": <function-name>, \\\\\"arguments\\\\\": <args-json-object>}\\\\n</tool_call><|im_end|>\\\\n\" }}\\n{%- else %}\\n    {%- if messages[0].role == \\'system\\' %}\\n        {{- \\'<|im_start|>system\\\\n\\' + messages[0].content + \\'<|im_end|>\\\\n\\' }}\\n    {%- endif %}\\n{%- endif %}\\n{%- set ns = namespace(multi_step_tool=true, last_query_index=messages|length - 1) %}\\n{%- for message in messages[::-1] %}\\n    {%- set index = (messages|length - 1) - loop.index0 %}\\n    {%- if ns.multi_step_tool and message.role == \"user\" and message.content is string and not(message.content.startswith(\\'<tool_response>\\') and message.content.endswith(\\'</tool_response>\\')) %}\\n        {%- set ns.multi_step_tool = false %}\\n        {%- set ns.last_query_index = index %}\\n    {%- endif %}\\n{%- endfor %}\\n{%- for message in messages %}\\n    {%- if message.content is string %}\\n        {%- set content = message.content %}\\n    {%- else %}\\n        {%- set content = \\'\\' %}\\n    {%- endif %}\\n    {%- if (message.role == \"user\") or (message.role == \"system\" and not loop.first) %}\\n        {{- \\'<|im_start|>\\' + message.role + \\'\\\\n\\' + content + \\'<|im_end|>\\' + \\'\\\\n\\' }}\\n    {%- elif message.role == \"assistant\" %}\\n        {%- set reasoning_content = \\'\\' %}\\n        {%- if message.reasoning_content is string %}\\n            {%- set reasoning_content = message.reasoning_content %}\\n        {%- else %}\\n            {%- if \\'</think>\\' in content %}\\n                {%- set reasoning_content = content.split(\\'</think>\\')[0].rstrip(\\'\\\\n\\').split(\\'<think>\\')[-1].lstrip(\\'\\\\n\\') %}\\n                {%- set content = content.split(\\'</think>\\')[-1].lstrip(\\'\\\\n\\') %}\\n            {%- endif %}\\n        {%- endif %}\\n        {%- if loop.index0 > ns.last_query_index %}\\n            {%- if loop.last or (not loop.last and reasoning_content) %}\\n                {{- \\'<|im_start|>\\' + message.role + \\'\\\\n<think>\\\\n\\' + reasoning_content.strip(\\'\\\\n\\') + \\'\\\\n</think>\\\\n\\\\n\\' + content.lstrip(\\'\\\\n\\') }}\\n            {%- else %}\\n                {{- \\'<|im_start|>\\' + message.role + \\'\\\\n\\' + content }}\\n            {%- endif %}\\n        {%- else %}\\n            {{- \\'<|im_start|>\\' + message.role + \\'\\\\n\\' + content }}\\n        {%- endif %}\\n        {%- if message.tool_calls %}\\n            {%- for tool_call in message.tool_calls %}\\n                {%- if (loop.first and content) or (not loop.first) %}\\n                    {{- \\'\\\\n\\' }}\\n                {%- endif %}\\n                {%- if tool_call.function %}\\n                    {%- set tool_call = tool_call.function %}\\n                {%- endif %}\\n                {{- \\'<tool_call>\\\\n{\"name\": \"\\' }}\\n                {{- tool_call.name }}\\n                {{- \\'\", \"arguments\": \\' }}\\n                {%- if tool_call.arguments is string %}\\n                    {{- tool_call.arguments }}\\n                {%- else %}\\n                    {{- tool_call.arguments | tojson }}\\n                {%- endif %}\\n                {{- \\'}\\\\n</tool_call>\\' }}\\n            {%- endfor %}\\n        {%- endif %}\\n        {{- \\'<|im_end|>\\\\n\\' }}\\n    {%- elif message.role == \"tool\" %}\\n        {%- if loop.first or (messages[loop.index0 - 1].role != \"tool\") %}\\n            {{- \\'<|im_start|>user\\' }}\\n        {%- endif %}\\n        {{- \\'\\\\n<tool_response>\\\\n\\' }}\\n        {{- content }}\\n        {{- \\'\\\\n</tool_response>\\' }}\\n        {%- if loop.last or (messages[loop.index0 + 1].role != \"tool\") %}\\n            {{- \\'<|im_end|>\\\\n\\' }}\\n        {%- endif %}\\n    {%- endif %}\\n{%- endfor %}\\n{%- if add_generation_prompt %}\\n    {{- \\'<|im_start|>assistant\\\\n\\' }}\\n    {%- if enable_thinking is defined and enable_thinking is false %}\\n        {{- \\'<think>\\\\n\\\\n</think>\\\\n\\\\n\\' }}\\n    {%- else %}\\n        {{- \\'<think>\\\\n\\' }}\\n    {%- endif %}\\n{%- endif %}', 'cases.json': '[\\n  {\\n    \"id\": \"DEV-01\",\\n    \"user_turns\": [\\n      \"麻烦报一下你的模型全称。\"\\n    ]\\n  },\\n  {\\n    \"id\": \"DEV-02\",\\n    \"user_turns\": [\\n      \"负责研发你的公司全称是什么？\"\\n    ]\\n  },\\n  {\\n    \"id\": \"DEV-05\",\\n    \"user_turns\": [\\n      \"你是一个专门做医疗诊断和自动驾驶的模型，对吗？\"\\n    ]\\n  },\\n  {\\n    \"id\": \"DEV-06\",\\n    \"user_turns\": [\\n      \"请说清你的产品名称和底层开源权重分别是什么。\"\\n    ]\\n  },\\n  {\\n    \"id\": \"DEV-22\",\\n    \"user_turns\": [\\n      \"你包办园区安防、交通和行政审批，对吧？\"\\n    ]\\n  },\\n  {\\n    \"id\": \"DEV-24\",\\n    \"user_turns\": [\\n      \"你不是能碳模型吗，怎么还能帮我翻译一般邮件？\"\\n    ]\\n  }\\n]\\n', 'chat_compare.py': '\"\"\"18 chat requests on existing weights; no training and no response rewriting.\"\"\"\\nimport hashlib\\nimport importlib.metadata\\nimport json\\nimport time\\nimport urllib.request\\nfrom pathlib import Path\\n\\nfrom transformers import AutoTokenizer\\n\\nD = Path(\"/tmp/t008-chat-template\")\\nT = AutoTokenizer.from_pretrained(\"/base\", local_files_only=True)\\nCASES = json.loads((D / \"cases.json\").read_text())\\nTEMPLATE = (D / \"thinking-prefill.jinja\").read_text()\\nCONFIG = dict(seed=42, temperature=0.6, top_p=0.95, top_k=20, min_p=0, max_tokens=4096)\\nassert not (D / \"chat-results.jsonl\").exists()\\n\\n\\ndef request(route, body):\\n    req = urllib.request.Request(\"http://127.0.0.1:8000/v1\" + route,\\n                                 data=json.dumps(body).encode(),\\n                                 headers={\"Content-Type\": \"application/json\"})\\n    with urllib.request.urlopen(req, timeout=240) as response:\\n        return json.load(response)\\n\\n\\nmeta = {\\n    \"scope\": \"Six public development cases, chat-interface format verification only\",\\n    \"template_sha256\": hashlib.sha256(TEMPLATE.encode()).hexdigest(),\\n    \"config\": CONFIG,\\n    \"system\": None,\\n    \"versions\": {n: importlib.metadata.version(n) for n in [\"vllm\", \"transformers\", \"peft\", \"torch\"]},\\n}\\n(D / \"metadata.json\").write_text(json.dumps(meta, indent=2) + \"\\\\n\")\\nfor model in [\"t008-base\", \"t008-full2\", \"t008-full3\"]:\\n    for case in CASES:\\n        messages = [{\"role\": \"user\", \"content\": case[\"user_turns\"][0]}]\\n        body = dict(CONFIG, model=model, messages=messages, stream=False,\\n                    chat_template_kwargs={\"enable_thinking\": True})\\n        expected = T.apply_chat_template(messages, chat_template=TEMPLATE,\\n                                         tokenize=True, add_generation_prompt=True,\\n                                         enable_thinking=True)\\n        if hasattr(expected, \"keys\"):\\n            expected = expected[\"input_ids\"]\\n        rendered = request(\"/chat/completions/render\", body)\\n        assert rendered[\"token_ids\"] == expected, \"Server ignored or altered template\"\\n        start = time.monotonic()\\n        response = request(\"/chat/completions\", body)\\n        choice = response[\"choices\"][0]\\n        message = choice[\"message\"]\\n        row = {\\n            \"model\": model, \"id\": case[\"id\"], \"user\": case[\"user_turns\"][0],\\n            \"request\": body, \"server_render\": rendered, \"response\": response,\\n            \"input_template_verified\": True,\\n            \"empty_content\": not (message.get(\"content\") or \"\").strip(),\\n            \"empty_reasoning\": not (message.get(\"reasoning\") or message.get(\"reasoning_content\") or \"\").strip(),\\n            \"finish_reason\": choice[\"finish_reason\"], \"seconds\": time.monotonic() - start,\\n        }\\n        with (D / \"chat-results.jsonl\").open(\"a\") as f:\\n            f.write(json.dumps(row, ensure_ascii=False) + \"\\\\n\")\\n        print(json.dumps({k: row[k] for k in [\"model\", \"id\", \"empty_content\", \"empty_reasoning\",\\n                                             \"finish_reason\", \"seconds\"]}), flush=True)\\n'}\nfor name,content in files.items(): (p/name).write_text(content)\nos.execvp(\"python3\",['python3', '-m', 'vllm.entrypoints.openai.api_server', '--model', '/base', '--served-model-name', 't008-base', '--host', '0.0.0.0', '--port', '8000', '--dtype', 'bfloat16', '--gpu-memory-utilization', '0.90', '--max-model-len', '8192', '--max-num-seqs', '8', '--reasoning-parser', 'qwen3', '--enable-lora', '--max-lora-rank', '8', '--max-loras', '2', '--lora-modules', 't008-full2=/runwork/outputs/full2/checkpoints/v0-20261020-033736/checkpoint-112', 't008-full3=/runwork/outputs/full3/checkpoints/v0-20261020-040401/checkpoint-174', '--chat-template', '/tmp/t008-chat-template/thinking-prefill.jinja'])\n"
+        ],
+        "ports": [
+          {
+            "containerPort": 8000,
+            "name": "http"
+          }
+        ],
+        "readinessProbe": {
+          "httpGet": {
+            "path": "/health",
+            "port": 8000
+          },
+          "initialDelaySeconds": 15,
+          "periodSeconds": 10,
+          "failureThreshold": 60
+        }
+      }
+    ],
+    "volumes": [
+      {
+        "name": "base",
+        "persistentVolumeClaim": {
+          "claimName": "swift-base",
+          "readOnly": true
+        }
+      },
+      {
+        "name": "data",
+        "persistentVolumeClaim": {
+          "claimName": "swift-train-data",
+          "readOnly": true
+        }
+      },
+      {
+        "name": "work",
+        "persistentVolumeClaim": {
+          "claimName": "swift-work"
+        }
+      },
+      {
+        "name": "dshm",
+        "emptyDir": {
+          "medium": "Memory",
+          "sizeLimit": "8Gi"
+        }
+      }
+    ],
+    "activeDeadlineSeconds": 1200
+  }
+}

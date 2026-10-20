@@ -1,0 +1,12 @@
+{
+  "scope": "18 chat generations, six public cases across original/Full2/Full3",
+  "training_authorized": false,
+  "training_started": false,
+  "uat_template_change_authorized": false,
+  "temporary_server_template_change_authorized": true,
+  "uat_pause_authorized": true,
+  "original_template_parent_sha256": "d5d09f07b48c3086c508b30d1c9114bd1189145b74e982a265350c923acd8101",
+  "reference_evidence": "../thinking-empty-20261020/paired.jsonl",
+  "same_image_resources_model_mounts": true,
+  "formal_acceptance": false
+}

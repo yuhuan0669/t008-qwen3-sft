@@ -1,0 +1,17 @@
+{
+  "gpu_nodes": [
+    {
+      "name": "k8s-worker05",
+      "allocatable": "1"
+    }
+  ],
+  "gpu_pods": [
+    {
+      "namespace": "vllm",
+      "name": "vllm-57f474b498-jd5sz",
+      "phase": "Running",
+      "node": "k8s-worker05"
+    }
+  ],
+  "uat_ready": 1
+}

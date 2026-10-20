@@ -1,0 +1,10 @@
+--- original.jinja
++++ thinking-prefill.jinja
+@@ -85,5 +85,7 @@
+     {{- '<|im_start|>assistant\n' }}
+     {%- if enable_thinking is defined and enable_thinking is false %}
+         {{- '<think>\n\n</think>\n\n' }}
++    {%- else %}
++        {{- '<think>\n' }}
+     {%- endif %}
+ {%- endif %}

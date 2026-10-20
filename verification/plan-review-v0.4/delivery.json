@@ -1,0 +1,14 @@
+{
+  "version": "review-v0.4",
+  "status": "DELIVERED_FOR_REVIEW",
+  "recorded_at_utc": "2026-10-20T06:11:58.044Z",
+  "plan_sha256": "64280f05a3f3128731c3eaab90ee552c99678943e755c767f2e1bb067c34671a",
+  "google_doc_url": "https://docs.google.com/document/d/1avgvPeSFGtjlV_nbQPT6OtQxZkTHRAJKK3dIbzIPoH0/edit?usp=drivesdk",
+  "google_doc_revision": "AHj4eMT2m42_zvIkuol81vhblOkqCVgEubb2l4S-A21lgQ6AubZkV0MyFh3Oz08HaIzoiIO34F6XI4iHEDLOJJ02Kb_skWv5QaX-WKFNw_E",
+  "parent_id": "1PUMa2W9OpCFOImL0ZGSLbTbY7TLOEZ5c",
+  "document_text_verified": true,
+  "original_01_append_verified": true,
+  "report_revision": "AHj4eMQasgHsBwYQDDvFBxfr-3muyapUd6KRAYVOMWJ_GMUTgVskyr4BPPA6UWe6iSkDMIaEhXXwADXOPde9ruSoI_Om6dCz2gbH7U5mEGY",
+  "business_source_revision": "AHj4eMQBoHDdVkPbpkXnbi31frao-wUwie_hzDyTvvrSzzW4wQgZmOwJasTb67Jox1yfUhSCRIFs1cuC8Jq2BY6OGKf4fA4tmZtScNA_fQo",
+  "scope": "Plan and version records only; training data/code, inference, training and services unchanged."
+}

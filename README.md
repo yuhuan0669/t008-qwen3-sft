@@ -4,7 +4,7 @@
 
 从 [HANDOFF.md](HANDOFF.md) 开始，再读 [当前状态](control/CURRENT_STATE.json) 与 [版本登记表](registry/versions.json)。
 
-当前待审阅方案：[基础SFT方案 review-v0.3](docs/plans/SFT_MINIMAL_INTEGRATION_v0.3.md)。六节精简正文：CPU准备、GPU包、独立验收；正式评测2080条件；Data-Juicer只出报告、ClearML结束后汇总。身份口径沿用已确认决定。[修订说明及四份参考意见](docs/reviews/review-v0.3/CHANGES.md)另存。当前仍待审阅，尚未处理数据或运行训练／评测；云端副本见 [方案登记](registry/plans.json)。
+当前待审阅方案：[基础SFT方案 review-v0.4](docs/plans/SFT_MINIMAL_INTEGRATION_v0.4.md)。按项目业务依据纳入能源管理、碳排放管理的定位与能力边界，落实到清洗、身份样本和既有评测中。保持六节正文、三阶段、2080条件及最小工具接入。[本版修订说明](docs/reviews/review-v0.4/CHANGES.md)。当前仅文档交付，训练数据和服务未改；云端副本见 [方案登记](registry/plans.json)。
 
 私有远端：[yuhuan0669/t008-qwen3-sft](https://github.com/yuhuan0669/t008-qwen3-sft)。代码和材料通过Git维护；Git bundle、对象库tar及交付回执存放于同仓库的归档Release。是否完成上传与回读，以该次Release的交付回执为准。
 

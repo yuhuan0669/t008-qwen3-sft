@@ -1,0 +1,10 @@
+
+
+T-008｜review-v0.4 业务定位与能力边界，待审阅
+用户要求按项目业务范围，将业务定位和能力边界纳入本轮数据清洗、身份样本和评测，保持精简，先审阅不训练。
+依据：《04_本次备案大模型产品业务描述_业务依据》。新稿保留能源管理／碳排放管理两主线，清洗与评分重点检查业务范围错配、能力／接入夸大及无依据结果；碳资产、ESG、CBAM等范围内业务不误删。
+六节正文、三阶段和2080个正式评测条件保持。
+审阅副本：https://docs.google.com/document/d/1avgvPeSFGtjlV_nbQPT6OtQxZkTHRAJKK3dIbzIPoH0/edit?usp=drivesdk
+GitHub：https://github.com/yuhuan0669/t008-qwen3-sft/blob/plan-review-v0.4/docs/plans/SFT_MINIMAL_INTEGRATION_v0.4.md
+源SHA-256：64280f05a3f3128731c3eaab90ee552c99678943e755c767f2e1bb067c34671a
+本条记录文档交付，Git推送状态见本轮最终回执。当前未修改训练数据或代码、未运行训练／推理评测、未改变服务。

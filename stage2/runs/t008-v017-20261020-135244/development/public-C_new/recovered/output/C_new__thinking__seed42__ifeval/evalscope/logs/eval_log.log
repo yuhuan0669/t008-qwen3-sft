@@ -1,0 +1,172 @@
+2026-10-20 07:30:35 - evalscope - INFO: Running with native backend
+2026-10-20 07:30:35 - evalscope - INFO: Dump task config to /tmp/t008-public-development/t008-v017-20261020-135244/C_new/output/C_new__thinking__seed42__ifeval/evalscope/configs/task_config.yaml
+2026-10-20 07:30:35 - evalscope - INFO: {
+    "model_id": "t008-new",
+    "model_args": {
+        "max_retries": 0
+    },
+    "model_task": "text_generation",
+    "chat_template": null,
+    "datasets": [
+        "t008_ifeval_formal"
+    ],
+    "dataset_args": {
+        "t008_ifeval_formal": {
+            "name": "t008_ifeval_formal",
+            "dataset_id": "t008_private_memory",
+            "output_types": [
+                "generation"
+            ],
+            "subset_list": [
+                "default"
+            ],
+            "default_subset": "default",
+            "few_shot_num": 0,
+            "few_shot_random": false,
+            "train_split": null,
+            "eval_split": "train",
+            "prompt_template": "",
+            "few_shot_prompt_template": null,
+            "system_prompt": null,
+            "query_template": null,
+            "pretty_name": "IFEval",
+            "description": "\n## Overview\n\nIFEval (Instruction-Following Eval) is a benchmark for evaluating how well language models follow explicit, verifiable instructions. It contains prompts with specific formatting, content, or structural requirements that can be objectively verified.\n\n## Task Description\n\n- **Task Type**: Instruction Following Evaluation\n- **Input**: Prompts with explicit, verifiable constraints\n- **Output**: Response that follows all specified instructions\n- **Constraint Types**: Format, length, keywords, structure, etc.\n\n## Key Features\n\n- ~500 prompts with 25 types of verifiable instructions\n- Instructions are objectively checkable (not subjective)\n- Examples: \"write exactly 3 paragraphs\", \"include the word X\", \"use bullet points\"\n- Tests instruction comprehension and compliance\n- No ambiguity in evaluation criteria\n\n## Evaluation Notes\n\n- Default configuration uses **0-shot** evaluation\n- Four metrics available:\n  - `prompt_level_strict`: All instructions in prompt must be followed\n  - `prompt_level_loose`: Some tolerance for minor deviations\n  - `inst_level_strict`: Per-instruction accuracy (strict)\n  - `inst_level_loose`: Per-instruction accuracy (loose)\n- `prompt_level_strict` is the primary metric\n- Automatic verification of instruction compliance\n",
+            "paper_url": null,
+            "data_statistics": null,
+            "sample_example": null,
+            "tags": [
+                "InstructionFollowing"
+            ],
+            "filters": null,
+            "metric_list": [
+                "prompt_level_strict",
+                "inst_level_strict",
+                "prompt_level_loose",
+                "inst_level_loose"
+            ],
+            "aggregation": "mean",
+            "shuffle": false,
+            "shuffle_choices": false,
+            "force_redownload": false,
+            "review_timeout": null,
+            "extra_params": {},
+            "sandbox_config": {},
+            "max_image_bytes": null
+        }
+    },
+    "dataset_dir": "/root/.cache/modelscope/hub/datasets",
+    "dataset_hub": "modelscope",
+    "repeats": 1,
+    "eval_type": "openai_api",
+    "eval_backend": "Native",
+    "eval_config": null,
+    "limit": null,
+    "eval_batch_size": 8,
+    "use_cache": null,
+    "rerun_review": false,
+    "work_dir": "/tmp/t008-public-development/t008-v017-20261020-135244/C_new/output/C_new__thinking__seed42__ifeval/evalscope",
+    "no_timestamp": true,
+    "enable_progress_tracker": false,
+    "ignore_errors": false,
+    "debug": false,
+    "seed": 42,
+    "api_url": "http://t008-v017-20261020-135244-eval.swift.svc.cluster.local:8000/v1",
+    "api_key": "**********",
+    "timeout": null,
+    "stream": null,
+    "judge_strategy": "auto",
+    "judge_worker_num": null,
+    "judge_model_args": {},
+    "analysis_report": false,
+    "collect_perf": true,
+    "sandbox": {
+        "enabled": false,
+        "engine": "docker",
+        "default_config": {},
+        "manager_config": {},
+        "pool_size": null
+    },
+    "use_sandbox": false,
+    "sandbox_type": "docker",
+    "sandbox_manager_config": {},
+    "agent_config": null,
+    "evalscope_version": "1.9.1",
+    "model": "t008-new",
+    "generation_config": {
+        "timeout": 600.0,
+        "retries": 1,
+        "batch_size": 8,
+        "stream": false,
+        "max_tokens": 4096,
+        "top_p": 0.95,
+        "temperature": 0.6,
+        "seed": 42,
+        "top_k": 20,
+        "extra_body": {
+            "min_p": 0,
+            "chat_template_kwargs": {
+                "enable_thinking": true
+            }
+        }
+    }
+}
+2026-10-20 07:30:35 - evalscope - INFO: Start loading benchmark dataset: t008_ifeval_formal
+2026-10-20 07:30:35 - evalscope - INFO: t008_ifeval_formal: 20 samples to evaluate (1 subset)
+2026-10-20 07:30:35 - evalscope - INFO: Subsets of t008_ifeval_formal: ['default']
+2026-10-20 07:30:35 - evalscope - INFO: Loading model for prediction...
+2026-10-20 07:30:35 - evalscope - INFO: Creating model t008-new with eval_type=openai_api base_url=http://t008-v017-20261020-135244-eval.swift.svc.cluster.local:8000/v1, config={'timeout': 600.0, 'retries': 1, 'retry_interval': 10, 'batch_size': 8, 'stream': False, 'max_tokens': 4096, 'top_p': 0.95, 'temperature': 0.6, 'seed': 42, 'top_k': 20, 'anthropic_cache_strategy': 'evaluation', 'extra_body': {'min_p': 0, 'chat_template_kwargs': {'enable_thinking': True}}}, model_args={'max_retries': 0}
+2026-10-20 07:30:35 - evalscope - INFO: Model loaded successfully.
+2026-10-20 07:31:35 - evalscope - INFO: Evaluating[t008_ifeval_formal]  85%| 17/20 [Elapsed: 01:00 < Remaining: 00:08,  2.72s/it]
+2026-10-20 07:32:28 - evalscope - INFO: Evaluating[t008_ifeval_formal] 100%| 20/20 [Elapsed: 01:53 < Remaining: 00:00, 13.39s/it]
+2026-10-20 07:32:28 - evalscope - INFO: t008_ifeval_formal: predictions complete, aggregating scores...
+2026-10-20 07:32:28 - evalscope - INFO: Aggregating scores for subset: default
+2026-10-20 07:32:28 - evalscope - INFO: Generating report...
+2026-10-20 07:32:28 - evalscope - INFO: 
+t008_ifeval_formal report table:
+┌──────────┬────────────────────┬──────────────────────────┬──────────┬───────┬─────────┬─────────┐
+│ Model    │ Dataset            │ Metric                   │ Subset   │   Num │   Score │ Cat.0   │
+├──────────┼────────────────────┼──────────────────────────┼──────────┼───────┼─────────┼─────────┤
+│ t008-new │ t008_ifeval_formal │ mean_prompt_level_strict │ default  │    20 │  0.75   │ default │
+├──────────┼────────────────────┼──────────────────────────┼──────────┼───────┼─────────┼─────────┤
+│ t008-new │ t008_ifeval_formal │ mean_inst_level_strict   │ default  │    20 │  0.7833 │ default │
+├──────────┼────────────────────┼──────────────────────────┼──────────┼───────┼─────────┼─────────┤
+│ t008-new │ t008_ifeval_formal │ mean_prompt_level_loose  │ default  │    20 │  0.8    │ default │
+├──────────┼────────────────────┼──────────────────────────┼──────────┼───────┼─────────┼─────────┤
+│ t008-new │ t008_ifeval_formal │ mean_inst_level_loose    │ default  │    20 │  0.8    │ default │
+└──────────┴────────────────────┴──────────────────────────┴──────────┴───────┴─────────┴─────────┘ 
+
+2026-10-20 07:32:28 - evalscope - INFO: Skipping report analysis (`analysis_report=False`).
+2026-10-20 07:32:28 - evalscope - INFO: Dump report to: /tmp/t008-public-development/t008-v017-20261020-135244/C_new/output/C_new__thinking__seed42__ifeval/evalscope/reports/t008-new/t008_ifeval_formal.json 
+
+2026-10-20 07:32:28 - evalscope - INFO: 
+t008_ifeval_formal perf table:
+Model     Dataset               Num    Avg Lat  Avg TTFT    Avg TPOT      Avg Thpt    Avg In    Avg Out
+                                           (s)  (ms)        (ms)           (tok/s)       Tok        Tok
+--------  ------------------  -----  ---------  ----------  ----------  ----------  --------  ---------
+t008-new  t008_ifeval_formal     20    23.6993  -           -                49.65     51.45    1176.75
+
+2026-10-20 07:32:28 - evalscope - INFO: Benchmark t008_ifeval_formal evaluation finished.
+2026-10-20 07:32:28 - evalscope - INFO: Running[eval] 100%| 1/1 [Elapsed: 01:53 < Remaining: 00:00, 113.20s/benchmark]
+2026-10-20 07:32:28 - evalscope - INFO: Overall report table: 
+┌──────────┬────────────────────┬──────────────────────────┬──────────┬───────┬─────────┬─────────┐
+│ Model    │ Dataset            │ Metric                   │ Subset   │   Num │   Score │ Cat.0   │
+├──────────┼────────────────────┼──────────────────────────┼──────────┼───────┼─────────┼─────────┤
+│ t008-new │ t008_ifeval_formal │ mean_prompt_level_strict │ default  │    20 │  0.75   │ default │
+├──────────┼────────────────────┼──────────────────────────┼──────────┼───────┼─────────┼─────────┤
+│ t008-new │ t008_ifeval_formal │ mean_inst_level_strict   │ default  │    20 │  0.7833 │ default │
+├──────────┼────────────────────┼──────────────────────────┼──────────┼───────┼─────────┼─────────┤
+│ t008-new │ t008_ifeval_formal │ mean_prompt_level_loose  │ default  │    20 │  0.8    │ default │
+├──────────┼────────────────────┼──────────────────────────┼──────────┼───────┼─────────┼─────────┤
+│ t008-new │ t008_ifeval_formal │ mean_inst_level_loose    │ default  │    20 │  0.8    │ default │
+└──────────┴────────────────────┴──────────────────────────┴──────────┴───────┴─────────┴─────────┘ 
+
+2026-10-20 07:32:28 - evalscope - INFO: Overall perf table: 
+Model     Dataset               Num    Avg Lat  Avg TTFT    Avg TPOT      Avg Thpt    Avg In    Avg Out
+                                           (s)  (ms)        (ms)           (tok/s)       Tok        Tok
+--------  ------------------  -----  ---------  ----------  ----------  ----------  --------  ---------
+t008-new  t008_ifeval_formal     20    23.6993  -           -                49.65     51.45    1176.75 
+
+2026-10-20 07:32:28 - evalscope - INFO: HTML report generated: /tmp/t008-public-development/t008-v017-20261020-135244/C_new/output/C_new__thinking__seed42__ifeval/evalscope/reports/report.html
+2026-10-20 07:32:28 - evalscope - INFO: Finished evaluation for t008-new on ['t008_ifeval_formal']
+2026-10-20 07:32:28 - evalscope - INFO: Output directory: /tmp/t008-public-development/t008-v017-20261020-135244/C_new/output/C_new__thinking__seed42__ifeval/evalscope
+2026-10-20 07:32:28 - evalscope - INFO: Args: Task config is provided with TaskConfig type.

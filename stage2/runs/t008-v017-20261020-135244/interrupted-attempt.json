@@ -1,0 +1,10 @@
+{
+  "task_id": "fe1063457d32490292b2d809934f7869",
+  "monitor_error_observed_step": 31,
+  "last_progress_step_before_termination": 36,
+  "planned_steps": 80,
+  "terminal_checkpoint_produced": false,
+  "clearml_marked_failed": true,
+  "weights_reused_in_retry": false,
+  "note": "Training continued briefly during Kubernetes termination grace period; not a completed Full"
+}

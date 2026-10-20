@@ -1,0 +1,1 @@
+{"checks": [{"model": "t008-base", "thinking": true, "match": true}, {"model": "t008-new", "thinking": true, "match": true}, {"model": "t008-base", "thinking": false, "match": true}, {"model": "t008-new", "thinking": false, "match": true}], "template_sha256": "ae8a1b27c3bac461eb5f6c78d5d39cbe29427ad91c9d2da8378e236b8a38448d"}

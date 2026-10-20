@@ -48,7 +48,13 @@
     "encoding_status": "VERIFIED_CPU_V017",
     "cpu_report": "stage1/variants/stage1-cpu-v0.1.7/CPU_CHECK.md",
     "cpu_validation_report": "stage1/variants/stage1-cpu-v0.1.7/cpu-check/encoding-report.json",
-    "evaluation_config": "stage1/variants/stage1-cpu-v0.1.7/evaluation-config.json"
+    "evaluation_config": "stage1/variants/stage1-cpu-v0.1.7/evaluation-config.json",
+    "execution_result": {
+      "status": "TRAINED_DEVELOPMENT_NOT_QUALIFIED_UAT_RESTORED",
+      "run_id": "t008-v017-20261020-135244",
+      "report": "stage2/runs/t008-v017-20261020-135244/REPORT.md",
+      "data_snapshot_unchanged": true
+    }
   },
   "status_scope": "Top-level v0.1.3 is historical CPU preparation; latest_data_revision is the current local data candidate",
   "previous_data_revisions": [

@@ -1,0 +1,112 @@
+agent_config: null
+analysis_report: false
+api_key: '**********'
+api_url: http://t008-v017-20261020-135244-eval.swift.svc.cluster.local:8000/v1
+chat_template: null
+collect_perf: true
+dataset_args:
+  t008_ifeval_formal:
+    aggregation: mean
+    data_statistics: null
+    dataset_id: t008_private_memory
+    default_subset: default
+    description: "\n## Overview\n\nIFEval (Instruction-Following Eval) is a benchmark\
+      \ for evaluating how well language models follow explicit, verifiable instructions.\
+      \ It contains prompts with specific formatting, content, or structural requirements\
+      \ that can be objectively verified.\n\n## Task Description\n\n- **Task Type**:\
+      \ Instruction Following Evaluation\n- **Input**: Prompts with explicit, verifiable\
+      \ constraints\n- **Output**: Response that follows all specified instructions\n\
+      - **Constraint Types**: Format, length, keywords, structure, etc.\n\n## Key\
+      \ Features\n\n- ~500 prompts with 25 types of verifiable instructions\n- Instructions\
+      \ are objectively checkable (not subjective)\n- Examples: \"write exactly 3\
+      \ paragraphs\", \"include the word X\", \"use bullet points\"\n- Tests instruction\
+      \ comprehension and compliance\n- No ambiguity in evaluation criteria\n\n##\
+      \ Evaluation Notes\n\n- Default configuration uses **0-shot** evaluation\n-\
+      \ Four metrics available:\n  - `prompt_level_strict`: All instructions in prompt\
+      \ must be followed\n  - `prompt_level_loose`: Some tolerance for minor deviations\n\
+      \  - `inst_level_strict`: Per-instruction accuracy (strict)\n  - `inst_level_loose`:\
+      \ Per-instruction accuracy (loose)\n- `prompt_level_strict` is the primary metric\n\
+      - Automatic verification of instruction compliance\n"
+    eval_split: train
+    extra_params: {}
+    few_shot_num: 0
+    few_shot_prompt_template: null
+    few_shot_random: false
+    filters: null
+    force_redownload: false
+    max_image_bytes: null
+    metric_list:
+    - prompt_level_strict
+    - inst_level_strict
+    - prompt_level_loose
+    - inst_level_loose
+    name: t008_ifeval_formal
+    output_types:
+    - generation
+    paper_url: null
+    pretty_name: IFEval
+    prompt_template: ''
+    query_template: null
+    review_timeout: null
+    sample_example: null
+    sandbox_config: {}
+    shuffle: false
+    shuffle_choices: false
+    subset_list:
+    - default
+    system_prompt: null
+    tags:
+    - InstructionFollowing
+    train_split: null
+dataset_dir: /root/.cache/modelscope/hub/datasets
+dataset_hub: modelscope
+datasets:
+- t008_ifeval_formal
+debug: false
+enable_progress_tracker: false
+eval_backend: Native
+eval_batch_size: 8
+eval_config: null
+eval_type: openai_api
+evalscope_version: 1.9.1
+generation_config:
+  batch_size: 8
+  extra_body:
+    chat_template_kwargs:
+      enable_thinking: true
+    min_p: 0
+  max_tokens: 4096
+  retries: 1
+  seed: 42
+  stream: false
+  temperature: 0.6
+  timeout: 600.0
+  top_k: 20
+  top_p: 0.95
+ignore_errors: false
+judge_model_args: {}
+judge_strategy: auto
+judge_worker_num: null
+limit: null
+model: t008-base
+model_args:
+  max_retries: 0
+model_id: t008-base
+model_task: text_generation
+no_timestamp: true
+repeats: 1
+rerun_review: false
+sandbox:
+  default_config: {}
+  enabled: false
+  engine: docker
+  manager_config: {}
+  pool_size: null
+sandbox_manager_config: {}
+sandbox_type: docker
+seed: 42
+stream: null
+timeout: null
+use_cache: null
+use_sandbox: false
+work_dir: /tmp/t008-public-development/t008-v017-20261020-135244/A/output/A__thinking__seed42__ifeval/evalscope

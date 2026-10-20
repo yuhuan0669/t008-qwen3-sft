@@ -11,3 +11,65 @@ Train:  10%|█         | 8/80 [01:23<11:55,  9.93s/it]
 Train:  12%|█▎        | 10/80 [01:46<12:17, 10.53s/it]
 Train:  12%|█▎        | 10/80 [01:46<12:17, 10.53s/it]
 Train:  14%|█▍        | 11/80 [01:53<10:54,  9.49s/it]
+2026-10-20T13:57:58.203277+00:00 : '10/80', 'elapsed_time': '1m 46s', 'remaining_time': '12m 23s', 'memory(GiB)': '23.04', 'train_speed(s/it)': '10.62'}
+
+Train:  12%|█▎        | 10/80 [01:46<12:17, 10.53s/it]
+Train:  12%|█▎        | 10/80 [01:46<12:17, 10.53s/it]
+Train:  14%|█▍        | 11/80 [01:53<10:54,  9.49s/it]
+Train:  15%|█▌        | 12/80 [02:03<10:58,  9.69s/it]
+Train:  16%|█▋        | 13/80 [02:15<11:32, 10.33s/it]
+Train:  18%|█▊        | 14/80 [02:23<10:38,  9.68s/it]
+2026-10-20T13:58:28.473672+00:00 orm': '0.2267', 'learning_rate': '9.492e-05', 'token_acc': '0.7918', 'epoch': '0.1882', 'global_step/max_steps': '15/80', 'elapsed_time': '2m 31s', 'remaining_time': '10m 56s', 'memory(GiB)': '23.04', 'train_speed(s/it)': '10.1'}
+
+Train:  19%|█▉        | 15/80 [02:31<09:57,  9.19s/it]
+Train:  19%|█▉        | 15/80 [02:31<09:57,  9.19s/it]
+Train:  20%|██        | 16/80 [02:42<10:23,  9.75s/it]
+Train:  21%|██▏       | 17/80 [02:53<10:34, 10.07s/it]
+2026-10-20T13:58:58.761797+00:00 0/80 [03:21<09:41,  9.70s/it]
+                                                      
+{'loss': '0.6536', 'grad_norm': '0.1859', 'learning_rate': '8.946e-05', 'token_acc': '0.7931', 'epoch': '0.251', 'global_step/max_steps': '20/80', 'elapsed_time': '3m 21s', 'remaining_time': '10m 4s', 'memory(GiB)': '23.04', 'train_speed(s/it)': '10.06'}
+
+Train:  25%|██▌       | 20/80 [03:21<09:41,  9.70s/it]
+Train:  25%|██▌       | 20/80 [03:21<09:41,  9.70s/it]
+2026-10-20T13:59:29.033163+00:00 cc': '0.7931', 'epoch': '0.251', 'global_step/max_steps': '20/80', 'elapsed_time': '3m 21s', 'remaining_time': '10m 4s', 'memory(GiB)': '23.04', 'train_speed(s/it)': '10.06'}
+
+Train:  25%|██▌       | 20/80 [03:21<09:41,  9.70s/it]
+Train:  25%|██▌       | 20/80 [03:21<09:41,  9.70s/it]
+Train:  26%|██▋       | 21/80 [03:31<09:43,  9.89s/it]
+Train:  28%|██▊       | 22/80 [03:41<09:39,  9.99s/it]
+Train:  29%|██▉       | 23/80 [03:54<10:17, 10.83s/it]
+2026-10-20T13:59:59.300780+00:00                               
+{'loss': '0.6181', 'grad_norm': '0.151', 'learning_rate': '8.231e-05', 'token_acc': '0.801', 'epoch': '0.3137', 'global_step/max_steps': '25/80', 'elapsed_time': '4m 14s', 'remaining_time': '9m 20s', 'memory(GiB)': '23.04', 'train_speed(s/it)': '10.17'}
+
+Train:  31%|███▏      | 25/80 [04:14<09:33, 10.44s/it]
+Train:  31%|███▏      | 25/80 [04:14<09:33, 10.44s/it]
+Train:  32%|███▎      | 26/80 [04:24<09:11, 10.21s/it]
+2026-10-20T14:00:29.714336+00:00 cc': '0.801', 'epoch': '0.3137', 'global_step/max_steps': '25/80', 'elapsed_time': '4m 14s', 'remaining_time': '9m 20s', 'memory(GiB)': '23.04', 'train_speed(s/it)': '10.17'}
+
+Train:  31%|███▏      | 25/80 [04:14<09:33, 10.44s/it]
+Train:  31%|███▏      | 25/80 [04:14<09:33, 10.44s/it]
+Train:  32%|███▎      | 26/80 [04:24<09:11, 10.21s/it]
+Train:  34%|███▍      | 27/80 [04:35<09:20, 10.58s/it]
+Train:  35%|███▌      | 28/80 [04:45<08:57, 10.34s/it]
+2026-10-20T14:01:00.047758+00:00 Error recorded: UnicodeDecodeError('utf-8', b"\x96\x88\xe2\x96\x8b      | 29/80 [04:56<08:59, 10.58s/it]\rTrain:  38%|\xe2\x96\x88\xe2\x96\x88\xe2\x96\x88\xe2\x96\x8a      | 30/80 [05:05<08:33, 10.26s/it]\r                                                      \r{'loss': '0.6253', 'grad_norm': '0.178', 'learning_rate': '7.38e-05', 'token_acc': '0.8', 'epoch': '0.3765', 'global_step/max_steps': '30/80', 'elapsed_time': '5m 6s', 'remaining_time': '8m 30s', 'memory(GiB)': '23.04', 'train_speed(s/it)': '10.2'}\n\rTrain:  38%|\xe2\x96\x88\xe2\x96\x88\xe2\x96\x88\xe2\x96\x8a      | 30/80 [05:05<08:33, 10.26s/it]\rTrain:  38%|\xe2\x96\x88\xe2\x96\x88\xe2\x96\x88\xe2\x96\x8a      | 30/80 [05:05<08:33, 10.26s/it]\rTrain:  39%|\xe2\x96\x88\xe2\x96\x88\xe2\x96\x88\xe2\x96\x89      | 31/80 [05:18<08:51, 10.85s/it]", 0, 1, 'invalid start byte')
+cat: /work/t008-v017-20261020-135244/outputs/full/training-scalars.json: 没有那个文件或目录
+command terminated with exit code 1
+2026-10-20T14:01:01.204536+00:00 Restoring original UAT
+{"started_at_utc": "2026-10-20T13:53:34.743663+00:00", "restored": true, "paused": false, "restored_at_utc": "2026-10-20T14:03:48.054849+00:00", "service_spec_equal": true, "health_status": 200}
+2026-10-20T14:03:48.166262+00:00 Original UAT restored and healthy
+Traceback (most recent call last):
+  File "/Users/ben/aiws/codex/keywords/t008_qwen3_sft/stage2/runs/t008-v017-20261020-135244/finish_run.py", line 19, in <module>
+    result=subprocess.run(K+['exec',prep,'--','tail','-c','600','/work/'+run+'/outputs/full-r2/train.log'],capture_output=True)
+  File "/usr/local/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/subprocess.py", line 557, in run
+    stdout, stderr = process.communicate(input, timeout=timeout)
+                     ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/subprocess.py", line 1221, in communicate
+    stdout, stderr = self._communicate(input, endtime, timeout)
+                     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/subprocess.py", line 2194, in _communicate
+    stdout = self._translate_newlines(stdout,
+                                      self.stdout.encoding,
+                                      self.stdout.errors)
+  File "/usr/local/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/subprocess.py", line 1099, in _translate_newlines
+    data = data.decode(encoding, errors)
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x96 in position 0: invalid start byte

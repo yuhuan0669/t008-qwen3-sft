@@ -67,5 +67,31 @@
   "delivery_receipts": [
     "stage2/delivery/github.json",
     "stage2/delivery/drive.json"
-  ]
+  ],
+  "latest_execution": {
+    "run_id": "t008-v017-20261020-135244",
+    "status": "TRAINED_DEVELOPMENT_NOT_QUALIFIED_UAT_RESTORED",
+    "data_version": "stage1-cpu-v0.1.7",
+    "data_sha256": "f76879161c87c0f0d7ede7a19014dfaed9809da592d2760186978f5bdd4d4d35",
+    "rows": 1275,
+    "successful_full_runs": 1,
+    "interrupted_full_attempts": 1,
+    "interrupted_attempt_last_step": 36,
+    "global_step": 80,
+    "epoch": 1.0,
+    "task_id": "29a4e16207fd4284a93d5d177fbe822a",
+    "output_model_id": "722739c64386480ea1e595198a723ea1",
+    "adapter_package_sha256": "ff47794ab6b59164494866459153d575321fa6e172b5de6e73d62492c698a35d",
+    "local_model": "stage2/local-models/stage1-cpu-v0.1.7/adapter.zip",
+    "run_manifest": "stage2/runs/t008-v017-20261020-135244/outputs/full-r2/run_manifest.json",
+    "report": "stage2/runs/t008-v017-20261020-135244/REPORT.md",
+    "verification": "stage2/runs/t008-v017-20261020-135244/verification.json",
+    "evaluation_template_sha256": "ae8a1b27c3bac461eb5f6c78d5d39cbe29427ad91c9d2da8378e236b8a38448d",
+    "uat_restored": true,
+    "formal_candidate_evaluation_executed": false,
+    "quality_accepted": false,
+    "next_training_authorized": false,
+    "sync_status": "LOCAL_GIT_ONLY_CLEARML_TRAINING_ARTIFACTS"
+  },
+  "status_scope": "Top-level v0.2 run is historical; latest_execution records the current v0.1.7 result"
 }

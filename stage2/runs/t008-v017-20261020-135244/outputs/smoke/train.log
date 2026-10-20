@@ -1,0 +1,762 @@
+run sh: `/usr/local/bin/python /usr/local/lib/python3.12/site-packages/swift/cli/sft.py --model /base --model_type qwen3 --template qwen3 --tuner_type lora --dataset /input/stage1/data/train.jsonl --split_dataset_ratio 0 --dataset_shuffle true --torch_dtype bfloat16 --num_train_epochs 1 --per_device_train_batch_size 1 --gradient_accumulation_steps 16 --learning_rate 1e-4 --lora_rank 8 --lora_alpha 32 --lora_dropout 0.05 --target_modules all-linear --max_length 2048 --truncation_strategy delete --loss_scale default+ignore_empty_think --preserve_thinking false --warmup_ratio 0.05 --seed 42 --data_seed 42 --gradient_checkpointing true --dataloader_num_workers 4 --eval_strategy no --save_strategy steps --save_steps 3 --save_total_limit 2 --logging_steps 5 --report_to tensorboard --output_dir /runwork/outputs/smoke/checkpoints --push_to_hub false --external_plugins /input/stage1/training/local_data_guard.py --max_steps 3`
+[INFO:swift] Successfully registered `/usr/local/lib/python3.12/site-packages/swift/dataset/data/dataset_info.json`.
+[INFO:swift] Successfully imported external_plugins: ['/input/stage1/training/local_data_guard.py'].
+[INFO:swift] rank: -1, local_rank: -1, world_size: 1, local_world_size: 1
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+[INFO:swift] Setting args.lazy_tokenize: False
+[transformers] warmup_ratio is deprecated and will be removed in v5.2. Use `warmup_steps` instead.
+[INFO:swift] output_dir: /runwork/outputs/smoke/checkpoints/v0-20261020-065353
+[INFO:swift] args: SftArguments(
+acc_strategy=token,
+accelerator_config={'dispatch_batches': False},
+adalora_beta1=0.85,
+adalora_beta2=0.85,
+adalora_deltaT=1,
+adalora_init_r=12,
+adalora_orth_reg_weight=0.5,
+adalora_target_r=8,
+adalora_tfinal=0,
+adalora_tinit=0,
+adam_beta1=0.9,
+adam_beta2=0.95,
+adam_epsilon=1e-08,
+adapter_act=gelu,
+adapter_length=128,
+adapters=[],
+add_non_thinking_prefix=True,
+add_version=True,
+agent_template=None,
+aligner_lr=None,
+attn_impl=None,
+auto_find_batch_size=False,
+average_tokens_across_devices=True,
+batch_eval_metrics=False,
+bf16=True,
+bf16_full_eval=False,
+bnb_4bit_compute_dtype=torch.bfloat16,
+bnb_4bit_quant_storage=None,
+bnb_4bit_quant_type=nf4,
+bnb_4bit_use_double_quant=True,
+boft_block_num=0,
+boft_block_size=4,
+boft_dropout=0.0,
+boft_n_butterfly_factor=1,
+cached_dataset=[],
+cached_val_dataset=[],
+callbacks=[],
+check_model=True,
+columns={},
+create_checkpoint_symlink=False,
+custom_dataset_info=[],
+custom_register_path=[],
+data_seed=42,
+dataloader_drop_last=False,
+dataloader_num_workers=4,
+dataloader_persistent_workers=False,
+dataloader_pin_memory=True,
+dataloader_prefetch_factor=None,
+dataset=['/input/stage1/data/train.jsonl'],
+dataset_num_proc=1,
+dataset_shuffle=True,
+ddp_backend=None,
+ddp_broadcast_buffers=None,
+ddp_bucket_cap_mb=None,
+ddp_find_unused_parameters=None,
+ddp_static_graph=None,
+ddp_timeout=18000000,
+debug=None,
+deepspeed=None,
+deepspeed_autotp_size=None,
+device_groups=None,
+device_map=None,
+disable_auto_column_mapping=False,
+disable_ignore_empty_think=False,
+disable_tqdm=None,
+do_eval=False,
+do_predict=False,
+do_train=False,
+download_mode=reuse_dataset_if_exists,
+ds3_gather_for_generation=True,
+early_stop_interval=None,
+enable_channel_loss=False,
+enable_dft_loss=False,
+enable_jit_checkpoint=False,
+enable_npu_model_patch=True,
+enable_thinking=None,
+eval_accumulation_steps=None,
+eval_dataset=[],
+eval_dataset_args=None,
+eval_delay=0,
+eval_do_concat_batches=True,
+eval_generation_config=None,
+eval_limit=None,
+eval_metric=None,
+eval_on_start=False,
+eval_steps=None,
+eval_strategy=no,
+eval_use_evalscope=False,
+eval_use_gather_object=False,
+experts_impl=None,
+external_plugins=['/input/stage1/training/local_data_guard.py'],
+extra_eval_args=None,
+fourier_n_frequency=2000,
+fourier_scaling=300.0,
+fp16=False,
+fp16_full_eval=False,
+freeze_aligner=True,
+freeze_llm=False,
+freeze_parameters=[],
+freeze_parameters_ratio=0.0,
+freeze_parameters_regex=None,
+freeze_vit=True,
+fsdp=[],
+fsdp_config=None,
+full_determinism=False,
+galore_cos_threshold=0.4,
+galore_gamma_proj=2,
+galore_optim_per_parameter=False,
+galore_proj_bits=4,
+galore_proj_group_size=256,
+galore_proj_quant=False,
+galore_proj_type=std,
+galore_quantization=False,
+galore_queue_size=5,
+galore_rank=128,
+galore_scale=1.0,
+galore_target_modules=None,
+galore_update_proj_gap=50,
+galore_with_embedding=False,
+generation_config=None,
+generation_max_length=None,
+generation_num_beams=None,
+gradient_accumulation_steps=16,
+gradient_checkpointing=True,
+gradient_checkpointing_kwargs=None,
+greater_is_better=False,
+group_by_length=False,
+hqq_axis=None,
+hub_always_push=False,
+hub_model_id=None,
+hub_private_repo=None,
+hub_revision=None,
+hub_strategy=every_save,
+hub_token=<HUB_TOKEN>,
+ignore_args_error=False,
+ignore_data_skip=False,
+include_for_metrics=[],
+include_num_input_tokens_seen=False,
+init_strategy=None,
+init_weights=True,
+interleave_prob=None,
+is_binary_loss_scale=None,
+label_names=None,
+label_smoothing_factor=0.0,
+lazy_tokenize=False,
+learning_rate=0.0001,
+length_column_name=length,
+liger_kernel_config=None,
+lisa_activated_layers=0,
+lisa_step_interval=20,
+llamapro_num_groups=None,
+llamapro_num_new_blocks=4,
+load_args=False,
+load_best_model_at_end=False,
+load_data_args=False,
+load_from_cache_file=False,
+local_rank=-1,
+local_repo_path=None,
+log_level=passive,
+log_level_replica=warning,
+log_on_each_node=True,
+logging_dir=/runwork/outputs/smoke/checkpoints/v0-20261020-065353/runs,
+logging_first_step=True,
+logging_nan_inf_filter=True,
+logging_steps=5,
+logging_strategy=steps,
+logprobs=False,
+lora_alpha=32,
+lora_bias=none,
+lora_dropout=0.05,
+lora_dtype=None,
+lora_ga_batch_size=2,
+lora_ga_direction=ArB2r,
+lora_ga_iters=2,
+lora_ga_max_length=1024,
+lora_ga_scale=stable,
+lora_ga_stable_gamma=16,
+lora_rank=8,
+lorap_lr_ratio=None,
+loss_scale=default+ignore_empty_think,
+loss_type=None,
+lr_scheduler_kwargs=None,
+lr_scheduler_type=cosine,
+max_epochs=None,
+max_grad_norm=1.0,
+max_length=2048,
+max_memory={},
+max_model_len=None,
+max_new_tokens=64,
+max_pixels=None,
+max_shard_size=5GB,
+max_steps=3,
+metric_for_best_model=loss,
+model=/base,
+model_author=None,
+model_kwargs={},
+model_name=None,
+model_revision=None,
+model_type=qwen3,
+modules_to_save=[],
+mrl_dims=None,
+neftune_noise_alpha=None,
+new_special_tokens=[],
+norm_bbox=None,
+num_beams=1,
+num_labels=None,
+num_train_epochs=1.0,
+optim=adamw_torch_fused,
+optim_args=None,
+optim_target_modules=None,
+optimizer=None,
+output_dir=/runwork/outputs/smoke/checkpoints/v0-20261020-065353,
+packing=False,
+packing_length=None,
+packing_num_proc=1,
+packing_strategy=binpack,
+padding_free=False,
+padding_side=right,
+parallelism_config=None,
+per_device_eval_batch_size=1,
+per_device_train_batch_size=1,
+predict_with_generate=False,
+prediction_loss_only=False,
+preserve_thinking=False,
+problem_type=None,
+project=huggingface,
+push_to_hub=False,
+quant_bits=None,
+quant_method=None,
+ray_exp_name=None,
+reft_args=None,
+reft_intervention_type=LoreftIntervention,
+reft_layer_key=None,
+reft_layers=None,
+reft_rank=4,
+remove_unused_columns=True,
+repetition_penalty=None,
+report_to=['tensorboard'],
+response_prefix=None,
+restore_callback_states_from_checkpoint=False,
+resume_from_checkpoint=None,
+resume_only_model=False,
+rope_scaling=None,
+router_aux_loss_coef=0.0,
+run_name=/runwork/outputs/smoke/checkpoints/v0-20261020-065353,
+safe_serialization=True,
+save_on_each_node=False,
+save_only_model=False,
+save_steps=3.0,
+save_strategy=steps,
+save_total_limit=2,
+seed=42,
+sequence_parallel_size=1,
+shuffle_buffer_size=1000,
+skip_memory_metrics=True,
+sortish_sampler=False,
+split_dataset_ratio=0.0,
+stop_words=[],
+stopping_strategy=first_exhausted,
+stream=False,
+streaming=False,
+strict=False,
+structured_outputs_regex=None,
+swanlab_email_language=zh,
+swanlab_exp_name=None,
+swanlab_mode=cloud,
+swanlab_notification_method=None,
+swanlab_project=ms-swift,
+swanlab_receiver_email=None,
+swanlab_secret=None,
+swanlab_sender_email=None,
+swanlab_smtp_port=None,
+swanlab_smtp_server=None,
+swanlab_token=<SWANLAB_TOKEN>,
+swanlab_webhook_url=None,
+swanlab_workspace=None,
+system=None,
+target_modules=['all-linear'],
+target_parameters=None,
+target_regex=None,
+task_type=causal_lm,
+temperature=0.0,
+template=qwen3,
+template_backend=swift,
+tf32=None,
+top_k=None,
+top_logprobs=None,
+top_p=None,
+torch_compile=False,
+torch_compile_backend=None,
+torch_compile_mode=None,
+torch_dtype=torch.bfloat16,
+torch_empty_cache_steps=None,
+trackio_bucket_id=None,
+trackio_space_id=None,
+trackio_static_space_id=None,
+train_dataloader_shuffle=True,
+train_sampling_strategy=random,
+trainable_parameters=[],
+trainable_parameters_regex=None,
+truncation_strategy=delete,
+tuner_backend=peft,
+tuner_type=lora,
+use_cache=False,
+use_chat_template=True,
+use_cpu=False,
+use_dora=False,
+use_flash_ckpt=False,
+use_galore=False,
+use_hf=False,
+use_liger_kernel=False,
+use_logits_to_keep=None,
+use_ray=False,
+use_rslora=False,
+use_swift_lora=False,
+val_dataset=[],
+val_dataset_shuffle=False,
+vera_d_initial=0.1,
+vera_dropout=0.0,
+vera_projection_prng_key=0,
+vera_rank=256,
+vit_gradient_checkpointing=False,
+vit_lr=None,
+warmup_ratio=0.05,
+warmup_steps=0,
+weight_decay=0.1,
+zero_hpz_partition_size=None,
+)
+[INFO:swift] Global seed set to 42
+[INFO:swift] model_kwargs: {'device_map': 'cuda:0', 'dtype': torch.bfloat16}
+Loading weights:   0%|          | 0/399 [00:00<?, ?it/s]Loading weights:   0%|          | 1/399 [00:00<01:25,  4.63it/s]Loading weights:   8%|▊         | 32/399 [00:00<00:02, 124.76it/s]Loading weights:  15%|█▌        | 60/399 [00:00<00:01, 177.71it/s]Loading weights:  23%|██▎       | 92/399 [00:00<00:01, 221.29it/s]Loading weights:  30%|███       | 120/399 [00:00<00:01, 237.23it/s]Loading weights:  37%|███▋      | 148/399 [00:00<00:01, 240.13it/s]Loading weights:  45%|████▌     | 181/399 [00:00<00:00, 261.94it/s]Loading weights:  53%|█████▎    | 213/399 [00:00<00:00, 271.14it/s]Loading weights:  61%|██████    | 242/399 [00:01<00:00, 275.18it/s]Loading weights:  70%|██████▉   | 279/399 [00:01<00:00, 297.53it/s]Loading weights:  78%|███████▊  | 312/399 [00:01<00:00, 304.74it/s]Loading weights:  87%|████████▋ | 346/399 [00:01<00:00, 309.94it/s]Loading weights:  95%|█████████▍| 378/399 [00:01<00:00, 311.38it/s]Loading weights: 100%|██████████| 399/399 [00:01<00:00, 257.79it/s]
+[INFO:swift] model_info: ModelInfo(model_type='qwen3', model_dir='/base', torch_dtype=torch.bfloat16, max_model_len=40960, quant_method=None, quant_bits=None, rope_scaling={'rope_theta': 1000000, 'rope_type': 'default'}, is_moe_model=False, is_multimodal=False, config=Qwen3Config {
+  "architectures": [
+    "Qwen3ForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "bos_token_id": 151643,
+  "dtype": "bfloat16",
+  "eos_token_id": 151645,
+  "head_dim": 128,
+  "hidden_act": "silu",
+  "hidden_size": 4096,
+  "initializer_range": 0.02,
+  "intermediate_size": 12288,
+  "layer_types": [
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention"
+  ],
+  "max_position_embeddings": 40960,
+  "max_window_layers": 36,
+  "model_type": "qwen3",
+  "num_attention_heads": 32,
+  "num_hidden_layers": 36,
+  "num_key_value_heads": 8,
+  "pad_token_id": null,
+  "rms_norm_eps": 1e-06,
+  "rope_parameters": {
+    "rope_theta": 1000000,
+    "rope_type": "default"
+  },
+  "sliding_window": null,
+  "tie_word_embeddings": false,
+  "transformers_version": "5.14.1",
+  "use_cache": true,
+  "use_sliding_window": false,
+  "vocab_size": 151936
+}
+, task_type='causal_lm', num_labels=None)
+[INFO:swift] model.generation_config: GenerationConfig {
+  "bos_token_id": 151643,
+  "do_sample": false,
+  "eos_token_id": [
+    151645,
+    151643
+  ],
+  "length_penalty": 1.0,
+  "max_new_tokens": 64,
+  "num_beams": 1,
+  "pad_token_id": 151643,
+  "temperature": 1.0,
+  "top_k": 50,
+  "top_p": 1.0
+}
+
+[INFO:swift] default_system: None
+[INFO:swift] max_length: 2048
+[INFO:swift] response_prefix: None
+[INFO:swift] agent_template: hermes
+[INFO:swift] Start time of running main: 2026-10-20 06:53:55.693201
+[INFO:swift] swift.__version__: 4.4.2
+Generating train split: 0 examples [00:00, ? examples/s]Generating train split: 1275 examples [00:00, 16063.90 examples/s]
+Map (num_proc=1):   0%|          | 0/1275 [00:00<?, ? examples/s]Map (num_proc=1):  78%|███████▊  | 1000/1275 [00:00<00:00, 7701.43 examples/s]Map (num_proc=1): 100%|██████████| 1275/1275 [00:00<00:00, 3602.76 examples/s]
+Map (num_proc=1):   0%|          | 0/1275 [00:00<?, ? examples/s]Map (num_proc=1):  78%|███████▊  | 1000/1275 [00:03<00:00, 312.16 examples/s]Map (num_proc=1): 100%|██████████| 1275/1275 [00:03<00:00, 350.03 examples/s]Map (num_proc=1): 100%|██████████| 1275/1275 [00:03<00:00, 321.85 examples/s]
+[INFO:swift] train_dataset: Dataset({
+    features: ['messages', 'dataset', 'lengths'],
+    num_rows: 1275
+})
+[INFO:swift] val_dataset: None
+[INFO:swift] [INPUT_IDS] [151644, 872, 198, 39165, 46944, 100014, 55502, 100466, 106040, 100238, 34187, 112187, 100091, 109445, 3837, 75882, 100014, 100008, 99730, 103975, 99245, 101082, 11319, 151645, 198, 151644, 77091, 198, 151667, 198, 106287, 3837, 100002, 20002, 103936, 3837, 39165, 46944, 100014, 55502, 100466, 106040, 102098, 108486, 109445, 13343, 3837, 78556, 100008, 50511, 100007, 104397, 11319, 101140, 3837, 35946, 85106, 100692, 20002, 104378, 1773, 99650, 87267, 99880, 99794, 108939, 104705, 3837, 100014, 100008, 99730, 103975, 102224, 100398, 101082, 36407, 54542, 106815, 57621, 1773, 43288, 87267, 102031, 100376, 5373, 102348, 5373, 114260, 108211, 99522, 3407, 104326, 3837, 35946, 85106, 101118, 20002, 87267, 9370, 102193, 1773, 99650, 104560, 99905, 115504, 5373, 99720, 3837, 100631, 100714, 101380, 3837, 99880, 99794, 99905, 18493, 101928, 106815, 86119, 13343, 9370, 88991, 102501, 1773, 101886, 3837, 102104, 85106, 110896, 99878, 105178, 86744, 100272, 33071, 3837, 103944, 102994, 99936, 27442, 3837, 29524, 101923, 5373, 54542, 5373, 104332, 49567, 3407, 101889, 3837, 35946, 85106, 101042, 86119, 104867, 1773, 106040, 102098, 108486, 109445, 3837, 43288, 99902, 102031, 99605, 99531, 3837, 97706, 100145, 26939, 100008, 9370, 115375, 33108, 101380, 102497, 1773, 101886, 3837, 100008, 85106, 104015, 100136, 111400, 29490, 54542, 3837, 23031, 101153, 100642, 9370, 117803, 1773, 87267, 9370, 101082, 100630, 101979, 101923, 5373, 100433, 104493, 5373, 32664, 100068, 29826, 99653, 9370, 54542, 5373, 101046, 100368, 49567, 3407, 91572, 3837, 35946, 85106, 101118, 99604, 105638, 100376, 102478, 1773, 77557, 96050, 104760, 99599, 3837, 112187, 100091, 109445, 87267, 102031, 100376, 86119, 3837, 104746, 115160, 87267, 99573, 20412, 102348, 57191, 99505, 101931, 86119, 1773, 101886, 3837, 102104, 15946, 85106, 104496, 100376, 108836, 106508, 3837, 77288, 104302, 104046, 102212, 105255, 9370, 102348, 33108, 99505, 100142, 3407, 101948, 3837, 20002, 87267, 97706, 104329, 100007, 104332, 101412, 57621, 103989, 99726, 3837, 101886, 85106, 100630, 101930, 101082, 3837, 29524, 100368, 5373, 90851, 100674, 5373, 106154, 103932, 99403, 49567, 1773, 104043, 3837, 101380, 104063, 104238, 104526, 99335, 3837, 100007, 18493, 16530, 114965, 86119, 104248, 101999, 100008, 101201, 3837, 91572, 101987, 105023, 111193, 3407, 106750, 101118, 99604, 101996, 78556, 106017, 104175, 3837, 101912, 104143, 5373, 101927, 32022, 5373, 101903, 49567, 1773, 100008, 9370, 104493, 85106, 102243, 106297, 101996, 3837, 110738, 118300, 3837, 107919, 101153, 105831, 104175, 100673, 92894, 86119, 1773, 77557, 3837, 100433, 107961, 33108, 103975, 100398, 100675, 73670, 102005, 102497, 3837, 68536, 102767, 103470, 9370, 102520, 87267, 102361, 105661, 3407, 100161, 3837, 102050, 13343, 85106, 104046, 105279, 5373, 106496, 33108, 100652, 105023, 106508, 3837, 103944, 100008, 99902, 54542, 67949, 57621, 3837, 97706, 100641, 109342, 104431, 100353, 99726, 101412, 86119, 1773, 91572, 3837, 87267, 85106, 103346, 101883, 99912, 102206, 57191, 99717, 100142, 36407, 101138, 102104, 9370, 113546, 26381, 3837, 77288, 20002, 80443, 101882, 100398, 102206, 3837, 99999, 73670, 100662, 100141, 33071, 101898, 8997, 151668, 271, 39165, 100014, 100008, 9370, 106040, 102098, 112187, 100091, 109445, 13343, 3837, 75882, 100008, 50511, 103975, 72448, 33071, 5373, 105279, 100136, 113770, 9370, 101082, 3837, 23031, 101999, 41146, 34317, 21317, 47534, 5373, 108054, 33108, 101380, 102497, 1773, 114566, 99936, 105652, 33108, 101898, 48443, 44364, 14374, 3070, 16, 13, 10236, 104, 233, 91676, 101923, 57218, 107002, 1019, 12, 3070, 101159, 101979, 101923, 334, 5122, 104015, 100680, 102024, 101306, 9909, 29524, 100376, 5373, 102348, 103984, 57191, 104920, 100008, 7552, 107002, 109445, 43815, 5373, 102285, 16744, 81217, 116307, 92894, 101412, 101070, 8997, 12, 3070, 104998, 104918, 334, 5122, 100630, 110793, 5373, 87140, 5373, 116253, 65577, 49567, 3837, 103944, 100011, 99794, 57621, 8997, 12, 3070, 100153, 100068, 29826, 23384, 102439, 334, 5122, 18493, 101923, 101072, 3837, 101153, 100433, 114006, 57191, 101170, 102887, 106706, 105427, 3837, 104431, 105935, 104229, 3407, 44364, 14374, 3070, 17, 13, 34369, 105, 29767, 104493, 57218, 105279, 104063, 1019, 12, 3070, 100667, 82641, 334, 5122, 18493, 101923, 105185, 59151, 33447, 3837, 90447, 100433, 82641, 104953, 86119, 3837, 102406, 100008, 32664, 112187, 100091, 9370, 99822, 115261, 102316, 8997, 12, 3070, 100692, 105561, 334, 5122, 104046, 100008, 106218, 9909, 29524, 105987, 5373, 104430, 48272, 62926, 104327, 103975, 100675, 8997, 12, 3070, 101153, 107346, 100173, 101403, 334, 5122, 101153, 37029, 2073, 96555, 101923, 854, 49567, 116290, 33071, 102064, 3837, 106781, 101923, 105307, 60548, 3407, 44364, 14374, 3070, 18, 13, 69162, 100068, 29826, 99653, 9370, 54542, 1019, 12, 3070, 100345, 101923, 59151, 103975, 100675, 334, 28311, 220, 481, 3070, 100155, 109445, 101120, 104828, 100138, 334, 5122, 104078, 107276, 57191, 107660, 100068, 29826, 101405, 103947, 105319, 90395, 103035, 41146, 99531, 8997, 220, 481, 3070, 100155, 102892, 99260, 99578, 334, 5122, 99553, 100368, 5373, 106319, 57191, 47872, 100448, 3837, 91572, 100692, 105463, 101116, 100674, 8997, 12, 3070, 100376, 108836, 334, 5122, 103944, 54542, 100178, 101137, 100198, 100376, 9909, 29524, 101198, 24339, 5373, 94443, 111427, 24339, 7552, 3407, 44364, 14374, 3070, 19, 13, 34369, 105, 99410, 57218, 101996, 78556, 23384, 9370, 104063, 1019, 12, 3070, 69041, 117442, 104553, 107961, 334, 5122, 100155, 109445, 101092, 105149, 112187, 104553, 3837, 58362, 69041, 41146, 100433, 99299, 101698, 90395, 66394, 99622, 99509, 101082, 8997, 12, 3070, 57218, 101927, 32022, 5373, 105714, 104063, 334, 5122, 101966, 66394, 57621, 102442, 3837, 101153, 62112, 104920, 101950, 100673, 107285, 104397, 8997, 12, 3070, 104493, 104143, 114261, 334, 5122, 67338, 60237, 99502, 5373, 100793, 57191, 21317, 14224, 104412, 102468, 3837, 101987, 105023, 114184, 3407, 44364, 14374, 3070, 20, 13, 18137, 243, 123, 22704, 104332, 57218, 100637, 99403, 1019, 12, 3070, 101046, 101903, 100368, 334, 28311, 220, 481, 41479, 248, 22704, 100340, 94443, 112187, 100091, 5373, 99348, 105521, 33071, 81217, 99905, 112811, 100368, 8997, 220, 481, 220, 100782, 68878, 17340, 33108, 57019, 103932, 99553, 106154, 43815, 90851, 100674, 8997, 12, 3070, 100677, 43815, 90851, 102054, 334, 28311, 220, 481, 4891, 119, 118, 79095, 42140, 99371, 90851, 100637, 3837, 101150, 32664, 105521, 105167, 9909, 29524, 105324, 5373, 100022, 105661, 7552, 71817, 100470, 99360, 29256, 8997, 220, 481, 52506, 243, 17254, 106154, 102193, 9370, 90851, 99653, 3837, 101940, 99835, 88970, 102928, 23836, 8997, 12, 3070, 100641, 102211, 57218, 102468, 101993, 334, 28311, 220, 481, 46466, 79095, 115162, 102211, 100133, 3837, 104125, 101903, 33108, 104143, 100370, 108486, 109445, 8997, 220, 481, 34369, 105, 29767, 54542, 102054, 33108, 20450, 20742, 3837, 101138, 105279, 26381, 3407, 44364, 14374, 3070, 21, 13, 220, 104749, 115375, 57218, 107295, 102497, 1019, 12, 3070, 101966, 118300, 334, 5122, 67338, 101292, 100675, 9909, 29524, 106796, 102800, 70769, 110824, 103935, 73345, 7552, 57191, 99721, 9909, 29524, 57218, 94443, 111427, 99877, 99721, 7552, 101987, 100675, 47534, 8997, 12, 3070, 104331, 105413, 101116, 334, 5122, 110278, 102024, 101057, 57191, 100008, 102086, 105023, 101082, 3837, 104406, 90447, 102442, 100370, 8997, 12, 3070, 101930, 104327, 334, 5122, 18493, 105463, 86227, 15946, 101257, 32664, 102548, 107705, 104430, 3837, 77557, 100649, 102800, 70769, 110824, 99606, 102136, 5373, 86227, 99573, 78556, 113994, 3407, 44364, 14374, 3070, 22, 13, 59053, 243, 99499, 57218, 102348, 9370, 102243, 1019, 12, 3070, 105389, 100376, 334, 5122, 100155, 109445, 102031, 100872, 9909, 29524, 117828, 109445, 48272, 58362, 102035, 101302, 99667, 54542, 8997, 12, 3070, 104840, 100376, 108185, 334, 5122, 102033, 109445, 38342, 100872, 3837, 100155, 112313, 99328, 102348, 3837, 100008, 99754, 58362, 101966, 109733, 3837, 101153, 2073, 101431, 77288, 108589, 97907, 101070, 3407, 44364, 14374, 3070, 102206, 101275, 1019, 12, 3070, 66755, 9909, 17, 15, 17, 16, 7948, 7552, 334, 5122, 106040, 62112, 102098, 105661, 33071, 109445, 99250, 94375, 99205, 3837, 66755, 104221, 90447, 100700, 82641, 3837, 104046, 2073, 99670, 115261, 99885, 111427, 33071, 109445, 33590, 62926, 101159, 101979, 104998, 8997, 12, 3070, 55455, 9909, 17, 15, 17, 15, 7948, 7552, 334, 5122, 18493, 112187, 86119, 105661, 15946, 3837, 55455, 67338, 100649, 56652, 17340, 99606, 102136, 5373, 102014, 94443, 112187, 100091, 100368, 101039, 3837, 104137, 107295, 101380, 102497, 3407, 44364, 14374, 3070, 102050, 1019, 100014, 100008, 104867, 99531, 20412, 104793, 106538, 57218, 101902, 99328, 105051, 1773, 101928, 112187, 100091, 109445, 3837, 100008, 58362, 23031, 2073, 99822, 115261, 854, 102316, 104015, 100675, 3837, 91572, 67338, 100637, 33071, 99895, 104431, 101412, 57621, 29258, 99312, 1773, 43288, 99902, 118144, 115375, 39352, 3837, 103979, 32664, 99328, 102511, 57218, 107992, 9370, 104327, 1773, 151645, 198]
+[INFO:swift] [INPUT] <|im_start|>user
+当一个新闻节目的主持人犯了种族主义言论，该新闻机构应该采取什么措施？<|im_end|>
+<|im_start|>assistant
+<think>
+嗯，对于用户的问题，当一个新闻节目的主持人发表不当言论时，相关机构应如何应对？首先，我需要明确用户的需求。他们可能希望了解在这种情况下，新闻机构应该采取哪些具体措施来处理此类事件。这可能涉及法律、道德、公关等多个方面。
+
+接下来，我需要考虑用户可能的背景。他们可能是媒体从业者、学生，或者普通公众，希望了解媒体在面对此类问题时的正确做法。因此，回答需要兼顾专业性和易懂性，确保涵盖关键点，如调查、处理、预防等。
+
+然后，我需要分析问题的核心。主持人发表不当言论，这不仅涉及个人责任，还关系到机构的声誉和公众信任。因此，机构需要迅速且妥善地处理，以避免进一步的负面影响。可能的措施包括内部调查、公开回应、对涉事人员的处理、加强培训等。
+
+同时，我需要考虑不同地区的法律差异。例如，在某些国家，种族主义言论可能涉及法律问题，而在其他国家可能更多是道德或职业规范问题。因此，回答中需要提到法律合规的重要性，但也要强调普遍适用的道德和职业标准。
+
+另外，用户可能还关心如何预防类似事件再次发生，因此需要包括长期措施，如培训、审核机制、多元化团队建设等。此外，公众沟通策略也很重要，如何在不掩盖问题的情况下维护机构形象，同时展示改进的决心。
+
+还需要考虑不同利益相关者的反应，比如观众、广告商、员工等。机构的回应需要平衡各方利益，既要承担责任，又要避免过度反应导致其他问题。例如，公开道歉和采取具体行动可以恢复信任，而过于严厉的处罚可能引发争议。
+
+最后，总结时需要强调透明、公正和持续改进的重要性，确保机构不仅处理当前事件，还建立长效机制防止未来发生类似问题。同时，可能需要引用一些实际案例或行业标准来增强回答的可信度，但用户没有要求具体案例，所以可以保持一般性建议。
+</think>
+
+当新闻机构的主持人发表种族主义言论时，该机构应采取系统性、透明且负责任的措施，以维护其公信力、社会责任和公众信任。以下是关键步骤和建议：
+
+---
+
+### **1. 立即调查与核实**
+- **启动内部调查**：迅速成立独立小组（如法律、道德委员会或第三方机构）核实言论内容、上下文及是否存在其他类似行为。
+- **审查证据**：包括录音、视频、社交媒体记录等，确保全面了解事件。
+- **保护涉事方权益**：在调查期间，避免公开指控或传播未经证实的信息，防止二次伤害。
+
+---
+
+### **2. 公开回应与透明沟通**
+- **及时声明**：在调查初步结果后，发布公开声明承认问题，表明机构对种族主义的零容忍态度。
+- **明确立场**：强调机构价值观（如平等、尊重），并承诺采取行动。
+- **避免模糊措辞**：避免使用“正在调查”等拖延性语言，除非调查尚未完成。
+
+---
+
+### **3. 对涉事人员的处理**
+- **根据调查结果采取行动**：
+  - **若言论严重违反政策**：立即暂停或终止涉事主持人的职务，并追究其责任。
+  - **若情节较轻**：提供培训、警告或调岗，同时明确后续监督机制。
+- **法律合规**：确保处理过程符合当地法律（如劳动法、反歧视法）。
+
+---
+
+### **4. 公众与利益相关方的沟通**
+- **向受影响群体道歉**：若言论针对特定种族群体，需向其公开致歉，并说明补救措施。
+- **与广告商、合作伙伴沟通**：主动说明事件进展，避免因第三方压力导致被动应对。
+- **回应观众关切**：通过社媒、节目或信件收集反馈，展示改进诚意。
+
+---
+
+### **5. 长期预防与制度建设**
+- **加强员工培训**：
+  - 定期开展反种族主义、文化敏感性及媒体伦理培训。
+  - 为主持人和编辑团队提供多元化内容审核机制。
+- **完善内容审核流程**：
+  - 建立多层审核制度，尤其对敏感话题（如移民、历史争议）进行严格把关。
+  - 引入多元化背景的审核人员，减少偏见盲区。
+- **建立举报与反馈渠道**：
+  - 设立匿名举报平台，鼓励员工和观众报告不当言论。
+  - 公开处理流程和时间表，增强透明度。
+
+---
+
+### **6. 修复声誉与重建信任**
+- **主动承担责任**：通过公益行动（如资助少数族裔社区项目）或合作（如与反歧视组织合作）展示行动力。
+- **邀请外部监督**：聘请独立专家或机构评估改进措施，定期发布进展报告。
+- **长期承诺**：在后续报道中体现对多元文化的尊重，例如增加少数族裔记者比例、报道更多相关议题。
+
+---
+
+### **7. 法律与道德的平衡**
+- **遵守法律**：若言论涉及违法（如仇恨言论），需配合执法部门处理。
+- **超越法律底线**：即使言论未违法，若违背社会道德，机构仍需主动纠正，避免“合法但有害”的行为。
+
+---
+
+### **案例参考**
+- **BBC（2021年）**：主持人因发表争议性言论被停职，BBC随后发布详细声明，强调“不会容忍任何歧视性言论”，并启动内部审查。
+- **CNN（2020年）**：在种族问题争议中，CNN通过增加黑人记者比例、推出反种族主义培训计划，逐步重建公众信任。
+
+---
+
+### **总结**
+新闻机构的核心责任是传递真相与促进社会对话。面对种族主义言论，机构需以“零容忍”态度迅速行动，同时通过制度性改革防止类似事件重演。这不仅关乎声誉管理，更是对社会公平与正义的承诺。<|im_end|>
+
+[INFO:swift] [LABELS_IDS] [-100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, 151667, 198, 106287, 3837, 100002, 20002, 103936, 3837, 39165, 46944, 100014, 55502, 100466, 106040, 102098, 108486, 109445, 13343, 3837, 78556, 100008, 50511, 100007, 104397, 11319, 101140, 3837, 35946, 85106, 100692, 20002, 104378, 1773, 99650, 87267, 99880, 99794, 108939, 104705, 3837, 100014, 100008, 99730, 103975, 102224, 100398, 101082, 36407, 54542, 106815, 57621, 1773, 43288, 87267, 102031, 100376, 5373, 102348, 5373, 114260, 108211, 99522, 3407, 104326, 3837, 35946, 85106, 101118, 20002, 87267, 9370, 102193, 1773, 99650, 104560, 99905, 115504, 5373, 99720, 3837, 100631, 100714, 101380, 3837, 99880, 99794, 99905, 18493, 101928, 106815, 86119, 13343, 9370, 88991, 102501, 1773, 101886, 3837, 102104, 85106, 110896, 99878, 105178, 86744, 100272, 33071, 3837, 103944, 102994, 99936, 27442, 3837, 29524, 101923, 5373, 54542, 5373, 104332, 49567, 3407, 101889, 3837, 35946, 85106, 101042, 86119, 104867, 1773, 106040, 102098, 108486, 109445, 3837, 43288, 99902, 102031, 99605, 99531, 3837, 97706, 100145, 26939, 100008, 9370, 115375, 33108, 101380, 102497, 1773, 101886, 3837, 100008, 85106, 104015, 100136, 111400, 29490, 54542, 3837, 23031, 101153, 100642, 9370, 117803, 1773, 87267, 9370, 101082, 100630, 101979, 101923, 5373, 100433, 104493, 5373, 32664, 100068, 29826, 99653, 9370, 54542, 5373, 101046, 100368, 49567, 3407, 91572, 3837, 35946, 85106, 101118, 99604, 105638, 100376, 102478, 1773, 77557, 96050, 104760, 99599, 3837, 112187, 100091, 109445, 87267, 102031, 100376, 86119, 3837, 104746, 115160, 87267, 99573, 20412, 102348, 57191, 99505, 101931, 86119, 1773, 101886, 3837, 102104, 15946, 85106, 104496, 100376, 108836, 106508, 3837, 77288, 104302, 104046, 102212, 105255, 9370, 102348, 33108, 99505, 100142, 3407, 101948, 3837, 20002, 87267, 97706, 104329, 100007, 104332, 101412, 57621, 103989, 99726, 3837, 101886, 85106, 100630, 101930, 101082, 3837, 29524, 100368, 5373, 90851, 100674, 5373, 106154, 103932, 99403, 49567, 1773, 104043, 3837, 101380, 104063, 104238, 104526, 99335, 3837, 100007, 18493, 16530, 114965, 86119, 104248, 101999, 100008, 101201, 3837, 91572, 101987, 105023, 111193, 3407, 106750, 101118, 99604, 101996, 78556, 106017, 104175, 3837, 101912, 104143, 5373, 101927, 32022, 5373, 101903, 49567, 1773, 100008, 9370, 104493, 85106, 102243, 106297, 101996, 3837, 110738, 118300, 3837, 107919, 101153, 105831, 104175, 100673, 92894, 86119, 1773, 77557, 3837, 100433, 107961, 33108, 103975, 100398, 100675, 73670, 102005, 102497, 3837, 68536, 102767, 103470, 9370, 102520, 87267, 102361, 105661, 3407, 100161, 3837, 102050, 13343, 85106, 104046, 105279, 5373, 106496, 33108, 100652, 105023, 106508, 3837, 103944, 100008, 99902, 54542, 67949, 57621, 3837, 97706, 100641, 109342, 104431, 100353, 99726, 101412, 86119, 1773, 91572, 3837, 87267, 85106, 103346, 101883, 99912, 102206, 57191, 99717, 100142, 36407, 101138, 102104, 9370, 113546, 26381, 3837, 77288, 20002, 80443, 101882, 100398, 102206, 3837, 99999, 73670, 100662, 100141, 33071, 101898, 8997, 151668, 271, 39165, 100014, 100008, 9370, 106040, 102098, 112187, 100091, 109445, 13343, 3837, 75882, 100008, 50511, 103975, 72448, 33071, 5373, 105279, 100136, 113770, 9370, 101082, 3837, 23031, 101999, 41146, 34317, 21317, 47534, 5373, 108054, 33108, 101380, 102497, 1773, 114566, 99936, 105652, 33108, 101898, 48443, 44364, 14374, 3070, 16, 13, 10236, 104, 233, 91676, 101923, 57218, 107002, 1019, 12, 3070, 101159, 101979, 101923, 334, 5122, 104015, 100680, 102024, 101306, 9909, 29524, 100376, 5373, 102348, 103984, 57191, 104920, 100008, 7552, 107002, 109445, 43815, 5373, 102285, 16744, 81217, 116307, 92894, 101412, 101070, 8997, 12, 3070, 104998, 104918, 334, 5122, 100630, 110793, 5373, 87140, 5373, 116253, 65577, 49567, 3837, 103944, 100011, 99794, 57621, 8997, 12, 3070, 100153, 100068, 29826, 23384, 102439, 334, 5122, 18493, 101923, 101072, 3837, 101153, 100433, 114006, 57191, 101170, 102887, 106706, 105427, 3837, 104431, 105935, 104229, 3407, 44364, 14374, 3070, 17, 13, 34369, 105, 29767, 104493, 57218, 105279, 104063, 1019, 12, 3070, 100667, 82641, 334, 5122, 18493, 101923, 105185, 59151, 33447, 3837, 90447, 100433, 82641, 104953, 86119, 3837, 102406, 100008, 32664, 112187, 100091, 9370, 99822, 115261, 102316, 8997, 12, 3070, 100692, 105561, 334, 5122, 104046, 100008, 106218, 9909, 29524, 105987, 5373, 104430, 48272, 62926, 104327, 103975, 100675, 8997, 12, 3070, 101153, 107346, 100173, 101403, 334, 5122, 101153, 37029, 2073, 96555, 101923, 854, 49567, 116290, 33071, 102064, 3837, 106781, 101923, 105307, 60548, 3407, 44364, 14374, 3070, 18, 13, 69162, 100068, 29826, 99653, 9370, 54542, 1019, 12, 3070, 100345, 101923, 59151, 103975, 100675, 334, 28311, 220, 481, 3070, 100155, 109445, 101120, 104828, 100138, 334, 5122, 104078, 107276, 57191, 107660, 100068, 29826, 101405, 103947, 105319, 90395, 103035, 41146, 99531, 8997, 220, 481, 3070, 100155, 102892, 99260, 99578, 334, 5122, 99553, 100368, 5373, 106319, 57191, 47872, 100448, 3837, 91572, 100692, 105463, 101116, 100674, 8997, 12, 3070, 100376, 108836, 334, 5122, 103944, 54542, 100178, 101137, 100198, 100376, 9909, 29524, 101198, 24339, 5373, 94443, 111427, 24339, 7552, 3407, 44364, 14374, 3070, 19, 13, 34369, 105, 99410, 57218, 101996, 78556, 23384, 9370, 104063, 1019, 12, 3070, 69041, 117442, 104553, 107961, 334, 5122, 100155, 109445, 101092, 105149, 112187, 104553, 3837, 58362, 69041, 41146, 100433, 99299, 101698, 90395, 66394, 99622, 99509, 101082, 8997, 12, 3070, 57218, 101927, 32022, 5373, 105714, 104063, 334, 5122, 101966, 66394, 57621, 102442, 3837, 101153, 62112, 104920, 101950, 100673, 107285, 104397, 8997, 12, 3070, 104493, 104143, 114261, 334, 5122, 67338, 60237, 99502, 5373, 100793, 57191, 21317, 14224, 104412, 102468, 3837, 101987, 105023, 114184, 3407, 44364, 14374, 3070, 20, 13, 18137, 243, 123, 22704, 104332, 57218, 100637, 99403, 1019, 12, 3070, 101046, 101903, 100368, 334, 28311, 220, 481, 41479, 248, 22704, 100340, 94443, 112187, 100091, 5373, 99348, 105521, 33071, 81217, 99905, 112811, 100368, 8997, 220, 481, 220, 100782, 68878, 17340, 33108, 57019, 103932, 99553, 106154, 43815, 90851, 100674, 8997, 12, 3070, 100677, 43815, 90851, 102054, 334, 28311, 220, 481, 4891, 119, 118, 79095, 42140, 99371, 90851, 100637, 3837, 101150, 32664, 105521, 105167, 9909, 29524, 105324, 5373, 100022, 105661, 7552, 71817, 100470, 99360, 29256, 8997, 220, 481, 52506, 243, 17254, 106154, 102193, 9370, 90851, 99653, 3837, 101940, 99835, 88970, 102928, 23836, 8997, 12, 3070, 100641, 102211, 57218, 102468, 101993, 334, 28311, 220, 481, 46466, 79095, 115162, 102211, 100133, 3837, 104125, 101903, 33108, 104143, 100370, 108486, 109445, 8997, 220, 481, 34369, 105, 29767, 54542, 102054, 33108, 20450, 20742, 3837, 101138, 105279, 26381, 3407, 44364, 14374, 3070, 21, 13, 220, 104749, 115375, 57218, 107295, 102497, 1019, 12, 3070, 101966, 118300, 334, 5122, 67338, 101292, 100675, 9909, 29524, 106796, 102800, 70769, 110824, 103935, 73345, 7552, 57191, 99721, 9909, 29524, 57218, 94443, 111427, 99877, 99721, 7552, 101987, 100675, 47534, 8997, 12, 3070, 104331, 105413, 101116, 334, 5122, 110278, 102024, 101057, 57191, 100008, 102086, 105023, 101082, 3837, 104406, 90447, 102442, 100370, 8997, 12, 3070, 101930, 104327, 334, 5122, 18493, 105463, 86227, 15946, 101257, 32664, 102548, 107705, 104430, 3837, 77557, 100649, 102800, 70769, 110824, 99606, 102136, 5373, 86227, 99573, 78556, 113994, 3407, 44364, 14374, 3070, 22, 13, 59053, 243, 99499, 57218, 102348, 9370, 102243, 1019, 12, 3070, 105389, 100376, 334, 5122, 100155, 109445, 102031, 100872, 9909, 29524, 117828, 109445, 48272, 58362, 102035, 101302, 99667, 54542, 8997, 12, 3070, 104840, 100376, 108185, 334, 5122, 102033, 109445, 38342, 100872, 3837, 100155, 112313, 99328, 102348, 3837, 100008, 99754, 58362, 101966, 109733, 3837, 101153, 2073, 101431, 77288, 108589, 97907, 101070, 3407, 44364, 14374, 3070, 102206, 101275, 1019, 12, 3070, 66755, 9909, 17, 15, 17, 16, 7948, 7552, 334, 5122, 106040, 62112, 102098, 105661, 33071, 109445, 99250, 94375, 99205, 3837, 66755, 104221, 90447, 100700, 82641, 3837, 104046, 2073, 99670, 115261, 99885, 111427, 33071, 109445, 33590, 62926, 101159, 101979, 104998, 8997, 12, 3070, 55455, 9909, 17, 15, 17, 15, 7948, 7552, 334, 5122, 18493, 112187, 86119, 105661, 15946, 3837, 55455, 67338, 100649, 56652, 17340, 99606, 102136, 5373, 102014, 94443, 112187, 100091, 100368, 101039, 3837, 104137, 107295, 101380, 102497, 3407, 44364, 14374, 3070, 102050, 1019, 100014, 100008, 104867, 99531, 20412, 104793, 106538, 57218, 101902, 99328, 105051, 1773, 101928, 112187, 100091, 109445, 3837, 100008, 58362, 23031, 2073, 99822, 115261, 854, 102316, 104015, 100675, 3837, 91572, 67338, 100637, 33071, 99895, 104431, 101412, 57621, 29258, 99312, 1773, 43288, 99902, 118144, 115375, 39352, 3837, 103979, 32664, 99328, 102511, 57218, 107992, 9370, 104327, 1773, 151645, 198]
+[INFO:swift] [LABELS] [-100 * 28]<think>
+嗯，对于用户的问题，当一个新闻节目的主持人发表不当言论时，相关机构应如何应对？首先，我需要明确用户的需求。他们可能希望了解在这种情况下，新闻机构应该采取哪些具体措施来处理此类事件。这可能涉及法律、道德、公关等多个方面。
+
+接下来，我需要考虑用户可能的背景。他们可能是媒体从业者、学生，或者普通公众，希望了解媒体在面对此类问题时的正确做法。因此，回答需要兼顾专业性和易懂性，确保涵盖关键点，如调查、处理、预防等。
+
+然后，我需要分析问题的核心。主持人发表不当言论，这不仅涉及个人责任，还关系到机构的声誉和公众信任。因此，机构需要迅速且妥善地处理，以避免进一步的负面影响。可能的措施包括内部调查、公开回应、对涉事人员的处理、加强培训等。
+
+同时，我需要考虑不同地区的法律差异。例如，在某些国家，种族主义言论可能涉及法律问题，而在其他国家可能更多是道德或职业规范问题。因此，回答中需要提到法律合规的重要性，但也要强调普遍适用的道德和职业标准。
+
+另外，用户可能还关心如何预防类似事件再次发生，因此需要包括长期措施，如培训、审核机制、多元化团队建设等。此外，公众沟通策略也很重要，如何在不掩盖问题的情况下维护机构形象，同时展示改进的决心。
+
+还需要考虑不同利益相关者的反应，比如观众、广告商、员工等。机构的回应需要平衡各方利益，既要承担责任，又要避免过度反应导致其他问题。例如，公开道歉和采取具体行动可以恢复信任，而过于严厉的处罚可能引发争议。
+
+最后，总结时需要强调透明、公正和持续改进的重要性，确保机构不仅处理当前事件，还建立长效机制防止未来发生类似问题。同时，可能需要引用一些实际案例或行业标准来增强回答的可信度，但用户没有要求具体案例，所以可以保持一般性建议。
+</think>
+
+当新闻机构的主持人发表种族主义言论时，该机构应采取系统性、透明且负责任的措施，以维护其公信力、社会责任和公众信任。以下是关键步骤和建议：
+
+---
+
+### **1. 立即调查与核实**
+- **启动内部调查**：迅速成立独立小组（如法律、道德委员会或第三方机构）核实言论内容、上下文及是否存在其他类似行为。
+- **审查证据**：包括录音、视频、社交媒体记录等，确保全面了解事件。
+- **保护涉事方权益**：在调查期间，避免公开指控或传播未经证实的信息，防止二次伤害。
+
+---
+
+### **2. 公开回应与透明沟通**
+- **及时声明**：在调查初步结果后，发布公开声明承认问题，表明机构对种族主义的零容忍态度。
+- **明确立场**：强调机构价值观（如平等、尊重），并承诺采取行动。
+- **避免模糊措辞**：避免使用“正在调查”等拖延性语言，除非调查尚未完成。
+
+---
+
+### **3. 对涉事人员的处理**
+- **根据调查结果采取行动**：
+  - **若言论严重违反政策**：立即暂停或终止涉事主持人的职务，并追究其责任。
+  - **若情节较轻**：提供培训、警告或调岗，同时明确后续监督机制。
+- **法律合规**：确保处理过程符合当地法律（如劳动法、反歧视法）。
+
+---
+
+### **4. 公众与利益相关方的沟通**
+- **向受影响群体道歉**：若言论针对特定种族群体，需向其公开致歉，并说明补救措施。
+- **与广告商、合作伙伴沟通**：主动说明事件进展，避免因第三方压力导致被动应对。
+- **回应观众关切**：通过社媒、节目或信件收集反馈，展示改进诚意。
+
+---
+
+### **5. 长期预防与制度建设**
+- **加强员工培训**：
+  - 定期开展反种族主义、文化敏感性及媒体伦理培训。
+  - 为主持人和编辑团队提供多元化内容审核机制。
+- **完善内容审核流程**：
+  - 建立多层审核制度，尤其对敏感话题（如移民、历史争议）进行严格把关。
+  - 引入多元化背景的审核人员，减少偏见盲区。
+- **建立举报与反馈渠道**：
+  - 设立匿名举报平台，鼓励员工和观众报告不当言论。
+  - 公开处理流程和时间表，增强透明度。
+
+---
+
+### **6. 修复声誉与重建信任**
+- **主动承担责任**：通过公益行动（如资助少数族裔社区项目）或合作（如与反歧视组织合作）展示行动力。
+- **邀请外部监督**：聘请独立专家或机构评估改进措施，定期发布进展报告。
+- **长期承诺**：在后续报道中体现对多元文化的尊重，例如增加少数族裔记者比例、报道更多相关议题。
+
+---
+
+### **7. 法律与道德的平衡**
+- **遵守法律**：若言论涉及违法（如仇恨言论），需配合执法部门处理。
+- **超越法律底线**：即使言论未违法，若违背社会道德，机构仍需主动纠正，避免“合法但有害”的行为。
+
+---
+
+### **案例参考**
+- **BBC（2021年）**：主持人因发表争议性言论被停职，BBC随后发布详细声明，强调“不会容忍任何歧视性言论”，并启动内部审查。
+- **CNN（2020年）**：在种族问题争议中，CNN通过增加黑人记者比例、推出反种族主义培训计划，逐步重建公众信任。
+
+---
+
+### **总结**
+新闻机构的核心责任是传递真相与促进社会对话。面对种族主义言论，机构需以“零容忍”态度迅速行动，同时通过制度性改革防止类似事件重演。这不仅关乎声誉管理，更是对社会公平与正义的承诺。<|im_end|>
+
+[INFO:swift] Dataset Token Length: 1234.742745±646.889188, min=26.000000, max=2048.000000, size=1275
+[INFO:swift] The SftArguments will be saved in: /runwork/outputs/smoke/checkpoints/v0-20261020-065353/args.json
+[INFO:swift] lora_config: LoraConfig(task_type='CAUSAL_LM', peft_type=<PeftType.LORA: 'LORA'>, auto_mapping=None, peft_version='0.20.0', base_model_name_or_path='/base', revision=None, inference_mode=False, r=8, target_modules={'o_proj', 'down_proj', 'q_proj', 'gate_proj', 'v_proj', 'up_proj', 'k_proj'}, exclude_modules=None, lora_alpha=32, lora_dropout=0.05, fan_in_fan_out=False, bias='none', use_rslora=False, modules_to_save=[], init_lora_weights=True, layers_to_transform=None, layers_pattern=None, rank_pattern={}, alpha_pattern={}, megatron_config=None, megatron_core='megatron.core', trainable_token_indices=None, loftq_config={}, eva_config=None, corda_config=None, lora_ga_config=None, use_dora=False, velora_config=None, alora_invocation_tokens=None, use_qalora=False, qalora_group_size=16, monteclora_config=None, layer_replication=None, runtime_config=LoraRuntimeConfig(ephemeral_gpu_offload=False), lora_bias=False, target_parameters=None, use_bdlora=None, arrow_config=None, ensure_weight_tying=False, lora_dtype=None, lorap_lr_ratio=None, lorap_emb_lr=1e-06)
+[INFO:swift] model: PeftModelForCausalLM(
+  (base_model): LoraModel(
+    (model): Qwen3ForCausalLM(
+      (model): Qwen3Model(
+        (embed_tokens): Embedding(151936, 4096)
+        (layers): ModuleList(
+          (0-35): 36 x Qwen3DecoderLayer(
+            (self_attn): Qwen3Attention(
+              (q_proj): lora.Linear(
+                (base_layer): Linear(in_features=4096, out_features=4096, bias=False)
+                (lora_dropout): ModuleDict(
+                  (default): Dropout(p=0.05, inplace=False)
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=4096, out_features=8, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=8, out_features=4096, bias=False)
+                )
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+                (lora_magnitude_vector): ModuleDict()
+              )
+              (k_proj): lora.Linear(
+                (base_layer): Linear(in_features=4096, out_features=1024, bias=False)
+                (lora_dropout): ModuleDict(
+                  (default): Dropout(p=0.05, inplace=False)
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=4096, out_features=8, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=8, out_features=1024, bias=False)
+                )
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+                (lora_magnitude_vector): ModuleDict()
+              )
+              (v_proj): lora.Linear(
+                (base_layer): Linear(in_features=4096, out_features=1024, bias=False)
+                (lora_dropout): ModuleDict(
+                  (default): Dropout(p=0.05, inplace=False)
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=4096, out_features=8, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=8, out_features=1024, bias=False)
+                )
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+                (lora_magnitude_vector): ModuleDict()
+              )
+              (o_proj): lora.Linear(
+                (base_layer): Linear(in_features=4096, out_features=4096, bias=False)
+                (lora_dropout): ModuleDict(
+                  (default): Dropout(p=0.05, inplace=False)
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=4096, out_features=8, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=8, out_features=4096, bias=False)
+                )
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+                (lora_magnitude_vector): ModuleDict()
+              )
+              (q_norm): Qwen3RMSNorm((128,), eps=1e-06)
+              (k_norm): Qwen3RMSNorm((128,), eps=1e-06)
+            )
+            (mlp): Qwen3MLP(
+              (gate_proj): lora.Linear(
+                (base_layer): Linear(in_features=4096, out_features=12288, bias=False)
+                (lora_dropout): ModuleDict(
+                  (default): Dropout(p=0.05, inplace=False)
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=4096, out_features=8, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=8, out_features=12288, bias=False)
+                )
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+                (lora_magnitude_vector): ModuleDict()
+              )
+              (up_proj): lora.Linear(
+                (base_layer): Linear(in_features=4096, out_features=12288, bias=False)
+                (lora_dropout): ModuleDict(
+                  (default): Dropout(p=0.05, inplace=False)
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=4096, out_features=8, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=8, out_features=12288, bias=False)
+                )
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+                (lora_magnitude_vector): ModuleDict()
+              )
+              (down_proj): lora.Linear(
+                (base_layer): Linear(in_features=12288, out_features=4096, bias=False)
+                (lora_dropout): ModuleDict(
+                  (default): Dropout(p=0.05, inplace=False)
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=12288, out_features=8, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=8, out_features=4096, bias=False)
+                )
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+                (lora_magnitude_vector): ModuleDict()
+              )
+              (act_fn): SiLUActivation()
+            )
+            (input_layernorm): Qwen3RMSNorm((4096,), eps=1e-06)
+            (post_attention_layernorm): Qwen3RMSNorm((4096,), eps=1e-06)
+          )
+        )
+        (norm): Qwen3RMSNorm((4096,), eps=1e-06)
+        (rotary_emb): Qwen3RotaryEmbedding()
+      )
+      (lm_head): Linear(in_features=4096, out_features=151936, bias=False)
+    )
+  )
+)
+[INFO:swift] model_parameter_info: PeftModelForCausalLM: 8212.5588M Params (21.8235M Trainable [0.2657%]), 0.0001M Buffers.
+Warning: The cache directory for DeepSpeed Triton autotune, /runwork/cache/triton, appears to be on an NFS system. While this is generally acceptable, if you experience slowdowns or hanging when DeepSpeed exits, it is recommended to set the TRITON_CACHE_DIR environment variable to a non-NFS path.
+[INFO:swift] use_reentrant: True
+[INFO:swift] The logging file will be saved in: /runwork/outputs/smoke/checkpoints/v0-20261020-065353/logging.jsonl
+[transformers] The tokenizer has new PAD/BOS/EOS tokens that differ from the model config and generation config. The model config and generation config were aligned accordingly, being updated with the tokenizer's values. Updated tokens: {'bos_token_id': None}.
+Train:   0%|          | 0/3 [00:00<?, ?it/s][INFO:swift] use_logits_to_keep: True
+Train:  33%|███▎      | 1/3 [00:10<00:21, 10.67s/it]                                                    {'loss': '0.6986', 'grad_norm': '0.3275', 'learning_rate': '0.0001', 'token_acc': '0.7971', 'epoch': '0.01255', 'global_step/max_steps': '1/3', 'elapsed_time': '11s', 'remaining_time': '21s', 'memory(GiB)': '23.04', 'train_speed(s/it)': '10.67'}
+Train:  33%|███▎      | 1/3 [00:10<00:21, 10.67s/it]Train:  33%|███▎      | 1/3 [00:10<00:21, 10.67s/it]Train:  67%|██████▋   | 2/3 [00:22<00:11, 11.49s/it]Train: 100%|██████████| 3/3 [00:34<00:00, 11.46s/it][INFO:swift] Saving model checkpoint to /runwork/outputs/smoke/checkpoints/v0-20261020-065353/checkpoint-3
+                                                    {'train_runtime': '36.7', 'train_samples_per_second': '1.308', 'train_steps_per_second': '0.082', 'train_loss': '0.6962', 'token_acc': '0.7959', 'epoch': '0.03765', 'global_step/max_steps': '3/3', 'elapsed_time': '37s', 'remaining_time': '0s', 'memory(GiB)': '23.04', 'train_speed(s/it)': '12.23'}
+Train: 100%|██████████| 3/3 [00:36<00:00, 11.46s/it]Train: 100%|██████████| 3/3 [00:36<00:00, 11.46s/it]Train: 100%|██████████| 3/3 [00:36<00:00, 12.23s/it]
+[INFO:swift] last_model_checkpoint: /runwork/outputs/smoke/checkpoints/v0-20261020-065353/checkpoint-3
+[INFO:swift] best_model_checkpoint: None
+[INFO:swift] images_dir: /runwork/outputs/smoke/checkpoints/v0-20261020-065353/images
+[INFO:swift] End time of running main: 2026-10-20 06:54:40.308890

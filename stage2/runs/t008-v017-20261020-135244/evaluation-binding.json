@@ -1,0 +1,19 @@
+{
+  "checkpoint": "/runwork/outputs/full-r2/checkpoints/v0-20261020-070442/checkpoint-80",
+  "adapter_files": {
+    "adapter_config.json": {
+      "sha256": "772e4ca8774e8d222be215045541761624b5279c8c27416e3f04fa84aed19388",
+      "bytes": 1135
+    },
+    "adapter_model.safetensors": {
+      "sha256": "19837e150a54fff69f0837786e65d42aca4c1ac8b0cd29b0865d1e3ede35bba7",
+      "bytes": 87360584
+    }
+  },
+  "data_sha256": "f76879161c87c0f0d7ede7a19014dfaed9809da592d2760186978f5bdd4d4d35",
+  "template_sha256": "ae8a1b27c3bac461eb5f6c78d5d39cbe29427ad91c9d2da8378e236b8a38448d",
+  "models": [
+    "t008-base",
+    "t008-new"
+  ]
+}

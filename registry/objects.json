@@ -173,7 +173,17 @@
       ],
       "purpose": "Stage-1 data/CPU review ZIP; no formal holdout content",
       "delivery_registry": "registry/stage1.json"
+    },
+    {
+      "sha256": "ff47794ab6b59164494866459153d575321fa6e172b5de6e73d62492c698a35d",
+      "bytes": 80733588,
+      "object_path": "sha256/ff/ff47794ab6b59164494866459153d575321fa6e172b5de6e73d62492c698a35d",
+      "original_paths": [
+        "t008_qwen3_sft/stage2/local-models/stage1-cpu-v0.1.7/adapter.zip"
+      ],
+      "status": "TRAINED_DEVELOPMENT_NOT_QUALIFIED",
+      "run_id": "t008-v017-20261020-135244"
     }
   ],
-  "unique_bytes": 128853081
+  "unique_bytes": 216436221
 }

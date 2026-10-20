@@ -1,0 +1,74 @@
+[
+  {
+    "condition": "A",
+    "mode": "nonthinking",
+    "cases": 24,
+    "requests": 25,
+    "errors": 0,
+    "empty_content": 0,
+    "length_finishes": 1
+  },
+  {
+    "condition": "A",
+    "mode": "thinking",
+    "cases": 24,
+    "requests": 25,
+    "errors": 0,
+    "empty_content": 0,
+    "length_finishes": 0
+  },
+  {
+    "condition": "B",
+    "mode": "nonthinking",
+    "cases": 24,
+    "requests": 25,
+    "errors": 0,
+    "empty_content": 0,
+    "length_finishes": 0
+  },
+  {
+    "condition": "B",
+    "mode": "thinking",
+    "cases": 24,
+    "requests": 25,
+    "errors": 0,
+    "empty_content": 0,
+    "length_finishes": 0
+  },
+  {
+    "condition": "C_new",
+    "mode": "nonthinking",
+    "cases": 24,
+    "requests": 25,
+    "errors": 0,
+    "empty_content": 0,
+    "length_finishes": 1
+  },
+  {
+    "condition": "C_new",
+    "mode": "thinking",
+    "cases": 24,
+    "requests": 25,
+    "errors": 0,
+    "empty_content": 0,
+    "length_finishes": 0
+  },
+  {
+    "condition": "D_new",
+    "mode": "nonthinking",
+    "cases": 24,
+    "requests": 25,
+    "errors": 0,
+    "empty_content": 0,
+    "length_finishes": 2
+  },
+  {
+    "condition": "D_new",
+    "mode": "thinking",
+    "cases": 24,
+    "requests": 25,
+    "errors": 0,
+    "empty_content": 0,
+    "length_finishes": 0
+  }
+]

@@ -1,0 +1,8 @@
+{
+  "path": "stage2/local-models/stage1-cpu-v0.1.7/adapter.zip",
+  "sha256": "ff47794ab6b59164494866459153d575321fa6e172b5de6e73d62492c698a35d",
+  "bytes": 80733588,
+  "clearml_output_model_id": "722739c64386480ea1e595198a723ea1",
+  "verified": true,
+  "object_path": "sha256/ff/ff47794ab6b59164494866459153d575321fa6e172b5de6e73d62492c698a35d"
+}

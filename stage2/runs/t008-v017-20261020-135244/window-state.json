@@ -1,5 +1,11 @@
 {
   "started_at_utc": "2026-10-20T13:53:34.743663+00:00",
-  "restored": false,
-  "paused": true
+  "restored": true,
+  "paused": false,
+  "technical_retry": true,
+  "resumed_at_utc": "2026-10-20T14:04:29.607336+00:00",
+  "first_pause_restore_evidence": "first-pause-restoration.json",
+  "restored_at_utc": "2026-10-20T14:36:29.178396+00:00",
+  "service_spec_equal": true,
+  "health_status": 200
 }

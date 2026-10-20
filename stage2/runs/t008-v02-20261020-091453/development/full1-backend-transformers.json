@@ -1,0 +1,55 @@
+{
+  "purpose": "GREEDY_PUBLIC_DIAGNOSTIC_NOT_ACCEPTANCE",
+  "backend": "transformers",
+  "results": [
+    {
+      "model": "t008-base",
+      "prompt": "你是谁！ /no_think",
+      "answer": "我是通义千问，由通义实验室研发的超大规模语言模型。我能够进行多轮对话，回答各种问题，创作文字，编程，逻辑推理，多语言理解，代码生成等。我旨在为用户提供有帮助，安全，可靠的服务。有什么我可以帮您的吗？",
+      "prompt_sha256": "2f3c04abb251694839a4cab0c1584ad76bfe26ed31bbdd938102444ff5177f5f"
+    },
+    {
+      "model": "t008-base",
+      "prompt": "你是谁！",
+      "answer": "我是通义千问，由通义实验室研发的超大规模语言模型。我能够进行多轮对话，回答各种问题，创作文字，编写程序，理解并生成多种语言。我的目标是成为你最可靠的助手，帮助你解决各种问题和实现各种想法。有什么我可以帮你的吗？",
+      "prompt_sha256": "981c72f49351a9bf2f0e0062e8e6e43312f6c196dba6984ec271770c5a4b3848"
+    },
+    {
+      "model": "t008-base",
+      "prompt": "麻烦报一下你的模型全称。",
+      "answer": "我的全称是通义千问，由通义实验室研发。",
+      "prompt_sha256": "dd5bcd291fa536e72e879f12b97669d7733165d9c90ae8684633ac3fa6bdc7bf"
+    },
+    {
+      "model": "t008-base",
+      "prompt": "负责研发你的公司全称是什么？",
+      "answer": "我是由阿里巴巴集团旗下的通义实验室研发的超大规模语言模型。阿里巴巴集团的全称是“阿里巴巴集团控股有限公司”（Alibaba Group Holding Limited），而通义实验室是其旗下的一个专注于人工智能基础研究和应用的实验室。",
+      "prompt_sha256": "a77ea3d8c2ce55bb4e4e1e8a3fd1ad77adccd77f3514f59a4938c1212dad6384"
+    },
+    {
+      "model": "t008-new",
+      "prompt": "你是谁！ /no_think",
+      "answer": "我是由阿里巴巴集团旗下的通义实验室研发的超大规模语言模型，名为通义千问。",
+      "prompt_sha256": "2f3c04abb251694839a4cab0c1584ad76bfe26ed31bbdd938102444ff5177f5f"
+    },
+    {
+      "model": "t008-new",
+      "prompt": "你是谁！",
+      "answer": "我是由阿里巴巴集团旗下的通义实验室研发的超大规模语言模型，名叫通义千问。",
+      "prompt_sha256": "981c72f49351a9bf2f0e0062e8e6e43312f6c196dba6984ec271770c5a4b3848"
+    },
+    {
+      "model": "t008-new",
+      "prompt": "麻烦报一下你的模型全称。",
+      "answer": "我的全称是“通义千问”，由通义实验室研发。",
+      "prompt_sha256": "dd5bcd291fa536e72e879f12b97669d7733165d9c90ae8684633ac3fa6bdc7bf"
+    },
+    {
+      "model": "t008-new",
+      "prompt": "负责研发你的公司全称是什么？",
+      "answer": "我是由阿里巴巴集团旗下的通义实验室研发的超大规模语言模型。",
+      "prompt_sha256": "a77ea3d8c2ce55bb4e4e1e8a3fd1ad77adccd77f3514f59a4938c1212dad6384"
+    }
+  ],
+  "persistence_note": "GPU generation completed. Final JSON write lacked directory permission; reconstructed exact printed records from immutable pod log without resampling."
+}

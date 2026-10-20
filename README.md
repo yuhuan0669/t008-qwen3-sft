@@ -4,11 +4,9 @@
 
 从 [HANDOFF.md](HANDOFF.md) 开始，再读 [当前状态](control/CURRENT_STATE.json) 与 [版本登记表](registry/versions.json)。
 
-当前本地数据为stage1-cpu-v0.1.3，仅[补强底层问法](stage1/UNDERLYING_SUPPLEMENT.md)；身份口径仍为v0.1.2，未上传；详见[身份口径](stage1/IDENTITY_UPDATE.md)。
+当前已完成 [gpu-review-v0.2](docs/plans/GPU_IMPLEMENTATION_REVIEW_v0.2.md) 的3步Smoke及3次Full，**开发未达标，无合格候选；原UAT已恢复**。详见[执行报告](stage2/reports/GPU_EXECUTION_v0.2_20261020.md)。正式C/D未运行，节点A未通过，新模型未部署。
 
-下一步审阅：[训练前实施单 gpu-review-v0.2](docs/plans/GPU_IMPLEMENTATION_REVIEW_v0.2.md)，用于确认数据、配方及GPU安排，尚未授权执行。
-
-当前进展：[第一阶段CPU准备与数据审阅](stage1/README.md)已形成候选。基于[review-v0.4.1](docs/plans/SFT_MINIMAL_INTEGRATION_v0.4.1.md)，原方案正文保持不变。数据改动可在[完整对照页](stage1/review/index.html)查看；1289次曝光、653种最终记录。尚未启动GPU训练或模型推理。云端交付见[阶段登记](registry/stage1.json)。
+父数据 [stage1-cpu-v0.1.3](stage1/UNDERLYING_SUPPLEMENT.md) 保留1289条／653种原文；Full2与Full3只增加已有身份、定位及底层问法的重复次数，见 [Full2改动](stage2/variants/full2/CHANGE.md)、[Full3改动](stage2/variants/full3/CHANGE.md)。身份口径以[最新修订](stage1/IDENTITY_UPDATE.md)为准。数据和中间日志本地保存，必要执行报告另行同步。
 
 私有远端：[yuhuan0669/t008-qwen3-sft](https://github.com/yuhuan0669/t008-qwen3-sft)。代码和材料通过Git维护；Git bundle、对象库tar及交付回执存放于同仓库的归档Release。是否完成上传与回读，以该次Release的交付回执为准。
 
@@ -16,7 +14,7 @@
 |---|---|
 | 当前接续说明 | [HANDOFF.md](HANDOFF.md) |
 | 当前决定与历史决定关系 | [DECISIONS.md](control/DECISIONS.md) |
-| 保留必要修复的原生训练代码，尚未适配R1快照入口 | [code/](code/) |
+| 历史原生训练代码；当前本地数据入口见stage2/scripts | [code/](code/) |
 | 9个历史阶段及相邻交付记录的原字节归档 | [archive/](archive/) |
 | 全部本地文件及保存方式 | [local-files.json](registry/local-files.json) |
 | 原始5个代码提交与代码文件校验值 | [code-lineage.json](registry/code-lineage.json) |

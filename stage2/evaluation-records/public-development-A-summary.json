@@ -1,0 +1,56 @@
+{
+  "purpose": "PUBLIC_DEVELOPMENT_ONLY_NOT_FORMAL_ACCEPTANCE",
+  "run_id": "public-development-A-v013-20261020",
+  "served_model": "t008-base",
+  "train_sha256": "89b8dd9c3e434bcea0a1baf42bff2972e836fa3704b57fda283d9864272db443",
+  "public_development_sha256": "8513e6709b6f24946b6d98e6b94c7233fa2620c0845dee4aa412a91d040d3f97",
+  "case_conditions": 80,
+  "metrics": [
+    {
+      "condition": "A",
+      "mode": "nonthinking",
+      "dataset": "gsm8k",
+      "n": 20,
+      "correct": 19,
+      "percent": 95.0,
+      "metric": "acc",
+      "protocol_failures": 0,
+      "scoring_errors": 0
+    },
+    {
+      "condition": "A",
+      "mode": "nonthinking",
+      "dataset": "ifeval",
+      "n": 20,
+      "correct": 16,
+      "percent": 80.0,
+      "metric": "prompt_level_strict",
+      "protocol_failures": 2,
+      "scoring_errors": 0
+    },
+    {
+      "condition": "A",
+      "mode": "thinking",
+      "dataset": "gsm8k",
+      "n": 20,
+      "correct": 19,
+      "percent": 95.0,
+      "metric": "acc",
+      "protocol_failures": 1,
+      "scoring_errors": 0
+    },
+    {
+      "condition": "A",
+      "mode": "thinking",
+      "dataset": "ifeval",
+      "n": 20,
+      "correct": 17,
+      "percent": 85.0,
+      "metric": "prompt_level_strict",
+      "protocol_failures": 1,
+      "scoring_errors": 0
+    }
+  ],
+  "technical_status": "READY_FOR_DEVELOPMENT_COMPARISON",
+  "formal_holdout_content_included": false
+}

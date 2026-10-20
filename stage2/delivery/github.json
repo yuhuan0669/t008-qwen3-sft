@@ -1,0 +1,14 @@
+{
+  "repository": "https://github.com/yuhuan0669/t008-qwen3-sft",
+  "visibility": "private",
+  "commit": "18042f08322152cc100a91d3b9d3bc7a5a62bb37",
+  "parent": "ce4c3963769d1845c6809b7e5086fad16bf942fe",
+  "changed_files": [
+    "README.md",
+    "stage2/reports/GPU_EXECUTION_v0.2_20261020.md"
+  ],
+  "report_sha256": "13630c36c0b1adf9e90e12feb252fd3a161d30f1d08cee2cf0e0138795aaeb99",
+  "remote_head_and_bytes_verified": true,
+  "report_url": "https://github.com/yuhuan0669/t008-qwen3-sft/blob/18042f08322152cc100a91d3b9d3bc7a5a62bb37/stage2/reports/GPU_EXECUTION_v0.2_20261020.md",
+  "execution_branch_and_data_pushed": false
+}

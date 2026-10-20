@@ -1,0 +1,57 @@
+{
+  "run_id": "formal-baseline-AB-v013-20261020",
+  "phase": "baseline",
+  "real_inference_executed": true,
+  "fixture": false,
+  "protocol_sha256": "f5950c1b53e2ee1ada66d452cc5258b2c27aade2cb40f1d535a8c15d85424088",
+  "rubric_sha256": "254fda3342a019ad3209f75aa8dbc2d91453e522e01248b5a3d2a6d16e1ef8f8",
+  "custom_system_sha256": "655cb5ac42b68d2d34a99b18fff6d5900301f76dffbe71e1b27f6c6c7cae1d03",
+  "verified_utc": "2026-10-20T10:03:59.345562+00:00",
+  "case_conditions": 880,
+  "persisted_turns": 928,
+  "native_review_records": 880,
+  "groups": {
+    "A__nonthinking__seed42__gsm8k": {
+      "turns": 100,
+      "case_conditions": 100
+    },
+    "A__nonthinking__seed42__ifeval": {
+      "turns": 100,
+      "case_conditions": 100
+    },
+    "A__nonthinking__seed42__specialized": {
+      "turns": 132,
+      "case_conditions": 120
+    },
+    "A__thinking__seed42__gsm8k": {
+      "turns": 100,
+      "case_conditions": 100
+    },
+    "A__thinking__seed42__ifeval": {
+      "turns": 100,
+      "case_conditions": 100
+    },
+    "A__thinking__seed42__specialized": {
+      "turns": 132,
+      "case_conditions": 120
+    },
+    "B__nonthinking__seed42__specialized": {
+      "turns": 132,
+      "case_conditions": 120
+    },
+    "B__thinking__seed42__specialized": {
+      "turns": 132,
+      "case_conditions": 120
+    }
+  },
+  "served_model": "t008-base",
+  "train_sha256": "89b8dd9c3e434bcea0a1baf42bff2972e836fa3704b57fda283d9864272db443",
+  "holdout_index_sha256": "ba549e0843a2d07218fa0aed354c6a66f6aad6c279b639c237c7662e209b9dfd",
+  "worker_sha256": "8643b1bcc86ff10eaa709780379f72c3c5940484d64cb069c1530741c5222ab0",
+  "run_binding_sha256": "3ffe54bf3847ed80a8cd218db4cd1fc171f41a4b54947a0d2072769dfa11a5b7",
+  "archive_sha256": "906c1e5d96451c3616efe11b693c89ff70df9b1421671235e5c3cbf69a785782",
+  "private_integrity_sha256": "0be8dbf153aaee2940850431b2cab858eedb8ba103fdf4efb4a1cbef97367310",
+  "frozen_membership_and_turns_verified": true,
+  "formal_content_or_scores_included": false,
+  "specialized_content_review_pending": true
+}

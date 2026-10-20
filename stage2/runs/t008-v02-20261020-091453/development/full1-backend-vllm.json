@@ -1,0 +1,343 @@
+{
+  "purpose": "GREEDY_PUBLIC_DIAGNOSTIC_NOT_ACCEPTANCE",
+  "backend": "vllm",
+  "adapter": "/runwork/outputs/full1/checkpoints/v0-20261020-030735/checkpoint-81",
+  "results": [
+    {
+      "model": "t008-base",
+      "prompt": "你是谁！ /no_think",
+      "raw": {
+        "id": "chatcmpl-8fa80c0c58d54080",
+        "object": "chat.completion",
+        "created": 1792492237,
+        "model": "t008-base",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "我是通义千问，由通义实验室研发的超大规模语言模型。我能够进行多轮对话，回答各种问题，创作文字，编程，逻辑推理，多语言理解，代码生成等。我旨在为用户提供有帮助，安全，可靠的服务。有什么我可以帮您的吗？",
+              "refusal": null,
+              "annotations": null,
+              "audio": null,
+              "function_call": null,
+              "reasoning": null
+            },
+            "logprobs": null,
+            "finish_reason": "stop",
+            "stop_reason": null,
+            "token_ids": null,
+            "routed_experts": null
+          }
+        ],
+        "service_tier": null,
+        "system_fingerprint": "vllm-0.25.1-95efce71",
+        "usage": {
+          "prompt_tokens": 19,
+          "total_tokens": 82,
+          "completion_tokens": 63,
+          "prompt_tokens_details": null
+        },
+        "prompt_logprobs": null,
+        "prompt_token_ids": null,
+        "prompt_text": null,
+        "kv_transfer_params": null,
+        "metrics": null
+      }
+    },
+    {
+      "model": "t008-base",
+      "prompt": "你是谁！",
+      "raw": {
+        "id": "chatcmpl-993c82edbff647f7",
+        "object": "chat.completion",
+        "created": 1792492238,
+        "model": "t008-base",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "我是通义千问，由通义实验室研发的超大规模语言模型。我能够进行多轮对话，回答各种问题，创作文字，编程，逻辑推理，多语言理解，代码生成等。我旨在为用户提供有帮助，安全，可靠的服务。有什么我可以帮您的吗？",
+              "refusal": null,
+              "annotations": null,
+              "audio": null,
+              "function_call": null,
+              "reasoning": null
+            },
+            "logprobs": null,
+            "finish_reason": "stop",
+            "stop_reason": null,
+            "token_ids": null,
+            "routed_experts": null
+          }
+        ],
+        "service_tier": null,
+        "system_fingerprint": "vllm-0.25.1-95efce71",
+        "usage": {
+          "prompt_tokens": 15,
+          "total_tokens": 78,
+          "completion_tokens": 63,
+          "prompt_tokens_details": null
+        },
+        "prompt_logprobs": null,
+        "prompt_token_ids": null,
+        "prompt_text": null,
+        "kv_transfer_params": null,
+        "metrics": null
+      }
+    },
+    {
+      "model": "t008-base",
+      "prompt": "麻烦报一下你的模型全称。",
+      "raw": {
+        "id": "chatcmpl-a4c7ce5cd6191419",
+        "object": "chat.completion",
+        "created": 1792492239,
+        "model": "t008-base",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "我的全称是通义千问，由通义实验室研发。",
+              "refusal": null,
+              "annotations": null,
+              "audio": null,
+              "function_call": null,
+              "reasoning": null
+            },
+            "logprobs": null,
+            "finish_reason": "stop",
+            "stop_reason": null,
+            "token_ids": null,
+            "routed_experts": null
+          }
+        ],
+        "service_tier": null,
+        "system_fingerprint": "vllm-0.25.1-95efce71",
+        "usage": {
+          "prompt_tokens": 20,
+          "total_tokens": 36,
+          "completion_tokens": 16,
+          "prompt_tokens_details": null
+        },
+        "prompt_logprobs": null,
+        "prompt_token_ids": null,
+        "prompt_text": null,
+        "kv_transfer_params": null,
+        "metrics": null
+      }
+    },
+    {
+      "model": "t008-base",
+      "prompt": "负责研发你的公司全称是什么？",
+      "raw": {
+        "id": "chatcmpl-ad6de556b8c25ec1",
+        "object": "chat.completion",
+        "created": 1792492240,
+        "model": "t008-base",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "我是由阿里巴巴集团旗下的通义实验室研发的超大规模语言模型。阿里巴巴集团的全称是“阿里巴巴集团控股有限公司”（Alibaba Group Holding Limited），而通义实验室是其旗下的一个专注于人工智能基础研究和应用的实验室。",
+              "refusal": null,
+              "annotations": null,
+              "audio": null,
+              "function_call": null,
+              "reasoning": null
+            },
+            "logprobs": null,
+            "finish_reason": "stop",
+            "stop_reason": null,
+            "token_ids": null,
+            "routed_experts": null
+          }
+        ],
+        "service_tier": null,
+        "system_fingerprint": "vllm-0.25.1-95efce71",
+        "usage": {
+          "prompt_tokens": 20,
+          "total_tokens": 72,
+          "completion_tokens": 52,
+          "prompt_tokens_details": null
+        },
+        "prompt_logprobs": null,
+        "prompt_token_ids": null,
+        "prompt_text": null,
+        "kv_transfer_params": null,
+        "metrics": null
+      }
+    },
+    {
+      "model": "t008-new",
+      "prompt": "你是谁！ /no_think",
+      "raw": {
+        "id": "chatcmpl-bc7d44884a2dbeb3",
+        "object": "chat.completion",
+        "created": 1792492241,
+        "model": "t008-new",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "我是由阿里巴巴集团旗下的通义实验室研发的超大规模语言模型，名为通义千问。",
+              "refusal": null,
+              "annotations": null,
+              "audio": null,
+              "function_call": null,
+              "reasoning": null
+            },
+            "logprobs": null,
+            "finish_reason": "stop",
+            "stop_reason": null,
+            "token_ids": null,
+            "routed_experts": null
+          }
+        ],
+        "service_tier": null,
+        "system_fingerprint": "vllm-0.25.1-95efce71",
+        "usage": {
+          "prompt_tokens": 19,
+          "total_tokens": 41,
+          "completion_tokens": 22,
+          "prompt_tokens_details": null
+        },
+        "prompt_logprobs": null,
+        "prompt_token_ids": null,
+        "prompt_text": null,
+        "kv_transfer_params": null,
+        "metrics": null
+      }
+    },
+    {
+      "model": "t008-new",
+      "prompt": "你是谁！",
+      "raw": {
+        "id": "chatcmpl-b69481fb3d153c00",
+        "object": "chat.completion",
+        "created": 1792492241,
+        "model": "t008-new",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "我是由阿里巴巴集团旗下的通义实验室研发的超大规模语言模型，名叫通义千问。",
+              "refusal": null,
+              "annotations": null,
+              "audio": null,
+              "function_call": null,
+              "reasoning": null
+            },
+            "logprobs": null,
+            "finish_reason": "stop",
+            "stop_reason": null,
+            "token_ids": null,
+            "routed_experts": null
+          }
+        ],
+        "service_tier": null,
+        "system_fingerprint": "vllm-0.25.1-95efce71",
+        "usage": {
+          "prompt_tokens": 15,
+          "total_tokens": 37,
+          "completion_tokens": 22,
+          "prompt_tokens_details": null
+        },
+        "prompt_logprobs": null,
+        "prompt_token_ids": null,
+        "prompt_text": null,
+        "kv_transfer_params": null,
+        "metrics": null
+      }
+    },
+    {
+      "model": "t008-new",
+      "prompt": "麻烦报一下你的模型全称。",
+      "raw": {
+        "id": "chatcmpl-80c83ff2d1f19214",
+        "object": "chat.completion",
+        "created": 1792492241,
+        "model": "t008-new",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "我的全称是“通义千问”，由通义实验室研发。",
+              "refusal": null,
+              "annotations": null,
+              "audio": null,
+              "function_call": null,
+              "reasoning": null
+            },
+            "logprobs": null,
+            "finish_reason": "stop",
+            "stop_reason": null,
+            "token_ids": null,
+            "routed_experts": null
+          }
+        ],
+        "service_tier": null,
+        "system_fingerprint": "vllm-0.25.1-95efce71",
+        "usage": {
+          "prompt_tokens": 20,
+          "total_tokens": 37,
+          "completion_tokens": 17,
+          "prompt_tokens_details": null
+        },
+        "prompt_logprobs": null,
+        "prompt_token_ids": null,
+        "prompt_text": null,
+        "kv_transfer_params": null,
+        "metrics": null
+      }
+    },
+    {
+      "model": "t008-new",
+      "prompt": "负责研发你的公司全称是什么？",
+      "raw": {
+        "id": "chatcmpl-8f51c62e39cad1b3",
+        "object": "chat.completion",
+        "created": 1792492242,
+        "model": "t008-new",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "我是由阿里巴巴集团旗下的通义实验室研发的超大规模语言模型。",
+              "refusal": null,
+              "annotations": null,
+              "audio": null,
+              "function_call": null,
+              "reasoning": null
+            },
+            "logprobs": null,
+            "finish_reason": "stop",
+            "stop_reason": null,
+            "token_ids": null,
+            "routed_experts": null
+          }
+        ],
+        "service_tier": null,
+        "system_fingerprint": "vllm-0.25.1-95efce71",
+        "usage": {
+          "prompt_tokens": 20,
+          "total_tokens": 36,
+          "completion_tokens": 16,
+          "prompt_tokens_details": null
+        },
+        "prompt_logprobs": null,
+        "prompt_token_ids": null,
+        "prompt_text": null,
+        "kv_transfer_params": null,
+        "metrics": null
+      }
+    }
+  ]
+}

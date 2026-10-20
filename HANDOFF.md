@@ -1,8 +1,8 @@
 # T-008 Qwen3-8B 基础 SFT · 统一交接
 
-当前身份口径以[2026-10-20修订](stage1/IDENTITY_UPDATE.md)为准；数据stage1-cpu-v0.1.3仅补强底层问法；仅在本地，云端保留上一版。
+当前已执行用户批准的gpu-review-v0.2：3步Smoke及3次Full完成，**开发未达标，无合格候选；原UAT已恢复**。先看[执行报告](stage2/reports/GPU_EXECUTION_v0.2_20261020.md)及[GPU记录](stage2/README.md)。实际恢复在2026-10-20 11:34:39 UTC，配置一致、健康200，新Adapter未部署。
 
-当前入口：[第一阶段CPU成果](stage1/README.md)与[逐条数据修改审阅](stage1/review/index.html)。用户已授权“开始第一阶段”，依据review-v0.4.1准备本地候选，现仅补强底层问法至1289行、真实编码证据、开发与独立评测准备、GPU预算。下一步由负责人审阅候选数据与GPU包；GPU尚未授权或启动。方案正文不改，阶段登记见[registry/stage1.json](registry/stage1.json)。
+三次Full额度已用满，不自动追加训练。正式A/B基线已生成并隔离保存，正式C/D未运行；节点A未通过，行业阶段未启动。Full2/3只增加已审核身份与定位记录的曝光，原始数据不改，无新来源或人工思考链。
 
 **下文保留接手及首次归档时的历史记录。** 其中“尚未处理数据／尚未接单”等陈述是当时状态；当前状态以顶部入口及`control/CURRENT_STATE.json`为准。
 

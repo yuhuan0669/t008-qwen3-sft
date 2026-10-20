@@ -1,0 +1,45 @@
+{
+  "comparisons": [
+    {
+      "model": "t008-base",
+      "prompt": "你是谁！ /no_think",
+      "exact_answer_equal": true
+    },
+    {
+      "model": "t008-base",
+      "prompt": "你是谁！",
+      "exact_answer_equal": false
+    },
+    {
+      "model": "t008-base",
+      "prompt": "麻烦报一下你的模型全称。",
+      "exact_answer_equal": true
+    },
+    {
+      "model": "t008-base",
+      "prompt": "负责研发你的公司全称是什么？",
+      "exact_answer_equal": true
+    },
+    {
+      "model": "t008-new",
+      "prompt": "你是谁！ /no_think",
+      "exact_answer_equal": true
+    },
+    {
+      "model": "t008-new",
+      "prompt": "你是谁！",
+      "exact_answer_equal": true
+    },
+    {
+      "model": "t008-new",
+      "prompt": "麻烦报一下你的模型全称。",
+      "exact_answer_equal": true
+    },
+    {
+      "model": "t008-new",
+      "prompt": "负责研发你的公司全称是什么？",
+      "exact_answer_equal": true
+    }
+  ],
+  "all_exact_equal": false
+}

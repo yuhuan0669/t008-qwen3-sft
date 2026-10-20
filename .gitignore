@@ -11,3 +11,8 @@ private/
 # Reproducible stage-1 intermediates; parent snapshot and scripts are versioned.
 stage1/data/prepared.jsonl
 stage1/data/analysis-projection.jsonl
+
+# Local model binaries are bound by tracked run manifests and SHA-256.
+stage2/local-models/
+stage2/runs/*/watchdog-pid.txt
+stage2/runs/*/watchdog.log

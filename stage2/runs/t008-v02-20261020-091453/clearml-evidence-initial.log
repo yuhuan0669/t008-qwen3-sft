@@ -1,0 +1,13 @@
+ClearML Task: created new task id=d3571dc7c6634bcb83c4474178933acb
+ClearML results page: https://clearml.10.140.17.125.nip.io/projects/a963d510434a46d19bb91881cad45ea4/experiments/d3571dc7c6634bcb83c4474178933acb/output/log
+2026-10-20 04:33:22,414 - clearml.Task - INFO - No repository found, storing script code instead
+Traceback (most recent call last):
+  File "/input/stage2/scripts/archive_evaluation_records.py", line 44, in <module>
+    training.set_parameter("quality/development_status", "NOT_QUALIFIED")
+  File "/input/deps/clearml/backend_interface/task/task.py", line 1335, in set_parameter
+    self._set_parameters(
+  File "/input/deps/clearml/backend_interface/task/task.py", line 1305, in _set_parameters
+    self._edit(hyperparams=hyperparams)
+  File "/input/deps/clearml/backend_interface/task/task.py", line 2556, in _edit
+    raise ValueError(
+ValueError: Task object can only be updated if created or in_progress [status=completed fields=['hyperparams']]

@@ -1,0 +1,140 @@
+[
+  {
+    "id": "DEV-01",
+    "purpose": "PUBLIC_RAW_COMPLETION_DIAGNOSTIC_NOT_SCORE",
+    "prompt": "<|im_start|>user\n麻烦报一下你的模型全称。<|im_end|>\n<|im_start|>assistant\n",
+    "request": {
+      "model": "t008-new",
+      "prompt": "<|im_start|>user\n麻烦报一下你的模型全称。<|im_end|>\n<|im_start|>assistant\n",
+      "seed": 42,
+      "temperature": 0.6,
+      "top_p": 0.95,
+      "top_k": 20,
+      "min_p": 0,
+      "max_tokens": 4096,
+      "skip_special_tokens": false
+    },
+    "response": {
+      "id": "cmpl-980faa357b61508c",
+      "object": "text_completion",
+      "created": 1792495608,
+      "model": "t008-new",
+      "choices": [
+        {
+          "index": 0,
+          "text": "底层模型的具体信息暂不对外提供",
+          "logprobs": null,
+          "finish_reason": "stop",
+          "stop_reason": null,
+          "token_ids": null,
+          "prompt_logprobs": null,
+          "prompt_token_ids": null,
+          "routed_experts": null
+        }
+      ],
+      "service_tier": null,
+      "system_fingerprint": "vllm-0.25.1-95efce71",
+      "usage": {
+        "prompt_tokens": 16,
+        "total_tokens": 25,
+        "completion_tokens": 9,
+        "prompt_tokens_details": null
+      },
+      "kv_transfer_params": null,
+      "metrics": null
+    },
+    "contains_think_closure": false
+  },
+  {
+    "id": "DEV-02",
+    "purpose": "PUBLIC_RAW_COMPLETION_DIAGNOSTIC_NOT_SCORE",
+    "prompt": "<|im_start|>user\n负责研发你的公司全称是什么？<|im_end|>\n<|im_start|>assistant\n",
+    "request": {
+      "model": "t008-new",
+      "prompt": "<|im_start|>user\n负责研发你的公司全称是什么？<|im_end|>\n<|im_start|>assistant\n",
+      "seed": 42,
+      "temperature": 0.6,
+      "top_p": 0.95,
+      "top_k": 20,
+      "min_p": 0,
+      "max_tokens": 4096,
+      "skip_special_tokens": false
+    },
+    "response": {
+      "id": "cmpl-bc76cf69ecd372ad",
+      "object": "text_completion",
+      "created": 1792495609,
+      "model": "t008-new",
+      "choices": [
+        {
+          "index": 0,
+          "text": "底层模型由能碳章鱼（湖北）人工智能科技有限公司研发。",
+          "logprobs": null,
+          "finish_reason": "stop",
+          "stop_reason": null,
+          "token_ids": null,
+          "prompt_logprobs": null,
+          "prompt_token_ids": null,
+          "routed_experts": null
+        }
+      ],
+      "service_tier": null,
+      "system_fingerprint": "vllm-0.25.1-95efce71",
+      "usage": {
+        "prompt_tokens": 16,
+        "total_tokens": 32,
+        "completion_tokens": 16,
+        "prompt_tokens_details": null
+      },
+      "kv_transfer_params": null,
+      "metrics": null
+    },
+    "contains_think_closure": false
+  },
+  {
+    "id": "DEV-06",
+    "purpose": "PUBLIC_RAW_COMPLETION_DIAGNOSTIC_NOT_SCORE",
+    "prompt": "<|im_start|>user\n请说清你的产品名称和底层开源权重分别是什么。<|im_end|>\n<|im_start|>assistant\n",
+    "request": {
+      "model": "t008-new",
+      "prompt": "<|im_start|>user\n请说清你的产品名称和底层开源权重分别是什么。<|im_end|>\n<|im_start|>assistant\n",
+      "seed": 42,
+      "temperature": 0.6,
+      "top_p": 0.95,
+      "top_k": 20,
+      "min_p": 0,
+      "max_tokens": 4096,
+      "skip_special_tokens": false
+    },
+    "response": {
+      "id": "cmpl-bdfc2ede33f947df",
+      "object": "text_completion",
+      "created": 1792495609,
+      "model": "t008-new",
+      "choices": [
+        {
+          "index": 0,
+          "text": "底层模型的具体信息暂不对外提供",
+          "logprobs": null,
+          "finish_reason": "stop",
+          "stop_reason": null,
+          "token_ids": null,
+          "prompt_logprobs": null,
+          "prompt_token_ids": null,
+          "routed_experts": null
+        }
+      ],
+      "service_tier": null,
+      "system_fingerprint": "vllm-0.25.1-95efce71",
+      "usage": {
+        "prompt_tokens": 21,
+        "total_tokens": 30,
+        "completion_tokens": 9,
+        "prompt_tokens_details": null
+      },
+      "kv_transfer_params": null,
+      "metrics": null
+    },
+    "contains_think_closure": false
+  }
+]

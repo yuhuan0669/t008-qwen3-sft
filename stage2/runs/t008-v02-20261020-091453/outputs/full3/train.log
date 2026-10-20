@@ -1,0 +1,639 @@
+run sh: `/usr/local/bin/python /usr/local/lib/python3.12/site-packages/swift/cli/sft.py --model /base --model_type qwen3 --template qwen3 --tuner_type lora --dataset /input/variants/full3/stage1/data/train.jsonl --split_dataset_ratio 0 --dataset_shuffle true --torch_dtype bfloat16 --num_train_epochs 1 --per_device_train_batch_size 1 --gradient_accumulation_steps 16 --learning_rate 1e-4 --lora_rank 8 --lora_alpha 32 --lora_dropout 0.05 --target_modules all-linear --max_length 2048 --truncation_strategy delete --loss_scale default+ignore_empty_think --preserve_thinking false --warmup_ratio 0.05 --seed 42 --data_seed 42 --gradient_checkpointing true --dataloader_num_workers 4 --eval_strategy no --save_strategy steps --save_steps 50 --save_total_limit 2 --logging_steps 5 --report_to tensorboard --output_dir /runwork/outputs/full3/checkpoints --push_to_hub false --external_plugins /input/variants/full3/stage1/training/local_data_guard.py`
+[INFO:swift] Successfully registered `/usr/local/lib/python3.12/site-packages/swift/dataset/data/dataset_info.json`.
+[INFO:swift] Successfully imported external_plugins: ['/input/variants/full3/stage1/training/local_data_guard.py'].
+[INFO:swift] rank: -1, local_rank: -1, world_size: 1, local_world_size: 1
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+[INFO:swift] Setting args.lazy_tokenize: False
+[transformers] warmup_ratio is deprecated and will be removed in v5.2. Use `warmup_steps` instead.
+[INFO:swift] output_dir: /runwork/outputs/full3/checkpoints/v0-20261020-040401
+[INFO:swift] args: SftArguments(
+acc_strategy=token,
+accelerator_config={'dispatch_batches': False},
+adalora_beta1=0.85,
+adalora_beta2=0.85,
+adalora_deltaT=1,
+adalora_init_r=12,
+adalora_orth_reg_weight=0.5,
+adalora_target_r=8,
+adalora_tfinal=0,
+adalora_tinit=0,
+adam_beta1=0.9,
+adam_beta2=0.95,
+adam_epsilon=1e-08,
+adapter_act=gelu,
+adapter_length=128,
+adapters=[],
+add_non_thinking_prefix=True,
+add_version=True,
+agent_template=None,
+aligner_lr=None,
+attn_impl=None,
+auto_find_batch_size=False,
+average_tokens_across_devices=True,
+batch_eval_metrics=False,
+bf16=True,
+bf16_full_eval=False,
+bnb_4bit_compute_dtype=torch.bfloat16,
+bnb_4bit_quant_storage=None,
+bnb_4bit_quant_type=nf4,
+bnb_4bit_use_double_quant=True,
+boft_block_num=0,
+boft_block_size=4,
+boft_dropout=0.0,
+boft_n_butterfly_factor=1,
+cached_dataset=[],
+cached_val_dataset=[],
+callbacks=[],
+check_model=True,
+columns={},
+create_checkpoint_symlink=False,
+custom_dataset_info=[],
+custom_register_path=[],
+data_seed=42,
+dataloader_drop_last=False,
+dataloader_num_workers=4,
+dataloader_persistent_workers=False,
+dataloader_pin_memory=True,
+dataloader_prefetch_factor=None,
+dataset=['/input/variants/full3/stage1/data/train.jsonl'],
+dataset_num_proc=1,
+dataset_shuffle=True,
+ddp_backend=None,
+ddp_broadcast_buffers=None,
+ddp_bucket_cap_mb=None,
+ddp_find_unused_parameters=None,
+ddp_static_graph=None,
+ddp_timeout=18000000,
+debug=None,
+deepspeed=None,
+deepspeed_autotp_size=None,
+device_groups=None,
+device_map=None,
+disable_auto_column_mapping=False,
+disable_ignore_empty_think=False,
+disable_tqdm=None,
+do_eval=False,
+do_predict=False,
+do_train=False,
+download_mode=reuse_dataset_if_exists,
+ds3_gather_for_generation=True,
+early_stop_interval=None,
+enable_channel_loss=False,
+enable_dft_loss=False,
+enable_jit_checkpoint=False,
+enable_npu_model_patch=True,
+enable_thinking=None,
+eval_accumulation_steps=None,
+eval_dataset=[],
+eval_dataset_args=None,
+eval_delay=0,
+eval_do_concat_batches=True,
+eval_generation_config=None,
+eval_limit=None,
+eval_metric=None,
+eval_on_start=False,
+eval_steps=None,
+eval_strategy=no,
+eval_use_evalscope=False,
+eval_use_gather_object=False,
+experts_impl=None,
+external_plugins=['/input/variants/full3/stage1/training/local_data_guard.py'],
+extra_eval_args=None,
+fourier_n_frequency=2000,
+fourier_scaling=300.0,
+fp16=False,
+fp16_full_eval=False,
+freeze_aligner=True,
+freeze_llm=False,
+freeze_parameters=[],
+freeze_parameters_ratio=0.0,
+freeze_parameters_regex=None,
+freeze_vit=True,
+fsdp=[],
+fsdp_config=None,
+full_determinism=False,
+galore_cos_threshold=0.4,
+galore_gamma_proj=2,
+galore_optim_per_parameter=False,
+galore_proj_bits=4,
+galore_proj_group_size=256,
+galore_proj_quant=False,
+galore_proj_type=std,
+galore_quantization=False,
+galore_queue_size=5,
+galore_rank=128,
+galore_scale=1.0,
+galore_target_modules=None,
+galore_update_proj_gap=50,
+galore_with_embedding=False,
+generation_config=None,
+generation_max_length=None,
+generation_num_beams=None,
+gradient_accumulation_steps=16,
+gradient_checkpointing=True,
+gradient_checkpointing_kwargs=None,
+greater_is_better=False,
+group_by_length=False,
+hqq_axis=None,
+hub_always_push=False,
+hub_model_id=None,
+hub_private_repo=None,
+hub_revision=None,
+hub_strategy=every_save,
+hub_token=<HUB_TOKEN>,
+ignore_args_error=False,
+ignore_data_skip=False,
+include_for_metrics=[],
+include_num_input_tokens_seen=False,
+init_strategy=None,
+init_weights=True,
+interleave_prob=None,
+is_binary_loss_scale=None,
+label_names=None,
+label_smoothing_factor=0.0,
+lazy_tokenize=False,
+learning_rate=0.0001,
+length_column_name=length,
+liger_kernel_config=None,
+lisa_activated_layers=0,
+lisa_step_interval=20,
+llamapro_num_groups=None,
+llamapro_num_new_blocks=4,
+load_args=False,
+load_best_model_at_end=False,
+load_data_args=False,
+load_from_cache_file=False,
+local_rank=-1,
+local_repo_path=None,
+log_level=passive,
+log_level_replica=warning,
+log_on_each_node=True,
+logging_dir=/runwork/outputs/full3/checkpoints/v0-20261020-040401/runs,
+logging_first_step=True,
+logging_nan_inf_filter=True,
+logging_steps=5,
+logging_strategy=steps,
+logprobs=False,
+lora_alpha=32,
+lora_bias=none,
+lora_dropout=0.05,
+lora_dtype=None,
+lora_ga_batch_size=2,
+lora_ga_direction=ArB2r,
+lora_ga_iters=2,
+lora_ga_max_length=1024,
+lora_ga_scale=stable,
+lora_ga_stable_gamma=16,
+lora_rank=8,
+lorap_lr_ratio=None,
+loss_scale=default+ignore_empty_think,
+loss_type=None,
+lr_scheduler_kwargs=None,
+lr_scheduler_type=cosine,
+max_epochs=None,
+max_grad_norm=1.0,
+max_length=2048,
+max_memory={},
+max_model_len=None,
+max_new_tokens=64,
+max_pixels=None,
+max_shard_size=5GB,
+max_steps=-1,
+metric_for_best_model=loss,
+model=/base,
+model_author=None,
+model_kwargs={},
+model_name=None,
+model_revision=None,
+model_type=qwen3,
+modules_to_save=[],
+mrl_dims=None,
+neftune_noise_alpha=None,
+new_special_tokens=[],
+norm_bbox=None,
+num_beams=1,
+num_labels=None,
+num_train_epochs=1.0,
+optim=adamw_torch_fused,
+optim_args=None,
+optim_target_modules=None,
+optimizer=None,
+output_dir=/runwork/outputs/full3/checkpoints/v0-20261020-040401,
+packing=False,
+packing_length=None,
+packing_num_proc=1,
+packing_strategy=binpack,
+padding_free=False,
+padding_side=right,
+parallelism_config=None,
+per_device_eval_batch_size=1,
+per_device_train_batch_size=1,
+predict_with_generate=False,
+prediction_loss_only=False,
+preserve_thinking=False,
+problem_type=None,
+project=huggingface,
+push_to_hub=False,
+quant_bits=None,
+quant_method=None,
+ray_exp_name=None,
+reft_args=None,
+reft_intervention_type=LoreftIntervention,
+reft_layer_key=None,
+reft_layers=None,
+reft_rank=4,
+remove_unused_columns=True,
+repetition_penalty=None,
+report_to=['tensorboard'],
+response_prefix=None,
+restore_callback_states_from_checkpoint=False,
+resume_from_checkpoint=None,
+resume_only_model=False,
+rope_scaling=None,
+router_aux_loss_coef=0.0,
+run_name=/runwork/outputs/full3/checkpoints/v0-20261020-040401,
+safe_serialization=True,
+save_on_each_node=False,
+save_only_model=False,
+save_steps=50.0,
+save_strategy=steps,
+save_total_limit=2,
+seed=42,
+sequence_parallel_size=1,
+shuffle_buffer_size=1000,
+skip_memory_metrics=True,
+sortish_sampler=False,
+split_dataset_ratio=0.0,
+stop_words=[],
+stopping_strategy=first_exhausted,
+stream=False,
+streaming=False,
+strict=False,
+structured_outputs_regex=None,
+swanlab_email_language=zh,
+swanlab_exp_name=None,
+swanlab_mode=cloud,
+swanlab_notification_method=None,
+swanlab_project=ms-swift,
+swanlab_receiver_email=None,
+swanlab_secret=None,
+swanlab_sender_email=None,
+swanlab_smtp_port=None,
+swanlab_smtp_server=None,
+swanlab_token=<SWANLAB_TOKEN>,
+swanlab_webhook_url=None,
+swanlab_workspace=None,
+system=None,
+target_modules=['all-linear'],
+target_parameters=None,
+target_regex=None,
+task_type=causal_lm,
+temperature=0.0,
+template=qwen3,
+template_backend=swift,
+tf32=None,
+top_k=None,
+top_logprobs=None,
+top_p=None,
+torch_compile=False,
+torch_compile_backend=None,
+torch_compile_mode=None,
+torch_dtype=torch.bfloat16,
+torch_empty_cache_steps=None,
+trackio_bucket_id=None,
+trackio_space_id=None,
+trackio_static_space_id=None,
+train_dataloader_shuffle=True,
+train_sampling_strategy=random,
+trainable_parameters=[],
+trainable_parameters_regex=None,
+truncation_strategy=delete,
+tuner_backend=peft,
+tuner_type=lora,
+use_cache=False,
+use_chat_template=True,
+use_cpu=False,
+use_dora=False,
+use_flash_ckpt=False,
+use_galore=False,
+use_hf=False,
+use_liger_kernel=False,
+use_logits_to_keep=None,
+use_ray=False,
+use_rslora=False,
+use_swift_lora=False,
+val_dataset=[],
+val_dataset_shuffle=False,
+vera_d_initial=0.1,
+vera_dropout=0.0,
+vera_projection_prng_key=0,
+vera_rank=256,
+vit_gradient_checkpointing=False,
+vit_lr=None,
+warmup_ratio=0.05,
+warmup_steps=0,
+weight_decay=0.1,
+zero_hpz_partition_size=None,
+)
+[INFO:swift] Global seed set to 42
+[INFO:swift] model_kwargs: {'device_map': 'cuda:0', 'dtype': torch.bfloat16}
+Loading weights:   0%|          | 0/399 [00:00<?, ?it/s]Loading weights:   1%|          | 2/399 [00:00<00:42,  9.41it/s]Loading weights:   9%|▊         | 34/399 [00:00<00:02, 132.86it/s]Loading weights:  15%|█▌        | 60/399 [00:00<00:01, 177.43it/s]Loading weights:  23%|██▎       | 92/399 [00:00<00:01, 221.44it/s]Loading weights:  30%|██▉       | 118/399 [00:00<00:01, 233.19it/s]Loading weights:  37%|███▋      | 148/399 [00:00<00:01, 248.05it/s]Loading weights:  45%|████▌     | 180/399 [00:00<00:00, 264.90it/s]Loading weights:  52%|█████▏    | 208/399 [00:00<00:00, 265.80it/s]Loading weights:  59%|█████▉    | 236/399 [00:01<00:00, 269.89it/s]Loading weights:  68%|██████▊   | 270/399 [00:01<00:00, 283.87it/s]Loading weights:  76%|███████▌  | 303/399 [00:01<00:00, 295.83it/s]Loading weights:  85%|████████▌ | 340/399 [00:01<00:00, 314.09it/s]Loading weights:  93%|█████████▎| 373/399 [00:01<00:00, 316.99it/s]Loading weights: 100%|██████████| 399/399 [00:01<00:00, 259.53it/s]
+[INFO:swift] model_info: ModelInfo(model_type='qwen3', model_dir='/base', torch_dtype=torch.bfloat16, max_model_len=40960, quant_method=None, quant_bits=None, rope_scaling={'rope_theta': 1000000, 'rope_type': 'default'}, is_moe_model=False, is_multimodal=False, config=Qwen3Config {
+  "architectures": [
+    "Qwen3ForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "bos_token_id": 151643,
+  "dtype": "bfloat16",
+  "eos_token_id": 151645,
+  "head_dim": 128,
+  "hidden_act": "silu",
+  "hidden_size": 4096,
+  "initializer_range": 0.02,
+  "intermediate_size": 12288,
+  "layer_types": [
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention"
+  ],
+  "max_position_embeddings": 40960,
+  "max_window_layers": 36,
+  "model_type": "qwen3",
+  "num_attention_heads": 32,
+  "num_hidden_layers": 36,
+  "num_key_value_heads": 8,
+  "pad_token_id": null,
+  "rms_norm_eps": 1e-06,
+  "rope_parameters": {
+    "rope_theta": 1000000,
+    "rope_type": "default"
+  },
+  "sliding_window": null,
+  "tie_word_embeddings": false,
+  "transformers_version": "5.14.1",
+  "use_cache": true,
+  "use_sliding_window": false,
+  "vocab_size": 151936
+}
+, task_type='causal_lm', num_labels=None)
+[INFO:swift] model.generation_config: GenerationConfig {
+  "bos_token_id": 151643,
+  "do_sample": false,
+  "eos_token_id": [
+    151645,
+    151643
+  ],
+  "length_penalty": 1.0,
+  "max_new_tokens": 64,
+  "num_beams": 1,
+  "pad_token_id": 151643,
+  "temperature": 1.0,
+  "top_k": 50,
+  "top_p": 1.0
+}
+
+[INFO:swift] default_system: None
+[INFO:swift] max_length: 2048
+[INFO:swift] response_prefix: None
+[INFO:swift] agent_template: hermes
+[INFO:swift] Start time of running main: 2026-10-20 04:04:03.895006
+[INFO:swift] swift.__version__: 4.4.2
+Generating train split: 0 examples [00:00, ? examples/s]Generating train split: 2776 examples [00:00, 34455.54 examples/s]
+Map (num_proc=1):   0%|          | 0/2776 [00:00<?, ? examples/s]Map (num_proc=1):  36%|███▌      | 1000/2776 [00:00<00:00, 7685.46 examples/s]Map (num_proc=1): 100%|██████████| 2776/2776 [00:00<00:00, 10818.80 examples/s]Map (num_proc=1): 100%|██████████| 2776/2776 [00:00<00:00, 7417.37 examples/s] 
+Map (num_proc=1):   0%|          | 0/2776 [00:00<?, ? examples/s]Map (num_proc=1):  36%|███▌      | 1000/2776 [00:02<00:04, 422.18 examples/s]Map (num_proc=1):  72%|███████▏  | 2000/2776 [00:03<00:01, 629.73 examples/s]Map (num_proc=1): 100%|██████████| 2776/2776 [00:04<00:00, 722.95 examples/s]Map (num_proc=1): 100%|██████████| 2776/2776 [00:04<00:00, 621.92 examples/s]
+[INFO:swift] train_dataset: Dataset({
+    features: ['messages', 'dataset', 'lengths'],
+    num_rows: 2776
+})
+[INFO:swift] val_dataset: None
+[INFO:swift] [INPUT_IDS] [151644, 872, 198, 105043, 100165, 0, 608, 2152, 5854, 766, 151645, 198, 151644, 77091, 198, 151667, 271, 151668, 271, 104198, 44928, 100655, 26232, 100912, 107422, 26288, 104949, 3837, 67071, 26232, 100912, 44928, 100655, 9909, 102251, 7552, 104455, 99602, 103921, 100048, 3837, 99558, 99553, 100727, 39352, 57218, 100912, 105054, 39352, 104481, 87335, 104650, 1773, 151645, 198]
+[INFO:swift] [INPUT] <|im_start|>user
+你是谁! /no_think<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+
+我是章鱼能碳垂直大模型，由能碳章鱼（湖北）人工智能科技有限公司研发，主要提供能源管理与碳排放管理方面的文字辅助。<|im_end|>
+
+[INFO:swift] [LABELS_IDS] [-100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, 104198, 44928, 100655, 26232, 100912, 107422, 26288, 104949, 3837, 67071, 26232, 100912, 44928, 100655, 9909, 102251, 7552, 104455, 99602, 103921, 100048, 3837, 99558, 99553, 100727, 39352, 57218, 100912, 105054, 39352, 104481, 87335, 104650, 1773, 151645, 198]
+[INFO:swift] [LABELS] [-100 * 19]我是章鱼能碳垂直大模型，由能碳章鱼（湖北）人工智能科技有限公司研发，主要提供能源管理与碳排放管理方面的文字辅助。<|im_end|>
+
+[INFO:swift] Dataset Token Length: 599.447406±731.597275, min=29.000000, max=2048.000000, size=2776
+[INFO:swift] The SftArguments will be saved in: /runwork/outputs/full3/checkpoints/v0-20261020-040401/args.json
+[INFO:swift] lora_config: LoraConfig(task_type='CAUSAL_LM', peft_type=<PeftType.LORA: 'LORA'>, auto_mapping=None, peft_version='0.20.0', base_model_name_or_path='/base', revision=None, inference_mode=False, r=8, target_modules={'v_proj', 'down_proj', 'q_proj', 'o_proj', 'k_proj', 'up_proj', 'gate_proj'}, exclude_modules=None, lora_alpha=32, lora_dropout=0.05, fan_in_fan_out=False, bias='none', use_rslora=False, modules_to_save=[], init_lora_weights=True, layers_to_transform=None, layers_pattern=None, rank_pattern={}, alpha_pattern={}, megatron_config=None, megatron_core='megatron.core', trainable_token_indices=None, loftq_config={}, eva_config=None, corda_config=None, lora_ga_config=None, use_dora=False, velora_config=None, alora_invocation_tokens=None, use_qalora=False, qalora_group_size=16, monteclora_config=None, layer_replication=None, runtime_config=LoraRuntimeConfig(ephemeral_gpu_offload=False), lora_bias=False, target_parameters=None, use_bdlora=None, arrow_config=None, ensure_weight_tying=False, lora_dtype=None, lorap_lr_ratio=None, lorap_emb_lr=1e-06)
+[INFO:swift] model: PeftModelForCausalLM(
+  (base_model): LoraModel(
+    (model): Qwen3ForCausalLM(
+      (model): Qwen3Model(
+        (embed_tokens): Embedding(151936, 4096)
+        (layers): ModuleList(
+          (0-35): 36 x Qwen3DecoderLayer(
+            (self_attn): Qwen3Attention(
+              (q_proj): lora.Linear(
+                (base_layer): Linear(in_features=4096, out_features=4096, bias=False)
+                (lora_dropout): ModuleDict(
+                  (default): Dropout(p=0.05, inplace=False)
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=4096, out_features=8, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=8, out_features=4096, bias=False)
+                )
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+                (lora_magnitude_vector): ModuleDict()
+              )
+              (k_proj): lora.Linear(
+                (base_layer): Linear(in_features=4096, out_features=1024, bias=False)
+                (lora_dropout): ModuleDict(
+                  (default): Dropout(p=0.05, inplace=False)
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=4096, out_features=8, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=8, out_features=1024, bias=False)
+                )
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+                (lora_magnitude_vector): ModuleDict()
+              )
+              (v_proj): lora.Linear(
+                (base_layer): Linear(in_features=4096, out_features=1024, bias=False)
+                (lora_dropout): ModuleDict(
+                  (default): Dropout(p=0.05, inplace=False)
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=4096, out_features=8, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=8, out_features=1024, bias=False)
+                )
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+                (lora_magnitude_vector): ModuleDict()
+              )
+              (o_proj): lora.Linear(
+                (base_layer): Linear(in_features=4096, out_features=4096, bias=False)
+                (lora_dropout): ModuleDict(
+                  (default): Dropout(p=0.05, inplace=False)
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=4096, out_features=8, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=8, out_features=4096, bias=False)
+                )
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+                (lora_magnitude_vector): ModuleDict()
+              )
+              (q_norm): Qwen3RMSNorm((128,), eps=1e-06)
+              (k_norm): Qwen3RMSNorm((128,), eps=1e-06)
+            )
+            (mlp): Qwen3MLP(
+              (gate_proj): lora.Linear(
+                (base_layer): Linear(in_features=4096, out_features=12288, bias=False)
+                (lora_dropout): ModuleDict(
+                  (default): Dropout(p=0.05, inplace=False)
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=4096, out_features=8, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=8, out_features=12288, bias=False)
+                )
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+                (lora_magnitude_vector): ModuleDict()
+              )
+              (up_proj): lora.Linear(
+                (base_layer): Linear(in_features=4096, out_features=12288, bias=False)
+                (lora_dropout): ModuleDict(
+                  (default): Dropout(p=0.05, inplace=False)
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=4096, out_features=8, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=8, out_features=12288, bias=False)
+                )
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+                (lora_magnitude_vector): ModuleDict()
+              )
+              (down_proj): lora.Linear(
+                (base_layer): Linear(in_features=12288, out_features=4096, bias=False)
+                (lora_dropout): ModuleDict(
+                  (default): Dropout(p=0.05, inplace=False)
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=12288, out_features=8, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=8, out_features=4096, bias=False)
+                )
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+                (lora_magnitude_vector): ModuleDict()
+              )
+              (act_fn): SiLUActivation()
+            )
+            (input_layernorm): Qwen3RMSNorm((4096,), eps=1e-06)
+            (post_attention_layernorm): Qwen3RMSNorm((4096,), eps=1e-06)
+          )
+        )
+        (norm): Qwen3RMSNorm((4096,), eps=1e-06)
+        (rotary_emb): Qwen3RotaryEmbedding()
+      )
+      (lm_head): Linear(in_features=4096, out_features=151936, bias=False)
+    )
+  )
+)
+[INFO:swift] model_parameter_info: PeftModelForCausalLM: 8212.5588M Params (21.8235M Trainable [0.2657%]), 0.0001M Buffers.
+Warning: The cache directory for DeepSpeed Triton autotune, /runwork/cache/triton, appears to be on an NFS system. While this is generally acceptable, if you experience slowdowns or hanging when DeepSpeed exits, it is recommended to set the TRITON_CACHE_DIR environment variable to a non-NFS path.
+[INFO:swift] use_reentrant: True
+[INFO:swift] The logging file will be saved in: /runwork/outputs/full3/checkpoints/v0-20261020-040401/logging.jsonl
+[transformers] The tokenizer has new PAD/BOS/EOS tokens that differ from the model config and generation config. The model config and generation config were aligned accordingly, being updated with the tokenizer's values. Updated tokens: {'bos_token_id': None}.
+Train:   0%|          | 0/174 [00:00<?, ?it/s][INFO:swift] use_logits_to_keep: True
+Train:   1%|          | 1/174 [00:06<18:24,  6.38s/it]                                                      {'loss': '0.8119', 'grad_norm': '0.4175', 'learning_rate': '1.111e-05', 'token_acc': '0.7834', 'epoch': '0.005764', 'global_step/max_steps': '1/174', 'elapsed_time': '6s', 'remaining_time': '18m 25s', 'memory(GiB)': '22.57', 'train_speed(s/it)': '6.388'}
+Train:   1%|          | 1/174 [00:06<18:24,  6.38s/it]Train:   1%|          | 1/174 [00:06<18:24,  6.38s/it]Train:   1%|          | 2/174 [00:10<15:13,  5.31s/it]Train:   2%|▏         | 3/174 [00:18<17:53,  6.28s/it]Train:   2%|▏         | 4/174 [00:26<19:24,  6.85s/it]Train:   3%|▎         | 5/174 [00:32<19:07,  6.79s/it]                                                      {'loss': '0.8771', 'grad_norm': '0.5113', 'learning_rate': '5.556e-05', 'token_acc': '0.7911', 'epoch': '0.02882', 'global_step/max_steps': '5/174', 'elapsed_time': '33s', 'remaining_time': '18m 28s', 'memory(GiB)': '22.65', 'train_speed(s/it)': '6.559'}
+Train:   3%|▎         | 5/174 [00:32<19:07,  6.79s/it]Train:   3%|▎         | 5/174 [00:32<19:07,  6.79s/it]Train:   3%|▎         | 6/174 [00:38<17:50,  6.37s/it]Train:   4%|▍         | 7/174 [00:44<17:36,  6.33s/it]Train:   5%|▍         | 8/174 [00:49<16:34,  5.99s/it]Train:   5%|▌         | 9/174 [00:55<16:04,  5.85s/it]Train:   6%|▌         | 10/174 [01:01<16:09,  5.91s/it]                                                       {'loss': '0.8096', 'grad_norm': '0.7428', 'learning_rate': '9.999e-05', 'token_acc': '0.7922', 'epoch': '0.05764', 'global_step/max_steps': '10/174', 'elapsed_time': '1m 1s', 'remaining_time': '16m 48s', 'memory(GiB)': '22.65', 'train_speed(s/it)': '6.145'}
+Train:   6%|▌         | 10/174 [01:01<16:09,  5.91s/it]Train:   6%|▌         | 10/174 [01:01<16:09,  5.91s/it]Train:   6%|▋         | 11/174 [01:07<16:14,  5.98s/it]Train:   7%|▋         | 12/174 [01:15<17:21,  6.43s/it]Train:   7%|▋         | 13/174 [01:19<15:20,  5.72s/it]Train:   8%|▊         | 14/174 [01:24<15:19,  5.75s/it]Train:   9%|▊         | 15/174 [01:31<15:45,  5.95s/it]                                                       {'loss': '0.8029', 'grad_norm': '0.2256', 'learning_rate': '9.967e-05', 'token_acc': '0.7748', 'epoch': '0.08646', 'global_step/max_steps': '15/174', 'elapsed_time': '1m 31s', 'remaining_time': '16m 8s', 'memory(GiB)': '22.65', 'train_speed(s/it)': '6.09'}
+Train:   9%|▊         | 15/174 [01:31<15:45,  5.95s/it]Train:   9%|▊         | 15/174 [01:31<15:45,  5.95s/it]Train:   9%|▉         | 16/174 [01:36<15:02,  5.71s/it]Train:  10%|▉         | 17/174 [01:41<14:09,  5.41s/it]Train:  10%|█         | 18/174 [01:48<15:15,  5.87s/it]Train:  11%|█         | 19/174 [01:54<15:34,  6.03s/it]Train:  11%|█▏        | 20/174 [01:59<14:42,  5.73s/it]                                                       {'loss': '0.7369', 'grad_norm': '0.3504', 'learning_rate': '9.891e-05', 'token_acc': '0.785', 'epoch': '0.1153', 'global_step/max_steps': '20/174', 'elapsed_time': '1m 60s', 'remaining_time': '15m 21s', 'memory(GiB)': '22.65', 'train_speed(s/it)': '5.979'}
+Train:  11%|█▏        | 20/174 [01:59<14:42,  5.73s/it]Train:  11%|█▏        | 20/174 [01:59<14:42,  5.73s/it]Train:  12%|█▏        | 21/174 [02:05<15:02,  5.90s/it]Train:  13%|█▎        | 22/174 [02:12<15:38,  6.17s/it]Train:  13%|█▎        | 23/174 [02:19<16:17,  6.47s/it]Train:  14%|█▍        | 24/174 [02:24<14:49,  5.93s/it]Train:  14%|█▍        | 25/174 [02:29<14:21,  5.78s/it]                                                       {'loss': '0.6978', 'grad_norm': '0.3149', 'learning_rate': '9.77e-05', 'token_acc': '0.7893', 'epoch': '0.1441', 'global_step/max_steps': '25/174', 'elapsed_time': '2m 30s', 'remaining_time': '14m 54s', 'memory(GiB)': '22.65', 'train_speed(s/it)': '5.998'}
+Train:  14%|█▍        | 25/174 [02:29<14:21,  5.78s/it]Train:  14%|█▍        | 25/174 [02:29<14:21,  5.78s/it]Train:  15%|█▍        | 26/174 [02:34<13:01,  5.28s/it]Train:  16%|█▌        | 27/174 [02:40<13:53,  5.67s/it]Train:  16%|█▌        | 28/174 [02:47<14:22,  5.91s/it]Train:  17%|█▋        | 29/174 [02:52<14:00,  5.79s/it]Train:  17%|█▋        | 30/174 [02:59<14:28,  6.03s/it]                                                       {'loss': '0.7614', 'grad_norm': '0.2226', 'learning_rate': '9.606e-05', 'token_acc': '0.7794', 'epoch': '0.1729', 'global_step/max_steps': '30/174', 'elapsed_time': '2m 59s', 'remaining_time': '14m 20s', 'memory(GiB)': '22.65', 'train_speed(s/it)': '5.974'}
+Train:  17%|█▋        | 30/174 [02:59<14:28,  6.03s/it]Train:  17%|█▋        | 30/174 [02:59<14:28,  6.03s/it]Train:  18%|█▊        | 31/174 [03:05<14:14,  5.97s/it]Train:  18%|█▊        | 32/174 [03:11<14:08,  5.97s/it]Train:  19%|█▉        | 33/174 [03:16<13:42,  5.84s/it]Train:  20%|█▉        | 34/174 [03:21<12:41,  5.44s/it]Train:  20%|██        | 35/174 [03:26<12:15,  5.29s/it]                                                       {'loss': '0.6833', 'grad_norm': '0.2823', 'learning_rate': '9.4e-05', 'token_acc': '0.7862', 'epoch': '0.2017', 'global_step/max_steps': '35/174', 'elapsed_time': '3m 26s', 'remaining_time': '13m 38s', 'memory(GiB)': '22.65', 'train_speed(s/it)': '5.886'}
+Train:  20%|██        | 35/174 [03:26<12:15,  5.29s/it]Train:  20%|██        | 35/174 [03:26<12:15,  5.29s/it]Train:  21%|██        | 36/174 [03:31<12:26,  5.41s/it]Train:  21%|██▏       | 37/174 [03:37<12:24,  5.44s/it]Train:  22%|██▏       | 38/174 [03:42<11:56,  5.27s/it]Train:  22%|██▏       | 39/174 [03:47<11:50,  5.27s/it]Train:  23%|██▎       | 40/174 [03:53<12:28,  5.59s/it]                                                       {'loss': '0.6706', 'grad_norm': '0.236', 'learning_rate': '9.154e-05', 'token_acc': '0.7909', 'epoch': '0.2305', 'global_step/max_steps': '40/174', 'elapsed_time': '3m 54s', 'remaining_time': '13m 3s', 'memory(GiB)': '22.65', 'train_speed(s/it)': '5.842'}
+Train:  23%|██▎       | 40/174 [03:53<12:28,  5.59s/it]Train:  23%|██▎       | 40/174 [03:53<12:28,  5.59s/it]Train:  24%|██▎       | 41/174 [03:58<11:51,  5.35s/it]Train:  24%|██▍       | 42/174 [04:04<12:13,  5.56s/it]Train:  25%|██▍       | 43/174 [04:12<14:00,  6.42s/it]Train:  25%|██▌       | 44/174 [04:18<13:38,  6.30s/it]Train:  26%|██▌       | 45/174 [04:26<14:21,  6.68s/it]                                                       {'loss': '0.6431', 'grad_norm': '0.2162', 'learning_rate': '8.871e-05', 'token_acc': '0.8003', 'epoch': '0.2594', 'global_step/max_steps': '45/174', 'elapsed_time': '4m 27s', 'remaining_time': '12m 44s', 'memory(GiB)': '22.65', 'train_speed(s/it)': '5.923'}
+Train:  26%|██▌       | 45/174 [04:26<14:21,  6.68s/it]Train:  26%|██▌       | 45/174 [04:26<14:21,  6.68s/it]Train:  26%|██▋       | 46/174 [04:31<12:55,  6.06s/it]Train:  27%|██▋       | 47/174 [04:40<14:53,  7.04s/it]Train:  28%|██▊       | 48/174 [04:45<13:18,  6.34s/it]Train:  28%|██▊       | 49/174 [04:50<12:18,  5.91s/it]Train:  29%|██▊       | 50/174 [04:58<13:51,  6.71s/it]                                                       {'loss': '0.6271', 'grad_norm': '0.1806', 'learning_rate': '8.552e-05', 'token_acc': '0.802', 'epoch': '0.2882', 'global_step/max_steps': '50/174', 'elapsed_time': '4m 59s', 'remaining_time': '12m 21s', 'memory(GiB)': '22.65', 'train_speed(s/it)': '5.973'}
+Train:  29%|██▊       | 50/174 [04:58<13:51,  6.71s/it]Train:  29%|██▊       | 50/174 [04:58<13:51,  6.71s/it][INFO:swift] Saving model checkpoint to /runwork/outputs/full3/checkpoints/v0-20261020-040401/checkpoint-50
+Train:  29%|██▉       | 51/174 [05:05<13:50,  6.75s/it]Train:  30%|██▉       | 52/174 [05:13<14:14,  7.00s/it]Train:  30%|███       | 53/174 [05:19<13:30,  6.70s/it]Train:  31%|███       | 54/174 [05:26<13:43,  6.86s/it]Train:  32%|███▏      | 55/174 [05:34<14:15,  7.19s/it]                                                       {'loss': '0.6864', 'grad_norm': '0.2154', 'learning_rate': '8.202e-05', 'token_acc': '0.7956', 'epoch': '0.317', 'global_step/max_steps': '55/174', 'elapsed_time': '5m 34s', 'remaining_time': '12m 3s', 'memory(GiB)': '22.65', 'train_speed(s/it)': '6.077'}
+Train:  32%|███▏      | 55/174 [05:34<14:15,  7.19s/it]Train:  32%|███▏      | 55/174 [05:34<14:15,  7.19s/it]Train:  32%|███▏      | 56/174 [05:39<12:54,  6.56s/it]Train:  33%|███▎      | 57/174 [05:44<12:03,  6.19s/it]Train:  33%|███▎      | 58/174 [05:51<12:28,  6.45s/it]Train:  34%|███▍      | 59/174 [05:56<11:26,  5.97s/it]Train:  34%|███▍      | 60/174 [06:01<11:01,  5.80s/it]                                                       {'loss': '0.6049', 'grad_norm': '0.3001', 'learning_rate': '7.822e-05', 'token_acc': '0.8043', 'epoch': '0.3458', 'global_step/max_steps': '60/174', 'elapsed_time': '6m 2s', 'remaining_time': '11m 28s', 'memory(GiB)': '22.65', 'train_speed(s/it)': '6.033'}
+Train:  34%|███▍      | 60/174 [06:01<11:01,  5.80s/it]Train:  34%|███▍      | 60/174 [06:01<11:01,  5.80s/it]Train:  35%|███▌      | 61/174 [06:09<11:50,  6.29s/it]Train:  36%|███▌      | 62/174 [06:15<11:39,  6.24s/it]Train:  36%|███▌      | 63/174 [06:21<11:39,  6.30s/it]Train:  37%|███▋      | 64/174 [06:27<10:56,  5.97s/it]Train:  37%|███▋      | 65/174 [06:31<09:49,  5.41s/it]                                                       {'loss': '0.6387', 'grad_norm': '0.3847', 'learning_rate': '7.417e-05', 'token_acc': '0.7979', 'epoch': '0.3746', 'global_step/max_steps': '65/174', 'elapsed_time': '6m 31s', 'remaining_time': '10m 56s', 'memory(GiB)': '22.65', 'train_speed(s/it)': '6.02'}
+Train:  37%|███▋      | 65/174 [06:31<09:49,  5.41s/it]Train:  37%|███▋      | 65/174 [06:31<09:49,  5.41s/it]Train:  38%|███▊      | 66/174 [06:35<09:08,  5.08s/it]Train:  39%|███▊      | 67/174 [06:41<09:31,  5.34s/it]Train:  39%|███▉      | 68/174 [06:48<10:31,  5.96s/it]Train:  40%|███▉      | 69/174 [06:55<10:48,  6.18s/it]Train:  40%|████      | 70/174 [06:59<09:16,  5.35s/it]                                                       {'loss': '0.6485', 'grad_norm': '0.5729', 'learning_rate': '6.99e-05', 'token_acc': '0.7892', 'epoch': '0.4035', 'global_step/max_steps': '70/174', 'elapsed_time': '6m 59s', 'remaining_time': '10m 23s', 'memory(GiB)': '22.65', 'train_speed(s/it)': '5.987'}
+Train:  40%|████      | 70/174 [06:59<09:16,  5.35s/it]Train:  40%|████      | 70/174 [06:59<09:16,  5.35s/it]Train:  41%|████      | 71/174 [07:05<09:37,  5.60s/it]Train:  41%|████▏     | 72/174 [07:13<10:45,  6.33s/it]Train:  42%|████▏     | 73/174 [07:17<09:47,  5.82s/it]Train:  43%|████▎     | 74/174 [07:25<10:24,  6.24s/it]Train:  43%|████▎     | 75/174 [07:32<11:02,  6.69s/it]                                                       {'loss': '0.5683', 'grad_norm': '0.2245', 'learning_rate': '6.545e-05', 'token_acc': '0.8148', 'epoch': '0.4323', 'global_step/max_steps': '75/174', 'elapsed_time': '7m 33s', 'remaining_time': '9m 58s', 'memory(GiB)': '22.65', 'train_speed(s/it)': '6.038'}
+Train:  43%|████▎     | 75/174 [07:32<11:02,  6.69s/it]Train:  43%|████▎     | 75/174 [07:32<11:02,  6.69s/it]Train:  44%|████▎     | 76/174 [07:40<11:25,  7.00s/it]Train:  44%|████▍     | 77/174 [07:47<11:04,  6.85s/it]Train:  45%|████▍     | 78/174 [07:54<11:06,  6.94s/it]Train:  45%|████▌     | 79/174 [08:00<10:26,  6.59s/it]Train:  46%|████▌     | 80/174 [08:05<09:44,  6.22s/it]                                                       {'loss': '0.5986', 'grad_norm': '0.2859', 'learning_rate': '6.086e-05', 'token_acc': '0.8058', 'epoch': '0.4611', 'global_step/max_steps': '80/174', 'elapsed_time': '8m 5s', 'remaining_time': '9m 30s', 'memory(GiB)': '22.65', 'train_speed(s/it)': '6.067'}
+Train:  46%|████▌     | 80/174 [08:05<09:44,  6.22s/it]Train:  46%|████▌     | 80/174 [08:05<09:44,  6.22s/it]Train:  47%|████▋     | 81/174 [08:11<09:48,  6.33s/it]Train:  47%|████▋     | 82/174 [08:19<10:21,  6.76s/it]Train:  48%|████▊     | 83/174 [08:27<10:32,  6.95s/it]Train:  48%|████▊     | 84/174 [08:33<09:58,  6.65s/it]Train:  49%|████▉     | 85/174 [08:40<10:21,  6.98s/it]                                                       {'loss': '0.5949', 'grad_norm': '0.2101', 'learning_rate': '5.617e-05', 'token_acc': '0.8078', 'epoch': '0.4899', 'global_step/max_steps': '85/174', 'elapsed_time': '8m 41s', 'remaining_time': '9m 5s', 'memory(GiB)': '22.65', 'train_speed(s/it)': '6.127'}
+Train:  49%|████▉     | 85/174 [08:40<10:21,  6.98s/it]Train:  49%|████▉     | 85/174 [08:40<10:21,  6.98s/it]Train:  49%|████▉     | 86/174 [08:47<09:59,  6.81s/it]Train:  50%|█████     | 87/174 [08:54<09:54,  6.84s/it]Train:  51%|█████     | 88/174 [08:59<09:07,  6.37s/it]Train:  51%|█████     | 89/174 [09:04<08:19,  5.87s/it]Train:  52%|█████▏    | 90/174 [09:09<08:06,  5.79s/it]                                                       {'loss': '0.641', 'grad_norm': '0.3027', 'learning_rate': '5.143e-05', 'token_acc': '0.8014', 'epoch': '0.5187', 'global_step/max_steps': '90/174', 'elapsed_time': '9m 10s', 'remaining_time': '8m 33s', 'memory(GiB)': '22.65', 'train_speed(s/it)': '6.108'}
+Train:  52%|█████▏    | 90/174 [09:09<08:06,  5.79s/it]Train:  52%|█████▏    | 90/174 [09:09<08:06,  5.79s/it]Train:  52%|█████▏    | 91/174 [09:16<08:30,  6.15s/it]Train:  53%|█████▎    | 92/174 [09:22<08:15,  6.04s/it]Train:  53%|█████▎    | 93/174 [09:28<07:59,  5.92s/it]Train:  54%|█████▍    | 94/174 [09:34<08:09,  6.12s/it]Train:  55%|█████▍    | 95/174 [09:40<08:01,  6.10s/it]                                                       {'loss': '0.6502', 'grad_norm': '0.313', 'learning_rate': '4.667e-05', 'token_acc': '0.7959', 'epoch': '0.5476', 'global_step/max_steps': '95/174', 'elapsed_time': '9m 41s', 'remaining_time': '8m 3s', 'memory(GiB)': '22.65', 'train_speed(s/it)': '6.113'}
+Train:  55%|█████▍    | 95/174 [09:40<08:01,  6.10s/it]Train:  55%|█████▍    | 95/174 [09:40<08:01,  6.10s/it]Train:  55%|█████▌    | 96/174 [09:47<08:21,  6.43s/it]Train:  56%|█████▌    | 97/174 [09:54<08:10,  6.38s/it]Train:  56%|█████▋    | 98/174 [09:58<07:19,  5.78s/it]Train:  57%|█████▋    | 99/174 [10:06<07:52,  6.30s/it]Train:  57%|█████▋    | 100/174 [10:12<07:47,  6.32s/it]                                                        {'loss': '0.5458', 'grad_norm': '0.3437', 'learning_rate': '4.194e-05', 'token_acc': '0.8166', 'epoch': '0.5764', 'global_step/max_steps': '100/174', 'elapsed_time': '10m 13s', 'remaining_time': '7m 33s', 'memory(GiB)': '22.65', 'train_speed(s/it)': '6.125'}
+Train:  57%|█████▋    | 100/174 [10:12<07:47,  6.32s/it]Train:  57%|█████▋    | 100/174 [10:12<07:47,  6.32s/it][INFO:swift] Saving model checkpoint to /runwork/outputs/full3/checkpoints/v0-20261020-040401/checkpoint-100
+Train:  58%|█████▊    | 101/174 [10:20<08:24,  6.91s/it]Train:  59%|█████▊    | 102/174 [10:26<07:42,  6.42s/it]Train:  59%|█████▉    | 103/174 [10:29<06:41,  5.66s/it]Train:  60%|█████▉    | 104/174 [10:35<06:23,  5.48s/it]Train:  60%|██████    | 105/174 [10:39<06:06,  5.32s/it]                                                        {'loss': '0.6063', 'grad_norm': '0.3762', 'learning_rate': '3.729e-05', 'token_acc': '0.8091', 'epoch': '0.6052', 'global_step/max_steps': '105/174', 'elapsed_time': '10m 40s', 'remaining_time': '7m 1s', 'memory(GiB)': '22.65', 'train_speed(s/it)': '6.095'}
+Train:  60%|██████    | 105/174 [10:39<06:06,  5.32s/it]Train:  60%|██████    | 105/174 [10:39<06:06,  5.32s/it]Train:  61%|██████    | 106/174 [10:45<06:06,  5.38s/it]Train:  61%|██████▏   | 107/174 [10:49<05:26,  4.87s/it]Train:  62%|██████▏   | 108/174 [10:52<05:00,  4.56s/it]Train:  63%|██████▎   | 109/174 [11:00<05:53,  5.43s/it]Train:  63%|██████▎   | 110/174 [11:05<05:44,  5.38s/it]                                                        {'loss': '0.6456', 'grad_norm': '0.3732', 'learning_rate': '3.275e-05', 'token_acc': '0.8067', 'epoch': '0.634', 'global_step/max_steps': '110/174', 'elapsed_time': '11m 6s', 'remaining_time': '6m 27s', 'memory(GiB)': '22.65', 'train_speed(s/it)': '6.052'}
+Train:  63%|██████▎   | 110/174 [11:05<05:44,  5.38s/it]Train:  63%|██████▎   | 110/174 [11:05<05:44,  5.38s/it]Train:  64%|██████▍   | 111/174 [11:12<06:01,  5.73s/it]Train:  64%|██████▍   | 112/174 [11:16<05:26,  5.26s/it]Train:  65%|██████▍   | 113/174 [11:23<05:52,  5.78s/it]Train:  66%|██████▌   | 114/174 [11:30<06:06,  6.11s/it]Train:  66%|██████▌   | 115/174 [11:35<05:47,  5.89s/it]                                                        {'loss': '0.5761', 'grad_norm': '0.2864', 'learning_rate': '2.837e-05', 'token_acc': '0.8124', 'epoch': '0.6628', 'global_step/max_steps': '115/174', 'elapsed_time': '11m 36s', 'remaining_time': '5m 57s', 'memory(GiB)': '22.65', 'train_speed(s/it)': '6.049'}
+Train:  66%|██████▌   | 115/174 [11:35<05:47,  5.89s/it]Train:  66%|██████▌   | 115/174 [11:35<05:47,  5.89s/it]Train:  67%|██████▋   | 116/174 [11:40<05:31,  5.72s/it]Train:  67%|██████▋   | 117/174 [11:46<05:18,  5.58s/it]Train:  68%|██████▊   | 118/174 [11:54<05:55,  6.35s/it]Train:  68%|██████▊   | 119/174 [12:00<05:38,  6.15s/it]Train:  69%|██████▉   | 120/174 [12:05<05:20,  5.93s/it]                                                        {'loss': '0.566', 'grad_norm': '0.3046', 'learning_rate': '2.418e-05', 'token_acc': '0.8134', 'epoch': '0.6916', 'global_step/max_steps': '120/174', 'elapsed_time': '12m 6s', 'remaining_time': '5m 26s', 'memory(GiB)': '22.65', 'train_speed(s/it)': '6.046'}
+Train:  69%|██████▉   | 120/174 [12:05<05:20,  5.93s/it]Train:  69%|██████▉   | 120/174 [12:05<05:20,  5.93s/it]Train:  70%|██████▉   | 121/174 [12:12<05:27,  6.18s/it]Train:  70%|███████   | 122/174 [12:19<05:33,  6.41s/it]Train:  71%|███████   | 123/174 [12:23<04:54,  5.77s/it]Train:  71%|███████▏  | 124/174 [12:27<04:27,  5.34s/it]Train:  72%|███████▏  | 125/174 [12:35<04:51,  5.95s/it]                                                        {'loss': '0.5927', 'grad_norm': '0.316', 'learning_rate': '2.023e-05', 'token_acc': '0.8046', 'epoch': '0.7205', 'global_step/max_steps': '125/174', 'elapsed_time': '12m 35s', 'remaining_time': '4m 56s', 'memory(GiB)': '22.65', 'train_speed(s/it)': '6.042'}
+Train:  72%|███████▏  | 125/174 [12:35<04:51,  5.95s/it]Train:  72%|███████▏  | 125/174 [12:35<04:51,  5.95s/it]Train:  72%|███████▏  | 126/174 [12:42<05:02,  6.30s/it]Train:  73%|███████▎  | 127/174 [12:48<04:52,  6.21s/it]Train:  74%|███████▎  | 128/174 [12:54<04:45,  6.21s/it]Train:  74%|███████▍  | 129/174 [13:02<05:08,  6.85s/it]Train:  75%|███████▍  | 130/174 [13:10<05:13,  7.12s/it]                                                        {'loss': '0.5616', 'grad_norm': '0.2535', 'learning_rate': '1.654e-05', 'token_acc': '0.8138', 'epoch': '0.7493', 'global_step/max_steps': '130/174', 'elapsed_time': '13m 11s', 'remaining_time': '4m 28s', 'memory(GiB)': '22.65', 'train_speed(s/it)': '6.082'}
+Train:  75%|███████▍  | 130/174 [13:10<05:13,  7.12s/it]Train:  75%|███████▍  | 130/174 [13:10<05:13,  7.12s/it]Train:  75%|███████▌  | 131/174 [13:16<04:52,  6.80s/it]Train:  76%|███████▌  | 132/174 [13:21<04:25,  6.31s/it]Train:  76%|███████▋  | 133/174 [13:27<04:12,  6.17s/it]Train:  77%|███████▋  | 134/174 [13:33<04:00,  6.00s/it]Train:  78%|███████▊  | 135/174 [13:39<04:00,  6.15s/it]                                                        {'loss': '0.6235', 'grad_norm': '0.2677', 'learning_rate': '1.316e-05', 'token_acc': '0.7997', 'epoch': '0.7781', 'global_step/max_steps': '135/174', 'elapsed_time': '13m 40s', 'remaining_time': '3m 57s', 'memory(GiB)': '22.65', 'train_speed(s/it)': '6.073'}
+Train:  78%|███████▊  | 135/174 [13:39<04:00,  6.15s/it]Train:  78%|███████▊  | 135/174 [13:39<04:00,  6.15s/it]Train:  78%|███████▊  | 136/174 [13:45<03:53,  6.16s/it]Train:  79%|███████▊  | 137/174 [13:52<03:54,  6.34s/it]Train:  79%|███████▉  | 138/174 [13:58<03:44,  6.22s/it]Train:  80%|███████▉  | 139/174 [14:05<03:38,  6.25s/it]Train:  80%|████████  | 140/174 [14:13<03:58,  7.02s/it]                                                        {'loss': '0.6038', 'grad_norm': '0.2256', 'learning_rate': '1.012e-05', 'token_acc': '0.8064', 'epoch': '0.8069', 'global_step/max_steps': '140/174', 'elapsed_time': '14m 14s', 'remaining_time': '3m 27s', 'memory(GiB)': '22.65', 'train_speed(s/it)': '6.099'}
+Train:  80%|████████  | 140/174 [14:13<03:58,  7.02s/it]Train:  80%|████████  | 140/174 [14:13<03:58,  7.02s/it]Train:  81%|████████  | 141/174 [14:19<03:40,  6.69s/it]Train:  82%|████████▏ | 142/174 [14:27<03:45,  7.05s/it]Train:  82%|████████▏ | 143/174 [14:34<03:35,  6.94s/it]Train:  83%|████████▎ | 144/174 [14:41<03:28,  6.94s/it]Train:  83%|████████▎ | 145/174 [14:47<03:18,  6.83s/it]                                                        {'loss': '0.5895', 'grad_norm': '0.2511', 'learning_rate': '7.43e-06', 'token_acc': '0.811', 'epoch': '0.8357', 'global_step/max_steps': '145/174', 'elapsed_time': '14m 48s', 'remaining_time': '2m 58s', 'memory(GiB)': '22.65', 'train_speed(s/it)': '6.123'}
+Train:  83%|████████▎ | 145/174 [14:47<03:18,  6.83s/it]Train:  83%|████████▎ | 145/174 [14:47<03:18,  6.83s/it]Train:  84%|████████▍ | 146/174 [14:54<03:07,  6.71s/it]Train:  84%|████████▍ | 147/174 [15:00<02:55,  6.51s/it]Train:  85%|████████▌ | 148/174 [15:05<02:38,  6.11s/it]Train:  86%|████████▌ | 149/174 [15:11<02:31,  6.07s/it]Train:  86%|████████▌ | 150/174 [15:15<02:13,  5.56s/it]                                                        {'loss': '0.5992', 'grad_norm': '0.4175', 'learning_rate': '5.13e-06', 'token_acc': '0.8072', 'epoch': '0.8646', 'global_step/max_steps': '150/174', 'elapsed_time': '15m 16s', 'remaining_time': '2m 27s', 'memory(GiB)': '22.65', 'train_speed(s/it)': '6.106'}
+Train:  86%|████████▌ | 150/174 [15:15<02:13,  5.56s/it]Train:  86%|████████▌ | 150/174 [15:15<02:13,  5.56s/it][INFO:swift] Saving model checkpoint to /runwork/outputs/full3/checkpoints/v0-20261020-040401/checkpoint-150
+Train:  87%|████████▋ | 151/174 [15:24<02:30,  6.56s/it]Train:  87%|████████▋ | 152/174 [15:29<02:14,  6.12s/it]Train:  88%|████████▊ | 153/174 [15:35<02:05,  5.98s/it]Train:  89%|████████▊ | 154/174 [15:41<02:01,  6.09s/it]Train:  89%|████████▉ | 155/174 [15:45<01:39,  5.25s/it]                                                        {'loss': '0.5768', 'grad_norm': '0.7079', 'learning_rate': '3.24e-06', 'token_acc': '0.8121', 'epoch': '0.8934', 'global_step/max_steps': '155/174', 'elapsed_time': '15m 45s', 'remaining_time': '1m 56s', 'memory(GiB)': '22.65', 'train_speed(s/it)': '6.097'}
+Train:  89%|████████▉ | 155/174 [15:45<01:39,  5.25s/it]Train:  89%|████████▉ | 155/174 [15:45<01:39,  5.25s/it]Train:  90%|████████▉ | 156/174 [15:51<01:42,  5.67s/it]Train:  90%|█████████ | 157/174 [15:58<01:44,  6.12s/it]Train:  91%|█████████ | 158/174 [16:02<01:27,  5.47s/it]Train:  91%|█████████▏| 159/174 [16:09<01:26,  5.74s/it]Train:  92%|█████████▏| 160/174 [16:16<01:27,  6.22s/it]                                                        {'loss': '0.5289', 'grad_norm': '0.2322', 'learning_rate': '1.77e-06', 'token_acc': '0.8228', 'epoch': '0.9222', 'global_step/max_steps': '160/174', 'elapsed_time': '16m 17s', 'remaining_time': '1m 25s', 'memory(GiB)': '22.65', 'train_speed(s/it)': '6.104'}
+Train:  92%|█████████▏| 160/174 [16:16<01:27,  6.22s/it]Train:  92%|█████████▏| 160/174 [16:16<01:27,  6.22s/it]Train:  93%|█████████▎| 161/174 [16:22<01:21,  6.25s/it]Train:  93%|█████████▎| 162/174 [16:28<01:11,  6.00s/it]Train:  94%|█████████▎| 163/174 [16:35<01:08,  6.23s/it]Train:  94%|█████████▍| 164/174 [16:40<00:59,  5.95s/it]Train:  95%|█████████▍| 165/174 [16:48<00:58,  6.51s/it]                                                        {'loss': '0.5601', 'grad_norm': '0.2546', 'learning_rate': '7.3e-07', 'token_acc': '0.8144', 'epoch': '0.951', 'global_step/max_steps': '165/174', 'elapsed_time': '16m 48s', 'remaining_time': '55s', 'memory(GiB)': '22.65', 'train_speed(s/it)': '6.11'}
+Train:  95%|█████████▍| 165/174 [16:48<00:58,  6.51s/it]Train:  95%|█████████▍| 165/174 [16:48<00:58,  6.51s/it]Train:  95%|█████████▌| 166/174 [16:54<00:51,  6.41s/it]Train:  96%|█████████▌| 167/174 [17:01<00:46,  6.63s/it]Train:  97%|█████████▋| 168/174 [17:08<00:41,  6.88s/it]Train:  97%|█████████▋| 169/174 [17:15<00:34,  6.90s/it]Train:  98%|█████████▊| 170/174 [17:20<00:24,  6.09s/it]                                                        {'loss': '0.559', 'grad_norm': '0.3684', 'learning_rate': '1.4e-07', 'token_acc': '0.8149', 'epoch': '0.9798', 'global_step/max_steps': '170/174', 'elapsed_time': '17m 20s', 'remaining_time': '24s', 'memory(GiB)': '22.65', 'train_speed(s/it)': '6.118'}
+Train:  98%|█████████▊| 170/174 [17:20<00:24,  6.09s/it]Train:  98%|█████████▊| 170/174 [17:20<00:24,  6.09s/it]Train:  98%|█████████▊| 171/174 [17:23<00:15,  5.31s/it]Train:  99%|█████████▉| 172/174 [17:30<00:11,  5.84s/it]Train:  99%|█████████▉| 173/174 [17:37<00:06,  6.02s/it]Train: 100%|██████████| 174/174 [17:39<00:00,  4.97s/it][INFO:swift] Saving model checkpoint to /runwork/outputs/full3/checkpoints/v0-20261020-040401/checkpoint-174
+                                                        {'train_runtime': '1062', 'train_samples_per_second': '2.613', 'train_steps_per_second': '0.164', 'train_loss': '0.6356', 'token_acc': '0.8116', 'epoch': '1', 'global_step/max_steps': '174/174', 'elapsed_time': '17m 42s', 'remaining_time': '0s', 'memory(GiB)': '22.65', 'train_speed(s/it)': '6.105'}
+Train: 100%|██████████| 174/174 [17:42<00:00,  4.97s/it]Train: 100%|██████████| 174/174 [17:42<00:00,  4.97s/it]Train: 100%|██████████| 174/174 [17:42<00:00,  6.11s/it]
+[INFO:swift] last_model_checkpoint: /runwork/outputs/full3/checkpoints/v0-20261020-040401/checkpoint-174
+[INFO:swift] best_model_checkpoint: None
+[INFO:swift] images_dir: /runwork/outputs/full3/checkpoints/v0-20261020-040401/images
+[INFO:swift] End time of running main: 2026-10-20 04:21:54.999348

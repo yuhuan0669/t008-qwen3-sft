@@ -27,3 +27,69 @@
 ## 接续顺序
 
 完成开发诊断和独立基线后，释放本次评测实例，执行3步Smoke与Full；根据开发结果决定是否需要包内有界调整。只将选定候选交给独立评测。完成或窗口到期前恢复原UAT并核对配置、健康状态。
+
+## 基线完成与训练开始
+
+- 正式A/B生成完成：880条件、928轮，1746秒；公共开发A另80条件。正式逐题内容和成绩未回传训练侧。完成凭据见 `formal-baseline-completion.json`。
+- 首次Smoke在Trainer开始前因守卫未转发ms-swift的 `pre_process` 关键字参数失败，未更新权重。失败Task：`bc132def2cdf4d648e39ba59139be6eb`。原日志保留在 `outputs/smoke/`。
+- 修复仅为参数原样转发；临时文件改用Pod本地 `/tmp`，避免共享文件系统的进程临时目录清理错误。新增一个复现测试，先失败、修复后通过；合计4项测试通过。未改数据和训练配方。代码提交 `ed40289`。
+- Smoke重跑通过：3步，最终train_loss 0.7532，12个TensorBoard标量记录，checkpoint-3及Adapter完整。Task `dfae919b3cac48a489edb1fc52389674`，OutputModel `4205b8ff00df441f83932826735e295a`；上传后回下载SHA一致。
+- 首轮Full已从原始基座新建LoRA开始：81步／1epoch，Task `95411a2656454d58aef0f2e3425d4902`。此时尚无完成模型或效果验收结论。
+
+## Full1完成
+
+- 最终 checkpoint-81，81/81步，epoch=1.0；Swift终态与trainer_state一致。
+- 纯训练814.3秒（13分34秒），train_loss=0.6297；未发生OOM、非有限loss或成员删除。
+- ClearML OutputModel：`b442d2c573564639a1949f93defe0cd3`；包SHA：`4e69121ea841d9195e69ea23629b2118bfe855c84f77335c087d9e79ea5b6624`，上传回读与本地下载均匹配。
+- 本地模型包：`stage2/local-models/full1/adapter.zip`（二进制本地保存，Git记录清单和哈希）。
+- 评测实例加载的Adapter文件哈希与最终产物一致，见 `full1-evaluation-binding.json`。
+- 开始24专项开发题双模式、有/无System；公共40开发题随后运行。最终候选尚未选定，正式候选验收尚未启动。
+
+## Full1开发结论与Full2调整
+
+- 24专项开发共96条件／100次请求，空正文0、接口错误0；DEV-17的C/D nonthinking各触及输出上限。无System的6道身份题在两模式均未满足对应身份要求；不能作为合格候选。
+- 公共开发：IFEval两模式分别15/20、16/20，比A各少1题；GSM8K两模式各19/20，与A相同。配对记录见 `development/public-development-Cnew-full1-summary.json`。
+- 4道公开身份问法的greedy对照：新LoRA的vLLM/HF答案4/4完全一致，包含带/no_think的训练问法；不支持“只是vLLM加载或展示问题”的解释。HF的8次生成全部完成，但最终JSON写入因目录属主失败；从Pod日志完整还原8条记录，未追加采样，并修正本次development目录属主。原日志和还原说明均保留。
+- CPU复查确认身份正文仍有有效监督；Adapter目标模块、rank/alpha与配置相符，全部252个LoRA-B张量非零。监督有效不代表身份已学会。
+- 按方案第2节启动Full2：身份每种6次，定位每种4次；总1786条，仍653种。只追加497次曝光，父1289行原字节保留，通用1036条不变，无文字改写、新来源或人工思考链。见 `../../variants/full2/CHANGE.md`。
+- 真实Swift CPU编码通过：1786行完整加载/编码，最大2048，零静默丢行、零空监督。新数据SHA `2e31f05483c5b9b8840af5b687cb7bbbad9ca2029f94d28904ae4b17ed2e33c5`。
+- Full2从原始基座新建LoRA，112步／1epoch；配方不变，不接续Full1。Task `a233886d8c3c4e8ba7a9f52b767c48be`，源提交 `9e8c37e`。正式候选验收仍未运行。
+
+## Full2完成
+
+- 完整112/112步，epoch=1.0，最终checkpoint-112；保存与训练终态核对通过。
+- ClearML Task `a233886d8c3c4e8ba7a9f52b767c48be`，OutputModel `49c1836348824dfb96ea9b1b18a10b1a`；上传回读及本地下载包SHA均一致：`e7dda67a26bd4d3f8f180e17376bed4436fce09e15f965765df532d3e04285ae`。
+- 本地包 `stage2/local-models/full2/adapter.zip`；训练记录见 `outputs/full2/`。尚未判定开发通过，开始开发评测。
+
+## Full2开发结果与Full3决定
+
+- Full2专项开发96条件100请求，0空正文、0接口错误，1次截断；身份改善但底层问法、thinking模型名及业务扩张未达标，详见 `development/full2-review.md`。
+- 公共开发80请求：IFEval非思考16/20、思考16/20；GSM8K两模式19/20。相对A分别0、-1、0、0题；3条截断计失败，其中2条无可用正文。
+- 第三次也是本轮最后一次Full：仅把已有身份提高到每种12次、定位及底层每种16次，总2776曝光、653种，通用不变。配方不变，预计174步；原因及逐条映射见 `../../variants/full3/`。此时开始CPU核验，正式候选验收未启动。
+
+## Full3完成
+
+- 最后一次Full完成174/174步、epoch1.0，train_runtime约1062秒；最终checkpoint-174。
+- Task `7ae1711d89344dfc9e313b08adc85198`，OutputModel `8ef4c6063d9d46149152a08f39b17156`；Adapter包SHA `629ff7b4bea825021d78a19cf6eac03fcf120e171e6d30196f9119b2bd17347c`，ClearML回读、本地包及本地内容寻址对象一致。
+- 没有第四次Full。开始最后一轮24专项及40公共开发检查，尚未选定候选或启动正式候选验收。
+
+## Full3开发不通过：停止本轮训练与候选送验
+
+- 24专项开发96条件100请求，6空正文、2截断，0接口错误。3条raw completions诊断确认未输出think闭合标记即停止，原结果未替换。
+- 身份/底层口径仍不稳定；DEV-19 thinking虚构现场功率、仪表及校准信息，为阻断项。详见 `development/full3-review.md`。
+- 三次Full均无合格开发候选，不强行送正式验收；本轮不再训练。公共开发40题正在完成，随后恢复原UAT。
+
+## 收尾：开发未达标，原UAT已恢复
+
+- Full3公共开发：IFEval两模式16/20、17/20，与A持平；GSM8K非思考19/20持平、思考18/20比A少1题。4次截断（其中1次无可用正文），无额外评分/接口错误。
+- 三次Full均无合格开发候选；正式C/D未运行，节点A未通过。正式A/B已生成但内容审核未完成，真正人工复核和PM签收仍待处理；不将基线生成等同于验收完成。
+- 2026-10-20 11:34:39.979649 UTC（04:34:39 PDT）恢复原UAT：Deployment完整spec与暂停前一致，1/1可用，健康200，未部署任何新Adapter。本次停服约2小时16分钟，未超8小时上限。
+- ClearML评测证据Task：d3571dc7c6634bcb83c4474178933acb，12份公开元数据/开发输出逐文件回读SHA一致。正式私有题与答案未上传。首次归档在修改已完成训练任务参数时被SDK拒绝；保留日志，复用同一评测Task验证既有上传，只补训练标签，训练参数和状态未重开，无推理/训练重跑。归档Task完成不代表模型质量通过。
+- 数据、运行证据和模型保留本地；必要执行报告同步GitHub和Drive，具体上传回执另存。后续不自动训练或进入行业阶段。
+
+## 必要报告交付
+
+- GitHub私有仓库仅更新报告和README导航，提交 `18042f08322152cc100a91d3b9d3bc7a5a62bb37`；远端HEAD和报告字节已核对。没有推送本次执行分支、衍生数据或中间日志。
+- Drive上传至原T-008的02_执行产出，文件 `1hn2VwDvVSdV8Uw8rV-U6TqN7or_wJjfv`；父目录、6260字节和SHA回读一致。
+- 两端报告SHA：`13630c36c0b1adf9e90e12feb252fd3a161d30f1d08cee2cf0e0138795aaeb99`；回执见 `stage2/delivery/`。本地Python下载因CA配置失败后改用系统可信证书的curl完成回读，未关闭TLS校验。
+- 本次临时CPU准备Pod、评测Service和证据归档Jobs已请求清理；训练数据/模型所在PVC未删，评测侧部署未改。

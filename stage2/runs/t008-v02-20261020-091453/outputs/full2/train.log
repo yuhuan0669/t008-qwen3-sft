@@ -1,0 +1,758 @@
+run sh: `/usr/local/bin/python /usr/local/lib/python3.12/site-packages/swift/cli/sft.py --model /base --model_type qwen3 --template qwen3 --tuner_type lora --dataset /input/variants/full2/stage1/data/train.jsonl --split_dataset_ratio 0 --dataset_shuffle true --torch_dtype bfloat16 --num_train_epochs 1 --per_device_train_batch_size 1 --gradient_accumulation_steps 16 --learning_rate 1e-4 --lora_rank 8 --lora_alpha 32 --lora_dropout 0.05 --target_modules all-linear --max_length 2048 --truncation_strategy delete --loss_scale default+ignore_empty_think --preserve_thinking false --warmup_ratio 0.05 --seed 42 --data_seed 42 --gradient_checkpointing true --dataloader_num_workers 4 --eval_strategy no --save_strategy steps --save_steps 50 --save_total_limit 2 --logging_steps 5 --report_to tensorboard --output_dir /runwork/outputs/full2/checkpoints --push_to_hub false --external_plugins /input/variants/full2/stage1/training/local_data_guard.py`
+[INFO:swift] Successfully registered `/usr/local/lib/python3.12/site-packages/swift/dataset/data/dataset_info.json`.
+[INFO:swift] Successfully imported external_plugins: ['/input/variants/full2/stage1/training/local_data_guard.py'].
+[INFO:swift] rank: -1, local_rank: -1, world_size: 1, local_world_size: 1
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+[INFO:swift] Setting args.lazy_tokenize: False
+[transformers] warmup_ratio is deprecated and will be removed in v5.2. Use `warmup_steps` instead.
+[INFO:swift] output_dir: /runwork/outputs/full2/checkpoints/v0-20261020-033736
+[INFO:swift] args: SftArguments(
+acc_strategy=token,
+accelerator_config={'dispatch_batches': False},
+adalora_beta1=0.85,
+adalora_beta2=0.85,
+adalora_deltaT=1,
+adalora_init_r=12,
+adalora_orth_reg_weight=0.5,
+adalora_target_r=8,
+adalora_tfinal=0,
+adalora_tinit=0,
+adam_beta1=0.9,
+adam_beta2=0.95,
+adam_epsilon=1e-08,
+adapter_act=gelu,
+adapter_length=128,
+adapters=[],
+add_non_thinking_prefix=True,
+add_version=True,
+agent_template=None,
+aligner_lr=None,
+attn_impl=None,
+auto_find_batch_size=False,
+average_tokens_across_devices=True,
+batch_eval_metrics=False,
+bf16=True,
+bf16_full_eval=False,
+bnb_4bit_compute_dtype=torch.bfloat16,
+bnb_4bit_quant_storage=None,
+bnb_4bit_quant_type=nf4,
+bnb_4bit_use_double_quant=True,
+boft_block_num=0,
+boft_block_size=4,
+boft_dropout=0.0,
+boft_n_butterfly_factor=1,
+cached_dataset=[],
+cached_val_dataset=[],
+callbacks=[],
+check_model=True,
+columns={},
+create_checkpoint_symlink=False,
+custom_dataset_info=[],
+custom_register_path=[],
+data_seed=42,
+dataloader_drop_last=False,
+dataloader_num_workers=4,
+dataloader_persistent_workers=False,
+dataloader_pin_memory=True,
+dataloader_prefetch_factor=None,
+dataset=['/input/variants/full2/stage1/data/train.jsonl'],
+dataset_num_proc=1,
+dataset_shuffle=True,
+ddp_backend=None,
+ddp_broadcast_buffers=None,
+ddp_bucket_cap_mb=None,
+ddp_find_unused_parameters=None,
+ddp_static_graph=None,
+ddp_timeout=18000000,
+debug=None,
+deepspeed=None,
+deepspeed_autotp_size=None,
+device_groups=None,
+device_map=None,
+disable_auto_column_mapping=False,
+disable_ignore_empty_think=False,
+disable_tqdm=None,
+do_eval=False,
+do_predict=False,
+do_train=False,
+download_mode=reuse_dataset_if_exists,
+ds3_gather_for_generation=True,
+early_stop_interval=None,
+enable_channel_loss=False,
+enable_dft_loss=False,
+enable_jit_checkpoint=False,
+enable_npu_model_patch=True,
+enable_thinking=None,
+eval_accumulation_steps=None,
+eval_dataset=[],
+eval_dataset_args=None,
+eval_delay=0,
+eval_do_concat_batches=True,
+eval_generation_config=None,
+eval_limit=None,
+eval_metric=None,
+eval_on_start=False,
+eval_steps=None,
+eval_strategy=no,
+eval_use_evalscope=False,
+eval_use_gather_object=False,
+experts_impl=None,
+external_plugins=['/input/variants/full2/stage1/training/local_data_guard.py'],
+extra_eval_args=None,
+fourier_n_frequency=2000,
+fourier_scaling=300.0,
+fp16=False,
+fp16_full_eval=False,
+freeze_aligner=True,
+freeze_llm=False,
+freeze_parameters=[],
+freeze_parameters_ratio=0.0,
+freeze_parameters_regex=None,
+freeze_vit=True,
+fsdp=[],
+fsdp_config=None,
+full_determinism=False,
+galore_cos_threshold=0.4,
+galore_gamma_proj=2,
+galore_optim_per_parameter=False,
+galore_proj_bits=4,
+galore_proj_group_size=256,
+galore_proj_quant=False,
+galore_proj_type=std,
+galore_quantization=False,
+galore_queue_size=5,
+galore_rank=128,
+galore_scale=1.0,
+galore_target_modules=None,
+galore_update_proj_gap=50,
+galore_with_embedding=False,
+generation_config=None,
+generation_max_length=None,
+generation_num_beams=None,
+gradient_accumulation_steps=16,
+gradient_checkpointing=True,
+gradient_checkpointing_kwargs=None,
+greater_is_better=False,
+group_by_length=False,
+hqq_axis=None,
+hub_always_push=False,
+hub_model_id=None,
+hub_private_repo=None,
+hub_revision=None,
+hub_strategy=every_save,
+hub_token=<HUB_TOKEN>,
+ignore_args_error=False,
+ignore_data_skip=False,
+include_for_metrics=[],
+include_num_input_tokens_seen=False,
+init_strategy=None,
+init_weights=True,
+interleave_prob=None,
+is_binary_loss_scale=None,
+label_names=None,
+label_smoothing_factor=0.0,
+lazy_tokenize=False,
+learning_rate=0.0001,
+length_column_name=length,
+liger_kernel_config=None,
+lisa_activated_layers=0,
+lisa_step_interval=20,
+llamapro_num_groups=None,
+llamapro_num_new_blocks=4,
+load_args=False,
+load_best_model_at_end=False,
+load_data_args=False,
+load_from_cache_file=False,
+local_rank=-1,
+local_repo_path=None,
+log_level=passive,
+log_level_replica=warning,
+log_on_each_node=True,
+logging_dir=/runwork/outputs/full2/checkpoints/v0-20261020-033736/runs,
+logging_first_step=True,
+logging_nan_inf_filter=True,
+logging_steps=5,
+logging_strategy=steps,
+logprobs=False,
+lora_alpha=32,
+lora_bias=none,
+lora_dropout=0.05,
+lora_dtype=None,
+lora_ga_batch_size=2,
+lora_ga_direction=ArB2r,
+lora_ga_iters=2,
+lora_ga_max_length=1024,
+lora_ga_scale=stable,
+lora_ga_stable_gamma=16,
+lora_rank=8,
+lorap_lr_ratio=None,
+loss_scale=default+ignore_empty_think,
+loss_type=None,
+lr_scheduler_kwargs=None,
+lr_scheduler_type=cosine,
+max_epochs=None,
+max_grad_norm=1.0,
+max_length=2048,
+max_memory={},
+max_model_len=None,
+max_new_tokens=64,
+max_pixels=None,
+max_shard_size=5GB,
+max_steps=-1,
+metric_for_best_model=loss,
+model=/base,
+model_author=None,
+model_kwargs={},
+model_name=None,
+model_revision=None,
+model_type=qwen3,
+modules_to_save=[],
+mrl_dims=None,
+neftune_noise_alpha=None,
+new_special_tokens=[],
+norm_bbox=None,
+num_beams=1,
+num_labels=None,
+num_train_epochs=1.0,
+optim=adamw_torch_fused,
+optim_args=None,
+optim_target_modules=None,
+optimizer=None,
+output_dir=/runwork/outputs/full2/checkpoints/v0-20261020-033736,
+packing=False,
+packing_length=None,
+packing_num_proc=1,
+packing_strategy=binpack,
+padding_free=False,
+padding_side=right,
+parallelism_config=None,
+per_device_eval_batch_size=1,
+per_device_train_batch_size=1,
+predict_with_generate=False,
+prediction_loss_only=False,
+preserve_thinking=False,
+problem_type=None,
+project=huggingface,
+push_to_hub=False,
+quant_bits=None,
+quant_method=None,
+ray_exp_name=None,
+reft_args=None,
+reft_intervention_type=LoreftIntervention,
+reft_layer_key=None,
+reft_layers=None,
+reft_rank=4,
+remove_unused_columns=True,
+repetition_penalty=None,
+report_to=['tensorboard'],
+response_prefix=None,
+restore_callback_states_from_checkpoint=False,
+resume_from_checkpoint=None,
+resume_only_model=False,
+rope_scaling=None,
+router_aux_loss_coef=0.0,
+run_name=/runwork/outputs/full2/checkpoints/v0-20261020-033736,
+safe_serialization=True,
+save_on_each_node=False,
+save_only_model=False,
+save_steps=50.0,
+save_strategy=steps,
+save_total_limit=2,
+seed=42,
+sequence_parallel_size=1,
+shuffle_buffer_size=1000,
+skip_memory_metrics=True,
+sortish_sampler=False,
+split_dataset_ratio=0.0,
+stop_words=[],
+stopping_strategy=first_exhausted,
+stream=False,
+streaming=False,
+strict=False,
+structured_outputs_regex=None,
+swanlab_email_language=zh,
+swanlab_exp_name=None,
+swanlab_mode=cloud,
+swanlab_notification_method=None,
+swanlab_project=ms-swift,
+swanlab_receiver_email=None,
+swanlab_secret=None,
+swanlab_sender_email=None,
+swanlab_smtp_port=None,
+swanlab_smtp_server=None,
+swanlab_token=<SWANLAB_TOKEN>,
+swanlab_webhook_url=None,
+swanlab_workspace=None,
+system=None,
+target_modules=['all-linear'],
+target_parameters=None,
+target_regex=None,
+task_type=causal_lm,
+temperature=0.0,
+template=qwen3,
+template_backend=swift,
+tf32=None,
+top_k=None,
+top_logprobs=None,
+top_p=None,
+torch_compile=False,
+torch_compile_backend=None,
+torch_compile_mode=None,
+torch_dtype=torch.bfloat16,
+torch_empty_cache_steps=None,
+trackio_bucket_id=None,
+trackio_space_id=None,
+trackio_static_space_id=None,
+train_dataloader_shuffle=True,
+train_sampling_strategy=random,
+trainable_parameters=[],
+trainable_parameters_regex=None,
+truncation_strategy=delete,
+tuner_backend=peft,
+tuner_type=lora,
+use_cache=False,
+use_chat_template=True,
+use_cpu=False,
+use_dora=False,
+use_flash_ckpt=False,
+use_galore=False,
+use_hf=False,
+use_liger_kernel=False,
+use_logits_to_keep=None,
+use_ray=False,
+use_rslora=False,
+use_swift_lora=False,
+val_dataset=[],
+val_dataset_shuffle=False,
+vera_d_initial=0.1,
+vera_dropout=0.0,
+vera_projection_prng_key=0,
+vera_rank=256,
+vit_gradient_checkpointing=False,
+vit_lr=None,
+warmup_ratio=0.05,
+warmup_steps=0,
+weight_decay=0.1,
+zero_hpz_partition_size=None,
+)
+[INFO:swift] Global seed set to 42
+[INFO:swift] model_kwargs: {'device_map': 'cuda:0', 'dtype': torch.bfloat16}
+Loading weights:   0%|          | 0/399 [00:00<?, ?it/s]Loading weights:   0%|          | 1/399 [00:00<01:27,  4.54it/s]Loading weights:   8%|▊         | 31/399 [00:00<00:03, 120.35it/s]Loading weights:  15%|█▌        | 60/399 [00:00<00:01, 177.85it/s]Loading weights:  23%|██▎       | 92/399 [00:00<00:01, 220.94it/s]Loading weights:  30%|██▉       | 118/399 [00:00<00:01, 233.17it/s]Loading weights:  37%|███▋      | 148/399 [00:00<00:01, 248.23it/s]Loading weights:  45%|████▌     | 180/399 [00:00<00:00, 265.17it/s]Loading weights:  52%|█████▏    | 208/399 [00:00<00:00, 265.49it/s]Loading weights:  59%|█████▉    | 236/399 [00:01<00:00, 269.09it/s]Loading weights:  68%|██████▊   | 270/399 [00:01<00:00, 284.61it/s]Loading weights:  76%|███████▌  | 303/399 [00:01<00:00, 294.52it/s]Loading weights:  84%|████████▍ | 336/399 [00:01<00:00, 304.68it/s]Loading weights:  92%|█████████▏| 369/399 [00:01<00:00, 307.74it/s]Loading weights: 100%|██████████| 399/399 [00:01<00:00, 257.25it/s]
+[INFO:swift] model_info: ModelInfo(model_type='qwen3', model_dir='/base', torch_dtype=torch.bfloat16, max_model_len=40960, quant_method=None, quant_bits=None, rope_scaling={'rope_theta': 1000000, 'rope_type': 'default'}, is_moe_model=False, is_multimodal=False, config=Qwen3Config {
+  "architectures": [
+    "Qwen3ForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "bos_token_id": 151643,
+  "dtype": "bfloat16",
+  "eos_token_id": 151645,
+  "head_dim": 128,
+  "hidden_act": "silu",
+  "hidden_size": 4096,
+  "initializer_range": 0.02,
+  "intermediate_size": 12288,
+  "layer_types": [
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention"
+  ],
+  "max_position_embeddings": 40960,
+  "max_window_layers": 36,
+  "model_type": "qwen3",
+  "num_attention_heads": 32,
+  "num_hidden_layers": 36,
+  "num_key_value_heads": 8,
+  "pad_token_id": null,
+  "rms_norm_eps": 1e-06,
+  "rope_parameters": {
+    "rope_theta": 1000000,
+    "rope_type": "default"
+  },
+  "sliding_window": null,
+  "tie_word_embeddings": false,
+  "transformers_version": "5.14.1",
+  "use_cache": true,
+  "use_sliding_window": false,
+  "vocab_size": 151936
+}
+, task_type='causal_lm', num_labels=None)
+[INFO:swift] model.generation_config: GenerationConfig {
+  "bos_token_id": 151643,
+  "do_sample": false,
+  "eos_token_id": [
+    151645,
+    151643
+  ],
+  "length_penalty": 1.0,
+  "max_new_tokens": 64,
+  "num_beams": 1,
+  "pad_token_id": 151643,
+  "temperature": 1.0,
+  "top_k": 50,
+  "top_p": 1.0
+}
+
+[INFO:swift] default_system: None
+[INFO:swift] max_length: 2048
+[INFO:swift] response_prefix: None
+[INFO:swift] agent_template: hermes
+[INFO:swift] Start time of running main: 2026-10-20 03:37:38.900636
+[INFO:swift] swift.__version__: 4.4.2
+Generating train split: 0 examples [00:00, ? examples/s]Generating train split: 1786 examples [00:00, 22715.71 examples/s]
+Map (num_proc=1):   0%|          | 0/1786 [00:00<?, ? examples/s]Map (num_proc=1):  56%|█████▌    | 1000/1786 [00:00<00:00, 7567.44 examples/s]Map (num_proc=1): 100%|██████████| 1786/1786 [00:00<00:00, 7105.95 examples/s]Map (num_proc=1): 100%|██████████| 1786/1786 [00:00<00:00, 5045.25 examples/s]
+Map (num_proc=1):   0%|          | 0/1786 [00:00<?, ? examples/s]Map (num_proc=1):  56%|█████▌    | 1000/1786 [00:02<00:02, 349.32 examples/s]Map (num_proc=1): 100%|██████████| 1786/1786 [00:03<00:00, 476.64 examples/s]Map (num_proc=1): 100%|██████████| 1786/1786 [00:04<00:00, 426.14 examples/s]
+[INFO:swift] train_dataset: Dataset({
+    features: ['messages', 'dataset', 'lengths'],
+    num_rows: 1786
+})
+[INFO:swift] val_dataset: None
+[INFO:swift] [INPUT_IDS] [151644, 872, 198, 840, 20772, 1128, 10017, 2337, 279, 3840, 315, 38124, 2584, 594, 5025, 448, 279, 3639, 4180, 11, 705, 311, 323, 2701, 862, 29115, 304, 220, 16, 24, 23, 18, 13, 151645, 198, 151644, 77091, 198, 151667, 198, 32313, 11, 773, 358, 1184, 311, 10339, 279, 3840, 315, 38124, 2584, 594, 5025, 448, 279, 3639, 4180, 705, 311, 323, 1283, 279, 220, 16, 24, 23, 18, 29115, 13, 6771, 752, 1191, 553, 88646, 1128, 358, 1414, 13, 38124, 2584, 374, 264, 2613, 12922, 304, 279, 34274, 11, 1290, 30, 358, 1744, 432, 572, 264, 7855, 40936, 1573, 29140, 23665, 13, 5005, 1052, 572, 264, 13791, 304, 279, 220, 16, 24, 22, 15, 82, 11, 7196, 6069, 553, 67429, 33242, 30, 4636, 429, 11, 279, 547, 808, 13, 63665, 304, 220, 16, 24, 23, 18, 11, 2598, 16730, 85486, 306, 49379, 13, 1988, 358, 1184, 311, 2182, 419, 304, 2266, 382, 5338, 11, 38124, 2584, 594, 3840, 448, 279, 547, 808, 13, 4658, 3855, 448, 279, 547, 808, 13, 3432, 1045, 2734, 304, 279, 34274, 13, 10696, 6955, 19818, 476, 18580, 7966, 13, 5005, 11, 979, 38124, 2584, 6116, 9489, 11, 7196, 279, 547, 808, 13, 1030, 1045, 10173, 1052, 13, 1988, 1221, 279, 13791, 6932, 11, 6388, 311, 264, 68950, 3033, 11, 892, 279, 547, 808, 13, 2578, 614, 16087, 13, 2938, 1410, 614, 6069, 311, 38410, 13, 576, 29115, 304, 220, 16, 24, 23, 18, 572, 264, 2033, 311, 429, 11, 8365, 311, 6016, 3693, 10283, 476, 311, 2936, 279, 8865, 315, 70089, 304, 279, 5537, 382, 14190, 11, 358, 1265, 1779, 279, 24808, 13, 38124, 2584, 572, 264, 7855, 40936, 3080, 220, 16, 24, 22, 19, 979, 432, 18163, 23665, 13, 5005, 304, 220, 16, 24, 22, 24, 11, 1052, 572, 264, 13791, 6069, 553, 67429, 33242, 11, 879, 9555, 264, 40189, 3033, 13, 1988, 2937, 11, 33242, 572, 916, 86445, 323, 7425, 553, 264, 2588, 1056, 36380, 11, 892, 2578, 614, 1012, 803, 26118, 448, 31677, 323, 279, 19390, 9145, 13, 576, 547, 808, 13, 2578, 614, 3884, 419, 438, 264, 5899, 11, 5310, 448, 279, 23185, 5004, 2266, 13, 576, 547, 808, 13, 1030, 264, 6277, 2331, 304, 279, 3082, 11, 7196, 304, 14046, 5837, 11, 773, 18580, 11772, 1410, 387, 264, 8168, 382, 785, 29115, 304, 220, 16, 24, 23, 18, 11, 16730, 85486, 306, 49379, 11, 572, 34416, 553, 279, 547, 808, 13, 438, 264, 2033, 311, 279, 4948, 55299, 323, 279, 5899, 311, 3693, 10283, 11, 2670, 6457, 4143, 518, 264, 12103, 304, 38124, 2584, 13, 576, 547, 808, 13, 1083, 11660, 429, 38124, 2584, 572, 10454, 264, 19390, 7658, 392, 276, 6277, 2331, 13, 4636, 279, 29115, 11, 279, 547, 808, 13, 10275, 264, 462, 60761, 932, 3033, 11, 323, 2937, 38124, 2584, 5644, 15991, 13, 576, 547, 808, 13, 323, 38124, 2584, 594, 5025, 4658, 12944, 1283, 429, 11, 448, 38124, 2584, 5285, 287, 803, 448, 279, 4312, 382, 40, 1184, 311, 1281, 2704, 358, 633, 279, 1376, 4357, 304, 1973, 25, 23665, 11, 13791, 11, 33242, 594, 3033, 11, 15706, 11, 547, 808, 13, 29115, 11, 39596, 13, 7281, 11, 279, 7966, 4815, 279, 547, 808, 13, 29115, 11, 279, 6489, 12720, 11, 323, 279, 1293, 9663, 6239, 389, 38124, 2584, 34581, 808, 13, 4300, 13, 10696, 6286, 279, 23185, 5004, 2266, 11, 279, 3476, 315, 31677, 323, 279, 19390, 9145, 11, 323, 1246, 279, 29115, 572, 25536, 553, 1008, 5837, 11, 1075, 279, 6643, 13, 7281, 11, 279, 5421, 389, 38124, 2584, 594, 8584, 323, 4948, 19753, 1736, 3419, 57993, 382, 40, 1265, 1083, 1779, 421, 1052, 1033, 894, 547, 808, 13, 10283, 304, 38124, 2584, 518, 279, 882, 11, 1075, 279, 6457, 4143, 11, 892, 572, 825, 315, 279, 10982, 7966, 369, 279, 29115, 13, 7281, 11, 279, 547, 808, 13, 2578, 614, 1012, 11658, 911, 279, 8865, 315, 70089, 304, 279, 34274, 11, 4428, 311, 279, 43710, 67770, 45150, 13, 576, 29115, 572, 20129, 11, 448, 1045, 29574, 432, 572, 264, 19940, 315, 45959, 11, 1393, 279, 547, 808, 13, 34744, 432, 438, 264, 37648, 20949, 382, 6025, 279, 29115, 11, 38124, 2584, 9142, 291, 311, 264, 25542, 3033, 11, 892, 2578, 614, 6069, 311, 2664, 4300, 448, 279, 547, 808, 13, 304, 279, 1293, 1598, 13, 576, 547, 808, 13, 2578, 614, 3897, 12296, 476, 1824, 369, 42638, 13, 7281, 11, 38124, 2584, 594, 15871, 304, 15130, 11104, 1075, 27776, 1317, 1898, 323, 1181, 4300, 448, 1008, 34274, 16675, 1736, 3419, 57993, 1410, 387, 9760, 382, 40, 1184, 311, 5944, 419, 1119, 264, 55787, 16148, 11, 5916, 504, 279, 4124, 5025, 11, 1526, 279, 13791, 323, 547, 808, 13, 21587, 11, 279, 29115, 11, 323, 279, 39596, 13, 7405, 2704, 311, 11167, 279, 1376, 4357, 11, 279, 64831, 315, 2176, 11067, 11, 323, 279, 15917, 13, 7281, 11, 6286, 279, 23185, 5004, 2266, 438, 264, 3598, 8168, 304, 279, 547, 808, 13, 5480, 311, 74172, 13, 4248, 369, 894, 13656, 40925, 26030, 11, 1075, 279, 4734, 12713, 315, 279, 13791, 323, 279, 29115, 11, 279, 6036, 6398, 11, 323, 279, 6489, 2033, 624, 151668, 271, 785, 3840, 315, 38124, 2584, 594, 5025, 448, 279, 3639, 4180, 11, 11695, 64283, 304, 279, 220, 16, 24, 23, 18, 29115, 11, 374, 17247, 98792, 448, 23185, 5004, 29195, 11, 15130, 11500, 11, 323, 41833, 25800, 13, 5692, 594, 264, 32930, 23251, 1447, 44364, 14374, 3070, 16, 13, 22752, 32807, 323, 43077, 320, 16, 24, 22, 19, 4142, 16, 24, 22, 24, 8, 1019, 12, 3070, 88665, 530, 47588, 95518, 38124, 2584, 572, 264, 7855, 40936, 3080, 220, 16, 24, 22, 19, 11, 979, 432, 18163, 23665, 13, 576, 547, 808, 13, 18401, 6955, 323, 33516, 19818, 11, 41752, 26829, 10867, 10173, 304, 279, 34274, 624, 12, 3070, 4133, 12, 63399, 763, 95518, 576, 1532, 29733, 10212, 320, 86986, 38, 701, 6069, 553, 16247, 479, 21939, 11, 26118, 448, 279, 547, 808, 13, 323, 10867, 13430, 13, 4354, 11, 479, 21939, 594, 57921, 5912, 323, 21252, 6069, 311, 7826, 90122, 382, 44364, 14374, 3070, 17, 13, 576, 220, 16, 24, 22, 24, 22126, 323, 68950, 11999, 1019, 12, 3070, 36184, 3214, 95518, 758, 220, 16, 24, 22, 24, 11, 264, 68950, 8125, 268, 258, 380, 13791, 6069, 553, 67429, 33242, 916, 339, 4266, 479, 21939, 13, 576, 501, 3033, 11, 279, 8853, 594, 66579, 10212, 320, 6480, 38, 701, 5313, 1506, 19102, 323, 16105, 12128, 19818, 448, 31677, 323, 279, 19390, 9145, 624, 12, 3070, 76418, 5004, 9608, 95518, 576, 547, 808, 13, 19334, 38124, 2584, 594, 6407, 8841, 50518, 438, 264, 5899, 311, 1181, 18580, 11772, 304, 279, 34274, 11, 5310, 2661, 279, 36743, 311, 279, 547, 808, 13, 6277, 2331, 518, 98300, 9154, 320, 34, 30429, 8, 323, 279, 26829, 23185, 5004, 59922, 382, 44364, 14374, 3070, 18, 13, 30497, 5984, 2897, 323, 279, 220, 16, 24, 23, 18, 356, 13346, 1019, 12, 3070, 33, 20158, 594, 6285, 13464, 95518, 3216, 220, 16, 24, 23, 18, 11, 5306, 36501, 2878, 279, 8575, 38, 6069, 311, 264, 15706, 13, 1913, 6527, 220, 16, 24, 11, 220, 16, 24, 23, 18, 11, 2588, 1056, 68950, 34252, 3539, 567, 409, 3865, 323, 15695, 33242, 11, 98982, 26915, 323, 8679, 315, 264, 19390, 7658, 392, 276, 6277, 9362, 624, 12, 3070, 52, 808, 13, 51247, 82, 95518, 576, 547, 808, 13, 3033, 11, 1212, 4795, 38648, 34126, 11, 21870, 3807, 1101, 7029, 369, 20949, 510, 220, 481, 3070, 33975, 20030, 45150, 95518, 28040, 315, 4948, 71398, 323, 279, 5899, 311, 3693, 10283, 320, 16169, 220, 21, 15, 15, 547, 808, 13, 6457, 4143, 518, 279, 3822, 315, 9965, 11, 38124, 2584, 4292, 220, 481, 3070, 2580, 89367, 434, 7444, 95518, 57724, 804, 429, 38124, 2584, 572, 10454, 264, 19390, 7658, 392, 276, 6277, 2331, 11, 448, 43710, 16886, 323, 19390, 57684, 19204, 49353, 458, 3720, 2566, 369, 6277, 990, 382, 44364, 14374, 3070, 19, 13, 576, 220, 16, 24, 23, 18, 547, 808, 13, 94404, 320, 8432, 85486, 306, 49379, 8, 1019, 12, 3070, 85326, 5586, 95518, 1913, 6527, 220, 17, 20, 11, 220, 16, 24, 23, 18, 11, 279, 547, 808, 13, 11626, 264, 220, 21, 11228, 29115, 11, 20329, 268, 3606, 3070, 8432, 85486, 306, 49379, 97219, 448, 916, 220, 22, 11, 15, 15, 15, 16886, 13, 576, 5666, 19469, 311, 14952, 1973, 11, 6016, 3693, 10283, 11, 323, 4057, 279, 68950, 3033, 624, 12, 3070, 49242, 928, 28546, 323, 4636, 10374, 95518, 576, 29115, 19006, 304, 11499, 315, 38124, 10066, 323, 3807, 547, 808, 13, 6277, 16375, 13, 3539, 567, 28910, 311, 31677, 11, 323, 279, 8575, 38, 28268, 13, 362, 462, 60761, 932, 40553, 3033, 572, 10275, 382, 44364, 14374, 3070, 20, 13, 7179, 66841, 323, 2093, 12563, 88, 1019, 12, 3070, 11646, 33207, 41814, 95518, 576, 29115, 572, 13570, 37925, 553, 279, 3639, 19140, 323, 1657, 5837, 11, 2670, 279, 19390, 9145, 323, 31677, 11, 438, 264, 19940, 315, 45959, 13, 576, 547, 808, 13, 16601, 35469, 315, 78951, 323, 23185, 5004, 916, 22606, 624, 12, 3070, 89807, 28580, 95518, 576, 20395, 315, 18028, 34274, 4180, 320, 52865, 6412, 8, 323, 279, 34274, 12062, 320, 36390, 1317, 1898, 8, 15102, 16087, 279, 29115, 714, 2937, 7248, 38124, 2584, 594, 9142, 311, 19525, 382, 44364, 14374, 3070, 21, 13, 3877, 31500, 57993, 7843, 1368, 1019, 12, 3070, 89899, 37721, 95518, 758, 220, 16, 24, 23, 19, 11, 38124, 2584, 5644, 15991, 11, 6388, 311, 279, 21269, 315, 264, 25542, 3033, 1212, 57363, 2502, 64, 551, 323, 2937, 31502, 29938, 13, 576, 3146, 1582, 4874, 5086, 504, 68950, 33549, 624, 12, 3070, 52, 808, 12612, 38, 1440, 2584, 31367, 95518, 3877, 12, 16, 24, 23, 18, 11, 279, 547, 808, 13, 3897, 12296, 369, 42638, 323, 7248, 38124, 2584, 594, 17590, 1119, 10867, 97451, 14336, 13, 38124, 2584, 10859, 279, 547, 808, 12612, 832, 3070, 8852, 32059, 60258, 37656, 334, 320, 16, 24, 23, 19, 8, 311, 11926, 6955, 23046, 624, 12, 3070, 77415, 95518, 576, 29115, 8458, 264, 66500, 12453, 304, 38124, 2584, 594, 3840, 11, 7735, 4849, 23185, 5004, 38410, 323, 279, 547, 808, 13, 3476, 304, 34274, 21978, 13, 38124, 2584, 2937, 10859, 279, 3070, 41574, 315, 3693, 4180, 334, 320, 46, 1911, 8, 304, 220, 16, 24, 23, 20, 11, 41980, 264, 435, 15707, 331, 1114, 448, 279, 547, 808, 382, 44364, 14374, 3070, 22, 13, 5724, 9285, 4195, 14390, 10709, 1019, 12, 3070, 36, 31007, 323, 30497, 80138, 95518, 38124, 2584, 594, 1736, 3419, 57993, 5244, 389, 30983, 323, 25542, 34086, 12944, 1181, 6955, 35621, 11, 3498, 432, 16601, 11513, 1075, 279, 220, 17, 15, 15, 19, 323, 220, 17, 15, 16, 17, 89027, 624, 12, 3070, 52, 808, 13, 74940, 95518, 576, 547, 808, 13, 18401, 264, 18580, 2734, 304, 279, 34274, 11, 714, 38124, 2584, 594, 7214, 4842, 6116, 803, 23831, 11, 22570, 448, 2176, 10867, 323, 2477, 97451, 16675, 382, 44364, 14374, 3070, 43434, 1019, 785, 220, 16, 24, 23, 18, 29115, 315, 38124, 2584, 572, 264, 59750, 1538, 26271, 553, 23185, 5004, 20762, 4019, 11, 15130, 55299, 11, 323, 41833, 12055, 13, 5976, 279, 547, 808, 13, 45993, 432, 438, 264, 37648, 323, 18580, 31861, 11, 279, 5666, 52109, 67, 279, 83040, 315, 2256, 13175, 20949, 304, 2613, 5302, 13, 38124, 2584, 594, 17420, 25542, 9142, 323, 17189, 448, 279, 4312, 12864, 264, 5089, 6407, 304, 1181, 5025, 448, 279, 547, 808, 2572, 3498, 279, 19588, 315, 279, 29115, 9539, 311, 10173, 15130, 323, 6489, 50766, 13, 151645, 198]
+[INFO:swift] [INPUT] <|im_start|>user
+Explain what occurred during the history of Grenada's relationship with the United States, up to and following their invasion in 1983.<|im_end|>
+<|im_start|>assistant
+<think>
+Okay, so I need to explain the history of Grenada's relationship with the United States up to and after the 1983 invasion. Let me start by recalling what I know. Grenada is a small island in the Caribbean, right? I think it was a British colony before gaining independence. Then there was a revolution in the 1970s, maybe led by Maurice Bishop? After that, the U.S. invaded in 1983, called Operation Urgent Fury. But I need to put this in context.
+
+First, Grenada's history with the U.S. probably started with the U.S. having some interest in the Caribbean. Maybe economic ties or strategic reasons. Then, when Grenada became independent, maybe the U.S. had some influence there. But then the revolution happened, leading to a Marxist government, which the U.S. might have opposed. That could have led to tensions. The invasion in 1983 was a response to that, perhaps to protect American citizens or to stop the spread of communism in the region.
+
+Wait, I should check the timeline. Grenada was a British colony until 1974 when it gained independence. Then in 1979, there was a revolution led by Maurice Bishop, who established a socialist government. But later, Bishop was overthrown and killed by a hardline faction, which might have been more aligned with Cuba and the Soviet Union. The U.S. might have seen this as a threat, especially with the Cold War context. The U.S. had a military base in the area, maybe in nearby countries, so strategic interests could be a factor.
+
+The invasion in 1983, Operation Urgent Fury, was justified by the U.S. as a response to the political instability and the threat to American citizens, including medical students at a university in Grenada. The U.S. also claimed that Grenada was becoming a Soviet-Cuban military base. After the invasion, the U.S. installed a pro-Western government, and later Grenada held elections. The U.S. and Grenada's relationship probably improved after that, with Grenada aligning more with the West.
+
+I need to make sure I get the key events in order: independence, revolution, Bishop's government, coup, U.S. invasion, aftermath. Also, the reasons behind the U.S. invasion, the international reaction, and the long-term effects on Grenada-U.S. relations. Maybe mention the Cold War context, the role of Cuba and the Soviet Union, and how the invasion was perceived by other countries, like the UN. Also, the impact on Grenada's economy and political stability post-invasion.
+
+I should also check if there were any U.S. citizens in Grenada at the time, like the medical students, which was one of the stated reasons for the invasion. Also, the U.S. might have been concerned about the spread of communism in the Caribbean, similar to the Cuban Missile Crisis. The invasion was controversial, with some arguing it was a violation of sovereignty, while the U.S. defended it as a humanitarian intervention.
+
+After the invasion, Grenada transitioned to a democratic government, which might have led to better relations with the U.S. in the long run. The U.S. might have provided aid or support for reconstruction. Also, Grenada's membership in regional organizations like CARICOM and its relations with other Caribbean nations post-invasion could be relevant.
+
+I need to structure this into a coherent explanation, starting from the early relationship, through the revolution and U.S. involvement, the invasion, and the aftermath. Make sure to highlight the key events, the motivations of both sides, and the consequences. Also, mention the Cold War context as a major factor in the U.S. decision to invade. Check for any historical inaccuracies, like the exact dates of the revolution and the invasion, the leaders involved, and the international response.
+</think>
+
+The history of Grenada's relationship with the United States, culminating in the 1983 invasion, is deeply intertwined with Cold War dynamics, regional politics, and ideological conflicts. Here's a structured overview:
+
+---
+
+### **1. Early Relationship and Independence (1974–1979)**
+- **Colonial Era**: Grenada was a British colony until 1974, when it gained independence. The U.S. maintained economic and diplomatic ties, reflecting broader Western influence in the Caribbean.
+- **Post-Independence**: The New Joint Government (NJG), led by Eric Gairy, aligned with the U.S. and Western powers. However, Gairy's authoritarian rule and corruption led to growing discontent.
+
+---
+
+### **2. The 1979 Revolution and Marxist Turn**
+- **Revolution**: In 1979, a Marxist-Leninist revolution led by Maurice Bishop overthrew Gairy. The new government, the People's Revolutionary Government (PRG), nationalized industries and sought closer ties with Cuba and the Soviet Union.
+- **Cold War Context**: The U.S. viewed Grenada's shift toward socialism as a threat to its strategic interests in the Caribbean, especially given the proximity to the U.S. military base at Guantanamo Bay (Cuba) and the broader Cold War rivalry.
+
+---
+
+### **3. Political Instability and the 1983 Coup**
+- **Bishop's Downfall**: By 1983, internal divisions within the PRG led to a coup. On October 19, 1983, hardline Marxist Bernard Coard deposed and executed Bishop, sparking chaos and fear of a Soviet-Cuban military presence.
+- **U.S. Concerns**: The U.S. government, under President Ronald Reagan, cited several justifications for intervention:
+  - **Humanitarian Crisis**: Reports of political repression and the threat to American citizens (including 600 U.S. medical students at the University of Science, Grenada).
+  - **Strategic Fears**: Allegations that Grenada was becoming a Soviet-Cuban military base, with Cuban troops and Soviet advisors allegedly constructing an airfield for military use.
+
+---
+
+### **4. The 1983 U.S. Invasion (Operation Urgent Fury)**
+- **Military Action**: On October 25, 1983, the U.S. launched a 6-day invasion, codenamed **Operation Urgent Fury**, with over 7,000 troops. The operation aimed to restore order, protect American citizens, and remove the Marxist government.
+- **Casualties and Aftermath**: The invasion resulted in hundreds of Grenadian and several U.S. military deaths. Coard fled to Cuba, and the PRG collapsed. A pro-Western interim government was installed.
+
+---
+
+### **5. International Reaction and Controversy**
+- **Global Criticism**: The invasion was widely condemned by the United Nations and many countries, including the Soviet Union and Cuba, as a violation of sovereignty. The U.S. faced accusations of imperialism and Cold War overreach.
+- **Regional Impact**: The Organization of Eastern Caribbean States (OECS) and the Caribbean Community (CARICOM) initially opposed the invasion but later supported Grenada's transition to democracy.
+
+---
+
+### **6. Post-Invasion Developments**
+- **Democratic Transition**: In 1984, Grenada held elections, leading to the establishment of a democratic government under Herbert Blaize and later Keith Mitchell. The country distanced itself from Marxist ideology.
+- **U.S.-Grenada Relations**: Post-1983, the U.S. provided aid for reconstruction and supported Grenada's integration into Western-aligned institutions. Grenada joined the U.S.-led **Caribbean Basin Initiative** (1984) to promote economic cooperation.
+- **Legacy**: The invasion remains a contentious chapter in Grenada's history, symbolizing Cold War tensions and the U.S. role in Caribbean affairs. Grenada later joined the **Organization of American States** (OAS) in 1985, signaling a rapprochement with the U.S.
+
+---
+
+### **7. Long-Term Implications**
+- **Economic and Political Stability**: Grenada's post-invasion focus on tourism and democratic governance improved its economic outlook, though it faced challenges like the 2004 and 2012 hurricanes.
+- **U.S. Influence**: The U.S. maintained a strategic interest in the Caribbean, but Grenada's foreign policy became more balanced, engaging with both Western and non-aligned nations.
+
+---
+
+### **Conclusion**
+The 1983 invasion of Grenada was a pivotal event shaped by Cold War rivalries, regional instability, and ideological conflict. While the U.S. framed it as a humanitarian and strategic necessity, the operation underscored the complexities of superpower intervention in small states. Grenada's subsequent democratic transition and alignment with the West marked a significant shift in its relationship with the U.S., though the legacy of the invasion continues to influence regional and international perceptions.<|im_end|>
+
+[INFO:swift] [LABELS_IDS] [-100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, 151667, 198, 32313, 11, 773, 358, 1184, 311, 10339, 279, 3840, 315, 38124, 2584, 594, 5025, 448, 279, 3639, 4180, 705, 311, 323, 1283, 279, 220, 16, 24, 23, 18, 29115, 13, 6771, 752, 1191, 553, 88646, 1128, 358, 1414, 13, 38124, 2584, 374, 264, 2613, 12922, 304, 279, 34274, 11, 1290, 30, 358, 1744, 432, 572, 264, 7855, 40936, 1573, 29140, 23665, 13, 5005, 1052, 572, 264, 13791, 304, 279, 220, 16, 24, 22, 15, 82, 11, 7196, 6069, 553, 67429, 33242, 30, 4636, 429, 11, 279, 547, 808, 13, 63665, 304, 220, 16, 24, 23, 18, 11, 2598, 16730, 85486, 306, 49379, 13, 1988, 358, 1184, 311, 2182, 419, 304, 2266, 382, 5338, 11, 38124, 2584, 594, 3840, 448, 279, 547, 808, 13, 4658, 3855, 448, 279, 547, 808, 13, 3432, 1045, 2734, 304, 279, 34274, 13, 10696, 6955, 19818, 476, 18580, 7966, 13, 5005, 11, 979, 38124, 2584, 6116, 9489, 11, 7196, 279, 547, 808, 13, 1030, 1045, 10173, 1052, 13, 1988, 1221, 279, 13791, 6932, 11, 6388, 311, 264, 68950, 3033, 11, 892, 279, 547, 808, 13, 2578, 614, 16087, 13, 2938, 1410, 614, 6069, 311, 38410, 13, 576, 29115, 304, 220, 16, 24, 23, 18, 572, 264, 2033, 311, 429, 11, 8365, 311, 6016, 3693, 10283, 476, 311, 2936, 279, 8865, 315, 70089, 304, 279, 5537, 382, 14190, 11, 358, 1265, 1779, 279, 24808, 13, 38124, 2584, 572, 264, 7855, 40936, 3080, 220, 16, 24, 22, 19, 979, 432, 18163, 23665, 13, 5005, 304, 220, 16, 24, 22, 24, 11, 1052, 572, 264, 13791, 6069, 553, 67429, 33242, 11, 879, 9555, 264, 40189, 3033, 13, 1988, 2937, 11, 33242, 572, 916, 86445, 323, 7425, 553, 264, 2588, 1056, 36380, 11, 892, 2578, 614, 1012, 803, 26118, 448, 31677, 323, 279, 19390, 9145, 13, 576, 547, 808, 13, 2578, 614, 3884, 419, 438, 264, 5899, 11, 5310, 448, 279, 23185, 5004, 2266, 13, 576, 547, 808, 13, 1030, 264, 6277, 2331, 304, 279, 3082, 11, 7196, 304, 14046, 5837, 11, 773, 18580, 11772, 1410, 387, 264, 8168, 382, 785, 29115, 304, 220, 16, 24, 23, 18, 11, 16730, 85486, 306, 49379, 11, 572, 34416, 553, 279, 547, 808, 13, 438, 264, 2033, 311, 279, 4948, 55299, 323, 279, 5899, 311, 3693, 10283, 11, 2670, 6457, 4143, 518, 264, 12103, 304, 38124, 2584, 13, 576, 547, 808, 13, 1083, 11660, 429, 38124, 2584, 572, 10454, 264, 19390, 7658, 392, 276, 6277, 2331, 13, 4636, 279, 29115, 11, 279, 547, 808, 13, 10275, 264, 462, 60761, 932, 3033, 11, 323, 2937, 38124, 2584, 5644, 15991, 13, 576, 547, 808, 13, 323, 38124, 2584, 594, 5025, 4658, 12944, 1283, 429, 11, 448, 38124, 2584, 5285, 287, 803, 448, 279, 4312, 382, 40, 1184, 311, 1281, 2704, 358, 633, 279, 1376, 4357, 304, 1973, 25, 23665, 11, 13791, 11, 33242, 594, 3033, 11, 15706, 11, 547, 808, 13, 29115, 11, 39596, 13, 7281, 11, 279, 7966, 4815, 279, 547, 808, 13, 29115, 11, 279, 6489, 12720, 11, 323, 279, 1293, 9663, 6239, 389, 38124, 2584, 34581, 808, 13, 4300, 13, 10696, 6286, 279, 23185, 5004, 2266, 11, 279, 3476, 315, 31677, 323, 279, 19390, 9145, 11, 323, 1246, 279, 29115, 572, 25536, 553, 1008, 5837, 11, 1075, 279, 6643, 13, 7281, 11, 279, 5421, 389, 38124, 2584, 594, 8584, 323, 4948, 19753, 1736, 3419, 57993, 382, 40, 1265, 1083, 1779, 421, 1052, 1033, 894, 547, 808, 13, 10283, 304, 38124, 2584, 518, 279, 882, 11, 1075, 279, 6457, 4143, 11, 892, 572, 825, 315, 279, 10982, 7966, 369, 279, 29115, 13, 7281, 11, 279, 547, 808, 13, 2578, 614, 1012, 11658, 911, 279, 8865, 315, 70089, 304, 279, 34274, 11, 4428, 311, 279, 43710, 67770, 45150, 13, 576, 29115, 572, 20129, 11, 448, 1045, 29574, 432, 572, 264, 19940, 315, 45959, 11, 1393, 279, 547, 808, 13, 34744, 432, 438, 264, 37648, 20949, 382, 6025, 279, 29115, 11, 38124, 2584, 9142, 291, 311, 264, 25542, 3033, 11, 892, 2578, 614, 6069, 311, 2664, 4300, 448, 279, 547, 808, 13, 304, 279, 1293, 1598, 13, 576, 547, 808, 13, 2578, 614, 3897, 12296, 476, 1824, 369, 42638, 13, 7281, 11, 38124, 2584, 594, 15871, 304, 15130, 11104, 1075, 27776, 1317, 1898, 323, 1181, 4300, 448, 1008, 34274, 16675, 1736, 3419, 57993, 1410, 387, 9760, 382, 40, 1184, 311, 5944, 419, 1119, 264, 55787, 16148, 11, 5916, 504, 279, 4124, 5025, 11, 1526, 279, 13791, 323, 547, 808, 13, 21587, 11, 279, 29115, 11, 323, 279, 39596, 13, 7405, 2704, 311, 11167, 279, 1376, 4357, 11, 279, 64831, 315, 2176, 11067, 11, 323, 279, 15917, 13, 7281, 11, 6286, 279, 23185, 5004, 2266, 438, 264, 3598, 8168, 304, 279, 547, 808, 13, 5480, 311, 74172, 13, 4248, 369, 894, 13656, 40925, 26030, 11, 1075, 279, 4734, 12713, 315, 279, 13791, 323, 279, 29115, 11, 279, 6036, 6398, 11, 323, 279, 6489, 2033, 624, 151668, 271, 785, 3840, 315, 38124, 2584, 594, 5025, 448, 279, 3639, 4180, 11, 11695, 64283, 304, 279, 220, 16, 24, 23, 18, 29115, 11, 374, 17247, 98792, 448, 23185, 5004, 29195, 11, 15130, 11500, 11, 323, 41833, 25800, 13, 5692, 594, 264, 32930, 23251, 1447, 44364, 14374, 3070, 16, 13, 22752, 32807, 323, 43077, 320, 16, 24, 22, 19, 4142, 16, 24, 22, 24, 8, 1019, 12, 3070, 88665, 530, 47588, 95518, 38124, 2584, 572, 264, 7855, 40936, 3080, 220, 16, 24, 22, 19, 11, 979, 432, 18163, 23665, 13, 576, 547, 808, 13, 18401, 6955, 323, 33516, 19818, 11, 41752, 26829, 10867, 10173, 304, 279, 34274, 624, 12, 3070, 4133, 12, 63399, 763, 95518, 576, 1532, 29733, 10212, 320, 86986, 38, 701, 6069, 553, 16247, 479, 21939, 11, 26118, 448, 279, 547, 808, 13, 323, 10867, 13430, 13, 4354, 11, 479, 21939, 594, 57921, 5912, 323, 21252, 6069, 311, 7826, 90122, 382, 44364, 14374, 3070, 17, 13, 576, 220, 16, 24, 22, 24, 22126, 323, 68950, 11999, 1019, 12, 3070, 36184, 3214, 95518, 758, 220, 16, 24, 22, 24, 11, 264, 68950, 8125, 268, 258, 380, 13791, 6069, 553, 67429, 33242, 916, 339, 4266, 479, 21939, 13, 576, 501, 3033, 11, 279, 8853, 594, 66579, 10212, 320, 6480, 38, 701, 5313, 1506, 19102, 323, 16105, 12128, 19818, 448, 31677, 323, 279, 19390, 9145, 624, 12, 3070, 76418, 5004, 9608, 95518, 576, 547, 808, 13, 19334, 38124, 2584, 594, 6407, 8841, 50518, 438, 264, 5899, 311, 1181, 18580, 11772, 304, 279, 34274, 11, 5310, 2661, 279, 36743, 311, 279, 547, 808, 13, 6277, 2331, 518, 98300, 9154, 320, 34, 30429, 8, 323, 279, 26829, 23185, 5004, 59922, 382, 44364, 14374, 3070, 18, 13, 30497, 5984, 2897, 323, 279, 220, 16, 24, 23, 18, 356, 13346, 1019, 12, 3070, 33, 20158, 594, 6285, 13464, 95518, 3216, 220, 16, 24, 23, 18, 11, 5306, 36501, 2878, 279, 8575, 38, 6069, 311, 264, 15706, 13, 1913, 6527, 220, 16, 24, 11, 220, 16, 24, 23, 18, 11, 2588, 1056, 68950, 34252, 3539, 567, 409, 3865, 323, 15695, 33242, 11, 98982, 26915, 323, 8679, 315, 264, 19390, 7658, 392, 276, 6277, 9362, 624, 12, 3070, 52, 808, 13, 51247, 82, 95518, 576, 547, 808, 13, 3033, 11, 1212, 4795, 38648, 34126, 11, 21870, 3807, 1101, 7029, 369, 20949, 510, 220, 481, 3070, 33975, 20030, 45150, 95518, 28040, 315, 4948, 71398, 323, 279, 5899, 311, 3693, 10283, 320, 16169, 220, 21, 15, 15, 547, 808, 13, 6457, 4143, 518, 279, 3822, 315, 9965, 11, 38124, 2584, 4292, 220, 481, 3070, 2580, 89367, 434, 7444, 95518, 57724, 804, 429, 38124, 2584, 572, 10454, 264, 19390, 7658, 392, 276, 6277, 2331, 11, 448, 43710, 16886, 323, 19390, 57684, 19204, 49353, 458, 3720, 2566, 369, 6277, 990, 382, 44364, 14374, 3070, 19, 13, 576, 220, 16, 24, 23, 18, 547, 808, 13, 94404, 320, 8432, 85486, 306, 49379, 8, 1019, 12, 3070, 85326, 5586, 95518, 1913, 6527, 220, 17, 20, 11, 220, 16, 24, 23, 18, 11, 279, 547, 808, 13, 11626, 264, 220, 21, 11228, 29115, 11, 20329, 268, 3606, 3070, 8432, 85486, 306, 49379, 97219, 448, 916, 220, 22, 11, 15, 15, 15, 16886, 13, 576, 5666, 19469, 311, 14952, 1973, 11, 6016, 3693, 10283, 11, 323, 4057, 279, 68950, 3033, 624, 12, 3070, 49242, 928, 28546, 323, 4636, 10374, 95518, 576, 29115, 19006, 304, 11499, 315, 38124, 10066, 323, 3807, 547, 808, 13, 6277, 16375, 13, 3539, 567, 28910, 311, 31677, 11, 323, 279, 8575, 38, 28268, 13, 362, 462, 60761, 932, 40553, 3033, 572, 10275, 382, 44364, 14374, 3070, 20, 13, 7179, 66841, 323, 2093, 12563, 88, 1019, 12, 3070, 11646, 33207, 41814, 95518, 576, 29115, 572, 13570, 37925, 553, 279, 3639, 19140, 323, 1657, 5837, 11, 2670, 279, 19390, 9145, 323, 31677, 11, 438, 264, 19940, 315, 45959, 13, 576, 547, 808, 13, 16601, 35469, 315, 78951, 323, 23185, 5004, 916, 22606, 624, 12, 3070, 89807, 28580, 95518, 576, 20395, 315, 18028, 34274, 4180, 320, 52865, 6412, 8, 323, 279, 34274, 12062, 320, 36390, 1317, 1898, 8, 15102, 16087, 279, 29115, 714, 2937, 7248, 38124, 2584, 594, 9142, 311, 19525, 382, 44364, 14374, 3070, 21, 13, 3877, 31500, 57993, 7843, 1368, 1019, 12, 3070, 89899, 37721, 95518, 758, 220, 16, 24, 23, 19, 11, 38124, 2584, 5644, 15991, 11, 6388, 311, 279, 21269, 315, 264, 25542, 3033, 1212, 57363, 2502, 64, 551, 323, 2937, 31502, 29938, 13, 576, 3146, 1582, 4874, 5086, 504, 68950, 33549, 624, 12, 3070, 52, 808, 12612, 38, 1440, 2584, 31367, 95518, 3877, 12, 16, 24, 23, 18, 11, 279, 547, 808, 13, 3897, 12296, 369, 42638, 323, 7248, 38124, 2584, 594, 17590, 1119, 10867, 97451, 14336, 13, 38124, 2584, 10859, 279, 547, 808, 12612, 832, 3070, 8852, 32059, 60258, 37656, 334, 320, 16, 24, 23, 19, 8, 311, 11926, 6955, 23046, 624, 12, 3070, 77415, 95518, 576, 29115, 8458, 264, 66500, 12453, 304, 38124, 2584, 594, 3840, 11, 7735, 4849, 23185, 5004, 38410, 323, 279, 547, 808, 13, 3476, 304, 34274, 21978, 13, 38124, 2584, 2937, 10859, 279, 3070, 41574, 315, 3693, 4180, 334, 320, 46, 1911, 8, 304, 220, 16, 24, 23, 20, 11, 41980, 264, 435, 15707, 331, 1114, 448, 279, 547, 808, 382, 44364, 14374, 3070, 22, 13, 5724, 9285, 4195, 14390, 10709, 1019, 12, 3070, 36, 31007, 323, 30497, 80138, 95518, 38124, 2584, 594, 1736, 3419, 57993, 5244, 389, 30983, 323, 25542, 34086, 12944, 1181, 6955, 35621, 11, 3498, 432, 16601, 11513, 1075, 279, 220, 17, 15, 15, 19, 323, 220, 17, 15, 16, 17, 89027, 624, 12, 3070, 52, 808, 13, 74940, 95518, 576, 547, 808, 13, 18401, 264, 18580, 2734, 304, 279, 34274, 11, 714, 38124, 2584, 594, 7214, 4842, 6116, 803, 23831, 11, 22570, 448, 2176, 10867, 323, 2477, 97451, 16675, 382, 44364, 14374, 3070, 43434, 1019, 785, 220, 16, 24, 23, 18, 29115, 315, 38124, 2584, 572, 264, 59750, 1538, 26271, 553, 23185, 5004, 20762, 4019, 11, 15130, 55299, 11, 323, 41833, 12055, 13, 5976, 279, 547, 808, 13, 45993, 432, 438, 264, 37648, 323, 18580, 31861, 11, 279, 5666, 52109, 67, 279, 83040, 315, 2256, 13175, 20949, 304, 2613, 5302, 13, 38124, 2584, 594, 17420, 25542, 9142, 323, 17189, 448, 279, 4312, 12864, 264, 5089, 6407, 304, 1181, 5025, 448, 279, 547, 808, 2572, 3498, 279, 19588, 315, 279, 29115, 9539, 311, 10173, 15130, 323, 6489, 50766, 13, 151645, 198]
+[INFO:swift] [LABELS] [-100 * 38]<think>
+Okay, so I need to explain the history of Grenada's relationship with the United States up to and after the 1983 invasion. Let me start by recalling what I know. Grenada is a small island in the Caribbean, right? I think it was a British colony before gaining independence. Then there was a revolution in the 1970s, maybe led by Maurice Bishop? After that, the U.S. invaded in 1983, called Operation Urgent Fury. But I need to put this in context.
+
+First, Grenada's history with the U.S. probably started with the U.S. having some interest in the Caribbean. Maybe economic ties or strategic reasons. Then, when Grenada became independent, maybe the U.S. had some influence there. But then the revolution happened, leading to a Marxist government, which the U.S. might have opposed. That could have led to tensions. The invasion in 1983 was a response to that, perhaps to protect American citizens or to stop the spread of communism in the region.
+
+Wait, I should check the timeline. Grenada was a British colony until 1974 when it gained independence. Then in 1979, there was a revolution led by Maurice Bishop, who established a socialist government. But later, Bishop was overthrown and killed by a hardline faction, which might have been more aligned with Cuba and the Soviet Union. The U.S. might have seen this as a threat, especially with the Cold War context. The U.S. had a military base in the area, maybe in nearby countries, so strategic interests could be a factor.
+
+The invasion in 1983, Operation Urgent Fury, was justified by the U.S. as a response to the political instability and the threat to American citizens, including medical students at a university in Grenada. The U.S. also claimed that Grenada was becoming a Soviet-Cuban military base. After the invasion, the U.S. installed a pro-Western government, and later Grenada held elections. The U.S. and Grenada's relationship probably improved after that, with Grenada aligning more with the West.
+
+I need to make sure I get the key events in order: independence, revolution, Bishop's government, coup, U.S. invasion, aftermath. Also, the reasons behind the U.S. invasion, the international reaction, and the long-term effects on Grenada-U.S. relations. Maybe mention the Cold War context, the role of Cuba and the Soviet Union, and how the invasion was perceived by other countries, like the UN. Also, the impact on Grenada's economy and political stability post-invasion.
+
+I should also check if there were any U.S. citizens in Grenada at the time, like the medical students, which was one of the stated reasons for the invasion. Also, the U.S. might have been concerned about the spread of communism in the Caribbean, similar to the Cuban Missile Crisis. The invasion was controversial, with some arguing it was a violation of sovereignty, while the U.S. defended it as a humanitarian intervention.
+
+After the invasion, Grenada transitioned to a democratic government, which might have led to better relations with the U.S. in the long run. The U.S. might have provided aid or support for reconstruction. Also, Grenada's membership in regional organizations like CARICOM and its relations with other Caribbean nations post-invasion could be relevant.
+
+I need to structure this into a coherent explanation, starting from the early relationship, through the revolution and U.S. involvement, the invasion, and the aftermath. Make sure to highlight the key events, the motivations of both sides, and the consequences. Also, mention the Cold War context as a major factor in the U.S. decision to invade. Check for any historical inaccuracies, like the exact dates of the revolution and the invasion, the leaders involved, and the international response.
+</think>
+
+The history of Grenada's relationship with the United States, culminating in the 1983 invasion, is deeply intertwined with Cold War dynamics, regional politics, and ideological conflicts. Here's a structured overview:
+
+---
+
+### **1. Early Relationship and Independence (1974–1979)**
+- **Colonial Era**: Grenada was a British colony until 1974, when it gained independence. The U.S. maintained economic and diplomatic ties, reflecting broader Western influence in the Caribbean.
+- **Post-Independence**: The New Joint Government (NJG), led by Eric Gairy, aligned with the U.S. and Western powers. However, Gairy's authoritarian rule and corruption led to growing discontent.
+
+---
+
+### **2. The 1979 Revolution and Marxist Turn**
+- **Revolution**: In 1979, a Marxist-Leninist revolution led by Maurice Bishop overthrew Gairy. The new government, the People's Revolutionary Government (PRG), nationalized industries and sought closer ties with Cuba and the Soviet Union.
+- **Cold War Context**: The U.S. viewed Grenada's shift toward socialism as a threat to its strategic interests in the Caribbean, especially given the proximity to the U.S. military base at Guantanamo Bay (Cuba) and the broader Cold War rivalry.
+
+---
+
+### **3. Political Instability and the 1983 Coup**
+- **Bishop's Downfall**: By 1983, internal divisions within the PRG led to a coup. On October 19, 1983, hardline Marxist Bernard Coard deposed and executed Bishop, sparking chaos and fear of a Soviet-Cuban military presence.
+- **U.S. Concerns**: The U.S. government, under President Ronald Reagan, cited several justifications for intervention:
+  - **Humanitarian Crisis**: Reports of political repression and the threat to American citizens (including 600 U.S. medical students at the University of Science, Grenada).
+  - **Strategic Fears**: Allegations that Grenada was becoming a Soviet-Cuban military base, with Cuban troops and Soviet advisors allegedly constructing an airfield for military use.
+
+---
+
+### **4. The 1983 U.S. Invasion (Operation Urgent Fury)**
+- **Military Action**: On October 25, 1983, the U.S. launched a 6-day invasion, codenamed **Operation Urgent Fury**, with over 7,000 troops. The operation aimed to restore order, protect American citizens, and remove the Marxist government.
+- **Casualties and Aftermath**: The invasion resulted in hundreds of Grenadian and several U.S. military deaths. Coard fled to Cuba, and the PRG collapsed. A pro-Western interim government was installed.
+
+---
+
+### **5. International Reaction and Controversy**
+- **Global Criticism**: The invasion was widely condemned by the United Nations and many countries, including the Soviet Union and Cuba, as a violation of sovereignty. The U.S. faced accusations of imperialism and Cold War overreach.
+- **Regional Impact**: The Organization of Eastern Caribbean States (OECS) and the Caribbean Community (CARICOM) initially opposed the invasion but later supported Grenada's transition to democracy.
+
+---
+
+### **6. Post-Invasion Developments**
+- **Democratic Transition**: In 1984, Grenada held elections, leading to the establishment of a democratic government under Herbert Blaize and later Keith Mitchell. The country distanced itself from Marxist ideology.
+- **U.S.-Grenada Relations**: Post-1983, the U.S. provided aid for reconstruction and supported Grenada's integration into Western-aligned institutions. Grenada joined the U.S.-led **Caribbean Basin Initiative** (1984) to promote economic cooperation.
+- **Legacy**: The invasion remains a contentious chapter in Grenada's history, symbolizing Cold War tensions and the U.S. role in Caribbean affairs. Grenada later joined the **Organization of American States** (OAS) in 1985, signaling a rapprochement with the U.S.
+
+---
+
+### **7. Long-Term Implications**
+- **Economic and Political Stability**: Grenada's post-invasion focus on tourism and democratic governance improved its economic outlook, though it faced challenges like the 2004 and 2012 hurricanes.
+- **U.S. Influence**: The U.S. maintained a strategic interest in the Caribbean, but Grenada's foreign policy became more balanced, engaging with both Western and non-aligned nations.
+
+---
+
+### **Conclusion**
+The 1983 invasion of Grenada was a pivotal event shaped by Cold War rivalries, regional instability, and ideological conflict. While the U.S. framed it as a humanitarian and strategic necessity, the operation underscored the complexities of superpower intervention in small states. Grenada's subsequent democratic transition and alignment with the West marked a significant shift in its relationship with the U.S., though the legacy of the invasion continues to influence regional and international perceptions.<|im_end|>
+
+[INFO:swift] Dataset Token Length: 898.627100±762.051918, min=29.000000, max=2048.000000, size=1786
+[INFO:swift] The SftArguments will be saved in: /runwork/outputs/full2/checkpoints/v0-20261020-033736/args.json
+[INFO:swift] lora_config: LoraConfig(task_type='CAUSAL_LM', peft_type=<PeftType.LORA: 'LORA'>, auto_mapping=None, peft_version='0.20.0', base_model_name_or_path='/base', revision=None, inference_mode=False, r=8, target_modules={'o_proj', 'down_proj', 'up_proj', 'k_proj', 'q_proj', 'gate_proj', 'v_proj'}, exclude_modules=None, lora_alpha=32, lora_dropout=0.05, fan_in_fan_out=False, bias='none', use_rslora=False, modules_to_save=[], init_lora_weights=True, layers_to_transform=None, layers_pattern=None, rank_pattern={}, alpha_pattern={}, megatron_config=None, megatron_core='megatron.core', trainable_token_indices=None, loftq_config={}, eva_config=None, corda_config=None, lora_ga_config=None, use_dora=False, velora_config=None, alora_invocation_tokens=None, use_qalora=False, qalora_group_size=16, monteclora_config=None, layer_replication=None, runtime_config=LoraRuntimeConfig(ephemeral_gpu_offload=False), lora_bias=False, target_parameters=None, use_bdlora=None, arrow_config=None, ensure_weight_tying=False, lora_dtype=None, lorap_lr_ratio=None, lorap_emb_lr=1e-06)
+[INFO:swift] model: PeftModelForCausalLM(
+  (base_model): LoraModel(
+    (model): Qwen3ForCausalLM(
+      (model): Qwen3Model(
+        (embed_tokens): Embedding(151936, 4096)
+        (layers): ModuleList(
+          (0-35): 36 x Qwen3DecoderLayer(
+            (self_attn): Qwen3Attention(
+              (q_proj): lora.Linear(
+                (base_layer): Linear(in_features=4096, out_features=4096, bias=False)
+                (lora_dropout): ModuleDict(
+                  (default): Dropout(p=0.05, inplace=False)
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=4096, out_features=8, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=8, out_features=4096, bias=False)
+                )
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+                (lora_magnitude_vector): ModuleDict()
+              )
+              (k_proj): lora.Linear(
+                (base_layer): Linear(in_features=4096, out_features=1024, bias=False)
+                (lora_dropout): ModuleDict(
+                  (default): Dropout(p=0.05, inplace=False)
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=4096, out_features=8, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=8, out_features=1024, bias=False)
+                )
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+                (lora_magnitude_vector): ModuleDict()
+              )
+              (v_proj): lora.Linear(
+                (base_layer): Linear(in_features=4096, out_features=1024, bias=False)
+                (lora_dropout): ModuleDict(
+                  (default): Dropout(p=0.05, inplace=False)
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=4096, out_features=8, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=8, out_features=1024, bias=False)
+                )
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+                (lora_magnitude_vector): ModuleDict()
+              )
+              (o_proj): lora.Linear(
+                (base_layer): Linear(in_features=4096, out_features=4096, bias=False)
+                (lora_dropout): ModuleDict(
+                  (default): Dropout(p=0.05, inplace=False)
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=4096, out_features=8, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=8, out_features=4096, bias=False)
+                )
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+                (lora_magnitude_vector): ModuleDict()
+              )
+              (q_norm): Qwen3RMSNorm((128,), eps=1e-06)
+              (k_norm): Qwen3RMSNorm((128,), eps=1e-06)
+            )
+            (mlp): Qwen3MLP(
+              (gate_proj): lora.Linear(
+                (base_layer): Linear(in_features=4096, out_features=12288, bias=False)
+                (lora_dropout): ModuleDict(
+                  (default): Dropout(p=0.05, inplace=False)
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=4096, out_features=8, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=8, out_features=12288, bias=False)
+                )
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+                (lora_magnitude_vector): ModuleDict()
+              )
+              (up_proj): lora.Linear(
+                (base_layer): Linear(in_features=4096, out_features=12288, bias=False)
+                (lora_dropout): ModuleDict(
+                  (default): Dropout(p=0.05, inplace=False)
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=4096, out_features=8, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=8, out_features=12288, bias=False)
+                )
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+                (lora_magnitude_vector): ModuleDict()
+              )
+              (down_proj): lora.Linear(
+                (base_layer): Linear(in_features=12288, out_features=4096, bias=False)
+                (lora_dropout): ModuleDict(
+                  (default): Dropout(p=0.05, inplace=False)
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=12288, out_features=8, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=8, out_features=4096, bias=False)
+                )
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+                (lora_magnitude_vector): ModuleDict()
+              )
+              (act_fn): SiLUActivation()
+            )
+            (input_layernorm): Qwen3RMSNorm((4096,), eps=1e-06)
+            (post_attention_layernorm): Qwen3RMSNorm((4096,), eps=1e-06)
+          )
+        )
+        (norm): Qwen3RMSNorm((4096,), eps=1e-06)
+        (rotary_emb): Qwen3RotaryEmbedding()
+      )
+      (lm_head): Linear(in_features=4096, out_features=151936, bias=False)
+    )
+  )
+)
+[INFO:swift] model_parameter_info: PeftModelForCausalLM: 8212.5588M Params (21.8235M Trainable [0.2657%]), 0.0001M Buffers.
+Warning: The cache directory for DeepSpeed Triton autotune, /runwork/cache/triton, appears to be on an NFS system. While this is generally acceptable, if you experience slowdowns or hanging when DeepSpeed exits, it is recommended to set the TRITON_CACHE_DIR environment variable to a non-NFS path.
+[INFO:swift] use_reentrant: True
+[INFO:swift] The logging file will be saved in: /runwork/outputs/full2/checkpoints/v0-20261020-033736/logging.jsonl
+[transformers] The tokenizer has new PAD/BOS/EOS tokens that differ from the model config and generation config. The model config and generation config were aligned accordingly, being updated with the tokenizer's values. Updated tokens: {'bos_token_id': None}.
+Train:   0%|          | 0/112 [00:00<?, ?it/s][INFO:swift] use_logits_to_keep: True
+Train:   1%|          | 1/112 [00:06<12:55,  6.99s/it]                                                      {'loss': '0.7217', 'grad_norm': '0.4812', 'learning_rate': '1.667e-05', 'token_acc': '0.8211', 'epoch': '0.008959', 'global_step/max_steps': '1/112', 'elapsed_time': '7s', 'remaining_time': '12m 56s', 'memory(GiB)': '22.46', 'train_speed(s/it)': '6.995'}
+Train:   1%|          | 1/112 [00:06<12:55,  6.99s/it]Train:   1%|          | 1/112 [00:06<12:55,  6.99s/it]Train:   2%|▏         | 2/112 [00:13<11:51,  6.47s/it]Train:   3%|▎         | 3/112 [00:18<10:30,  5.79s/it]Train:   4%|▎         | 4/112 [00:26<12:04,  6.71s/it]Train:   4%|▍         | 5/112 [00:32<11:48,  6.62s/it]                                                      {'loss': '0.8842', 'grad_norm': '0.4841', 'learning_rate': '8.333e-05', 'token_acc': '0.7796', 'epoch': '0.04479', 'global_step/max_steps': '5/112', 'elapsed_time': '33s', 'remaining_time': '11m 39s', 'memory(GiB)': '22.46', 'train_speed(s/it)': '6.533'}
+Train:   4%|▍         | 5/112 [00:32<11:48,  6.62s/it]Train:   4%|▍         | 5/112 [00:32<11:48,  6.62s/it]Train:   5%|▌         | 6/112 [00:39<11:42,  6.63s/it]Train:   6%|▋         | 7/112 [00:47<12:43,  7.27s/it]Train:   7%|▋         | 8/112 [00:58<14:26,  8.33s/it]Train:   8%|▊         | 9/112 [01:07<14:50,  8.64s/it]Train:   9%|▉         | 10/112 [01:14<13:48,  8.13s/it]                                                       {'loss': '0.7344', 'grad_norm': '0.3733', 'learning_rate': '9.965e-05', 'token_acc': '0.7891', 'epoch': '0.08959', 'global_step/max_steps': '10/112', 'elapsed_time': '1m 15s', 'remaining_time': '12m 43s', 'memory(GiB)': '22.96', 'train_speed(s/it)': '7.48'}
+Train:   9%|▉         | 10/112 [01:14<13:48,  8.13s/it]Train:   9%|▉         | 10/112 [01:14<13:48,  8.13s/it]Train:  10%|▉         | 11/112 [01:22<13:21,  7.94s/it]Train:  11%|█         | 12/112 [01:30<13:24,  8.04s/it]Train:  12%|█▏        | 13/112 [01:38<13:13,  8.02s/it]Train:  12%|█▎        | 14/112 [01:44<12:08,  7.43s/it]Train:  13%|█▎        | 15/112 [01:52<12:04,  7.47s/it]                                                       {'loss': '0.6762', 'grad_norm': '0.2472', 'learning_rate': '9.823e-05', 'token_acc': '0.7972', 'epoch': '0.1344', 'global_step/max_steps': '15/112', 'elapsed_time': '1m 52s', 'remaining_time': '12m 5s', 'memory(GiB)': '22.96', 'train_speed(s/it)': '7.479'}
+Train:  13%|█▎        | 15/112 [01:52<12:04,  7.47s/it]Train:  13%|█▎        | 15/112 [01:52<12:04,  7.47s/it]Train:  14%|█▍        | 16/112 [01:59<12:06,  7.57s/it]Train:  15%|█▌        | 17/112 [02:08<12:14,  7.73s/it]Train:  16%|█▌        | 18/112 [02:16<12:25,  7.93s/it]Train:  17%|█▋        | 19/112 [02:26<13:05,  8.45s/it]Train:  18%|█▊        | 20/112 [02:33<12:26,  8.12s/it]                                                       {'loss': '0.6377', 'grad_norm': '0.2305', 'learning_rate': '9.576e-05', 'token_acc': '0.8016', 'epoch': '0.1792', 'global_step/max_steps': '20/112', 'elapsed_time': '2m 33s', 'remaining_time': '11m 46s', 'memory(GiB)': '22.96', 'train_speed(s/it)': '7.675'}
+Train:  18%|█▊        | 20/112 [02:33<12:26,  8.12s/it]Train:  18%|█▊        | 20/112 [02:33<12:26,  8.12s/it]Train:  19%|█▉        | 21/112 [02:39<11:16,  7.43s/it]Train:  20%|█▉        | 22/112 [02:47<11:35,  7.73s/it]Train:  21%|██        | 23/112 [02:55<11:39,  7.86s/it]Train:  21%|██▏       | 24/112 [03:04<11:42,  7.98s/it]Train:  22%|██▏       | 25/112 [03:11<11:09,  7.70s/it]                                                       {'loss': '0.6212', 'grad_norm': '0.214', 'learning_rate': '9.228e-05', 'token_acc': '0.8059', 'epoch': '0.224', 'global_step/max_steps': '25/112', 'elapsed_time': '3m 11s', 'remaining_time': '11m 5s', 'memory(GiB)': '22.96', 'train_speed(s/it)': '7.649'}
+Train:  22%|██▏       | 25/112 [03:11<11:09,  7.70s/it]Train:  22%|██▏       | 25/112 [03:11<11:09,  7.70s/it]Train:  23%|██▎       | 26/112 [03:18<10:55,  7.62s/it]Train:  24%|██▍       | 27/112 [03:25<10:30,  7.41s/it]Train:  25%|██▌       | 28/112 [03:31<09:51,  7.04s/it]Train:  26%|██▌       | 29/112 [03:38<09:43,  7.03s/it]Train:  27%|██▋       | 30/112 [03:48<10:50,  7.94s/it]                                                       {'loss': '0.6645', 'grad_norm': '0.1791', 'learning_rate': '8.788e-05', 'token_acc': '0.7926', 'epoch': '0.2688', 'global_step/max_steps': '30/112', 'elapsed_time': '3m 49s', 'remaining_time': '10m 25s', 'memory(GiB)': '22.96', 'train_speed(s/it)': '7.627'}
+Train:  27%|██▋       | 30/112 [03:48<10:50,  7.94s/it]Train:  27%|██▋       | 30/112 [03:48<10:50,  7.94s/it]Train:  28%|██▊       | 31/112 [03:57<11:09,  8.26s/it]Train:  29%|██▊       | 32/112 [04:03<10:00,  7.50s/it]Train:  29%|██▉       | 33/112 [04:11<10:07,  7.69s/it]Train:  30%|███       | 34/112 [04:20<10:28,  8.06s/it]Train:  31%|███▏      | 35/112 [04:29<10:35,  8.25s/it]                                                       {'loss': '0.6708', 'grad_norm': '0.1825', 'learning_rate': '8.264e-05', 'token_acc': '0.7899', 'epoch': '0.3135', 'global_step/max_steps': '35/112', 'elapsed_time': '4m 29s', 'remaining_time': '9m 53s', 'memory(GiB)': '22.96', 'train_speed(s/it)': '7.695'}
+Train:  31%|███▏      | 35/112 [04:29<10:35,  8.25s/it]Train:  31%|███▏      | 35/112 [04:29<10:35,  8.25s/it]Train:  32%|███▏      | 36/112 [04:38<10:46,  8.51s/it]Train:  33%|███▎      | 37/112 [04:46<10:34,  8.46s/it]Train:  34%|███▍      | 38/112 [04:55<10:28,  8.49s/it]Train:  35%|███▍      | 39/112 [05:03<10:22,  8.53s/it]Train:  36%|███▌      | 40/112 [05:13<10:40,  8.90s/it]                                                       {'loss': '0.6266', 'grad_norm': '0.1775', 'learning_rate': '7.669e-05', 'token_acc': '0.8011', 'epoch': '0.3583', 'global_step/max_steps': '40/112', 'elapsed_time': '5m 14s', 'remaining_time': '9m 25s', 'memory(GiB)': '22.96', 'train_speed(s/it)': '7.843'}
+Train:  36%|███▌      | 40/112 [05:13<10:40,  8.90s/it]Train:  36%|███▌      | 40/112 [05:13<10:40,  8.90s/it]Train:  37%|███▋      | 41/112 [05:20<09:51,  8.34s/it]Train:  38%|███▊      | 42/112 [05:27<09:05,  7.80s/it]Train:  38%|███▊      | 43/112 [05:36<09:37,  8.36s/it]Train:  39%|███▉      | 44/112 [05:45<09:40,  8.54s/it]Train:  40%|████      | 45/112 [05:54<09:27,  8.47s/it]                                                       {'loss': '0.6477', 'grad_norm': '0.1856', 'learning_rate': '7.016e-05', 'token_acc': '0.7966', 'epoch': '0.4031', 'global_step/max_steps': '45/112', 'elapsed_time': '5m 54s', 'remaining_time': '8m 47s', 'memory(GiB)': '22.96', 'train_speed(s/it)': '7.872'}
+Train:  40%|████      | 45/112 [05:54<09:27,  8.47s/it]Train:  40%|████      | 45/112 [05:54<09:27,  8.47s/it]Train:  41%|████      | 46/112 [06:03<09:43,  8.84s/it]Train:  42%|████▏     | 47/112 [06:13<09:43,  8.98s/it]Train:  43%|████▎     | 48/112 [06:20<09:05,  8.53s/it]Train:  44%|████▍     | 49/112 [06:29<09:08,  8.70s/it]Train:  45%|████▍     | 50/112 [06:39<09:11,  8.89s/it]                                                       {'loss': '0.6334', 'grad_norm': '0.192', 'learning_rate': '6.318e-05', 'token_acc': '0.7967', 'epoch': '0.4479', 'global_step/max_steps': '50/112', 'elapsed_time': '6m 39s', 'remaining_time': '8m 15s', 'memory(GiB)': '22.96', 'train_speed(s/it)': '7.983'}
+Train:  45%|████▍     | 50/112 [06:39<09:11,  8.89s/it]Train:  45%|████▍     | 50/112 [06:39<09:11,  8.89s/it][INFO:swift] Saving model checkpoint to /runwork/outputs/full2/checkpoints/v0-20261020-033736/checkpoint-50
+Train:  46%|████▌     | 51/112 [06:49<09:23,  9.24s/it]Train:  46%|████▋     | 52/112 [06:57<09:05,  9.09s/it]Train:  47%|████▋     | 53/112 [07:02<07:43,  7.86s/it]Train:  48%|████▊     | 54/112 [07:11<07:50,  8.10s/it]Train:  49%|████▉     | 55/112 [07:20<07:54,  8.33s/it]                                                       {'loss': '0.6412', 'grad_norm': '0.1991', 'learning_rate': '5.591e-05', 'token_acc': '0.7965', 'epoch': '0.4927', 'global_step/max_steps': '55/112', 'elapsed_time': '7m 20s', 'remaining_time': '7m 36s', 'memory(GiB)': '22.96', 'train_speed(s/it)': '8.008'}
+Train:  49%|████▉     | 55/112 [07:20<07:54,  8.33s/it]Train:  49%|████▉     | 55/112 [07:20<07:54,  8.33s/it]Train:  50%|█████     | 56/112 [07:26<07:06,  7.62s/it]Train:  51%|█████     | 57/112 [07:34<07:02,  7.67s/it]Train:  52%|█████▏    | 58/112 [07:41<06:49,  7.58s/it]Train:  53%|█████▎    | 59/112 [07:50<07:04,  8.01s/it]Train:  54%|█████▎    | 60/112 [07:56<06:26,  7.44s/it]                                                       {'loss': '0.5993', 'grad_norm': '0.2857', 'learning_rate': '4.852e-05', 'token_acc': '0.8124', 'epoch': '0.5375', 'global_step/max_steps': '60/112', 'elapsed_time': '7m 57s', 'remaining_time': '6m 53s', 'memory(GiB)': '22.96', 'train_speed(s/it)': '7.945'}
+Train:  54%|█████▎    | 60/112 [07:56<06:26,  7.44s/it]Train:  54%|█████▎    | 60/112 [07:56<06:26,  7.44s/it]Train:  54%|█████▍    | 61/112 [08:02<05:57,  7.00s/it]Train:  55%|█████▌    | 62/112 [08:11<06:17,  7.56s/it]Train:  56%|█████▋    | 63/112 [08:20<06:35,  8.07s/it]Train:  57%|█████▋    | 64/112 [08:27<06:13,  7.78s/it]Train:  58%|█████▊    | 65/112 [08:38<06:39,  8.50s/it]                                                       {'loss': '0.6069', 'grad_norm': '0.1694', 'learning_rate': '4.116e-05', 'token_acc': '0.8022', 'epoch': '0.5823', 'global_step/max_steps': '65/112', 'elapsed_time': '8m 38s', 'remaining_time': '6m 15s', 'memory(GiB)': '22.96', 'train_speed(s/it)': '7.971'}
+Train:  58%|█████▊    | 65/112 [08:38<06:39,  8.50s/it]Train:  58%|█████▊    | 65/112 [08:38<06:39,  8.50s/it]Train:  59%|█████▉    | 66/112 [08:44<06:02,  7.88s/it]Train:  60%|█████▉    | 67/112 [08:49<05:20,  7.12s/it]Train:  61%|██████    | 68/112 [08:58<05:33,  7.59s/it]Train:  62%|██████▏   | 69/112 [09:05<05:16,  7.36s/it]Train:  62%|██████▎   | 70/112 [09:14<05:35,  7.98s/it]                                                       {'loss': '0.6098', 'grad_norm': '0.1752', 'learning_rate': '3.399e-05', 'token_acc': '0.8039', 'epoch': '0.6271', 'global_step/max_steps': '70/112', 'elapsed_time': '9m 15s', 'remaining_time': '5m 33s', 'memory(GiB)': '22.96', 'train_speed(s/it)': '7.926'}
+Train:  62%|██████▎   | 70/112 [09:14<05:35,  7.98s/it]Train:  62%|██████▎   | 70/112 [09:14<05:35,  7.98s/it]Train:  63%|██████▎   | 71/112 [09:23<05:35,  8.18s/it]Train:  64%|██████▍   | 72/112 [09:30<05:15,  7.89s/it]Train:  65%|██████▌   | 73/112 [09:38<05:07,  7.89s/it]Train:  66%|██████▌   | 74/112 [09:45<04:53,  7.71s/it]Train:  67%|██████▋   | 75/112 [09:52<04:29,  7.29s/it]                                                       {'loss': '0.6017', 'grad_norm': '0.2509', 'learning_rate': '2.717e-05', 'token_acc': '0.8078', 'epoch': '0.6719', 'global_step/max_steps': '75/112', 'elapsed_time': '9m 52s', 'remaining_time': '4m 52s', 'memory(GiB)': '22.96', 'train_speed(s/it)': '7.895'}
+Train:  67%|██████▋   | 75/112 [09:52<04:29,  7.29s/it]Train:  67%|██████▋   | 75/112 [09:52<04:29,  7.29s/it]Train:  68%|██████▊   | 76/112 [10:01<04:49,  8.04s/it]Train:  69%|██████▉   | 77/112 [10:08<04:29,  7.69s/it]Train:  70%|██████▉   | 78/112 [10:17<04:27,  7.87s/it]Train:  71%|███████   | 79/112 [10:24<04:16,  7.78s/it]Train:  71%|███████▏  | 80/112 [10:30<03:54,  7.33s/it]                                                       {'loss': '0.6245', 'grad_norm': '0.2579', 'learning_rate': '2.085e-05', 'token_acc': '0.7995', 'epoch': '0.7167', 'global_step/max_steps': '80/112', 'elapsed_time': '10m 31s', 'remaining_time': '4m 12s', 'memory(GiB)': '22.96', 'train_speed(s/it)': '7.887'}
+Train:  71%|███████▏  | 80/112 [10:30<03:54,  7.33s/it]Train:  71%|███████▏  | 80/112 [10:30<03:54,  7.33s/it]Train:  72%|███████▏  | 81/112 [10:39<04:00,  7.77s/it]Train:  73%|███████▎  | 82/112 [10:46<03:46,  7.55s/it]Train:  74%|███████▍  | 83/112 [10:55<03:47,  7.84s/it]Train:  75%|███████▌  | 84/112 [11:00<03:16,  7.02s/it]Train:  76%|███████▌  | 85/112 [11:10<03:33,  7.89s/it]                                                       {'loss': '0.5826', 'grad_norm': '0.1786', 'learning_rate': '1.517e-05', 'token_acc': '0.8079', 'epoch': '0.7615', 'global_step/max_steps': '85/112', 'elapsed_time': '11m 10s', 'remaining_time': '3m 33s', 'memory(GiB)': '22.96', 'train_speed(s/it)': '7.887'}
+Train:  76%|███████▌  | 85/112 [11:10<03:33,  7.89s/it]Train:  76%|███████▌  | 85/112 [11:10<03:33,  7.89s/it]Train:  77%|███████▋  | 86/112 [11:19<03:33,  8.22s/it]Train:  78%|███████▊  | 87/112 [11:28<03:29,  8.38s/it]Train:  79%|███████▊  | 88/112 [11:34<03:09,  7.90s/it]Train:  79%|███████▉  | 89/112 [11:41<02:54,  7.58s/it]Train:  80%|████████  | 90/112 [11:50<02:53,  7.89s/it]                                                       {'loss': '0.5749', 'grad_norm': '0.2071', 'learning_rate': '1.026e-05', 'token_acc': '0.8118', 'epoch': '0.8063', 'global_step/max_steps': '90/112', 'elapsed_time': '11m 50s', 'remaining_time': '2m 54s', 'memory(GiB)': '22.96', 'train_speed(s/it)': '7.892'}
+Train:  80%|████████  | 90/112 [11:50<02:53,  7.89s/it]Train:  80%|████████  | 90/112 [11:50<02:53,  7.89s/it]Train:  81%|████████▏ | 91/112 [11:59<02:56,  8.38s/it]Train:  82%|████████▏ | 92/112 [12:08<02:48,  8.43s/it]Train:  83%|████████▎ | 93/112 [12:15<02:31,  7.99s/it]Train:  84%|████████▍ | 94/112 [12:25<02:34,  8.57s/it]Train:  85%|████████▍ | 95/112 [12:34<02:27,  8.70s/it]                                                       {'loss': '0.5829', 'grad_norm': '0.1808', 'learning_rate': '6.21e-06', 'token_acc': '0.8102', 'epoch': '0.8511', 'global_step/max_steps': '95/112', 'elapsed_time': '12m 34s', 'remaining_time': '2m 15s', 'memory(GiB)': '22.96', 'train_speed(s/it)': '7.94'}
+Train:  85%|████████▍ | 95/112 [12:34<02:27,  8.70s/it]Train:  85%|████████▍ | 95/112 [12:34<02:27,  8.70s/it]Train:  86%|████████▌ | 96/112 [12:43<02:22,  8.88s/it]Train:  87%|████████▋ | 97/112 [12:49<01:58,  7.88s/it]Train:  88%|████████▊ | 98/112 [12:56<01:50,  7.87s/it]Train:  88%|████████▊ | 99/112 [13:04<01:41,  7.83s/it]Train:  89%|████████▉ | 100/112 [13:13<01:37,  8.14s/it]                                                        {'loss': '0.6334', 'grad_norm': '0.1948', 'learning_rate': '3.13e-06', 'token_acc': '0.8006', 'epoch': '0.8959', 'global_step/max_steps': '100/112', 'elapsed_time': '13m 14s', 'remaining_time': '1m 35s', 'memory(GiB)': '22.96', 'train_speed(s/it)': '7.936'}
+Train:  89%|████████▉ | 100/112 [13:13<01:37,  8.14s/it]Train:  89%|████████▉ | 100/112 [13:13<01:37,  8.14s/it][INFO:swift] Saving model checkpoint to /runwork/outputs/full2/checkpoints/v0-20261020-033736/checkpoint-100
+Train:  90%|█████████ | 101/112 [13:23<01:36,  8.78s/it]Train:  91%|█████████ | 102/112 [13:32<01:27,  8.72s/it]Train:  92%|█████████▏| 103/112 [13:39<01:15,  8.34s/it]Train:  93%|█████████▎| 104/112 [13:48<01:07,  8.44s/it]Train:  94%|█████████▍| 105/112 [13:57<00:59,  8.49s/it]                                                        {'loss': '0.6232', 'grad_norm': '0.1877', 'learning_rate': '1.07e-06', 'token_acc': '0.8009', 'epoch': '0.9406', 'global_step/max_steps': '105/112', 'elapsed_time': '13m 57s', 'remaining_time': '56s', 'memory(GiB)': '22.96', 'train_speed(s/it)': '7.973'}
+Train:  94%|█████████▍| 105/112 [13:57<00:59,  8.49s/it]Train:  94%|█████████▍| 105/112 [13:57<00:59,  8.49s/it]Train:  95%|█████████▍| 106/112 [14:03<00:47,  7.99s/it]Train:  96%|█████████▌| 107/112 [14:15<00:44,  9.00s/it]Train:  96%|█████████▋| 108/112 [14:24<00:36,  9.15s/it]Train:  97%|█████████▋| 109/112 [14:34<00:27,  9.22s/it]Train:  98%|█████████▊| 110/112 [14:42<00:17,  8.89s/it]                                                        {'loss': '0.5977', 'grad_norm': '0.2063', 'learning_rate': '9e-08', 'token_acc': '0.8067', 'epoch': '0.9854', 'global_step/max_steps': '110/112', 'elapsed_time': '14m 42s', 'remaining_time': '16s', 'memory(GiB)': '22.96', 'train_speed(s/it)': '8.021'}
+Train:  98%|█████████▊| 110/112 [14:42<00:17,  8.89s/it]Train:  98%|█████████▊| 110/112 [14:42<00:17,  8.89s/it]Train:  99%|█████████▉| 111/112 [14:52<00:09,  9.36s/it]Train: 100%|██████████| 112/112 [14:56<00:00,  7.79s/it][INFO:swift] Saving model checkpoint to /runwork/outputs/full2/checkpoints/v0-20261020-033736/checkpoint-112
+                                                        {'train_runtime': '899.5', 'train_samples_per_second': '1.986', 'train_steps_per_second': '0.125', 'train_loss': '0.6386', 'token_acc': '0.8015', 'epoch': '1', 'global_step/max_steps': '112/112', 'elapsed_time': '14m 60s', 'remaining_time': '0s', 'memory(GiB)': '22.96', 'train_speed(s/it)': '8.031'}
+Train: 100%|██████████| 112/112 [14:59<00:00,  7.79s/it]Train: 100%|██████████| 112/112 [14:59<00:00,  7.79s/it]Train: 100%|██████████| 112/112 [14:59<00:00,  8.03s/it]
+[INFO:swift] last_model_checkpoint: /runwork/outputs/full2/checkpoints/v0-20261020-033736/checkpoint-112
+[INFO:swift] best_model_checkpoint: None
+[INFO:swift] images_dir: /runwork/outputs/full2/checkpoints/v0-20261020-033736/images
+[INFO:swift] End time of running main: 2026-10-20 03:52:46.479225

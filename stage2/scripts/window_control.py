@@ -23,7 +23,7 @@ def restore():
  if not p:raise RuntimeError('No restored vLLM pod')
  health=call('-n','vllm','exec',p[0]['metadata']['name'],'--','python3','-c',"import urllib.request;print(urllib.request.urlopen('http://127.0.0.1:8000/health',timeout=8).status)").stdout.strip()
  if health!='200':raise RuntimeError('Restored model health failed')
- s.update(restored=True,restored_at_utc=now().isoformat(),service_spec_equal=True,health_status=200);state.write_text(json.dumps(s,indent=2)+'\n');print(json.dumps(s),flush=True)
+ s.update(restored=True,paused=False,restored_at_utc=now().isoformat(),service_spec_equal=True,health_status=200);state.write_text(json.dumps(s,indent=2)+'\n');print(json.dumps(s),flush=True)
 def pause():
  if (O/'window.json').exists():raise RuntimeError('Window already exists; do not recreate authorization')
  original=json.loads(call('-n','vllm','get','deployment','vllm','-o','json').stdout);(O/'vllm-before.json').write_text(json.dumps(original,indent=2)+'\n')

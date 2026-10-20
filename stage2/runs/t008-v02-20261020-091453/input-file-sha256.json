@@ -1,0 +1,6 @@
+{
+  "stage2/scripts/run_local_sft.py": "c4de3ae252865328a4b3c0d767e0e98dde6a372e88a056d2f9238f8033d2953d",
+  "stage1/data/train.jsonl": "89b8dd9c3e434bcea0a1baf42bff2972e836fa3704b57fda283d9864272db443",
+  "stage1/training/run-spec.json": "2c9713c247246e7f78c90b6a55907d381520e10434da486aef00e71a1900059d",
+  "stage1/training/local_data_guard.py": "ea17059068962330ad5f12c7e6d5b50adff7c8678a6ac438f883e612ad5f7683"
+}

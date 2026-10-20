@@ -1,0 +1,13 @@
+{
+  "run_id": "t008-v02-20261020-091453",
+  "experiment_approved": true,
+  "uat_pause_approved": true,
+  "approved_data_sha256": "89b8dd9c3e434bcea0a1baf42bff2972e836fa3704b57fda283d9864272db443",
+  "window_start_utc": "2026-10-20T09:18:49.131534+00:00",
+  "window_end_utc": "2026-10-20T17:18:49.131534+00:00",
+  "restore_start_utc": "2026-10-20T16:38:49.131534+00:00",
+  "decision_ref": "User: 按v0.2方案开始执行; reply: 现在就可以暂停",
+  "restoration_owner": "Current implementation agent",
+  "uat_coordination": "Owner directly confirmed immediate pause",
+  "max_full_runs": 3
+}

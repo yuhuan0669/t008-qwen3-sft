@@ -1,0 +1,10 @@
+{
+  "cases": 192,
+  "requests": 200,
+  "errors": 0,
+  "empty_answers": 0,
+  "length_finishes": 2,
+  "output_tokens": 92428,
+  "wall_seconds": 238.0805555637926,
+  "concurrency": 8
+}

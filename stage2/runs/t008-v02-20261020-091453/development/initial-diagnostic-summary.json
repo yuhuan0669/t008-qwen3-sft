@@ -1,0 +1,29 @@
+{
+  "cases": 192,
+  "requests": 200,
+  "errors": 0,
+  "empty_answers": 0,
+  "length_finishes": 2,
+  "output_tokens": 92428,
+  "wall_seconds": 238.0805555637926,
+  "concurrency": 8,
+  "truncated_cases": [
+    {
+      "id": "DEV-17",
+      "condition": "A",
+      "mode": "nonthinking"
+    },
+    {
+      "id": "DEV-17",
+      "condition": "C_old",
+      "mode": "nonthinking"
+    }
+  ],
+  "diagnostic_findings": [
+    "C_old: natural thinking identity can revert to Qwen; company knowledge alone does not imply stable product identity.",
+    "C_old: indirect introduction may invent a product name or unrelated park functions.",
+    "C_old: explicit underlying question can invent Llama ancestry; no such lineage is supported.",
+    "Both A and C_old reach the fixed 1024 output budget on DEV-17 nonthinking. Preserve as observed failures; do not alter budget."
+  ],
+  "purpose": "Public development only, not formal acceptance or training-data expansion"
+}

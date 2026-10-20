@@ -1,0 +1,26 @@
+{
+  "verified": true,
+  "baseline": "stage1-cpu-v0.1.5",
+  "current": "stage1-cpu-v0.1.7",
+  "rows_before": 1275,
+  "rows_after": 1275,
+  "unchanged_rows": 1267,
+  "changed_rows": 8,
+  "changed_language_slots_before": {
+    "zh": 4,
+    "en": 4
+  },
+  "changed_language_slots_after": {
+    "zh": 4,
+    "en": 4
+  },
+  "chinese_english_exposure_slots_unchanged": true,
+  "source_exposures": {
+    "swift/Qwen3-SFT-Mixin": 1036,
+    "swift/self-cognition": 216,
+    "t008/project-positioning-v1": 23
+  },
+  "epochs": 1,
+  "repetition_or_sampling_weight_added": false,
+  "scope": "Dataset exposure slots per full epoch; CPU encoding is not training exposure"
+}

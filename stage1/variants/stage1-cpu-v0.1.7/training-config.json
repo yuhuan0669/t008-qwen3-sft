@@ -95,14 +95,15 @@
     "objects_created_in_stage1": false
   },
   "before_gpu": [
-    "User confirms this data/config and evaluation treatment of removed confidentiality requirement",
-    "CPU encoding/CLI check for this exact data and mask configuration",
+    "User authorizes training and confirms evaluation treatment of removed confidentiality requirement",
     "Confirm GPU/UAT availability and authorized maintenance window"
   ],
   "data_version": "stage1-cpu-v0.1.7",
-  "status": "DRAFT_FOR_USER_REVIEW_NOT_A_LAUNCH_INSTRUCTION",
+  "status": "CPU_CHECKED_NO_TRAINING_AUTHORIZATION",
   "recipe_change": "Retain default+ignore_empty_think per official Option 1; no masking change",
-  "runtime_validation": "Pinned 4.4.2 source checked; full CLI/tokenizer pipeline not rerun",
+  "runtime_validation": "Passed exact ms-swift 4.4.2 CPU CLI, guarded data pipeline, token encoding and mask checks; no Trainer or weights loaded",
   "epoch_exposure_note": "Each record used once per Full epoch; 3-step Smoke is a separate run on the same file, not appended data",
-  "config_revision": "official-route-r1"
+  "config_revision": "official-route-r1",
+  "cpu_validation_report": "stage1/variants/stage1-cpu-v0.1.7/cpu-check/encoding-report.json",
+  "evaluation_config": "stage1/variants/stage1-cpu-v0.1.7/evaluation-config.json"
 }

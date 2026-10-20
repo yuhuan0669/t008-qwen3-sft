@@ -66,5 +66,6 @@
   "training_started": false,
   "inference_executed": false,
   "cluster_accessed": false,
-  "encoding_status": "NOT_RUN_FOR_THIS_REVISION"
+  "encoding_status": "NOT_RUN_FOR_THIS_REVISION",
+  "snapshot_scope": "Historical local preparation check before the separate CPU run; current encoding result is cpu-check/encoding-report.json"
 }

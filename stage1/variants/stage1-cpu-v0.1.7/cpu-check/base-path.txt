@@ -1,0 +1,1 @@
+/var/lib/kubelet/pods/518a9d08-0ba3-4f54-8e56-c594b9a58058/volumes/kubernetes.io~nfs/pvc-70f17a58-94f3-4a2b-a947-3e7dac05e509/released/qwen3-8b-baseline/model

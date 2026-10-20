@@ -1,0 +1,56 @@
+{
+  "id": "c9b4a7696aa79749f1546009d8c03186145e452b42dda76795a13beb7d82febd",
+  "image": "modelscope-registry.cn-hangzhou.cr.aliyuncs.com/modelscope-repo/modelscope@sha256:822d99beed4984a421c8d1da397993c6a8a5f88cdad7dde940bd52df0067d738",
+  "state": {
+    "Status": "exited",
+    "Running": false,
+    "Paused": false,
+    "Restarting": false,
+    "Pid": 3510764,
+    "ExitCode": 0,
+    "Error": "",
+    "StartedAt": "2026-10-20T13:42:58.384288291Z",
+    "FinishedAt": "2026-10-20T13:43:13.644182955Z"
+  },
+  "host_config": {
+    "ContainerIDFile": "",
+    "LogConfig": {
+      "driver": "json-file",
+      "address": "unix:///var/run/containerd/containerd.sock"
+    },
+    "PortBindings": {},
+    "CgroupnsMode": "private",
+    "Dns": null,
+    "DnsOptions": null,
+    "DnsSearch": null,
+    "ExtraHosts": [],
+    "GroupAdd": [
+      "10001"
+    ],
+    "IpcMode": "private",
+    "OomScoreAdj": 0,
+    "PidMode": "",
+    "ReadonlyRootfs": false,
+    "UTSMode": "",
+    "ShmSize": 0,
+    "Sysctls": null,
+    "Runtime": "io.containerd.runc.v2",
+    "CpusetMems": "",
+    "CpusetCpus": "",
+    "CpuQuota": 200000,
+    "CpuShares": 0,
+    "CpuPeriod": 100000,
+    "CpuRealtimePeriod": 0,
+    "CpuRealtimeRuntime": 0,
+    "Memory": 8589934592,
+    "MemorySwap": 17179869184,
+    "OomKillDisable": false,
+    "Devices": null,
+    "BlkioWeight": 0,
+    "BlkioWeightDevice": [],
+    "BlkioDeviceReadBps": [],
+    "BlkioDeviceWriteBps": [],
+    "BlkioDeviceReadIOps": [],
+    "BlkioDeviceWriteIOps": []
+  }
+}

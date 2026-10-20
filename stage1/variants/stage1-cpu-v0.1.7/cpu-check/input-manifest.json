@@ -1,0 +1,53 @@
+{
+  "version": "stage1-cpu-v0.1.7",
+  "status": "PREPARED_FOR_USER_REVIEW_NOT_TRAINING_APPROVAL",
+  "parent_version": "stage1-cpu-v0.1.6",
+  "parent_path": "stage1/variants/stage1-cpu-v0.1.6/train.jsonl",
+  "parent_sha256": "6f530590b228ade530f4c21f69755bc2f2dc585f7c84ccab8ae4aff33f66c19d",
+  "review_baseline_version": "stage1-cpu-v0.1.5",
+  "review_baseline_path": "stage1/variants/stage1-cpu-v0.1.5/train.jsonl",
+  "review_baseline_sha256": "34e4e39a618959154e87eb6b18bc70909a8db9faf5f008d2d4d34d09d09aaa09",
+  "train_path": "stage1/variants/stage1-cpu-v0.1.7/train.jsonl",
+  "train_sha256": "f76879161c87c0f0d7ede7a19014dfaed9809da592d2760186978f5bdd4d4d35",
+  "rows": 1275,
+  "source_exposures": {
+    "swift/Qwen3-SFT-Mixin": 1036,
+    "swift/self-cognition": 216,
+    "t008/project-positioning-v1": 23
+  },
+  "changed_rows_vs_review_baseline": [
+    461,
+    895,
+    937,
+    1090,
+    1206,
+    1224,
+    1261,
+    1262
+  ],
+  "changed_rows_vs_parent": [
+    1090,
+    1206,
+    1259,
+    1270
+  ],
+  "chinese_english_exposure_slots_preserved": true,
+  "added_rows": 0,
+  "removed_rows": 0,
+  "files_sha256": {
+    "README.md": "daad64db146874ba78f3955117faed2ca8fdb58a2c63b9c73167ef3399c62c5e",
+    "SAMPLE_DIFF.md": "95f72dfa97bb9a830e4e64a8fd274dedf2c34f5882429e1e8c03f1c5a0a9c054",
+    "changes.jsonl": "ae0754b28eafa23ca8f588465c1a3f12f36481bdb879372d18d10896fe99eca1",
+    "revision-correction.jsonl": "bc136745fe7554edec20daade0b2452ebeb732c23526dec5b4b31c8f439bc23f",
+    "train-map.jsonl": "b3639b43258ff96a65fab7560400b0854bbf64b33a0fff80decaeb6ee6d1d645",
+    "train.jsonl": "f76879161c87c0f0d7ede7a19014dfaed9809da592d2760186978f5bdd4d4d35",
+    "training-config.json": "bf084adcfc9a3f459c2656d82465fbda5d748a6dc7c5feb411e2b08cd64b720f",
+    "validation.json": "4fb5216d8805463b7daacae56302942054cba76bdc0a3cca175c11ac26417b7d"
+  },
+  "generator_sha256": "5e9aedb4fa5875626c7fbd6b32f208d26131678965be2f5107ddf2eeb1ac0dc6",
+  "config_revision": "official-route-r1",
+  "training_started": false,
+  "inference_executed": false,
+  "remote_uploaded": false,
+  "encoding_status": "PENDING_EXACT_RUNTIME_CPU_CHECK"
+}

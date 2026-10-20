@@ -1,0 +1,11 @@
+{
+  "uat_spec_unchanged": true,
+  "uat_same_pod_uid": true,
+  "uat_restart_count_unchanged": true,
+  "uat_health_status": 200,
+  "uat_ready_replicas": 1,
+  "cpu_container_removed": true,
+  "gpu_devices_mounted": false,
+  "training_started": false,
+  "remote_task_scratch_removed": true
+}

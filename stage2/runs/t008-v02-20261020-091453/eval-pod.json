@@ -100,7 +100,7 @@
           },
           {
             "name": "SOURCE_GIT_COMMIT",
-            "value": "1525a2386bd89b8fc5fdde538b3c879040529d76"
+            "value": "91a37bef7f2b5afd535baac7d6fb1cfe866a75bb"
           },
           {
             "name": "OMP_NUM_THREADS",
@@ -109,6 +109,22 @@
           {
             "name": "TOKENIZERS_PARALLELISM",
             "value": "false"
+          },
+          {
+            "name": "FLASHINFER_WORKSPACE_BASE",
+            "value": "/runwork/cache/flashinfer"
+          },
+          {
+            "name": "VLLM_CACHE_ROOT",
+            "value": "/runwork/cache/vllm"
+          },
+          {
+            "name": "TORCH_EXTENSIONS_DIR",
+            "value": "/runwork/cache/torch_extensions"
+          },
+          {
+            "name": "MPLCONFIGDIR",
+            "value": "/runwork/cache/matplotlib"
           },
           {
             "name": "HF_HUB_OFFLINE",

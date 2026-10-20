@@ -6,19 +6,19 @@ def call(args,**kw):return subprocess.run(K+args,check=True,**kw)
 def readremote(path):return subprocess.check_output(K+['exec',prep,'--','cat',path])
 def event(s):print(datetime.datetime.now(datetime.timezone.utc).isoformat()+' '+s,flush=True)
 def download_evidence():
- for mode in ['smoke','full']:
+ for mode in ['smoke','full-r2']:
   d=R/'outputs'/mode;d.mkdir(parents=True,exist_ok=True)
   for name in ['run_manifest.json','train.log','training-scalars.json']:
    try:(d/name).write_bytes(readremote('/work/'+run+'/outputs/'+mode+'/'+name))
    except subprocess.CalledProcessError:pass
 try:
  while True:
-  j=json.loads(subprocess.check_output(K+['get','job',run+'-full','-o','json']))
+  j=json.loads(subprocess.check_output(K+['get','job',run+'-full-r2','-o','json']))
   if j['status'].get('failed'):raise RuntimeError('Full job failed; no automatic retraining')
   if j['status'].get('succeeded'):break
-  result=subprocess.run(K+['exec',prep,'--','tail','-c','600','/work/'+run+'/outputs/full/train.log'],capture_output=True,text=True)
-  event(result.stdout.replace('\r','\n')[-450:]);time.sleep(30)
- download_evidence();m=json.loads((R/'outputs/full/run_manifest.json').read_text());assert m['training_verified'] and m['global_step']==80 and m['status']=='TRAINED_CANDIDATE' and m['epoch']==1.0
+  result=subprocess.run(K+['exec',prep,'--','tail','-c','600','/work/'+run+'/outputs/full-r2/train.log'],capture_output=True)
+  event(result.stdout.decode('utf-8',errors='replace').replace('\r','\n')[-450:]);time.sleep(30)
+ download_evidence();m=json.loads((R/'outputs/full-r2/run_manifest.json').read_text());assert m['training_verified'] and m['global_step']==80 and m['status']=='TRAINED_CANDIDATE' and m['epoch']==1.0
  event('Full passed 80/80; preparing identical-template evaluation')
  call(['apply','-f',str(R/'eval-service.json')]);call(['apply','-f',str(R/'eval-pod.json')])
  call(['wait','--for=condition=Ready','pod/'+run+'-eval','--timeout=600s'])
@@ -41,13 +41,15 @@ print(json.dumps({'checks':checks,'template_sha256':hashlib.sha256(t.encode()).h
  subprocess.run([sys.executable,str(R/'run_public_development.py')],check=True,cwd=ROOT)
  event('Public evaluation complete')
 except BaseException as e:
- (R/'execution-error.json').write_text(json.dumps({'error':repr(e),'time':datetime.datetime.now(datetime.timezone.utc).isoformat()})+'\n');event('Error recorded: '+repr(e));raise
+ (R/'execution-error-r2.json').write_text(json.dumps({'error':repr(e),'time':datetime.datetime.now(datetime.timezone.utc).isoformat()})+'\n');event('Error recorded: '+repr(e));raise
 finally:
- download_evidence()
  try:
-  logs=subprocess.check_output(K+['logs',run+'-eval'],stderr=subprocess.DEVNULL);(R/'eval-server.log').write_bytes(logs)
- except subprocess.CalledProcessError:pass
- event('Restoring original UAT')
- subprocess.run([sys.executable,str(R/'window.py'),'restore'],cwd=ROOT,check=True)
- call(['delete','service',run+'-eval','--ignore-not-found'])
- event('Original UAT restored and healthy')
+  download_evidence()
+  try:
+   logs=subprocess.check_output(K+['logs',run+'-eval'],stderr=subprocess.DEVNULL);(R/'eval-server.log').write_bytes(logs)
+  except subprocess.CalledProcessError:pass
+ finally:
+  event('Restoring original UAT')
+  subprocess.run([sys.executable,str(R/'window.py'),'restore'],cwd=ROOT,check=True)
+  call(['delete','service',run+'-eval','--ignore-not-found'])
+  event('Original UAT restored and healthy')

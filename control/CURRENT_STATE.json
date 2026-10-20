@@ -18,7 +18,7 @@
   "node_A": "NOT_ACCEPTED",
   "industry_stage_2": "NOT_AUTHORIZED",
   "cloud_01_acceptance_receipt_for_this_round": "WRITTEN_AND_READBACK_VERIFIED_T008-ACK-RETRAIN-DISCUSSION-20261019-01",
-  "current_execution_phase": "V017_FULL_RUNNING",
+  "current_execution_phase": "V017_FULL_TECHNICAL_RETRY_RUNNING",
   "current_plan": {
     "version": "review-v0.4.1",
     "path": "docs/plans/SFT_MINIMAL_INTEGRATION_v0.4.1.md",
@@ -180,8 +180,10 @@
     "window": "stage2/runs/t008-v017-20261020-135244/window.json",
     "window_state": "stage2/runs/t008-v017-20261020-135244/window-state.json",
     "report": "stage2/runs/t008-v017-20261020-135244/EXECUTION.md",
-    "status": "FULL_RUNNING",
+    "status": "FULL_TECHNICAL_RETRY_RUNNING",
     "authority_scope": "Only this run; earlier draft execution_authorized=false is retained as preparation history",
-    "clearml_task": "fe1063457d32490292b2d809934f7869"
+    "clearml_task": "29a4e16207fd4284a93d5d177fbe822a",
+    "interrupted_attempt_task": "fe1063457d32490292b2d809934f7869",
+    "retry_reason": "Host progress-log Unicode decoding failure; no training recipe or exposure change"
   }
 }

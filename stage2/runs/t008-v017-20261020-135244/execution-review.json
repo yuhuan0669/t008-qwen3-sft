@@ -1,0 +1,16 @@
+{
+  "reviewer": "v017_execution_review",
+  "scope": "Read-only orchestration and recipe, no model-quality acceptance",
+  "findings": [
+    {
+      "issue": "NotFound race during async cleanup",
+      "fixed": "ignore-not-found for owned Job/Pod deletion"
+    },
+    {
+      "issue": "Evidence-write error could bypass UAT restore",
+      "fixed": "Nested finally ensures restore"
+    }
+  ],
+  "focused_regressions_passed": true,
+  "training_config_changed": false
+}

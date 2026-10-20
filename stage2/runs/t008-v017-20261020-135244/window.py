@@ -10,10 +10,10 @@ def restore():
  if s.get('restored'):return
  # Only this run's training jobs and GPU-bearing Pods are removed.
  jobs=json.loads(call('-n','swift','get','jobs','-l','t008-run='+run,'-o','json').stdout)
- for j in jobs['items']:call('-n','swift','delete','job',j['metadata']['name'],'--wait=false')
+ for j in jobs['items']:call('-n','swift','delete','job',j['metadata']['name'],'--ignore-not-found','--wait=false')
  pods=json.loads(call('-n','swift','get','pods','-l','t008-run='+run,'-o','json').stdout)
  for p in pods['items']:
-  if any(c.get('resources',{}).get('limits',{}).get('nvidia.com/gpu') for c in p['spec']['containers']):call('-n','swift','delete','pod',p['metadata']['name'],'--wait=false')
+  if any(c.get('resources',{}).get('limits',{}).get('nvidia.com/gpu') for c in p['spec']['containers']):call('-n','swift','delete','pod',p['metadata']['name'],'--ignore-not-found','--wait=false')
  orig=json.loads((O/'vllm-before.json').read_text())
  call('-n','vllm','scale','deployment/vllm','--replicas='+str(orig['spec']['replicas']))
  call('-n','vllm','rollout','status','deployment/vllm','--timeout=600s')

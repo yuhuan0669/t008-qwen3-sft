@@ -1,0 +1,6 @@
+{
+  "reproduced_strict_decode_failure": true,
+  "replacement_decode_passed": true,
+  "training_configuration_changed": false,
+  "reason": "tail -c cuts multi-byte progress-bar glyph; display must not abort training"
+}

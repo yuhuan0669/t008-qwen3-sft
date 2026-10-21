@@ -221,6 +221,20 @@
       "status": "CPU_CHECKED_NO_TRAINING",
       "manifest": "stage1/variants/stage1-cpu-v0.1.13/manifest.json",
       "training_authorized": false
+    },
+    {
+      "id": "stage1-cpu-v0.1.14",
+      "repository_path": "stage1/variants/stage1-cpu-v0.1.14/train.jsonl",
+      "bytes": 7213805,
+      "sha256": "0f546c3aa59f8986f6e5f086482d7d40e9c29db6039a6c219ba902830abff6cb",
+      "rows": 1325,
+      "parent": "stage1-cpu-v0.1.13",
+      "removed_rows": 2,
+      "changed_retained_rows": 0,
+      "status": "CPU_CHECKED_NO_TRAINING",
+      "storage": "git",
+      "manifest": "stage1/variants/stage1-cpu-v0.1.14/manifest.json",
+      "training_authorized": false
     }
   ],
   "data_canonical_hashes": {

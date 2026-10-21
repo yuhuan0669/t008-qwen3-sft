@@ -1,0 +1,693 @@
+run sh: `/usr/local/bin/python /usr/local/lib/python3.12/site-packages/swift/cli/sft.py --model /base --model_type qwen3 --template qwen3 --tuner_type lora --dataset /input/stage1/data/train.jsonl --split_dataset_ratio 0 --dataset_shuffle true --torch_dtype bfloat16 --num_train_epochs 1 --per_device_train_batch_size 1 --gradient_accumulation_steps 16 --learning_rate 1e-4 --lora_rank 8 --lora_alpha 32 --lora_dropout 0.05 --target_modules all-linear --max_length 2048 --truncation_strategy delete --loss_scale default+t008_identity3_ignore_empty_think --preserve_thinking false --warmup_ratio 0.05 --seed 42 --data_seed 42 --gradient_checkpointing true --dataloader_num_workers 4 --eval_strategy no --save_strategy steps --save_steps 3 --save_total_limit 2 --logging_steps 5 --report_to tensorboard --output_dir /runwork/outputs/smoke/checkpoints --push_to_hub false --external_plugins /input/stage1/training/local_data_guard.py /input/stage1/variants/stage1-cpu-v0.1.12/identity_loss3.py --max_steps 3`
+[INFO:swift] Successfully registered `/usr/local/lib/python3.12/site-packages/swift/dataset/data/dataset_info.json`.
+[INFO:swift] Successfully imported external_plugins: ['/input/stage1/training/local_data_guard.py', '/input/stage1/variants/stage1-cpu-v0.1.12/identity_loss3.py'].
+[INFO:swift] rank: -1, local_rank: -1, world_size: 1, local_world_size: 1
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+[INFO:swift] Setting args.lazy_tokenize: False
+[transformers] warmup_ratio is deprecated and will be removed in v5.2. Use `warmup_steps` instead.
+[INFO:swift] output_dir: /runwork/outputs/smoke/checkpoints/v0-20261021-011552
+[INFO:swift] args: SftArguments(
+acc_strategy=token,
+accelerator_config={'dispatch_batches': False},
+adalora_beta1=0.85,
+adalora_beta2=0.85,
+adalora_deltaT=1,
+adalora_init_r=12,
+adalora_orth_reg_weight=0.5,
+adalora_target_r=8,
+adalora_tfinal=0,
+adalora_tinit=0,
+adam_beta1=0.9,
+adam_beta2=0.95,
+adam_epsilon=1e-08,
+adapter_act=gelu,
+adapter_length=128,
+adapters=[],
+add_non_thinking_prefix=True,
+add_version=True,
+agent_template=None,
+aligner_lr=None,
+attn_impl=None,
+auto_find_batch_size=False,
+average_tokens_across_devices=True,
+batch_eval_metrics=False,
+bf16=True,
+bf16_full_eval=False,
+bnb_4bit_compute_dtype=torch.bfloat16,
+bnb_4bit_quant_storage=None,
+bnb_4bit_quant_type=nf4,
+bnb_4bit_use_double_quant=True,
+boft_block_num=0,
+boft_block_size=4,
+boft_dropout=0.0,
+boft_n_butterfly_factor=1,
+cached_dataset=[],
+cached_val_dataset=[],
+callbacks=[],
+check_model=True,
+columns={},
+create_checkpoint_symlink=False,
+custom_dataset_info=[],
+custom_register_path=[],
+data_seed=42,
+dataloader_drop_last=False,
+dataloader_num_workers=4,
+dataloader_persistent_workers=False,
+dataloader_pin_memory=True,
+dataloader_prefetch_factor=None,
+dataset=['/input/stage1/data/train.jsonl'],
+dataset_num_proc=1,
+dataset_shuffle=True,
+ddp_backend=None,
+ddp_broadcast_buffers=None,
+ddp_bucket_cap_mb=None,
+ddp_find_unused_parameters=None,
+ddp_static_graph=None,
+ddp_timeout=18000000,
+debug=None,
+deepspeed=None,
+deepspeed_autotp_size=None,
+device_groups=None,
+device_map=None,
+disable_auto_column_mapping=False,
+disable_ignore_empty_think=False,
+disable_tqdm=None,
+do_eval=False,
+do_predict=False,
+do_train=False,
+download_mode=reuse_dataset_if_exists,
+ds3_gather_for_generation=True,
+early_stop_interval=None,
+enable_channel_loss=False,
+enable_dft_loss=False,
+enable_jit_checkpoint=False,
+enable_npu_model_patch=True,
+enable_thinking=None,
+eval_accumulation_steps=None,
+eval_dataset=[],
+eval_dataset_args=None,
+eval_delay=0,
+eval_do_concat_batches=True,
+eval_generation_config=None,
+eval_limit=None,
+eval_metric=None,
+eval_on_start=False,
+eval_steps=None,
+eval_strategy=no,
+eval_use_evalscope=False,
+eval_use_gather_object=False,
+experts_impl=None,
+external_plugins=['/input/stage1/training/local_data_guard.py', '/input/stage1/variants/stage1-cpu-v0.1.12/identity_loss3.py'],
+extra_eval_args=None,
+fourier_n_frequency=2000,
+fourier_scaling=300.0,
+fp16=False,
+fp16_full_eval=False,
+freeze_aligner=True,
+freeze_llm=False,
+freeze_parameters=[],
+freeze_parameters_ratio=0.0,
+freeze_parameters_regex=None,
+freeze_vit=True,
+fsdp=[],
+fsdp_config=None,
+full_determinism=False,
+galore_cos_threshold=0.4,
+galore_gamma_proj=2,
+galore_optim_per_parameter=False,
+galore_proj_bits=4,
+galore_proj_group_size=256,
+galore_proj_quant=False,
+galore_proj_type=std,
+galore_quantization=False,
+galore_queue_size=5,
+galore_rank=128,
+galore_scale=1.0,
+galore_target_modules=None,
+galore_update_proj_gap=50,
+galore_with_embedding=False,
+generation_config=None,
+generation_max_length=None,
+generation_num_beams=None,
+gradient_accumulation_steps=16,
+gradient_checkpointing=True,
+gradient_checkpointing_kwargs=None,
+greater_is_better=False,
+group_by_length=False,
+hqq_axis=None,
+hub_always_push=False,
+hub_model_id=None,
+hub_private_repo=None,
+hub_revision=None,
+hub_strategy=every_save,
+hub_token=<HUB_TOKEN>,
+ignore_args_error=False,
+ignore_data_skip=False,
+include_for_metrics=[],
+include_num_input_tokens_seen=False,
+init_strategy=None,
+init_weights=True,
+interleave_prob=None,
+is_binary_loss_scale=None,
+label_names=None,
+label_smoothing_factor=0.0,
+lazy_tokenize=False,
+learning_rate=0.0001,
+length_column_name=length,
+liger_kernel_config=None,
+lisa_activated_layers=0,
+lisa_step_interval=20,
+llamapro_num_groups=None,
+llamapro_num_new_blocks=4,
+load_args=False,
+load_best_model_at_end=False,
+load_data_args=False,
+load_from_cache_file=False,
+local_rank=-1,
+local_repo_path=None,
+log_level=passive,
+log_level_replica=warning,
+log_on_each_node=True,
+logging_dir=/runwork/outputs/smoke/checkpoints/v0-20261021-011552/runs,
+logging_first_step=True,
+logging_nan_inf_filter=True,
+logging_steps=5,
+logging_strategy=steps,
+logprobs=False,
+lora_alpha=32,
+lora_bias=none,
+lora_dropout=0.05,
+lora_dtype=None,
+lora_ga_batch_size=2,
+lora_ga_direction=ArB2r,
+lora_ga_iters=2,
+lora_ga_max_length=1024,
+lora_ga_scale=stable,
+lora_ga_stable_gamma=16,
+lora_rank=8,
+lorap_lr_ratio=None,
+loss_scale=default+t008_identity3_ignore_empty_think,
+loss_type=None,
+lr_scheduler_kwargs=None,
+lr_scheduler_type=cosine,
+max_epochs=None,
+max_grad_norm=1.0,
+max_length=2048,
+max_memory={},
+max_model_len=None,
+max_new_tokens=64,
+max_pixels=None,
+max_shard_size=5GB,
+max_steps=3,
+metric_for_best_model=loss,
+model=/base,
+model_author=None,
+model_kwargs={},
+model_name=None,
+model_revision=None,
+model_type=qwen3,
+modules_to_save=[],
+mrl_dims=None,
+neftune_noise_alpha=None,
+new_special_tokens=[],
+norm_bbox=None,
+num_beams=1,
+num_labels=None,
+num_train_epochs=1.0,
+optim=adamw_torch_fused,
+optim_args=None,
+optim_target_modules=None,
+optimizer=None,
+output_dir=/runwork/outputs/smoke/checkpoints/v0-20261021-011552,
+packing=False,
+packing_length=None,
+packing_num_proc=1,
+packing_strategy=binpack,
+padding_free=False,
+padding_side=right,
+parallelism_config=None,
+per_device_eval_batch_size=1,
+per_device_train_batch_size=1,
+predict_with_generate=False,
+prediction_loss_only=False,
+preserve_thinking=False,
+problem_type=None,
+project=huggingface,
+push_to_hub=False,
+quant_bits=None,
+quant_method=None,
+ray_exp_name=None,
+reft_args=None,
+reft_intervention_type=LoreftIntervention,
+reft_layer_key=None,
+reft_layers=None,
+reft_rank=4,
+remove_unused_columns=True,
+repetition_penalty=None,
+report_to=['tensorboard'],
+response_prefix=None,
+restore_callback_states_from_checkpoint=False,
+resume_from_checkpoint=None,
+resume_only_model=False,
+rope_scaling=None,
+router_aux_loss_coef=0.0,
+run_name=/runwork/outputs/smoke/checkpoints/v0-20261021-011552,
+safe_serialization=True,
+save_on_each_node=False,
+save_only_model=False,
+save_steps=3.0,
+save_strategy=steps,
+save_total_limit=2,
+seed=42,
+sequence_parallel_size=1,
+shuffle_buffer_size=1000,
+skip_memory_metrics=True,
+sortish_sampler=False,
+split_dataset_ratio=0.0,
+stop_words=[],
+stopping_strategy=first_exhausted,
+stream=False,
+streaming=False,
+strict=False,
+structured_outputs_regex=None,
+swanlab_email_language=zh,
+swanlab_exp_name=None,
+swanlab_mode=cloud,
+swanlab_notification_method=None,
+swanlab_project=ms-swift,
+swanlab_receiver_email=None,
+swanlab_secret=None,
+swanlab_sender_email=None,
+swanlab_smtp_port=None,
+swanlab_smtp_server=None,
+swanlab_token=<SWANLAB_TOKEN>,
+swanlab_webhook_url=None,
+swanlab_workspace=None,
+system=None,
+target_modules=['all-linear'],
+target_parameters=None,
+target_regex=None,
+task_type=causal_lm,
+temperature=0.0,
+template=qwen3,
+template_backend=swift,
+tf32=None,
+top_k=None,
+top_logprobs=None,
+top_p=None,
+torch_compile=False,
+torch_compile_backend=None,
+torch_compile_mode=None,
+torch_dtype=torch.bfloat16,
+torch_empty_cache_steps=None,
+trackio_bucket_id=None,
+trackio_space_id=None,
+trackio_static_space_id=None,
+train_dataloader_shuffle=True,
+train_sampling_strategy=random,
+trainable_parameters=[],
+trainable_parameters_regex=None,
+truncation_strategy=delete,
+tuner_backend=peft,
+tuner_type=lora,
+use_cache=False,
+use_chat_template=True,
+use_cpu=False,
+use_dora=False,
+use_flash_ckpt=False,
+use_galore=False,
+use_hf=False,
+use_liger_kernel=False,
+use_logits_to_keep=None,
+use_ray=False,
+use_rslora=False,
+use_swift_lora=False,
+val_dataset=[],
+val_dataset_shuffle=False,
+vera_d_initial=0.1,
+vera_dropout=0.0,
+vera_projection_prng_key=0,
+vera_rank=256,
+vit_gradient_checkpointing=False,
+vit_lr=None,
+warmup_ratio=0.05,
+warmup_steps=0,
+weight_decay=0.1,
+zero_hpz_partition_size=None,
+)
+[INFO:swift] Global seed set to 42
+[INFO:swift] model_kwargs: {'device_map': 'cuda:0', 'dtype': torch.bfloat16}
+Loading weights:   0%|          | 0/399 [00:00<?, ?it/s]Loading weights:   1%|          | 2/399 [00:00<00:42,  9.26it/s]Loading weights:   7%|▋         | 28/399 [00:00<00:03, 109.00it/s]Loading weights:  15%|█▌        | 60/399 [00:00<00:01, 179.53it/s]Loading weights:  23%|██▎       | 92/399 [00:00<00:01, 220.62it/s]Loading weights:  29%|██▉       | 117/399 [00:00<00:01, 229.62it/s]Loading weights:  37%|███▋      | 148/399 [00:00<00:01, 248.95it/s]Loading weights:  45%|████▌     | 180/399 [00:00<00:00, 265.51it/s]Loading weights:  52%|█████▏    | 208/399 [00:00<00:00, 265.94it/s]Loading weights:  59%|█████▉    | 236/399 [00:01<00:00, 269.21it/s]Loading weights:  68%|██████▊   | 270/399 [00:01<00:00, 283.46it/s]Loading weights:  76%|███████▌  | 303/399 [00:01<00:00, 294.02it/s]Loading weights:  85%|████████▌ | 340/399 [00:01<00:00, 315.01it/s]Loading weights:  93%|█████████▎| 372/399 [00:01<00:00, 316.26it/s]Loading weights: 100%|██████████| 399/399 [00:01<00:00, 257.71it/s]
+[INFO:swift] model_info: ModelInfo(model_type='qwen3', model_dir='/base', torch_dtype=torch.bfloat16, max_model_len=40960, quant_method=None, quant_bits=None, rope_scaling={'rope_theta': 1000000, 'rope_type': 'default'}, is_moe_model=False, is_multimodal=False, config=Qwen3Config {
+  "architectures": [
+    "Qwen3ForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "bos_token_id": 151643,
+  "dtype": "bfloat16",
+  "eos_token_id": 151645,
+  "head_dim": 128,
+  "hidden_act": "silu",
+  "hidden_size": 4096,
+  "initializer_range": 0.02,
+  "intermediate_size": 12288,
+  "layer_types": [
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention"
+  ],
+  "max_position_embeddings": 40960,
+  "max_window_layers": 36,
+  "model_type": "qwen3",
+  "num_attention_heads": 32,
+  "num_hidden_layers": 36,
+  "num_key_value_heads": 8,
+  "pad_token_id": null,
+  "rms_norm_eps": 1e-06,
+  "rope_parameters": {
+    "rope_theta": 1000000,
+    "rope_type": "default"
+  },
+  "sliding_window": null,
+  "tie_word_embeddings": false,
+  "transformers_version": "5.14.1",
+  "use_cache": true,
+  "use_sliding_window": false,
+  "vocab_size": 151936
+}
+, task_type='causal_lm', num_labels=None)
+[INFO:swift] model.generation_config: GenerationConfig {
+  "bos_token_id": 151643,
+  "do_sample": false,
+  "eos_token_id": [
+    151645,
+    151643
+  ],
+  "length_penalty": 1.0,
+  "max_new_tokens": 64,
+  "num_beams": 1,
+  "pad_token_id": 151643,
+  "temperature": 1.0,
+  "top_k": 50,
+  "top_p": 1.0
+}
+
+[INFO:swift] default_system: None
+[INFO:swift] max_length: 2048
+[INFO:swift] response_prefix: None
+[INFO:swift] agent_template: hermes
+[INFO:swift] Start time of running main: 2026-10-21 01:15:55.004081
+[INFO:swift] swift.__version__: 4.4.2
+Generating train split: 0 examples [00:00, ? examples/s]Generating train split: 1315 examples [00:00, 17622.11 examples/s]
+Map (num_proc=1):   0%|          | 0/1315 [00:00<?, ? examples/s]Map (num_proc=1):  76%|███████▌  | 1000/1315 [00:00<00:00, 7455.40 examples/s]Map (num_proc=1): 100%|██████████| 1315/1315 [00:00<00:00, 3869.31 examples/s]
+Map (num_proc=1):   0%|          | 0/1315 [00:00<?, ? examples/s]Map (num_proc=1):  76%|███████▌  | 1000/1315 [00:03<00:01, 314.20 examples/s]Map (num_proc=1): 100%|██████████| 1315/1315 [00:03<00:00, 361.93 examples/s]Map (num_proc=1): 100%|██████████| 1315/1315 [00:03<00:00, 331.11 examples/s]
+[INFO:swift] train_dataset: Dataset({
+    features: ['messages', 'dataset', 'lengths'],
+    num_rows: 1315
+})
+[INFO:swift] val_dataset: None
+[INFO:swift] [INPUT_IDS] [151644, 872, 198, 6713, 498, 62079, 26753, 1246, 311, 11655, 323, 5046, 264, 4938, 23352, 304, 356, 1027, 30, 7281, 11, 1128, 374, 279, 6672, 1948, 264, 4938, 23352, 323, 264, 91623, 7445, 30, 1597, 979, 498, 2299, 4460, 311, 10542, 264, 4938, 23352, 11, 1558, 432, 1172, 1281, 5530, 311, 653, 432, 389, 458, 33340, 1936, 476, 1083, 389, 264, 2477, 12, 98868, 825, 30, 151645, 198, 151644, 77091, 198, 151667, 198, 32313, 11, 773, 358, 1184, 311, 7071, 700, 1246, 311, 11655, 323, 5046, 264, 4938, 23352, 304, 356, 22890, 6771, 752, 1191, 553, 88646, 1128, 264, 4938, 23352, 374, 13, 5542, 1128, 358, 6099, 11, 264, 4938, 23352, 8573, 979, 264, 2025, 5574, 973, 4938, 320, 4803, 1667, 501, 304, 356, 2457, 714, 3171, 944, 1910, 432, 320, 970, 3698, 701, 773, 279, 4938, 4436, 944, 2500, 369, 3853, 990, 13, 6065, 882, 11, 419, 646, 5240, 279, 2025, 311, 990, 803, 323, 803, 4938, 11, 892, 374, 3873, 382, 1249, 11655, 264, 4938, 23352, 11, 358, 1744, 7375, 525, 6398, 13, 4104, 901, 484, 4041, 311, 3971, 13, 358, 3003, 6617, 429, 4104, 901, 484, 594, 13550, 2028, 5392, 646, 11140, 4938, 36696, 13, 2055, 7196, 279, 1882, 374, 311, 1598, 279, 2025, 448, 4104, 901, 484, 11, 323, 432, 686, 1895, 1380, 279, 36696, 525, 13, 1988, 1246, 6896, 1558, 429, 975, 30, 4104, 901, 484, 4658, 13918, 678, 69642, 323, 3484, 31309, 323, 6682, 894, 429, 14716, 944, 27534, 13, 1988, 7196, 1052, 525, 1008, 7375, 2238, 11, 1075, 9177, 23729, 63818, 13, 358, 1744, 9177, 23729, 63818, 374, 949, 315, 2435, 524, 323, 44938, 323, 646, 11140, 4938, 36696, 438, 1632, 13, 2055, 1667, 1493, 7375, 374, 264, 1376, 3019, 382, 12522, 279, 23352, 374, 16507, 11, 279, 1790, 3019, 374, 311, 5046, 432, 13, 2938, 1035, 21058, 9271, 279, 12159, 3698, 5114, 369, 1817, 501, 13, 1416, 498, 20204, 448, 501, 11, 498, 1184, 311, 1281, 2704, 1052, 594, 264, 12579, 3698, 13, 1416, 432, 594, 458, 1334, 11, 501, 1294, 323, 3698, 1294, 1969, 387, 1483, 13, 7281, 11, 1667, 7785, 27454, 1075, 4911, 4348, 476, 6094, 4348, 646, 1492, 10091, 4938, 9463, 11, 26160, 36696, 13, 2055, 7196, 279, 5046, 374, 311, 2987, 20083, 912, 279, 3698, 476, 3398, 311, 7785, 27454, 382, 7039, 11, 279, 2086, 949, 25, 279, 6672, 1948, 264, 4938, 23352, 323, 264, 91623, 7445, 13, 362, 91623, 7445, 374, 264, 7445, 429, 3501, 311, 264, 4938, 3728, 429, 702, 2669, 1012, 27534, 13, 2055, 421, 498, 3698, 279, 4938, 714, 279, 7445, 2058, 3501, 311, 429, 2621, 11, 432, 594, 264, 91623, 7445, 13, 9549, 287, 429, 7445, 646, 5240, 5614, 7709, 13, 362, 4938, 23352, 374, 979, 279, 4938, 374, 20204, 714, 537, 27534, 11, 773, 432, 594, 2058, 20204, 714, 902, 5021, 15614, 1576, 279, 7445, 2578, 614, 8048, 700, 315, 6891, 476, 1012, 31734, 1542, 13, 2055, 279, 1376, 6672, 374, 429, 264, 4938, 23352, 374, 911, 537, 66717, 4938, 11, 1393, 264, 91623, 7445, 374, 911, 1667, 264, 7445, 1283, 279, 4938, 432, 3501, 311, 702, 1012, 27534, 382, 36975, 3405, 25, 979, 24588, 264, 4938, 23352, 11, 1265, 498, 653, 432, 389, 458, 33340, 1936, 476, 264, 2477, 12, 98868, 825, 30, 88190, 13, 30097, 1506, 22111, 646, 7025, 1281, 27703, 15750, 1576, 279, 2038, 374, 33340, 11, 7332, 2578, 387, 6963, 11, 323, 279, 2038, 5944, 374, 2155, 13, 1988, 369, 4938, 36696, 11, 7196, 432, 594, 2664, 311, 990, 264, 2477, 12, 98868, 1936, 1576, 279, 7390, 17738, 525, 3042, 11, 3259, 432, 8661, 311, 11655, 1380, 279, 23352, 374, 13, 4354, 11, 7025, 36696, 2578, 35692, 21303, 304, 33340, 22111, 4152, 311, 2155, 2038, 12716, 13, 2055, 7196, 432, 594, 1850, 311, 1779, 2176, 13, 1988, 279, 1887, 27703, 1035, 387, 2814, 304, 264, 2477, 12, 98868, 1936, 448, 7390, 3546, 11, 323, 1221, 10146, 304, 279, 33340, 1936, 311, 5978, 279, 5046, 4278, 1052, 2238, 382, 14190, 11, 714, 1045, 7375, 1075, 4104, 901, 484, 2578, 975, 448, 2176, 11, 714, 279, 5611, 34383, 1035, 387, 803, 33798, 304, 264, 7390, 1936, 13, 2055, 279, 2856, 17984, 323, 35251, 1035, 387, 304, 264, 2477, 12, 98868, 1936, 13, 9646, 8356, 11, 498, 646, 1273, 304, 458, 33340, 1936, 311, 1281, 2704, 279, 5046, 3171, 944, 19131, 4714, 323, 429, 279, 23352, 374, 2058, 19673, 382, 10061, 752, 1779, 421, 358, 13628, 4113, 13, 1752, 45415, 4938, 36696, 25, 990, 7375, 1075, 4104, 901, 484, 11, 9177, 23729, 63818, 13, 19716, 553, 22573, 6169, 3698, 476, 1667, 7785, 27454, 13, 422, 90104, 7445, 6165, 13, 4938, 23352, 25, 825, 374, 911, 537, 66717, 11, 279, 1008, 911, 1667, 1283, 1910, 13, 26768, 304, 2477, 12, 98868, 22111, 369, 8661, 27703, 11, 714, 1083, 1779, 33340, 22111, 624, 151668, 271, 334, 1282, 4527, 323, 19716, 287, 264, 13850, 37140, 304, 356, 1027, 25, 56177, 16, 13, 3070, 1282, 4527, 25, 1019, 256, 481, 3070, 10253, 13852, 66963, 715, 257, 481, 3070, 2208, 901, 484, 320, 18816, 2028, 1648, 334, 6452, 697, 2025, 448, 1565, 831, 901, 484, 1177, 273, 585, 15934, 28, 8878, 12991, 21732, 25096, 63, 311, 11140, 36696, 13, 1084, 6682, 650, 2220, 28516, 4938, 323, 5707, 5611, 34383, 624, 257, 481, 3070, 4286, 23729, 63818, 320, 1911, 276, 1648, 334, 54467, 448, 93797, 3848, 58652, 28, 4995, 63, 323, 1598, 13, 1084, 35511, 36696, 323, 1008, 4938, 4714, 6157, 624, 256, 481, 3070, 2078, 10294, 66963, 9192, 369, 1565, 931, 63, 14, 63, 931, 1294, 63, 2041, 12159, 1565, 4542, 63, 14, 63, 4542, 1294, 28587, 4248, 369, 5101, 6240, 304, 29753, 476, 2971, 1127, 382, 17, 13, 3070, 25958, 287, 25, 1019, 256, 481, 3070, 52092, 9551, 66963, 29279, 1449, 1565, 931, 63, 702, 264, 12579, 1565, 4542, 63, 320, 269, 1565, 4542, 1294, 63, 369, 18386, 4292, 256, 481, 3070, 33817, 5126, 388, 66963, 29558, 7112, 27454, 448, 1565, 1834, 486, 9587, 4348, 63, 476, 1565, 1834, 486, 6100, 4348, 63, 369, 16962, 4938, 6240, 624, 256, 481, 3070, 5609, 5543, 66963, 5443, 11765, 72371, 2160, 39267, 320, 5609, 5543, 8, 311, 18131, 5101, 10136, 6889, 311, 1633, 10136, 6889, 382, 44364, 334, 10642, 37140, 6165, 13, 422, 90104, 21635, 25, 56177, 12, 3070, 10642, 37140, 66963, 13850, 374, 20204, 320, 68, 1302, 2572, 4566, 1565, 931, 32881, 714, 2581, 27534, 11, 6388, 311, 38828, 4963, 13, 576, 7445, 1231, 2058, 3000, 11, 714, 279, 20204, 4938, 9044, 81728, 624, 12, 3070, 35, 90104, 21635, 66963, 362, 7445, 15057, 4938, 429, 702, 1012, 27534, 320, 68, 1302, 2572, 1283, 1565, 4542, 59210, 9549, 287, 432, 11137, 5614, 7709, 13, 576, 4938, 374, 27534, 11, 714, 279, 7445, 330, 67, 17248, 1, 320, 7706, 311, 8318, 4938, 3593, 44364, 334, 21367, 45706, 6165, 13, 11581, 12, 21367, 45706, 67118, 369, 37140, 57353, 25, 56177, 12, 3070, 8121, 12, 21367, 45706, 67118, 320, 7939, 1648, 334, 715, 220, 481, 62503, 369, 2856, 17984, 4152, 311, 7390, 17738, 323, 650, 98868, 2038, 11, 892, 3410, 48379, 5611, 34383, 323, 8661, 27703, 624, 220, 481, 13852, 1075, 4104, 901, 484, 14, 1911, 276, 975, 13444, 1588, 624, 12, 3070, 21367, 45706, 67118, 320, 16077, 1648, 334, 715, 220, 481, 3393, 26537, 304, 33340, 22111, 311, 5978, 279, 6291, 4278, 1212, 1931, 30084, 4682, 13, 6119, 81178, 2578, 11596, 4938, 10431, 12624, 11, 773, 36696, 1265, 387, 312, 12, 21037, 1588, 624, 220, 481, 5443, 93797, 70, 63, 5181, 448, 81178, 320, 68, 1302, 2572, 93797, 46, 17, 481, 70, 32881, 311, 14060, 7390, 3546, 304, 33340, 22111, 369, 2664, 11655, 2897, 382, 334, 19237, 66963, 5145, 448, 2477, 12, 98868, 22111, 369, 27703, 11, 1221, 9593, 26537, 304, 33340, 22111, 13, 5443, 7375, 1075, 4104, 901, 484, 476, 5752, 276, 11, 323, 10702, 6481, 356, 1027, 12378, 320, 39803, 27454, 8, 311, 5358, 36696, 13, 151645, 198]
+[INFO:swift] [INPUT] <|im_start|>user
+Can you summarize briefly how to trace and fix a memory leak in C++? Also, what is the difference between a memory leak and a dangling pointer? And when you're trying to identify a memory leak, does it only make sense to do it on an optimized build or also on a non-optimized one?<|im_end|>
+<|im_start|>assistant
+<think>
+Okay, so I need to figure out how to trace and fix a memory leak in C++. Let me start by recalling what a memory leak is. From what I remember, a memory leak happens when a program allocates memory (like using new in C++) but doesn't free it (using delete), so the memory isn't available for future use. Over time, this can cause the program to use more and more memory, which is bad.
+
+To trace a memory leak, I think tools are involved. Valgrind comes to mind. I've heard that Valgrind's Memcheck tool can detect memory leaks. So maybe the process is to run the program with Valgrind, and it will report where the leaks are. But how exactly does that work? Valgrind probably tracks all allocations and deallocations and reports any that weren't freed. But maybe there are other tools too, like AddressSanitizer. I think AddressSanitizer is part of Clang and GCC and can detect memory leaks as well. So using these tools is a key step.
+
+Once the leak is detected, the next step is to fix it. That would involve finding the corresponding delete statement for each new. If you allocated with new, you need to make sure there's a matching delete. If it's an array, new[] and delete[] must be used. Also, using smart pointers like unique_ptr or shared_ptr can help manage memory automatically, preventing leaks. So maybe the fix is to either manually add the delete or switch to smart pointers.
+
+Now, the second part: the difference between a memory leak and a dangling pointer. A dangling pointer is a pointer that points to a memory location that has already been freed. So if you delete the memory but the pointer still points to that address, it's a dangling pointer. Accessing that pointer can cause undefined behavior. A memory leak is when the memory is allocated but not freed, so it's still allocated but no longer accessible because the pointer might have gone out of scope or been reassigned. So the key difference is that a memory leak is about not freeing memory, while a dangling pointer is about using a pointer after the memory it points to has been freed.
+
+Third question: when identifying a memory leak, should you do it on an optimized build or a non-optimized one? Hmm. Optimized builds can sometimes make debugging harder because the code is optimized, variables might be removed, and the code structure is different. But for memory leaks, maybe it's better to use a non-optimized build because the debug symbols are present, making it easier to trace where the leak is. However, sometimes leaks might behave differently in optimized builds due to different code paths. So maybe it's best to check both. But the main debugging would be done in a non-optimized build with debug info, and then verify in the optimized build to ensure the fix works there too.
+
+Wait, but some tools like Valgrind might work with both, but the stack traces would be more readable in a debug build. So the initial detection and fixing would be in a non-optimized build. Once fixed, you can test in an optimized build to make sure the fix doesn't introduce issues and that the leak is still resolved.
+
+Let me check if I missed anything. For tracing memory leaks: use tools like Valgrind, AddressSanitizer. Fix by ensuring proper delete or using smart pointers. Dangling pointer vs. memory leak: one is about not freeing, the other about using after free. Testing in non-optimized builds for easier debugging, but also check optimized builds.
+</think>
+
+**Tracing and Fixing a Memory Leak in C++:**
+
+1. **Tracing:**
+   - **Use Tools:** 
+     - **Valgrind (Memcheck):** Run your program with `valgrind --leak-check=full ./your_program` to detect leaks. It reports un-freed memory and provides stack traces.
+     - **AddressSanitizer (ASan):** Compile with `-fsanitize=address` and run. It identifies leaks and other memory issues quickly.
+   - **Code Review:** Look for `new`/`new[]` without corresponding `delete`/`delete[]`. Check for resource management in loops or conditionals.
+
+2. **Fixing:**
+   - **Manual Management:** Ensure every `new` has a matching `delete` (or `delete[]` for arrays).
+   - **Smart Pointers:** Replace raw pointers with `std::unique_ptr` or `std::shared_ptr` for automatic memory management.
+   - **RAII:** Use Resource Acquisition Is Initialization (RAII) to tie resource lifetimes to object lifetimes.
+
+---
+
+**Memory Leak vs. Dangling Pointer:**
+
+- **Memory Leak:** Memory is allocated (e.g., via `new`) but never freed, leading to wasted resources. The pointer may still exist, but the allocated memory becomes inaccessible.
+- **Dangling Pointer:** A pointer references memory that has been freed (e.g., after `delete`). Accessing it causes undefined behavior. The memory is freed, but the pointer "dangles" (points to invalid memory).
+
+---
+
+**Optimized vs. Non-Optimized Builds for Leak Detection:**
+
+- **Non-Optimized Builds (Debug):** 
+  - Preferred for initial detection due to debug symbols and unoptimized code, which provide clearer stack traces and easier debugging.
+  - Tools like Valgrind/ASan work effectively here.
+- **Optimized Builds (Release):** 
+  - Test fixes in optimized builds to ensure the solution works under real-world conditions. Code optimizations might alter memory usage patterns, so leaks should be re-verified here.
+  - Use `-g` flag with optimizations (e.g., `-O2 -g`) to retain debug info in optimized builds for better traceability.
+
+**Summary:** Start with non-optimized builds for debugging, then validate fixes in optimized builds. Use tools like Valgrind or ASan, and prefer modern C++ practices (smart pointers) to prevent leaks.<|im_end|>
+
+[INFO:swift] [LABELS_IDS] [-100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, 151667, 198, 32313, 11, 773, 358, 1184, 311, 7071, 700, 1246, 311, 11655, 323, 5046, 264, 4938, 23352, 304, 356, 22890, 6771, 752, 1191, 553, 88646, 1128, 264, 4938, 23352, 374, 13, 5542, 1128, 358, 6099, 11, 264, 4938, 23352, 8573, 979, 264, 2025, 5574, 973, 4938, 320, 4803, 1667, 501, 304, 356, 2457, 714, 3171, 944, 1910, 432, 320, 970, 3698, 701, 773, 279, 4938, 4436, 944, 2500, 369, 3853, 990, 13, 6065, 882, 11, 419, 646, 5240, 279, 2025, 311, 990, 803, 323, 803, 4938, 11, 892, 374, 3873, 382, 1249, 11655, 264, 4938, 23352, 11, 358, 1744, 7375, 525, 6398, 13, 4104, 901, 484, 4041, 311, 3971, 13, 358, 3003, 6617, 429, 4104, 901, 484, 594, 13550, 2028, 5392, 646, 11140, 4938, 36696, 13, 2055, 7196, 279, 1882, 374, 311, 1598, 279, 2025, 448, 4104, 901, 484, 11, 323, 432, 686, 1895, 1380, 279, 36696, 525, 13, 1988, 1246, 6896, 1558, 429, 975, 30, 4104, 901, 484, 4658, 13918, 678, 69642, 323, 3484, 31309, 323, 6682, 894, 429, 14716, 944, 27534, 13, 1988, 7196, 1052, 525, 1008, 7375, 2238, 11, 1075, 9177, 23729, 63818, 13, 358, 1744, 9177, 23729, 63818, 374, 949, 315, 2435, 524, 323, 44938, 323, 646, 11140, 4938, 36696, 438, 1632, 13, 2055, 1667, 1493, 7375, 374, 264, 1376, 3019, 382, 12522, 279, 23352, 374, 16507, 11, 279, 1790, 3019, 374, 311, 5046, 432, 13, 2938, 1035, 21058, 9271, 279, 12159, 3698, 5114, 369, 1817, 501, 13, 1416, 498, 20204, 448, 501, 11, 498, 1184, 311, 1281, 2704, 1052, 594, 264, 12579, 3698, 13, 1416, 432, 594, 458, 1334, 11, 501, 1294, 323, 3698, 1294, 1969, 387, 1483, 13, 7281, 11, 1667, 7785, 27454, 1075, 4911, 4348, 476, 6094, 4348, 646, 1492, 10091, 4938, 9463, 11, 26160, 36696, 13, 2055, 7196, 279, 5046, 374, 311, 2987, 20083, 912, 279, 3698, 476, 3398, 311, 7785, 27454, 382, 7039, 11, 279, 2086, 949, 25, 279, 6672, 1948, 264, 4938, 23352, 323, 264, 91623, 7445, 13, 362, 91623, 7445, 374, 264, 7445, 429, 3501, 311, 264, 4938, 3728, 429, 702, 2669, 1012, 27534, 13, 2055, 421, 498, 3698, 279, 4938, 714, 279, 7445, 2058, 3501, 311, 429, 2621, 11, 432, 594, 264, 91623, 7445, 13, 9549, 287, 429, 7445, 646, 5240, 5614, 7709, 13, 362, 4938, 23352, 374, 979, 279, 4938, 374, 20204, 714, 537, 27534, 11, 773, 432, 594, 2058, 20204, 714, 902, 5021, 15614, 1576, 279, 7445, 2578, 614, 8048, 700, 315, 6891, 476, 1012, 31734, 1542, 13, 2055, 279, 1376, 6672, 374, 429, 264, 4938, 23352, 374, 911, 537, 66717, 4938, 11, 1393, 264, 91623, 7445, 374, 911, 1667, 264, 7445, 1283, 279, 4938, 432, 3501, 311, 702, 1012, 27534, 382, 36975, 3405, 25, 979, 24588, 264, 4938, 23352, 11, 1265, 498, 653, 432, 389, 458, 33340, 1936, 476, 264, 2477, 12, 98868, 825, 30, 88190, 13, 30097, 1506, 22111, 646, 7025, 1281, 27703, 15750, 1576, 279, 2038, 374, 33340, 11, 7332, 2578, 387, 6963, 11, 323, 279, 2038, 5944, 374, 2155, 13, 1988, 369, 4938, 36696, 11, 7196, 432, 594, 2664, 311, 990, 264, 2477, 12, 98868, 1936, 1576, 279, 7390, 17738, 525, 3042, 11, 3259, 432, 8661, 311, 11655, 1380, 279, 23352, 374, 13, 4354, 11, 7025, 36696, 2578, 35692, 21303, 304, 33340, 22111, 4152, 311, 2155, 2038, 12716, 13, 2055, 7196, 432, 594, 1850, 311, 1779, 2176, 13, 1988, 279, 1887, 27703, 1035, 387, 2814, 304, 264, 2477, 12, 98868, 1936, 448, 7390, 3546, 11, 323, 1221, 10146, 304, 279, 33340, 1936, 311, 5978, 279, 5046, 4278, 1052, 2238, 382, 14190, 11, 714, 1045, 7375, 1075, 4104, 901, 484, 2578, 975, 448, 2176, 11, 714, 279, 5611, 34383, 1035, 387, 803, 33798, 304, 264, 7390, 1936, 13, 2055, 279, 2856, 17984, 323, 35251, 1035, 387, 304, 264, 2477, 12, 98868, 1936, 13, 9646, 8356, 11, 498, 646, 1273, 304, 458, 33340, 1936, 311, 1281, 2704, 279, 5046, 3171, 944, 19131, 4714, 323, 429, 279, 23352, 374, 2058, 19673, 382, 10061, 752, 1779, 421, 358, 13628, 4113, 13, 1752, 45415, 4938, 36696, 25, 990, 7375, 1075, 4104, 901, 484, 11, 9177, 23729, 63818, 13, 19716, 553, 22573, 6169, 3698, 476, 1667, 7785, 27454, 13, 422, 90104, 7445, 6165, 13, 4938, 23352, 25, 825, 374, 911, 537, 66717, 11, 279, 1008, 911, 1667, 1283, 1910, 13, 26768, 304, 2477, 12, 98868, 22111, 369, 8661, 27703, 11, 714, 1083, 1779, 33340, 22111, 624, 151668, 271, 334, 1282, 4527, 323, 19716, 287, 264, 13850, 37140, 304, 356, 1027, 25, 56177, 16, 13, 3070, 1282, 4527, 25, 1019, 256, 481, 3070, 10253, 13852, 66963, 715, 257, 481, 3070, 2208, 901, 484, 320, 18816, 2028, 1648, 334, 6452, 697, 2025, 448, 1565, 831, 901, 484, 1177, 273, 585, 15934, 28, 8878, 12991, 21732, 25096, 63, 311, 11140, 36696, 13, 1084, 6682, 650, 2220, 28516, 4938, 323, 5707, 5611, 34383, 624, 257, 481, 3070, 4286, 23729, 63818, 320, 1911, 276, 1648, 334, 54467, 448, 93797, 3848, 58652, 28, 4995, 63, 323, 1598, 13, 1084, 35511, 36696, 323, 1008, 4938, 4714, 6157, 624, 256, 481, 3070, 2078, 10294, 66963, 9192, 369, 1565, 931, 63, 14, 63, 931, 1294, 63, 2041, 12159, 1565, 4542, 63, 14, 63, 4542, 1294, 28587, 4248, 369, 5101, 6240, 304, 29753, 476, 2971, 1127, 382, 17, 13, 3070, 25958, 287, 25, 1019, 256, 481, 3070, 52092, 9551, 66963, 29279, 1449, 1565, 931, 63, 702, 264, 12579, 1565, 4542, 63, 320, 269, 1565, 4542, 1294, 63, 369, 18386, 4292, 256, 481, 3070, 33817, 5126, 388, 66963, 29558, 7112, 27454, 448, 1565, 1834, 486, 9587, 4348, 63, 476, 1565, 1834, 486, 6100, 4348, 63, 369, 16962, 4938, 6240, 624, 256, 481, 3070, 5609, 5543, 66963, 5443, 11765, 72371, 2160, 39267, 320, 5609, 5543, 8, 311, 18131, 5101, 10136, 6889, 311, 1633, 10136, 6889, 382, 44364, 334, 10642, 37140, 6165, 13, 422, 90104, 21635, 25, 56177, 12, 3070, 10642, 37140, 66963, 13850, 374, 20204, 320, 68, 1302, 2572, 4566, 1565, 931, 32881, 714, 2581, 27534, 11, 6388, 311, 38828, 4963, 13, 576, 7445, 1231, 2058, 3000, 11, 714, 279, 20204, 4938, 9044, 81728, 624, 12, 3070, 35, 90104, 21635, 66963, 362, 7445, 15057, 4938, 429, 702, 1012, 27534, 320, 68, 1302, 2572, 1283, 1565, 4542, 59210, 9549, 287, 432, 11137, 5614, 7709, 13, 576, 4938, 374, 27534, 11, 714, 279, 7445, 330, 67, 17248, 1, 320, 7706, 311, 8318, 4938, 3593, 44364, 334, 21367, 45706, 6165, 13, 11581, 12, 21367, 45706, 67118, 369, 37140, 57353, 25, 56177, 12, 3070, 8121, 12, 21367, 45706, 67118, 320, 7939, 1648, 334, 715, 220, 481, 62503, 369, 2856, 17984, 4152, 311, 7390, 17738, 323, 650, 98868, 2038, 11, 892, 3410, 48379, 5611, 34383, 323, 8661, 27703, 624, 220, 481, 13852, 1075, 4104, 901, 484, 14, 1911, 276, 975, 13444, 1588, 624, 12, 3070, 21367, 45706, 67118, 320, 16077, 1648, 334, 715, 220, 481, 3393, 26537, 304, 33340, 22111, 311, 5978, 279, 6291, 4278, 1212, 1931, 30084, 4682, 13, 6119, 81178, 2578, 11596, 4938, 10431, 12624, 11, 773, 36696, 1265, 387, 312, 12, 21037, 1588, 624, 220, 481, 5443, 93797, 70, 63, 5181, 448, 81178, 320, 68, 1302, 2572, 93797, 46, 17, 481, 70, 32881, 311, 14060, 7390, 3546, 304, 33340, 22111, 369, 2664, 11655, 2897, 382, 334, 19237, 66963, 5145, 448, 2477, 12, 98868, 22111, 369, 27703, 11, 1221, 9593, 26537, 304, 33340, 22111, 13, 5443, 7375, 1075, 4104, 901, 484, 476, 5752, 276, 11, 323, 10702, 6481, 356, 1027, 12378, 320, 39803, 27454, 8, 311, 5358, 36696, 13, 151645, 198]
+[INFO:swift] [LABELS] [-100 * 71]<think>
+Okay, so I need to figure out how to trace and fix a memory leak in C++. Let me start by recalling what a memory leak is. From what I remember, a memory leak happens when a program allocates memory (like using new in C++) but doesn't free it (using delete), so the memory isn't available for future use. Over time, this can cause the program to use more and more memory, which is bad.
+
+To trace a memory leak, I think tools are involved. Valgrind comes to mind. I've heard that Valgrind's Memcheck tool can detect memory leaks. So maybe the process is to run the program with Valgrind, and it will report where the leaks are. But how exactly does that work? Valgrind probably tracks all allocations and deallocations and reports any that weren't freed. But maybe there are other tools too, like AddressSanitizer. I think AddressSanitizer is part of Clang and GCC and can detect memory leaks as well. So using these tools is a key step.
+
+Once the leak is detected, the next step is to fix it. That would involve finding the corresponding delete statement for each new. If you allocated with new, you need to make sure there's a matching delete. If it's an array, new[] and delete[] must be used. Also, using smart pointers like unique_ptr or shared_ptr can help manage memory automatically, preventing leaks. So maybe the fix is to either manually add the delete or switch to smart pointers.
+
+Now, the second part: the difference between a memory leak and a dangling pointer. A dangling pointer is a pointer that points to a memory location that has already been freed. So if you delete the memory but the pointer still points to that address, it's a dangling pointer. Accessing that pointer can cause undefined behavior. A memory leak is when the memory is allocated but not freed, so it's still allocated but no longer accessible because the pointer might have gone out of scope or been reassigned. So the key difference is that a memory leak is about not freeing memory, while a dangling pointer is about using a pointer after the memory it points to has been freed.
+
+Third question: when identifying a memory leak, should you do it on an optimized build or a non-optimized one? Hmm. Optimized builds can sometimes make debugging harder because the code is optimized, variables might be removed, and the code structure is different. But for memory leaks, maybe it's better to use a non-optimized build because the debug symbols are present, making it easier to trace where the leak is. However, sometimes leaks might behave differently in optimized builds due to different code paths. So maybe it's best to check both. But the main debugging would be done in a non-optimized build with debug info, and then verify in the optimized build to ensure the fix works there too.
+
+Wait, but some tools like Valgrind might work with both, but the stack traces would be more readable in a debug build. So the initial detection and fixing would be in a non-optimized build. Once fixed, you can test in an optimized build to make sure the fix doesn't introduce issues and that the leak is still resolved.
+
+Let me check if I missed anything. For tracing memory leaks: use tools like Valgrind, AddressSanitizer. Fix by ensuring proper delete or using smart pointers. Dangling pointer vs. memory leak: one is about not freeing, the other about using after free. Testing in non-optimized builds for easier debugging, but also check optimized builds.
+</think>
+
+**Tracing and Fixing a Memory Leak in C++:**
+
+1. **Tracing:**
+   - **Use Tools:** 
+     - **Valgrind (Memcheck):** Run your program with `valgrind --leak-check=full ./your_program` to detect leaks. It reports un-freed memory and provides stack traces.
+     - **AddressSanitizer (ASan):** Compile with `-fsanitize=address` and run. It identifies leaks and other memory issues quickly.
+   - **Code Review:** Look for `new`/`new[]` without corresponding `delete`/`delete[]`. Check for resource management in loops or conditionals.
+
+2. **Fixing:**
+   - **Manual Management:** Ensure every `new` has a matching `delete` (or `delete[]` for arrays).
+   - **Smart Pointers:** Replace raw pointers with `std::unique_ptr` or `std::shared_ptr` for automatic memory management.
+   - **RAII:** Use Resource Acquisition Is Initialization (RAII) to tie resource lifetimes to object lifetimes.
+
+---
+
+**Memory Leak vs. Dangling Pointer:**
+
+- **Memory Leak:** Memory is allocated (e.g., via `new`) but never freed, leading to wasted resources. The pointer may still exist, but the allocated memory becomes inaccessible.
+- **Dangling Pointer:** A pointer references memory that has been freed (e.g., after `delete`). Accessing it causes undefined behavior. The memory is freed, but the pointer "dangles" (points to invalid memory).
+
+---
+
+**Optimized vs. Non-Optimized Builds for Leak Detection:**
+
+- **Non-Optimized Builds (Debug):** 
+  - Preferred for initial detection due to debug symbols and unoptimized code, which provide clearer stack traces and easier debugging.
+  - Tools like Valgrind/ASan work effectively here.
+- **Optimized Builds (Release):** 
+  - Test fixes in optimized builds to ensure the solution works under real-world conditions. Code optimizations might alter memory usage patterns, so leaks should be re-verified here.
+  - Use `-g` flag with optimizations (e.g., `-O2 -g`) to retain debug info in optimized builds for better traceability.
+
+**Summary:** Start with non-optimized builds for debugging, then validate fixes in optimized builds. Use tools like Valgrind or ASan, and prefer modern C++ practices (smart pointers) to prevent leaks.<|im_end|>
+
+[INFO:swift] [LOSS_SCALE] [0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
+[INFO:swift] Dataset Token Length: 1196.697338±670.628965, min=26.000000, max=2048.000000, size=1315
+[INFO:swift] The SftArguments will be saved in: /runwork/outputs/smoke/checkpoints/v0-20261021-011552/args.json
+[INFO:swift] lora_config: LoraConfig(task_type='CAUSAL_LM', peft_type=<PeftType.LORA: 'LORA'>, auto_mapping=None, peft_version='0.20.0', base_model_name_or_path='/base', revision=None, inference_mode=False, r=8, target_modules={'down_proj', 'v_proj', 'up_proj', 'k_proj', 'gate_proj', 'q_proj', 'o_proj'}, exclude_modules=None, lora_alpha=32, lora_dropout=0.05, fan_in_fan_out=False, bias='none', use_rslora=False, modules_to_save=[], init_lora_weights=True, layers_to_transform=None, layers_pattern=None, rank_pattern={}, alpha_pattern={}, megatron_config=None, megatron_core='megatron.core', trainable_token_indices=None, loftq_config={}, eva_config=None, corda_config=None, lora_ga_config=None, use_dora=False, velora_config=None, alora_invocation_tokens=None, use_qalora=False, qalora_group_size=16, monteclora_config=None, layer_replication=None, runtime_config=LoraRuntimeConfig(ephemeral_gpu_offload=False), lora_bias=False, target_parameters=None, use_bdlora=None, arrow_config=None, ensure_weight_tying=False, lora_dtype=None, lorap_lr_ratio=None, lorap_emb_lr=1e-06)
+[INFO:swift] model: PeftModelForCausalLM(
+  (base_model): LoraModel(
+    (model): Qwen3ForCausalLM(
+      (model): Qwen3Model(
+        (embed_tokens): Embedding(151936, 4096)
+        (layers): ModuleList(
+          (0-35): 36 x Qwen3DecoderLayer(
+            (self_attn): Qwen3Attention(
+              (q_proj): lora.Linear(
+                (base_layer): Linear(in_features=4096, out_features=4096, bias=False)
+                (lora_dropout): ModuleDict(
+                  (default): Dropout(p=0.05, inplace=False)
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=4096, out_features=8, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=8, out_features=4096, bias=False)
+                )
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+                (lora_magnitude_vector): ModuleDict()
+              )
+              (k_proj): lora.Linear(
+                (base_layer): Linear(in_features=4096, out_features=1024, bias=False)
+                (lora_dropout): ModuleDict(
+                  (default): Dropout(p=0.05, inplace=False)
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=4096, out_features=8, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=8, out_features=1024, bias=False)
+                )
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+                (lora_magnitude_vector): ModuleDict()
+              )
+              (v_proj): lora.Linear(
+                (base_layer): Linear(in_features=4096, out_features=1024, bias=False)
+                (lora_dropout): ModuleDict(
+                  (default): Dropout(p=0.05, inplace=False)
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=4096, out_features=8, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=8, out_features=1024, bias=False)
+                )
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+                (lora_magnitude_vector): ModuleDict()
+              )
+              (o_proj): lora.Linear(
+                (base_layer): Linear(in_features=4096, out_features=4096, bias=False)
+                (lora_dropout): ModuleDict(
+                  (default): Dropout(p=0.05, inplace=False)
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=4096, out_features=8, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=8, out_features=4096, bias=False)
+                )
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+                (lora_magnitude_vector): ModuleDict()
+              )
+              (q_norm): Qwen3RMSNorm((128,), eps=1e-06)
+              (k_norm): Qwen3RMSNorm((128,), eps=1e-06)
+            )
+            (mlp): Qwen3MLP(
+              (gate_proj): lora.Linear(
+                (base_layer): Linear(in_features=4096, out_features=12288, bias=False)
+                (lora_dropout): ModuleDict(
+                  (default): Dropout(p=0.05, inplace=False)
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=4096, out_features=8, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=8, out_features=12288, bias=False)
+                )
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+                (lora_magnitude_vector): ModuleDict()
+              )
+              (up_proj): lora.Linear(
+                (base_layer): Linear(in_features=4096, out_features=12288, bias=False)
+                (lora_dropout): ModuleDict(
+                  (default): Dropout(p=0.05, inplace=False)
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=4096, out_features=8, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=8, out_features=12288, bias=False)
+                )
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+                (lora_magnitude_vector): ModuleDict()
+              )
+              (down_proj): lora.Linear(
+                (base_layer): Linear(in_features=12288, out_features=4096, bias=False)
+                (lora_dropout): ModuleDict(
+                  (default): Dropout(p=0.05, inplace=False)
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=12288, out_features=8, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=8, out_features=4096, bias=False)
+                )
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+                (lora_magnitude_vector): ModuleDict()
+              )
+              (act_fn): SiLUActivation()
+            )
+            (input_layernorm): Qwen3RMSNorm((4096,), eps=1e-06)
+            (post_attention_layernorm): Qwen3RMSNorm((4096,), eps=1e-06)
+          )
+        )
+        (norm): Qwen3RMSNorm((4096,), eps=1e-06)
+        (rotary_emb): Qwen3RotaryEmbedding()
+      )
+      (lm_head): Linear(in_features=4096, out_features=151936, bias=False)
+    )
+  )
+)
+[INFO:swift] model_parameter_info: PeftModelForCausalLM: 8212.5588M Params (21.8235M Trainable [0.2657%]), 0.0001M Buffers.
+Warning: The cache directory for DeepSpeed Triton autotune, /runwork/cache/triton, appears to be on an NFS system. While this is generally acceptable, if you experience slowdowns or hanging when DeepSpeed exits, it is recommended to set the TRITON_CACHE_DIR environment variable to a non-NFS path.
+[INFO:swift] use_reentrant: True
+[INFO:swift] The logging file will be saved in: /runwork/outputs/smoke/checkpoints/v0-20261021-011552/logging.jsonl
+[transformers] The tokenizer has new PAD/BOS/EOS tokens that differ from the model config and generation config. The model config and generation config were aligned accordingly, being updated with the tokenizer's values. Updated tokens: {'bos_token_id': None}.
+Train:   0%|          | 0/3 [00:00<?, ?it/s][INFO:swift] use_logits_to_keep: True
+Train:  33%|███▎      | 1/3 [00:11<00:22, 11.49s/it]                                                    {'loss': '0.8639', 'grad_norm': '0.6347', 'learning_rate': '0.0001', 'token_acc': '0.7968', 'epoch': '0.01217', 'global_step/max_steps': '1/3', 'elapsed_time': '11s', 'remaining_time': '23s', 'memory(GiB)': '20.34', 'train_speed(s/it)': '11.49'}
+Train:  33%|███▎      | 1/3 [00:11<00:22, 11.49s/it]Train:  33%|███▎      | 1/3 [00:11<00:22, 11.49s/it]Train:  67%|██████▋   | 2/3 [00:23<00:11, 11.57s/it]Train: 100%|██████████| 3/3 [00:33<00:00, 11.09s/it][INFO:swift] Saving model checkpoint to /runwork/outputs/smoke/checkpoints/v0-20261021-011552/checkpoint-3
+                                                    {'train_runtime': '36.18', 'train_samples_per_second': '1.327', 'train_steps_per_second': '0.083', 'train_loss': '0.7884', 'token_acc': '0.7983', 'epoch': '0.0365', 'global_step/max_steps': '3/3', 'elapsed_time': '36s', 'remaining_time': '0s', 'memory(GiB)': '22.68', 'train_speed(s/it)': '12.06'}
+Train: 100%|██████████| 3/3 [00:36<00:00, 11.09s/it]Train: 100%|██████████| 3/3 [00:36<00:00, 11.09s/it]Train: 100%|██████████| 3/3 [00:36<00:00, 12.06s/it]
+[INFO:swift] last_model_checkpoint: /runwork/outputs/smoke/checkpoints/v0-20261021-011552/checkpoint-3
+[INFO:swift] best_model_checkpoint: None
+[INFO:swift] images_dir: /runwork/outputs/smoke/checkpoints/v0-20261021-011552/images
+[INFO:swift] End time of running main: 2026-10-21 01:16:38.984955

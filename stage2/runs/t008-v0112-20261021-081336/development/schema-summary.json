@@ -1,0 +1,33 @@
+{
+  "groups": {
+    "unconstrained/nonthinking": {
+      "count": 12,
+      "parse_valid": 8,
+      "schema_valid": 7,
+      "values_correct": 7
+    },
+    "unconstrained/thinking": {
+      "count": 12,
+      "parse_valid": 12,
+      "schema_valid": 11,
+      "values_correct": 11
+    },
+    "schema/nonthinking": {
+      "count": 12,
+      "parse_valid": 12,
+      "schema_valid": 12,
+      "values_correct": 12
+    },
+    "schema/thinking": {
+      "count": 12,
+      "parse_valid": 12,
+      "schema_valid": 12,
+      "values_correct": 12
+    }
+  },
+  "matching_prompt_tokens_and_generation_config": true,
+  "frozen_baseline_reused": true,
+  "model": "v0.1.10",
+  "system": "frozen v0.1.10 proposed",
+  "not_sft_improvement": true
+}

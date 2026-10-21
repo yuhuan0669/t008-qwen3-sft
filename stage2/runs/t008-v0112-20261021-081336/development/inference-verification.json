@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "request_count": 62,
+  "planned_request_count": 62,
+  "exact_case_order": true,
+  "server_prompt_tokens_equal": true,
+  "request_configuration_equal": true,
+  "errors": 0,
+  "runtime_preflight": "PASS",
+  "training_run": true,
+  "quality_acceptance": "NOT_ESTABLISHED_BY_MECHANICAL_CHECK"
+}

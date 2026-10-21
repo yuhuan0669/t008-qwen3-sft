@@ -1,14 +1,14 @@
 # T-008 · Qwen3-8B 基础 SFT 统一版本库
 
-**当前：v0.1.12原生Swift CPU检查通过，1315条数据保持原文，尚未训练。** 4条新增多轮身份的匹配索引已补齐，正文×3生效；其他训练参数不变。英文未改，最新已训练模型仍为v0.1.10。
+**当前：v0.1.12一次83步／1epoch训练与327次推理已完成，UAT原配置已恢复。** 1315条冻结数据和训练参数不变，未追加Full或部署新模型；英文延后。
 
-[CPU检查结果](stage1/variants/stage1-cpu-v0.1.12/CPU_CHECK.md) · [样本前后对照](stage1/variants/stage1-cpu-v0.1.12/SAMPLE_DIFF.md) · [数据统计](stage1/variants/stage1-cpu-v0.1.12/STATISTICS.md)。无超长、长度截断或丢行，一轮预计83步；UAT配置不变、1/1就绪，临时CPU Pod已删除。本次未推理、训练或上传GitHub/Drive。
+原有对照：无System中文Non-thinking身份6/6、Thinking可见回答5/6，严格JSON仍18/24；新增场景空正文3→1，但无System公司事实仍0/6，业务编造仍存在。旧模型加JSON Schema达到24/24，属于接口收益。[最终执行报告](stage2/runs/t008-v0112-20261021-081336/REPORT.md) · [原有逐题正文](stage2/runs/t008-v0112-20261021-081336/development/ANSWERS.md) · [新增场景](stage2/runs/t008-v0112-20261021-081336/development/ADDITIONAL_ANSWERS.md)。阶段一数据目录保留开训前CPU快照，当前状态以本次报告和登记表为准。
 
 这是 Qwen3-8B 自我认知＋通用指令 SFT 的统一维护入口。任务版本为 **T-008 v1.5 第15节**；历史流程方案为 **v1.2 / process-restore-R1**；本库首次归档版本为 **archive-v1.0.0**。三者分别表示任务、流程、归档版本，均不代表模型已验收。
 
 从 [HANDOFF.md](HANDOFF.md) 开始，再读 [当前状态](control/CURRENT_STATE.json) 与 [版本登记表](registry/versions.json)。
 
-**最新结果：v0.1.10一次80步／1epoch训练和62次中文检查已完成，UAT已恢复原配置。** 无System的中文名称均正确，Thinking仍有业务扩写和思考段编造；JSON仍18/24，无净改善；62次无空正文或长度截断。英文身份延后，未追加训练或部署新模型。[执行报告](stage2/runs/t008-v0110-20261020-224753/REPORT.md)。数据与CPU文件保留开训前快照，当前状态以执行报告为准。
+**此前结果：v0.1.10一次80步／1epoch训练和62次中文检查已完成，UAT已恢复原配置。** 无System的中文名称均正确，Thinking仍有业务扩写和思考段编造；JSON仍18/24，无净改善；62次无空正文或长度截断。英文身份延后，未追加训练或部署新模型。[执行报告](stage2/runs/t008-v0110-20261020-224753/REPORT.md)。数据与CPU文件保留开训前快照，当前状态以执行报告为准。
 
 此前训练为 **v0.1.9：3步Smoke及一次80步／1epoch Full完成，UAT已恢复原配置**。[执行报告](stage2/runs/t008-v019-20261020-211142/REPORT.md) · [40次逐题正文](stage2/runs/t008-v019-20261020-211142/development/ANSWERS.md)。无System的中文Thinking身份完整正确从冻结对照的3/6升为4/6，仍有附加错误；40次无空正文或长度截断。该次单轮JSON数较低，后续48次JSON配对复测未复现稳定退化；不认定正式验收通过，未部署新模型、未追加训练。
 

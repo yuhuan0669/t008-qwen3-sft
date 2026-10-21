@@ -1,10 +1,10 @@
 # T-008 Qwen3-8B 基础 SFT · 统一交接
 
-**当前：v0.1.12原生Swift CPU检查通过，1315条数据保持原文，尚未训练。** 4条新增多轮身份的匹配索引已补齐，正文×3生效；其他训练参数不变。英文未改，最新已训练模型仍为v0.1.10。
+**当前：v0.1.12一次83步／1epoch训练与327次推理已完成，UAT原配置已恢复。** 1315条冻结数据和训练参数不变，未追加Full或部署新模型；英文延后。
 
-[CPU检查结果](stage1/variants/stage1-cpu-v0.1.12/CPU_CHECK.md) · [样本前后对照](stage1/variants/stage1-cpu-v0.1.12/SAMPLE_DIFF.md) · [数据统计](stage1/variants/stage1-cpu-v0.1.12/STATISTICS.md)。无超长、长度截断或丢行，一轮预计83步；UAT配置不变、1/1就绪，临时CPU Pod已删除。本次未推理、训练或上传GitHub/Drive。
+原有对照：无System中文Non-thinking身份6/6、Thinking可见回答5/6，严格JSON仍18/24；新增场景空正文3→1，但无System公司事实仍0/6，业务编造仍存在。旧模型加JSON Schema达到24/24，属于接口收益。[最终执行报告](stage2/runs/t008-v0112-20261021-081336/REPORT.md) · [原有逐题正文](stage2/runs/t008-v0112-20261021-081336/development/ANSWERS.md) · [新增场景](stage2/runs/t008-v0112-20261021-081336/development/ADDITIONAL_ANSWERS.md)。阶段一数据目录保留开训前CPU快照，当前状态以本次报告和登记表为准。
 
-**最新结果：v0.1.10一次80步／1epoch训练和62次中文检查已完成，UAT已恢复原配置。** 无System的中文名称均正确，Thinking仍有业务扩写和思考段编造；JSON仍18/24，无净改善；62次无空正文或长度截断。英文身份延后，未追加训练或部署新模型。[执行报告](stage2/runs/t008-v0110-20261020-224753/REPORT.md)。数据与CPU文件保留开训前快照，当前状态以执行报告为准。
+**此前结果：v0.1.10一次80步／1epoch训练和62次中文检查已完成，UAT已恢复原配置。** 无System的中文名称均正确，Thinking仍有业务扩写和思考段编造；JSON仍18/24，无净改善；62次无空正文或长度截断。英文身份延后，未追加训练或部署新模型。[执行报告](stage2/runs/t008-v0110-20261020-224753/REPORT.md)。数据与CPU文件保留开训前快照，当前状态以执行报告为准。
 
 **此前训练：v0.1.9已完成3步Smoke、一次80步／1epoch Full和40次中文开发对照；原UAT已恢复，未部署新模型。** 中文Thinking身份完整正确3/6→4/6，仍有版本后缀与公司背景附加错误；严格JSON格式有退步，不能认定验收通过。数据与曝光不变，英文身份延后，不自动追加训练。先看 [最新执行报告](stage2/runs/t008-v019-20261020-211142/REPORT.md)、[逐题正文](stage2/runs/t008-v019-20261020-211142/development/ANSWERS.md) 和 [当前状态](control/CURRENT_STATE.json)。
 

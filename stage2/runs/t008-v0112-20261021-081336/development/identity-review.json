@@ -1,0 +1,114 @@
+{
+  "role": "Implementation agent development review",
+  "independent": false,
+  "rows": [
+    {
+      "id": "DEV-01__none__nonthinking__42",
+      "mode": "nonthinking",
+      "expected_name_present": true,
+      "visible_complete_pass": true,
+      "reasoning_unsupported_information": false,
+      "note": "可见正文已逐条检查，名称准确且无额外失实正文；思考段单列。",
+      "visible_answer_sha256": "cc0aed99721e96a0e2baba9923a11547691a5fbed49cd445542d368a5b664ef5"
+    },
+    {
+      "id": "DEV-01__none__nonthinking__43",
+      "mode": "nonthinking",
+      "expected_name_present": true,
+      "visible_complete_pass": true,
+      "reasoning_unsupported_information": false,
+      "note": "可见正文已逐条检查，名称准确且无额外失实正文；思考段单列。",
+      "visible_answer_sha256": "74a43e4e8b3e54ee9a596b1e865008c13537adca726d3c08c1fa75637ed43e9b"
+    },
+    {
+      "id": "DEV-01__none__nonthinking__44",
+      "mode": "nonthinking",
+      "expected_name_present": true,
+      "visible_complete_pass": true,
+      "reasoning_unsupported_information": false,
+      "note": "可见正文已逐条检查，名称准确且无额外失实正文；思考段单列。",
+      "visible_answer_sha256": "ae25543de04f20913bd662ce449a191d7b9f18868af7d6d8ca06f2590985e573"
+    },
+    {
+      "id": "DEV-01__none__thinking__42",
+      "mode": "thinking",
+      "expected_name_present": true,
+      "visible_complete_pass": true,
+      "reasoning_unsupported_information": false,
+      "note": "可见正文已逐条检查，名称准确且无额外失实正文；思考段单列。",
+      "visible_answer_sha256": "e1a231e17246187942cad9ef440eb32f558052189c8fac3a8c70c0474cdd434b"
+    },
+    {
+      "id": "DEV-01__none__thinking__43",
+      "mode": "thinking",
+      "expected_name_present": true,
+      "visible_complete_pass": true,
+      "reasoning_unsupported_information": false,
+      "note": "可见正文已逐条检查，名称准确且无额外失实正文；思考段单列。",
+      "visible_answer_sha256": "9125256706679c6353e6538b1566905ae7f0913f9326ff8511f4990f37c005c4"
+    },
+    {
+      "id": "DEV-01__none__thinking__44",
+      "mode": "thinking",
+      "expected_name_present": false,
+      "visible_complete_pass": false,
+      "reasoning_unsupported_information": false,
+      "note": "正文为空，思考中虽有名称仍不通过。",
+      "visible_answer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": "DEV-02__none__nonthinking__42",
+      "mode": "nonthinking",
+      "expected_name_present": true,
+      "visible_complete_pass": true,
+      "reasoning_unsupported_information": false,
+      "note": "可见正文已逐条检查，名称准确且无额外失实正文；思考段单列。",
+      "visible_answer_sha256": "f7cae26ffe08b2d8b2f1636eda70e24fbd2c759ee2fc15784fc35bd8864ad96b"
+    },
+    {
+      "id": "DEV-02__none__nonthinking__43",
+      "mode": "nonthinking",
+      "expected_name_present": true,
+      "visible_complete_pass": true,
+      "reasoning_unsupported_information": false,
+      "note": "可见正文已逐条检查，名称准确且无额外失实正文；思考段单列。",
+      "visible_answer_sha256": "9a867db3b3706b12f8b044e2762fec06d326f3f951811ffbe63d182523eee245"
+    },
+    {
+      "id": "DEV-02__none__nonthinking__44",
+      "mode": "nonthinking",
+      "expected_name_present": true,
+      "visible_complete_pass": true,
+      "reasoning_unsupported_information": false,
+      "note": "可见正文已逐条检查，名称准确且无额外失实正文；思考段单列。",
+      "visible_answer_sha256": "64ab81b48b8661571555c139a842273be4ede7c6352133c872f69b66999887d8"
+    },
+    {
+      "id": "DEV-02__none__thinking__42",
+      "mode": "thinking",
+      "expected_name_present": true,
+      "visible_complete_pass": true,
+      "reasoning_unsupported_information": true,
+      "note": "可见正文已逐条检查，名称准确且无额外失实正文；思考段单列。",
+      "visible_answer_sha256": "0c213ec44e56be54fbd361e59d67452fee14002a4c7441b04e81db035811e532"
+    },
+    {
+      "id": "DEV-02__none__thinking__43",
+      "mode": "thinking",
+      "expected_name_present": true,
+      "visible_complete_pass": true,
+      "reasoning_unsupported_information": false,
+      "note": "可见正文已逐条检查，名称准确且无额外失实正文；思考段单列。",
+      "visible_answer_sha256": "6d3d6786909478e23ae54bafdd37b4b22c9f3fda741a64df604a51b4101436b5"
+    },
+    {
+      "id": "DEV-02__none__thinking__44",
+      "mode": "thinking",
+      "expected_name_present": true,
+      "visible_complete_pass": true,
+      "reasoning_unsupported_information": false,
+      "note": "可见正文已逐条检查，名称准确且无额外失实正文；思考段单列。",
+      "visible_answer_sha256": "6d3d6786909478e23ae54bafdd37b4b22c9f3fda741a64df604a51b4101436b5"
+    }
+  ]
+}

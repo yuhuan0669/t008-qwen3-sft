@@ -1,0 +1,9 @@
+{
+  "evaluation_cpu_lora_cache": 2,
+  "gpu_max_loras": 1,
+  "reason": "Two comparison adapters registered; installed vLLM CPU cache defaults to max_loras=1. Set CPU cache 2, retain max_loras=1 and all generation parameters.",
+  "before_script_sha256": "ab2ba29e4b53a9d32b14eb5d3bdbbf65b35ce1f444ee0eb9823939922d6770d0",
+  "after_script_sha256": "c13e5d0efd85022f054e38023147841e3c5924096668b7ebc4964715c0c21c2d",
+  "training_parameters_changed": false,
+  "inference_started": false
+}

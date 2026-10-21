@@ -1,0 +1,241 @@
+{
+  "role": "Implementation agent development observations",
+  "independent": false,
+  "formal_acceptance": false,
+  "scope": "Selected fully read factual responses; not an exhaustive pass/fail score for all 240 requests",
+  "rows": [
+    {
+      "id": "t008-new__CN11-02__none__nonthinking__42__turn2",
+      "issue_types": [
+        "wrong_company_facts"
+      ],
+      "note": "成立时间与用户确认的2026年7月8日不符；未答出武昌区，部分擅加总部或注册地属性。",
+      "visible_answer_sha256": "d39eb8df6679f0e10dc05c584eb3892000eb750b9cf3693c5412b5b3612f97a1"
+    },
+    {
+      "id": "t008-new__CN11-02__none__nonthinking__43__turn2",
+      "issue_types": [
+        "wrong_company_facts"
+      ],
+      "note": "成立时间与用户确认的2026年7月8日不符；未答出武昌区，部分擅加总部或注册地属性。",
+      "visible_answer_sha256": "9681d8977abfea2139f53cda37084406d8123d2d50f6b0a2650846086c8b7127"
+    },
+    {
+      "id": "t008-new__CN11-02__none__nonthinking__44__turn2",
+      "issue_types": [
+        "wrong_company_facts"
+      ],
+      "note": "成立时间与用户确认的2026年7月8日不符；未答出武昌区，部分擅加总部或注册地属性。",
+      "visible_answer_sha256": "74b539859fdf3a1376ad66fd45dc04e259e5e7815d384caa2faee3c7cb28b70d"
+    },
+    {
+      "id": "t008-new__CN11-02__none__thinking__42__turn2",
+      "issue_types": [
+        "wrong_company_facts"
+      ],
+      "note": "成立时间与用户确认的2026年7月8日不符；未答出武昌区，部分擅加总部或注册地属性。",
+      "visible_answer_sha256": "f04250ed1b9812fd794a5dec25e882258b64af56ee71b8d945cf493b2f2f66bf"
+    },
+    {
+      "id": "t008-new__CN11-02__none__thinking__43__turn2",
+      "issue_types": [
+        "wrong_company_facts"
+      ],
+      "note": "成立时间与用户确认的2026年7月8日不符；未答出武昌区，部分擅加总部或注册地属性。",
+      "visible_answer_sha256": "617eb174d40b2c9cb9bcaae801f8ec3aea3be890cedcce63fa694afbdbb0c3e3"
+    },
+    {
+      "id": "t008-new__CN11-02__none__thinking__44__turn2",
+      "issue_types": [
+        "wrong_company_facts"
+      ],
+      "note": "成立时间与用户确认的2026年7月8日不符；未答出武昌区，部分擅加总部或注册地属性。",
+      "visible_answer_sha256": "e1217e96c7b27723251f7a4ca98b4041bc65c7b456c0cd0268d3908d34ddc70a"
+    },
+    {
+      "id": "t008-new__CN11-02__current__thinking__43__turn2",
+      "issue_types": [
+        "unsupported_registered_address"
+      ],
+      "note": "日期、地点字段正确，但把普通公司所在地擅称注册地址，严格事实口径不通过。",
+      "visible_answer_sha256": "e576ee12962230770dbfde0beceb810885acdf7f90be31f610563e4961b6b7d8"
+    },
+    {
+      "id": "t008-new__CN11-03__none__nonthinking__42__turn1",
+      "issue_types": [
+        "unsupported_customers_or_experience"
+      ],
+      "note": "没有来源却断言客户数量、合作行业或客户案例；个别回答回到阿里云产品身份。",
+      "visible_answer_sha256": "2428fb55e294cad172db303f444a210276e5d61ca5fec860b0a9ccfd959fa61a"
+    },
+    {
+      "id": "t008-new__CN11-03__none__nonthinking__43__turn1",
+      "issue_types": [
+        "unsupported_customers_or_experience"
+      ],
+      "note": "没有来源却断言客户数量、合作行业或客户案例；个别回答回到阿里云产品身份。",
+      "visible_answer_sha256": "833cabbd6494cec1ffc4b881b56dfbed7f1a961ffea2ca17dba19c9f3642c739"
+    },
+    {
+      "id": "t008-new__CN11-03__none__nonthinking__44__turn1",
+      "issue_types": [
+        "unsupported_customers_or_experience"
+      ],
+      "note": "没有来源却断言客户数量、合作行业或客户案例；个别回答回到阿里云产品身份。",
+      "visible_answer_sha256": "d7271c37261eb2d33665d06fbe628f9ffd25c07906b3a49407cc7802307b5446"
+    },
+    {
+      "id": "t008-new__CN11-03__none__thinking__42__turn1",
+      "issue_types": [
+        "unsupported_customers_or_experience"
+      ],
+      "note": "没有来源却断言客户数量、合作行业或客户案例；个别回答回到阿里云产品身份。",
+      "visible_answer_sha256": "77d4b42a26c53e1dd0f4f586e9ecb5786181c10633a7fe86905c36ff2f167c06"
+    },
+    {
+      "id": "t008-new__CN11-03__none__thinking__43__turn1",
+      "issue_types": [
+        "unsupported_customers_or_experience",
+        "identity_reversion"
+      ],
+      "note": "没有来源却断言客户数量、合作行业或客户案例；个别回答回到阿里云产品身份。",
+      "visible_answer_sha256": "620a9352a256721d7a324615cde611a017c30b0c46a3a5fd39bdfc80500a5210"
+    },
+    {
+      "id": "t008-new__CN11-03__none__thinking__44__turn1",
+      "issue_types": [
+        "unsupported_customers_or_experience"
+      ],
+      "note": "没有来源却断言客户数量、合作行业或客户案例；个别回答回到阿里云产品身份。",
+      "visible_answer_sha256": "3df5c5654903b4137f51b5beff5bc942355c8400e0f4d2c7ac2bca15e0ea5029"
+    },
+    {
+      "id": "t008-new__CN11-03__current__nonthinking__42__turn1",
+      "issue_types": [
+        "unsupported_company_policy_or_status"
+      ],
+      "note": "未直接列出客户数量或名称，但补充未提供的保密政策、公开披露状态或案例库状态；不认定完全事实正确。",
+      "visible_answer_sha256": "665bb4101437f8d546bd932d75c8c20bbf96a0f9ab3a0c9d94b6fde1bec5ae68"
+    },
+    {
+      "id": "t008-new__CN11-03__current__nonthinking__43__turn1",
+      "issue_types": [
+        "unknown_treated_as_zero"
+      ],
+      "note": "把未知客户情况说成零客户或没有实际案例；并无此已知事实。",
+      "visible_answer_sha256": "5162e73b0f957071b0bb1862d7186e4c53344856e7ce2212c2cb5f01f69da4ff"
+    },
+    {
+      "id": "t008-new__CN11-03__current__nonthinking__44__turn1",
+      "issue_types": [
+        "unknown_treated_as_zero"
+      ],
+      "note": "把未知客户情况说成零客户或没有实际案例；并无此已知事实。",
+      "visible_answer_sha256": "0670670e6488eab58ff3cf1d8a81793dcb89cef0256a7c1e1c533dc840b6cee8"
+    },
+    {
+      "id": "t008-new__CN11-03__current__thinking__42__turn1",
+      "issue_types": [
+        "unknown_treated_as_zero"
+      ],
+      "note": "把未知客户情况说成零客户或没有实际案例；并无此已知事实。",
+      "visible_answer_sha256": "906c5841dff330b97e9b286bbaa5a90cfd1a0c73c797fea42e43af62dddf4478"
+    },
+    {
+      "id": "t008-new__CN11-03__current__thinking__43__turn1",
+      "issue_types": [
+        "unsupported_company_policy_or_status"
+      ],
+      "note": "未直接列出客户数量或名称，但补充未提供的保密政策、公开披露状态或案例库状态；不认定完全事实正确。",
+      "visible_answer_sha256": "945584f8c30c79b430f7530545d67a0bd490abbcfc2c1e86ff02cd9794a98586"
+    },
+    {
+      "id": "t008-new__CN11-03__current__thinking__44__turn1",
+      "issue_types": [
+        "unsupported_company_policy_or_status"
+      ],
+      "note": "未直接列出客户数量或名称，但补充未提供的保密政策、公开披露状态或案例库状态；不认定完全事实正确。",
+      "visible_answer_sha256": "a9605ec5ee5194899128668ac3a1ec8e57a45d4fcc426bfea90d012e9c0470ce"
+    },
+    {
+      "id": "t008-new__CN11-05__none__nonthinking__42__turn1",
+      "issue_types": [
+        "unsupported_platform_page"
+      ],
+      "note": "没有平台资料却指定设备管理中的远程控制页面。",
+      "visible_answer_sha256": "5648ea003442af07e1cb5f84a7d4ab8e52208528b39ed5108b87f02405161ef0"
+    },
+    {
+      "id": "t008-new__CN11-05__none__nonthinking__43__turn1",
+      "issue_types": [
+        "unsupported_platform_page"
+      ],
+      "note": "没有平台资料却指定设备详情页。",
+      "visible_answer_sha256": "3fc24b130f620a452328bfbaf57afaae7b2956da3d78b8b9b393998793cbd309"
+    },
+    {
+      "id": "t008-new__CN11-05__none__nonthinking__44__turn1",
+      "issue_types": [
+        "unsupported_platform_status"
+      ],
+      "note": "没有功能发布资料却断言远程控制尚未上线。",
+      "visible_answer_sha256": "f4e3e8d9d284cf902dd2c0c761c2975b3e83a0f58ef7fd159eacb17b6a124877"
+    },
+    {
+      "id": "t008-new__CN11-05__current__nonthinking__43__turn1",
+      "issue_types": [
+        "unsupported_company_platform"
+      ],
+      "note": "加System仍确认公司的官方平台与设备管理模块存在。",
+      "visible_answer_sha256": "0aaefa3a37002b4bd8342b402c2e2137dd20d629d82e9b4771cd09344c9cef61"
+    },
+    {
+      "id": "t008-new__CN11-06__none__nonthinking__43__turn2",
+      "issue_types": [
+        "hypothetical_promoted_to_realtime"
+      ],
+      "note": "明确把上一轮假设数据认作现场实时值。",
+      "visible_answer_sha256": "35d9457df9c4c7bcb48e7c4a4af8bc15a4d60a6469c08ad77ccc7f0fce556341"
+    },
+    {
+      "id": "t008-new__CN11-07__none__thinking__42__turn1",
+      "issue_types": [
+        "confused_charge_and_energy"
+      ],
+      "note": "把电量解释成电荷总量，同时又以kWh能量为例，概念混淆。",
+      "visible_answer_sha256": "69b9459b1bd8ac8e05126589da5b51c415b00e93a481dec59036ff6725260d33"
+    },
+    {
+      "id": "t008-new__CN11-08__none__nonthinking__42__turn1",
+      "issue_types": [
+        "unsupported_return_promise_and_track_record"
+      ],
+      "note": "无成本数据仍承诺大多数项目3年回本，并编造公司10余年经验和项目成果。",
+      "visible_answer_sha256": "bba7fe62ccf133f0926ca4b90ca444b33a026707abd175cecf8a0bba91a7325f"
+    },
+    {
+      "id": "t008-new__CN11-08__none__nonthinking__43__turn1",
+      "issue_types": [
+        "unsupported_track_record"
+      ],
+      "note": "虽不承诺具体周期，仍把无来源的项目写成本公司已实施案例。",
+      "visible_answer_sha256": "a48b468277d53dbcbd422faf3827f943d34c1f1fd11003574857d7e7b04217bb"
+    },
+    {
+      "id": "t008-new__CN11-08__current__thinking__42__turn1",
+      "issue_types": [
+        "unknown_treated_as_zero"
+      ],
+      "note": "System下拒绝未经验证的案例，但自行断言公司尚未开展实际项目。",
+      "visible_answer_sha256": "f4b25c695d7bd11053d441b06f78c1c24603aaf22f2fffead65d20ed2f179f70"
+    },
+    {
+      "id": "t008-new__CN11-08__current__thinking__43__turn1",
+      "issue_types": [
+        "unknown_treated_as_zero"
+      ],
+      "note": "自行断言公司暂无实际项目经验；用户未提供此事实。",
+      "visible_answer_sha256": "6d258e3d1680dbd3938464573f4a257eb1573e7bdadb7896142b4652a9fda2ac"
+    }
+  ]
+}

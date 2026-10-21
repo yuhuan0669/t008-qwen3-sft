@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "steps": 83,
+  "epoch": 1.0,
+  "rows": 1315,
+  "identity_exposures": 236,
+  "raw_data_unchanged": true,
+  "same_cpu_runtime_versions": true,
+  "actual_command_matches_frozen_recipe": true,
+  "new_lora_from_base": true,
+  "smoke_resumed": false,
+  "finite_training_metrics": true,
+  "clearml_model_readback_verified": true,
+  "model_local_copy_verified": true,
+  "quality_acceptance": false
+}

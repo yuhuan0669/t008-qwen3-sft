@@ -1,0 +1,25 @@
+{
+  "run": "t008-v0112-20261021-081336",
+  "file_hashes": {
+    "stage1/data/train.jsonl": "89da792c5b91a4b5cecda1a90322edc03fdc1f43e6bd0a52082c35e49e81ec8f",
+    "stage1/data/manifest.json": "826e9ddb2f3bcf64e21cba2b4fd32386711f17f251d59c69146afda6655d9419",
+    "stage1/training/run-spec.json": "57674735294eb0da37eaf099d9a8c7c75328ff447d99a173379ee46d7bf843e5",
+    "stage1/training/local_data_guard.py": "45ba3763667ece681ad9094786035e40043ed334a72c0e76b4fc413755901fa5",
+    "stage1/evidence/encoding-report.json": "11e9c2f54fc00d18af05fc2650912608e4fce1a66eed89c550b48d4ea24eecaf",
+    "stage2/scripts/run_local_sft.py": "65d78e369b5dfcd23cdc50d205395e45b6326d5c8a9d4103e9f3cecfc72ab9d0",
+    "stage2/scripts/run_chinese_development.py": "c13e5d0efd85022f054e38023147841e3c5924096668b7ebc4964715c0c21c2d",
+    "stage1/variants/stage1-cpu-v0.1.12/identity_loss3.py": "082510fc6fadc31eb179384299cc1425e6dfd98ae01ad95d463759c1a0627db8",
+    "stage1/variants/stage1-cpu-v0.1.12/identity-keys.json": "be8f50cd234d580dd453c19ecbeb21cd8efefba1ef0a7491f7d4dc1479fbba13",
+    "evaluation/spec.json": "0038e876e63148ee31d8b97e584d32b04d135e7afb2592e7f05972a0b60c9ed3",
+    "evaluation/system-proposed.txt": "8fcd51af033cdd2f1f45b27da97bc6f006a46cb793fc4384b458629dfbc5340f",
+    "evaluation/system-existing.txt": "92ed593b3ea69fffc4b31756bb97abdd9806597234b430fbb5a4d95220550984",
+    "evaluation/chinese-additional.jsonl": "a003df1bafecd7688457920453ed248880c0b5bf83ec6fa4f94dce7043c10990",
+    "evaluation/cases.jsonl": "209abf4d472a3ed8d9881b9fe2673a25cc8b27962a35cbb4135b008ab214712b",
+    "evaluation/json-subset.json": "79cb8ea07b13ff58a11e8f348fb49f28606f44950814ae5285fe2f7e94d29d10",
+    "evaluation/json-schema-cases.jsonl": "514d89a971030b861c6560b35d8d251ede44c8d329d56a5a2e26d00f29319da2",
+    "evaluation/thinking-prefill.jinja": "ae8a1b27c3bac461eb5f6c78d5d39cbe29427ad91c9d2da8378e236b8a38448d",
+    "evaluation/custom-system.txt": "8f449f851a170c7b97f8e11216be570309905749c2b9e162b419706fadba2cb5"
+  },
+  "data_sha256": "89da792c5b91a4b5cecda1a90322edc03fdc1f43e6bd0a52082c35e49e81ec8f",
+  "rows": 1315
+}

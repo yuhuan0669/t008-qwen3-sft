@@ -1,0 +1,9 @@
+{
+  "verified_at_utc": "2026-10-21T09:20:47.680059+00:00",
+  "frozen_v0112_directory_unchanged_since_cpu_commit": "65d5bee",
+  "local_report_links_resolve": true,
+  "current_registry_pointers_equal": true,
+  "all_run_json_and_python_parse": true,
+  "training_and_restoration_verification": "verification.json",
+  "temporary_resources_removed": "cleanup.json"
+}

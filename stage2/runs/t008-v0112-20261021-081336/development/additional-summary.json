@@ -1,0 +1,82 @@
+{
+  "groups": {
+    "t008-old/none/nonthinking": {
+      "requests": 30,
+      "empty_body": 0,
+      "length_finish": 0,
+      "short_identity_name_present": 3,
+      "short_identity_count": 3,
+      "company_date_and_location_present": 0,
+      "company_fact_count": 3
+    },
+    "t008-old/none/thinking": {
+      "requests": 30,
+      "empty_body": 3,
+      "length_finish": 3,
+      "short_identity_name_present": 2,
+      "short_identity_count": 3,
+      "company_date_and_location_present": 0,
+      "company_fact_count": 3
+    },
+    "t008-old/current/nonthinking": {
+      "requests": 30,
+      "empty_body": 0,
+      "length_finish": 0,
+      "short_identity_name_present": 3,
+      "short_identity_count": 3,
+      "company_date_and_location_present": 3,
+      "company_fact_count": 3
+    },
+    "t008-old/current/thinking": {
+      "requests": 30,
+      "empty_body": 0,
+      "length_finish": 0,
+      "short_identity_name_present": 3,
+      "short_identity_count": 3,
+      "company_date_and_location_present": 3,
+      "company_fact_count": 3
+    },
+    "t008-new/none/nonthinking": {
+      "requests": 30,
+      "empty_body": 0,
+      "length_finish": 0,
+      "short_identity_name_present": 3,
+      "short_identity_count": 3,
+      "company_date_and_location_present": 0,
+      "company_fact_count": 3
+    },
+    "t008-new/none/thinking": {
+      "requests": 30,
+      "empty_body": 1,
+      "length_finish": 1,
+      "short_identity_name_present": 3,
+      "short_identity_count": 3,
+      "company_date_and_location_present": 0,
+      "company_fact_count": 3
+    },
+    "t008-new/current/nonthinking": {
+      "requests": 30,
+      "empty_body": 0,
+      "length_finish": 0,
+      "short_identity_name_present": 3,
+      "short_identity_count": 3,
+      "company_date_and_location_present": 3,
+      "company_fact_count": 3
+    },
+    "t008-new/current/thinking": {
+      "requests": 30,
+      "empty_body": 0,
+      "length_finish": 0,
+      "short_identity_name_present": 3,
+      "short_identity_count": 3,
+      "company_date_and_location_present": 3,
+      "company_fact_count": 3
+    }
+  },
+  "all_initial_prompt_ids_identical": true,
+  "real_generated_multiturn_history_verified": true,
+  "requests": 240,
+  "sessions": 192,
+  "formal_acceptance": false,
+  "counts_are_literal_presence_not_semantic_pass": true
+}

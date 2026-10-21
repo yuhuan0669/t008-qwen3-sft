@@ -1,0 +1,106 @@
+{
+  "purpose": "v0.1.12 Chinese development comparison and separate JSON schema diagnostic; English deferred",
+  "review_commit": "65d5beeac3cb0e782a5cd75e138e704a3b6622ac",
+  "review": "stage1/variants/stage1-cpu-v0.1.12/README.md",
+  "models": {
+    "base": "/base",
+    "candidate_adapter": "/runwork/outputs/full/checkpoints/v0-20261021-011712/checkpoint-83",
+    "adapter_files": {
+      "adapter_config.json": {
+        "sha256": "aeb0e0efb037dcf5cf6f8b0b426686b2247bf85c13c966f36b48152003387166",
+        "bytes": 1135
+      },
+      "adapter_model.safetensors": {
+        "sha256": "2c63d9ff01d5959a3d60161449bef4ef9e338c904567b5f4f110b5e904e886ad",
+        "bytes": 87360584
+      }
+    },
+    "previous_adapter": "/oldrun/outputs/full/checkpoints/v0-20261020-225035/checkpoint-80",
+    "previous_adapter_files": {
+      "adapter_config.json": {
+        "sha256": "db6464108178e39eedc3bfa0a9f07d047a7ae28930271b1ef85a54e130409479",
+        "bytes": 1135
+      },
+      "adapter_model.safetensors": {
+        "sha256": "069e53a12fbe1f11ef384979e8a78c17ee8052f7812313921f767a2685cc8d13",
+        "bytes": 87360584
+      }
+    }
+  },
+  "versions": {
+    "ms-swift": "4.4.2",
+    "transformers": "5.14.1",
+    "torch": "2.11.0+cu130",
+    "peft": "0.20.0",
+    "vllm": "0.25.1"
+  },
+  "modes": {
+    "thinking": {
+      "temperature": 0.6,
+      "top_p": 0.95,
+      "top_k": 20,
+      "max_tokens": 4096,
+      "min_p": 0,
+      "enable_thinking": true
+    },
+    "nonthinking": {
+      "temperature": 0.7,
+      "top_p": 0.8,
+      "top_k": 20,
+      "max_tokens": 2048,
+      "min_p": 0,
+      "enable_thinking": false
+    }
+  },
+  "template_sha256": "ae8a1b27c3bac461eb5f6c78d5d39cbe29427ad91c9d2da8378e236b8a38448d",
+  "total_requests": 62,
+  "server_seed": 42,
+  "concurrency": 1,
+  "repetition_penalty": 1.0,
+  "max_model_len": 8192,
+  "training": false,
+  "formal_holdout": false,
+  "training_data_sha256": "89da792c5b91a4b5cecda1a90322edc03fdc1f43e6bd0a52082c35e49e81ec8f",
+  "systems_sha256": {
+    "existing": "92ed593b3ea69fffc4b31756bb97abdd9806597234b430fbb5a4d95220550984",
+    "proposed": "8fcd51af033cdd2f1f45b27da97bc6f006a46cb793fc4384b458629dfbc5340f"
+  },
+  "source_files": {
+    "stage1/variants/stage1-cpu-v0.1.12/train.jsonl": "89da792c5b91a4b5cecda1a90322edc03fdc1f43e6bd0a52082c35e49e81ec8f",
+    "stage1/variants/stage1-cpu-v0.1.12/identity-keys.json": "be8f50cd234d580dd453c19ecbeb21cd8efefba1ef0a7491f7d4dc1479fbba13",
+    "stage1/variants/stage1-cpu-v0.1.12/identity_loss3.py": "082510fc6fadc31eb179384299cc1425e6dfd98ae01ad95d463759c1a0627db8",
+    "stage1/variants/stage1-cpu-v0.1.12/cpu-check/report.json": "11e9c2f54fc00d18af05fc2650912608e4fce1a66eed89c550b48d4ea24eecaf",
+    "stage2/runs/t008-v0110-20261020-224753/inputs/evaluation/cases.jsonl": "209abf4d472a3ed8d9881b9fe2673a25cc8b27962a35cbb4135b008ab214712b",
+    "stage1/variants/stage1-cpu-v0.1.12/evaluation/chinese-additional.jsonl": "a003df1bafecd7688457920453ed248880c0b5bf83ec6fa4f94dce7043c10990",
+    "stage1/variants/stage1-cpu-v0.1.12/evaluation/json-schema-cases.jsonl": "514d89a971030b861c6560b35d8d251ede44c8d329d56a5a2e26d00f29319da2",
+    "stage1/variants/stage1-cpu-v0.1.12/evaluation/custom-system.txt": "8f449f851a170c7b97f8e11216be570309905749c2b9e162b419706fadba2cb5"
+  },
+  "parent_results": "stage2/runs/t008-v0110-20261020-224753/development/results.jsonl",
+  "json_baseline": "stage2/diagnostics/json-format-check-20261020/results/results.jsonl",
+  "subsets": {
+    "chinese_regression": 40,
+    "json": 24,
+    "overlap_reused": 2
+  },
+  "additional": {
+    "scenarios": 8,
+    "sessions_per_model": 96,
+    "requests_per_model": 120,
+    "models": [
+      "t008-old",
+      "t008-new"
+    ],
+    "system_sha256": "8f449f851a170c7b97f8e11216be570309905749c2b9e162b419706fadba2cb5",
+    "seeds": [
+      42,
+      43,
+      44
+    ]
+  },
+  "json_schema": {
+    "model": "t008-old",
+    "conditions": 24,
+    "preflight": 1,
+    "system": "proposed (v0.1.10 frozen System)"
+  }
+}

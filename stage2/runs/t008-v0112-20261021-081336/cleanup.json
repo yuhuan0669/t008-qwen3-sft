@@ -1,0 +1,8 @@
+{
+  "verified_at_utc": "2026-10-21T09:16:32.743799+00:00",
+  "remaining_task_pods": 0,
+  "remaining_task_jobs": 0,
+  "uat_model_id": "octa-carbon-v1",
+  "new_model_deployed": false,
+  "persistent_training_inputs_and_outputs_preserved": true
+}

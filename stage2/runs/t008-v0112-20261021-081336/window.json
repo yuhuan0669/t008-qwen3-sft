@@ -1,0 +1,13 @@
+{
+  "run_id": "t008-v0112-20261021-081336",
+  "experiment_approved": true,
+  "uat_pause_approved": true,
+  "approved_data_sha256": "89da792c5b91a4b5cecda1a90322edc03fdc1f43e6bd0a52082c35e49e81ec8f",
+  "window_start_utc": "2026-10-21T08:15:21.820846+00:00",
+  "window_end_utc": "2026-10-21T16:15:21.820846+00:00",
+  "restore_start_utc": "2026-10-21T15:35:21.820846+00:00",
+  "decision_ref": "User: 开始训练，可暂停 UAT，完成后恢复。Execute frozen v0.1.12: 1315 rows, 3-step Smoke plus one Full from original base, unchanged hyperparameters. Chinese regression 62 plus eight additional scenarios on v0.1.10 and v0.1.12 (120 requests each), and v0.1.10 JSON-schema diagnostic 24 plus one non-scored preflight. English deferred. 8h watchdog is a recovery ceiling, not planned outage duration.",
+  "restoration_owner": "Current implementation agent",
+  "uat_coordination": "Owner directly confirmed immediate pause",
+  "max_full_runs": 1
+}

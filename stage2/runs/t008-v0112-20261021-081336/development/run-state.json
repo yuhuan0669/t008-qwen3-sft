@@ -1,0 +1,11 @@
+{
+  "status": "COMPLETE",
+  "completed": 62,
+  "additional_completed": 240,
+  "schema_state": {
+    "status": "COMPLETE",
+    "completed": 24,
+    "preflight_counted_in_scores": false
+  },
+  "updated_at_utc": "2026-10-21T09:13:38.495670+00:00"
+}

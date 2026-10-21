@@ -148,13 +148,13 @@
   ],
   "current_review": {
     "version": "chinese-minimal-review-v0.1",
-    "status": "REVIEW_DRAFT_ONLY",
+    "status": "MATERIALIZED_V019_CPU_CHECKED_NO_TRAINING_AUTHORIZATION",
     "report": "stage2/variants/chinese-minimal-review-v0.1/REVIEW.md",
     "sample_diff": "stage2/variants/chinese-minimal-review-v0.1/SAMPLE_DIFF.md",
     "verification": "stage2/variants/chinese-minimal-review-v0.1/verification.json",
     "english_identity": "DEFERRED_PENDING",
     "training_started": false,
-    "inference_started": false,
+    "inference_started": true,
     "sync_status": "LOCAL_GIT_ONLY",
     "next_inference_check": {
       "id": "chinese-minimal-check-20261020",
@@ -167,7 +167,10 @@
       "uat_restored": true,
       "formal_acceptance": false,
       "sync_status": "LOCAL_GIT_ONLY"
-    }
+    },
+    "materialized_data": "stage1/variants/stage1-cpu-v0.1.9/manifest.json",
+    "cpu_report": "stage1/variants/stage1-cpu-v0.1.9/CPU_CHECK.md",
+    "inference_scope": "Existing loss3 adapter, 40 protocol checks; v0.1.9 inference not run"
   },
   "latest_diagnostic": {
     "id": "chinese-minimal-check-20261020",
@@ -179,6 +182,14 @@
     "training": false,
     "uat_restored": true,
     "formal_acceptance": false,
+    "sync_status": "LOCAL_GIT_ONLY"
+  },
+  "latest_cpu_preparation": {
+    "data_version": "stage1-cpu-v0.1.9",
+    "report": "stage1/variants/stage1-cpu-v0.1.9/CPU_CHECK.md",
+    "train_sha256": "c2fa7ced3c438a323217d1d3a0d3657607c3ad89d6cd1e6a75480330c7fbbf16",
+    "training_started": false,
+    "uat_paused": false,
     "sync_status": "LOCAL_GIT_ONLY"
   }
 }

@@ -1,0 +1,16 @@
+{
+  "verified": true,
+  "checked_at": "2026-10-20T21:05:16.704843-07:00",
+  "uat_paused": false,
+  "uat_configuration_unchanged": true,
+  "deployment_generation_unchanged": true,
+  "same_uat_pod_uid": true,
+  "restart_counts_unchanged": true,
+  "ready_replicas": 1,
+  "desired_replicas": 1,
+  "health_http": 200,
+  "cpu_check_pod_removed": true,
+  "cleanup_note": "Initial 45-second delete wait timed out; subsequent read confirmed natural deletion without force.",
+  "model_inference_executed": false,
+  "training_executed": false
+}

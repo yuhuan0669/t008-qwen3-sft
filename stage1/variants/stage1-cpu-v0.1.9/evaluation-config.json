@@ -1,0 +1,62 @@
+{
+  "purpose": "Bind future Chinese development evaluation to the verified template, revised System, and mode budgets; no execution authorized",
+  "backend": "vllm",
+  "chat_template": {
+    "path": "stage2/diagnostics/thinking-chat-template-20261020/thinking-prefill.jinja",
+    "sha256": "ae8a1b27c3bac461eb5f6c78d5d39cbe29427ad91c9d2da8378e236b8a38448d"
+  },
+  "server_args": [
+    "--chat-template",
+    "/work/stage2/diagnostics/thinking-chat-template-20261020/thinking-prefill.jinja",
+    "--reasoning-parser",
+    "qwen3"
+  ],
+  "apply_same_template_to": [
+    "original_base",
+    "all_compared_adapters"
+  ],
+  "request_modes": {
+    "thinking": {
+      "temperature": 0.6,
+      "top_p": 0.95,
+      "top_k": 20,
+      "max_tokens": 4096,
+      "min_p": 0,
+      "chat_template_kwargs": {
+        "enable_thinking": true
+      }
+    },
+    "nonthinking": {
+      "temperature": 0.7,
+      "top_p": 0.8,
+      "top_k": 20,
+      "max_tokens": 2048,
+      "min_p": 0,
+      "chat_template_kwargs": {
+        "enable_thinking": false
+      }
+    }
+  },
+  "prior_chat_verification": "stage2/diagnostics/thinking-chat-template-20261020/verification.json",
+  "prior_scope": "40 inference checks on the existing loss3 adapter, not v0.1.9 model quality",
+  "formal_scores_reusable_only_if_template_and_protocol_match": true,
+  "execution_authorized": false,
+  "system_path": "stage1/variants/stage1-cpu-v0.1.9/evaluation/custom-system.txt",
+  "system_sha256": "8fcd51af033cdd2f1f45b27da97bc6f006a46cb793fc4384b458629dfbc5340f",
+  "development_path": "stage1/variants/stage1-cpu-v0.1.8/evaluation/development-24.jsonl",
+  "rubric_path": "stage1/variants/stage1-cpu-v0.1.8/evaluation/rubric.md",
+  "formal_holdout_status": "NOT_MODIFIED_EVALUATION_SIDE_NAME_AMENDMENT_REQUIRED_BEFORE_FORMAL_RUN",
+  "historical_scores_unchanged": true,
+  "prior_protocol_check": "stage2/diagnostics/chinese-minimal-check-20261020/REPORT.md",
+  "english_identity": "DEFERRED; existing English development cases retained as history",
+  "seed": 42,
+  "identity_seeds": [
+    42,
+    43,
+    44
+  ],
+  "concurrency": 1,
+  "server_seed": 42,
+  "max_model_len": 8192,
+  "repetition_penalty": 1.0
+}

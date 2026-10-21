@@ -1,6 +1,6 @@
 最新完成：[40次中文推理复测](diagnostics/chinese-minimal-check-20261020/REPORT.md) · [逐题正文](diagnostics/chinese-minimal-check-20261020/ANSWERS.md)。40次都有正文并正常结束，新System改善业务边界，Thinking身份仍有失败。UAT已恢复原配置，未训练、未部署新System。
 
-当前数据审阅稿：[中文最小修改 v0.1](variants/chinese-minimal-review-v0.1/REVIEW.md) · [5条样本前后对照](variants/chinese-minimal-review-v0.1/SAMPLE_DIFF.md)。英文身份延后；样本仍是草稿，未修改现行数据。此前的 [Swift/vLLM诊断](diagnostics/engine-compare-20261020/REPORT.md) 已区分普通说明截断、模板空正文和重复生成。
+最新数据候选：[v0.1.9](../stage1/variants/stage1-cpu-v0.1.9/README.md) · [CPU编码与权重检查](../stage1/variants/stage1-cpu-v0.1.9/CPU_CHECK.md) · [5条样本前后对照](variants/chinese-minimal-review-v0.1/SAMPLE_DIFF.md)。5条中文修改已落地，1275条总量、216次身份曝光及训练参数不变；其余1270条编码与权重不变。英文身份延后，尚未训练，UAT未暂停。此前的 [Swift/vLLM诊断](diagnostics/engine-compare-20261020/REPORT.md) 已区分普通说明截断、模板空正文和重复生成。
 
 最新训练为 **v0.1.8 身份loss×3：训练完成，中文短身份改善，开发未达标，UAT已恢复**。[本轮报告](runs/t008-v018-loss3-20261020-180616/REPORT.md) · [逐题回答](runs/t008-v018-loss3-20261020-180616/development/ANSWERS.md)。以下保留历史执行说明。
 

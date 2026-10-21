@@ -37,8 +37,11 @@
     1024,
     2048
   ],
-  "requests_per_backend": 42,
-  "total_requests": 84,
+  "requests_per_backend": {
+    "swift_infer_transformers": 44,
+    "vllm_chat": 42
+  },
+  "total_requests": 86,
   "backends": [
     "swift_infer_transformers",
     "vllm_chat"
@@ -53,6 +56,8 @@
   "training": false,
   "formal_holdout": false,
   "data_or_weight_mutation": false,
-  "uat_pause_approved": false,
-  "comparison": "Outcome and stop-reason comparison. Identical seeds do not imply identical draws across engines."
+  "uat_pause_approved": true,
+  "comparison": "Outcome and stop-reason comparison. Identical seeds do not imply identical draws across engines.",
+  "planned_main_requests": 84,
+  "additional_length_seed_controls": 2
 }

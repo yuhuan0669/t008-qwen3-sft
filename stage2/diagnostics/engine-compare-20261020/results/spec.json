@@ -1,0 +1,58 @@
+{
+  "purpose": "Read-only development diagnosis, not training or formal acceptance",
+  "models": {
+    "base": "/base",
+    "loss3_adapter": "/models-work/t008-v018-loss3-20261020-180616/outputs/full/checkpoints/v0-20261020-180948/checkpoint-80",
+    "adapter_files": {
+      "adapter_config.json": {
+        "sha256": "8bb9aa9174dc6d9eebf14e8c6e6725354ea829dd38731ca2f99c46bf6e2ad5e8",
+        "bytes": 1135
+      },
+      "adapter_model.safetensors": {
+        "sha256": "66297de818752ebb08cc3834b2694e8f33d8d829bf1d5e20c0e367af5da46a29",
+        "bytes": 87360584
+      }
+    }
+  },
+  "modes": {
+    "thinking": {
+      "temperature": 0.6,
+      "top_p": 0.95,
+      "top_k": 20,
+      "max_tokens": 4096,
+      "min_p": 0,
+      "enable_thinking": true
+    },
+    "nonthinking": {
+      "temperature": 0.7,
+      "top_p": 0.8,
+      "top_k": 20,
+      "max_tokens": 1024,
+      "min_p": 0,
+      "enable_thinking": false
+    }
+  },
+  "seed": 42,
+  "length_comparison": [
+    1024,
+    2048
+  ],
+  "requests_per_backend": 42,
+  "total_requests": 84,
+  "backends": [
+    "swift_infer_transformers",
+    "vllm_chat"
+  ],
+  "template_sha256": "ae8a1b27c3bac461eb5f6c78d5d39cbe29427ad91c9d2da8378e236b8a38448d",
+  "versions": {
+    "ms-swift": "4.4.2",
+    "transformers": "5.14.1",
+    "torch": "2.11.0+cu130",
+    "peft": "0.20.0"
+  },
+  "training": false,
+  "formal_holdout": false,
+  "data_or_weight_mutation": false,
+  "uat_pause_approved": true,
+  "comparison": "Outcome and stop-reason comparison. Identical seeds do not imply identical draws across engines."
+}

@@ -1,0 +1,93 @@
+run sh: `/usr/local/bin/python /usr/local/lib/python3.12/site-packages/swift/cli/infer.py --model /base --model_type qwen3 --infer_backend transformers --load_args false --load_data_args false --torch_dtype bfloat16 --attn_impl sdpa --template qwen3 --template_backend swift --enable_thinking false --response_prefix <think>
+
+</think>
+
+ --max_length 8192 --truncation_strategy delete --max_new_tokens 1024 --temperature 0.7 --top_p 0.8 --top_k 20 --repetition_penalty 1.0 --seed 42 --data_seed 42 --stream false --max_batch_size 1 --write_batch_size 1 --val_dataset /tmp/engine-compare/cases.jsonl --val_dataset_shuffle false --dataset_shuffle false --strict true --dataset_num_proc 1 --result_path /tmp/engine-compare/swift-base-nonthinking-1024.jsonl --external_plugins /tmp/engine-compare/capture.py`
+[INFO:swift] Successfully registered `/usr/local/lib/python3.12/site-packages/swift/dataset/data/dataset_info.json`.
+[INFO:swift] Successfully imported external_plugins: ['/tmp/engine-compare/capture.py'].
+[INFO:swift] rank: -1, local_rank: -1, world_size: 1, local_world_size: 1
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+[INFO:swift] Because len(args.val_dataset) > 0, setting split_dataset_ratio: 0.0
+[INFO:swift] Setting args.eval_human: False
+[INFO:swift] Setting args.lazy_tokenize: False
+[INFO:swift] args: InferArguments(use_ray=False, ray_exp_name=None, device_groups=None, model='/base', model_type='qwen3', model_revision=None, task_type='causal_lm', torch_dtype=torch.bfloat16, attn_impl='sdpa', experts_impl=None, new_special_tokens=[], num_labels=None, problem_type=None, rope_scaling=None, device_map=None, max_memory={}, max_model_len=None, local_repo_path=None, init_strategy=None, template='qwen3', system=None, max_length=8192, truncation_strategy='delete', max_pixels=None, agent_template=None, norm_bbox=None, use_chat_template=True, padding_side='right', padding_free=False, loss_scale='default+ignore_empty_think', sequence_parallel_size=1, is_binary_loss_scale=None, template_backend='swift', response_prefix='<think>\n\n</think>\n\n', enable_thinking=False, preserve_thinking=None, add_non_thinking_prefix=True, disable_ignore_empty_think=False, dataset=[], val_dataset=['/tmp/engine-compare/cases.jsonl'], cached_dataset=[], cached_val_dataset=[], split_dataset_ratio=0.0, data_seed=42, dataset_num_proc=1, load_from_cache_file=False, dataset_shuffle=False, val_dataset_shuffle=False, streaming=False, interleave_prob=None, stopping_strategy='first_exhausted', shuffle_buffer_size=1000, download_mode='reuse_dataset_if_exists', columns={}, strict=True, remove_unused_columns=True, disable_auto_column_mapping=False, model_name=None, model_author=None, custom_dataset_info=[], quant_method=None, quant_bits=None, hqq_axis=None, bnb_4bit_compute_dtype=torch.bfloat16, bnb_4bit_quant_type='nf4', bnb_4bit_use_double_quant=True, bnb_4bit_quant_storage=None, max_new_tokens=1024, temperature=0.7, top_k=20, top_p=0.8, repetition_penalty=1.0, num_beams=1, stream=False, stop_words=[], logprobs=False, top_logprobs=None, structured_outputs_regex=None, tuner_backend='peft', tuner_type='lora', adapters=[], external_plugins=['/tmp/engine-compare/capture.py'], custom_register_path=[], seed=42, model_kwargs={}, enable_npu_model_patch=True, load_args=False, load_data_args=False, packing=False, packing_length=None, packing_num_proc=1, packing_strategy='binpack', lazy_tokenize=False, use_hf=False, hub_token=None, ddp_timeout=18000000, ddp_backend=None, ignore_args_error=False, use_swift_lora=False, vllm_gpu_memory_utilization=0.9, vllm_tensor_parallel_size=1, vllm_pipeline_parallel_size=1, vllm_enable_expert_parallel=False, vllm_max_num_seqs=256, vllm_max_model_len=None, vllm_disable_custom_all_reduce=True, vllm_enforce_eager=False, vllm_limit_mm_per_prompt=None, vllm_max_lora_rank=16, vllm_enable_prefix_caching=None, vllm_use_async_engine=False, vllm_quantization=None, vllm_reasoning_parser=None, vllm_disable_cascade_attn=False, vllm_mm_processor_cache_gb=None, vllm_speculative_config=None, vllm_engine_kwargs={}, vllm_data_parallel_size=1, sglang_tp_size=1, sglang_pp_size=1, sglang_dp_size=1, sglang_ep_size=1, sglang_enable_ep_moe=False, sglang_mem_fraction_static=None, sglang_context_length=None, sglang_disable_cuda_graph=False, sglang_quantization=None, sglang_kv_cache_dtype='auto', sglang_enable_dp_attention=False, sglang_disable_custom_all_reduce=True, sglang_speculative_algorithm=None, sglang_speculative_num_steps=None, sglang_speculative_eagle_topk=None, sglang_speculative_num_draft_tokens=None, lmdeploy_tp=1, lmdeploy_session_len=None, lmdeploy_cache_max_entry_count=0.8, lmdeploy_quant_policy=0, lmdeploy_vision_batch_size=1, merge_lora=False, safe_serialization=True, max_shard_size='5GB', infer_backend='transformers', result_path='/tmp/engine-compare/swift-base-nonthinking-1024.jsonl', write_batch_size=1, metric=None, max_batch_size=1, val_dataset_sample=None, reranker_use_activation=True)
+[INFO:swift] Global seed set to 42
+[INFO:swift] attn_impl: sdpa
+[INFO:swift] model_kwargs: {'device_map': 'cuda:0', 'dtype': torch.bfloat16}
+Loading weights:   0%|          | 0/399 [00:00<?, ?it/s]Loading weights:   0%|          | 1/399 [00:00<04:28,  1.48it/s]Loading weights:   1%|          | 4/399 [00:00<01:03,  6.22it/s]Loading weights:   2%|▏         | 6/399 [00:01<01:13,  5.37it/s]Loading weights:  10%|▉         | 38/399 [00:01<00:07, 49.23it/s]Loading weights:  18%|█▊        | 71/399 [00:01<00:03, 94.54it/s]Loading weights:  23%|██▎       | 90/399 [00:01<00:02, 111.61it/s]Loading weights:  29%|██▉       | 116/399 [00:01<00:02, 140.14it/s]Loading weights:  37%|███▋      | 147/399 [00:01<00:01, 178.84it/s]Loading weights:  43%|████▎     | 171/399 [00:01<00:01, 189.50it/s]Loading weights:  51%|█████     | 202/399 [00:01<00:00, 215.97it/s]Loading weights:  57%|█████▋    | 227/399 [00:02<00:00, 209.20it/s]Loading weights:  65%|██████▍   | 258/399 [00:02<00:00, 233.74it/s]Loading weights:  72%|███████▏  | 288/399 [00:02<00:00, 251.21it/s]Loading weights:  79%|███████▉  | 315/399 [00:02<00:00, 180.48it/s]Loading weights:  88%|████████▊ | 351/399 [00:02<00:00, 218.79it/s]Loading weights:  95%|█████████▌| 380/399 [00:02<00:00, 231.86it/s]Loading weights: 100%|██████████| 399/399 [00:02<00:00, 140.88it/s]
+[INFO:swift] default_system: None
+[INFO:swift] max_length: 8192
+[INFO:swift] response_prefix: '<think>\n\n</think>\n\n'
+[INFO:swift] agent_template: hermes
+[INFO:swift] model: Qwen3ForCausalLM(
+  (model): Qwen3Model(
+    (embed_tokens): Embedding(151936, 4096)
+    (layers): ModuleList(
+      (0-35): 36 x Qwen3DecoderLayer(
+        (self_attn): Qwen3Attention(
+          (q_proj): Linear(in_features=4096, out_features=4096, bias=False)
+          (k_proj): Linear(in_features=4096, out_features=1024, bias=False)
+          (v_proj): Linear(in_features=4096, out_features=1024, bias=False)
+          (o_proj): Linear(in_features=4096, out_features=4096, bias=False)
+          (q_norm): Qwen3RMSNorm((128,), eps=1e-06)
+          (k_norm): Qwen3RMSNorm((128,), eps=1e-06)
+        )
+        (mlp): Qwen3MLP(
+          (gate_proj): Linear(in_features=4096, out_features=12288, bias=False)
+          (up_proj): Linear(in_features=4096, out_features=12288, bias=False)
+          (down_proj): Linear(in_features=12288, out_features=4096, bias=False)
+          (act_fn): SiLUActivation()
+        )
+        (input_layernorm): Qwen3RMSNorm((4096,), eps=1e-06)
+        (post_attention_layernorm): Qwen3RMSNorm((4096,), eps=1e-06)
+      )
+    )
+    (norm): Qwen3RMSNorm((4096,), eps=1e-06)
+    (rotary_emb): Qwen3RotaryEmbedding()
+  )
+  (lm_head): Linear(in_features=4096, out_features=151936, bias=False)
+)
+[INFO:swift] Start time of running main: 2026-10-20 19:32:39.629427
+[INFO:swift] swift.__version__: 4.4.2
+[INFO:swift] request_config: RequestConfig(max_tokens=1024, temperature=0.7, top_k=20, top_p=0.8, min_p=None, repetition_penalty=1.0, num_beams=1, stop=[], seed=None, stream=False, logprobs=False, top_logprobs=None, prompt_logprobs=None, n=1, best_of=None, presence_penalty=0.0, frequency_penalty=0.0, length_penalty=1.0, return_details=False, structured_outputs_regex=None)
+Generating train split: 0 examples [00:00, ? examples/s]Generating train split: 10 examples [00:00, 10305.42 examples/s]
+Map (num_proc=1):   0%|          | 0/10 [00:00<?, ? examples/s]Map (num_proc=1): 100%|██████████| 10/10 [00:00<00:00, 62.30 examples/s]
+[INFO:swift] val_dataset: Dataset({
+    features: ['messages', 'dataset'],
+    num_rows: 10
+})
+[INFO:swift] args.result_path: /tmp/engine-compare/swift-base-nonthinking-1024.jsonl
+  0%|          | 0/10 [00:00<?, ?it/s]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:01<00:00,  1.14s/it][A100%|██████████| 1/1 [00:01<00:00,  1.14s/it]
+ 10%|█         | 1/10 [00:01<00:10,  1.15s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:01<00:00,  1.14s/it][A100%|██████████| 1/1 [00:01<00:00,  1.14s/it]
+ 20%|██        | 2/10 [00:02<00:09,  1.14s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  2.94it/s][A100%|██████████| 1/1 [00:00<00:00,  2.94it/s]
+ 30%|███       | 3/10 [00:02<00:05,  1.29it/s]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:21<00:00, 21.66s/it][A100%|██████████| 1/1 [00:21<00:00, 21.66s/it]
+ 40%|████      | 4/10 [00:24<00:54,  9.02s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  1.22it/s][A100%|██████████| 1/1 [00:00<00:00,  1.22it/s]
+ 50%|█████     | 5/10 [00:25<00:30,  6.06s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  1.34it/s][A100%|██████████| 1/1 [00:00<00:00,  1.34it/s]
+ 60%|██████    | 6/10 [00:25<00:17,  4.26s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:09<00:00,  9.97s/it][A100%|██████████| 1/1 [00:09<00:00,  9.97s/it]
+ 70%|███████   | 7/10 [00:35<00:18,  6.12s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:02<00:00,  2.69s/it][A100%|██████████| 1/1 [00:02<00:00,  2.69s/it]
+ 80%|████████  | 8/10 [00:38<00:10,  5.03s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:08<00:00,  8.90s/it][A100%|██████████| 1/1 [00:08<00:00,  8.90s/it]
+ 90%|█████████ | 9/10 [00:47<00:06,  6.24s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:05<00:00,  5.82s/it][A100%|██████████| 1/1 [00:05<00:00,  5.82s/it]
+100%|██████████| 10/10 [00:53<00:00,  6.11s/it]100%|██████████| 10/10 [00:53<00:00,  5.32s/it]
+{'num_prompt_tokens': 565, 'num_generated_tokens': 2502, 'num_samples': 10, 'runtime': 53.23915434163064, 'samples/s': 0.18783168372342923, 'tokens/s': 46.995487267601995}
+[INFO:swift] The inference results have been saved to result_path: `/tmp/engine-compare/swift-base-nonthinking-1024.jsonl`.
+[INFO:swift] End time of running main: 2026-10-20 19:33:33.048185

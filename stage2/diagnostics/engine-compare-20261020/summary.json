@@ -1,0 +1,125 @@
+{
+  "requests": 86,
+  "groups": [
+    {
+      "engine": "Swift infer",
+      "model": "base",
+      "mode": "nonthinking",
+      "cap": 1024,
+      "count": 11,
+      "empty_body": 0,
+      "length": 2,
+      "completion_tokens": 3526
+    },
+    {
+      "engine": "Swift infer",
+      "model": "base",
+      "mode": "nonthinking",
+      "cap": 2048,
+      "count": 1,
+      "empty_body": 0,
+      "length": 0,
+      "completion_tokens": 1027
+    },
+    {
+      "engine": "Swift infer",
+      "model": "base",
+      "mode": "thinking",
+      "cap": 4096,
+      "count": 10,
+      "empty_body": 0,
+      "length": 0,
+      "completion_tokens": 5825
+    },
+    {
+      "engine": "Swift infer",
+      "model": "loss3",
+      "mode": "nonthinking",
+      "cap": 1024,
+      "count": 11,
+      "empty_body": 0,
+      "length": 3,
+      "completion_tokens": 4062
+    },
+    {
+      "engine": "Swift infer",
+      "model": "loss3",
+      "mode": "nonthinking",
+      "cap": 2048,
+      "count": 1,
+      "empty_body": 0,
+      "length": 0,
+      "completion_tokens": 1661
+    },
+    {
+      "engine": "Swift infer",
+      "model": "loss3",
+      "mode": "thinking",
+      "cap": 4096,
+      "count": 10,
+      "empty_body": 0,
+      "length": 1,
+      "completion_tokens": 10683
+    },
+    {
+      "engine": "vLLM chat",
+      "model": "base",
+      "mode": "nonthinking",
+      "cap": 1024,
+      "count": 10,
+      "empty_body": 0,
+      "length": 0,
+      "completion_tokens": 2578
+    },
+    {
+      "engine": "vLLM chat",
+      "model": "base",
+      "mode": "nonthinking",
+      "cap": 2048,
+      "count": 1,
+      "empty_body": 0,
+      "length": 0,
+      "completion_tokens": 984
+    },
+    {
+      "engine": "vLLM chat",
+      "model": "base",
+      "mode": "thinking",
+      "cap": 4096,
+      "count": 10,
+      "empty_body": 0,
+      "length": 0,
+      "completion_tokens": 5883
+    },
+    {
+      "engine": "vLLM chat",
+      "model": "loss3",
+      "mode": "nonthinking",
+      "cap": 1024,
+      "count": 10,
+      "empty_body": 0,
+      "length": 1,
+      "completion_tokens": 2752
+    },
+    {
+      "engine": "vLLM chat",
+      "model": "loss3",
+      "mode": "nonthinking",
+      "cap": 2048,
+      "count": 1,
+      "empty_body": 0,
+      "length": 0,
+      "completion_tokens": 1410
+    },
+    {
+      "engine": "vLLM chat",
+      "model": "loss3",
+      "mode": "thinking",
+      "cap": 4096,
+      "count": 10,
+      "empty_body": 0,
+      "length": 0,
+      "completion_tokens": 6275
+    }
+  ]
+}

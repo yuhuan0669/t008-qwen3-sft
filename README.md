@@ -1,8 +1,8 @@
 # T-008 · Qwen3-8B 基础 SFT 统一版本库
 
-**当前待审阅：v0.1.11中文最小修订包已在本地形成，尚未实际Swift编码、推理或训练。** 10条修改，总量1275、身份曝光216不变；公司成立日期为2026年7月8日，所在地为湖北省武汉市武昌区。最新已训练模型仍为v0.1.10。
+**当前待审阅：v0.1.12中文数据候选已在本地形成，总量1315条。** 恢复4条自然身份原文，追加公司事实4条、中文身份16条、普通非思考12条、业务辅助与边界8条；上版其余6处修订保留。英文及原4条JSON训练记录不变，最新已训练模型仍为v0.1.10。
 
-[样本对照](stage1/variants/stage1-cpu-v0.1.11/SAMPLE_DIFF.md) · [System差异](stage1/variants/stage1-cpu-v0.1.11/SYSTEM_DIFF.md) · [验证清单](stage1/variants/stage1-cpu-v0.1.11/VALIDATION_PLAN.md)。本轮未操作UAT，未上传GitHub或Drive。
+[样本前后对照](stage1/variants/stage1-cpu-v0.1.12/SAMPLE_DIFF.md) · [数据统计](stage1/variants/stage1-cpu-v0.1.12/STATISTICS.md) · [配置差异](stage1/variants/stage1-cpu-v0.1.12/CONFIG_DIFF.md)。本版尚未实际Swift编码、推理或训练；未操作UAT，未上传GitHub或Drive。
 
 这是 Qwen3-8B 自我认知＋通用指令 SFT 的统一维护入口。任务版本为 **T-008 v1.5 第15节**；历史流程方案为 **v1.2 / process-restore-R1**；本库首次归档版本为 **archive-v1.0.0**。三者分别表示任务、流程、归档版本，均不代表模型已验收。
 

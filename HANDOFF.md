@@ -1,8 +1,8 @@
 # T-008 Qwen3-8B 基础 SFT · 统一交接
 
-**当前待审阅：v0.1.11中文最小修订包已在本地形成，尚未实际Swift编码、推理或训练。** 10条修改，总量1275、身份曝光216不变；公司成立日期为2026年7月8日，所在地为湖北省武汉市武昌区。最新已训练模型仍为v0.1.10。
+**当前待审阅：v0.1.12中文数据候选已在本地形成，总量1315条。** 恢复4条自然身份原文，追加公司事实4条、中文身份16条、普通非思考12条、业务辅助与边界8条；上版其余6处修订保留。英文及原4条JSON训练记录不变，最新已训练模型仍为v0.1.10。
 
-[样本对照](stage1/variants/stage1-cpu-v0.1.11/SAMPLE_DIFF.md) · [System差异](stage1/variants/stage1-cpu-v0.1.11/SYSTEM_DIFF.md) · [验证清单](stage1/variants/stage1-cpu-v0.1.11/VALIDATION_PLAN.md)。本轮未操作UAT，未上传GitHub或Drive。
+[样本前后对照](stage1/variants/stage1-cpu-v0.1.12/SAMPLE_DIFF.md) · [数据统计](stage1/variants/stage1-cpu-v0.1.12/STATISTICS.md) · [配置差异](stage1/variants/stage1-cpu-v0.1.12/CONFIG_DIFF.md)。本版尚未实际Swift编码、推理或训练；未操作UAT，未上传GitHub或Drive。
 
 **最新结果：v0.1.10一次80步／1epoch训练和62次中文检查已完成，UAT已恢复原配置。** 无System的中文名称均正确，Thinking仍有业务扩写和思考段编造；JSON仍18/24，无净改善；62次无空正文或长度截断。英文身份延后，未追加训练或部署新模型。[执行报告](stage2/runs/t008-v0110-20261020-224753/REPORT.md)。数据与CPU文件保留开训前快照，当前状态以执行报告为准。
 

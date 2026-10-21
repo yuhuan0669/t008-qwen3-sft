@@ -1,0 +1,17 @@
+{
+  "dataset_sha256": "89da792c5b91a4b5cecda1a90322edc03fdc1f43e6bd0a52082c35e49e81ec8f",
+  "rows": 1315,
+  "restored_rows": 4,
+  "added_rows": 40,
+  "group_exposures": {
+    "generic": 1048,
+    "identity": 236,
+    "positioning": 31
+  },
+  "english_records_changed": 0,
+  "json_training_records_changed": 0,
+  "native_swift_cpu_check": "NOT_RUN",
+  "training_started": false,
+  "inference_executed": false,
+  "cluster_accessed": false
+}

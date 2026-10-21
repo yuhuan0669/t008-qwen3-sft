@@ -1,0 +1,150 @@
+{
+  "version": "stage1-cpu-v0.1.12",
+  "parent": "stage1-cpu-v0.1.11",
+  "parent_sha256": "17a0ff1d3152dde611b31dab8d1ce84e1a0cbb7bb3536028b90900d6797d3121",
+  "train_sha256": "89da792c5b91a4b5cecda1a90322edc03fdc1f43e6bd0a52082c35e49e81ec8f",
+  "before": {
+    "rows": 1275,
+    "unique_message_records": 757,
+    "source_exposures": {
+      "swift/Qwen3-SFT-Mixin": 1030,
+      "swift/self-cognition": 216,
+      "t008/general-nonthinking-v1": 2,
+      "t008/project-positioning-v1": 23,
+      "t008/strict-json-v1": 4
+    },
+    "group_exposures": {
+      "generic": 1036,
+      "identity": 216,
+      "positioning": 23
+    },
+    "record_format_exposures": {
+      "generic/empty_think": 4,
+      "generic/nonempty_think": 1032,
+      "identity/empty_think": 208,
+      "identity/nonempty_think": 8,
+      "positioning/empty_think": 17,
+      "positioning/nonempty_think": 6
+    },
+    "assistant_turn_mode_counts": {
+      "generic/empty_think": 4,
+      "generic/nonempty_think": 1032,
+      "identity/empty_think": 208,
+      "identity/nonempty_think": 8,
+      "positioning/empty_think": 19,
+      "positioning/nonempty_think": 6
+    },
+    "assistant_turns": 1277,
+    "multiturn_records": 2,
+    "identity_first_user_language_marker": {
+      "first_user_has_han": 114,
+      "first_user_no_han": 102
+    }
+  },
+  "after": {
+    "rows": 1315,
+    "unique_message_records": 797,
+    "source_exposures": {
+      "swift/Qwen3-SFT-Mixin": 1030,
+      "swift/self-cognition": 216,
+      "t008/business-evidence-v1": 8,
+      "t008/chinese-identity-v1": 16,
+      "t008/company-facts-v1": 4,
+      "t008/general-nonthinking-v1": 2,
+      "t008/general-nonthinking-v2": 12,
+      "t008/project-positioning-v1": 23,
+      "t008/strict-json-v1": 4
+    },
+    "group_exposures": {
+      "generic": 1048,
+      "identity": 236,
+      "positioning": 31
+    },
+    "record_format_exposures": {
+      "generic/empty_think": 16,
+      "generic/nonempty_think": 1032,
+      "identity/empty_think": 220,
+      "identity/nonempty_think": 16,
+      "positioning/empty_think": 21,
+      "positioning/nonempty_think": 10
+    },
+    "assistant_turn_mode_counts": {
+      "generic/empty_think": 16,
+      "generic/nonempty_think": 1032,
+      "identity/empty_think": 222,
+      "identity/nonempty_think": 18,
+      "positioning/empty_think": 23,
+      "positioning/nonempty_think": 10
+    },
+    "assistant_turns": 1321,
+    "multiturn_records": 6,
+    "identity_first_user_language_marker": {
+      "first_user_has_han": 134,
+      "first_user_no_han": 102
+    }
+  },
+  "added_records": {
+    "rows": 40,
+    "unique_message_records": 40,
+    "source_exposures": {
+      "t008/business-evidence-v1": 8,
+      "t008/chinese-identity-v1": 16,
+      "t008/company-facts-v1": 4,
+      "t008/general-nonthinking-v2": 12
+    },
+    "group_exposures": {
+      "generic": 12,
+      "identity": 20,
+      "positioning": 8
+    },
+    "record_format_exposures": {
+      "generic/empty_think": 12,
+      "identity/empty_think": 10,
+      "identity/nonempty_think": 10,
+      "positioning/empty_think": 4,
+      "positioning/nonempty_think": 4
+    },
+    "assistant_turn_mode_counts": {
+      "generic/empty_think": 12,
+      "identity/empty_think": 12,
+      "identity/nonempty_think": 12,
+      "positioning/empty_think": 4,
+      "positioning/nonempty_think": 4
+    },
+    "assistant_turns": 44,
+    "multiturn_records": 4,
+    "identity_first_user_language_marker": {
+      "first_user_has_han": 20
+    }
+  },
+  "restored_lines_one_based": [
+    389,
+    803,
+    984,
+    1012
+  ],
+  "inherited_v0111_edits_one_based": [
+    1065,
+    1183,
+    1253,
+    1262,
+    1264,
+    1271
+  ],
+  "added_rows": 40,
+  "restored_rows": 4,
+  "removed_rows": 0,
+  "unchanged_parent_raw_lines": 1271,
+  "unchanged_v0110_raw_lines": 1269,
+  "company_fact_records": {
+    "before": 4,
+    "after": 4,
+    "note": "Moved from four replaced slots into four new slots; not eight fact records."
+  },
+  "supervised_tokens": {
+    "status": "PENDING_NATIVE_SWIFT_ENCODING",
+    "counts": null,
+    "weighted_share": null
+  },
+  "counts_note": "A row is one dataset exposure per epoch. Multi-turn rows contain more than one assistant turn; unique messages and token counts are different measures."
+}

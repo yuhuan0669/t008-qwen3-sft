@@ -1,0 +1,33 @@
+{
+  "status": "LOCAL_STATIC_CHECKS_PASSED",
+  "check_groups": [
+    "parent_snapshots_and_exact_4_restorations_40_additions",
+    "1271_parent_raw_lines_and_six_inherited_revisions_preserved",
+    "complete_before_after_and_lineage_records",
+    "english_json_and_original_multiturn_bytes_preserved",
+    "new_chinese_examples_and_paired_identity_formats",
+    "closed_think_tags_and_visible_answers",
+    "new_arithmetic_and_rewrite_constraints",
+    "236_identity_keys_and_unchanged_loss_plugin",
+    "training_hyperparameters_unchanged_and_83_steps_estimate",
+    "evaluation_template_system_rubric_parameters_preserved",
+    "no_exact_added_development_prompt_overlap",
+    "review_registries_separate_from_latest_trained_v0110",
+    "python_sources_parse_without_importing_swift",
+    "review_markdown_local_links_exist"
+  ],
+  "data_sha256": "89da792c5b91a4b5cecda1a90322edc03fdc1f43e6bd0a52082c35e49e81ec8f",
+  "rows": 1315,
+  "restored_rows": 4,
+  "added_rows": 40,
+  "unchanged_parent_raw_lines": 1271,
+  "unique_message_records": 797,
+  "english_identity_exposures_preserved": 102,
+  "english_records_changed": 0,
+  "native_swift_cpu_encoding": "NOT_RUN",
+  "gpu_inference": "NOT_RUN",
+  "training": "NOT_RUN",
+  "cluster_accessed": false,
+  "formal_holdout_accessed": false,
+  "scope": "Local byte, structure, arithmetic, configuration and registry checks only; not token encoding, actual loss-mask verification or model quality evaluation."
+}

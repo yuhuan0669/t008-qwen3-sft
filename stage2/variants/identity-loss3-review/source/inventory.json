@@ -1,0 +1,15 @@
+{
+  "version": "4.4.2",
+  "files": [
+    "swift/loss_scale/__init__.py",
+    "swift/loss_scale/agent.py",
+    "swift/loss_scale/base.py",
+    "swift/loss_scale/mapping.py",
+    "swift/loss_scale/other.py",
+    "swift/loss_scale/utils.py",
+    "swift/template/template_inputs.py",
+    "swift/template/templates/qwen.py",
+    "swift/dataset/preprocessor/core.py",
+    "swift/arguments/base_args/template_args.py"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "status": "REVIEW_ONLY_NO_TRAINING",
+  "files_sha256": {
+    "CONFIG_DIFF.md": "612349fd39477cb00081348b2ad728d1ef2d8002567a6ee66b999fb9be1d5486",
+    "baseline-training-config.json": "4cb4379d99b85a95696e7b8a2d2f9d8c63531f19154d927b690f818bc79c77f3",
+    "check_cpu.py": "951aa42dc4d406c3200b7a61198d5db93253cf4b5edf811a026a161f94b12e43",
+    "config-diff.json": "3dea20f859b500626a675a3a6ab53d01748ff39a32987f64c5c2576f2909a381",
+    "cpu-check/report.json": "ff98fe90d245732214091cab2594d649b1b6abc402163cd921c8e1053cee2eb8",
+    "cpu-check/row-checks.jsonl": "1b4c5bf6383ca9501f08c471bffdbbe5479d79879f737b8d5119316ee54c0365",
+    "cpu-check.log": "1aee82d6f94706b057efa67e6c3d8c4a50c932bd68ce5e64b564037bcf0bf9af",
+    "identity-keys.json": "4da80965a0695f52454f39c7d57489734806b88b75e68ce613548d2f56041d64",
+    "identity_loss3.py": "082510fc6fadc31eb179384299cc1425e6dfd98ae01ad95d463759c1a0627db8",
+    "pod-cpu.json": "95398ed8ccdf65ed2ae46e8a42a9d6bed30c450c4cff87353fdcf9f5b9aa384a",
+    "source/inventory.json": "38452ee39b70e1c0db38e108a86f23b7b0a8d14cb511f59c14b23c6290b9a17f",
+    "source/swift/arguments/base_args/template_args.py": "fb880fc30ef6eb2617743a6e8b23d8d6aad11e3e706393d43106fcc024f243e8",
+    "source/swift/dataset/preprocessor/core.py": "55f4751391583048bb9c4eca90f95b5d95923c5d958edd0ffe37be223438fa33",
+    "source/swift/loss_scale/__init__.py": "93223a7c39d5ed58d522d9803d191d32153450f418aecc15a3e75fdc369c6fb7",
+    "source/swift/loss_scale/agent.py": "e25d7e1ec9e15bc622ceabc326a6c803103da05428a8a99cb69c8e607a2a8f6b",
+    "source/swift/loss_scale/base.py": "a03a7015a563b3295849b4458ae7d6091f7ddba9c24bebf697388649a1e4e28f",
+    "source/swift/loss_scale/config/ignore_empty_think.json": "da0cf49a93cd5adc18c16c2d86179d8685472943fae405d156e58b17729a9857",
+    "source/swift/loss_scale/mapping.py": "883e22e1986b9778b5878271b59f33bc771b9d3800b7ccdbaebb75c3fef19946",
+    "source/swift/loss_scale/other.py": "5e319a3eae46372a5bcb06e294cd76f39e0106c585c49c1631c7bddc8c1e4cee",
+    "source/swift/loss_scale/utils.py": "e69ba54c37ecbdfe78a55a25cd912465a8420ab4740352259ae2fc90125d81f5",
+    "source/swift/template/base.py": "cc1629c8a84b764b530895692e4e04322aa6732281be229efce9e98752e113cc",
+    "source/swift/template/template_inputs.py": "38241a2dbe56cc9e3038892de6e56ba60d48709cfde1fadc711a49e1632ee232",
+    "source/swift/template/templates/qwen.py": "d4a35ced472f7b10eb254cc334ec21db44f0793a750b68d5edeab105c7db15c3",
+    "source/swift/trainers/seq2seq_trainer.py": "28fe9cb927390ad423add8b98411a90fb2d1c801ead124b354802bdd0779ecf6",
+    "source/transformers/trainer.py": "92cbc62c76e98099323262cdae131e060601b029b0cbe1876036b38c30e4e993",
+    "training-config.json": "fea8de7522a0afaea328158655240d785a40a011e7a26bdd6894339d088139f9",
+    "uat-check.json": "11c335a751dd5296bb54bf125b9948571fca86978c27460664d86b6bcdedd3ee"
+  }
+}

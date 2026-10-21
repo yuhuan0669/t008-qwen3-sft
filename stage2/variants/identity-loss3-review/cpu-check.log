@@ -1,0 +1,25 @@
+Failed to load CPU gemm_4bit_forward from kernels-community: No module named 'kernels'. Please make sure you already `pip install kernels` and the kernels >= 0.11.1
+[INFO:swift] Successfully registered `/usr/local/lib/python3.12/site-packages/swift/dataset/data/dataset_info.json`.
+[INFO:swift] Successfully imported external_plugins: ['/v018-input/stage1/training/local_data_guard.py'].
+[INFO:swift] rank: -1, local_rank: -1, world_size: 1, local_world_size: 1
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+[INFO:swift] Setting args.lazy_tokenize: False
+[transformers] warmup_ratio is deprecated and will be removed in v5.2. Use `warmup_steps` instead.
+[INFO:swift] Successfully imported external_plugins: ['/v018-input/stage1/training/local_data_guard.py', '/tmp/identity-loss3/identity_loss3.py'].
+[INFO:swift] rank: -1, local_rank: -1, world_size: 1, local_world_size: 1
+[INFO:swift] Setting args.lazy_tokenize: False
+[transformers] warmup_ratio is deprecated and will be removed in v5.2. Use `warmup_steps` instead.
+
+Map (num_proc=1): 100%|██████████| 1275/1275 [00:00<?, ? examples/s]
+Map (num_proc=1): 2550 examples [00:00, 12355.80 examples/s]
+Map (num_proc=1): 2550 examples [00:00, 6093.36 examples/s]
+[INFO:swift] Setting torch_dtype: torch.bfloat16
+[INFO:swift] default_system: None
+[INFO:swift] max_length: 2048
+[INFO:swift] response_prefix: None
+[INFO:swift] agent_template: hermes
+[INFO:swift] default_system: None
+[INFO:swift] max_length: 2048
+[INFO:swift] response_prefix: None
+[INFO:swift] agent_template: hermes
+{"verified": true, "training_started": false, "model_weights_loaded": false, "trainer_created": false, "optimizer_created": false, "backward_called": false, "gpu_available": false, "rows": 1275, "source_exposures": {"swift/Qwen3-SFT-Mixin": 1036, "swift/self-cognition": 216, "t008/project-positioning-v1": 23}, "dataset_sha256": "3565d6602c8d3e7e47b9a2ea522fd4d4e76d90f9116911cd46422434b5897eb6", "source_supervised_tokens": {"swift/Qwen3-SFT-Mixin": 1519096, "swift/self-cognition": 8084, "t008/project-positioning-v1": 1009}, "all_input_ids_and_labels_unchanged": true, "exposure_counter_unchanged": true, "weighted_rows": 216, "weighted_supervised_tokens": 8084, "other_supervised_tokens_weight_one": 1520105, "empty_think_and_prompt_mask_unchanged": true, "collator_preserves_0_1_3_weights": true, "binary_loss_scale": false, "template_model_accepts_loss_kwargs": null, "native_loss_numeric_test": {"valid_token_denominator": 6, "weighted_token_sum": 12, "old_identity_loss": 0.8958797454833984, "new_identity_loss": 2.6876392364501953, "general_loss_unchanged": 0.8958797454833984, "identity_ratio": 3.0, "baseline_total": 1.7917594909667969, "weighted_total": 3.5835189819335938, "normalization": "sum(weight * token CE) / unweighted valid token count across accumulated microbatches"}, "versions": {"ms-swift": "4.4.2", "transformers": "5.14.1", "peft": "0.20.0", "torch": "2.11.0+cu130"}}

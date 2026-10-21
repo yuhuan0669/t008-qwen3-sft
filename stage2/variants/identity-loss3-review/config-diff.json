@@ -1,0 +1,35 @@
+{
+  "full_argv": {
+    "--external_plugins": {
+      "before": [
+        "/work/stage1/training/local_data_guard.py"
+      ],
+      "after": [
+        "/work/stage1/training/local_data_guard.py",
+        "/work/stage2/variants/identity-loss3-review/identity_loss3.py"
+      ]
+    },
+    "--output_dir": {
+      "before": [
+        "/runwork/stage1-cpu-v0.1.8/full/checkpoints"
+      ],
+      "after": [
+        "/runwork/stage1-cpu-v0.1.8-identity-loss3/full/checkpoints"
+      ]
+    },
+    "--loss_scale": {
+      "before": [
+        "default+ignore_empty_think"
+      ],
+      "after": [
+        "default+t008_identity3_ignore_empty_think"
+      ]
+    }
+  },
+  "all_other_training_flags_unchanged": true,
+  "baseline_config_equals_original": true,
+  "smoke_output_before": "/runwork/stage1-cpu-v0.1.8/smoke/checkpoints",
+  "smoke_output_after": "/runwork/stage1-cpu-v0.1.8-identity-loss3/smoke/checkpoints",
+  "dataset_sha256": "3565d6602c8d3e7e47b9a2ea522fd4d4e76d90f9116911cd46422434b5897eb6",
+  "evaluation_config_sha256_unchanged_reference": "a5b93cbbe931ae569c32c1d9fe871d6be0289be56e3d15c12d6239a9b5be0833"
+}

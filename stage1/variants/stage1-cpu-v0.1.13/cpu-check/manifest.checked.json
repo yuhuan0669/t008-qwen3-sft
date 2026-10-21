@@ -1,0 +1,19 @@
+{
+  "version": "stage1-cpu-v0.1.13",
+  "parent": "stage1-cpu-v0.1.12",
+  "parent_sha256": "89da792c5b91a4b5cecda1a90322edc03fdc1f43e6bd0a52082c35e49e81ec8f",
+  "dataset": "train.jsonl",
+  "dataset_sha256": "70f7321bc2f277f898dbc6e845eb626cb61300bcb9adebe3273dcbe173ac4d9a",
+  "rows": 1327,
+  "files_sha256": {
+    "train.jsonl": "70f7321bc2f277f898dbc6e845eb626cb61300bcb9adebe3273dcbe173ac4d9a"
+  },
+  "review_source": "stage1/review/company-boundaries-12-review-v0.1.md",
+  "review_source_sha256": "78ec213132faa541462762d64b3ee8c970421cdb53dc1498035bee29de25672b",
+  "added_rows": 12,
+  "parent_rows_preserved_byte_for_byte": 1315,
+  "training_authorized": false,
+  "training_started": false,
+  "inference_executed": false,
+  "sync_status": "LOCAL_GIT_ONLY"
+}

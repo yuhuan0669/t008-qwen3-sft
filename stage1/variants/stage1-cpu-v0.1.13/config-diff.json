@@ -1,0 +1,33 @@
+{
+  "parent": "stage1/variants/stage1-cpu-v0.1.12/training-config.json",
+  "parent_sha256": "7c29c92d70c7e8e1af4b8cd1cbc10a1efdbfe2ebe930a8084c0d4b95d1dc3a13",
+  "argv_changes": [
+    {
+      "before": "/work/stage1/variants/stage1-cpu-v0.1.12/train.jsonl",
+      "after": "/work/stage1/variants/stage1-cpu-v0.1.13/train.jsonl"
+    },
+    {
+      "before": "/runwork/stage1-cpu-v0.1.12/full/checkpoints",
+      "after": "/runwork/stage1-cpu-v0.1.13/full/checkpoints"
+    },
+    {
+      "before": "/work/stage1/variants/stage1-cpu-v0.1.12/identity_loss3.py",
+      "after": "/work/stage1/variants/stage1-cpu-v0.1.13/identity_loss3.py"
+    }
+  ],
+  "training_hyperparameters_unchanged": true,
+  "loss_plugin_bytes_unchanged": true,
+  "identity_matching_keys_unchanged": true,
+  "normalization_rule_unchanged": true,
+  "old_rows_and_exposures_unchanged": true,
+  "added_rows_x1": 12,
+  "dataset_rows": {
+    "before": 1315,
+    "after": 1327
+  },
+  "estimated_steps": {
+    "before": 83,
+    "after": 83
+  },
+  "native_cpu_encoding_executed": true
+}

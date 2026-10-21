@@ -1,6 +1,8 @@
 # T-008 · Qwen3-8B 基础 SFT 统一版本库
 
-**当前：最后一次468次中文对照已完成，停止追加SFT，UAT原配置已恢复并核验健康。** 统一System、修正vLLM模板及JSON Schema下，Non-thinking完整任务通过：原版72/78、v0.1.10为72/78、v0.1.12为71/78；预设边界/无依据事实失败分别0/3/4。建议默认原版Non-thinking，两份LoRA保留；三版JSON均24/24，所有请求零空正文、零截断。新配置未部署，节点A未正式验收，英文延后。[选型报告](stage2/diagnostics/final-chinese-selection-20261021-094210/REPORT.md) · [逐题回答](stage2/diagnostics/final-chinese-selection-20261021-094210/ANSWERS.md)。
+**当前：v0.1.13数据准备与CPU编码检查通过，尚未训练。** 在v0.1.12的1315条原数据后追加12条中文对话，总量1327条；原数据、已有曝光、训练超参数及身份×3规则不变，新增普通权重1。UAT未暂停、配置未变，临时CPU Pod已删除。仅本地Git保存，没有上传GitHub/Drive。[检查报告](stage1/variants/stage1-cpu-v0.1.13/CPU_CHECK.md) · [12条样本](stage1/variants/stage1-cpu-v0.1.13/SAMPLES.md) · [配置差异](stage1/variants/stage1-cpu-v0.1.13/CONFIG_DIFF.md)。此前选型建议和历史训练结果保留，未因CPU通过授权新训练或部署。
+
+**此前：最后一次468次中文对照已完成，停止追加SFT，UAT原配置已恢复并核验健康。** 统一System、修正vLLM模板及JSON Schema下，Non-thinking完整任务通过：原版72/78、v0.1.10为72/78、v0.1.12为71/78；预设边界/无依据事实失败分别0/3/4。建议默认原版Non-thinking，两份LoRA保留；三版JSON均24/24，所有请求零空正文、零截断。新配置未部署，节点A未正式验收，英文延后。[选型报告](stage2/diagnostics/final-chinese-selection-20261021-094210/REPORT.md) · [逐题回答](stage2/diagnostics/final-chinese-selection-20261021-094210/ANSWERS.md)。
 
 **此前：v0.1.12一次83步／1epoch训练与327次推理已完成，UAT原配置已恢复。** 1315条冻结数据和训练参数不变，未追加Full或部署新模型；英文延后。
 

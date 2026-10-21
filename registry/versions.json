@@ -207,6 +207,20 @@
       "stage_registry": "registry/stage1.json",
       "git_ref": "stage1-cpu-v0.1.3",
       "sync_status": "LOCAL_ONLY"
+    },
+    {
+      "id": "stage1-cpu-v0.1.13",
+      "repository_path": "stage1/variants/stage1-cpu-v0.1.13/train.jsonl",
+      "bytes": 7214413,
+      "sha256": "70f7321bc2f277f898dbc6e845eb626cb61300bcb9adebe3273dcbe173ac4d9a",
+      "rows": 1327,
+      "parent": "stage1-cpu-v0.1.12",
+      "added_rows": 12,
+      "changed_parent_rows": 0,
+      "storage": "git",
+      "status": "CPU_CHECKED_NO_TRAINING",
+      "manifest": "stage1/variants/stage1-cpu-v0.1.13/manifest.json",
+      "training_authorized": false
     }
   ],
   "data_canonical_hashes": {

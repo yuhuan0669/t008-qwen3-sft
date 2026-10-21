@@ -1,0 +1,10 @@
+{
+  "recorded_at_utc": "2026-10-21T13:19:25.151288+00:00",
+  "name": "vllm",
+  "uid": "041c9a49-1693-45a5-8ff6-6136ba9e4074",
+  "generation": 74,
+  "spec_sha256": "d108057bd148c5c8d54a8c4406f8d7579b5a69beb693c686c0ced95b070f811b",
+  "replicas": 1,
+  "ready": 1,
+  "available": 1
+}

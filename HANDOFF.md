@@ -1,6 +1,8 @@
 # T-008 Qwen3-8B 基础 SFT · 统一交接
 
-**当前：最后一次468次中文对照已完成，停止追加SFT。** 原版、v0.1.10、v0.1.12使用统一System、修正vLLM模板和JSON Schema；建议默认原版Non-thinking，两份LoRA保留。UAT已恢复原配置、1/1就绪，内外健康200；新配置未部署，节点A未正式验收，英文延后。[选型报告](stage2/diagnostics/final-chinese-selection-20261021-094210/REPORT.md) · [完整核验](stage2/diagnostics/final-chinese-selection-20261021-094210/verification.json)。
+**当前：v0.1.13数据准备与CPU编码检查通过，尚未训练。** 在v0.1.12的1315条原数据后追加12条中文对话，总量1327条；原数据、已有曝光、训练超参数及身份×3规则不变，新增普通权重1。UAT未暂停、配置未变，临时CPU Pod已删除。仅本地Git保存，没有上传GitHub/Drive。[检查报告](stage1/variants/stage1-cpu-v0.1.13/CPU_CHECK.md) · [12条样本](stage1/variants/stage1-cpu-v0.1.13/SAMPLES.md) · [配置差异](stage1/variants/stage1-cpu-v0.1.13/CONFIG_DIFF.md)。此前选型建议和历史训练结果保留，未因CPU通过授权新训练或部署。
+
+**此前：最后一次468次中文对照已完成，停止追加SFT。** 原版、v0.1.10、v0.1.12使用统一System、修正vLLM模板和JSON Schema；建议默认原版Non-thinking，两份LoRA保留。UAT已恢复原配置、1/1就绪，内外健康200；新配置未部署，节点A未正式验收，英文延后。[选型报告](stage2/diagnostics/final-chinese-selection-20261021-094210/REPORT.md) · [完整核验](stage2/diagnostics/final-chinese-selection-20261021-094210/verification.json)。
 
 **此前：v0.1.12一次83步／1epoch训练与327次推理已完成，UAT原配置已恢复。** 1315条冻结数据和训练参数不变，未追加Full或部署新模型；英文延后。
 

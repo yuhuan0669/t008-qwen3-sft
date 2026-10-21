@@ -1,0 +1,113 @@
+{
+  "version": "stage1-cpu-v0.1.13",
+  "parent": "stage1-cpu-v0.1.12",
+  "parent_sha256": "89da792c5b91a4b5cecda1a90322edc03fdc1f43e6bd0a52082c35e49e81ec8f",
+  "train_sha256": "70f7321bc2f277f898dbc6e845eb626cb61300bcb9adebe3273dcbe173ac4d9a",
+  "before": {
+    "rows": 1315,
+    "unique_message_records": 797,
+    "source_exposures": {
+      "swift/Qwen3-SFT-Mixin": 1030,
+      "swift/self-cognition": 216,
+      "t008/business-evidence-v1": 8,
+      "t008/chinese-identity-v1": 16,
+      "t008/company-facts-v1": 4,
+      "t008/general-nonthinking-v1": 2,
+      "t008/general-nonthinking-v2": 12,
+      "t008/project-positioning-v1": 23,
+      "t008/strict-json-v1": 4
+    },
+    "group_exposures": {
+      "generic": 1048,
+      "identity": 236,
+      "positioning": 31
+    },
+    "record_format_exposures": {
+      "generic/empty_think": 16,
+      "generic/nonempty_think": 1032,
+      "identity/empty_think": 220,
+      "identity/nonempty_think": 16,
+      "positioning/empty_think": 21,
+      "positioning/nonempty_think": 10
+    },
+    "assistant_turn_mode_counts": {
+      "generic/empty_think": 16,
+      "generic/nonempty_think": 1032,
+      "identity/empty_think": 222,
+      "identity/nonempty_think": 18,
+      "positioning/empty_think": 23,
+      "positioning/nonempty_think": 10
+    },
+    "assistant_turns": 1321,
+    "multiturn_records": 6,
+    "identity_first_user_language_marker": {
+      "first_user_has_han": 134,
+      "first_user_no_han": 102
+    }
+  },
+  "after": {
+    "rows": 1327,
+    "unique_message_records": 809,
+    "source_exposures": {
+      "swift/Qwen3-SFT-Mixin": 1030,
+      "swift/self-cognition": 216,
+      "t008/strict-json-v1": 4,
+      "t008/general-nonthinking-v1": 2,
+      "t008/project-positioning-v1": 23,
+      "t008/company-facts-v1": 4,
+      "t008/chinese-identity-v1": 16,
+      "t008/general-nonthinking-v2": 12,
+      "t008/business-evidence-v1": 8,
+      "t008/company-boundary-v1": 12
+    },
+    "group_exposures": {
+      "generic": 1048,
+      "identity": 236,
+      "positioning": 43
+    },
+    "record_format_exposures": {
+      "generic/empty_think": 16,
+      "generic/nonempty_think": 1032,
+      "identity/empty_think": 220,
+      "identity/nonempty_think": 16,
+      "positioning/empty_think": 33,
+      "positioning/nonempty_think": 10
+    },
+    "assistant_turn_mode_counts": {
+      "generic/empty_think": 16,
+      "generic/nonempty_think": 1032,
+      "identity/empty_think": 222,
+      "identity/nonempty_think": 18,
+      "positioning/empty_think": 38,
+      "positioning/nonempty_think": 10
+    },
+    "assistant_turns": 1336,
+    "multiturn_records": 9,
+    "identity_first_user_language_marker": {
+      "first_user_has_han": 134,
+      "first_user_no_han": 102
+    }
+  },
+  "added_rows": 12,
+  "changed_parent_rows": 0,
+  "removed_rows": 0,
+  "unchanged_parent_raw_lines": 1315,
+  "new_assistant_turns": 15,
+  "supervised_tokens": {
+    "status": "VERIFIED_NATIVE_SWIFT_CPU",
+    "by_group": {
+      "generic": 1515617,
+      "identity": 9008,
+      "positioning": 2073
+    },
+    "weighted_units_by_group": {
+      "generic": 1515617.0,
+      "identity": 27008.0,
+      "positioning": 2073.0
+    },
+    "new_boundary_supervised_tokens": 451,
+    "identity_supervised_share": 0.005900315583042619,
+    "identity_weighted_unit_share": 0.01748432379662562,
+    "note": "Supervised/weighted token counts are not measured loss or gradient contributions."
+  }
+}

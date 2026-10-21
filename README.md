@@ -4,6 +4,8 @@
 
 从 [HANDOFF.md](HANDOFF.md) 开始，再读 [当前状态](control/CURRENT_STATE.json) 与 [版本登记表](registry/versions.json)。
 
+当前审阅稿为 [中文最小修改 v0.1](stage2/variants/chinese-minimal-review-v0.1/REVIEW.md)：英文身份延后，拟调整推理预算、补System边界并替换5条中文样本；仅本地草稿，未训练或操作UAT。依据最近完成的 [Swift/vLLM诊断](stage2/diagnostics/engine-compare-20261020/REPORT.md)。
+
 最新执行为 **v0.1.8 身份答案loss×3：80步／1epoch完成，中文短身份改善，开发未达标，原UAT已恢复**。数据及曝光不变。[本轮报告](stage2/runs/t008-v018-loss3-20261020-180616/REPORT.md) · [逐题对照](stage2/runs/t008-v018-loss3-20261020-180616/development/ANSWERS.md)。不追加训练，未部署新模型。此前v0.1.8结果保留于[原报告](stage2/runs/t008-v018-20261020-145507/REPORT.md)。
 
 此前 v0.1.7 执行结果为 **v0.1.7：80步／1epoch训练完成，开发未达标，原UAT已恢复**。见 [本轮结果](stage2/runs/t008-v017-20261020-135244/REPORT.md) 与 [逐题对照](stage2/runs/t008-v017-20261020-135244/development/ANSWERS.md)。本轮最终模型曝光不变；一次监控故障导致的36步中断尝试单独保留。v0.1.7数据目录保持开训前冻结快照，当前训练状态以本轮结果为准。

@@ -1,4 +1,6 @@
-当前最新为 **v0.1.8 身份loss×3：训练完成，中文短身份改善，开发未达标，UAT已恢复**。[本轮报告](runs/t008-v018-loss3-20261020-180616/REPORT.md) · [逐题回答](runs/t008-v018-loss3-20261020-180616/development/ANSWERS.md)。以下保留历史执行说明。
+当前审阅稿：[中文最小修改 v0.1](variants/chinese-minimal-review-v0.1/REVIEW.md) · [5条样本前后对照](variants/chinese-minimal-review-v0.1/SAMPLE_DIFF.md)。英文身份延后；仅本地草稿，未修改现行数据或服务配置。最近完成的 [Swift/vLLM诊断](diagnostics/engine-compare-20261020/REPORT.md) 已区分普通说明截断、模板空正文和重复生成。
+
+最新训练为 **v0.1.8 身份loss×3：训练完成，中文短身份改善，开发未达标，UAT已恢复**。[本轮报告](runs/t008-v018-loss3-20261020-180616/REPORT.md) · [逐题回答](runs/t008-v018-loss3-20261020-180616/development/ANSWERS.md)。以下保留历史执行说明。
 
 # 最新执行：v0.1.7
 

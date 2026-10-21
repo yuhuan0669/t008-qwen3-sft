@@ -145,5 +145,16 @@
       "next_training_authorized": false,
       "sync_status": "LOCAL_GIT_ONLY_CLEARML_TRAINING_ARTIFACTS"
     }
-  ]
+  ],
+  "current_review": {
+    "version": "chinese-minimal-review-v0.1",
+    "status": "REVIEW_DRAFT_ONLY",
+    "report": "stage2/variants/chinese-minimal-review-v0.1/REVIEW.md",
+    "sample_diff": "stage2/variants/chinese-minimal-review-v0.1/SAMPLE_DIFF.md",
+    "verification": "stage2/variants/chinese-minimal-review-v0.1/verification.json",
+    "english_identity": "DEFERRED_PENDING",
+    "training_started": false,
+    "inference_started": false,
+    "sync_status": "LOCAL_GIT_ONLY"
+  }
 }

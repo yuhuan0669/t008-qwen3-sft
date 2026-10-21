@@ -1,0 +1,56 @@
+{
+  "status": "STATIC_REVIEW_VERIFIED",
+  "checked_at": "2026-10-20T20:19:37.304466-07:00",
+  "parent_source_sha256": "3565d6602c8d3e7e47b9a2ea522fd4d4e76d90f9116911cd46422434b5897eb6",
+  "source_files_unchanged": true,
+  "changes_match_frozen_rows": true,
+  "proposed_changed_rows_zero_based": [
+    894,
+    936,
+    1260,
+    1264,
+    1270
+  ],
+  "original_rows": 1275,
+  "projected_rows": 1275,
+  "unchanged_other_rows_byte_for_byte": 1270,
+  "proposed_exposure_replacements": 5,
+  "additional_exposures": 0,
+  "all_user_messages_unchanged": true,
+  "source_counts_unchanged": {
+    "swift/Qwen3-SFT-Mixin": 1036,
+    "swift/self-cognition": 216,
+    "t008/project-positioning-v1": 23
+  },
+  "language_exposure_unchanged_basis": "All 1275 user messages retained byte-equivalent decoded content and order; only assistant content in five Chinese records is proposed for change.",
+  "generic_records_unchanged": true,
+  "english_records_unchanged": true,
+  "system_original_prefix_retained": true,
+  "inference_only_changed_mode_field": "nonthinking.max_tokens: 1024 -> 2048",
+  "identity_keys_require_regeneration": true,
+  "links_checked": true,
+  "cpu_tokenizer_encoding_run": false,
+  "model_inference_run": false,
+  "training_run": false,
+  "cluster_accessed": false,
+  "projected_full_dataset_written": false,
+  "proof_limit": "Static draft verification only; no proof of token lengths, actual runtime loss masks, or model-quality improvement.",
+  "files": {
+    "REVIEW.md": {
+      "sha256": "e35868b7db30c5d1484a28dea290431b2a80106cb99d2d8ead7c8839bea51245",
+      "bytes": 8119
+    },
+    "SAMPLE_DIFF.md": {
+      "sha256": "1db6dbacfeba3b5a2fd44793a36726616eb37f613b6fb9650c9866df85202f7b",
+      "bytes": 5842
+    },
+    "custom-system.proposed.txt": {
+      "sha256": "8fcd51af033cdd2f1f45b27da97bc6f006a46cb793fc4384b458629dfbc5340f",
+      "bytes": 1256
+    },
+    "proposal.json": {
+      "sha256": "3611982d7a19becc633ab0d2f07e8c7264f9b06c1829f906099b8eb13cd3dcdb",
+      "bytes": 15343
+    }
+  }
+}

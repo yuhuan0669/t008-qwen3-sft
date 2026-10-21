@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "verified_at_utc": "2026-10-21T11:17:34.511178+00:00",
+  "requests": 468,
+  "expected_matrix_exact": true,
+  "requests_per_model_mode": {
+    "t008-base__nonthinking": 78,
+    "t008-v0110__nonthinking": 78,
+    "t008-v0112__nonthinking": 78,
+    "t008-v0110__thinking": 78,
+    "t008-v0112__thinking": 78,
+    "t008-base__thinking": 78
+  },
+  "chat_successes": 468,
+  "retries": 0,
+  "all_server_prompt_ids_verified": true,
+  "first_turn_paired_input_groups": 144,
+  "runtime_inputs_match_frozen": true,
+  "source_datasets_unchanged": true,
+  "source_dataset_sha256": {
+    "stage1/variants/stage1-cpu-v0.1.10/train.jsonl": "5b455659b0e3fea30efd5822be1a7fee0e57d2788bc0dcbf79ec755cd5f22788",
+    "stage1/variants/stage1-cpu-v0.1.12/train.jsonl": "89da792c5b91a4b5cecda1a90322edc03fdc1f43e6bd0a52082c35e49e81ec8f"
+  },
+  "original_uat_spec_equal": true,
+  "uat_ready_replicas": 1,
+  "health_status": 200,
+  "ingress_health_status": 200,
+  "uat_model_ids": [
+    "octa-carbon-v1"
+  ],
+  "temporary_gpu_pod_removed": true,
+  "training": false,
+  "english": false,
+  "subagent": false,
+  "new_model_deployed": false,
+  "formal_holdout": false
+}

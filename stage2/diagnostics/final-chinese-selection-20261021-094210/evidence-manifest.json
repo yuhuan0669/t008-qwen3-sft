@@ -1,0 +1,286 @@
+{
+  "schema": "t008-final-chinese-comparison-evidence-v1",
+  "created_at_utc": "2026-10-21T11:18:10.027304+00:00",
+  "base_git_commit_before_delivery": "fb1332ecaa7de9a1763a7a62666fc1c12b790656",
+  "files": [
+    {
+      "path": "stage2/diagnostics/final-chinese-selection-20261021-094210/ANSWERS.md",
+      "bytes": 270187,
+      "sha256": "ada8bf2296dc2ff8282136f7d0373f920e06306ae3d0d839a16cc9a0cf76b6fc"
+    },
+    {
+      "path": "stage2/diagnostics/final-chinese-selection-20261021-094210/EXECUTION.md",
+      "bytes": 819,
+      "sha256": "673b3d976692b810ce474c6e5da66f1a0ed1a37a984ee8ecb13ea9267e2d5084"
+    },
+    {
+      "path": "stage2/diagnostics/final-chinese-selection-20261021-094210/PLAN.md",
+      "bytes": 1629,
+      "sha256": "040d9fe5681026ec1b58d98dcf21bcb29d496c6e90b7bba8cb368dad746cf2e2"
+    },
+    {
+      "path": "stage2/diagnostics/final-chinese-selection-20261021-094210/REFERENCES.md",
+      "bytes": 3413,
+      "sha256": "0423a79ac261149341648e5d53ad6f0cd1d8b43f550d6ea0d310096a71d264d5"
+    },
+    {
+      "path": "stage2/diagnostics/final-chinese-selection-20261021-094210/REPORT.md",
+      "bytes": 8140,
+      "sha256": "d276825773219267e9df2f602fc994b41492f2341dcd7bae3f2783fc04c0c135"
+    },
+    {
+      "path": "stage2/diagnostics/final-chinese-selection-20261021-094210/authorization.json",
+      "bytes": 343,
+      "sha256": "996a2bf65a3591672bdc73142b88629550fc373dd726ee688c589896a231c7a7"
+    },
+    {
+      "path": "stage2/diagnostics/final-chinese-selection-20261021-094210/base-files.json",
+      "bytes": 2350,
+      "sha256": "a1b77d34bda8a913bc050ba2b8b343b6104f77fa701c8b5275a0b438baedfd56"
+    },
+    {
+      "path": "stage2/diagnostics/final-chinese-selection-20261021-094210/custom-system.txt",
+      "bytes": 1708,
+      "sha256": "8f449f851a170c7b97f8e11216be570309905749c2b9e162b419706fadba2cb5"
+    },
+    {
+      "path": "stage2/diagnostics/final-chinese-selection-20261021-094210/execute.py",
+      "bytes": 2807,
+      "sha256": "f7b024d369d95a495292e70ddee0e11049e1f44db6c4f48006b3f9d6e1c83bb5"
+    },
+    {
+      "path": "stage2/diagnostics/final-chinese-selection-20261021-094210/gpu-before.csv",
+      "bytes": 116,
+      "sha256": "dbcaa12847831d3f7b10939469000c4608b68f42c69ddcbadd481bdca5aac8c5"
+    },
+    {
+      "path": "stage2/diagnostics/final-chinese-selection-20261021-094210/gpu-workloads-before.json",
+      "bytes": 966,
+      "sha256": "7efcd7dc573bf0530281f285167d5a2ac80f65e997e198844f2a45709d1fed24"
+    },
+    {
+      "path": "stage2/diagnostics/final-chinese-selection-20261021-094210/local-preflight.json",
+      "bytes": 148,
+      "sha256": "2b5277653e97feeb41bf7ae1e6939757577889e80b71902459bfdf4be137e34a"
+    },
+    {
+      "path": "stage2/diagnostics/final-chinese-selection-20261021-094210/mechanical-summary.json",
+      "bytes": 2152,
+      "sha256": "7a51210c869a06b466b7d91baed2b6e575304b3bd033def5117fd3ea42513e7b"
+    },
+    {
+      "path": "stage2/diagnostics/final-chinese-selection-20261021-094210/normalized.jsonl",
+      "bytes": 777138,
+      "sha256": "ec0c33396e997bf9c66d05490da0e8ba2bc5586a27a9f775d5ad6ddb762d0f02"
+    },
+    {
+      "path": "stage2/diagnostics/final-chinese-selection-20261021-094210/pod-gpu.json",
+      "bytes": 5606,
+      "sha256": "4a6c39ab0a3910be5f37853765c51020196878113f92127e545a205e25a08d79"
+    },
+    {
+      "path": "stage2/diagnostics/final-chinese-selection-20261021-094210/pod-name.txt",
+      "bytes": 30,
+      "sha256": "d33f21fa7a373f763a365d6492b35878912818fe258257abd51c6ab57b7926e7"
+    },
+    {
+      "path": "stage2/diagnostics/final-chinese-selection-20261021-094210/reasoning-name-screen.json",
+      "bytes": 179,
+      "sha256": "23ecc23621007942d4240173c0ab0727094d9c24b028e680b6c3f8405cbecd34"
+    },
+    {
+      "path": "stage2/diagnostics/final-chinese-selection-20261021-094210/results/authorization.json",
+      "bytes": 343,
+      "sha256": "996a2bf65a3591672bdc73142b88629550fc373dd726ee688c589896a231c7a7"
+    },
+    {
+      "path": "stage2/diagnostics/final-chinese-selection-20261021-094210/results/base-files.json",
+      "bytes": 2350,
+      "sha256": "a1b77d34bda8a913bc050ba2b8b343b6104f77fa701c8b5275a0b438baedfd56"
+    },
+    {
+      "path": "stage2/diagnostics/final-chinese-selection-20261021-094210/results/complete.json",
+      "bytes": 152,
+      "sha256": "9d30b0e0978a03c54af039fa5e4ba9a91273b62dd65df0046a7eca39c70f615e"
+    },
+    {
+      "path": "stage2/diagnostics/final-chinese-selection-20261021-094210/results/custom-system.txt",
+      "bytes": 1708,
+      "sha256": "8f449f851a170c7b97f8e11216be570309905749c2b9e162b419706fadba2cb5"
+    },
+    {
+      "path": "stage2/diagnostics/final-chinese-selection-20261021-094210/results/preflight.json",
+      "bytes": 251186,
+      "sha256": "d92455eb5ce2424e45a3ec19c41f117031d48557988e7c9152034b6ebc72f547"
+    },
+    {
+      "path": "stage2/diagnostics/final-chinese-selection-20261021-094210/results/progress.json",
+      "bytes": 217,
+      "sha256": "d78566d302e70301d5d4ae34623fe283e7c6be402926033070733999ef06b825"
+    },
+    {
+      "path": "stage2/diagnostics/final-chinese-selection-20261021-094210/results/results.jsonl",
+      "bytes": 3700320,
+      "sha256": "4551d9475dea6dfa377d2ffa1e3925463c4187781f93fa908097eb354f35dc24"
+    },
+    {
+      "path": "stage2/diagnostics/final-chinese-selection-20261021-094210/results/run.py",
+      "bytes": 9309,
+      "sha256": "6b9622cbff462772d3e6d97bab219489384000b9c77fad862acc1793769fa033"
+    },
+    {
+      "path": "stage2/diagnostics/final-chinese-selection-20261021-094210/results/scenarios.jsonl",
+      "bytes": 9696,
+      "sha256": "2515dae1166594da1e0474db003aa62f4437ed661f0aab93abdf7e7a711148e7"
+    },
+    {
+      "path": "stage2/diagnostics/final-chinese-selection-20261021-094210/results/spec.json",
+      "bytes": 2320,
+      "sha256": "bb5fcca27ebe3723ecd40b021f1b54687c90d7d63ac22c1f582be176c7ec748c"
+    },
+    {
+      "path": "stage2/diagnostics/final-chinese-selection-20261021-094210/results/thinking-prefill.jinja",
+      "bytes": 4211,
+      "sha256": "ae8a1b27c3bac461eb5f6c78d5d39cbe29427ad91c9d2da8378e236b8a38448d"
+    },
+    {
+      "path": "stage2/diagnostics/final-chinese-selection-20261021-094210/results/vllm-command.json",
+      "bytes": 785,
+      "sha256": "df80b216abff8afb942a0068bbd00f654804ec2c555dc5bd050748627b44dd81"
+    },
+    {
+      "path": "stage2/diagnostics/final-chinese-selection-20261021-094210/results/vllm-server.log",
+      "bytes": 157692,
+      "sha256": "a6fcda5dc170edca0c8081ebb5f1b1f26eb2282ca6c532d5cb23bf48ad791e3b"
+    },
+    {
+      "path": "stage2/diagnostics/final-chinese-selection-20261021-094210/review_view.py",
+      "bytes": 1755,
+      "sha256": "c26fbda966d8f89b0fabd3539894d9b1fd1ba37a8eca7a088c3b663a0c3855e6"
+    },
+    {
+      "path": "stage2/diagnostics/final-chinese-selection-20261021-094210/run.py",
+      "bytes": 9309,
+      "sha256": "6b9622cbff462772d3e6d97bab219489384000b9c77fad862acc1793769fa033"
+    },
+    {
+      "path": "stage2/diagnostics/final-chinese-selection-20261021-094210/runner.log",
+      "bytes": 94285,
+      "sha256": "13b56ebd25fc486ef70f6e61aca59cc68ee482c1c915153e276831799b84b295"
+    },
+    {
+      "path": "stage2/diagnostics/final-chinese-selection-20261021-094210/scenarios.jsonl",
+      "bytes": 9696,
+      "sha256": "2515dae1166594da1e0474db003aa62f4437ed661f0aab93abdf7e7a711148e7"
+    },
+    {
+      "path": "stage2/diagnostics/final-chinese-selection-20261021-094210/score_semantics.py",
+      "bytes": 3285,
+      "sha256": "d8cb78e1e48612181511d10e65c30c2c4dce3d68231fe0d2c86c7e9caf4026d5"
+    },
+    {
+      "path": "stage2/diagnostics/final-chinese-selection-20261021-094210/scored.jsonl",
+      "bytes": 899001,
+      "sha256": "9becd86a57ea86bc986e366a6d3e44d77ebfd4f8ef978e37349c192568272d8b"
+    },
+    {
+      "path": "stage2/diagnostics/final-chinese-selection-20261021-094210/selection-summary.json",
+      "bytes": 8774,
+      "sha256": "b8ac6e22675e6180232cd766a68b9dd9b7ca7d34a837dbe9a7bfbb436c460c0e"
+    },
+    {
+      "path": "stage2/diagnostics/final-chinese-selection-20261021-094210/semantic-review.json",
+      "bytes": 24850,
+      "sha256": "e8ac20a23cec8a2fea6a6db52fba85bd43f7eec0c020aa77fe2e07deffe04548"
+    },
+    {
+      "path": "stage2/diagnostics/final-chinese-selection-20261021-094210/spec.json",
+      "bytes": 2320,
+      "sha256": "bb5fcca27ebe3723ecd40b021f1b54687c90d7d63ac22c1f582be176c7ec748c"
+    },
+    {
+      "path": "stage2/diagnostics/final-chinese-selection-20261021-094210/standard-reference-checks.json",
+      "bytes": 3654,
+      "sha256": "0419e0c363519f95f47d2c8c34ca3ec31f37a9d3aa5d9f1cd58c8476596d040d"
+    },
+    {
+      "path": "stage2/diagnostics/final-chinese-selection-20261021-094210/summarize.py",
+      "bytes": 5868,
+      "sha256": "2bac735e0728e1b0eff824a827f9907db3445ac5d83f7394a522b19f0a647fed"
+    },
+    {
+      "path": "stage2/diagnostics/final-chinese-selection-20261021-094210/thinking-prefill.jinja",
+      "bytes": 4211,
+      "sha256": "ae8a1b27c3bac461eb5f6c78d5d39cbe29427ad91c9d2da8378e236b8a38448d"
+    },
+    {
+      "path": "stage2/diagnostics/final-chinese-selection-20261021-094210/uat-before.json",
+      "bytes": 10970,
+      "sha256": "63a2150d87f7264a4330017993a3a97acc8a2754e9962a35c8ad00430a8a8de6"
+    },
+    {
+      "path": "stage2/diagnostics/final-chinese-selection-20261021-094210/uat-health-after.json",
+      "bytes": 802,
+      "sha256": "e58ba0f6b931a030632f003e0f4671259705b5d1a8232dab7c0c7de7841dd531"
+    },
+    {
+      "path": "stage2/diagnostics/final-chinese-selection-20261021-094210/uat-health-before.json",
+      "bytes": 802,
+      "sha256": "8c223a0b4f6e80fd004ccec3c3f47b1650bca3252f4355ff56cd938aa928d80a"
+    },
+    {
+      "path": "stage2/diagnostics/final-chinese-selection-20261021-094210/uat-restored.json",
+      "bytes": 10970,
+      "sha256": "554f53eb5d7978591edf47d14ef3ebe644b595ee5bb3ac89306bf325fa69ab30"
+    },
+    {
+      "path": "stage2/diagnostics/final-chinese-selection-20261021-094210/verification.json",
+      "bytes": 1165,
+      "sha256": "4f7c85d31f62011bf2242c428ea48c22f964e5497a5a85101b3f6e82f12e55ea"
+    },
+    {
+      "path": "stage2/diagnostics/final-chinese-selection-20261021-094210/verify.py",
+      "bytes": 5836,
+      "sha256": "a86791c2f891f038c1bdb93e7024f66ebf971a084ee53141ec90bf57c2e3bd3e"
+    },
+    {
+      "path": "stage2/diagnostics/final-chinese-selection-20261021-094210/watchdog.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "stage2/diagnostics/final-chinese-selection-20261021-094210/window-state.json",
+      "bytes": 674,
+      "sha256": "b853a7ad25cfa9d654621ff6cf224bf99f06bd7dfeb4edeb397e3865a0c3541b"
+    },
+    {
+      "path": "stage2/diagnostics/final-chinese-selection-20261021-094210/window.py",
+      "bytes": 4453,
+      "sha256": "3888ee8e71b9f6d76176ed37df7b1a957e8879b46b332f54dcdec80eb8b4371b"
+    },
+    {
+      "path": "README.md",
+      "bytes": 6909,
+      "sha256": "51ff5a35ea0917d9ce11ddd42859bb600ee8c5df8450103fb930ed3b9451e69d"
+    },
+    {
+      "path": "HANDOFF.md",
+      "bytes": 13161,
+      "sha256": "f38b179fca4790152a8e9b950bd6d643a638c3b41a5db756b81e044d8073c89f"
+    },
+    {
+      "path": "control/CURRENT_STATE.json",
+      "bytes": 19587,
+      "sha256": "ad5e1ac0ae3753859f7146fc59ab2b6eb7b861a4e8a3ec34d9b92344101b5ff7"
+    },
+    {
+      "path": "registry/stage2.json",
+      "bytes": 20015,
+      "sha256": "35bfa2ff1c2fd64f9593fd81ee1fe70b350b1458058f62304b9011ae0fd8d0f7"
+    }
+  ],
+  "verification": "verification.json",
+  "score": "selection-summary.json",
+  "training": false,
+  "remote_upload": false
+}

@@ -1,0 +1,407 @@
+{
+  "groups": [
+    {
+      "model": "t008-base",
+      "mode": "nonthinking",
+      "total": 78,
+      "task_pass": 72,
+      "serious_responses": 0,
+      "serious_types": {},
+      "empty": 0,
+      "length": 0,
+      "categories": {
+        "boundary": {
+          "passed": 12,
+          "total": 15
+        },
+        "company_facts_multiturn": {
+          "passed": 6,
+          "total": 6
+        },
+        "general": {
+          "passed": 13,
+          "total": 15
+        },
+        "hypothetical_multiturn": {
+          "passed": 6,
+          "total": 6
+        },
+        "identity": {
+          "passed": 6,
+          "total": 6
+        },
+        "in_scope_assistance": {
+          "passed": 3,
+          "total": 3
+        },
+        "json": {
+          "passed": 12,
+          "total": 12
+        },
+        "ordinary_answer": {
+          "passed": 3,
+          "total": 3
+        },
+        "returns_and_track_record": {
+          "passed": 2,
+          "total": 3
+        },
+        "short_identity": {
+          "passed": 3,
+          "total": 3
+        },
+        "unknown_company_facts": {
+          "passed": 3,
+          "total": 3
+        },
+        "unverified_platform": {
+          "passed": 3,
+          "total": 3
+        }
+      }
+    },
+    {
+      "model": "t008-base",
+      "mode": "thinking",
+      "total": 78,
+      "task_pass": 71,
+      "serious_responses": 3,
+      "serious_types": {
+        "unsupported_company_fact": 3
+      },
+      "empty": 0,
+      "length": 0,
+      "categories": {
+        "boundary": {
+          "passed": 15,
+          "total": 15
+        },
+        "company_facts_multiturn": {
+          "passed": 6,
+          "total": 6
+        },
+        "general": {
+          "passed": 13,
+          "total": 15
+        },
+        "hypothetical_multiturn": {
+          "passed": 6,
+          "total": 6
+        },
+        "identity": {
+          "passed": 6,
+          "total": 6
+        },
+        "in_scope_assistance": {
+          "passed": 2,
+          "total": 3
+        },
+        "json": {
+          "passed": 12,
+          "total": 12
+        },
+        "ordinary_answer": {
+          "passed": 2,
+          "total": 3
+        },
+        "returns_and_track_record": {
+          "passed": 3,
+          "total": 3
+        },
+        "short_identity": {
+          "passed": 3,
+          "total": 3
+        },
+        "unknown_company_facts": {
+          "passed": 0,
+          "total": 3
+        },
+        "unverified_platform": {
+          "passed": 3,
+          "total": 3
+        }
+      }
+    },
+    {
+      "model": "t008-v0110",
+      "mode": "nonthinking",
+      "total": 78,
+      "task_pass": 72,
+      "serious_responses": 3,
+      "serious_types": {
+        "unknown_as_zero_or_no_business": 2,
+        "unverified_company_platform": 1
+      },
+      "empty": 0,
+      "length": 0,
+      "categories": {
+        "boundary": {
+          "passed": 13,
+          "total": 15
+        },
+        "company_facts_multiturn": {
+          "passed": 6,
+          "total": 6
+        },
+        "general": {
+          "passed": 15,
+          "total": 15
+        },
+        "hypothetical_multiturn": {
+          "passed": 5,
+          "total": 6
+        },
+        "identity": {
+          "passed": 6,
+          "total": 6
+        },
+        "in_scope_assistance": {
+          "passed": 3,
+          "total": 3
+        },
+        "json": {
+          "passed": 12,
+          "total": 12
+        },
+        "ordinary_answer": {
+          "passed": 3,
+          "total": 3
+        },
+        "returns_and_track_record": {
+          "passed": 3,
+          "total": 3
+        },
+        "short_identity": {
+          "passed": 3,
+          "total": 3
+        },
+        "unknown_company_facts": {
+          "passed": 1,
+          "total": 3
+        },
+        "unverified_platform": {
+          "passed": 2,
+          "total": 3
+        }
+      }
+    },
+    {
+      "model": "t008-v0110",
+      "mode": "thinking",
+      "total": 78,
+      "task_pass": 72,
+      "serious_responses": 4,
+      "serious_types": {
+        "unknown_as_zero_or_no_business": 1,
+        "unsupported_company_fact": 2,
+        "hypothetical_presented_as_current_reading": 1
+      },
+      "empty": 0,
+      "length": 0,
+      "categories": {
+        "boundary": {
+          "passed": 13,
+          "total": 15
+        },
+        "company_facts_multiturn": {
+          "passed": 6,
+          "total": 6
+        },
+        "general": {
+          "passed": 14,
+          "total": 15
+        },
+        "hypothetical_multiturn": {
+          "passed": 6,
+          "total": 6
+        },
+        "identity": {
+          "passed": 6,
+          "total": 6
+        },
+        "in_scope_assistance": {
+          "passed": 3,
+          "total": 3
+        },
+        "json": {
+          "passed": 12,
+          "total": 12
+        },
+        "ordinary_answer": {
+          "passed": 3,
+          "total": 3
+        },
+        "returns_and_track_record": {
+          "passed": 3,
+          "total": 3
+        },
+        "short_identity": {
+          "passed": 3,
+          "total": 3
+        },
+        "unknown_company_facts": {
+          "passed": 0,
+          "total": 3
+        },
+        "unverified_platform": {
+          "passed": 3,
+          "total": 3
+        }
+      }
+    },
+    {
+      "model": "t008-v0112",
+      "mode": "nonthinking",
+      "total": 78,
+      "task_pass": 71,
+      "serious_responses": 4,
+      "serious_types": {
+        "unsupported_company_fact": 1,
+        "unknown_as_zero_or_no_business": 2,
+        "unverified_company_platform": 1
+      },
+      "empty": 0,
+      "length": 0,
+      "categories": {
+        "boundary": {
+          "passed": 13,
+          "total": 15
+        },
+        "company_facts_multiturn": {
+          "passed": 6,
+          "total": 6
+        },
+        "general": {
+          "passed": 15,
+          "total": 15
+        },
+        "hypothetical_multiturn": {
+          "passed": 6,
+          "total": 6
+        },
+        "identity": {
+          "passed": 6,
+          "total": 6
+        },
+        "in_scope_assistance": {
+          "passed": 2,
+          "total": 3
+        },
+        "json": {
+          "passed": 12,
+          "total": 12
+        },
+        "ordinary_answer": {
+          "passed": 3,
+          "total": 3
+        },
+        "returns_and_track_record": {
+          "passed": 3,
+          "total": 3
+        },
+        "short_identity": {
+          "passed": 3,
+          "total": 3
+        },
+        "unknown_company_facts": {
+          "passed": 0,
+          "total": 3
+        },
+        "unverified_platform": {
+          "passed": 2,
+          "total": 3
+        }
+      }
+    },
+    {
+      "model": "t008-v0112",
+      "mode": "thinking",
+      "total": 78,
+      "task_pass": 66,
+      "serious_responses": 5,
+      "serious_types": {
+        "unsupported_company_fact": 4,
+        "unverified_equipment_sequence": 1
+      },
+      "empty": 0,
+      "length": 0,
+      "categories": {
+        "boundary": {
+          "passed": 11,
+          "total": 15
+        },
+        "company_facts_multiturn": {
+          "passed": 6,
+          "total": 6
+        },
+        "general": {
+          "passed": 14,
+          "total": 15
+        },
+        "hypothetical_multiturn": {
+          "passed": 5,
+          "total": 6
+        },
+        "identity": {
+          "passed": 6,
+          "total": 6
+        },
+        "in_scope_assistance": {
+          "passed": 2,
+          "total": 3
+        },
+        "json": {
+          "passed": 12,
+          "total": 12
+        },
+        "ordinary_answer": {
+          "passed": 2,
+          "total": 3
+        },
+        "returns_and_track_record": {
+          "passed": 2,
+          "total": 3
+        },
+        "short_identity": {
+          "passed": 3,
+          "total": 3
+        },
+        "unknown_company_facts": {
+          "passed": 0,
+          "total": 3
+        },
+        "unverified_platform": {
+          "passed": 3,
+          "total": 3
+        }
+      }
+    }
+  ],
+  "paired_vs_base": {
+    "t008-v0110__nonthinking": {
+      "both_pass": 68,
+      "base_only": 4,
+      "candidate_only": 4,
+      "both_fail": 2
+    },
+    "t008-v0110__thinking": {
+      "both_pass": 68,
+      "both_fail": 3,
+      "candidate_only": 4,
+      "base_only": 3
+    },
+    "t008-v0112__nonthinking": {
+      "both_pass": 67,
+      "base_only": 5,
+      "candidate_only": 4,
+      "both_fail": 2
+    },
+    "t008-v0112__thinking": {
+      "both_pass": 63,
+      "both_fail": 4,
+      "base_only": 8,
+      "candidate_only": 3
+    }
+  },
+  "review_scope": "All 468 visible replies, rule-based JSON scoring, explicit implementation-side semantic review. Public development scenarios; not blinded independent acceptance."
+}

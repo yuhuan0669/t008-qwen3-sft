@@ -1,0 +1,12 @@
+{
+  "started_at_utc": "2026-10-21T10:32:09.243421+00:00",
+  "paused": false,
+  "restored": true,
+  "restore_start_utc": "2026-10-21T12:22:09.243421+00:00",
+  "planned_window_end_utc": "2026-10-21T12:32:09.243421+00:00",
+  "authorization": "用户：开始执行468次中文对照，可暂停UAT，完成后恢复并核验健康，给出明确选型建议，你现在就是gpt-6.1 sol high，所以无需启动同级别subagent。不训练，英文先不处理。",
+  "scope": "Inference diagnostics only. No training, deployment replacement, or corpus edits.",
+  "restored_at_utc": "2026-10-21T11:11:09.884327+00:00",
+  "health_status": 200,
+  "original_spec_equal": true
+}

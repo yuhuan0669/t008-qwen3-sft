@@ -276,17 +276,62 @@
     "execution_report": "stage2/runs/t008-v0112-20261021-081336/REPORT.md"
   },
   "latest_diagnostic": {
-    "id": "json-format-check-20261020",
-    "status": "COMPLETE_UAT_RESTORED",
-    "report": "stage2/diagnostics/json-format-check-20261020/REPORT.md",
-    "requests": 48,
-    "pairs": 24,
-    "strict_pass_per_model": 18,
-    "strict_requests_per_model": 24,
-    "empty_bodies": 0,
-    "length_finishes": 0,
+    "id": "final-chinese-selection-20261021-094210",
+    "status": "COMPLETE_UAT_RESTORED_SELECTION_RECOMMENDED",
+    "report": "stage2/diagnostics/final-chinese-selection-20261021-094210/REPORT.md",
+    "verification": "stage2/diagnostics/final-chinese-selection-20261021-094210/verification.json",
+    "requests": 468,
     "training": false,
+    "english": false,
+    "subagent": false,
     "uat_restored": true,
+    "recommended_model": "Qwen/Qwen3-8B without LoRA",
+    "recommended_default_mode": "nonthinking",
+    "recommendation_scope": "Unified System + corrected vLLM template + JSON Schema; Chinese assisted use. Known output/fact issues remain; not deployed or formally accepted.",
+    "model_results": [
+      {
+        "model": "t008-base",
+        "mode": "nonthinking",
+        "task_pass": 72,
+        "total": 78,
+        "boundary_fact_failures": 0
+      },
+      {
+        "model": "t008-base",
+        "mode": "thinking",
+        "task_pass": 71,
+        "total": 78,
+        "boundary_fact_failures": 3
+      },
+      {
+        "model": "t008-v0110",
+        "mode": "nonthinking",
+        "task_pass": 72,
+        "total": 78,
+        "boundary_fact_failures": 3
+      },
+      {
+        "model": "t008-v0110",
+        "mode": "thinking",
+        "task_pass": 72,
+        "total": 78,
+        "boundary_fact_failures": 4
+      },
+      {
+        "model": "t008-v0112",
+        "mode": "nonthinking",
+        "task_pass": 71,
+        "total": 78,
+        "boundary_fact_failures": 4
+      },
+      {
+        "model": "t008-v0112",
+        "mode": "thinking",
+        "task_pass": 66,
+        "total": 78,
+        "boundary_fact_failures": 5
+      }
+    ],
     "formal_acceptance": false,
     "sync_status": "LOCAL_GIT_ONLY"
   },
@@ -325,6 +370,21 @@
       "status": "COMPLETE_UAT_RESTORED",
       "report": "stage2/diagnostics/chinese-minimal-check-20261020/REPORT.md",
       "requests": 40,
+      "empty_bodies": 0,
+      "length_finishes": 0,
+      "training": false,
+      "uat_restored": true,
+      "formal_acceptance": false,
+      "sync_status": "LOCAL_GIT_ONLY"
+    },
+    {
+      "id": "json-format-check-20261020",
+      "status": "COMPLETE_UAT_RESTORED",
+      "report": "stage2/diagnostics/json-format-check-20261020/REPORT.md",
+      "requests": 48,
+      "pairs": 24,
+      "strict_pass_per_model": 18,
+      "strict_requests_per_model": 24,
       "empty_bodies": 0,
       "length_finishes": 0,
       "training": false,

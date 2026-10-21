@@ -1,0 +1,57 @@
+[
+  {
+    "request_id": "CN11-04__thinking__44__t008-base__1",
+    "claim_issue": "GB 12716 被用于碳排放分类，官方同号GB/T 12716-2011为60°密封管螺纹。",
+    "official_title": "60°密封管螺纹",
+    "url": "https://openstd.samr.gov.cn/bzgk/std/newGbInfo?hcno=F210E1ED264CEDFF31CDF4B180E2F640",
+    "verification": "Official standard catalogue page searched and opened during review; no standards text reproduced."
+  },
+  {
+    "request_id": "CN11-04__nonthinking__42__t008-v0112__1",
+    "claim_issue": "将DB42/T 2132-2022称为温室气体排放核算与报告要求；官方DB42/T 2132-2023为城镇道路无损检测应用技术规程。",
+    "official_title": "城镇道路无损检测应用技术规程",
+    "url": "https://std.samr.gov.cn/db/search/stdDBDetailed?id=0C4777E70C958C73E06397BE0A0AD4B0",
+    "verification": "Official standard catalogue page searched and opened during review; no standards text reproduced."
+  },
+  {
+    "request_id": "CN11-04__thinking__44__t008-v0112__1",
+    "claim_issue": "将GB/T 32203作为碳资产资料对照标准，官方GB/T 32203-2015为油气管道安全仪表系统的功能安全 验收规范。",
+    "official_title": "油气管道安全仪表系统的功能安全 验收规范",
+    "url": "https://openstd.samr.gov.cn/bzgk/std/newGbInfo?hcno=7C7DFD3DDD37D44FF6795EB832E6A3DE",
+    "verification": "Official standard catalogue page searched and opened during review; no standards text reproduced."
+  },
+  {
+    "request_id": "DEV-17__thinking__43__t008-v0110__1",
+    "claim_issue": "将IEC61400-25当一般能效对标依据；按官方公开范围推断为引用不匹配。",
+    "official_scope_summary": "风力发电系统监控通信；信息模型、信息交换及通信映射。",
+    "url": "https://webstore.iec.ch/en/publication/29062",
+    "verification": "IEC official catalogue description opened; inference of scope mismatch, not full-text conformity review."
+  },
+  {
+    "request_id": "DEV-17__thinking__43__t008-v0110__1",
+    "claim_issue": "正文把GB/T17166用于设备计量精度；标题核实为能源审计技术通则，未读付费/采标全文，单列待条款核查，不作独立硬错误。",
+    "official_title": "能源审计技术通则",
+    "url": "https://openstd.samr.gov.cn/bzgk/std/newGbInfo?hcno=34BC987838BEBE03B9AD6EE3D17F9AAA",
+    "verification": "Title verified; detailed clause interpretation pending."
+  },
+  {
+    "request_id": "DEV-23__thinking__43__t008-v0112__1",
+    "claim_issue": "标准编号与所称计量器具导则标题不符。",
+    "official_title": "综合能耗计算通则",
+    "url": "https://openstd.samr.gov.cn/bzgk/std/newGbInfo?hcno=53D1440B68E6D50B8BA0CCAB619B6B3E&refer=outter",
+    "verification": "Official catalogue title verified."
+  },
+  {
+    "request_id": "DEV-23__thinking__43__t008-v0112__1",
+    "claim_issue": "将审计/收益分析要求指到第30条；国家能源局公开文本第30条是空调室温管理，第28条涉及节能改造审计和投资收益分析。",
+    "url": "https://www.nea.gov.cn/2017-11/03/c_136725251.htm",
+    "verification": "Compared against this published official text; not a comprehensive current-law legal opinion."
+  },
+  {
+    "request_id": "FINAL-04__thinking__42__t008-v0112__1",
+    "claim_issue": "DB42/T2024与所称企业碳排放核算标准不匹配。",
+    "official_title": "中药材 山麦冬（湖北麦冬）生产技术规程",
+    "url": "https://std.samr.gov.cn/db/search/stdDBDetailed?id=FE0EE2177BB42402E05397BE0A0A38ED",
+    "verification": "Official catalogue searched and opened; model omitted edition year."
+  }
+]

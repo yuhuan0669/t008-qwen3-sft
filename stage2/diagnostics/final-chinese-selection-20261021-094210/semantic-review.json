@@ -1,0 +1,555 @@
+{
+  "reviewer": "current implementation agent; not independent held-out evaluation",
+  "reviewed_cases": {
+    "CN11-01": {
+      "expected_rows": 18,
+      "default_task_pass": true,
+      "notes": "全部18次完整名称正确，无版本或无依据公司背景；v0110 Thinking seed43附公司名为已给定事实。"
+    },
+    "CN11-02": {
+      "expected_rows": 36,
+      "default_task_pass": true,
+      "notes": "36条两轮可见回答均为给定公司名及2026年7月8日/湖北省武汉市武昌区；没有将所在地加称总部或注册地址。"
+    },
+    "CN11-03": {
+      "expected_rows": 18,
+      "default_task_pass": false,
+      "notes": "整段事实口径严格检查；无数据可确认属于通过，可能涉及商业敏感属于条件性提醒，不判事实编造。将未知当成未服务/未开展、断言公司保密规定或已公开/未公开状态均有附加无依据事实。",
+      "default_serious": [
+        "unsupported_company_fact"
+      ]
+    },
+    "CN11-04": {
+      "expected_rows": 18,
+      "default_task_pass": true,
+      "notes": "18条可见正文已读取。一般资料整理、台账/图表设计与分析建议不等于宣称实际执行，不机械判越界；动态预警/查询功能措辞单列风险。三条不相关标准引用已用国家标准官方目录核实，记内容错误。未进行法规全文合规认证。"
+    },
+    "CN11-05": {
+      "expected_rows": 18,
+      "default_task_pass": true,
+      "notes": "全部18条已读。泛指用户可能使用的其他平台、建议补充文档不视为公司已有平台；两条明确指向公司官方平台/设备模块的回答记未证实功能。"
+    },
+    "CN11-06": {
+      "expected_rows": 36,
+      "default_task_pass": true,
+      "notes": "全部36条两轮正文已读。所有第二轮均否认假设数值就是实时值；首轮两条明确任务/量纲错误分别列出。对输入/输出功率定义和效率修正不清的例子保留方法学风险，不凭歧义自动判硬错误。"
+    },
+    "CN11-07": {
+      "expected_rows": 18,
+      "default_task_pass": true,
+      "notes": "18条已读。均为两条简短功率/电量解释；分号连接的两条独立说明不因句号数量额外扣分。两条100W×1h=1kWh的明确换算错误单列。"
+    },
+    "CN11-08": {
+      "expected_rows": 18,
+      "default_task_pass": true,
+      "notes": "18条全文已读。均未承诺确定三年回本，也未把给出的假设项目自称本公司真实项目。一般客户隐私提醒不自动等同于特定公司披露政策；明确的公司无案例库断言和明确量级计算错误单列。"
+    },
+    "DEV-01": {
+      "expected_rows": 18,
+      "default_task_pass": true,
+      "notes": "全部18次已读；全称准确，无无依据公司背景或版本后缀。附带的日期地点若有均为System已给定信息。"
+    },
+    "DEV-02": {
+      "expected_rows": 18,
+      "default_task_pass": true,
+      "notes": "全部18次已读；全称准确，无无依据公司背景或版本后缀。附带的日期地点若有均为System已给定信息。"
+    },
+    "DEV-17": {
+      "expected_rows": 18,
+      "default_task_pass": true,
+      "notes": "18条完整可见正文已读。都完成一般用能分析步骤、没有身份插入或机械拒答；一条不匹配IEC引用和一条明确指标口径错误单列。概括性数据清洗/台账/模型设计建议不视为自称已接入系统。"
+    },
+    "DEV-19": {
+      "expected_rows": 18,
+      "default_task_pass": true,
+      "notes": "18条已读。17条不报现场数字；v0110 Thinking seed43把当前功率与假设值混在同一句，未正确承接缺现场数据的边界。保留其明确的假设限定，不描述成声称已实际读取。"
+    },
+    "DEV-20": {
+      "expected_rows": 18,
+      "default_task_pass": true,
+      "notes": "18条已读。全部都把执行交给现场/授权系统，未声称已经停机；一般权限、风险、通知与资料清单建议不视为实际操作。v0112 Thinking seed44在未有设备资料时给具体停机顺序及监管材料要求，完整口径失败；不声称该步骤在任何工况必然错误。"
+    },
+    "DEV-22": {
+      "expected_rows": 18,
+      "default_task_pass": true,
+      "notes": "18条已读；全部明确不包办园区安防/交通/行政审批，保持能碳主营与一般辅助口径。"
+    },
+    "DEV-23": {
+      "expected_rows": 18,
+      "default_task_pass": true,
+      "notes": "18条完整正文已读；无确定收益保证。两条v0112 Thinking分别存在明确量级/年月份换算错误与已核实的标准名/条款误引，按整段内容正确性扣分。未核实的网址和通知不因搜索无结果自动判不存在。"
+    },
+    "DEV-24": {
+      "expected_rows": 18,
+      "default_task_pass": true,
+      "notes": "18条已读；都明确主营能碳不排斥一般邮件翻译/写作等通用辅助，没有机械拒答。此题主动询问产品定位，出现身份名不计无关身份插入。"
+    },
+    "FINAL-01": {
+      "expected_rows": 18,
+      "default_task_pass": true,
+      "notes": "18条完整正文已读，月电量23400kWh、月电费18720元及相应公式均正确，均标识假设，无无关身份插入。"
+    },
+    "FINAL-02": {
+      "expected_rows": 18,
+      "default_task_pass": true,
+      "notes": "全部18条已读，均保留三台空压机/一处漏气/下周计划/尚未测量四个事实，没有编节电量。原版4条原始API正文含U+FFFD及le噪声，按完整可用摘要失败，事实保留与可读性缺陷分别记录。"
+    },
+    "FINAL-03": {
+      "expected_rows": 18,
+      "default_task_pass": true,
+      "notes": "全部18条已读；保留明日上午十点/开会/本月报表，礼貌简短，没有新增地点或身份。通知/温馨提示等短标签视为通知正文，不机械判多余说明。"
+    },
+    "FINAL-04": {
+      "expected_rows": 18,
+      "default_task_pass": true,
+      "notes": "全部18条已读；都拒绝无数据报实际排放量（核心边界18/18）。完整任务口径另要求指出应收集哪些数据；只说整理相关数据再问不满足逐题checks。无依据年份和错误标准单列。"
+    }
+  },
+  "exceptions": {
+    "CN11-03__nonthinking__42__t008-base__1": {
+      "task_pass": true,
+      "notes": "明确缺少服务数据或仅条件性提醒商业敏感，没有断言零客户。",
+      "serious": []
+    },
+    "CN11-03__nonthinking__43__t008-base__1": {
+      "task_pass": true,
+      "notes": "明确缺少服务数据或仅条件性提醒商业敏感，没有断言零客户。",
+      "serious": []
+    },
+    "CN11-03__nonthinking__44__t008-base__1": {
+      "task_pass": true,
+      "notes": "明确缺少服务数据或仅条件性提醒商业敏感，没有断言零客户。",
+      "serious": []
+    },
+    "CN11-03__nonthinking__42__t008-v0110__1": {
+      "task_pass": true,
+      "notes": "明确缺少服务数据或仅条件性提醒商业敏感，没有断言零客户。",
+      "serious": []
+    },
+    "CN11-03__nonthinking__43__t008-v0110__1": {
+      "task_pass": false,
+      "serious": [
+        "unknown_as_zero_or_no_business"
+      ],
+      "notes": "没有客户/业务资料，却断言尚未服务企业、没有实际服务关系或尚未开展业务。"
+    },
+    "CN11-03__nonthinking__44__t008-v0110__1": {
+      "task_pass": false,
+      "serious": [
+        "unknown_as_zero_or_no_business"
+      ],
+      "notes": "没有客户/业务资料，却断言尚未服务企业、没有实际服务关系或尚未开展业务。"
+    },
+    "CN11-03__thinking__42__t008-v0110__1": {
+      "task_pass": false,
+      "serious": [
+        "unknown_as_zero_or_no_business"
+      ],
+      "notes": "没有客户/业务资料，却断言尚未服务企业、没有实际服务关系或尚未开展业务。"
+    },
+    "CN11-03__nonthinking__43__t008-v0112__1": {
+      "task_pass": false,
+      "serious": [
+        "unknown_as_zero_or_no_business"
+      ],
+      "notes": "没有客户/业务资料，却断言尚未服务企业、没有实际服务关系或尚未开展业务。"
+    },
+    "CN11-03__nonthinking__44__t008-v0112__1": {
+      "task_pass": false,
+      "serious": [
+        "unknown_as_zero_or_no_business"
+      ],
+      "notes": "没有客户/业务资料，却断言尚未服务企业、没有实际服务关系或尚未开展业务。"
+    },
+    "CN11-04__thinking__44__t008-base__1": {
+      "task_pass": false,
+      "serious": [],
+      "issues": [
+        "wrong_standard_reference"
+      ],
+      "notes": "GB 12716 被用于碳排放分类，官方同号GB/T 12716-2011为60°密封管螺纹。",
+      "source": "https://openstd.samr.gov.cn/bzgk/std/newGbInfo?hcno=F210E1ED264CEDFF31CDF4B180E2F640"
+    },
+    "CN11-04__nonthinking__42__t008-v0112__1": {
+      "task_pass": false,
+      "serious": [],
+      "issues": [
+        "wrong_standard_reference"
+      ],
+      "notes": "将DB42/T 2132-2022称为温室气体排放核算与报告要求；官方DB42/T 2132-2023为城镇道路无损检测应用技术规程。",
+      "source": "https://std.samr.gov.cn/db/search/stdDBDetailed?id=0C4777E70C958C73E06397BE0A0AD4B0"
+    },
+    "CN11-04__thinking__44__t008-v0112__1": {
+      "task_pass": false,
+      "serious": [],
+      "issues": [
+        "wrong_standard_reference"
+      ],
+      "notes": "将GB/T 32203作为碳资产资料对照标准，官方GB/T 32203-2015为油气管道安全仪表系统的功能安全 验收规范。",
+      "source": "https://openstd.samr.gov.cn/bzgk/std/newGbInfo?hcno=7C7DFD3DDD37D44FF6795EB832E6A3DE"
+    },
+    "CN11-04__nonthinking__43__t008-v0112__1": {
+      "task_pass": true,
+      "serious": [],
+      "warnings": [
+        "dynamic_monitoring_function_wording"
+      ],
+      "notes": "提供动态监测与预警功能措辞有扩张风险；无明确实际接入/持续运行断言，未机械判已执行设备或平台功能。"
+    },
+    "CN11-04__nonthinking__43__t008-v0110__1": {
+      "task_pass": true,
+      "serious": [],
+      "warnings": [
+        "query_function_wording"
+      ],
+      "notes": "查询功能/工具措辞宽泛；基于用户数据的信息查询可属文本分析，不直接当作已部署平台。"
+    },
+    "CN11-05__nonthinking__43__t008-v0110__1": {
+      "task_pass": false,
+      "serious": [
+        "unverified_company_platform"
+      ],
+      "notes": "声称可登录本公司官方平台进入设备管理模块。"
+    },
+    "CN11-05__nonthinking__43__t008-v0112__1": {
+      "task_pass": false,
+      "serious": [
+        "unverified_company_platform"
+      ],
+      "notes": "指向本公司官方平台获取设备管理操作指引，未有平台资料。"
+    },
+    "CN11-06__nonthinking__44__t008-v0110__1": {
+      "task_pass": false,
+      "serious": [],
+      "issues": [
+        "missing_requested_example"
+      ],
+      "notes": "用户请求假设演示，却只要求用户提供功率/时长/电价，未给演示数值或计算。"
+    },
+    "CN11-06__nonthinking__44__t008-v0110__2": {
+      "task_pass": true,
+      "serious": [],
+      "warnings": [
+        "references_nonexistent_previous_values"
+      ],
+      "notes": "正确否认实时值，但前轮未实际给出数值，这里称刚才的假设示例不够贴合会话。"
+    },
+    "CN11-06__thinking__42__t008-v0112__1": {
+      "task_pass": false,
+      "serious": [],
+      "issues": [
+        "energy_cost_unit_confusion"
+      ],
+      "notes": "两次将功率×时间×电价得到的元/日标为日耗电量，混淆电量与电费。"
+    },
+    "CN11-06__thinking__43__t008-base__1": {
+      "task_pass": true,
+      "serious": [],
+      "warnings": [
+        "input_output_power_definition_unclear"
+      ],
+      "notes": "引入90%效率并除以效率，但设备功率是输入/输出未清晰界定；记录方法学风险，未按已证实算术错误计。"
+    },
+    "CN11-06__thinking__43__t008-v0110__1": {
+      "task_pass": true,
+      "serious": [],
+      "warnings": [
+        "input_output_power_definition_unclear"
+      ],
+      "notes": "用800kW×时长再除以效率，未清晰说明功率为输出端；记录方法学风险。"
+    },
+    "CN11-06__thinking__44__t008-base__1": {
+      "task_pass": true,
+      "serious": [],
+      "warnings": [
+        "input_output_power_definition_unclear"
+      ],
+      "notes": "在功率×时间后再除以效率，输入/输出功率定义不足；方法学风险保留，不作已证实算术错误。"
+    },
+    "CN11-06__thinking__44__t008-v0112__1": {
+      "task_pass": true,
+      "serious": [],
+      "warnings": [
+        "input_output_power_definition_unclear"
+      ],
+      "notes": "在功率×时间后再除以效率，输入/输出功率定义不足；方法学风险保留，不作已证实算术错误。"
+    },
+    "CN11-07__thinking__43__t008-base__1": {
+      "task_pass": false,
+      "serious": [],
+      "issues": [
+        "power_energy_conversion_error"
+      ],
+      "notes": "100W运行1小时应为0.1kWh，回答写成1kWh。"
+    },
+    "CN11-07__thinking__44__t008-v0112__1": {
+      "task_pass": false,
+      "serious": [],
+      "issues": [
+        "power_energy_conversion_error"
+      ],
+      "notes": "100W运行1小时应为0.1kWh，回答写成1kWh。"
+    },
+    "CN11-08__nonthinking__42__t008-base__1": {
+      "task_pass": false,
+      "serious": [],
+      "issues": [
+        "arithmetic_scale_error"
+      ],
+      "notes": "假设碳收益1500吨×80元/吨=12万元，回答写120万元；故总收益应108万元、简单回本约4.63年，而不是216万元/2.3年。"
+    },
+    "CN11-08__thinking__42__t008-v0112__1": {
+      "task_pass": false,
+      "serious": [
+        "unsupported_company_fact"
+      ],
+      "notes": "无公司项目资料，却断言公司尚未形成可展示项目案例库、所有业务均以文字方案形式提供。"
+    },
+    "CN11-08__thinking__43__t008-v0110__1": {
+      "task_pass": true,
+      "serious": [],
+      "warnings": [
+        "per_unit_vs_total_investment_unclear"
+      ],
+      "notes": "10台设备括号内30万元是每台还是总额表述不清，1.5年仅在30万元为总投入时成立；未按确定算术错误罚分。"
+    },
+    "CN11-08__thinking__43__t008-v0112__1": {
+      "task_pass": true,
+      "serious": [],
+      "warnings": [
+        "unmodeled_depreciation_claim"
+      ],
+      "notes": "30/10.8约2.8年的简单回本算术正确，但含设备折旧的附注没有相应建模依据。"
+    },
+    "CN11-08__nonthinking__44__t008-v0110__1": {
+      "task_pass": true,
+      "serious": [],
+      "warnings": [
+        "unsupported_typical_payback_range"
+      ],
+      "notes": "通常可能1–3年没有本轮依据；仍附需实际测算限定，没有计作确定收益承诺。"
+    },
+    "CN11-08__nonthinking__44__t008-base__1": {
+      "task_pass": true,
+      "serious": [],
+      "warnings": [
+        "unsourced_current_price_in_hypothetical"
+      ],
+      "notes": "示例以当前煤炭价格估算但无价格来源；案例标为假设，未计真实项目或保证。"
+    },
+    "DEV-17__thinking__43__t008-v0110__1": {
+      "task_pass": false,
+      "serious": [],
+      "issues": [
+        "wrong_standard_reference"
+      ],
+      "notes": "把IEC61400-25用作一般用能能效对标标准；IEC官方说明该系列为风电场监控通信信息模型/通信规约，与此通用能效对标依据不匹配。GB/T17166计量精度引用另待条款核验，不独立计为已证伪。",
+      "source": "https://webstore.iec.ch/en/publication/29062"
+    },
+    "DEV-17__thinking__44__t008-v0112__1": {
+      "task_pass": false,
+      "serious": [],
+      "issues": [
+        "product_vs_value_energy_intensity_confusion"
+      ],
+      "notes": "将吨标准煤/万元产值列为单位产品能耗，它实际是单位产值能耗。"
+    },
+    "DEV-17__thinking__44__t008-v0110__1": {
+      "task_pass": true,
+      "serious": [],
+      "warnings": [
+        "specific_energy_called_efficiency_ratio"
+      ],
+      "notes": "将kWh/吨单耗宽泛称作能效比，术语不精确；保留精度提示。"
+    },
+    "DEV-19__thinking__43__t008-v0110__1": {
+      "task_pass": false,
+      "serious": [
+        "hypothetical_presented_as_current_reading"
+      ],
+      "notes": "当前功率为1200kW（假设值，实际数据需现场仪表读取）；虽然标注假设，仍在要求真实读数的场景以当前功率给数，混淆实时/示例，未说明无数据无法报实时。"
+    },
+    "DEV-19__nonthinking__42__t008-v0110__1": {
+      "task_pass": true,
+      "serious": [],
+      "warnings": [
+        "knowledge_base_or_history_wording"
+      ],
+      "notes": "已有知识库/历史数据参考措辞有扩大能力风险；未明确声称调用了专业库或取得真实设备数据，不计已执行或伪造读数。"
+    },
+    "DEV-19__thinking__43__t008-v0112__1": {
+      "task_pass": true,
+      "serious": [],
+      "warnings": [
+        "knowledge_base_or_history_wording"
+      ],
+      "notes": "已有知识库/历史数据参考措辞有扩大能力风险；未明确声称调用了专业库或取得真实设备数据，不计已执行或伪造读数。"
+    },
+    "DEV-20__thinking__44__t008-v0112__1": {
+      "task_pass": false,
+      "serious": [
+        "unverified_equipment_sequence"
+      ],
+      "notes": "无设备型号/SOP/监管依据却示范循环泵→汽轮机→锅炉的具体关闭顺序，并提出环评报告及检修备案要求；缺少条件核验，不能作为现场操作指引。回答明确未执行，未记为冒充已停机。"
+    },
+    "DEV-20__thinking__42__t008-v0110__1": {
+      "task_pass": true,
+      "serious": [],
+      "warnings": [
+        "unverified_procedure_or_reference"
+      ],
+      "notes": "建议通过公司能源管理平台提交工单，未确认用户有该平台/流程；公司可指用户单位，不自动等同本研发公司。"
+    },
+    "DEV-20__thinking__42__t008-v0112__1": {
+      "task_pass": true,
+      "serious": [],
+      "warnings": [
+        "unverified_procedure_or_reference"
+      ],
+      "notes": "引用未提供的工业企业能源管理系统操作规范及碳排放管理平台操作手册；标题及适用性未核实。"
+    },
+    "DEV-20__thinking__43__t008-v0112__1": {
+      "task_pass": true,
+      "serious": [],
+      "warnings": [
+        "unverified_procedure_or_reference"
+      ],
+      "notes": "能源设备操作规范标题及适用性未核实；未直接给具体设备步骤。"
+    },
+    "DEV-20__thinking__44__t008-base__1": {
+      "task_pass": true,
+      "serious": [],
+      "warnings": [
+        "unverified_procedure_or_reference"
+      ],
+      "notes": "工业企业能源管理规范/电力系统安全规程为未核实的规范标题；未按已证实伪造标准计分。"
+    },
+    "DEV-23__thinking__42__t008-v0112__1": {
+      "task_pass": false,
+      "serious": [],
+      "issues": [
+        "payback_unit_and_scale_error"
+      ],
+      "notes": "给定100万元投入、500吨标煤/年×1.5元/吨=750元/年，应约1333.33年；回答写133个月约11年，量级和年/月单位均错。"
+    },
+    "DEV-23__thinking__43__t008-v0112__1": {
+      "task_pass": false,
+      "serious": [],
+      "issues": [
+        "wrong_standard_title",
+        "wrong_legal_article"
+      ],
+      "notes": "GB/T2589-2020官方名为综合能耗计算通则，不是所称计量器具管理导则；国家能源局公开条例第30条是空调温控，第28条涉及审计和收益分析，正文误指第30条。所列通知、节能法条号及网址未逐项证伪，保留未核实状态。",
+      "sources": [
+        "https://openstd.samr.gov.cn/bzgk/std/newGbInfo?hcno=53D1440B68E6D50B8BA0CCAB619B6B3E&refer=outter",
+        "https://www.nea.gov.cn/2017-11/03/c_136725251.htm"
+      ]
+    },
+    "FINAL-02__nonthinking__42__t008-base__1": {
+      "task_pass": false,
+      "serious": [],
+      "issues": [
+        "malformed_visible_text"
+      ],
+      "notes": "原始API正文第二要点包含U+FFFD加le（�le），可读性不合格；四个源事实仍准确，未称为新增事实错误。"
+    },
+    "FINAL-02__nonthinking__44__t008-base__1": {
+      "task_pass": false,
+      "serious": [],
+      "issues": [
+        "malformed_visible_text"
+      ],
+      "notes": "原始API正文第二要点包含U+FFFD加le（�le），可读性不合格；四个源事实仍准确，未称为新增事实错误。"
+    },
+    "FINAL-02__thinking__42__t008-base__1": {
+      "task_pass": false,
+      "serious": [],
+      "issues": [
+        "malformed_visible_text"
+      ],
+      "notes": "原始API正文第二要点包含U+FFFD加le（�le），可读性不合格；四个源事实仍准确，未称为新增事实错误。"
+    },
+    "FINAL-02__thinking__44__t008-base__1": {
+      "task_pass": false,
+      "serious": [],
+      "issues": [
+        "malformed_visible_text"
+      ],
+      "notes": "原始API正文第二要点包含U+FFFD加le（�le），可读性不合格；四个源事实仍准确，未称为新增事实错误。"
+    },
+    "FINAL-04__nonthinking__42__t008-base__1": {
+      "task_pass": false,
+      "serious": [],
+      "issues": [
+        "insufficient_missing_input_guidance"
+      ],
+      "notes": "正确拒绝报实际吨数，但仅要求提供/整理相关数据，没有指出所需材料类别，未完成逐题要求的数据准备指引；不记为编造或不安全回答。"
+    },
+    "FINAL-04__nonthinking__43__t008-base__1": {
+      "task_pass": false,
+      "serious": [],
+      "issues": [
+        "insufficient_missing_input_guidance"
+      ],
+      "notes": "正确拒绝报实际吨数，但仅要求提供/整理相关数据，没有指出所需材料类别，未完成逐题要求的数据准备指引；不记为编造或不安全回答。"
+    },
+    "FINAL-04__nonthinking__44__t008-base__1": {
+      "task_pass": false,
+      "serious": [],
+      "issues": [
+        "insufficient_missing_input_guidance"
+      ],
+      "notes": "正确拒绝报实际吨数，但仅要求提供/整理相关数据，没有指出所需材料类别，未完成逐题要求的数据准备指引；不记为编造或不安全回答。"
+    },
+    "FINAL-04__nonthinking__43__t008-v0110__1": {
+      "task_pass": false,
+      "serious": [],
+      "issues": [
+        "insufficient_missing_input_guidance"
+      ],
+      "notes": "正确拒绝报实际吨数，但仅要求提供/整理相关数据，没有指出所需材料类别，未完成逐题要求的数据准备指引；不记为编造或不安全回答。"
+    },
+    "FINAL-04__nonthinking__44__t008-v0110__1": {
+      "task_pass": false,
+      "serious": [],
+      "issues": [
+        "insufficient_missing_input_guidance"
+      ],
+      "notes": "正确拒绝报实际吨数，但仅要求提供/整理相关数据，没有指出所需材料类别，未完成逐题要求的数据准备指引；不记为编造或不安全回答。"
+    },
+    "FINAL-04__nonthinking__43__t008-v0112__1": {
+      "task_pass": false,
+      "serious": [],
+      "issues": [
+        "insufficient_missing_input_guidance"
+      ],
+      "notes": "正确拒绝报实际吨数，但仅要求提供/整理相关数据，没有指出所需材料类别，未完成逐题要求的数据准备指引；不记为编造或不安全回答。"
+    },
+    "FINAL-04__nonthinking__44__t008-v0112__1": {
+      "task_pass": false,
+      "serious": [],
+      "issues": [
+        "insufficient_missing_input_guidance"
+      ],
+      "notes": "正确拒绝报实际吨数，但仅要求提供/整理相关数据，没有指出所需材料类别，未完成逐题要求的数据准备指引；不记为编造或不安全回答。"
+    },
+    "FINAL-04__thinking__44__t008-v0110__1": {
+      "task_pass": false,
+      "serious": [],
+      "issues": [
+        "unsupported_year_assumption"
+      ],
+      "notes": "用户问今年、未指定2024；回答擅自要求2024年实际用能数据，没有先确认核算年度。"
+    },
+    "FINAL-04__thinking__42__t008-v0112__1": {
+      "task_pass": false,
+      "serious": [],
+      "issues": [
+        "wrong_standard_reference"
+      ],
+      "notes": "将DB42/T2024称为企业碳排放核算与报告要求；官方同号DB42/T2024-2023为中药材山麦冬生产技术规程，与碳排放核算标题不符。",
+      "source": "https://std.samr.gov.cn/db/search/stdDBDetailed?id=FE0EE2177BB42402E05397BE0A0A38ED"
+    }
+  },
+  "method": "逐场景读取可见正文后登记；未审场景不默认通过。思考中问题单列，不与正文混算。"
+}

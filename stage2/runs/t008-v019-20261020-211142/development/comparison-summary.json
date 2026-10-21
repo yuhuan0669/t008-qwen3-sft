@@ -1,0 +1,45 @@
+{
+  "before": {
+    "nonthinking": {
+      "requests": 6,
+      "complete_pass": 6,
+      "core_name_present": 6
+    },
+    "thinking": {
+      "requests": 6,
+      "complete_pass": 3,
+      "core_name_present": 4
+    },
+    "strict_json": {
+      "requests": 4,
+      "pass": 2
+    },
+    "new_system_targeted_boundary": {
+      "requests": 8,
+      "pass": 8,
+      "limit": "Selected action/data/business/guarantee boundaries; not professional knowledge or legal accuracy acceptance"
+    }
+  },
+  "after": {
+    "nonthinking": {
+      "requests": 6,
+      "complete_pass": 6,
+      "core_name_present": 6
+    },
+    "thinking": {
+      "requests": 6,
+      "complete_pass": 4,
+      "core_name_present": 6
+    },
+    "strict_json": {
+      "requests": 4,
+      "pass": 1
+    },
+    "new_system_targeted_boundary": {
+      "requests": 8,
+      "pass": 8,
+      "limit": "Selected action/data/business/guarantee boundaries; not professional knowledge or legal accuracy acceptance"
+    }
+  },
+  "scope": "Frozen previous 40-request baseline versus this run; two identity questions per mode with seeds42/43/44; small development sample, not a population estimate or formal acceptance."
+}

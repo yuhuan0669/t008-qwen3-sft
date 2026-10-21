@@ -1,0 +1,15 @@
+{
+  "total": 40,
+  "empty_bodies": 0,
+  "finish_reasons": {
+    "stop": 40
+  },
+  "conditions": {
+    "existing": 14,
+    "proposed": 14,
+    "none": 12
+  },
+  "generated_tokens": 10378,
+  "generation_seconds": 198.63501605205238,
+  "note": "Mechanical counts only; name presence does not establish semantic correctness."
+}

@@ -1,0 +1,21 @@
+{
+  "run": "t008-v019-20261020-211142",
+  "file_hashes": {
+    "stage1/data/train.jsonl": "c2fa7ced3c438a323217d1d3a0d3657607c3ad89d6cd1e6a75480330c7fbbf16",
+    "stage1/data/manifest.json": "794d13b6271f25f3eb13a262585c3ab02aa5b2b80e45d24c572d0214f8e2580b",
+    "stage1/training/run-spec.json": "45cffa5477115ede8acef5c2181eb8a57409a3e35dd08584210e14d097ca83ae",
+    "stage1/training/local_data_guard.py": "45ba3763667ece681ad9094786035e40043ed334a72c0e76b4fc413755901fa5",
+    "stage1/evidence/encoding-report.json": "2a8d1b75400d057ccc39fef21a3b26b552bc2115e0a966fe28332c0b686bec11",
+    "stage2/scripts/run_local_sft.py": "65d78e369b5dfcd23cdc50d205395e45b6326d5c8a9d4103e9f3cecfc72ab9d0",
+    "stage2/scripts/run_chinese_development.py": "871382803a92e96586f0c6dd2ff10daf47526522a57a44777928105f84f01236",
+    "stage1/variants/stage1-cpu-v0.1.9/identity_loss3.py": "082510fc6fadc31eb179384299cc1425e6dfd98ae01ad95d463759c1a0627db8",
+    "stage1/variants/stage1-cpu-v0.1.9/identity-keys.json": "eb8cab550e8af6955b581c11118934d4b1e2e205503d46153de6b78fc5e3d39b",
+    "evaluation/spec.json": "161998e81df4214cf529fb312ec33437b0eb71f2ac1fb6bdaba28d6055f71649",
+    "evaluation/system-proposed.txt": "8fcd51af033cdd2f1f45b27da97bc6f006a46cb793fc4384b458629dfbc5340f",
+    "evaluation/system-existing.txt": "92ed593b3ea69fffc4b31756bb97abdd9806597234b430fbb5a4d95220550984",
+    "evaluation/cases.jsonl": "dc830c8bec3d90ead26add131fdb56a081b01c023945f2a15b8d46728e038914",
+    "evaluation/thinking-prefill.jinja": "ae8a1b27c3bac461eb5f6c78d5d39cbe29427ad91c9d2da8378e236b8a38448d"
+  },
+  "data_sha256": "c2fa7ced3c438a323217d1d3a0d3657607c3ad89d6cd1e6a75480330c7fbbf16",
+  "rows": 1275
+}

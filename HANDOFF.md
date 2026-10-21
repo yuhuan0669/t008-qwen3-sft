@@ -1,6 +1,10 @@
 # T-008 Qwen3-8B 基础 SFT · 统一交接
 
-当前已执行用户批准的gpu-review-v0.2：3步Smoke及3次Full完成，**开发未达标，无合格候选；原UAT已恢复**。先看[执行报告](stage2/reports/GPU_EXECUTION_v0.2_20261020.md)及[GPU记录](stage2/README.md)。实际恢复在2026-10-20 11:34:39 UTC，配置一致、健康200，新Adapter未部署。
+**最新接续：v0.1.9已完成3步Smoke、一次80步／1epoch Full和40次中文开发对照；原UAT已恢复，未部署新模型。** 中文Thinking身份完整正确3/6→4/6，仍有版本后缀与公司背景附加错误；严格JSON格式有退步，不能认定验收通过。数据与曝光不变，英文身份延后，不自动追加训练。先看 [最新执行报告](stage2/runs/t008-v019-20261020-211142/REPORT.md)、[逐题正文](stage2/runs/t008-v019-20261020-211142/development/ANSWERS.md) 和 [当前状态](control/CURRENT_STATE.json)。
+
+**以下首先保留gpu-review-v0.2的历史执行结论，不代表后续单独授权的训练次数。**
+
+此前已执行用户批准的gpu-review-v0.2：3步Smoke及3次Full完成，**开发未达标，无合格候选；原UAT已恢复**。先看[执行报告](stage2/reports/GPU_EXECUTION_v0.2_20261020.md)及[GPU记录](stage2/README.md)。实际恢复在2026-10-20 11:34:39 UTC，配置一致、健康200，新Adapter未部署。
 
 三次Full额度已用满，不自动追加训练。正式A/B基线已生成并隔离保存，正式C/D未运行；节点A未通过，行业阶段未启动。Full2/3只增加已审核身份与定位记录的曝光，原始数据不改，无新来源或人工思考链。
 

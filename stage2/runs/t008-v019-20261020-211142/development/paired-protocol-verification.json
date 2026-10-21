@@ -1,0 +1,8 @@
+{
+  "verified": true,
+  "pairs": 40,
+  "identical_prompts_and_generation_parameters": true,
+  "baseline_is_frozen_previous_run_not_rerun": true,
+  "formal_acceptance": false,
+  "baseline": "stage2/diagnostics/chinese-minimal-check-20261020/results/results.jsonl"
+}

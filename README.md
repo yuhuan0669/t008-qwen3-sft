@@ -4,11 +4,11 @@
 
 从 [HANDOFF.md](HANDOFF.md) 开始，再读 [当前状态](control/CURRENT_STATE.json) 与 [版本登记表](registry/versions.json)。
 
-最新完成 [40次中文推理复测](stage2/diagnostics/chinese-minimal-check-20261020/REPORT.md)：全部有正文且正常结束，新System改善业务边界；无System的Thinking身份仍不稳定。UAT已恢复原配置，未训练、未部署新System。
+最新执行为 **v0.1.9：3步Smoke及一次80步／1epoch Full完成，UAT已恢复原配置**。[执行报告](stage2/runs/t008-v019-20261020-211142/REPORT.md) · [40次逐题正文](stage2/runs/t008-v019-20261020-211142/development/ANSWERS.md)。无System的中文Thinking身份完整正确从冻结对照的3/6升为4/6，仍有附加错误；40次无空正文或长度截断。严格JSON格式有退步，不认定正式验收通过，未部署新模型、未追加训练。
 
-最新数据候选为 [v0.1.9](stage1/variants/stage1-cpu-v0.1.9/README.md)：已落实原定5条中文修改，[CPU编码与权重检查通过](stage1/variants/stage1-cpu-v0.1.9/CPU_CHECK.md)，1275条总量、216次身份曝光及其他训练参数不变。新增短思考进入监督，其余1270条编码与权重不变；英文身份延后，尚未训练，UAT未暂停。推理预算与System部分已按上方记录完成复测。[原审阅稿](stage2/variants/chinese-minimal-review-v0.1/REVIEW.md)和[5条全文对照](stage2/variants/chinese-minimal-review-v0.1/SAMPLE_DIFF.md)保留。
+训练使用 [v0.1.9数据](stage1/variants/stage1-cpu-v0.1.9/README.md)：只改5条中文记录，1275条总量、216次身份曝光及训练参数不变；[CPU检查](stage1/variants/stage1-cpu-v0.1.9/CPU_CHECK.md)与数据目录保持开训前快照，当前执行状态以本轮报告为准。英文身份延后。[5条样本前后对照](stage2/variants/chinese-minimal-review-v0.1/SAMPLE_DIFF.md)保留。
 
-最新执行为 **v0.1.8 身份答案loss×3：80步／1epoch完成，中文短身份改善，开发未达标，原UAT已恢复**。数据及曝光不变。[本轮报告](stage2/runs/t008-v018-loss3-20261020-180616/REPORT.md) · [逐题对照](stage2/runs/t008-v018-loss3-20261020-180616/development/ANSWERS.md)。不追加训练，未部署新模型。此前v0.1.8结果保留于[原报告](stage2/runs/t008-v018-20261020-145507/REPORT.md)。
+上一轮 [40次中文推理复测](stage2/diagnostics/chinese-minimal-check-20261020/REPORT.md) 为本轮冻结比较基线；更早的 [v0.1.8 身份loss×3训练](stage2/runs/t008-v018-loss3-20261020-180616/REPORT.md) 与 [v0.1.8原训练](stage2/runs/t008-v018-20261020-145507/REPORT.md) 保留。
 
 此前 v0.1.7 执行结果为 **v0.1.7：80步／1epoch训练完成，开发未达标，原UAT已恢复**。见 [本轮结果](stage2/runs/t008-v017-20261020-135244/REPORT.md) 与 [逐题对照](stage2/runs/t008-v017-20261020-135244/development/ANSWERS.md)。本轮最终模型曝光不变；一次监控故障导致的36步中断尝试单独保留。v0.1.7数据目录保持开训前冻结快照，当前训练状态以本轮结果为准。
 

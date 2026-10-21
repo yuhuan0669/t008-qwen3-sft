@@ -1,0 +1,141 @@
+{
+  "apiVersion": "v1",
+  "kind": "Pod",
+  "metadata": {
+    "name": "t008-v019-20261020-211142-prep",
+    "namespace": "swift",
+    "labels": {
+      "t008-run": "t008-v019-20261020-211142",
+      "stage": "cpu-prep"
+    }
+  },
+  "spec": {
+    "restartPolicy": "Never",
+    "automountServiceAccountToken": false,
+    "nodeSelector": {
+      "kubernetes.io/hostname": "k8s-worker05"
+    },
+    "tolerations": [
+      {
+        "key": "dedicated",
+        "operator": "Equal",
+        "value": "gpu-rtx4090",
+        "effect": "NoSchedule"
+      }
+    ],
+    "containers": [
+      {
+        "name": "prep",
+        "image": "modelscope-registry.cn-hangzhou.cr.aliyuncs.com/modelscope-repo/modelscope@sha256:822d99beed4984a421c8d1da397993c6a8a5f88cdad7dde940bd52df0067d738",
+        "command": [
+          "sleep",
+          "36000"
+        ],
+        "env": [
+          {
+            "name": "CUDA_VISIBLE_DEVICES",
+            "value": ""
+          },
+          {
+            "name": "NVIDIA_VISIBLE_DEVICES",
+            "value": "void"
+          },
+          {
+            "name": "USER",
+            "value": "t008-cpu"
+          },
+          {
+            "name": "LOGNAME",
+            "value": "t008-cpu"
+          },
+          {
+            "name": "MODELSCOPE_CACHE",
+            "value": "/tmp/cpu/modelscope"
+          },
+          {
+            "name": "MODELSCOPE_HOME",
+            "value": "/tmp/cpu/modelscope-home"
+          },
+          {
+            "name": "HF_HOME",
+            "value": "/tmp/cpu/hf"
+          },
+          {
+            "name": "XDG_CACHE_HOME",
+            "value": "/tmp/cpu/xdg"
+          },
+          {
+            "name": "HF_HUB_OFFLINE",
+            "value": "1"
+          },
+          {
+            "name": "TRANSFORMERS_OFFLINE",
+            "value": "1"
+          },
+          {
+            "name": "OMP_NUM_THREADS",
+            "value": "2"
+          },
+          {
+            "name": "PYTHONUNBUFFERED",
+            "value": "1"
+          }
+        ],
+        "resources": {
+          "requests": {
+            "cpu": "500m",
+            "memory": "1Gi"
+          },
+          "limits": {
+            "cpu": "2",
+            "memory": "8Gi"
+          }
+        },
+        "volumeMounts": [
+          {
+            "name": "data",
+            "mountPath": "/data"
+          },
+          {
+            "name": "work",
+            "mountPath": "/work"
+          },
+          {
+            "name": "base",
+            "mountPath": "/base",
+            "subPath": "Qwen3-8B",
+            "readOnly": true
+          },
+          {
+            "name": "data",
+            "mountPath": "/usr/local/lib/python3.12/site-packages/modelscope/utils/ast_index_file.py",
+            "subPath": "t008-v017-20261020-135244/runtime-support/ast_index_file.py",
+            "readOnly": true
+          }
+        ]
+      }
+    ],
+    "volumes": [
+      {
+        "name": "data",
+        "persistentVolumeClaim": {
+          "claimName": "swift-train-data"
+        }
+      },
+      {
+        "name": "work",
+        "persistentVolumeClaim": {
+          "claimName": "swift-work"
+        }
+      },
+      {
+        "name": "base",
+        "persistentVolumeClaim": {
+          "claimName": "swift-base",
+          "readOnly": true
+        }
+      }
+    ],
+    "activeDeadlineSeconds": 32400
+  }
+}

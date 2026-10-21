@@ -1,10 +1,10 @@
-最新完成：[40次中文推理复测](diagnostics/chinese-minimal-check-20261020/REPORT.md) · [逐题正文](diagnostics/chinese-minimal-check-20261020/ANSWERS.md)。40次都有正文并正常结束，新System改善业务边界，Thinking身份仍有失败。UAT已恢复原配置，未训练、未部署新System。
+最新执行：**v0.1.9一次Full完成，UAT已恢复**。[执行报告](runs/t008-v019-20261020-211142/REPORT.md) · [40次逐题正文](runs/t008-v019-20261020-211142/development/ANSWERS.md)。中文Thinking身份完整正确3/6→4/6，仍未稳定；40次无空正文或长度截断，严格JSON有退步。未部署新模型，不追加训练。
 
-最新数据候选：[v0.1.9](../stage1/variants/stage1-cpu-v0.1.9/README.md) · [CPU编码与权重检查](../stage1/variants/stage1-cpu-v0.1.9/CPU_CHECK.md) · [5条样本前后对照](variants/chinese-minimal-review-v0.1/SAMPLE_DIFF.md)。5条中文修改已落地，1275条总量、216次身份曝光及训练参数不变；其余1270条编码与权重不变。英文身份延后，尚未训练，UAT未暂停。此前的 [Swift/vLLM诊断](diagnostics/engine-compare-20261020/REPORT.md) 已区分普通说明截断、模板空正文和重复生成。
+本轮使用 [v0.1.9数据](../stage1/variants/stage1-cpu-v0.1.9/README.md)：5条中文替换、1275条总量、216次身份曝光及其他训练参数不变。英文身份延后。开训前 [CPU检查](../stage1/variants/stage1-cpu-v0.1.9/CPU_CHECK.md) 保留；本轮比较基线是 [上一轮40次推理](diagnostics/chinese-minimal-check-20261020/REPORT.md)。
 
-最新训练为 **v0.1.8 身份loss×3：训练完成，中文短身份改善，开发未达标，UAT已恢复**。[本轮报告](runs/t008-v018-loss3-20261020-180616/REPORT.md) · [逐题回答](runs/t008-v018-loss3-20261020-180616/development/ANSWERS.md)。以下保留历史执行说明。
+此前的 [v0.1.8 loss×3](runs/t008-v018-loss3-20261020-180616/REPORT.md) 和 [Swift/vLLM诊断](diagnostics/engine-compare-20261020/REPORT.md) 保留。以下为历史执行说明。
 
-# 最新执行：v0.1.7
+# 历史执行：v0.1.7
 
 **80步／1epoch完成，开发未达标，原UAT恢复。** [结果报告](runs/t008-v017-20261020-135244/REPORT.md) · [专项完整回答](runs/t008-v017-20261020-135244/development/ANSWERS.md)。未启动正式候选验收，不追加训练。
 

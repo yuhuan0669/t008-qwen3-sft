@@ -46,12 +46,18 @@
     "rows": 1275,
     "identity_exposures": 216,
     "changed_rows": 5,
-    "status": "CPU_CHECKED_NO_TRAINING_AUTHORIZATION",
+    "status": "CPU_CHECKED_AUTHORIZATION_AND_RESULT_IN_RUN_RECORD",
     "encoding_status": "VERIFIED_CPU_V019",
     "cpu_report": "stage1/variants/stage1-cpu-v0.1.9/CPU_CHECK.md",
     "cpu_validation_report": "stage1/variants/stage1-cpu-v0.1.9/cpu-check/report.json",
-    "training_started": false,
-    "sync_status": "LOCAL_GIT_ONLY"
+    "training_started": true,
+    "sync_status": "LOCAL_GIT_ONLY",
+    "execution_result": {
+      "run_id": "t008-v019-20261020-211142",
+      "status": "TRAINED_CHINESE_DEVELOPMENT_REVIEWED_UAT_RESTORED",
+      "report": "stage2/runs/t008-v019-20261020-211142/REPORT.md",
+      "data_snapshot_unchanged": true
+    }
   },
   "status_scope": "Top-level v0.1.3 is historical CPU preparation; latest_data_revision is the current local data candidate",
   "previous_data_revisions": [

@@ -1,0 +1,13 @@
+{
+  "run_id": "t008-v019-20261020-211142",
+  "experiment_approved": true,
+  "uat_pause_approved": true,
+  "approved_data_sha256": "c2fa7ced3c438a323217d1d3a0d3657607c3ad89d6cd1e6a75480330c7fbbf16",
+  "window_start_utc": "2026-10-21T04:13:53.996309+00:00",
+  "window_end_utc": "2026-10-21T12:13:53.996309+00:00",
+  "restore_start_utc": "2026-10-21T11:33:53.996309+00:00",
+  "decision_ref": "User: 开始，可暂停 UAT，完成后恢复。Execute v0.1.9: 3-step Smoke plus one Full from original base, same exposures and parameters, 40 paired Chinese development requests. 8h watchdog is a recovery ceiling, not planned outage duration.",
+  "restoration_owner": "Current implementation agent",
+  "uat_coordination": "Owner directly confirmed immediate pause",
+  "max_full_runs": 1
+}

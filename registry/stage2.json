@@ -213,14 +213,16 @@
     }
   ],
   "current_review": {
-    "version": "chinese-identity-json-minimal-v0.1.10",
-    "report": "stage1/variants/stage1-cpu-v0.1.10/README.md",
-    "sample_diff": "stage1/variants/stage1-cpu-v0.1.10/SAMPLE_DIFF.md",
-    "training_authorized": true,
+    "version": "chinese-facts-scope-v0.1.11",
+    "report": "stage1/variants/stage1-cpu-v0.1.11/README.md",
+    "sample_diff": "stage1/variants/stage1-cpu-v0.1.11/SAMPLE_DIFF.md",
+    "validation_plan": "stage1/variants/stage1-cpu-v0.1.11/VALIDATION_PLAN.md",
+    "training_authorized": false,
+    "gpu_window_authorized": false,
     "english_deferred": true,
-    "execution_completed": true,
-    "authorization_consumed": true,
-    "execution_report": "stage2/runs/t008-v0110-20261020-224753/REPORT.md"
+    "native_cpu_encoding_executed": false,
+    "inference_executed": false,
+    "execution_completed": false
   },
   "latest_diagnostic": {
     "id": "json-format-check-20261020",
@@ -270,5 +272,40 @@
       "formal_acceptance": false,
       "sync_status": "LOCAL_GIT_ONLY"
     }
-  ]
+  ],
+  "previous_reviews": [
+    {
+      "version": "chinese-identity-json-minimal-v0.1.10",
+      "report": "stage1/variants/stage1-cpu-v0.1.10/README.md",
+      "sample_diff": "stage1/variants/stage1-cpu-v0.1.10/SAMPLE_DIFF.md",
+      "training_authorized": true,
+      "english_deferred": true,
+      "execution_completed": true,
+      "authorization_consumed": true,
+      "execution_report": "stage2/runs/t008-v0110-20261020-224753/REPORT.md"
+    }
+  ],
+  "latest_local_preparation": {
+    "version": "stage1-cpu-v0.1.11",
+    "manifest": "stage1/variants/stage1-cpu-v0.1.11/manifest.json",
+    "train_path": "stage1/variants/stage1-cpu-v0.1.11/train.jsonl",
+    "train_sha256": "17a0ff1d3152dde611b31dab8d1ce84e1a0cbb7bb3536028b90900d6797d3121",
+    "report": "stage1/variants/stage1-cpu-v0.1.11/README.md",
+    "sample_diff": "stage1/variants/stage1-cpu-v0.1.11/SAMPLE_DIFF.md",
+    "training_config": "stage1/variants/stage1-cpu-v0.1.11/training-config.json",
+    "evaluation_config": "stage1/variants/stage1-cpu-v0.1.11/evaluation-config.json",
+    "validation_plan": "stage1/variants/stage1-cpu-v0.1.11/VALIDATION_PLAN.md",
+    "local_verification": "stage1/variants/stage1-cpu-v0.1.11/verification.json",
+    "rows": 1275,
+    "identity_exposures": 216,
+    "generic_total_exposures": 1036,
+    "positioning_exposures": 23,
+    "changed_rows": 10,
+    "status": "REVIEW_READY_NATIVE_CPU_PENDING",
+    "encoding_status": "NOT_RUN",
+    "training_started": false,
+    "inference_executed": false,
+    "cluster_accessed": false,
+    "sync_status": "LOCAL_GIT_ONLY"
+  }
 }

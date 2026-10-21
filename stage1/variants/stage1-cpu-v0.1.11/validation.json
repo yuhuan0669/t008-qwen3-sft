@@ -1,0 +1,73 @@
+{
+  "verified_local_structure": true,
+  "native_swift_cpu_check": "NOT_RUN",
+  "parent_sha256": "5b455659b0e3fea30efd5822be1a7fee0e57d2788bc0dcbf79ec755cd5f22788",
+  "dataset_sha256": "17a0ff1d3152dde611b31dab8d1ce84e1a0cbb7bb3536028b90900d6797d3121",
+  "rows": 1275,
+  "source_exposures_before": {
+    "swift/Qwen3-SFT-Mixin": 1032,
+    "swift/self-cognition": 216,
+    "t008/strict-json-v1": 4,
+    "t008/project-positioning-v1": 23
+  },
+  "source_exposures_after": {
+    "swift/Qwen3-SFT-Mixin": 1030,
+    "swift/self-cognition": 216,
+    "t008/strict-json-v1": 4,
+    "t008/general-nonthinking-v1": 2,
+    "t008/project-positioning-v1": 23
+  },
+  "changed_rows_zero_based": [
+    388,
+    802,
+    983,
+    1011,
+    1064,
+    1182,
+    1252,
+    1261,
+    1263,
+    1270
+  ],
+  "unchanged_raw_lines": 1265,
+  "added_rows": 0,
+  "removed_rows": 0,
+  "identity_exposures": 216,
+  "identity_company_fact_exposures_before": 0,
+  "identity_company_fact_exposures_after": 4,
+  "other_identity_exposures_before": 216,
+  "other_identity_exposures_after": 212,
+  "generic_total_exposures": 1036,
+  "positioning_exposures": 23,
+  "assistant_turn_mode_counts_before": {
+    "generic/empty_think": 2,
+    "generic/nonempty_think": 1034,
+    "identity/empty_think": 210,
+    "identity/nonempty_think": 6,
+    "positioning/empty_think": 22,
+    "positioning/nonempty_think": 3
+  },
+  "assistant_turn_mode_counts_after": {
+    "generic/empty_think": 4,
+    "generic/nonempty_think": 1032,
+    "identity/empty_think": 208,
+    "identity/nonempty_think": 8,
+    "positioning/empty_think": 19,
+    "positioning/nonempty_think": 6
+  },
+  "english_records_changed": 0,
+  "json_training_records_changed": 0,
+  "preserved_parent_peer_lines": [
+    16,
+    33,
+    116,
+    185,
+    190,
+    1005
+  ],
+  "exact_development_prompt_overlap": 0,
+  "formal_holdout_accessed": false,
+  "training_started": false,
+  "inference_executed": false,
+  "cluster_accessed": false
+}

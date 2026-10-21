@@ -1,0 +1,71 @@
+{
+  "purpose": "Review preparation; Chinese development and schema diagnostic NOT EXECUTED.",
+  "backend": "vllm",
+  "chat_template": {
+    "path": "stage2/diagnostics/thinking-chat-template-20261020/thinking-prefill.jinja",
+    "sha256": "ae8a1b27c3bac461eb5f6c78d5d39cbe29427ad91c9d2da8378e236b8a38448d"
+  },
+  "server_args": [
+    "--chat-template",
+    "/work/stage2/diagnostics/thinking-chat-template-20261020/thinking-prefill.jinja",
+    "--reasoning-parser",
+    "qwen3"
+  ],
+  "apply_same_template_to": [
+    "original_base",
+    "all_compared_adapters"
+  ],
+  "request_modes": {
+    "thinking": {
+      "temperature": 0.6,
+      "top_p": 0.95,
+      "top_k": 20,
+      "max_tokens": 4096,
+      "min_p": 0,
+      "chat_template_kwargs": {
+        "enable_thinking": true
+      }
+    },
+    "nonthinking": {
+      "temperature": 0.7,
+      "top_p": 0.8,
+      "top_k": 20,
+      "max_tokens": 2048,
+      "min_p": 0,
+      "chat_template_kwargs": {
+        "enable_thinking": false
+      }
+    }
+  },
+  "prior_chat_verification": "stage2/diagnostics/thinking-chat-template-20261020/verification.json",
+  "prior_scope": "v0.1.10 frozen outputs are the trained baseline, not results for this review candidate.",
+  "formal_scores_reusable_only_if_template_and_protocol_match": true,
+  "execution_authorized": false,
+  "system_path": "stage1/variants/stage1-cpu-v0.1.11/evaluation/custom-system.txt",
+  "system_sha256": "8f449f851a170c7b97f8e11216be570309905749c2b9e162b419706fadba2cb5",
+  "development_path": "stage1/variants/stage1-cpu-v0.1.8/evaluation/development-24.jsonl",
+  "rubric_path": "stage1/variants/stage1-cpu-v0.1.11/evaluation/rubric.md",
+  "formal_holdout_status": "NOT_MODIFIED_EVALUATION_SIDE_NAME_AMENDMENT_REQUIRED_BEFORE_FORMAL_RUN",
+  "historical_scores_unchanged": true,
+  "prior_protocol_check": "stage2/diagnostics/json-format-check-20261020/REPORT.md",
+  "english_identity": "DEFERRED; existing English development cases retained as history",
+  "seed": 42,
+  "identity_seeds": [
+    42,
+    43,
+    44
+  ],
+  "concurrency": 1,
+  "server_seed": 42,
+  "max_model_len": 8192,
+  "repetition_penalty": 1.0,
+  "additional_development_path": "stage1/variants/stage1-cpu-v0.1.11/evaluation/chinese-additional.jsonl",
+  "additional_development_seeds": [
+    42,
+    43,
+    44
+  ],
+  "validation_plan": "stage1/variants/stage1-cpu-v0.1.11/VALIDATION_PLAN.md",
+  "json_diagnostic_system_path": "stage1/variants/stage1-cpu-v0.1.10/evaluation/custom-system.txt",
+  "json_diagnostic_system_sha256": "8fcd51af033cdd2f1f45b27da97bc6f006a46cb793fc4384b458629dfbc5340f"
+}

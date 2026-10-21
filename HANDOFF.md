@@ -1,5 +1,9 @@
 # T-008 Qwen3-8B 基础 SFT · 统一交接
 
+**当前待审阅：v0.1.11中文最小修订包已在本地形成，尚未实际Swift编码、推理或训练。** 10条修改，总量1275、身份曝光216不变；公司成立日期为2026年7月8日，所在地为湖北省武汉市武昌区。最新已训练模型仍为v0.1.10。
+
+[样本对照](stage1/variants/stage1-cpu-v0.1.11/SAMPLE_DIFF.md) · [System差异](stage1/variants/stage1-cpu-v0.1.11/SYSTEM_DIFF.md) · [验证清单](stage1/variants/stage1-cpu-v0.1.11/VALIDATION_PLAN.md)。本轮未操作UAT，未上传GitHub或Drive。
+
 **最新结果：v0.1.10一次80步／1epoch训练和62次中文检查已完成，UAT已恢复原配置。** 无System的中文名称均正确，Thinking仍有业务扩写和思考段编造；JSON仍18/24，无净改善；62次无空正文或长度截断。英文身份延后，未追加训练或部署新模型。[执行报告](stage2/runs/t008-v0110-20261020-224753/REPORT.md)。数据与CPU文件保留开训前快照，当前状态以执行报告为准。
 
 **此前训练：v0.1.9已完成3步Smoke、一次80步／1epoch Full和40次中文开发对照；原UAT已恢复，未部署新模型。** 中文Thinking身份完整正确3/6→4/6，仍有版本后缀与公司背景附加错误；严格JSON格式有退步，不能认定验收通过。数据与曝光不变，英文身份延后，不自动追加训练。先看 [最新执行报告](stage2/runs/t008-v019-20261020-211142/REPORT.md)、[逐题正文](stage2/runs/t008-v019-20261020-211142/development/ANSWERS.md) 和 [当前状态](control/CURRENT_STATE.json)。

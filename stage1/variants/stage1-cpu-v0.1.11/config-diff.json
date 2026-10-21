@@ -1,0 +1,23 @@
+{
+  "parent": "stage1/variants/stage1-cpu-v0.1.10/training-config.json",
+  "parent_sha256": "b6630c58c9246424ca7d4a48300c2170239ac462613d30fcf39f14bf043dedc1",
+  "argv_changes": [
+    {
+      "before": "/work/stage1/variants/stage1-cpu-v0.1.10/train.jsonl",
+      "after": "/work/stage1/variants/stage1-cpu-v0.1.11/train.jsonl"
+    },
+    {
+      "before": "/runwork/stage1-cpu-v0.1.10/full/checkpoints",
+      "after": "/runwork/stage1-cpu-v0.1.11/full/checkpoints"
+    },
+    {
+      "before": "/work/stage1/variants/stage1-cpu-v0.1.10/identity_loss3.py",
+      "after": "/work/stage1/variants/stage1-cpu-v0.1.11/identity_loss3.py"
+    }
+  ],
+  "training_hyperparameters_unchanged": true,
+  "loss_plugin_bytes_unchanged": true,
+  "normalization_rule_unchanged": true,
+  "identity_index_regenerated": true,
+  "native_cpu_encoding_executed": false
+}

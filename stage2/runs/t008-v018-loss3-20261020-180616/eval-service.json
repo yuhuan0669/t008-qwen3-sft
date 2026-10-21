@@ -1,0 +1,23 @@
+{
+  "apiVersion": "v1",
+  "kind": "Service",
+  "metadata": {
+    "name": "t008-v018-loss3-20261020-180616-eval",
+    "namespace": "swift",
+    "labels": {
+      "t008-run": "t008-v018-loss3-20261020-180616"
+    }
+  },
+  "spec": {
+    "selector": {
+      "t008-run": "t008-v018-loss3-20261020-180616",
+      "role": "eval"
+    },
+    "ports": [
+      {
+        "port": 8000,
+        "targetPort": 8000
+      }
+    ]
+  }
+}

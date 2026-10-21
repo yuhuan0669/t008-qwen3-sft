@@ -1,0 +1,11 @@
+{
+  "equal_v018": true,
+  "sha256": {
+    "thinking-prefill.jinja": "ae8a1b27c3bac461eb5f6c78d5d39cbe29427ad91c9d2da8378e236b8a38448d",
+    "rubric.md": "d50870df801fbc5c0aa22077dd3230683a3a6dcc2ed0486b7e584d87a3cc6dfa",
+    "protocol.json": "bae33af044078966fda4613304c25d0ff9ad44f57f6445eb50ff67a07a26c0ca",
+    "development-24.jsonl": "af0b1db0db437c2a114da2aec87ef68b953189e284ba24435eb74698be450be6",
+    "public-development.jsonl": "8513e6709b6f24946b6d98e6b94c7233fa2620c0845dee4aa412a91d040d3f97",
+    "custom-system.txt": "92ed593b3ea69fffc4b31756bb97abdd9806597234b430fbb5a4d95220550984"
+  }
+}

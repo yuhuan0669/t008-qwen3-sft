@@ -1,0 +1,777 @@
+2026-10-20 18:30:24 - evalscope - [32mINFO[0m: Args: Task config is provided with TaskConfig type.[0m
+T008_PROGRESS {"event": "group_start", "group": "A__nonthinking__seed42__ifeval", "cases": 20}
+2026-10-20 18:30:25 - evalscope - [32mINFO[0m: Running with native backend[0m
+2026-10-20 18:30:25 - evalscope - [32mINFO[0m: Dump task config to /tmp/t008-public-development/t008-v018-loss3-20261020-180616/A/output/A__nonthinking__seed42__ifeval/evalscope/configs/task_config.yaml[0m
+2026-10-20 18:30:25 - evalscope - [32mINFO[0m: {
+    "model_id": "t008-base",
+    "model_args": {
+        "max_retries": 0
+    },
+    "model_task": "text_generation",
+    "chat_template": null,
+    "datasets": [
+        "t008_ifeval_formal"
+    ],
+    "dataset_args": {
+        "t008_ifeval_formal": {
+            "name": "t008_ifeval_formal",
+            "dataset_id": "t008_private_memory",
+            "output_types": [
+                "generation"
+            ],
+            "subset_list": [
+                "default"
+            ],
+            "default_subset": "default",
+            "few_shot_num": 0,
+            "few_shot_random": false,
+            "train_split": null,
+            "eval_split": "train",
+            "prompt_template": "",
+            "few_shot_prompt_template": null,
+            "system_prompt": null,
+            "query_template": null,
+            "pretty_name": "IFEval",
+            "description": "\n## Overview\n\nIFEval (Instruction-Following Eval) is a benchmark for evaluating how well language models follow explicit, verifiable instructions. It contains prompts with specific formatting, content, or structural requirements that can be objectively verified.\n\n## Task Description\n\n- **Task Type**: Instruction Following Evaluation\n- **Input**: Prompts with explicit, verifiable constraints\n- **Output**: Response that follows all specified instructions\n- **Constraint Types**: Format, length, keywords, structure, etc.\n\n## Key Features\n\n- ~500 prompts with 25 types of verifiable instructions\n- Instructions are objectively checkable (not subjective)\n- Examples: \"write exactly 3 paragraphs\", \"include the word X\", \"use bullet points\"\n- Tests instruction comprehension and compliance\n- No ambiguity in evaluation criteria\n\n## Evaluation Notes\n\n- Default configuration uses **0-shot** evaluation\n- Four metrics available:\n  - `prompt_level_strict`: All instructions in prompt must be followed\n  - `prompt_level_loose`: Some tolerance for minor deviations\n  - `inst_level_strict`: Per-instruction accuracy (strict)\n  - `inst_level_loose`: Per-instruction accuracy (loose)\n- `prompt_level_strict` is the primary metric\n- Automatic verification of instruction compliance\n",
+            "paper_url": null,
+            "data_statistics": null,
+            "sample_example": null,
+            "tags": [
+                "InstructionFollowing"
+            ],
+            "filters": null,
+            "metric_list": [
+                "prompt_level_strict",
+                "inst_level_strict",
+                "prompt_level_loose",
+                "inst_level_loose"
+            ],
+            "aggregation": "mean",
+            "shuffle": false,
+            "shuffle_choices": false,
+            "force_redownload": false,
+            "review_timeout": null,
+            "extra_params": {},
+            "sandbox_config": {},
+            "max_image_bytes": null
+        }
+    },
+    "dataset_dir": "/root/.cache/modelscope/hub/datasets",
+    "dataset_hub": "modelscope",
+    "repeats": 1,
+    "eval_type": "openai_api",
+    "eval_backend": "Native",
+    "eval_config": null,
+    "limit": null,
+    "eval_batch_size": 8,
+    "use_cache": null,
+    "rerun_review": false,
+    "work_dir": "/tmp/t008-public-development/t008-v018-loss3-20261020-180616/A/output/A__nonthinking__seed42__ifeval/evalscope",
+    "no_timestamp": true,
+    "enable_progress_tracker": false,
+    "ignore_errors": false,
+    "debug": false,
+    "seed": 42,
+    "api_url": "http://t008-v018-loss3-20261020-180616-eval.swift.svc.cluster.local:8000/v1",
+    "api_key": "**********",
+    "timeout": null,
+    "stream": null,
+    "judge_strategy": "auto",
+    "judge_worker_num": null,
+    "judge_model_args": {},
+    "analysis_report": false,
+    "collect_perf": true,
+    "sandbox": {
+        "enabled": false,
+        "engine": "docker",
+        "default_config": {},
+        "manager_config": {},
+        "pool_size": null
+    },
+    "use_sandbox": false,
+    "sandbox_type": "docker",
+    "sandbox_manager_config": {},
+    "agent_config": null,
+    "evalscope_version": "1.9.1",
+    "model": "t008-base",
+    "generation_config": {
+        "timeout": 600.0,
+        "retries": 1,
+        "batch_size": 8,
+        "stream": false,
+        "max_tokens": 1024,
+        "top_p": 0.8,
+        "temperature": 0.7,
+        "seed": 42,
+        "top_k": 20,
+        "extra_body": {
+            "min_p": 0,
+            "chat_template_kwargs": {
+                "enable_thinking": false
+            }
+        }
+    }
+}[0m
+Running[eval]:   0%|          | 0/1 [00:00<?, ?benchmark/s]                                                           2026-10-20 18:30:25 - evalscope - [32mINFO[0m: Start loading benchmark dataset: t008_ifeval_formal[0m
+Running[eval]:   0%|          | 0/1 [00:00<?, ?benchmark/s]                                                           2026-10-20 18:30:25 - evalscope - [32mINFO[0m: t008_ifeval_formal: 20 samples to evaluate (1 subset)[0m
+Running[eval]:   0%|          | 0/1 [00:00<?, ?benchmark/s]                                                           2026-10-20 18:30:25 - evalscope - [32mINFO[0m: Subsets of t008_ifeval_formal: ['default'][0m
+Running[eval]:   0%|          | 0/1 [00:00<?, ?benchmark/s]
+Evaluating[t008_ifeval_formal]:   0%|          | 0/20 [00:00<?, ?it/s][A                                                           
+                                                                      [A2026-10-20 18:30:25 - evalscope - [32mINFO[0m: Loading model for prediction...[0m
+Running[eval]:   0%|          | 0/1 [00:00<?, ?benchmark/s]
+Evaluating[t008_ifeval_formal]:   0%|          | 0/20 [00:00<?, ?it/s][A                                                           
+                                                                      [A2026-10-20 18:30:25 - evalscope - [32mINFO[0m: Creating model t008-base with eval_type=openai_api base_url=http://t008-v018-loss3-20261020-180616-eval.swift.svc.cluster.local:8000/v1, config={'timeout': 600.0, 'retries': 1, 'retry_interval': 10, 'batch_size': 8, 'stream': False, 'max_tokens': 1024, 'top_p': 0.8, 'temperature': 0.7, 'seed': 42, 'top_k': 20, 'anthropic_cache_strategy': 'evaluation', 'extra_body': {'min_p': 0, 'chat_template_kwargs': {'enable_thinking': False}}}, model_args={'max_retries': 0}[0m
+Running[eval]:   0%|          | 0/1 [00:00<?, ?benchmark/s]
+Evaluating[t008_ifeval_formal]:   0%|          | 0/20 [00:00<?, ?it/s][A                                                           
+                                                                      [A2026-10-20 18:30:25 - evalscope - [32mINFO[0m: Model loaded successfully.[0m
+Running[eval]:   0%|          | 0/1 [00:00<?, ?benchmark/s]
+Evaluating[t008_ifeval_formal]:   0%|          | 0/20 [00:00<?, ?it/s][A
+Evaluating[t008_ifeval_formal]:   5%|▌         | 1/20 [00:01<00:19,  1.00s/it][A
+Evaluating[t008_ifeval_formal]:  10%|█         | 2/20 [00:02<00:18,  1.00s/it][A
+Evaluating[t008_ifeval_formal]:  20%|██        | 4/20 [00:03<00:11,  1.45it/s][A
+Evaluating[t008_ifeval_formal]:  30%|███       | 6/20 [00:07<00:18,  1.31s/it][A
+Evaluating[t008_ifeval_formal]:  40%|████      | 8/20 [00:08<00:11,  1.02it/s][A
+Evaluating[t008_ifeval_formal]:  50%|█████     | 10/20 [00:09<00:08,  1.24it/s][A
+Evaluating[t008_ifeval_formal]:  60%|██████    | 12/20 [00:10<00:05,  1.42it/s][A
+Evaluating[t008_ifeval_formal]:  70%|███████   | 14/20 [00:12<00:04,  1.25it/s][A
+Evaluating[t008_ifeval_formal]:  80%|████████  | 16/20 [00:13<00:02,  1.42it/s][A
+Evaluating[t008_ifeval_formal]:  90%|█████████ | 18/20 [00:20<00:03,  1.58s/it][AT008_PROGRESS {"event": "progress", "group": "A__nonthinking__seed42__ifeval", "generated_turns": 20, "reused_turns": 0, "completed_cases": 20}
+
+Evaluating[t008_ifeval_formal]: 100%|██████████| 20/20 [00:22<00:00,  1.49s/it][A                                                           
+                                                                               [A2026-10-20 18:30:47 - evalscope - [32mINFO[0m: Evaluating[t008_ifeval_formal] 100%| 20/20 [Elapsed: 00:22 < Remaining: 00:00,  1.49s/it][0m
+Running[eval]:   0%|          | 0/1 [00:22<?, ?benchmark/s]
+Evaluating[t008_ifeval_formal]: 100%|██████████| 20/20 [00:22<00:00,  1.49s/it][AEvaluating[t008_ifeval_formal]: 100%|██████████| 20/20 [00:22<00:00,  1.13s/it]
+                                                           2026-10-20 18:30:47 - evalscope - [32mINFO[0m: t008_ifeval_formal: predictions complete, aggregating scores...[0m
+Running[eval]:   0%|          | 0/1 [00:22<?, ?benchmark/s]                                                           2026-10-20 18:30:47 - evalscope - [32mINFO[0m: Aggregating scores for subset: default[0m
+Running[eval]:   0%|          | 0/1 [00:22<?, ?benchmark/s]                                                           2026-10-20 18:30:47 - evalscope - [32mINFO[0m: Generating report...[0m
+Running[eval]:   0%|          | 0/1 [00:22<?, ?benchmark/s]                                                           2026-10-20 18:30:47 - evalscope - [32mINFO[0m: 
+t008_ifeval_formal report table:
+┌───────────┬────────────────────┬──────────────────────────┬──────────┬───────┬─────────┬─────────┐
+│ Model     │ Dataset            │ Metric                   │ Subset   │   Num │   Score │ Cat.0   │
+├───────────┼────────────────────┼──────────────────────────┼──────────┼───────┼─────────┼─────────┤
+│ t008-base │ t008_ifeval_formal │ mean_prompt_level_strict │ default  │    20 │    0.85 │ default │
+├───────────┼────────────────────┼──────────────────────────┼──────────┼───────┼─────────┼─────────┤
+│ t008-base │ t008_ifeval_formal │ mean_inst_level_strict   │ default  │    20 │    0.85 │ default │
+├───────────┼────────────────────┼──────────────────────────┼──────────┼───────┼─────────┼─────────┤
+│ t008-base │ t008_ifeval_formal │ mean_prompt_level_loose  │ default  │    20 │    0.85 │ default │
+├───────────┼────────────────────┼──────────────────────────┼──────────┼───────┼─────────┼─────────┤
+│ t008-base │ t008_ifeval_formal │ mean_inst_level_loose    │ default  │    20 │    0.85 │ default │
+└───────────┴────────────────────┴──────────────────────────┴──────────┴───────┴─────────┴─────────┘ 
+[0m
+Running[eval]:   0%|          | 0/1 [00:22<?, ?benchmark/s]                                                           2026-10-20 18:30:47 - evalscope - [32mINFO[0m: Skipping report analysis (`analysis_report=False`).[0m
+Running[eval]:   0%|          | 0/1 [00:22<?, ?benchmark/s]                                                           2026-10-20 18:30:47 - evalscope - [32mINFO[0m: Dump report to: /tmp/t008-public-development/t008-v018-loss3-20261020-180616/A/output/A__nonthinking__seed42__ifeval/evalscope/reports/t008-base/t008_ifeval_formal.json 
+[0m
+Running[eval]:   0%|          | 0/1 [00:22<?, ?benchmark/s]                                                           2026-10-20 18:30:47 - evalscope - [32mINFO[0m: 
+t008_ifeval_formal perf table:
+Model      Dataset               Num    Avg Lat  Avg TTFT    Avg TPOT      Avg Thpt    Avg In    Avg Out
+                                            (s)  (ms)        (ms)           (tok/s)       Tok        Tok
+---------  ------------------  -----  ---------  ----------  ----------  ----------  --------  ---------
+t008-base  t008_ifeval_formal     20      5.955  -           -                54.09     53.45      322.1
+[0m
+Running[eval]:   0%|          | 0/1 [00:22<?, ?benchmark/s]                                                           2026-10-20 18:30:47 - evalscope - [32mINFO[0m: Benchmark t008_ifeval_formal evaluation finished.[0m
+Running[eval]:   0%|          | 0/1 [00:22<?, ?benchmark/s]Running[eval]: 100%|██████████| 1/1 [00:22<00:00, 22.63s/benchmark]                                                                   2026-10-20 18:30:47 - evalscope - [32mINFO[0m: Running[eval] 100%| 1/1 [Elapsed: 00:22 < Remaining: 00:00, 22.63s/benchmark][0m
+Running[eval]: 100%|██████████| 1/1 [00:22<00:00, 22.63s/benchmark]Running[eval]: 100%|██████████| 1/1 [00:22<00:00, 22.63s/benchmark]
+2026-10-20 18:30:47 - evalscope - [32mINFO[0m: Overall report table: 
+┌───────────┬────────────────────┬──────────────────────────┬──────────┬───────┬─────────┬─────────┐
+│ Model     │ Dataset            │ Metric                   │ Subset   │   Num │   Score │ Cat.0   │
+├───────────┼────────────────────┼──────────────────────────┼──────────┼───────┼─────────┼─────────┤
+│ t008-base │ t008_ifeval_formal │ mean_prompt_level_strict │ default  │    20 │    0.85 │ default │
+├───────────┼────────────────────┼──────────────────────────┼──────────┼───────┼─────────┼─────────┤
+│ t008-base │ t008_ifeval_formal │ mean_inst_level_strict   │ default  │    20 │    0.85 │ default │
+├───────────┼────────────────────┼──────────────────────────┼──────────┼───────┼─────────┼─────────┤
+│ t008-base │ t008_ifeval_formal │ mean_prompt_level_loose  │ default  │    20 │    0.85 │ default │
+├───────────┼────────────────────┼──────────────────────────┼──────────┼───────┼─────────┼─────────┤
+│ t008-base │ t008_ifeval_formal │ mean_inst_level_loose    │ default  │    20 │    0.85 │ default │
+└───────────┴────────────────────┴──────────────────────────┴──────────┴───────┴─────────┴─────────┘ 
+[0m
+2026-10-20 18:30:47 - evalscope - [32mINFO[0m: Overall perf table: 
+Model      Dataset               Num    Avg Lat  Avg TTFT    Avg TPOT      Avg Thpt    Avg In    Avg Out
+                                            (s)  (ms)        (ms)           (tok/s)       Tok        Tok
+---------  ------------------  -----  ---------  ----------  ----------  ----------  --------  ---------
+t008-base  t008_ifeval_formal     20      5.955  -           -                54.09     53.45      322.1 
+[0m
+2026-10-20 18:30:48 - evalscope - [32mINFO[0m: HTML report generated: /tmp/t008-public-development/t008-v018-loss3-20261020-180616/A/output/A__nonthinking__seed42__ifeval/evalscope/reports/report.html[0m
+2026-10-20 18:30:48 - evalscope - [32mINFO[0m: Finished evaluation for t008-base on ['t008_ifeval_formal'][0m
+2026-10-20 18:30:48 - evalscope - [32mINFO[0m: Output directory: /tmp/t008-public-development/t008-v018-loss3-20261020-180616/A/output/A__nonthinking__seed42__ifeval/evalscope[0m
+T008_PROGRESS {"event": "group_complete", "group": "A__nonthinking__seed42__ifeval", "cases": 20, "turns_persisted": 20, "technical_protocol_failures": 1, "evalscope_output": "/tmp/t008-public-development/t008-v018-loss3-20261020-180616/A/output/A__nonthinking__seed42__ifeval/evalscope", "content_review_pending": false}
+2026-10-20 18:30:48 - evalscope - [32mINFO[0m: Args: Task config is provided with TaskConfig type.[0m
+T008_PROGRESS {"event": "group_start", "group": "A__nonthinking__seed42__gsm8k", "cases": 20}
+2026-10-20 18:30:48 - evalscope - [32mINFO[0m: Running with native backend[0m
+2026-10-20 18:30:48 - evalscope - [32mINFO[0m: Dump task config to /tmp/t008-public-development/t008-v018-loss3-20261020-180616/A/output/A__nonthinking__seed42__gsm8k/evalscope/configs/task_config.yaml[0m
+2026-10-20 18:30:48 - evalscope - [32mINFO[0m: {
+    "model_id": "t008-base",
+    "model_args": {
+        "max_retries": 0
+    },
+    "model_task": "text_generation",
+    "chat_template": null,
+    "datasets": [
+        "t008_gsm8k_formal"
+    ],
+    "dataset_args": {
+        "t008_gsm8k_formal": {
+            "name": "t008_gsm8k_formal",
+            "dataset_id": "t008_private_memory",
+            "output_types": [
+                "generation"
+            ],
+            "subset_list": [
+                "default"
+            ],
+            "default_subset": "default",
+            "few_shot_num": 0,
+            "few_shot_random": false,
+            "train_split": "train",
+            "eval_split": "test",
+            "prompt_template": "{question}\nPlease reason step by step, and put your final answer within \\boxed{{}}.",
+            "few_shot_prompt_template": "Here are some examples of how to solve similar problems:\n\n{fewshot}\n\n{question}\nPlease reason step by step, and put your final answer within \\boxed{{}}.",
+            "system_prompt": null,
+            "query_template": null,
+            "pretty_name": "GSM8K",
+            "description": "\n## Overview\n\nGSM8K (Grade School Math 8K) is a high-quality dataset of 8.5K linguistically diverse grade school math word problems created by human problem writers. The dataset is specifically designed to evaluate and improve the multi-step mathematical reasoning capabilities of language models.\n\n## Task Description\n\n- **Task Type**: Mathematical Word Problem Solving\n- **Input**: Natural language math word problem\n- **Output**: Numerical answer derived through step-by-step reasoning\n- **Difficulty**: Grade school level (2-8 reasoning steps required)\n\n## Key Features\n\n- Problems require basic arithmetic operations (addition, subtraction, multiplication, division)\n- Solutions involve 2 to 8 sequential reasoning steps\n- High linguistic diversity in problem formulations\n- Human-written problems ensuring natural language quality\n- Clear numerical answers for objective evaluation\n\n## Evaluation Notes\n\n- Default configuration uses **4-shot** examples with Chain-of-Thought (CoT) prompting\n- Answers should be formatted within `\\boxed{}` for proper extraction\n- The metric extracts numerical values for accuracy comparison\n- Supports both zero-shot and few-shot evaluation modes\n",
+            "paper_url": "https://arxiv.org/abs/2110.14168",
+            "data_statistics": null,
+            "sample_example": null,
+            "tags": [
+                "Math",
+                "Reasoning"
+            ],
+            "filters": null,
+            "metric_list": [
+                {
+                    "acc": {
+                        "numeric": true
+                    }
+                }
+            ],
+            "aggregation": "mean",
+            "shuffle": false,
+            "shuffle_choices": false,
+            "force_redownload": false,
+            "review_timeout": null,
+            "extra_params": {},
+            "sandbox_config": {},
+            "max_image_bytes": null
+        }
+    },
+    "dataset_dir": "/root/.cache/modelscope/hub/datasets",
+    "dataset_hub": "modelscope",
+    "repeats": 1,
+    "eval_type": "openai_api",
+    "eval_backend": "Native",
+    "eval_config": null,
+    "limit": null,
+    "eval_batch_size": 8,
+    "use_cache": null,
+    "rerun_review": false,
+    "work_dir": "/tmp/t008-public-development/t008-v018-loss3-20261020-180616/A/output/A__nonthinking__seed42__gsm8k/evalscope",
+    "no_timestamp": true,
+    "enable_progress_tracker": false,
+    "ignore_errors": false,
+    "debug": false,
+    "seed": 42,
+    "api_url": "http://t008-v018-loss3-20261020-180616-eval.swift.svc.cluster.local:8000/v1",
+    "api_key": "**********",
+    "timeout": null,
+    "stream": null,
+    "judge_strategy": "auto",
+    "judge_worker_num": null,
+    "judge_model_args": {},
+    "analysis_report": false,
+    "collect_perf": true,
+    "sandbox": {
+        "enabled": false,
+        "engine": "docker",
+        "default_config": {},
+        "manager_config": {},
+        "pool_size": null
+    },
+    "use_sandbox": false,
+    "sandbox_type": "docker",
+    "sandbox_manager_config": {},
+    "agent_config": null,
+    "evalscope_version": "1.9.1",
+    "model": "t008-base",
+    "generation_config": {
+        "timeout": 600.0,
+        "retries": 1,
+        "batch_size": 8,
+        "stream": false,
+        "max_tokens": 1024,
+        "top_p": 0.8,
+        "temperature": 0.7,
+        "seed": 42,
+        "top_k": 20,
+        "extra_body": {
+            "min_p": 0,
+            "chat_template_kwargs": {
+                "enable_thinking": false
+            }
+        }
+    }
+}[0m
+Running[eval]:   0%|          | 0/1 [00:00<?, ?benchmark/s]                                                           2026-10-20 18:30:48 - evalscope - [32mINFO[0m: Start loading benchmark dataset: t008_gsm8k_formal[0m
+Running[eval]:   0%|          | 0/1 [00:00<?, ?benchmark/s]                                                           2026-10-20 18:30:48 - evalscope - [32mINFO[0m: t008_gsm8k_formal: 20 samples to evaluate (1 subset)[0m
+Running[eval]:   0%|          | 0/1 [00:00<?, ?benchmark/s]                                                           2026-10-20 18:30:48 - evalscope - [32mINFO[0m: Subsets of t008_gsm8k_formal: ['default'][0m
+Running[eval]:   0%|          | 0/1 [00:00<?, ?benchmark/s]
+Evaluating[t008_gsm8k_formal]:   0%|          | 0/20 [00:00<?, ?it/s][A                                                           
+                                                                     [A2026-10-20 18:30:48 - evalscope - [32mINFO[0m: Loading model for prediction...[0m
+Running[eval]:   0%|          | 0/1 [00:00<?, ?benchmark/s]
+Evaluating[t008_gsm8k_formal]:   0%|          | 0/20 [00:00<?, ?it/s][A                                                           
+                                                                     [A2026-10-20 18:30:48 - evalscope - [32mINFO[0m: Model loaded successfully.[0m
+Running[eval]:   0%|          | 0/1 [00:00<?, ?benchmark/s]
+Evaluating[t008_gsm8k_formal]:   0%|          | 0/20 [00:00<?, ?it/s][A
+Evaluating[t008_gsm8k_formal]:   5%|▌         | 1/20 [00:05<01:35,  5.01s/it][A
+Evaluating[t008_gsm8k_formal]:  25%|██▌       | 5/20 [00:06<00:14,  1.04it/s][A
+Evaluating[t008_gsm8k_formal]:  40%|████      | 8/20 [00:09<00:11,  1.02it/s][A
+Evaluating[t008_gsm8k_formal]:  50%|█████     | 10/20 [00:10<00:08,  1.20it/s][A
+Evaluating[t008_gsm8k_formal]:  60%|██████    | 12/20 [00:11<00:05,  1.37it/s][A
+Evaluating[t008_gsm8k_formal]:  70%|███████   | 14/20 [00:13<00:04,  1.23it/s][A
+Evaluating[t008_gsm8k_formal]:  80%|████████  | 16/20 [00:16<00:04,  1.02s/it][A
+Evaluating[t008_gsm8k_formal]:  90%|█████████ | 18/20 [00:17<00:01,  1.16it/s][AT008_PROGRESS {"event": "progress", "group": "A__nonthinking__seed42__gsm8k", "generated_turns": 40, "reused_turns": 0, "completed_cases": 40}
+                                                           
+                                                                              [A2026-10-20 18:31:05 - evalscope - [32mINFO[0m: Evaluating[t008_gsm8k_formal] 100%| 20/20 [Elapsed: 00:17 < Remaining: 00:00,  1.16it/s][0m
+Running[eval]:   0%|          | 0/1 [00:17<?, ?benchmark/s]
+Evaluating[t008_gsm8k_formal]: 100%|██████████| 20/20 [00:17<00:00,  1.16it/s][AEvaluating[t008_gsm8k_formal]: 100%|██████████| 20/20 [00:17<00:00,  1.16it/s]
+                                                           2026-10-20 18:31:05 - evalscope - [32mINFO[0m: t008_gsm8k_formal: predictions complete, aggregating scores...[0m
+Running[eval]:   0%|          | 0/1 [00:17<?, ?benchmark/s]                                                           2026-10-20 18:31:05 - evalscope - [32mINFO[0m: Aggregating scores for subset: default[0m
+Running[eval]:   0%|          | 0/1 [00:17<?, ?benchmark/s]                                                           2026-10-20 18:31:05 - evalscope - [32mINFO[0m: Generating report...[0m
+Running[eval]:   0%|          | 0/1 [00:17<?, ?benchmark/s]                                                           2026-10-20 18:31:05 - evalscope - [32mINFO[0m: 
+t008_gsm8k_formal report table:
+┌───────────┬───────────────────┬──────────┬──────────┬───────┬─────────┬─────────┐
+│ Model     │ Dataset           │ Metric   │ Subset   │   Num │   Score │ Cat.0   │
+├───────────┼───────────────────┼──────────┼──────────┼───────┼─────────┼─────────┤
+│ t008-base │ t008_gsm8k_formal │ mean_acc │ default  │    20 │    0.95 │ default │
+└───────────┴───────────────────┴──────────┴──────────┴───────┴─────────┴─────────┘ 
+[0m
+Running[eval]:   0%|          | 0/1 [00:17<?, ?benchmark/s]                                                           2026-10-20 18:31:05 - evalscope - [32mINFO[0m: Skipping report analysis (`analysis_report=False`).[0m
+Running[eval]:   0%|          | 0/1 [00:17<?, ?benchmark/s]                                                           2026-10-20 18:31:05 - evalscope - [32mINFO[0m: Dump report to: /tmp/t008-public-development/t008-v018-loss3-20261020-180616/A/output/A__nonthinking__seed42__gsm8k/evalscope/reports/t008-base/t008_gsm8k_formal.json 
+[0m
+Running[eval]:   0%|          | 0/1 [00:17<?, ?benchmark/s]                                                           2026-10-20 18:31:05 - evalscope - [32mINFO[0m: 
+t008_gsm8k_formal perf table:
+Model      Dataset              Num    Avg Lat  Avg TTFT    Avg TPOT      Avg Thpt    Avg In    Avg Out
+                                           (s)  (ms)        (ms)           (tok/s)       Tok        Tok
+---------  -----------------  -----  ---------  ----------  ----------  ----------  --------  ---------
+t008-base  t008_gsm8k_formal     20       5.49  -           -                53.93      80.3      296.1
+[0m
+Running[eval]:   0%|          | 0/1 [00:17<?, ?benchmark/s]                                                           2026-10-20 18:31:05 - evalscope - [32mINFO[0m: Benchmark t008_gsm8k_formal evaluation finished.[0m
+Running[eval]:   0%|          | 0/1 [00:17<?, ?benchmark/s]Running[eval]: 100%|██████████| 1/1 [00:17<00:00, 17.22s/benchmark]                                                                   2026-10-20 18:31:05 - evalscope - [32mINFO[0m: Running[eval] 100%| 1/1 [Elapsed: 00:17 < Remaining: 00:00, 17.22s/benchmark][0m
+Running[eval]: 100%|██████████| 1/1 [00:17<00:00, 17.22s/benchmark]Running[eval]: 100%|██████████| 1/1 [00:17<00:00, 17.22s/benchmark]
+2026-10-20 18:31:05 - evalscope - [32mINFO[0m: Overall report table: 
+┌───────────┬───────────────────┬──────────┬──────────┬───────┬─────────┬─────────┐
+│ Model     │ Dataset           │ Metric   │ Subset   │   Num │   Score │ Cat.0   │
+├───────────┼───────────────────┼──────────┼──────────┼───────┼─────────┼─────────┤
+│ t008-base │ t008_gsm8k_formal │ mean_acc │ default  │    20 │    0.95 │ default │
+└───────────┴───────────────────┴──────────┴──────────┴───────┴─────────┴─────────┘ 
+[0m
+2026-10-20 18:31:05 - evalscope - [32mINFO[0m: Overall perf table: 
+Model      Dataset              Num    Avg Lat  Avg TTFT    Avg TPOT      Avg Thpt    Avg In    Avg Out
+                                           (s)  (ms)        (ms)           (tok/s)       Tok        Tok
+---------  -----------------  -----  ---------  ----------  ----------  ----------  --------  ---------
+t008-base  t008_gsm8k_formal     20       5.49  -           -                53.93      80.3      296.1 
+[0m
+2026-10-20 18:31:05 - evalscope - [32mINFO[0m: HTML report generated: /tmp/t008-public-development/t008-v018-loss3-20261020-180616/A/output/A__nonthinking__seed42__gsm8k/evalscope/reports/report.html[0m
+2026-10-20 18:31:05 - evalscope - [32mINFO[0m: Finished evaluation for t008-base on ['t008_gsm8k_formal'][0m
+T008_PROGRESS {"event": "group_complete", "group": "A__nonthinking__seed42__gsm8k", "cases": 20, "turns_persisted": 20, "technical_protocol_failures": 0, "evalscope_output": "/tmp/t008-public-development/t008-v018-loss3-20261020-180616/A/output/A__nonthinking__seed42__gsm8k/evalscope", "content_review_pending": false}
+T008_PROGRESS {"event": "group_start", "group": "A__thinking__seed42__ifeval", "cases": 20}
+2026-10-20 18:31:05 - evalscope - [32mINFO[0m: Output directory: /tmp/t008-public-development/t008-v018-loss3-20261020-180616/A/output/A__nonthinking__seed42__gsm8k/evalscope[0m
+2026-10-20 18:31:05 - evalscope - [32mINFO[0m: Args: Task config is provided with TaskConfig type.[0m
+2026-10-20 18:31:05 - evalscope - [32mINFO[0m: Running with native backend[0m
+2026-10-20 18:31:05 - evalscope - [32mINFO[0m: Dump task config to /tmp/t008-public-development/t008-v018-loss3-20261020-180616/A/output/A__thinking__seed42__ifeval/evalscope/configs/task_config.yaml[0m
+2026-10-20 18:31:05 - evalscope - [32mINFO[0m: {
+    "model_id": "t008-base",
+    "model_args": {
+        "max_retries": 0
+    },
+    "model_task": "text_generation",
+    "chat_template": null,
+    "datasets": [
+        "t008_ifeval_formal"
+    ],
+    "dataset_args": {
+        "t008_ifeval_formal": {
+            "name": "t008_ifeval_formal",
+            "dataset_id": "t008_private_memory",
+            "output_types": [
+                "generation"
+            ],
+            "subset_list": [
+                "default"
+            ],
+            "default_subset": "default",
+            "few_shot_num": 0,
+            "few_shot_random": false,
+            "train_split": null,
+            "eval_split": "train",
+            "prompt_template": "",
+            "few_shot_prompt_template": null,
+            "system_prompt": null,
+            "query_template": null,
+            "pretty_name": "IFEval",
+            "description": "\n## Overview\n\nIFEval (Instruction-Following Eval) is a benchmark for evaluating how well language models follow explicit, verifiable instructions. It contains prompts with specific formatting, content, or structural requirements that can be objectively verified.\n\n## Task Description\n\n- **Task Type**: Instruction Following Evaluation\n- **Input**: Prompts with explicit, verifiable constraints\n- **Output**: Response that follows all specified instructions\n- **Constraint Types**: Format, length, keywords, structure, etc.\n\n## Key Features\n\n- ~500 prompts with 25 types of verifiable instructions\n- Instructions are objectively checkable (not subjective)\n- Examples: \"write exactly 3 paragraphs\", \"include the word X\", \"use bullet points\"\n- Tests instruction comprehension and compliance\n- No ambiguity in evaluation criteria\n\n## Evaluation Notes\n\n- Default configuration uses **0-shot** evaluation\n- Four metrics available:\n  - `prompt_level_strict`: All instructions in prompt must be followed\n  - `prompt_level_loose`: Some tolerance for minor deviations\n  - `inst_level_strict`: Per-instruction accuracy (strict)\n  - `inst_level_loose`: Per-instruction accuracy (loose)\n- `prompt_level_strict` is the primary metric\n- Automatic verification of instruction compliance\n",
+            "paper_url": null,
+            "data_statistics": null,
+            "sample_example": null,
+            "tags": [
+                "InstructionFollowing"
+            ],
+            "filters": null,
+            "metric_list": [
+                "prompt_level_strict",
+                "inst_level_strict",
+                "prompt_level_loose",
+                "inst_level_loose"
+            ],
+            "aggregation": "mean",
+            "shuffle": false,
+            "shuffle_choices": false,
+            "force_redownload": false,
+            "review_timeout": null,
+            "extra_params": {},
+            "sandbox_config": {},
+            "max_image_bytes": null
+        }
+    },
+    "dataset_dir": "/root/.cache/modelscope/hub/datasets",
+    "dataset_hub": "modelscope",
+    "repeats": 1,
+    "eval_type": "openai_api",
+    "eval_backend": "Native",
+    "eval_config": null,
+    "limit": null,
+    "eval_batch_size": 8,
+    "use_cache": null,
+    "rerun_review": false,
+    "work_dir": "/tmp/t008-public-development/t008-v018-loss3-20261020-180616/A/output/A__thinking__seed42__ifeval/evalscope",
+    "no_timestamp": true,
+    "enable_progress_tracker": false,
+    "ignore_errors": false,
+    "debug": false,
+    "seed": 42,
+    "api_url": "http://t008-v018-loss3-20261020-180616-eval.swift.svc.cluster.local:8000/v1",
+    "api_key": "**********",
+    "timeout": null,
+    "stream": null,
+    "judge_strategy": "auto",
+    "judge_worker_num": null,
+    "judge_model_args": {},
+    "analysis_report": false,
+    "collect_perf": true,
+    "sandbox": {
+        "enabled": false,
+        "engine": "docker",
+        "default_config": {},
+        "manager_config": {},
+        "pool_size": null
+    },
+    "use_sandbox": false,
+    "sandbox_type": "docker",
+    "sandbox_manager_config": {},
+    "agent_config": null,
+    "evalscope_version": "1.9.1",
+    "model": "t008-base",
+    "generation_config": {
+        "timeout": 600.0,
+        "retries": 1,
+        "batch_size": 8,
+        "stream": false,
+        "max_tokens": 4096,
+        "top_p": 0.95,
+        "temperature": 0.6,
+        "seed": 42,
+        "top_k": 20,
+        "extra_body": {
+            "min_p": 0,
+            "chat_template_kwargs": {
+                "enable_thinking": true
+            }
+        }
+    }
+}[0m
+Running[eval]:   0%|          | 0/1 [00:00<?, ?benchmark/s]                                                           2026-10-20 18:31:05 - evalscope - [32mINFO[0m: Start loading benchmark dataset: t008_ifeval_formal[0m
+Running[eval]:   0%|          | 0/1 [00:00<?, ?benchmark/s]                                                           2026-10-20 18:31:05 - evalscope - [32mINFO[0m: t008_ifeval_formal: 20 samples to evaluate (1 subset)[0m
+Running[eval]:   0%|          | 0/1 [00:00<?, ?benchmark/s]                                                           2026-10-20 18:31:05 - evalscope - [32mINFO[0m: Subsets of t008_ifeval_formal: ['default'][0m
+Running[eval]:   0%|          | 0/1 [00:00<?, ?benchmark/s]
+Evaluating[t008_ifeval_formal]:   0%|          | 0/20 [00:00<?, ?it/s][A                                                           
+                                                                      [A2026-10-20 18:31:05 - evalscope - [32mINFO[0m: Loading model for prediction...[0m
+Running[eval]:   0%|          | 0/1 [00:00<?, ?benchmark/s]
+Evaluating[t008_ifeval_formal]:   0%|          | 0/20 [00:00<?, ?it/s][A                                                           
+                                                                      [A2026-10-20 18:31:05 - evalscope - [32mINFO[0m: Creating model t008-base with eval_type=openai_api base_url=http://t008-v018-loss3-20261020-180616-eval.swift.svc.cluster.local:8000/v1, config={'timeout': 600.0, 'retries': 1, 'retry_interval': 10, 'batch_size': 8, 'stream': False, 'max_tokens': 4096, 'top_p': 0.95, 'temperature': 0.6, 'seed': 42, 'top_k': 20, 'anthropic_cache_strategy': 'evaluation', 'extra_body': {'min_p': 0, 'chat_template_kwargs': {'enable_thinking': True}}}, model_args={'max_retries': 0}[0m
+Running[eval]:   0%|          | 0/1 [00:00<?, ?benchmark/s]
+Evaluating[t008_ifeval_formal]:   0%|          | 0/20 [00:00<?, ?it/s][A                                                           
+                                                                      [A2026-10-20 18:31:05 - evalscope - [32mINFO[0m: Model loaded successfully.[0m
+Running[eval]:   0%|          | 0/1 [00:00<?, ?benchmark/s]
+Evaluating[t008_ifeval_formal]:   0%|          | 0/20 [00:00<?, ?it/s][A
+Evaluating[t008_ifeval_formal]:   5%|▌         | 1/20 [00:12<03:48, 12.00s/it][A
+Evaluating[t008_ifeval_formal]:  10%|█         | 2/20 [00:14<01:50,  6.12s/it][A
+Evaluating[t008_ifeval_formal]:  15%|█▌        | 3/20 [00:15<01:04,  3.78s/it][A
+Evaluating[t008_ifeval_formal]:  20%|██        | 4/20 [00:16<00:42,  2.69s/it][A
+Evaluating[t008_ifeval_formal]:  25%|██▌       | 5/20 [00:18<00:36,  2.44s/it][A
+Evaluating[t008_ifeval_formal]:  30%|███       | 6/20 [00:19<00:27,  1.95s/it][A
+Evaluating[t008_ifeval_formal]:  35%|███▌      | 7/20 [00:21<00:25,  1.97s/it][A
+Evaluating[t008_ifeval_formal]:  40%|████      | 8/20 [00:26<00:35,  2.93s/it][A
+Evaluating[t008_ifeval_formal]:  45%|████▌     | 9/20 [00:27<00:25,  2.33s/it][A
+Evaluating[t008_ifeval_formal]:  50%|█████     | 10/20 [00:28<00:19,  1.92s/it][A
+Evaluating[t008_ifeval_formal]:  55%|█████▌    | 11/20 [00:29<00:14,  1.64s/it][A
+Evaluating[t008_ifeval_formal]:  60%|██████    | 12/20 [00:33<00:18,  2.36s/it][A
+Evaluating[t008_ifeval_formal]:  65%|██████▌   | 13/20 [00:34<00:13,  1.95s/it][A
+Evaluating[t008_ifeval_formal]:  70%|███████   | 14/20 [00:37<00:13,  2.27s/it][A
+Evaluating[t008_ifeval_formal]:  75%|███████▌  | 15/20 [00:46<00:21,  4.30s/it][A
+Evaluating[t008_ifeval_formal]:  80%|████████  | 16/20 [00:47<00:13,  3.30s/it][A
+Evaluating[t008_ifeval_formal]:  85%|████████▌ | 17/20 [00:51<00:10,  3.51s/it][A                                                           
+                                                                               [A2026-10-20 18:32:05 - evalscope - [32mINFO[0m: Evaluating[t008_ifeval_formal]  85%| 17/20 [Elapsed: 01:00 < Remaining: 00:10,  3.51s/it][0m
+Running[eval]:   0%|          | 0/1 [01:00<?, ?benchmark/s]
+Evaluating[t008_ifeval_formal]:  85%|████████▌ | 17/20 [01:00<00:10,  3.51s/it][A
+Evaluating[t008_ifeval_formal]:  90%|█████████ | 18/20 [01:07<00:14,  7.27s/it][A
+Evaluating[t008_ifeval_formal]:  95%|█████████▌| 19/20 [01:32<00:12, 12.59s/it][AT008_PROGRESS {"event": "progress", "group": "A__thinking__seed42__ifeval", "generated_turns": 60, "reused_turns": 0, "completed_cases": 60}
+
+Evaluating[t008_ifeval_formal]: 100%|██████████| 20/20 [01:43<00:00, 12.35s/it][A                                                           
+                                                                               [A2026-10-20 18:32:49 - evalscope - [32mINFO[0m: Evaluating[t008_ifeval_formal] 100%| 20/20 [Elapsed: 01:43 < Remaining: 00:00, 12.35s/it][0m
+Running[eval]:   0%|          | 0/1 [01:43<?, ?benchmark/s]
+Evaluating[t008_ifeval_formal]: 100%|██████████| 20/20 [01:43<00:00, 12.35s/it][AEvaluating[t008_ifeval_formal]: 100%|██████████| 20/20 [01:43<00:00,  5.19s/it]
+                                                           2026-10-20 18:32:49 - evalscope - [32mINFO[0m: t008_ifeval_formal: predictions complete, aggregating scores...[0m
+Running[eval]:   0%|          | 0/1 [01:43<?, ?benchmark/s]                                                           2026-10-20 18:32:49 - evalscope - [32mINFO[0m: Aggregating scores for subset: default[0m
+Running[eval]:   0%|          | 0/1 [01:43<?, ?benchmark/s]                                                           2026-10-20 18:32:49 - evalscope - [32mINFO[0m: Generating report...[0m
+Running[eval]:   0%|          | 0/1 [01:43<?, ?benchmark/s]                                                           2026-10-20 18:32:49 - evalscope - [32mINFO[0m: 
+t008_ifeval_formal report table:
+┌───────────┬────────────────────┬──────────────────────────┬──────────┬───────┬─────────┬─────────┐
+│ Model     │ Dataset            │ Metric                   │ Subset   │   Num │   Score │ Cat.0   │
+├───────────┼────────────────────┼──────────────────────────┼──────────┼───────┼─────────┼─────────┤
+│ t008-base │ t008_ifeval_formal │ mean_prompt_level_strict │ default  │    20 │    0.85 │ default │
+├───────────┼────────────────────┼──────────────────────────┼──────────┼───────┼─────────┼─────────┤
+│ t008-base │ t008_ifeval_formal │ mean_inst_level_strict   │ default  │    20 │    0.85 │ default │
+├───────────┼────────────────────┼──────────────────────────┼──────────┼───────┼─────────┼─────────┤
+│ t008-base │ t008_ifeval_formal │ mean_prompt_level_loose  │ default  │    20 │    0.85 │ default │
+├───────────┼────────────────────┼──────────────────────────┼──────────┼───────┼─────────┼─────────┤
+│ t008-base │ t008_ifeval_formal │ mean_inst_level_loose    │ default  │    20 │    0.85 │ default │
+└───────────┴────────────────────┴──────────────────────────┴──────────┴───────┴─────────┴─────────┘ 
+[0m
+Running[eval]:   0%|          | 0/1 [01:43<?, ?benchmark/s]                                                           2026-10-20 18:32:49 - evalscope - [32mINFO[0m: Skipping report analysis (`analysis_report=False`).[0m
+Running[eval]:   0%|          | 0/1 [01:43<?, ?benchmark/s]                                                           2026-10-20 18:32:49 - evalscope - [32mINFO[0m: Dump report to: /tmp/t008-public-development/t008-v018-loss3-20261020-180616/A/output/A__thinking__seed42__ifeval/evalscope/reports/t008-base/t008_ifeval_formal.json 
+[0m
+Running[eval]:   0%|          | 0/1 [01:43<?, ?benchmark/s]                                                           2026-10-20 18:32:49 - evalscope - [32mINFO[0m: 
+t008_ifeval_formal perf table:
+Model      Dataset               Num    Avg Lat  Avg TTFT    Avg TPOT      Avg Thpt    Avg In    Avg Out
+                                            (s)  (ms)        (ms)           (tok/s)       Tok        Tok
+---------  ------------------  -----  ---------  ----------  ----------  ----------  --------  ---------
+t008-base  t008_ifeval_formal     20    23.3857  -           -                53.26     51.45    1245.45
+[0m
+Running[eval]:   0%|          | 0/1 [01:43<?, ?benchmark/s]                                                           2026-10-20 18:32:49 - evalscope - [32mINFO[0m: Benchmark t008_ifeval_formal evaluation finished.[0m
+Running[eval]:   0%|          | 0/1 [01:43<?, ?benchmark/s]Running[eval]: 100%|██████████| 1/1 [01:43<00:00, 103.83s/benchmark]                                                                    2026-10-20 18:32:49 - evalscope - [32mINFO[0m: Running[eval] 100%| 1/1 [Elapsed: 01:43 < Remaining: 00:00, 103.83s/benchmark][0m
+Running[eval]: 100%|██████████| 1/1 [01:43<00:00, 103.83s/benchmark]Running[eval]: 100%|██████████| 1/1 [01:43<00:00, 103.83s/benchmark]
+2026-10-20 18:32:49 - evalscope - [32mINFO[0m: Overall report table: 
+┌───────────┬────────────────────┬──────────────────────────┬──────────┬───────┬─────────┬─────────┐
+│ Model     │ Dataset            │ Metric                   │ Subset   │   Num │   Score │ Cat.0   │
+├───────────┼────────────────────┼──────────────────────────┼──────────┼───────┼─────────┼─────────┤
+│ t008-base │ t008_ifeval_formal │ mean_prompt_level_strict │ default  │    20 │    0.85 │ default │
+├───────────┼────────────────────┼──────────────────────────┼──────────┼───────┼─────────┼─────────┤
+│ t008-base │ t008_ifeval_formal │ mean_inst_level_strict   │ default  │    20 │    0.85 │ default │
+├───────────┼────────────────────┼──────────────────────────┼──────────┼───────┼─────────┼─────────┤
+│ t008-base │ t008_ifeval_formal │ mean_prompt_level_loose  │ default  │    20 │    0.85 │ default │
+├───────────┼────────────────────┼──────────────────────────┼──────────┼───────┼─────────┼─────────┤
+│ t008-base │ t008_ifeval_formal │ mean_inst_level_loose    │ default  │    20 │    0.85 │ default │
+└───────────┴────────────────────┴──────────────────────────┴──────────┴───────┴─────────┴─────────┘ 
+[0m
+2026-10-20 18:32:49 - evalscope - [32mINFO[0m: Overall perf table: 
+Model      Dataset               Num    Avg Lat  Avg TTFT    Avg TPOT      Avg Thpt    Avg In    Avg Out
+                                            (s)  (ms)        (ms)           (tok/s)       Tok        Tok
+---------  ------------------  -----  ---------  ----------  ----------  ----------  --------  ---------
+t008-base  t008_ifeval_formal     20    23.3857  -           -                53.26     51.45    1245.45 
+[0m
+2026-10-20 18:32:49 - evalscope - [32mINFO[0m: HTML report generated: /tmp/t008-public-development/t008-v018-loss3-20261020-180616/A/output/A__thinking__seed42__ifeval/evalscope/reports/report.html[0m
+2026-10-20 18:32:49 - evalscope - [32mINFO[0m: Finished evaluation for t008-base on ['t008_ifeval_formal'][0m
+2026-10-20 18:32:49 - evalscope - [32mINFO[0m: Output directory: /tmp/t008-public-development/t008-v018-loss3-20261020-180616/A/output/A__thinking__seed42__ifeval/evalscope[0m
+T008_PROGRESS {"event": "group_complete", "group": "A__thinking__seed42__ifeval", "cases": 20, "turns_persisted": 20, "technical_protocol_failures": 2, "evalscope_output": "/tmp/t008-public-development/t008-v018-loss3-20261020-180616/A/output/A__thinking__seed42__ifeval/evalscope", "content_review_pending": false}
+2026-10-20 18:32:49 - evalscope - [32mINFO[0m: Args: Task config is provided with TaskConfig type.[0m
+T008_PROGRESS {"event": "group_start", "group": "A__thinking__seed42__gsm8k", "cases": 20}
+2026-10-20 18:32:49 - evalscope - [32mINFO[0m: Running with native backend[0m
+2026-10-20 18:32:49 - evalscope - [32mINFO[0m: Dump task config to /tmp/t008-public-development/t008-v018-loss3-20261020-180616/A/output/A__thinking__seed42__gsm8k/evalscope/configs/task_config.yaml[0m
+2026-10-20 18:32:49 - evalscope - [32mINFO[0m: {
+    "model_id": "t008-base",
+    "model_args": {
+        "max_retries": 0
+    },
+    "model_task": "text_generation",
+    "chat_template": null,
+    "datasets": [
+        "t008_gsm8k_formal"
+    ],
+    "dataset_args": {
+        "t008_gsm8k_formal": {
+            "name": "t008_gsm8k_formal",
+            "dataset_id": "t008_private_memory",
+            "output_types": [
+                "generation"
+            ],
+            "subset_list": [
+                "default"
+            ],
+            "default_subset": "default",
+            "few_shot_num": 0,
+            "few_shot_random": false,
+            "train_split": "train",
+            "eval_split": "test",
+            "prompt_template": "{question}\nPlease reason step by step, and put your final answer within \\boxed{{}}.",
+            "few_shot_prompt_template": "Here are some examples of how to solve similar problems:\n\n{fewshot}\n\n{question}\nPlease reason step by step, and put your final answer within \\boxed{{}}.",
+            "system_prompt": null,
+            "query_template": null,
+            "pretty_name": "GSM8K",
+            "description": "\n## Overview\n\nGSM8K (Grade School Math 8K) is a high-quality dataset of 8.5K linguistically diverse grade school math word problems created by human problem writers. The dataset is specifically designed to evaluate and improve the multi-step mathematical reasoning capabilities of language models.\n\n## Task Description\n\n- **Task Type**: Mathematical Word Problem Solving\n- **Input**: Natural language math word problem\n- **Output**: Numerical answer derived through step-by-step reasoning\n- **Difficulty**: Grade school level (2-8 reasoning steps required)\n\n## Key Features\n\n- Problems require basic arithmetic operations (addition, subtraction, multiplication, division)\n- Solutions involve 2 to 8 sequential reasoning steps\n- High linguistic diversity in problem formulations\n- Human-written problems ensuring natural language quality\n- Clear numerical answers for objective evaluation\n\n## Evaluation Notes\n\n- Default configuration uses **4-shot** examples with Chain-of-Thought (CoT) prompting\n- Answers should be formatted within `\\boxed{}` for proper extraction\n- The metric extracts numerical values for accuracy comparison\n- Supports both zero-shot and few-shot evaluation modes\n",
+            "paper_url": "https://arxiv.org/abs/2110.14168",
+            "data_statistics": null,
+            "sample_example": null,
+            "tags": [
+                "Math",
+                "Reasoning"
+            ],
+            "filters": null,
+            "metric_list": [
+                {
+                    "acc": {
+                        "numeric": true
+                    }
+                }
+            ],
+            "aggregation": "mean",
+            "shuffle": false,
+            "shuffle_choices": false,
+            "force_redownload": false,
+            "review_timeout": null,
+            "extra_params": {},
+            "sandbox_config": {},
+            "max_image_bytes": null
+        }
+    },
+    "dataset_dir": "/root/.cache/modelscope/hub/datasets",
+    "dataset_hub": "modelscope",
+    "repeats": 1,
+    "eval_type": "openai_api",
+    "eval_backend": "Native",
+    "eval_config": null,
+    "limit": null,
+    "eval_batch_size": 8,
+    "use_cache": null,
+    "rerun_review": false,
+    "work_dir": "/tmp/t008-public-development/t008-v018-loss3-20261020-180616/A/output/A__thinking__seed42__gsm8k/evalscope",
+    "no_timestamp": true,
+    "enable_progress_tracker": false,
+    "ignore_errors": false,
+    "debug": false,
+    "seed": 42,
+    "api_url": "http://t008-v018-loss3-20261020-180616-eval.swift.svc.cluster.local:8000/v1",
+    "api_key": "**********",
+    "timeout": null,
+    "stream": null,
+    "judge_strategy": "auto",
+    "judge_worker_num": null,
+    "judge_model_args": {},
+    "analysis_report": false,
+    "collect_perf": true,
+    "sandbox": {
+        "enabled": false,
+        "engine": "docker",
+        "default_config": {},
+        "manager_config": {},
+        "pool_size": null
+    },
+    "use_sandbox": false,
+    "sandbox_type": "docker",
+    "sandbox_manager_config": {},
+    "agent_config": null,
+    "evalscope_version": "1.9.1",
+    "model": "t008-base",
+    "generation_config": {
+        "timeout": 600.0,
+        "retries": 1,
+        "batch_size": 8,
+        "stream": false,
+        "max_tokens": 4096,
+        "top_p": 0.95,
+        "temperature": 0.6,
+        "seed": 42,
+        "top_k": 20,
+        "extra_body": {
+            "min_p": 0,
+            "chat_template_kwargs": {
+                "enable_thinking": true
+            }
+        }
+    }
+}[0m
+Running[eval]:   0%|          | 0/1 [00:00<?, ?benchmark/s]                                                           2026-10-20 18:32:49 - evalscope - [32mINFO[0m: Start loading benchmark dataset: t008_gsm8k_formal[0m
+Running[eval]:   0%|          | 0/1 [00:00<?, ?benchmark/s]                                                           2026-10-20 18:32:49 - evalscope - [32mINFO[0m: t008_gsm8k_formal: 20 samples to evaluate (1 subset)[0m
+Running[eval]:   0%|          | 0/1 [00:00<?, ?benchmark/s]                                                           2026-10-20 18:32:49 - evalscope - [32mINFO[0m: Subsets of t008_gsm8k_formal: ['default'][0m
+Running[eval]:   0%|          | 0/1 [00:00<?, ?benchmark/s]
+Evaluating[t008_gsm8k_formal]:   0%|          | 0/20 [00:00<?, ?it/s][A                                                           
+                                                                     [A2026-10-20 18:32:49 - evalscope - [32mINFO[0m: Loading model for prediction...[0m
+Running[eval]:   0%|          | 0/1 [00:00<?, ?benchmark/s]
+Evaluating[t008_gsm8k_formal]:   0%|          | 0/20 [00:00<?, ?it/s][A                                                           
+                                                                     [A2026-10-20 18:32:49 - evalscope - [32mINFO[0m: Model loaded successfully.[0m
+Running[eval]:   0%|          | 0/1 [00:00<?, ?benchmark/s]
+Evaluating[t008_gsm8k_formal]:   0%|          | 0/20 [00:00<?, ?it/s][A
+Evaluating[t008_gsm8k_formal]:   5%|▌         | 1/20 [00:17<05:23, 17.01s/it][A
+Evaluating[t008_gsm8k_formal]:  10%|█         | 2/20 [00:22<02:59,  9.95s/it][A
+Evaluating[t008_gsm8k_formal]:  20%|██        | 4/20 [00:23<01:04,  4.03s/it][A
+Evaluating[t008_gsm8k_formal]:  30%|███       | 6/20 [00:27<00:42,  3.07s/it][A
+Evaluating[t008_gsm8k_formal]:  35%|███▌      | 7/20 [00:31<00:42,  3.31s/it][A
+Evaluating[t008_gsm8k_formal]:  40%|████      | 8/20 [00:40<00:57,  4.81s/it][A
+Evaluating[t008_gsm8k_formal]:  50%|█████     | 10/20 [00:48<00:44,  4.46s/it][A
+Evaluating[t008_gsm8k_formal]:  55%|█████▌    | 11/20 [00:50<00:34,  3.88s/it][A
+Evaluating[t008_gsm8k_formal]:  60%|██████    | 12/20 [00:53<00:29,  3.66s/it][A
+Evaluating[t008_gsm8k_formal]:  65%|██████▌   | 13/20 [01:00<00:31,  4.55s/it][A                                                           
+                                                                              [A2026-10-20 18:33:49 - evalscope - [32mINFO[0m: Evaluating[t008_gsm8k_formal]  65%| 13/20 [Elapsed: 01:00 < Remaining: 00:31,  4.55s/it][0m
+Running[eval]:   0%|          | 0/1 [01:00<?, ?benchmark/s]
+Evaluating[t008_gsm8k_formal]:  65%|██████▌   | 13/20 [01:00<00:31,  4.55s/it][A
+Evaluating[t008_gsm8k_formal]:  70%|███████   | 14/20 [01:02<00:23,  3.85s/it][A
+Evaluating[t008_gsm8k_formal]:  75%|███████▌  | 15/20 [01:03<00:15,  3.05s/it][A
+Evaluating[t008_gsm8k_formal]:  80%|████████  | 16/20 [01:15<00:22,  5.62s/it][A
+Evaluating[t008_gsm8k_formal]:  85%|████████▌ | 17/20 [01:22<00:18,  6.02s/it][A
+Evaluating[t008_gsm8k_formal]:  90%|█████████ | 18/20 [01:28<00:12,  6.01s/it][A
+Evaluating[t008_gsm8k_formal]:  95%|█████████▌| 19/20 [01:34<00:06,  6.01s/it][AT008_PROGRESS {"event": "progress", "group": "A__thinking__seed42__gsm8k", "generated_turns": 80, "reused_turns": 0, "completed_cases": 80}
+
+Evaluating[t008_gsm8k_formal]: 100%|██████████| 20/20 [01:48<00:00,  8.50s/it][A                                                           
+                                                                              [A2026-10-20 18:34:38 - evalscope - [32mINFO[0m: Evaluating[t008_gsm8k_formal] 100%| 20/20 [Elapsed: 01:48 < Remaining: 00:00,  8.50s/it][0m
+Running[eval]:   0%|          | 0/1 [01:48<?, ?benchmark/s]
+Evaluating[t008_gsm8k_formal]: 100%|██████████| 20/20 [01:48<00:00,  8.50s/it][AEvaluating[t008_gsm8k_formal]: 100%|██████████| 20/20 [01:48<00:00,  5.42s/it]
+                                                           2026-10-20 18:34:38 - evalscope - [32mINFO[0m: t008_gsm8k_formal: predictions complete, aggregating scores...[0m
+Running[eval]:   0%|          | 0/1 [01:48<?, ?benchmark/s]                                                           2026-10-20 18:34:38 - evalscope - [32mINFO[0m: Aggregating scores for subset: default[0m
+Running[eval]:   0%|          | 0/1 [01:48<?, ?benchmark/s]                                                           2026-10-20 18:34:38 - evalscope - [32mINFO[0m: Generating report...[0m
+Running[eval]:   0%|          | 0/1 [01:48<?, ?benchmark/s]                                                           2026-10-20 18:34:38 - evalscope - [32mINFO[0m: 
+t008_gsm8k_formal report table:
+┌───────────┬───────────────────┬──────────┬──────────┬───────┬─────────┬─────────┐
+│ Model     │ Dataset           │ Metric   │ Subset   │   Num │   Score │ Cat.0   │
+├───────────┼───────────────────┼──────────┼──────────┼───────┼─────────┼─────────┤
+│ t008-base │ t008_gsm8k_formal │ mean_acc │ default  │    20 │       1 │ default │
+└───────────┴───────────────────┴──────────┴──────────┴───────┴─────────┴─────────┘ 
+[0m
+Running[eval]:   0%|          | 0/1 [01:48<?, ?benchmark/s]                                                           2026-10-20 18:34:38 - evalscope - [32mINFO[0m: Skipping report analysis (`analysis_report=False`).[0m
+Running[eval]:   0%|          | 0/1 [01:48<?, ?benchmark/s]                                                           2026-10-20 18:34:38 - evalscope - [32mINFO[0m: Dump report to: /tmp/t008-public-development/t008-v018-loss3-20261020-180616/A/output/A__thinking__seed42__gsm8k/evalscope/reports/t008-base/t008_gsm8k_formal.json 
+[0m
+Running[eval]:   0%|          | 0/1 [01:48<?, ?benchmark/s]                                                           2026-10-20 18:34:38 - evalscope - [32mINFO[0m: 
+t008_gsm8k_formal perf table:
+Model      Dataset              Num    Avg Lat  Avg TTFT    Avg TPOT      Avg Thpt    Avg In    Avg Out
+                                           (s)  (ms)        (ms)           (tok/s)       Tok        Tok
+---------  -----------------  -----  ---------  ----------  ----------  ----------  --------  ---------
+t008-base  t008_gsm8k_formal     20    31.1173  -           -                52.59      78.3     1636.6
+[0m
+Running[eval]:   0%|          | 0/1 [01:48<?, ?benchmark/s]                                                           2026-10-20 18:34:38 - evalscope - [32mINFO[0m: Benchmark t008_gsm8k_formal evaluation finished.[0m
+Running[eval]:   0%|          | 0/1 [01:48<?, ?benchmark/s]Running[eval]: 100%|██████████| 1/1 [01:48<00:00, 108.46s/benchmark]                                                                    2026-10-20 18:34:38 - evalscope - [32mINFO[0m: Running[eval] 100%| 1/1 [Elapsed: 01:48 < Remaining: 00:00, 108.46s/benchmark][0m
+Running[eval]: 100%|██████████| 1/1 [01:48<00:00, 108.46s/benchmark]Running[eval]: 100%|██████████| 1/1 [01:48<00:00, 108.46s/benchmark]
+2026-10-20 18:34:38 - evalscope - [32mINFO[0m: Overall report table: 
+┌───────────┬───────────────────┬──────────┬──────────┬───────┬─────────┬─────────┐
+│ Model     │ Dataset           │ Metric   │ Subset   │   Num │   Score │ Cat.0   │
+├───────────┼───────────────────┼──────────┼──────────┼───────┼─────────┼─────────┤
+│ t008-base │ t008_gsm8k_formal │ mean_acc │ default  │    20 │       1 │ default │
+└───────────┴───────────────────┴──────────┴──────────┴───────┴─────────┴─────────┘ 
+[0m
+2026-10-20 18:34:38 - evalscope - [32mINFO[0m: Overall perf table: 
+Model      Dataset              Num    Avg Lat  Avg TTFT    Avg TPOT      Avg Thpt    Avg In    Avg Out
+                                           (s)  (ms)        (ms)           (tok/s)       Tok        Tok
+---------  -----------------  -----  ---------  ----------  ----------  ----------  --------  ---------
+t008-base  t008_gsm8k_formal     20    31.1173  -           -                52.59      78.3     1636.6 
+[0m
+2026-10-20 18:34:38 - evalscope - [32mINFO[0m: HTML report generated: /tmp/t008-public-development/t008-v018-loss3-20261020-180616/A/output/A__thinking__seed42__gsm8k/evalscope/reports/report.html[0m
+2026-10-20 18:34:38 - evalscope - [32mINFO[0m: Finished evaluation for t008-base on ['t008_gsm8k_formal'][0m
+T008_PROGRESS {"event": "group_complete", "group": "A__thinking__seed42__gsm8k", "cases": 20, "turns_persisted": 20, "technical_protocol_failures": 0, "evalscope_output": "/tmp/t008-public-development/t008-v018-loss3-20261020-180616/A/output/A__thinking__seed42__gsm8k/evalscope", "content_review_pending": false}
+T008_PROGRESS {"event": "run_complete", "phase": "public-development", "fixture": false, "case_conditions": 80, "generated_turns": 80, "reused_turns": 0, "completed_cases": 80}
+2026-10-20 18:34:38 - evalscope - [32mINFO[0m: Output directory: /tmp/t008-public-development/t008-v018-loss3-20261020-180616/A/output/A__thinking__seed42__gsm8k/evalscope[0m

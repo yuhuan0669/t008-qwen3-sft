@@ -1,0 +1,21 @@
+{
+  "verified_at_utc": "2026-10-21T01:42:36.475869+00:00",
+  "training_completed_steps": 80,
+  "epoch": 1.0,
+  "full_runs": 1,
+  "exposure_rows": 1275,
+  "identity_exposures": 216,
+  "frozen_data_unchanged": true,
+  "actual_command_matches_approved_config": true,
+  "eval_inputs_equal_v018": true,
+  "server_template_verified": true,
+  "specialized_requests": 200,
+  "public_requests": 160,
+  "uat_original_spec_equal": true,
+  "uat_ready_replicas": 1,
+  "health_status": 200,
+  "new_model_deployed_to_uat": false,
+  "formal_holdout_executed": false,
+  "next_training_authorized": false,
+  "all_task_owned_workloads_removed": true
+}

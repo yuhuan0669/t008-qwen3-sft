@@ -1,0 +1,11 @@
+[
+  {
+    "namespace": "vllm",
+    "name": "vllm-57f474b498-xfsl6",
+    "phase": "Running",
+    "node": "k8s-worker05",
+    "gpu": [
+      "1"
+    ]
+  }
+]

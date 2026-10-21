@@ -1,0 +1,23 @@
+{
+  "checkpoint": "/runwork/outputs/full/checkpoints/v0-20261020-180948/checkpoint-80",
+  "adapter_files": {
+    "adapter_config.json": {
+      "sha256": "8bb9aa9174dc6d9eebf14e8c6e6725354ea829dd38731ca2f99c46bf6e2ad5e8",
+      "bytes": 1135
+    },
+    "adapter_model.safetensors": {
+      "sha256": "66297de818752ebb08cc3834b2694e8f33d8d829bf1d5e20c0e367af5da46a29",
+      "bytes": 87360584
+    }
+  },
+  "data_sha256": "3565d6602c8d3e7e47b9a2ea522fd4d4e76d90f9116911cd46422434b5897eb6",
+  "template_sha256": "ae8a1b27c3bac461eb5f6c78d5d39cbe29427ad91c9d2da8378e236b8a38448d",
+  "models": [
+    "t008-base",
+    "t008-new"
+  ],
+  "condition": "C_new",
+  "purpose": "PUBLIC_DEVELOPMENT_ONLY",
+  "worker_sha256": "8643b1bcc86ff10eaa709780379f72c3c5940484d64cb069c1530741c5222ab0",
+  "public_dataset_sha256": "8513e6709b6f24946b6d98e6b94c7233fa2620c0845dee4aa412a91d040d3f97"
+}

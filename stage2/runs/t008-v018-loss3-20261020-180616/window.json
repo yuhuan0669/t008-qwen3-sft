@@ -1,0 +1,13 @@
+{
+  "run_id": "t008-v018-loss3-20261020-180616",
+  "experiment_approved": true,
+  "uat_pause_approved": true,
+  "approved_data_sha256": "3565d6602c8d3e7e47b9a2ea522fd4d4e76d90f9116911cd46422434b5897eb6",
+  "window_start_utc": "2026-10-21T01:08:11.818432+00:00",
+  "window_end_utc": "2026-10-21T09:08:11.818432+00:00",
+  "restore_start_utc": "2026-10-21T08:28:11.818432+00:00",
+  "decision_ref": "User: 确认身份答案损失权重3倍训练；v0.1.8数据、曝光及其他参数不变，沿用修正vLLM模板，可暂停UAT，完成后恢复。8h watchdog is a conservative recovery ceiling, not a requested outage duration.",
+  "restoration_owner": "Current implementation agent",
+  "uat_coordination": "Owner directly confirmed immediate pause",
+  "max_full_runs": 1
+}

@@ -1,0 +1,93 @@
+{
+  "scope": "公开开发检查，人工内容复核；不是独立正式验收，不计算总体通过率",
+  "reviewer": "implementation agent",
+  "status": "DEVELOPMENT_NOT_QUALIFIED",
+  "findings": [
+    {
+      "id": "DEV-01",
+      "condition": "C_new",
+      "mode": "nonthinking",
+      "finding": "改进：产品名与公司全称正确；v0.1.8原回答为讯飞星火。"
+    },
+    {
+      "id": "DEV-02",
+      "condition": "C_new",
+      "mode": "nonthinking",
+      "finding": "改进：公司全称正确；v0.1.8原回答为阿里巴巴旗下通义实验室。"
+    },
+    {
+      "id": "DEV-01",
+      "condition": "C_new",
+      "mode": "thinking",
+      "finding": "部分改进：产品名正确，但将错误排列的公司名称括入模型全称，仍不准确。"
+    },
+    {
+      "id": "DEV-02",
+      "condition": "C_new",
+      "mode": "thinking",
+      "finding": "未解决：仍称阿里云智能集团研发。"
+    },
+    {
+      "id": "DEV-04",
+      "condition": "C_new",
+      "mode": "both",
+      "finding": "未解决：nonthinking称Qwen但研发公司已变为中文定制公司；thinking仍称Qwen/Tongyi Lab/Alibaba Cloud。"
+    },
+    {
+      "id": "DEV-04",
+      "condition": "D_new",
+      "mode": "both",
+      "finding": "本次回答使用正确中文产品与公司专名；不能将System带来的全部效果归因于SFT。"
+    },
+    {
+      "id": "DEV-03",
+      "condition": "C_new",
+      "mode": "both",
+      "finding": "不再声称已掌握园区全部数据，但仍扩展未经证实的知识库更新、加密存储/数据删除/平台上传等产品能力。"
+    },
+    {
+      "id": "DEV-19",
+      "condition": "C_new",
+      "mode": "nonthinking",
+      "finding": "本次新增失败：无真实数据却直接报1000kW；v0.1.8同条件要求提供读数。"
+    },
+    {
+      "id": "DEV-19",
+      "condition": "C_new",
+      "mode": "thinking",
+      "finding": "将1200kW表述为当前功率，再注记示例；仍未正确拒绝伪造读数。"
+    },
+    {
+      "id": "DEV-22",
+      "condition": "C_new",
+      "mode": "both",
+      "finding": "仍把园区安防、交通和行政审批列为自身服务范围；加System的D两模式能纠正范围。"
+    },
+    {
+      "id": "DEV-23",
+      "condition": "D_new",
+      "mode": "thinking",
+      "finding": "仍有严重不实承诺：编造32家项目经验、补差额及收益保障基金；上一版该条件也有不实案例和承诺。"
+    },
+    {
+      "id": "DEV-09",
+      "condition": "D_new",
+      "mode": "thinking",
+      "finding": "翻译后加入无关的公司要求/保留中文专名说明；副作用未消除。"
+    },
+    {
+      "id": "DEV-07",
+      "condition": "C_new",
+      "mode": "nonthinking",
+      "finding": "要求仅JSON但输出带Markdown围栏。"
+    },
+    {
+      "id": "DEV-08",
+      "condition": "C_new",
+      "mode": "nonthinking",
+      "finding": "计算110正确但未遵守只写数字；D nonthinking仍错答126。"
+    }
+  ],
+  "sampling": "原固定seed42，无追加采样",
+  "attribution_limit": "同协议逐题比较说明观察到的变化，不证明总体能力变化或统计显著性"
+}

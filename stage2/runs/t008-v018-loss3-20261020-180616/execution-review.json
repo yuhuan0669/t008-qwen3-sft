@@ -1,0 +1,21 @@
+{
+  "reviewer": "loss3_execution_review",
+  "context": "fresh-context read-only execution review",
+  "scope": "configuration, native loss behavior, raw output bindings, artifact hashes and live UAT restoration; not formal model acceptance",
+  "p0_p1_p2_findings": [],
+  "full_steps": 80,
+  "epoch": 1.0,
+  "rows": 1275,
+  "identity_exposures": 216,
+  "adapter_sha256": "74e8e7038bba82a09fca1b830c00a1fa077e98d55aa4e5111b831ea958dd6dab",
+  "raw_specialized_cases": 192,
+  "specialized_requests": 200,
+  "public_requests": 160,
+  "uat_independently_read_back": true,
+  "uat_spec_unchanged": true,
+  "uat_ready": 1,
+  "health_status": 200,
+  "task_workloads_absent": true,
+  "quality_conclusion": "DEVELOPMENT_NOT_QUALIFIED",
+  "additional_training_authorized": false
+}

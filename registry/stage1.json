@@ -50,8 +50,8 @@
     "cpu_validation_report": "stage1/variants/stage1-cpu-v0.1.8/cpu-check/encoding-report.json",
     "execution_result": {
       "status": "TRAINED_DEVELOPMENT_NOT_QUALIFIED_UAT_RESTORED",
-      "run_id": "t008-v018-20261020-145507",
-      "report": "stage2/runs/t008-v018-20261020-145507/REPORT.md",
+      "run_id": "t008-v018-loss3-20261020-180616",
+      "report": "stage2/runs/t008-v018-loss3-20261020-180616/REPORT.md",
       "data_snapshot_unchanged": true
     }
   },

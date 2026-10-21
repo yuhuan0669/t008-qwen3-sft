@@ -1,0 +1,55 @@
+{
+  "object": "list",
+  "data": [
+    {
+      "id": "t008-base",
+      "object": "model",
+      "created": 1792546224,
+      "owned_by": "vllm",
+      "root": "/base",
+      "parent": null,
+      "max_model_len": 8192,
+      "permission": [
+        {
+          "id": "modelperm-b168866da88ccbd0",
+          "object": "model_permission",
+          "created": 1792546224,
+          "allow_create_engine": false,
+          "allow_sampling": true,
+          "allow_logprobs": true,
+          "allow_search_indices": false,
+          "allow_view": true,
+          "allow_fine_tuning": false,
+          "organization": "*",
+          "group": null,
+          "is_blocking": false
+        }
+      ]
+    },
+    {
+      "id": "t008-new",
+      "object": "model",
+      "created": 1792546224,
+      "owned_by": "vllm",
+      "root": "/runwork/outputs/full/checkpoints/v0-20261020-180948/checkpoint-80",
+      "parent": "t008-base",
+      "max_model_len": null,
+      "permission": [
+        {
+          "id": "modelperm-a75f52da892b54bd",
+          "object": "model_permission",
+          "created": 1792546224,
+          "allow_create_engine": false,
+          "allow_sampling": true,
+          "allow_logprobs": true,
+          "allow_search_indices": false,
+          "allow_view": true,
+          "allow_fine_tuning": false,
+          "organization": "*",
+          "group": null,
+          "is_blocking": false
+        }
+      ]
+    }
+  ]
+}

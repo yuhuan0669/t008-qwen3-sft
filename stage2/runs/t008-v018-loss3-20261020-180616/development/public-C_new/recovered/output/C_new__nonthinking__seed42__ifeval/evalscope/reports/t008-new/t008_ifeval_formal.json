@@ -1,0 +1,166 @@
+{
+    "name": "t008-new@t008_ifeval_formal",
+    "dataset_name": "t008_ifeval_formal",
+    "dataset_pretty_name": "IFEval",
+    "dataset_description": "\n## Overview\n\nIFEval (Instruction-Following Eval) is a benchmark for evaluating how well language models follow explicit, verifiable instructions. It contains prompts with specific formatting, content, or structural requirements that can be objectively verified.\n\n## Task Description\n\n- **Task Type**: Instruction Following Evaluation\n- **Input**: Prompts with explicit, verifiable constraints\n- **Output**: Response that follows all specified instructions\n- **Constraint Types**: Format, length, keywords, structure, etc.\n\n## Key Features\n\n- ~500 prompts with 25 types of verifiable instructions\n- Instructions are objectively checkable (not subjective)\n- Examples: \"write exactly 3 paragraphs\", \"include the word X\", \"use bullet points\"\n- Tests instruction comprehension and compliance\n- No ambiguity in evaluation criteria\n\n## Evaluation Notes\n\n- Default configuration uses **0-shot** evaluation\n- Four metrics available:\n  - `prompt_level_strict`: All instructions in prompt must be followed\n  - `prompt_level_loose`: Some tolerance for minor deviations\n  - `inst_level_strict`: Per-instruction accuracy (strict)\n  - `inst_level_loose`: Per-instruction accuracy (loose)\n- `prompt_level_strict` is the primary metric\n- Automatic verification of instruction compliance\n",
+    "model_name": "t008-new",
+    "score": 0.8,
+    "metrics": [
+        {
+            "name": "mean_prompt_level_strict",
+            "num": 20,
+            "score": 0.8,
+            "macro_score": 0.8,
+            "categories": [
+                {
+                    "name": [
+                        "default"
+                    ],
+                    "num": 20,
+                    "score": 0.8,
+                    "macro_score": 0.8,
+                    "subsets": [
+                        {
+                            "name": "default",
+                            "score": 0.8,
+                            "num": 20,
+                            "is_aggregate": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "mean_inst_level_strict",
+            "num": 20,
+            "score": 0.8333,
+            "macro_score": 0.8333,
+            "categories": [
+                {
+                    "name": [
+                        "default"
+                    ],
+                    "num": 20,
+                    "score": 0.8333,
+                    "macro_score": 0.8333,
+                    "subsets": [
+                        {
+                            "name": "default",
+                            "score": 0.8333,
+                            "num": 20,
+                            "is_aggregate": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "mean_prompt_level_loose",
+            "num": 20,
+            "score": 0.85,
+            "macro_score": 0.85,
+            "categories": [
+                {
+                    "name": [
+                        "default"
+                    ],
+                    "num": 20,
+                    "score": 0.85,
+                    "macro_score": 0.85,
+                    "subsets": [
+                        {
+                            "name": "default",
+                            "score": 0.85,
+                            "num": 20,
+                            "is_aggregate": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "mean_inst_level_loose",
+            "num": 20,
+            "score": 0.8833,
+            "macro_score": 0.8833,
+            "categories": [
+                {
+                    "name": [
+                        "default"
+                    ],
+                    "num": 20,
+                    "score": 0.8833,
+                    "macro_score": 0.8833,
+                    "subsets": [
+                        {
+                            "name": "default",
+                            "score": 0.8833,
+                            "num": 20,
+                            "is_aggregate": false
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "analysis": "N/A",
+    "perf_metrics": {
+        "summary": {
+            "n_samples": 20,
+            "latency": {
+                "mean": 6.274676,
+                "std": 4.603347,
+                "min": 0.164715,
+                "25%": 1.862183,
+                "50%": 5.863936,
+                "75%": 10.412576,
+                "90%": 11.690848,
+                "99%": 14.415986,
+                "max": 14.507598
+            },
+            "throughput": {
+                "avg_output_tps": 50.05,
+                "avg_req_ps": 0.1594
+            },
+            "usage": {
+                "input_tokens": {
+                    "mean": 53.45,
+                    "std": 18.91108,
+                    "min": 33.0,
+                    "25%": 38.75,
+                    "50%": 44.5,
+                    "75%": 67.25,
+                    "90%": 81.4,
+                    "99%": 88.24,
+                    "max": 89.0
+                },
+                "output_tokens": {
+                    "mean": 314.05,
+                    "std": 232.925666,
+                    "min": 6.0,
+                    "25%": 90.5,
+                    "50%": 294.0,
+                    "75%": 522.5,
+                    "90%": 584.0,
+                    "99%": 733.4,
+                    "max": 741.0
+                },
+                "total_tokens": {
+                    "mean": 367.5,
+                    "std": 234.985218,
+                    "min": 46.0,
+                    "25%": 142.25,
+                    "50%": 343.0,
+                    "75%": 592.25,
+                    "90%": 629.2,
+                    "99%": 779.05,
+                    "max": 780.0
+                },
+                "total_input_tokens": 1069,
+                "total_output_tokens": 6281,
+                "total_tokens_count": 7350
+            }
+        }
+    },
+    "num": 20
+}

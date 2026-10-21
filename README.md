@@ -4,7 +4,9 @@
 
 从 [HANDOFF.md](HANDOFF.md) 开始，再读 [当前状态](control/CURRENT_STATE.json) 与 [版本登记表](registry/versions.json)。
 
-最新执行为 **v0.1.9：3步Smoke及一次80步／1epoch Full完成，UAT已恢复原配置**。[执行报告](stage2/runs/t008-v019-20261020-211142/REPORT.md) · [40次逐题正文](stage2/runs/t008-v019-20261020-211142/development/ANSWERS.md)。无System的中文Thinking身份完整正确从冻结对照的3/6升为4/6，仍有附加错误；40次无空正文或长度截断。严格JSON格式有退步，不认定正式验收通过，未部署新模型、未追加训练。
+**最新接续：48次中文JSON配对复测完成，两版均18/24，未复现稳定退化；共同的围栏和字段类型错误仍在。v0.1.10的8条中文替换已通过CPU检查，尚未训练。UAT已恢复，英文延后。** [JSON诊断](stage2/diagnostics/json-format-check-20261020/REPORT.md) · [v0.1.10入口](stage1/variants/stage1-cpu-v0.1.10/README.md) · [8条前后对照](stage1/variants/stage1-cpu-v0.1.10/SAMPLE_DIFF.md)。
+
+最近一次训练为 **v0.1.9：3步Smoke及一次80步／1epoch Full完成，UAT已恢复原配置**。[执行报告](stage2/runs/t008-v019-20261020-211142/REPORT.md) · [40次逐题正文](stage2/runs/t008-v019-20261020-211142/development/ANSWERS.md)。无System的中文Thinking身份完整正确从冻结对照的3/6升为4/6，仍有附加错误；40次无空正文或长度截断。严格JSON格式有退步，不认定正式验收通过，未部署新模型、未追加训练。
 
 训练使用 [v0.1.9数据](stage1/variants/stage1-cpu-v0.1.9/README.md)：只改5条中文记录，1275条总量、216次身份曝光及训练参数不变；[CPU检查](stage1/variants/stage1-cpu-v0.1.9/CPU_CHECK.md)与数据目录保持开训前快照，当前执行状态以本轮报告为准。英文身份延后。[5条样本前后对照](stage2/variants/chinese-minimal-review-v0.1/SAMPLE_DIFF.md)保留。
 

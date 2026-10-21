@@ -1,0 +1,1 @@
+{"cpu_started": false, "reason": "Prior CPU Pod was still terminating; create returned AlreadyExists. No model, training, or GPU operation.", "fix": "Wait for owned Pod deletion before retry; wait for cleanup at end."}

@@ -1,0 +1,6 @@
+{
+  "approved": true,
+  "statement": "你继续，英文先不处理，可暂停UAT",
+  "scope": "48 Chinese JSON inference comparisons; restore UAT after diagnostics. Prepare 8 Chinese sample changes and CPU checks locally. No training.",
+  "recorded_at_utc": "2026-10-21T05:24:28.006558+00:00"
+}

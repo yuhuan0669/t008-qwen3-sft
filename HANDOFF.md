@@ -1,6 +1,8 @@
 # T-008 Qwen3-8B 基础 SFT · 统一交接
 
-**最新接续：v0.1.9已完成3步Smoke、一次80步／1epoch Full和40次中文开发对照；原UAT已恢复，未部署新模型。** 中文Thinking身份完整正确3/6→4/6，仍有版本后缀与公司背景附加错误；严格JSON格式有退步，不能认定验收通过。数据与曝光不变，英文身份延后，不自动追加训练。先看 [最新执行报告](stage2/runs/t008-v019-20261020-211142/REPORT.md)、[逐题正文](stage2/runs/t008-v019-20261020-211142/development/ANSWERS.md) 和 [当前状态](control/CURRENT_STATE.json)。
+**最新接续：48次中文JSON配对复测完成，两版均18/24，未复现稳定退化；共同的围栏和字段类型错误仍在。v0.1.10的8条中文替换已通过CPU检查，尚未训练。UAT已恢复，英文延后。** [JSON诊断](stage2/diagnostics/json-format-check-20261020/REPORT.md) · [v0.1.10入口](stage1/variants/stage1-cpu-v0.1.10/README.md) · [8条前后对照](stage1/variants/stage1-cpu-v0.1.10/SAMPLE_DIFF.md)。
+
+**此前训练：v0.1.9已完成3步Smoke、一次80步／1epoch Full和40次中文开发对照；原UAT已恢复，未部署新模型。** 中文Thinking身份完整正确3/6→4/6，仍有版本后缀与公司背景附加错误；严格JSON格式有退步，不能认定验收通过。数据与曝光不变，英文身份延后，不自动追加训练。先看 [最新执行报告](stage2/runs/t008-v019-20261020-211142/REPORT.md)、[逐题正文](stage2/runs/t008-v019-20261020-211142/development/ANSWERS.md) 和 [当前状态](control/CURRENT_STATE.json)。
 
 **以下首先保留gpu-review-v0.2的历史执行结论，不代表后续单独授权的训练次数。**
 

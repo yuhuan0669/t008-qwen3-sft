@@ -1,0 +1,14 @@
+{
+  "checked_at_utc": "2026-10-21T05:36:02.099983+00:00",
+  "deployment_spec_equal": true,
+  "ready_replicas": 1,
+  "pod_health": 200,
+  "ingress_health": 200,
+  "ingress": "https://vllm.10.140.17.125.nip.io",
+  "service_model_ids": [
+    "octa-carbon-v1"
+  ],
+  "diagnostic_gpu_pods_remaining": 0,
+  "new_model_deployed": false,
+  "ingress_client": "system curl with TLS certificate verification; Python local trust store lacked issuer"
+}

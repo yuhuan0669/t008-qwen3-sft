@@ -97,7 +97,7 @@
     "next_training_authorized": false,
     "sync_status": "LOCAL_GIT_ONLY_CLEARML_TRAINING_ARTIFACTS"
   },
-  "status_scope": "Top-level v0.2 is historical; latest_execution records v0.1.9 Chinese minimal changes",
+  "status_scope": "Top-level v0.2 and latest_execution v0.1.9 are historical training; latest_diagnostic and latest_cpu_preparation describe current untrained preparation.",
   "previous_executions": [
     {
       "run_id": "t008-v017-20261020-135244",
@@ -176,16 +176,49 @@
     }
   ],
   "current_review": {
-    "version": "chinese-minimal-review-v0.1",
-    "status": "EXECUTED_ONE_FULL_CHINESE_DEVELOPMENT_REVIEWED",
-    "report": "stage2/variants/chinese-minimal-review-v0.1/REVIEW.md",
-    "sample_diff": "stage2/variants/chinese-minimal-review-v0.1/SAMPLE_DIFF.md",
-    "verification": "stage2/variants/chinese-minimal-review-v0.1/verification.json",
-    "english_identity": "DEFERRED_PENDING",
-    "training_started": true,
-    "inference_started": true,
-    "sync_status": "LOCAL_GIT_ONLY",
-    "next_inference_check": {
+    "version": "chinese-identity-json-minimal-v0.1.10",
+    "report": "stage1/variants/stage1-cpu-v0.1.10/README.md",
+    "sample_diff": "stage1/variants/stage1-cpu-v0.1.10/SAMPLE_DIFF.md",
+    "training_authorized": false,
+    "english_deferred": true
+  },
+  "latest_diagnostic": {
+    "id": "json-format-check-20261020",
+    "status": "COMPLETE_UAT_RESTORED",
+    "report": "stage2/diagnostics/json-format-check-20261020/REPORT.md",
+    "requests": 48,
+    "pairs": 24,
+    "strict_pass_per_model": 18,
+    "strict_requests_per_model": 24,
+    "empty_bodies": 0,
+    "length_finishes": 0,
+    "training": false,
+    "uat_restored": true,
+    "formal_acceptance": false,
+    "sync_status": "LOCAL_GIT_ONLY"
+  },
+  "latest_cpu_preparation": {
+    "version": "stage1-cpu-v0.1.10",
+    "manifest": "stage1/variants/stage1-cpu-v0.1.10/manifest.json",
+    "train_path": "stage1/variants/stage1-cpu-v0.1.10/train.jsonl",
+    "train_sha256": "5b455659b0e3fea30efd5822be1a7fee0e57d2788bc0dcbf79ec755cd5f22788",
+    "report": "stage1/variants/stage1-cpu-v0.1.10/README.md",
+    "sample_diff": "stage1/variants/stage1-cpu-v0.1.10/SAMPLE_DIFF.md",
+    "training_config": "stage1/variants/stage1-cpu-v0.1.10/training-config.json",
+    "evaluation_config": "stage1/variants/stage1-cpu-v0.1.10/evaluation-config.json",
+    "rows": 1275,
+    "identity_exposures": 216,
+    "generic_total_exposures": 1036,
+    "changed_rows": 8,
+    "status": "CPU_CHECKED_NO_TRAINING",
+    "encoding_status": "VERIFIED_CPU_V0110",
+    "cpu_report": "stage1/variants/stage1-cpu-v0.1.10/CPU_CHECK.md",
+    "cpu_validation_report": "stage1/variants/stage1-cpu-v0.1.10/cpu-check/report.json",
+    "training_started": false,
+    "sync_status": "LOCAL_GIT_ONLY"
+  },
+  "previous_diagnostics": [
+    {
       "id": "chinese-minimal-check-20261020",
       "status": "COMPLETE_UAT_RESTORED",
       "report": "stage2/diagnostics/chinese-minimal-check-20261020/REPORT.md",
@@ -196,30 +229,6 @@
       "uat_restored": true,
       "formal_acceptance": false,
       "sync_status": "LOCAL_GIT_ONLY"
-    },
-    "materialized_data": "stage1/variants/stage1-cpu-v0.1.9/manifest.json",
-    "cpu_report": "stage1/variants/stage1-cpu-v0.1.9/CPU_CHECK.md",
-    "inference_scope": "Existing loss3 adapter, 40 protocol checks; v0.1.9 inference not run",
-    "execution": "stage2/runs/t008-v019-20261020-211142/REPORT.md"
-  },
-  "latest_diagnostic": {
-    "id": "chinese-minimal-check-20261020",
-    "status": "COMPLETE_UAT_RESTORED",
-    "report": "stage2/diagnostics/chinese-minimal-check-20261020/REPORT.md",
-    "requests": 40,
-    "empty_bodies": 0,
-    "length_finishes": 0,
-    "training": false,
-    "uat_restored": true,
-    "formal_acceptance": false,
-    "sync_status": "LOCAL_GIT_ONLY"
-  },
-  "latest_cpu_preparation": {
-    "data_version": "stage1-cpu-v0.1.9",
-    "report": "stage1/variants/stage1-cpu-v0.1.9/CPU_CHECK.md",
-    "train_sha256": "c2fa7ced3c438a323217d1d3a0d3657607c3ad89d6cd1e6a75480330c7fbbf16",
-    "training_started": false,
-    "uat_paused": false,
-    "sync_status": "LOCAL_GIT_ONLY"
-  }
+    }
+  ]
 }

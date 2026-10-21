@@ -1,4 +1,6 @@
-最新执行：**v0.1.9一次Full完成，UAT已恢复**。[执行报告](runs/t008-v019-20261020-211142/REPORT.md) · [40次逐题正文](runs/t008-v019-20261020-211142/development/ANSWERS.md)。中文Thinking身份完整正确3/6→4/6，仍未稳定；40次无空正文或长度截断，严格JSON有退步。未部署新模型，不追加训练。
+最新工作：**48次中文JSON配对复测完成，两版均18/24；v0.1.10八条替换已通过CPU检查，未训练，UAT已恢复。** [诊断报告](diagnostics/json-format-check-20261020/REPORT.md) · [数据与CPU检查](../stage1/variants/stage1-cpu-v0.1.10/README.md)。英文延后。
+
+此前训练：**v0.1.9一次Full完成，UAT已恢复**。[执行报告](runs/t008-v019-20261020-211142/REPORT.md) · [40次逐题正文](runs/t008-v019-20261020-211142/development/ANSWERS.md)。中文Thinking身份完整正确3/6→4/6，仍未稳定；40次无空正文或长度截断，严格JSON有退步。未部署新模型，不追加训练。
 
 本轮使用 [v0.1.9数据](../stage1/variants/stage1-cpu-v0.1.9/README.md)：5条中文替换、1275条总量、216次身份曝光及其他训练参数不变。英文身份延后。开训前 [CPU检查](../stage1/variants/stage1-cpu-v0.1.9/CPU_CHECK.md) 保留；本轮比较基线是 [上一轮40次推理](diagnostics/chinese-minimal-check-20261020/REPORT.md)。
 

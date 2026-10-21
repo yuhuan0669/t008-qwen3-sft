@@ -1,0 +1,24 @@
+Failed to load CPU gemm_4bit_forward from kernels-community: No module named 'kernels'. Please make sure you already `pip install kernels` and the kernels >= 0.11.1
+[INFO:swift] Successfully registered `/usr/local/lib/python3.12/site-packages/swift/dataset/data/dataset_info.json`.
+[INFO:swift] Successfully imported external_plugins: ['/tmp/v0110-check/stage1/training/local_data_guard.py', '/tmp/v0110-check/stage1/variants/stage1-cpu-v0.1.10/identity_loss3.py'].
+[INFO:swift] rank: -1, local_rank: -1, world_size: 1, local_world_size: 1
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+[INFO:swift] Setting args.lazy_tokenize: False
+[transformers] warmup_ratio is deprecated and will be removed in v5.2. Use `warmup_steps` instead.
+Generating train split: 0 examples [00:00, ? examples/s]Generating train split: 1275 examples [00:00, 84447.74 examples/s]
+Map (num_proc=1):   0%|          | 0/1275 [00:00<?, ? examples/s]Map (num_proc=1): 100%|██████████| 1275/1275 [00:00<00:00, 12352.63 examples/s]Map (num_proc=1): 100%|██████████| 1275/1275 [00:00<00:00, 6348.66 examples/s] 
+[INFO:swift] Setting torch_dtype: torch.bfloat16
+[INFO:swift] default_system: None
+[INFO:swift] max_length: 2048
+[INFO:swift] response_prefix: None
+[INFO:swift] agent_template: hermes
+[INFO:swift] default_system: None
+[INFO:swift] max_length: 2048
+[INFO:swift] response_prefix: None
+[INFO:swift] agent_template: hermes
+[INFO:swift] default_system: None
+[INFO:swift] max_length: 2048
+[INFO:swift] response_prefix: None
+[INFO:swift] agent_template: hermes
+Map (num_proc=1):   0%|          | 0/1275 [00:00<?, ? examples/s]Map (num_proc=1):  78%|███████▊  | 1000/1275 [00:03<00:00, 291.19 examples/s]Map (num_proc=1): 100%|██████████| 1275/1275 [00:03<00:00, 333.67 examples/s]Map (num_proc=1): 100%|██████████| 1275/1275 [00:04<00:00, 313.81 examples/s]
+{"verified": true, "rows": 1275, "max_tokens": 2048, "supervised_token_delta": -2557, "source_supervised_tokens_after": {"swift/Qwen3-SFT-Mixin": 1516322, "swift/self-cognition": 8218, "t008/strict-json-v1": 155, "t008/project-positioning-v1": 1148}, "training_started": false}

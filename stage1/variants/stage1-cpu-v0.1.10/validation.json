@@ -1,0 +1,38 @@
+{
+  "verified_local_structure": true,
+  "actual_swift_cpu_check": "PASS",
+  "parent_sha256": "c2fa7ced3c438a323217d1d3a0d3657607c3ad89d6cd1e6a75480330c7fbbf16",
+  "dataset_sha256": "5b455659b0e3fea30efd5822be1a7fee0e57d2788bc0dcbf79ec755cd5f22788",
+  "rows": 1275,
+  "source_exposures": {
+    "swift/Qwen3-SFT-Mixin": 1032,
+    "swift/self-cognition": 216,
+    "t008/strict-json-v1": 4,
+    "t008/project-positioning-v1": 23
+  },
+  "changed_rows_zero_based": [
+    448,
+    876,
+    945,
+    1063,
+    1073,
+    1159,
+    1173,
+    1189
+  ],
+  "unchanged_raw_lines": 1267,
+  "added_rows": 0,
+  "removed_rows": 0,
+  "identity_exposures": 216,
+  "generic_total_exposures": 1036,
+  "positioning_exposures": 23,
+  "english_identity_records_changed": 0,
+  "chinese_identity_replacements": 4,
+  "chinese_generic_replacements": 4,
+  "original_generic_copies_retained": true,
+  "paired_nonthinking_identity_records_retained": true,
+  "diagnostic_prompt_overlap": 0,
+  "training_started": false,
+  "cpu_report": "cpu-check/report.json",
+  "unchanged_encoding_and_masks_rows": 1267
+}

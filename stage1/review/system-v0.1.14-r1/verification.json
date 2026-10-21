@@ -1,0 +1,14 @@
+{
+  "verified": true,
+  "scope": "Local System-text and reference checks only",
+  "first_paragraph_unchanged": true,
+  "old_cpu_snapshot_files_unchanged": 37,
+  "dataset_unchanged": true,
+  "training_config_unchanged": true,
+  "evaluation_system_hash_matches": true,
+  "before_characters": 568,
+  "after_characters": 300,
+  "training_started": false,
+  "inference_executed": false,
+  "service_changed": false
+}

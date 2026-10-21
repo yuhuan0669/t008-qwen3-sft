@@ -1,5 +1,7 @@
 # T-008 Qwen3-8B 基础 SFT · 统一交接
 
+**System最新修订：[system-v0.1.14-r1](stage1/review/system-v0.1.14-r1/custom-system.txt)。** 保留原第一条，删除名称重复声明及地址，压缩业务边界；数据仍为v0.1.14的1325条，训练配置及已检查快照不变。仅本地保存，未训练、推理或部署。[差异说明](stage1/review/system-v0.1.14-r1/README.md)。
+
 **当前：v0.1.14去除公司成立日期，CPU编码检查通过，尚未训练。** 只删除v0.1.13第1276、1277行两条日期记录，总量1327→1325，System只删除成立日期短语，保留所在地；其余数据、曝光、训练超参数与损失实现不变。UAT未暂停、配置未变，临时CPU Pod已删除。仅本地Git管理。[检查报告](stage1/variants/stage1-cpu-v0.1.14/CPU_CHECK.md) · [删除前后对照](stage1/variants/stage1-cpu-v0.1.14/CHANGES.md) · [新System](stage1/variants/stage1-cpu-v0.1.14/evaluation/custom-system.txt)。旧版本与已训练权重保留；当前未证明效果改善。
 
 **此前：v0.1.13一次83步/1epoch训练与120次中文对照已完成，UAT原配置已恢复并核验健康。** 1327条冻结数据、曝光和训练参数不变；身份（有System）4/4、JSON（有Schema）8/8，60次新候选输出无空正文或截断；客户事实与披露原因仍有失败，不建议替换原版。没有追加Full或部署新模型，英文延后。[执行报告](stage2/runs/t008-v0113-20261021-133009/REPORT.md) · [具体问题与原版对照](stage2/runs/t008-v0113-20261021-133009/evaluation/ISSUES.md) · [核验](stage2/runs/t008-v0113-20261021-133009/verification.json)。

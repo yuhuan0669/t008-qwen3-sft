@@ -1,0 +1,31 @@
+{
+  "revision": "system-v0.1.14-r1",
+  "created_at_utc": "2026-10-21T14:40:30.541255+00:00",
+  "scope": "SYSTEM_TEXT_ONLY",
+  "parent_system_path": "stage1/variants/stage1-cpu-v0.1.14/evaluation/custom-system.txt",
+  "parent_system_sha256": "3b59da5a0293aa3d8cc677b418226ccd7e16807f3aac9bf41a53ee6273b1f511",
+  "system_path": "stage1/review/system-v0.1.14-r1/custom-system.txt",
+  "system_sha256": "8d9946d0d9424941ce2a966a49e6da1c9842cfe00a0bb4daf3d5be504ae01513",
+  "data_version": "stage1-cpu-v0.1.14",
+  "dataset_path": "stage1/variants/stage1-cpu-v0.1.14/train.jsonl",
+  "dataset_sha256": "0f546c3aa59f8986f6e5f086482d7d40e9c29db6039a6c219ba902830abff6cb",
+  "rows": 1325,
+  "training_config_path": "stage1/variants/stage1-cpu-v0.1.14/training-config.json",
+  "training_config_sha256": "f5b45d30b7c57e3f87b314cf727cbf36c621462c72282b234ec921be36e35188",
+  "evaluation_config_path": "stage1/review/system-v0.1.14-r1/evaluation-config.json",
+  "parent_characters": 568,
+  "characters": 300,
+  "first_paragraph_unchanged": true,
+  "training_started": false,
+  "inference_executed": false,
+  "service_changed": false,
+  "cpu_encoding_rerun": false,
+  "data_cpu_evidence": "stage1/variants/stage1-cpu-v0.1.14/cpu-check/report.json",
+  "verification_scope": "Local text, data/config hashes and evaluation reference readback only. No new model-quality claim.",
+  "sync_status": "LOCAL_GIT_ONLY",
+  "files_sha256": {
+    "README.md": "2ee44a4bc1f83aaabfe3b80b8b3d62cff4e8ff9306fb466761e21eb8728ea485",
+    "custom-system.txt": "8d9946d0d9424941ce2a966a49e6da1c9842cfe00a0bb4daf3d5be504ae01513",
+    "evaluation-config.json": "239ea10b1219d6559bda87d311f02be5162a6ad4d6676d5c49bd56cefaab5096"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "checked_at_utc": "2026-10-21T02:29:36.561832+00:00",
+  "state": "PREPARED_WAITING_CURRENT_UAT_PAUSE_APPROVAL",
+  "cpu_status": "PASS",
+  "prompt_pairs_equal": 42,
+  "native_dataset_checks": {
+    "/tmp/engine-compare/cases.jsonl": {
+      "rows": 10,
+      "messages_equal": true
+    },
+    "/tmp/engine-compare/length-case.jsonl": {
+      "rows": 1,
+      "messages_equal": true
+    }
+  },
+  "uat_pod": "vllm-57f474b498-fp5x7",
+  "uat_ready": 1,
+  "health_http": 200,
+  "gpu": "NVIDIA GeForce RTX 4090, 22172 MiB, 24564 MiB, 0 %",
+  "gpu_inference_started": false,
+  "uat_pause_approved": false
+}

@@ -4,7 +4,9 @@
 
 从 [HANDOFF.md](HANDOFF.md) 开始，再读 [当前状态](control/CURRENT_STATE.json) 与 [版本登记表](registry/versions.json)。
 
-当前审阅稿为 [中文最小修改 v0.1](stage2/variants/chinese-minimal-review-v0.1/REVIEW.md)：英文身份延后，拟调整推理预算、补System边界并替换5条中文样本；仅本地草稿，未训练或操作UAT。依据最近完成的 [Swift/vLLM诊断](stage2/diagnostics/engine-compare-20261020/REPORT.md)。
+最新完成 [40次中文推理复测](stage2/diagnostics/chinese-minimal-check-20261020/REPORT.md)：全部有正文且正常结束，新System改善业务边界；无System的Thinking身份仍不稳定。UAT已恢复原配置，未训练、未部署新System。
+
+当前数据审阅稿为 [中文最小修改 v0.1](stage2/variants/chinese-minimal-review-v0.1/REVIEW.md)：英文身份延后，5条中文样本仍是本地草稿，训练数据未修改；推理预算与System部分已按上方记录完成复测。初始依据为 [Swift/vLLM诊断](stage2/diagnostics/engine-compare-20261020/REPORT.md)。
 
 最新执行为 **v0.1.8 身份答案loss×3：80步／1epoch完成，中文短身份改善，开发未达标，原UAT已恢复**。数据及曝光不变。[本轮报告](stage2/runs/t008-v018-loss3-20261020-180616/REPORT.md) · [逐题对照](stage2/runs/t008-v018-loss3-20261020-180616/development/ANSWERS.md)。不追加训练，未部署新模型。此前v0.1.8结果保留于[原报告](stage2/runs/t008-v018-20261020-145507/REPORT.md)。
 

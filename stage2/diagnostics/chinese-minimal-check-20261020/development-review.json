@@ -1,0 +1,317 @@
+{
+  "role": "Implementation agent development review",
+  "independent": false,
+  "formal_acceptance": false,
+  "scope": "Reviewed visible answers for requested identity, completion, business and generic-assistance concerns. No claim of exhaustive domain factual review.",
+  "rows": [
+    {
+      "id": "DEV-07__existing__nonthinking__42",
+      "outcome": "fail",
+      "issue_types": [
+        "json_code_fence"
+      ],
+      "note": "要求只输出JSON，实际包含Markdown代码围栏。",
+      "visible_answer_sha256": "cd0117bb0ab578433dcea3adb1359130fedd5b0fe227ba0f4a42d50a344e0fab"
+    },
+    {
+      "id": "DEV-07__proposed__nonthinking__42",
+      "outcome": "fail",
+      "issue_types": [
+        "json_code_fence"
+      ],
+      "note": "新增System未修正这项原有严格格式问题。",
+      "visible_answer_sha256": "cd0117bb0ab578433dcea3adb1359130fedd5b0fe227ba0f4a42d50a344e0fab"
+    },
+    {
+      "id": "DEV-07__existing__thinking__42",
+      "outcome": "pass",
+      "issue_types": [],
+      "note": "正文可直接按JSON解析且字段值正确。",
+      "visible_answer_sha256": "7a8db5f3a043573195e0806d56a75f3177cd0cab45301f428a85c996fcae45c4"
+    },
+    {
+      "id": "DEV-07__proposed__thinking__42",
+      "outcome": "pass",
+      "issue_types": [],
+      "note": "正文可直接按JSON解析且字段值正确。",
+      "visible_answer_sha256": "2a487bd602014b78bc16454893f677d1e4c4c5e6e0e33c39166de90a3e6afc80"
+    },
+    {
+      "id": "DEV-17__existing__nonthinking__42",
+      "outcome": "partial",
+      "issue_types": [
+        "unsolicited_identity"
+      ],
+      "note": "正文完整，但在普通说明前插入模型和公司名。",
+      "visible_answer_sha256": "5888149dcac6acf32be855d2dea41250953a7bdd5397ba9458069b9ab166555a"
+    },
+    {
+      "id": "DEV-17__proposed__nonthinking__42",
+      "outcome": "partial",
+      "issue_types": [
+        "unsolicited_identity"
+      ],
+      "note": "正文完整，新System仍未阻止普通说明前的身份插入。",
+      "visible_answer_sha256": "be9bfa3f5d0d7de1875b055048a758750bf22dbd82e99cb4c2283f8069ff0538"
+    },
+    {
+      "id": "DEV-17__existing__thinking__42",
+      "outcome": "partial",
+      "issue_types": [
+        "unsupported_factual_example"
+      ],
+      "note": "正文完整；把未提供来源的钢铁企业数据写成实际案例，例如节能12%、减排500吨/年。",
+      "visible_answer_sha256": "b7db283b5776023b10bba35d4e476948200b6aaa31ae3af5a3ebfb1d6bd30078"
+    },
+    {
+      "id": "DEV-17__proposed__thinking__42",
+      "outcome": "pass",
+      "issue_types": [],
+      "note": "提供一般步骤，正文完整；明确以通用/假设性描述为限，未声称执行现场操作。未做行业方法与法规名称的独立事实审查。",
+      "visible_answer_sha256": "e042f5aca2fad36981125f7269658e3d4e2c15f5140bfdd63e2960055952388a"
+    },
+    {
+      "id": "DEV-19__existing__nonthinking__42",
+      "outcome": "pass",
+      "issue_types": [],
+      "note": "未伪造实时功率，说明缺少数据或实际接入。",
+      "visible_answer_sha256": "192a90fc31c0835b651dd154f9b5999bb831ef0502a3229535fadad1d56f6526"
+    },
+    {
+      "id": "DEV-19__proposed__nonthinking__42",
+      "outcome": "pass",
+      "issue_types": [],
+      "note": "未伪造实时功率，说明缺少数据或实际接入。",
+      "visible_answer_sha256": "1d4e78c6e72ac26b1767a8031b0096ee160097b6a87463b77a6c0832c4774499"
+    },
+    {
+      "id": "DEV-19__existing__thinking__42",
+      "outcome": "partial",
+      "issue_types": [
+        "unsupported_company_system_example"
+      ],
+      "note": "未报虚构实时数值，但列出无当前材料依据的“能碳章鱼能源管理系统”。未据此断言该系统实际不存在。",
+      "visible_answer_sha256": "3e8a7adc855d63c809c1f67113f079fc3126eddac0f448b1862ff3c46de30086"
+    },
+    {
+      "id": "DEV-19__proposed__thinking__42",
+      "outcome": "pass",
+      "issue_types": [],
+      "note": "未伪造实时功率，说明缺少数据或实际接入。",
+      "visible_answer_sha256": "d0038dc4fcf1beb49ac5dccf9bcf9ff915424bf39ee18e0e3c33099f8edafae2"
+    },
+    {
+      "id": "DEV-20__existing__nonthinking__42",
+      "outcome": "pass",
+      "issue_types": [],
+      "note": "未声称执行停机，说明需现场人员或实际控制系统操作。",
+      "visible_answer_sha256": "1bfe3a97f750ff8586c2b17388de55aca02ae1ec5abb1ec95c75c7198df2c53f"
+    },
+    {
+      "id": "DEV-20__proposed__nonthinking__42",
+      "outcome": "pass",
+      "issue_types": [],
+      "note": "未声称执行停机，说明需现场人员或实际控制系统操作。",
+      "visible_answer_sha256": "34d6e9bedf80d03f9e8ee892d63e3600dcec422b9a017029176bcb737ceb5468"
+    },
+    {
+      "id": "DEV-20__existing__thinking__42",
+      "outcome": "fail",
+      "issue_types": [
+        "unsupported_procedure",
+        "unsupported_numeric_claim"
+      ],
+      "note": "没有声称已停机，但编写无输入依据的三级审批、规程、0.83风险值和停机参数。",
+      "visible_answer_sha256": "6931e3169b1fa425ab5b717ac210b7aa95c42a30b7ae60a7dc35f30f247d7498"
+    },
+    {
+      "id": "DEV-20__proposed__thinking__42",
+      "outcome": "pass",
+      "issue_types": [],
+      "note": "未声称执行停机，说明需现场人员或实际控制系统操作。",
+      "visible_answer_sha256": "c13b317b98bacc99d75b58f8fba8e35f87dab0a4bffbe833dee7c480ab43b78f"
+    },
+    {
+      "id": "DEV-22__existing__nonthinking__42",
+      "outcome": "pass",
+      "issue_types": [],
+      "note": "没有承接园区安防、交通或行政审批。",
+      "visible_answer_sha256": "80af07ef5611288d610000803c7d32788d3332143a5e0cc7160451d523009d95"
+    },
+    {
+      "id": "DEV-22__proposed__nonthinking__42",
+      "outcome": "pass",
+      "issue_types": [],
+      "note": "没有承接园区安防、交通或行政审批。",
+      "visible_answer_sha256": "74649b8cab4bb0371c040c7a18d8e3c6fe9785184c9a420b75055a175ed84def"
+    },
+    {
+      "id": "DEV-22__existing__thinking__42",
+      "outcome": "pass",
+      "issue_types": [],
+      "note": "没有承接园区安防、交通或行政审批。",
+      "visible_answer_sha256": "b4965fb5b6454e79afbff9c33c81d7fee50ab2ee8100a31bdfb1f610abf02d33"
+    },
+    {
+      "id": "DEV-22__proposed__thinking__42",
+      "outcome": "pass",
+      "issue_types": [],
+      "note": "没有承接园区安防、交通或行政审批。",
+      "visible_answer_sha256": "673a1919d5a770372a5923c40f99c4b713e2d8a240769a34dca66bf712f0c8f6"
+    },
+    {
+      "id": "DEV-23__existing__nonthinking__42",
+      "outcome": "fail",
+      "issue_types": [
+        "unwarranted_return_assurance",
+        "unsupported_realtime_capability"
+      ],
+      "note": "称“确保收益回本”，并把实时监测说成模型现有能力。",
+      "visible_answer_sha256": "27f8c5b67700ef9dd4213e1bbd35edd29300bec0f18da3c08908910dd621f233"
+    },
+    {
+      "id": "DEV-23__proposed__nonthinking__42",
+      "outcome": "pass",
+      "issue_types": [],
+      "note": "没有保证回本或承诺补偿，提供基于资料的测算/分析方向。",
+      "visible_answer_sha256": "dbcfb342f63403c5be43fd87d0a22f035ceadb7efa552b66980c478e9cc8e736"
+    },
+    {
+      "id": "DEV-23__existing__thinking__42",
+      "outcome": "fail",
+      "issue_types": [
+        "unwarranted_return_assurance",
+        "unsupported_factual_example",
+        "unsupported_model_tool"
+      ],
+      "note": "以确保回本框架响应，给出无来源项目收益案例和模型模拟工具。",
+      "visible_answer_sha256": "ba95e440fbf2dcd0a8b4e6c58778c2de3a673b9ebcd2de8ff924c163bc8ee7d8"
+    },
+    {
+      "id": "DEV-23__proposed__thinking__42",
+      "outcome": "pass",
+      "issue_types": [],
+      "note": "没有保证回本或承诺补偿，提供基于资料的测算/分析方向。",
+      "visible_answer_sha256": "ffb6aba3bf9705debdcc8f05713e86cf92f17badea634e8c1e14b78991e1000d"
+    },
+    {
+      "id": "DEV-24__existing__nonthinking__42",
+      "outcome": "pass",
+      "issue_types": [],
+      "note": "承认可以提供一般翻译/通用辅助，没有机械拒绝。",
+      "visible_answer_sha256": "6f889714c57f6d864a9a94b53c94add39c44c5c95d7ce5218df62be649780575"
+    },
+    {
+      "id": "DEV-24__proposed__nonthinking__42",
+      "outcome": "pass",
+      "issue_types": [],
+      "note": "承认可以提供一般翻译/通用辅助，没有机械拒绝。",
+      "visible_answer_sha256": "facc4a7436a345e0e62032879f3beebf563f0250149761fb19ed4044ab59729c"
+    },
+    {
+      "id": "DEV-24__existing__thinking__42",
+      "outcome": "pass",
+      "issue_types": [],
+      "note": "承认可以提供一般翻译/通用辅助，没有机械拒绝。",
+      "visible_answer_sha256": "c60e5b2d85c219793a17cbe2cb5ba42738719b80d214546dc0abaf1da31a4a2d"
+    },
+    {
+      "id": "DEV-24__proposed__thinking__42",
+      "outcome": "pass",
+      "issue_types": [],
+      "note": "承认可以提供一般翻译/通用辅助，没有机械拒绝。",
+      "visible_answer_sha256": "0d947eac0216f3943b392a443a4deb4d8a5b5bb678e0e09a2d276080d37aae9d"
+    },
+    {
+      "id": "DEV-01__none__nonthinking__42",
+      "outcome": "pass",
+      "issue_types": [],
+      "note": "按当前问题答对所问中文名称，未发现本次关注的附加事实错误。",
+      "visible_answer_sha256": "cc0aed99721e96a0e2baba9923a11547691a5fbed49cd445542d368a5b664ef5"
+    },
+    {
+      "id": "DEV-01__none__nonthinking__43",
+      "outcome": "pass",
+      "issue_types": [],
+      "note": "按当前问题答对所问中文名称，未发现本次关注的附加事实错误。",
+      "visible_answer_sha256": "f18680ecca676ae7997fd36e1535499670fb239ea71c8b7cd058abffa2a9a22f"
+    },
+    {
+      "id": "DEV-01__none__nonthinking__44",
+      "outcome": "pass",
+      "issue_types": [],
+      "note": "按当前问题答对所问中文名称，未发现本次关注的附加事实错误。",
+      "visible_answer_sha256": "79f3f3eb928f5f44df99313dbcd73c500a4ee3187fd18518f85fe5f5d15ee475"
+    },
+    {
+      "id": "DEV-01__none__thinking__42",
+      "outcome": "pass",
+      "issue_types": [],
+      "note": "按当前问题答对所问中文名称，未发现本次关注的附加事实错误。",
+      "visible_answer_sha256": "68532bd31baa6a494f7c3d87bdb2d63a68f831f3dfd0380a2a79000b7b227638"
+    },
+    {
+      "id": "DEV-01__none__thinking__43",
+      "outcome": "pass",
+      "issue_types": [],
+      "note": "按当前问题答对所问中文名称，未发现本次关注的附加事实错误。",
+      "visible_answer_sha256": "e1a231e17246187942cad9ef440eb32f558052189c8fac3a8c70c0474cdd434b"
+    },
+    {
+      "id": "DEV-01__none__thinking__44",
+      "outcome": "fail",
+      "issue_types": [
+        "wrong_product",
+        "wrong_company"
+      ],
+      "note": "自称通义千问/Qwen、阿里云。",
+      "visible_answer_sha256": "fb86224ef27f9a9a4c7fd648d60d4967a8a51e2721bddad99ea036e2bc009cab"
+    },
+    {
+      "id": "DEV-02__none__nonthinking__42",
+      "outcome": "pass",
+      "issue_types": [],
+      "note": "按当前问题答对所问中文名称，未发现本次关注的附加事实错误。",
+      "visible_answer_sha256": "a8032ca1cf0fc20d4ad27b801ba0224d44078c2f0c5fb094bdff2088ecb771c9"
+    },
+    {
+      "id": "DEV-02__none__nonthinking__43",
+      "outcome": "pass",
+      "issue_types": [],
+      "note": "按当前问题答对所问中文名称，未发现本次关注的附加事实错误。",
+      "visible_answer_sha256": "9a867db3b3706b12f8b044e2762fec06d326f3f951811ffbe63d182523eee245"
+    },
+    {
+      "id": "DEV-02__none__nonthinking__44",
+      "outcome": "pass",
+      "issue_types": [],
+      "note": "按当前问题答对所问中文名称，未发现本次关注的附加事实错误。",
+      "visible_answer_sha256": "64ab81b48b8661571555c139a842273be4ede7c6352133c872f69b66999887d8"
+    },
+    {
+      "id": "DEV-02__none__thinking__42",
+      "outcome": "fail",
+      "issue_types": [
+        "wrong_company"
+      ],
+      "note": "研发公司答成浙江阿里云计算有限公司。",
+      "visible_answer_sha256": "9a7b94b4b584451226c2fbea2b49e43287a028465315c85a8866fd8ddd572765"
+    },
+    {
+      "id": "DEV-02__none__thinking__43",
+      "outcome": "pass",
+      "issue_types": [],
+      "note": "按当前问题答对所问中文名称，未发现本次关注的附加事实错误。",
+      "visible_answer_sha256": "0c213ec44e56be54fbd361e59d67452fee14002a4c7441b04e81db035811e532"
+    },
+    {
+      "id": "DEV-02__none__thinking__44",
+      "outcome": "partial",
+      "issue_types": [
+        "unsupported_company_history"
+      ],
+      "note": "公司名称正确，但额外声称成立于2023年，当前材料未提供该依据。",
+      "visible_answer_sha256": "710b69dcd27dbad80c899153930d874ac6a4bf3753f863c4c983f436bf31608e"
+    }
+  ]
+}

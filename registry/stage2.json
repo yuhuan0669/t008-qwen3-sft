@@ -155,6 +155,30 @@
     "english_identity": "DEFERRED_PENDING",
     "training_started": false,
     "inference_started": false,
+    "sync_status": "LOCAL_GIT_ONLY",
+    "next_inference_check": {
+      "id": "chinese-minimal-check-20261020",
+      "status": "COMPLETE_UAT_RESTORED",
+      "report": "stage2/diagnostics/chinese-minimal-check-20261020/REPORT.md",
+      "requests": 40,
+      "empty_bodies": 0,
+      "length_finishes": 0,
+      "training": false,
+      "uat_restored": true,
+      "formal_acceptance": false,
+      "sync_status": "LOCAL_GIT_ONLY"
+    }
+  },
+  "latest_diagnostic": {
+    "id": "chinese-minimal-check-20261020",
+    "status": "COMPLETE_UAT_RESTORED",
+    "report": "stage2/diagnostics/chinese-minimal-check-20261020/REPORT.md",
+    "requests": 40,
+    "empty_bodies": 0,
+    "length_finishes": 0,
+    "training": false,
+    "uat_restored": true,
+    "formal_acceptance": false,
     "sync_status": "LOCAL_GIT_ONLY"
   }
 }

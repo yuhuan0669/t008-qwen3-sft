@@ -1,0 +1,64 @@
+{
+  "status": "PASS",
+  "request_count": 40,
+  "planned_request_count": 40,
+  "exact_case_order": true,
+  "server_prompt_tokens_equal": true,
+  "request_configuration_equal": true,
+  "errors": 0,
+  "runtime_preflight": "PASS",
+  "training_run": false,
+  "quality_acceptance": "NOT_ESTABLISHED_BY_MECHANICAL_CHECK",
+  "source_files_unchanged": true,
+  "uat_recovery": {
+    "checked_at_utc": "2026-10-21T03:38:36.777798+00:00",
+    "deployment_spec_equal": true,
+    "ready_replicas": 1,
+    "pod": "vllm-57f474b498-5xzwk",
+    "pod_ip": "10.233.108.237",
+    "pod_health": 200,
+    "ingress_health": 200,
+    "ingress": "http://vllm.10.140.17.125.nip.io",
+    "service_model_ids": [
+      "octa-carbon-v1"
+    ],
+    "diagnostic_gpu_pods_remaining": 0,
+    "supplementary_service_probe": {
+      "from": "inside UAT pod to ClusterIP Service DNS",
+      "result": "TIMEOUT",
+      "existing_egress_policy": {
+        "egress": [
+          {
+            "ports": [
+              {
+                "port": 53,
+                "protocol": "UDP"
+              },
+              {
+                "port": 53,
+                "protocol": "TCP"
+              }
+            ]
+          }
+        ],
+        "podSelector": {
+          "matchLabels": {
+            "app": "vllm"
+          }
+        },
+        "policyTypes": [
+          "Egress"
+        ]
+      },
+      "interpretation": "Existing policy allows only DNS egress; external ingress and local health both succeed. No network policy changes."
+    }
+  },
+  "archive_whitespace_check": {
+    "implementation_and_metadata": "PASS",
+    "verbatim_exclusions": [
+      "ANSWERS.md",
+      "results/vllm-server.log"
+    ],
+    "reason": "Preserve model-output Markdown hard line breaks and native log carriage returns."
+  }
+}

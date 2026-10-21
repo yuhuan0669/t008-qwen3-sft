@@ -1,0 +1,7 @@
+{
+  "approved": true,
+  "statement": "开始吧，可暂停UAT，完成后恢复。",
+  "recorded_at_utc": "2026-10-21T03:25:06.614590+00:00",
+  "scope": "Execute the reviewed next step: 40 inference requests with existing candidate; no training; restore original UAT afterwards.",
+  "training_authorized_in_this_run": false
+}

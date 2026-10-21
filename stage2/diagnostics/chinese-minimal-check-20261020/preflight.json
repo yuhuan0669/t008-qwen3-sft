@@ -1,0 +1,12 @@
+{
+  "checked_at_utc": "2026-10-21T03:25:07.236770+00:00",
+  "uat_ready": 1,
+  "uat_health_status": 200,
+  "uat_pod": "vllm-57f474b498-xn4jt",
+  "gpu": "NVIDIA GeForce RTX 4090, 22172 MiB, 24564 MiB, 0 %",
+  "gpu_requesting_inventory_source": "/tmp/t008-current-pods.json",
+  "other_active_gpu_pods": [],
+  "request_count": 40,
+  "cpu_prompt_check": "Will execute in diagnostic pod before loading model",
+  "no_training": true
+}

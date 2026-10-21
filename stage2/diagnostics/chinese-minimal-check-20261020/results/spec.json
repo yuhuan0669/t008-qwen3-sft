@@ -1,0 +1,63 @@
+{
+  "purpose": "Approved 40-request Chinese inference-only development check; no training",
+  "review_commit": "a25a919",
+  "review": "stage2/variants/chinese-minimal-review-v0.1/REVIEW.md",
+  "models": {
+    "base": "/base",
+    "loss3_adapter": "/models-work/t008-v018-loss3-20261020-180616/outputs/full/checkpoints/v0-20261020-180948/checkpoint-80",
+    "adapter_files": {
+      "adapter_config.json": {
+        "sha256": "8bb9aa9174dc6d9eebf14e8c6e6725354ea829dd38731ca2f99c46bf6e2ad5e8",
+        "bytes": 1135
+      },
+      "adapter_model.safetensors": {
+        "sha256": "66297de818752ebb08cc3834b2694e8f33d8d829bf1d5e20c0e367af5da46a29",
+        "bytes": 87360584
+      }
+    }
+  },
+  "versions": {
+    "ms-swift": "4.4.2",
+    "transformers": "5.14.1",
+    "torch": "2.11.0+cu130",
+    "peft": "0.20.0",
+    "vllm": "0.25.1"
+  },
+  "modes": {
+    "thinking": {
+      "temperature": 0.6,
+      "top_p": 0.95,
+      "top_k": 20,
+      "max_tokens": 4096,
+      "min_p": 0,
+      "enable_thinking": true
+    },
+    "nonthinking": {
+      "temperature": 0.7,
+      "top_p": 0.8,
+      "top_k": 20,
+      "max_tokens": 2048,
+      "min_p": 0,
+      "enable_thinking": false
+    }
+  },
+  "template_sha256": "ae8a1b27c3bac461eb5f6c78d5d39cbe29427ad91c9d2da8378e236b8a38448d",
+  "total_requests": 40,
+  "server_seed": 42,
+  "concurrency": 1,
+  "repetition_penalty": 1.0,
+  "max_model_len": 8192,
+  "training": false,
+  "formal_holdout": false,
+  "training_data_sha256": "3565d6602c8d3e7e47b9a2ea522fd4d4e76d90f9116911cd46422434b5897eb6",
+  "systems_sha256": {
+    "existing": "92ed593b3ea69fffc4b31756bb97abdd9806597234b430fbb5a4d95220550984",
+    "proposed": "8fcd51af033cdd2f1f45b27da97bc6f006a46cb793fc4384b458629dfbc5340f"
+  },
+  "source_files": {
+    "stage2/variants/chinese-minimal-review-v0.1/proposal.json": "3611982d7a19becc633ab0d2f07e8c7264f9b06c1829f906099b8eb13cd3dcdb",
+    "stage2/variants/chinese-minimal-review-v0.1/REVIEW.md": "e35868b7db30c5d1484a28dea290431b2a80106cb99d2d8ead7c8839bea51245",
+    "stage1/variants/stage1-cpu-v0.1.8/evaluation/development-24.jsonl": "af0b1db0db437c2a114da2aec87ef68b953189e284ba24435eb74698be450be6",
+    "stage1/variants/stage1-cpu-v0.1.8/train.jsonl": "3565d6602c8d3e7e47b9a2ea522fd4d4e76d90f9116911cd46422434b5897eb6"
+  }
+}

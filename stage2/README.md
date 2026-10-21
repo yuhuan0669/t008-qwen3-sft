@@ -1,4 +1,6 @@
-当前审阅稿：[中文最小修改 v0.1](variants/chinese-minimal-review-v0.1/REVIEW.md) · [5条样本前后对照](variants/chinese-minimal-review-v0.1/SAMPLE_DIFF.md)。英文身份延后；仅本地草稿，未修改现行数据或服务配置。最近完成的 [Swift/vLLM诊断](diagnostics/engine-compare-20261020/REPORT.md) 已区分普通说明截断、模板空正文和重复生成。
+最新完成：[40次中文推理复测](diagnostics/chinese-minimal-check-20261020/REPORT.md) · [逐题正文](diagnostics/chinese-minimal-check-20261020/ANSWERS.md)。40次都有正文并正常结束，新System改善业务边界，Thinking身份仍有失败。UAT已恢复原配置，未训练、未部署新System。
+
+当前数据审阅稿：[中文最小修改 v0.1](variants/chinese-minimal-review-v0.1/REVIEW.md) · [5条样本前后对照](variants/chinese-minimal-review-v0.1/SAMPLE_DIFF.md)。英文身份延后；样本仍是草稿，未修改现行数据。此前的 [Swift/vLLM诊断](diagnostics/engine-compare-20261020/REPORT.md) 已区分普通说明截断、模板空正文和重复生成。
 
 最新训练为 **v0.1.8 身份loss×3：训练完成，中文短身份改善，开发未达标，UAT已恢复**。[本轮报告](runs/t008-v018-loss3-20261020-180616/REPORT.md) · [逐题回答](runs/t008-v018-loss3-20261020-180616/development/ANSWERS.md)。以下保留历史执行说明。
 

@@ -1,0 +1,17 @@
+{
+  "verified": true,
+  "counts": {
+    "training-scores.jsonl": 1050,
+    "probe-scores.jsonl": 72,
+    "generations.jsonl": 48
+  },
+  "result_hashes_match": true,
+  "source_dataset_hashes_unchanged": true,
+  "generation_budget_exhaustions": 0,
+  "training_started": false,
+  "uat_original_spec_equal": true,
+  "uat_ready_replicas": 1,
+  "uat_health_http": 200,
+  "pause_seconds": 381.927271,
+  "completed_at_utc": "2026-10-21T00:35:23.370736+00:00"
+}

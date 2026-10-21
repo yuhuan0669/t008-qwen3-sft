@@ -1,0 +1,12 @@
+{
+  "started_at_utc": "2026-10-21T00:29:01.443465+00:00",
+  "paused": false,
+  "restored": true,
+  "restore_start_utc": "2026-10-21T01:04:01.443465+00:00",
+  "planned_window_end_utc": "2026-10-21T01:14:01.443465+00:00",
+  "authorization": "用户本轮明确授权：允许现在暂停，完成后恢复；对应已说明的最多45分钟身份概率/损失诊断窗口。",
+  "scope": "Inference diagnostics only. No training, deployment replacement, or corpus edits.",
+  "restored_at_utc": "2026-10-21T00:35:23.370736+00:00",
+  "health_status": 200,
+  "original_spec_equal": true
+}

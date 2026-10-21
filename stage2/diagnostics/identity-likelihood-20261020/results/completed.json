@@ -1,0 +1,44 @@
+{
+  "purpose": "IDENTITY_LIKELIHOOD_DIAGNOSTIC_NOT_TRAINING_OR_ACCEPTANCE",
+  "versions": {
+    "ms-swift": "4.4.2",
+    "transformers": "5.14.1",
+    "peft": "0.20.0",
+    "torch": "2.11.0+cu130",
+    "tokenizers": "0.22.2",
+    "datasets": "4.8.4",
+    "modelscope": "1.38.1"
+  },
+  "inputs_sha256": "bc3cb32f527f610af4fb8488360ec8ed858d9c4ad0691c18899ad1946ffddcd0",
+  "template_sha256": "ae8a1b27c3bac461eb5f6c78d5d39cbe29427ad91c9d2da8378e236b8a38448d",
+  "unique_training_records": {
+    "Full2": 105,
+    "v017": 210,
+    "v018": 210
+  },
+  "generation": {
+    "do_sample": false,
+    "max_new_tokens": {
+      "nonthinking": 256,
+      "thinking": 1024
+    },
+    "system": null,
+    "models": [
+      "base",
+      "Full2",
+      "v017",
+      "v018"
+    ]
+  },
+  "score_definition": "mean negative log probability in nats over supervised tokens",
+  "probability_definition": "exp(-mean NLL) is geometric mean token probability, NOT answer accuracy",
+  "thinking_score": "Report forced empty-think prefix and generated reasoning prefix separately",
+  "training": false,
+  "completed": true,
+  "elapsed_seconds": 188.7974410355091,
+  "output_sha256": {
+    "training-scores.jsonl": "7ae22f0a968b479d08529e9bafd60c1ff89ef54e13fcd45064e7626a4fd490b4",
+    "probe-scores.jsonl": "36275d85fa2533fae507fa102fd5b33276a654f3096e29b103b5102bb947412c",
+    "generations.jsonl": "f7816cde33c84b934b5514de1a8e78bb60544931c0ece28d04cb3dce7b3b5782"
+  }
+}

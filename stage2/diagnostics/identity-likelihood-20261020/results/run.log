@@ -1,0 +1,59 @@
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+[INFO:swift] Setting torch_dtype: torch.bfloat16
+[INFO:swift] default_system: None
+[INFO:swift] max_length: 2048
+[INFO:swift] response_prefix: None
+[INFO:swift] agent_template: hermes
+Loading weights:   0%|          | 0/399 [00:00<?, ?it/s]Loading weights:   0%|          | 1/399 [00:00<01:26,  4.62it/s]Loading weights:   7%|▋         | 28/399 [00:00<00:03, 106.07it/s]Loading weights:  15%|█▌        | 60/399 [00:00<00:01, 175.95it/s]Loading weights:  23%|██▎       | 91/399 [00:00<00:01, 214.64it/s]Loading weights:  29%|██▉       | 116/399 [00:00<00:01, 224.63it/s]Loading weights:  37%|███▋      | 148/399 [00:00<00:01, 247.44it/s]Loading weights:  45%|████▌     | 180/399 [00:00<00:00, 255.80it/s]Loading weights:  53%|█████▎    | 211/399 [00:00<00:00, 271.30it/s]Loading weights:  60%|█████▉    | 239/399 [00:01<00:00, 268.73it/s]Loading weights:  68%|██████▊   | 273/399 [00:01<00:00, 288.56it/s]Loading weights:  76%|███████▌  | 303/399 [00:01<00:00, 289.69it/s]Loading weights:  84%|████████▍ | 336/399 [00:01<00:00, 299.55it/s]Loading weights:  92%|█████████▏| 369/399 [00:01<00:00, 302.85it/s]Loading weights: 100%|██████████| 399/399 [00:01<00:00, 253.69it/s]
+{"model": "base", "phase": "training_answer_scores_done", "seconds": 9.170966041274369}
+{"model": "base", "id": "TRAIN-CN-MARKER", "mode": "nonthinking", "tokens": 63, "budget_exhausted": false, "seconds": 10.598750768229365}
+{"model": "base", "id": "TRAIN-CN-MARKER", "mode": "thinking", "tokens": 65, "budget_exhausted": false, "seconds": 12.01404750160873}
+{"model": "base", "id": "TRAIN-CN-NATURAL", "mode": "nonthinking", "tokens": 66, "budget_exhausted": false, "seconds": 13.448795169591904}
+{"model": "base", "id": "TRAIN-CN-NATURAL", "mode": "thinking", "tokens": 226, "budget_exhausted": false, "seconds": 18.238516972400248}
+{"model": "base", "id": "TRAIN-EN-MARKER", "mode": "nonthinking", "tokens": 47, "budget_exhausted": false, "seconds": 19.283912894316018}
+{"model": "base", "id": "TRAIN-EN-MARKER", "mode": "thinking", "tokens": 45, "budget_exhausted": false, "seconds": 20.287561172619462}
+{"model": "base", "id": "TRAIN-EN-NATURAL", "mode": "nonthinking", "tokens": 47, "budget_exhausted": false, "seconds": 21.331281851045787}
+{"model": "base", "id": "TRAIN-EN-NATURAL", "mode": "thinking", "tokens": 174, "budget_exhausted": false, "seconds": 25.01843197643757}
+{"model": "base", "id": "DEV-01", "mode": "nonthinking", "tokens": 16, "budget_exhausted": false, "seconds": 25.422633193433285}
+{"model": "base", "id": "DEV-01", "mode": "thinking", "tokens": 330, "budget_exhausted": false, "seconds": 32.3899950068444}
+{"model": "base", "id": "DEV-02", "mode": "nonthinking", "tokens": 52, "budget_exhausted": false, "seconds": 33.53680834174156}
+{"model": "base", "id": "DEV-02", "mode": "thinking", "tokens": 297, "budget_exhausted": false, "seconds": 39.82106132525951}
+{"model": "Full2", "phase": "training_answer_scores_done", "seconds": 43.380088343285024}
+{"model": "Full2", "id": "TRAIN-CN-MARKER", "mode": "nonthinking", "tokens": 35, "budget_exhausted": false, "seconds": 44.41182324755937}
+{"model": "Full2", "id": "TRAIN-CN-MARKER", "mode": "thinking", "tokens": 368, "budget_exhausted": false, "seconds": 54.887504789978266}
+{"model": "Full2", "id": "TRAIN-CN-NATURAL", "mode": "nonthinking", "tokens": 35, "budget_exhausted": false, "seconds": 55.981690865941346}
+{"model": "Full2", "id": "TRAIN-CN-NATURAL", "mode": "thinking", "tokens": 189, "budget_exhausted": false, "seconds": 61.643679616972804}
+{"model": "Full2", "id": "TRAIN-EN-MARKER", "mode": "nonthinking", "tokens": 44, "budget_exhausted": false, "seconds": 63.02440204285085}
+{"model": "Full2", "id": "TRAIN-EN-MARKER", "mode": "thinking", "tokens": 247, "budget_exhausted": false, "seconds": 70.26170480903238}
+{"model": "Full2", "id": "TRAIN-EN-NATURAL", "mode": "nonthinking", "tokens": 44, "budget_exhausted": false, "seconds": 71.5258959652856}
+{"model": "Full2", "id": "TRAIN-EN-NATURAL", "mode": "thinking", "tokens": 210, "budget_exhausted": false, "seconds": 77.43648831732571}
+{"model": "Full2", "id": "DEV-01", "mode": "nonthinking", "tokens": 13, "budget_exhausted": false, "seconds": 77.82968533504754}
+{"model": "Full2", "id": "DEV-01", "mode": "thinking", "tokens": 295, "budget_exhausted": false, "seconds": 86.12311942037195}
+{"model": "Full2", "id": "DEV-02", "mode": "nonthinking", "tokens": 20, "budget_exhausted": false, "seconds": 86.71552639547735}
+{"model": "Full2", "id": "DEV-02", "mode": "thinking", "tokens": 275, "budget_exhausted": false, "seconds": 94.48862472362816}
+{"model": "v017", "phase": "training_answer_scores_done", "seconds": 101.32067801244557}
+{"model": "v017", "id": "TRAIN-CN-MARKER", "mode": "nonthinking", "tokens": 18, "budget_exhausted": false, "seconds": 101.86322781816125}
+{"model": "v017", "id": "TRAIN-CN-MARKER", "mode": "thinking", "tokens": 271, "budget_exhausted": false, "seconds": 109.5184595650062}
+{"model": "v017", "id": "TRAIN-CN-NATURAL", "mode": "nonthinking", "tokens": 18, "budget_exhausted": false, "seconds": 110.05164323654026}
+{"model": "v017", "id": "TRAIN-CN-NATURAL", "mode": "thinking", "tokens": 208, "budget_exhausted": false, "seconds": 116.12333437241614}
+{"model": "v017", "id": "TRAIN-EN-MARKER", "mode": "nonthinking", "tokens": 19, "budget_exhausted": false, "seconds": 116.72811766341329}
+{"model": "v017", "id": "TRAIN-EN-MARKER", "mode": "thinking", "tokens": 199, "budget_exhausted": false, "seconds": 122.71202224772424}
+{"model": "v017", "id": "TRAIN-EN-NATURAL", "mode": "nonthinking", "tokens": 58, "budget_exhausted": false, "seconds": 124.48510892316699}
+{"model": "v017", "id": "TRAIN-EN-NATURAL", "mode": "thinking", "tokens": 193, "budget_exhausted": false, "seconds": 130.14207762666047}
+{"model": "v017", "id": "DEV-01", "mode": "nonthinking", "tokens": 17, "budget_exhausted": false, "seconds": 130.64526683371514}
+{"model": "v017", "id": "DEV-01", "mode": "thinking", "tokens": 183, "budget_exhausted": false, "seconds": 135.81944466754794}
+{"model": "v017", "id": "DEV-02", "mode": "nonthinking", "tokens": 14, "budget_exhausted": false, "seconds": 136.2396326912567}
+{"model": "v017", "id": "DEV-02", "mode": "thinking", "tokens": 321, "budget_exhausted": false, "seconds": 145.33264771383256}
+{"model": "v018", "phase": "training_answer_scores_done", "seconds": 152.189327577129}
+{"model": "v018", "id": "TRAIN-CN-MARKER", "mode": "nonthinking", "tokens": 18, "budget_exhausted": false, "seconds": 152.73971952032298}
+{"model": "v018", "id": "TRAIN-CN-MARKER", "mode": "thinking", "tokens": 20, "budget_exhausted": false, "seconds": 153.32720835879445}
+{"model": "v018", "id": "TRAIN-CN-NATURAL", "mode": "nonthinking", "tokens": 18, "budget_exhausted": false, "seconds": 153.88766534347087}
+{"model": "v018", "id": "TRAIN-CN-NATURAL", "mode": "thinking", "tokens": 268, "budget_exhausted": false, "seconds": 161.37590826954693}
+{"model": "v018", "id": "TRAIN-EN-MARKER", "mode": "nonthinking", "tokens": 19, "budget_exhausted": false, "seconds": 161.94171544071287}
+{"model": "v018", "id": "TRAIN-EN-MARKER", "mode": "thinking", "tokens": 230, "budget_exhausted": false, "seconds": 168.38492693658918}
+{"model": "v018", "id": "TRAIN-EN-NATURAL", "mode": "nonthinking", "tokens": 41, "budget_exhausted": false, "seconds": 169.56185165327042}
+{"model": "v018", "id": "TRAIN-EN-NATURAL", "mode": "thinking", "tokens": 199, "budget_exhausted": false, "seconds": 175.26549111679196}
+{"model": "v018", "id": "DEV-01", "mode": "nonthinking", "tokens": 17, "budget_exhausted": false, "seconds": 175.81260356586426}
+{"model": "v018", "id": "DEV-01", "mode": "thinking", "tokens": 208, "budget_exhausted": false, "seconds": 182.05406680703163}
+{"model": "v018", "id": "DEV-02", "mode": "nonthinking", "tokens": 11, "budget_exhausted": false, "seconds": 182.42987775150687}
+{"model": "v018", "id": "DEV-02", "mode": "thinking", "tokens": 214, "budget_exhausted": false, "seconds": 188.79742206074297}

@@ -127,10 +127,21 @@ for i, r in enumerate(after):
                     'provenance_detail': 'changes.jsonl' if c else '../stage1-cpu-v0.1.11/train-map.jsonl'})
 jsonl('train-map.jsonl', mapping)
 identity_keys = sorted({key(r) for r in after if SOURCES[r['dataset']] == 'identity'})
-save('identity-keys.json', {'dataset_path': REL + '/train.jsonl', 'dataset_sha256': digest,
-                          'identity_exposures': 236, 'unique_messages': len(identity_keys),
-                          'identity_sources': [s for s, group in SOURCES.items() if group == 'identity'],
-                          'identity_message_sha256': identity_keys})
+identity_binding = {'dataset_path': REL + '/train.jsonl', 'dataset_sha256': digest,
+                    'identity_exposures': 236, 'unique_messages': len(identity_keys),
+                    'identity_sources': [s for s, group in SOURCES.items() if group == 'identity'],
+                    'identity_message_sha256': identity_keys}
+alias_path = D / 'native-identity-key-aliases.json'
+if alias_path.exists():
+    aliases = json.loads(alias_path.read_text())
+    assert aliases['dataset_sha256'] == digest
+    assert all(a['raw_messages_sha256'] in identity_keys for a in aliases['aliases'])
+    matching = sorted(set(identity_keys) | {a['prepared_messages_sha256'] for a in aliases['aliases']})
+    identity_binding.update(raw_identity_message_sha256=identity_keys,
+                            identity_message_sha256=matching, matching_key_count=len(matching),
+                            native_preprocessing_alias_count=len(matching) - len(identity_keys),
+                            native_alias_source=alias_path.name)
+save('identity-keys.json', identity_binding)
 shutil.copyfile(PARENT / 'identity_loss3.py', D / 'identity_loss3.py')
 shutil.copyfile(PARENT / 'COMPANY_FACTS.md', D / 'COMPANY_FACTS.md')
 (D / 'evaluation').mkdir(exist_ok=True)

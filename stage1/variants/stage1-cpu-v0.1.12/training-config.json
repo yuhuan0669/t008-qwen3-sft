@@ -99,11 +99,11 @@
     "User confirms this configuration and separately authorizes training and any UAT pause"
   ],
   "data_version": "stage1-cpu-v0.1.12",
-  "status": "REVIEW_READY_NATIVE_CPU_PENDING",
+  "status": "CPU_CHECKED_NO_TRAINING",
   "recipe_change": "Restore 4 natural identity records; append company facts 4, Chinese identity 16, generic nonthinking 12, business assistance 8. No hyperparameter change.",
-  "runtime_validation": "Local structure only; native Swift CPU encoding and actual token-loss-mask checks NOT RUN.",
+  "runtime_validation": "Verified in native Swift CPU pipeline: 1315 records retained, no length truncation/drop/empty supervision; identity answers x3 with 4 normalized-message aliases; intermediate native separators remain x1. No training/inference.",
   "epoch_exposure_note": "Each record used once per Full epoch; 3-step Smoke is a separate run on the same file, not appended data",
   "config_revision": "chinese-coverage-v0.1.12",
   "evaluation_config": "stage1/variants/stage1-cpu-v0.1.12/evaluation-config.json",
-  "cpu_validation_report": null
+  "cpu_validation_report": "stage1/variants/stage1-cpu-v0.1.12/cpu-check/report.json"
 }

@@ -1,8 +1,8 @@
 # T-008 · Qwen3-8B 基础 SFT 统一版本库
 
-**当前待审阅：v0.1.12中文数据候选已在本地形成，总量1315条。** 恢复4条自然身份原文，追加公司事实4条、中文身份16条、普通非思考12条、业务辅助与边界8条；上版其余6处修订保留。英文及原4条JSON训练记录不变，最新已训练模型仍为v0.1.10。
+**当前：v0.1.12原生Swift CPU检查通过，1315条数据保持原文，尚未训练。** 4条新增多轮身份的匹配索引已补齐，正文×3生效；其他训练参数不变。英文未改，最新已训练模型仍为v0.1.10。
 
-[样本前后对照](stage1/variants/stage1-cpu-v0.1.12/SAMPLE_DIFF.md) · [数据统计](stage1/variants/stage1-cpu-v0.1.12/STATISTICS.md) · [配置差异](stage1/variants/stage1-cpu-v0.1.12/CONFIG_DIFF.md)。本版尚未实际Swift编码、推理或训练；未操作UAT，未上传GitHub或Drive。
+[CPU检查结果](stage1/variants/stage1-cpu-v0.1.12/CPU_CHECK.md) · [样本前后对照](stage1/variants/stage1-cpu-v0.1.12/SAMPLE_DIFF.md) · [数据统计](stage1/variants/stage1-cpu-v0.1.12/STATISTICS.md)。无超长、长度截断或丢行，一轮预计83步；UAT配置不变、1/1就绪，临时CPU Pod已删除。本次未推理、训练或上传GitHub/Drive。
 
 这是 Qwen3-8B 自我认知＋通用指令 SFT 的统一维护入口。任务版本为 **T-008 v1.5 第15节**；历史流程方案为 **v1.2 / process-restore-R1**；本库首次归档版本为 **archive-v1.0.0**。三者分别表示任务、流程、归档版本，均不代表模型已验收。
 

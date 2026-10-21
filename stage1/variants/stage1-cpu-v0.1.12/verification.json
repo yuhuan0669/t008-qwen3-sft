@@ -14,7 +14,8 @@
     "no_exact_added_development_prompt_overlap",
     "review_registries_separate_from_latest_trained_v0110",
     "python_sources_parse_without_importing_swift",
-    "review_markdown_local_links_exist"
+    "review_markdown_local_links_exist",
+    "native_cpu_1315_members_lengths_masks_and_identity_aliases_verified"
   ],
   "data_sha256": "89da792c5b91a4b5cecda1a90322edc03fdc1f43e6bd0a52082c35e49e81ec8f",
   "rows": 1315,
@@ -24,10 +25,21 @@
   "unique_message_records": 797,
   "english_identity_exposures_preserved": 102,
   "english_records_changed": 0,
-  "native_swift_cpu_encoding": "NOT_RUN",
+  "native_swift_cpu_encoding": "VERIFIED_CPU_V0112",
   "gpu_inference": "NOT_RUN",
   "training": "NOT_RUN",
-  "cluster_accessed": false,
+  "cluster_accessed": true,
   "formal_holdout_accessed": false,
-  "scope": "Local byte, structure, arithmetic, configuration and registry checks only; not token encoding, actual loss-mask verification or model quality evaluation."
+  "scope": "Static preservation checks plus separately linked native CPU encoding/mask evidence. No GPU inference, training or model quality evaluation.",
+  "native_cpu_report": "stage1/variants/stage1-cpu-v0.1.12/cpu-check/report.json",
+  "identity_raw_message_keys": 230,
+  "native_identity_preprocessing_aliases": 4,
+  "raw_log_whitespace_preserved": {
+    "files": [
+      "cpu-check/cpu-check.log",
+      "cpu-check/attempt1/cpu-check.log",
+      "cpu-check/attempt2/cpu-check.log"
+    ],
+    "reason": "Native progress output contains original trailing spaces on line 9. Raw evidence kept byte-for-byte; prose and code whitespace checked separately."
+  }
 }

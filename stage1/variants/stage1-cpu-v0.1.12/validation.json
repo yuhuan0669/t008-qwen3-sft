@@ -10,8 +10,14 @@
   },
   "english_records_changed": 0,
   "json_training_records_changed": 0,
-  "native_swift_cpu_check": "NOT_RUN",
+  "native_swift_cpu_check": "VERIFIED_CPU_V0112",
   "training_started": false,
   "inference_executed": false,
-  "cluster_accessed": false
+  "cluster_accessed": true,
+  "cpu_report": "stage1/variants/stage1-cpu-v0.1.12/cpu-check/report.json",
+  "max_tokens": 2048,
+  "silent_dropped_rows": 0,
+  "empty_supervision_rows": 0,
+  "gpu_requested": false,
+  "identity_aliases_added": 4
 }

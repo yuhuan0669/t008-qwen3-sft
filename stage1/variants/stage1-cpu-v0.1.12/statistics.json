@@ -142,9 +142,29 @@
     "note": "Moved from four replaced slots into four new slots; not eight fact records."
   },
   "supervised_tokens": {
-    "status": "PENDING_NATIVE_SWIFT_ENCODING",
-    "counts": null,
-    "weighted_share": null
+    "status": "VERIFIED_NATIVE_SWIFT_CPU",
+    "report": "cpu-check/report.json",
+    "counts_by_group": {
+      "generic": 1515617,
+      "identity": 9008,
+      "positioning": 1622
+    },
+    "total": 1526247,
+    "weighted_units_by_group": {
+      "generic": 1515617.0,
+      "identity": 27008.0,
+      "positioning": 1622.0
+    },
+    "identity_unweighted_share": 0.005902059103146476,
+    "identity_weighted_token_share": 0.017489430123548887,
+    "weighted_share_note": "Token units after loss scaling, not measured loss or gradient contribution."
   },
-  "counts_note": "A row is one dataset exposure per epoch. Multi-turn rows contain more than one assistant turn; unique messages and token counts are different measures."
+  "counts_note": "A row is one dataset exposure per epoch. Multi-turn rows contain more than one assistant turn; unique messages and token counts are different measures.",
+  "native_encoding": {
+    "max_tokens": 2048,
+    "p99_tokens": 2037,
+    "rows": 1315,
+    "native_identity_history_thoughts_removed": 2,
+    "native_identity_dynamic_eos_tokens_weight1": 8
+  }
 }

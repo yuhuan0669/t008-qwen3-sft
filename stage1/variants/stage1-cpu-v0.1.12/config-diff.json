@@ -31,5 +31,8 @@
   "loss_plugin_bytes_unchanged": true,
   "normalization_rule_unchanged": true,
   "identity_index_regenerated": true,
-  "native_cpu_encoding_executed": false
+  "native_cpu_encoding_executed": true,
+  "cpu_report": "stage1/variants/stage1-cpu-v0.1.12/cpu-check/report.json",
+  "native_preprocessing_identity_aliases_added": 4,
+  "training_data_bytes_unchanged_since_review": true
 }

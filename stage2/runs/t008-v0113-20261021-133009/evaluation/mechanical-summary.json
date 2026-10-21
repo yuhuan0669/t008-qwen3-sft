@@ -1,0 +1,72 @@
+{
+  "total": 120,
+  "first_turn_groups_verified": 60,
+  "groups": [
+    {
+      "model": "t008-base",
+      "mode": "nonthinking",
+      "requests": 30,
+      "empty": 0,
+      "length": 0,
+      "finish_reasons": {
+        "stop": 30
+      },
+      "json_requests": 4,
+      "json_parse": 4,
+      "json_schema": 4,
+      "json_exact": 4,
+      "completion_tokens": 1522,
+      "seconds": 26.95
+    },
+    {
+      "model": "t008-base",
+      "mode": "thinking",
+      "requests": 30,
+      "empty": 0,
+      "length": 0,
+      "finish_reasons": {
+        "stop": 30
+      },
+      "json_requests": 4,
+      "json_parse": 4,
+      "json_schema": 4,
+      "json_exact": 4,
+      "completion_tokens": 10092,
+      "seconds": 174.76
+    },
+    {
+      "model": "t008-v0113",
+      "mode": "nonthinking",
+      "requests": 30,
+      "empty": 0,
+      "length": 0,
+      "finish_reasons": {
+        "stop": 30
+      },
+      "json_requests": 4,
+      "json_parse": 4,
+      "json_schema": 4,
+      "json_exact": 4,
+      "completion_tokens": 1044,
+      "seconds": 21.98
+    },
+    {
+      "model": "t008-v0113",
+      "mode": "thinking",
+      "requests": 30,
+      "empty": 0,
+      "length": 0,
+      "finish_reasons": {
+        "stop": 30
+      },
+      "json_requests": 4,
+      "json_parse": 4,
+      "json_schema": 4,
+      "json_exact": 4,
+      "completion_tokens": 10709,
+      "seconds": 202.2
+    }
+  ],
+  "api_errors": 0,
+  "training": false
+}

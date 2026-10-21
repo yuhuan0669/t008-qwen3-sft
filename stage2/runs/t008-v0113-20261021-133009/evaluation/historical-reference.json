@@ -1,0 +1,7 @@
+{
+  "source": "stage2/diagnostics/final-chinese-selection-20261021-094210/scored.jsonl",
+  "source_sha256": "9becd86a57ea86bc986e366a6d3e44d77ebfd4f8ef978e37349c192568272d8b",
+  "rows": 24,
+  "fresh_requests": 0,
+  "purpose": "Historical v0.1.12 answers on known regression only; not results for new development cases."
+}

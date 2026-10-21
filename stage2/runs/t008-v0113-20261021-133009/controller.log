@@ -1,0 +1,25 @@
+{"run_id": "t008-v0113-20261021-133009", "experiment_approved": true, "uat_pause_approved": true, "approved_data_sha256": "70f7321bc2f277f898dbc6e845eb626cb61300bcb9adebe3273dcbe173ac4d9a", "window_start_utc": "2026-10-21T13:32:34.174101+00:00", "window_end_utc": "2026-10-21T15:32:34.174101+00:00", "restore_start_utc": "2026-10-21T14:52:34.174101+00:00", "decision_ref": "User: 3开始训练，可暂停UAT，完成后恢复并核验健康。Approved frozen v0.1.13: 1327 rows, 3-step Smoke plus ONE Full from original base; unchanged parameters; planned 120-request Chinese development comparison, English deferred. 2h recovery ceiling; not expected outage duration.", "restoration_owner": "Current implementation agent", "uat_coordination": "Owner directly confirmed immediate pause", "max_full_runs": 1}
+2026-10-21T13:32:37.724728+00:00 Starting smoke
+job.batch/t008-v0113-20261021-133009-smoke created
+
+cat: /work/t008-v0113-20261021-133009/outputs/full/run_manifest.json: 没有那个文件或目录
+command terminated with exit code 1
+cat: /work/t008-v0113-20261021-133009/outputs/full/train.log: 没有那个文件或目录
+command terminated with exit code 1
+cat: /work/t008-v0113-20261021-133009/outputs/full/training-scalars.json: 没有那个文件或目录
+command terminated with exit code 1
+2026-10-21T13:34:03.742727+00:00 smoke verified, step 3
+2026-10-21T13:34:03.742816+00:00 Starting full
+job.batch/t008-v0113-20261021-133009-full created
+
+2026-10-21T13:48:36.589158+00:00 full verified, step 83
+pod/t008-v0113-20261021-133009-eval created
+
+pod/t008-v0113-20261021-133009-eval condition met
+
+tar: Failed to set default locale
+2026-10-21T13:48:38.471557+00:00 Starting frozen 120-request Chinese development comparison
+2026-10-21T13:57:57.694721+00:00 Chinese comparison complete
+2026-10-21T13:57:58.696028+00:00 Restoring original UAT
+{"started_at_utc": "2026-10-21T13:32:34.174101+00:00", "restored": true, "paused": false, "restored_at_utc": "2026-10-21T14:00:45.576449+00:00", "service_spec_equal": true, "health_status": 200}
+2026-10-21T14:00:45.587221+00:00 Original UAT restored; internal health verified

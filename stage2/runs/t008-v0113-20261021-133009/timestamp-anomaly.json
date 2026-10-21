@@ -1,0 +1,16 @@
+{
+  "observed_local_utc": "2026-10-21T13:50:12.207144+00:00",
+  "observed_worker_utc": "2026-10-21T13:50:13.314247+00:00",
+  "eval_pod_api_created": "2026-10-21T21:50:56Z",
+  "eval_pod_worker_started": "2026-10-21T13:48:37Z",
+  "full_job_status": "DeadlineExceeded and succeeded=1 coexist",
+  "full_container": {
+    "containerID": "containerd://095e48f83af6a2e815c525b4fcaad4722f3ed0d4c78490332dbef3f76d1a5a2f",
+    "exitCode": 0,
+    "finishedAt": "2026-10-21T13:48:22Z",
+    "reason": "Completed",
+    "startedAt": "2026-10-21T13:34:05Z"
+  },
+  "training_result": "83/83 epoch1 checkpoint and hash verified; no retraining",
+  "root_cause": "Timestamp inconsistency observed; control-plane clock issue suspected, not repaired or independently diagnosed."
+}

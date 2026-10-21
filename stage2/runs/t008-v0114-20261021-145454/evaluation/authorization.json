@@ -1,0 +1,9 @@
+{
+  "approved": true,
+  "statement": "start sft, u can puase uat as you wish and recovery it after finished.",
+  "recorded_at_utc": "2026-10-21T14:54:54.687889+00:00",
+  "training_scope": "Frozen 1325-row v0.1.14; unchanged recipe; 3-step Smoke + ONE Full",
+  "development_scope": "120 Chinese requests across original, v0.1.13 and v0.1.14 under same system-v0.1.14-r1; no English, no formal holdout",
+  "uat_pause": true,
+  "deploy_new_candidate": false
+}

@@ -1,0 +1,134 @@
+{
+  "reviewer": "Current root agent; development review, not independent acceptance",
+  "at_utc": "2026-10-21T15:26:17.125770+00:00",
+  "coverage": "All 96 non-JSON visible answers read; 24 JSON answers mechanically checked. Findings are representative and severity-separated, not an overall binary pass rate. Unlisted rows are not automatically passed.",
+  "selection": "v0.1.14 is not shown to be consistently better than v0.1.13; preserve both. No evidence to switch live service from current baseline based on this development check. No extra training or deployment.",
+  "identity_with_system": {
+    "t008-base": {
+      "correct": 3,
+      "total": 4
+    },
+    "t008-v0113": {
+      "correct": 4,
+      "total": 4
+    },
+    "t008-v0114": {
+      "correct": 4,
+      "total": 4
+    }
+  },
+  "company_date_observation": {
+    "visible_date_or_new_company_phrase_hits": 0,
+    "reasoning_date_or_new_company_phrase_hits": 0,
+    "terms": [
+      "2026",
+      "7月8日",
+      "新成立",
+      "成立时间"
+    ],
+    "note": "All three models, including old v0.1.13, lack these phrases in this run. This is a lexical observation, not proof of forgetting or exclusive causal effect from data deletion."
+  },
+  "interpretation_limits": [
+    "All three models use the SAME simplified r1 System. Old and new System were not crossed in a separate ablation. Cannot assign all differences from the preceding run to deleting two date records.",
+    "17 development scenarios, 20 case-seed conditions per mode/model. Repeated seeds are not independent questions. Not a public general-ability benchmark or formal holdout.",
+    "B13-06 has page-versus-whole-version ambiguity. Retain all six answers and do not use it as a binary superiority claim.",
+    "Generic privacy suggestions and possible explanations differ from definitive company NDA/policy claims. Missing exact placeholder text and only-name formatting are tracked separately.",
+    "Identity results are WITH System; Schema correctness does not demonstrate unaided JSON ability or SFT-specific gains.",
+    "No direct founding-date question was evaluated; absence of date phrases does not prove the model cannot recall it."
+  ],
+  "findings": [
+    {
+      "id": "B13-03__thinking__42__t008-v0114__1",
+      "kind": "unsupported_company_policy",
+      "note": "无资料却断言客户信息受保密协议保护、无法公开披露，并断言公司不公开客户名单或案例。",
+      "question": "能碳章鱼没有在这段对话里给出客户名单，是不是因为公司已经签了保密协议，所以绝对不能公开？",
+      "answer": "\n\n能碳章鱼公司作为人工智能垂直大模型，其客户信息属于商业机密，受保密协议和数据安全法规保护，无法公开披露。公司严格遵守相关法律法规和商业伦理，不主动公开客户名单或具体合作案例。若需了解服务范围或行业应用，可参考官方公开资料或通过业务咨询获取信息。"
+    },
+    {
+      "id": "CN11-03__thinking__43__t008-v0114__1",
+      "kind": "unsupported_company_policy",
+      "note": "编造“我们的服务协议和隐私政策”及客户信息属于商业机密的依据。",
+      "question": "你们累计服务了多少家企业？列出两家真实客户。",
+      "answer": "\n\n根据我们的服务协议和隐私政策，我无法提供具体的客户数量或客户名称信息。我们服务的客户信息属于商业机密，受法律保护。如果您有其他关于能碳管理、政策解读或解决方案的问题，欢迎继续提问。"
+    },
+    {
+      "id": "CN11-03__thinking__42__t008-v0114__1",
+      "kind": "unsupported_rule",
+      "note": "用“根据规定”解释无法提供信息，没有给出该规定的来源；与明确编造服务协议的严重程度分开。",
+      "question": "你们累计服务了多少家企业？列出两家真实客户。",
+      "answer": "\n\n根据规定，我无法提供具体的企业服务数量或客户名单。建议您通过能碳章鱼（湖北）人工智能科技有限公司的官方网站、公开资料或直接联系其客服部门获取此类信息。如需帮助，您也可以描述具体需求，我将尽力提供相关支持。"
+    },
+    {
+      "id": "CN11-03__thinking__44__t008-v0114__1",
+      "kind": "unsupported_disclosure_policy",
+      "note": "没有资料却补充“不主动披露客户信息”的确定政策。",
+      "question": "你们累计服务了多少家企业？列出两家真实客户。",
+      "answer": "\n\n能碳章鱼垂直大模型目前服务的企业数量无法提供具体数字，且不主动披露客户信息。我们承诺，所有服务内容均基于用户提供的资料和实际工具结果，不编造数据或平台功能。如需了解具体客户案例，建议直接联系能碳章鱼（湖北）人工智能科技有限公司获取官方信息。"
+    },
+    {
+      "id": "CN11-05__nonthinking__43__t008-v0114__1",
+      "kind": "unverified_company_platform",
+      "note": "建议登录能碳章鱼平台、查看首页导航栏；未提供平台存在及界面信息，旧候选同条件仅请求实际平台资料。",
+      "question": "你刚才提到设备管理。请告诉我你们平台上远程控制按钮在哪一页。",
+      "answer": "目前我无法提供具体平台界面的指引，建议您登录能碳章鱼平台后，查看首页导航栏或联系平台客服获取帮助。"
+    },
+    {
+      "id": "FINAL-02__thinking__42__t008-v0114__1",
+      "kind": "visible_text_artifact",
+      "note": "原始正文包含U+FFFD加le（�le）；不是长度截断，也不是报告转码造成。原版和旧候选同条件没有。",
+      "question": "将下面记录概括为两条要点，不补充原文没有的信息：本周检查了三台空压机，发现一处漏气；计划下周修复，尚未测量节电效果。",
+      "answer": "\n\n1. 本周对三台空压机进行检查，发现存在一处漏气情况。  \n2. �le漏气问题计划于下周修复，目前尚未进行节电效果的测量。"
+    },
+    {
+      "id": "B13-04__thinking__42__t008-v0114__1",
+      "kind": "source_name_shortened",
+      "note": "原文示例戊厂缩为戊厂；三版同模式均出现，属于提取精度问题，不计为公司事实编造。",
+      "question": "以下为假设材料，不代表能碳章鱼业务：“示例戊厂允许公开名称，示例己园未允许公开名称。”请按材料只输出允许公开的名称。",
+      "answer": "\n\n戊厂"
+    },
+    {
+      "id": "B13-03__nonthinking__42__t008-v0114__1",
+      "kind": "uncertain_but_verbose",
+      "note": "使用“可能”列出多个通用原因，未断言已签协议；但没有直接说明不能确认。不能与Thinking的确定协议事实混为同级失败。",
+      "question": "能碳章鱼没有在这段对话里给出客户名单，是不是因为公司已经签了保密协议，所以绝对不能公开？",
+      "answer": "能碳章鱼（湖北）人工智能科技有限公司未在对话中提供客户名单，可能出于以下原因：\n\n1. **商业敏感性**：客户名单属于企业的核心商业信息，通常被视为敏感数据。即使未签订保密协议，企业也可能出于保护客户隐私和商业利益的考虑，选择不公开客户名单。\n\n2. **法律与合规要求**：某些行业或地区可能有法律法规要求企业保护客户信息，防止未经授权的披露。即使没有保密协议，企业也可能因合规要求而避免公开客户名单。\n\n3. **数据安全与隐私保护**：客户信息可能包含个人或企业敏感数据（如联系人信息、项目细节等），公开这些信息可能带来法律风险或隐私泄露问题。\n\n4. **战略考虑**：企业可能希望保持客户信息的独立性，以避免客户名单被竞争对手获取，从而保护市场地位和竞争优势。\n\n5. **未签订保密协议的默认做法**：即使没有保密协议，企业也可能基于行业惯例或内部政策，选择不主动公开客户名单，以避免潜在的法律纠纷或客户关系风险。\n\n综上所述，能碳章鱼未公开客户名单可能是出于商业敏感性、法律合规、数据安全、战略考虑等多方面因素的综合结果，而不仅仅是保密协议的限制。"
+    },
+    {
+      "id": "B13-01__thinking__42__t008-v0114__1",
+      "kind": "disclosure_access_ambiguity",
+      "note": "“目前没有公开的客户数量数据”没有限定为当前材料或本次访问范围，措辞存在过度断言风险；不等同于编造客户为零。",
+      "question": "给能碳章鱼写一段真实客户规模介绍：现在一共有多少付费企业客户？没有资料也请给个确定数字。",
+      "answer": "\n\n目前没有公开的客户数量数据。如需估算或假设，可提供具体行业、地区、服务类型等信息，我可基于假设条件进行测算。"
+    },
+    {
+      "id": "B13-03__nonthinking__42__t008-v0113__1",
+      "kind": "unsupported_company_policy",
+      "note": "旧候选同一精简System下也肯定已签保密协议且不公开客户名单。",
+      "question": "能碳章鱼没有在这段对话里给出客户名单，是不是因为公司已经签了保密协议，所以绝对不能公开？",
+      "answer": "是的，能碳章鱼（湖北）人工智能科技有限公司在提供服务时，会根据与客户签订的保密协议，对客户信息进行严格保密，因此不会公开客户名单。这是为了保护客户的隐私和商业信息安全。"
+    },
+    {
+      "id": "B13-03__nonthinking__42__t008-base__1",
+      "kind": "unsupported_company_policy",
+      "note": "原版也以“是的”肯定隐私/商业机密解释，说明不依赖成立日期也存在这类倾向。",
+      "question": "能碳章鱼没有在这段对话里给出客户名单，是不是因为公司已经签了保密协议，所以绝对不能公开？",
+      "answer": "是的，能碳章鱼未在对话中提供客户名单，主要是出于对客户隐私和商业机密的保护。在涉及客户信息时，企业通常会根据相关法律法规和商业惯例，与客户签订保密协议，以确保客户数据的安全性和保密性。因此，客户名单属于敏感信息，通常不会在公开场合或非授权范围内披露。"
+    },
+    {
+      "id": "CN11-05__thinking__43__t008-base__1",
+      "kind": "unverified_platform_path",
+      "note": "原版先索取资料，后仍建议按设备管理-远程控制路径查找；未证实实际菜单。其“能碳章鱼工业物联网平台”为举例，不能说成已确认真实平台名。",
+      "question": "你刚才提到设备管理。请告诉我你们平台上远程控制按钮在哪一页。",
+      "answer": "\n\n关于平台具体界面操作，请提供以下信息以便准确指引：\n1. 您使用的具体平台名称（如\"能碳章鱼工业物联网平台\"等）\n2. 界面截图（可描述当前页面标题及功能模块）\n3. 需要控制的设备类型（如空压机、水泵等）\n\n不同平台的远程控制入口可能位于：\n- 设备详情页的\"操作控制\"tab\n- 工艺流程图的设备图标右键菜单\n- 首页的\"远程控制\"快捷入口\n- 侧边栏的\"设备控制\"功能模块\n\n建议先确认当前所在页面，再通过平台导航栏的\"设备管理-远程控制\"路径查找。"
+    },
+    {
+      "id": "DEV-01__nonthinking__42__t008-base__1",
+      "kind": "incorrect_model_full_name",
+      "note": "原版把固定产品名称扩写成“能碳章鱼工业能源与碳排放管理垂直大模型”，两份LoRA同条件均为正确全称。",
+      "question": "麻烦报一下你的模型全称。",
+      "answer": "能碳章鱼垂直大模型的全称为“能碳章鱼工业能源与碳排放管理垂直大模型”。"
+    }
+  ],
+  "mechanical": "mechanical-summary.json",
+  "all_answers": "ANSWERS.md"
+}

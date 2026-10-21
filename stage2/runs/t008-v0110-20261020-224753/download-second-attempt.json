@@ -1,0 +1,7 @@
+{
+  "attempt": 2,
+  "local_bytes": 73728000,
+  "local_sha256": "a86b6f57aa5cc52e6034980eb39d94f1f0279108d0871e30cbe41c0696d92914",
+  "timeout_seconds": 120,
+  "exact_prefix": true
+}

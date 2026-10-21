@@ -1,0 +1,10 @@
+{
+  "verified_at_utc": "2026-10-21T06:18:39.637359+00:00",
+  "run_owned_pods_remaining": 0,
+  "run_owned_jobs_remaining": 0,
+  "uat_model_ids": [
+    "octa-carbon-v1"
+  ],
+  "new_model_deployed_to_uat": false,
+  "persistent_data_and_outputs_preserved": true
+}

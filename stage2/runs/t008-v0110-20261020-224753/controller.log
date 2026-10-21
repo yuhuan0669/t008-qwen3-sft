@@ -1,0 +1,8 @@
+Smoke passed; start one Full from original base
+job.batch/t008-v0110-20261020-224753-full created
+2026-10-21T06:04:52.824180+00:00 Full completed at 80/80; starting the frozen 62 Chinese requests
+pod/t008-v0110-20261020-224753-eval created
+2026-10-21T06:12:16.867918+00:00 Chinese development inference completed
+2026-10-21T06:12:26.316736+00:00 Restoring original UAT configuration
+{"started_at_utc": "2026-10-21T05:48:54.351857+00:00", "restored": true, "paused": false, "restored_at_utc": "2026-10-21T06:14:32.029640+00:00", "service_spec_equal": true, "health_status": 200}
+2026-10-21T06:14:32.049677+00:00 UAT restored and health verified

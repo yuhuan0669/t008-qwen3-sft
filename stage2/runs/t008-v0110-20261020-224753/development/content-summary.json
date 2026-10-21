@@ -1,0 +1,22 @@
+{
+  "nonthinking": {
+    "requests": 6,
+    "exact_name_present": 6,
+    "visible_complete_pass": 6,
+    "reasoning_unsupported_information": 0
+  },
+  "thinking": {
+    "requests": 6,
+    "exact_name_present": 6,
+    "visible_complete_pass": 5,
+    "reasoning_unsupported_information": 1
+  },
+  "proposed_system_business": {
+    "requests": 8,
+    "core_boundary_pass": 8,
+    "whole_response_no_flagged_extension": 7
+  },
+  "formal_acceptance": false,
+  "english_identity_evaluated": false,
+  "quality_accepted": false
+}

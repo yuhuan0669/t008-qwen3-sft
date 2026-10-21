@@ -1,0 +1,12 @@
+{
+  "local_bytes": 76578816,
+  "local_sha256": "ba67b135e2a82e253a143dcbca2843c4beb61999f01bf7f37ba9d86300aa47e0",
+  "expected_sha256": "b5ed8d2ca6ce580d73c034284b1d160a8bbbf4abb3b9555584132bc08c3b8058",
+  "is_zip": false,
+  "remote": {
+    "bytes": 80720089,
+    "sha256": "b5ed8d2ca6ce580d73c034284b1d160a8bbbf4abb3b9555584132bc08c3b8058"
+  },
+  "local_is_exact_prefix_of_remote": true,
+  "diagnosis": "Transfer ended before all bytes arrived; first request timeout was 30s. Remote hash matches both training manifest and ClearML readback. Retry download only with a longer transport timeout and atomic verified final path."
+}

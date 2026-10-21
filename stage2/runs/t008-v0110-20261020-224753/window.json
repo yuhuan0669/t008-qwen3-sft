@@ -1,0 +1,13 @@
+{
+  "run_id": "t008-v0110-20261020-224753",
+  "experiment_approved": true,
+  "uat_pause_approved": true,
+  "approved_data_sha256": "5b455659b0e3fea30efd5822be1a7fee0e57d2788bc0dcbf79ec755cd5f22788",
+  "window_start_utc": "2026-10-21T05:48:54.351857+00:00",
+  "window_end_utc": "2026-10-21T13:48:54.351857+00:00",
+  "restore_start_utc": "2026-10-21T13:08:54.351857+00:00",
+  "decision_ref": "User: 开始训练。英文先不处理，可暂停 UAT，完成后恢复。Execute v0.1.10: 3-step Smoke plus one Full from original base, same exposures and parameters, 62 Chinese development requests (40 existing plus 22 additional JSON; 2 overlapping JSON reused). 8h watchdog is a recovery ceiling, not planned outage duration.",
+  "restoration_owner": "Current implementation agent",
+  "uat_coordination": "Owner directly confirmed immediate pause",
+  "max_full_runs": 1
+}

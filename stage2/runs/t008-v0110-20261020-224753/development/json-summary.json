@@ -1,0 +1,39 @@
+{
+  "cases_per_model": 24,
+  "identical_protocol_and_prompt_tokens": true,
+  "groups": {
+    "v019/nonthinking": {
+      "count": 12,
+      "strict_pass": 7,
+      "fences": 4,
+      "content_correct_ignoring_outer_fence": 9
+    },
+    "v019/thinking": {
+      "count": 12,
+      "strict_pass": 11,
+      "fences": 1,
+      "content_correct_ignoring_outer_fence": 12
+    },
+    "v0110/nonthinking": {
+      "count": 12,
+      "strict_pass": 7,
+      "fences": 4,
+      "content_correct_ignoring_outer_fence": 9
+    },
+    "v0110/thinking": {
+      "count": 12,
+      "strict_pass": 11,
+      "fences": 0,
+      "content_correct_ignoring_outer_fence": 11
+    }
+  },
+  "paired_outcomes": {
+    "both_fail": 5,
+    "both_pass": 17,
+    "new_only_pass": 1,
+    "old_only_pass": 1
+  },
+  "formal_acceptance": false,
+  "baseline_reused": true,
+  "two_overlapping_conditions_reused_from_regression": true
+}

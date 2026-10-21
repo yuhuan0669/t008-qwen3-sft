@@ -1,0 +1,8 @@
+{
+  "verified": true,
+  "pairs": 40,
+  "identical_prompts_and_generation_parameters": true,
+  "baseline_is_frozen_previous_run_not_rerun": true,
+  "formal_acceptance": false,
+  "baseline": "stage2/runs/t008-v019-20261020-211142/development/results.jsonl"
+}

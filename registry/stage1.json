@@ -47,12 +47,14 @@
     "identity_exposures": 216,
     "generic_total_exposures": 1036,
     "changed_rows": 8,
-    "status": "CPU_CHECKED_NO_TRAINING",
+    "status": "TRAINED_ONCE_DEVELOPMENT_REVIEWED",
     "encoding_status": "VERIFIED_CPU_V0110",
     "cpu_report": "stage1/variants/stage1-cpu-v0.1.10/CPU_CHECK.md",
     "cpu_validation_report": "stage1/variants/stage1-cpu-v0.1.10/cpu-check/report.json",
-    "training_started": false,
-    "sync_status": "LOCAL_GIT_ONLY"
+    "training_started": true,
+    "sync_status": "LOCAL_GIT_ONLY",
+    "training_execution": "stage2/runs/t008-v0110-20261020-224753/REPORT.md",
+    "cpu_snapshot_preserved": true
   },
   "status_scope": "Top-level v0.1.3 is historical CPU preparation; latest_data_revision is the current local data candidate",
   "previous_data_revisions": [

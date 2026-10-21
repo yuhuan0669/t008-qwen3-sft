@@ -1,0 +1,7 @@
+{
+  "strict_types_values_checked": true,
+  "fences_rejected": true,
+  "duplicate_keys_rejected": true,
+  "nonstandard_constants_rejected": true,
+  "no_model_calls": true
+}

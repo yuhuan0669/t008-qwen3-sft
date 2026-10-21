@@ -1,0 +1,19 @@
+{
+  "source": {
+    "bytes": 80720089,
+    "sha256": "b5ed8d2ca6ce580d73c034284b1d160a8bbbf4abb3b9555584132bc08c3b8058"
+  },
+  "resumed_verified_prefix_bytes": 73728000,
+  "chunks": [
+    {
+      "offset": 73728000,
+      "bytes": 4194304
+    },
+    {
+      "offset": 77922304,
+      "bytes": 2797785
+    }
+  ],
+  "final_sha256": "b5ed8d2ca6ce580d73c034284b1d160a8bbbf4abb3b9555584132bc08c3b8058",
+  "verified": true
+}

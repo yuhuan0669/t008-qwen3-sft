@@ -1,0 +1,69 @@
+{
+  "purpose": "v0.1.10 Chinese identity, JSON and bounded regression; English identity deferred",
+  "review_commit": "046f09acd19ccd8a2154fc9b17bc3a7fc5e040e5",
+  "review": "stage1/variants/stage1-cpu-v0.1.10/README.md",
+  "models": {
+    "base": "/base",
+    "candidate_adapter": "/runwork/outputs/full/checkpoints/v0-20261020-225035/checkpoint-80",
+    "adapter_files": {
+      "adapter_config.json": {
+        "sha256": "db6464108178e39eedc3bfa0a9f07d047a7ae28930271b1ef85a54e130409479",
+        "bytes": 1135
+      },
+      "adapter_model.safetensors": {
+        "sha256": "069e53a12fbe1f11ef384979e8a78c17ee8052f7812313921f767a2685cc8d13",
+        "bytes": 87360584
+      }
+    }
+  },
+  "versions": {
+    "ms-swift": "4.4.2",
+    "transformers": "5.14.1",
+    "torch": "2.11.0+cu130",
+    "peft": "0.20.0",
+    "vllm": "0.25.1"
+  },
+  "modes": {
+    "thinking": {
+      "temperature": 0.6,
+      "top_p": 0.95,
+      "top_k": 20,
+      "max_tokens": 4096,
+      "min_p": 0,
+      "enable_thinking": true
+    },
+    "nonthinking": {
+      "temperature": 0.7,
+      "top_p": 0.8,
+      "top_k": 20,
+      "max_tokens": 2048,
+      "min_p": 0,
+      "enable_thinking": false
+    }
+  },
+  "template_sha256": "ae8a1b27c3bac461eb5f6c78d5d39cbe29427ad91c9d2da8378e236b8a38448d",
+  "total_requests": 62,
+  "server_seed": 42,
+  "concurrency": 1,
+  "repetition_penalty": 1.0,
+  "max_model_len": 8192,
+  "training": false,
+  "formal_holdout": false,
+  "training_data_sha256": "5b455659b0e3fea30efd5822be1a7fee0e57d2788bc0dcbf79ec755cd5f22788",
+  "systems_sha256": {
+    "existing": "92ed593b3ea69fffc4b31756bb97abdd9806597234b430fbb5a4d95220550984",
+    "proposed": "8fcd51af033cdd2f1f45b27da97bc6f006a46cb793fc4384b458629dfbc5340f"
+  },
+  "source_files": {
+    "stage1/variants/stage1-cpu-v0.1.10/train.jsonl": "5b455659b0e3fea30efd5822be1a7fee0e57d2788bc0dcbf79ec755cd5f22788",
+    "stage2/runs/t008-v019-20261020-211142/inputs/evaluation/cases.jsonl": "dc830c8bec3d90ead26add131fdb56a081b01c023945f2a15b8d46728e038914",
+    "stage2/diagnostics/json-format-check-20261020/cases.jsonl": "d0a0fcc94eca534777580679855a19f06e2bf8bb1b7bf1fd79eac6a34dfb2875"
+  },
+  "parent_results": "stage2/runs/t008-v019-20261020-211142/development/results.jsonl",
+  "json_baseline": "stage2/diagnostics/json-format-check-20261020/results/results.jsonl",
+  "subsets": {
+    "chinese_regression": 40,
+    "json": 24,
+    "overlap_reused": 2
+  }
+}

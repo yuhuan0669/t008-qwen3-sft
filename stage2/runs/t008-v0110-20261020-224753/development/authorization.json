@@ -1,0 +1,4 @@
+{
+  "approved": true,
+  "decision_ref": "User: 开始训练。英文先不处理，可暂停 UAT，完成后恢复。Execute v0.1.10: 3-step Smoke plus one Full from original base, same exposures and parameters, 62 Chinese development requests (40 existing plus 22 additional JSON; 2 overlapping JSON reused). 8h watchdog is a recovery ceiling, not planned outage duration."
+}

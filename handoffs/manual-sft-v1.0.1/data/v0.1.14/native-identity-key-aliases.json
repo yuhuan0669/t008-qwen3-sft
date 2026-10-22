@@ -1,0 +1,37 @@
+{
+  "dataset_sha256": "0f546c3aa59f8986f6e5f086482d7d40e9c29db6039a6c219ba902830abff6cb",
+  "runtime_versions": {
+    "ms-swift": "4.4.2",
+    "transformers": "5.14.1",
+    "peft": "0.20.0",
+    "torch": "2.11.0+cu130",
+    "tokenizers": "0.22.2",
+    "datasets": "4.8.4",
+    "modelscope": "1.38.1"
+  },
+  "template_source_sha256": "cc1629c8a84b764b530895692e4e04322aa6732281be229efce9e98752e113cc",
+  "evidence": "../stage1-cpu-v0.1.13/native-identity-key-aliases.json",
+  "reason": "Retain the same four normalized identity aliases; parent line numbers shift after two removals.",
+  "aliases": [
+    {
+      "line_one_based": 1290,
+      "raw_messages_sha256": "a6ecb7e17998682f8f6e0607328b14019356d58326590dd12298087bccdcffd4",
+      "prepared_messages_sha256": "a36d50eb8792e469992be4c62d39225ad94ed547d3934a5c3fd751ab60d8110a"
+    },
+    {
+      "line_one_based": 1291,
+      "raw_messages_sha256": "b46895dc6b232e79064799a9c99ffe9d66630fd577c60933198ae55f680133c4",
+      "prepared_messages_sha256": "ca8bbd8689a33c8e767dd10107ef1f9bfa1b290264fc8411b9e1d504920804e6"
+    },
+    {
+      "line_one_based": 1292,
+      "raw_messages_sha256": "03a3e55ae3ce6c38980c4e8f30b913efd6bc9e84043be02d58dd7be12180a034",
+      "prepared_messages_sha256": "37d0f40d7133daf7879fc0597be235e78ef25f0f3a3db7c6eb7274a31762b83f"
+    },
+    {
+      "line_one_based": 1293,
+      "raw_messages_sha256": "24e9c38b4bddceb3e661476cc6e1afdf789a038c245880495fa3b5ece755bdd1",
+      "prepared_messages_sha256": "2eebd3014ed24292043dcadd621ce1e6e651bb92d6a7fc489331cf680618bcf4"
+    }
+  ]
+}

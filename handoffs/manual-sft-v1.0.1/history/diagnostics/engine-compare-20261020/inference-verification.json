@@ -1,0 +1,51 @@
+{
+  "completed_requests": 86,
+  "empty_body_count": 0,
+  "length_count_including_controls": 7,
+  "main_length_count": 5,
+  "length_pairs": [
+    {
+      "engine": "Swift infer",
+      "model": "base",
+      "short_tokens": 1024,
+      "short_finish": "length",
+      "long_tokens": 1027,
+      "long_finish": "stop",
+      "long_body_has_short_prefix": true
+    },
+    {
+      "engine": "Swift infer",
+      "model": "loss3",
+      "short_tokens": 1024,
+      "short_finish": "length",
+      "long_tokens": 1661,
+      "long_finish": "stop",
+      "long_body_has_short_prefix": true
+    },
+    {
+      "engine": "vLLM chat",
+      "model": "base",
+      "short_tokens": 983,
+      "short_finish": "stop",
+      "long_tokens": 984,
+      "long_finish": "stop",
+      "long_body_has_short_prefix": false
+    },
+    {
+      "engine": "vLLM chat",
+      "model": "loss3",
+      "short_tokens": 1024,
+      "short_finish": "length",
+      "long_tokens": 1410,
+      "long_finish": "stop",
+      "long_body_has_short_prefix": false
+    }
+  ],
+  "training_started": false,
+  "weights_and_data_mounts_read_only": true,
+  "formal_acceptance": false,
+  "uat_restored": true,
+  "uat_health_http": 200,
+  "uat_original_spec_equal": true,
+  "diagnostic_pods_remaining": 0
+}

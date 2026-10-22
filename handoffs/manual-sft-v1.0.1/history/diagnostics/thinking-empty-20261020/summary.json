@@ -1,0 +1,138 @@
+{
+  "scope": "Six public development questions; inference diagnosis, not acceptance",
+  "generation_requests": 90,
+  "training_started": false,
+  "groups": [
+    {
+      "source": "vllm_sampled_raw_chat",
+      "model": "t008-base",
+      "prefill": false,
+      "cases": 6,
+      "missing_closure": [],
+      "chat_empty_content": []
+    },
+    {
+      "source": "vllm_sampled_raw_chat",
+      "model": "t008-full2",
+      "prefill": false,
+      "cases": 6,
+      "missing_closure": [],
+      "chat_empty_content": []
+    },
+    {
+      "source": "vllm_sampled_raw_chat",
+      "model": "t008-full3",
+      "prefill": false,
+      "cases": 6,
+      "missing_closure": [
+        "DEV-01",
+        "DEV-02",
+        "DEV-05",
+        "DEV-06",
+        "DEV-22",
+        "DEV-24"
+      ],
+      "chat_empty_content": [
+        "DEV-01",
+        "DEV-02",
+        "DEV-05",
+        "DEV-06",
+        "DEV-22",
+        "DEV-24"
+      ]
+    },
+    {
+      "source": "vllm_greedy",
+      "model": "t008-base",
+      "prefill": false,
+      "cases": 6,
+      "missing_closure": []
+    },
+    {
+      "source": "vllm_greedy",
+      "model": "t008-full2",
+      "prefill": false,
+      "cases": 6,
+      "missing_closure": [
+        "DEV-01",
+        "DEV-05",
+        "DEV-22"
+      ]
+    },
+    {
+      "source": "vllm_greedy",
+      "model": "t008-full3",
+      "prefill": false,
+      "cases": 6,
+      "missing_closure": [
+        "DEV-01",
+        "DEV-02",
+        "DEV-05",
+        "DEV-06",
+        "DEV-22",
+        "DEV-24"
+      ]
+    },
+    {
+      "source": "vllm_greedy_prefill",
+      "model": "t008-full3",
+      "prefill": true,
+      "cases": 6,
+      "missing_closure": []
+    },
+    {
+      "source": "vllm_sampled_prefill",
+      "model": "t008-full3",
+      "prefill": true,
+      "cases": 6,
+      "missing_closure": []
+    },
+    {
+      "source": "transformers_greedy",
+      "model": "t008-base",
+      "prefill": false,
+      "cases": 6,
+      "missing_closure": []
+    },
+    {
+      "source": "transformers_greedy",
+      "model": "t008-full2",
+      "prefill": false,
+      "cases": 6,
+      "missing_closure": [
+        "DEV-01",
+        "DEV-05",
+        "DEV-22"
+      ]
+    },
+    {
+      "source": "transformers_greedy",
+      "model": "t008-full3",
+      "prefill": false,
+      "cases": 6,
+      "missing_closure": [
+        "DEV-01",
+        "DEV-02",
+        "DEV-05",
+        "DEV-06",
+        "DEV-22",
+        "DEV-24"
+      ]
+    },
+    {
+      "source": "transformers_greedy",
+      "model": "t008-full3",
+      "prefill": true,
+      "cases": 6,
+      "missing_closure": []
+    }
+  ],
+  "checks": {
+    "six_unique_cases_per_group": true,
+    "same_prompts_across_backends": true,
+    "greedy_closure_classification_matches_across_backends": true,
+    "all_greedy_and_prefill_runs_stop_before_token_limit": true,
+    "all_prefill_runs_generate_nonempty_thinking_then_closure_then_answer": true,
+    "prefill_is_input_only_no_output_repair": true
+  }
+}

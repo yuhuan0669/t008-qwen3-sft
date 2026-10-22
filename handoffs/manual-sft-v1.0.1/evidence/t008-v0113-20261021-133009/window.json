@@ -1,0 +1,13 @@
+{
+  "run_id": "t008-v0113-20261021-133009",
+  "experiment_approved": true,
+  "uat_pause_approved": true,
+  "approved_data_sha256": "70f7321bc2f277f898dbc6e845eb626cb61300bcb9adebe3273dcbe173ac4d9a",
+  "window_start_utc": "2026-10-21T13:32:34.174101+00:00",
+  "window_end_utc": "2026-10-21T15:32:34.174101+00:00",
+  "restore_start_utc": "2026-10-21T14:52:34.174101+00:00",
+  "decision_ref": "User: 3开始训练，可暂停UAT，完成后恢复并核验健康。Approved frozen v0.1.13: 1327 rows, 3-step Smoke plus ONE Full from original base; unchanged parameters; planned 120-request Chinese development comparison, English deferred. 2h recovery ceiling; not expected outage duration.",
+  "restoration_owner": "Current implementation agent",
+  "uat_coordination": "Owner directly confirmed immediate pause",
+  "max_full_runs": 1
+}

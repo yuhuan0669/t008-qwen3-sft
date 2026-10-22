@@ -1,6 +1,8 @@
 # T-008 · Qwen3-8B 基础 SFT 统一版本库
 
-**人工微调交接包已整理（本地）：** [总入口](handoffs/manual-sft-v1.0/README.md) · [操作手册](handoffs/manual-sft-v1.0/MANUAL.md) · [各轮实验总表](handoffs/manual-sft-v1.0/EXPERIMENTS.md)。包含v0.1.14数据、配置、插件、最新评测原文、公开开发参考及v0.1.13/v0.1.14 LoRA；打包核验不等于新GPU验证，本次未训练、推理或操作UAT。[交接登记](registry/handoffs.json)。
+**人工微调交接包 v1.0.1：** [总入口](handoffs/manual-sft-v1.0.1/README.md) · [vLLM/模板/System/Schema配置](handoffs/manual-sft-v1.0.1/SERVING.md) · [手工发布与回退](handoffs/manual-sft-v1.0.1/PUBLISH.md)。新增请求示例及离线发布补丁生成器；沿用原数据/训练参数，未训练、推理、发布模型或操作UAT。[交接登记](registry/handoffs.json)。
+
+**此前人工微调交接包 v1.0（本地）：** [总入口](handoffs/manual-sft-v1.0/README.md) · [操作手册](handoffs/manual-sft-v1.0/MANUAL.md) · [各轮实验总表](handoffs/manual-sft-v1.0/EXPERIMENTS.md)。包含v0.1.14数据、配置、插件、最新评测原文、公开开发参考及v0.1.13/v0.1.14 LoRA；打包核验不等于新GPU验证，本次未训练、推理或操作UAT。[交接登记](registry/handoffs.json)。
 
 **当前：v0.1.14一次83步/1epoch训练与120次中文对照完成，UAT已恢复原配置并核验健康。** 1325条冻结数据、曝光和训练参数未改；原版/v0.1.13/v0.1.14统一使用精简System r1。两份LoRA身份（有System）均4/4，三版JSON（有Schema）均8/8，无空正文或截断；新版仍有保密依据和平台信息编造，不足以建议替换原版或认定优于v0.1.13。没有追加训练或部署，英文延后。仅本地Git管理。[执行报告](stage2/runs/t008-v0114-20261021-145454/REPORT.md) · [同题具体问题](stage2/runs/t008-v0114-20261021-145454/evaluation/ISSUES.md) · [核验](stage2/runs/t008-v0114-20261021-145454/verification.json)。
 

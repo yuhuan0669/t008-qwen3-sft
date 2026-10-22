@@ -1,0 +1,19 @@
+{
+  "observed_at_local_utc": "2026-10-21T15:16:19.611406+00:00",
+  "wrapper_started_at_utc": "2026-10-21T15:01:23.023050+00:00",
+  "wrapper_finished_at_utc": "2026-10-21T15:15:19.794354+00:00",
+  "job_startTime": "2026-10-21T22:57:38Z",
+  "job_completionTime": "2026-10-21T23:10:43Z",
+  "job_succeeded": 1,
+  "job_failed": 0,
+  "container_terminated": [
+    {
+      "containerID": "containerd://ffc0a439e521a716d9574db07cb6a25c9f85926978a1ab7dce1e437d0bcbf2f1",
+      "exitCode": 0,
+      "finishedAt": "2026-10-21T15:15:33Z",
+      "reason": "Completed",
+      "startedAt": "2026-10-21T15:01:21Z"
+    }
+  ],
+  "note": "API Job timestamps remain about eight hours ahead of local controller/worker time; cause not investigated, cluster not changed. Outage duration uses local timezone-aware controller records. Training completed normally with succeeded=1 and exit0; no retry."
+}

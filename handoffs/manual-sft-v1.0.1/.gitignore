@@ -1,0 +1,3 @@
+models/*/adapter.zip
+__pycache__/
+*.pyc

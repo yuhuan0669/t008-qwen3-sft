@@ -1,0 +1,24 @@
+Failed to load CPU gemm_4bit_forward from kernels-community: No module named 'kernels'. Please make sure you already `pip install kernels` and the kernels >= 0.11.1
+[INFO:swift] Successfully registered `/usr/local/lib/python3.12/site-packages/swift/dataset/data/dataset_info.json`.
+[INFO:swift] Successfully imported external_plugins: ['/tmp/v0114-check/stage1/training/local_data_guard.py', '/tmp/v0114-check/stage1/variants/stage1-cpu-v0.1.14/identity_loss3.py'].
+[INFO:swift] rank: -1, local_rank: -1, world_size: 1, local_world_size: 1
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+[INFO:swift] Setting args.lazy_tokenize: False
+[transformers] warmup_ratio is deprecated and will be removed in v5.2. Use `warmup_steps` instead.
+Generating train split: 0 examples [00:00, ? examples/s]Generating train split: 1325 examples [00:00, 100627.45 examples/s]
+Map (num_proc=1):   0%|          | 0/1325 [00:00<?, ? examples/s]Map (num_proc=1): 100%|██████████| 1325/1325 [00:00<00:00, 13050.38 examples/s]Map (num_proc=1): 100%|██████████| 1325/1325 [00:00<00:00, 6727.51 examples/s] 
+[INFO:swift] Setting torch_dtype: torch.bfloat16
+[INFO:swift] default_system: None
+[INFO:swift] max_length: 2048
+[INFO:swift] response_prefix: None
+[INFO:swift] agent_template: hermes
+[INFO:swift] default_system: None
+[INFO:swift] max_length: 2048
+[INFO:swift] response_prefix: None
+[INFO:swift] agent_template: hermes
+[INFO:swift] default_system: None
+[INFO:swift] max_length: 2048
+[INFO:swift] response_prefix: None
+[INFO:swift] agent_template: hermes
+Map (num_proc=1):   0%|          | 0/1325 [00:00<?, ? examples/s]Map (num_proc=1):  75%|███████▌  | 1000/1325 [00:03<00:01, 289.89 examples/s]Map (num_proc=1): 100%|██████████| 1325/1325 [00:04<00:00, 331.84 examples/s]Map (num_proc=1): 100%|██████████| 1325/1325 [00:04<00:00, 312.88 examples/s]
+{"verified": true, "rows": 1325, "max_tokens": 2048, "weight_mismatch_rows": 0, "group_supervised_tokens_after": {"generic": 1515617, "identity": 8937, "positioning": 2073}, "training_started": false}

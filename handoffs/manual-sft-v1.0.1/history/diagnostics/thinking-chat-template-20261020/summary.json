@@ -1,0 +1,35 @@
+{
+  "groups": [
+    {
+      "model": "t008-base",
+      "cases": 6,
+      "previous_empty_content": 0,
+      "new_empty_content": 0,
+      "new_empty_reasoning": 0,
+      "normal_stop": 6
+    },
+    {
+      "model": "t008-full2",
+      "cases": 6,
+      "previous_empty_content": 0,
+      "new_empty_content": 0,
+      "new_empty_reasoning": 0,
+      "normal_stop": 6
+    },
+    {
+      "model": "t008-full3",
+      "cases": 6,
+      "previous_empty_content": 6,
+      "new_empty_content": 0,
+      "new_empty_reasoning": 0,
+      "normal_stop": 6
+    }
+  ],
+  "requests": 18,
+  "server_input_verified": 18,
+  "same_user_messages_and_sampling_as_prior_chat_requests": true,
+  "template_sha256": "ae8a1b27c3bac461eb5f6c78d5d39cbe29427ad91c9d2da8378e236b8a38448d",
+  "training_started": false,
+  "formal_acceptance": false,
+  "comparison_note": "Previous default-template chat requests reused; not rerun in this window."
+}

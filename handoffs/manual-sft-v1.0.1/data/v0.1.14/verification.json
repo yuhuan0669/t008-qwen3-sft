@@ -1,0 +1,28 @@
+{
+  "verified": true,
+  "recorded_at_utc": "2026-10-21T14:22:20.126034+00:00",
+  "version": "stage1-cpu-v0.1.14",
+  "rows": 1325,
+  "removed_parent_lines_one_based": [
+    1276,
+    1277
+  ],
+  "retained_rows_byte_for_byte_and_masks_unchanged": 1325,
+  "founding_date_absent_from_train_and_system": true,
+  "only_system_date_phrase_removed": true,
+  "remaining_exposures_unchanged": true,
+  "training_hyperparameters_unchanged": true,
+  "remaining_identity_exposures_x3": 234,
+  "boundary_records_x1": 12,
+  "protected_files_unchanged": 65,
+  "native_cpu_verified": true,
+  "training_started": false,
+  "inference_executed": false,
+  "gpu_requested": false,
+  "uat_mutation": false,
+  "temporary_cpu_pod_deleted": true,
+  "dataset_sha256": "0f546c3aa59f8986f6e5f086482d7d40e9c29db6039a6c219ba902830abff6cb",
+  "manifest_sha256": "870921ca0cbf3702f40693cac1f9fc9096c9fa684e908425e2157cee5c7100d8",
+  "proof_limit": "Data and CPU preparation only; removal does not erase dates from existing LoRA weights or prove hallucinations fixed.",
+  "sync_status": "LOCAL_GIT_ONLY"
+}

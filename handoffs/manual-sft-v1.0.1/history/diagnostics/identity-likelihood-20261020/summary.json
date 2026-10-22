@@ -1,0 +1,1508 @@
+{
+  "training": {
+    "Full2": {
+      "base": {
+        "unique_records": 105,
+        "name_bearing_records": 85,
+        "name_token_nll": 7.262155540683501,
+        "name_token_geomean_probability": 0.0007015940899028088,
+        "first_name_token_top1_records": 0,
+        "first_name_token_arithmetic_mean_probability": 2.4009175211853674e-11,
+        "all_answer_nll": 5.862652840813082
+      },
+      "Full2": {
+        "unique_records": 105,
+        "name_bearing_records": 85,
+        "name_token_nll": 0.0817113151747666,
+        "name_token_geomean_probability": 0.9215379543233406,
+        "first_name_token_top1_records": 80,
+        "first_name_token_arithmetic_mean_probability": 0.767452154527731,
+        "all_answer_nll": 0.6052064378585058
+      }
+    },
+    "v017": {
+      "base": {
+        "unique_records": 210,
+        "name_bearing_records": 168,
+        "name_token_nll": 6.561555639850433,
+        "name_token_geomean_probability": 0.001413684814456655,
+        "first_name_token_top1_records": 0,
+        "first_name_token_arithmetic_mean_probability": 7.998453766387786e-10,
+        "all_answer_nll": 5.241568370649672
+      },
+      "v017": {
+        "unique_records": 210,
+        "name_bearing_records": 168,
+        "name_token_nll": 1.934249009004889,
+        "name_token_geomean_probability": 0.14453277088584035,
+        "first_name_token_top1_records": 0,
+        "first_name_token_arithmetic_mean_probability": 0.0014386719047043172,
+        "all_answer_nll": 1.852894034049624
+      }
+    },
+    "v018": {
+      "base": {
+        "unique_records": 210,
+        "name_bearing_records": 168,
+        "name_token_nll": 7.138349310993354,
+        "name_token_geomean_probability": 0.000794061764266843,
+        "first_name_token_top1_records": 0,
+        "first_name_token_arithmetic_mean_probability": 1.4603161217960417e-07,
+        "all_answer_nll": 5.403518989204961
+      },
+      "v018": {
+        "unique_records": 210,
+        "name_bearing_records": 168,
+        "name_token_nll": 1.6909526929176766,
+        "name_token_geomean_probability": 0.18434381725987783,
+        "first_name_token_top1_records": 0,
+        "first_name_token_arithmetic_mean_probability": 0.007516513337151882,
+        "all_answer_nll": 1.7229376578486033
+      }
+    }
+  },
+  "probe_pairs": [
+    {
+      "model": "base",
+      "id": "TRAIN-CN-MARKER",
+      "target_version": "Full2",
+      "prefix_kind": "empty_think_answer_entry",
+      "nll": 5.8832614430588475,
+      "name_nll": 8.168072841509403,
+      "first_name_token": {
+        "position": 20,
+        "token_id": 44928,
+        "token": "章",
+        "log_probability": -23.489164352416992,
+        "probability": 6.291953976211071e-11,
+        "rank": 755,
+        "top1_token": "通",
+        "names": [
+          "章鱼能碳垂直大模型"
+        ]
+      }
+    },
+    {
+      "model": "base",
+      "id": "TRAIN-CN-MARKER",
+      "target_version": "v017",
+      "prefix_kind": "empty_think_answer_entry",
+      "nll": 5.8832614430588475,
+      "name_nll": 8.168072841509403,
+      "first_name_token": {
+        "position": 20,
+        "token_id": 44928,
+        "token": "章",
+        "log_probability": -23.489164352416992,
+        "probability": 6.291953976211071e-11,
+        "rank": 755,
+        "top1_token": "通",
+        "names": [
+          "章鱼能碳垂直大模型"
+        ]
+      }
+    },
+    {
+      "model": "base",
+      "id": "TRAIN-CN-MARKER",
+      "target_version": "v018",
+      "prefix_kind": "empty_think_answer_entry",
+      "nll": 5.493738562461859,
+      "name_nll": 7.411321701517863,
+      "first_name_token": {
+        "position": 20,
+        "token_id": 26232,
+        "token": "能",
+        "log_probability": -21.364164352416992,
+        "probability": 5.268188564283002e-10,
+        "rank": 303,
+        "top1_token": "通",
+        "names": [
+          "能碳章鱼垂直大模型"
+        ]
+      }
+    },
+    {
+      "model": "base",
+      "id": "TRAIN-CN-MARKER",
+      "target_version": "Full2",
+      "prefix_kind": "generated_reasoning_then_fixed_newline_separator",
+      "nll": 5.63230507232851,
+      "name_nll": 7.819098941123872,
+      "first_name_token": {
+        "position": 20,
+        "token_id": 44928,
+        "token": "章",
+        "log_probability": -23.403301239013672,
+        "probability": 6.856072691984776e-11,
+        "rank": 742,
+        "top1_token": "通",
+        "names": [
+          "章鱼能碳垂直大模型"
+        ]
+      }
+    },
+    {
+      "model": "base",
+      "id": "TRAIN-CN-MARKER",
+      "target_version": "v017",
+      "prefix_kind": "generated_reasoning_then_fixed_newline_separator",
+      "nll": 5.63230507232851,
+      "name_nll": 7.819098941123872,
+      "first_name_token": {
+        "position": 20,
+        "token_id": 44928,
+        "token": "章",
+        "log_probability": -23.403301239013672,
+        "probability": 6.856072691984776e-11,
+        "rank": 742,
+        "top1_token": "通",
+        "names": [
+          "章鱼能碳垂直大模型"
+        ]
+      }
+    },
+    {
+      "model": "base",
+      "id": "TRAIN-CN-MARKER",
+      "target_version": "v018",
+      "prefix_kind": "generated_reasoning_then_fixed_newline_separator",
+      "nll": 5.204500936878005,
+      "name_nll": 6.933915679566854,
+      "first_name_token": {
+        "position": 20,
+        "token_id": 26232,
+        "token": "能",
+        "log_probability": -21.153301239013672,
+        "probability": 6.504860657642302e-10,
+        "rank": 275,
+        "top1_token": "通",
+        "names": [
+          "能碳章鱼垂直大模型"
+        ]
+      }
+    },
+    {
+      "model": "base",
+      "id": "TRAIN-CN-NATURAL",
+      "target_version": "Full2",
+      "prefix_kind": "empty_think_answer_entry",
+      "nll": 4.632043999037705,
+      "name_nll": 6.451695544576711,
+      "first_name_token": {
+        "position": 16,
+        "token_id": 44928,
+        "token": "章",
+        "log_probability": -21.613161087036133,
+        "probability": 4.1069877115864935e-10,
+        "rank": 578,
+        "top1_token": "通",
+        "names": [
+          "章鱼能碳垂直大模型"
+        ]
+      }
+    },
+    {
+      "model": "base",
+      "id": "TRAIN-CN-NATURAL",
+      "target_version": "v017",
+      "prefix_kind": "empty_think_answer_entry",
+      "nll": 4.632043999037705,
+      "name_nll": 6.451695544576711,
+      "first_name_token": {
+        "position": 16,
+        "token_id": 44928,
+        "token": "章",
+        "log_probability": -21.613161087036133,
+        "probability": 4.1069877115864935e-10,
+        "rank": 578,
+        "top1_token": "通",
+        "names": [
+          "章鱼能碳垂直大模型"
+        ]
+      }
+    },
+    {
+      "model": "base",
+      "id": "TRAIN-CN-NATURAL",
+      "target_version": "v018",
+      "prefix_kind": "empty_think_answer_entry",
+      "nll": 4.197471587194474,
+      "name_nll": 5.5888203542219665,
+      "first_name_token": {
+        "position": 16,
+        "token_id": 26232,
+        "token": "能",
+        "log_probability": -19.925661087036133,
+        "probability": 2.2202165805018985e-09,
+        "rank": 246,
+        "top1_token": "通",
+        "names": [
+          "能碳章鱼垂直大模型"
+        ]
+      }
+    },
+    {
+      "model": "base",
+      "id": "TRAIN-CN-NATURAL",
+      "target_version": "Full2",
+      "prefix_kind": "generated_reasoning_then_fixed_newline_separator",
+      "nll": 5.122657708484707,
+      "name_nll": 7.160231994773151,
+      "first_name_token": {
+        "position": 179,
+        "token_id": 44928,
+        "token": "章",
+        "log_probability": -25.562713623046875,
+        "probability": 7.911421642556345e-12,
+        "rank": 371,
+        "top1_token": "通",
+        "names": [
+          "章鱼能碳垂直大模型"
+        ]
+      }
+    },
+    {
+      "model": "base",
+      "id": "TRAIN-CN-NATURAL",
+      "target_version": "v017",
+      "prefix_kind": "generated_reasoning_then_fixed_newline_separator",
+      "nll": 5.122657708484707,
+      "name_nll": 7.160231994773151,
+      "first_name_token": {
+        "position": 179,
+        "token_id": 44928,
+        "token": "章",
+        "log_probability": -25.562713623046875,
+        "probability": 7.911421642556345e-12,
+        "rank": 371,
+        "top1_token": "通",
+        "names": [
+          "章鱼能碳垂直大模型"
+        ]
+      }
+    },
+    {
+      "model": "base",
+      "id": "TRAIN-CN-NATURAL",
+      "target_version": "v018",
+      "prefix_kind": "generated_reasoning_then_fixed_newline_separator",
+      "nll": 4.558240971697654,
+      "name_nll": 6.138801097661358,
+      "first_name_token": {
+        "position": 179,
+        "token_id": 26232,
+        "token": "能",
+        "log_probability": -23.625213623046875,
+        "probability": 5.491615090093555e-11,
+        "rank": 148,
+        "top1_token": "通",
+        "names": [
+          "能碳章鱼垂直大模型"
+        ]
+      }
+    },
+    {
+      "model": "base",
+      "id": "TRAIN-EN-MARKER",
+      "target_version": "Full2",
+      "prefix_kind": "empty_think_answer_entry",
+      "nll": 5.584626151159064,
+      "name_nll": 5.154448171025047,
+      "first_name_token": {
+        "position": 22,
+        "token_id": 4915,
+        "token": " Oct",
+        "log_probability": -26.87837791442871,
+        "probability": 2.1226030759770445e-12,
+        "rank": 1531,
+        "top1_token": " Q",
+        "names": [
+          "Octacarbon LLM"
+        ]
+      }
+    },
+    {
+      "model": "base",
+      "id": "TRAIN-EN-MARKER",
+      "target_version": "v017",
+      "prefix_kind": "empty_think_answer_entry",
+      "nll": 5.584626151159064,
+      "name_nll": 5.154448171025047,
+      "first_name_token": {
+        "position": 22,
+        "token_id": 4915,
+        "token": " Oct",
+        "log_probability": -26.87837791442871,
+        "probability": 2.1226030759770445e-12,
+        "rank": 1531,
+        "top1_token": " Q",
+        "names": [
+          "Octacarbon LLM"
+        ]
+      }
+    },
+    {
+      "model": "base",
+      "id": "TRAIN-EN-MARKER",
+      "target_version": "v018",
+      "prefix_kind": "empty_think_answer_entry",
+      "nll": 6.95067635225681,
+      "name_nll": 7.8776947532908315,
+      "first_name_token": {
+        "position": 22,
+        "token_id": 8908,
+        "token": " �",
+        "log_probability": -22.44087791442871,
+        "probability": 1.7949425493802486e-10,
+        "rank": 252,
+        "top1_token": " Q",
+        "names": [
+          "能碳章鱼垂直大模型"
+        ]
+      }
+    },
+    {
+      "model": "base",
+      "id": "TRAIN-EN-MARKER",
+      "target_version": "Full2",
+      "prefix_kind": "generated_reasoning_then_fixed_newline_separator",
+      "nll": 5.428858005225411,
+      "name_nll": 5.008133830719646,
+      "first_name_token": {
+        "position": 22,
+        "token_id": 4915,
+        "token": " Oct",
+        "log_probability": -26.13131332397461,
+        "probability": 4.480379676048858e-12,
+        "rank": 1421,
+        "top1_token": " Q",
+        "names": [
+          "Octacarbon LLM"
+        ]
+      }
+    },
+    {
+      "model": "base",
+      "id": "TRAIN-EN-MARKER",
+      "target_version": "v017",
+      "prefix_kind": "generated_reasoning_then_fixed_newline_separator",
+      "nll": 5.428858005225411,
+      "name_nll": 5.008133830719646,
+      "first_name_token": {
+        "position": 22,
+        "token_id": 4915,
+        "token": " Oct",
+        "log_probability": -26.13131332397461,
+        "probability": 4.480379676048858e-12,
+        "rank": 1421,
+        "top1_token": " Q",
+        "names": [
+          "Octacarbon LLM"
+        ]
+      }
+    },
+    {
+      "model": "base",
+      "id": "TRAIN-EN-MARKER",
+      "target_version": "v018",
+      "prefix_kind": "generated_reasoning_then_fixed_newline_separator",
+      "nll": 6.694818473925362,
+      "name_nll": 7.570137448216545,
+      "first_name_token": {
+        "position": 22,
+        "token_id": 8908,
+        "token": " �",
+        "log_probability": -22.19381332397461,
+        "probability": 2.297996384190118e-10,
+        "rank": 290,
+        "top1_token": " Q",
+        "names": [
+          "能碳章鱼垂直大模型"
+        ]
+      }
+    },
+    {
+      "model": "base",
+      "id": "TRAIN-EN-NATURAL",
+      "target_version": "Full2",
+      "prefix_kind": "empty_think_answer_entry",
+      "nll": 4.358372864939341,
+      "name_nll": 4.313145483900368,
+      "first_name_token": {
+        "position": 18,
+        "token_id": 4915,
+        "token": " Oct",
+        "log_probability": -23.389368057250977,
+        "probability": 6.952268197485655e-11,
+        "rank": 1832,
+        "top1_token": " Q",
+        "names": [
+          "Octacarbon LLM"
+        ]
+      }
+    },
+    {
+      "model": "base",
+      "id": "TRAIN-EN-NATURAL",
+      "target_version": "v017",
+      "prefix_kind": "empty_think_answer_entry",
+      "nll": 4.358372864939341,
+      "name_nll": 4.313145483900368,
+      "first_name_token": {
+        "position": 18,
+        "token_id": 4915,
+        "token": " Oct",
+        "log_probability": -23.389368057250977,
+        "probability": 6.952268197485655e-11,
+        "rank": 1832,
+        "top1_token": " Q",
+        "names": [
+          "Octacarbon LLM"
+        ]
+      }
+    },
+    {
+      "model": "base",
+      "id": "TRAIN-EN-NATURAL",
+      "target_version": "v018",
+      "prefix_kind": "empty_think_answer_entry",
+      "nll": 4.869633095489171,
+      "name_nll": 5.898602556843654,
+      "first_name_token": {
+        "position": 18,
+        "token_id": 8908,
+        "token": " �",
+        "log_probability": -20.264368057250977,
+        "probability": 1.5823289483683566e-09,
+        "rank": 447,
+        "top1_token": " Q",
+        "names": [
+          "能碳章鱼垂直大模型"
+        ]
+      }
+    },
+    {
+      "model": "base",
+      "id": "TRAIN-EN-NATURAL",
+      "target_version": "Full2",
+      "prefix_kind": "generated_reasoning_then_fixed_newline_separator",
+      "nll": 5.308437252937343,
+      "name_nll": 5.545347866520748,
+      "first_name_token": {
+        "position": 120,
+        "token_id": 4915,
+        "token": " Oct",
+        "log_probability": -35.125099182128906,
+        "probability": 5.563694164865885e-16,
+        "rank": 3118,
+        "top1_token": " Q",
+        "names": [
+          "Octacarbon LLM"
+        ]
+      }
+    },
+    {
+      "model": "base",
+      "id": "TRAIN-EN-NATURAL",
+      "target_version": "v017",
+      "prefix_kind": "generated_reasoning_then_fixed_newline_separator",
+      "nll": 5.308437252937343,
+      "name_nll": 5.545347866520748,
+      "first_name_token": {
+        "position": 120,
+        "token_id": 4915,
+        "token": " Oct",
+        "log_probability": -35.125099182128906,
+        "probability": 5.563694164865885e-16,
+        "rank": 3118,
+        "top1_token": " Q",
+        "names": [
+          "Octacarbon LLM"
+        ]
+      }
+    },
+    {
+      "model": "base",
+      "id": "TRAIN-EN-NATURAL",
+      "target_version": "v018",
+      "prefix_kind": "generated_reasoning_then_fixed_newline_separator",
+      "nll": 5.5987943162195295,
+      "name_nll": 6.619167682094988,
+      "first_name_token": {
+        "position": 120,
+        "token_id": 8908,
+        "token": " �",
+        "log_probability": -29.125099182128906,
+        "probability": 2.2445544242944145e-13,
+        "rank": 305,
+        "top1_token": " Q",
+        "names": [
+          "能碳章鱼垂直大模型"
+        ]
+      }
+    },
+    {
+      "model": "base",
+      "id": "DEV-01",
+      "target_version": "Full2",
+      "prefix_kind": "empty_think_answer_entry",
+      "nll": 6.117936076324895,
+      "name_nll": 10.200630186158898,
+      "first_name_token": {
+        "position": 24,
+        "token_id": 44928,
+        "token": "章",
+        "log_probability": -28.983671188354492,
+        "probability": 2.585541646829867e-13,
+        "rank": 4908,
+        "top1_token": "通",
+        "names": [
+          "章鱼能碳垂直大模型"
+        ]
+      }
+    },
+    {
+      "model": "base",
+      "id": "DEV-01",
+      "target_version": "v017",
+      "prefix_kind": "empty_think_answer_entry",
+      "nll": 6.117936076324895,
+      "name_nll": 10.200630186158898,
+      "first_name_token": {
+        "position": 24,
+        "token_id": 44928,
+        "token": "章",
+        "log_probability": -28.983671188354492,
+        "probability": 2.585541646829867e-13,
+        "rank": 4908,
+        "top1_token": "通",
+        "names": [
+          "章鱼能碳垂直大模型"
+        ]
+      }
+    },
+    {
+      "model": "base",
+      "id": "DEV-01",
+      "target_version": "v018",
+      "prefix_kind": "empty_think_answer_entry",
+      "nll": 6.179536137856151,
+      "name_nll": 10.336003731320877,
+      "first_name_token": {
+        "position": 24,
+        "token_id": 26232,
+        "token": "能",
+        "log_probability": -28.296171188354492,
+        "probability": 5.141963552216062e-13,
+        "rank": 3739,
+        "top1_token": "通",
+        "names": [
+          "能碳章鱼垂直大模型"
+        ]
+      }
+    },
+    {
+      "model": "base",
+      "id": "DEV-01",
+      "target_version": "Full2",
+      "prefix_kind": "generated_reasoning_then_fixed_newline_separator",
+      "nll": 5.518202780040156,
+      "name_nll": 9.250867971352168,
+      "first_name_token": {
+        "position": 305,
+        "token_id": 44928,
+        "token": "章",
+        "log_probability": -28.577817916870117,
+        "probability": 3.879818181319292e-13,
+        "rank": 1341,
+        "top1_token": "**",
+        "names": [
+          "章鱼能碳垂直大模型"
+        ]
+      }
+    },
+    {
+      "model": "base",
+      "id": "DEV-01",
+      "target_version": "v017",
+      "prefix_kind": "generated_reasoning_then_fixed_newline_separator",
+      "nll": 5.518202780040156,
+      "name_nll": 9.250867971352168,
+      "first_name_token": {
+        "position": 305,
+        "token_id": 44928,
+        "token": "章",
+        "log_probability": -28.577817916870117,
+        "probability": 3.879818181319292e-13,
+        "rank": 1341,
+        "top1_token": "**",
+        "names": [
+          "章鱼能碳垂直大模型"
+        ]
+      }
+    },
+    {
+      "model": "base",
+      "id": "DEV-01",
+      "target_version": "v018",
+      "prefix_kind": "generated_reasoning_then_fixed_newline_separator",
+      "nll": 5.9851518078964245,
+      "name_nll": 10.079861159120421,
+      "first_name_token": {
+        "position": 305,
+        "token_id": 26232,
+        "token": "能",
+        "log_probability": -28.765317916870117,
+        "probability": 3.216482245559417e-13,
+        "rank": 1459,
+        "top1_token": "**",
+        "names": [
+          "能碳章鱼垂直大模型"
+        ]
+      }
+    },
+    {
+      "model": "base",
+      "id": "DEV-02",
+      "target_version": "Full2",
+      "prefix_kind": "empty_think_answer_entry",
+      "nll": 4.779388744823223,
+      "name_nll": 7.159588402556255,
+      "first_name_token": {
+        "position": 22,
+        "token_id": 26232,
+        "token": "能",
+        "log_probability": -27.585237503051758,
+        "probability": 1.046847862049381e-12,
+        "rank": 2348,
+        "top1_token": "阿里巴巴",
+        "names": [
+          "能碳章鱼（湖北）人工智能科技有限公司"
+        ]
+      }
+    },
+    {
+      "model": "base",
+      "id": "DEV-02",
+      "target_version": "v017",
+      "prefix_kind": "empty_think_answer_entry",
+      "nll": 4.779388744823223,
+      "name_nll": 7.159588402556255,
+      "first_name_token": {
+        "position": 22,
+        "token_id": 26232,
+        "token": "能",
+        "log_probability": -27.585237503051758,
+        "probability": 1.046847862049381e-12,
+        "rank": 2348,
+        "top1_token": "阿里巴巴",
+        "names": [
+          "能碳章鱼（湖北）人工智能科技有限公司"
+        ]
+      }
+    },
+    {
+      "model": "base",
+      "id": "DEV-02",
+      "target_version": "v018",
+      "prefix_kind": "empty_think_answer_entry",
+      "nll": 4.779388744823223,
+      "name_nll": 7.159588402556255,
+      "first_name_token": {
+        "position": 22,
+        "token_id": 26232,
+        "token": "能",
+        "log_probability": -27.585237503051758,
+        "probability": 1.046847862049381e-12,
+        "rank": 2348,
+        "top1_token": "阿里巴巴",
+        "names": [
+          "能碳章鱼（湖北）人工智能科技有限公司"
+        ]
+      }
+    },
+    {
+      "model": "base",
+      "id": "DEV-02",
+      "target_version": "Full2",
+      "prefix_kind": "generated_reasoning_then_fixed_newline_separator",
+      "nll": 4.763816406414865,
+      "name_nll": 7.265340808592737,
+      "first_name_token": {
+        "position": 283,
+        "token_id": 26232,
+        "token": "能",
+        "log_probability": -27.654693603515625,
+        "probability": 9.766055078124723e-13,
+        "rank": 1039,
+        "top1_token": "阿里巴巴",
+        "names": [
+          "能碳章鱼（湖北）人工智能科技有限公司"
+        ]
+      }
+    },
+    {
+      "model": "base",
+      "id": "DEV-02",
+      "target_version": "v017",
+      "prefix_kind": "generated_reasoning_then_fixed_newline_separator",
+      "nll": 4.763816406414865,
+      "name_nll": 7.265340808592737,
+      "first_name_token": {
+        "position": 283,
+        "token_id": 26232,
+        "token": "能",
+        "log_probability": -27.654693603515625,
+        "probability": 9.766055078124723e-13,
+        "rank": 1039,
+        "top1_token": "阿里巴巴",
+        "names": [
+          "能碳章鱼（湖北）人工智能科技有限公司"
+        ]
+      }
+    },
+    {
+      "model": "base",
+      "id": "DEV-02",
+      "target_version": "v018",
+      "prefix_kind": "generated_reasoning_then_fixed_newline_separator",
+      "nll": 4.763816406414865,
+      "name_nll": 7.265340808592737,
+      "first_name_token": {
+        "position": 283,
+        "token_id": 26232,
+        "token": "能",
+        "log_probability": -27.654693603515625,
+        "probability": 9.766055078124723e-13,
+        "rank": 1039,
+        "top1_token": "阿里巴巴",
+        "names": [
+          "能碳章鱼（湖北）人工智能科技有限公司"
+        ]
+      }
+    },
+    {
+      "model": "Full2",
+      "id": "TRAIN-CN-MARKER",
+      "target_version": "Full2",
+      "prefix_kind": "empty_think_answer_entry",
+      "nll": 0.17661324752451518,
+      "name_nll": 0.04511383961142415,
+      "first_name_token": {
+        "position": 20,
+        "token_id": 44928,
+        "token": "章",
+        "log_probability": -0.6551331281661987,
+        "probability": 0.5193729148206693,
+        "rank": 1,
+        "top1_token": "章",
+        "names": [
+          "章鱼能碳垂直大模型"
+        ]
+      }
+    },
+    {
+      "model": "Full2",
+      "id": "TRAIN-CN-MARKER",
+      "target_version": "Full2",
+      "prefix_kind": "generated_reasoning_then_fixed_newline_separator",
+      "nll": 0.2739009853305962,
+      "name_nll": 0.09115576995346227,
+      "first_name_token": {
+        "position": 274,
+        "token_id": 44928,
+        "token": "章",
+        "log_probability": -1.3996708393096924,
+        "probability": 0.24667814732894217,
+        "rank": 3,
+        "top1_token": "由",
+        "names": [
+          "章鱼能碳垂直大模型"
+        ]
+      }
+    },
+    {
+      "model": "Full2",
+      "id": "TRAIN-CN-NATURAL",
+      "target_version": "Full2",
+      "prefix_kind": "empty_think_answer_entry",
+      "nll": 0.17584869790393629,
+      "name_nll": 0.03614825851796281,
+      "first_name_token": {
+        "position": 16,
+        "token_id": 44928,
+        "token": "章",
+        "log_probability": -0.49719202518463135,
+        "probability": 0.6082361759325251,
+        "rank": 1,
+        "top1_token": "章",
+        "names": [
+          "章鱼能碳垂直大模型"
+        ]
+      }
+    },
+    {
+      "model": "Full2",
+      "id": "TRAIN-CN-NATURAL",
+      "target_version": "Full2",
+      "prefix_kind": "generated_reasoning_then_fixed_newline_separator",
+      "nll": 0.2421876077125041,
+      "name_nll": 0.12391469892137967,
+      "first_name_token": {
+        "position": 146,
+        "token_id": 44928,
+        "token": "章",
+        "log_probability": -1.9263277053833008,
+        "probability": 0.1456822053466796,
+        "rank": 3,
+        "top1_token": "由",
+        "names": [
+          "章鱼能碳垂直大模型"
+        ]
+      }
+    },
+    {
+      "model": "Full2",
+      "id": "TRAIN-EN-MARKER",
+      "target_version": "Full2",
+      "prefix_kind": "empty_think_answer_entry",
+      "nll": 0.2700213312515983,
+      "name_nll": 0.04309443337810102,
+      "first_name_token": {
+        "position": 22,
+        "token_id": 4915,
+        "token": " Oct",
+        "log_probability": -0.30963438749313354,
+        "probability": 0.7337151626314288,
+        "rank": 1,
+        "top1_token": " Oct",
+        "names": [
+          "Octacarbon LLM"
+        ]
+      }
+    },
+    {
+      "model": "Full2",
+      "id": "TRAIN-EN-MARKER",
+      "target_version": "Full2",
+      "prefix_kind": "generated_reasoning_then_fixed_newline_separator",
+      "nll": 0.4511884840760088,
+      "name_nll": 0.022772579716899343,
+      "first_name_token": {
+        "position": 173,
+        "token_id": 4915,
+        "token": " Oct",
+        "log_probability": -0.22909978032112122,
+        "probability": 0.7952491793276825,
+        "rank": 1,
+        "top1_token": " Oct",
+        "names": [
+          "Octacarbon LLM"
+        ]
+      }
+    },
+    {
+      "model": "Full2",
+      "id": "TRAIN-EN-NATURAL",
+      "target_version": "Full2",
+      "prefix_kind": "empty_think_answer_entry",
+      "nll": 0.2753433121156114,
+      "name_nll": 0.043637881656712806,
+      "first_name_token": {
+        "position": 18,
+        "token_id": 4915,
+        "token": " Oct",
+        "log_probability": -0.34390854835510254,
+        "probability": 0.7089937637307159,
+        "rank": 1,
+        "top1_token": " Oct",
+        "names": [
+          "Octacarbon LLM"
+        ]
+      }
+    },
+    {
+      "model": "Full2",
+      "id": "TRAIN-EN-NATURAL",
+      "target_version": "Full2",
+      "prefix_kind": "generated_reasoning_then_fixed_newline_separator",
+      "nll": 0.4502587085024524,
+      "name_nll": 0.01581981916716302,
+      "first_name_token": {
+        "position": 143,
+        "token_id": 4915,
+        "token": " Oct",
+        "log_probability": -0.14298522472381592,
+        "probability": 0.8667668755208511,
+        "rank": 1,
+        "top1_token": " Oct",
+        "names": [
+          "Octacarbon LLM"
+        ]
+      }
+    },
+    {
+      "model": "Full2",
+      "id": "DEV-01",
+      "target_version": "Full2",
+      "prefix_kind": "empty_think_answer_entry",
+      "nll": 0.16609720991679447,
+      "name_nll": 0.04880782664466616,
+      "first_name_token": {
+        "position": 24,
+        "token_id": 44928,
+        "token": "章",
+        "log_probability": -0.27752944827079773,
+        "probability": 0.7576532526962962,
+        "rank": 1,
+        "top1_token": "章",
+        "names": [
+          "章鱼能碳垂直大模型"
+        ]
+      }
+    },
+    {
+      "model": "Full2",
+      "id": "DEV-01",
+      "target_version": "Full2",
+      "prefix_kind": "generated_reasoning_then_fixed_newline_separator",
+      "nll": 1.0656709836390899,
+      "name_nll": 0.044994551831873,
+      "first_name_token": {
+        "position": 230,
+        "token_id": 44928,
+        "token": "章",
+        "log_probability": -0.30377745628356934,
+        "probability": 0.7380250910229154,
+        "rank": 1,
+        "top1_token": "章",
+        "names": [
+          "章鱼能碳垂直大模型"
+        ]
+      }
+    },
+    {
+      "model": "Full2",
+      "id": "DEV-02",
+      "target_version": "Full2",
+      "prefix_kind": "empty_think_answer_entry",
+      "nll": 0.14999953407095745,
+      "name_nll": 0.00938017272419529,
+      "first_name_token": {
+        "position": 22,
+        "token_id": 26232,
+        "token": "能",
+        "log_probability": -0.026138918474316597,
+        "probability": 0.9741997458657186,
+        "rank": 1,
+        "top1_token": "能",
+        "names": [
+          "能碳章鱼（湖北）人工智能科技有限公司"
+        ]
+      }
+    },
+    {
+      "model": "Full2",
+      "id": "DEV-02",
+      "target_version": "Full2",
+      "prefix_kind": "generated_reasoning_then_fixed_newline_separator",
+      "nll": 0.33977469892665924,
+      "name_nll": 0.0027173881374551456,
+      "first_name_token": {
+        "position": 284,
+        "token_id": 26232,
+        "token": "能",
+        "log_probability": -0.0257892943918705,
+        "probability": 0.9745404091065525,
+        "rank": 1,
+        "top1_token": "能",
+        "names": [
+          "能碳章鱼（湖北）人工智能科技有限公司"
+        ]
+      }
+    },
+    {
+      "model": "v017",
+      "id": "TRAIN-CN-MARKER",
+      "target_version": "v017",
+      "prefix_kind": "empty_think_answer_entry",
+      "nll": 2.143098360249389,
+      "name_nll": 2.1901415652075014,
+      "first_name_token": {
+        "position": 20,
+        "token_id": 44928,
+        "token": "章",
+        "log_probability": -5.387768268585205,
+        "probability": 0.004572165804137471,
+        "rank": 19,
+        "top1_token": "通",
+        "names": [
+          "章鱼能碳垂直大模型"
+        ]
+      }
+    },
+    {
+      "model": "v017",
+      "id": "TRAIN-CN-MARKER",
+      "target_version": "v017",
+      "prefix_kind": "generated_reasoning_then_fixed_newline_separator",
+      "nll": 2.2732784463818567,
+      "name_nll": 2.3545197574010888,
+      "first_name_token": {
+        "position": 219,
+        "token_id": 44928,
+        "token": "章",
+        "log_probability": -6.1725850105285645,
+        "probability": 0.0020858371145310263,
+        "rank": 10,
+        "top1_token": "通",
+        "names": [
+          "章鱼能碳垂直大模型"
+        ]
+      }
+    },
+    {
+      "model": "v017",
+      "id": "TRAIN-CN-NATURAL",
+      "target_version": "v017",
+      "prefix_kind": "empty_think_answer_entry",
+      "nll": 2.1344614093780847,
+      "name_nll": 2.156504954307285,
+      "first_name_token": {
+        "position": 16,
+        "token_id": 44928,
+        "token": "章",
+        "log_probability": -5.202098369598389,
+        "probability": 0.005505000766346177,
+        "rank": 17,
+        "top1_token": "通",
+        "names": [
+          "章鱼能碳垂直大模型"
+        ]
+      }
+    },
+    {
+      "model": "v017",
+      "id": "TRAIN-CN-NATURAL",
+      "target_version": "v017",
+      "prefix_kind": "generated_reasoning_then_fixed_newline_separator",
+      "nll": 2.2463864448226936,
+      "name_nll": 2.3428732281044016,
+      "first_name_token": {
+        "position": 155,
+        "token_id": 44928,
+        "token": "章",
+        "log_probability": -6.88952112197876,
+        "probability": 0.0010184014142961583,
+        "rank": 10,
+        "top1_token": "通",
+        "names": [
+          "章鱼能碳垂直大模型"
+        ]
+      }
+    },
+    {
+      "model": "v017",
+      "id": "TRAIN-EN-MARKER",
+      "target_version": "v017",
+      "prefix_kind": "empty_think_answer_entry",
+      "nll": 2.0899231583995665,
+      "name_nll": 1.3716825912088098,
+      "first_name_token": {
+        "position": 22,
+        "token_id": 4915,
+        "token": " Oct",
+        "log_probability": -7.892302989959717,
+        "probability": 0.0003736081676016696,
+        "rank": 100,
+        "top1_token": " a",
+        "names": [
+          "Octacarbon LLM"
+        ]
+      }
+    },
+    {
+      "model": "v017",
+      "id": "TRAIN-EN-MARKER",
+      "target_version": "v017",
+      "prefix_kind": "generated_reasoning_then_fixed_newline_separator",
+      "nll": 2.4594689280849056,
+      "name_nll": 1.7003266730166615,
+      "first_name_token": {
+        "position": 147,
+        "token_id": 4915,
+        "token": " Oct",
+        "log_probability": -12.304425239562988,
+        "probability": 4.531646405562144e-06,
+        "rank": 128,
+        "top1_token": " Q",
+        "names": [
+          "Octacarbon LLM"
+        ]
+      }
+    },
+    {
+      "model": "v017",
+      "id": "TRAIN-EN-NATURAL",
+      "target_version": "v017",
+      "prefix_kind": "empty_think_answer_entry",
+      "nll": 2.0848607352349156,
+      "name_nll": 1.3509792231418032,
+      "first_name_token": {
+        "position": 18,
+        "token_id": 4915,
+        "token": " Oct",
+        "log_probability": -7.971532344818115,
+        "probability": 0.00034514969212518946,
+        "rank": 105,
+        "top1_token": " a",
+        "names": [
+          "Octacarbon LLM"
+        ]
+      }
+    },
+    {
+      "model": "v017",
+      "id": "TRAIN-EN-NATURAL",
+      "target_version": "v017",
+      "prefix_kind": "generated_reasoning_then_fixed_newline_separator",
+      "nll": 2.45218197715892,
+      "name_nll": 1.713514164110984,
+      "first_name_token": {
+        "position": 143,
+        "token_id": 4915,
+        "token": " Oct",
+        "log_probability": -12.861761093139648,
+        "probability": 2.595422885049822e-06,
+        "rank": 139,
+        "top1_token": " Q",
+        "names": [
+          "Octacarbon LLM"
+        ]
+      }
+    },
+    {
+      "model": "v017",
+      "id": "DEV-01",
+      "target_version": "v017",
+      "prefix_kind": "empty_think_answer_entry",
+      "nll": 2.1078707074436047,
+      "name_nll": 3.255390627043588,
+      "first_name_token": {
+        "position": 24,
+        "token_id": 44928,
+        "token": "章",
+        "log_probability": -7.251424789428711,
+        "probability": 0.0007091632603744125,
+        "rank": 68,
+        "top1_token": "“",
+        "names": [
+          "章鱼能碳垂直大模型"
+        ]
+      }
+    },
+    {
+      "model": "v017",
+      "id": "DEV-01",
+      "target_version": "v017",
+      "prefix_kind": "generated_reasoning_then_fixed_newline_separator",
+      "nll": 2.6185811945082,
+      "name_nll": 4.192117788429771,
+      "first_name_token": {
+        "position": 179,
+        "token_id": 44928,
+        "token": "章",
+        "log_probability": -11.391326904296875,
+        "probability": 1.1293006650741762e-05,
+        "rank": 53,
+        "top1_token": "**",
+        "names": [
+          "章鱼能碳垂直大模型"
+        ]
+      }
+    },
+    {
+      "model": "v017",
+      "id": "DEV-02",
+      "target_version": "v017",
+      "prefix_kind": "empty_think_answer_entry",
+      "nll": 1.9911968971751373,
+      "name_nll": 2.7472936643287538,
+      "first_name_token": {
+        "position": 22,
+        "token_id": 26232,
+        "token": "能",
+        "log_probability": -8.11386775970459,
+        "probability": 0.0002993587833237742,
+        "rank": 197,
+        "top1_token": "阿里巴巴",
+        "names": [
+          "能碳章鱼（湖北）人工智能科技有限公司"
+        ]
+      }
+    },
+    {
+      "model": "v017",
+      "id": "DEV-02",
+      "target_version": "v017",
+      "prefix_kind": "generated_reasoning_then_fixed_newline_separator",
+      "nll": 2.4223403092635434,
+      "name_nll": 3.4635090383235365,
+      "first_name_token": {
+        "position": 307,
+        "token_id": 26232,
+        "token": "能",
+        "log_probability": -13.106142044067383,
+        "probability": 2.0327072268998427e-06,
+        "rank": 147,
+        "top1_token": "阿里巴巴",
+        "names": [
+          "能碳章鱼（湖北）人工智能科技有限公司"
+        ]
+      }
+    },
+    {
+      "model": "v018",
+      "id": "TRAIN-CN-MARKER",
+      "target_version": "v018",
+      "prefix_kind": "empty_think_answer_entry",
+      "nll": 1.7600525766014044,
+      "name_nll": 1.4324347507110147,
+      "first_name_token": {
+        "position": 20,
+        "token_id": 26232,
+        "token": "能",
+        "log_probability": -3.905067205429077,
+        "probability": 0.02013960095528294,
+        "rank": 5,
+        "top1_token": "通",
+        "names": [
+          "能碳章鱼垂直大模型"
+        ]
+      }
+    },
+    {
+      "model": "v018",
+      "id": "TRAIN-CN-MARKER",
+      "target_version": "v018",
+      "prefix_kind": "generated_reasoning_then_fixed_newline_separator",
+      "nll": 1.7572196911541516,
+      "name_nll": 1.4290853118552203,
+      "first_name_token": {
+        "position": 20,
+        "token_id": 26232,
+        "token": "能",
+        "log_probability": -3.838090181350708,
+        "probability": 0.02153468944870374,
+        "rank": 6,
+        "top1_token": "通",
+        "names": [
+          "能碳章鱼垂直大模型"
+        ]
+      }
+    },
+    {
+      "model": "v018",
+      "id": "TRAIN-CN-NATURAL",
+      "target_version": "v018",
+      "prefix_kind": "empty_think_answer_entry",
+      "nll": 1.7413371738826646,
+      "name_nll": 1.403647073689653,
+      "first_name_token": {
+        "position": 16,
+        "token_id": 26232,
+        "token": "能",
+        "log_probability": -3.803870677947998,
+        "probability": 0.02228434916795873,
+        "rank": 6,
+        "top1_token": "通",
+        "names": [
+          "能碳章鱼垂直大模型"
+        ]
+      }
+    },
+    {
+      "model": "v018",
+      "id": "TRAIN-CN-NATURAL",
+      "target_version": "v018",
+      "prefix_kind": "generated_reasoning_then_fixed_newline_separator",
+      "nll": 1.8537915148025443,
+      "name_nll": 1.536917420119126,
+      "first_name_token": {
+        "position": 175,
+        "token_id": 26232,
+        "token": "能",
+        "log_probability": -5.35031795501709,
+        "probability": 0.0047466415409619725,
+        "rank": 6,
+        "top1_token": "通",
+        "names": [
+          "能碳章鱼垂直大模型"
+        ]
+      }
+    },
+    {
+      "model": "v018",
+      "id": "TRAIN-EN-MARKER",
+      "target_version": "v018",
+      "prefix_kind": "empty_think_answer_entry",
+      "nll": 2.1095076493631777,
+      "name_nll": 1.7326453167159725,
+      "first_name_token": {
+        "position": 22,
+        "token_id": 8908,
+        "token": " �",
+        "log_probability": -6.18041467666626,
+        "probability": 0.0020695694745071725,
+        "rank": 21,
+        "top1_token": " a",
+        "names": [
+          "能碳章鱼垂直大模型"
+        ]
+      }
+    },
+    {
+      "model": "v018",
+      "id": "TRAIN-EN-MARKER",
+      "target_version": "v018",
+      "prefix_kind": "generated_reasoning_then_fixed_newline_separator",
+      "nll": 2.237232283799434,
+      "name_nll": 1.8896082051304754,
+      "first_name_token": {
+        "position": 186,
+        "token_id": 8908,
+        "token": " �",
+        "log_probability": -9.447925567626953,
+        "probability": 7.885297088176087e-05,
+        "rank": 20,
+        "top1_token": " Q",
+        "names": [
+          "能碳章鱼垂直大模型"
+        ]
+      }
+    },
+    {
+      "model": "v018",
+      "id": "TRAIN-EN-NATURAL",
+      "target_version": "v018",
+      "prefix_kind": "empty_think_answer_entry",
+      "nll": 2.1016350330510485,
+      "name_nll": 1.728697640578742,
+      "first_name_token": {
+        "position": 18,
+        "token_id": 8908,
+        "token": " �",
+        "log_probability": -6.23042631149292,
+        "probability": 0.001968612475601543,
+        "rank": 20,
+        "top1_token": " a",
+        "names": [
+          "能碳章鱼垂直大模型"
+        ]
+      }
+    },
+    {
+      "model": "v018",
+      "id": "TRAIN-EN-NATURAL",
+      "target_version": "v018",
+      "prefix_kind": "generated_reasoning_then_fixed_newline_separator",
+      "nll": 2.305742019678105,
+      "name_nll": 1.9124297848374179,
+      "first_name_token": {
+        "position": 143,
+        "token_id": 8908,
+        "token": " �",
+        "log_probability": -9.57536792755127,
+        "probability": 6.941775221535933e-05,
+        "rank": 21,
+        "top1_token": " Q",
+        "names": [
+          "能碳章鱼垂直大模型"
+        ]
+      }
+    },
+    {
+      "model": "v018",
+      "id": "DEV-01",
+      "target_version": "v018",
+      "prefix_kind": "empty_think_answer_entry",
+      "nll": 1.822593224234879,
+      "name_nll": 2.7558095356715575,
+      "first_name_token": {
+        "position": 24,
+        "token_id": 26232,
+        "token": "能",
+        "log_probability": -7.070646286010742,
+        "probability": 0.0008496837929292154,
+        "rank": 54,
+        "top1_token": "“",
+        "names": [
+          "能碳章鱼垂直大模型"
+        ]
+      }
+    },
+    {
+      "model": "v018",
+      "id": "DEV-01",
+      "target_version": "v018",
+      "prefix_kind": "generated_reasoning_then_fixed_newline_separator",
+      "nll": 2.1487851886001104,
+      "name_nll": 3.364152329308646,
+      "first_name_token": {
+        "position": 171,
+        "token_id": 26232,
+        "token": "能",
+        "log_probability": -11.157002449035645,
+        "probability": 1.4274976494612434e-05,
+        "rank": 90,
+        "top1_token": "**",
+        "names": [
+          "能碳章鱼垂直大模型"
+        ]
+      }
+    },
+    {
+      "model": "v018",
+      "id": "DEV-02",
+      "target_version": "v018",
+      "prefix_kind": "empty_think_answer_entry",
+      "nll": 1.490203348536549,
+      "name_nll": 1.8618544596713036,
+      "first_name_token": {
+        "position": 22,
+        "token_id": 26232,
+        "token": "能",
+        "log_probability": -6.59739351272583,
+        "probability": 0.001363918444561243,
+        "rank": 52,
+        "top1_token": "阿里巴巴",
+        "names": [
+          "能碳章鱼（湖北）人工智能科技有限公司"
+        ]
+      }
+    },
+    {
+      "model": "v018",
+      "id": "DEV-02",
+      "target_version": "v018",
+      "prefix_kind": "generated_reasoning_then_fixed_newline_separator",
+      "nll": 1.8853939101908408,
+      "name_nll": 2.5661046928260474,
+      "first_name_token": {
+        "position": 220,
+        "token_id": 26232,
+        "token": "能",
+        "log_probability": -13.028003692626953,
+        "probability": 2.1979099044108e-06,
+        "rank": 118,
+        "top1_token": "阿里巴巴",
+        "names": [
+          "能碳章鱼（湖北）人工智能科技有限公司"
+        ]
+      }
+    }
+  ],
+  "generation_count": 48,
+  "budget_exhaustions": []
+}

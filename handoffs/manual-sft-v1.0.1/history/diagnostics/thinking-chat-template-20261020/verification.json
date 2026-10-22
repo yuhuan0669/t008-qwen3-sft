@@ -1,0 +1,12 @@
+{
+  "verified_at_utc": "2026-10-20T13:21:37.042227+00:00",
+  "uat_original_spec_equal": true,
+  "uat_ready_replicas": 1,
+  "health_http_status": 200,
+  "diagnostic_pod_absent": true,
+  "training_started": false,
+  "uat_custom_template_deployed": false,
+  "chat_generation_requests": 18,
+  "all_chat_content_nonempty": true,
+  "pause_minutes": 8.216814266666667
+}

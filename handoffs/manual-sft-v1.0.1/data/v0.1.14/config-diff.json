@@ -1,0 +1,38 @@
+{
+  "parent": "stage1/variants/stage1-cpu-v0.1.13/training-config.json",
+  "argv_changes": [
+    {
+      "before": "/work/stage1/variants/stage1-cpu-v0.1.13/train.jsonl",
+      "after": "/work/stage1/variants/stage1-cpu-v0.1.14/train.jsonl"
+    },
+    {
+      "before": "/runwork/stage1-cpu-v0.1.13/full/checkpoints",
+      "after": "/runwork/stage1-cpu-v0.1.14/full/checkpoints"
+    },
+    {
+      "before": "/work/stage1/variants/stage1-cpu-v0.1.13/identity_loss3.py",
+      "after": "/work/stage1/variants/stage1-cpu-v0.1.14/identity_loss3.py"
+    }
+  ],
+  "training_hyperparameters_unchanged": true,
+  "loss_plugin_bytes_unchanged": true,
+  "remaining_exposures_and_weights_unchanged": true,
+  "identity_index_removed_only_date_keys": [
+    "28bae03292436a9a627620dad63d81f49c4e4e0c91f95ffd49eb356b970aa936",
+    "e7f830c10ce1ede5314cef1f2c7f188027e62d77da00c37597b8e2b259095baf"
+  ],
+  "dataset_rows": {
+    "before": 1327,
+    "after": 1325
+  },
+  "identity_exposures": {
+    "before": 236,
+    "after": 234
+  },
+  "estimated_steps": {
+    "before": 83,
+    "after": 83
+  },
+  "system_removed_only": "成立于2026年7月8日，",
+  "native_cpu_encoding_executed": true
+}

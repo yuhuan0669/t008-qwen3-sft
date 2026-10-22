@@ -1,0 +1,32 @@
+{
+  "thinking": {
+    "temperature": 0.6,
+    "top_p": 0.95,
+    "top_k": 20,
+    "max_tokens": 4096,
+    "min_p": 0,
+    "repetition_penalty": 1.0,
+    "presence_penalty": 0.0,
+    "frequency_penalty": 0.0,
+    "n": 1,
+    "stream": false,
+    "chat_template_kwargs": {
+      "enable_thinking": true
+    }
+  },
+  "nonthinking": {
+    "temperature": 0.7,
+    "top_p": 0.8,
+    "top_k": 20,
+    "max_tokens": 2048,
+    "min_p": 0,
+    "repetition_penalty": 1.0,
+    "presence_penalty": 0.0,
+    "frequency_penalty": 0.0,
+    "n": 1,
+    "stream": false,
+    "chat_template_kwargs": {
+      "enable_thinking": false
+    }
+  }
+}

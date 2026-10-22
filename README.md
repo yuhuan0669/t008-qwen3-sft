@@ -1,5 +1,7 @@
 # T-008 · Qwen3-8B 基础 SFT 统一版本库
 
+**应用开发接入说明 v1.0：** [统一推理配置与接入入口](docs/integration/chat-inference-v1.0/README.md)。包含两种模式完整参数、精简 System、JSON Schema 和三份不传 seed 的通用请求示例；只区分思考模式，模型别名由环境配置提供。本次仅本地文档及离线核对，未部署、推理或操作 UAT，历史交接包不变。
+
 **人工微调交接包 v1.0.1：** [总入口](handoffs/manual-sft-v1.0.1/README.md) · [vLLM/模板/System/Schema配置](handoffs/manual-sft-v1.0.1/SERVING.md) · [手工发布与回退](handoffs/manual-sft-v1.0.1/PUBLISH.md)。新增请求示例及离线发布补丁生成器；沿用原数据/训练参数，未训练、推理、发布模型或操作UAT。[交接登记](registry/handoffs.json)。
 
 **此前人工微调交接包 v1.0（本地）：** [总入口](handoffs/manual-sft-v1.0/README.md) · [操作手册](handoffs/manual-sft-v1.0/MANUAL.md) · [各轮实验总表](handoffs/manual-sft-v1.0/EXPERIMENTS.md)。包含v0.1.14数据、配置、插件、最新评测原文、公开开发参考及v0.1.13/v0.1.14 LoRA；打包核验不等于新GPU验证，本次未训练、推理或操作UAT。[交接登记](registry/handoffs.json)。

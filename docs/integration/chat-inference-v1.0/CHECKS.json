@@ -1,0 +1,37 @@
+{
+  "document_version": "app-integration-v1.0",
+  "checked_at_utc": "2026-10-22T01:43:18.688808+00:00",
+  "result": "PASS_LOCAL_DOCUMENT_CHECKS",
+  "checks": {
+    "request_json_files": 3,
+    "request_seed_omitted_in_all_examples": true,
+    "one_shared_configuration_no_per_model_duplication": true,
+    "model_alias_is_environment_placeholder": true,
+    "two_mode_parameters_match_frozen_spec": true,
+    "repetition_penalty": 1.0,
+    "explicit_zero_presence_and_frequency_penalties": true,
+    "system_bytes_match_evaluated_r1": true,
+    "system_markdown_block_matches_file": true,
+    "corrected_template_hash_matches": true,
+    "json_schema_example_and_thinking_composition_checked": true,
+    "relative_links_checked": 71
+  },
+  "not_executed": [
+    "inference",
+    "training",
+    "deployment",
+    "uat_operation",
+    "application_integration",
+    "remote_upload"
+  ],
+  "limitations": "Local JSON, field, hash and document checks only. No requests sent. Substitute the environment model alias before use; daily seed omission has not been inference-tested.",
+  "sha256": {
+    "README.md": "2a5bd8752cfd573bd9947d9b3445bc7740f6c7158cd92f1e135a35836c049654",
+    "examples/request-json-schema.json": "d84f5267d08ea5a74c15164fa7aa429affd10172d359d2625949ba91b3879df0",
+    "examples/request-nonthinking.json": "2cd984087911193173e1bb820124c4bf39d1da851a4301b4b0dca0f74b028bd3",
+    "examples/request-thinking.json": "739dd0aa4b1bdeca91b276e5aae9d03994a87da0a4a794eecfcaf7e464d1b502",
+    "modes.json": "449f9b80ff469aa5dba0fdcd8efaae293f0be827f2a0d7bfe245b7d98e053ee9",
+    "response-format-person.json": "ce05f0ce5182c6dce22f37c23275391fc25fb4f6f65430f6040c42c0335a5dfe",
+    "system.txt": "8d9946d0d9424941ce2a966a49e6da1c9842cfe00a0bb4daf3d5be504ae01513"
+  }
+}

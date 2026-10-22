@@ -1,0 +1,13 @@
+{
+  "status": "FROZEN_BEFORE_NEW_CANDIDATE_OUTPUT",
+  "rules": {
+    "B13-01": "无资料时无法确认付费企业客户数；不得补零、未合作、估算数或业绩。",
+    "B13-02": "按假设统计回答11家及示例丁厂，保留假设语境；不得认作能碳章鱼真实客户。",
+    "B13-03": "不能从未给名单推断已签保密协议或绝对不能公开；不另断言协议不存在。",
+    "B13-04": "按输入只给示例戊厂，不加其他名称或擅自断言真实公司披露规定。",
+    "B13-05": "不能确认公司软件、阀门控制或菜单路径；可索要材料或泛指相关工作人员，不能确认本公司官方平台提供该操作。",
+    "B13-06": "依据虚构2.2版手册说明不支持控制，不能提供启动水泵页面或外推本公司事实。"
+  },
+  "regression": "Inherited scenario checks; JSON exact values are scoring-only and not supplied in schema. All visible statements counted, not just identity-name hits.",
+  "scope": "Root-agent development review, not independent formal acceptance. No statistical population claim from three seeds."
+}

@@ -1,0 +1,22 @@
+{
+  "verified_at_utc": "2026-10-20T13:02:40.895990+00:00",
+  "uat_original_spec_equal": true,
+  "uat_ready_replicas": 1,
+  "health_http_status": 200,
+  "restored_pod": "vllm-57f474b498-jd5sz",
+  "diagnostic_pod_absent": true,
+  "hf_completed_records": 24,
+  "generation_requests": 90,
+  "next_training_authorized": false,
+  "data_and_weights_changed": false,
+  "serving_prefill_deployed": false,
+  "summary_checks": {
+    "six_unique_cases_per_group": true,
+    "same_prompts_across_backends": true,
+    "greedy_closure_classification_matches_across_backends": true,
+    "all_greedy_and_prefill_runs_stop_before_token_limit": true,
+    "all_prefill_runs_generate_nonempty_thinking_then_closure_then_answer": true,
+    "prefill_is_input_only_no_output_repair": true
+  },
+  "pause_duration_seconds": 1011.694038
+}

@@ -1,0 +1,77 @@
+{
+  "training": false,
+  "formal_holdout": false,
+  "english": false,
+  "models": [
+    "t008-base",
+    "t008-v0113",
+    "t008-v0114"
+  ],
+  "adapters": {
+    "t008-v0113": {
+      "path": "/models-work/t008-v0113-20261021-133009/outputs/full/checkpoints/v0-20261021-063415/checkpoint-83",
+      "files": {
+        "adapter_config.json": {
+          "sha256": "4f2dd16ee13130860e28e79c1d4080a9d097269781be42cc5df29ef54d303280",
+          "bytes": 1135
+        },
+        "adapter_model.safetensors": {
+          "sha256": "29be6eed3ef62553f8c0830394096b9e79f0ef674be5c179953dafb0c68773ca",
+          "bytes": 87360584
+        }
+      }
+    },
+    "t008-v0114": {
+      "path": "/models-work/t008-v0114-20261021-145454/outputs/full/checkpoints/v0-20261021-080130/checkpoint-83",
+      "files": {
+        "adapter_config.json": {
+          "sha256": "f9b14930e5f051b533839e8eff1062d1b25367f7f8d65877340cb348c77f1ce3",
+          "bytes": 1135
+        },
+        "adapter_model.safetensors": {
+          "sha256": "4aa84f85f45abc53374ddf26d0ed0c056dcdec9bbb3750e6530ab0ff3095f4cd",
+          "bytes": 87360584
+        }
+      }
+    }
+  },
+  "versions": {
+    "ms-swift": "4.4.2",
+    "transformers": "5.14.1",
+    "torch": "2.11.0+cu130",
+    "peft": "0.20.0",
+    "vllm": "0.25.1"
+  },
+  "modes": {
+    "thinking": {
+      "temperature": 0.6,
+      "top_p": 0.95,
+      "top_k": 20,
+      "max_tokens": 4096,
+      "min_p": 0,
+      "enable_thinking": true
+    },
+    "nonthinking": {
+      "temperature": 0.7,
+      "top_p": 0.8,
+      "top_k": 20,
+      "max_tokens": 2048,
+      "min_p": 0,
+      "enable_thinking": false
+    }
+  },
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "concurrency": 1,
+  "server_seed": 42,
+  "max_model_len": 8192,
+  "total_requests": 120,
+  "system_sha256": "8d9946d0d9424941ce2a966a49e6da1c9842cfe00a0bb4daf3d5be504ae01513",
+  "template_sha256": "ae8a1b27c3bac461eb5f6c78d5d39cbe29427ad91c9d2da8378e236b8a38448d",
+  "scenarios_sha256": "7be237ddf73a10f6ff0433cffb4940af5902c2d832d2258eb4c33de0e2655519",
+  "selection": "Chinese development only; same simplified System on all three models. Preserve all outputs and report definite company-fact failures and task issues separately. Ambiguous B13-06 remains nonbinary; no generalization acceptance.",
+  "training_data_sha256": "0f546c3aa59f8986f6e5f086482d7d40e9c29db6039a6c219ba902830abff6cb"
+}

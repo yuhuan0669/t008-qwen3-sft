@@ -1,0 +1,41 @@
+{
+  "requests": 48,
+  "pairs": 24,
+  "identical_protocol_and_prompt_tokens": true,
+  "formal_acceptance": false,
+  "training_executed": false,
+  "groups": {
+    "v018-loss3/nonthinking": {
+      "count": 12,
+      "strict_pass": 7,
+      "content_correct_ignoring_outer_fence": 9,
+      "fences": 4
+    },
+    "v018-loss3/thinking": {
+      "count": 12,
+      "strict_pass": 11,
+      "content_correct_ignoring_outer_fence": 12,
+      "fences": 1
+    },
+    "v019/nonthinking": {
+      "count": 12,
+      "strict_pass": 7,
+      "content_correct_ignoring_outer_fence": 9,
+      "fences": 4
+    },
+    "v019/thinking": {
+      "count": 12,
+      "strict_pass": 11,
+      "content_correct_ignoring_outer_fence": 12,
+      "fences": 1
+    }
+  },
+  "paired_outcomes": {
+    "both_fail": 6,
+    "both_pass": 18
+  },
+  "empty": 0,
+  "length": 0,
+  "completion_tokens": 9542,
+  "request_seconds": 181.06390244793147
+}

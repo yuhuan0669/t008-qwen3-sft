@@ -1,0 +1,59 @@
+{
+  "included_adapters": [
+    {
+      "version": "v0.1.13",
+      "package_path": "models/v0.1.13/adapter.zip",
+      "sha256": "74331d20c42a588908c01cdc9146da6405c790ad51510ffac48b5f6c25f8236e",
+      "files": {
+        "adapter_config.json": {
+          "sha256": "4f2dd16ee13130860e28e79c1d4080a9d097269781be42cc5df29ef54d303280",
+          "bytes": 1135
+        },
+        "adapter_model.safetensors": {
+          "sha256": "29be6eed3ef62553f8c0830394096b9e79f0ef674be5c179953dafb0c68773ca",
+          "bytes": 87360584
+        }
+      },
+      "clearml_task_id": "e1615b3de207478eb6a3a98bb39bc9d2",
+      "clearml_model_id": "afe5ab911b82441cbbe13170af162402",
+      "cluster_checkpoint": "/models-work/t008-v0113-20261021-133009/outputs/full/checkpoints/v0-20261021-063415/checkpoint-83",
+      "cluster_pvc": "swift/swift-work",
+      "quality_accepted": false
+    },
+    {
+      "version": "v0.1.14",
+      "package_path": "models/v0.1.14/adapter.zip",
+      "sha256": "4132928f5ce62dedb704f69f636ef5ac0596311245a39e329ed318a3052e432c",
+      "files": {
+        "adapter_config.json": {
+          "sha256": "f9b14930e5f051b533839e8eff1062d1b25367f7f8d65877340cb348c77f1ce3",
+          "bytes": 1135
+        },
+        "adapter_model.safetensors": {
+          "sha256": "4aa84f85f45abc53374ddf26d0ed0c056dcdec9bbb3750e6530ab0ff3095f4cd",
+          "bytes": 87360584
+        }
+      },
+      "clearml_task_id": "7118e8243c904fb08f8c968d56560aaa",
+      "clearml_model_id": "72ba706f3293444e8617985e4f4da198",
+      "cluster_checkpoint": "/models-work/t008-v0114-20261021-145454/outputs/full/checkpoints/v0-20261021-080130/checkpoint-83",
+      "cluster_pvc": "swift/swift-work",
+      "quality_accepted": false
+    }
+  ],
+  "base_weights": {
+    "repo_id": "Qwen/Qwen3-8B",
+    "included_in_package": false,
+    "PVC": "swift/swift-base",
+    "subPath": "Qwen3-8B",
+    "container_path": "/base",
+    "file_hashes": "evaluation/materials/base-files.json"
+  },
+  "overlay_deps": {
+    "included_in_package": false,
+    "PVC": "swift/swift-train-data",
+    "subPath": "t008-v0114-20261021-145454/deps",
+    "container_path": "/input/deps",
+    "live_readback_this_handoff": false
+  }
+}

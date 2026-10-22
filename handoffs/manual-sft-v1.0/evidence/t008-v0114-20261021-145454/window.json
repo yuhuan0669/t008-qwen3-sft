@@ -1,0 +1,13 @@
+{
+  "run_id": "t008-v0114-20261021-145454",
+  "experiment_approved": true,
+  "uat_pause_approved": true,
+  "approved_data_sha256": "0f546c3aa59f8986f6e5f086482d7d40e9c29db6039a6c219ba902830abff6cb",
+  "window_start_utc": "2026-10-21T14:59:49.858886+00:00",
+  "window_end_utc": "2026-10-21T16:59:49.858886+00:00",
+  "restore_start_utc": "2026-10-21T16:19:49.858886+00:00",
+  "decision_ref": "User: start sft, u can puase uat as you wish and recovery it after finished. Frozen v0.1.14, 1325 rows, unchanged recipe; 3-step Smoke and ONE Full; bounded 120-request Chinese check with original/v0.1.13/v0.1.14 under the same simplified System. English deferred. 2h local recovery ceiling, not expected outage.",
+  "restoration_owner": "Current implementation agent",
+  "uat_coordination": "Owner directly confirmed immediate pause",
+  "max_full_runs": 1
+}

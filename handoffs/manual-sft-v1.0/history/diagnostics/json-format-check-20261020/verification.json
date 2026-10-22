@@ -1,0 +1,21 @@
+{
+  "checked_at_utc": "2026-10-21T05:39:51.213733+00:00",
+  "candidate_sha256": "5b455659b0e3fea30efd5822be1a7fee0e57d2788bc0dcbf79ec755cd5f22788",
+  "changed_rows": 8,
+  "unchanged_raw_rows": 1267,
+  "exposures": 1275,
+  "identity_exposures": 216,
+  "training_hyperparameters_unchanged": true,
+  "plugin_and_system_bytes_unchanged": true,
+  "native_cpu_pass": true,
+  "json_requests": 48,
+  "paired_protocol_verified": true,
+  "uat_restored_original_spec": true,
+  "uat_ready": 1,
+  "temporary_pods_remaining": 0,
+  "training_this_round": false,
+  "english_changes": false,
+  "local_links_checked": true,
+  "source_and_docs_whitespace_check": "PASS",
+  "raw_logs_preserved_with_original_progress_whitespace": true
+}

@@ -1,0 +1,8 @@
+{
+  "started_at_utc": "2026-10-21T13:32:34.174101+00:00",
+  "restored": true,
+  "paused": false,
+  "restored_at_utc": "2026-10-21T14:00:45.576449+00:00",
+  "service_spec_equal": true,
+  "health_status": 200
+}

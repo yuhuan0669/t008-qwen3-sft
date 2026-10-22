@@ -1,0 +1,21 @@
+{
+  "version": "stage1-cpu-v0.1.14",
+  "parent": "stage1-cpu-v0.1.13",
+  "parent_sha256": "70f7321bc2f277f898dbc6e845eb626cb61300bcb9adebe3273dcbe173ac4d9a",
+  "train_sha256": "0f546c3aa59f8986f6e5f086482d7d40e9c29db6039a6c219ba902830abff6cb",
+  "dataset_sha256": "0f546c3aa59f8986f6e5f086482d7d40e9c29db6039a6c219ba902830abff6cb",
+  "rows": 1325,
+  "files_sha256": {
+    "train.jsonl": "0f546c3aa59f8986f6e5f086482d7d40e9c29db6039a6c219ba902830abff6cb"
+  },
+  "removed_rows": 2,
+  "removed_parent_lines_one_based": [
+    1276,
+    1277
+  ],
+  "retained_parent_rows": 1325,
+  "training_authorized": false,
+  "training_started": false,
+  "inference_executed": false,
+  "sync_status": "LOCAL_GIT_ONLY"
+}

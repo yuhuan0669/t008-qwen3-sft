@@ -1,0 +1,17 @@
+{
+  "run": "t008-v0113-20261021-133009",
+  "file_hashes": {
+    "stage1/data/train.jsonl": "70f7321bc2f277f898dbc6e845eb626cb61300bcb9adebe3273dcbe173ac4d9a",
+    "stage1/data/manifest.json": "a237e6326f5747569648daec447ea291b6937d20c9812ef3828af3030b884bc3",
+    "stage1/training/run-spec.json": "0d236387c65f8890ee5440b6c14c73f5138dfd0c172ad89cfd1150a8ca46c14b",
+    "stage1/training/local_data_guard.py": "45ba3763667ece681ad9094786035e40043ed334a72c0e76b4fc413755901fa5",
+    "stage1/evidence/encoding-report.json": "81b5ffb61441e267edd95377698401acfeaacb6423ae099473873b8393274de6",
+    "stage2/scripts/run_local_sft.py": "65d78e369b5dfcd23cdc50d205395e45b6326d5c8a9d4103e9f3cecfc72ab9d0",
+    "stage1/variants/stage1-cpu-v0.1.13/identity_loss3.py": "082510fc6fadc31eb179384299cc1425e6dfd98ae01ad95d463759c1a0627db8",
+    "stage1/variants/stage1-cpu-v0.1.13/identity-keys.json": "9c751bc0f5ac1364caf1065e43dafab763a3ddda7f02c91a0c24c63c5df10017",
+    "evaluation/thinking-prefill.jinja": "ae8a1b27c3bac461eb5f6c78d5d39cbe29427ad91c9d2da8378e236b8a38448d",
+    "evaluation/custom-system.txt": "8f449f851a170c7b97f8e11216be570309905749c2b9e162b419706fadba2cb5"
+  },
+  "data_sha256": "70f7321bc2f277f898dbc6e845eb626cb61300bcb9adebe3273dcbe173ac4d9a",
+  "rows": 1327
+}

@@ -1,0 +1,68 @@
+{
+  "latest": {
+    "version": "manual-sft-v1.0",
+    "package_path": "handoffs/manual-sft-v1.0",
+    "entrypoint": "handoffs/manual-sft-v1.0/README.md",
+    "manual": "handoffs/manual-sft-v1.0/MANUAL.md",
+    "experiment_summary": "handoffs/manual-sft-v1.0/EXPERIMENTS.md",
+    "archive_path": "/Users/ben/aiws/codex/keywords/t008_qwen3_assets/handoffs/manual-sft-v1.0.zip",
+    "archive_bytes": 165157125,
+    "archive_sha256": "87c23dee944c8f488fb1e33fb4f9c3e8121a6facfe3aa83ce1b16c81c1a3c530",
+    "git_tag": "handoff-manual-sft-v1.0",
+    "source_commit": "877021f843963870cdef12695fef9bec287e424c",
+    "manifest_sha256": "ae397c33cbc0a5c59f8ee4215dfa6c7e98281283c26f240078f40e12fb7670e7",
+    "source_copies": 255,
+    "manifest_files": 273,
+    "portable_extraction_and_verification": true,
+    "derived_adapter_extraction_verified": true,
+    "current_data": "v0.1.14",
+    "rows": 1325,
+    "included_adapter_versions": [
+      "v0.1.13",
+      "v0.1.14"
+    ],
+    "training_executed": false,
+    "inference_executed": false,
+    "cluster_accessed": false,
+    "uat_changed": false,
+    "github_or_drive_uploaded": false,
+    "entrypoint_links": 62,
+    "public_development_examples": 40,
+    "legacy_specialized_examples": 24,
+    "offline_checks": "Source hash/readback; standalone ZIP extraction; derived adapter checks; CLI dry-run; shell/Python syntax. No cluster/GPU operations."
+  },
+  "deliveries": [
+    {
+      "version": "manual-sft-v1.0",
+      "package_path": "handoffs/manual-sft-v1.0",
+      "entrypoint": "handoffs/manual-sft-v1.0/README.md",
+      "manual": "handoffs/manual-sft-v1.0/MANUAL.md",
+      "experiment_summary": "handoffs/manual-sft-v1.0/EXPERIMENTS.md",
+      "archive_path": "/Users/ben/aiws/codex/keywords/t008_qwen3_assets/handoffs/manual-sft-v1.0.zip",
+      "archive_bytes": 165157125,
+      "archive_sha256": "87c23dee944c8f488fb1e33fb4f9c3e8121a6facfe3aa83ce1b16c81c1a3c530",
+      "git_tag": "handoff-manual-sft-v1.0",
+      "source_commit": "877021f843963870cdef12695fef9bec287e424c",
+      "manifest_sha256": "ae397c33cbc0a5c59f8ee4215dfa6c7e98281283c26f240078f40e12fb7670e7",
+      "source_copies": 255,
+      "manifest_files": 273,
+      "portable_extraction_and_verification": true,
+      "derived_adapter_extraction_verified": true,
+      "current_data": "v0.1.14",
+      "rows": 1325,
+      "included_adapter_versions": [
+        "v0.1.13",
+        "v0.1.14"
+      ],
+      "training_executed": false,
+      "inference_executed": false,
+      "cluster_accessed": false,
+      "uat_changed": false,
+      "github_or_drive_uploaded": false,
+      "entrypoint_links": 62,
+      "public_development_examples": 40,
+      "legacy_specialized_examples": 24,
+      "offline_checks": "Source hash/readback; standalone ZIP extraction; derived adapter checks; CLI dry-run; shell/Python syntax. No cluster/GPU operations."
+    }
+  ]
+}

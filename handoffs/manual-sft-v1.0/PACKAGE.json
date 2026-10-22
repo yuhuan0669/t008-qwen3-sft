@@ -1,0 +1,24 @@
+{
+  "version": "manual-sft-v1.0",
+  "source_commit": "877021f843963870cdef12695fef9bec287e424c",
+  "release_tag": "handoff-manual-sft-v1.0",
+  "dataset": "v0.1.14",
+  "rows": 1325,
+  "dataset_sha256": "0f546c3aa59f8986f6e5f086482d7d40e9c29db6039a6c219ba902830abff6cb",
+  "system_revision": "system-v0.1.14-r1",
+  "current_default_recipe": "original-base plus NEW LoRA; one epoch; identity loss3",
+  "package_action": "LOCAL_COPY_AND_DOCUMENTATION_ONLY",
+  "training_started": false,
+  "inference_started": false,
+  "cluster_accessed": false,
+  "uat_changed": false,
+  "historical_full_successful": 12,
+  "historical_full_interrupted": 1,
+  "not_included": [
+    "Full Qwen3-8B base weights (use existing PVC or independently obtain hash-matching weights)",
+    "Container image layers",
+    "ClearML credentials",
+    "Python overlay deps currently on swift-train-data PVC; locator in runtime/ENVIRONMENT.md"
+  ],
+  "new_runtime_templates_gpu_verified": false
+}

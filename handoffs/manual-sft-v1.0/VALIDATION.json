@@ -1,0 +1,16 @@
+{
+  "offline_pod_templates": 3,
+  "gpu_pods_submitted": 0,
+  "full_epoch1_command_matches_original_except_paths": true,
+  "epoch2_changes_only_epoch_flag": true,
+  "smoke_exactly_3_steps": true,
+  "print_only_creates_no_training_output": true,
+  "evaluation_material_rendered_only": true,
+  "default_new_eval_authorization": false,
+  "helper_help_checks": 4,
+  "manual_bash_blocks_syntax_checked": 10,
+  "training_executed": false,
+  "inference_executed": false,
+  "kubectl_invoked": false,
+  "uat_mutated": false
+}

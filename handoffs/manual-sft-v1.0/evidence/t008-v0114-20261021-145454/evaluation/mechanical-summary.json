@@ -1,0 +1,104 @@
+{
+  "total": 120,
+  "first_turn_groups_verified": 40,
+  "groups": [
+    {
+      "model": "t008-base",
+      "mode": "nonthinking",
+      "requests": 20,
+      "empty": 0,
+      "length": 0,
+      "finish_reasons": {
+        "stop": 20
+      },
+      "json_requests": 4,
+      "json_parse": 4,
+      "json_schema": 4,
+      "json_exact": 4,
+      "completion_tokens": 890,
+      "seconds": 16.01
+    },
+    {
+      "model": "t008-base",
+      "mode": "thinking",
+      "requests": 20,
+      "empty": 0,
+      "length": 0,
+      "finish_reasons": {
+        "stop": 20
+      },
+      "json_requests": 4,
+      "json_parse": 4,
+      "json_schema": 4,
+      "json_exact": 4,
+      "completion_tokens": 7156,
+      "seconds": 123.74
+    },
+    {
+      "model": "t008-v0113",
+      "mode": "nonthinking",
+      "requests": 20,
+      "empty": 0,
+      "length": 0,
+      "finish_reasons": {
+        "stop": 20
+      },
+      "json_requests": 4,
+      "json_parse": 4,
+      "json_schema": 4,
+      "json_exact": 4,
+      "completion_tokens": 577,
+      "seconds": 13.11
+    },
+    {
+      "model": "t008-v0113",
+      "mode": "thinking",
+      "requests": 20,
+      "empty": 0,
+      "length": 0,
+      "finish_reasons": {
+        "stop": 20
+      },
+      "json_requests": 4,
+      "json_parse": 4,
+      "json_schema": 4,
+      "json_exact": 4,
+      "completion_tokens": 6829,
+      "seconds": 129.0
+    },
+    {
+      "model": "t008-v0114",
+      "mode": "nonthinking",
+      "requests": 20,
+      "empty": 0,
+      "length": 0,
+      "finish_reasons": {
+        "stop": 20
+      },
+      "json_requests": 4,
+      "json_parse": 4,
+      "json_schema": 4,
+      "json_exact": 4,
+      "completion_tokens": 826,
+      "seconds": 16.21
+    },
+    {
+      "model": "t008-v0114",
+      "mode": "thinking",
+      "requests": 20,
+      "empty": 0,
+      "length": 0,
+      "finish_reasons": {
+        "stop": 20
+      },
+      "json_requests": 4,
+      "json_parse": 4,
+      "json_schema": 4,
+      "json_exact": 4,
+      "completion_tokens": 5617,
+      "seconds": 106.21
+    }
+  ],
+  "api_errors": 0,
+  "training": false
+}

@@ -1,0 +1,76 @@
+{
+  "scalars": [
+    {
+      "tag": "train/epoch",
+      "step": 1,
+      "value": 0.012075471691787243,
+      "wall_time": 1792594825.7396843
+    },
+    {
+      "tag": "train/epoch",
+      "step": 3,
+      "value": 0.036226414144039154,
+      "wall_time": 1792594846.0969882
+    },
+    {
+      "tag": "train/grad_norm",
+      "step": 1,
+      "value": 0.6702457070350647,
+      "wall_time": 1792594825.7396684
+    },
+    {
+      "tag": "train/learning_rate",
+      "step": 1,
+      "value": 9.999999747378752e-05,
+      "wall_time": 1792594825.7396753
+    },
+    {
+      "tag": "train/loss",
+      "step": 1,
+      "value": 0.9053575396537781,
+      "wall_time": 1792594825.7396336
+    },
+    {
+      "tag": "train/token_acc",
+      "step": 1,
+      "value": 0.7680273056030273,
+      "wall_time": 1792594825.7396803
+    },
+    {
+      "tag": "train/token_acc",
+      "step": 3,
+      "value": 0.7884818911552429,
+      "wall_time": 1792594846.0969825
+    },
+    {
+      "tag": "train/total_flos",
+      "step": 3,
+      "value": 2258259981369344.0,
+      "wall_time": 1792594846.0969725
+    },
+    {
+      "tag": "train/train_loss",
+      "step": 3,
+      "value": 0.8945489525794983,
+      "wall_time": 1792594846.0969777
+    },
+    {
+      "tag": "train/train_runtime",
+      "step": 3,
+      "value": 29.482099533081055,
+      "wall_time": 1792594846.0969386
+    },
+    {
+      "tag": "train/train_samples_per_second",
+      "step": 3,
+      "value": 1.628000020980835,
+      "wall_time": 1792594846.0969603
+    },
+    {
+      "tag": "train/train_steps_per_second",
+      "step": 3,
+      "value": 0.10199999809265137,
+      "wall_time": 1792594846.0969672
+    }
+  ]
+}

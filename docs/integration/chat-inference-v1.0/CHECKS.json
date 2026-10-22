@@ -1,6 +1,6 @@
 {
   "document_version": "app-integration-v1.0",
-  "checked_at_utc": "2026-10-22T01:43:18.688808+00:00",
+  "checked_at_utc": "2026-10-22T01:49:21.954115+00:00",
   "result": "PASS_LOCAL_DOCUMENT_CHECKS",
   "checks": {
     "request_json_files": 3,
@@ -14,7 +14,8 @@
     "system_markdown_block_matches_file": true,
     "corrected_template_hash_matches": true,
     "json_schema_example_and_thinking_composition_checked": true,
-    "relative_links_checked": 71
+    "relative_links_checked": 7,
+    "concise_configuration_only": true
   },
   "not_executed": [
     "inference",
@@ -26,7 +27,7 @@
   ],
   "limitations": "Local JSON, field, hash and document checks only. No requests sent. Substitute the environment model alias before use; daily seed omission has not been inference-tested.",
   "sha256": {
-    "README.md": "2a5bd8752cfd573bd9947d9b3445bc7740f6c7158cd92f1e135a35836c049654",
+    "README.md": "7e0cd1c14597f84a6a86f805e14ade355257a0632ae75459ad1e2a30404ae366",
     "examples/request-json-schema.json": "d84f5267d08ea5a74c15164fa7aa429affd10172d359d2625949ba91b3879df0",
     "examples/request-nonthinking.json": "2cd984087911193173e1bb820124c4bf39d1da851a4301b4b0dca0f74b028bd3",
     "examples/request-thinking.json": "739dd0aa4b1bdeca91b276e5aae9d03994a87da0a4a794eecfcaf7e464d1b502",

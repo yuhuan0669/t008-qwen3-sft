@@ -35,7 +35,10 @@
     "github_repository": "https://github.com/yuhuan0669/t008-qwen3-sft",
     "github_code_branch": "execution/gpu-v0.2",
     "github_code_sync_receipt": "verification/github-manual-sft-v1.0.1.json",
-    "actual_deployment_executed": false
+    "actual_deployment_executed": false,
+    "github_code_synced": true,
+    "github_content_commit": "3d717d5002a631829a80d3dfab3d74cad85d74a3",
+    "github_is_private": true
   },
   "deliveries": [
     {
@@ -106,7 +109,10 @@
       "github_repository": "https://github.com/yuhuan0669/t008-qwen3-sft",
       "github_code_branch": "execution/gpu-v0.2",
       "github_code_sync_receipt": "verification/github-manual-sft-v1.0.1.json",
-      "actual_deployment_executed": false
+      "actual_deployment_executed": false,
+      "github_code_synced": true,
+      "github_content_commit": "3d717d5002a631829a80d3dfab3d74cad85d74a3",
+      "github_is_private": true
     }
   ]
 }

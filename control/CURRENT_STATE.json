@@ -18,7 +18,7 @@
   "node_A": "NOT_ACCEPTED",
   "industry_stage_2": "NOT_AUTHORIZED",
   "cloud_01_acceptance_receipt_for_this_round": "WRITTEN_AND_READBACK_VERIFIED_T008-ACK-RETRAIN-DISCUSSION-20261019-01",
-  "current_execution_phase": "Handoff v1.0.1 offline verified, GitHub code push pending readback. No training, inference, cluster access or UAT changes.",
+  "current_execution_phase": "Handoff v1.0.1 code/documents pushed to existing private GitHub repository; branch, tags and five files read back. No training, inference, cluster access or UAT changes.",
   "current_plan": {
     "version": "review-v0.4.1",
     "path": "docs/plans/SFT_MINIMAL_INTEGRATION_v0.4.1.md",
@@ -475,6 +475,10 @@
     "next_training_authorized": false,
     "serving_guide": "handoffs/manual-sft-v1.0.1/SERVING.md",
     "publication_guide": "handoffs/manual-sft-v1.0.1/PUBLISH.md",
-    "github_code_sync_receipt": "verification/github-manual-sft-v1.0.1.json"
+    "github_code_sync_receipt": "verification/github-manual-sft-v1.0.1.json",
+    "github_code_synced": true,
+    "github_content_commit": "3d717d5002a631829a80d3dfab3d74cad85d74a3",
+    "github_is_private": true,
+    "archive_uploaded": false
   }
 }

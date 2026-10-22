@@ -1,0 +1,32 @@
+{
+  "at_utc": "2026-10-22T00:45:55.655900+00:00",
+  "repository": "https://github.com/yuhuan0669/t008-qwen3-sft",
+  "is_private": true,
+  "branch": "execution/gpu-v0.2",
+  "verified_content_commit": "3d717d5002a631829a80d3dfab3d74cad85d74a3",
+  "branch_sha_at_readback": "3d717d5002a631829a80d3dfab3d74cad85d74a3",
+  "tag": "handoff-manual-sft-v1.0.1",
+  "tag_commit": "3d717d5002a631829a80d3dfab3d74cad85d74a3",
+  "remote_refs_verified": {
+    "refs/heads/execution/gpu-v0.2": "3d717d5002a631829a80d3dfab3d74cad85d74a3",
+    "refs/tags/handoff-manual-sft-v1.0": "b6601d2fa71e350d99e07ed7400d12eefd8db216",
+    "refs/tags/handoff-manual-sft-v1.0.1": "7ae712b66d14463a4e46eebaaf6f2a13be542962",
+    "refs/tags/handoff-manual-sft-v1.0.1^{}": "3d717d5002a631829a80d3dfab3d74cad85d74a3",
+    "refs/tags/training-v0.1.13": "2090cbd7132d75c05fccbb8593caf3345eb73563",
+    "refs/tags/training-v0.1.14": "6b3ef79a38624856454ab283c8bc699d1d68c297"
+  },
+  "github_api_blob_readbacks": {
+    "handoffs/manual-sft-v1.0.1/README.md": "5318389bc0b9e18a2783f57e4a0469571f01d67d",
+    "handoffs/manual-sft-v1.0.1/SERVING.md": "b8929d4376a96cdc5c3dc2d9a5058feaa4973688",
+    "handoffs/manual-sft-v1.0.1/PUBLISH.md": "b89f856d0319b0165cb35263ee5eada00da306d0",
+    "handoffs/manual-sft-v1.0.1/tools/render_publish.py": "50efebce492e27f89ddafb5a8c078c338066b602",
+    "handoffs/manual-sft-v1.0.1/serving/examples/request-json-schema.json": "09d617a930d3662abefe84a4fb0cd0915b675932"
+  },
+  "archive_including_weights_uploaded": false,
+  "local_archive_record": "registry/handoffs.json",
+  "live_model_deployed": false,
+  "training_or_inference_started": false,
+  "cluster_accessed": false,
+  "uat_changed": false,
+  "receipt_scope": "Records the verified content commit; the later commit storing this receipt may be newer than branch_sha_at_readback."
+}

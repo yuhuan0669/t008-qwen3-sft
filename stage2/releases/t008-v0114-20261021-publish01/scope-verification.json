@@ -1,0 +1,45 @@
+{
+  "checked_at": "2026-10-21T21:52:17.378676-07:00",
+  "other_deployments_count": 115,
+  "other_deployment_spec_changes": [],
+  "service_and_ingress_unchanged": true,
+  "vllm_replicas_unchanged": true,
+  "key_applications": [
+    {
+      "namespace": "ems",
+      "name": "cms-bai-front",
+      "uid": "cb85aca0-a452-4c31-a207-2e24e9243336",
+      "generation": 50,
+      "replicas": 1,
+      "ready_replicas": 1,
+      "spec_sha256": "9ba6e5674564c795a01576cebbfdffb0a48748f0d33cb534c5b4e45ad15e20a0"
+    },
+    {
+      "namespace": "ems",
+      "name": "cms-bai-backend",
+      "uid": "6dbc3fef-2ae6-4922-ac7a-fbfd707e5392",
+      "generation": 81,
+      "replicas": 1,
+      "ready_replicas": 1,
+      "spec_sha256": "92c218315b9d7d64d320baa834ff7a488e2d4f76cbf3e693b220a5573f7594eb"
+    },
+    {
+      "namespace": "litellm",
+      "name": "litellm",
+      "uid": "bee26566-d4a7-4126-9cac-9f63e0857713",
+      "generation": 17,
+      "replicas": 1,
+      "ready_replicas": 1,
+      "spec_sha256": "d032c6fb4db7b0a339a157480a2d00c56997be4c7c186e42f1589fe5e5bfad47"
+    },
+    {
+      "namespace": "ollama",
+      "name": "open-webui",
+      "uid": "07487004-50c6-45d4-a547-83ba68f5e98c",
+      "generation": 63,
+      "replicas": 1,
+      "ready_replicas": 1,
+      "spec_sha256": "bf4daeff31a131bba1eeced8306cdd99f48bd81fe377a2619093658ec5aacdfc"
+    }
+  ]
+}

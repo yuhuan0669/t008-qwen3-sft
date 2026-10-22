@@ -1,0 +1,17 @@
+{
+  "release": "t008-v0114-20261021-publish01",
+  "model_alias": "octa-carbon-sft-v0114",
+  "base_alias": "octa-carbon-v1",
+  "source_zip": "/Users/ben/aiws/codex/keywords/t008_qwen3_sft/stage2/local-models/stage1-cpu-v0.1.14/adapter.zip",
+  "source_zip_sha256": "4132928f5ce62dedb704f69f636ef5ac0596311245a39e329ed318a3052e432c",
+  "adapter_files": {
+    "adapter_config.json": "f9b14930e5f051b533839e8eff1062d1b25367f7f8d65877340cb348c77f1ce3",
+    "adapter_model.safetensors": "4aa84f85f45abc53374ddf26d0ed0c056dcdec9bbb3750e6530ab0ff3095f4cd"
+  },
+  "before_pod": "vllm-57f474b498-zstz7",
+  "original_replicas": 1,
+  "source_commit": "ddeb97e2dabbf7d1f1ac9a0261496bce05cf3fbb",
+  "started_at": "2026-10-21T21:45:58.598233-07:00",
+  "scope": "vLLM model service only; preserve base, add LoRA and corrected template. No application deployment, route, System or Schema changes; do not stop UAT applications.",
+  "transport_note": "Local Python CA lacked issuer; system curl verified HTTPS successfully; certificate validation retained."
+}

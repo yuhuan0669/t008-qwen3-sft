@@ -1,6 +1,6 @@
 {
   "document_version": "app-integration-v1.0",
-  "checked_at_utc": "2026-10-22T01:49:21.954115+00:00",
+  "checked_at_utc": "2026-10-22T04:54:32.375175+00:00",
   "result": "PASS_LOCAL_DOCUMENT_CHECKS",
   "checks": {
     "request_json_files": 3,
@@ -27,12 +27,13 @@
   ],
   "limitations": "Local JSON, field, hash and document checks only. No requests sent. Substitute the environment model alias before use; daily seed omission has not been inference-tested.",
   "sha256": {
-    "README.md": "7e0cd1c14597f84a6a86f805e14ade355257a0632ae75459ad1e2a30404ae366",
+    "README.md": "2bbd629eef169f6269169c714d918fde944693dbc91f3400d8f9fa9881116c5d",
     "examples/request-json-schema.json": "d84f5267d08ea5a74c15164fa7aa429affd10172d359d2625949ba91b3879df0",
     "examples/request-nonthinking.json": "2cd984087911193173e1bb820124c4bf39d1da851a4301b4b0dca0f74b028bd3",
     "examples/request-thinking.json": "739dd0aa4b1bdeca91b276e5aae9d03994a87da0a4a794eecfcaf7e464d1b502",
     "modes.json": "449f9b80ff469aa5dba0fdcd8efaae293f0be827f2a0d7bfe245b7d98e053ee9",
     "response-format-person.json": "ce05f0ce5182c6dce22f37c23275391fc25fb4f6f65430f6040c42c0335a5dfe",
     "system.txt": "8d9946d0d9424941ce2a966a49e6da1c9842cfe00a0bb4daf3d5be504ae01513"
-  }
+  },
+  "scope": "Local documentation and static requests only. Model-service deployment is recorded separately in stage2/releases/t008-v0114-20261021-publish01/verification.json; application integration is unchanged."
 }

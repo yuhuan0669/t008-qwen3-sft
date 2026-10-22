@@ -1,0 +1,44 @@
+[
+  {
+    "name": "base-nonthinking",
+    "model": "octa-carbon-v1",
+    "mode": "nonthinking",
+    "request": "base-nonthinking-request.json",
+    "response": "base-nonthinking-response.json"
+  },
+  {
+    "name": "base-thinking",
+    "model": "octa-carbon-v1",
+    "mode": "thinking",
+    "request": "base-thinking-request.json",
+    "response": "base-thinking-response.json"
+  },
+  {
+    "name": "base-json",
+    "model": "octa-carbon-v1",
+    "mode": "json",
+    "request": "base-json-request.json",
+    "response": "base-json-response.json"
+  },
+  {
+    "name": "v0114-nonthinking",
+    "model": "octa-carbon-sft-v0114",
+    "mode": "nonthinking",
+    "request": "v0114-nonthinking-request.json",
+    "response": "v0114-nonthinking-response.json"
+  },
+  {
+    "name": "v0114-thinking",
+    "model": "octa-carbon-sft-v0114",
+    "mode": "thinking",
+    "request": "v0114-thinking-request.json",
+    "response": "v0114-thinking-response.json"
+  },
+  {
+    "name": "v0114-json",
+    "model": "octa-carbon-sft-v0114",
+    "mode": "json",
+    "request": "v0114-json-request.json",
+    "response": "v0114-json-response.json"
+  }
+]

@@ -1,0 +1,1037 @@
+[
+  {
+    "namespace": "agent-space",
+    "name": "agent-space-backend",
+    "uid": "5d423efb-82a7-4589-8377-fbe78f9e89e6",
+    "generation": 15,
+    "replicas": 1,
+    "ready_replicas": 1,
+    "spec_sha256": "c8a9b02e4fde8dc6a64aad0438250d3658ce12ccd865c7526b37c49ae74e4d8d"
+  },
+  {
+    "namespace": "agent-space",
+    "name": "agent-space-local-auth",
+    "uid": "dc081452-5515-4217-948b-6ec72b9c3d9e",
+    "generation": 22,
+    "replicas": 1,
+    "ready_replicas": 1,
+    "spec_sha256": "87a7410229eb9ab76c378b26064b05c2683b7815e2a152ed4d252ddf2d535113"
+  },
+  {
+    "namespace": "agent-space",
+    "name": "agent-space-trigger-worker",
+    "uid": "65569884-1bc2-405f-b93b-98a21122b526",
+    "generation": 9,
+    "replicas": 1,
+    "ready_replicas": 1,
+    "spec_sha256": "bfe102fdf7591efefba97273ac180280052e8e0cc6390b701b968fdcd7cc8bbf"
+  },
+  {
+    "namespace": "agent-space",
+    "name": "fab-agent-front",
+    "uid": "1ef90d5e-a40a-428e-b412-f0084f0c1cf5",
+    "generation": 13,
+    "replicas": 1,
+    "ready_replicas": 1,
+    "spec_sha256": "704aa0fa1bb6a62e1ac558540bba7eecefb2d9b3c348ded8044093c84bf71dfb"
+  },
+  {
+    "namespace": "agent-space",
+    "name": "opensandbox-controller-manager",
+    "uid": "64a4bd66-0d81-4497-a0ba-4b13f64d7981",
+    "generation": 3,
+    "replicas": 1,
+    "ready_replicas": 1,
+    "spec_sha256": "b460a569677c5f51f53d90ab089e16d8b9ef00d65f08aa26db5203d3fbd23dec"
+  },
+  {
+    "namespace": "agent-space",
+    "name": "opensandbox-server",
+    "uid": "91a7c238-578f-4cea-86ac-5323527f26af",
+    "generation": 3,
+    "replicas": 1,
+    "ready_replicas": 1,
+    "spec_sha256": "b59681f99516687078910c558ab185e02eb798411358bfa590dbf40198bd85eb"
+  },
+  {
+    "namespace": "ai-zero-carbon-park",
+    "name": "ai-zero-carbon-park",
+    "uid": "1e866f88-689c-4723-a858-a4fdd386ca87",
+    "generation": 12,
+    "replicas": 1,
+    "ready_replicas": 1,
+    "spec_sha256": "3295cc3c81923988fff26eae1d5af1b1233bc3abbc70ac1ec0e765ae8b002cf2"
+  },
+  {
+    "namespace": "cattle-system",
+    "name": "cattle-cluster-agent",
+    "uid": "586c6928-f7da-4b93-9f9f-5cc1604c7be3",
+    "generation": 7,
+    "replicas": 2,
+    "ready_replicas": 2,
+    "spec_sha256": "bd108ae22f4238cc8402c4c3e23381c43be2e449035cc936233e5b58fb7e02fd"
+  },
+  {
+    "namespace": "cattle-system",
+    "name": "rancher-webhook",
+    "uid": "34a11bd8-0e6e-4c72-8c16-986271de32d5",
+    "generation": 2,
+    "replicas": 1,
+    "ready_replicas": 1,
+    "spec_sha256": "b4bce595401e7a1e14215076464476848437bc8b970748b069b48008a46e35fc"
+  },
+  {
+    "namespace": "cert-manager",
+    "name": "cert-manager",
+    "uid": "a76b3ff3-0481-4609-9e31-f5e0b2877b90",
+    "generation": 3,
+    "replicas": 1,
+    "ready_replicas": 1,
+    "spec_sha256": "a03d1a4aecca4b6ad7ecd11eb05337db185062a264256a30fc01688fca0a1012"
+  },
+  {
+    "namespace": "cert-manager",
+    "name": "cert-manager-cainjector",
+    "uid": "05f6e8de-008e-4271-bdc5-690b93f96fcb",
+    "generation": 4,
+    "replicas": 1,
+    "ready_replicas": 1,
+    "spec_sha256": "312bcdf50916a9c979b822f8bf62269dbd1324dc30cd16dcd81c57df1d435b63"
+  },
+  {
+    "namespace": "cert-manager",
+    "name": "cert-manager-webhook",
+    "uid": "745c77bf-e131-4e62-8098-bbdfd04f2bc4",
+    "generation": 3,
+    "replicas": 1,
+    "ready_replicas": 1,
+    "spec_sha256": "41b3fdb4189d8d211844f5c4e79e2a09ae7c5ddcb81c67f553890010ff8f1185"
+  },
+  {
+    "namespace": "clearml",
+    "name": "clearml-apiserver",
+    "uid": "dcf320cf-38ab-4ca2-84ba-32c1a7997612",
+    "generation": 10,
+    "replicas": 1,
+    "ready_replicas": 1,
+    "spec_sha256": "ebde37da30583fa3ff78250399b7caee25878f3f2b7ad68f085112d30893ebf3"
+  },
+  {
+    "namespace": "clearml",
+    "name": "clearml-apiserver-asyncdelete",
+    "uid": "cc314671-94fa-449f-b24e-0846f510269d",
+    "generation": 9,
+    "replicas": 1,
+    "ready_replicas": 1,
+    "spec_sha256": "1a695f87a0fb704e0406a6af512d188b2702063f7db44ff64f4f8d779c8eeffe"
+  },
+  {
+    "namespace": "clearml",
+    "name": "clearml-fileserver",
+    "uid": "4b9a95a8-01f4-4015-9a5d-6e4c9ddbdfd8",
+    "generation": 10,
+    "replicas": 1,
+    "ready_replicas": 1,
+    "spec_sha256": "7cfd57f1d5ada95692ddc10625d08af3c2c0ce9fb5a92bdfaa93033a5669726e"
+  },
+  {
+    "namespace": "clearml",
+    "name": "clearml-mongodb",
+    "uid": "e6e0f518-d8d5-4092-b1fe-68226b7cacc0",
+    "generation": 6,
+    "replicas": 1,
+    "ready_replicas": 1,
+    "spec_sha256": "13024cb5b026271a8f7b0accec202d3f87fe07fdfb81c54ded83c686f5966bb4"
+  },
+  {
+    "namespace": "clearml",
+    "name": "clearml-webserver",
+    "uid": "f750b7c2-75ec-4066-8d4c-8fa31b77077d",
+    "generation": 11,
+    "replicas": 1,
+    "ready_replicas": 1,
+    "spec_sha256": "728da6c42dde60d45055e3b104f33c6a14ea8234c32dff5fd8fd52f33997e352"
+  },
+  {
+    "namespace": "clickhouse-operator",
+    "name": "clickhouse-operator-controller-manager",
+    "uid": "6daf2545-cab8-469b-9c18-af4b03c3bc88",
+    "generation": 6,
+    "replicas": 1,
+    "ready_replicas": 1,
+    "spec_sha256": "344462ad4d4ad3f318e046ae6534aec13f2ecbae1ca2fead661c160b21b3df5c"
+  },
+  {
+    "namespace": "coze-studio",
+    "name": "coze-studio-opencoze-server",
+    "uid": "c09e591e-ef04-44d4-8ec3-a88c507bb331",
+    "generation": 4,
+    "replicas": 0,
+    "ready_replicas": 0,
+    "spec_sha256": "af74be8ddea2ea24d21f12ea86d67e3a8fa0bfa78be57206d1e318a3eff74143"
+  },
+  {
+    "namespace": "data-juicer",
+    "name": "data-juicer",
+    "uid": "51a3cfd1-1954-4e44-9e7b-1d523960bc55",
+    "generation": 11,
+    "replicas": 1,
+    "ready_replicas": 1,
+    "spec_sha256": "83fa40a60be436a51df0ba4112b31b08dd4cc05014a0aa5f867168a89d662e2a"
+  },
+  {
+    "namespace": "default",
+    "name": "nfs-client-provisioner",
+    "uid": "20a84376-fb8f-4c6c-8ca9-2955a0c32cce",
+    "generation": 4,
+    "replicas": 1,
+    "ready_replicas": 1,
+    "spec_sha256": "6e663ab3af121010ca7a50ae2c2ff56302be38b847b94888f0dd6514d89d167a"
+  },
+  {
+    "namespace": "default",
+    "name": "nfs-client-provisioner-rtx",
+    "uid": "90b1469f-fe19-4639-895a-38b132ba7e68",
+    "generation": 3,
+    "replicas": 1,
+    "ready_replicas": 1,
+    "spec_sha256": "00a4d8a6ae06dfcc400007fa1c6f212bbe29eadcf3b04ecc49a19deb6db62475"
+  },
+  {
+    "namespace": "default",
+    "name": "nfs-client-provisioner-ssd",
+    "uid": "79f36bb3-3773-441e-8faa-9384a7d5e4ef",
+    "generation": 3,
+    "replicas": 1,
+    "ready_replicas": 1,
+    "spec_sha256": "c6dc9de7ff8a9b8f1e31216b0030f181e57849e4e7c307dfaef0eedf80a41e0f"
+  },
+  {
+    "namespace": "dify",
+    "name": "dify-api",
+    "uid": "b3c776de-5507-42eb-b375-7ac5341305ad",
+    "generation": 9,
+    "replicas": 0,
+    "ready_replicas": 0,
+    "spec_sha256": "eebc28d1c0b3b47db902781bb431ca0b6988f283363dd4538dcb1620a74600b4"
+  },
+  {
+    "namespace": "dify",
+    "name": "dify-minio",
+    "uid": "d955fe55-485e-4fc9-bf5e-91a01491b6d1",
+    "generation": 4,
+    "replicas": 0,
+    "ready_replicas": 0,
+    "spec_sha256": "082f3cc810bfd8ca731244bd5869792f3ae3705f75a6899b229b3afff641cea5"
+  },
+  {
+    "namespace": "dify",
+    "name": "dify-plugin-daemon",
+    "uid": "23dbcd98-ba4d-469d-a109-c197c200d042",
+    "generation": 7,
+    "replicas": 0,
+    "ready_replicas": 0,
+    "spec_sha256": "c061fd37f98b66ab8b542722ea032be425f6f4653f152fb2935b070157bcd339"
+  },
+  {
+    "namespace": "dify",
+    "name": "dify-sandbox",
+    "uid": "7bb24d45-5fa9-43f1-a745-f4f3f2b93a68",
+    "generation": 5,
+    "replicas": 0,
+    "ready_replicas": 0,
+    "spec_sha256": "a51e9f741aa63d0544e6ef702c064561e40cbddd4b3a46c0017b220c4a6b0de6"
+  },
+  {
+    "namespace": "dify",
+    "name": "dify-trigger-worker",
+    "uid": "765f7eda-3aca-4bd9-a7ea-5cbd645e758c",
+    "generation": 4,
+    "replicas": 0,
+    "ready_replicas": 0,
+    "spec_sha256": "d09b73cf6ae449e0a2c36db0f40b6cd3c98b94da8a0312a8a48ab09a5382a912"
+  },
+  {
+    "namespace": "dify",
+    "name": "dify-unstructured",
+    "uid": "583e904e-8469-49bc-8322-12103adf1672",
+    "generation": 4,
+    "replicas": 0,
+    "ready_replicas": 0,
+    "spec_sha256": "9e67bbc45870b9060cf5c3f544a196364b64a2115794c0bdd1a4732ed4ef28e2"
+  },
+  {
+    "namespace": "dify",
+    "name": "dify-web",
+    "uid": "83884c8c-ba2e-4e83-bce0-4ab4b516f32f",
+    "generation": 6,
+    "replicas": 0,
+    "ready_replicas": 0,
+    "spec_sha256": "8fb2e2cbc3849fb93242ee13ab2c45f68f3e76ed81714114ab93717a43da6728"
+  },
+  {
+    "namespace": "dify",
+    "name": "dify-worker",
+    "uid": "8c709ec6-3211-4382-a9da-1420e10b2638",
+    "generation": 5,
+    "replicas": 0,
+    "ready_replicas": 0,
+    "spec_sha256": "5348279da7234175513da3f7281cbb35d9181bbac73ed495151d8de83f9947b1"
+  },
+  {
+    "namespace": "dify",
+    "name": "dify-worker-beat",
+    "uid": "61f94684-7668-4caf-be00-5876b2a130a3",
+    "generation": 4,
+    "replicas": 0,
+    "ready_replicas": 0,
+    "spec_sha256": "ad8a2767c1fcf178aa8ea4f3be084d49cc7d84c8c473fee270d07974951bd720"
+  },
+  {
+    "namespace": "ems-pt",
+    "name": "cms-clickhouse",
+    "uid": "e8ec1572-a5b0-4bba-86fe-3b86e84166a3",
+    "generation": 2,
+    "replicas": 1,
+    "ready_replicas": 1,
+    "spec_sha256": "181c9081cd3573b57ff0bf363cbdaf997b24ff17befd2479a9389dd4c60d3e17"
+  },
+  {
+    "namespace": "ems-pt",
+    "name": "cms-elasticsearch",
+    "uid": "e8010e10-05a2-44d2-8a03-993752b452ec",
+    "generation": 2,
+    "replicas": 1,
+    "ready_replicas": 1,
+    "spec_sha256": "99d787b7b149eecf27b1e30d301ce9ce76ad7587831f9bf2d58569021e942916"
+  },
+  {
+    "namespace": "ems-pt",
+    "name": "cms-kong",
+    "uid": "c7104e07-4664-4cf4-bb6a-e73111aa2899",
+    "generation": 5,
+    "replicas": 1,
+    "ready_replicas": 1,
+    "spec_sha256": "3c20c0903c1dae9ec51b33d978d43eeb4dbe74dc77da68cdb7ba190face1f5c7"
+  },
+  {
+    "namespace": "ems-pt",
+    "name": "cms-kong-postgres",
+    "uid": "2769023d-a441-41a9-bea1-c4318f3dcfb6",
+    "generation": 1,
+    "replicas": 1,
+    "ready_replicas": 1,
+    "spec_sha256": "476c25746dae773b8174d3da7fce2211fd5773f3e78fc884d22155fb93f4a446"
+  },
+  {
+    "namespace": "ems-pt",
+    "name": "cms-konga",
+    "uid": "42fa734e-3189-42ba-9ab7-8ebd74b6f4e2",
+    "generation": 2,
+    "replicas": 1,
+    "ready_replicas": 1,
+    "spec_sha256": "e54c19fd50006dbde6bb1f110e1f5cfa31dda05a465d7f0407268765b90ca1d2"
+  },
+  {
+    "namespace": "ems-pt",
+    "name": "cms-mqb",
+    "uid": "0388d273-73ea-474b-aa57-8c1e7cb2e542",
+    "generation": 1,
+    "replicas": 1,
+    "ready_replicas": 1,
+    "spec_sha256": "da5bc7faacab5b91eda4a4189cda41fd4ec85c4df53858a973b265d0b825aca1"
+  },
+  {
+    "namespace": "ems-pt",
+    "name": "cms-mysql",
+    "uid": "2695f466-9399-43e9-a533-2ce11e8a8a7c",
+    "generation": 14,
+    "replicas": 1,
+    "ready_replicas": 1,
+    "spec_sha256": "fb6e16e1d4c2095af892910f6b11aa324799f2abf3cdc9d1025171e5c0d0a0f9"
+  },
+  {
+    "namespace": "ems-pt",
+    "name": "cms-nacos",
+    "uid": "4c8a3c88-3575-4547-8312-b2416e4115ce",
+    "generation": 3,
+    "replicas": 1,
+    "ready_replicas": 1,
+    "spec_sha256": "b9722be0ae40986de7db914eed8d2933155cac31b9bea77f972fd77c9e33a0a3"
+  },
+  {
+    "namespace": "ems-pt",
+    "name": "cms-redis",
+    "uid": "4a3fe1b1-3de8-499c-be61-35a7b80c36a9",
+    "generation": 4,
+    "replicas": 1,
+    "ready_replicas": 1,
+    "spec_sha256": "67ca7edec0d894a44f13b9f90e2bfac398005bc4580c9bb9880db48e187f0d2a"
+  },
+  {
+    "namespace": "ems",
+    "name": "cms-adapter-bacnet",
+    "uid": "81d0088a-1aec-43fe-9c6b-ae85fe884ade",
+    "generation": 2,
+    "replicas": 1,
+    "ready_replicas": 1,
+    "spec_sha256": "60f837dfea4d04ddbca9b0ac55c3fa4576649cde02c0a96d644d45073853e7d5"
+  },
+  {
+    "namespace": "ems",
+    "name": "cms-adapter-modbus",
+    "uid": "6c97ff49-8708-4825-b50b-052078ddb3ae",
+    "generation": 2,
+    "replicas": 1,
+    "ready_replicas": 1,
+    "spec_sha256": "e43ceae63f758537adbaabcb192582bc706097d594176ccec5e2cf3bed8445c8"
+  },
+  {
+    "namespace": "ems",
+    "name": "cms-adapter-sunfull",
+    "uid": "529aa3cf-f32c-4ead-897f-30bc8fdf0279",
+    "generation": 2,
+    "replicas": 1,
+    "ready_replicas": 1,
+    "spec_sha256": "3e12e76022d51192479a7fe6429108d6985ef4fae8eed8be0c97c1ed08b9375f"
+  },
+  {
+    "namespace": "ems",
+    "name": "cms-ai-model",
+    "uid": "61897c50-575e-41b1-9d41-c9e9da0f3775",
+    "generation": 3,
+    "replicas": 1,
+    "ready_replicas": 1,
+    "spec_sha256": "451220f83a32bf66f5f98f5777b8c39fb5acb41d20fac7b81299d67f3d541323"
+  },
+  {
+    "namespace": "ems",
+    "name": "cms-aimodeling",
+    "uid": "bf26ddb4-8f15-4509-ba04-e4b51c053c9c",
+    "generation": 2,
+    "replicas": 1,
+    "ready_replicas": 1,
+    "spec_sha256": "ee99bd7ca2856fe9e5ddb675bb85496e113b9d7b4af61b64980b15b28be3145d"
+  },
+  {
+    "namespace": "ems",
+    "name": "cms-bai-backend",
+    "uid": "6dbc3fef-2ae6-4922-ac7a-fbfd707e5392",
+    "generation": 81,
+    "replicas": 1,
+    "ready_replicas": 1,
+    "spec_sha256": "92c218315b9d7d64d320baa834ff7a488e2d4f76cbf3e693b220a5573f7594eb"
+  },
+  {
+    "namespace": "ems",
+    "name": "cms-bai-front",
+    "uid": "cb85aca0-a452-4c31-a207-2e24e9243336",
+    "generation": 50,
+    "replicas": 1,
+    "ready_replicas": 1,
+    "spec_sha256": "9ba6e5674564c795a01576cebbfdffb0a48748f0d33cb534c5b4e45ad15e20a0"
+  },
+  {
+    "namespace": "ems",
+    "name": "cms-basiclogic",
+    "uid": "ee008953-a49c-4bb3-b8cb-f42520dcdeb6",
+    "generation": 4,
+    "replicas": 1,
+    "ready_replicas": 1,
+    "spec_sha256": "5b2c3f974b836263bc8c36b2e120f7f33fd562a2794342960eb0cb32555eff3d"
+  },
+  {
+    "namespace": "ems",
+    "name": "cms-business",
+    "uid": "d6792ad7-2c46-4942-bda5-fe0a6713a466",
+    "generation": 12,
+    "replicas": 1,
+    "ready_replicas": 1,
+    "spec_sha256": "3130d64f7fddce707b4e50a0dd1d761bff6c6e7925b4e74b7d8e19e53acf6572"
+  },
+  {
+    "namespace": "ems",
+    "name": "cms-carbon",
+    "uid": "79a7d00e-c5fd-467f-b8d9-ab4f6a538416",
+    "generation": 5,
+    "replicas": 1,
+    "ready_replicas": 1,
+    "spec_sha256": "8159b37d4af72ec9715dc031f519b90d9cbb2a981af6a9d2b09f9bc4eba99033"
+  },
+  {
+    "namespace": "ems",
+    "name": "cms-carbon-export",
+    "uid": "3a0c2b86-f384-4488-a90a-e2469f19bad2",
+    "generation": 1,
+    "replicas": 1,
+    "ready_replicas": 1,
+    "spec_sha256": "0257e8668f73609a73a070c1c67748487367bd7ef64ada3aa6c5fa8c14dd6215"
+  },
+  {
+    "namespace": "ems",
+    "name": "cms-carbon-front",
+    "uid": "a5b2c47e-1691-4076-8f6c-e61655bba8f8",
+    "generation": 1,
+    "replicas": 1,
+    "ready_replicas": 1,
+    "spec_sha256": "ab0462430ccb7b6723559f9441f1b1a794b16276acb8205ee407e8f2663433c8"
+  },
+  {
+    "namespace": "ems",
+    "name": "cms-cid",
+    "uid": "8c833747-ae54-489d-b3b5-68af7b062153",
+    "generation": 1,
+    "replicas": 1,
+    "ready_replicas": 1,
+    "spec_sha256": "c254230f835def570b6ac7436a70ba4ed4d098d42b49f059a2c5e810643be5b7"
+  },
+  {
+    "namespace": "ems",
+    "name": "cms-data",
+    "uid": "ca04039e-4a6a-4408-9049-4b75a69baf80",
+    "generation": 2,
+    "replicas": 1,
+    "ready_replicas": 1,
+    "spec_sha256": "095b315568459e0dc101ed2ef9e923e3326b0d1c646682702f91e6caa2700bf1"
+  },
+  {
+    "namespace": "ems",
+    "name": "cms-dataroom",
+    "uid": "cbd8cbf7-5633-42dd-83ef-3655e16e7030",
+    "generation": 4,
+    "replicas": 1,
+    "ready_replicas": 1,
+    "spec_sha256": "42aff4b3deb916a0f9d122bbc7e7f9fc454a75a1ca40b70fadab1f6e3e592cb0"
+  },
+  {
+    "namespace": "ems",
+    "name": "cms-fault-diagnosis",
+    "uid": "1a95e11c-2cde-408f-a4f3-d463e067d378",
+    "generation": 2,
+    "replicas": 1,
+    "ready_replicas": 1,
+    "spec_sha256": "fa8e4dd197b09f94f19667fe5901f783056e24a77b3e61dfea7645291030a787"
+  },
+  {
+    "namespace": "ems",
+    "name": "cms-front",
+    "uid": "539c6b5d-3dc2-408c-a49f-2b1b1b92cfa4",
+    "generation": 26,
+    "replicas": 1,
+    "ready_replicas": 1,
+    "spec_sha256": "bf064212d73ebd8b55edd8a95399e877de47806a9eacb59bc0e91c351a9db67f"
+  },
+  {
+    "namespace": "ems",
+    "name": "cms-fuxa",
+    "uid": "ed6e041d-2416-4471-9167-9b08eb51478a",
+    "generation": 2,
+    "replicas": 1,
+    "ready_replicas": 1,
+    "spec_sha256": "2d5ecdf7d14001b3c37f981e86b38473cea9a683f928dcd36c20dce3ddd5bd7a"
+  },
+  {
+    "namespace": "ems",
+    "name": "cms-fuxa-template",
+    "uid": "cf316e03-05ec-4a3f-9727-49196a40cc25",
+    "generation": 1,
+    "replicas": 1,
+    "ready_replicas": 1,
+    "spec_sha256": "de84e9a46e31083f75eb8bcc6c68d739afa022c0f456596113094c3ff2bc6675"
+  },
+  {
+    "namespace": "ems",
+    "name": "cms-hvacstrategy",
+    "uid": "3cf47ab3-f620-435f-a57b-714b7d5674f0",
+    "generation": 2,
+    "replicas": 1,
+    "ready_replicas": 1,
+    "spec_sha256": "228a4af43e1d592231b034e7a90ef7f10450451856a55aa9de549454339fc484"
+  },
+  {
+    "namespace": "ems",
+    "name": "cms-load-forecast-prediction-v2",
+    "uid": "466c4027-447e-4e5f-8371-350d1c597d15",
+    "generation": 3,
+    "replicas": 1,
+    "ready_replicas": 1,
+    "spec_sha256": "b84b4608fbc04c9b1bb3a8db71be996bd10418433ab1e09022738d3741cf7b0b"
+  },
+  {
+    "namespace": "ems",
+    "name": "cms-log",
+    "uid": "aa9f2fe7-e92a-43c3-9ad8-26cfc169a04d",
+    "generation": 2,
+    "replicas": 1,
+    "ready_replicas": 1,
+    "spec_sha256": "bb33f1c154f9f49d35b843edc64aa91f7312391d565603ddc3f55fe49ad986aa"
+  },
+  {
+    "namespace": "ems",
+    "name": "cms-mlops-front",
+    "uid": "f59872cd-e7df-43a1-9151-e0b8fad14af7",
+    "generation": 1,
+    "replicas": 1,
+    "ready_replicas": 1,
+    "spec_sha256": "e93814929dd459eae6e3188517ba6aaf3d4966e176f45c4f72332b09256559e1"
+  },
+  {
+    "namespace": "ems",
+    "name": "cms-service",
+    "uid": "7d61b564-c471-4f3b-b7fa-aeea6f7d2441",
+    "generation": 6,
+    "replicas": 1,
+    "ready_replicas": 1,
+    "spec_sha256": "bdeb60caf631fa2261862028412ba2fba577a2e4c40fa58dfeb8e02176b74084"
+  },
+  {
+    "namespace": "ems",
+    "name": "cms-service-model",
+    "uid": "63dc3b79-c573-41ff-8519-c9ab9a668588",
+    "generation": 4,
+    "replicas": 1,
+    "ready_replicas": 1,
+    "spec_sha256": "af88bc626fa82d53079ac5d8e900916f5eef2ef1c30fb92f917adb3bbddcab2c"
+  },
+  {
+    "namespace": "ems",
+    "name": "cms-warning",
+    "uid": "9eb7e300-2da1-4a3f-b6c5-78b1bdb53ef5",
+    "generation": 4,
+    "replicas": 1,
+    "ready_replicas": 1,
+    "spec_sha256": "3d45944f5f29f50db7d7c118aa01faf3e7e46ebfb369281fa9f52580f75ae5b5"
+  },
+  {
+    "namespace": "ems",
+    "name": "cms-zutai-page",
+    "uid": "d1ae1f3f-a9dd-419c-b077-f3559206933a",
+    "generation": 1,
+    "replicas": 1,
+    "ready_replicas": 1,
+    "spec_sha256": "8dc5191a1f4197df2974a94ca3315408f89738f95e953fb036ddd4e8e71fc97f"
+  },
+  {
+    "namespace": "evalscope",
+    "name": "evalscope",
+    "uid": "e11e5618-1182-47b1-a5b7-ed1b8a466905",
+    "generation": 4,
+    "replicas": 1,
+    "ready_replicas": 1,
+    "spec_sha256": "a21f35d2cc30a3a06e37d10b1be20e926a5630b7885f76a102503aa974219657"
+  },
+  {
+    "namespace": "fab-agent-space",
+    "name": "fab-agent-space-backend",
+    "uid": "fe367c92-9b46-456c-89db-19147f76dfd5",
+    "generation": 6,
+    "replicas": 1,
+    "ready_replicas": 1,
+    "spec_sha256": "4784cfb8b583425983fd35e97e481cb84211f42b941a0ceb48d8d62a8d6fb5de"
+  },
+  {
+    "namespace": "fab-agent-space",
+    "name": "fab-agent-space-frontend",
+    "uid": "844adef9-26df-423a-ad9d-c19cbb78e9d5",
+    "generation": 8,
+    "replicas": 1,
+    "ready_replicas": 1,
+    "spec_sha256": "3f3f395d0e2a399e631d5a29ddb8e38de2c51cbf3bb5f0cdaf345508f9ad2cf4"
+  },
+  {
+    "namespace": "fab-agent-space",
+    "name": "fab-agent-space-local-auth",
+    "uid": "a2d2dc81-06f0-4044-87d4-751dd1812ebb",
+    "generation": 7,
+    "replicas": 1,
+    "ready_replicas": 1,
+    "spec_sha256": "a1fccaf6f5834a78b51f55248d457a01f9fa00e47c4b0bcb3fb83cc0f271ec61"
+  },
+  {
+    "namespace": "gpu-operator",
+    "name": "gpu-operator",
+    "uid": "a9a7f285-d71e-4c37-b2ef-5ca28a5b6e82",
+    "generation": 3,
+    "replicas": 1,
+    "ready_replicas": 1,
+    "spec_sha256": "379773d259b566f6717d2d0df061ecfc5a647e5323e5ed4a7c7acbc04736addc"
+  },
+  {
+    "namespace": "gpu-operator",
+    "name": "gpu-operator-1768208437-node-feature-discovery-gc",
+    "uid": "9653a37c-b437-40a0-b816-6541747d48af",
+    "generation": 4,
+    "replicas": 1,
+    "ready_replicas": 1,
+    "spec_sha256": "c5e034f5ca0cc2a2aff2b50ef74933fde682be35b49c215a87d2ff7b9871261a"
+  },
+  {
+    "namespace": "gpu-operator",
+    "name": "gpu-operator-1768208437-node-feature-discovery-master",
+    "uid": "66a44003-7714-48d4-9672-f69089b4b5ba",
+    "generation": 3,
+    "replicas": 1,
+    "ready_replicas": 1,
+    "spec_sha256": "cd0a3e11954e9b6da99933c80bcaaaed0e4f216fc767fbaf2c33bdc01adf9424"
+  },
+  {
+    "namespace": "infinity",
+    "name": "infinity",
+    "uid": "93832fc9-2931-44a1-b0d2-59582d1b15de",
+    "generation": 10,
+    "replicas": 1,
+    "ready_replicas": 1,
+    "spec_sha256": "d90f1bbcadcb6b530cf0e789c2ad89883c850b66de2e4b7dfdf9bf0b4f39e2e7"
+  },
+  {
+    "namespace": "kube-system",
+    "name": "calico-kube-controllers",
+    "uid": "81979ea5-d030-4050-a736-36d559b01484",
+    "generation": 2,
+    "replicas": 1,
+    "ready_replicas": 1,
+    "spec_sha256": "f0a89644396f0ea619cc65a8406eef436471956e5a53b6d4aa3b4c1e9b598413"
+  },
+  {
+    "namespace": "kube-system",
+    "name": "coredns",
+    "uid": "caca9951-9e97-4ef2-be90-88b58dd8ae08",
+    "generation": 6,
+    "replicas": 2,
+    "ready_replicas": 2,
+    "spec_sha256": "0ab652ad6fce4d11e0a06901710be3f711e682959f4b524119aaa146af25439f"
+  },
+  {
+    "namespace": "kube-system",
+    "name": "dns-autoscaler",
+    "uid": "9db827d4-fb78-46b8-aad2-4ce019438159",
+    "generation": 1,
+    "replicas": 1,
+    "ready_replicas": 1,
+    "spec_sha256": "7b56c2c5a7c251d9f855f7f3ff2e56f85adf522964d4b178254fb14936bb999c"
+  },
+  {
+    "namespace": "kube-system",
+    "name": "kubernetes-dashboard",
+    "uid": "ca7935bf-d1ab-4e0a-8dc1-5794fc5aecb9",
+    "generation": 3,
+    "replicas": 1,
+    "ready_replicas": 1,
+    "spec_sha256": "f81ea79897a06701ef1774d79fc54ef2f08b8f1278989ea7f24c59403224c4dc"
+  },
+  {
+    "namespace": "kube-system",
+    "name": "kubernetes-metrics-scraper",
+    "uid": "c481fe67-6b2f-4c31-9220-382a64a61fee",
+    "generation": 2,
+    "replicas": 1,
+    "ready_replicas": 1,
+    "spec_sha256": "e16a04a3a0f1e413b1b7451198e4e7bfc45cb326504905d7c23203da17f53d36"
+  },
+  {
+    "namespace": "kube-system",
+    "name": "metrics-server",
+    "uid": "3d11c220-f29e-4718-971a-20b95a45bce4",
+    "generation": 2,
+    "replicas": 1,
+    "ready_replicas": 1,
+    "spec_sha256": "d4d684ea224732972cfb6141be08577b59a7d724b614bd3dd12410bfb8bdbbfb"
+  },
+  {
+    "namespace": "kubeedge",
+    "name": "cloudcore",
+    "uid": "e603ba9d-54c8-4a8f-8b69-7cb9cef54e98",
+    "generation": 9,
+    "replicas": 1,
+    "ready_replicas": 1,
+    "spec_sha256": "c4cdffc701f8d62f74de8a0aa2425e63f3455197a33f24fcbe2350214333289f"
+  },
+  {
+    "namespace": "kyverno",
+    "name": "kyverno-admission-controller",
+    "uid": "a44d1be7-5367-4b88-b26c-d8685a84fc43",
+    "generation": 1,
+    "replicas": 1,
+    "ready_replicas": 1,
+    "spec_sha256": "7e5d42b10301acf855c4a4936837f7fc78f252db33fd973242598396481ac222"
+  },
+  {
+    "namespace": "kyverno",
+    "name": "kyverno-background-controller",
+    "uid": "33ee0b32-aff4-4150-b3a7-6b8d87257e8d",
+    "generation": 1,
+    "replicas": 1,
+    "ready_replicas": 1,
+    "spec_sha256": "e4bb9edd880d7e6455b84ea69bdca584325204d4719efded55e288dd1d45c6ab"
+  },
+  {
+    "namespace": "kyverno",
+    "name": "kyverno-cleanup-controller",
+    "uid": "760f4981-ed12-4558-b40a-74eaa52569ac",
+    "generation": 1,
+    "replicas": 1,
+    "ready_replicas": 1,
+    "spec_sha256": "f7926d3dcba9f2c07f76775552f503b9512e680db8bd882c76438198ad7dc681"
+  },
+  {
+    "namespace": "kyverno",
+    "name": "kyverno-reports-controller",
+    "uid": "8e51a8d3-9610-4473-901a-d73af42fe2df",
+    "generation": 1,
+    "replicas": 1,
+    "ready_replicas": 1,
+    "spec_sha256": "b32183d0e53290bbea3f2d15654dc525e625739289368da4d3b46bc40b43d0c6"
+  },
+  {
+    "namespace": "label-studio",
+    "name": "label-studio",
+    "uid": "0a4a6690-b842-435f-a4cd-19ea8b141d9d",
+    "generation": 9,
+    "replicas": 1,
+    "ready_replicas": 1,
+    "spec_sha256": "0d1eb1cd798fb11f47814d4049d107ca65c911487c3c8c3a4c99147626d74751"
+  },
+  {
+    "namespace": "langflow",
+    "name": "langflow-service-frontend",
+    "uid": "2c252a9a-18b4-423c-8cdd-434bc97d115e",
+    "generation": 4,
+    "replicas": 1,
+    "ready_replicas": 1,
+    "spec_sha256": "d9ee5455b75757976d4d3d16158b6c5944cb75ecb314705a5526df6453ae5611"
+  },
+  {
+    "namespace": "langfuse",
+    "name": "langfuse-redis",
+    "uid": "f9189acf-76f9-4c33-aae8-b9a0f9d3b816",
+    "generation": 2,
+    "replicas": 1,
+    "ready_replicas": 1,
+    "spec_sha256": "2e8dde535d766231a032b0a8ccdf5077f92ad95464bce20c3dfc923ebecdfb2a"
+  },
+  {
+    "namespace": "langfuse",
+    "name": "langfuse-s3-all-in-one",
+    "uid": "4d5e6e85-6d86-4130-aa22-744bb4677cc8",
+    "generation": 2,
+    "replicas": 1,
+    "ready_replicas": 1,
+    "spec_sha256": "620b0b8230011eaf7d82a172f606064c15877f97ff342b66e27600e7e726f0f4"
+  },
+  {
+    "namespace": "langfuse",
+    "name": "langfuse-web",
+    "uid": "24e7c7d6-b4ee-45a4-9e58-d834528b75a6",
+    "generation": 7,
+    "replicas": 1,
+    "ready_replicas": 1,
+    "spec_sha256": "fa0b9adbadcf74b2f7748cb16ea764e9c4e86390347c2f72584bf94a6a17db04"
+  },
+  {
+    "namespace": "langfuse",
+    "name": "langfuse-worker",
+    "uid": "030f42ba-4d2a-44f0-801b-cdd5e6006d52",
+    "generation": 2,
+    "replicas": 1,
+    "ready_replicas": 1,
+    "spec_sha256": "6087077e37ebe34943bf5bbb837657c2dc996fe2074bd7749dbd148442b36382"
+  },
+  {
+    "namespace": "librechat",
+    "name": "librechat",
+    "uid": "07fa2756-6898-4ea6-a7ef-6bb04feb8c4a",
+    "generation": 4,
+    "replicas": 0,
+    "ready_replicas": 0,
+    "spec_sha256": "8caddb39ee91b43db72793fa8be45ad26e63aed4df1480da9985f1dbec5dca12"
+  },
+  {
+    "namespace": "litellm",
+    "name": "litellm",
+    "uid": "bee26566-d4a7-4126-9cac-9f63e0857713",
+    "generation": 17,
+    "replicas": 1,
+    "ready_replicas": 1,
+    "spec_sha256": "d032c6fb4db7b0a339a157480a2d00c56997be4c7c186e42f1589fe5e5bfad47"
+  },
+  {
+    "namespace": "llm-security",
+    "name": "modsecurity-waf",
+    "uid": "62d5f371-8e0d-4f27-b67d-783e04568ed0",
+    "generation": 11,
+    "replicas": 1,
+    "ready_replicas": 1,
+    "spec_sha256": "f34e8bc8bb9377be8104bfc1f9d8fba1a53d711288a1095516e0d014038f1224"
+  },
+  {
+    "namespace": "lobehub",
+    "name": "lobe-chat",
+    "uid": "7c483015-af1c-4a99-a414-f48e5553d105",
+    "generation": 4,
+    "replicas": 0,
+    "ready_replicas": 0,
+    "spec_sha256": "e964d719035ff4ddb71e82ef47af7a4c4022cd2b900017293e11eefacaaed92b"
+  },
+  {
+    "namespace": "n8n",
+    "name": "n8n",
+    "uid": "572a8f5b-b4af-4704-9efc-c712164beeae",
+    "generation": 7,
+    "replicas": 0,
+    "ready_replicas": 0,
+    "spec_sha256": "60e324aea0bf39df861299517755bca06c0ac21411c5644ea03ad898e20eac88"
+  },
+  {
+    "namespace": "nextchat",
+    "name": "nextchat",
+    "uid": "0db7f10b-70af-4936-b446-88ee044d2975",
+    "generation": 5,
+    "replicas": 0,
+    "ready_replicas": 0,
+    "spec_sha256": "a067a181f1554bd8faead19939584a14db81c08d8b72eed75f9d255342131c9c"
+  },
+  {
+    "namespace": "ollama",
+    "name": "ollama",
+    "uid": "c5805950-717c-4bb1-8a40-554e60018799",
+    "generation": 21,
+    "replicas": 0,
+    "ready_replicas": 0,
+    "spec_sha256": "aed5fa4963e5a0f8b9ecb269e3040744c2c2fc265e65d4c3c0828180f6524636"
+  },
+  {
+    "namespace": "ollama",
+    "name": "open-webui",
+    "uid": "07487004-50c6-45d4-a547-83ba68f5e98c",
+    "generation": 63,
+    "replicas": 1,
+    "ready_replicas": 1,
+    "spec_sha256": "bf4daeff31a131bba1eeced8306cdd99f48bd81fe377a2619093658ec5aacdfc"
+  },
+  {
+    "namespace": "opencompass",
+    "name": "opencompass",
+    "uid": "41225311-8a44-4bad-82c7-9f46f284d54b",
+    "generation": 2,
+    "replicas": 1,
+    "ready_replicas": 1,
+    "spec_sha256": "73947556ae3a2d465b08561ff9953677e08859f9f47698eaa43363b33de72ed5"
+  },
+  {
+    "namespace": "otel-gateway",
+    "name": "otel-gateway",
+    "uid": "fe707fdd-1876-4835-bff1-e720cdc9b18f",
+    "generation": 5,
+    "replicas": 1,
+    "ready_replicas": 1,
+    "spec_sha256": "09d697edb1720b9a7ade13f351d941986d7867d24274c5696b603bcbe0a070df"
+  },
+  {
+    "namespace": "qwen3guard",
+    "name": "qwen3guard",
+    "uid": "3ef1947e-bcf1-4afb-9b21-b48c10123bb4",
+    "generation": 5,
+    "replicas": 1,
+    "ready_replicas": 1,
+    "spec_sha256": "91fed6bba41522f8eb0f16926c56b6c678d1a66d1f7adf19f39a4027c00b9d50"
+  },
+  {
+    "namespace": "ragflow",
+    "name": "ragflow",
+    "uid": "4df83bef-8478-49d5-a163-088cd7cf26f2",
+    "generation": 12,
+    "replicas": 0,
+    "ready_replicas": 0,
+    "spec_sha256": "8ba8d4e59ed159c049e47ff2776c3856507a68149f039f6bc511488ee9e35dd4"
+  },
+  {
+    "namespace": "registry-cache",
+    "name": "registry-cache",
+    "uid": "7f107c6b-e78f-401a-a0ca-08f57062794d",
+    "generation": 4,
+    "replicas": 1,
+    "ready_replicas": 1,
+    "spec_sha256": "3b1295152e402b607c07358329bdd4af1eb619a7db1e54b904975d287cae6b21"
+  },
+  {
+    "namespace": "risk31",
+    "name": "risk31-service",
+    "uid": "0dbde593-4a8a-4508-8325-ef109db4bbb8",
+    "generation": 7,
+    "replicas": 1,
+    "ready_replicas": 1,
+    "spec_sha256": "ff406b0efc0e88e6940fdb0ee67331b61f6ebfd474a14e00bef68683c0428487"
+  },
+  {
+    "namespace": "searxng",
+    "name": "searxng",
+    "uid": "8223d97b-7ea0-4057-97a5-fdfe19782023",
+    "generation": 27,
+    "replicas": 1,
+    "ready_replicas": 1,
+    "spec_sha256": "88acd8986bc74483835e3fa0f42a729798dd5ca9e6f00894ec5c8969b8d4c3a8"
+  },
+  {
+    "namespace": "searxng",
+    "name": "searxng-valkey",
+    "uid": "d84fb9e7-a323-4f6e-8789-a1e2f45319f3",
+    "generation": 5,
+    "replicas": 1,
+    "ready_replicas": 1,
+    "spec_sha256": "f83533c4c6ab604e4fe24b745208ae4bd46610b176f88f0d0d1c5aafe4e211b8"
+  },
+  {
+    "namespace": "signoz",
+    "name": "signoz-clickhouse-operator",
+    "uid": "3d59454b-32d7-462e-8a06-185711dc996a",
+    "generation": 2,
+    "replicas": 1,
+    "ready_replicas": 1,
+    "spec_sha256": "32a83556415c0819451925a99dd724195648c60e5fc297d02ceb7b6b01afa284"
+  },
+  {
+    "namespace": "signoz",
+    "name": "signoz-otel-collector",
+    "uid": "dd7ddb84-0d00-4ec7-a269-97a7767ede15",
+    "generation": 2,
+    "replicas": 1,
+    "ready_replicas": 1,
+    "spec_sha256": "9f190fe3c38cfd5defe79c683e4de1cce969c8b200657dda52cd573511453e6d"
+  },
+  {
+    "namespace": "superset",
+    "name": "superset",
+    "uid": "d0b32448-f566-4058-b9dd-e755bc32e20a",
+    "generation": 6,
+    "replicas": 0,
+    "ready_replicas": 0,
+    "spec_sha256": "d8334dcb6aae79abfef1432a8989e499fccf58b8471e9198da01e8f3c53ff575"
+  },
+  {
+    "namespace": "superset",
+    "name": "superset-worker",
+    "uid": "9e1a58ef-cc17-425d-b7b2-1d496d00ce89",
+    "generation": 7,
+    "replicas": 0,
+    "ready_replicas": 0,
+    "spec_sha256": "0cf0a3f449d6b5f9c6ad3eaeff649ac762cf63f67aca3131c10d618c3c561f71"
+  },
+  {
+    "namespace": "supersonic",
+    "name": "supersonic-app",
+    "uid": "3629ccc5-5f09-4b90-8cc8-a8e90a27a018",
+    "generation": 9,
+    "replicas": 0,
+    "ready_replicas": 0,
+    "spec_sha256": "043ef0956cde88018135120227aadbdab1ab82bfb44bf6f0ee714ed002963d59"
+  },
+  {
+    "namespace": "swift",
+    "name": "swift",
+    "uid": "66cf433d-84d3-48c3-85c5-2698bc36a098",
+    "generation": 18,
+    "replicas": 0,
+    "ready_replicas": 0,
+    "spec_sha256": "377f127d856a0bd10372d72d0098c8b1305bab61b0f78a73dfc68203b82d3fd0"
+  }
+]

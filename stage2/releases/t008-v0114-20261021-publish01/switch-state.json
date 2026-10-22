@@ -1,0 +1,9 @@
+{
+  "switch_started_at": "2026-10-21T21:49:08.568650-07:00",
+  "application_stop_operations": 0,
+  "application_configuration_changes": 0,
+  "deployment_replicas_changed": false,
+  "strategy": "Recreate",
+  "patch_applied_at": "2026-10-21T21:49:09.572536-07:00",
+  "rollout_ready_at": "2026-10-21T21:51:23.571738-07:00"
+}

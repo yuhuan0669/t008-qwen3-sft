@@ -1,0 +1,70 @@
+{
+  "apiVersion": "v1",
+  "kind": "Pod",
+  "metadata": {
+    "name": "t008-v0114-20261021-publish01-stage",
+    "namespace": "vllm",
+    "labels": {
+      "t008-release": "t008-v0114-20261021-publish01"
+    }
+  },
+  "spec": {
+    "restartPolicy": "Never",
+    "automountServiceAccountToken": false,
+    "nodeSelector": {
+      "nvidia.com/gpu.present": "true"
+    },
+    "tolerations": [
+      {
+        "key": "dedicated",
+        "operator": "Equal",
+        "value": "gpu-rtx4090",
+        "effect": "NoSchedule"
+      }
+    ],
+    "containers": [
+      {
+        "name": "stage",
+        "image": "modelscope-registry.cn-hangzhou.cr.aliyuncs.com/modelscope-repo/modelscope@sha256:822d99beed4984a421c8d1da397993c6a8a5f88cdad7dde940bd52df0067d738",
+        "command": [
+          "sleep",
+          "36000"
+        ],
+        "env": [
+          {
+            "name": "CUDA_VISIBLE_DEVICES",
+            "value": ""
+          },
+          {
+            "name": "NVIDIA_VISIBLE_DEVICES",
+            "value": "void"
+          }
+        ],
+        "resources": {
+          "requests": {
+            "cpu": "100m",
+            "memory": "256Mi"
+          },
+          "limits": {
+            "cpu": "1",
+            "memory": "1Gi"
+          }
+        },
+        "volumeMounts": [
+          {
+            "name": "store",
+            "mountPath": "/store"
+          }
+        ]
+      }
+    ],
+    "volumes": [
+      {
+        "name": "store",
+        "persistentVolumeClaim": {
+          "claimName": "vllm-released"
+        }
+      }
+    ]
+  }
+}

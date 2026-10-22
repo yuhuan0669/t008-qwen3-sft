@@ -1,0 +1,18 @@
+{
+  "schema": "t008-serving-releases-v1",
+  "releases": [
+    {
+      "release": "t008-v0114-20261021-publish01",
+      "model_version": "v0.1.14",
+      "status": "DEPLOYED_SERVING_VERIFIED",
+      "published_at": "2026-10-21T21:51:23.571738-07:00",
+      "base_alias": "octa-carbon-v1",
+      "lora_alias": "octa-carbon-sft-v0114",
+      "adapter_zip_sha256": "4132928f5ce62dedb704f69f636ef5ac0596311245a39e329ed318a3052e432c",
+      "template_sha256": "ae8a1b27c3bac461eb5f6c78d5d39cbe29427ad91c9d2da8378e236b8a38448d",
+      "application_settings_changed": false,
+      "report": "stage2/releases/t008-v0114-20261021-publish01/REPORT.md",
+      "verification": "stage2/releases/t008-v0114-20261021-publish01/verification.json"
+    }
+  ]
+}

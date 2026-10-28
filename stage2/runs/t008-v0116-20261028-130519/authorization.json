@@ -1,0 +1,15 @@
+{
+  "run_id": "t008-v0116-20261028-130519",
+  "authorized_at_utc": "2026-10-28T13:05:19.623316+00:00",
+  "user_statement": "授权训练 and 暂停UAT",
+  "approved_data_sha256": "c59cbfcc159385dee31482ba3898833cb7b298716a3f623496ef22f8d63e0528",
+  "system_sha256": "3ae02d520406f73e735752ef04ff395785f84fec7ee1619fd9d392d86cb92933",
+  "development_cases_sha256": "08fee566900f431a2871dc69b31f060d966a5901a69c3576918e09f9197311db",
+  "source_commit": "1e21fa91b3662010209442657c9c9d56cf9fbdbb",
+  "training_approved": true,
+  "uat_pause_approved": true,
+  "development_comparison_approved": true,
+  "max_full_runs": 1,
+  "planned_generation_requests": 120,
+  "deployment_approved": false
+}

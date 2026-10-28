@@ -1,0 +1,12 @@
+{
+  "training_argv_equal": true,
+  "exposures": 1357,
+  "identity_weight": 3,
+  "max_full_runs": 1,
+  "development_conditions": 40,
+  "generation_requests": 120,
+  "mode_parameters_equal": true,
+  "new_heldout_cases_used": false,
+  "dataset_sha256": "c59cbfcc159385dee31482ba3898833cb7b298716a3f623496ef22f8d63e0528",
+  "source_commit": "1e21fa91b3662010209442657c9c9d56cf9fbdbb"
+}

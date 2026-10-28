@@ -1,0 +1,18 @@
+{
+  "run": "t008-v0116-20261028-130519",
+  "file_hashes": {
+    "stage1/data/train.jsonl": "c59cbfcc159385dee31482ba3898833cb7b298716a3f623496ef22f8d63e0528",
+    "stage1/data/manifest.json": "e6efb481d66b1f009f44b073a14c69464ccb67e439e1257c594c6f2e21f98a97",
+    "stage1/training/run-spec.json": "891ff7c2d66e67cbf344f65d453dd12e5f64daed0109fcef337ce611abfb79b2",
+    "stage1/training/local_data_guard.py": "45ba3763667ece681ad9094786035e40043ed334a72c0e76b4fc413755901fa5",
+    "stage1/evidence/encoding-report.json": "bb26f28d6c81eb72249f57a8d2958e7b566b2d68d57e0e053887348f0dd21065",
+    "stage2/scripts/run_local_sft.py": "65d78e369b5dfcd23cdc50d205395e45b6326d5c8a9d4103e9f3cecfc72ab9d0",
+    "stage1/variants/stage1-cpu-v0.1.16/identity_loss3.py": "082510fc6fadc31eb179384299cc1425e6dfd98ae01ad95d463759c1a0627db8",
+    "stage1/variants/stage1-cpu-v0.1.16/identity-keys.json": "5cde71fa1f4975e5a768aaa74b8b24e681ef2f9d5b1cb79ec0a0c25304f9847c",
+    "evaluation/development-cases.json": "08fee566900f431a2871dc69b31f060d966a5901a69c3576918e09f9197311db",
+    "evaluation/system.txt": "3ae02d520406f73e735752ef04ff395785f84fec7ee1619fd9d392d86cb92933",
+    "evaluation/evaluation-config.json": "9aa55fe448e411ce50dc446c376d3197b56633918f141d15e6cd5d77cef9d04d"
+  },
+  "data_sha256": "c59cbfcc159385dee31482ba3898833cb7b298716a3f623496ef22f8d63e0528",
+  "rows": 1357
+}

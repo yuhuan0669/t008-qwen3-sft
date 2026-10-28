@@ -1,0 +1,158 @@
+{
+  "purpose": "Proposed 120-request development comparison; not formal acceptance and not executed.",
+  "backend": "vllm",
+  "chat_template": {
+    "path": "stage2/diagnostics/thinking-chat-template-20261020/thinking-prefill.jinja",
+    "sha256": "ae8a1b27c3bac461eb5f6c78d5d39cbe29427ad91c9d2da8378e236b8a38448d"
+  },
+  "server_args": [
+    "--chat-template",
+    "/work/stage2/diagnostics/thinking-chat-template-20261020/thinking-prefill.jinja",
+    "--reasoning-parser",
+    "qwen3"
+  ],
+  "apply_same_template_to": [
+    "original_base",
+    "all_compared_adapters"
+  ],
+  "request_modes": {
+    "thinking": {
+      "temperature": 0.6,
+      "top_p": 0.95,
+      "top_k": 20,
+      "max_tokens": 4096,
+      "min_p": 0,
+      "chat_template_kwargs": {
+        "enable_thinking": true
+      }
+    },
+    "nonthinking": {
+      "temperature": 0.7,
+      "top_p": 0.8,
+      "top_k": 20,
+      "max_tokens": 2048,
+      "min_p": 0,
+      "chat_template_kwargs": {
+        "enable_thinking": false
+      }
+    }
+  },
+  "prior_chat_verification": "stage2/diagnostics/thinking-chat-template-20261020/verification.json",
+  "prior_scope": "Historical results remain unchanged; scores with a different System are not reused.",
+  "formal_scores_reusable_only_if_template_and_protocol_match": true,
+  "execution_authorized": false,
+  "system_path": "stage1/variants/stage1-cpu-v0.1.16/system.txt",
+  "system_sha256": "3ae02d520406f73e735752ef04ff395785f84fec7ee1619fd9d392d86cb92933",
+  "formal_holdout_status": "NOT_OPENED_OR_MODIFIED; independent evaluator uses cases not used for development",
+  "historical_scores_unchanged": true,
+  "prior_protocol_check": "stage2/diagnostics/json-format-check-20261020/REPORT.md",
+  "english_identity": "DEFERRED; existing English/mixed natural-language rows unchanged",
+  "seed": 42,
+  "concurrency": 1,
+  "server_seed": 42,
+  "max_model_len": 8192,
+  "repetition_penalty": 1.0,
+  "comparison_models": [
+    "original_base",
+    "v0.1.14",
+    "candidate_v0.1.16"
+  ],
+  "planned_requests": {
+    "per_model": {
+      "new_diagnostic_nonthinking": 20,
+      "other_chinese_nonthinking": 12,
+      "thinking_regression": 8
+    },
+    "total": 120
+  },
+  "groups": [
+    {
+      "mode": "nonthinking",
+      "case_ids": [
+        "D16-01",
+        "D16-02",
+        "D16-03",
+        "D16-04"
+      ],
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "requests_per_model": 20
+    },
+    {
+      "mode": "nonthinking",
+      "case_ids": [
+        "D16-05",
+        "D16-06",
+        "D16-07",
+        "D16-08",
+        "D16-09",
+        "D16-10",
+        "D16-11",
+        "D16-12",
+        "D16-13",
+        "D16-14",
+        "D16-15",
+        "D16-16"
+      ],
+      "seeds": [
+        42
+      ],
+      "requests_per_model": 12
+    },
+    {
+      "mode": "thinking",
+      "case_ids": [
+        "D16-01",
+        "D16-02",
+        "D16-05",
+        "D16-06",
+        "D16-11",
+        "D16-13",
+        "D16-14",
+        "D16-16"
+      ],
+      "seeds": [
+        42
+      ],
+      "requests_per_model": 8
+    }
+  ],
+  "development_cases_path": "stage1/variants/stage1-cpu-v0.1.16/development-cases.json",
+  "historical_echo_cases": {
+    "count": 28,
+    "role": "EXPOSED_DIAGNOSTIC_ONLY",
+    "included_in_requests": false,
+    "used_for_selection": false,
+    "source": "t024_manual_checks_20261027/echo30_readonly_audit/raw_evidence_84.json"
+  },
+  "case_set_status": "DRAFT_FOR_USER_REVIEW; freeze hashes before any approved execution",
+  "scoring": [
+    "echo",
+    "task_completion",
+    "preserve_given_facts",
+    "unsupported_additions",
+    "identity",
+    "scope",
+    "json_schema"
+  ],
+  "decision_rules": {
+    "scope": "Development screening only; no auto-deployment or claims of population pass rates.",
+    "blocking_errors": "Any confirmed invented measurements/execution/certification or reversal of an explicit fact blocks recommendation pending review; harmless wording variation is not a failure.",
+    "basic_checks": "Nonthinking identity 4/4, JSON schema and values 2/2, scope 4/4; Thinking report 8/8 separately. No averaging away a confirmed blocking error.",
+    "comparison": "Compare task completion and fact preservation per case against both original_base and v0.1.14. Echo reduction alone is insufficient. Small differences remain inconclusive.",
+    "training": "At most one proposed Full after separate user authorization; do not tune against historical T021/T024 questions.",
+    "formal_acceptance": "Separate independent evaluation under the final configuration; exposed cases are historical regression, not unseen acceptance."
+  },
+  "json_schema_application": "For json cases, forward the same response_format json_schema to all models; do not put the schema only into System.",
+  "tool_call_check_before_release": "Verify actual tools/tool_choice and application execution capability; server auto-tool-choice flag alone does not establish tool use.",
+  "development_cases_sha256": "08fee566900f431a2871dc69b31f060d966a5901a69c3576918e09f9197311db",
+  "seed_policy": "The same predeclared seeds are used across models for development only; everyday requests omit seed.",
+  "n": 1,
+  "presence_penalty": 0,
+  "frequency_penalty": 0
+}

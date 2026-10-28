@@ -1,0 +1,73 @@
+{
+  "results_sha256": "19fa37e258a43f48b8ce766a7a1181fd952f30746cc481c3843dc22853722875",
+  "requests": 120,
+  "first_turn_groups_verified": 40,
+  "same_requests_except_model": true,
+  "same_server_input_ids": true,
+  "raw_response_matches_parsed_response": true,
+  "models": {
+    "t008-base": {
+      "requests": 40,
+      "modes": {
+        "nonthinking": 32,
+        "thinking": 8
+      },
+      "finish_reasons": {
+        "stop": 40
+      },
+      "empty": 0,
+      "exact_echo": 0,
+      "near_echo_flags": 0,
+      "json_schema_pass": 3,
+      "json_value_pass": 2,
+      "json_requests": 3,
+      "median_seconds_by_mode": {
+        "thinking": 6.106,
+        "nonthinking": 0.764
+      }
+    },
+    "t008-v0114": {
+      "requests": 40,
+      "modes": {
+        "nonthinking": 32,
+        "thinking": 8
+      },
+      "finish_reasons": {
+        "stop": 40
+      },
+      "empty": 0,
+      "exact_echo": 0,
+      "near_echo_flags": 0,
+      "json_schema_pass": 3,
+      "json_value_pass": 3,
+      "json_requests": 3,
+      "median_seconds_by_mode": {
+        "thinking": 6.763,
+        "nonthinking": 0.771
+      }
+    },
+    "t008-v0116": {
+      "requests": 40,
+      "modes": {
+        "nonthinking": 32,
+        "thinking": 8
+      },
+      "finish_reasons": {
+        "stop": 40
+      },
+      "empty": 0,
+      "exact_echo": 0,
+      "near_echo_flags": 0,
+      "json_schema_pass": 3,
+      "json_value_pass": 3,
+      "json_requests": 3,
+      "median_seconds_by_mode": {
+        "thinking": 3.576,
+        "nonthinking": 0.725
+      }
+    }
+  },
+  "near_echo_rule": "Whitespace-normalized SequenceMatcher >= 0.9; manually inspect flags.",
+  "json_date_rule": "2026-09 and 2026年9月 are the same supplied month; literal match recorded separately.",
+  "scope": "Development only; no independent acceptance or population error-rate inference."
+}

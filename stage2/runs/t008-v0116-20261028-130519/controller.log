@@ -1,0 +1,25 @@
+{"run_id": "t008-v0116-20261028-130519", "experiment_approved": true, "uat_pause_approved": true, "approved_data_sha256": "c59cbfcc159385dee31482ba3898833cb7b298716a3f623496ef22f8d63e0528", "window_start_utc": "2026-10-28T13:12:49.802567+00:00", "window_end_utc": "2026-10-28T16:12:49.802567+00:00", "restore_start_utc": "2026-10-28T15:32:49.802567+00:00", "decision_ref": "User current authorization: 授权训练 and 暂停UAT. Implements v0.1.16, 1357 rows, unchanged exposures/parameters, 3-step Smoke, ONE Full, and the agreed 120-request Chinese development comparison. English deferred. Three-hour internal recovery ceiling, not an expected outage or a user deadline.", "restoration_owner": "Current implementation agent", "uat_coordination": "Owner directly confirmed immediate pause", "max_full_runs": 1}
+2026-10-28T13:12:53.370106+00:00 Starting smoke
+job.batch/t008-v0116-20261028-130519-smoke created
+
+cat: /work/t008-v0116-20261028-130519/outputs/full/run_manifest.json: 没有那个文件或目录
+command terminated with exit code 1
+cat: /work/t008-v0116-20261028-130519/outputs/full/train.log: 没有那个文件或目录
+command terminated with exit code 1
+cat: /work/t008-v0116-20261028-130519/outputs/full/training-scalars.json: 没有那个文件或目录
+command terminated with exit code 1
+2026-10-28T13:14:19.309796+00:00 smoke verified, step 3
+2026-10-28T13:14:19.309898+00:00 Starting full
+job.batch/t008-v0116-20261028-130519-full created
+
+2026-10-28T13:29:03.504027+00:00 full verified, step 85
+pod/t008-v0116-20261028-130519-eval created
+
+pod/t008-v0116-20261028-130519-eval condition met
+
+tar: Failed to set default locale
+2026-10-28T13:29:04.973471+00:00 Starting frozen 120-request Chinese development comparison
+2026-10-28T13:35:05.730869+00:00 Chinese comparison complete
+2026-10-28T13:35:06.811170+00:00 Restoring original UAT
+{"started_at_utc": "2026-10-28T13:12:49.802567+00:00", "restored": true, "paused": false, "restored_at_utc": "2026-10-28T13:38:09.233563+00:00", "service_spec_equal": true, "health_status": 200}
+2026-10-28T13:38:09.243385+00:00 Original UAT restored; internal health verified

@@ -1,0 +1,52 @@
+{
+  "validator": "jsonschema",
+  "version": "4.26.0",
+  "results": [
+    {
+      "id": "D16-11__nonthinking__42__t008-v0116",
+      "valid": true,
+      "errors": []
+    },
+    {
+      "id": "D16-11__nonthinking__42__t008-base",
+      "valid": true,
+      "errors": []
+    },
+    {
+      "id": "D16-11__nonthinking__42__t008-v0114",
+      "valid": true,
+      "errors": []
+    },
+    {
+      "id": "D16-12__nonthinking__42__t008-base",
+      "valid": true,
+      "errors": []
+    },
+    {
+      "id": "D16-12__nonthinking__42__t008-v0114",
+      "valid": true,
+      "errors": []
+    },
+    {
+      "id": "D16-12__nonthinking__42__t008-v0116",
+      "valid": true,
+      "errors": []
+    },
+    {
+      "id": "D16-11__thinking__42__t008-base",
+      "valid": true,
+      "errors": []
+    },
+    {
+      "id": "D16-11__thinking__42__t008-v0114",
+      "valid": true,
+      "errors": []
+    },
+    {
+      "id": "D16-11__thinking__42__t008-v0116",
+      "valid": true,
+      "errors": []
+    }
+  ],
+  "results_sha256": "19fa37e258a43f48b8ce766a7a1181fd952f30746cc481c3843dc22853722875"
+}

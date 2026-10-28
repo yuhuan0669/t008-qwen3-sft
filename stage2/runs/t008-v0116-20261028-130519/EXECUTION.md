@@ -7,3 +7,11 @@
 - 输入落盘11文件哈希核对通过；GPU当前由UAT独占，22922/24564 MiB，服务1/1、外部health 200。
 - 训练Pod所用代码/依赖拷贝已核对：ms-swift4.4.2、Transformers5.14.1等版本及normalization_source_hashes与原生CPU证据一致。CPU缺可选4-bit kernels提示不涉及本轮BF16 LoRA。
 - 即将按用户授权暂停模型服务；只运行3步Smoke和一次85步Full，随后120次开发对照。恢复保护在暂停前启动。
+
+后续执行：
+
+- Smoke3步、Full85步及1 epoch完成；实际命令、1357行和冻结数据SHA一致，未调整曝光或参数。ClearML上传和回读校验通过，Adapter本地及对象库副本核验通过。
+- 冻结的120次请求全部完成。40组输入与参数一致，无重新采样；JSON结构由CPU准备Pod中的jsonschema4.26.0核验，未调用新的模型请求。
+- 2026-10-28T13:38:09Z恢复UAT。Deployment spec相同，1/1就绪，内外health200，旧别名保留；任务临时Pods及Jobs全部清理。
+- 判读：ISO月份仅作语义等价处理，保留字面差异；D16-02遗漏600/450仍按冻结要求记录。具体法律/标准引用未外部核查，不等同于已经证明虚构。
+- 新候选不建议发布。详见REPORT.md与evaluation/semantic-review.json；不追加训练、推理或发布。

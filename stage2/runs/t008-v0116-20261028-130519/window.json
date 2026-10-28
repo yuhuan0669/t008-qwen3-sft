@@ -1,0 +1,13 @@
+{
+  "run_id": "t008-v0116-20261028-130519",
+  "experiment_approved": true,
+  "uat_pause_approved": true,
+  "approved_data_sha256": "c59cbfcc159385dee31482ba3898833cb7b298716a3f623496ef22f8d63e0528",
+  "window_start_utc": "2026-10-28T13:12:49.802567+00:00",
+  "window_end_utc": "2026-10-28T16:12:49.802567+00:00",
+  "restore_start_utc": "2026-10-28T15:32:49.802567+00:00",
+  "decision_ref": "User current authorization: 授权训练 and 暂停UAT. Implements v0.1.16, 1357 rows, unchanged exposures/parameters, 3-step Smoke, ONE Full, and the agreed 120-request Chinese development comparison. English deferred. Three-hour internal recovery ceiling, not an expected outage or a user deadline.",
+  "restoration_owner": "Current implementation agent",
+  "uat_coordination": "Owner directly confirmed immediate pause",
+  "max_full_runs": 1
+}

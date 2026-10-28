@@ -13,8 +13,8 @@
     "training-config.json": "78804a2480954a17eacbaeb9c8673953c882fafa96549fd083eec4b8fdbaae9c",
     "identity-keys.json": "5cde71fa1f4975e5a768aaa74b8b24e681ef2f9d5b1cb79ec0a0c25304f9847c",
     "identity_loss3.py": "082510fc6fadc31eb179384299cc1425e6dfd98ae01ad95d463759c1a0627db8",
-    "evaluation-config.json": "05172c6c0e95265d92bbbed49a42d409910544879d756f4f3208d21a108bf2c4",
-    "development-cases.json": "c48aedb3631dd6ee2171995720a22fdf046990835951884a092b6e6d0f071ebf"
+    "evaluation-config.json": "9aa55fe448e411ce50dc446c376d3197b56633918f141d15e6cd5d77cef9d04d",
+    "development-cases.json": "08fee566900f431a2871dc69b31f060d966a5901a69c3576918e09f9197311db"
   },
   "training_authorized": false,
   "training_started": false,

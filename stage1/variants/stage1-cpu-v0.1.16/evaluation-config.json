@@ -150,7 +150,7 @@
   },
   "json_schema_application": "For json cases, forward the same response_format json_schema to all models; do not put the schema only into System.",
   "tool_call_check_before_release": "Verify actual tools/tool_choice and application execution capability; server auto-tool-choice flag alone does not establish tool use.",
-  "development_cases_sha256": "c48aedb3631dd6ee2171995720a22fdf046990835951884a092b6e6d0f071ebf",
+  "development_cases_sha256": "08fee566900f431a2871dc69b31f060d966a5901a69c3576918e09f9197311db",
   "seed_policy": "The same predeclared seeds are used across models for development only; everyday requests omit seed.",
   "n": 1,
   "presence_penalty": 0,

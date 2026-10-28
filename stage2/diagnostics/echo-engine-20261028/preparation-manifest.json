@@ -1,0 +1,23 @@
+{
+  "status": "CPU_PREPARATION_PASS",
+  "generations": 0,
+  "uat_pause": false,
+  "files": {
+    "spec.json": "84f9934d4b67de14b0beb62d7393ad4a5a284848ca22eaf9ff88c664346320e2",
+    "pod-cpu.json": "629b2459cd0f963789f10742152a50031ee6b6ce8e155cb96cdc318dc466c148",
+    "cpu-check.json": "133d73366386a4b6f3c2289a1c735e6c8ba843ecd61ab41df3bfd7abc64f6a58",
+    "system.txt": "3d3224206daa3f86e88ed0d95380041508663afe136aefd3122432f65d4aaba1",
+    "window.py": "6abe07e5883dd82fbb60e850c187d601ac18afc6275e8d81bd6487fd9711ec98",
+    "uat-preflight.json": "6631cbdf89dcad83c97a20a8527b3c6e0ee6d3782617aa00c3194b17f9497a1b",
+    "requests.jsonl": "62bbe59254ad663d6bf5c4bf7e21079fc1c2f34575d672f1b2422a02efc0bf28",
+    "pod-gpu.json": "6f20f82e4a1d5c5850fa5f09a990eb43e1b666ef41015acdd73a812964b68638",
+    "question.txt": "ca12af11e57565dad905fa774c5662f5206551fbb56ab5f93f57b724be12130d",
+    "README.md": "0c800db00c837a7bcc01a542991de9b68b1eafb389d5172eed985dde8e98a4e8",
+    "render-lora.json": "fd1601722be13134c80cc15fbcc0f64f449672aac1ffe50e0b0bf2471589105f",
+    "run_pt.py": "28dc04fbd811f9d0d3214ceae79b73be2bd8fb3b5e158d1fa5fbb04f6407dd7d",
+    "render-base.json": "a335e28888119ee2294b3dcc1b0426ddbffffadde7e3cba051584f046b04f2b6",
+    "run_vllm.py": "1d058f8b38b984699dd0d9f4df956b79c506f6a509b816afae7acb6cb9f22ff1",
+    "pod-preflight.json": "740e5057371768d3686457abfee62c6957bb192de45db383d2dfab2824f7ef22",
+    "preflight.py": "090d1f84a708d7496a3a71145c2b2550387f557ac6ca793b14b9a6e281b8011b"
+  }
+}

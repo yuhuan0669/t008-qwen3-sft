@@ -1,0 +1,203 @@
+{
+  "first_models_check_transient_http": 503,
+  "subsequent_checks": [
+    {
+      "utc": "2026-10-28T09:31:55.630432+00:00",
+      "attempt": 1,
+      "/health": {
+        "status": 200,
+        "body": ""
+      },
+      "/v1/models": {
+        "status": 200,
+        "body": {
+          "object": "list",
+          "data": [
+            {
+              "id": "octa-carbon-v1",
+              "object": "model",
+              "created": 1793179916,
+              "owned_by": "vllm",
+              "root": "/models",
+              "parent": null,
+              "max_model_len": 8192,
+              "permission": [
+                {
+                  "id": "modelperm-afa17a501680f3d8",
+                  "object": "model_permission",
+                  "created": 1793179916,
+                  "allow_create_engine": false,
+                  "allow_sampling": true,
+                  "allow_logprobs": true,
+                  "allow_search_indices": false,
+                  "allow_view": true,
+                  "allow_fine_tuning": false,
+                  "organization": "*",
+                  "group": null,
+                  "is_blocking": false
+                }
+              ]
+            },
+            {
+              "id": "octa-carbon-sft-v0114",
+              "object": "model",
+              "created": 1793179916,
+              "owned_by": "vllm",
+              "root": "/adapters/octa-carbon-sft-v0114",
+              "parent": "octa-carbon-v1",
+              "max_model_len": null,
+              "permission": [
+                {
+                  "id": "modelperm-97971a802614d344",
+                  "object": "model_permission",
+                  "created": 1793179916,
+                  "allow_create_engine": false,
+                  "allow_sampling": true,
+                  "allow_logprobs": true,
+                  "allow_search_indices": false,
+                  "allow_view": true,
+                  "allow_fine_tuning": false,
+                  "organization": "*",
+                  "group": null,
+                  "is_blocking": false
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "utc": "2026-10-28T09:31:58.051785+00:00",
+      "attempt": 2,
+      "/health": {
+        "status": 200,
+        "body": ""
+      },
+      "/v1/models": {
+        "status": 200,
+        "body": {
+          "object": "list",
+          "data": [
+            {
+              "id": "octa-carbon-v1",
+              "object": "model",
+              "created": 1793179918,
+              "owned_by": "vllm",
+              "root": "/models",
+              "parent": null,
+              "max_model_len": 8192,
+              "permission": [
+                {
+                  "id": "modelperm-ae5130601f38db1c",
+                  "object": "model_permission",
+                  "created": 1793179918,
+                  "allow_create_engine": false,
+                  "allow_sampling": true,
+                  "allow_logprobs": true,
+                  "allow_search_indices": false,
+                  "allow_view": true,
+                  "allow_fine_tuning": false,
+                  "organization": "*",
+                  "group": null,
+                  "is_blocking": false
+                }
+              ]
+            },
+            {
+              "id": "octa-carbon-sft-v0114",
+              "object": "model",
+              "created": 1793179918,
+              "owned_by": "vllm",
+              "root": "/adapters/octa-carbon-sft-v0114",
+              "parent": "octa-carbon-v1",
+              "max_model_len": null,
+              "permission": [
+                {
+                  "id": "modelperm-b26e56bb3c971a39",
+                  "object": "model_permission",
+                  "created": 1793179918,
+                  "allow_create_engine": false,
+                  "allow_sampling": true,
+                  "allow_logprobs": true,
+                  "allow_search_indices": false,
+                  "allow_view": true,
+                  "allow_fine_tuning": false,
+                  "organization": "*",
+                  "group": null,
+                  "is_blocking": false
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "utc": "2026-10-28T09:32:00.148461+00:00",
+      "attempt": 3,
+      "/health": {
+        "status": 200,
+        "body": ""
+      },
+      "/v1/models": {
+        "status": 200,
+        "body": {
+          "object": "list",
+          "data": [
+            {
+              "id": "octa-carbon-v1",
+              "object": "model",
+              "created": 1793179920,
+              "owned_by": "vllm",
+              "root": "/models",
+              "parent": null,
+              "max_model_len": 8192,
+              "permission": [
+                {
+                  "id": "modelperm-ab866e7fc8152ac1",
+                  "object": "model_permission",
+                  "created": 1793179920,
+                  "allow_create_engine": false,
+                  "allow_sampling": true,
+                  "allow_logprobs": true,
+                  "allow_search_indices": false,
+                  "allow_view": true,
+                  "allow_fine_tuning": false,
+                  "organization": "*",
+                  "group": null,
+                  "is_blocking": false
+                }
+              ]
+            },
+            {
+              "id": "octa-carbon-sft-v0114",
+              "object": "model",
+              "created": 1793179920,
+              "owned_by": "vllm",
+              "root": "/adapters/octa-carbon-sft-v0114",
+              "parent": "octa-carbon-v1",
+              "max_model_len": null,
+              "permission": [
+                {
+                  "id": "modelperm-a3151b4674fdde66",
+                  "object": "model_permission",
+                  "created": 1793179920,
+                  "allow_create_engine": false,
+                  "allow_sampling": true,
+                  "allow_logprobs": true,
+                  "allow_search_indices": false,
+                  "allow_view": true,
+                  "allow_fine_tuning": false,
+                  "organization": "*",
+                  "group": null,
+                  "is_blocking": false
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

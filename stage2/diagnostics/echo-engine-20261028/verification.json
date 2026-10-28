@@ -1,0 +1,22 @@
+{
+  "status": "COMPLETED_RESTORED",
+  "total_inferences": 80,
+  "vllm": 40,
+  "transformers_peft": 40,
+  "training_runs": 0,
+  "application_configuration_changes": 0,
+  "same_input_token_ids": true,
+  "input_tokens": 738,
+  "all_generation_requests_and_raw_results_checked": true,
+  "all_finish_reason_stop": true,
+  "raw_outputs_saved": true,
+  "quality_review_records": 80,
+  "uat_ready_replicas": 1,
+  "uat_health_http": 200,
+  "uat_models_http": 200,
+  "deployment_spec_restored_exactly": true,
+  "temporary_pods_remaining": 0,
+  "pause_to_confirmed_external_health_seconds": 659.93337,
+  "note": "First external models readback returned 503 after readiness; later three health+models checks succeeded. No extra generation was used to check restoration.",
+  "verified_at": "2026-10-28T09:33:00.550777+00:00"
+}

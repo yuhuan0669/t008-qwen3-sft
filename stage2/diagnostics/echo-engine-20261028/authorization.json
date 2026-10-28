@@ -1,0 +1,7 @@
+{
+  "uat_pause_approved": true,
+  "human_reply": "允许现在执行并暂停，完成后恢复",
+  "recorded_at": "2026-10-28T09:17:20.661528+00:00",
+  "scope": "40 vLLM + 40 Transformers/PEFT inference requests; maximum 60-minute UAT model-service window; no training; restore and verify health",
+  "authorization_source": "direct human reply in this conversation"
+}

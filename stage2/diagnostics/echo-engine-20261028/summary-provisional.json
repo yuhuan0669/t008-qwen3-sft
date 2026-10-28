@@ -1,0 +1,46 @@
+{
+  "groups": {
+    "transformers_peft/base": {
+      "n": 20,
+      "exact": 0,
+      "near_candidates": 0,
+      "finish_reasons": {
+        "stop": 20
+      },
+      "median_seconds": 4.453995092771947,
+      "mean_output_tokens": 203.85
+    },
+    "transformers_peft/lora": {
+      "n": 20,
+      "exact": 5,
+      "near_candidates": 2,
+      "finish_reasons": {
+        "stop": 20
+      },
+      "median_seconds": 2.8761821687221527,
+      "mean_output_tokens": 135.9
+    },
+    "vllm_chat/base": {
+      "n": 20,
+      "exact": 0,
+      "near_candidates": 0,
+      "finish_reasons": {
+        "stop": 20
+      },
+      "median_seconds": 3.7088456850033253,
+      "mean_output_tokens": 207.95
+    },
+    "vllm_chat/lora": {
+      "n": 20,
+      "exact": 4,
+      "near_candidates": 0,
+      "finish_reasons": {
+        "stop": 20
+      },
+      "median_seconds": 4.119049805449322,
+      "mean_output_tokens": 195.5
+    }
+  },
+  "near_echo_candidates_require_manual_review": true,
+  "total_responses": 80
+}

@@ -1,0 +1,187 @@
+{
+  "groups": [
+    {
+      "backend": "vllm_chat",
+      "arm": "base",
+      "n": 20,
+      "exact_echo": {
+        "count": 0,
+        "ids": []
+      },
+      "near_echo": {
+        "count": 0,
+        "ids": []
+      },
+      "other_copy_failure": {
+        "count": 0,
+        "ids": []
+      },
+      "explicit_fact_reversal": {
+        "count": 0,
+        "ids": []
+      },
+      "new_specific_standard": {
+        "count": 2,
+        "ids": [
+          "base-1020",
+          "base-1008"
+        ]
+      },
+      "unsupported_case_detail": {
+        "count": 1,
+        "ids": [
+          "base-1002"
+        ]
+      },
+      "design_detail_added": {
+        "count": 0,
+        "ids": []
+      },
+      "median_seconds": 3.7088456850033253
+    },
+    {
+      "backend": "vllm_chat",
+      "arm": "lora",
+      "n": 20,
+      "exact_echo": {
+        "count": 4,
+        "ids": [
+          "lora-1017",
+          "lora-1006",
+          "lora-1005",
+          "lora-1007"
+        ]
+      },
+      "near_echo": {
+        "count": 0,
+        "ids": []
+      },
+      "other_copy_failure": {
+        "count": 0,
+        "ids": []
+      },
+      "explicit_fact_reversal": {
+        "count": 0,
+        "ids": []
+      },
+      "new_specific_standard": {
+        "count": 4,
+        "ids": [
+          "lora-1003",
+          "lora-1014",
+          "lora-1011",
+          "lora-1004"
+        ]
+      },
+      "unsupported_case_detail": {
+        "count": 2,
+        "ids": [
+          "lora-1014",
+          "lora-1020"
+        ]
+      },
+      "design_detail_added": {
+        "count": 3,
+        "ids": [
+          "lora-1003",
+          "lora-1014",
+          "lora-1004"
+        ]
+      },
+      "median_seconds": 4.119049805449322
+    },
+    {
+      "backend": "transformers_peft",
+      "arm": "base",
+      "n": 20,
+      "exact_echo": {
+        "count": 0,
+        "ids": []
+      },
+      "near_echo": {
+        "count": 0,
+        "ids": []
+      },
+      "other_copy_failure": {
+        "count": 0,
+        "ids": []
+      },
+      "explicit_fact_reversal": {
+        "count": 0,
+        "ids": []
+      },
+      "new_specific_standard": {
+        "count": 1,
+        "ids": [
+          "base-1018"
+        ]
+      },
+      "unsupported_case_detail": {
+        "count": 2,
+        "ids": [
+          "base-1005",
+          "base-1002"
+        ]
+      },
+      "design_detail_added": {
+        "count": 0,
+        "ids": []
+      },
+      "median_seconds": 4.453995092771947
+    },
+    {
+      "backend": "transformers_peft",
+      "arm": "lora",
+      "n": 20,
+      "exact_echo": {
+        "count": 5,
+        "ids": [
+          "lora-1008",
+          "lora-1001",
+          "lora-1005",
+          "lora-1019",
+          "lora-1020"
+        ]
+      },
+      "near_echo": {
+        "count": 2,
+        "ids": [
+          "lora-1012",
+          "lora-1004"
+        ]
+      },
+      "other_copy_failure": {
+        "count": 1,
+        "ids": [
+          "lora-1006"
+        ]
+      },
+      "explicit_fact_reversal": {
+        "count": 0,
+        "ids": []
+      },
+      "new_specific_standard": {
+        "count": 1,
+        "ids": [
+          "lora-1014"
+        ]
+      },
+      "unsupported_case_detail": {
+        "count": 0,
+        "ids": []
+      },
+      "design_detail_added": {
+        "count": 0,
+        "ids": []
+      },
+      "median_seconds": 2.8761821687221527
+    }
+  ],
+  "total": 80,
+  "all_stop": true,
+  "independent_contexts": true,
+  "primary_echo_rule": "exact + near with similarity >=0.90 and manual review",
+  "other_copy_failure_note": "Post-hoc separate category; original near threshold unchanged",
+  "standards_note": "Additional specific citations, not all adjudicated false",
+  "quality_review": "Codex read all 80 saved outputs; not an independent human gold assessment"
+}

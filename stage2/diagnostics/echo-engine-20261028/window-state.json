@@ -1,0 +1,13 @@
+{
+  "paused": true,
+  "restored": true,
+  "started_at": "2026-10-28T09:21:00.215091+00:00",
+  "restore_by": "2026-10-28T10:11:00.215091+00:00",
+  "restored_at": "2026-10-28T09:32:00.148461+00:00",
+  "health_status": 200,
+  "models_status": 200,
+  "deployment_spec_equal": true,
+  "ready_replicas": 1,
+  "first_readback_transient_http": 503,
+  "consecutive_health_and_models_successes": 3
+}

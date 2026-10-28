@@ -1,0 +1,27 @@
+{
+  "version": "stage1-cpu-v0.1.16",
+  "review_parent_version": "stage1-cpu-v0.1.15",
+  "review_parent_sha256": "323b5aab5eb71e77c6b6f5b6bcf0c2950a1eea0ab11869c41e8c94f1896d5237",
+  "parent_version": "stage1-cpu-v0.1.14",
+  "parent_sha256": "0f546c3aa59f8986f6e5f086482d7d40e9c29db6039a6c219ba902830abff6cb",
+  "dataset_sha256": "c59cbfcc159385dee31482ba3898833cb7b298716a3f623496ef22f8d63e0528",
+  "system_sha256": "3ae02d520406f73e735752ef04ff395785f84fec7ee1619fd9d392d86cb92933",
+  "rows": 1357,
+  "files_sha256": {
+    "train.jsonl": "c59cbfcc159385dee31482ba3898833cb7b298716a3f623496ef22f8d63e0528",
+    "system.txt": "3ae02d520406f73e735752ef04ff395785f84fec7ee1619fd9d392d86cb92933",
+    "training-config.json": "78804a2480954a17eacbaeb9c8673953c882fafa96549fd083eec4b8fdbaae9c",
+    "identity-keys.json": "5cde71fa1f4975e5a768aaa74b8b24e681ef2f9d5b1cb79ec0a0c25304f9847c",
+    "identity_loss3.py": "082510fc6fadc31eb179384299cc1425e6dfd98ae01ad95d463759c1a0627db8",
+    "evaluation-config.json": "05172c6c0e95265d92bbbed49a42d409910544879d756f4f3208d21a108bf2c4",
+    "development-cases.json": "c48aedb3631dd6ee2171995720a22fdf046990835951884a092b6e6d0f071ebf"
+  },
+  "training_authorized": false,
+  "training_started": false,
+  "inference_executed": false,
+  "status": "CPU_CHECKED_PENDING_HUMAN_REVIEW",
+  "sync_status": "LOCAL_GIT_ONLY",
+  "human_review": "PENDING",
+  "synthetic_examples": 32,
+  "cpu_verified": true
+}

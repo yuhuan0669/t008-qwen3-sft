@@ -1,0 +1,7 @@
+{
+  "available_evaluation_fragment_matches": [],
+  "development_training_fragment_matches": [],
+  "verdict": "NO_TRAINING_QUESTION_COPY_IDENTIFIED",
+  "basis": "No exact/full-context threshold or shared 12-character fragments were found in the checked scope. This is lexical screening, not semantic or full-bank proof.",
+  "scope": "32 added examples against 92 available historical/development questions; 16 new development cases against 1357 training rows. Held-out bank not opened."
+}

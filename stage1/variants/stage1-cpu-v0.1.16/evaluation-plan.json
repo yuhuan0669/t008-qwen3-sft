@@ -1,0 +1,103 @@
+{
+  "purpose": "Proposed 120-request development comparison; not formal acceptance and not executed.",
+  "execution_authorized": false,
+  "comparison_models": [
+    "original_base",
+    "v0.1.14",
+    "candidate_v0.1.16"
+  ],
+  "planned_requests": {
+    "per_model": {
+      "new_diagnostic_nonthinking": 20,
+      "other_chinese_nonthinking": 12,
+      "thinking_regression": 8
+    },
+    "total": 120
+  },
+  "groups": [
+    {
+      "mode": "nonthinking",
+      "case_ids": [
+        "D16-01",
+        "D16-02",
+        "D16-03",
+        "D16-04"
+      ],
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "requests_per_model": 20
+    },
+    {
+      "mode": "nonthinking",
+      "case_ids": [
+        "D16-05",
+        "D16-06",
+        "D16-07",
+        "D16-08",
+        "D16-09",
+        "D16-10",
+        "D16-11",
+        "D16-12",
+        "D16-13",
+        "D16-14",
+        "D16-15",
+        "D16-16"
+      ],
+      "seeds": [
+        42
+      ],
+      "requests_per_model": 12
+    },
+    {
+      "mode": "thinking",
+      "case_ids": [
+        "D16-01",
+        "D16-02",
+        "D16-05",
+        "D16-06",
+        "D16-11",
+        "D16-13",
+        "D16-14",
+        "D16-16"
+      ],
+      "seeds": [
+        42
+      ],
+      "requests_per_model": 8
+    }
+  ],
+  "development_cases_path": "stage1/variants/stage1-cpu-v0.1.16/development-cases.json",
+  "historical_echo_cases": {
+    "count": 28,
+    "role": "EXPOSED_DIAGNOSTIC_ONLY",
+    "included_in_requests": false,
+    "used_for_selection": false,
+    "source": "t024_manual_checks_20261027/echo30_readonly_audit/raw_evidence_84.json"
+  },
+  "case_set_status": "DRAFT_FOR_USER_REVIEW; freeze hashes before any approved execution",
+  "formal_holdout_status": "NOT_OPENED_OR_MODIFIED; independent evaluator uses cases not used for development",
+  "scoring": [
+    "echo",
+    "task_completion",
+    "preserve_given_facts",
+    "unsupported_additions",
+    "identity",
+    "scope",
+    "json_schema"
+  ],
+  "decision_rules": {
+    "scope": "Development screening only; no auto-deployment or claims of population pass rates.",
+    "blocking_errors": "Any confirmed invented measurements/execution/certification or reversal of an explicit fact blocks recommendation pending review; harmless wording variation is not a failure.",
+    "basic_checks": "Nonthinking identity 4/4, JSON schema and values 2/2, scope 4/4; Thinking report 8/8 separately. No averaging away a confirmed blocking error.",
+    "comparison": "Compare task completion and fact preservation per case against both original_base and v0.1.14. Echo reduction alone is insufficient. Small differences remain inconclusive.",
+    "training": "At most one proposed Full after separate user authorization; do not tune against historical T021/T024 questions.",
+    "formal_acceptance": "Separate independent evaluation under the final configuration; exposed cases are historical regression, not unseen acceptance."
+  },
+  "json_schema_application": "For json cases, forward the same response_format json_schema to all models; do not put the schema only into System.",
+  "tool_call_check_before_release": "Verify actual tools/tool_choice and application execution capability; server auto-tool-choice flag alone does not establish tool use."
+}

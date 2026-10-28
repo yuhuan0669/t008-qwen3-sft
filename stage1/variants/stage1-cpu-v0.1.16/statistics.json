@@ -1,0 +1,123 @@
+{
+  "version": "stage1-cpu-v0.1.16",
+  "parent": "stage1-cpu-v0.1.14",
+  "before": {
+    "rows": 1325,
+    "unique_message_records": 807,
+    "source_exposures": {
+      "swift/Qwen3-SFT-Mixin": 1030,
+      "swift/self-cognition": 216,
+      "t008/strict-json-v1": 4,
+      "t008/general-nonthinking-v1": 2,
+      "t008/project-positioning-v1": 23,
+      "t008/company-facts-v1": 2,
+      "t008/chinese-identity-v1": 16,
+      "t008/general-nonthinking-v2": 12,
+      "t008/business-evidence-v1": 8,
+      "t008/company-boundary-v1": 12
+    },
+    "first_user_language": {
+      "zh": 830,
+      "mixed": 17,
+      "en_or_other": 478
+    },
+    "system_rows": 0,
+    "no_think_marker_rows": 108,
+    "row_modes": {
+      "thinking": 1057,
+      "nonthinking": 268
+    },
+    "assistant_turn_modes": {
+      "thinking": 1059,
+      "nonthinking": 275
+    }
+  },
+  "after": {
+    "rows": 1357,
+    "unique_message_records": 839,
+    "source_exposures": {
+      "swift/Qwen3-SFT-Mixin": 1030,
+      "swift/self-cognition": 216,
+      "t008/strict-json-v1": 4,
+      "t008/general-nonthinking-v1": 2,
+      "t008/project-positioning-v1": 23,
+      "t008/company-facts-v1": 2,
+      "t008/chinese-identity-v1": 16,
+      "t008/general-nonthinking-v2": 12,
+      "t008/business-evidence-v1": 8,
+      "t008/company-boundary-v1": 12,
+      "t008/nt-fact-edit-v1": 8,
+      "t008/nt-task-intent-v1": 8,
+      "t008/nt-evidence-v1": 8,
+      "t008/nt-multiturn-scope-v1": 8
+    },
+    "first_user_language": {
+      "zh": 862,
+      "mixed": 17,
+      "en_or_other": 478
+    },
+    "system_rows": 175,
+    "no_think_marker_rows": 108,
+    "row_modes": {
+      "thinking": 1057,
+      "nonthinking": 300
+    },
+    "assistant_turn_modes": {
+      "thinking": 1059,
+      "nonthinking": 315
+    }
+  },
+  "retained_parent_language": {
+    "zh": 830,
+    "mixed": 17,
+    "en_or_other": 478
+  },
+  "decisions": {
+    "preserve_general": 1048,
+    "add_system": 143,
+    "preserve_english_or_mixed": 113,
+    "preserve_other_model_knowledge": 20,
+    "preserve_general_scope_conflict": 1
+  },
+  "new_category_counts": {
+    "fact_edit": 8,
+    "task_intent": 8,
+    "evidence": 8,
+    "multiturn_scope": 8
+  },
+  "old_answers_changed": 0,
+  "old_questions_changed": 0,
+  "removed_rows": 0,
+  "added_rows": 32,
+  "supervised_tokens_status": "NATIVE_CPU_VERIFIED",
+  "previous_review_version": "stage1-cpu-v0.1.15",
+  "rows_since_previous_review": 0,
+  "system_conditioned_groups": {
+    "旧身份权重3样本": {
+      "rows": 103,
+      "thinking": 15,
+      "nonthinking": 88,
+      "tokens": 4099,
+      "weighted": 12281.0
+    },
+    "旧其他权重1样本": {
+      "rows": 40,
+      "thinking": 9,
+      "nonthinking": 31,
+      "tokens": 1893,
+      "weighted": 1893.0
+    },
+    "32条任务示范": {
+      "rows": 32,
+      "thinking": 0,
+      "nonthinking": 32,
+      "tokens": 1192,
+      "weighted": 1192.0
+    }
+  },
+  "supervised_tokens": {
+    "parent": 1526627,
+    "added_examples": 1192,
+    "total": 1527819
+  }
+}

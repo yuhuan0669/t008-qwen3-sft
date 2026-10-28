@@ -1,0 +1,52 @@
+{
+  "hyperparameters_unchanged": true,
+  "loss_plugin_bytes_unchanged": true,
+  "argv_changes": [
+    {
+      "before": "/work/stage1/variants/stage1-cpu-v0.1.14/train.jsonl",
+      "after": "/work/stage1/variants/stage1-cpu-v0.1.16/train.jsonl"
+    },
+    {
+      "before": "/runwork/stage1-cpu-v0.1.14/full/checkpoints",
+      "after": "/runwork/stage1-cpu-v0.1.16/full/checkpoints"
+    },
+    {
+      "before": "/work/stage1/variants/stage1-cpu-v0.1.14/identity_loss3.py",
+      "after": "/work/stage1/variants/stage1-cpu-v0.1.16/identity_loss3.py"
+    }
+  ],
+  "parent_exposures_unchanged": true,
+  "identity_exposures": {
+    "before": 234,
+    "after": 234
+  },
+  "dataset_rows": {
+    "before": 1325,
+    "after": 1357
+  },
+  "optimizer_steps_for_one_epoch": {
+    "before": 83,
+    "after": 85
+  },
+  "system_change": "Per-record addition; no global --system, because general/English rows remain unchanged.",
+  "evaluation_change": "Relative to v0.1.15, remove historical test cases from selection; retain total 120 and common template/parameters.",
+  "relative_to_previous_review": {
+    "version": "stage1-cpu-v0.1.15",
+    "dataset_rows": {
+      "before": 1357,
+      "after": 1357
+    },
+    "optimizer_steps": {
+      "before": 85,
+      "after": 85
+    },
+    "changed_sample_ids": [
+      "F01",
+      "F02",
+      "I01",
+      "I04",
+      "I05",
+      "I08"
+    ]
+  }
+}

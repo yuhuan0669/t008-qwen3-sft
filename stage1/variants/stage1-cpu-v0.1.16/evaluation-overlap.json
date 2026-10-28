@@ -1,0 +1,223 @@
+{
+  "checked_unique_questions": 92,
+  "sources": [
+    {
+      "path": "/Users/ben/aiws/codex/keywords/t024_manual_checks_20261027/echo30_readonly_audit/raw_evidence_84.json",
+      "sha256": "2d62bd51799e674ed90a9ba1fa13acca11f4359f7d8e1232aac245455cb27cfc",
+      "added_unique_questions": 28,
+      "available": true
+    },
+    {
+      "path": "/Users/ben/aiws/codex/keywords/t008_qwen3_sft/stage1/evaluation/development-24.jsonl",
+      "sha256": "af0b1db0db437c2a114da2aec87ef68b953189e284ba24435eb74698be450be6",
+      "added_unique_questions": 24,
+      "available": true
+    },
+    {
+      "path": "/Users/ben/aiws/codex/keywords/t008_qwen3_sft/stage1/evaluation/public-development.jsonl",
+      "sha256": "8513e6709b6f24946b6d98e6b94c7233fa2620c0845dee4aa412a91d040d3f97",
+      "added_unique_questions": 40,
+      "available": true
+    }
+  ],
+  "threshold": 0.7,
+  "algorithm": "Whitespace-normalized full user-context SequenceMatcher; only new samples are checked.",
+  "exact_matches": 0,
+  "flagged": [],
+  "nearest": [
+    {
+      "sample_id": "F01",
+      "closest_available_eval_id": "T021-B6-G106",
+      "similarity": 0.14634,
+      "exact": false
+    },
+    {
+      "sample_id": "F02",
+      "closest_available_eval_id": "DEV-08",
+      "similarity": 0.19608,
+      "exact": false
+    },
+    {
+      "sample_id": "F03",
+      "closest_available_eval_id": "T021-R3300-G1170",
+      "similarity": 0.14844,
+      "exact": false
+    },
+    {
+      "sample_id": "F04",
+      "closest_available_eval_id": "T021-R3300-G0411",
+      "similarity": 0.15,
+      "exact": false
+    },
+    {
+      "sample_id": "F05",
+      "closest_available_eval_id": "T021-B6-G005",
+      "similarity": 0.17188,
+      "exact": false
+    },
+    {
+      "sample_id": "F06",
+      "closest_available_eval_id": "T021-C900-B5-G052",
+      "similarity": 0.15441,
+      "exact": false
+    },
+    {
+      "sample_id": "F07",
+      "closest_available_eval_id": "T021-R3300-G0533",
+      "similarity": 0.18579,
+      "exact": false
+    },
+    {
+      "sample_id": "F08",
+      "closest_available_eval_id": "T021-R3300-G0391",
+      "similarity": 0.15741,
+      "exact": false
+    },
+    {
+      "sample_id": "I01",
+      "closest_available_eval_id": "T021-B6-G150",
+      "similarity": 0.18667,
+      "exact": false
+    },
+    {
+      "sample_id": "I02",
+      "closest_available_eval_id": "T021-B7-R180",
+      "similarity": 0.14118,
+      "exact": false
+    },
+    {
+      "sample_id": "I03",
+      "closest_available_eval_id": "DEV-21",
+      "similarity": 0.14583,
+      "exact": false
+    },
+    {
+      "sample_id": "I04",
+      "closest_available_eval_id": "DEV-11",
+      "similarity": 0.19672,
+      "exact": false
+    },
+    {
+      "sample_id": "I05",
+      "closest_available_eval_id": "DEV-21",
+      "similarity": 0.27119,
+      "exact": false
+    },
+    {
+      "sample_id": "I06",
+      "closest_available_eval_id": "T021-R3300-G1008",
+      "similarity": 0.17708,
+      "exact": false
+    },
+    {
+      "sample_id": "I07",
+      "closest_available_eval_id": "T021-B6-G139",
+      "similarity": 0.16822,
+      "exact": false
+    },
+    {
+      "sample_id": "I08",
+      "closest_available_eval_id": "T021-B6-G150",
+      "similarity": 0.28169,
+      "exact": false
+    },
+    {
+      "sample_id": "E01",
+      "closest_available_eval_id": "T021-R3300-G0411",
+      "similarity": 0.17877,
+      "exact": false
+    },
+    {
+      "sample_id": "E02",
+      "closest_available_eval_id": "T021-R3300-G0411",
+      "similarity": 0.13873,
+      "exact": false
+    },
+    {
+      "sample_id": "E03",
+      "closest_available_eval_id": "T021-B6-G044",
+      "similarity": 0.14035,
+      "exact": false
+    },
+    {
+      "sample_id": "E04",
+      "closest_available_eval_id": "T021-B6-G024",
+      "similarity": 0.17857,
+      "exact": false
+    },
+    {
+      "sample_id": "E05",
+      "closest_available_eval_id": "T021-R3300-G0411",
+      "similarity": 0.14973,
+      "exact": false
+    },
+    {
+      "sample_id": "E06",
+      "closest_available_eval_id": "T021-R3300-G0391",
+      "similarity": 0.1466,
+      "exact": false
+    },
+    {
+      "sample_id": "E07",
+      "closest_available_eval_id": "DEV-21",
+      "similarity": 0.21569,
+      "exact": false
+    },
+    {
+      "sample_id": "E08",
+      "closest_available_eval_id": "T021-B6-G110",
+      "similarity": 0.17241,
+      "exact": false
+    },
+    {
+      "sample_id": "M01",
+      "closest_available_eval_id": "DEV-12",
+      "similarity": 0.2,
+      "exact": false
+    },
+    {
+      "sample_id": "M02",
+      "closest_available_eval_id": "T021-R3300-G0411",
+      "similarity": 0.17778,
+      "exact": false
+    },
+    {
+      "sample_id": "M03",
+      "closest_available_eval_id": "DEV-17",
+      "similarity": 0.17857,
+      "exact": false
+    },
+    {
+      "sample_id": "M04",
+      "closest_available_eval_id": "DEV-13",
+      "similarity": 0.16667,
+      "exact": false
+    },
+    {
+      "sample_id": "M05",
+      "closest_available_eval_id": "DEV-24",
+      "similarity": 0.14706,
+      "exact": false
+    },
+    {
+      "sample_id": "M06",
+      "closest_available_eval_id": "DEV-18",
+      "similarity": 0.2439,
+      "exact": false
+    },
+    {
+      "sample_id": "M07",
+      "closest_available_eval_id": "T021-B6-G024",
+      "similarity": 0.21488,
+      "exact": false
+    },
+    {
+      "sample_id": "M08",
+      "closest_available_eval_id": "DEV-18",
+      "similarity": 0.20588,
+      "exact": false
+    }
+  ],
+  "shared_12_char_matches": [],
+  "boundary": "This is a bounded lexical audit against available local evidence, not proof of no semantic overlap with the full T021/T024 bank. No private held-out bank was opened."
+}

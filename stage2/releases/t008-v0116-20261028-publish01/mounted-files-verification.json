@@ -1,0 +1,5 @@
+{
+  "/adapters/octa-carbon-sft-v0116/adapter_config.json": "06e3cf11f2f2495ac7b594eed44f20b78177e5a5bd547f7597fb07e53d44768d",
+  "/adapters/octa-carbon-sft-v0116/adapter_model.safetensors": "96bce17f5808f09c797e9ce07b467148602213e56f61f60249b79987bb186888",
+  "/t008-serving/thinking-prefill.jinja": "ae8a1b27c3bac461eb5f6c78d5d39cbe29427ad91c9d2da8378e236b8a38448d"
+}

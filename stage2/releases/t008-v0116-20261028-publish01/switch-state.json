@@ -1,0 +1,9 @@
+{
+  "started_at_utc": "2026-10-28T14:07:06.597348+00:00",
+  "release": "t008-v0116-20261028-publish01",
+  "status": "DEPLOYED_VERIFIED",
+  "replicas_changed": false,
+  "ready_at_utc": "2026-10-28T14:09:24.853163+00:00",
+  "finished_at_utc": "2026-10-28T14:09:31.186239+00:00",
+  "rollback_performed": false
+}

@@ -1,0 +1,33 @@
+{
+  "verified": true,
+  "recorded_at_utc": "2026-10-28T14:09:31.186658+00:00",
+  "release": "t008-v0116-20261028-publish01",
+  "model_alias": "octa-carbon-sft-v0116",
+  "aliases": [
+    "octa-carbon-sft-v0114",
+    "octa-carbon-sft-v0116",
+    "octa-carbon-v1"
+  ],
+  "ready_replicas": 1,
+  "generation": 86,
+  "health_http": 200,
+  "mounted_adapter_and_template_hashes_match": true,
+  "base_files_match": true,
+  "probes_passed": 5,
+  "system_in_all_probe_requests": true,
+  "daily_seed_omitted": true,
+  "rollback_dry_run_full_spec_equal": true,
+  "application_configuration_changed": false,
+  "scope": {
+    "other_deployments_checked": 122,
+    "other_specs_equal": true,
+    "changed_other_deployments": [],
+    "application_mutation_commands": 0,
+    "application_routing_changed": false,
+    "service_and_ingress_specs_unchanged": true,
+    "only_model_template_patched": true
+  },
+  "quality_accepted": false,
+  "training": false,
+  "temporary_stage_pod_removed": true
+}

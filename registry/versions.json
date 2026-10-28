@@ -415,7 +415,8 @@
       "new_model_deployed": false,
       "sync_status": "LOCAL_GIT_ONLY_CLEARML_TRAINING_ARTIFACTS",
       "selection": "Do not release v0.1.16: task/fact/capability failures persist; no stable overall benefit established.",
-      "completed_at_utc": "2026-10-28T13:42:02.031033+00:00"
+      "completed_at_utc": "2026-10-28T13:42:02.031033+00:00",
+      "subsequent_model_service_release": "stage2/releases/t008-v0116-20261028-publish01/REPORT.md"
     },
     "trained_candidate_history": [
       {
@@ -464,7 +465,26 @@
         "selection": "No evidence of consistent superiority over v0.1.13 or to replace current baseline; retain candidates.",
         "completed_at_utc": "2026-10-21T15:29:43.298642+00:00"
       }
-    ]
+    ],
+    "current_serving_release": {
+      "release": "t008-v0116-20261028-publish01",
+      "data_version": "stage1-cpu-v0.1.16",
+      "model_alias": "octa-carbon-sft-v0116",
+      "preserved_aliases": [
+        "octa-carbon-v1",
+        "octa-carbon-sft-v0114"
+      ],
+      "report": "stage2/releases/t008-v0116-20261028-publish01/REPORT.md",
+      "verification": "stage2/releases/t008-v0116-20261028-publish01/verification.json",
+      "adapter_zip_sha256": "b4d413519053a48c95ca6998f116c5b06404122f887e493efe8e11274f1b1973",
+      "template_sha256": "ae8a1b27c3bac461eb5f6c78d5d39cbe29427ad91c9d2da8378e236b8a38448d",
+      "status": "DEPLOYED_BOUNDED_API_VERIFIED",
+      "deployment_authorized_by": "Direct user: please deploy v0.1.16",
+      "quality_accepted": false,
+      "system_deployed_to_application": false,
+      "application_settings_changed": false,
+      "training": false
+    }
   },
   "environment": {
     "image_digest": "sha256:822d99beed4984a421c8d1da397993c6a8a5f88cdad7dde940bd52df0067d738",

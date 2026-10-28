@@ -1,0 +1,68 @@
+[
+  {
+    "name": "base-nonthinking",
+    "model": "octa-carbon-v1",
+    "mode": "nonthinking",
+    "seconds": 0.6655856920406222,
+    "response_id": "chatcmpl-3b838559896fc7ab9f60b70e7566371f",
+    "model_matches": true,
+    "finish_reason": "stop",
+    "nonempty": true,
+    "reasoning_present": false,
+    "seed_sent": false,
+    "system_sha256": "3ae02d520406f73e735752ef04ff395785f84fec7ee1619fd9d392d86cb92933"
+  },
+  {
+    "name": "v0114-nonthinking",
+    "model": "octa-carbon-sft-v0114",
+    "mode": "nonthinking",
+    "seconds": 0.2833417309448123,
+    "response_id": "chatcmpl-6a9c6f34479544abecc04c42b08c92ed",
+    "model_matches": true,
+    "finish_reason": "stop",
+    "nonempty": true,
+    "reasoning_present": false,
+    "seed_sent": false,
+    "system_sha256": "3ae02d520406f73e735752ef04ff395785f84fec7ee1619fd9d392d86cb92933"
+  },
+  {
+    "name": "v0116-nonthinking",
+    "model": "octa-carbon-sft-v0116",
+    "mode": "nonthinking",
+    "seconds": 0.5188116827048361,
+    "response_id": "chatcmpl-5739beb0c8e8ff8cddc9f44596c42a06",
+    "model_matches": true,
+    "finish_reason": "stop",
+    "nonempty": true,
+    "reasoning_present": false,
+    "seed_sent": false,
+    "system_sha256": "3ae02d520406f73e735752ef04ff395785f84fec7ee1619fd9d392d86cb92933"
+  },
+  {
+    "name": "v0116-thinking",
+    "model": "octa-carbon-sft-v0116",
+    "mode": "thinking",
+    "seconds": 0.912610552739352,
+    "response_id": "chatcmpl-1d9c6295edb0c1a5fb35277f6b73a8f1",
+    "model_matches": true,
+    "finish_reason": "stop",
+    "nonempty": true,
+    "reasoning_present": true,
+    "seed_sent": false,
+    "system_sha256": "3ae02d520406f73e735752ef04ff395785f84fec7ee1619fd9d392d86cb92933"
+  },
+  {
+    "name": "v0116-json",
+    "model": "octa-carbon-sft-v0116",
+    "mode": "nonthinking",
+    "seconds": 0.7308907960541546,
+    "response_id": "chatcmpl-c7e9ff187ba33924c89d14f8348cf24c",
+    "model_matches": true,
+    "finish_reason": "stop",
+    "nonempty": true,
+    "reasoning_present": false,
+    "seed_sent": false,
+    "system_sha256": "3ae02d520406f73e735752ef04ff395785f84fec7ee1619fd9d392d86cb92933",
+    "json_values_correct": true
+  }
+]

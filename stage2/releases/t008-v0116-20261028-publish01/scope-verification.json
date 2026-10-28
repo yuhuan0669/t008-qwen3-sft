@@ -1,0 +1,9 @@
+{
+  "other_deployments_checked": 122,
+  "other_specs_equal": true,
+  "changed_other_deployments": [],
+  "application_mutation_commands": 0,
+  "application_routing_changed": false,
+  "service_and_ingress_specs_unchanged": true,
+  "only_model_template_patched": true
+}

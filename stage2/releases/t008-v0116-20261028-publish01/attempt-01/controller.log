@@ -1,0 +1,41 @@
+2026-10-28T14:01:26.890342+00:00 Model-service patch applied; waiting for readiness
+curl: (22) The requested URL returned error: 503
+curl: (22) The requested URL returned error: 503
+Traceback (most recent call last):
+  File "/Users/ben/aiws/codex/keywords/t008_qwen3_sft/stage2/releases/t008-v0116-20261028-publish01/publish.py", line 98, in main
+    curl('/health');(D/'health-after.txt').write_text('200\n')
+    ~~~~^^^^^^^^^^^
+  File "/Users/ben/aiws/codex/keywords/t008_qwen3_sft/stage2/releases/t008-v0116-20261028-publish01/publish.py", line 23, in curl
+    return subprocess.check_output(argv,text=True,timeout=190)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/subprocess.py", line 473, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+           ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+               **kwargs).stdout
+               ^^^^^^^^^
+  File "/usr/local/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/subprocess.py", line 578, in run
+    raise CalledProcessError(retcode, process.args,
+                             output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '['curl', '--noproxy', '*', '--max-time', '180', '--fail-with-body', '-sS', 'https://vllm.10.140.17.125.nip.io/health']' returned non-zero exit status 22.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ben/aiws/codex/keywords/t008_qwen3_sft/stage2/releases/t008-v0116-20261028-publish01/publish.py", line 145, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/Users/ben/aiws/codex/keywords/t008_qwen3_sft/stage2/releases/t008-v0116-20261028-publish01/publish.py", line 137, in main
+    restored=ready();assert restored['spec']==before['spec'];curl('/health')
+                                                             ~~~~^^^^^^^^^^^
+  File "/Users/ben/aiws/codex/keywords/t008_qwen3_sft/stage2/releases/t008-v0116-20261028-publish01/publish.py", line 23, in curl
+    return subprocess.check_output(argv,text=True,timeout=190)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/subprocess.py", line 473, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+           ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+               **kwargs).stdout
+               ^^^^^^^^^
+  File "/usr/local/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/subprocess.py", line 578, in run
+    raise CalledProcessError(retcode, process.args,
+                             output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '['curl', '--noproxy', '*', '--max-time', '180', '--fail-with-body', '-sS', 'https://vllm.10.140.17.125.nip.io/health']' returned non-zero exit status 22.

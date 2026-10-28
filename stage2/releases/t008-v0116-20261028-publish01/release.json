@@ -1,0 +1,32 @@
+{
+  "release": "t008-v0116-20261028-publish01",
+  "created_at_utc": "2026-10-28T13:58:01.704066+00:00",
+  "authorization": "Direct user: please deploy v0.1.16",
+  "model_alias": "octa-carbon-sft-v0116",
+  "preserved_aliases": [
+    "octa-carbon-v1",
+    "octa-carbon-sft-v0114"
+  ],
+  "source_run": "t008-v0116-20261028-130519",
+  "source_manifest": "stage2/runs/t008-v0116-20261028-130519/outputs/full/run_manifest.json",
+  "adapter_zip": "/Users/ben/aiws/codex/keywords/t008_qwen3_sft/stage2/local-models/stage1-cpu-v0.1.16/adapter.zip",
+  "adapter_sha256": "b4d413519053a48c95ca6998f116c5b06404122f887e493efe8e11274f1b1973",
+  "adapter_files": {
+    "adapter_config.json": {
+      "sha256": "06e3cf11f2f2495ac7b594eed44f20b78177e5a5bd547f7597fb07e53d44768d",
+      "bytes": 1135
+    },
+    "adapter_model.safetensors": {
+      "sha256": "96bce17f5808f09c797e9ce07b467148602213e56f61f60249b79987bb186888",
+      "bytes": 87360584
+    }
+  },
+  "template_sha256": "ae8a1b27c3bac461eb5f6c78d5d39cbe29427ad91c9d2da8378e236b8a38448d",
+  "probe_system_sha256": "3ae02d520406f73e735752ef04ff395785f84fec7ee1619fd9d392d86cb92933",
+  "application_settings_change": false,
+  "training": false,
+  "full_quality_acceptance": false,
+  "bounded_probe_count": 5,
+  "readiness_attempts": 2,
+  "retry_scope": "Same model/template patch; bounded public health readiness only. No generation resampling."
+}

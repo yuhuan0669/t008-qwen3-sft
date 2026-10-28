@@ -1,0 +1,18 @@
+{
+  "release": "t008-v0116-20261028-publish01",
+  "source_zip_sha256": "b4d413519053a48c95ca6998f116c5b06404122f887e493efe8e11274f1b1973",
+  "base_model": "Qwen/Qwen3-8B",
+  "rank": 8,
+  "files": {
+    "adapter_config.json": {
+      "bytes": 1135,
+      "sha256": "06e3cf11f2f2495ac7b594eed44f20b78177e5a5bd547f7597fb07e53d44768d"
+    },
+    "adapter_model.safetensors": {
+      "bytes": 87360584,
+      "sha256": "96bce17f5808f09c797e9ce07b467148602213e56f61f60249b79987bb186888"
+    }
+  },
+  "destination": "/store/released/t008-v0116-20261028-publish01",
+  "executed": true
+}

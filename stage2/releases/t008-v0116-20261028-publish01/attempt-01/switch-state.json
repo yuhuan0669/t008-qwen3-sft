@@ -1,0 +1,8 @@
+{
+  "started_at_utc": "2026-10-28T14:01:26.749497+00:00",
+  "release": "t008-v0116-20261028-publish01",
+  "status": "RELEASE_FAILED",
+  "replicas_changed": false,
+  "ready_at_utc": "2026-10-28T14:03:43.740573+00:00",
+  "error": "CalledProcessError(22, ['curl', '--noproxy', '*', '--max-time', '180', '--fail-with-body', '-sS', 'https://vllm.10.140.17.125.nip.io/health'])"
+}

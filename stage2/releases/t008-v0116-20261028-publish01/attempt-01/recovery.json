@@ -1,0 +1,9 @@
+{
+  "verified_at_utc": "2026-10-28T14:07:06.189452+00:00",
+  "original_spec_equal": true,
+  "ready_replicas": 1,
+  "public_health": 200,
+  "original_aliases_restored": true,
+  "probes_executed": 0,
+  "finding": "Both new pod and rollback pod reached Ready before first external health returned503; later original public health200. One-shot controller gate caused premature rollback; ingress timing is the likely source, not independently proven."
+}

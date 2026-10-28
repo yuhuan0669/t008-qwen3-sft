@@ -1,0 +1,81 @@
+{
+  "purpose": "Proposed 120-request Chinese comparison; not executed or authorized.",
+  "backend": "vllm",
+  "chat_template": {
+    "path": "stage2/diagnostics/thinking-chat-template-20261020/thinking-prefill.jinja",
+    "sha256": "ae8a1b27c3bac461eb5f6c78d5d39cbe29427ad91c9d2da8378e236b8a38448d"
+  },
+  "server_args": [
+    "--chat-template",
+    "/work/stage2/diagnostics/thinking-chat-template-20261020/thinking-prefill.jinja",
+    "--reasoning-parser",
+    "qwen3"
+  ],
+  "apply_same_template_to": [
+    "original_base",
+    "all_compared_adapters"
+  ],
+  "request_modes": {
+    "thinking": {
+      "temperature": 0.6,
+      "top_p": 0.95,
+      "top_k": 20,
+      "max_tokens": 4096,
+      "min_p": 0,
+      "chat_template_kwargs": {
+        "enable_thinking": true
+      }
+    },
+    "nonthinking": {
+      "temperature": 0.7,
+      "top_p": 0.8,
+      "top_k": 20,
+      "max_tokens": 2048,
+      "min_p": 0,
+      "chat_template_kwargs": {
+        "enable_thinking": false
+      }
+    }
+  },
+  "prior_chat_verification": "stage2/diagnostics/thinking-chat-template-20261020/verification.json",
+  "prior_scope": "Historical results remain unchanged; scores with a different System are not reused.",
+  "formal_scores_reusable_only_if_template_and_protocol_match": true,
+  "execution_authorized": false,
+  "system_path": "stage1/variants/stage1-cpu-v0.1.15/system.txt",
+  "system_sha256": "ea32285c1a7749960952aa616dcf925d3c895653760230e51007bf09e1f8f6f7",
+  "formal_holdout_status": "NOT_OPENED_OR_MODIFIED",
+  "historical_scores_unchanged": true,
+  "prior_protocol_check": "stage2/diagnostics/json-format-check-20261020/REPORT.md",
+  "english_identity": "DEFERRED; existing English/mixed natural-language rows unchanged",
+  "seed": 42,
+  "concurrency": 1,
+  "server_seed": 42,
+  "max_model_len": 8192,
+  "repetition_penalty": 1.0,
+  "comparison_models": [
+    "original_base",
+    "v0.1.14",
+    "candidate_v0.1.15"
+  ],
+  "planned_requests": {
+    "per_model": {
+      "fire_diagnostic_nonthinking": 20,
+      "other_chinese_nonthinking": 12,
+      "thinking_regression": 8
+    },
+    "total": 120
+  },
+  "case_set_status": "TO_BE_FROZEN_BEFORE_GPU_EXECUTION; historical diagnostic cases separated from unseen checks",
+  "scoring": [
+    "echo",
+    "task_completion",
+    "preserve_given_facts",
+    "unsupported_additions",
+    "identity",
+    "scope"
+  ],
+  "seed_policy": "Diagnostic fixed seeds are for comparison only; everyday application requests omit seed.",
+  "n": 1,
+  "presence_penalty": 0,
+  "frequency_penalty": 0
+}

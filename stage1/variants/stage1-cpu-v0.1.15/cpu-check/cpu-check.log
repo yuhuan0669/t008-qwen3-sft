@@ -1,0 +1,24 @@
+Failed to load CPU gemm_4bit_forward from kernels-community: No module named 'kernels'. Please make sure you already `pip install kernels` and the kernels >= 0.11.1
+[INFO:swift] Successfully registered `/usr/local/lib/python3.12/site-packages/swift/dataset/data/dataset_info.json`.
+[INFO:swift] Successfully imported external_plugins: ['/tmp/v0115-check/stage1/training/local_data_guard.py', '/tmp/v0115-check/stage1/variants/stage1-cpu-v0.1.15/identity_loss3.py'].
+[INFO:swift] rank: -1, local_rank: -1, world_size: 1, local_world_size: 1
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+[INFO:swift] Setting args.lazy_tokenize: False
+[transformers] warmup_ratio is deprecated and will be removed in v5.2. Use `warmup_steps` instead.
+Generating train split: 0 examples [00:00, ? examples/s]Generating train split: 1357 examples [00:00, 103533.86 examples/s]
+Map (num_proc=1):   0%|          | 0/1357 [00:00<?, ? examples/s]Map (num_proc=1): 100%|██████████| 1357/1357 [00:00<00:00, 12491.38 examples/s]Map (num_proc=1): 100%|██████████| 1357/1357 [00:00<00:00, 6392.66 examples/s] 
+[INFO:swift] Setting torch_dtype: torch.bfloat16
+[INFO:swift] default_system: None
+[INFO:swift] max_length: 2048
+[INFO:swift] response_prefix: None
+[INFO:swift] agent_template: hermes
+[INFO:swift] default_system: None
+[INFO:swift] max_length: 2048
+[INFO:swift] response_prefix: None
+[INFO:swift] agent_template: hermes
+[INFO:swift] default_system: None
+[INFO:swift] max_length: 2048
+[INFO:swift] response_prefix: None
+[INFO:swift] agent_template: hermes
+Map (num_proc=1):   0%|          | 0/1357 [00:00<?, ? examples/s]Map (num_proc=1):  74%|███████▎  | 1000/1357 [00:03<00:01, 313.16 examples/s]Map (num_proc=1): 100%|██████████| 1357/1357 [00:03<00:00, 356.45 examples/s]Map (num_proc=1): 100%|██████████| 1357/1357 [00:04<00:00, 336.06 examples/s]
+{"verified": true, "rows": 1357, "max_tokens": 2048, "weight_mismatch_rows": 0, "new_supervised_tokens": 1273, "system_measure": {"characters": 543, "text_tokens": 347, "source_characters": 861, "source_text_tokens": 566, "scope": "System text only, excludes ChatML headers and current question", "file_sha256": "ea32285c1a7749960952aa616dcf925d3c895653760230e51007bf09e1f8f6f7"}}

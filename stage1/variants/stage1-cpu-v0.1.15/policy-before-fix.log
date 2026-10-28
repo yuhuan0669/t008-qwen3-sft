@@ -1,0 +1,91 @@
+FFFFF.FF
+======================================================================
+FAIL: test_adjacent_english_and_han_are_preserved (__main__.CandidatePolicy.test_adjacent_english_and_han_are_preserved) (line=23)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/ben/aiws/codex/keywords/t008_qwen3_sft/stage1/variants/stage1-cpu-v0.1.15/test_candidate_policy.py", line 15, in test_adjacent_english_and_han_are_preserved
+    self.assertEqual(decision(parent[line-1]),'preserve_english_or_mixed')
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'add_system' != 'preserve_english_or_mixed'
+- add_system
++ preserve_english_or_mixed
+
+
+======================================================================
+FAIL: test_adjacent_english_and_han_are_preserved (__main__.CandidatePolicy.test_adjacent_english_and_han_are_preserved) (line=206)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/ben/aiws/codex/keywords/t008_qwen3_sft/stage1/variants/stage1-cpu-v0.1.15/test_candidate_policy.py", line 15, in test_adjacent_english_and_han_are_preserved
+    self.assertEqual(decision(parent[line-1]),'preserve_english_or_mixed')
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'add_system' != 'preserve_english_or_mixed'
+- add_system
++ preserve_english_or_mixed
+
+
+======================================================================
+FAIL: test_adjacent_english_and_han_are_preserved (__main__.CandidatePolicy.test_adjacent_english_and_han_are_preserved) (line=291)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/ben/aiws/codex/keywords/t008_qwen3_sft/stage1/variants/stage1-cpu-v0.1.15/test_candidate_policy.py", line 15, in test_adjacent_english_and_han_are_preserved
+    self.assertEqual(decision(parent[line-1]),'preserve_english_or_mixed')
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'add_system' != 'preserve_english_or_mixed'
+- add_system
++ preserve_english_or_mixed
+
+
+======================================================================
+FAIL: test_adjacent_english_and_han_are_preserved (__main__.CandidatePolicy.test_adjacent_english_and_han_are_preserved) (line=485)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/ben/aiws/codex/keywords/t008_qwen3_sft/stage1/variants/stage1-cpu-v0.1.15/test_candidate_policy.py", line 15, in test_adjacent_english_and_han_are_preserved
+    self.assertEqual(decision(parent[line-1]),'preserve_english_or_mixed')
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'add_system' != 'preserve_english_or_mixed'
+- add_system
++ preserve_english_or_mixed
+
+
+======================================================================
+FAIL: test_adjacent_english_and_han_are_preserved (__main__.CandidatePolicy.test_adjacent_english_and_han_are_preserved) (line=571)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/ben/aiws/codex/keywords/t008_qwen3_sft/stage1/variants/stage1-cpu-v0.1.15/test_candidate_policy.py", line 15, in test_adjacent_english_and_han_are_preserved
+    self.assertEqual(decision(parent[line-1]),'preserve_english_or_mixed')
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'add_system' != 'preserve_english_or_mixed'
+- add_system
++ preserve_english_or_mixed
+
+
+======================================================================
+FAIL: test_config_points_to_its_own_cpu_report (__main__.CandidatePolicy.test_config_points_to_its_own_cpu_report)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/ben/aiws/codex/keywords/t008_qwen3_sft/stage1/variants/stage1-cpu-v0.1.15/test_candidate_policy.py", line 26, in test_config_points_to_its_own_cpu_report
+    self.assertEqual(cfg['cpu_validation_report'],f'stage1/variants/{D.name}/cpu-check/report.json')
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'stage1/variants/stage1-cpu-v0.1.14/cpu-check/report.json' != 'stage1/variants/stage1-cpu-v0.1.15/cpu-check/report.json'
+- stage1/variants/stage1-cpu-v0.1.14/cpu-check/report.json
+?                                  ^
++ stage1/variants/stage1-cpu-v0.1.15/cpu-check/report.json
+?                                  ^
+
+
+======================================================================
+FAIL: test_general_mail_translation_does_not_get_business_system (__main__.CandidatePolicy.test_general_mail_translation_does_not_get_business_system)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/ben/aiws/codex/keywords/t008_qwen3_sft/stage1/variants/stage1-cpu-v0.1.15/test_candidate_policy.py", line 18, in test_general_mail_translation_does_not_get_business_system
+    self.assertEqual(decision(parent[1261]),'preserve_general_scope_conflict')
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'add_system' != 'preserve_general_scope_conflict'
+- add_system
++ preserve_general_scope_conflict
+
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.006s
+
+FAILED (failures=7)

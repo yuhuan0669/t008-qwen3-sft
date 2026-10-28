@@ -1,0 +1,33 @@
+{
+  "hyperparameters_unchanged": true,
+  "loss_plugin_bytes_unchanged": true,
+  "argv_changes": [
+    {
+      "before": "/work/stage1/variants/stage1-cpu-v0.1.14/train.jsonl",
+      "after": "/work/stage1/variants/stage1-cpu-v0.1.15/train.jsonl"
+    },
+    {
+      "before": "/runwork/stage1-cpu-v0.1.14/full/checkpoints",
+      "after": "/runwork/stage1-cpu-v0.1.15/full/checkpoints"
+    },
+    {
+      "before": "/work/stage1/variants/stage1-cpu-v0.1.14/identity_loss3.py",
+      "after": "/work/stage1/variants/stage1-cpu-v0.1.15/identity_loss3.py"
+    }
+  ],
+  "parent_exposures_unchanged": true,
+  "identity_exposures": {
+    "before": 234,
+    "after": 234
+  },
+  "dataset_rows": {
+    "before": 1325,
+    "after": 1357
+  },
+  "optimizer_steps_for_one_epoch": {
+    "before": 83,
+    "after": 85
+  },
+  "system_change": "Per-record addition; no global --system, because general/English rows remain unchanged.",
+  "evaluation_change": "New System; same corrected vLLM template and generation settings."
+}

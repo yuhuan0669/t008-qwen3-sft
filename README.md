@@ -1,5 +1,7 @@
 # T-008 · Qwen3-8B 基础 SFT 统一版本库
 
+**2026-10-28 当前待审数据：[v0.1.15](stage1/variants/stage1-cpu-v0.1.15/README.md)**。1357条，旧问答和曝光不变；143条旧记录加入精简System，新增32条中文非思考示范。CPU检查已通过，等待用户审阅；未训练或推理、未暂停UAT。以下训练及数据记录保留为历史。
+
 **模型服务已发布 v0.1.14（2026-10-21）：** 保留基座别名 `octa-carbon-v1`，新增 LoRA 别名 `octa-carbon-sft-v0114`，已应用修正模板；服务 1/1 Ready、健康 200，6 次简短接口核验通过。UAT 应用未暂停，应用配置和路由未改。[发布记录](stage2/releases/t008-v0114-20261021-publish01/REPORT.md)。
 
 **应用开发接入说明 v1.0：** [统一推理配置与接入入口](docs/integration/chat-inference-v1.0/README.md)。包含两种模式完整参数、精简 System、JSON Schema 和三份不传 seed 的通用请求示例；只区分思考模式，模型别名由环境配置提供。本次仅本地文档及离线核对，未部署、推理或操作 UAT，历史交接包不变。

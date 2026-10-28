@@ -1,0 +1,9 @@
+{
+  "dataset_sha256": "c462a5de3126c78761dba71090a25b097b9d62c6cb6f04fe68e4d12c0586e086",
+  "identity_keys_sha256": "910340ccc17d2da8731344888c99238d3a3b1e7c25412524a2b0d56126b17a2f",
+  "training_config_sha256": "688038f9c7b9badb1ee8cb3b87607a0ab0be24e8f8d504ad1eb0fb679faed6d0",
+  "checker_sha256": "d2dc052c591c663b719f9a75a1e6eb526a4a21f3ce4d55c311c711c78e9d0c77",
+  "pod_name": "t008-v0115-cpu-20261028",
+  "gpu_requested": false,
+  "uat_pause": false
+}

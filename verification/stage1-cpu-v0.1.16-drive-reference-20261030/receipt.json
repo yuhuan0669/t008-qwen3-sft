@@ -1,0 +1,62 @@
+{
+  "schema": "t008-cross-platform-reference-receipt-v1",
+  "receipt_id": "T008-V0116-REFERENCE-20261030-01",
+  "recorded_date": "2026-10-30",
+  "timezone": "America/Los_Angeles",
+  "version": "v0.1.16",
+  "status": "REFERENCE_DELIVERY_VERIFIED",
+  "canonical_storage": "GitHub",
+  "github_commit": "579597b8fc287bf0428b1326de333b25b3cbeb4b",
+  "files": [
+    {
+      "name": "train.jsonl",
+      "path": "stage1/variants/stage1-cpu-v0.1.16/train.jsonl",
+      "bytes": 7554913,
+      "git_blob_sha": "7a46fa18850ec6ee091911b32c8fdf0f8d68fca9",
+      "sha256": "c59cbfcc159385dee31482ba3898833cb7b298716a3f623496ef22f8d63e0528",
+      "github_url": "https://github.com/yuhuan0669/t008-qwen3-sft/blob/579597b8fc287bf0428b1326de333b25b3cbeb4b/stage1/variants/stage1-cpu-v0.1.16/train.jsonl",
+      "verified": true
+    },
+    {
+      "name": "system.txt",
+      "path": "stage1/variants/stage1-cpu-v0.1.16/system.txt",
+      "bytes": 1812,
+      "git_blob_sha": "93296daf237e8a47fd24492014e84f6df54bdee9",
+      "sha256": "3ae02d520406f73e735752ef04ff395785f84fec7ee1619fd9d392d86cb92933",
+      "github_url": "https://github.com/yuhuan0669/t008-qwen3-sft/blob/579597b8fc287bf0428b1326de333b25b3cbeb4b/stage1/variants/stage1-cpu-v0.1.16/system.txt",
+      "verified": true
+    },
+    {
+      "name": "STATISTICS.md",
+      "path": "stage1/variants/stage1-cpu-v0.1.16/STATISTICS.md",
+      "bytes": 887,
+      "git_blob_sha": "9bf6ee273109fb2e3f817a119a4d480ce405de87",
+      "sha256": "e2d063a6271e5467bf8a8097cc7ec08722e5d61bdbe64af2010fdc9f7c9f5583",
+      "github_url": "https://github.com/yuhuan0669/t008-qwen3-sft/blob/579597b8fc287bf0428b1326de333b25b3cbeb4b/stage1/variants/stage1-cpu-v0.1.16/STATISTICS.md",
+      "verified": true
+    }
+  ],
+  "storage_policy": "If one platform already holds the originals, the other holds references. If neither holds the originals, prefer Google Drive and reference it from GitHub.",
+  "drive": {
+    "file_id": "1WrDwZdMJvwu0TPo9UsrZmqq5QNDixOPO",
+    "url": "https://drive.google.com/file/d/1WrDwZdMJvwu0TPo9UsrZmqq5QNDixOPO/view?usp=drivesdk",
+    "parent_id": "1PUMa2W9OpCFOImL0ZGSLbTbY7TLOEZ5c",
+    "name": "T008_v0.1.16_GitHub引用清单.md",
+    "kind": "reference_manifest_only",
+    "original_file_copies_created": 0,
+    "reference_files_created": 1,
+    "bytes": 1780,
+    "local_sha256": "ec1ce06ba5c6895525752b75c701b5220f9a17ab7cc2b6f01e6c974744e05936",
+    "text_readback_verified": true,
+    "parent_readback_verified": true,
+    "size_readback_verified": true
+  },
+  "execution_report": {
+    "receipt_text_verified": true,
+    "old_document_text_preserved": true,
+    "receipt_occurrences": 1,
+    "revision": "AHj4eMQUr1ihoFPmSYT25prSUMNlkuyO8dNgEvHk80hBmgQtI-cgJ18hM74qDwiuOnHRBhPXmh99w4bijIS7cv7NKRxOyoJMqxsfRVkIpeE",
+    "document_url": "https://docs.google.com/document/d/164PEGIbkiufK2Ao2vAKxYyOLbTacwHZSt_0qwHCZibM"
+  },
+  "scope": "Reference registration only; original data, System, statistics, training parameters, models and UAT unchanged."
+}

@@ -1,0 +1,9 @@
+
+T008-V0116-REFERENCE-20261030-01｜v0.1.16 文件引用交付
+登记日期：2026-10-30（America/Los_Angeles）。
+依据用户指令：若 GitHub 或 Google Drive 一侧已有文件，另一侧仅登记引用；两侧都没有时，优先保存至 Google Drive，再由 GitHub 引用。
+本次已核对 GitHub 固定提交 579597b8fc287bf0428b1326de333b25b3cbeb4b 中的 train.jsonl（1357条）、system.txt、STATISTICS.md，文件大小及 Git blob SHA 均与本地一致。
+原件继续保存在私有仓库 yuhuan0669/t008-qwen3-sft。Google Drive 仅新增引用清单，包含三份文件的固定提交链接、大小及 SHA-256；没有重复上传数据、System或统计原件。访问原件需有该私有仓库权限。
+02_执行产出引用清单：https://drive.google.com/file/d/1WrDwZdMJvwu0TPo9UsrZmqq5QNDixOPO/view?usp=drivesdk
+引用清单正文、文件大小及所在02目录已回读核对一致。本次仅登记引用和交付回执，未改动训练数据、训练参数、模型或UAT配置。
+

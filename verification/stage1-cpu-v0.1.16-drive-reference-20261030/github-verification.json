@@ -1,0 +1,41 @@
+{
+  "version": "v0.1.16",
+  "recorded_date": "2026-10-30",
+  "timezone": "America/Los_Angeles",
+  "canonical_storage": "GitHub",
+  "github_repository": "yuhuan0669/t008-qwen3-sft",
+  "commit": "579597b8fc287bf0428b1326de333b25b3cbeb4b",
+  "verification_method": "GitHub contents API metadata compared to git hash-object and local byte size; local SHA-256 recorded",
+  "files": [
+    {
+      "name": "train.jsonl",
+      "path": "stage1/variants/stage1-cpu-v0.1.16/train.jsonl",
+      "bytes": 7554913,
+      "git_blob_sha": "7a46fa18850ec6ee091911b32c8fdf0f8d68fca9",
+      "sha256": "c59cbfcc159385dee31482ba3898833cb7b298716a3f623496ef22f8d63e0528",
+      "github_url": "https://github.com/yuhuan0669/t008-qwen3-sft/blob/579597b8fc287bf0428b1326de333b25b3cbeb4b/stage1/variants/stage1-cpu-v0.1.16/train.jsonl",
+      "verified": true
+    },
+    {
+      "name": "system.txt",
+      "path": "stage1/variants/stage1-cpu-v0.1.16/system.txt",
+      "bytes": 1812,
+      "git_blob_sha": "93296daf237e8a47fd24492014e84f6df54bdee9",
+      "sha256": "3ae02d520406f73e735752ef04ff395785f84fec7ee1619fd9d392d86cb92933",
+      "github_url": "https://github.com/yuhuan0669/t008-qwen3-sft/blob/579597b8fc287bf0428b1326de333b25b3cbeb4b/stage1/variants/stage1-cpu-v0.1.16/system.txt",
+      "verified": true
+    },
+    {
+      "name": "STATISTICS.md",
+      "path": "stage1/variants/stage1-cpu-v0.1.16/STATISTICS.md",
+      "bytes": 887,
+      "git_blob_sha": "9bf6ee273109fb2e3f817a119a4d480ce405de87",
+      "sha256": "e2d063a6271e5467bf8a8097cc7ec08722e5d61bdbe64af2010fdc9f7c9f5583",
+      "github_url": "https://github.com/yuhuan0669/t008-qwen3-sft/blob/579597b8fc287bf0428b1326de333b25b3cbeb4b/stage1/variants/stage1-cpu-v0.1.16/STATISTICS.md",
+      "verified": true
+    }
+  ],
+  "drive_content_copies_created": 0,
+  "authorization": "User requested a reference on the other platform when the files already exist on one platform."
+}
+

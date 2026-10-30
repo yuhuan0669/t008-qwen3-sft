@@ -1642,5 +1642,8 @@
   "historical_receipts": "archive/*_delivery and adjacent *.receipt*.json; entries retain original IDs and hashes",
   "github_repository": "https://github.com/yuhuan0669/t008-qwen3-sft",
   "this_repository_uploaded_field_scope": "Google Drive only; new GitHub delivery is recorded separately",
-  "current_stage1_registry": "registry/stage1.json"
+  "current_stage1_registry": "registry/stage1.json",
+  "version_reference_receipts": {
+    "v0.1.16": "verification/stage1-cpu-v0.1.16-drive-reference-20261030/receipt.json"
+  }
 }

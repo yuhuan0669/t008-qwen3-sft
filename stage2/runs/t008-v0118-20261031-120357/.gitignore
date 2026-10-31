@@ -1,0 +1,17 @@
+inputs/
+evaluation/raw/
+evaluation/review/
+evaluation/*.jsonl
+evaluation/cases.json
+evaluation/criteria*
+evaluation/reused-responses*
+evaluation/missing-slots*
+evaluation/*log
+outputs/*/train.log
+*.tar
+watchdog*
+evaluation/preflight.json
+evaluation/DETAILS.md
+evaluation/*review*.md
+evaluation/BY_QUESTION.md
+evaluation/EXAMPLES.md

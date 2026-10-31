@@ -1,0 +1,269 @@
+{
+  "apiVersion": "batch/v1",
+  "kind": "Job",
+  "metadata": {
+    "name": "t008-v0118-20261031-120357-full",
+    "namespace": "swift",
+    "labels": {
+      "t008-run": "t008-v0118-20261031-120357",
+      "stage": "full"
+    }
+  },
+  "spec": {
+    "backoffLimit": 0,
+    "activeDeadlineSeconds": 5400,
+    "template": {
+      "metadata": {
+        "labels": {
+          "t008-run": "t008-v0118-20261031-120357",
+          "role": "train",
+          "stage": "full"
+        }
+      },
+      "spec": {
+        "restartPolicy": "Never",
+        "automountServiceAccountToken": false,
+        "serviceAccountName": "swift-trainer",
+        "nodeSelector": {
+          "kubernetes.io/hostname": "k8s-worker05"
+        },
+        "tolerations": [
+          {
+            "key": "dedicated",
+            "operator": "Equal",
+            "value": "gpu-rtx4090",
+            "effect": "NoSchedule"
+          }
+        ],
+        "terminationGracePeriodSeconds": 45,
+        "containers": [
+          {
+            "name": "runtime",
+            "image": "modelscope-registry.cn-hangzhou.cr.aliyuncs.com/modelscope-repo/modelscope@sha256:822d99beed4984a421c8d1da397993c6a8a5f88cdad7dde940bd52df0067d738",
+            "imagePullPolicy": "IfNotPresent",
+            "securityContext": {
+              "runAsNonRoot": true,
+              "runAsUser": 10001,
+              "runAsGroup": 10001,
+              "allowPrivilegeEscalation": false,
+              "capabilities": {
+                "drop": [
+                  "ALL"
+                ]
+              }
+            },
+            "env": [
+              {
+                "name": "USER",
+                "value": "swift-t008"
+              },
+              {
+                "name": "LOGNAME",
+                "value": "swift-t008"
+              },
+              {
+                "name": "PYTHONPATH",
+                "value": "/input/code:/input/deps"
+              },
+              {
+                "name": "PYTHONUNBUFFERED",
+                "value": "1"
+              },
+              {
+                "name": "MODELSCOPE_CACHE",
+                "value": "/runwork/cache/modelscope"
+              },
+              {
+                "name": "MODELSCOPE_HOME",
+                "value": "/runwork/cache/modelscope-home"
+              },
+              {
+                "name": "HF_HOME",
+                "value": "/runwork/cache/huggingface"
+              },
+              {
+                "name": "XDG_CACHE_HOME",
+                "value": "/runwork/cache/xdg"
+              },
+              {
+                "name": "TRITON_CACHE_DIR",
+                "value": "/runwork/cache/triton"
+              },
+              {
+                "name": "TORCHINDUCTOR_CACHE_DIR",
+                "value": "/runwork/cache/torchinductor"
+              },
+              {
+                "name": "TMPDIR",
+                "value": "/tmp"
+              },
+              {
+                "name": "CLEARML_CACHE_DIR",
+                "value": "/runwork/cache/clearml"
+              },
+              {
+                "name": "CLEARML_API_HOST",
+                "value": "https://clearml.10.140.17.125.nip.io/api"
+              },
+              {
+                "name": "CLEARML_WEB_HOST",
+                "value": "https://clearml.10.140.17.125.nip.io"
+              },
+              {
+                "name": "CLEARML_FILES_HOST",
+                "value": "https://clearml.10.140.17.125.nip.io/files"
+              },
+              {
+                "name": "CLEARML_API_HOST_VERIFY_CERT",
+                "value": "1"
+              },
+              {
+                "name": "REQUESTS_CA_BUNDLE",
+                "value": "/input/runtime-support/trust-bundle.pem"
+              },
+              {
+                "name": "SSL_CERT_FILE",
+                "value": "/input/runtime-support/trust-bundle.pem"
+              },
+              {
+                "name": "TRAIN_IMAGE_DIGEST",
+                "value": "sha256:822d99beed4984a421c8d1da397993c6a8a5f88cdad7dde940bd52df0067d738"
+              },
+              {
+                "name": "SOURCE_GIT_COMMIT",
+                "value": "6a6315a5949b7498733dae4b2a2169bd5d12aae0"
+              },
+              {
+                "name": "OMP_NUM_THREADS",
+                "value": "4"
+              },
+              {
+                "name": "TOKENIZERS_PARALLELISM",
+                "value": "false"
+              },
+              {
+                "name": "FLASHINFER_WORKSPACE_BASE",
+                "value": "/runwork/cache/flashinfer"
+              },
+              {
+                "name": "VLLM_CACHE_ROOT",
+                "value": "/runwork/cache/vllm"
+              },
+              {
+                "name": "TORCH_EXTENSIONS_DIR",
+                "value": "/runwork/cache/torch_extensions"
+              },
+              {
+                "name": "MPLCONFIGDIR",
+                "value": "/runwork/cache/matplotlib"
+              },
+              {
+                "name": "HF_HUB_OFFLINE",
+                "value": "1"
+              },
+              {
+                "name": "TRANSFORMERS_OFFLINE",
+                "value": "1"
+              },
+              {
+                "name": "CLEARML_API_ACCESS_KEY",
+                "valueFrom": {
+                  "secretKeyRef": {
+                    "name": "swift-clearml",
+                    "key": "access_key"
+                  }
+                }
+              },
+              {
+                "name": "CLEARML_API_SECRET_KEY",
+                "valueFrom": {
+                  "secretKeyRef": {
+                    "name": "swift-clearml",
+                    "key": "secret_key"
+                  }
+                }
+              }
+            ],
+            "resources": {
+              "requests": {
+                "cpu": "4",
+                "memory": "16Gi",
+                "nvidia.com/gpu": "1"
+              },
+              "limits": {
+                "cpu": "8",
+                "memory": "32Gi",
+                "nvidia.com/gpu": "1"
+              }
+            },
+            "volumeMounts": [
+              {
+                "name": "base",
+                "mountPath": "/base",
+                "subPath": "Qwen3-8B",
+                "readOnly": true
+              },
+              {
+                "name": "data",
+                "mountPath": "/input",
+                "subPath": "t008-v0118-20261031-120357",
+                "readOnly": true
+              },
+              {
+                "name": "work",
+                "mountPath": "/runwork",
+                "subPath": "t008-v0118-20261031-120357"
+              },
+              {
+                "name": "data",
+                "mountPath": "/usr/local/lib/python3.12/site-packages/modelscope/utils/ast_index_file.py",
+                "subPath": "t008-v0118-20261031-120357/runtime-support/ast_index_file.py",
+                "readOnly": true
+              },
+              {
+                "name": "dshm",
+                "mountPath": "/dev/shm"
+              }
+            ],
+            "command": [
+              "python3",
+              "/input/stage2/scripts/run_local_sft.py",
+              "full",
+              "--output",
+              "/runwork/outputs/full"
+            ]
+          }
+        ],
+        "volumes": [
+          {
+            "name": "base",
+            "persistentVolumeClaim": {
+              "claimName": "swift-base",
+              "readOnly": true
+            }
+          },
+          {
+            "name": "data",
+            "persistentVolumeClaim": {
+              "claimName": "swift-train-data",
+              "readOnly": true
+            }
+          },
+          {
+            "name": "work",
+            "persistentVolumeClaim": {
+              "claimName": "swift-work"
+            }
+          },
+          {
+            "name": "dshm",
+            "emptyDir": {
+              "medium": "Memory",
+              "sizeLimit": "8Gi"
+            }
+          }
+        ]
+      }
+    }
+  }
+}

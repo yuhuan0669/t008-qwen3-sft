@@ -1,0 +1,23 @@
+{
+  "parent_run": "stage2/runs/t008-v0117-20261031-100924",
+  "actual_full_command_changes": [
+    {
+      "index": 25,
+      "before": "1e-4",
+      "after": "5e-5"
+    }
+  ],
+  "data_unchanged": true,
+  "dataset_rows": 1357,
+  "identity_exposures": 234,
+  "data_sha256": "bf5f1aee58d48a510b84669fa351065621e84037b160da91e82cf8cd1b69dc28",
+  "data_reference": "stage1/variants/stage1-cpu-v0.1.17/train.jsonl",
+  "cpu_encoding_evidence_reused_from": "stage2/runs/t008-v0117-20261031-100924/cpu-report.json",
+  "unchanged_artifacts": {
+    "stage1/variants/stage1-cpu-v0.1.17/train.jsonl": "bf5f1aee58d48a510b84669fa351065621e84037b160da91e82cf8cd1b69dc28",
+    "stage1/variants/stage1-cpu-v0.1.17/identity_loss3.py": "082510fc6fadc31eb179384299cc1425e6dfd98ae01ad95d463759c1a0627db8",
+    "stage1/variants/stage1-cpu-v0.1.17/identity-keys.json": "5cde71fa1f4975e5a768aaa74b8b24e681ef2f9d5b1cb79ec0a0c25304f9847c",
+    "stage1/variants/stage1-cpu-v0.1.17/system.txt": "3ae02d520406f73e735752ef04ff395785f84fec7ee1619fd9d392d86cb92933",
+    "stage1/training/local_data_guard.py": "45ba3763667ece681ad9094786035e40043ed334a72c0e76b4fc413755901fa5"
+  }
+}

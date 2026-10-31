@@ -1,0 +1,22 @@
+{
+  "new_slots": 556,
+  "full_command_only_change": "learning_rate: 1e-4 -> 5e-5",
+  "sha256": {
+    "stage_inputs.py": "2c6da18019c61e1b9f6bd7064775035e12f977d95236fa415daf579e81908004",
+    "window.py": "83e5017af5403fdc179346cb332f77b64469e287db73911b9a61f1f3680f6412",
+    "execute.py": "b79a921d97639cff7800b5a2536bef41bd284c6ddc4581a5f31af0e754c8efab",
+    "collect_model.py": "76427a8d5ceae1f6bf7e48fa5f884690644311ea9a2fb0b342ea09e38dac40b3",
+    "prepare.py": "0bbfd957be2acc364bb6c473284becc8e1f220eff038a4ad7e6cf9d17a0c449c",
+    "run_local_sft.py": "65d78e369b5dfcd23cdc50d205395e45b6326d5c8a9d4103e9f3cecfc72ab9d0",
+    "prepare_remote.py": "7372b1720fc844f7885b312ad5a6577005709905aacc59038b47f8b5c2bcd917",
+    "evaluation/run.py": "a311a883e8e2afa58cebaa00244a3c72329f385ae61f1a41c82660dee60e9fce",
+    "training-config.json": "828dac49fe3685bf016cdb902faa195ef9c5f16c90b3fb2395257c200d59c904",
+    "evaluation/evaluation-config.json": "2a542e9d40f2dce0366d63d8e5f7d4e90cc5af92af491e63b86f92569b0d8eb4",
+    "evaluation/missing-slots.json": "88e7eb12e075895616f6c05a6df59e4597cb3dae38c33cb4247128b80b677537",
+    "preflight.py": "bb228d0d7c751d53380f51afeabc86c424f00f4549d506b7a0718e891ee2e929",
+    "job-full.json": "b42dbad5b16adbe5b4ec4ae92a1a062d90117da513deb3b0a800018dd69fe58e",
+    "job-smoke.json": "71a6ee7e86b0788927b9332aa89d84f1110bee8a82cde7f1bf047d3ec6c3abde",
+    "prep-pod.json": "3ddbd2cc95b89624adb5f3333ecbdb879c50f961e572f25515b194b47a13fed8",
+    "eval-pod.json": "ee43743ef3b747ee9042b619f6d686996c3efd06fd999125c7274a1126a66765"
+  }
+}

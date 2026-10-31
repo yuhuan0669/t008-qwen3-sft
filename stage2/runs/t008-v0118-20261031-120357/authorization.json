@@ -1,0 +1,9 @@
+{
+  "user_instruction": "继续",
+  "scope": "Continue the proposed fixed-data learning-rate experiment: one Smoke3 and one fresh-base Full85, 556 new generations, reuse prior controls. Existing authorization permits pausing UAT; restore and verify it. No deployment.",
+  "model_version": "v0.1.18",
+  "dataset_version": "stage1-cpu-v0.1.17",
+  "data_sha256": "bf5f1aee58d48a510b84669fa351065621e84037b160da91e82cf8cd1b69dc28",
+  "known_content_issues_retained": true,
+  "english_optimization": false
+}

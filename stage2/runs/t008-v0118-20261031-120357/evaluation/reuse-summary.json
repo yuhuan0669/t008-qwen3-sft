@@ -1,0 +1,18 @@
+{
+  "source": "stage2/runs/t008-v0117-20261031-100924/evaluation/combined.jsonl",
+  "sha256": "1616213e05ffad1a70506b6bcab8652424b272dc185ca07ef9b6e186f1366f9d",
+  "slots": 2224,
+  "review_coverage_path": "stage2/runs/t008-v0117-20261031-100924/evaluation/review-coverage.json",
+  "review_coverage_sha256": "46c65fc316826eaa956dea7661b68701de6f528b371754c32a47645e50842cfc",
+  "unchanged_eval_fields": [
+    "request_modes",
+    "groups",
+    "system_sha256",
+    "chat_template",
+    "cases_sha256",
+    "concurrency",
+    "max_model_len",
+    "seed_policy"
+  ],
+  "caveat": "Different runtime/batching, no shared request seed; question-paired descriptive comparison, not independent acceptance."
+}

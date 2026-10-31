@@ -1,0 +1,20 @@
+{
+  "run": "t008-v0118-20261031-120357",
+  "file_hashes": {
+    "stage1/data/train.jsonl": "bf5f1aee58d48a510b84669fa351065621e84037b160da91e82cf8cd1b69dc28",
+    "stage1/data/manifest.json": "7d79d0a5b148caee607904fc49bef9f71687282521f17c7a3ece9e54398d2aa1",
+    "stage1/training/run-spec.json": "828dac49fe3685bf016cdb902faa195ef9c5f16c90b3fb2395257c200d59c904",
+    "stage1/training/local_data_guard.py": "45ba3763667ece681ad9094786035e40043ed334a72c0e76b4fc413755901fa5",
+    "stage1/evidence/encoding-report.json": "08ca98203ba877d2e6fa01be15b43ca8485a4d0ec5b4399fe3e5ebcf848ee06c",
+    "stage2/scripts/run_local_sft.py": "65d78e369b5dfcd23cdc50d205395e45b6326d5c8a9d4103e9f3cecfc72ab9d0",
+    "stage1/variants/stage1-cpu-v0.1.17/identity_loss3.py": "082510fc6fadc31eb179384299cc1425e6dfd98ae01ad95d463759c1a0627db8",
+    "stage1/variants/stage1-cpu-v0.1.17/identity-keys.json": "5cde71fa1f4975e5a768aaa74b8b24e681ef2f9d5b1cb79ec0a0c25304f9847c",
+    "evaluation/base-files.json": "a1b77d34bda8a913bc050ba2b8b343b6104f77fa701c8b5275a0b438baedfd56",
+    "evaluation/system.txt": "3ae02d520406f73e735752ef04ff395785f84fec7ee1619fd9d392d86cb92933",
+    "evaluation/thinking-prefill.jinja": "ae8a1b27c3bac461eb5f6c78d5d39cbe29427ad91c9d2da8378e236b8a38448d",
+    "evaluation/cases.json": "dc6d11b67facceb60ad951d8cdb75faae10c44a6a3e649a29bc28d746abdca3b",
+    "evaluation/evaluation-config.json": "2a542e9d40f2dce0366d63d8e5f7d4e90cc5af92af491e63b86f92569b0d8eb4"
+  },
+  "data_sha256": "bf5f1aee58d48a510b84669fa351065621e84037b160da91e82cf8cd1b69dc28",
+  "rows": 1357
+}

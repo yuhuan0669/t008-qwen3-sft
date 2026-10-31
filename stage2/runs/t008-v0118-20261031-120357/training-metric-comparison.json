@@ -1,0 +1,28 @@
+{
+  "logged_learning_rate_half": true,
+  "logged_learning_rate_points": 18,
+  "v0117_final_scalars": {
+    "train/epoch": 1.0,
+    "train/grad_norm": 0.22195005416870117,
+    "train/learning_rate": 0.0,
+    "train/loss": 0.6144875288009644,
+    "train/token_acc": 0.805526852607727,
+    "train/total_flos": 7.405459921174528e+16,
+    "train/train_loss": 0.6507010459899902,
+    "train/train_runtime": 822.29248046875,
+    "train/train_samples_per_second": 1.649999976158142,
+    "train/train_steps_per_second": 0.10300000011920929
+  },
+  "v0118_final_scalars": {
+    "train/epoch": 1.0,
+    "train/grad_norm": 0.22468201816082,
+    "train/learning_rate": 0.0,
+    "train/loss": 0.6335839629173279,
+    "train/token_acc": 0.8026068806648254,
+    "train/total_flos": 7.405459921174528e+16,
+    "train/train_loss": 0.6714469194412231,
+    "train/train_runtime": 821.826416015625,
+    "train/train_samples_per_second": 1.6510000228881836,
+    "train/train_steps_per_second": 0.10300000011920929
+  }
+}

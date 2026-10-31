@@ -9,3 +9,5 @@
 本轮用于检验更新幅度是否影响退化，不将学习率变化视为数据质量修复。数据编码复用已有同字节的 Swift CPU 检查，不虚称重新编码。结果看复述、事实、任务交付、身份、循环及截断，不能仅看训练 loss。
 
 [配置差异](config-diff.json) · [训练配置](training-config.json) · [评测配置](evaluation/evaluation-config.json)
+
+[已完成结果](RESULT.md)：训练、生成、审核和UAT恢复均已完成；未发布新模型。

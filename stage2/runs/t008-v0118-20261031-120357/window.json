@@ -1,0 +1,13 @@
+{
+  "run_id": "t008-v0118-20261031-120357",
+  "experiment_approved": true,
+  "uat_pause_approved": true,
+  "approved_data_sha256": "bf5f1aee58d48a510b84669fa351065621e84037b160da91e82cf8cd1b69dc28",
+  "window_start_utc": "2026-10-31T12:06:03.643501+00:00",
+  "window_end_utc": "2026-10-31T16:06:03.643501+00:00",
+  "restore_start_utc": "2026-10-31T15:26:03.643501+00:00",
+  "decision_ref": "Current user 继续 after the recommendation for a fixed-data lr 1e-4 to 5e-5 experiment; known data issues retained; earlier standing permission permits pausing UAT without re-authorization. One 3-step Smoke and one fresh-base Full, plus 556 planned generations; restore existing UAT, no deployment. Four-hour operational recovery ceiling, not a user deadline.",
+  "restoration_owner": "Current implementation agent",
+  "uat_coordination": "Owner directly confirmed immediate pause",
+  "max_full_runs": 1
+}

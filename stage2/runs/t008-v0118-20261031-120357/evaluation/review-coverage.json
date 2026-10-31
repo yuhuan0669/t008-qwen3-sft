@@ -1,0 +1,40 @@
+{
+  "slots": 2780,
+  "old_slots_reused": 2224,
+  "new_generated": 556,
+  "unique_labels": 2546,
+  "inherited_unique_labels": 2051,
+  "new_unique_full_text_read": 495,
+  "new_agent_shards": 458,
+  "root_new_identity_json": 37,
+  "root_targeted_rereads": 35,
+  "root_corrections": 2,
+  "missing": 0,
+  "duplicates": 0,
+  "files": {
+    "verdicts-a.jsonl": {
+      "count": 156,
+      "sha256": "f5910e95e1ddbd3ed9c684d00a25269371dfd239c591c031e36b1efd45c63d37"
+    },
+    "verdicts-b.jsonl": {
+      "count": 150,
+      "sha256": "f38e9280c1ac05b5f2038bab2a0179fca5a88ec083bccd4fe415d49c25e40bce"
+    },
+    "verdicts-c.jsonl": {
+      "count": 152,
+      "sha256": "4116b83be37184ea55d5bfa9f6dc112e52daaa301071763ba44d5cd909922734"
+    },
+    "verdicts-inherited.jsonl": {
+      "count": 2051,
+      "sha256": "2c88d8d51f7032f672c1c041d7a94ff9a0fa9b68bcbd611e765b59cc8310d172"
+    },
+    "verdicts-root.jsonl": {
+      "count": 37,
+      "sha256": "0dd42165e8fd4413aa9addc5710b98c606dde449e616e3aa27d63fd253819ba1"
+    }
+  },
+  "root_corrections_sha256": "322a1aaa8f2f8cab0c67b246dc3da0408a79742443855a8fd05c167e23fd7af2",
+  "root_spotchecks_sha256": "f1fb3658c3bfa84ac717d148bd13cfe81f655c9df3c975b5f75f8ce50c74da03",
+  "not_formal_judge_or_independent_acceptance": true,
+  "scope": "Three fresh-context anonymous-answer review shards; root identity/JSON and targeted rereads. Prior labels reused unchanged."
+}

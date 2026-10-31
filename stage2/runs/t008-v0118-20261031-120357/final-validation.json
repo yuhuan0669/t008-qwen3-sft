@@ -1,0 +1,64 @@
+{
+  "status": "PASS",
+  "verified_at_utc": "2026-10-31T12:54:17.733054+00:00",
+  "slots": 2780,
+  "new_generations": 556,
+  "inherited_unique_labels": 2051,
+  "new_unique_answers_reviewed": 495,
+  "unique_reviewed": 2546,
+  "unreviewed": 0,
+  "old_model_scores_unchanged": true,
+  "frozen_data_unchanged": true,
+  "execution_code_unchanged": true,
+  "review_files": {
+    "verdicts-a.jsonl": {
+      "count": 156,
+      "sha256": "f5910e95e1ddbd3ed9c684d00a25269371dfd239c591c031e36b1efd45c63d37"
+    },
+    "verdicts-b.jsonl": {
+      "count": 150,
+      "sha256": "f38e9280c1ac05b5f2038bab2a0179fca5a88ec083bccd4fe415d49c25e40bce"
+    },
+    "verdicts-c.jsonl": {
+      "count": 152,
+      "sha256": "4116b83be37184ea55d5bfa9f6dc112e52daaa301071763ba44d5cd909922734"
+    },
+    "verdicts-inherited.jsonl": {
+      "count": 2051,
+      "sha256": "2c88d8d51f7032f672c1c041d7a94ff9a0fa9b68bcbd611e765b59cc8310d172"
+    },
+    "verdicts-root.jsonl": {
+      "count": 37,
+      "sha256": "0dd42165e8fd4413aa9addc5710b98c606dde449e616e3aa27d63fd253819ba1"
+    }
+  },
+  "root_corrections": {
+    "count": 2,
+    "sha256": "322a1aaa8f2f8cab0c67b246dc3da0408a79742443855a8fd05c167e23fd7af2"
+  },
+  "summary_sha256": "befdfb731f6b6435c2b1cc4a2dcc11d1faec46309f0456f1441910b13c7bab31",
+  "summary_input_binding": {
+    "files_sha256": {
+      "combined.jsonl": "467d06e4635055202e97ef77757059d79420fd35feaabf7aeb3a7e63dcad8101",
+      "cases.json": "dc6d11b67facceb60ad951d8cdb75faae10c44a6a3e649a29bc28d746abdca3b",
+      "summarize.py": "c66e826e98db143620ef38ac3acf7325477e55664edbfd9b4f9729f98f2b5244",
+      "review/verdicts-a.jsonl": "f5910e95e1ddbd3ed9c684d00a25269371dfd239c591c031e36b1efd45c63d37",
+      "review/verdicts-b.jsonl": "f38e9280c1ac05b5f2038bab2a0179fca5a88ec083bccd4fe415d49c25e40bce",
+      "review/verdicts-c.jsonl": "4116b83be37184ea55d5bfa9f6dc112e52daaa301071763ba44d5cd909922734",
+      "review/verdicts-inherited.jsonl": "2c88d8d51f7032f672c1c041d7a94ff9a0fa9b68bcbd611e765b59cc8310d172",
+      "review/verdicts-root.jsonl": "0dd42165e8fd4413aa9addc5710b98c606dde449e616e3aa27d63fd253819ba1",
+      "review/root-corrections.jsonl": "322a1aaa8f2f8cab0c67b246dc3da0408a79742443855a8fd05c167e23fd7af2"
+    },
+    "effective_labels_sha256": "06a47c8b91d71e68869ccb10218e8b2c96a4a059fc798dddd20badddb5adac4d"
+  },
+  "current_uat": {
+    "spec_equal": true,
+    "ready": 1,
+    "available": 1,
+    "health": 200,
+    "temporary_resources": 0
+  },
+  "quality_accepted": false,
+  "new_model_deployed": false,
+  "review_scope": "Three anonymous-answer shards; root identity/JSON and targeted issue review. Historical labels inherited; not a new independent reread or formal Judge."
+}

@@ -1,0 +1,1778 @@
+{
+  "device": "cpu",
+  "modules": 252,
+  "scale": 4.0,
+  "v0117_total_update_frobenius": 7.2129280716155275,
+  "v0118_total_update_frobenius": 4.253815820979716,
+  "norm_ratio": 0.589748820277222,
+  "direction_cosine": 0.9405238212908179,
+  "update_difference_frobenius": 3.5222290041884916,
+  "weights_verified": true,
+  "detail": [
+    {
+      "module": "base_model.model.model.layers.0.mlp.down_proj",
+      "v0117_update_frobenius": 0.3598211421238741,
+      "v0118_update_frobenius": 0.21611960336363337,
+      "ratio": 0.6006306413457795,
+      "direction_cosine": 0.9123397920748219
+    },
+    {
+      "module": "base_model.model.model.layers.0.mlp.gate_proj",
+      "v0117_update_frobenius": 0.6366362796464146,
+      "v0118_update_frobenius": 0.38624628631320296,
+      "ratio": 0.6066985163455069,
+      "direction_cosine": 0.936360912144418
+    },
+    {
+      "module": "base_model.model.model.layers.0.mlp.up_proj",
+      "v0117_update_frobenius": 0.6413143375948398,
+      "v0118_update_frobenius": 0.3916966370915741,
+      "ratio": 0.6107716826674697,
+      "direction_cosine": 0.9413204132008698
+    },
+    {
+      "module": "base_model.model.model.layers.0.self_attn.k_proj",
+      "v0117_update_frobenius": 0.16665681434382135,
+      "v0118_update_frobenius": 0.09424551677675172,
+      "ratio": 0.5655065299779372,
+      "direction_cosine": 0.9305323750033047
+    },
+    {
+      "module": "base_model.model.model.layers.0.self_attn.o_proj",
+      "v0117_update_frobenius": 0.3953841520515901,
+      "v0118_update_frobenius": 0.2497010236025255,
+      "ratio": 0.6315402939315187,
+      "direction_cosine": 0.9439693404395924
+    },
+    {
+      "module": "base_model.model.model.layers.0.self_attn.q_proj",
+      "v0117_update_frobenius": 0.3226131600771316,
+      "v0118_update_frobenius": 0.18515111067157275,
+      "ratio": 0.5739105950523101,
+      "direction_cosine": 0.895199129447489
+    },
+    {
+      "module": "base_model.model.model.layers.0.self_attn.v_proj",
+      "v0117_update_frobenius": 0.21472211963486934,
+      "v0118_update_frobenius": 0.1373872662282752,
+      "ratio": 0.6398375093441676,
+      "direction_cosine": 0.9515159986385228
+    },
+    {
+      "module": "base_model.model.model.layers.1.mlp.down_proj",
+      "v0117_update_frobenius": 0.3803370704833257,
+      "v0118_update_frobenius": 0.22006457506332153,
+      "ratio": 0.5786040650301778,
+      "direction_cosine": 0.9180990669903933
+    },
+    {
+      "module": "base_model.model.model.layers.1.mlp.gate_proj",
+      "v0117_update_frobenius": 0.4906669886522081,
+      "v0118_update_frobenius": 0.3017343132232451,
+      "ratio": 0.614947245691148,
+      "direction_cosine": 0.9108481686325266
+    },
+    {
+      "module": "base_model.model.model.layers.1.mlp.up_proj",
+      "v0117_update_frobenius": 0.5933892595872277,
+      "v0118_update_frobenius": 0.3699319314514677,
+      "ratio": 0.6234220209998392,
+      "direction_cosine": 0.9462781257170355
+    },
+    {
+      "module": "base_model.model.model.layers.1.self_attn.k_proj",
+      "v0117_update_frobenius": 0.16563684345533947,
+      "v0118_update_frobenius": 0.09776646348462298,
+      "ratio": 0.5902458743183165,
+      "direction_cosine": 0.9147259999353813
+    },
+    {
+      "module": "base_model.model.model.layers.1.self_attn.o_proj",
+      "v0117_update_frobenius": 0.34995308806532444,
+      "v0118_update_frobenius": 0.21378113707046298,
+      "ratio": 0.6108851282105482,
+      "direction_cosine": 0.9139591119708201
+    },
+    {
+      "module": "base_model.model.model.layers.1.self_attn.q_proj",
+      "v0117_update_frobenius": 0.3171897813678911,
+      "v0118_update_frobenius": 0.18356036271411433,
+      "ratio": 0.5787083112277588,
+      "direction_cosine": 0.894534900066003
+    },
+    {
+      "module": "base_model.model.model.layers.1.self_attn.v_proj",
+      "v0117_update_frobenius": 0.18578065570877147,
+      "v0118_update_frobenius": 0.10943153875750361,
+      "ratio": 0.5890362392145271,
+      "direction_cosine": 0.9218081950420286
+    },
+    {
+      "module": "base_model.model.model.layers.10.mlp.down_proj",
+      "v0117_update_frobenius": 0.3668885867772909,
+      "v0118_update_frobenius": 0.22356106829695266,
+      "ratio": 0.6093432075952226,
+      "direction_cosine": 0.876669503838002
+    },
+    {
+      "module": "base_model.model.model.layers.10.mlp.gate_proj",
+      "v0117_update_frobenius": 0.5826257642296242,
+      "v0118_update_frobenius": 0.32106487583154825,
+      "ratio": 0.5510653588347155,
+      "direction_cosine": 0.91703353886916
+    },
+    {
+      "module": "base_model.model.model.layers.10.mlp.up_proj",
+      "v0117_update_frobenius": 0.6091839078646654,
+      "v0118_update_frobenius": 0.35805091661859323,
+      "ratio": 0.5877550473610621,
+      "direction_cosine": 0.9179608668966879
+    },
+    {
+      "module": "base_model.model.model.layers.10.self_attn.k_proj",
+      "v0117_update_frobenius": 0.15509028738283084,
+      "v0118_update_frobenius": 0.09271931424768785,
+      "ratio": 0.5978408823166077,
+      "direction_cosine": 0.8866754035532619
+    },
+    {
+      "module": "base_model.model.model.layers.10.self_attn.o_proj",
+      "v0117_update_frobenius": 0.34540578427686447,
+      "v0118_update_frobenius": 0.20677470115813895,
+      "ratio": 0.5986428443606955,
+      "direction_cosine": 0.9088314138088393
+    },
+    {
+      "module": "base_model.model.model.layers.10.self_attn.q_proj",
+      "v0117_update_frobenius": 0.3091512914538895,
+      "v0118_update_frobenius": 0.17984041202962311,
+      "ratio": 0.5817229848332905,
+      "direction_cosine": 0.8829381129386346
+    },
+    {
+      "module": "base_model.model.model.layers.10.self_attn.v_proj",
+      "v0117_update_frobenius": 0.16368712688395154,
+      "v0118_update_frobenius": 0.10234802794714241,
+      "ratio": 0.6252662008033386,
+      "direction_cosine": 0.9244556445752656
+    },
+    {
+      "module": "base_model.model.model.layers.11.mlp.down_proj",
+      "v0117_update_frobenius": 0.3741275428127227,
+      "v0118_update_frobenius": 0.2285972272198956,
+      "ratio": 0.6110141624465341,
+      "direction_cosine": 0.8988227151675798
+    },
+    {
+      "module": "base_model.model.model.layers.11.mlp.gate_proj",
+      "v0117_update_frobenius": 0.6040192466507314,
+      "v0118_update_frobenius": 0.3363041177460818,
+      "ratio": 0.5567771550507341,
+      "direction_cosine": 0.9222797389767085
+    },
+    {
+      "module": "base_model.model.model.layers.11.mlp.up_proj",
+      "v0117_update_frobenius": 0.6085703782746383,
+      "v0118_update_frobenius": 0.36029671064365865,
+      "ratio": 0.5920378702380128,
+      "direction_cosine": 0.9267718068077373
+    },
+    {
+      "module": "base_model.model.model.layers.11.self_attn.k_proj",
+      "v0117_update_frobenius": 0.15713561001207635,
+      "v0118_update_frobenius": 0.09206603287784404,
+      "ratio": 0.5859017753567666,
+      "direction_cosine": 0.9030727200330713
+    },
+    {
+      "module": "base_model.model.model.layers.11.self_attn.o_proj",
+      "v0117_update_frobenius": 0.3487033926162787,
+      "v0118_update_frobenius": 0.2087597864075392,
+      "ratio": 0.5986743772156622,
+      "direction_cosine": 0.9264781621438224
+    },
+    {
+      "module": "base_model.model.model.layers.11.self_attn.q_proj",
+      "v0117_update_frobenius": 0.32965774366271455,
+      "v0118_update_frobenius": 0.18922955334883051,
+      "ratio": 0.574018226438019,
+      "direction_cosine": 0.9142892085114059
+    },
+    {
+      "module": "base_model.model.model.layers.11.self_attn.v_proj",
+      "v0117_update_frobenius": 0.17235484334829976,
+      "v0118_update_frobenius": 0.1049014087831092,
+      "ratio": 0.6086362689043866,
+      "direction_cosine": 0.9293489458027823
+    },
+    {
+      "module": "base_model.model.model.layers.12.mlp.down_proj",
+      "v0117_update_frobenius": 0.3760129401603979,
+      "v0118_update_frobenius": 0.22579596305816438,
+      "ratio": 0.6005005119287793,
+      "direction_cosine": 0.9009335650139052
+    },
+    {
+      "module": "base_model.model.model.layers.12.mlp.gate_proj",
+      "v0117_update_frobenius": 0.5874373079945558,
+      "v0118_update_frobenius": 0.3399120247258186,
+      "ratio": 0.5786354051741106,
+      "direction_cosine": 0.9180424139588261
+    },
+    {
+      "module": "base_model.model.model.layers.12.mlp.up_proj",
+      "v0117_update_frobenius": 0.6215433366445481,
+      "v0118_update_frobenius": 0.37605623876088135,
+      "ratio": 0.6050362325353712,
+      "direction_cosine": 0.9233306192049374
+    },
+    {
+      "module": "base_model.model.model.layers.12.self_attn.k_proj",
+      "v0117_update_frobenius": 0.17701874854996932,
+      "v0118_update_frobenius": 0.10273582191323793,
+      "ratio": 0.580366897601456,
+      "direction_cosine": 0.9088274132629793
+    },
+    {
+      "module": "base_model.model.model.layers.12.self_attn.o_proj",
+      "v0117_update_frobenius": 0.3526028158852623,
+      "v0118_update_frobenius": 0.21442304936876205,
+      "ratio": 0.6081149659296418,
+      "direction_cosine": 0.930225810863285
+    },
+    {
+      "module": "base_model.model.model.layers.12.self_attn.q_proj",
+      "v0117_update_frobenius": 0.3565828099324165,
+      "v0118_update_frobenius": 0.21305081405910303,
+      "ratio": 0.5974792057404079,
+      "direction_cosine": 0.9065384651450711
+    },
+    {
+      "module": "base_model.model.model.layers.12.self_attn.v_proj",
+      "v0117_update_frobenius": 0.1839259378249524,
+      "v0118_update_frobenius": 0.115347035563889,
+      "ratio": 0.6271384935042065,
+      "direction_cosine": 0.9432901704347257
+    },
+    {
+      "module": "base_model.model.model.layers.13.mlp.down_proj",
+      "v0117_update_frobenius": 0.3918676714150229,
+      "v0118_update_frobenius": 0.24567658869561484,
+      "ratio": 0.6269376287369758,
+      "direction_cosine": 0.9071375584166856
+    },
+    {
+      "module": "base_model.model.model.layers.13.mlp.gate_proj",
+      "v0117_update_frobenius": 0.6165272748948609,
+      "v0118_update_frobenius": 0.35899156458142417,
+      "ratio": 0.5822801021133162,
+      "direction_cosine": 0.9244370289479931
+    },
+    {
+      "module": "base_model.model.model.layers.13.mlp.up_proj",
+      "v0117_update_frobenius": 0.6176843609510533,
+      "v0118_update_frobenius": 0.36900561811673294,
+      "ratio": 0.5974015880029279,
+      "direction_cosine": 0.9360876147044603
+    },
+    {
+      "module": "base_model.model.model.layers.13.self_attn.k_proj",
+      "v0117_update_frobenius": 0.17453923248634734,
+      "v0118_update_frobenius": 0.10328144909354187,
+      "ratio": 0.591737729233,
+      "direction_cosine": 0.9240586419955549
+    },
+    {
+      "module": "base_model.model.model.layers.13.self_attn.o_proj",
+      "v0117_update_frobenius": 0.35094328808804703,
+      "v0118_update_frobenius": 0.2149570268826666,
+      "ratio": 0.6125121470587485,
+      "direction_cosine": 0.9314344213232332
+    },
+    {
+      "module": "base_model.model.model.layers.13.self_attn.q_proj",
+      "v0117_update_frobenius": 0.34434767181382936,
+      "v0118_update_frobenius": 0.20225587158365158,
+      "ratio": 0.5873594861794236,
+      "direction_cosine": 0.920354079849379
+    },
+    {
+      "module": "base_model.model.model.layers.13.self_attn.v_proj",
+      "v0117_update_frobenius": 0.18568852911905237,
+      "v0118_update_frobenius": 0.11519737461051954,
+      "ratio": 0.62037959564353,
+      "direction_cosine": 0.9486820004233992
+    },
+    {
+      "module": "base_model.model.model.layers.14.mlp.down_proj",
+      "v0117_update_frobenius": 0.39837627958864985,
+      "v0118_update_frobenius": 0.25037226822680736,
+      "ratio": 0.6284818676587207,
+      "direction_cosine": 0.9101925517460963
+    },
+    {
+      "module": "base_model.model.model.layers.14.mlp.gate_proj",
+      "v0117_update_frobenius": 0.6233812219767394,
+      "v0118_update_frobenius": 0.359108483192145,
+      "ratio": 0.5760656088635674,
+      "direction_cosine": 0.9315530371928142
+    },
+    {
+      "module": "base_model.model.model.layers.14.mlp.up_proj",
+      "v0117_update_frobenius": 0.6490445726921149,
+      "v0118_update_frobenius": 0.39298633553788626,
+      "ratio": 0.6054843566565125,
+      "direction_cosine": 0.9422557042080639
+    },
+    {
+      "module": "base_model.model.model.layers.14.self_attn.k_proj",
+      "v0117_update_frobenius": 0.16253059095484465,
+      "v0118_update_frobenius": 0.09926481499127121,
+      "ratio": 0.6107454258801633,
+      "direction_cosine": 0.9343686998331531
+    },
+    {
+      "module": "base_model.model.model.layers.14.self_attn.o_proj",
+      "v0117_update_frobenius": 0.3661009860046653,
+      "v0118_update_frobenius": 0.23072053482777938,
+      "ratio": 0.6302100886033649,
+      "direction_cosine": 0.939834497079552
+    },
+    {
+      "module": "base_model.model.model.layers.14.self_attn.q_proj",
+      "v0117_update_frobenius": 0.3457538733342283,
+      "v0118_update_frobenius": 0.2085115177439113,
+      "ratio": 0.6030634327626184,
+      "direction_cosine": 0.9346265020609744
+    },
+    {
+      "module": "base_model.model.model.layers.14.self_attn.v_proj",
+      "v0117_update_frobenius": 0.191509158995751,
+      "v0118_update_frobenius": 0.12214315965082564,
+      "ratio": 0.6377927838612442,
+      "direction_cosine": 0.9510459585021073
+    },
+    {
+      "module": "base_model.model.model.layers.15.mlp.down_proj",
+      "v0117_update_frobenius": 0.4120148105230417,
+      "v0118_update_frobenius": 0.2625446275708641,
+      "ratio": 0.637221334926215,
+      "direction_cosine": 0.9209543016115037
+    },
+    {
+      "module": "base_model.model.model.layers.15.mlp.gate_proj",
+      "v0117_update_frobenius": 0.6131964837063947,
+      "v0118_update_frobenius": 0.35947342390142045,
+      "ratio": 0.5862287756913171,
+      "direction_cosine": 0.9407610389508014
+    },
+    {
+      "module": "base_model.model.model.layers.15.mlp.up_proj",
+      "v0117_update_frobenius": 0.6345750922291878,
+      "v0118_update_frobenius": 0.38334110873472577,
+      "ratio": 0.6040910105502147,
+      "direction_cosine": 0.9429458053615712
+    },
+    {
+      "module": "base_model.model.model.layers.15.self_attn.k_proj",
+      "v0117_update_frobenius": 0.17136477283522086,
+      "v0118_update_frobenius": 0.1038853626255506,
+      "ratio": 0.6062235598762389,
+      "direction_cosine": 0.9490191929097198
+    },
+    {
+      "module": "base_model.model.model.layers.15.self_attn.o_proj",
+      "v0117_update_frobenius": 0.3894339227331958,
+      "v0118_update_frobenius": 0.24507466414043055,
+      "ratio": 0.6293100057139427,
+      "direction_cosine": 0.9444639403661834
+    },
+    {
+      "module": "base_model.model.model.layers.15.self_attn.q_proj",
+      "v0117_update_frobenius": 0.3421546812418717,
+      "v0118_update_frobenius": 0.2086302616671332,
+      "ratio": 0.6097542225928246,
+      "direction_cosine": 0.9464201185732417
+    },
+    {
+      "module": "base_model.model.model.layers.15.self_attn.v_proj",
+      "v0117_update_frobenius": 0.20254464400376834,
+      "v0118_update_frobenius": 0.13188544855322545,
+      "ratio": 0.6511426120493797,
+      "direction_cosine": 0.961724408304524
+    },
+    {
+      "module": "base_model.model.model.layers.16.mlp.down_proj",
+      "v0117_update_frobenius": 0.4288887308211949,
+      "v0118_update_frobenius": 0.269496565512148,
+      "ratio": 0.6283600993575698,
+      "direction_cosine": 0.9214349891163377
+    },
+    {
+      "module": "base_model.model.model.layers.16.mlp.gate_proj",
+      "v0117_update_frobenius": 0.6119870762014241,
+      "v0118_update_frobenius": 0.3581178033114449,
+      "ratio": 0.5851721665991148,
+      "direction_cosine": 0.9479464560940322
+    },
+    {
+      "module": "base_model.model.model.layers.16.mlp.up_proj",
+      "v0117_update_frobenius": 0.6497667077380027,
+      "v0118_update_frobenius": 0.3910828246384099,
+      "ratio": 0.6018819061996346,
+      "direction_cosine": 0.9502638554521111
+    },
+    {
+      "module": "base_model.model.model.layers.16.self_attn.k_proj",
+      "v0117_update_frobenius": 0.17008365646429469,
+      "v0118_update_frobenius": 0.10274713973031248,
+      "ratio": 0.6040976650327481,
+      "direction_cosine": 0.9485201616535265
+    },
+    {
+      "module": "base_model.model.model.layers.16.self_attn.o_proj",
+      "v0117_update_frobenius": 0.3848458381220549,
+      "v0118_update_frobenius": 0.240286102692619,
+      "ratio": 0.6243697576805068,
+      "direction_cosine": 0.9484280670501245
+    },
+    {
+      "module": "base_model.model.model.layers.16.self_attn.q_proj",
+      "v0117_update_frobenius": 0.34260819981917184,
+      "v0118_update_frobenius": 0.21143059335846054,
+      "ratio": 0.6171206453028659,
+      "direction_cosine": 0.9409583014948637
+    },
+    {
+      "module": "base_model.model.model.layers.16.self_attn.v_proj",
+      "v0117_update_frobenius": 0.1910339170556873,
+      "v0118_update_frobenius": 0.12584464145067287,
+      "ratio": 0.6587554890265301,
+      "direction_cosine": 0.9607172334503541
+    },
+    {
+      "module": "base_model.model.model.layers.17.mlp.down_proj",
+      "v0117_update_frobenius": 0.42519599630682064,
+      "v0118_update_frobenius": 0.2706025079673846,
+      "ratio": 0.6364182878432334,
+      "direction_cosine": 0.922147019802017
+    },
+    {
+      "module": "base_model.model.model.layers.17.mlp.gate_proj",
+      "v0117_update_frobenius": 0.6206858113866005,
+      "v0118_update_frobenius": 0.35272699834512866,
+      "ratio": 0.5682859054843595,
+      "direction_cosine": 0.9562107285863987
+    },
+    {
+      "module": "base_model.model.model.layers.17.mlp.up_proj",
+      "v0117_update_frobenius": 0.6436170137248571,
+      "v0118_update_frobenius": 0.38886530836326894,
+      "ratio": 0.6041874283477329,
+      "direction_cosine": 0.9543883479307138
+    },
+    {
+      "module": "base_model.model.model.layers.17.self_attn.k_proj",
+      "v0117_update_frobenius": 0.17967588338341794,
+      "v0118_update_frobenius": 0.10580170591480922,
+      "ratio": 0.5888475621908283,
+      "direction_cosine": 0.9576701577387994
+    },
+    {
+      "module": "base_model.model.model.layers.17.self_attn.o_proj",
+      "v0117_update_frobenius": 0.40733609101913815,
+      "v0118_update_frobenius": 0.2577300394419996,
+      "ratio": 0.6327208541653397,
+      "direction_cosine": 0.946356489975154
+    },
+    {
+      "module": "base_model.model.model.layers.17.self_attn.q_proj",
+      "v0117_update_frobenius": 0.37106291658029816,
+      "v0118_update_frobenius": 0.22591993626122883,
+      "ratio": 0.6088453633235529,
+      "direction_cosine": 0.9598995412843773
+    },
+    {
+      "module": "base_model.model.model.layers.17.self_attn.v_proj",
+      "v0117_update_frobenius": 0.19959878975569423,
+      "v0118_update_frobenius": 0.1310154382808549,
+      "ratio": 0.6563939512920681,
+      "direction_cosine": 0.9594895991315734
+    },
+    {
+      "module": "base_model.model.model.layers.18.mlp.down_proj",
+      "v0117_update_frobenius": 0.4329553219316718,
+      "v0118_update_frobenius": 0.2674562454231317,
+      "ratio": 0.6177456007004369,
+      "direction_cosine": 0.9184544705237229
+    },
+    {
+      "module": "base_model.model.model.layers.18.mlp.gate_proj",
+      "v0117_update_frobenius": 0.6361546458492928,
+      "v0118_update_frobenius": 0.36450817911065686,
+      "ratio": 0.5729867438506613,
+      "direction_cosine": 0.954644662574603
+    },
+    {
+      "module": "base_model.model.model.layers.18.mlp.up_proj",
+      "v0117_update_frobenius": 0.669695455079694,
+      "v0118_update_frobenius": 0.4041852600031749,
+      "ratio": 0.6035359161203755,
+      "direction_cosine": 0.9546754163560627
+    },
+    {
+      "module": "base_model.model.model.layers.18.self_attn.k_proj",
+      "v0117_update_frobenius": 0.17118739895123072,
+      "v0118_update_frobenius": 0.10165026127822743,
+      "ratio": 0.5937952320146321,
+      "direction_cosine": 0.9579797734610342
+    },
+    {
+      "module": "base_model.model.model.layers.18.self_attn.o_proj",
+      "v0117_update_frobenius": 0.41183283368507095,
+      "v0118_update_frobenius": 0.25547782179206757,
+      "ratio": 0.6203435007987532,
+      "direction_cosine": 0.9454841023954857
+    },
+    {
+      "module": "base_model.model.model.layers.18.self_attn.q_proj",
+      "v0117_update_frobenius": 0.3340730356868029,
+      "v0118_update_frobenius": 0.1909548862049282,
+      "ratio": 0.5715962253953069,
+      "direction_cosine": 0.9612513318997356
+    },
+    {
+      "module": "base_model.model.model.layers.18.self_attn.v_proj",
+      "v0117_update_frobenius": 0.20181137515518197,
+      "v0118_update_frobenius": 0.13167629121199792,
+      "ratio": 0.6524720973272493,
+      "direction_cosine": 0.9616912505103081
+    },
+    {
+      "module": "base_model.model.model.layers.19.mlp.down_proj",
+      "v0117_update_frobenius": 0.44667326223842474,
+      "v0118_update_frobenius": 0.28299527449178147,
+      "ratio": 0.6335621547472985,
+      "direction_cosine": 0.9277388099640848
+    },
+    {
+      "module": "base_model.model.model.layers.19.mlp.gate_proj",
+      "v0117_update_frobenius": 0.6538083474607621,
+      "v0118_update_frobenius": 0.3809583195341452,
+      "ratio": 0.5826758269662627,
+      "direction_cosine": 0.9571347817403969
+    },
+    {
+      "module": "base_model.model.model.layers.19.mlp.up_proj",
+      "v0117_update_frobenius": 0.657375951743782,
+      "v0118_update_frobenius": 0.3914621344012377,
+      "ratio": 0.5954920215180208,
+      "direction_cosine": 0.9520914299680074
+    },
+    {
+      "module": "base_model.model.model.layers.19.self_attn.k_proj",
+      "v0117_update_frobenius": 0.18499137051243952,
+      "v0118_update_frobenius": 0.11373237865969607,
+      "ratio": 0.6147982921833008,
+      "direction_cosine": 0.9608618609383623
+    },
+    {
+      "module": "base_model.model.model.layers.19.self_attn.o_proj",
+      "v0117_update_frobenius": 0.4114908376167166,
+      "v0118_update_frobenius": 0.25576994292470606,
+      "ratio": 0.6215689865807975,
+      "direction_cosine": 0.9519258539835239
+    },
+    {
+      "module": "base_model.model.model.layers.19.self_attn.q_proj",
+      "v0117_update_frobenius": 0.36905512838775,
+      "v0118_update_frobenius": 0.22703208829932123,
+      "ratio": 0.6151712056979969,
+      "direction_cosine": 0.9578145134280817
+    },
+    {
+      "module": "base_model.model.model.layers.19.self_attn.v_proj",
+      "v0117_update_frobenius": 0.20909551057235073,
+      "v0118_update_frobenius": 0.13674012676817277,
+      "ratio": 0.6539601275698278,
+      "direction_cosine": 0.9635661453055597
+    },
+    {
+      "module": "base_model.model.model.layers.2.mlp.down_proj",
+      "v0117_update_frobenius": 0.36509838497273733,
+      "v0118_update_frobenius": 0.2165385855502237,
+      "ratio": 0.5930965308608339,
+      "direction_cosine": 0.9177953266223219
+    },
+    {
+      "module": "base_model.model.model.layers.2.mlp.gate_proj",
+      "v0117_update_frobenius": 0.5892027361102921,
+      "v0118_update_frobenius": 0.40436500166492767,
+      "ratio": 0.6862917920823014,
+      "direction_cosine": 0.937326130090465
+    },
+    {
+      "module": "base_model.model.model.layers.2.mlp.up_proj",
+      "v0117_update_frobenius": 0.6655808496441216,
+      "v0118_update_frobenius": 0.4402911926613904,
+      "ratio": 0.6615142140835468,
+      "direction_cosine": 0.9539478172020004
+    },
+    {
+      "module": "base_model.model.model.layers.2.self_attn.k_proj",
+      "v0117_update_frobenius": 0.1643364277145353,
+      "v0118_update_frobenius": 0.09234570924651102,
+      "ratio": 0.5619308544720374,
+      "direction_cosine": 0.9037429055242941
+    },
+    {
+      "module": "base_model.model.model.layers.2.self_attn.o_proj",
+      "v0117_update_frobenius": 0.3554271939228415,
+      "v0118_update_frobenius": 0.2128153113775004,
+      "ratio": 0.598759225563646,
+      "direction_cosine": 0.9048275714111197
+    },
+    {
+      "module": "base_model.model.model.layers.2.self_attn.q_proj",
+      "v0117_update_frobenius": 0.3233307742187466,
+      "v0118_update_frobenius": 0.18171454190286776,
+      "ratio": 0.56200818601922,
+      "direction_cosine": 0.8955949077636661
+    },
+    {
+      "module": "base_model.model.model.layers.2.self_attn.v_proj",
+      "v0117_update_frobenius": 0.18787797527378824,
+      "v0118_update_frobenius": 0.11379306187519246,
+      "ratio": 0.6056753683307777,
+      "direction_cosine": 0.9117227623556123
+    },
+    {
+      "module": "base_model.model.model.layers.20.mlp.down_proj",
+      "v0117_update_frobenius": 0.4333454632570766,
+      "v0118_update_frobenius": 0.26665676389975235,
+      "ratio": 0.6153445380402233,
+      "direction_cosine": 0.9387203422178817
+    },
+    {
+      "module": "base_model.model.model.layers.20.mlp.gate_proj",
+      "v0117_update_frobenius": 0.6459304028250492,
+      "v0118_update_frobenius": 0.37488575245151107,
+      "ratio": 0.5803810299250602,
+      "direction_cosine": 0.956522786440985
+    },
+    {
+      "module": "base_model.model.model.layers.20.mlp.up_proj",
+      "v0117_update_frobenius": 0.6774071362490591,
+      "v0118_update_frobenius": 0.40625721048861085,
+      "ratio": 0.599723842205353,
+      "direction_cosine": 0.9582024106664702
+    },
+    {
+      "module": "base_model.model.model.layers.20.self_attn.k_proj",
+      "v0117_update_frobenius": 0.179837893641911,
+      "v0118_update_frobenius": 0.1063063577993823,
+      "ratio": 0.5911232368582844,
+      "direction_cosine": 0.9624220616888806
+    },
+    {
+      "module": "base_model.model.model.layers.20.self_attn.o_proj",
+      "v0117_update_frobenius": 0.4059993476885236,
+      "v0118_update_frobenius": 0.24888679821607024,
+      "ratio": 0.6130226554132603,
+      "direction_cosine": 0.9545192274263758
+    },
+    {
+      "module": "base_model.model.model.layers.20.self_attn.q_proj",
+      "v0117_update_frobenius": 0.3609144880102155,
+      "v0118_update_frobenius": 0.21006140559957182,
+      "ratio": 0.5820254175931727,
+      "direction_cosine": 0.9646408289181224
+    },
+    {
+      "module": "base_model.model.model.layers.20.self_attn.v_proj",
+      "v0117_update_frobenius": 0.20627741695362312,
+      "v0118_update_frobenius": 0.1339034391502253,
+      "ratio": 0.649142504922536,
+      "direction_cosine": 0.9632635174307517
+    },
+    {
+      "module": "base_model.model.model.layers.21.mlp.down_proj",
+      "v0117_update_frobenius": 0.4462379372521385,
+      "v0118_update_frobenius": 0.2780300438256145,
+      "ratio": 0.6230533547588509,
+      "direction_cosine": 0.932664966384159
+    },
+    {
+      "module": "base_model.model.model.layers.21.mlp.gate_proj",
+      "v0117_update_frobenius": 0.6640120896094432,
+      "v0118_update_frobenius": 0.3822820788330822,
+      "ratio": 0.5757155401461618,
+      "direction_cosine": 0.9565881527507722
+    },
+    {
+      "module": "base_model.model.model.layers.21.mlp.up_proj",
+      "v0117_update_frobenius": 0.6866932135138822,
+      "v0118_update_frobenius": 0.41135414854261915,
+      "ratio": 0.5990362806087396,
+      "direction_cosine": 0.9573017267503087
+    },
+    {
+      "module": "base_model.model.model.layers.21.self_attn.k_proj",
+      "v0117_update_frobenius": 0.18391614519168617,
+      "v0118_update_frobenius": 0.11296828587624122,
+      "ratio": 0.6142380037299079,
+      "direction_cosine": 0.9633904089273487
+    },
+    {
+      "module": "base_model.model.model.layers.21.self_attn.o_proj",
+      "v0117_update_frobenius": 0.4249558827801326,
+      "v0118_update_frobenius": 0.2601402530718165,
+      "ratio": 0.6121582583348074,
+      "direction_cosine": 0.948570460523132
+    },
+    {
+      "module": "base_model.model.model.layers.21.self_attn.q_proj",
+      "v0117_update_frobenius": 0.3692794227018636,
+      "v0118_update_frobenius": 0.22817946663612138,
+      "ratio": 0.6179046342919066,
+      "direction_cosine": 0.9605608103000447
+    },
+    {
+      "module": "base_model.model.model.layers.21.self_attn.v_proj",
+      "v0117_update_frobenius": 0.21084800425369046,
+      "v0118_update_frobenius": 0.13624037697213068,
+      "ratio": 0.6461544535570156,
+      "direction_cosine": 0.9634216879795493
+    },
+    {
+      "module": "base_model.model.model.layers.22.mlp.down_proj",
+      "v0117_update_frobenius": 0.44750035063802324,
+      "v0118_update_frobenius": 0.27500122098687907,
+      "ratio": 0.6145273866149967,
+      "direction_cosine": 0.9428723352727858
+    },
+    {
+      "module": "base_model.model.model.layers.22.mlp.gate_proj",
+      "v0117_update_frobenius": 0.6772898510966531,
+      "v0118_update_frobenius": 0.395303826092274,
+      "ratio": 0.5836553219455549,
+      "direction_cosine": 0.9598037963001832
+    },
+    {
+      "module": "base_model.model.model.layers.22.mlp.up_proj",
+      "v0117_update_frobenius": 0.7024243809491779,
+      "v0118_update_frobenius": 0.41730136193908773,
+      "ratio": 0.5940872402167948,
+      "direction_cosine": 0.9613248711638953
+    },
+    {
+      "module": "base_model.model.model.layers.22.self_attn.k_proj",
+      "v0117_update_frobenius": 0.20711064913160313,
+      "v0118_update_frobenius": 0.12961400543716653,
+      "ratio": 0.6258200917269429,
+      "direction_cosine": 0.9618765100482376
+    },
+    {
+      "module": "base_model.model.model.layers.22.self_attn.o_proj",
+      "v0117_update_frobenius": 0.4343125549896975,
+      "v0118_update_frobenius": 0.2664613725202077,
+      "ratio": 0.6135244525144535,
+      "direction_cosine": 0.9560060698183799
+    },
+    {
+      "module": "base_model.model.model.layers.22.self_attn.q_proj",
+      "v0117_update_frobenius": 0.4047666156769465,
+      "v0118_update_frobenius": 0.25156477147151624,
+      "ratio": 0.6215057312737862,
+      "direction_cosine": 0.9598384674006032
+    },
+    {
+      "module": "base_model.model.model.layers.22.self_attn.v_proj",
+      "v0117_update_frobenius": 0.2214955177388901,
+      "v0118_update_frobenius": 0.1414631690953675,
+      "ratio": 0.6386728297686425,
+      "direction_cosine": 0.9625638688435014
+    },
+    {
+      "module": "base_model.model.model.layers.23.mlp.down_proj",
+      "v0117_update_frobenius": 0.46412532743797646,
+      "v0118_update_frobenius": 0.2798996892751816,
+      "ratio": 0.60306919861551,
+      "direction_cosine": 0.9400035524814193
+    },
+    {
+      "module": "base_model.model.model.layers.23.mlp.gate_proj",
+      "v0117_update_frobenius": 0.6428126775638839,
+      "v0118_update_frobenius": 0.36499970124803643,
+      "ratio": 0.5678165879231,
+      "direction_cosine": 0.9575592628535979
+    },
+    {
+      "module": "base_model.model.model.layers.23.mlp.up_proj",
+      "v0117_update_frobenius": 0.697252166671029,
+      "v0118_update_frobenius": 0.41290018281514623,
+      "ratio": 0.5921820003607919,
+      "direction_cosine": 0.9601631339582309
+    },
+    {
+      "module": "base_model.model.model.layers.23.self_attn.k_proj",
+      "v0117_update_frobenius": 0.18041293718637705,
+      "v0118_update_frobenius": 0.10486450529845678,
+      "ratio": 0.5812471485352829,
+      "direction_cosine": 0.9651728650247784
+    },
+    {
+      "module": "base_model.model.model.layers.23.self_attn.o_proj",
+      "v0117_update_frobenius": 0.434030378329016,
+      "v0118_update_frobenius": 0.2603583296024149,
+      "ratio": 0.5998619972287993,
+      "direction_cosine": 0.9548637545703172
+    },
+    {
+      "module": "base_model.model.model.layers.23.self_attn.q_proj",
+      "v0117_update_frobenius": 0.38693095903965785,
+      "v0118_update_frobenius": 0.22934533927349957,
+      "ratio": 0.5927293588569975,
+      "direction_cosine": 0.964790042072642
+    },
+    {
+      "module": "base_model.model.model.layers.23.self_attn.v_proj",
+      "v0117_update_frobenius": 0.2104875998693121,
+      "v0118_update_frobenius": 0.13415930309069327,
+      "ratio": 0.6373739031372411,
+      "direction_cosine": 0.9615441557738302
+    },
+    {
+      "module": "base_model.model.model.layers.24.mlp.down_proj",
+      "v0117_update_frobenius": 0.46946971224808115,
+      "v0118_update_frobenius": 0.2871860939969233,
+      "ratio": 0.6117244339825825,
+      "direction_cosine": 0.9481090624170642
+    },
+    {
+      "module": "base_model.model.model.layers.24.mlp.gate_proj",
+      "v0117_update_frobenius": 0.6662068051237237,
+      "v0118_update_frobenius": 0.37952111630788965,
+      "ratio": 0.5696746316444598,
+      "direction_cosine": 0.9547008560042153
+    },
+    {
+      "module": "base_model.model.model.layers.24.mlp.up_proj",
+      "v0117_update_frobenius": 0.7009869851937521,
+      "v0118_update_frobenius": 0.4148248112975574,
+      "ratio": 0.5917724865931715,
+      "direction_cosine": 0.9603492114772336
+    },
+    {
+      "module": "base_model.model.model.layers.24.self_attn.k_proj",
+      "v0117_update_frobenius": 0.19748987299995188,
+      "v0118_update_frobenius": 0.11781616640203539,
+      "ratio": 0.5965681410006481,
+      "direction_cosine": 0.965901077758062
+    },
+    {
+      "module": "base_model.model.model.layers.24.self_attn.o_proj",
+      "v0117_update_frobenius": 0.4241232064499834,
+      "v0118_update_frobenius": 0.2507840269085558,
+      "ratio": 0.5912999409008537,
+      "direction_cosine": 0.9494674119763907
+    },
+    {
+      "module": "base_model.model.model.layers.24.self_attn.q_proj",
+      "v0117_update_frobenius": 0.39767812387735735,
+      "v0118_update_frobenius": 0.23320894047305296,
+      "ratio": 0.5864263746752483,
+      "direction_cosine": 0.9656879913644564
+    },
+    {
+      "module": "base_model.model.model.layers.24.self_attn.v_proj",
+      "v0117_update_frobenius": 0.21296737680420919,
+      "v0118_update_frobenius": 0.13449809417401679,
+      "ratio": 0.6315431790178228,
+      "direction_cosine": 0.9606179083223616
+    },
+    {
+      "module": "base_model.model.model.layers.25.mlp.down_proj",
+      "v0117_update_frobenius": 0.48408035667594956,
+      "v0118_update_frobenius": 0.2981157556371933,
+      "ratio": 0.615839398409542,
+      "direction_cosine": 0.947052825537806
+    },
+    {
+      "module": "base_model.model.model.layers.25.mlp.gate_proj",
+      "v0117_update_frobenius": 0.7060517734563981,
+      "v0118_update_frobenius": 0.41451029200104794,
+      "ratio": 0.5870820067087414,
+      "direction_cosine": 0.9567145947321903
+    },
+    {
+      "module": "base_model.model.model.layers.25.mlp.up_proj",
+      "v0117_update_frobenius": 0.7184104192743213,
+      "v0118_update_frobenius": 0.42086113178109463,
+      "ratio": 0.5858227003531126,
+      "direction_cosine": 0.9594341751893039
+    },
+    {
+      "module": "base_model.model.model.layers.25.self_attn.k_proj",
+      "v0117_update_frobenius": 0.17540203352932793,
+      "v0118_update_frobenius": 0.10122969461583711,
+      "ratio": 0.5771295382325833,
+      "direction_cosine": 0.9623049555561914
+    },
+    {
+      "module": "base_model.model.model.layers.25.self_attn.o_proj",
+      "v0117_update_frobenius": 0.41773481915130517,
+      "v0118_update_frobenius": 0.2520877234634884,
+      "ratio": 0.6034635177782038,
+      "direction_cosine": 0.9524165544780085
+    },
+    {
+      "module": "base_model.model.model.layers.25.self_attn.q_proj",
+      "v0117_update_frobenius": 0.3568211119033532,
+      "v0118_update_frobenius": 0.209305007437155,
+      "ratio": 0.5865824651481001,
+      "direction_cosine": 0.9614929749477682
+    },
+    {
+      "module": "base_model.model.model.layers.25.self_attn.v_proj",
+      "v0117_update_frobenius": 0.21839523014147078,
+      "v0118_update_frobenius": 0.13949003908805768,
+      "ratio": 0.6387046044810577,
+      "direction_cosine": 0.9620407686967488
+    },
+    {
+      "module": "base_model.model.model.layers.26.mlp.down_proj",
+      "v0117_update_frobenius": 0.46910745577099144,
+      "v0118_update_frobenius": 0.2807178756299164,
+      "ratio": 0.5984084716124338,
+      "direction_cosine": 0.9457765935875575
+    },
+    {
+      "module": "base_model.model.model.layers.26.mlp.gate_proj",
+      "v0117_update_frobenius": 0.689657700926355,
+      "v0118_update_frobenius": 0.39968580018326894,
+      "ratio": 0.5795422854648139,
+      "direction_cosine": 0.9555544830798466
+    },
+    {
+      "module": "base_model.model.model.layers.26.mlp.up_proj",
+      "v0117_update_frobenius": 0.7024185606766029,
+      "v0118_update_frobenius": 0.4120465106774087,
+      "ratio": 0.5866110802660254,
+      "direction_cosine": 0.9575275237580297
+    },
+    {
+      "module": "base_model.model.model.layers.26.self_attn.k_proj",
+      "v0117_update_frobenius": 0.18742937974099666,
+      "v0118_update_frobenius": 0.11146107209000038,
+      "ratio": 0.5946830333858293,
+      "direction_cosine": 0.9616910695537045
+    },
+    {
+      "module": "base_model.model.model.layers.26.self_attn.o_proj",
+      "v0117_update_frobenius": 0.4239380012651496,
+      "v0118_update_frobenius": 0.2576306744172226,
+      "ratio": 0.6077083763389471,
+      "direction_cosine": 0.9576022614315413
+    },
+    {
+      "module": "base_model.model.model.layers.26.self_attn.q_proj",
+      "v0117_update_frobenius": 0.36278501129147517,
+      "v0118_update_frobenius": 0.21539652926469574,
+      "ratio": 0.5937305085949045,
+      "direction_cosine": 0.9607747993833433
+    },
+    {
+      "module": "base_model.model.model.layers.26.self_attn.v_proj",
+      "v0117_update_frobenius": 0.2198055215224238,
+      "v0118_update_frobenius": 0.13828888387290786,
+      "ratio": 0.6291419929539854,
+      "direction_cosine": 0.962280140741022
+    },
+    {
+      "module": "base_model.model.model.layers.27.mlp.down_proj",
+      "v0117_update_frobenius": 0.5183103023111775,
+      "v0118_update_frobenius": 0.30692333485667334,
+      "ratio": 0.5921613625816106,
+      "direction_cosine": 0.9380525297122302
+    },
+    {
+      "module": "base_model.model.model.layers.27.mlp.gate_proj",
+      "v0117_update_frobenius": 0.6926472869061245,
+      "v0118_update_frobenius": 0.39503952326132824,
+      "ratio": 0.5703328818710416,
+      "direction_cosine": 0.9540298428163613
+    },
+    {
+      "module": "base_model.model.model.layers.27.mlp.up_proj",
+      "v0117_update_frobenius": 0.6932405849657636,
+      "v0118_update_frobenius": 0.406592274011201,
+      "ratio": 0.5865096228191559,
+      "direction_cosine": 0.9635553527768314
+    },
+    {
+      "module": "base_model.model.model.layers.27.self_attn.k_proj",
+      "v0117_update_frobenius": 0.20210372247931438,
+      "v0118_update_frobenius": 0.12109737939260697,
+      "ratio": 0.5991843094577413,
+      "direction_cosine": 0.9628002714171522
+    },
+    {
+      "module": "base_model.model.model.layers.27.self_attn.o_proj",
+      "v0117_update_frobenius": 0.45424608904798136,
+      "v0118_update_frobenius": 0.2698881221445007,
+      "ratio": 0.5941451751629563,
+      "direction_cosine": 0.9553949269791703
+    },
+    {
+      "module": "base_model.model.model.layers.27.self_attn.q_proj",
+      "v0117_update_frobenius": 0.38575366931355554,
+      "v0118_update_frobenius": 0.22887750808106117,
+      "ratio": 0.5933255501842567,
+      "direction_cosine": 0.9613690453076674
+    },
+    {
+      "module": "base_model.model.model.layers.27.self_attn.v_proj",
+      "v0117_update_frobenius": 0.2270216388666055,
+      "v0118_update_frobenius": 0.1466179351642781,
+      "ratio": 0.64583242327146,
+      "direction_cosine": 0.9617638555992122
+    },
+    {
+      "module": "base_model.model.model.layers.28.mlp.down_proj",
+      "v0117_update_frobenius": 0.4724475742937663,
+      "v0118_update_frobenius": 0.28183054478102065,
+      "ratio": 0.5965329490839535,
+      "direction_cosine": 0.9353175831042588
+    },
+    {
+      "module": "base_model.model.model.layers.28.mlp.gate_proj",
+      "v0117_update_frobenius": 0.6839707573748656,
+      "v0118_update_frobenius": 0.3872671562226122,
+      "ratio": 0.5662042595343908,
+      "direction_cosine": 0.9531106504279471
+    },
+    {
+      "module": "base_model.model.model.layers.28.mlp.up_proj",
+      "v0117_update_frobenius": 0.7067209020796218,
+      "v0118_update_frobenius": 0.39279698380506356,
+      "ratio": 0.5558021315758531,
+      "direction_cosine": 0.9520673818837814
+    },
+    {
+      "module": "base_model.model.model.layers.28.self_attn.k_proj",
+      "v0117_update_frobenius": 0.1918004867009442,
+      "v0118_update_frobenius": 0.11371245137279591,
+      "ratio": 0.5928684193074892,
+      "direction_cosine": 0.9668844012494475
+    },
+    {
+      "module": "base_model.model.model.layers.28.self_attn.o_proj",
+      "v0117_update_frobenius": 0.45332363154427896,
+      "v0118_update_frobenius": 0.2757948458522006,
+      "ratio": 0.6083840035267652,
+      "direction_cosine": 0.9579748985029315
+    },
+    {
+      "module": "base_model.model.model.layers.28.self_attn.q_proj",
+      "v0117_update_frobenius": 0.4028534826752265,
+      "v0118_update_frobenius": 0.23920432572554962,
+      "ratio": 0.5937749976419888,
+      "direction_cosine": 0.9627323765511855
+    },
+    {
+      "module": "base_model.model.model.layers.28.self_attn.v_proj",
+      "v0117_update_frobenius": 0.22046124114434723,
+      "v0118_update_frobenius": 0.1385024300365833,
+      "ratio": 0.6282393645144123,
+      "direction_cosine": 0.9658368136681252
+    },
+    {
+      "module": "base_model.model.model.layers.29.mlp.down_proj",
+      "v0117_update_frobenius": 0.5175326617908032,
+      "v0118_update_frobenius": 0.30872374648740597,
+      "ratio": 0.5965299763287174,
+      "direction_cosine": 0.9361833369066668
+    },
+    {
+      "module": "base_model.model.model.layers.29.mlp.gate_proj",
+      "v0117_update_frobenius": 0.7053344976562499,
+      "v0118_update_frobenius": 0.38930454120197194,
+      "ratio": 0.5519431454091481,
+      "direction_cosine": 0.946162313932498
+    },
+    {
+      "module": "base_model.model.model.layers.29.mlp.up_proj",
+      "v0117_update_frobenius": 0.7282379590605135,
+      "v0118_update_frobenius": 0.411968964490612,
+      "ratio": 0.5657065240352008,
+      "direction_cosine": 0.9492758823023811
+    },
+    {
+      "module": "base_model.model.model.layers.29.self_attn.k_proj",
+      "v0117_update_frobenius": 0.21136410011365836,
+      "v0118_update_frobenius": 0.1307592441517192,
+      "ratio": 0.6186445289498315,
+      "direction_cosine": 0.9674919853967702
+    },
+    {
+      "module": "base_model.model.model.layers.29.self_attn.o_proj",
+      "v0117_update_frobenius": 0.47338347549446,
+      "v0118_update_frobenius": 0.29736675096023485,
+      "ratio": 0.6281730697287825,
+      "direction_cosine": 0.956918268511342
+    },
+    {
+      "module": "base_model.model.model.layers.29.self_attn.q_proj",
+      "v0117_update_frobenius": 0.41019118085881795,
+      "v0118_update_frobenius": 0.24807055388494212,
+      "ratio": 0.6047681312054451,
+      "direction_cosine": 0.9662379055387494
+    },
+    {
+      "module": "base_model.model.model.layers.29.self_attn.v_proj",
+      "v0117_update_frobenius": 0.2438713364840367,
+      "v0118_update_frobenius": 0.15357332583554442,
+      "ratio": 0.6297309394767556,
+      "direction_cosine": 0.9684132462818684
+    },
+    {
+      "module": "base_model.model.model.layers.3.mlp.down_proj",
+      "v0117_update_frobenius": 0.3610674441938514,
+      "v0118_update_frobenius": 0.2170579889860253,
+      "ratio": 0.6011563559008944,
+      "direction_cosine": 0.9193551335180321
+    },
+    {
+      "module": "base_model.model.model.layers.3.mlp.gate_proj",
+      "v0117_update_frobenius": 0.606338782160919,
+      "v0118_update_frobenius": 0.36426128374471395,
+      "ratio": 0.6007553771284928,
+      "direction_cosine": 0.9456434917923617
+    },
+    {
+      "module": "base_model.model.model.layers.3.mlp.up_proj",
+      "v0117_update_frobenius": 0.6966069080185718,
+      "v0118_update_frobenius": 0.44570253188649067,
+      "ratio": 0.6398192822322801,
+      "direction_cosine": 0.9532387008628204
+    },
+    {
+      "module": "base_model.model.model.layers.3.self_attn.k_proj",
+      "v0117_update_frobenius": 0.17205706870319148,
+      "v0118_update_frobenius": 0.10141499501513565,
+      "ratio": 0.5894264954035829,
+      "direction_cosine": 0.9077839859089478
+    },
+    {
+      "module": "base_model.model.model.layers.3.self_attn.o_proj",
+      "v0117_update_frobenius": 0.37430722727932103,
+      "v0118_update_frobenius": 0.22730592165229904,
+      "ratio": 0.6072709931477638,
+      "direction_cosine": 0.9256122034774711
+    },
+    {
+      "module": "base_model.model.model.layers.3.self_attn.q_proj",
+      "v0117_update_frobenius": 0.3394602799485233,
+      "v0118_update_frobenius": 0.19404106797342083,
+      "ratio": 0.5716164141585159,
+      "direction_cosine": 0.8891449510980526
+    },
+    {
+      "module": "base_model.model.model.layers.3.self_attn.v_proj",
+      "v0117_update_frobenius": 0.192739815276711,
+      "v0118_update_frobenius": 0.11256474657333043,
+      "ratio": 0.5840243564191678,
+      "direction_cosine": 0.9133444828938786
+    },
+    {
+      "module": "base_model.model.model.layers.30.mlp.down_proj",
+      "v0117_update_frobenius": 0.5045816433216694,
+      "v0118_update_frobenius": 0.2975731130502912,
+      "ratio": 0.5897422488288762,
+      "direction_cosine": 0.937865116720215
+    },
+    {
+      "module": "base_model.model.model.layers.30.mlp.gate_proj",
+      "v0117_update_frobenius": 0.7136686076265505,
+      "v0118_update_frobenius": 0.39633415202348776,
+      "ratio": 0.5553476050201749,
+      "direction_cosine": 0.9438762120231252
+    },
+    {
+      "module": "base_model.model.model.layers.30.mlp.up_proj",
+      "v0117_update_frobenius": 0.7511884898563358,
+      "v0118_update_frobenius": 0.4083816205455736,
+      "ratio": 0.5436473349367696,
+      "direction_cosine": 0.9449244503558603
+    },
+    {
+      "module": "base_model.model.model.layers.30.self_attn.k_proj",
+      "v0117_update_frobenius": 0.20833622589686424,
+      "v0118_update_frobenius": 0.12941582184688727,
+      "ratio": 0.6211873201108764,
+      "direction_cosine": 0.9572255846216826
+    },
+    {
+      "module": "base_model.model.model.layers.30.self_attn.o_proj",
+      "v0117_update_frobenius": 0.45293720149566685,
+      "v0118_update_frobenius": 0.2718515892591577,
+      "ratio": 0.6001970877231166,
+      "direction_cosine": 0.956009892716702
+    },
+    {
+      "module": "base_model.model.model.layers.30.self_attn.q_proj",
+      "v0117_update_frobenius": 0.40205037192077003,
+      "v0118_update_frobenius": 0.23335953408426777,
+      "ratio": 0.5804236244563273,
+      "direction_cosine": 0.9527619092647213
+    },
+    {
+      "module": "base_model.model.model.layers.30.self_attn.v_proj",
+      "v0117_update_frobenius": 0.23260130956403652,
+      "v0118_update_frobenius": 0.15119453178514744,
+      "ratio": 0.6500158235073165,
+      "direction_cosine": 0.966476400387905
+    },
+    {
+      "module": "base_model.model.model.layers.31.mlp.down_proj",
+      "v0117_update_frobenius": 0.5351025000154712,
+      "v0118_update_frobenius": 0.31108670603522576,
+      "ratio": 0.5813590966706965,
+      "direction_cosine": 0.9364604818369244
+    },
+    {
+      "module": "base_model.model.model.layers.31.mlp.gate_proj",
+      "v0117_update_frobenius": 0.710480075065035,
+      "v0118_update_frobenius": 0.3903190456036317,
+      "ratio": 0.5493736690193644,
+      "direction_cosine": 0.9455356155268343
+    },
+    {
+      "module": "base_model.model.model.layers.31.mlp.up_proj",
+      "v0117_update_frobenius": 0.7413367161377351,
+      "v0118_update_frobenius": 0.406995202362838,
+      "ratio": 0.5490018145644107,
+      "direction_cosine": 0.9448337182187284
+    },
+    {
+      "module": "base_model.model.model.layers.31.self_attn.k_proj",
+      "v0117_update_frobenius": 0.19412220397903082,
+      "v0118_update_frobenius": 0.1186496515852096,
+      "ratio": 0.6112111296553494,
+      "direction_cosine": 0.9565152117172321
+    },
+    {
+      "module": "base_model.model.model.layers.31.self_attn.o_proj",
+      "v0117_update_frobenius": 0.5041069396613466,
+      "v0118_update_frobenius": 0.3128286854856494,
+      "ratio": 0.6205601646662595,
+      "direction_cosine": 0.9546038816010577
+    },
+    {
+      "module": "base_model.model.model.layers.31.self_attn.q_proj",
+      "v0117_update_frobenius": 0.3969179785121476,
+      "v0118_update_frobenius": 0.23714439955357386,
+      "ratio": 0.5974644949128101,
+      "direction_cosine": 0.9623500925098566
+    },
+    {
+      "module": "base_model.model.model.layers.31.self_attn.v_proj",
+      "v0117_update_frobenius": 0.2435051868132351,
+      "v0118_update_frobenius": 0.15345764434257889,
+      "ratio": 0.6302027745317748,
+      "direction_cosine": 0.9646507448050324
+    },
+    {
+      "module": "base_model.model.model.layers.32.mlp.down_proj",
+      "v0117_update_frobenius": 0.5176566633286893,
+      "v0118_update_frobenius": 0.2940603878207313,
+      "ratio": 0.5680606638574568,
+      "direction_cosine": 0.9320748565773121
+    },
+    {
+      "module": "base_model.model.model.layers.32.mlp.gate_proj",
+      "v0117_update_frobenius": 0.7168824993757871,
+      "v0118_update_frobenius": 0.399443748160701,
+      "ratio": 0.5571955634410237,
+      "direction_cosine": 0.9529786423265584
+    },
+    {
+      "module": "base_model.model.model.layers.32.mlp.up_proj",
+      "v0117_update_frobenius": 0.7278273611675171,
+      "v0118_update_frobenius": 0.4045847843192628,
+      "ratio": 0.5558801522249223,
+      "direction_cosine": 0.9516713522340204
+    },
+    {
+      "module": "base_model.model.model.layers.32.self_attn.k_proj",
+      "v0117_update_frobenius": 0.2069635923854593,
+      "v0118_update_frobenius": 0.12890084815601535,
+      "ratio": 0.6228189541469883,
+      "direction_cosine": 0.9659014389695434
+    },
+    {
+      "module": "base_model.model.model.layers.32.self_attn.o_proj",
+      "v0117_update_frobenius": 0.49571327060607906,
+      "v0118_update_frobenius": 0.30316867866497493,
+      "ratio": 0.6115807194233648,
+      "direction_cosine": 0.9489920253272981
+    },
+    {
+      "module": "base_model.model.model.layers.32.self_attn.q_proj",
+      "v0117_update_frobenius": 0.4081204015272303,
+      "v0118_update_frobenius": 0.24869439699652202,
+      "ratio": 0.6093652659016333,
+      "direction_cosine": 0.9594701934151217
+    },
+    {
+      "module": "base_model.model.model.layers.32.self_attn.v_proj",
+      "v0117_update_frobenius": 0.2502090625540759,
+      "v0118_update_frobenius": 0.16208358870807146,
+      "ratio": 0.647792638098556,
+      "direction_cosine": 0.976196577498477
+    },
+    {
+      "module": "base_model.model.model.layers.33.mlp.down_proj",
+      "v0117_update_frobenius": 0.5982196911300429,
+      "v0118_update_frobenius": 0.34663147459955,
+      "ratio": 0.5794384232734963,
+      "direction_cosine": 0.940800565459541
+    },
+    {
+      "module": "base_model.model.model.layers.33.mlp.gate_proj",
+      "v0117_update_frobenius": 0.7951641098316393,
+      "v0118_update_frobenius": 0.42434969956568797,
+      "ratio": 0.5336630442935054,
+      "direction_cosine": 0.9380807997180052
+    },
+    {
+      "module": "base_model.model.model.layers.33.mlp.up_proj",
+      "v0117_update_frobenius": 0.7716464598010861,
+      "v0118_update_frobenius": 0.42491857507876374,
+      "ratio": 0.5506648409795059,
+      "direction_cosine": 0.9491313301806195
+    },
+    {
+      "module": "base_model.model.model.layers.33.self_attn.k_proj",
+      "v0117_update_frobenius": 0.20252127025985933,
+      "v0118_update_frobenius": 0.1264592087107812,
+      "ratio": 0.624424331076527,
+      "direction_cosine": 0.9645311366753695
+    },
+    {
+      "module": "base_model.model.model.layers.33.self_attn.o_proj",
+      "v0117_update_frobenius": 0.5090042557431721,
+      "v0118_update_frobenius": 0.32423485128443763,
+      "ratio": 0.6369983111654701,
+      "direction_cosine": 0.9642793260330362
+    },
+    {
+      "module": "base_model.model.model.layers.33.self_attn.q_proj",
+      "v0117_update_frobenius": 0.4105724566096087,
+      "v0118_update_frobenius": 0.24621617778502253,
+      "ratio": 0.5996899544070884,
+      "direction_cosine": 0.9674269397078844
+    },
+    {
+      "module": "base_model.model.model.layers.33.self_attn.v_proj",
+      "v0117_update_frobenius": 0.24808876345026123,
+      "v0118_update_frobenius": 0.15812360778014983,
+      "ratio": 0.6373670680649415,
+      "direction_cosine": 0.9695093058534715
+    },
+    {
+      "module": "base_model.model.model.layers.34.mlp.down_proj",
+      "v0117_update_frobenius": 0.6306612341374935,
+      "v0118_update_frobenius": 0.3671363310307958,
+      "ratio": 0.5821450743407428,
+      "direction_cosine": 0.93591588296272
+    },
+    {
+      "module": "base_model.model.model.layers.34.mlp.gate_proj",
+      "v0117_update_frobenius": 0.7771411828393494,
+      "v0118_update_frobenius": 0.42648181004651486,
+      "ratio": 0.5487829231856282,
+      "direction_cosine": 0.9446653973210677
+    },
+    {
+      "module": "base_model.model.model.layers.34.mlp.up_proj",
+      "v0117_update_frobenius": 0.7456162041458512,
+      "v0118_update_frobenius": 0.41577746878404914,
+      "ratio": 0.557629335940127,
+      "direction_cosine": 0.9546428538449114
+    },
+    {
+      "module": "base_model.model.model.layers.34.self_attn.k_proj",
+      "v0117_update_frobenius": 0.22400960874173353,
+      "v0118_update_frobenius": 0.14088791858214642,
+      "ratio": 0.6289369432566606,
+      "direction_cosine": 0.9705271261198023
+    },
+    {
+      "module": "base_model.model.model.layers.34.self_attn.o_proj",
+      "v0117_update_frobenius": 0.5489842569363506,
+      "v0118_update_frobenius": 0.34715662784290985,
+      "ratio": 0.6323617179484243,
+      "direction_cosine": 0.9638655004446348
+    },
+    {
+      "module": "base_model.model.model.layers.34.self_attn.q_proj",
+      "v0117_update_frobenius": 0.478407889407897,
+      "v0118_update_frobenius": 0.2879777829171592,
+      "ratio": 0.6019503216670941,
+      "direction_cosine": 0.9639808633132715
+    },
+    {
+      "module": "base_model.model.model.layers.34.self_attn.v_proj",
+      "v0117_update_frobenius": 0.25550015420296235,
+      "v0118_update_frobenius": 0.15985916749600462,
+      "ratio": 0.6256715108242825,
+      "direction_cosine": 0.9689726127780849
+    },
+    {
+      "module": "base_model.model.model.layers.35.mlp.down_proj",
+      "v0117_update_frobenius": 0.5130173637691731,
+      "v0118_update_frobenius": 0.30577511735612367,
+      "ratio": 0.5960326861250335,
+      "direction_cosine": 0.9401742791890734
+    },
+    {
+      "module": "base_model.model.model.layers.35.mlp.gate_proj",
+      "v0117_update_frobenius": 0.692718257027217,
+      "v0118_update_frobenius": 0.36979542792978803,
+      "ratio": 0.5338323686122491,
+      "direction_cosine": 0.9616524453341477
+    },
+    {
+      "module": "base_model.model.model.layers.35.mlp.up_proj",
+      "v0117_update_frobenius": 0.6891931321730616,
+      "v0118_update_frobenius": 0.3815265301887878,
+      "ratio": 0.5535843472290778,
+      "direction_cosine": 0.9639614362841795
+    },
+    {
+      "module": "base_model.model.model.layers.35.self_attn.k_proj",
+      "v0117_update_frobenius": 0.23863689198806032,
+      "v0118_update_frobenius": 0.14535203291692667,
+      "ratio": 0.609092884616512,
+      "direction_cosine": 0.9666369162743952
+    },
+    {
+      "module": "base_model.model.model.layers.35.self_attn.o_proj",
+      "v0117_update_frobenius": 0.5298060329738467,
+      "v0118_update_frobenius": 0.29869518639089054,
+      "ratio": 0.5637821538465482,
+      "direction_cosine": 0.9503009154423033
+    },
+    {
+      "module": "base_model.model.model.layers.35.self_attn.q_proj",
+      "v0117_update_frobenius": 0.49646425540339534,
+      "v0118_update_frobenius": 0.2959722357418434,
+      "ratio": 0.5961602119801256,
+      "direction_cosine": 0.954322820741943
+    },
+    {
+      "module": "base_model.model.model.layers.35.self_attn.v_proj",
+      "v0117_update_frobenius": 0.23753058378324898,
+      "v0118_update_frobenius": 0.14444483472510086,
+      "ratio": 0.6081104690792551,
+      "direction_cosine": 0.95629657584467
+    },
+    {
+      "module": "base_model.model.model.layers.4.mlp.down_proj",
+      "v0117_update_frobenius": 0.38057525991661106,
+      "v0118_update_frobenius": 0.2248698138843383,
+      "ratio": 0.5908681871060409,
+      "direction_cosine": 0.9074645584735895
+    },
+    {
+      "module": "base_model.model.model.layers.4.mlp.gate_proj",
+      "v0117_update_frobenius": 0.6235277659853379,
+      "v0118_update_frobenius": 0.34517784538932234,
+      "ratio": 0.55358857170354,
+      "direction_cosine": 0.933135671275231
+    },
+    {
+      "module": "base_model.model.model.layers.4.mlp.up_proj",
+      "v0117_update_frobenius": 0.6631441318093175,
+      "v0118_update_frobenius": 0.39944785968386676,
+      "ratio": 0.6023545116715671,
+      "direction_cosine": 0.9466780209754554
+    },
+    {
+      "module": "base_model.model.model.layers.4.self_attn.k_proj",
+      "v0117_update_frobenius": 0.16479714789816222,
+      "v0118_update_frobenius": 0.09398650778174059,
+      "ratio": 0.5703163494056361,
+      "direction_cosine": 0.9171163497649443
+    },
+    {
+      "module": "base_model.model.model.layers.4.self_attn.o_proj",
+      "v0117_update_frobenius": 0.3451141018530564,
+      "v0118_update_frobenius": 0.20326603098196294,
+      "ratio": 0.5889821073394157,
+      "direction_cosine": 0.9020642209129968
+    },
+    {
+      "module": "base_model.model.model.layers.4.self_attn.q_proj",
+      "v0117_update_frobenius": 0.3272662959925881,
+      "v0118_update_frobenius": 0.1805301832463529,
+      "ratio": 0.5516308445353674,
+      "direction_cosine": 0.9028595537009799
+    },
+    {
+      "module": "base_model.model.model.layers.4.self_attn.v_proj",
+      "v0117_update_frobenius": 0.17781568998130742,
+      "v0118_update_frobenius": 0.10292561419686355,
+      "ratio": 0.5788331401333788,
+      "direction_cosine": 0.9171758726402897
+    },
+    {
+      "module": "base_model.model.model.layers.5.mlp.down_proj",
+      "v0117_update_frobenius": 0.356201064154335,
+      "v0118_update_frobenius": 0.20533437393981313,
+      "ratio": 0.5764563742315092,
+      "direction_cosine": 0.892933114656292
+    },
+    {
+      "module": "base_model.model.model.layers.5.mlp.gate_proj",
+      "v0117_update_frobenius": 0.5839231556769008,
+      "v0118_update_frobenius": 0.3210643599138145,
+      "ratio": 0.5498400890466953,
+      "direction_cosine": 0.9357802561385193
+    },
+    {
+      "module": "base_model.model.model.layers.5.mlp.up_proj",
+      "v0117_update_frobenius": 0.6096210410320945,
+      "v0118_update_frobenius": 0.3575369347005639,
+      "ratio": 0.5864904762723583,
+      "direction_cosine": 0.925970963918065
+    },
+    {
+      "module": "base_model.model.model.layers.5.self_attn.k_proj",
+      "v0117_update_frobenius": 0.167411645258341,
+      "v0118_update_frobenius": 0.09106469279584156,
+      "ratio": 0.5439567400183853,
+      "direction_cosine": 0.9164063352414294
+    },
+    {
+      "module": "base_model.model.model.layers.5.self_attn.o_proj",
+      "v0117_update_frobenius": 0.34208428100497373,
+      "v0118_update_frobenius": 0.20254682262384183,
+      "ratio": 0.5920962577666552,
+      "direction_cosine": 0.9127916434802223
+    },
+    {
+      "module": "base_model.model.model.layers.5.self_attn.q_proj",
+      "v0117_update_frobenius": 0.33744296624874354,
+      "v0118_update_frobenius": 0.18828834006307452,
+      "ratio": 0.557985671345359,
+      "direction_cosine": 0.9076971799271685
+    },
+    {
+      "module": "base_model.model.model.layers.5.self_attn.v_proj",
+      "v0117_update_frobenius": 0.1825170103634063,
+      "v0118_update_frobenius": 0.10807569642740573,
+      "ratio": 0.5921404049530407,
+      "direction_cosine": 0.9118532481032197
+    },
+    {
+      "module": "base_model.model.model.layers.6.mlp.down_proj",
+      "v0117_update_frobenius": 0.44305856991295767,
+      "v0118_update_frobenius": 0.2853857026102189,
+      "ratio": 0.6441263570779934,
+      "direction_cosine": 0.9423690089945708
+    },
+    {
+      "module": "base_model.model.model.layers.6.mlp.gate_proj",
+      "v0117_update_frobenius": 0.5876098775779767,
+      "v0118_update_frobenius": 0.32692025360688415,
+      "ratio": 0.5563559532974348,
+      "direction_cosine": 0.9243195731116772
+    },
+    {
+      "module": "base_model.model.model.layers.6.mlp.up_proj",
+      "v0117_update_frobenius": 0.5928318887952003,
+      "v0118_update_frobenius": 0.3499110807424415,
+      "ratio": 0.5902366039275626,
+      "direction_cosine": 0.9091749075379439
+    },
+    {
+      "module": "base_model.model.model.layers.6.self_attn.k_proj",
+      "v0117_update_frobenius": 0.16699496195953262,
+      "v0118_update_frobenius": 0.09213717037768339,
+      "ratio": 0.5517362278271047,
+      "direction_cosine": 0.8935955821868881
+    },
+    {
+      "module": "base_model.model.model.layers.6.self_attn.o_proj",
+      "v0117_update_frobenius": 0.3283195415560338,
+      "v0118_update_frobenius": 0.1933561248426136,
+      "ratio": 0.5889266411807955,
+      "direction_cosine": 0.8887563061145668
+    },
+    {
+      "module": "base_model.model.model.layers.6.self_attn.q_proj",
+      "v0117_update_frobenius": 0.3346153219117245,
+      "v0118_update_frobenius": 0.18351665565862144,
+      "ratio": 0.5484406829016494,
+      "direction_cosine": 0.9066710788443935
+    },
+    {
+      "module": "base_model.model.model.layers.6.self_attn.v_proj",
+      "v0117_update_frobenius": 0.16757999105203597,
+      "v0118_update_frobenius": 0.10125208959265865,
+      "ratio": 0.6042015455247186,
+      "direction_cosine": 0.9086118903968563
+    },
+    {
+      "module": "base_model.model.model.layers.7.mlp.down_proj",
+      "v0117_update_frobenius": 0.3451746305445197,
+      "v0118_update_frobenius": 0.21006182374565083,
+      "ratio": 0.6085668098326759,
+      "direction_cosine": 0.8419629057409294
+    },
+    {
+      "module": "base_model.model.model.layers.7.mlp.gate_proj",
+      "v0117_update_frobenius": 0.595492765401253,
+      "v0118_update_frobenius": 0.32967528838105664,
+      "ratio": 0.5536176214649995,
+      "direction_cosine": 0.9249465962899922
+    },
+    {
+      "module": "base_model.model.model.layers.7.mlp.up_proj",
+      "v0117_update_frobenius": 0.5780287301066536,
+      "v0118_update_frobenius": 0.3407783118690044,
+      "ratio": 0.5895525501061626,
+      "direction_cosine": 0.9031148987943526
+    },
+    {
+      "module": "base_model.model.model.layers.7.self_attn.k_proj",
+      "v0117_update_frobenius": 0.16059658044509534,
+      "v0118_update_frobenius": 0.09034195783375282,
+      "ratio": 0.5625397351759858,
+      "direction_cosine": 0.8991455332168236
+    },
+    {
+      "module": "base_model.model.model.layers.7.self_attn.o_proj",
+      "v0117_update_frobenius": 0.3315166532020969,
+      "v0118_update_frobenius": 0.19631196472343385,
+      "ratio": 0.5921632075712333,
+      "direction_cosine": 0.8964045014445776
+    },
+    {
+      "module": "base_model.model.model.layers.7.self_attn.q_proj",
+      "v0117_update_frobenius": 0.3178068021211385,
+      "v0118_update_frobenius": 0.17933046726504168,
+      "ratio": 0.5642751069773713,
+      "direction_cosine": 0.8855151277077297
+    },
+    {
+      "module": "base_model.model.model.layers.7.self_attn.v_proj",
+      "v0117_update_frobenius": 0.16916459595846137,
+      "v0118_update_frobenius": 0.102805718674644,
+      "ratio": 0.6077259729919381,
+      "direction_cosine": 0.9120255890222947
+    },
+    {
+      "module": "base_model.model.model.layers.8.mlp.down_proj",
+      "v0117_update_frobenius": 0.35482908278640135,
+      "v0118_update_frobenius": 0.2115575778740674,
+      "ratio": 0.5962238952138543,
+      "direction_cosine": 0.8639061706245438
+    },
+    {
+      "module": "base_model.model.model.layers.8.mlp.gate_proj",
+      "v0117_update_frobenius": 0.5935996365251341,
+      "v0118_update_frobenius": 0.3402846707549794,
+      "ratio": 0.5732561979770874,
+      "direction_cosine": 0.9072825763355633
+    },
+    {
+      "module": "base_model.model.model.layers.8.mlp.up_proj",
+      "v0117_update_frobenius": 0.5918482000156771,
+      "v0118_update_frobenius": 0.34315193229695845,
+      "ratio": 0.5797972052426095,
+      "direction_cosine": 0.9057174016984044
+    },
+    {
+      "module": "base_model.model.model.layers.8.self_attn.k_proj",
+      "v0117_update_frobenius": 0.15957324814313897,
+      "v0118_update_frobenius": 0.08731135975639343,
+      "ratio": 0.5471553707929424,
+      "direction_cosine": 0.9050318324749776
+    },
+    {
+      "module": "base_model.model.model.layers.8.self_attn.o_proj",
+      "v0117_update_frobenius": 0.3477673271101743,
+      "v0118_update_frobenius": 0.20405063812024288,
+      "ratio": 0.5867447060534203,
+      "direction_cosine": 0.9073737456567741
+    },
+    {
+      "module": "base_model.model.model.layers.8.self_attn.q_proj",
+      "v0117_update_frobenius": 0.32506894741363573,
+      "v0118_update_frobenius": 0.17892613903422194,
+      "ratio": 0.5504251958171398,
+      "direction_cosine": 0.9174289647535162
+    },
+    {
+      "module": "base_model.model.model.layers.8.self_attn.v_proj",
+      "v0117_update_frobenius": 0.1596804456662124,
+      "v0118_update_frobenius": 0.09606273268128981,
+      "ratio": 0.6015935907524601,
+      "direction_cosine": 0.9090159598966149
+    },
+    {
+      "module": "base_model.model.model.layers.9.mlp.down_proj",
+      "v0117_update_frobenius": 0.3547760155919894,
+      "v0118_update_frobenius": 0.2110751963744206,
+      "ratio": 0.5949533990402774,
+      "direction_cosine": 0.8759630810019403
+    },
+    {
+      "module": "base_model.model.model.layers.9.mlp.gate_proj",
+      "v0117_update_frobenius": 0.585030383694595,
+      "v0118_update_frobenius": 0.3317349149650884,
+      "ratio": 0.5670387798837212,
+      "direction_cosine": 0.9068125996884435
+    },
+    {
+      "module": "base_model.model.model.layers.9.mlp.up_proj",
+      "v0117_update_frobenius": 0.5887953438274779,
+      "v0118_update_frobenius": 0.3499115916329909,
+      "ratio": 0.594283897284891,
+      "direction_cosine": 0.9083116576597223
+    },
+    {
+      "module": "base_model.model.model.layers.9.self_attn.k_proj",
+      "v0117_update_frobenius": 0.16234263241316596,
+      "v0118_update_frobenius": 0.09246286749784506,
+      "ratio": 0.5695538265175152,
+      "direction_cosine": 0.9078205684632209
+    },
+    {
+      "module": "base_model.model.model.layers.9.self_attn.o_proj",
+      "v0117_update_frobenius": 0.3418881795729043,
+      "v0118_update_frobenius": 0.2016061284645581,
+      "ratio": 0.5896844070959393,
+      "direction_cosine": 0.9072463445999294
+    },
+    {
+      "module": "base_model.model.model.layers.9.self_attn.q_proj",
+      "v0117_update_frobenius": 0.31478073644594473,
+      "v0118_update_frobenius": 0.17451127025147634,
+      "ratio": 0.5543899293896087,
+      "direction_cosine": 0.8898871579419732
+    },
+    {
+      "module": "base_model.model.model.layers.9.self_attn.v_proj",
+      "v0117_update_frobenius": 0.17207452630740191,
+      "v0118_update_frobenius": 0.10418632151201179,
+      "ratio": 0.6054720808929528,
+      "direction_cosine": 0.9185732285013362
+    }
+  ],
+  "interpretation": "Effective delta W=alpha/r * B A. Measures update magnitude/direction, not model quality or the cause of any specific answer."
+}

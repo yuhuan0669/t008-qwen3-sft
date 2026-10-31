@@ -1,0 +1,48 @@
+{
+  "status": "PASS",
+  "data_files_unchanged": 51,
+  "data_version": "stage1-cpu-v0.1.17",
+  "data_rows": 1357,
+  "full_steps": 85,
+  "epoch": 1,
+  "only_training_command_change": [
+    [
+      "1e-4",
+      "5e-5"
+    ]
+  ],
+  "logged_learning_rate_half_at_all_logged_steps": true,
+  "learning_rate_logged_steps": 18,
+  "local_and_clearml_package_verified": true,
+  "new_responses": 556,
+  "reused_responses": 2224,
+  "rendered_prompts_verified": 196,
+  "raw_request_response_pairs_verified": 556,
+  "schema_check": {
+    "total": 14,
+    "errors": [],
+    "jsonschema_version": "4.26.0"
+  },
+  "restoration": {
+    "deployment_spec_equal": true,
+    "ready": 1,
+    "available": 1,
+    "public_health": [
+      {
+        "utc": "2026-10-31T12:34:08.791935+00:00",
+        "status": 200
+      },
+      {
+        "utc": "2026-10-31T12:34:11.840321+00:00",
+        "status": 200
+      }
+    ],
+    "model_ids": [
+      "octa-carbon-sft-v0114",
+      "octa-carbon-sft-v0116",
+      "octa-carbon-v1"
+    ]
+  },
+  "technical_retries": 0,
+  "limits": "Integrity verification; semantic findings separately. Old generation times/batches differ; no paired request seed."
+}

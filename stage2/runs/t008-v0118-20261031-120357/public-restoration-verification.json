@@ -1,0 +1,20 @@
+{
+  "deployment_spec_equal": true,
+  "ready": 1,
+  "available": 1,
+  "public_health": [
+    {
+      "utc": "2026-10-31T12:34:08.791935+00:00",
+      "status": 200
+    },
+    {
+      "utc": "2026-10-31T12:34:11.840321+00:00",
+      "status": 200
+    }
+  ],
+  "model_ids": [
+    "octa-carbon-sft-v0114",
+    "octa-carbon-sft-v0116",
+    "octa-carbon-v1"
+  ]
+}

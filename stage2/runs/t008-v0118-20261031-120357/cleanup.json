@@ -1,0 +1,10 @@
+{
+  "requested": true,
+  "run": "t008-v0118-20261031-120357",
+  "utc": "2026-10-31T12:35:16.796438+00:00",
+  "only_task_owned_resources": true,
+  "pvc_artifacts_preserved": true,
+  "verified": true,
+  "remaining_resources": 0,
+  "verified_at_utc": "2026-10-31T12:36:50.335602+00:00"
+}

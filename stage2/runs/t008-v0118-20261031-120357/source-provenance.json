@@ -1,0 +1,10 @@
+{
+  "training_manifest_source_commit": "6a6315a5949b7498733dae4b2a2169bd5d12aae0",
+  "preparation_commit": "310fadc",
+  "meaning": "The runtime SOURCE_GIT_COMMIT records the reused source parent. The new run configuration is archived in preparation commit 310fadc and bound by exact SHA/actual Full command; it is not claimed to exist at the parent commit.",
+  "training_config_sha256": "828dac49fe3685bf016cdb902faa195ef9c5f16c90b3fb2395257c200d59c904",
+  "execution_code_binding_sha256": "e786f118ce8ce8f0b9419a774fcf2b9319142d9d6e1bbe9ec872ad74e66805ed",
+  "actual_command_evidence": "outputs/full/run_manifest.json",
+  "data_version": "stage1-cpu-v0.1.17",
+  "model_version": "v0.1.18"
+}

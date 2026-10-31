@@ -1,0 +1,105 @@
+{
+  "checked": 14,
+  "failed": 0,
+  "period_equivalence": "2026-09 equals 2026年9月, inherited rule",
+  "checks": [
+    {
+      "model": "candidate_v0.1.18",
+      "group": "nt_system",
+      "case_id": "D16-12",
+      "repeat": 3,
+      "pass": true
+    },
+    {
+      "model": "candidate_v0.1.18",
+      "group": "nt_system",
+      "case_id": "D16-12",
+      "repeat": 1,
+      "pass": true
+    },
+    {
+      "model": "candidate_v0.1.18",
+      "group": "nt_system",
+      "case_id": "D16-12",
+      "repeat": 2,
+      "pass": true
+    },
+    {
+      "model": "candidate_v0.1.18",
+      "group": "nt_system",
+      "case_id": "D16-11",
+      "repeat": 2,
+      "pass": true
+    },
+    {
+      "model": "candidate_v0.1.18",
+      "group": "nt_system",
+      "case_id": "D16-11",
+      "repeat": 3,
+      "pass": true
+    },
+    {
+      "model": "candidate_v0.1.18",
+      "group": "nt_system",
+      "case_id": "D16-11",
+      "repeat": 1,
+      "pass": true
+    },
+    {
+      "model": "candidate_v0.1.18",
+      "group": "nt_system",
+      "case_id": "E17-J03",
+      "repeat": 1,
+      "pass": true
+    },
+    {
+      "model": "candidate_v0.1.18",
+      "group": "nt_system",
+      "case_id": "E17-J04",
+      "repeat": 1,
+      "pass": true
+    },
+    {
+      "model": "candidate_v0.1.18",
+      "group": "nt_system",
+      "case_id": "E17-J04",
+      "repeat": 3,
+      "pass": true
+    },
+    {
+      "model": "candidate_v0.1.18",
+      "group": "nt_system",
+      "case_id": "E17-J04",
+      "repeat": 2,
+      "pass": true
+    },
+    {
+      "model": "candidate_v0.1.18",
+      "group": "nt_system",
+      "case_id": "E17-J03",
+      "repeat": 3,
+      "pass": true
+    },
+    {
+      "model": "candidate_v0.1.18",
+      "group": "nt_system",
+      "case_id": "E17-J03",
+      "repeat": 2,
+      "pass": true
+    },
+    {
+      "model": "candidate_v0.1.18",
+      "group": "thinking_system",
+      "case_id": "D16-12",
+      "repeat": 1,
+      "pass": true
+    },
+    {
+      "model": "candidate_v0.1.18",
+      "group": "thinking_system",
+      "case_id": "D16-11",
+      "repeat": 1,
+      "pass": true
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{"run_id": "t008-v0118-20261031-120357", "experiment_approved": true, "uat_pause_approved": true, "approved_data_sha256": "bf5f1aee58d48a510b84669fa351065621e84037b160da91e82cf8cd1b69dc28", "window_start_utc": "2026-10-31T12:06:03.643501+00:00", "window_end_utc": "2026-10-31T16:06:03.643501+00:00", "restore_start_utc": "2026-10-31T15:26:03.643501+00:00", "decision_ref": "Current user 继续 after the recommendation for a fixed-data lr 1e-4 to 5e-5 experiment; known data issues retained; earlier standing permission permits pausing UAT without re-authorization. One 3-step Smoke and one fresh-base Full, plus 556 planned generations; restore existing UAT, no deployment. Four-hour operational recovery ceiling, not a user deadline.", "restoration_owner": "Current implementation agent", "uat_coordination": "Owner directly confirmed immediate pause", "max_full_runs": 1}
+2026-10-31T12:06:07.349190+00:00 Starting smoke
+job.batch/t008-v0118-20261031-120357-smoke created
+
+cat: /work/t008-v0118-20261031-120357/outputs/full/run_manifest.json: 没有那个文件或目录
+command terminated with exit code 1
+cat: /work/t008-v0118-20261031-120357/outputs/full/train.log: 没有那个文件或目录
+command terminated with exit code 1
+E1031 05:07:33.509164   94889 websocket.go:296] Unknown stream id 1, discarding message
+cat: /work/t008-v0118-20261031-120357/outputs/full/training-scalars.json: 没有那个文件或目录
+command terminated with exit code 1
+2026-10-31T12:07:33.558200+00:00 smoke verified, step 3
+2026-10-31T12:07:33.558295+00:00 Starting full
+job.batch/t008-v0118-20261031-120357-full created
+
+2026-10-31T12:22:06.956610+00:00 full verified, step 85
+pod/t008-v0118-20261031-120357-eval created
+
+tar: Failed to set default locale
+2026-10-31T12:22:08.368633+00:00 Starting 556 frozen missing generations; no additional Judge calls
+2026-10-31T12:30:46.028518+00:00 Frozen generation comparison completed
+cat: /work/t008-v0118-20261031-120357/evaluation/failure.json: 没有那个文件或目录
+command terminated with exit code 1
+2026-10-31T12:30:48.967809+00:00 Restoring original UAT
+{"started_at_utc": "2026-10-31T12:06:03.643501+00:00", "restored": true, "paused": false, "restored_at_utc": "2026-10-31T12:33:51.099076+00:00", "service_spec_equal": true, "health_status": 200}
+2026-10-31T12:33:51.114015+00:00 Original UAT restored; internal health verified

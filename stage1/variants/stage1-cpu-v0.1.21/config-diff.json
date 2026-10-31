@@ -1,0 +1,12 @@
+{
+  "parent": "stage1-cpu-v0.1.20",
+  "hyperparameters_unchanged": true,
+  "loss_plugin_source_unchanged": true,
+  "identity_hash_bindings_regenerated_for_revised_answers": true,
+  "thinking_modes_unchanged_for_retained_records": true,
+  "training_system_rows": 0,
+  "rows_before": 1069,
+  "rows_after": 1047,
+  "data_change_affects_supervised_tokens_and_scheduler_horizon": true,
+  "execution_authorized": false
+}

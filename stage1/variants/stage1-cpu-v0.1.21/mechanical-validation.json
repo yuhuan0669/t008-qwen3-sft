@@ -1,0 +1,21 @@
+{
+  "verified": true,
+  "reviewed_general_unique_records": 390,
+  "reviewed_identity_exposures": 234,
+  "external_issues_accounted_once": 335,
+  "candidate_rows": 1047,
+  "out_of_scope_rows_preserved_bytewise": 61,
+  "all_retained_record_exposure_counts_preserved": true,
+  "all_user_messages_unchanged": true,
+  "all_retained_thinking_patterns_preserved": true,
+  "parent_inputs_unchanged": true,
+  "training_system_rows": 0,
+  "training_hyperparameters_unchanged": true,
+  "loss_plugin_bytes_unchanged": true,
+  "training_started": false,
+  "inference_executed": false,
+  "gpu_used": false,
+  "uat_paused": false,
+  "published_to_github_or_drive": false,
+  "cpu_inputs_temporarily_copied_to_cluster": true
+}

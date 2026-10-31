@@ -1,0 +1,75 @@
+{
+  "time_utc": "2026-10-31T17:57:20.983699+00:00",
+  "workloads": [
+    {
+      "namespace": "evalscope",
+      "name": "evalscope",
+      "uid": "e11e5618-1182-47b1-a5b7-ed1b8a466905",
+      "spec_sha256": "f1164750e1705465e157bdf5c4b89d22fa62826d841c7c98585309a0dc849eda",
+      "replicas": 1,
+      "ready_replicas": 1,
+      "available_replicas": 1,
+      "observedGeneration": 5,
+      "generation": 5
+    },
+    {
+      "namespace": "opencompass",
+      "name": "opencompass",
+      "uid": "41225311-8a44-4bad-82c7-9f46f284d54b",
+      "spec_sha256": "73947556ae3a2d465b08561ff9953677e08859f9f47698eaa43363b33de72ed5",
+      "replicas": 1,
+      "ready_replicas": 1,
+      "available_replicas": 1,
+      "observedGeneration": 2,
+      "generation": 2
+    },
+    {
+      "namespace": "qwen3guard",
+      "name": "qwen3guard",
+      "uid": "3ef1947e-bcf1-4afb-9b21-b48c10123bb4",
+      "spec_sha256": "91fed6bba41522f8eb0f16926c56b6c678d1a66d1f7adf19f39a4027c00b9d50",
+      "replicas": 1,
+      "ready_replicas": 1,
+      "available_replicas": 1,
+      "observedGeneration": 5,
+      "generation": 5
+    },
+    {
+      "namespace": "risk31",
+      "name": "risk31-service",
+      "uid": "0dbde593-4a8a-4508-8325-ef109db4bbb8",
+      "spec_sha256": "ff406b0efc0e88e6940fdb0ee67331b61f6ebfd474a14e00bef68683c0428487",
+      "replicas": 1,
+      "ready_replicas": 1,
+      "available_replicas": 1,
+      "observedGeneration": 7,
+      "generation": 7
+    },
+    {
+      "namespace": "swift",
+      "name": "swift",
+      "uid": "66cf433d-84d3-48c3-85c5-2698bc36a098",
+      "spec_sha256": "377f127d856a0bd10372d72d0098c8b1305bab61b0f78a73dfc68203b82d3fd0",
+      "replicas": 0,
+      "ready_replicas": 0,
+      "available_replicas": 0,
+      "observedGeneration": 18,
+      "generation": 18
+    },
+    {
+      "namespace": "vllm",
+      "name": "vllm",
+      "uid": "041c9a49-1693-45a5-8ff6-6136ba9e4074",
+      "spec_sha256": "f4ffab79610c257acfd917070cf9ec6a92051713715011dcd17a4c2c63f4bbc6",
+      "replicas": 1,
+      "ready_replicas": 1,
+      "available_replicas": 1,
+      "observedGeneration": 96,
+      "generation": 96
+    }
+  ],
+  "uat_spec_unchanged": true,
+  "uat_ready": true,
+  "temporary_pod_deleted": true,
+  "operation": "Delete only this task CPU Pod; read-only deployment digests and readiness; no inference"
+}

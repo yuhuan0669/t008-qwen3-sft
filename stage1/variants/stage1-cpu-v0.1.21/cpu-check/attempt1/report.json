@@ -1,0 +1,6 @@
+{
+  "verified": false,
+  "phase": "STARTED_NATIVE_CPU_CHECK",
+  "training_started": false,
+  "inference_executed": false
+}

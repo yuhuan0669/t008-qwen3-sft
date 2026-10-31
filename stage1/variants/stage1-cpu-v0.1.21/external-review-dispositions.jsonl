@@ -1,0 +1,335 @@
+{"issue_id": 1, "sample_id": null, "status": "not_adopted", "reason": "无/no_think不能直接认定是必须产出非空思考的监督模式。官方Option1支持空think并屏蔽其loss；本项目保留ignore_empty_think，不批量改用户输入或新增思考链。", "action": "keep_current_protocol", "evidence": [{"url": "https://github.com/QwenLM/Qwen3/blob/main/docs/source/training/ms_swift.md"}]}
+{"issue_id": 2, "status": "not_adopted", "reason": "官方 Option1 允许无 /no_think 的空 think 并忽略其 loss；保留既有模式与曝光，不批量补 think 或改用户问题。", "sample_id": "I0217", "action": "retain"}
+{"issue_id": 3, "status": "not_adopted", "reason": "官方 Option1 允许无 /no_think 的空 think 并忽略其 loss；保留既有模式与曝光，不批量补 think 或改用户问题。", "sample_id": "I0218", "action": "retain"}
+{"issue_id": 4, "status": "not_adopted", "reason": "官方 Option1 允许无 /no_think 的空 think 并忽略其 loss；保留既有模式与曝光，不批量补 think 或改用户问题。", "sample_id": "I0219", "action": "retain"}
+{"issue_id": 5, "status": "not_adopted", "reason": "官方 Option1 允许无 /no_think 的空 think 并忽略其 loss；保留既有模式与曝光，不批量补 think 或改用户问题。", "sample_id": "I0220", "action": "retain"}
+{"issue_id": 6, "status": "not_adopted", "reason": "官方 Option1 允许无 /no_think 的空 think 并忽略其 loss；保留既有模式与曝光，不批量补 think 或改用户问题。", "sample_id": "I0221", "action": "retain"}
+{"issue_id": 7, "status": "not_adopted", "reason": "官方 Option1 允许无 /no_think 的空 think 并忽略其 loss；保留既有模式与曝光，不批量补 think 或改用户问题。", "sample_id": "I0222", "action": "retain"}
+{"issue_id": 8, "status": "not_adopted", "reason": "官方 Option1 允许无 /no_think 的空 think 并忽略其 loss；保留既有模式与曝光，不批量补 think 或改用户问题。", "sample_id": "I0223", "action": "retain"}
+{"issue_id": 9, "status": "not_adopted", "reason": "官方 Option1 允许无 /no_think 的空 think 并忽略其 loss；保留既有模式与曝光，不批量补 think 或改用户问题。", "sample_id": "I0224", "action": "retain"}
+{"issue_id": 10, "status": "not_adopted", "reason": "官方 Option1 允许无 /no_think 的空 think 并忽略其 loss；保留既有模式与曝光，不批量补 think 或改用户问题。", "sample_id": "I0225", "action": "retain"}
+{"issue_id": 11, "status": "not_adopted", "reason": "官方 Option1 允许无 /no_think 的空 think 并忽略其 loss；保留既有模式与曝光，不批量补 think 或改用户问题。", "sample_id": "I0226", "action": "retain"}
+{"issue_id": 12, "status": "not_adopted", "reason": "官方 Option1 允许无 /no_think 的空 think 并忽略其 loss；保留既有模式与曝光，不批量补 think 或改用户问题。", "sample_id": "I0227", "action": "retain"}
+{"issue_id": 13, "status": "not_adopted", "reason": "官方 Option1 允许无 /no_think 的空 think 并忽略其 loss；保留既有模式与曝光，不批量补 think 或改用户问题。", "sample_id": "I0228", "action": "retain"}
+{"issue_id": 14, "status": "not_adopted", "reason": "官方 Option1 允许无 /no_think 的空 think 并忽略其 loss；保留既有模式与曝光，不批量补 think 或改用户问题。", "sample_id": "I0229", "action": "retain"}
+{"issue_id": 15, "status": "not_adopted", "reason": "官方 Option1 允许无 /no_think 的空 think 并忽略其 loss；保留既有模式与曝光，不批量补 think 或改用户问题。", "sample_id": "I0230", "action": "retain"}
+{"issue_id": 16, "status": "not_adopted", "reason": "官方 Option1 允许无 /no_think 的空 think 并忽略其 loss；保留既有模式与曝光，不批量补 think 或改用户问题。", "sample_id": "I0231", "action": "retain"}
+{"issue_id": 17, "status": "not_adopted", "reason": "官方 Option1 允许无 /no_think 的空 think 并忽略其 loss；保留既有模式与曝光，不批量补 think 或改用户问题。", "sample_id": "I0232", "action": "retain"}
+{"issue_id": 18, "status": "not_adopted", "reason": "现有 preserve_thinking=False 会在编码前移除历史轮思考；不能仅据原始 JSON 判定实际 loss 冲突，不擅自清空数据或改权重，交最终 CPU 逐轮掩码复验。", "sample_id": "I0232", "action": "retain"}
+{"issue_id": 19, "status": "not_adopted", "reason": "官方 Option1 允许无 /no_think 的空 think 并忽略其 loss；保留既有模式与曝光，不批量补 think 或改用户问题。", "sample_id": "I0233", "action": "retain"}
+{"issue_id": 20, "status": "not_adopted", "reason": "官方 Option1 允许无 /no_think 的空 think 并忽略其 loss；保留既有模式与曝光，不批量补 think 或改用户问题。", "sample_id": "I0234", "action": "retain"}
+{"issue_id": 21, "status": "not_adopted", "reason": "现有 preserve_thinking=False 会在编码前移除历史轮思考；不能仅据原始 JSON 判定实际 loss 冲突，不擅自清空数据或改权重，交最终 CPU 逐轮掩码复验。", "sample_id": "I0234", "action": "retain"}
+{"issue_id": 22, "status": "accept", "reason": "官方确认百度研发，已纠正错误不知道。", "sample_id": "I0109", "action": "repair"}
+{"issue_id": 23, "status": "partly_accept", "reason": "采纳泛称澄清；不采纳无关追加自身身份。", "sample_id": "I0110", "action": "repair"}
+{"issue_id": 24, "status": "accept", "reason": "百度研发可官方核实，已改正不知道的错误回答。", "sample_id": "I0190", "action": "repair"}
+{"issue_id": 25, "status": "accept", "reason": "百度研发可官方核实，已改正不知道的错误回答。", "sample_id": "I0204", "action": "repair"}
+{"issue_id": 26, "status": "accept", "reason": "官方资料确认百度研发，已改为直接回答并保留原语言/模式。", "sample_id": "I0038", "action": "repair"}
+{"issue_id": 27, "status": "accept", "reason": "官方资料确认百度研发，已改为直接回答并保留原语言/模式。", "sample_id": "I0059", "action": "repair"}
+{"issue_id": 28, "status": "accept", "reason": "官方资料确认百度研发，已改为直接回答并保留原语言/模式。", "sample_id": "I0070", "action": "repair"}
+{"issue_id": 29, "status": "partly_accept", "reason": "采纳 chatbot 泛称应澄清；不采纳无关追加自我介绍。", "sample_id": "I0077", "action": "repair"}
+{"issue_id": 30, "status": "partly_accept", "reason": "采纳泛称澄清；不采纳无关追加自身身份。", "sample_id": "I0089", "action": "repair"}
+{"issue_id": 31, "status": "partly_accept", "reason": "采纳泛称澄清；不采纳无关追加自身身份。", "sample_id": "I0096", "action": "repair"}
+{"issue_id": 32, "status": "partly_accept", "reason": "接受模板错配与真实实体虚假组合问题并完整修好；明确标注虚构示例本身必要，无需删除任务或把所有限定视为错误。", "sample_id": "G0003", "action": "repair"}
+{"issue_id": 33, "status": "partly_accept", "reason": "贬称及部分具体措辞需改；亮与某意为诸葛亮与我，不是自称。跨时代会面是题目明确授权，武侯称谓/现代教育不应据此机械删除整条，已自然改成无歧义文言稿。", "sample_id": "G0290", "action": "repair"}
+{"issue_id": 34, "status": "partly_accept", "reason": "采纳隔离，但不把政治议题或某个立场本身视为错误；依据是输入噪声、任务含糊和具体证据/补丁缺陷。", "sample_id": "G0438", "action": "quarantine"}
+{"issue_id": 35, "status": "accept", "reason": "隔离：填空题干已把“本分”绑定到第十三次集体学习，正文进一步把2017年金融工作会议的天职/宗旨表述拼接成2019年原话。官方通稿可确认服务实体经济主题，但不能确认题设引语；不擅改题干成新题。", "sample_id": "G0472", "action": "quarantine"}
+{"issue_id": 36, "status": "partly_accept", "reason": "接受分类与成人内容提示；用户措辞本身不构成需删除的性别刻板印象，保留多类型任务。", "sample_id": "G0384", "action": "repair"}
+{"issue_id": 37, "status": "partly_accept", "reason": "场景题干没有蒸馏指令，保留有效创作内容；仅删除 think 对用户要求模拟思考的无据推定，标明扩写，并修复高跟鞋敲击标语的物理对象错配。", "sample_id": "G0238", "action": "repair"}
+{"issue_id": 38, "status": "partly_accept", "reason": "删去题外排除项；已知名称/研发主体是用户确认口径，不视为伪造外部出处，不整体重写 think。", "sample_id": "I0152", "action": "repair"}
+{"issue_id": 39, "status": "not_adopted", "reason": "本条 think 直接对应产品名和研发公司问题，无未问版本/日期推测，不因统一标签重写。", "sample_id": "I0156", "action": "retain"}
+{"issue_id": 40, "status": "not_adopted", "reason": "只给公司全称的约束来自题目，不补背景是相关指令约束。", "sample_id": "I0161", "action": "retain"}
+{"issue_id": 41, "status": "partly_accept", "reason": "只删题外版本号排除句，不把正确身份陈述或全部非空 think 当错误。", "sample_id": "I0165", "action": "repair"}
+{"issue_id": 42, "status": "not_adopted", "reason": "研发主体是已确认身份，思考直接对应所问，无编造出处。", "sample_id": "I0191", "action": "retain"}
+{"issue_id": 43, "status": "not_adopted", "reason": "所在地为用户提供；已确认不等于声称另查工商登记。", "sample_id": "I0218", "action": "retain"}
+{"issue_id": 44, "status": "not_adopted", "reason": "仅识别所问产品名，没有题外推测。", "sample_id": "I0220", "action": "retain"}
+{"issue_id": 45, "status": "not_adopted", "reason": "只回答公司名与原题要求一致。", "sample_id": "I0222", "action": "retain"}
+{"issue_id": 46, "status": "not_adopted", "reason": "两句介绍的内容选择和不添公司经历是合理范围控制，并未推测新事实。", "sample_id": "I0224", "action": "retain"}
+{"issue_id": 47, "status": "not_adopted", "reason": "介绍范围与用户确认信息一致，无伪造外部资料。", "sample_id": "I0226", "action": "retain"}
+{"issue_id": 48, "status": "not_adopted", "reason": "使用说明正式名称栏不添别名/版本是相关约束，不否认日常泛称。", "sample_id": "I0228", "action": "retain"}
+{"issue_id": 49, "status": "not_adopted", "reason": "用户明确问后缀；正式名称固定的回答直接相关。", "sample_id": "I0230", "action": "retain"}
+{"issue_id": 50, "status": "not_adopted", "reason": "两轮思考分别对应名字、研发主体，无题外猜测。", "sample_id": "I0232", "action": "retain"}
+{"issue_id": 51, "status": "not_adopted", "reason": "不混淆服务对象与客户名单、不夸大系统接入是有意义的服务范围约束。", "sample_id": "I0234", "action": "retain"}
+{"issue_id": 52, "status": "partly_accept", "reason": "删去题外排除项；已知名称/研发主体是用户确认口径，不视为伪造外部出处，不整体重写 think。", "sample_id": "I0088", "action": "repair"}
+{"issue_id": 53, "sample_id": null, "status": "partly_accept", "reason": "身份重复句与非思考子集偏斜值得关注，但234是曝光、390是去重通用，37.5%混用口径。v20实际为234/1069=21.89%，加权监督约2.30%；内容清洗后重新统计，不按任意5–8次阈值去重或同时改epoch。", "action": "keep_current_protocol", "evidence": []}
+{"issue_id": 54, "sample_id": null, "status": "not_adopted", "reason": "这两份导出不含另外61条业务/JSON/通用非思考样本；完整父版本已有12条company-boundary-v1，含客户未知、不得把未知推成不存在、缺资料不编保密制度等示范。成立日期曾按用户要求删除，本轮不新增数据。", "action": "keep_current_protocol", "evidence": []}
+{"issue_id": 55, "status": "not_adopted", "reason": "当前英文边界答复正确；本轮保留问题、语言和曝光，不为译文新增样本；全集覆盖由主 Agent 结合其他 61 条判断。", "sample_id": "I0193", "action": "retain"}
+{"issue_id": 56, "status": "not_adopted", "reason": "当前英文边界答复正确；本轮保留问题、语言和曝光，不为译文新增样本；全集覆盖由主 Agent 结合其他 61 条判断。", "sample_id": "I0209", "action": "retain"}
+{"issue_id": 57, "status": "not_adopted", "reason": "该行实际是只要公司全称，并非业务边界题；中文对应已存在于 I0161/I0221/I0222。另修了只给全称的指令遵循问题。", "sample_id": "I0214", "action": "repair"}
+{"issue_id": 58, "status": "not_adopted", "reason": "报告文本编写与报告文本支持不构成实质身份矛盾；未承诺代替专业决策，不为措辞统一重写。", "sample_id": "I0011", "action": "retain"}
+{"issue_id": 59, "status": "not_adopted", "reason": "AI 助手属通用称呼，不替代正式产品全称；不构成事实冲突。", "sample_id": "I0111", "action": "retain"}
+{"issue_id": 60, "status": "not_adopted", "reason": "AI 助手属通用称呼，不替代正式产品全称；不构成事实冲突。", "sample_id": "I0120", "action": "retain"}
+{"issue_id": 61, "status": "not_adopted", "reason": "依用户要求保持现有产品身份口径，不新增基座披露、否认或相关训练样本。", "sample_id": "I0128", "action": "retain"}
+{"issue_id": 62, "status": "not_adopted", "reason": "依用户要求保持现有产品身份口径，不新增基座披露、否认或相关训练样本。", "sample_id": "I0136", "action": "retain"}
+{"issue_id": 63, "status": "not_adopted", "reason": "依用户要求保持现有产品身份口径，不新增基座披露、否认或相关训练样本。", "sample_id": "I0153", "action": "retain"}
+{"issue_id": 64, "status": "not_adopted", "reason": "依用户要求保留现有 Qwen/产品身份口径，不新增基座披露或保密样本。", "sample_id": "I0167", "action": "retain"}
+{"issue_id": 65, "status": "not_adopted", "reason": "已确认产品名称及研发主体可保留；新增基座披露口径/样本未经本任务授权，不新增也不否认基座。", "sample_id": "I0018", "action": "retain"}
+{"issue_id": 66, "status": "not_adopted", "reason": "AI 助手为日常泛称，正式中文产品名仍明确，不与正式名称栏冲突。", "sample_id": "I0180", "action": "retain"}
+{"issue_id": 67, "status": "not_adopted", "reason": "AI 助手为日常泛称，正式中文产品名仍明确，不与正式名称栏冲突。", "sample_id": "I0200", "action": "retain"}
+{"issue_id": 68, "status": "not_adopted", "reason": "依用户要求保留现有 Qwen/产品身份口径，不新增基座披露或保密样本。", "sample_id": "I0212", "action": "retain"}
+{"issue_id": 69, "sample_id": null, "status": "not_adopted", "reason": "湖北省武汉市武昌区为用户在本会话提供的公司所在地；保留这一授权业务事实，不宣称已由公网或营业执照核验为工商注册地址。", "action": "keep_current_protocol", "evidence": []}
+{"issue_id": 70, "status": "not_adopted", "reason": "材料解读、报告文字支持未改变能碳文字辅助定位；两句话要求满足，不统一为更长标准句。", "sample_id": "I0223", "action": "retain"}
+{"issue_id": 71, "status": "not_adopted", "reason": "材料解读、报告文字支持未改变能碳文字辅助定位；两句话要求满足，不统一为更长标准句。", "sample_id": "I0224", "action": "retain"}
+{"issue_id": 72, "status": "not_adopted", "reason": "已确认产品名称及研发主体可保留；新增基座披露口径/样本未经本任务授权，不新增也不否认基座。", "sample_id": "I0045", "action": "retain"}
+{"issue_id": 73, "status": "not_adopted", "reason": "已确认产品名称及研发主体可保留；新增基座披露口径/样本未经本任务授权，不新增也不否认基座。", "sample_id": "I0069", "action": "retain"}
+{"issue_id": 74, "status": "not_adopted", "reason": "已确认产品名称及研发主体可保留；新增基座披露口径/样本未经本任务授权，不新增也不否认基座。", "sample_id": "I0073", "action": "retain"}
+{"issue_id": 75, "status": "not_adopted", "reason": "报告文本编写与报告文本支持不构成实质身份矛盾；未承诺代替专业决策，不为措辞统一重写。", "sample_id": "I0009", "action": "retain"}
+{"issue_id": 76, "status": "not_adopted", "reason": "依用户要求保持现有产品身份口径，不新增基座披露、否认或相关训练样本。", "sample_id": "I0097", "action": "retain"}
+{"issue_id": 77, "sample_id": null, "status": "partly_accept", "reason": "两份导出存在模式与题型相关性，但完整数据还含非思考通用与业务样本。记为后续双模式编排实验议题；本轮仅内容返修，不新增50–80条或改变曝光。", "action": "keep_current_protocol", "evidence": []}
+{"issue_id": 78, "sample_id": null, "status": "partly_accept", "reason": "重复身份短句可能产生副作用，尚未证明为历史复述的根因。修明确错误和无关推定；不按单一条数阈值去重或改身份倍率，最终报告监督token占比。", "action": "keep_current_protocol", "evidence": []}
+{"issue_id": 79, "status": "partly_accept", "reason": "接受误区标题与正确命题错配；定义后必须调用才能生效并非无条件正确，因此用准确补充说明替换整个混乱段落。", "sample_id": "G0023", "action": "repair"}
+{"issue_id": 80, "status": "partly_accept", "reason": "接受MV3时效问题并更新；XPath可见于某些扩展的高级规则，不能一概说不存在，但不应列作通用主流语法。", "sample_id": "G0053", "action": "repair"}
+{"issue_id": 81, "status": "partly_accept", "reason": "接受例句与列出形式错配；不同层次的开头说明正确，应保留而非删除。", "sample_id": "G0054", "action": "repair"}
+{"issue_id": 82, "status": "accept", "reason": "准确写为形式上把z及其共轭视为独立变量，并与实部虚部导数联系，不将两种坐标说成同一概念。", "sample_id": "G0061", "action": "repair"}
+{"issue_id": 83, "status": "partly_accept", "reason": "姓名混写属实；对物暴力与对人压制反抗并非必然矛盾，但原论证未清楚区分，具体定性仍需专业核实，故隔离。", "sample_id": "G0107", "action": "quarantine"}
+{"issue_id": 84, "status": "not_adopted", "reason": "原任务为原文信息抽取，并未要求实体纠错或标准化；保留原文错别字不等于宣称现实片名如此。", "sample_id": "G0141", "action": "retain"}
+{"issue_id": 85, "status": "accept", "reason": "统一为5天示例，去除原稿路线时长自相矛盾及前置泛化补丁；开放核验放到实际订票步骤。", "sample_id": "G0167", "action": "repair"}
+{"issue_id": 86, "status": "accept", "reason": "春夏绿色与秋季花青素合成分开叙述，明确糖分在叶内积累的位置，不以转运到树干解释叶内积累。", "sample_id": "G0170", "action": "repair"}
+{"issue_id": 87, "status": "accept", "reason": "用正确的音乐与舞种关系直接替换自相矛盾例子，删除不能据此概括的补丁句。", "sample_id": "G0178", "action": "repair"}
+{"issue_id": 88, "status": "accept", "reason": "保留可执行的总成本比较方法和明确假设例子；修正席别与时间无关、军人优惠泛化、城际必便宜及报销只能某渠道等残留，去除对已删说法的编辑性否定，具体优惠按官方适用条件。", "sample_id": "G0196", "action": "repair"}
+{"issue_id": 89, "status": "accept", "reason": "保留规划示例；入门学习与PMP报考区分，修正GTD清单用途和不可衡量的5%优化，数字明确为可调整示例。", "sample_id": "G0211", "action": "repair"}
+{"issue_id": 90, "status": "partly_accept", "reason": "整鸡按20分钟/磅直接推40分钟、不同部位混用总重、骨头隔热解释和回温要求在思考中反复出现；题目缺部位/解冻状态，不能用一张表补全。165°F原则正确，但修复需广泛重写，隔离。", "sample_id": "G0213", "action": "quarantine"}
+{"issue_id": 91, "status": "accept", "reason": "原回答缺英国图书馆且对中国国图差距趋势无依据，已修正。", "sample_id": "G0265", "action": "repair"}
+{"issue_id": 92, "status": "accept", "reason": "明星例子不能证明身高劣势补偿，替换为直接相关的位置差异。", "sample_id": "G0281", "action": "repair"}
+{"issue_id": 93, "status": "accept", "reason": "块内插补随分块改变结果，原结尾仅承认高内存而未完成任务；现改为真实流式输出与全局统计。", "sample_id": "G0297", "action": "repair"}
+{"issue_id": 94, "status": "accept", "reason": "榴莲前后冲突、儿童口味商品和地域推断成立，已在相关段同步处理。", "sample_id": "G0307", "action": "repair"}
+{"issue_id": 95, "status": "accept", "reason": "修复登录周上限冲突；按有效帮助计分，进度称号与专业能力区分，奖励预算先试点。", "sample_id": "G0352", "action": "repair"}
+{"issue_id": 96, "status": "accept", "reason": "接受全部具体错误，完整示例原本的min-width:0保留。", "sample_id": "G0375", "action": "repair"}
+{"issue_id": 97, "status": "accept", "reason": "删除不适当案例归类和泛化保护强度，按宪法原文区分条款。", "sample_id": "G0398", "action": "repair"}
+{"issue_id": 98, "status": "accept", "reason": "区分各算法鲁棒性、局部特征与物体检测；补真正学习型特征/匹配方法和SURF构建限制。", "sample_id": "G0427", "action": "repair"}
+{"issue_id": 99, "status": "accept", "reason": "原主示例只收集stderr，未覆盖普通输出；现完成字面文件名下的stdout重定向并保留其他流的选项。", "sample_id": "G0014", "action": "repair"}
+{"issue_id": 100, "status": "accept", "reason": "补足最相关机制并把结论改成清晰的体系区分。", "sample_id": "G0033", "action": "repair"}
+{"issue_id": 101, "status": "accept", "reason": "原回答未采用角色口吻；改为DeleteBtn第一人称直接提供使用建议。", "sample_id": "G0114", "action": "repair"}
+{"issue_id": 102, "status": "accept", "reason": "正文须明确题干未给选项，并将ReLU建议限定为题设诊断下的候选方向。", "sample_id": "G0152", "action": "repair"}
+{"issue_id": 103, "status": "accept", "reason": "原代码只写一次且衰减按样本过快，不能实现三声；已完整重做生成代码。", "sample_id": "G0280", "action": "repair"}
+{"issue_id": 104, "status": "partly_accept", "reason": "补全蜂窝隧道操作并明确Vite7依赖、资源入口、端口与HMR排查；纠正二维码和版本归属。已有host-header=localhost可满足默认Host检查，不能机械新增allowedHosts=true。", "sample_id": "G0364", "action": "repair"}
+{"issue_id": 105, "status": "accept", "reason": "接受编号、节奏及类型问题；题目可容纳横跨谍战和科幻的片单，不强求每部同时属于两类。", "sample_id": "G0368", "action": "repair"}
+{"issue_id": 106, "status": "partly_accept", "reason": "题面并非完全无意义，但术语和指标对象混乱，缺少确定工艺阈值的必要上下文。", "sample_id": "G0008", "action": "quarantine"}
+{"issue_id": 107, "status": "not_adopted", "reason": "虽表述不顺，但论坛、地点、色彩趋势及消息真相解谜场景可理解，能够承接创作，不应机械视为乱码删除。", "sample_id": "G0115", "action": "repair"}
+{"issue_id": 108, "status": "partly_accept", "reason": "接受think重复绕行的问题，已压缩并修正从属关系泛化；题干虽矛盾但可用于合理澄清，不必改题或删除。", "sample_id": "G0136", "action": "repair"}
+{"issue_id": 109, "status": "accept", "reason": "确有输入污染与关键上下文缺失，隔离保留原文，不重写题干或自选语言补造任务。", "sample_id": "G0327", "action": "quarantine"}
+{"issue_id": 110, "status": "partly_accept", "reason": "并非整体乱码，但“纠结/集结”、队列与缺席关系不明，影响可判定性。", "sample_id": "G0372", "action": "quarantine"}
+{"issue_id": 111, "status": "accept", "reason": "明确的上一轮助手文本污染。", "sample_id": "G0374", "action": "quarantine"}
+{"issue_id": 112, "status": "accept", "reason": "题干“钊zha…模教研组”无法确定团队、论文或成果；正文将猜测概述当作最新研究并援引无对应证据的标准更新，不能在保留原题前提下可靠局部修复，隔离。", "sample_id": "G0497", "action": "quarantine"}
+{"issue_id": 113, "status": "accept", "reason": "无法识别SPO-of-One所属接口或“大多数人未注意到”的证据；正文长篇推测实际契约，并混淆NULL与undefined及语言错误处理。不能可靠局部修正且不擅自重写题干，隔离；不据此断言原术语必然无意义。", "sample_id": "G0515", "action": "quarantine"}
+{"issue_id": 114, "status": "not_adopted", "reason": "当前成品已经采用说明缺输入、再给明确示例的允许处理方式。", "sample_id": "G0064", "action": "retain"}
+{"issue_id": 115, "status": "not_adopted", "reason": "当前答案已经标为示例并索取具体输入，符合允许的缺输入处理；不机械隔离或重写。", "sample_id": "G0070", "action": "retain"}
+{"issue_id": 116, "status": "accept", "reason": "明确指出缺少的软件与选项，不再把猜测的配置项宣布为正确答案。", "sample_id": "G0077", "action": "repair"}
+{"issue_id": 117, "status": "not_adopted", "reason": "现正文首句已经明确索要选项；不应因缺选项删除可用于澄清的问答。", "sample_id": "G0121", "action": "repair"}
+{"issue_id": 118, "status": "not_adopted", "reason": "缺实际订单本身不使澄清加假设示例答案错误；当前没有冒充真实输入，不需补编题干。", "sample_id": "G0142", "action": "retain"}
+{"issue_id": 119, "status": "not_adopted", "reason": "全文核对：题干未附大纲，回答先询问缺失要素，并明确标注所给为示例大纲；没有冒充用户提供的内容，think 与正文一致，无需为统一格式改写。", "sample_id": "G0200", "action": "retain"}
+{"issue_id": 120, "status": "partly_accept", "reason": "缺文章时索取输入是正确任务行为；同步think发现缺文，移除无依据2000字阈值及信息完整保证。", "sample_id": "G0245", "action": "repair"}
+{"issue_id": 121, "status": "partly_accept", "reason": "正文已说明缺代码并用自拟示例，不隔离；同步think输入状态，修“字典本身只含键”与解包错误适用范围。", "sample_id": "G0248", "action": "repair"}
+{"issue_id": 122, "status": "partly_accept", "reason": "确认缺少段落，正文现有澄清已合理完成当前可做部分，不因同类样本长度不同而判错；修正think输入归属。", "sample_id": "G0266", "action": "repair"}
+{"issue_id": 123, "status": "not_adopted", "reason": "该样本已经按建议说明缺少要点(3)和选项并请求补充，思考与正文一致，不存在需统一修复的实质错误。", "sample_id": "G0343", "action": "retain"}
+{"issue_id": 124, "status": "partly_accept", "reason": "原答已明确缺要求，并非完全未澄清；本轮保留这一处理并修正旁支代码语义。", "sample_id": "G0407", "action": "repair"}
+{"issue_id": 125, "status": "accept", "reason": "保留缺输入题干，直接请求原句。", "sample_id": "G0420", "action": "repair"}
+{"issue_id": 126, "status": "accept", "reason": "确认输入污染和索引标签前提错误；本轮不改题干，隔离该记录及原曝光。", "sample_id": "G0129", "action": "quarantine"}
+{"issue_id": 127, "status": "partly_accept", "reason": "确需说明看不到文档；原答开头其实已请求上下文，CSV称只在末尾澄清不准确。现将缺失材料与可做分析更明确。", "sample_id": "G0328", "action": "repair"}
+{"issue_id": 128, "status": "partly_accept", "reason": "缺少日期和数据字段确需界定；但原题是over 457 million，下界与500m/700m并不矛盾，不能机械判定数值错误。", "sample_id": "G0333", "action": "repair"}
+{"issue_id": 129, "status": "accept", "reason": "原答忽视Wi-Fi语境中MCS可能性，未完成任务；将其作为待确认解释而非断言用户确有笔误。", "sample_id": "G0342", "action": "repair"}
+{"issue_id": 130, "status": "accept", "reason": "缺少规则定义及行为事实，确定扰乱结论不成立；不以自造新情节修复。", "sample_id": "G0372", "action": "quarantine"}
+{"issue_id": 131, "status": "accept", "reason": "不否定未核实案例一定发生，但也不把它们当查证事实或继续编造细节；避免年代与当前性混淆。", "sample_id": "G0396", "action": "repair"}
+{"issue_id": 132, "status": "accept", "reason": "直接澄清前提，删去无依据的普遍化和称谓等级解释。", "sample_id": "G0417", "action": "repair"}
+{"issue_id": 133, "status": "accept", "reason": "澄清任务并给条件化润色，删除无依据品牌效果、高价值客户及次日补货等扩展。", "sample_id": "G0422", "action": "repair"}
+{"issue_id": 134, "status": "partly_accept", "reason": "明确角色是助手的虚构讲解风格，不把用户认作13岁历史爱好者；保留平台未明和假设示例边界，不将简繁差异单独当作事实错误。", "sample_id": "G0499", "action": "repair"}
+{"issue_id": 135, "status": "accept", "reason": "接受查答案的教育导向问题，保留可执行的求助与补交方法。", "sample_id": "G0385", "action": "repair"}
+{"issue_id": 136, "status": "partly_accept", "reason": "接受结论未经证实、think与正文界限不清；假设例子本可成立，但改用无具体任务归属的数值例子以消除歧义。", "sample_id": "G0005", "action": "repair"}
+{"issue_id": 137, "status": "accept", "reason": "正文直接填阈值，末尾再限定质量基准，仍未建立题面所问空气指标，结论不能可靠成立。", "sample_id": "G0008", "action": "quarantine"}
+{"issue_id": 138, "status": "accept", "reason": "原think确实遗漏缺选项，已在开头识别并与正文对齐。", "sample_id": "G0121", "action": "repair"}
+{"issue_id": 139, "status": "accept", "reason": "同步纠正 think/正文把 AST 自动视为跨语言统一格式的泛化，并将作用域/类型附加分析的必要条件自然纳入句子，保留结构化操作带来的贡献。", "sample_id": "G0197", "action": "repair"}
+{"issue_id": 140, "status": "partly_accept", "reason": "缺文章时索取输入是正确任务行为；同步think发现缺文，移除无依据2000字阈值及信息完整保证。", "sample_id": "G0245", "action": "repair"}
+{"issue_id": 141, "status": "partly_accept", "reason": "正文已说明缺代码并用自拟示例，不隔离；同步think输入状态，修“字典本身只含键”与解包错误适用范围。", "sample_id": "G0248", "action": "repair"}
+{"issue_id": 142, "status": "accept", "reason": "think虚构用户例子，与正文请求补充矛盾，已同步修正。", "sample_id": "G0266", "action": "repair"}
+{"issue_id": 143, "status": "partly_accept", "reason": "五个主喻改为潮汐、野火、河流、彗尾、极地风，满足自然现象/天体要求与至少12行；诗中夸张不当科学机制判错。", "sample_id": "G0358", "action": "repair"}
+{"issue_id": 144, "status": "accept", "reason": "题干“钊zha…模教研组”无法确定团队、论文或成果；正文将猜测概述当作最新研究并援引无对应证据的标准更新，不能在保留原题前提下可靠局部修复，隔离。", "sample_id": "G0497", "action": "quarantine"}
+{"issue_id": 145, "status": "partly_accept", "reason": "接受开场流程与成品冲突及水流论据不顺；创作中的回忆与昼夜转换不必全部当事实矛盾，保留完整故事。", "sample_id": "G0047", "action": "repair"}
+{"issue_id": 146, "status": "partly_accept", "reason": "直接呈现已写成的完整故事，去等待确认设定与后续提纲；明确养父消除身世歧义，保持小狗身份并修末句。", "sample_id": "G0361", "action": "repair"}
+{"issue_id": 147, "status": "accept", "reason": "修复故事任务交付与人物/事件连贯性；不将真实技术指标或个人健康信息作为未经说明的监控卖点。", "sample_id": "G0392", "action": "repair"}
+{"issue_id": 148, "status": "accept", "reason": "去模板确认语和未经展示的后续伏笔，以一致人物、赛制与比赛动作直接创作。", "sample_id": "G0441", "action": "repair"}
+{"issue_id": 149, "status": "partly_accept", "reason": "去除先列梗概征询及未展开的续写清单，直接续写；删除不可靠初版年份，消除青年年龄歧义。重复人名与明确幻想情节本身不构成错误。", "sample_id": "G0476", "action": "repair"}
+{"issue_id": 150, "status": "accept", "reason": "题目中的团队政策未知，原示例却以our team作确定断言；改为中性确认问句。", "sample_id": "G0102", "action": "repair"}
+{"issue_id": 151, "status": "accept", "reason": "不把The Economist/BBC News概括为同一节目多语版，不列未经核实的r/SpanishPodcasts；保留实际可执行的目标语言搜索与试听方法。", "sample_id": "G0148", "action": "repair"}
+{"issue_id": 152, "status": "accept", "reason": "原文编造公司制度且写死年份；改写为不依赖这些资料的欢迎词，不用堆占位符替代正文。", "sample_id": "G0151", "action": "repair"}
+{"issue_id": 153, "status": "accept", "reason": "删除无来源减排数字和领先保证，完整改写为条件清晰的评估，不保留电报式补丁。", "sample_id": "G0192", "action": "repair"}
+{"issue_id": 154, "status": "accept", "reason": "保留虚构真人秀设定及人物冲突；将企划明确为虚构 reality-style 系列，移除未核实对标剧名，并修正将 Cops 归为转型真人秀的类型错误。", "sample_id": "G0199", "action": "repair"}
+{"issue_id": 155, "status": "accept", "reason": "具体片名来源不足，误诊故事未标虚构，已用真实可查资源与明确假设替换。", "sample_id": "G0277", "action": "repair"}
+{"issue_id": 156, "status": "accept", "reason": "配方直接写一致版本，删除无来源蓝色变体和贵族传说，修正grenadine作用。", "sample_id": "G0440", "action": "repair"}
+{"issue_id": 157, "status": "partly_accept", "reason": "移除“没有要求展示思考过程”的元话语；不接受整条题干无意义的判断。", "sample_id": "G0115", "action": "repair"}
+{"issue_id": 158, "status": "accept", "reason": "已直接给出正向PulseAudio配置与诊断步骤，不保留被删建议的否定备注；澄清系统名称并同步think。", "sample_id": "G0125", "action": "repair"}
+{"issue_id": 159, "status": "accept", "reason": "删除针对已不存在错误的否定备注，将传播路径的不确定性与正面历史叙述整合。", "sample_id": "G0131", "action": "repair"}
+{"issue_id": 160, "status": "accept", "reason": "原打印把向量近邻直接称为synonyms且ELMo否定句无上下文；均已改为正面解释并保持代码输出一致。", "sample_id": "G0135", "action": "repair"}
+{"issue_id": 161, "status": "accept", "reason": "正文未使用encoding参数，删去孤立纠错句；保留有用的UTC设置说明。", "sample_id": "G0144", "action": "repair"}
+{"issue_id": 162, "status": "accept", "reason": "将panic说明写成正向用途，删除孤立的“不能当初始化函数”纠错句；不删除必要启动/链接条件。", "sample_id": "G0153", "action": "repair"}
+{"issue_id": 163, "status": "accept", "reason": "删除林逋、陶渊明、柳永及其他跨代拼接，诗句归属准确；不再留下“不能将其归为唐诗”的纠错旁注。", "sample_id": "G0171", "action": "repair"}
+{"issue_id": 164, "status": "accept", "reason": "公式及投影区别成立；将结语中的旧错否定改为直接说明多维投影响应。", "sample_id": "G0207", "action": "repair"}
+{"issue_id": 165, "status": "accept", "reason": "区分BERT编码器与mBART完整seq2seq，去旧错否定；将未经实验的鲁棒性/翻译案例改为待检验策略和评价任务。", "sample_id": "G0246", "action": "repair"}
+{"issue_id": 166, "status": "accept", "reason": "区分BERT编码器与mBART完整seq2seq，去旧错否定；将未经实验的鲁棒性/翻译案例改为待检验策略和评价任务。", "sample_id": "G0246", "action": "repair"}
+{"issue_id": 167, "status": "not_adopted", "reason": "思考中说明避免无来源均值、区分站立触高与弹跳是合理证据规划，不自动是泄漏；保留。", "sample_id": "G0281", "action": "repair"}
+{"issue_id": 168, "status": "partly_accept", "reason": "原行文有重复且结论把联合条件缩成单一条件，已重整；不能删除关于零分布/表适用条件的真实限定。", "sample_id": "G0287", "action": "repair"}
+{"issue_id": 169, "status": "not_adopted", "reason": "原句对OpenTelemetry职责的限定真实且与DevSecOps工具选型相关，不能只因否定旧错误的形式判泄漏。", "sample_id": "G0292", "action": "repair"}
+{"issue_id": 170, "status": "accept", "reason": "六个月已不在案情中，反复否定该期限是不必要的补丁残留，现直接说明依法确定期限。", "sample_id": "G0317", "action": "repair"}
+{"issue_id": 171, "status": "accept", "reason": "相关补丁残句与具体版本技术归属问题成立，已以版本支持与实际兼容检查正面重整。", "sample_id": "G0332", "action": "repair"}
+{"issue_id": 172, "status": "accept", "reason": "保持示例品酒而非实测；清除气候、酒精度及工艺推断，去否定旧错误的句子并修残句。", "sample_id": "G0351", "action": "repair"}
+{"issue_id": 173, "status": "accept", "reason": "移除对已删错误的纠错备注，保留真实的padding及因果边界。", "sample_id": "G0366", "action": "repair"}
+{"issue_id": 174, "status": "accept", "reason": "不用不能混同等旁注，直接写材料到芯片的生产分工。", "sample_id": "G0390", "action": "repair"}
+{"issue_id": 175, "status": "accept", "reason": "已删无前文对应的摇晃综合征段落。", "sample_id": "G0412", "action": "repair"}
+{"issue_id": 176, "status": "accept", "reason": "用工具定位直接回答，不再保留script setup转换选项式API之类的纠错备注。", "sample_id": "G0437", "action": "repair"}
+{"issue_id": 177, "status": "accept", "reason": "保留ToF公式和融合应用；去孤立旧错否定，设备精度/光照边界融入对应段落，删无关BEVFormer对照及重复词。", "sample_id": "G0463", "action": "repair"}
+{"issue_id": 178, "status": "partly_accept", "reason": "保留缺少姓名日期时明确示例的必要边界；OAuth及全天次日结束规则正确，改去图标否定补丁与重复日期扩展误导。只静态解析代码和本地日期计算，不调用Calendar。", "sample_id": "G0493", "action": "repair"}
+{"issue_id": 179, "status": "accept", "reason": "标题已改为修复错误方法，代码与上下文均推荐randint，不再声称该段使用random.random。", "sample_id": "G0040", "action": "repair"}
+{"issue_id": 180, "status": "accept", "reason": "重写首句、分点与结论，消除默认NodeManager后再否定默认的表达冲突。", "sample_id": "G0075", "action": "repair"}
+{"issue_id": 181, "status": "accept", "reason": "原标题承诺列支持方论据，条目却是反驳，结构矛盾成立，已自然重排。", "sample_id": "G0313", "action": "repair"}
+{"issue_id": 182, "status": "partly_accept", "reason": "采纳思考/正文冲突与残留问题；披露演员本身并不使角色扮演无效，无须机械改成欺骗实验，须明确所研究的是模拟社交线索而非真实同伴信念。", "sample_id": "G0338", "action": "repair"}
+{"issue_id": 183, "status": "accept", "reason": "统一蒜是常见可选调味料的口径，去真实性与地区用量猜测，短炒避免焦苦。", "sample_id": "G0348", "action": "repair"}
+{"issue_id": 184, "status": "accept", "reason": "接受标题残留及思考同步问题；保留电池供能角色未明确的必要边界。", "sample_id": "G0380", "action": "repair"}
+{"issue_id": 185, "status": "partly_accept", "reason": "接受空表、电报体及帮助性下降，已换成具体行动与成本算法；不采纳在国别和岗位未知时填薪资范围或虚构个人评分。", "sample_id": "G0067", "action": "repair"}
+{"issue_id": 186, "status": "partly_accept", "reason": "不制造10%-20%通用标准，补比例公式和明确假设示例；同步去思考中的无依据区间，修正地域价格与比例混同及必需/可选支出。", "sample_id": "G0215", "action": "repair"}
+{"issue_id": 187, "status": "accept", "reason": "补回有时间/地域/基线的原研究森林损失数据及印尼官方许可政策，去修订备注；泥炭火灾保留NASA支持的定性事实，不制造全球CO₂比例。", "sample_id": "G0227", "action": "repair"}
+{"issue_id": 188, "status": "partly_accept", "reason": "创作无需编现实数据；给具体自拟赛季关卡，统一公平计分，社交传播奖励不进入竞技榜，难度分层同榜一致。", "sample_id": "G0244", "action": "repair"}
+{"issue_id": 189, "status": "partly_accept", "reason": "接受表格信息不足及正文排名不一致；不为比较杜撰统一基准或年份，改为具体结构差异。", "sample_id": "G0370", "action": "repair"}
+{"issue_id": 190, "status": "accept", "reason": "补回可核实实例和实质分析；不为凑内容发明统计结果，也不保留已删错误对应的空洞免责句。", "sample_id": "G0409", "action": "repair"}
+{"issue_id": 191, "status": "accept", "reason": "虚构游戏设计可保留；统一中文词及诅咒遗产比例，奖励仅来自未分配池。", "sample_id": "G0208", "action": "repair"}
+{"issue_id": 192, "status": "partly_accept", "reason": "记录包含自写/改写并非官方原文的来源区别；按用户要求保留 swift/self-cognition lineage 标签及权重归类，不改 dataset。", "sample_id": "I0152", "action": "repair"}
+{"issue_id": 193, "status": "partly_accept", "reason": "记录包含自写/改写并非官方原文的来源区别；按用户要求保留 swift/self-cognition lineage 标签及权重归类，不改 dataset。", "sample_id": "I0156", "action": "retain"}
+{"issue_id": 194, "status": "partly_accept", "reason": "承认含自写/改写不等于官方原文；保留 lineage dataset 和既有身份权重分类，来源差异在说明记录。", "sample_id": "I0161", "action": "retain"}
+{"issue_id": 195, "status": "partly_accept", "reason": "承认含自写/改写不等于官方原文；保留 lineage dataset 和既有身份权重分类，来源差异在说明记录。", "sample_id": "I0165", "action": "repair"}
+{"issue_id": 196, "status": "partly_accept", "reason": "承认含自写/改写不等于官方原文；保留 lineage dataset 和既有身份权重分类，来源差异在说明记录。", "sample_id": "I0191", "action": "retain"}
+{"issue_id": 197, "status": "partly_accept", "reason": "承认含自写/改写不等于官方原文；保留 lineage dataset 和既有身份权重分类，来源差异在说明记录。", "sample_id": "I0193", "action": "retain"}
+{"issue_id": 198, "status": "partly_accept", "reason": "承认含自写/改写不等于官方原文；保留 lineage dataset 和既有身份权重分类，来源差异在说明记录。", "sample_id": "I0209", "action": "retain"}
+{"issue_id": 199, "status": "partly_accept", "reason": "承认含自写/改写不等于官方原文；保留 lineage dataset 和既有身份权重分类，来源差异在说明记录。", "sample_id": "I0214", "action": "repair"}
+{"issue_id": 200, "status": "partly_accept", "reason": "记录包含自写/改写并非官方原文的来源区别；按用户要求保留 swift/self-cognition lineage 标签及权重归类，不改 dataset。", "sample_id": "I0088", "action": "repair"}
+{"issue_id": 201, "status": "partly_accept", "reason": "记录包含自写/改写并非官方原文的来源区别；按用户要求保留 swift/self-cognition lineage 标签及权重归类，不改 dataset。", "sample_id": "I0090", "action": "retain"}
+{"issue_id": 202, "sample_id": null, "status": "partly_accept", "reason": "训练与推理组合必须可追溯，但不要求文字System必须完全相同。本轮沿用v14/v20无训练System与既有推理System；本次不能混入System实验。", "action": "keep_current_protocol", "evidence": []}
+{"issue_id": 203, "sample_id": null, "status": "not_adopted", "reason": "general导出是对助手内容的无损拆分：<think>+thinking+</think>+answer。段首换行属于冻结原文，identity使用messages不代表格式不一致；统一strip会无端改变token。", "action": "keep_current_protocol", "evidence": []}
+{"issue_id": 204, "status": "not_adopted", "reason": "不采纳未提供领域口径的强制GWP值要求；保留100年与评估版本边界。修CO₂单一寿命、含氟气体一概而论、飓风频率推断，补水汽反馈及有年份的全球CO₂值。", "sample_id": "G0240", "action": "repair"}
+{"issue_id": 205, "status": "accept", "reason": "改正把现代陪审制/代议制直接追溯雅典的单线叙事，保留思想启发与制度差异；同步清除 think 中现代不存在直接民主和现代行政结构古代完全没有的过强判断。", "sample_id": "G0205", "action": "repair"}
+{"issue_id": 206, "status": "partly_accept", "reason": "编译阶段断言确实不准确，已修；用户询问通常方法，第一人称不自动构成人类身份冒充。", "sample_id": "G0279", "action": "repair"}
+{"issue_id": 207, "status": "not_adopted", "reason": "单位与基准边界有实质意义，不能仅因正式语气删去；该样本隔离的原因是题面与结论不可确定。", "sample_id": "G0008", "action": "quarantine"}
+{"issue_id": 208, "status": "not_adopted", "reason": "指标与窗口边界确有事实依据，不能删除；本次重写是为修正公式口径和全文一致性，不因正式限定语本身判错。", "sample_id": "G0022", "action": "repair"}
+{"issue_id": 209, "status": "not_adopted", "reason": "版本依赖特效的限定是合理事实边界，不能仅因命中短语删除。", "sample_id": "G0029", "action": "repair"}
+{"issue_id": 210, "status": "not_adopted", "reason": "事实边界不能因正式措辞删除；重写是为去除原混淆并保持前后一致。", "sample_id": "G0033", "action": "repair"}
+{"issue_id": 211, "status": "not_adopted", "reason": "量子态传输与实体传送的边界是必要事实，不因正式语气删除；本次重写修复独立发现的物理误述。", "sample_id": "G0059", "action": "repair"}
+{"issue_id": 212, "status": "not_adopted", "reason": "实际无所指补丁短语，输入不足的说明必要，不能仅依脚本标签润色。", "sample_id": "G0064", "action": "retain"}
+{"issue_id": 213, "status": "partly_accept", "reason": "不以限定词本身判错；本轮因输入污染隔离，不使用修后回答。", "sample_id": "G0129", "action": "quarantine"}
+{"issue_id": 214, "status": "partly_accept", "reason": "同步纠正 think/正文把 AST 自动视为跨语言统一格式的泛化，并将作用域/类型附加分析的必要条件自然纳入句子，保留结构化操作带来的贡献。", "sample_id": "G0197", "action": "repair"}
+{"issue_id": 215, "status": "not_adopted", "reason": "保留安全剂量边界，不因脚本命中删除；将呈香成分与产品主质量成分区分，天然等同归入合成的描述而非互斥法定类别，移除未核实肉桂精配方。", "sample_id": "G0218", "action": "repair"}
+{"issue_id": 216, "status": "not_adopted", "reason": "全文think关于局限与跨学科的内容符合题意；未见报告指定的实际错句，不能按否定词/正式语气机械删除。", "sample_id": "G0285", "action": "repair"}
+{"issue_id": 217, "status": "not_adopted", "reason": "think对参与程度和实际危害待查的提醒实质相关，不能按正式语气删除。", "sample_id": "G0317", "action": "repair"}
+{"issue_id": 218, "status": "not_adopted", "reason": "异步结果需要显式传递的限制本身正确，不能按正式语气删除；本次修正的是原有分层含混。", "sample_id": "G0325", "action": "repair"}
+{"issue_id": 219, "status": "not_adopted", "reason": "全文所见思考没有脚本描述的具体对冲句；实际阻断是题干污染和目标不明。", "sample_id": "G0374", "action": "quarantine"}
+{"issue_id": 220, "status": "not_adopted", "reason": "关键词命中不构成缺陷，完整推导与正文无矛盾。", "sample_id": "G0394", "action": "retain"}
+{"issue_id": 221, "status": "partly_accept", "reason": "删除编辑残留；保留有临床意义的观察和就医条件，不机械清除限定词。", "sample_id": "G0412", "action": "repair"}
+{"issue_id": 222, "status": "partly_accept", "reason": "不以出现不能据此为错因；原思考改为直接围绕创作任务和证据边界。", "sample_id": "G0413", "action": "repair"}
+{"issue_id": 223, "status": "partly_accept", "reason": "问题在围绕自拟句过度推测，不在限定词本身；现已直接围绕缺失输入推理。", "sample_id": "G0420", "action": "repair"}
+{"issue_id": 224, "status": "partly_accept", "reason": "保留未明确疗法方案与个体反应的必要边界；删除被删量表的否定句和渐进刺激旧补丁，把音乐选择及评估写成直接行动；不把所有悲伤歌曲视为风险。", "sample_id": "G0509", "action": "repair"}
+{"issue_id": 225, "status": "partly_accept", "reason": "接受旧补丁碎片与重复表达问题；等功、角度及阻力假设具有必要物理意义，必须保留并整合，不能为流畅删掉。", "sample_id": "G0056", "action": "repair"}
+{"issue_id": 226, "status": "partly_accept", "reason": "原句多为完整且必要的事实边界，不应简单删除；已合并为连贯论述，同时改正剩余过强效能主张。", "sample_id": "G0109", "action": "repair"}
+{"issue_id": 227, "status": "accept", "reason": "开头design与debated/interviewed/presented时态断裂；已统一为现在时并自然回扣项目。", "sample_id": "G0122", "action": "repair"}
+{"issue_id": 228, "status": "accept", "reason": "将引语性质说明移到开头，明确为现代概括；同步区分 hexis 的稳定品格与简单重复，避免将伦理行为描述为自动、无须判断。未未经核实添加 Durant 的逐字出处。", "sample_id": "G0195", "action": "repair"}
+{"issue_id": 229, "status": "accept", "reason": "去除思考中服务器允许HTTP即可决定浏览器回退的重复误说，保留客户端前提；补足SSL stripping场景、HSTS首访与DNS/TLS区别。", "sample_id": "G0224", "action": "repair"}
+{"issue_id": 230, "status": "accept", "reason": "删除数字后留下逗号残句与突兀分号，已改为完整正面陈述。", "sample_id": "G0314", "action": "repair"}
+{"issue_id": 231, "status": "accept", "reason": "把现存五节连续重编号，不补回无依据奖励机制。", "sample_id": "G0029", "action": "repair"}
+{"issue_id": 232, "status": "accept", "reason": "列表1、2、4断号，改为1、2、3。", "sample_id": "G0095", "action": "repair"}
+{"issue_id": 233, "status": "accept", "reason": "原章节跳过4；改为完整、连贯的描写段落，无需编号分析框架。", "sample_id": "G0140", "action": "repair"}
+{"issue_id": 234, "status": "accept", "reason": "原四节删后从三跳到五，已形成连续三节。", "sample_id": "G0274", "action": "repair"}
+{"issue_id": 235, "status": "not_adopted", "reason": "脚本命中未发现实质问题；不能把必要的筛查边界删掉。", "sample_id": "G0034", "action": "retain"}
+{"issue_id": 236, "status": "not_adopted", "reason": "不等于句解释实际易混淆机制，并未否定已经删除的对象，不应因关键词删除。", "sample_id": "G0043", "action": "retain"}
+{"issue_id": 237, "status": "not_adopted", "reason": "不能据此判断高于平均的限定正确，保留；本次修复是独立发现的分数更新机制误述。", "sample_id": "G0051", "action": "repair"}
+{"issue_id": 238, "status": "not_adopted", "reason": "CSV本身标明未发现实质错误；不能仅因必要限制语出现而删改。", "sample_id": "G0162", "action": "retain"}
+{"issue_id": 239, "status": "partly_accept", "reason": "所列限制词本身没有错误，但全文发现功效标题与正文不一致，按实际问题修正。", "sample_id": "G0163", "action": "repair"}
+{"issue_id": 240, "status": "not_adopted", "reason": "仍需用于机构责任的正常语义，不是对已删句的纠错残留。", "sample_id": "G0186", "action": "retain"}
+{"issue_id": 241, "status": "partly_accept", "reason": "保留机型手册必要边界；修灰度旧错否定为正面判断，去无型号跨机墨盒测试、系统恢复及固定维护周期。", "sample_id": "G0250", "action": "repair"}
+{"issue_id": 242, "status": "not_adopted", "reason": "全文未见命中词导致的实质错误；求助渠道以当地官方信息为准是必要适用性说明。", "sample_id": "G0303", "action": "retain"}
+{"issue_id": 243, "status": "not_adopted", "reason": "命中短语均为必要判断边界，未见实质逻辑错误或要求读者了解旧补丁的内容。", "sample_id": "G0311", "action": "retain"}
+{"issue_id": 244, "status": "not_adopted", "reason": "不等于与不能仅用于区分法律责任和舆论判断，没有指向已删除句子的必要性问题；保留。", "sample_id": "G0319", "action": "repair"}
+{"issue_id": 245, "status": "not_adopted", "reason": "不能仅看紫白皮等限定有实际农业意义，不能按短语删去。另经全文发现多项未核实/过度统一操作，独立修成实用答案。", "sample_id": "G0323", "action": "repair"}
+{"issue_id": 246, "status": "not_adopted", "reason": "全文以合作动机、角色贡献和实际协作作条件分析；“不能仅”回应原题二分前提，未否定已删材料，不应因脚本词命中删除必要判断。", "sample_id": "G0356", "action": "retain"}
+{"issue_id": 247, "status": "not_adopted", "reason": "仅关键词命中，没有实质错误或编辑残留。", "sample_id": "G0414", "action": "retain"}
+{"issue_id": 248, "status": "partly_accept", "reason": "舒适为准是正常限制，保留；删除无上下文的具体疾病对冲并改成直接处理不适。", "sample_id": "G0429", "action": "repair"}
+{"issue_id": 249, "status": "accept", "reason": "除混合语言外，发现Ubuntu22.04微软源不提供.NET10，改为官方backports；明确HTTP示例和Windows运行边界，修正反代IPv4及升级头。", "sample_id": "G0231", "action": "repair"}
+{"issue_id": 250, "status": "not_adopted", "reason": "未声称职位、经历或人类身份，助手可说明协助编码的方法；本次明确可执行范围，不机械删第一人称。", "sample_id": "G0279", "action": "repair"}
+{"issue_id": 251, "status": "partly_accept", "reason": "用户以真人称呼，开头简短澄清不是本人且不代其表达宗教观点；保留家庭关系的一般讨论，不加入无关全身份。", "sample_id": "G0461", "action": "repair"}
+{"issue_id": 252, "status": "not_adopted", "reason": "该短语保留地区可用性的真实边界，仅属风格偏好；无需为去补丁腔改写正确内容。", "sample_id": "G0006", "action": "retain"}
+{"issue_id": 253, "status": "not_adopted", "reason": "就医提醒具有医疗意义，不能以补丁句为由删除；概览未列迁延性分类是可接受的详略选择。", "sample_id": "G0012", "action": "retain"}
+{"issue_id": 254, "status": "accept", "reason": "采用CAS portfolio，并同步说明反思与学习成果证据的实际用途。", "sample_id": "G0016", "action": "repair"}
+{"issue_id": 255, "status": "accept", "reason": "未设定损伤或虚构植物，锯齿缘并非银杏叶的典型形态，局部修正即可。", "sample_id": "G0020", "action": "repair"}
+{"issue_id": 256, "status": "partly_accept", "reason": "承认两处技术架构容易误导并统一改好；原开头对提案性质的限定必要，保留。", "sample_id": "G0025", "action": "repair"}
+{"issue_id": 257, "status": "partly_accept", "reason": "接受题干无主题；通用框架不能替代未知主题的解释，因此先澄清而非添加假设主题。", "sample_id": "G0031", "action": "repair"}
+{"issue_id": 258, "status": "partly_accept", "reason": "确认缺少作者信息；通用框架可作补充，却不能替代针对该作者的结论，故先澄清。", "sample_id": "G0036", "action": "repair"}
+{"issue_id": 259, "status": "partly_accept", "reason": "接受蒸汽机膨胀并非一般等压例子；前提限定保护公式适用性，不能因为学术化而删去。", "sample_id": "G0038", "action": "repair"}
+{"issue_id": 260, "status": "not_adopted", "reason": "不改用户题干；语法不妨碍识别创作任务，不能仅因此隔离有效科幻样本。", "sample_id": "G0063", "action": "retain"}
+{"issue_id": 261, "status": "partly_accept", "reason": "不因补丁语气删正确规则；但该题无需这些法律旁支，原具体伤情百分比例子也不足以支持个案评级，故改为官网可直接支持的完整解释。", "sample_id": "G0071", "action": "repair"}
+{"issue_id": 262, "status": "partly_accept", "reason": "不把停止运营说法当已证事实；原题缺地区与主体资质，具名合作推荐本就缺适用依据，改为筛选活跃项目的方法。", "sample_id": "G0078", "action": "repair"}
+{"issue_id": 263, "status": "accept", "reason": "统一为刺绣工艺，不改其他设计设定。", "sample_id": "G0089", "action": "repair"}
+{"issue_id": 264, "status": "accept", "reason": "成人持续校准已有人体实验支持；修改正文两处早期限定并同步think。", "sample_id": "G0100", "action": "repair"}
+{"issue_id": 265, "status": "accept", "reason": "删除标准DataFrame列独立成为过滤子集的失败场景，并将非一维字段说明融入recarray条件。", "sample_id": "G0103", "action": "repair"}
+{"issue_id": 266, "status": "not_adopted", "reason": "没有具体主题仍可回答如何组织教学；答复未假装记得某课程内容，无需机械增加无法看见对话的声明。", "sample_id": "G0128", "action": "retain"}
+{"issue_id": 267, "status": "not_adopted", "reason": "该条本身为肯定观察，并无需要修复的问题。", "sample_id": "G0145", "action": "retain"}
+{"issue_id": 268, "status": "accept", "reason": "把C64称家庭电脑，加载等待改为磁带，避免用虚构角色台词传播可直接修正的常识错误。", "sample_id": "G0146", "action": "repair"}
+{"issue_id": 269, "status": "partly_accept", "reason": "原random变量未必导致运行错误，但与模块概念混用不清；更名rng并自然表述结果，不宣称随机结果唯一。", "sample_id": "G0154", "action": "repair"}
+{"issue_id": 270, "status": "accept", "reason": "将“被冷落数”改为清楚的隐私保护建议，并检查相关上下文一致性。", "sample_id": "G0155", "action": "repair"}
+{"issue_id": 271, "status": "accept", "reason": "修正不当手指数表述，同时校正活动对婴儿计数和执行指令的过高要求。", "sample_id": "G0161", "action": "repair"}
+{"issue_id": 272, "status": "not_adopted", "reason": "评审认可自拟示例；缺具体输入时提供清楚标注的处理示例可完成方法请求。", "sample_id": "G0165", "action": "retain"}
+{"issue_id": 273, "status": "accept", "reason": "修正reckone，不将虚构叙事当真实历史断言。", "sample_id": "G0168", "action": "repair"}
+{"issue_id": 274, "status": "not_adopted", "reason": "缺职位但明确标示示例和模板是可用答法，无需删去；另修正文里的绝对化岗位描述。", "sample_id": "G0173", "action": "repair"}
+{"issue_id": 275, "status": "not_adopted", "reason": "CSV为正面观察，未提出实质错误；保留澄清样本。", "sample_id": "G0177", "action": "retain"}
+{"issue_id": 276, "status": "accept", "reason": "使后文询问8%灯光音响与此前同一预算表一致。", "sample_id": "G0187", "action": "repair"}
+{"issue_id": 277, "status": "partly_accept", "reason": "数学例子和基线正确；去掉 think 中把低 F1 直接等同任意应用均差的剩余断言，保留阈值/成本边界。重复限定不是删除正确条件的理由。", "sample_id": "G0204", "action": "repair"}
+{"issue_id": 278, "status": "partly_accept", "reason": "保留学习/家庭活动建议与明确预算示例，修正新加坡湿热、英语及签证的残留误述；去除未核验的特定大象营推荐和不适合直接匹配的社交平台，补足季节/体力选择条件。", "sample_id": "G0206", "action": "repair"}
+{"issue_id": 279, "status": "not_adopted", "reason": "题目指定Cloud Scheduler；gen2函数、OIDC及Cloud Run Invoker匹配，未另荐Scheduled Queries不是实质错误。示例依赖IAM、模型/表及运行时配置，不代表已部署验证。", "sample_id": "G0212", "action": "retain"}
+{"issue_id": 280, "status": "partly_accept", "reason": "四方面未给定，可明确自拟；删除跨亚洲平台、伊斯兰国家及本地主流媒体等过度概括，保留市场调研与执行任务。", "sample_id": "G0219", "action": "repair"}
+{"issue_id": 281, "status": "accept", "reason": "所有数值手工复算一致；本地无pandas未安装，修正Series浮点展示及总结方法名称。", "sample_id": "G0229", "action": "repair"}
+{"issue_id": 282, "status": "partly_accept", "reason": "保留已限定的关联性，不删除必要边界；将同步脑活动等同共享情绪、脑区情理二分和治疗外推改为研究性表述；补2020原始注册复现实验的限定阴性结果。", "sample_id": "G0242", "action": "repair"}
+{"issue_id": 283, "status": "accept", "reason": "例子同默认包访问成立；修Class.forName未预加载即异常错误、JUnit版本说明和反射访问边界，保留现有代码。", "sample_id": "G0243", "action": "repair"}
+{"issue_id": 284, "status": "accept", "reason": "修树莓派ADC误称、库名/HDF5标题不符，并修串口sleep等于采样间隔的误导，加入超时与关闭资源。", "sample_id": "G0247", "action": "repair"}
+{"issue_id": 285, "status": "accept", "reason": "标题加粗标记确有残缺，已按同一序号连贯修复。", "sample_id": "G0255", "action": "repair"}
+{"issue_id": 286, "status": "not_adopted", "reason": "缺名称是输入条件，框架加待核表与补充请求属于合理处理；没有足够信息完成实际产品排名。独立发现的泛化另作修正。", "sample_id": "G0263", "action": "repair"}
+{"issue_id": 287, "status": "partly_accept", "reason": "确无原代码，通用示例可接受；清楚标为模拟并说明规则引擎边界，不虚构已改原系统。", "sample_id": "G0270", "action": "repair"}
+{"issue_id": 288, "status": "accept", "reason": "对话归属错误成立，改成朋友询问误拨经过。", "sample_id": "G0273", "action": "repair"}
+{"issue_id": 289, "status": "accept", "reason": "两项指标解释疑点成立；一般框架和回测提示本身不是错误，已保留并补全可检验规则。", "sample_id": "G0275", "action": "repair"}
+{"issue_id": 290, "status": "accept", "reason": "PBIS目标和叙事疗法场景确有混用，已正面表述对应方法。", "sample_id": "G0285", "action": "repair"}
+{"issue_id": 291, "status": "accept", "reason": "无预设window.name时通常为空字符串而非undefined；改为说明实际读取来源和初始状态。", "sample_id": "G0296", "action": "repair"}
+{"issue_id": 292, "status": "not_adopted", "reason": "上下文并未把蝎子当神话中唯一实际刑罚，鹰与肝脏仍在；保留授权的诗性比喻。", "sample_id": "G0308", "action": "retain"}
+{"issue_id": 293, "status": "not_adopted", "reason": "CSV误引题面为远在他乡，实际为远在家乡，因此我在家不构成所称矛盾；另修容易造成位置误解的一处措辞。", "sample_id": "G0318", "action": "repair"}
+{"issue_id": 294, "status": "not_adopted", "reason": "补充句直接解释工作场景的灾害来源，具有事实价值；没有把海啸误归气候灾害，应保留。", "sample_id": "G0326", "action": "retain"}
+{"issue_id": 295, "status": "not_adopted", "reason": "这里只在最后位置预测历史之后的一步，不含未来目标，未加逐位置因果mask不构成标签泄漏。若改逐位置预测才需重新设计mask。", "sample_id": "G0330", "action": "repair"}
+{"issue_id": 296, "status": "accept", "reason": "确认思考保留了过时弃用猜测；通用振动权限弹窗说法不准确，应说明用户激活和实现/用户设置约束。", "sample_id": "G0345", "action": "repair"}
+{"issue_id": 297, "status": "partly_accept", "reason": "采纳动机与收尾缺口；最近搬来与早年伪造失踪、犯走私罪与被栽赃杀人本可并存，无须取消反转，需把连接证据和责任讲清。", "sample_id": "G0347", "action": "repair"}
+{"issue_id": 298, "status": "accept", "reason": "按具体机型诊断过热，去过时工具、统一界限及未诊断即升级；低负载停转不必然故障。", "sample_id": "G0349", "action": "repair"}
+{"issue_id": 299, "status": "accept", "reason": "学期阶段按教学周而非1–2月，春季示例日期保留为示例；竞赛按通知适配。", "sample_id": "G0355", "action": "repair"}
+{"issue_id": 300, "status": "partly_accept", "reason": "不清除既存配子体与减少新增传播并非矛盾；接受夸大根除作用和结语衔接问题。", "sample_id": "G0365", "action": "repair"}
+{"issue_id": 301, "status": "partly_accept", "reason": "紫菜是否需泡洗依产品而定，改按包装；同时修正虾皮仅煮10秒等遗漏。", "sample_id": "G0369", "action": "repair"}
+{"issue_id": 302, "status": "partly_accept", "reason": "确认Make更名；Focus@Will“偏旧”本身不证明错误，但无须以音乐增强专注作为本题建议。", "sample_id": "G0379", "action": "repair"}
+{"issue_id": 303, "status": "partly_accept", "reason": "接受大象基因组大小动机错误；不采纳把O.vulgaris替换掉的必要性，原文没有声称它是首个测序章鱼。酵母已明确非动物，保留作对照。", "sample_id": "G0393", "action": "repair"}
+{"issue_id": 304, "status": "accept", "reason": "标题改为中性且与多种态度一致的表达。", "sample_id": "G0395", "action": "repair"}
+{"issue_id": 305, "status": "partly_accept", "reason": "接受三感与五感不一致；不把暖色必然违背镇静当普遍事实，改为由用户选择，去掉心率到情绪到色彩的未经验证控制。", "sample_id": "G0404", "action": "repair"}
+{"issue_id": 306, "status": "accept", "reason": "删去超出命名任务的危险维修旁支，保留最基本断电边界；不靠补一句安全提示继续推荐任意打磨。", "sample_id": "G0411", "action": "repair"}
+{"issue_id": 307, "status": "accept", "reason": "收束为一个行动；不把不可靠传感技术或虚构医生发言写成医疗事实。", "sample_id": "G0413", "action": "repair"}
+{"issue_id": 308, "status": "not_adopted", "reason": "地区光照条件有差异是正确限定，并非补丁层缺陷。", "sample_id": "G0415", "action": "retain"}
+{"issue_id": 309, "status": "accept", "reason": "思考说明高级索引已复制，正文移除冗余copy代码并解释赋值别名。", "sample_id": "G0424", "action": "repair"}
+{"issue_id": 310, "status": "accept", "reason": "显式设置PMA_HOST，使用Compose v2命令并移除version字段；默认仅回环监听。", "sample_id": "G0425", "action": "repair"}
+{"issue_id": 311, "status": "accept", "reason": "删除错误注释和分钟等值轮询；明确运行、时区、迟到及失败不重试语义。", "sample_id": "G0428", "action": "repair"}
+{"issue_id": 312, "status": "accept", "reason": "修正两个具体分类/术语错误，不更改主题和讨论结构。", "sample_id": "G0431", "action": "repair"}
+{"issue_id": 313, "status": "partly_accept", "reason": "移除不对口驻留建议；保留获准场所演出这项实际建议，不仅因有安全限定就视为补丁。", "sample_id": "G0442", "action": "repair"}
+{"issue_id": 314, "status": "accept", "reason": "明确数组转切片，并提供固定数组实例。", "sample_id": "G0444", "action": "repair"}
+{"issue_id": 315, "status": "partly_accept", "reason": "修正记忆/时间衔接和字数；原来的两人与上千人并非必然矛盾，但新叙述直接说明自由人一直存在。", "sample_id": "G0445", "action": "repair"}
+{"issue_id": 316, "status": "accept", "reason": "删去电解质补丁；同查发现自噬标题与正文、反弹归因和意志力归因也一并直接修正。", "sample_id": "G0446", "action": "repair"}
+{"issue_id": 317, "status": "accept", "reason": "入门框架与已带日期税率可保留；修价格形态术语、指数基金并非全市场或都低费及长期持有必优论断，地域配置受准入约束。", "sample_id": "G0447", "action": "repair"}
+{"issue_id": 318, "status": "accept", "reason": "保留mysqlclient与Connector/Python双实现区别；去未支持的新项目偏好及普通类型称自定义、版本无条件支持，修语言残句。", "sample_id": "G0448", "action": "repair"}
+{"issue_id": 319, "status": "accept", "reason": "修条件独立定义和离散公式适用范围，天气作为假设模型；HMM并非摆脱马尔可夫假设，历史可扩充入状态，路径依赖收益不等于标的非马尔可夫。", "sample_id": "G0455", "action": "repair"}
+{"issue_id": 320, "status": "accept", "reason": "标题与顺序执行实例对齐，连接池放入协程并关闭；修保留字表名、耗时钟、cProfile含义，明确占位函数，未连接数据库。", "sample_id": "G0456", "action": "repair"}
+{"issue_id": 321, "status": "partly_accept", "reason": "保留普通思乡支持，不将其升级危机；修不必要性别推定、燃烧信件、每日浇水和未经核实特定夜间自习区，增加家人联络；不沿用危机热线号码。", "sample_id": "G0458", "action": "repair"}
+{"issue_id": 322, "status": "accept", "reason": "类式OOP入门例子成立；修声明式口号和每对象必独立的绝对化，明确是常见类式模型。", "sample_id": "G0460", "action": "repair"}
+{"issue_id": 323, "status": "accept", "reason": "题干25%幸福提升应直接纠正；删与题干无关激素/递质否定及结尾编辑自评，将睡眠和关系等效果改为可能性而非保证。", "sample_id": "G0466", "action": "repair"}
+{"issue_id": 324, "status": "not_adopted", "reason": "Base64可逆与认证加密区别正确；本地核对编码全文并运行AES-GCM加解密往返通过，IV唯一/标签验证/密钥管理边界已完整。题干错误前提在正文纠正，无需改题。", "sample_id": "G0471", "action": "retain"}
+{"issue_id": 325, "status": "accept", "reason": "继承并非复制，父方法修改不覆盖子类自己的override；用最小词句修复，保留简单类比。", "sample_id": "G0474", "action": "repair"}
+{"issue_id": 326, "status": "accept", "reason": "统一五力加互补品扩展口径；弱化无地域年份数据支持的市场断言，校准传感器供应商和供应链议价主体。", "sample_id": "G0481", "action": "repair"}
+{"issue_id": 327, "status": "accept", "reason": "消除皮质运动鞋可穿与禁止系带运动鞋的矛盾，删除用户不能问主人的无据假定，季节按实际天气。", "sample_id": "G0482", "action": "repair"}
+{"issue_id": 328, "status": "accept", "reason": "按选取的主要关卡标示章节，澄清沙尘对玩家与监控的双向作用；桥梁谜题改为实际支撑控制，避免仅改显示值就增加承重的逻辑跳跃。", "sample_id": "G0488", "action": "repair"}
+{"issue_id": 329, "status": "accept", "reason": "修复残缺二元安全表为可逐项核对清单；教练身份按已知渠道确认，独立执业不因无机构隶属自动不合法。保留HIPAA、匿名化及删除范围必要边界。", "sample_id": "G0496", "action": "repair"}
+{"issue_id": 330, "status": "accept", "reason": "日志说明对齐split实现；键值对只分割首个冒号，明确示例为方法内片段和org.json依赖；StringBuilder仅适用于构建字符串。", "sample_id": "G0500", "action": "repair"}
+{"issue_id": 331, "status": "accept", "reason": "删除年龄划界猜测及低腰露脐必显老的无据理由；混搭应控制视觉重点，不一概禁止；波点归小图案。", "sample_id": "G0502", "action": "repair"}
+{"issue_id": 332, "status": "partly_accept", "reason": "完整信息是策略空间及收益结构的共同知识，不是知道对方实际选择；区分完美信息与一般均衡，收窄完全理性和公平性的绝对化。", "sample_id": "G0503", "action": "repair"}
+{"issue_id": 333, "status": "accept", "reason": "修正城市条目混入九寨沟、秦俑明城墙一并归盛唐及苏州重复；行程长短须视出发地，避免统一称短途。", "sample_id": "G0504", "action": "repair"}
+{"issue_id": 334, "status": "partly_accept", "reason": "保留未明确疗法方案与个体反应的必要边界；删除被删量表的否定句和渐进刺激旧补丁，把音乐选择及评估写成直接行动；不把所有悲伤歌曲视为风险。", "sample_id": "G0509", "action": "repair"}
+{"issue_id": 335, "status": "accept", "reason": "食谱保持五道纯素搭配，不宣称未计算份量即保证每餐均衡；煎豆腐选较结实种类，补足装饰配料与淀粉水组成，浓汤冷却再搅打。", "sample_id": "G0513", "action": "repair"}

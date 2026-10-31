@@ -1,0 +1,33 @@
+Failed to load CPU gemm_4bit_forward from kernels-community: No module named 'kernels'. Please make sure you already `pip install kernels` and the kernels >= 0.11.1
+[INFO:swift] Successfully registered `/usr/local/lib/python3.12/site-packages/swift/dataset/data/dataset_info.json`.
+[INFO:swift] Successfully imported external_plugins: ['/tmp/v0121-check/stage1/training/local_data_guard.py', '/tmp/v0121-check/stage1/variants/stage1-cpu-v0.1.21/identity_loss3.py'].
+[INFO:swift] rank: -1, local_rank: -1, world_size: 1, local_world_size: 1
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+[INFO:swift] Setting args.lazy_tokenize: False
+[transformers] warmup_ratio is deprecated and will be removed in v5.2. Use `warmup_steps` instead.
+Generating train split: 0 examples [00:00, ? examples/s]Generating train split: 1047 examples [00:00, 125789.47 examples/s]
+Map (num_proc=1):   0%|          | 0/1047 [00:00<?, ? examples/s]Map (num_proc=1): 100%|██████████| 1047/1047 [00:00<00:00, 5635.75 examples/s]
+[INFO:swift] Setting torch_dtype: torch.bfloat16
+[INFO:swift] default_system: None
+[INFO:swift] max_length: 2048
+[INFO:swift] response_prefix: None
+[INFO:swift] agent_template: hermes
+[INFO:swift] default_system: None
+[INFO:swift] max_length: 2048
+[INFO:swift] response_prefix: None
+[INFO:swift] agent_template: hermes
+[INFO:swift] default_system: None
+[INFO:swift] max_length: 2048
+[INFO:swift] response_prefix: None
+[INFO:swift] agent_template: hermes
+[INFO:swift] default_system: None
+[INFO:swift] max_length: 2048
+[INFO:swift] response_prefix: None
+[INFO:swift] agent_template: hermes
+Traceback (most recent call last):
+  File "/tmp/v0121-check/stage1/variants/stage1-cpu-v0.1.21/cpu-check/check_cpu.py", line 487, in <module>
+    main()
+  File "/tmp/v0121-check/stage1/variants/stage1-cpu-v0.1.21/cpu-check/check_cpu.py", line 282, in main
+    raise RuntimeError('No truncation permitted; revise identified records: '
+RuntimeError: No truncation permitted; revise identified records: [{"line_one_based": 100, "parent_line_one_based": 101, "sample_id": "G0088", "source": "swift/Qwen3-SFT-Mixin", "tokens": 2065}, {"line_one_based": 463, "parent_line_one_based": 470, "sample_id": "G0364", "source": "swift/Qwen3-SFT-Mixin", "tokens": 2179}, {"line_one_based": 477, "parent_line_one_based": 484, "sample_id": "G0370", "source": "swift/Qwen3-SFT-Mixin", "tokens": 2074}, {"line_one_based": 557, "parent_line_one_based": 568, "sample_id": "G0088", "source": "swift/Qwen3-SFT-Mixin", "tokens": 2065}, {"line_one_based": 635, "parent_line_one_based": 648, "sample_id": "G0444", "source": "swift/Qwen3-SFT-Mixin", "tokens": 2136}, {"line_one_based": 715, "parent_line_one_based": 730, "sample_id": "G0487", "source": "swift/Qwen3-SFT-Mixin", "tokens": 2068}, {"line_one_based": 772, "parent_line_one_based": 787, "sample_id": "G0487", "source": "swift/Qwen3-SFT-Mixin", "tokens": 2068}, {"line_one_based": 940, "parent_line_one_based": 961, "sample_id": "G0364", "source": "swift/Qwen3-SFT-Mixin", "tokens": 2179}, {"line_one_based": 951, "parent_line_one_based": 973, "sample_id": "G0370", "source": "swift/Qwen3-SFT-Mixin", "tokens": 2074}, {"line_one_based": 959, "parent_line_one_based": 981, "sample_id": "G0444", "source": "swift/Qwen3-SFT-Mixin", "tokens": 2136}]
+command terminated with exit code 1

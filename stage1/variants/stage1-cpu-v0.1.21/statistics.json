@@ -1,0 +1,76 @@
+{
+  "before": {
+    "rows": 1069,
+    "source_exposures": {
+      "swift/Qwen3-SFT-Mixin": 774,
+      "swift/self-cognition": 216,
+      "t008/strict-json-v1": 4,
+      "t008/general-nonthinking-v1": 2,
+      "t008/project-positioning-v1": 23,
+      "t008/company-facts-v1": 2,
+      "t008/chinese-identity-v1": 16,
+      "t008/general-nonthinking-v2": 12,
+      "t008/business-evidence-v1": 8,
+      "t008/company-boundary-v1": 12
+    },
+    "identity_exposures": 234,
+    "unique_message_records": 679,
+    "system_rows": 0,
+    "thinking_rows": 801
+  },
+  "after": {
+    "rows": 1047,
+    "source_exposures": {
+      "swift/Qwen3-SFT-Mixin": 752,
+      "swift/self-cognition": 216,
+      "t008/strict-json-v1": 4,
+      "t008/general-nonthinking-v1": 2,
+      "t008/project-positioning-v1": 23,
+      "t008/company-facts-v1": 2,
+      "t008/chinese-identity-v1": 16,
+      "t008/general-nonthinking-v2": 12,
+      "t008/business-evidence-v1": 8,
+      "t008/company-boundary-v1": 12
+    },
+    "identity_exposures": 234,
+    "unique_message_records": 668,
+    "system_rows": 0,
+    "thinking_rows": 779
+  },
+  "general_decisions": {
+    "repair": 285,
+    "retain": 94,
+    "quarantine": 11
+  },
+  "identity_decisions": {
+    "retain": 216,
+    "repair": 18
+  },
+  "repaired_exposures": 585,
+  "quarantined_exposures": 22,
+  "untouched_raw_rows": 462,
+  "out_of_scope_preserved_rows": 61,
+  "cpu_tokens": {
+    "before": {
+      "input_tokens": 1185555,
+      "supervised_tokens": 1147740,
+      "weighted_token_units": 1165598.0
+    },
+    "after": {
+      "input_tokens": 965723,
+      "supervised_tokens": 929302,
+      "weighted_token_units": 947044.0
+    }
+  },
+  "repaired_general_fields": {
+    "question": 0,
+    "thinking": 197,
+    "answer": 275
+  },
+  "external_review_outcomes": {
+    "not_adopted": 108,
+    "accept": 134,
+    "partly_accept": 93
+  },
+  "historical_v20_quarantine_unique_records_not_reintroduced": 128
+}

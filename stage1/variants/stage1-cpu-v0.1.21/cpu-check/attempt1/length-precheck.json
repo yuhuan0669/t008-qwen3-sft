@@ -1,0 +1,77 @@
+{
+  "dataset_sha256": "c5c940b16fe58ff728b67acd22aee8db6408472645713b2eb39e466af14ab97c",
+  "rows": 1047,
+  "overlength": [
+    {
+      "line_one_based": 100,
+      "parent_line_one_based": 101,
+      "sample_id": "G0088",
+      "source": "swift/Qwen3-SFT-Mixin",
+      "tokens": 2065
+    },
+    {
+      "line_one_based": 463,
+      "parent_line_one_based": 470,
+      "sample_id": "G0364",
+      "source": "swift/Qwen3-SFT-Mixin",
+      "tokens": 2179
+    },
+    {
+      "line_one_based": 477,
+      "parent_line_one_based": 484,
+      "sample_id": "G0370",
+      "source": "swift/Qwen3-SFT-Mixin",
+      "tokens": 2074
+    },
+    {
+      "line_one_based": 557,
+      "parent_line_one_based": 568,
+      "sample_id": "G0088",
+      "source": "swift/Qwen3-SFT-Mixin",
+      "tokens": 2065
+    },
+    {
+      "line_one_based": 635,
+      "parent_line_one_based": 648,
+      "sample_id": "G0444",
+      "source": "swift/Qwen3-SFT-Mixin",
+      "tokens": 2136
+    },
+    {
+      "line_one_based": 715,
+      "parent_line_one_based": 730,
+      "sample_id": "G0487",
+      "source": "swift/Qwen3-SFT-Mixin",
+      "tokens": 2068
+    },
+    {
+      "line_one_based": 772,
+      "parent_line_one_based": 787,
+      "sample_id": "G0487",
+      "source": "swift/Qwen3-SFT-Mixin",
+      "tokens": 2068
+    },
+    {
+      "line_one_based": 940,
+      "parent_line_one_based": 961,
+      "sample_id": "G0364",
+      "source": "swift/Qwen3-SFT-Mixin",
+      "tokens": 2179
+    },
+    {
+      "line_one_based": 951,
+      "parent_line_one_based": 973,
+      "sample_id": "G0370",
+      "source": "swift/Qwen3-SFT-Mixin",
+      "tokens": 2074
+    },
+    {
+      "line_one_based": 959,
+      "parent_line_one_based": 981,
+      "sample_id": "G0444",
+      "source": "swift/Qwen3-SFT-Mixin",
+      "tokens": 2136
+    }
+  ],
+  "maximum": 2179
+}

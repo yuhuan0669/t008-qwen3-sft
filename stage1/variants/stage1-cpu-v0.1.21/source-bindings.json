@@ -1,0 +1,15 @@
+{
+  "/Users/ben/aiws/codex/keywords/t008_qwen3_sft/stage1/variants/stage1-cpu-v0.1.20/train.jsonl": "f288ce57aa2b228c09e1a44e1b6855e1e891530805856b775b98ee115f10ac11",
+  "/Users/ben/aiws/codex/keywords/t008_qwen3_sft/stage1/variants/stage1-cpu-v0.1.20/train-map.jsonl": "5efae1e4ef8a40dbaad146b76260bcbcaa04c5ba292a288db417a2c5fa3f497b",
+  "/Users/ben/aiws/codex/keywords/t008_qwen3_sft/stage1/variants/stage1-cpu-v0.1.20/training-config.json": "c289da85a1d4893cbed5e4a9ae22d54d9441cc43922d7e8081e23dcaba67d863",
+  "/Users/ben/aiws/codex/keywords/t008_qwen3_sft/stage1/variants/stage1-cpu-v0.1.20/identity_loss3.py": "082510fc6fadc31eb179384299cc1425e6dfd98ae01ad95d463759c1a0627db8",
+  "/Users/ben/aiws/codex/keywords/t008_qwen3_sft/stage1/variants/stage1-cpu-v0.1.20/identity-keys.json": "da04de7b4970891ec81aca3abd3cfdd7522f263b9035d123f8660383c481eaba",
+  "/Users/ben/aiws/codex/keywords/t008_qwen3_sft/stage1/variants/stage1-cpu-v0.1.20/evaluation-config.json": "c2e0e63ab24a4dcf8d82cd08d217ea791644bf9d7b6b105e86993bdb0eb6a34e",
+  "/Users/ben/aiws/codex/keywords/t008_qwen3_sft/stage1/variants/stage1-cpu-v0.1.20/inference-system.txt": "3ae02d520406f73e735752ef04ff395785f84fec7ee1619fd9d392d86cb92933",
+  "/Users/ben/aiws/codex/keywords/t008_qwen3_sft/stage1/review/v0.1.20-external-review/general-390.jsonl": "fd7aa53606dac352bedaa93b0e7812dfda98fbe8f093d350dde8c42808a90d28",
+  "/Users/ben/aiws/codex/keywords/t008_qwen3_sft/stage1/review/v0.1.20-external-review/identity-234.jsonl": "a27d325093c2e0e9e6a4bf286363745e22436b0f5e5b4ec77648c069092d7346",
+  "/Users/it/Downloads/sft_review_issues.csv": "aff9f3d8a2c3707b53647f036f13b76f6a4cd0379d1f71b87c6d311d9098de8b",
+  "/Users/it/Downloads/sft.md": "3c2a6424614bc8ac4cf13b395901bb84da2c8a6b30c44840bbd6ffbcd0718f43",
+  "/Users/it/Downloads/general-390-cleaned.jsonl": "2430a7d4d2a9e345fba5f47525ad401b4461d792dbd5c59adf8f9f500daf09b3",
+  "/Users/it/Downloads/identity-234-cleaned.jsonl": "be6bfa81829e4e1d92185d12828ea960da2a7e10cb0d327a38da2c6015a4249c"
+}

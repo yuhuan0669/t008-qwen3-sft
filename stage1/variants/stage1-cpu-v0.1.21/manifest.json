@@ -1,0 +1,17 @@
+{
+  "data_version": "stage1-cpu-v0.1.21",
+  "parent": "stage1-cpu-v0.1.20",
+  "status": "CPU_CHECKED_PENDING_USER_REVIEW",
+  "training_authorized": false,
+  "files_sha256": {
+    "train.jsonl": "3fec3a82e6836c7878e123c2197cc65057b7a963f61244de2603efffcc630992",
+    "train-map.jsonl": "c3826541f50ef76ab82bb195eeaf8edd9808f8ad8c27bb8a69b2445945d8a7db",
+    "training-config.json": "cd252b2aa60e25d4b8cbc9b64f49f021a12bc83f19b4552d9968c8701fb3f880",
+    "identity_loss3.py": "082510fc6fadc31eb179384299cc1425e6dfd98ae01ad95d463759c1a0627db8",
+    "identity-keys.json": "64d21c5fea848c0cc0e328f92a36d771e4e62ac2dab7627b860b107f1c52b11f",
+    "native-identity-key-aliases.json": "ad4d9c56851b802f9f26d70f556859f67340e0e3887ecf7bfcc3d9df078ea5f0",
+    "cpu-check/report.json": "345d995656f61d653cce3b0f951c853310c84e3460e9b893a87af33b47820ba0",
+    "decisions.jsonl": "7545a2682a4f74a50d683ef56076e295368068cb23558f49e4dcef7ee2a77c8f",
+    "external-review-dispositions.jsonl": "a70e0f5417a3e2c6c589699510fffda1a3c685051d576d8a0386182f0e050429"
+  }
+}

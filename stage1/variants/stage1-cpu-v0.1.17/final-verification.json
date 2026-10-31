@@ -1,0 +1,19 @@
+{
+  "verified": true,
+  "parent_dataset_unchanged": true,
+  "rows": 1357,
+  "changed_rows": 32,
+  "question_and_body_bytes_equal": true,
+  "full_argv_equal_except_version_paths": true,
+  "cpu_evidence_matches_current_data": true,
+  "development_questions": 140,
+  "exact_train_question_overlap": [],
+  "overlap_scope": "No new training questions or answers; exact string check is not semantic independence proof.",
+  "comparison_slots": 2224,
+  "reused_slots": 1066,
+  "missing_slots": 1158,
+  "training_started": false,
+  "new_model_generations": 0,
+  "judge_requests": 0,
+  "uat_paused": false
+}

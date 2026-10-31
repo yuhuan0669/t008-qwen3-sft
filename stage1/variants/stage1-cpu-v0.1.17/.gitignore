@@ -1,0 +1,4 @@
+# Historical T-021/T-024 questions and responses stay on this machine.
+development/
+cpu-check/cpu-check.log
+cpu-check/mask-probes.json

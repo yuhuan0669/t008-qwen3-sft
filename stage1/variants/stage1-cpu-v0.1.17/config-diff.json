@@ -1,0 +1,28 @@
+{
+  "data_parent": "stage1-cpu-v0.1.16",
+  "model_initialization": "original Qwen/Qwen3-8B + new LoRA",
+  "training_hyperparameters_changed": false,
+  "argv_differences": [
+    {
+      "index": 11,
+      "before": "/work/stage1/variants/stage1-cpu-v0.1.16/train.jsonl",
+      "after": "/work/stage1/variants/stage1-cpu-v0.1.17/train.jsonl"
+    },
+    {
+      "index": 65,
+      "before": "/runwork/stage1-cpu-v0.1.16/full/checkpoints",
+      "after": "/runwork/stage1-cpu-v0.1.17/full/checkpoints"
+    },
+    {
+      "index": 70,
+      "before": "/work/stage1/variants/stage1-cpu-v0.1.16/identity_loss3.py",
+      "after": "/work/stage1/variants/stage1-cpu-v0.1.17/identity_loss3.py"
+    }
+  ],
+  "dataset_sha256": {
+    "before": "c59cbfcc159385dee31482ba3898833cb7b298716a3f623496ef22f8d63e0528",
+    "after": "bf5f1aee58d48a510b84669fa351065621e84037b160da91e82cf8cd1b69dc28"
+  },
+  "effective_training_change": "32 existing general exposures use empty think; total rows and visible answers unchanged",
+  "evaluation_change": "Freeze a new development protocol; not a training hyperparameter change"
+}

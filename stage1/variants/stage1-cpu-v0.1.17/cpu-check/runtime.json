@@ -1,0 +1,16 @@
+{
+  "pod_uid": "9415e662-4fa6-478c-a3c7-c7f4e4d6ef0f",
+  "image_id": "modelscope-registry.cn-hangzhou.cr.aliyuncs.com/modelscope-repo/modelscope@sha256:822d99beed4984a421c8d1da397993c6a8a5f88cdad7dde940bd52df0067d738",
+  "node": "k8s-worker05",
+  "resources": {
+    "limits": {
+      "cpu": "4",
+      "memory": "6Gi"
+    },
+    "requests": {
+      "cpu": "1",
+      "memory": "2Gi"
+    }
+  },
+  "gpu_requested": false
+}

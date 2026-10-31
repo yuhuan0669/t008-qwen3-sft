@@ -1,0 +1,15 @@
+{
+  "verified": true,
+  "parent_unchanged": true,
+  "rows": 1357,
+  "changed_rows": 32,
+  "unchanged_rows": 1325,
+  "all_questions_and_visible_answers_unchanged": true,
+  "identity_rows_unchanged": 234,
+  "system_same_bytes": true,
+  "system_assignments_unchanged": true,
+  "new32_examples_unchanged": true,
+  "english_and_mixed_rows_unchanged": true,
+  "all_hyperparameters_unchanged": true,
+  "training_started": false
+}

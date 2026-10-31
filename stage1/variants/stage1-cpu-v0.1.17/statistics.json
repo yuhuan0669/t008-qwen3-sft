@@ -1,0 +1,136 @@
+{
+  "before": {
+    "rows": 1357,
+    "source_exposures": {
+      "swift/Qwen3-SFT-Mixin": 1030,
+      "swift/self-cognition": 216,
+      "t008/strict-json-v1": 4,
+      "t008/general-nonthinking-v1": 2,
+      "t008/project-positioning-v1": 23,
+      "t008/company-facts-v1": 2,
+      "t008/chinese-identity-v1": 16,
+      "t008/general-nonthinking-v2": 12,
+      "t008/business-evidence-v1": 8,
+      "t008/company-boundary-v1": 12,
+      "t008/nt-fact-edit-v1": 8,
+      "t008/nt-task-intent-v1": 8,
+      "t008/nt-evidence-v1": 8,
+      "t008/nt-multiturn-scope-v1": 8
+    },
+    "language_exposures": {
+      "zh": 862,
+      "mixed": 17,
+      "en_or_other": 478
+    },
+    "system_rows": 175,
+    "thinking_rows": 1057,
+    "no_think_user_rows": 108
+  },
+  "after": {
+    "rows": 1357,
+    "source_exposures": {
+      "swift/Qwen3-SFT-Mixin": 1030,
+      "swift/self-cognition": 216,
+      "t008/strict-json-v1": 4,
+      "t008/general-nonthinking-v1": 2,
+      "t008/project-positioning-v1": 23,
+      "t008/company-facts-v1": 2,
+      "t008/chinese-identity-v1": 16,
+      "t008/general-nonthinking-v2": 12,
+      "t008/business-evidence-v1": 8,
+      "t008/company-boundary-v1": 12,
+      "t008/nt-fact-edit-v1": 8,
+      "t008/nt-task-intent-v1": 8,
+      "t008/nt-evidence-v1": 8,
+      "t008/nt-multiturn-scope-v1": 8
+    },
+    "language_exposures": {
+      "zh": 862,
+      "mixed": 17,
+      "en_or_other": 478
+    },
+    "system_rows": 175,
+    "thinking_rows": 1025,
+    "no_think_user_rows": 108
+  },
+  "cpu_tokens": {
+    "totals": {
+      "before": {
+        "input_tokens": 1646826,
+        "supervised_tokens": 1527819,
+        "weighted_token_units": 1545677.0
+      },
+      "after": {
+        "input_tokens": 1626095,
+        "supervised_tokens": 1506960,
+        "weighted_token_units": 1524818.0
+      }
+    },
+    "by_mode": {
+      "before": {
+        "thinking_rows": 1057,
+        "thinking_weighted_units": 1518135.0,
+        "nonthinking_rows": 300,
+        "nonthinking_weighted_units": 27542.0
+      },
+      "after": {
+        "thinking_rows": 1025,
+        "thinking_weighted_units": 1478623.0,
+        "nonthinking_rows": 332,
+        "nonthinking_weighted_units": 46195.0
+      }
+    },
+    "selected_changed_exposures": {
+      "before": {
+        "supervised_tokens": 39512,
+        "weighted_token_units": 39512.0
+      },
+      "after": {
+        "supervised_tokens": 18653,
+        "weighted_token_units": 18653.0
+      }
+    },
+    "system_subset_weighted_token_units": {
+      "before": 15366.0,
+      "after": 15366.0
+    },
+    "source_weighted_token_units": {
+      "before": {
+        "swift/Qwen3-SFT-Mixin": 1514999.0,
+        "swift/self-cognition": 24654.0,
+        "t008/strict-json-v1": 155.0,
+        "t008/general-nonthinking-v1": 236.0,
+        "t008/project-positioning-v1": 1198.0,
+        "t008/company-facts-v1": 168.0,
+        "t008/chinese-identity-v1": 1973.0,
+        "t008/general-nonthinking-v2": 227.0,
+        "t008/business-evidence-v1": 424.0,
+        "t008/company-boundary-v1": 451.0,
+        "t008/nt-fact-edit-v1": 305.0,
+        "t008/nt-task-intent-v1": 250.0,
+        "t008/nt-evidence-v1": 270.0,
+        "t008/nt-multiturn-scope-v1": 367.0
+      },
+      "after": {
+        "swift/Qwen3-SFT-Mixin": 1494140.0,
+        "swift/self-cognition": 24654.0,
+        "t008/strict-json-v1": 155.0,
+        "t008/general-nonthinking-v1": 236.0,
+        "t008/project-positioning-v1": 1198.0,
+        "t008/company-facts-v1": 168.0,
+        "t008/chinese-identity-v1": 1973.0,
+        "t008/general-nonthinking-v2": 227.0,
+        "t008/business-evidence-v1": 424.0,
+        "t008/company-boundary-v1": 451.0,
+        "t008/nt-fact-edit-v1": 305.0,
+        "t008/nt-task-intent-v1": 250.0,
+        "t008/nt-evidence-v1": 270.0,
+        "t008/nt-multiturn-scope-v1": 367.0
+      }
+    }
+  },
+  "identity_weighted_share_percent": {
+    "before": 1.733544589199425,
+    "after": 1.7572588990948428
+  }
+}

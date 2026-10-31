@@ -1,0 +1,7 @@
+{
+  "spec_unchanged": true,
+  "healthy": true,
+  "cpu_pod_deleted": true,
+  "uat_pause": false,
+  "gpu_requested": false
+}

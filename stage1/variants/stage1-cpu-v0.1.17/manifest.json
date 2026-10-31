@@ -1,0 +1,21 @@
+{
+  "version": "stage1-cpu-v0.1.17",
+  "parent": "stage1-cpu-v0.1.16",
+  "parent_sha256": "c59cbfcc159385dee31482ba3898833cb7b298716a3f623496ef22f8d63e0528",
+  "status": "CPU_CHECKED_PENDING_REVIEW_NO_TRAINING",
+  "files_sha256": {
+    "train.jsonl": "bf5f1aee58d48a510b84669fa351065621e84037b160da91e82cf8cd1b69dc28",
+    "train-map.jsonl": "ca2549697ba4c77d9396c7b310f79a3aac15fdcbe4e9ac177cacadb1c2df6ca1",
+    "system.txt": "3ae02d520406f73e735752ef04ff395785f84fec7ee1619fd9d392d86cb92933",
+    "identity-keys.json": "5cde71fa1f4975e5a768aaa74b8b24e681ef2f9d5b1cb79ec0a0c25304f9847c",
+    "identity_loss3.py": "082510fc6fadc31eb179384299cc1425e6dfd98ae01ad95d463759c1a0627db8",
+    "selection.json": "6e8b0d094d3c6e44536e4ea5508ff97bef13b59562070a54a5513e1037da0fd8",
+    "selection-audit.json": "4c27d283b7a791060495ef9a346a74c303558aafab00e97ac7098ade9da058d3",
+    "changes.jsonl": "e54db452a221b74af2f1ecea643a983b154e47cd23d07ccbbbc11fea9e4ca842",
+    "training-config.json": "fe84b14520ea66827c1ef8b35583dfde92a938d8d4ac0a3ef6cc8078ba6f78e0",
+    "evaluation-config.json": "de7a507306e11abc31d784960381e69c49d23ff4a512e15106fcc370a7e2c00a",
+    "statistics.json": "8393b0cd973bb21bf193e73089a854c7f06b6e8a8617d34db888b507a1bee911",
+    "cpu-check/report.json": "08ca98203ba877d2e6fa01be15b43ca8485a4d0ec5b4399fe3e5ebcf848ee06c",
+    "final-verification.json": "b6441d11cecec1998faba318cd2a5d69ec7af508e2c6a65ce91e0be391e11f94"
+  }
+}

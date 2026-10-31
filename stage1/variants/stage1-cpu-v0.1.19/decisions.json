@@ -1,0 +1,533 @@
+[
+  {
+    "sample_id": "G0002",
+    "operation": "repair",
+    "parent_lines_one_based": [
+      2,
+      453
+    ],
+    "exposures_before": 2,
+    "exposures_after": 2,
+    "reason": "部门全员均薪在内层计算，再筛选数据分析师；修正思考及正文中的查询和说明。",
+    "evidence": {
+      "id": "G0002",
+      "train_rows_one_based": [
+        2,
+        453
+      ],
+      "messages_sha256": "18b2ebac5252cab8719a6cb14dbf0a2b41bbfab8fa346846903d0a66ded1ace3",
+      "category": "代码与说明不一致",
+      "disposition": "confirmed_issue",
+      "conclusion": "窗口均值只计算筛选后的分析师，正文却称所在部门平均薪资；口径必须明确。",
+      "quotes": [
+        {
+          "part": "body",
+          "quote": "AVG(Salary) OVER (PARTITION BY Department)"
+        },
+        {
+          "part": "body",
+          "quote": "附加其所在部门的平均薪资"
+        }
+      ],
+      "verification": {
+        "method": "in-memory SQLite counterexample",
+        "analyst_salary": 100,
+        "manager_salary": 300,
+        "query_result": 100.0,
+        "department_average": 200.0
+      },
+      "evidence_urls": [],
+      "review_scope": "Root read the question, relevant answer context, and the evidence cited; this is not a second full review of every factual statement."
+    },
+    "full_parent_record_read": true
+  },
+  {
+    "sample_id": "G0008",
+    "operation": "repair",
+    "parent_lines_one_based": [
+      10,
+      1184
+    ],
+    "exposures_before": 2,
+    "exposures_after": 2,
+    "reason": "纠正0.01%→100 ppm；删除无依据的更严阈值、露点和操作建议，明确质量基准。",
+    "evidence": {
+      "id": "G0008",
+      "train_rows_one_based": [
+        10,
+        1184
+      ],
+      "messages_sha256": "28c7a667c101902c23202fadcf112571bff369b6dd8653b5e5ca9712a339862f",
+      "category": "计算及思考正文矛盾",
+      "disposition": "confirmed_issue",
+      "conclusion": "0.01% = 100 ppm；thinking两处写1000 ppm，正文写100 ppm。",
+      "quotes": [
+        {
+          "part": "thinking",
+          "quote": "0.01%就是1000 PPm"
+        },
+        {
+          "part": "body",
+          "quote": "0.01 × 10,000 = 100 PPm"
+        }
+      ],
+      "verification": {
+        "method": "arithmetic",
+        "value": 100.0
+      },
+      "evidence_urls": [],
+      "review_scope": "Root read the question, relevant answer context, and the evidence cited; this is not a second full review of every factual statement."
+    },
+    "full_parent_record_read": true
+  },
+  {
+    "sample_id": "G0010",
+    "operation": "quarantine",
+    "parent_lines_one_based": [
+      12,
+      1230
+    ],
+    "exposures_before": 2,
+    "exposures_after": 0,
+    "reason": "术语未确认即写成另一模型，整条前提缺失；不凭猜测重写定义。",
+    "evidence": {
+      "id": "G0010",
+      "train_rows_one_based": [
+        12,
+        1230
+      ],
+      "messages_sha256": "ecce3aba76afaf76bb114fc174ac50851f97aa438c4947f9f7844ec9095e4dd4",
+      "category": "无依据消歧",
+      "disposition": "confirmed_issue",
+      "conclusion": "thinking承认术语不确定，正文却直接将霍伍德图等同Hodgkin-Huxley模型；这里只确认确定化过程缺乏依据。",
+      "quotes": [
+        {
+          "part": "thinking",
+          "quote": "但不太确定"
+        },
+        {
+          "part": "body",
+          "quote": "霍伍德图（Hodgkin-Huxley模型）"
+        }
+      ],
+      "verification": {
+        "method": "question and answer comparison",
+        "limit": "Not a claim that the original term cannot exist."
+      },
+      "evidence_urls": [],
+      "review_scope": "Root read the question, relevant answer context, and the evidence cited; this is not a second full review of every factual statement."
+    },
+    "full_parent_record_read": true
+  },
+  {
+    "sample_id": "G0038",
+    "operation": "repair",
+    "parent_lines_one_based": [
+      54,
+      741
+    ],
+    "exposures_before": 2,
+    "exposures_after": 2,
+    "reason": "统一对外做功为正、ΔU=Q−W；补公式适用条件，删除热量或功必非零的泛化。",
+    "evidence": {
+      "id": "G0038",
+      "train_rows_one_based": [
+        54,
+        741
+      ],
+      "messages_sha256": "8d6b151c7f1e64e259d5d59313b9a434b7e1765adc94747f9396efb9df4b1462",
+      "category": "符号内部矛盾",
+      "disposition": "confirmed_issue",
+      "conclusion": "给出的功公式按气体对外做功为正，却在绝热处写内能变化等于正的功，符号不一致。",
+      "quotes": [
+        {
+          "part": "body",
+          "quote": "W = P \\Delta V"
+        },
+        {
+          "part": "body",
+          "quote": "\\Delta U = W"
+        }
+      ],
+      "verification": {
+        "method": "same-sign-convention derivation",
+        "statement": "With work done by the gas positive, ΔU=Q−W; Q=0 gives ΔU=−W."
+      },
+      "evidence_urls": [],
+      "review_scope": "Root read the question, relevant answer context, and the evidence cited; this is not a second full review of every factual statement."
+    },
+    "full_parent_record_read": true
+  },
+  {
+    "sample_id": "G0065",
+    "operation": "quarantine",
+    "parent_lines_one_based": [
+      92,
+      1076
+    ],
+    "exposures_before": 2,
+    "exposures_after": 0,
+    "reason": "问题残缺，退税名称、门槛、时限及流程存在多处问题；不在本轮重写税务指南。",
+    "evidence": {
+      "id": "G0065",
+      "train_rows_one_based": [
+        92,
+        1076
+      ],
+      "messages_sha256": "86279e3ba2306502676ec47b2e07de49aa74fc339d87a69db8559e17a0bbf10c",
+      "category": "退税制度事实错误",
+      "disposition": "confirmed_issue",
+      "conclusion": "澳大利亚TRS并非任意跨商家凑300澳元；要求同一ABN且离境前60天内购货。样本写TIGR、跨商家合计和6个月。",
+      "quotes": [
+        {
+          "part": "body",
+          "quote": "或多个商家合计$300"
+        },
+        {
+          "part": "body",
+          "quote": "6个月内"
+        }
+      ],
+      "verification": {
+        "method": "Australian Border Force official requirements",
+        "limit": "Other tax claims in this record have not all been independently verified."
+      },
+      "evidence_urls": [
+        "https://www.abf.gov.au/entering-and-leaving-australia/tourist-refund-scheme/information-for-retailers",
+        "https://trs.homeaffairs.gov.au/"
+      ],
+      "review_scope": "Root read the question, relevant answer context, and the evidence cited; this is not a second full review of every factual statement."
+    },
+    "full_parent_record_read": true
+  },
+  {
+    "sample_id": "G0090",
+    "operation": "quarantine",
+    "parent_lines_one_based": [
+      125,
+      1140
+    ],
+    "exposures_before": 2,
+    "exposures_after": 0,
+    "reason": "推荐版本不支持题给Python3.7，伴随未核依赖与替代关系；不临时拼装未经验证的软件组合。",
+    "evidence": {
+      "id": "G0090",
+      "train_rows_one_based": [
+        125,
+        1140
+      ],
+      "messages_sha256": "2fdd4987c4a001735d67c32674f263b19257178818bce73105ae2fb6ea96f0c3",
+      "category": "版本建议不满足用户约束",
+      "disposition": "confirmed_issue",
+      "conclusion": "用户只能使用Python3.7，推荐的pandas1.5.3及NumPy1.23.5官方只支持Python3.8–3.11。",
+      "quotes": [
+        {
+          "part": "question",
+          "quote": "只能安装python3.7"
+        },
+        {
+          "part": "body",
+          "quote": "pip install gym==0.21.0 pandas==1.5.3 numpy==1.23.5"
+        }
+      ],
+      "verification": {
+        "method": "official version-specific installation/release documentation"
+      },
+      "evidence_urls": [
+        "https://pandas.pydata.org/pandas-docs/version/1.5.3/getting_started/install.html",
+        "https://numpy.org/doc/stable/release/1.23.5-notes.html"
+      ],
+      "review_scope": "Root read the question, relevant answer context, and the evidence cited; this is not a second full review of every factual statement."
+    },
+    "full_parent_record_read": true
+  },
+  {
+    "sample_id": "G0111",
+    "operation": "quarantine",
+    "parent_lines_one_based": [
+      150,
+      794
+    ],
+    "exposures_before": 2,
+    "exposures_after": 0,
+    "reason": "堆叠顺序、故障原因与建议不一致，并含未核工具菜单；不只删一个错误排序项后声称整条可靠。",
+    "evidence": {
+      "id": "G0111",
+      "train_rows_one_based": [
+        150,
+        794
+      ],
+      "messages_sha256": "bc03bc952ea5e79650a30162703927b05412f1ec71e99d26b2bd7cc982b1d180",
+      "category": "技术解释内部矛盾",
+      "disposition": "confirmed_issue",
+      "conclusion": "把所有子堆叠上下文统一放到正z-index之上，与同篇负/正层级排序规则矛盾。",
+      "quotes": [
+        {
+          "part": "body",
+          "quote": "子元素的堆叠上下文整体在父元素的正 `z-index` 区域之上"
+        }
+      ],
+      "verification": {
+        "method": "internal rule comparison",
+        "counterexample": "A child stacking context at z-index:-1 cannot universally be above a sibling at z-index:1."
+      },
+      "evidence_urls": [],
+      "review_scope": "Root read the question, relevant answer context, and the evidence cited; this is not a second full review of every factual statement."
+    },
+    "full_parent_record_read": true
+  },
+  {
+    "sample_id": "G0115",
+    "operation": "repair",
+    "parent_lines_one_based": [
+      157,
+      951
+    ],
+    "exposures_before": 2,
+    "exposures_after": 2,
+    "reason": "删除用户要求思考过程和给过示例的虚构归因；正文标为虚构续写。",
+    "evidence": {
+      "id": "G0115",
+      "train_rows_one_based": [
+        157,
+        951
+      ],
+      "messages_sha256": "0dc4dfce008fa891444e4a0b4feb07bf45e4a0e08528b0e9d71c52ac15627ada",
+      "category": "虚构用户指令",
+      "disposition": "confirmed_issue",
+      "conclusion": "题面只有论坛场景，thinking却称用户要求模拟助理思考，并称用户提供了不存在的示例。创意故事本身不因此被判虚假事实。",
+      "quotes": [
+        {
+          "part": "thinking",
+          "quote": "用户希望我模拟一个助理在处理这个任务时的思考过程"
+        },
+        {
+          "part": "thinking",
+          "quote": "用户提供的示例显示"
+        }
+      ],
+      "verification": {
+        "method": "compare complete question with claimed instruction",
+        "limit": "Only the attribution of an instruction/example is confirmed wrong."
+      },
+      "evidence_urls": [],
+      "review_scope": "Root read the question, relevant answer context, and the evidence cited; this is not a second full review of every factual statement."
+    },
+    "full_parent_record_read": true
+  },
+  {
+    "sample_id": "G0260",
+    "operation": "quarantine",
+    "parent_lines_one_based": [
+      369,
+      713
+    ],
+    "exposures_before": 2,
+    "exposures_after": 0,
+    "reason": "虚构先输出思考的指令，正文又输出思考计划，并加入大量未核数字；不把去掉标题当作内容修复。",
+    "evidence": {
+      "id": "G0260",
+      "train_rows_one_based": [
+        369,
+        713
+      ],
+      "messages_sha256": "0a60876c6f9ea66b011d64b1c6ab2b7205a4806962daa66d6debf22b9f187886",
+      "category": "虚构用户指令及正文元叙述",
+      "disposition": "confirmed_issue",
+      "conclusion": "题面只给全球变暖材料，thinking虚构先输出思考过程的指令，正文再次输出思考计划后才回答。",
+      "quotes": [
+        {
+          "part": "thinking",
+          "quote": "然后让我写一个思考过程，再生成一个回答"
+        },
+        {
+          "part": "body",
+          "quote": "### 思考过程："
+        }
+      ],
+      "verification": {
+        "method": "compare complete question and answer beginning",
+        "limit": "Other numerical climate claims remain separately unverified; this does not prove a cause of echoing."
+      },
+      "evidence_urls": [],
+      "review_scope": "Root read the question, relevant answer context, and the evidence cited; this is not a second full review of every factual statement."
+    },
+    "full_parent_record_read": true
+  },
+  {
+    "sample_id": "G0262",
+    "operation": "quarantine",
+    "parent_lines_one_based": [
+      372,
+      586
+    ],
+    "exposures_before": 2,
+    "exposures_after": 0,
+    "reason": "ISO标准名称错误，且含未经完整核实的危险施工建议；不据此生成替代操作指导。",
+    "evidence": {
+      "id": "G0262",
+      "train_rows_one_based": [
+        372,
+        586
+      ],
+      "messages_sha256": "0b9b13ef4017eca0225b84a2176d8d143fb62ce9eb76a50554a14df030835abf",
+      "category": "标准名称错误",
+      "disposition": "confirmed_issue",
+      "conclusion": "ISO16733系列是消防安全工程的设计火灾场景/设计火灾选择，不是样本所称《煤矿安全》。",
+      "quotes": [
+        {
+          "part": "body",
+          "quote": "ISO 16733《煤矿安全》"
+        }
+      ],
+      "verification": {
+        "method": "ISO official catalogue and NIST technical note",
+        "limit": "No validation of the other construction advice or thresholds in this answer."
+      },
+      "evidence_urls": [
+        "https://www.iso.org/standard/83172.html",
+        "https://nvlpubs.nist.gov/nistpubs/TechnicalNotes/NIST.TN.1842.pdf"
+      ],
+      "review_scope": "Root read the question, relevant answer context, and the evidence cited; this is not a second full review of every factual statement."
+    },
+    "full_parent_record_read": true
+  },
+  {
+    "sample_id": "G0334",
+    "operation": "repair",
+    "parent_lines_one_based": [
+      506,
+      1175
+    ],
+    "exposures_before": 2,
+    "exposures_after": 2,
+    "reason": "纠正不存在的reserve及错误表达式，区分长度和容量、对象和引用、CPython与语言保证；修正扩容及deque适用描述。",
+    "evidence": {
+      "id": "G0334",
+      "train_rows_one_based": [
+        506,
+        1175
+      ],
+      "messages_sha256": "934f91055a149eafe66eee5c5ef3741e169508d22480ad3828f7f68924d3e480",
+      "category": "不存在的接口及无效语法",
+      "disposition": "confirmed_issue",
+      "conclusion": "Python list没有reserve方法；样本建议的*[None]*n也不是可执行的预分配表达式。",
+      "quotes": [
+        {
+          "part": "body",
+          "quote": "list.reserve()"
+        },
+        {
+          "part": "body",
+          "quote": "*[None]*n"
+        }
+      ],
+      "verification": {
+        "method": "local Python type inspection and compile, no execution of sample code",
+        "has_reserve": false,
+        "syntax_result": "can't use starred expression here (<sample-only>, line 1)"
+      },
+      "evidence_urls": [],
+      "review_scope": "Root read the question, relevant answer context, and the evidence cited; this is not a second full review of every factual statement."
+    },
+    "full_parent_record_read": true
+  },
+  {
+    "sample_id": "G0436",
+    "operation": "quarantine",
+    "parent_lines_one_based": [
+      775,
+      1067
+    ],
+    "exposures_before": 2,
+    "exposures_after": 0,
+    "reason": "三个ISBN校验均失败且无实际检索证据；不靠改校验位制造看似有效的书目。",
+    "evidence": {
+      "id": "G0436",
+      "train_rows_one_based": [
+        775,
+        1067
+      ],
+      "messages_sha256": "572d2c5ea112fc55ebc02c22bdf7388bc32beee654a390c1b5193e8cba8d799c",
+      "category": "ISBN校验错误",
+      "disposition": "confirmed_issue",
+      "conclusion": "三项书目的ISBN-13都无法通过校验位检查。这里只确认号码无效，不把所有作者、书名、出版年也一并宣判不存在。",
+      "quotes": [
+        {
+          "part": "body",
+          "quote": "978-3-030-63402-6"
+        },
+        {
+          "part": "body",
+          "quote": "978-1-80107-892-3"
+        },
+        {
+          "part": "body",
+          "quote": "978-1-0981-0543-0"
+        }
+      ],
+      "verification": {
+        "method": "ISBN-13 alternating 1/3 weights modulo 10",
+        "checks": [
+          {
+            "isbn": "9783030634026",
+            "expected_check_digit": "5",
+            "actual": "6"
+          },
+          {
+            "isbn": "9781801078923",
+            "expected_check_digit": "4",
+            "actual": "3"
+          },
+          {
+            "isbn": "9781098105430",
+            "expected_check_digit": "3",
+            "actual": "0"
+          }
+        ]
+      },
+      "evidence_urls": [
+        "https://www.isbn-international.org/content/what-isbn/10"
+      ],
+      "review_scope": "Root read the question, relevant answer context, and the evidence cited; this is not a second full review of every factual statement."
+    },
+    "full_parent_record_read": true
+  },
+  {
+    "sample_id": "G0479",
+    "operation": "quarantine",
+    "parent_lines_one_based": [
+      876,
+      1088
+    ],
+    "exposures_before": 2,
+    "exposures_after": 0,
+    "reason": "把维生素C列作元素，并混合生物分类与未经限定的营养量描述；不只改一词保留其他疑点。",
+    "evidence": {
+      "id": "G0479",
+      "train_rows_one_based": [
+        876,
+        1088
+      ],
+      "messages_sha256": "81d2acca5bfe0a2276cf3ad84c54c97c46db7b94c9f39277fa4503b790f560f7",
+      "category": "概念分类错误",
+      "disposition": "confirmed_issue",
+      "conclusion": "维生素C不是化学元素，不能标作常量元素。",
+      "quotes": [
+        {
+          "part": "body",
+          "quote": "维生素C（常量元素）"
+        }
+      ],
+      "verification": {
+        "method": "chemical category distinction",
+        "vitamin_c_formula": "C6H8O6"
+      },
+      "evidence_urls": [
+        "https://webbook.nist.gov/cgi/cbook.cgi?ID=50-81-7&Units=SI"
+      ],
+      "review_scope": "Root read the question, relevant answer context, and the evidence cited; this is not a second full review of every factual statement."
+    },
+    "full_parent_record_read": true
+  }
+]

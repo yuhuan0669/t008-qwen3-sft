@@ -1,0 +1,122 @@
+[
+  {
+    "sample_id": "G0002",
+    "parent_line_one_based": 2,
+    "candidate_line_one_based": 2,
+    "before_input_tokens": 1467,
+    "after_input_tokens": 1505,
+    "before_supervised_tokens": 1379,
+    "after_supervised_tokens": 1417,
+    "same_question": true,
+    "full_encoding_no_truncation": true,
+    "weights_unchanged": true
+  },
+  {
+    "sample_id": "G0008",
+    "parent_line_one_based": 10,
+    "candidate_line_one_based": 10,
+    "before_input_tokens": 914,
+    "after_input_tokens": 724,
+    "before_supervised_tokens": 867,
+    "after_supervised_tokens": 677,
+    "same_question": true,
+    "full_encoding_no_truncation": true,
+    "weights_unchanged": true
+  },
+  {
+    "sample_id": "G0038",
+    "parent_line_one_based": 54,
+    "candidate_line_one_based": 53,
+    "before_input_tokens": 1685,
+    "after_input_tokens": 1787,
+    "before_supervised_tokens": 1654,
+    "after_supervised_tokens": 1756,
+    "same_question": true,
+    "full_encoding_no_truncation": true,
+    "weights_unchanged": true
+  },
+  {
+    "sample_id": "G0115",
+    "parent_line_one_based": 157,
+    "candidate_line_one_based": 153,
+    "before_input_tokens": 1529,
+    "after_input_tokens": 1530,
+    "before_supervised_tokens": 1476,
+    "after_supervised_tokens": 1477,
+    "same_question": true,
+    "full_encoding_no_truncation": true,
+    "weights_unchanged": true
+  },
+  {
+    "sample_id": "G0002",
+    "parent_line_one_based": 453,
+    "candidate_line_one_based": 447,
+    "before_input_tokens": 1467,
+    "after_input_tokens": 1505,
+    "before_supervised_tokens": 1379,
+    "after_supervised_tokens": 1417,
+    "same_question": true,
+    "full_encoding_no_truncation": true,
+    "weights_unchanged": true
+  },
+  {
+    "sample_id": "G0334",
+    "parent_line_one_based": 506,
+    "candidate_line_one_based": 500,
+    "before_input_tokens": 1768,
+    "after_input_tokens": 1812,
+    "before_supervised_tokens": 1742,
+    "after_supervised_tokens": 1786,
+    "same_question": true,
+    "full_encoding_no_truncation": true,
+    "weights_unchanged": true
+  },
+  {
+    "sample_id": "G0038",
+    "parent_line_one_based": 741,
+    "candidate_line_one_based": 733,
+    "before_input_tokens": 1685,
+    "after_input_tokens": 1787,
+    "before_supervised_tokens": 1654,
+    "after_supervised_tokens": 1756,
+    "same_question": true,
+    "full_encoding_no_truncation": true,
+    "weights_unchanged": true
+  },
+  {
+    "sample_id": "G0115",
+    "parent_line_one_based": 951,
+    "candidate_line_one_based": 940,
+    "before_input_tokens": 1529,
+    "after_input_tokens": 1530,
+    "before_supervised_tokens": 1476,
+    "after_supervised_tokens": 1477,
+    "same_question": true,
+    "full_encoding_no_truncation": true,
+    "weights_unchanged": true
+  },
+  {
+    "sample_id": "G0334",
+    "parent_line_one_based": 1175,
+    "candidate_line_one_based": 1160,
+    "before_input_tokens": 1768,
+    "after_input_tokens": 1812,
+    "before_supervised_tokens": 1742,
+    "after_supervised_tokens": 1786,
+    "same_question": true,
+    "full_encoding_no_truncation": true,
+    "weights_unchanged": true
+  },
+  {
+    "sample_id": "G0008",
+    "parent_line_one_based": 1184,
+    "candidate_line_one_based": 1169,
+    "before_input_tokens": 914,
+    "after_input_tokens": 724,
+    "before_supervised_tokens": 867,
+    "after_supervised_tokens": 677,
+    "same_question": true,
+    "full_encoding_no_truncation": true,
+    "weights_unchanged": true
+  }
+]

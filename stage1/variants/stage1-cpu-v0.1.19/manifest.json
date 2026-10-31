@@ -1,0 +1,31 @@
+{
+  "version": "stage1-cpu-v0.1.19",
+  "parent": "stage1-cpu-v0.1.17",
+  "parent_sha256": "bf5f1aee58d48a510b84669fa351065621e84037b160da91e82cf8cd1b69dc28",
+  "status": "CPU_CHECKED_CONTENT_REVIEWED_PENDING_USER_REVIEW",
+  "files_sha256": {
+    "train.jsonl": "0e8f4f326cc310e47a16cc0563e63b955c81ab385026432a2b639405af70e644",
+    "train-map.jsonl": "61f4b374b47d0d671be3f49b59931fa6dafb2839ef3aad3d6decca9c30c886e4",
+    "system.txt": "3ae02d520406f73e735752ef04ff395785f84fec7ee1619fd9d392d86cb92933",
+    "identity-keys.json": "5cde71fa1f4975e5a768aaa74b8b24e681ef2f9d5b1cb79ec0a0c25304f9847c",
+    "identity_loss3.py": "082510fc6fadc31eb179384299cc1425e6dfd98ae01ad95d463759c1a0627db8",
+    "changes.jsonl": "da880eff13efb37e2cd0a1300b830957f393f4ffaf6dd34e0bb8bacbec6b7d78",
+    "quarantine.jsonl": "2a21d0f73c1e963d5690efcd958a67083d4d53ac9c4a885ebd69ac535a7b3f38",
+    "decisions.json": "b59ebc4b2ce3bef675b0991aeeeb2ff447f9e816e23c3cea11a2ea320be0525c",
+    "source-audit.json": "4db48a9ec411cfcd6b8c5053c5a36acbadd2731a4652ef542e60f250e7d52d1f",
+    "training-config.json": "321fd697dc5d73255889ee94c90be9a22b71a7e38ba91ff1fa1afd4bec0a110e",
+    "statistics.json": "1ce2cc52661416d313cbe06ba1e9796bb12418adaf7557023b4bb5f5265d953b",
+    "cpu-check/report.json": "78e412c17faf9a1bc06a03849d4f7291bf9709d51d88f72a898ab30d5d82fbad",
+    "cpu-check/input-binding.json": "e78a27834a673a832663ba8dbdbc06be8575f82ff50b11ba8e25c0678b2d7c25",
+    "independent-review.md": "25ecb418e7ed334cc7e7f572cc130285c50a80b746e86b077b7c60f28afe43c6"
+  },
+  "rows": 1341,
+  "recorded_at_utc": "2026-10-31T13:19:13.763323+00:00",
+  "training_started": false,
+  "inference_executed": false,
+  "uat_paused": false,
+  "english_deferred": true,
+  "review": "independent-review.md",
+  "cpu_report": "cpu-check/report.json",
+  "file_manifest": "FILES.sha256.json"
+}

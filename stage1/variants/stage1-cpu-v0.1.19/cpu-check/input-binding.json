@@ -1,0 +1,10 @@
+{
+  "dataset_sha256": "0e8f4f326cc310e47a16cc0563e63b955c81ab385026432a2b639405af70e644",
+  "executed_check_cpu_sha256": "03b86038979194c83e1a1b3774c13e257cd34ab858708606b0d82be523d80d28",
+  "training_config_input_sha256": "77f162fc8a333ce4e0b7d39f6728e6f8762f57431b3837e76f3b58463ddc0ee8",
+  "executed_map_sha256": "f30d9415a6e092688c31582d8594148f74501f8d67c3d0f2fbc2ebe319e10628",
+  "map_note": "After CPU execution, canonical current row_zero_based/line_one_based fields corrected for deletions. Parent and candidate line mapping used by CPU checker unchanged; dataset and config argv unchanged. Structural verifier checks final canonical indices.",
+  "final_map_sha256": "61f4b374b47d0d671be3f49b59931fa6dafb2839ef3aad3d6decca9c30c886e4",
+  "final_training_config_sha256": "321fd697dc5d73255889ee94c90be9a22b71a7e38ba91ff1fa1afd4bec0a110e",
+  "config_note": "Only status/runtime-validation metadata finalized after CPU. full_argv exactly matches training-config.input.json; no hyperparameter or plugin change."
+}

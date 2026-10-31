@@ -1,0 +1,7 @@
+__pycache__/
+cpu-check/args-only/
+cpu-check/mask-probes.json
+cpu-check/results.tar
+cpu-check/*.log
+cpu-check/**/mask-probes.json
+cpu-check/**/*.log

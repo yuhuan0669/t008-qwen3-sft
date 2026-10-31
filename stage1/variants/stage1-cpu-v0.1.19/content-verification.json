@@ -1,0 +1,22 @@
+{
+  "verified": true,
+  "scope": "Local arithmetic, SQLite examples, Python type/syntax checks and direct question/answer comparison; no model/Judge.",
+  "sql": {
+    "old_department_A_average": 100.0,
+    "new_department_A_average": 200.0,
+    "all_department_means_verified": true,
+    "strict_more_than_five": [
+      [
+        "B",
+        6
+      ]
+    ]
+  },
+  "ppm_mass_basis": 100,
+  "adiabatic_work_positive_delta_u_negative": true,
+  "fiction_attribution_corrected": true,
+  "list_has_reserve": false,
+  "old_preallocation_syntax_invalid": true,
+  "placeholder_list_length": 3,
+  "dataset_sha256": "0e8f4f326cc310e47a16cc0563e63b955c81ab385026432a2b639405af70e644"
+}

@@ -1,0 +1,105 @@
+{
+  "before": {
+    "rows": 1357,
+    "source_exposures": {
+      "swift/Qwen3-SFT-Mixin": 1030,
+      "swift/self-cognition": 216,
+      "t008/strict-json-v1": 4,
+      "t008/general-nonthinking-v1": 2,
+      "t008/project-positioning-v1": 23,
+      "t008/company-facts-v1": 2,
+      "t008/chinese-identity-v1": 16,
+      "t008/general-nonthinking-v2": 12,
+      "t008/business-evidence-v1": 8,
+      "t008/company-boundary-v1": 12,
+      "t008/nt-fact-edit-v1": 8,
+      "t008/nt-task-intent-v1": 8,
+      "t008/nt-evidence-v1": 8,
+      "t008/nt-multiturn-scope-v1": 8
+    },
+    "language_exposures": {
+      "zh": 862,
+      "mixed": 17,
+      "en_or_other": 478
+    },
+    "system_rows": 175,
+    "identity_exposures": 234,
+    "thinking_rows": 1025
+  },
+  "after": {
+    "rows": 1341,
+    "source_exposures": {
+      "swift/Qwen3-SFT-Mixin": 1014,
+      "swift/self-cognition": 216,
+      "t008/strict-json-v1": 4,
+      "t008/general-nonthinking-v1": 2,
+      "t008/project-positioning-v1": 23,
+      "t008/company-facts-v1": 2,
+      "t008/chinese-identity-v1": 16,
+      "t008/general-nonthinking-v2": 12,
+      "t008/business-evidence-v1": 8,
+      "t008/company-boundary-v1": 12,
+      "t008/nt-fact-edit-v1": 8,
+      "t008/nt-task-intent-v1": 8,
+      "t008/nt-evidence-v1": 8,
+      "t008/nt-multiturn-scope-v1": 8
+    },
+    "language_exposures": {
+      "zh": 846,
+      "mixed": 17,
+      "en_or_other": 478
+    },
+    "system_rows": 175,
+    "identity_exposures": 234,
+    "thinking_rows": 1009
+  },
+  "repaired_records": 5,
+  "quarantined_records": 8,
+  "repaired_exposures": 10,
+  "quarantined_exposures": 16,
+  "untouched_rows": 1331,
+  "cpu_tokens": {
+    "before": {
+      "input_tokens": 1626095,
+      "supervised_tokens": 1506960,
+      "weighted_token_units": 1524818.0
+    },
+    "after": {
+      "input_tokens": 1601949,
+      "supervised_tokens": 1483680,
+      "weighted_token_units": 1501538.0
+    }
+  },
+  "cpu_by_mode": {
+    "before": {
+      "thinking_rows": 1025,
+      "thinking_weighted_units": 1478623.0,
+      "nonthinking_rows": 332,
+      "nonthinking_weighted_units": 46195.0
+    },
+    "after": {
+      "thinking_rows": 1009,
+      "thinking_weighted_units": 1455343.0,
+      "nonthinking_rows": 332,
+      "nonthinking_weighted_units": 46195.0
+    }
+  },
+  "identity_weighted_token_units": {
+    "before": 26795.0,
+    "after": 26795.0
+  },
+  "identity_weighted_share_percent": {
+    "before": 1.7572588990948428,
+    "after": 1.7845036222859494
+  },
+  "system_subset_weighted_token_units": {
+    "before": 15366.0,
+    "after": 15366.0
+  },
+  "supervised_token_change": -23280,
+  "estimated_optimizer_steps": {
+    "before": 85,
+    "after": 84
+  },
+  "native_cpu_report": "cpu-check/report.json"
+}

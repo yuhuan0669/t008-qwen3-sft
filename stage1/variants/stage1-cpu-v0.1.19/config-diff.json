@@ -1,0 +1,13 @@
+{
+  "reference": "stage1/variants/stage1-cpu-v0.1.17/training-config.json",
+  "hyperparameters_unchanged": true,
+  "learning_rate": 0.0001,
+  "v0118_lower_lr_not_inherited": true,
+  "only_argv_differences": "dataset/output/plugin version paths; plugin bytes identical",
+  "rows_before": 1357,
+  "rows_after": 1341,
+  "estimated_steps_before": 85,
+  "estimated_steps_after": 84,
+  "scheduler_note": "With one epoch, shorter data also shortens scheduler horizon. Not a fixed-step or fixed-token experiment.",
+  "execution_authorized": false
+}

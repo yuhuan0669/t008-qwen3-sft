@@ -1,0 +1,22 @@
+{
+  "verified": true,
+  "rows": 1341,
+  "repaired_exposures": 10,
+  "quarantined_exposures": 16,
+  "untouched_raw_rows": 1331,
+  "all_retained_questions_unchanged": true,
+  "all_identity_rows_unchanged": 234,
+  "english_rows_unchanged": 478,
+  "prior_32_nonthinking_pairs_preserved": true,
+  "system_assignments_and_bytes_unchanged": true,
+  "hyperparameters_unchanged_vs_v0117": true,
+  "scheduler_steps_before": 85,
+  "scheduler_steps_after": 84,
+  "parent_files_unchanged": true,
+  "training_started": false,
+  "inference_executed": false,
+  "dataset_sha256": "0e8f4f326cc310e47a16cc0563e63b955c81ab385026432a2b639405af70e644",
+  "cpu_verified": true,
+  "cpu_report_sha256": "78e412c17faf9a1bc06a03849d4f7291bf9709d51d88f72a898ab30d5d82fbad",
+  "uat_unchanged_healthy": true
+}

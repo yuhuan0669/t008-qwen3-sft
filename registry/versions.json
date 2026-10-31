@@ -257,6 +257,19 @@
       "manifest": "stage1/variants/stage1-cpu-v0.1.17/manifest.json",
       "frozen_snapshot_status": "CPU_CHECKED_PRE_EXECUTION_SNAPSHOT",
       "current_execution": "stage2/runs/t008-v0117-20261031-100924/RESULT.md"
+    },
+    {
+      "id": "stage1-cpu-v0.1.19",
+      "parent": "stage1-cpu-v0.1.17",
+      "repository_path": "stage1/variants/stage1-cpu-v0.1.19/train.jsonl",
+      "sha256": "0e8f4f326cc310e47a16cc0563e63b955c81ab385026432a2b639405af70e644",
+      "rows": 1341,
+      "bytes": 7358105,
+      "storage": "git",
+      "manifest": "stage1/variants/stage1-cpu-v0.1.19/manifest.json",
+      "frozen_snapshot_status": "CPU_CHECKED_CONTENT_REVIEWED_PENDING_USER_REVIEW",
+      "review_report": "stage1/variants/stage1-cpu-v0.1.19/README.md",
+      "training_started": false
     }
   ],
   "data_canonical_hashes": {

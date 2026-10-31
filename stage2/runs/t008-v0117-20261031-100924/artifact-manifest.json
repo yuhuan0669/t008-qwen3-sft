@@ -1,0 +1,78 @@
+{
+  "RESULT.md": {
+    "bytes": 7672,
+    "sha256": "4d8363176b55ee220b804c93f9cc4c2361ddf8a4902c2627e844f040166c61c9"
+  },
+  "execution-verification.json": {
+    "bytes": 1774,
+    "sha256": "49da1464637adffafc500bce3828035c3759bab202a0c11400a015125b7bac12"
+  },
+  "final-validation.json": {
+    "bytes": 565,
+    "sha256": "cc1fa2c8124fb4e90e83af5042ca55b8f21274369682d84c9bcd339a0632b9e3"
+  },
+  "public-restoration-verification.json": {
+    "bytes": 534,
+    "sha256": "b20819bb0b7c9207ba930ee143ee5b8dc46dcbbb501cdc33f9f13aaa43729bd9"
+  },
+  "evaluation/semantic-summary.json": {
+    "bytes": 68388,
+    "sha256": "650f7a91eef6c9e149c3577def9032a5af7ff650cc758a7885ba172ccc00c25f"
+  },
+  "evaluation/review-coverage.json": {
+    "bytes": 1251,
+    "sha256": "46c65fc316826eaa956dea7661b68701de6f528b371754c32a47645e50842cfc"
+  },
+  "evaluation/combined.jsonl": {
+    "bytes": 3575214,
+    "sha256": "1616213e05ffad1a70506b6bcab8652424b272dc185ca07ef9b6e186f1366f9d"
+  },
+  "evaluation/results.jsonl": {
+    "bytes": 4668163,
+    "sha256": "8e8be6a28cf67359085af50c9746e11ce201fa2dd355467e5b3843c74b5e3523"
+  },
+  "evaluation/reused-responses.jsonl": {
+    "bytes": 1687000,
+    "sha256": "c4c8a20e21d1ae7e9f0f65554a1177fc5955e76f872633998bbad953125865c3"
+  },
+  "evaluation/cases.json": {
+    "bytes": 147133,
+    "sha256": "dc6d11b67facceb60ad951d8cdb75faae10c44a6a3e649a29bc28d746abdca3b"
+  },
+  "evaluation/BY_QUESTION.md": {
+    "bytes": 67676,
+    "sha256": "0cb3a217b9fba06ceb87b55d54c4af750fb3de6827dd0be943cc575bb1a7e98c"
+  },
+  "evaluation/EXAMPLES.md": {
+    "bytes": 231612,
+    "sha256": "ced5ef7d0e423429af9202fef320abe933019e90f7b27774ac9512f9cb2e33ec"
+  },
+  "evaluation/raw.tar": {
+    "bytes": 8417280,
+    "sha256": "658beb83b574cbc77216deccb56ed13ad63b41b45f277dbe78b04610a2c4f8ae"
+  },
+  "evaluation/review/verdicts-a.jsonl": {
+    "bytes": 252264,
+    "sha256": "dfe03876c26cf260b79e4e9e175963389381fabe76330f745fb50d04444a7ec3"
+  },
+  "evaluation/review/verdicts-b.jsonl": {
+    "bytes": 191204,
+    "sha256": "1dbd56d2d277c3cf2d526806b97a6ab7d7f0ad14c544802a28d068c851844f09"
+  },
+  "evaluation/review/verdicts-c.jsonl": {
+    "bytes": 216028,
+    "sha256": "e2a12ba8dac03b4fd6c07739782691c626715d0d5b97a13973c66c60eec05dd5"
+  },
+  "evaluation/review/verdicts-root.jsonl": {
+    "bytes": 63253,
+    "sha256": "b01826148dddc71a6fadebc14e2780367f5c9221ca0499ef8907fd7e1f22a5ed"
+  },
+  "evaluation/review/root-corrections.jsonl": {
+    "bytes": 1963,
+    "sha256": "d02bf86499edec597b4f8521287bdd08d77daf389381d9b68d61489c2784734f"
+  },
+  "evaluation/review/near-echo-root-audit.json": {
+    "bytes": 1290,
+    "sha256": "1fff16c2c347bb06cfc83fdb2f17838223548c79e3a45d26e64786d44d916055"
+  }
+}

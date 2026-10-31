@@ -1,0 +1,13 @@
+{
+  "run_id": "t008-v0117-20261031-100924",
+  "experiment_approved": true,
+  "uat_pause_approved": true,
+  "approved_data_sha256": "bf5f1aee58d48a510b84669fa351065621e84037b160da91e82cf8cd1b69dc28",
+  "window_start_utc": "2026-10-31T10:11:33.761962+00:00",
+  "window_end_utc": "2026-10-31T14:11:33.761962+00:00",
+  "restore_start_utc": "2026-10-31T13:31:33.761962+00:00",
+  "decision_ref": "Current user 开始吧 after discussing controlled v0.1.17 with known data issues retained; earlier standing permission permits pausing UAT without re-authorization. One 3-step Smoke and one fresh-base Full, plus 1158 planned generations; restore existing UAT, no deployment. Four-hour operational recovery ceiling, not a user deadline.",
+  "restoration_owner": "Current implementation agent",
+  "uat_coordination": "Owner directly confirmed immediate pause",
+  "max_full_runs": 1
+}

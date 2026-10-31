@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "slots": 2224,
+  "unique_reviewed": 2051,
+  "missing": 0,
+  "reviewer_final_hashes_match": true,
+  "root_adjustments": 4,
+  "current_state_registered": true,
+  "serving_and_release_records_unchanged": true,
+  "aggregation_review": "Independent read-only check found normal-control denominator 48 should be 72; corrected before generating final report, assertion passed.",
+  "archived_source_note": "window.py line 21 retains its pre-execution whitespace so its bytes still match execution-code-binding.json; not a runtime or data change."
+}

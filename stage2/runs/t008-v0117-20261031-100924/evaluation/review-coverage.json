@@ -1,0 +1,28 @@
+{
+  "slots": 2224,
+  "unique_answers_reviewed": 2051,
+  "unreviewed": 0,
+  "files": {
+    "verdicts-a.jsonl": {
+      "sha256": "dfe03876c26cf260b79e4e9e175963389381fabe76330f745fb50d04444a7ec3",
+      "unique_labels": 721
+    },
+    "verdicts-b.jsonl": {
+      "sha256": "1dbd56d2d277c3cf2d526806b97a6ab7d7f0ad14c544802a28d068c851844f09",
+      "unique_labels": 526
+    },
+    "verdicts-c.jsonl": {
+      "sha256": "e2a12ba8dac03b4fd6c07739782691c626715d0d5b97a13973c66c60eec05dd5",
+      "unique_labels": 624
+    },
+    "verdicts-root.jsonl": {
+      "sha256": "b01826148dddc71a6fadebc14e2780367f5c9221ca0499ef8907fd7e1f22a5ed",
+      "unique_labels": 180
+    }
+  },
+  "root_corrections_sha256": "d02bf86499edec597b4f8521287bdd08d77daf389381d9b68d61489c2784734f",
+  "root_near_echo_audit_sha256": "1fff16c2c347bb06cfc83fdb2f17838223548c79e3a45d26e64786d44d916055",
+  "review_type": "Three model-blinded Agent shards; root identity/JSON review and issue checks. Not external Judge or independent acceptance.",
+  "minor_format_rule": "Sentence count/person variations noted separately unless they prevent substantive completion.",
+  "root_scope": "Root did not independently reread every shard answer. Prior labels inherited under the same rubric."
+}

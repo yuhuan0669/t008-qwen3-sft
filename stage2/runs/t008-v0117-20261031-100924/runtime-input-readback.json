@@ -1,0 +1,15 @@
+{
+  "run": "t008-v0117-20261031-100924",
+  "file_hashes": {
+    "stage1/data/train.jsonl": "bf5f1aee58d48a510b84669fa351065621e84037b160da91e82cf8cd1b69dc28",
+    "stage1/data/manifest.json": "7d79d0a5b148caee607904fc49bef9f71687282521f17c7a3ece9e54398d2aa1",
+    "stage1/training/run-spec.json": "630e9afb773b51baca4b9b6213b7127a2676f71e2fd094398e8820996c26518e",
+    "stage1/training/local_data_guard.py": "45ba3763667ece681ad9094786035e40043ed334a72c0e76b4fc413755901fa5",
+    "stage1/evidence/encoding-report.json": "08ca98203ba877d2e6fa01be15b43ca8485a4d0ec5b4399fe3e5ebcf848ee06c",
+    "stage2/scripts/run_local_sft.py": "65d78e369b5dfcd23cdc50d205395e45b6326d5c8a9d4103e9f3cecfc72ab9d0",
+    "stage1/variants/stage1-cpu-v0.1.17/identity_loss3.py": "082510fc6fadc31eb179384299cc1425e6dfd98ae01ad95d463759c1a0627db8",
+    "stage1/variants/stage1-cpu-v0.1.17/identity-keys.json": "5cde71fa1f4975e5a768aaa74b8b24e681ef2f9d5b1cb79ec0a0c25304f9847c"
+  },
+  "data_sha256": "bf5f1aee58d48a510b84669fa351065621e84037b160da91e82cf8cd1b69dc28",
+  "rows": 1357
+}

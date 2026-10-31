@@ -1,0 +1,23 @@
+{
+  "checked_at_utc": "2026-10-31T11:27:33.195969+00:00",
+  "deployment_spec_equal": true,
+  "ready": 1,
+  "available": 1,
+  "public_health": [
+    {
+      "status": 200,
+      "utc": "2026-10-31T11:27:31.096396+00:00"
+    },
+    {
+      "status": 200,
+      "utc": "2026-10-31T11:27:33.149934+00:00"
+    }
+  ],
+  "model_ids": [
+    "octa-carbon-v1",
+    "octa-carbon-sft-v0114",
+    "octa-carbon-sft-v0116"
+  ],
+  "no_inference_probe": true,
+  "tls_client": "system curl with certificate verification; Python local CA unavailable"
+}

@@ -1,0 +1,8 @@
+{
+  "utc": "2026-10-31T10:09:24.857892+00:00",
+  "user_instruction": "开始吧",
+  "scope": "Approved v0.1.17 controlled diagnostic: 3-step Smoke + one fresh-base Full + frozen 1158 generations; no deployment; existing permission permits UAT pause with restoration.",
+  "known_content_issues_retained": true,
+  "english_optimization": false,
+  "data_sha256": "bf5f1aee58d48a510b84669fa351065621e84037b160da91e82cf8cd1b69dc28"
+}

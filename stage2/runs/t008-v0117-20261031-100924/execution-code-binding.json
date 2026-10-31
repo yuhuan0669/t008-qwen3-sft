@@ -1,0 +1,19 @@
+{
+  "missing_slots": 1158,
+  "json_schema_slots": {
+    "original_base": 14,
+    "v0.1.14": 14,
+    "v0.1.16": 14,
+    "candidate_v0.1.17": 14
+  },
+  "code_sha256": {
+    "stage_inputs.py": "2c6da18019c61e1b9f6bd7064775035e12f977d95236fa415daf579e81908004",
+    "window.py": "01eeaaf4e6d74978c6e40a3276b904ffc6ba288733c7d182a77cc27b83e306b4",
+    "execute.py": "4009d8b5b0e592af9a788518b26d3b4669be1550608b72d395c4c806f9906c56",
+    "collect_model.py": "ed7278b6df999475187d655e672b3b1ad27f9219e165d284a4103f331d72f3f3",
+    "run_local_sft.py": "65d78e369b5dfcd23cdc50d205395e45b6326d5c8a9d4103e9f3cecfc72ab9d0",
+    "prepare_remote.py": "7372b1720fc844f7885b312ad5a6577005709905aacc59038b47f8b5c2bcd917",
+    "evaluation/run.py": "8f52614e64e73e9c95b37b1b287b8db5965abd658c117a5722d716eb59887728",
+    "evaluation/prepare_review.py": "b6a81bb1976554ae766502d87f2f434cc108f9ea6f6fc49abe37543cc788daff"
+  }
+}

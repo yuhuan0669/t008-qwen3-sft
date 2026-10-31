@@ -1,0 +1,36 @@
+{
+  "comparison_slots": 2224,
+  "reusable_saved_slots": 1066,
+  "new_generation_slots": 1158,
+  "reused_by_model": {
+    "original_base": 480,
+    "v0.1.16": 490,
+    "v0.1.14": 96
+  },
+  "missing_by_model": {
+    "original_base": 76,
+    "v0.1.14": 460,
+    "v0.1.16": 66,
+    "candidate_v0.1.17": 556
+  },
+  "missing_by_group": {
+    "nt_system": 912,
+    "nt_no_system": 192,
+    "thinking_system": 54
+  },
+  "sources_sha256": {
+    "t024_ab_review_20261030/regression_localization_20261031/raw_binding_summary.json": "06f72f4e02bbf2584e1779c057321d25b6e8f1ccba2407f4fbb327be585f5d9e",
+    "t024_ab_review_20261030/results/with_system/LIVE_MODEL_FILES_VERIFICATION.json": "a32fe37034f682004267bc78b6738dadaa77b583b138ee38b583c0ef8a110544",
+    "t024_ab_review_20261030/results/with_system/A/generation/config.json": "097eea3df092204aeeef96d2bec59b2009b0ee11589a52dd94662880fbf538ca",
+    "t024_ab_review_20261030/results/with_system/B/generation/config.json": "c709305603d5d80c5d0292989586996ec07a8e6c2752dbc58eafeddbf8036aaa",
+    "t024_ab_review_20261030/results/without_system/LIVE_NO_SYSTEM_VERIFICATION.json": "fdc5c209881ec05575c17094c76d8c417c58a835a9f50d22268e47f0372b1f84",
+    "t024_ab_review_20261030/results/without_system/A/generation/config.json": "61a3fb0161f2771656469dd88a19e8b930ab7445164d39773b148bc814692442",
+    "t024_ab_review_20261030/results/without_system/B/generation/config.json": "61609186f939729b88944a6f71a63f4027d2397d5340739948cc9a65908afa06",
+    "t024_ab_review_20261030/thinking_results/LIVE_THINKING_SYSTEM_VERIFICATION.json": "c5d4ed8a2c4800df3a94eeb08dcc47d7c1b740871ff1345bb879564973edfe7c",
+    "t024_ab_review_20261030/results/with_system/answers.jsonl": "f493db4722344408c89baa23580bbdbc96d64a1186825bcb2010398b70e617c4",
+    "t024_ab_review_20261030/results/without_system/answers.jsonl": "53dc527d62178f35dbe6b551720a3bc15703f90d281d67f8680059d106f2c622",
+    "t024_ab_review_20261030/thinking_results/answers.jsonl": "ff9363b5c09532deb6ec8e1ded1bb384c82b4db4020aa05446d0c9d1d409f53c",
+    "t008_qwen3_sft/stage2/diagnostics/v0114-no-system-20261031/results.jsonl": "e74c47e0ab1fe41b26efa49d215ace745c942079ea77e44bba242db7cd246902"
+  },
+  "conditions": "Reuse still requires pre-run readback of weights/runtime/template; no new generation performed."
+}

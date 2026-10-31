@@ -1,0 +1,56 @@
+{
+  "status": "PASS",
+  "frozen_files_unchanged": 51,
+  "historical_source_files_unchanged": 12,
+  "training": {
+    "smoke_steps": 3,
+    "full_steps": 85,
+    "rows": 1357,
+    "epoch": 1,
+    "full_command_matches": true,
+    "adapter_sha256": "f50d8b9827aa640da15d3debbe34f79729ba55c6447fff87007e566818e76f12",
+    "local_and_clearml_package_verified": true
+  },
+  "generation": {
+    "planned_slots": 2224,
+    "new": 1158,
+    "reused": 1066,
+    "raw_records_checked": 1158,
+    "technical_retries": 0,
+    "request_configuration_equal": true,
+    "rendered_inputs_matched": 196,
+    "schema_checked": 56,
+    "schema_errors": 0
+  },
+  "restoration": {
+    "checked_at_utc": "2026-10-31T11:27:33.195969+00:00",
+    "deployment_spec_equal": true,
+    "ready": 1,
+    "available": 1,
+    "public_health": [
+      {
+        "status": 200,
+        "utc": "2026-10-31T11:27:31.096396+00:00"
+      },
+      {
+        "status": 200,
+        "utc": "2026-10-31T11:27:33.149934+00:00"
+      }
+    ],
+    "model_ids": [
+      "octa-carbon-v1",
+      "octa-carbon-sft-v0114",
+      "octa-carbon-sft-v0116"
+    ],
+    "no_inference_probe": true,
+    "tls_client": "system curl with certificate verification; Python local CA unavailable"
+  },
+  "analysis_code_changes": {
+    "evaluation/prepare_review.py": {
+      "before": "b6a81bb1976554ae766502d87f2f434cc108f9ea6f6fc49abe37543cc788daff",
+      "after": "19a86659e23a8d5901bb4b5eefd0a45f128543bd71bca2f0f996bfeb3b19875f"
+    }
+  },
+  "analysis_change_reason": "Rebalanced anonymous review shards after initial assignment; generation, labels and rubric were not changed by this partition update.",
+  "limits": "Execution integrity only; semantic quality is recorded separately. Reused generation times and batching differ."
+}

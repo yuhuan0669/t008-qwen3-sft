@@ -1,0 +1,399 @@
+{
+  "checked": 56,
+  "failed": 0,
+  "period_equivalence": "2026-09 equals 2026年9月; no literal-string requirement in question",
+  "checks": [
+    {
+      "model": "original_base",
+      "group": "nt_system",
+      "case_id": "D16-11",
+      "repeat": 1,
+      "pass": true
+    },
+    {
+      "model": "original_base",
+      "group": "nt_system",
+      "case_id": "D16-12",
+      "repeat": 1,
+      "pass": true
+    },
+    {
+      "model": "original_base",
+      "group": "nt_system",
+      "case_id": "D16-12",
+      "repeat": 2,
+      "pass": true
+    },
+    {
+      "model": "original_base",
+      "group": "nt_system",
+      "case_id": "D16-11",
+      "repeat": 2,
+      "pass": true
+    },
+    {
+      "model": "original_base",
+      "group": "nt_system",
+      "case_id": "D16-12",
+      "repeat": 3,
+      "pass": true
+    },
+    {
+      "model": "original_base",
+      "group": "nt_system",
+      "case_id": "D16-11",
+      "repeat": 3,
+      "pass": true
+    },
+    {
+      "model": "original_base",
+      "group": "nt_system",
+      "case_id": "E17-J03",
+      "repeat": 1,
+      "pass": true
+    },
+    {
+      "model": "original_base",
+      "group": "nt_system",
+      "case_id": "E17-J03",
+      "repeat": 2,
+      "pass": true
+    },
+    {
+      "model": "original_base",
+      "group": "nt_system",
+      "case_id": "E17-J03",
+      "repeat": 3,
+      "pass": true
+    },
+    {
+      "model": "original_base",
+      "group": "nt_system",
+      "case_id": "E17-J04",
+      "repeat": 1,
+      "pass": true
+    },
+    {
+      "model": "original_base",
+      "group": "nt_system",
+      "case_id": "E17-J04",
+      "repeat": 3,
+      "pass": true
+    },
+    {
+      "model": "original_base",
+      "group": "nt_system",
+      "case_id": "E17-J04",
+      "repeat": 2,
+      "pass": true
+    },
+    {
+      "model": "original_base",
+      "group": "thinking_system",
+      "case_id": "D16-11",
+      "repeat": 1,
+      "pass": true
+    },
+    {
+      "model": "original_base",
+      "group": "thinking_system",
+      "case_id": "D16-12",
+      "repeat": 1,
+      "pass": true
+    },
+    {
+      "model": "v0.1.14",
+      "group": "nt_system",
+      "case_id": "D16-11",
+      "repeat": 1,
+      "pass": true
+    },
+    {
+      "model": "v0.1.14",
+      "group": "nt_system",
+      "case_id": "D16-11",
+      "repeat": 2,
+      "pass": true
+    },
+    {
+      "model": "v0.1.14",
+      "group": "nt_system",
+      "case_id": "D16-12",
+      "repeat": 1,
+      "pass": true
+    },
+    {
+      "model": "v0.1.14",
+      "group": "nt_system",
+      "case_id": "D16-11",
+      "repeat": 3,
+      "pass": true
+    },
+    {
+      "model": "v0.1.14",
+      "group": "nt_system",
+      "case_id": "D16-12",
+      "repeat": 2,
+      "pass": true
+    },
+    {
+      "model": "v0.1.14",
+      "group": "nt_system",
+      "case_id": "D16-12",
+      "repeat": 3,
+      "pass": true
+    },
+    {
+      "model": "v0.1.14",
+      "group": "nt_system",
+      "case_id": "E17-J03",
+      "repeat": 1,
+      "pass": true
+    },
+    {
+      "model": "v0.1.14",
+      "group": "nt_system",
+      "case_id": "E17-J03",
+      "repeat": 2,
+      "pass": true
+    },
+    {
+      "model": "v0.1.14",
+      "group": "nt_system",
+      "case_id": "E17-J04",
+      "repeat": 3,
+      "pass": true
+    },
+    {
+      "model": "v0.1.14",
+      "group": "nt_system",
+      "case_id": "E17-J03",
+      "repeat": 3,
+      "pass": true
+    },
+    {
+      "model": "v0.1.14",
+      "group": "nt_system",
+      "case_id": "E17-J04",
+      "repeat": 2,
+      "pass": true
+    },
+    {
+      "model": "v0.1.14",
+      "group": "nt_system",
+      "case_id": "E17-J04",
+      "repeat": 1,
+      "pass": true
+    },
+    {
+      "model": "v0.1.14",
+      "group": "thinking_system",
+      "case_id": "D16-11",
+      "repeat": 1,
+      "pass": true
+    },
+    {
+      "model": "v0.1.14",
+      "group": "thinking_system",
+      "case_id": "D16-12",
+      "repeat": 1,
+      "pass": true
+    },
+    {
+      "model": "v0.1.16",
+      "group": "nt_system",
+      "case_id": "D16-11",
+      "repeat": 1,
+      "pass": true
+    },
+    {
+      "model": "v0.1.16",
+      "group": "nt_system",
+      "case_id": "D16-11",
+      "repeat": 2,
+      "pass": true
+    },
+    {
+      "model": "v0.1.16",
+      "group": "nt_system",
+      "case_id": "D16-11",
+      "repeat": 3,
+      "pass": true
+    },
+    {
+      "model": "v0.1.16",
+      "group": "nt_system",
+      "case_id": "D16-12",
+      "repeat": 1,
+      "pass": true
+    },
+    {
+      "model": "v0.1.16",
+      "group": "nt_system",
+      "case_id": "D16-12",
+      "repeat": 2,
+      "pass": true
+    },
+    {
+      "model": "v0.1.16",
+      "group": "nt_system",
+      "case_id": "D16-12",
+      "repeat": 3,
+      "pass": true
+    },
+    {
+      "model": "v0.1.16",
+      "group": "nt_system",
+      "case_id": "E17-J04",
+      "repeat": 1,
+      "pass": true
+    },
+    {
+      "model": "v0.1.16",
+      "group": "nt_system",
+      "case_id": "E17-J03",
+      "repeat": 1,
+      "pass": true
+    },
+    {
+      "model": "v0.1.16",
+      "group": "nt_system",
+      "case_id": "E17-J04",
+      "repeat": 2,
+      "pass": true
+    },
+    {
+      "model": "v0.1.16",
+      "group": "nt_system",
+      "case_id": "E17-J03",
+      "repeat": 2,
+      "pass": true
+    },
+    {
+      "model": "v0.1.16",
+      "group": "nt_system",
+      "case_id": "E17-J04",
+      "repeat": 3,
+      "pass": true
+    },
+    {
+      "model": "v0.1.16",
+      "group": "nt_system",
+      "case_id": "E17-J03",
+      "repeat": 3,
+      "pass": true
+    },
+    {
+      "model": "v0.1.16",
+      "group": "thinking_system",
+      "case_id": "D16-12",
+      "repeat": 1,
+      "pass": true
+    },
+    {
+      "model": "v0.1.16",
+      "group": "thinking_system",
+      "case_id": "D16-11",
+      "repeat": 1,
+      "pass": true
+    },
+    {
+      "model": "candidate_v0.1.17",
+      "group": "nt_system",
+      "case_id": "D16-11",
+      "repeat": 1,
+      "pass": true
+    },
+    {
+      "model": "candidate_v0.1.17",
+      "group": "nt_system",
+      "case_id": "D16-12",
+      "repeat": 1,
+      "pass": true
+    },
+    {
+      "model": "candidate_v0.1.17",
+      "group": "nt_system",
+      "case_id": "D16-11",
+      "repeat": 2,
+      "pass": true
+    },
+    {
+      "model": "candidate_v0.1.17",
+      "group": "nt_system",
+      "case_id": "D16-11",
+      "repeat": 3,
+      "pass": true
+    },
+    {
+      "model": "candidate_v0.1.17",
+      "group": "nt_system",
+      "case_id": "D16-12",
+      "repeat": 2,
+      "pass": true
+    },
+    {
+      "model": "candidate_v0.1.17",
+      "group": "nt_system",
+      "case_id": "D16-12",
+      "repeat": 3,
+      "pass": true
+    },
+    {
+      "model": "candidate_v0.1.17",
+      "group": "nt_system",
+      "case_id": "E17-J03",
+      "repeat": 3,
+      "pass": true
+    },
+    {
+      "model": "candidate_v0.1.17",
+      "group": "nt_system",
+      "case_id": "E17-J03",
+      "repeat": 1,
+      "pass": true
+    },
+    {
+      "model": "candidate_v0.1.17",
+      "group": "nt_system",
+      "case_id": "E17-J03",
+      "repeat": 2,
+      "pass": true
+    },
+    {
+      "model": "candidate_v0.1.17",
+      "group": "nt_system",
+      "case_id": "E17-J04",
+      "repeat": 1,
+      "pass": true
+    },
+    {
+      "model": "candidate_v0.1.17",
+      "group": "nt_system",
+      "case_id": "E17-J04",
+      "repeat": 2,
+      "pass": true
+    },
+    {
+      "model": "candidate_v0.1.17",
+      "group": "nt_system",
+      "case_id": "E17-J04",
+      "repeat": 3,
+      "pass": true
+    },
+    {
+      "model": "candidate_v0.1.17",
+      "group": "thinking_system",
+      "case_id": "D16-11",
+      "repeat": 1,
+      "pass": true
+    },
+    {
+      "model": "candidate_v0.1.17",
+      "group": "thinking_system",
+      "case_id": "D16-12",
+      "repeat": 1,
+      "pass": true
+    }
+  ]
+}

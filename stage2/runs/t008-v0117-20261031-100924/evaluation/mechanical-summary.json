@@ -1,0 +1,128 @@
+{
+  "slots": 2224,
+  "planned_slots": 2224,
+  "unique_review_items": 2051,
+  "groups": [
+    {
+      "model": "original_base",
+      "group": "nt_system",
+      "n": 420,
+      "exact_echo": 0,
+      "near_echo_screen": 0,
+      "loop_screen": 0,
+      "empty": 0,
+      "truncated": 0
+    },
+    {
+      "model": "v0.1.16",
+      "group": "nt_system",
+      "n": 420,
+      "exact_echo": 36,
+      "near_echo_screen": 3,
+      "loop_screen": 1,
+      "empty": 0,
+      "truncated": 0
+    },
+    {
+      "model": "original_base",
+      "group": "nt_no_system",
+      "n": 120,
+      "exact_echo": 0,
+      "near_echo_screen": 0,
+      "loop_screen": 0,
+      "empty": 0,
+      "truncated": 0
+    },
+    {
+      "model": "v0.1.14",
+      "group": "nt_no_system",
+      "n": 120,
+      "exact_echo": 6,
+      "near_echo_screen": 2,
+      "loop_screen": 0,
+      "empty": 0,
+      "truncated": 1
+    },
+    {
+      "model": "v0.1.16",
+      "group": "nt_no_system",
+      "n": 120,
+      "exact_echo": 29,
+      "near_echo_screen": 3,
+      "loop_screen": 0,
+      "empty": 0,
+      "truncated": 0
+    },
+    {
+      "model": "v0.1.16",
+      "group": "thinking_system",
+      "n": 16,
+      "exact_echo": 1,
+      "near_echo_screen": 0,
+      "loop_screen": 0,
+      "empty": 0,
+      "truncated": 0
+    },
+    {
+      "model": "original_base",
+      "group": "thinking_system",
+      "n": 16,
+      "exact_echo": 0,
+      "near_echo_screen": 0,
+      "loop_screen": 0,
+      "empty": 0,
+      "truncated": 0
+    },
+    {
+      "model": "v0.1.14",
+      "group": "nt_system",
+      "n": 420,
+      "exact_echo": 26,
+      "near_echo_screen": 2,
+      "loop_screen": 0,
+      "empty": 0,
+      "truncated": 2
+    },
+    {
+      "model": "v0.1.14",
+      "group": "thinking_system",
+      "n": 16,
+      "exact_echo": 0,
+      "near_echo_screen": 0,
+      "loop_screen": 0,
+      "empty": 0,
+      "truncated": 0
+    },
+    {
+      "model": "candidate_v0.1.17",
+      "group": "nt_system",
+      "n": 420,
+      "exact_echo": 18,
+      "near_echo_screen": 4,
+      "loop_screen": 2,
+      "empty": 0,
+      "truncated": 3
+    },
+    {
+      "model": "candidate_v0.1.17",
+      "group": "nt_no_system",
+      "n": 120,
+      "exact_echo": 15,
+      "near_echo_screen": 2,
+      "loop_screen": 0,
+      "empty": 0,
+      "truncated": 0
+    },
+    {
+      "model": "candidate_v0.1.17",
+      "group": "thinking_system",
+      "n": 16,
+      "exact_echo": 0,
+      "near_echo_screen": 0,
+      "loop_screen": 0,
+      "empty": 0,
+      "truncated": 0
+    }
+  ],
+  "screening_note": "Exact equality is mechanical; near-echo and loops need reading; no semantic pass rate inferred."
+}

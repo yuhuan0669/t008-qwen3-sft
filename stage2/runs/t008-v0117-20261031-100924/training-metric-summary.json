@@ -1,0 +1,70 @@
+{
+  "train/loss": {
+    "count": 18,
+    "first": {
+      "tag": "train/loss",
+      "step": 1,
+      "value": 0.8190448880195618,
+      "wall_time": 1793441614.2939172
+    },
+    "last": {
+      "tag": "train/loss",
+      "step": 85,
+      "value": 0.6144875288009644,
+      "wall_time": 1793442424.103798
+    },
+    "min": 0.595946192741394,
+    "max": 0.8190448880195618
+  },
+  "train/grad_norm": {
+    "count": 18,
+    "first": {
+      "tag": "train/grad_norm",
+      "step": 1,
+      "value": 0.4540674090385437,
+      "wall_time": 1793441614.2939525
+    },
+    "last": {
+      "tag": "train/grad_norm",
+      "step": 85,
+      "value": 0.22195005416870117,
+      "wall_time": 1793442424.1038198
+    },
+    "min": 0.14850808680057526,
+    "max": 0.6153436899185181
+  },
+  "train/train_loss": {
+    "count": 1,
+    "first": {
+      "tag": "train/train_loss",
+      "step": 85,
+      "value": 0.6507010459899902,
+      "wall_time": 1793442426.63799
+    },
+    "last": {
+      "tag": "train/train_loss",
+      "step": 85,
+      "value": 0.6507010459899902,
+      "wall_time": 1793442426.63799
+    },
+    "min": 0.6507010459899902,
+    "max": 0.6507010459899902
+  },
+  "train/train_runtime": {
+    "count": 1,
+    "first": {
+      "tag": "train/train_runtime",
+      "step": 85,
+      "value": 822.29248046875,
+      "wall_time": 1793442426.6379533
+    },
+    "last": {
+      "tag": "train/train_runtime",
+      "step": 85,
+      "value": 822.29248046875,
+      "wall_time": 1793442426.6379533
+    },
+    "min": 822.29248046875,
+    "max": 822.29248046875
+  }
+}

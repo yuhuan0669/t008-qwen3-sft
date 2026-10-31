@@ -1,0 +1,17 @@
+{
+  "version": "stage1-cpu-v0.1.20",
+  "parent": "stage1-cpu-v0.1.14",
+  "parent_sha256": "0f546c3aa59f8986f6e5f086482d7d40e9c29db6039a6c219ba902830abff6cb",
+  "status": "CPU_CHECKED_CONTENT_REVIEWED_PENDING_USER_REVIEW",
+  "rows": 1069,
+  "files_sha256": {
+    "train.jsonl": "f288ce57aa2b228c09e1a44e1b6855e1e891530805856b775b98ee115f10ac11",
+    "train-map.jsonl": "5efae1e4ef8a40dbaad146b76260bcbcaa04c5ba292a288db417a2c5fa3f497b",
+    "changes.jsonl": "0247ed47bfb0dc443f3c4d6adbed85d6b09c581e03caba2bf2410bff2c081bab",
+    "quarantine.jsonl": "45f0094930e6d0bae3f91e8d7c7a0f50c7ef018a27134e417638f7ba35ace613",
+    "decisions.jsonl": "f6e6957b6e1d21c82fa6ea62928d4c0c630963f70e307958e97f9be9fb9a355c",
+    "training-config.json": "c289da85a1d4893cbed5e4a9ae22d54d9441cc43922d7e8081e23dcaba67d863"
+  },
+  "cpu_report_sha256": "17e1c5057e9cf0a89fedf391480269dd23913d0084d16966498453b8a7ba0956",
+  "training_started": false
+}

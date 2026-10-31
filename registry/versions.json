@@ -270,6 +270,19 @@
       "frozen_snapshot_status": "CPU_CHECKED_CONTENT_REVIEWED_PENDING_USER_REVIEW",
       "review_report": "stage1/variants/stage1-cpu-v0.1.19/README.md",
       "training_started": false
+    },
+    {
+      "id": "stage1-cpu-v0.1.20",
+      "parent": "stage1-cpu-v0.1.14",
+      "repository_path": "stage1/variants/stage1-cpu-v0.1.20/train.jsonl",
+      "sha256": "f288ce57aa2b228c09e1a44e1b6855e1e891530805856b775b98ee115f10ac11",
+      "rows": 1069,
+      "bytes": 5457847,
+      "storage": "git",
+      "manifest": "stage1/variants/stage1-cpu-v0.1.20/manifest.json",
+      "frozen_snapshot_status": "CPU_CHECKED_CONTENT_REVIEWED_PENDING_USER_REVIEW",
+      "review_report": "stage1/variants/stage1-cpu-v0.1.20/README.md",
+      "training_started": false
     }
   ],
   "data_canonical_hashes": {

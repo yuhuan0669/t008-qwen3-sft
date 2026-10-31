@@ -1,0 +1,52 @@
+{
+  "purpose": "Frozen inference settings reference for future comparison; no requests executed or newly prepared.",
+  "execution_authorized": false,
+  "protocol_reference": "stage1/variants/stage1-cpu-v0.1.17/evaluation-config.json",
+  "protocol_sha256": "de7a507306e11abc31d784960381e69c49d23ff4a512e15106fcc370a7e2c00a",
+  "primary_trained_comparator": "v0.1.14",
+  "native_base_as_regression_reference": true,
+  "training_system_rows": 0,
+  "inference_system_path": "stage1/variants/stage1-cpu-v0.1.20/inference-system.txt",
+  "inference_system_sha256": "3ae02d520406f73e735752ef04ff395785f84fec7ee1619fd9d392d86cb92933",
+  "chat_template": {
+    "path": "stage2/diagnostics/thinking-chat-template-20261020/thinking-prefill.jinja",
+    "sha256": "ae8a1b27c3bac461eb5f6c78d5d39cbe29427ad91c9d2da8378e236b8a38448d"
+  },
+  "request_modes": {
+    "thinking": {
+      "temperature": 0.6,
+      "top_p": 0.95,
+      "top_k": 20,
+      "max_tokens": 4096,
+      "min_p": 0,
+      "chat_template_kwargs": {
+        "enable_thinking": true
+      },
+      "repetition_penalty": 1,
+      "presence_penalty": 0,
+      "frequency_penalty": 0,
+      "n": 1,
+      "stream": false
+    },
+    "nonthinking": {
+      "temperature": 0.7,
+      "top_p": 0.8,
+      "top_k": 20,
+      "max_tokens": 2048,
+      "min_p": 0,
+      "chat_template_kwargs": {
+        "enable_thinking": false
+      },
+      "repetition_penalty": 1,
+      "presence_penalty": 0,
+      "frequency_penalty": 0,
+      "n": 1,
+      "stream": false
+    }
+  },
+  "seed_policy": "Omit request seed, as in the five archived groups; select repeats by number, never by quality.",
+  "concurrency": 8,
+  "max_model_len": 8192,
+  "json_schema_application": "Only JSON cases: same response_format=json_schema name/schema/strict=true on all models; score values separately.",
+  "note": "Training data follows v14; comparison uses the common frozen System/template/Schema, not v14 historical first-run prompt. No deployment or app configuration change."
+}

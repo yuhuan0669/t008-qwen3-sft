@@ -1,0 +1,3622 @@
+{
+  "G0001": {
+    "parent_lines": [
+      1,
+      635
+    ],
+    "encoded_tokens": 1238
+  },
+  "G0002": {
+    "parent_lines": [
+      2,
+      453
+    ],
+    "encoded_tokens": 1467
+  },
+  "G0003": {
+    "parent_lines": [
+      3,
+      914
+    ],
+    "encoded_tokens": 1856
+  },
+  "G0004": {
+    "parent_lines": [
+      4,
+      849
+    ],
+    "encoded_tokens": 1627
+  },
+  "G0005": {
+    "parent_lines": [
+      5,
+      922
+    ],
+    "encoded_tokens": 1886
+  },
+  "G0006": {
+    "parent_lines": [
+      8,
+      225
+    ],
+    "encoded_tokens": 1481
+  },
+  "G0007": {
+    "parent_lines": [
+      9,
+      248
+    ],
+    "encoded_tokens": 1414
+  },
+  "G0008": {
+    "parent_lines": [
+      10,
+      1184
+    ],
+    "encoded_tokens": 914
+  },
+  "G0009": {
+    "parent_lines": [
+      11,
+      375
+    ],
+    "encoded_tokens": 1617
+  },
+  "G0010": {
+    "parent_lines": [
+      12,
+      1230
+    ],
+    "encoded_tokens": 1481
+  },
+  "G0011": {
+    "parent_lines": [
+      13,
+      378
+    ],
+    "encoded_tokens": 666
+  },
+  "G0012": {
+    "parent_lines": [
+      17,
+      50
+    ],
+    "encoded_tokens": 1412
+  },
+  "G0013": {
+    "parent_lines": [
+      18,
+      684
+    ],
+    "encoded_tokens": 2015
+  },
+  "G0014": {
+    "parent_lines": [
+      20,
+      648
+    ],
+    "encoded_tokens": 1714
+  },
+  "G0015": {
+    "parent_lines": [
+      21,
+      955
+    ],
+    "encoded_tokens": 1935
+  },
+  "G0016": {
+    "parent_lines": [
+      22,
+      410
+    ],
+    "encoded_tokens": 1617
+  },
+  "G0017": {
+    "parent_lines": [
+      24,
+      599
+    ],
+    "encoded_tokens": 1565
+  },
+  "G0018": {
+    "parent_lines": [
+      25,
+      769
+    ],
+    "encoded_tokens": 1963
+  },
+  "G0019": {
+    "parent_lines": [
+      27,
+      994
+    ],
+    "encoded_tokens": 1758
+  },
+  "G0020": {
+    "parent_lines": [
+      28,
+      313
+    ],
+    "encoded_tokens": 609
+  },
+  "G0021": {
+    "parent_lines": [
+      29,
+      151
+    ],
+    "encoded_tokens": 1830
+  },
+  "G0022": {
+    "parent_lines": [
+      30,
+      227
+    ],
+    "encoded_tokens": 1343
+  },
+  "G0023": {
+    "parent_lines": [
+      31,
+      606
+    ],
+    "encoded_tokens": 1596
+  },
+  "G0024": {
+    "parent_lines": [
+      36,
+      1232
+    ],
+    "encoded_tokens": 1304
+  },
+  "G0025": {
+    "parent_lines": [
+      37,
+      689
+    ],
+    "encoded_tokens": 1620
+  },
+  "G0026": {
+    "parent_lines": [
+      38,
+      432
+    ],
+    "encoded_tokens": 1388
+  },
+  "G0027": {
+    "parent_lines": [
+      39,
+      520
+    ],
+    "encoded_tokens": 1727
+  },
+  "G0028": {
+    "parent_lines": [
+      40,
+      472
+    ],
+    "encoded_tokens": 1488
+  },
+  "G0029": {
+    "parent_lines": [
+      42,
+      598
+    ],
+    "encoded_tokens": 1373
+  },
+  "G0030": {
+    "parent_lines": [
+      44,
+      554
+    ],
+    "encoded_tokens": 1362
+  },
+  "G0031": {
+    "parent_lines": [
+      45,
+      367
+    ],
+    "encoded_tokens": 861
+  },
+  "G0032": {
+    "parent_lines": [
+      46,
+      392
+    ],
+    "encoded_tokens": 1317
+  },
+  "G0033": {
+    "parent_lines": [
+      48,
+      1109
+    ],
+    "encoded_tokens": 1470
+  },
+  "G0034": {
+    "parent_lines": [
+      49,
+      88
+    ],
+    "encoded_tokens": 1537
+  },
+  "G0035": {
+    "parent_lines": [
+      51,
+      590
+    ],
+    "encoded_tokens": 1350
+  },
+  "G0036": {
+    "parent_lines": [
+      52,
+      541
+    ],
+    "encoded_tokens": 1743
+  },
+  "G0037": {
+    "parent_lines": [
+      53,
+      916
+    ],
+    "encoded_tokens": 1507
+  },
+  "G0038": {
+    "parent_lines": [
+      54,
+      741
+    ],
+    "encoded_tokens": 1685
+  },
+  "G0039": {
+    "parent_lines": [
+      55,
+      564
+    ],
+    "encoded_tokens": 1748
+  },
+  "G0040": {
+    "parent_lines": [
+      58,
+      385
+    ],
+    "encoded_tokens": 1663
+  },
+  "G0041": {
+    "parent_lines": [
+      60,
+      386
+    ],
+    "encoded_tokens": 1577
+  },
+  "G0042": {
+    "parent_lines": [
+      63,
+      540
+    ],
+    "encoded_tokens": 1919
+  },
+  "G0043": {
+    "parent_lines": [
+      64,
+      547
+    ],
+    "encoded_tokens": 1747
+  },
+  "G0044": {
+    "parent_lines": [
+      65,
+      863
+    ],
+    "encoded_tokens": 1362
+  },
+  "G0045": {
+    "parent_lines": [
+      67,
+      1219
+    ],
+    "encoded_tokens": 1492
+  },
+  "G0046": {
+    "parent_lines": [
+      68,
+      296
+    ],
+    "encoded_tokens": 1327
+  },
+  "G0047": {
+    "parent_lines": [
+      69,
+      620
+    ],
+    "encoded_tokens": 1199
+  },
+  "G0048": {
+    "parent_lines": [
+      70,
+      1195
+    ],
+    "encoded_tokens": 2048
+  },
+  "G0049": {
+    "parent_lines": [
+      71,
+      1251
+    ],
+    "encoded_tokens": 1542
+  },
+  "G0050": {
+    "parent_lines": [
+      72,
+      76
+    ],
+    "encoded_tokens": 1118
+  },
+  "G0051": {
+    "parent_lines": [
+      73,
+      507
+    ],
+    "encoded_tokens": 1363
+  },
+  "G0052": {
+    "parent_lines": [
+      74,
+      208
+    ],
+    "encoded_tokens": 1759
+  },
+  "G0053": {
+    "parent_lines": [
+      75,
+      474
+    ],
+    "encoded_tokens": 1405
+  },
+  "G0054": {
+    "parent_lines": [
+      77,
+      262
+    ],
+    "encoded_tokens": 1685
+  },
+  "G0055": {
+    "parent_lines": [
+      78,
+      1148
+    ],
+    "encoded_tokens": 1477
+  },
+  "G0056": {
+    "parent_lines": [
+      79,
+      338
+    ],
+    "encoded_tokens": 1304
+  },
+  "G0057": {
+    "parent_lines": [
+      80,
+      331
+    ],
+    "encoded_tokens": 1410
+  },
+  "G0058": {
+    "parent_lines": [
+      81,
+      609
+    ],
+    "encoded_tokens": 1400
+  },
+  "G0059": {
+    "parent_lines": [
+      82,
+      804
+    ],
+    "encoded_tokens": 1378
+  },
+  "G0060": {
+    "parent_lines": [
+      84,
+      708
+    ],
+    "encoded_tokens": 1697
+  },
+  "G0061": {
+    "parent_lines": [
+      86,
+      454
+    ],
+    "encoded_tokens": 1866
+  },
+  "G0062": {
+    "parent_lines": [
+      89,
+      1115
+    ],
+    "encoded_tokens": 1505
+  },
+  "G0063": {
+    "parent_lines": [
+      90,
+      915
+    ],
+    "encoded_tokens": 1905
+  },
+  "G0064": {
+    "parent_lines": [
+      91,
+      280
+    ],
+    "encoded_tokens": 810
+  },
+  "G0065": {
+    "parent_lines": [
+      92,
+      1076
+    ],
+    "encoded_tokens": 1304
+  },
+  "G0066": {
+    "parent_lines": [
+      93,
+      674
+    ],
+    "encoded_tokens": 629
+  },
+  "G0067": {
+    "parent_lines": [
+      94,
+      463
+    ],
+    "encoded_tokens": 1919
+  },
+  "G0068": {
+    "parent_lines": [
+      95,
+      555
+    ],
+    "encoded_tokens": 2022
+  },
+  "G0069": {
+    "parent_lines": [
+      97,
+      725
+    ],
+    "encoded_tokens": 1596
+  },
+  "G0070": {
+    "parent_lines": [
+      98,
+      918
+    ],
+    "encoded_tokens": 783
+  },
+  "G0071": {
+    "parent_lines": [
+      99,
+      101
+    ],
+    "encoded_tokens": 1606
+  },
+  "G0072": {
+    "parent_lines": [
+      100,
+      700
+    ],
+    "encoded_tokens": 1965
+  },
+  "G0073": {
+    "parent_lines": [
+      102,
+      447
+    ],
+    "encoded_tokens": 1518
+  },
+  "G0074": {
+    "parent_lines": [
+      103,
+      107
+    ],
+    "encoded_tokens": 525
+  },
+  "G0075": {
+    "parent_lines": [
+      105,
+      259
+    ],
+    "encoded_tokens": 965
+  },
+  "G0076": {
+    "parent_lines": [
+      106,
+      881
+    ],
+    "encoded_tokens": 1426
+  },
+  "G0077": {
+    "parent_lines": [
+      108,
+      244
+    ],
+    "encoded_tokens": 1370
+  },
+  "G0078": {
+    "parent_lines": [
+      109,
+      332
+    ],
+    "encoded_tokens": 1497
+  },
+  "G0079": {
+    "parent_lines": [
+      110,
+      843
+    ],
+    "encoded_tokens": 1500
+  },
+  "G0080": {
+    "parent_lines": [
+      111,
+      605
+    ],
+    "encoded_tokens": 2022
+  },
+  "G0081": {
+    "parent_lines": [
+      112,
+      748
+    ],
+    "encoded_tokens": 677
+  },
+  "G0082": {
+    "parent_lines": [
+      113,
+      732
+    ],
+    "encoded_tokens": 1024
+  },
+  "G0083": {
+    "parent_lines": [
+      114,
+      1214
+    ],
+    "encoded_tokens": 1829
+  },
+  "G0084": {
+    "parent_lines": [
+      115,
+      996
+    ],
+    "encoded_tokens": 1315
+  },
+  "G0085": {
+    "parent_lines": [
+      117,
+      549
+    ],
+    "encoded_tokens": 1925
+  },
+  "G0086": {
+    "parent_lines": [
+      118,
+      417
+    ],
+    "encoded_tokens": 1412
+  },
+  "G0087": {
+    "parent_lines": [
+      121,
+      1111
+    ],
+    "encoded_tokens": 1917
+  },
+  "G0088": {
+    "parent_lines": [
+      123,
+      698
+    ],
+    "encoded_tokens": 2037
+  },
+  "G0089": {
+    "parent_lines": [
+      124,
+      1108
+    ],
+    "encoded_tokens": 1501
+  },
+  "G0090": {
+    "parent_lines": [
+      125,
+      1140
+    ],
+    "encoded_tokens": 1961
+  },
+  "G0091": {
+    "parent_lines": [
+      127,
+      1169
+    ],
+    "encoded_tokens": 1416
+  },
+  "G0092": {
+    "parent_lines": [
+      128,
+      406
+    ],
+    "encoded_tokens": 1414
+  },
+  "G0093": {
+    "parent_lines": [
+      129,
+      482
+    ],
+    "encoded_tokens": 1317
+  },
+  "G0094": {
+    "parent_lines": [
+      130,
+      140
+    ],
+    "encoded_tokens": 1074
+  },
+  "G0095": {
+    "parent_lines": [
+      131,
+      354
+    ],
+    "encoded_tokens": 673
+  },
+  "G0096": {
+    "parent_lines": [
+      132,
+      819
+    ],
+    "encoded_tokens": 1130
+  },
+  "G0097": {
+    "parent_lines": [
+      133,
+      1060
+    ],
+    "encoded_tokens": 1456
+  },
+  "G0098": {
+    "parent_lines": [
+      134,
+      531
+    ],
+    "encoded_tokens": 1865
+  },
+  "G0099": {
+    "parent_lines": [
+      135,
+      593
+    ],
+    "encoded_tokens": 1904
+  },
+  "G0100": {
+    "parent_lines": [
+      136,
+      783
+    ],
+    "encoded_tokens": 2002
+  },
+  "G0101": {
+    "parent_lines": [
+      137,
+      1119
+    ],
+    "encoded_tokens": 1351
+  },
+  "G0102": {
+    "parent_lines": [
+      138,
+      1072
+    ],
+    "encoded_tokens": 1024
+  },
+  "G0103": {
+    "parent_lines": [
+      141,
+      643
+    ],
+    "encoded_tokens": 1631
+  },
+  "G0104": {
+    "parent_lines": [
+      142,
+      607
+    ],
+    "encoded_tokens": 1515
+  },
+  "G0105": {
+    "parent_lines": [
+      143,
+      342
+    ],
+    "encoded_tokens": 1685
+  },
+  "G0106": {
+    "parent_lines": [
+      145,
+      1077
+    ],
+    "encoded_tokens": 1860
+  },
+  "G0107": {
+    "parent_lines": [
+      146,
+      228
+    ],
+    "encoded_tokens": 1870
+  },
+  "G0108": {
+    "parent_lines": [
+      147,
+      596
+    ],
+    "encoded_tokens": 992
+  },
+  "G0109": {
+    "parent_lines": [
+      148,
+      1192
+    ],
+    "encoded_tokens": 1975
+  },
+  "G0110": {
+    "parent_lines": [
+      149,
+      848
+    ],
+    "encoded_tokens": 1159
+  },
+  "G0111": {
+    "parent_lines": [
+      150,
+      794
+    ],
+    "encoded_tokens": 1643
+  },
+  "G0112": {
+    "parent_lines": [
+      152,
+      446
+    ],
+    "encoded_tokens": 2013
+  },
+  "G0113": {
+    "parent_lines": [
+      153,
+      317
+    ],
+    "encoded_tokens": 847
+  },
+  "G0114": {
+    "parent_lines": [
+      156,
+      1152
+    ],
+    "encoded_tokens": 1788
+  },
+  "G0115": {
+    "parent_lines": [
+      157,
+      951
+    ],
+    "encoded_tokens": 1529
+  },
+  "G0116": {
+    "parent_lines": [
+      158,
+      932
+    ],
+    "encoded_tokens": 1351
+  },
+  "G0117": {
+    "parent_lines": [
+      159,
+      705
+    ],
+    "encoded_tokens": 1611
+  },
+  "G0118": {
+    "parent_lines": [
+      160,
+      773
+    ],
+    "encoded_tokens": 1449
+  },
+  "G0119": {
+    "parent_lines": [
+      161,
+      278
+    ],
+    "encoded_tokens": 1574
+  },
+  "G0120": {
+    "parent_lines": [
+      162,
+      348
+    ],
+    "encoded_tokens": 1574
+  },
+  "G0121": {
+    "parent_lines": [
+      164,
+      943
+    ],
+    "encoded_tokens": 1892
+  },
+  "G0122": {
+    "parent_lines": [
+      167,
+      768
+    ],
+    "encoded_tokens": 1390
+  },
+  "G0123": {
+    "parent_lines": [
+      168,
+      327
+    ],
+    "encoded_tokens": 1397
+  },
+  "G0124": {
+    "parent_lines": [
+      169,
+      1048
+    ],
+    "encoded_tokens": 1680
+  },
+  "G0125": {
+    "parent_lines": [
+      170,
+      995
+    ],
+    "encoded_tokens": 1666
+  },
+  "G0126": {
+    "parent_lines": [
+      171,
+      1213
+    ],
+    "encoded_tokens": 1253
+  },
+  "G0127": {
+    "parent_lines": [
+      172,
+      945
+    ],
+    "encoded_tokens": 1029
+  },
+  "G0128": {
+    "parent_lines": [
+      174,
+      330
+    ],
+    "encoded_tokens": 1471
+  },
+  "G0129": {
+    "parent_lines": [
+      175,
+      632
+    ],
+    "encoded_tokens": 1787
+  },
+  "G0130": {
+    "parent_lines": [
+      176,
+      381
+    ],
+    "encoded_tokens": 1543
+  },
+  "G0131": {
+    "parent_lines": [
+      178,
+      853
+    ],
+    "encoded_tokens": 1307
+  },
+  "G0132": {
+    "parent_lines": [
+      179,
+      434
+    ],
+    "encoded_tokens": 1681
+  },
+  "G0133": {
+    "parent_lines": [
+      180,
+      539
+    ],
+    "encoded_tokens": 1757
+  },
+  "G0134": {
+    "parent_lines": [
+      181,
+      191
+    ],
+    "encoded_tokens": 1547
+  },
+  "G0135": {
+    "parent_lines": [
+      182,
+      588
+    ],
+    "encoded_tokens": 1943
+  },
+  "G0136": {
+    "parent_lines": [
+      183,
+      205
+    ],
+    "encoded_tokens": 1323
+  },
+  "G0137": {
+    "parent_lines": [
+      186,
+      1158
+    ],
+    "encoded_tokens": 1576
+  },
+  "G0138": {
+    "parent_lines": [
+      187,
+      575
+    ],
+    "encoded_tokens": 1254
+  },
+  "G0139": {
+    "parent_lines": [
+      188,
+      1058
+    ],
+    "encoded_tokens": 1559
+  },
+  "G0140": {
+    "parent_lines": [
+      189,
+      621
+    ],
+    "encoded_tokens": 1286
+  },
+  "G0141": {
+    "parent_lines": [
+      190
+    ],
+    "encoded_tokens": 557
+  },
+  "G0142": {
+    "parent_lines": [
+      192,
+      365
+    ],
+    "encoded_tokens": 1103
+  },
+  "G0143": {
+    "parent_lines": [
+      193,
+      727
+    ],
+    "encoded_tokens": 2026
+  },
+  "G0144": {
+    "parent_lines": [
+      194,
+      519
+    ],
+    "encoded_tokens": 1804
+  },
+  "G0145": {
+    "parent_lines": [
+      195,
+      681
+    ],
+    "encoded_tokens": 1454
+  },
+  "G0146": {
+    "parent_lines": [
+      196,
+      1127
+    ],
+    "encoded_tokens": 1907
+  },
+  "G0147": {
+    "parent_lines": [
+      197
+    ],
+    "encoded_tokens": 644
+  },
+  "G0148": {
+    "parent_lines": [
+      198,
+      966
+    ],
+    "encoded_tokens": 1748
+  },
+  "G0149": {
+    "parent_lines": [
+      199,
+      1113
+    ],
+    "encoded_tokens": 2001
+  },
+  "G0150": {
+    "parent_lines": [
+      200,
+      580
+    ],
+    "encoded_tokens": 1140
+  },
+  "G0151": {
+    "parent_lines": [
+      201,
+      647
+    ],
+    "encoded_tokens": 858
+  },
+  "G0152": {
+    "parent_lines": [
+      202,
+      292
+    ],
+    "encoded_tokens": 1654
+  },
+  "G0153": {
+    "parent_lines": [
+      203,
+      692
+    ],
+    "encoded_tokens": 1895
+  },
+  "G0154": {
+    "parent_lines": [
+      204,
+      1135
+    ],
+    "encoded_tokens": 1933
+  },
+  "G0155": {
+    "parent_lines": [
+      207,
+      297
+    ],
+    "encoded_tokens": 1132
+  },
+  "G0156": {
+    "parent_lines": [
+      209,
+      704
+    ],
+    "encoded_tokens": 1158
+  },
+  "G0157": {
+    "parent_lines": [
+      210,
+      815
+    ],
+    "encoded_tokens": 1280
+  },
+  "G0158": {
+    "parent_lines": [
+      211,
+      1226
+    ],
+    "encoded_tokens": 1757
+  },
+  "G0159": {
+    "parent_lines": [
+      212,
+      1191
+    ],
+    "encoded_tokens": 1805
+  },
+  "G0160": {
+    "parent_lines": [
+      213,
+      845
+    ],
+    "encoded_tokens": 1507
+  },
+  "G0161": {
+    "parent_lines": [
+      214,
+      1016
+    ],
+    "encoded_tokens": 1373
+  },
+  "G0162": {
+    "parent_lines": [
+      215,
+      968
+    ],
+    "encoded_tokens": 904
+  },
+  "G0163": {
+    "parent_lines": [
+      216,
+      498
+    ],
+    "encoded_tokens": 1082
+  },
+  "G0164": {
+    "parent_lines": [
+      218,
+      1189
+    ],
+    "encoded_tokens": 1026
+  },
+  "G0165": {
+    "parent_lines": [
+      219,
+      515
+    ],
+    "encoded_tokens": 1126
+  },
+  "G0166": {
+    "parent_lines": [
+      220,
+      377
+    ],
+    "encoded_tokens": 1598
+  },
+  "G0167": {
+    "parent_lines": [
+      221,
+      1133
+    ],
+    "encoded_tokens": 2030
+  },
+  "G0168": {
+    "parent_lines": [
+      222,
+      963
+    ],
+    "encoded_tokens": 1562
+  },
+  "G0169": {
+    "parent_lines": [
+      223,
+      398
+    ],
+    "encoded_tokens": 1501
+  },
+  "G0170": {
+    "parent_lines": [
+      224,
+      230
+    ],
+    "encoded_tokens": 1170
+  },
+  "G0171": {
+    "parent_lines": [
+      229,
+      1097
+    ],
+    "encoded_tokens": 1989
+  },
+  "G0172": {
+    "parent_lines": [
+      231,
+      576
+    ],
+    "encoded_tokens": 1765
+  },
+  "G0173": {
+    "parent_lines": [
+      232,
+      247
+    ],
+    "encoded_tokens": 1072
+  },
+  "G0174": {
+    "parent_lines": [
+      233,
+      1002
+    ],
+    "encoded_tokens": 1495
+  },
+  "G0175": {
+    "parent_lines": [
+      234,
+      611
+    ],
+    "encoded_tokens": 2008
+  },
+  "G0176": {
+    "parent_lines": [
+      236,
+      1185
+    ],
+    "encoded_tokens": 1307
+  },
+  "G0177": {
+    "parent_lines": [
+      237,
+      394
+    ],
+    "encoded_tokens": 883
+  },
+  "G0178": {
+    "parent_lines": [
+      238,
+      505
+    ],
+    "encoded_tokens": 1043
+  },
+  "G0179": {
+    "parent_lines": [
+      239,
+      860
+    ],
+    "encoded_tokens": 1784
+  },
+  "G0180": {
+    "parent_lines": [
+      240,
+      500
+    ],
+    "encoded_tokens": 1250
+  },
+  "G0181": {
+    "parent_lines": [
+      241,
+      1246
+    ],
+    "encoded_tokens": 1677
+  },
+  "G0182": {
+    "parent_lines": [
+      242,
+      1166
+    ],
+    "encoded_tokens": 1676
+  },
+  "G0183": {
+    "parent_lines": [
+      243,
+      878
+    ],
+    "encoded_tokens": 846
+  },
+  "G0184": {
+    "parent_lines": [
+      249,
+      1204
+    ],
+    "encoded_tokens": 1620
+  },
+  "G0185": {
+    "parent_lines": [
+      250,
+      475
+    ],
+    "encoded_tokens": 2028
+  },
+  "G0186": {
+    "parent_lines": [
+      251,
+      397
+    ],
+    "encoded_tokens": 1291
+  },
+  "G0187": {
+    "parent_lines": [
+      252,
+      1095
+    ],
+    "encoded_tokens": 1333
+  },
+  "G0188": {
+    "parent_lines": [
+      254,
+      991
+    ],
+    "encoded_tokens": 1916
+  },
+  "G0189": {
+    "parent_lines": [
+      255,
+      810
+    ],
+    "encoded_tokens": 1309
+  },
+  "G0190": {
+    "parent_lines": [
+      256,
+      1238
+    ],
+    "encoded_tokens": 1127
+  },
+  "G0191": {
+    "parent_lines": [
+      257,
+      847
+    ],
+    "encoded_tokens": 1633
+  },
+  "G0192": {
+    "parent_lines": [
+      258,
+      403
+    ],
+    "encoded_tokens": 2041
+  },
+  "G0193": {
+    "parent_lines": [
+      261,
+      1007
+    ],
+    "encoded_tokens": 1027
+  },
+  "G0194": {
+    "parent_lines": [
+      263,
+      1207
+    ],
+    "encoded_tokens": 1647
+  },
+  "G0195": {
+    "parent_lines": [
+      265,
+      989
+    ],
+    "encoded_tokens": 1639
+  },
+  "G0196": {
+    "parent_lines": [
+      266,
+      333
+    ],
+    "encoded_tokens": 2009
+  },
+  "G0197": {
+    "parent_lines": [
+      267,
+      512
+    ],
+    "encoded_tokens": 1595
+  },
+  "G0198": {
+    "parent_lines": [
+      268,
+      868
+    ],
+    "encoded_tokens": 1227
+  },
+  "G0199": {
+    "parent_lines": [
+      273,
+      563
+    ],
+    "encoded_tokens": 1631
+  },
+  "G0200": {
+    "parent_lines": [
+      274
+    ],
+    "encoded_tokens": 790
+  },
+  "G0201": {
+    "parent_lines": [
+      276,
+      1199
+    ],
+    "encoded_tokens": 1074
+  },
+  "G0202": {
+    "parent_lines": [
+      277,
+      282
+    ],
+    "encoded_tokens": 1282
+  },
+  "G0203": {
+    "parent_lines": [
+      281,
+      774
+    ],
+    "encoded_tokens": 1569
+  },
+  "G0204": {
+    "parent_lines": [
+      283,
+      413
+    ],
+    "encoded_tokens": 1756
+  },
+  "G0205": {
+    "parent_lines": [
+      284,
+      1202
+    ],
+    "encoded_tokens": 1434
+  },
+  "G0206": {
+    "parent_lines": [
+      285,
+      791
+    ],
+    "encoded_tokens": 2020
+  },
+  "G0207": {
+    "parent_lines": [
+      286,
+      533
+    ],
+    "encoded_tokens": 1587
+  },
+  "G0208": {
+    "parent_lines": [
+      287,
+      1003
+    ],
+    "encoded_tokens": 1605
+  },
+  "G0209": {
+    "parent_lines": [
+      288,
+      675
+    ],
+    "encoded_tokens": 1286
+  },
+  "G0210": {
+    "parent_lines": [
+      289,
+      1039
+    ],
+    "encoded_tokens": 1805
+  },
+  "G0211": {
+    "parent_lines": [
+      290,
+      998
+    ],
+    "encoded_tokens": 1616
+  },
+  "G0212": {
+    "parent_lines": [
+      293,
+      820
+    ],
+    "encoded_tokens": 1709
+  },
+  "G0213": {
+    "parent_lines": [
+      294,
+      305
+    ],
+    "encoded_tokens": 1209
+  },
+  "G0214": {
+    "parent_lines": [
+      295,
+      489
+    ],
+    "encoded_tokens": 1389
+  },
+  "G0215": {
+    "parent_lines": [
+      298,
+      808
+    ],
+    "encoded_tokens": 1198
+  },
+  "G0216": {
+    "parent_lines": [
+      299,
+      573
+    ],
+    "encoded_tokens": 1199
+  },
+  "G0217": {
+    "parent_lines": [
+      300,
+      1125
+    ],
+    "encoded_tokens": 733
+  },
+  "G0218": {
+    "parent_lines": [
+      301,
+      780
+    ],
+    "encoded_tokens": 1156
+  },
+  "G0219": {
+    "parent_lines": [
+      302,
+      1078
+    ],
+    "encoded_tokens": 1612
+  },
+  "G0220": {
+    "parent_lines": [
+      303,
+      1163
+    ],
+    "encoded_tokens": 1395
+  },
+  "G0221": {
+    "parent_lines": [
+      304,
+      618
+    ],
+    "encoded_tokens": 616
+  },
+  "G0222": {
+    "parent_lines": [
+      307,
+      977
+    ],
+    "encoded_tokens": 1289
+  },
+  "G0223": {
+    "parent_lines": [
+      308,
+      870
+    ],
+    "encoded_tokens": 1453
+  },
+  "G0224": {
+    "parent_lines": [
+      309,
+      906
+    ],
+    "encoded_tokens": 1965
+  },
+  "G0225": {
+    "parent_lines": [
+      310,
+      526
+    ],
+    "encoded_tokens": 1918
+  },
+  "G0226": {
+    "parent_lines": [
+      312,
+      1235
+    ],
+    "encoded_tokens": 1828
+  },
+  "G0227": {
+    "parent_lines": [
+      314,
+      464
+    ],
+    "encoded_tokens": 1746
+  },
+  "G0228": {
+    "parent_lines": [
+      315,
+      805
+    ],
+    "encoded_tokens": 1846
+  },
+  "G0229": {
+    "parent_lines": [
+      316,
+      931
+    ],
+    "encoded_tokens": 1894
+  },
+  "G0230": {
+    "parent_lines": [
+      318,
+      1034
+    ],
+    "encoded_tokens": 1862
+  },
+  "G0231": {
+    "parent_lines": [
+      320,
+      1075
+    ],
+    "encoded_tokens": 1769
+  },
+  "G0232": {
+    "parent_lines": [
+      321,
+      411
+    ],
+    "encoded_tokens": 1869
+  },
+  "G0233": {
+    "parent_lines": [
+      322,
+      902
+    ],
+    "encoded_tokens": 1365
+  },
+  "G0234": {
+    "parent_lines": [
+      324,
+      517
+    ],
+    "encoded_tokens": 1507
+  },
+  "G0235": {
+    "parent_lines": [
+      325,
+      524
+    ],
+    "encoded_tokens": 1828
+  },
+  "G0236": {
+    "parent_lines": [
+      326,
+      912
+    ],
+    "encoded_tokens": 1900
+  },
+  "G0237": {
+    "parent_lines": [
+      328,
+      624
+    ],
+    "encoded_tokens": 1916
+  },
+  "G0238": {
+    "parent_lines": [
+      329,
+      722
+    ],
+    "encoded_tokens": 1231
+  },
+  "G0239": {
+    "parent_lines": [
+      334,
+      893
+    ],
+    "encoded_tokens": 1555
+  },
+  "G0240": {
+    "parent_lines": [
+      335,
+      1045
+    ],
+    "encoded_tokens": 1638
+  },
+  "G0241": {
+    "parent_lines": [
+      336,
+      628
+    ],
+    "encoded_tokens": 2048
+  },
+  "G0242": {
+    "parent_lines": [
+      337,
+      890
+    ],
+    "encoded_tokens": 1563
+  },
+  "G0243": {
+    "parent_lines": [
+      339,
+      897
+    ],
+    "encoded_tokens": 1775
+  },
+  "G0244": {
+    "parent_lines": [
+      340,
+      880
+    ],
+    "encoded_tokens": 1780
+  },
+  "G0245": {
+    "parent_lines": [
+      341,
+      523
+    ],
+    "encoded_tokens": 542
+  },
+  "G0246": {
+    "parent_lines": [
+      343,
+      894
+    ],
+    "encoded_tokens": 1539
+  },
+  "G0247": {
+    "parent_lines": [
+      344,
+      510
+    ],
+    "encoded_tokens": 1572
+  },
+  "G0248": {
+    "parent_lines": [
+      347,
+      750
+    ],
+    "encoded_tokens": 1404
+  },
+  "G0249": {
+    "parent_lines": [
+      349,
+      724
+    ],
+    "encoded_tokens": 2015
+  },
+  "G0250": {
+    "parent_lines": [
+      350,
+      929
+    ],
+    "encoded_tokens": 1103
+  },
+  "G0251": {
+    "parent_lines": [
+      351,
+      736
+    ],
+    "encoded_tokens": 1202
+  },
+  "G0252": {
+    "parent_lines": [
+      352,
+      846
+    ],
+    "encoded_tokens": 1775
+  },
+  "G0253": {
+    "parent_lines": [
+      353,
+      908
+    ],
+    "encoded_tokens": 891
+  },
+  "G0254": {
+    "parent_lines": [
+      355,
+      445
+    ],
+    "encoded_tokens": 2006
+  },
+  "G0255": {
+    "parent_lines": [
+      357,
+      363
+    ],
+    "encoded_tokens": 1235
+  },
+  "G0256": {
+    "parent_lines": [
+      358,
+      800
+    ],
+    "encoded_tokens": 1548
+  },
+  "G0257": {
+    "parent_lines": [
+      360,
+      545
+    ],
+    "encoded_tokens": 1658
+  },
+  "G0258": {
+    "parent_lines": [
+      364,
+      486
+    ],
+    "encoded_tokens": 1596
+  },
+  "G0259": {
+    "parent_lines": [
+      366,
+      1087
+    ],
+    "encoded_tokens": 1458
+  },
+  "G0260": {
+    "parent_lines": [
+      369,
+      713
+    ],
+    "encoded_tokens": 1949
+  },
+  "G0261": {
+    "parent_lines": [
+      370,
+      572
+    ],
+    "encoded_tokens": 1676
+  },
+  "G0262": {
+    "parent_lines": [
+      372,
+      586
+    ],
+    "encoded_tokens": 1280
+  },
+  "G0263": {
+    "parent_lines": [
+      373,
+      971
+    ],
+    "encoded_tokens": 1374
+  },
+  "G0264": {
+    "parent_lines": [
+      374,
+      975
+    ],
+    "encoded_tokens": 1980
+  },
+  "G0265": {
+    "parent_lines": [
+      382,
+      714
+    ],
+    "encoded_tokens": 1153
+  },
+  "G0266": {
+    "parent_lines": [
+      383,
+      1129
+    ],
+    "encoded_tokens": 453
+  },
+  "G0267": {
+    "parent_lines": [
+      384,
+      516
+    ],
+    "encoded_tokens": 1176
+  },
+  "G0268": {
+    "parent_lines": [
+      388,
+      1141
+    ],
+    "encoded_tokens": 936
+  },
+  "G0269": {
+    "parent_lines": [
+      390,
+      1033
+    ],
+    "encoded_tokens": 1505
+  },
+  "G0270": {
+    "parent_lines": [
+      395,
+      1091
+    ],
+    "encoded_tokens": 1974
+  },
+  "G0271": {
+    "parent_lines": [
+      396,
+      608
+    ],
+    "encoded_tokens": 2030
+  },
+  "G0272": {
+    "parent_lines": [
+      399,
+      1242
+    ],
+    "encoded_tokens": 1517
+  },
+  "G0273": {
+    "parent_lines": [
+      401,
+      765
+    ],
+    "encoded_tokens": 1202
+  },
+  "G0274": {
+    "parent_lines": [
+      402,
+      1162
+    ],
+    "encoded_tokens": 1630
+  },
+  "G0275": {
+    "parent_lines": [
+      404,
+      1001
+    ],
+    "encoded_tokens": 1982
+  },
+  "G0276": {
+    "parent_lines": [
+      407,
+      1084
+    ],
+    "encoded_tokens": 1644
+  },
+  "G0277": {
+    "parent_lines": [
+      408,
+      1143
+    ],
+    "encoded_tokens": 1926
+  },
+  "G0278": {
+    "parent_lines": [
+      409,
+      484
+    ],
+    "encoded_tokens": 1755
+  },
+  "G0279": {
+    "parent_lines": [
+      412,
+      1170
+    ],
+    "encoded_tokens": 1666
+  },
+  "G0280": {
+    "parent_lines": [
+      415,
+      950
+    ],
+    "encoded_tokens": 1067
+  },
+  "G0281": {
+    "parent_lines": [
+      416,
+      518
+    ],
+    "encoded_tokens": 1890
+  },
+  "G0282": {
+    "parent_lines": [
+      418,
+      715
+    ],
+    "encoded_tokens": 1500
+  },
+  "G0283": {
+    "parent_lines": [
+      419,
+      560
+    ],
+    "encoded_tokens": 1275
+  },
+  "G0284": {
+    "parent_lines": [
+      420,
+      1196
+    ],
+    "encoded_tokens": 1821
+  },
+  "G0285": {
+    "parent_lines": [
+      421,
+      1023
+    ],
+    "encoded_tokens": 1564
+  },
+  "G0286": {
+    "parent_lines": [
+      422,
+      1008
+    ],
+    "encoded_tokens": 1262
+  },
+  "G0287": {
+    "parent_lines": [
+      423,
+      585
+    ],
+    "encoded_tokens": 1180
+  },
+  "G0288": {
+    "parent_lines": [
+      424,
+      799
+    ],
+    "encoded_tokens": 1265
+  },
+  "G0289": {
+    "parent_lines": [
+      426,
+      626
+    ],
+    "encoded_tokens": 1923
+  },
+  "G0290": {
+    "parent_lines": [
+      427,
+      1004
+    ],
+    "encoded_tokens": 1121
+  },
+  "G0291": {
+    "parent_lines": [
+      428,
+      779
+    ],
+    "encoded_tokens": 1835
+  },
+  "G0292": {
+    "parent_lines": [
+      429,
+      1157
+    ],
+    "encoded_tokens": 1611
+  },
+  "G0293": {
+    "parent_lines": [
+      430,
+      992
+    ],
+    "encoded_tokens": 1237
+  },
+  "G0294": {
+    "parent_lines": [
+      431,
+      623
+    ],
+    "encoded_tokens": 1833
+  },
+  "G0295": {
+    "parent_lines": [
+      433,
+      1098
+    ],
+    "encoded_tokens": 1757
+  },
+  "G0296": {
+    "parent_lines": [
+      435,
+      1145
+    ],
+    "encoded_tokens": 1887
+  },
+  "G0297": {
+    "parent_lines": [
+      439,
+      978
+    ],
+    "encoded_tokens": 1615
+  },
+  "G0298": {
+    "parent_lines": [
+      441,
+      1056
+    ],
+    "encoded_tokens": 2044
+  },
+  "G0299": {
+    "parent_lines": [
+      442,
+      701
+    ],
+    "encoded_tokens": 1847
+  },
+  "G0300": {
+    "parent_lines": [
+      443,
+      1215
+    ],
+    "encoded_tokens": 1259
+  },
+  "G0301": {
+    "parent_lines": [
+      450,
+      954
+    ],
+    "encoded_tokens": 1198
+  },
+  "G0302": {
+    "parent_lines": [
+      451,
+      1086
+    ],
+    "encoded_tokens": 1582
+  },
+  "G0303": {
+    "parent_lines": [
+      452,
+      1106
+    ],
+    "encoded_tokens": 1276
+  },
+  "G0304": {
+    "parent_lines": [
+      455,
+      930
+    ],
+    "encoded_tokens": 1677
+  },
+  "G0305": {
+    "parent_lines": [
+      456,
+      911
+    ],
+    "encoded_tokens": 2039
+  },
+  "G0306": {
+    "parent_lines": [
+      457,
+      544
+    ],
+    "encoded_tokens": 1718
+  },
+  "G0307": {
+    "parent_lines": [
+      458,
+      495
+    ],
+    "encoded_tokens": 1604
+  },
+  "G0308": {
+    "parent_lines": [
+      460,
+      899
+    ],
+    "encoded_tokens": 1392
+  },
+  "G0309": {
+    "parent_lines": [
+      462,
+      577
+    ],
+    "encoded_tokens": 1950
+  },
+  "G0310": {
+    "parent_lines": [
+      465,
+      867
+    ],
+    "encoded_tokens": 1664
+  },
+  "G0311": {
+    "parent_lines": [
+      466,
+      491
+    ],
+    "encoded_tokens": 973
+  },
+  "G0312": {
+    "parent_lines": [
+      467,
+      1025
+    ],
+    "encoded_tokens": 1212
+  },
+  "G0313": {
+    "parent_lines": [
+      468,
+      744
+    ],
+    "encoded_tokens": 1614
+  },
+  "G0314": {
+    "parent_lines": [
+      470,
+      1247
+    ],
+    "encoded_tokens": 1907
+  },
+  "G0315": {
+    "parent_lines": [
+      471,
+      1124
+    ],
+    "encoded_tokens": 1693
+  },
+  "G0316": {
+    "parent_lines": [
+      473,
+      604
+    ],
+    "encoded_tokens": 1364
+  },
+  "G0317": {
+    "parent_lines": [
+      477,
+      1036
+    ],
+    "encoded_tokens": 1388
+  },
+  "G0318": {
+    "parent_lines": [
+      478,
+      1168
+    ],
+    "encoded_tokens": 838
+  },
+  "G0319": {
+    "parent_lines": [
+      479,
+      728
+    ],
+    "encoded_tokens": 1278
+  },
+  "G0320": {
+    "parent_lines": [
+      480,
+      666
+    ],
+    "encoded_tokens": 915
+  },
+  "G0321": {
+    "parent_lines": [
+      481,
+      781
+    ],
+    "encoded_tokens": 840
+  },
+  "G0322": {
+    "parent_lines": [
+      483,
+      1131
+    ],
+    "encoded_tokens": 1499
+  },
+  "G0323": {
+    "parent_lines": [
+      487,
+      1136
+    ],
+    "encoded_tokens": 1408
+  },
+  "G0324": {
+    "parent_lines": [
+      488,
+      1241
+    ],
+    "encoded_tokens": 1932
+  },
+  "G0325": {
+    "parent_lines": [
+      490,
+      871
+    ],
+    "encoded_tokens": 1881
+  },
+  "G0326": {
+    "parent_lines": [
+      492,
+      650
+    ],
+    "encoded_tokens": 1673
+  },
+  "G0327": {
+    "parent_lines": [
+      493,
+      1042
+    ],
+    "encoded_tokens": 1292
+  },
+  "G0328": {
+    "parent_lines": [
+      494,
+      957
+    ],
+    "encoded_tokens": 1363
+  },
+  "G0329": {
+    "parent_lines": [
+      496,
+      625
+    ],
+    "encoded_tokens": 1342
+  },
+  "G0330": {
+    "parent_lines": [
+      499,
+      612
+    ],
+    "encoded_tokens": 1737
+  },
+  "G0331": {
+    "parent_lines": [
+      501,
+      917
+    ],
+    "encoded_tokens": 1773
+  },
+  "G0332": {
+    "parent_lines": [
+      502,
+      840
+    ],
+    "encoded_tokens": 1970
+  },
+  "G0333": {
+    "parent_lines": [
+      504,
+      696
+    ],
+    "encoded_tokens": 1997
+  },
+  "G0334": {
+    "parent_lines": [
+      506,
+      1175
+    ],
+    "encoded_tokens": 1768
+  },
+  "G0335": {
+    "parent_lines": [
+      508,
+      1171
+    ],
+    "encoded_tokens": 1376
+  },
+  "G0336": {
+    "parent_lines": [
+      509,
+      667
+    ],
+    "encoded_tokens": 1645
+  },
+  "G0337": {
+    "parent_lines": [
+      511,
+      654
+    ],
+    "encoded_tokens": 1584
+  },
+  "G0338": {
+    "parent_lines": [
+      521,
+      952
+    ],
+    "encoded_tokens": 1972
+  },
+  "G0339": {
+    "parent_lines": [
+      522,
+      661
+    ],
+    "encoded_tokens": 1081
+  },
+  "G0340": {
+    "parent_lines": [
+      525,
+      1178
+    ],
+    "encoded_tokens": 1870
+  },
+  "G0341": {
+    "parent_lines": [
+      527,
+      974
+    ],
+    "encoded_tokens": 1062
+  },
+  "G0342": {
+    "parent_lines": [
+      528,
+      1050
+    ],
+    "encoded_tokens": 1253
+  },
+  "G0343": {
+    "parent_lines": [
+      529,
+      1085
+    ],
+    "encoded_tokens": 433
+  },
+  "G0344": {
+    "parent_lines": [
+      530,
+      583
+    ],
+    "encoded_tokens": 675
+  },
+  "G0345": {
+    "parent_lines": [
+      532,
+      858
+    ],
+    "encoded_tokens": 1858
+  },
+  "G0346": {
+    "parent_lines": [
+      536,
+      1054
+    ],
+    "encoded_tokens": 947
+  },
+  "G0347": {
+    "parent_lines": [
+      542,
+      1083
+    ],
+    "encoded_tokens": 2037
+  },
+  "G0348": {
+    "parent_lines": [
+      543,
+      1112
+    ],
+    "encoded_tokens": 1553
+  },
+  "G0349": {
+    "parent_lines": [
+      546,
+      734
+    ],
+    "encoded_tokens": 1349
+  },
+  "G0350": {
+    "parent_lines": [
+      550,
+      1208
+    ],
+    "encoded_tokens": 1304
+  },
+  "G0351": {
+    "parent_lines": [
+      551,
+      622
+    ],
+    "encoded_tokens": 1638
+  },
+  "G0352": {
+    "parent_lines": [
+      552,
+      636
+    ],
+    "encoded_tokens": 1924
+  },
+  "G0353": {
+    "parent_lines": [
+      553,
+      1228
+    ],
+    "encoded_tokens": 1668
+  },
+  "G0354": {
+    "parent_lines": [
+      556,
+      1046
+    ],
+    "encoded_tokens": 1413
+  },
+  "G0355": {
+    "parent_lines": [
+      557,
+      910
+    ],
+    "encoded_tokens": 1475
+  },
+  "G0356": {
+    "parent_lines": [
+      558,
+      1182
+    ],
+    "encoded_tokens": 1353
+  },
+  "G0357": {
+    "parent_lines": [
+      559,
+      737
+    ],
+    "encoded_tokens": 738
+  },
+  "G0358": {
+    "parent_lines": [
+      561,
+      901
+    ],
+    "encoded_tokens": 1061
+  },
+  "G0359": {
+    "parent_lines": [
+      565,
+      1079
+    ],
+    "encoded_tokens": 1408
+  },
+  "G0360": {
+    "parent_lines": [
+      566,
+      664
+    ],
+    "encoded_tokens": 1900
+  },
+  "G0361": {
+    "parent_lines": [
+      567,
+      709
+    ],
+    "encoded_tokens": 1689
+  },
+  "G0362": {
+    "parent_lines": [
+      569,
+      1236
+    ],
+    "encoded_tokens": 1404
+  },
+  "G0363": {
+    "parent_lines": [
+      574,
+      776
+    ],
+    "encoded_tokens": 1516
+  },
+  "G0364": {
+    "parent_lines": [
+      578,
+      1203
+    ],
+    "encoded_tokens": 1983
+  },
+  "G0365": {
+    "parent_lines": [
+      579,
+      640
+    ],
+    "encoded_tokens": 1791
+  },
+  "G0366": {
+    "parent_lines": [
+      584,
+      718
+    ],
+    "encoded_tokens": 1931
+  },
+  "G0367": {
+    "parent_lines": [
+      589,
+      1146
+    ],
+    "encoded_tokens": 1890
+  },
+  "G0368": {
+    "parent_lines": [
+      591,
+      706
+    ],
+    "encoded_tokens": 2017
+  },
+  "G0369": {
+    "parent_lines": [
+      592,
+      1130
+    ],
+    "encoded_tokens": 1460
+  },
+  "G0370": {
+    "parent_lines": [
+      594,
+      1218
+    ],
+    "encoded_tokens": 1936
+  },
+  "G0371": {
+    "parent_lines": [
+      595,
+      659
+    ],
+    "encoded_tokens": 867
+  },
+  "G0372": {
+    "parent_lines": [
+      597,
+      686
+    ],
+    "encoded_tokens": 1706
+  },
+  "G0373": {
+    "parent_lines": [
+      600,
+      735
+    ],
+    "encoded_tokens": 1528
+  },
+  "G0374": {
+    "parent_lines": [
+      601,
+      749
+    ],
+    "encoded_tokens": 1126
+  },
+  "G0375": {
+    "parent_lines": [
+      603,
+      616
+    ],
+    "encoded_tokens": 1818
+  },
+  "G0376": {
+    "parent_lines": [
+      610,
+      997
+    ],
+    "encoded_tokens": 1038
+  },
+  "G0377": {
+    "parent_lines": [
+      613,
+      866
+    ],
+    "encoded_tokens": 1613
+  },
+  "G0378": {
+    "parent_lines": [
+      614,
+      1197
+    ],
+    "encoded_tokens": 1245
+  },
+  "G0379": {
+    "parent_lines": [
+      615,
+      792
+    ],
+    "encoded_tokens": 1829
+  },
+  "G0380": {
+    "parent_lines": [
+      617,
+      1068
+    ],
+    "encoded_tokens": 1354
+  },
+  "G0381": {
+    "parent_lines": [
+      619,
+      1165
+    ],
+    "encoded_tokens": 1453
+  },
+  "G0382": {
+    "parent_lines": [
+      627,
+      874
+    ],
+    "encoded_tokens": 1228
+  },
+  "G0383": {
+    "parent_lines": [
+      631,
+      1000
+    ],
+    "encoded_tokens": 1997
+  },
+  "G0384": {
+    "parent_lines": [
+      633,
+      717
+    ],
+    "encoded_tokens": 1540
+  },
+  "G0385": {
+    "parent_lines": [
+      639,
+      656
+    ],
+    "encoded_tokens": 1142
+  },
+  "G0386": {
+    "parent_lines": [
+      641,
+      850
+    ],
+    "encoded_tokens": 975
+  },
+  "G0387": {
+    "parent_lines": [
+      642,
+      813
+    ],
+    "encoded_tokens": 1744
+  },
+  "G0388": {
+    "parent_lines": [
+      644,
+      1243
+    ],
+    "encoded_tokens": 1718
+  },
+  "G0389": {
+    "parent_lines": [
+      645,
+      668
+    ],
+    "encoded_tokens": 1399
+  },
+  "G0390": {
+    "parent_lines": [
+      651,
+      859
+    ],
+    "encoded_tokens": 1525
+  },
+  "G0391": {
+    "parent_lines": [
+      652,
+      740
+    ],
+    "encoded_tokens": 2016
+  },
+  "G0392": {
+    "parent_lines": [
+      653,
+      933
+    ],
+    "encoded_tokens": 1352
+  },
+  "G0393": {
+    "parent_lines": [
+      655,
+      1051
+    ],
+    "encoded_tokens": 1710
+  },
+  "G0394": {
+    "parent_lines": [
+      657,
+      1161
+    ],
+    "encoded_tokens": 1722
+  },
+  "G0395": {
+    "parent_lines": [
+      658,
+      1017
+    ],
+    "encoded_tokens": 1548
+  },
+  "G0396": {
+    "parent_lines": [
+      660,
+      1177
+    ],
+    "encoded_tokens": 1946
+  },
+  "G0397": {
+    "parent_lines": [
+      662,
+      888
+    ],
+    "encoded_tokens": 1284
+  },
+  "G0398": {
+    "parent_lines": [
+      669,
+      1022
+    ],
+    "encoded_tokens": 1340
+  },
+  "G0399": {
+    "parent_lines": [
+      670,
+      988
+    ],
+    "encoded_tokens": 1911
+  },
+  "G0400": {
+    "parent_lines": [
+      671,
+      1240
+    ],
+    "encoded_tokens": 1262
+  },
+  "G0401": {
+    "parent_lines": [
+      672,
+      1116
+    ],
+    "encoded_tokens": 1950
+  },
+  "G0402": {
+    "parent_lines": [
+      673,
+      1167
+    ],
+    "encoded_tokens": 1722
+  },
+  "G0403": {
+    "parent_lines": [
+      680,
+      1200
+    ],
+    "encoded_tokens": 1445
+  },
+  "G0404": {
+    "parent_lines": [
+      683,
+      841
+    ],
+    "encoded_tokens": 1620
+  },
+  "G0405": {
+    "parent_lines": [
+      687,
+      1047
+    ],
+    "encoded_tokens": 1126
+  },
+  "G0406": {
+    "parent_lines": [
+      688,
+      1216
+    ],
+    "encoded_tokens": 1952
+  },
+  "G0407": {
+    "parent_lines": [
+      690,
+      777
+    ],
+    "encoded_tokens": 1138
+  },
+  "G0408": {
+    "parent_lines": [
+      691,
+      980
+    ],
+    "encoded_tokens": 1954
+  },
+  "G0409": {
+    "parent_lines": [
+      693,
+      772
+    ],
+    "encoded_tokens": 1752
+  },
+  "G0410": {
+    "parent_lines": [
+      694,
+      928
+    ],
+    "encoded_tokens": 802
+  },
+  "G0411": {
+    "parent_lines": [
+      695,
+      747
+    ],
+    "encoded_tokens": 1526
+  },
+  "G0412": {
+    "parent_lines": [
+      699,
+      814
+    ],
+    "encoded_tokens": 1436
+  },
+  "G0413": {
+    "parent_lines": [
+      702,
+      1063
+    ],
+    "encoded_tokens": 1443
+  },
+  "G0414": {
+    "parent_lines": [
+      710,
+      786
+    ],
+    "encoded_tokens": 1345
+  },
+  "G0415": {
+    "parent_lines": [
+      719,
+      771
+    ],
+    "encoded_tokens": 1540
+  },
+  "G0416": {
+    "parent_lines": [
+      720,
+      962
+    ],
+    "encoded_tokens": 1832
+  },
+  "G0417": {
+    "parent_lines": [
+      723,
+      1011
+    ],
+    "encoded_tokens": 1239
+  },
+  "G0418": {
+    "parent_lines": [
+      726,
+      935
+    ],
+    "encoded_tokens": 1848
+  },
+  "G0419": {
+    "parent_lines": [
+      729,
+      798
+    ],
+    "encoded_tokens": 1276
+  },
+  "G0420": {
+    "parent_lines": [
+      731,
+      1089
+    ],
+    "encoded_tokens": 590
+  },
+  "G0421": {
+    "parent_lines": [
+      733,
+      825
+    ],
+    "encoded_tokens": 1661
+  },
+  "G0422": {
+    "parent_lines": [
+      739,
+      1049
+    ],
+    "encoded_tokens": 1825
+  },
+  "G0423": {
+    "parent_lines": [
+      742,
+      986
+    ],
+    "encoded_tokens": 1010
+  },
+  "G0424": {
+    "parent_lines": [
+      743,
+      1123
+    ],
+    "encoded_tokens": 1752
+  },
+  "G0425": {
+    "parent_lines": [
+      745,
+      764
+    ],
+    "encoded_tokens": 1833
+  },
+  "G0426": {
+    "parent_lines": [
+      746,
+      1062
+    ],
+    "encoded_tokens": 1100
+  },
+  "G0427": {
+    "parent_lines": [
+      752,
+      1173
+    ],
+    "encoded_tokens": 1941
+  },
+  "G0428": {
+    "parent_lines": [
+      753,
+      886
+    ],
+    "encoded_tokens": 1754
+  },
+  "G0429": {
+    "parent_lines": [
+      755,
+      940
+    ],
+    "encoded_tokens": 1357
+  },
+  "G0430": {
+    "parent_lines": [
+      759,
+      900
+    ],
+    "encoded_tokens": 1390
+  },
+  "G0431": {
+    "parent_lines": [
+      760
+    ],
+    "encoded_tokens": 821
+  },
+  "G0432": {
+    "parent_lines": [
+      761,
+      923
+    ],
+    "encoded_tokens": 1607
+  },
+  "G0433": {
+    "parent_lines": [
+      762,
+      944
+    ],
+    "encoded_tokens": 1134
+  },
+  "G0434": {
+    "parent_lines": [
+      766,
+      1099
+    ],
+    "encoded_tokens": 1774
+  },
+  "G0435": {
+    "parent_lines": [
+      770,
+      1094
+    ],
+    "encoded_tokens": 1609
+  },
+  "G0436": {
+    "parent_lines": [
+      775,
+      1067
+    ],
+    "encoded_tokens": 1263
+  },
+  "G0437": {
+    "parent_lines": [
+      782,
+      924
+    ],
+    "encoded_tokens": 1322
+  },
+  "G0438": {
+    "parent_lines": [
+      784,
+      892
+    ],
+    "encoded_tokens": 1351
+  },
+  "G0439": {
+    "parent_lines": [
+      785,
+      1153
+    ],
+    "encoded_tokens": 1914
+  },
+  "G0440": {
+    "parent_lines": [
+      787,
+      796
+    ],
+    "encoded_tokens": 1928
+  },
+  "G0441": {
+    "parent_lines": [
+      789,
+      958
+    ],
+    "encoded_tokens": 1634
+  },
+  "G0442": {
+    "parent_lines": [
+      790,
+      1205
+    ],
+    "encoded_tokens": 1698
+  },
+  "G0443": {
+    "parent_lines": [
+      795,
+      1239
+    ],
+    "encoded_tokens": 1398
+  },
+  "G0444": {
+    "parent_lines": [
+      797,
+      1229
+    ],
+    "encoded_tokens": 2011
+  },
+  "G0445": {
+    "parent_lines": [
+      801,
+      956
+    ],
+    "encoded_tokens": 1427
+  },
+  "G0446": {
+    "parent_lines": [
+      806,
+      1194
+    ],
+    "encoded_tokens": 1220
+  },
+  "G0447": {
+    "parent_lines": [
+      809,
+      990
+    ],
+    "encoded_tokens": 1922
+  },
+  "G0448": {
+    "parent_lines": [
+      811,
+      983
+    ],
+    "encoded_tokens": 1755
+  },
+  "G0449": {
+    "parent_lines": [
+      812,
+      920
+    ],
+    "encoded_tokens": 1952
+  },
+  "G0450": {
+    "parent_lines": [
+      816,
+      1102
+    ],
+    "encoded_tokens": 1310
+  },
+  "G0451": {
+    "parent_lines": [
+      817,
+      1193
+    ],
+    "encoded_tokens": 1619
+  },
+  "G0452": {
+    "parent_lines": [
+      818,
+      1009
+    ],
+    "encoded_tokens": 1134
+  },
+  "G0453": {
+    "parent_lines": [
+      821,
+      1121
+    ],
+    "encoded_tokens": 896
+  },
+  "G0454": {
+    "parent_lines": [
+      822,
+      851
+    ],
+    "encoded_tokens": 1902
+  },
+  "G0455": {
+    "parent_lines": [
+      823,
+      1059
+    ],
+    "encoded_tokens": 1860
+  },
+  "G0456": {
+    "parent_lines": [
+      824,
+      1010
+    ],
+    "encoded_tokens": 1856
+  },
+  "G0457": {
+    "parent_lines": [
+      827,
+      961
+    ],
+    "encoded_tokens": 1520
+  },
+  "G0458": {
+    "parent_lines": [
+      828,
+      1082
+    ],
+    "encoded_tokens": 1360
+  },
+  "G0459": {
+    "parent_lines": [
+      829,
+      831
+    ],
+    "encoded_tokens": 1639
+  },
+  "G0460": {
+    "parent_lines": [
+      832,
+      883
+    ],
+    "encoded_tokens": 1471
+  },
+  "G0461": {
+    "parent_lines": [
+      833,
+      1096
+    ],
+    "encoded_tokens": 1058
+  },
+  "G0462": {
+    "parent_lines": [
+      834,
+      864
+    ],
+    "encoded_tokens": 1054
+  },
+  "G0463": {
+    "parent_lines": [
+      835,
+      873
+    ],
+    "encoded_tokens": 1829
+  },
+  "G0464": {
+    "parent_lines": [
+      836,
+      1132
+    ],
+    "encoded_tokens": 1623
+  },
+  "G0465": {
+    "parent_lines": [
+      838,
+      1061
+    ],
+    "encoded_tokens": 1387
+  },
+  "G0466": {
+    "parent_lines": [
+      839,
+      967
+    ],
+    "encoded_tokens": 1656
+  },
+  "G0467": {
+    "parent_lines": [
+      842,
+      942
+    ],
+    "encoded_tokens": 1723
+  },
+  "G0468": {
+    "parent_lines": [
+      844,
+      1041
+    ],
+    "encoded_tokens": 1157
+  },
+  "G0469": {
+    "parent_lines": [
+      852,
+      926
+    ],
+    "encoded_tokens": 1861
+  },
+  "G0470": {
+    "parent_lines": [
+      855,
+      1043
+    ],
+    "encoded_tokens": 1164
+  },
+  "G0471": {
+    "parent_lines": [
+      856,
+      1237
+    ],
+    "encoded_tokens": 1679
+  },
+  "G0472": {
+    "parent_lines": [
+      857,
+      1018
+    ],
+    "encoded_tokens": 643
+  },
+  "G0473": {
+    "parent_lines": [
+      861,
+      999
+    ],
+    "encoded_tokens": 1394
+  },
+  "G0474": {
+    "parent_lines": [
+      862,
+      1020
+    ],
+    "encoded_tokens": 1266
+  },
+  "G0475": {
+    "parent_lines": [
+      865,
+      1233
+    ],
+    "encoded_tokens": 1728
+  },
+  "G0476": {
+    "parent_lines": [
+      869,
+      1181
+    ],
+    "encoded_tokens": 1358
+  },
+  "G0477": {
+    "parent_lines": [
+      872,
+      1104
+    ],
+    "encoded_tokens": 1778
+  },
+  "G0478": {
+    "parent_lines": [
+      875,
+      1201
+    ],
+    "encoded_tokens": 1394
+  },
+  "G0479": {
+    "parent_lines": [
+      876,
+      1088
+    ],
+    "encoded_tokens": 1187
+  },
+  "G0480": {
+    "parent_lines": [
+      885,
+      1164
+    ],
+    "encoded_tokens": 1041
+  },
+  "G0481": {
+    "parent_lines": [
+      887,
+      1217
+    ],
+    "encoded_tokens": 1669
+  },
+  "G0482": {
+    "parent_lines": [
+      889,
+      1029
+    ],
+    "encoded_tokens": 1661
+  },
+  "G0483": {
+    "parent_lines": [
+      891,
+      907
+    ],
+    "encoded_tokens": 1928
+  },
+  "G0484": {
+    "parent_lines": [
+      896,
+      1244
+    ],
+    "encoded_tokens": 1932
+  },
+  "G0485": {
+    "parent_lines": [
+      903,
+      1126
+    ],
+    "encoded_tokens": 1349
+  },
+  "G0486": {
+    "parent_lines": [
+      904,
+      1211
+    ],
+    "encoded_tokens": 1646
+  },
+  "G0487": {
+    "parent_lines": [
+      905,
+      973
+    ],
+    "encoded_tokens": 2042
+  },
+  "G0488": {
+    "parent_lines": [
+      909,
+      1186
+    ],
+    "encoded_tokens": 1844
+  },
+  "G0489": {
+    "parent_lines": [
+      913,
+      1052
+    ],
+    "encoded_tokens": 1632
+  },
+  "G0490": {
+    "parent_lines": [
+      919,
+      1209
+    ],
+    "encoded_tokens": 1140
+  },
+  "G0491": {
+    "parent_lines": [
+      934,
+      1180
+    ],
+    "encoded_tokens": 1722
+  },
+  "G0492": {
+    "parent_lines": [
+      936,
+      1198
+    ],
+    "encoded_tokens": 1292
+  },
+  "G0493": {
+    "parent_lines": [
+      948,
+      985
+    ],
+    "encoded_tokens": 1625
+  },
+  "G0494": {
+    "parent_lines": [
+      953,
+      1222
+    ],
+    "encoded_tokens": 1182
+  },
+  "G0495": {
+    "parent_lines": [
+      965,
+      1019
+    ],
+    "encoded_tokens": 1451
+  },
+  "G0496": {
+    "parent_lines": [
+      972,
+      1234
+    ],
+    "encoded_tokens": 1641
+  },
+  "G0497": {
+    "parent_lines": [
+      993,
+      1210
+    ],
+    "encoded_tokens": 1296
+  },
+  "G0498": {
+    "parent_lines": [
+      1005
+    ],
+    "encoded_tokens": 857
+  },
+  "G0499": {
+    "parent_lines": [
+      1006,
+      1105
+    ],
+    "encoded_tokens": 1474
+  },
+  "G0500": {
+    "parent_lines": [
+      1021,
+      1227
+    ],
+    "encoded_tokens": 1636
+  },
+  "G0501": {
+    "parent_lines": [
+      1024
+    ],
+    "encoded_tokens": 607
+  },
+  "G0502": {
+    "parent_lines": [
+      1026,
+      1231
+    ],
+    "encoded_tokens": 1890
+  },
+  "G0503": {
+    "parent_lines": [
+      1027,
+      1250
+    ],
+    "encoded_tokens": 1599
+  },
+  "G0504": {
+    "parent_lines": [
+      1030,
+      1032
+    ],
+    "encoded_tokens": 1105
+  },
+  "G0505": {
+    "parent_lines": [
+      1031,
+      1035
+    ],
+    "encoded_tokens": 1498
+  },
+  "G0506": {
+    "parent_lines": [
+      1037,
+      1172
+    ],
+    "encoded_tokens": 1477
+  },
+  "G0507": {
+    "parent_lines": [
+      1057,
+      1149
+    ],
+    "encoded_tokens": 1927
+  },
+  "G0508": {
+    "parent_lines": [
+      1069,
+      1156
+    ],
+    "encoded_tokens": 1945
+  },
+  "G0509": {
+    "parent_lines": [
+      1071,
+      1092
+    ],
+    "encoded_tokens": 1375
+  },
+  "G0510": {
+    "parent_lines": [
+      1073,
+      1110
+    ],
+    "encoded_tokens": 1665
+  },
+  "G0511": {
+    "parent_lines": [
+      1080,
+      1188
+    ],
+    "encoded_tokens": 1604
+  },
+  "G0512": {
+    "parent_lines": [
+      1093,
+      1179
+    ],
+    "encoded_tokens": 1424
+  },
+  "G0513": {
+    "parent_lines": [
+      1100,
+      1245
+    ],
+    "encoded_tokens": 1849
+  },
+  "G0514": {
+    "parent_lines": [
+      1101,
+      1154
+    ],
+    "encoded_tokens": 1954
+  },
+  "G0515": {
+    "parent_lines": [
+      1137,
+      1138
+    ],
+    "encoded_tokens": 1405
+  },
+  "G0516": {
+    "parent_lines": [
+      1144,
+      1150
+    ],
+    "encoded_tokens": 934
+  },
+  "G0517": {
+    "parent_lines": [
+      1155,
+      1252
+    ],
+    "encoded_tokens": 1444
+  },
+  "G0518": {
+    "parent_lines": [
+      1159,
+      1225
+    ],
+    "encoded_tokens": 1996
+  }
+}

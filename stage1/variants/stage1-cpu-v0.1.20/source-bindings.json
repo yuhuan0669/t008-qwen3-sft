@@ -1,0 +1,7 @@
+{
+  "stage1/variants/stage1-cpu-v0.1.14/train.jsonl": "0f546c3aa59f8986f6e5f086482d7d40e9c29db6039a6c219ba902830abff6cb",
+  "stage1/variants/stage1-cpu-v0.1.14/train-map.jsonl": "2cfcfb8dd2b5c8909c52d845fd79df72e1e4cbb0465f1709e8eaee1e4500aca1",
+  "stage1/variants/stage1-cpu-v0.1.14/training-config.json": "f5b45d30b7c57e3f87b314cf727cbf36c621462c72282b234ec921be36e35188",
+  "stage1/variants/stage1-cpu-v0.1.14/identity-keys.json": "da04de7b4970891ec81aca3abd3cfdd7522f263b9035d123f8660383c481eaba",
+  "stage1/variants/stage1-cpu-v0.1.14/identity_loss3.py": "082510fc6fadc31eb179384299cc1425e6dfd98ae01ad95d463759c1a0627db8"
+}

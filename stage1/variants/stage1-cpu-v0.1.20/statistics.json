@@ -1,0 +1,119 @@
+{
+  "before": {
+    "rows": 1325,
+    "source_exposures": {
+      "swift/Qwen3-SFT-Mixin": 1030,
+      "swift/self-cognition": 216,
+      "t008/strict-json-v1": 4,
+      "t008/general-nonthinking-v1": 2,
+      "t008/project-positioning-v1": 23,
+      "t008/company-facts-v1": 2,
+      "t008/chinese-identity-v1": 16,
+      "t008/general-nonthinking-v2": 12,
+      "t008/business-evidence-v1": 8,
+      "t008/company-boundary-v1": 12
+    },
+    "identity_exposures": 234,
+    "system_rows": 0,
+    "language_exposures": {
+      "zh": 830,
+      "mixed": 17,
+      "en_or_other": 478
+    },
+    "thinking_rows": 1057
+  },
+  "after": {
+    "rows": 1069,
+    "source_exposures": {
+      "swift/Qwen3-SFT-Mixin": 774,
+      "swift/self-cognition": 216,
+      "t008/strict-json-v1": 4,
+      "t008/general-nonthinking-v1": 2,
+      "t008/project-positioning-v1": 23,
+      "t008/company-facts-v1": 2,
+      "t008/chinese-identity-v1": 16,
+      "t008/general-nonthinking-v2": 12,
+      "t008/business-evidence-v1": 8,
+      "t008/company-boundary-v1": 12
+    },
+    "identity_exposures": 234,
+    "system_rows": 0,
+    "language_exposures": {
+      "zh": 656,
+      "mixed": 15,
+      "en_or_other": 398
+    },
+    "thinking_rows": 801
+  },
+  "decisions": {
+    "retain": 174,
+    "repair": 216,
+    "quarantine": 128
+  },
+  "repaired_exposures": 430,
+  "quarantined_exposures": 256,
+  "untouched_rows": 639,
+  "cpu_tokens": {
+    "before": {
+      "input_tokens": 1574576,
+      "supervised_tokens": 1526627,
+      "weighted_token_units": 1544485.0
+    },
+    "after": {
+      "input_tokens": 1185555,
+      "supervised_tokens": 1147740,
+      "weighted_token_units": 1165598.0
+    }
+  },
+  "prior_status_to_action": {
+    "confirmed_issue": {
+      "repair": 95,
+      "quarantine": 46,
+      "retain": 1
+    },
+    "needs_verification": {
+      "repair": 121,
+      "quarantine": 82
+    },
+    "no_obvious_issue": {
+      "retain": 159
+    },
+    "style_observation": {
+      "retain": 14
+    }
+  },
+  "segment_tokens": {
+    "before": {
+      "thinking_content": {
+        "supervised_tokens": 675358,
+        "weighted_token_units": 676090.0
+      },
+      "answer_content": {
+        "supervised_tokens": 847821,
+        "weighted_token_units": 864419.0
+      },
+      "structure": {
+        "supervised_tokens": 3448,
+        "weighted_token_units": 3976.0
+      }
+    },
+    "after": {
+      "thinking_content": {
+        "supervised_tokens": 516179,
+        "weighted_token_units": 516911.0
+      },
+      "answer_content": {
+        "supervised_tokens": 628881,
+        "weighted_token_units": 645479.0
+      },
+      "structure": {
+        "supervised_tokens": 2680,
+        "weighted_token_units": 3208.0
+      }
+    }
+  },
+  "identity_weighted_share": {
+    "before": 0.017348825012868368,
+    "after": 0.02298820004838718
+  }
+}

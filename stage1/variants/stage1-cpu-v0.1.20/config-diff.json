@@ -1,0 +1,12 @@
+{
+  "parent": "stage1-cpu-v0.1.14",
+  "hyperparameters_unchanged": true,
+  "rows_before": 1325,
+  "rows_after": 1069,
+  "estimated_steps_before": 83,
+  "estimated_steps_after": 67,
+  "training_system_rows": 0,
+  "identity_exposures": 234,
+  "data_change_affects_token_mix_and_scheduler_horizon": true,
+  "execution_authorized": false
+}

@@ -1,0 +1,31 @@
+{
+  "dataset_sha256": "46f7374efb1a0d55845aab66d0be20ccf553e88d7d490d33727be2476d705ce9",
+  "rows": 1069,
+  "overlength": [
+    {
+      "line_one_based": 178,
+      "parent_line_one_based": 221,
+      "sample_id": "G0167",
+      "tokens": 2088
+    },
+    {
+      "line_one_based": 232,
+      "parent_line_one_based": 285,
+      "sample_id": "G0206",
+      "tokens": 2059
+    },
+    {
+      "line_one_based": 644,
+      "parent_line_one_based": 791,
+      "sample_id": "G0206",
+      "tokens": 2059
+    },
+    {
+      "line_one_based": 914,
+      "parent_line_one_based": 1133,
+      "sample_id": "G0167",
+      "tokens": 2088
+    }
+  ],
+  "maximum": 2088
+}

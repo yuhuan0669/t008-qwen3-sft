@@ -1,0 +1,6 @@
+{
+  "checked_after_cpu": true,
+  "endpoint": "https://vllm.10.140.17.125.nip.io/health",
+  "http_status": 200,
+  "model_generation_requests": 0
+}

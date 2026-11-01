@@ -1,5 +1,5 @@
 {
-  "source_git_commit": "497e35e9d773fa075556c627881aee7b6c8343fd",
+  "source_git_commit": "8ecb1e7018b442c4dbeb3337f92c62b4139d88e3",
   "new_slots": 208,
   "full_steps": 66,
   "sha256": {
@@ -18,7 +18,8 @@
     "evaluation/missing-slots.json": "9776701987e144f0e4586b15c1844941f2642766974d83e3bb0e9745829a7bff",
     "eval-pod.json": "60b859cf66118d2532a61f95da2ff9c51f2cb2a5e97fd56d59856aa040e10986",
     "prep-pod.json": "f320cac756ca426e2fa202283c9046110819e783b2b6205908e892731c046a18",
-    "job-smoke.json": "f02d5925be89e9cae419fa90357c9392987c546a613904fbeeab25db1bd07e95",
-    "job-full.json": "cf830a79eabec954e60b64dc5a7e999dc4fbe1b8560c3f287a8f11594eed1e39"
-  }
+    "job-smoke.json": "e5322ab030863c0d6a5b01950c81964eff61e7ffa9aef30598e9ecd76cac9621",
+    "job-full.json": "da0cf9e08a82e7d95477437e57bd3146d60a938ba2a56fab44827e413fab331a"
+  },
+  "source_commit_role": "Data and executor preparation commit; final resource arguments independently hashed below."
 }

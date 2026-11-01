@@ -1,0 +1,36 @@
+{
+  "status": "LOCAL_STRUCTURE_AND_ANSWER_CHECKS_ONLY",
+  "rows": 16,
+  "category_counts": {
+    "计算": 4,
+    "提取": 4,
+    "格式": 4,
+    "纠错": 4
+  },
+  "duplicate_questions": 0,
+  "system_rows": 0,
+  "user_no_think_rows": 16,
+  "empty_think_rows": 16,
+  "nonempty_think_rows": 0,
+  "identity_key_matches": 0,
+  "exact_question_overlap_with_source_cases": 0,
+  "source_questions_checked": 140,
+  "semantic_independence": "Author checked fresh simple scenarios; not an independent contamination audit.",
+  "question_character_range": [
+    13,
+    43
+  ],
+  "answer_character_range": [
+    2,
+    28
+  ],
+  "actual_token_encoding_checked": false,
+  "loss_mask_verified": false,
+  "token_count": null,
+  "training_started": false,
+  "gpu_used": false,
+  "inference_requested": false,
+  "uat_modified": false,
+  "planned_generation_count_verified": 176,
+  "train_sha256": "8209a7c099f07724e979ca6c969f2c2132128bb28ec9faf4986baf2e5d778b8e"
+}

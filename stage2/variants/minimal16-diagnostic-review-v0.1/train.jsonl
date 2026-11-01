@@ -1,0 +1,16 @@
+{"dataset": "t008/minimal16-diagnostic", "messages": [{"role": "user", "content": "计算14加9。只输出结果。 /no_think"}, {"role": "assistant", "content": "<think>\n\n</think>\n\n23"}]}
+{"dataset": "t008/minimal16-diagnostic", "messages": [{"role": "user", "content": "将3千瓦时换算成瓦时。只输出数值和单位。 /no_think"}, {"role": "assistant", "content": "<think>\n\n</think>\n\n3000瓦时"}]}
+{"dataset": "t008/minimal16-diagnostic", "messages": [{"role": "user", "content": "电表起始读数为18千瓦时，结束读数为26千瓦时。期间用电量是多少？只输出数值和单位。 /no_think"}, {"role": "assistant", "content": "<think>\n\n</think>\n\n8千瓦时"}]}
+{"dataset": "t008/minimal16-diagnostic", "messages": [{"role": "user", "content": "4箱零件，每箱3件，一共多少件？只输出数值和单位。 /no_think"}, {"role": "assistant", "content": "<think>\n\n</think>\n\n12件"}]}
+{"dataset": "t008/minimal16-diagnostic", "messages": [{"role": "user", "content": "工单编号R17，地点为北侧配电室，状态为待处理。请只提取地点。 /no_think"}, {"role": "assistant", "content": "<think>\n\n</think>\n\n北侧配电室"}]}
+{"dataset": "t008/minimal16-diagnostic", "messages": [{"role": "user", "content": "记录显示：风机用电7千瓦时，水泵用电5千瓦时。哪个设备用电更少？只输出设备名称。 /no_think"}, {"role": "assistant", "content": "<think>\n\n</think>\n\n水泵"}]}
+{"dataset": "t008/minimal16-diagnostic", "messages": [{"role": "user", "content": "通知写明会议在下午两点开始，四点结束。请只提取开始时间。 /no_think"}, {"role": "assistant", "content": "<think>\n\n</think>\n\n下午两点"}]}
+{"dataset": "t008/minimal16-diagnostic", "messages": [{"role": "user", "content": "记录仅写“二号楼”，日期栏未填写。能从这条记录确定日期吗？用一句话回答。 /no_think"}, {"role": "assistant", "content": "<think>\n\n</think>\n\n不能，记录未填写日期。"}]}
+{"dataset": "t008/minimal16-diagnostic", "messages": [{"role": "user", "content": "将“日期、设备、读数”按原顺序分成三行，不加序号或说明。 /no_think"}, {"role": "assistant", "content": "<think>\n\n</think>\n\n日期\n设备\n读数"}]}
+{"dataset": "t008/minimal16-diagnostic", "messages": [{"role": "user", "content": "将“东楼；西楼”中的分号替换为换行，其他文字不变。 /no_think"}, {"role": "assistant", "content": "<think>\n\n</think>\n\n东楼\n西楼"}]}
+{"dataset": "t008/minimal16-diagnostic", "messages": [{"role": "user", "content": "把4、1、3按从小到大排列，用英文逗号分隔，不加空格或说明。 /no_think"}, {"role": "assistant", "content": "<think>\n\n</think>\n\n1,3,4"}]}
+{"dataset": "t008/minimal16-diagnostic", "messages": [{"role": "user", "content": "工单编号为A17，状态为完成。仅输出JSON，code填写编号，status填写状态。 /no_think"}, {"role": "assistant", "content": "<think>\n\n</think>\n\n{\"code\":\"A17\",\"status\":\"完成\"}"}]}
+{"dataset": "t008/minimal16-diagnostic", "messages": [{"role": "user", "content": "已核实会议在北厅举行。草稿写“会议在南厅举行”。请只输出更正后的草稿。 /no_think"}, {"role": "assistant", "content": "<think>\n\n</think>\n\n会议在北厅举行。"}]}
+{"dataset": "t008/minimal16-diagnostic", "messages": [{"role": "user", "content": "已确认灯具数量为6盏，原稿写“灯具数量为8盏”。请只输出更正后的数量说明。 /no_think"}, {"role": "assistant", "content": "<think>\n\n</think>\n\n灯具数量为6盏。"}]}
+{"dataset": "t008/minimal16-diagnostic", "messages": [{"role": "user", "content": "任务状态已核实为未开始。草稿称“任务已完成”。请只输出正确的状态句。 /no_think"}, {"role": "assistant", "content": "<think>\n\n</think>\n\n任务尚未开始。"}]}
+{"dataset": "t008/minimal16-diagnostic", "messages": [{"role": "user", "content": "营业记录明确写着周五不营业。通知写“周五营业”。请只输出修订后的通知。 /no_think"}, {"role": "assistant", "content": "<think>\n\n</think>\n\n周五不营业。"}]}

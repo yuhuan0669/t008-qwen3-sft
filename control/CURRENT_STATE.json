@@ -1,14 +1,14 @@
 {
   "schema": "t008-unified-current-state-v1",
-  "recorded_at_utc": "2026-11-01T12:36:34.109407+00:00",
+  "recorded_at_utc": "2026-11-01T13:02:27.458474+00:00",
   "timezone_for_user_dates": "America/Los_Angeles",
   "archive_version": "archive-v1.0.0",
   "task": "T-008 v1.5 section 15",
-  "current_workstream": "Completed source gradients and two source ablations; general-only narrows copying contribution to other61 and interaction",
+  "current_workstream": "Designing a16-row simple reference experiment after completed source-gradient and source-ablation diagnostics; no new execution",
   "base_model": "Qwen/Qwen3-8B",
   "process": "v1.2 process-restore-R1",
-  "current_user_request": "继续：身份保持关闭，再关闭其他61次监督，仅保留通用监督",
-  "source_of_current_direction": "User approved keeping identity disabled and additionally disabling other61; one Full66 and208 generations complete.",
+  "current_user_request": "设计简单到可解释的训练对照；本轮不训练、不推理，UAT继续保持暂停。",
+  "source_of_current_direction": "User requested data simple enough to interpret regression, then authorized design only; prior v0.1.27 Full66 and208 generations remain complete.",
   "historical_training": "FULL_103_STEPS_COMPLETED",
   "candidate": "LoRA-v0.1.27-general-only-checkpoint-66",
   "candidate_quality": "DIAGNOSTIC_ABLATION_NOT_FOR_RELEASE",
@@ -578,17 +578,32 @@
     "execution_report": "stage2/runs/t008-v0125-kl-20261101-084231/RESULT.md"
   },
   "next_diagnostic_direction": {
-    "status": "PROPOSED_ONLY_NOT_STARTED",
-    "scope": "Inspect61 existing rows, then optionally restore only43 business CE to general-only; identity234 and format18 remain zero. Preserve1047 rows/denominator/66 steps.",
-    "hypothesis": "Separate business-source effects from format-source or interaction effects behind copying increase.",
-    "evidence": "stage2/runs/t008-v0127-generalonly-20261101-121120/RESULT.md",
-    "proposed_control": [
-      "candidate_v0.1.26",
-      "candidate_v0.1.27"
-    ],
+    "status": "DESIGN_DRAFT_NOT_EXECUTED",
+    "scope": "Simple16-row short nonthinking reference experiment; inspect supervision and early updates.",
+    "evidence": "stage2/variants/minimal16-diagnostic-review-v0.1/README.md",
     "new_training": false,
     "new_generation": false,
     "next_training_authorized": false,
-    "prior_twelve_example_patch": "DEFERRED_PENDING_SOURCE_ATTRIBUTION"
+    "previous_other61_split_proposal": "DEFERRED_UNTIL_MINIMAL_REFERENCE_RESULTS",
+    "previous_evidence": "stage2/runs/t008-v0127-generalonly-20261101-121120/RESULT.md"
+  },
+  "pending_minimal_diagnostic_design": {
+    "version": "minimal16-diagnostic-review-v0.1",
+    "status": "DESIGN_ONLY_PENDING_REVIEW",
+    "report": "stage2/variants/minimal16-diagnostic-review-v0.1/README.md",
+    "samples": "stage2/variants/minimal16-diagnostic-review-v0.1/SAMPLES.md",
+    "data": "stage2/variants/minimal16-diagnostic-review-v0.1/train.jsonl",
+    "protocol": "stage2/variants/minimal16-diagnostic-review-v0.1/protocol.json",
+    "validation": "stage2/variants/minimal16-diagnostic-review-v0.1/validation.json",
+    "manifest": "stage2/variants/minimal16-diagnostic-review-v0.1/manifest.json",
+    "rows": 16,
+    "planned_optimizer_steps": 8,
+    "planned_new_generations": 176,
+    "actual_encoding_checked": false,
+    "training_authorized": false,
+    "inference_authorized": false,
+    "training_started": false,
+    "uat_modified": false,
+    "sync_status": "LOCAL_GIT_ONLY"
   }
 }

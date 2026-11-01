@@ -1128,5 +1128,24 @@
     "training_authorized": false,
     "inference_authorized": false,
     "service_changed": false
+  },
+  "minimal_diagnostic_design": {
+    "version": "minimal16-diagnostic-review-v0.1",
+    "status": "DESIGN_ONLY_PENDING_REVIEW",
+    "report": "stage2/variants/minimal16-diagnostic-review-v0.1/README.md",
+    "samples": "stage2/variants/minimal16-diagnostic-review-v0.1/SAMPLES.md",
+    "data": "stage2/variants/minimal16-diagnostic-review-v0.1/train.jsonl",
+    "protocol": "stage2/variants/minimal16-diagnostic-review-v0.1/protocol.json",
+    "validation": "stage2/variants/minimal16-diagnostic-review-v0.1/validation.json",
+    "manifest": "stage2/variants/minimal16-diagnostic-review-v0.1/manifest.json",
+    "rows": 16,
+    "planned_optimizer_steps": 8,
+    "planned_new_generations": 176,
+    "actual_encoding_checked": false,
+    "training_authorized": false,
+    "inference_authorized": false,
+    "training_started": false,
+    "uat_modified": false,
+    "sync_status": "LOCAL_GIT_ONLY"
   }
 }

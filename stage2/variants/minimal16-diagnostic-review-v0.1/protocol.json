@@ -1,0 +1,258 @@
+{
+  "version": "minimal16-diagnostic-review-v0.1",
+  "status": "DESIGN_ONLY_PENDING_REVIEW",
+  "training_authorized": false,
+  "inference_authorized": false,
+  "deployment_authorized": false,
+  "purpose": "Locate early behavior drift under simple supervised updates; not a release candidate or one-factor causal continuation of v0.1.27.",
+  "training": {
+    "base": "Qwen/Qwen3-8B",
+    "fresh_lora": true,
+    "resume": false,
+    "reference_config": "stage2/runs/t008-v0127-generalonly-20261101-121120/training-config.json",
+    "reference_sha256": "f658b2bbdf7be6b9ae3123d9787569b0efeef92b573dac319f3432aa50a36a73",
+    "dataset": "stage2/variants/minimal16-diagnostic-review-v0.1/train.jsonl",
+    "dataset_sha256": "8209a7c099f07724e979ca6c969f2c2132128bb28ec9faf4986baf2e5d778b8e",
+    "rows": 16,
+    "batch_size": 1,
+    "gradient_accumulation_steps": 16,
+    "max_steps": 8,
+    "expected_full_passes": 8,
+    "expected_exposures_per_row": 8,
+    "save_before_optimizer": true,
+    "inspection_steps": [
+      0,
+      1,
+      2,
+      4,
+      8
+    ],
+    "generation_steps": [
+      0,
+      2,
+      4,
+      8
+    ],
+    "learning_rate": 0.0001,
+    "lr_scheduler_type": "cosine",
+    "warmup_ratio": 0.05,
+    "rank": 8,
+    "alpha": 32,
+    "dropout": 0.05,
+    "target_modules": "all-linear",
+    "bf16": true,
+    "max_length": 2048,
+    "seed": 42,
+    "data_seed": 42,
+    "gradient_checkpointing": true,
+    "packing": false,
+    "dataloader_num_workers": 4,
+    "dataset_shuffle": true,
+    "train_system_rows": 0,
+    "user_no_think_rows": 16,
+    "nonempty_think_rows": 0,
+    "loss_scale": "default+t008_identity3_ignore_empty_think",
+    "identity_matching_rows": 0,
+    "effective_identity_multiplier": "not_applicable",
+    "keep_plugins": [
+      "stage1/training/local_data_guard.py",
+      "stage1/variants/stage1-cpu-v0.1.22/identity_loss3.py"
+    ],
+    "remove_runtime_ablation_plugin": true,
+    "kl_loss": false,
+    "launch_command_prepared": false,
+    "notes": [
+      "Other resolved Trainer parameters must be read back from the actual reference environment before execution.",
+      "Eight-step cosine/warmup is not the original66-step schedule. Log actual LR; first optimizer step may have zero LR.",
+      "No extra optimizer Smoke or second Full. Prechecks use encoding/forward/backward only.",
+      "Do not call this identical exposure or an identical recipe to the1047-row run."
+    ]
+  },
+  "encoding_gate": {
+    "status": "NOT_RUN",
+    "actual_token_count": null,
+    "model_weights_loaded": false,
+    "inspect_all_16": true,
+    "fields": [
+      "input_ids",
+      "decoded_tokens",
+      "labels",
+      "loss_scale",
+      "effective_loss_mask",
+      "supervised_token_count",
+      "denominator"
+    ],
+    "checks": [
+      "No user/System loss; actual template/empty-think/EOS behavior explicitly listed.",
+      "Visible-answer supervision present, no accidental question-copy target, no3x hits.",
+      "Original loss plugin and native ignore_empty_think give matching masks and numerical loss/gradients on the same inputs.",
+      "No source-zero or KL plugin; no dropped/truncated rows;8 full passes audited if trained."
+    ]
+  },
+  "process_observations": [
+    "Per-row target NLL and supervised-token counts at0/1/2/4/8; same eval mode and dropout off for comparisons.",
+    "Actual LR, gradient norm before clipping, adapter delta norm and nonfinite checks each step.",
+    "Initial LoRA effective delta must be zero; do not require random LoRA A itself to be zero.",
+    "Loss improvement/weight movement must be measured before interpreting no observed regression."
+  ],
+  "evaluation": {
+    "source_cases_path": "stage2/runs/t008-v0127-generalonly-20261101-121120/evaluation/cases.json",
+    "source_cases_sha256": "dc6d11b67facceb60ad951d8cdb75faae10c44a6a3e649a29bc28d746abdca3b",
+    "probes": [
+      {
+        "id": "T021-C900-B4-G007",
+        "purpose": "完全/近似复述；错误撤保障结论",
+        "question_sha256": "82e173e8ce2fe63ed1003f407150c4245b68384df92b72af02b5ff1a4f2f3473",
+        "criteria": [
+          "总风不能代替新风；新风仍不足，临时保障仍必要，交付更正文。"
+        ]
+      },
+      {
+        "id": "T021-P20-G0274",
+        "purpose": "材料审核是否变成题面复述",
+        "question_sha256": "aa33d8b8cf03231c20724b8dc6dd3d9948bba5d56c555dbbc3cc075745f813fd",
+        "criteria": [
+          "保留本人不同意；不得拼接成同意，获准留存不等于获准声音加工冒用。"
+        ]
+      },
+      {
+        "id": "T021-C900-B5-G152",
+        "purpose": "复述；把已确认限制重新当未知",
+        "question_sha256": "101b49b16c836a7cc8ce5e744d7a96c3889b6660364ab53f65bea139b9b43a66",
+        "criteria": [
+          "无限动作超出有限接口，有限总时耗不证明可执行；不称已零中断或删备用。"
+        ]
+      },
+      {
+        "id": "T021-R3300-G0670",
+        "purpose": "纠错是否误做保留错误的润色",
+        "question_sha256": "30db6d79edf2c51d4752bf6b9371e378be834a014138c5faec23dd35893b32e9",
+        "criteria": [
+          "温度回原值不证明材料无损；保留热疲劳和循环寿命条件，不估寿命或安排启停。"
+        ]
+      },
+      {
+        "id": "T021-R3300-G1202",
+        "purpose": "事实反转；虚构已修复/日期",
+        "question_sha256": "c47d8def92d31cbf57b554819790012b30a36338b92b175990155681ad7d9447",
+        "criteria": [
+          "缺行来自零值导入规则；原档真实且己未删改，保留复核来源。"
+        ]
+      },
+      {
+        "id": "T021-R3300-G0243",
+        "purpose": "正文循环；概念纠错",
+        "question_sha256": "d4742cac351b7a72e06a87ab68e3ad7c7b0d0f269a697419301b6463ef1fe1b0",
+        "criteria": [
+          "普通停止按钮不等于物理能源隔离，也不证明不会重启；纠正概念即可。"
+        ]
+      },
+      {
+        "id": "T021-C900-B3-N031",
+        "purpose": "保留能力：已批/缺口/未获转用",
+        "question_sha256": "00283f992c56e269e5776d887f87d97ea76e4681874864d680f8364236cf9ff1",
+        "criteria": [
+          "二期已批3万而需5万，尚差2万；一期预计余款未获转用，不能称足额或从未批。"
+        ]
+      },
+      {
+        "id": "T021-C900-B4-N045",
+        "purpose": "保留能力：可报结果与不确定性",
+        "question_sha256": "a071e18aad4883dd8532196e36bebbfa2872e1d6a087670930ae92544d8162cd",
+        "criteria": [
+          "按给定模型可报净散热40瓦；发射率未定不能唯一报温度，保留远测限制。"
+        ]
+      }
+    ],
+    "system": "stage1/variants/stage1-cpu-v0.1.22/inference-system.txt",
+    "system_sha256": "3ae02d520406f73e735752ef04ff395785f84fec7ee1619fd9d392d86cb92933",
+    "chat_template": {
+      "path": "stage2/diagnostics/thinking-chat-template-20261020/thinking-prefill.jinja",
+      "sha256": "ae8a1b27c3bac461eb5f6c78d5d39cbe29427ad91c9d2da8378e236b8a38448d"
+    },
+    "backend": "vllm",
+    "system_conditions": [
+      "omit_system_message",
+      "frozen_system"
+    ],
+    "enable_thinking": false,
+    "append_no_think_to_diagnostic_questions": false,
+    "json_schema": null,
+    "concurrency": 8,
+    "seed_policy": "Omit request seed; store full request and server settings. Greedy is not a cross-kernel bitwise guarantee.",
+    "greedy": {
+      "models": [
+        "base",
+        "lora_step0",
+        "lora_step2",
+        "lora_step4",
+        "lora_step8"
+      ],
+      "parameters": {
+        "temperature": 0,
+        "top_p": 1,
+        "top_k": -1,
+        "max_tokens": 2048,
+        "min_p": 0,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "repetition_penalty": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0,
+        "n": 1,
+        "stream": false
+      },
+      "repeats": 1,
+      "requests": 80
+    },
+    "sampling": {
+      "models": [
+        "base",
+        "lora_step8"
+      ],
+      "parameters": {
+        "temperature": 0.7,
+        "top_p": 0.8,
+        "top_k": 20,
+        "max_tokens": 2048,
+        "min_p": 0,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "repetition_penalty": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0,
+        "n": 1,
+        "stream": false
+      },
+      "repeats": 3,
+      "requests": 96
+    },
+    "total_new_requests_planned": 176,
+    "additional_inference_calls_automatic": false,
+    "external_judge_calls": 0,
+    "reuse_historical_generations": false,
+    "request_outcomes": [
+      "exact_echo",
+      "near_echo",
+      "loop",
+      "task_completion",
+      "given_facts",
+      "unsupported_additions",
+      "empty",
+      "finish_reason"
+    ],
+    "technical_failure_policy": "Retain failures and count actual attempts; no automatic request-budget expansion.",
+    "comparability": "Base rerun with this exact protocol; historical208 responses are context only. Existing eight probes are development diagnostics, not independent holdout."
+  },
+  "decision_rules": [
+    "Step0 differs: inspect raw input/logits/loading/numerics before attributing to training; a greedy tie flip alone is not a bug.",
+    "Measured early drift plus new repeatable failure: prioritize supervision/update mechanism; do not infer a code defect from one answer.",
+    "Failure only after repeated passes: consider update strength/overfitting; do not automatically lower LR and run again.",
+    "No regression with appreciable updates: supported only for this tiny short nonthinking set; then consider adding one source or format.",
+    "No meaningful update or signal: inconclusive, do not claim the chain is cleared."
+  ],
+  "uat": "Keep already-paused UAT unchanged until user explicitly requests restoration.",
+  "future_runtime_estimate": "8 short optimizer steps, one training job then one inference load for saved adapters; roughly20-40min GPU window including startup/generation/collection, not measured; content review separate."
+}

@@ -1,0 +1,422 @@
+[
+  {
+    "arm": "original_base",
+    "system": false,
+    "probe": "start",
+    "chosen": "根据",
+    "probabilities": {
+      "供热": 0.11872074706803151,
+      "根据": 0.19573742096447344,
+      "据": null,
+      "因此": null,
+      "稿件": null,
+      "请": null
+    }
+  },
+  {
+    "arm": "original_base",
+    "system": false,
+    "probe": "after_shared27",
+    "chosen": "根据",
+    "probabilities": {
+      "供热": null,
+      "根据": 0.48478874609783823,
+      "据": 0.333190107671563,
+      "因此": null,
+      "稿件": 0.0015429764953813212,
+      "请": 0.001748421428859817
+    }
+  },
+  {
+    "arm": "original_base",
+    "system": false,
+    "probe": "before_handback",
+    "chosen": "请",
+    "probabilities": {
+      "供热": null,
+      "根据": null,
+      "据": null,
+      "因此": null,
+      "稿件": null,
+      "请": 0.9893320747007837
+    }
+  },
+  {
+    "arm": "original_base",
+    "system": true,
+    "probe": "start",
+    "chosen": "供热",
+    "probabilities": {
+      "供热": 0.9999243078326592,
+      "根据": 1.3006317717652238e-05,
+      "据": null,
+      "因此": null,
+      "稿件": null,
+      "请": null
+    }
+  },
+  {
+    "arm": "original_base",
+    "system": true,
+    "probe": "after_shared27",
+    "chosen": "稿件",
+    "probabilities": {
+      "供热": null,
+      "根据": 0.17433474409027713,
+      "据": 0.0067596915996464765,
+      "因此": null,
+      "稿件": 0.5369888160986849,
+      "请": 0.00014029285648420992
+    }
+  },
+  {
+    "arm": "original_base",
+    "system": true,
+    "probe": "before_handback",
+    "chosen": "请",
+    "probabilities": {
+      "供热": null,
+      "根据": null,
+      "据": null,
+      "因此": null,
+      "稿件": 1.759230266039315e-06,
+      "请": 0.9993664466525364
+    }
+  },
+  {
+    "arm": "step0",
+    "system": false,
+    "probe": "start",
+    "chosen": "根据",
+    "probabilities": {
+      "供热": 0.11872074706803151,
+      "根据": 0.19573742096447344,
+      "据": null,
+      "因此": null,
+      "稿件": null,
+      "请": null
+    }
+  },
+  {
+    "arm": "step0",
+    "system": false,
+    "probe": "after_shared27",
+    "chosen": "根据",
+    "probabilities": {
+      "供热": null,
+      "根据": 0.48478874609783823,
+      "据": 0.333190107671563,
+      "因此": null,
+      "稿件": 0.0015429764953813212,
+      "请": 0.001748421428859817
+    }
+  },
+  {
+    "arm": "step0",
+    "system": false,
+    "probe": "before_handback",
+    "chosen": "请",
+    "probabilities": {
+      "供热": null,
+      "根据": null,
+      "据": null,
+      "因此": null,
+      "稿件": null,
+      "请": 0.9893320747007837
+    }
+  },
+  {
+    "arm": "step0",
+    "system": true,
+    "probe": "start",
+    "chosen": "供热",
+    "probabilities": {
+      "供热": 0.9999243078326592,
+      "根据": 1.3006317717652238e-05,
+      "据": null,
+      "因此": null,
+      "稿件": null,
+      "请": null
+    }
+  },
+  {
+    "arm": "step0",
+    "system": true,
+    "probe": "after_shared27",
+    "chosen": "稿件",
+    "probabilities": {
+      "供热": null,
+      "根据": 0.17433474409027713,
+      "据": 0.0067596915996464765,
+      "因此": null,
+      "稿件": 0.5369888160986849,
+      "请": 0.00014029285648420992
+    }
+  },
+  {
+    "arm": "step0",
+    "system": true,
+    "probe": "before_handback",
+    "chosen": "请",
+    "probabilities": {
+      "供热": null,
+      "根据": null,
+      "据": null,
+      "因此": null,
+      "稿件": 1.759230266039315e-06,
+      "请": 0.9993664466525364
+    }
+  },
+  {
+    "arm": "step2",
+    "system": false,
+    "probe": "start",
+    "chosen": "根据",
+    "probabilities": {
+      "供热": 0.1072362588601813,
+      "根据": 0.2270191888512795,
+      "据": null,
+      "因此": null,
+      "稿件": null,
+      "请": null
+    }
+  },
+  {
+    "arm": "step2",
+    "system": false,
+    "probe": "after_shared27",
+    "chosen": "根据",
+    "probabilities": {
+      "供热": null,
+      "根据": 0.474144713088703,
+      "据": 0.32587455847764923,
+      "因此": null,
+      "稿件": 0.0013317751556284477,
+      "请": 0.0021957260268745953
+    }
+  },
+  {
+    "arm": "step2",
+    "system": false,
+    "probe": "before_handback",
+    "chosen": "请",
+    "probabilities": {
+      "供热": null,
+      "根据": null,
+      "据": null,
+      "因此": null,
+      "稿件": null,
+      "请": 0.9892840052506628
+    }
+  },
+  {
+    "arm": "step2",
+    "system": true,
+    "probe": "start",
+    "chosen": "供热",
+    "probabilities": {
+      "供热": 0.9999287179248457,
+      "根据": 1.1478078885171869e-05,
+      "据": null,
+      "因此": null,
+      "稿件": null,
+      "请": null
+    }
+  },
+  {
+    "arm": "step2",
+    "system": true,
+    "probe": "after_shared27",
+    "chosen": "稿件",
+    "probabilities": {
+      "供热": null,
+      "根据": 0.1921379613210134,
+      "据": 0.007449999020842308,
+      "因此": null,
+      "稿件": 0.5222851599466981,
+      "请": 0.00015461972310884656
+    }
+  },
+  {
+    "arm": "step2",
+    "system": true,
+    "probe": "before_handback",
+    "chosen": "请",
+    "probabilities": {
+      "供热": null,
+      "根据": null,
+      "据": null,
+      "因此": null,
+      "稿件": 1.5526322320395073e-06,
+      "请": 0.9994409826676494
+    }
+  },
+  {
+    "arm": "step4",
+    "system": false,
+    "probe": "start",
+    "chosen": "根据",
+    "probabilities": {
+      "供热": 0.1671753089287848,
+      "根据": 0.24323863922752742,
+      "据": null,
+      "因此": null,
+      "稿件": null,
+      "请": null
+    }
+  },
+  {
+    "arm": "step4",
+    "system": false,
+    "probe": "after_shared27",
+    "chosen": "根据",
+    "probabilities": {
+      "供热": null,
+      "根据": 0.46182591226744896,
+      "据": 0.35967038211655517,
+      "因此": null,
+      "稿件": 0.0014698906448953949,
+      "请": 0.0018873769477972223
+    }
+  },
+  {
+    "arm": "step4",
+    "system": false,
+    "probe": "before_handback",
+    "chosen": "请",
+    "probabilities": {
+      "供热": null,
+      "根据": null,
+      "据": null,
+      "因此": null,
+      "稿件": null,
+      "请": 0.9868323658796604
+    }
+  },
+  {
+    "arm": "step4",
+    "system": true,
+    "probe": "start",
+    "chosen": "供热",
+    "probabilities": {
+      "供热": 0.9998823542714506,
+      "根据": 1.012890538868094e-05,
+      "据": null,
+      "因此": null,
+      "稿件": null,
+      "请": null
+    }
+  },
+  {
+    "arm": "step4",
+    "system": true,
+    "probe": "after_shared27",
+    "chosen": "稿件",
+    "probabilities": {
+      "供热": null,
+      "根据": 0.17464032467199206,
+      "据": 0.006771541051861779,
+      "因此": null,
+      "稿件": 0.5379300705551853,
+      "请": 0.00012402510062613955
+    }
+  },
+  {
+    "arm": "step4",
+    "system": true,
+    "probe": "before_handback",
+    "chosen": "请",
+    "probabilities": {
+      "供热": null,
+      "根据": null,
+      "据": null,
+      "因此": null,
+      "稿件": 1.3699069942674623e-06,
+      "请": 0.9992322859686009
+    }
+  },
+  {
+    "arm": "step8",
+    "system": false,
+    "probe": "start",
+    "chosen": "供热",
+    "probabilities": {
+      "供热": 0.25982598680048313,
+      "根据": 0.2023526819825168,
+      "据": null,
+      "因此": null,
+      "稿件": null,
+      "请": null
+    }
+  },
+  {
+    "arm": "step8",
+    "system": false,
+    "probe": "after_shared27",
+    "chosen": "根据",
+    "probabilities": {
+      "供热": null,
+      "根据": 0.439231070821671,
+      "据": 0.3876200595190397,
+      "因此": null,
+      "稿件": 0.0012337097553139632,
+      "请": 0.0017950371021125385
+    }
+  },
+  {
+    "arm": "step8",
+    "system": false,
+    "probe": "before_handback",
+    "chosen": "请",
+    "probabilities": {
+      "供热": null,
+      "根据": null,
+      "据": null,
+      "因此": null,
+      "稿件": null,
+      "请": 0.9849951765981275
+    }
+  },
+  {
+    "arm": "step8",
+    "system": true,
+    "probe": "start",
+    "chosen": "供热",
+    "probabilities": {
+      "供热": 0.9998525598494739,
+      "根据": 6.961275635013844e-06,
+      "据": null,
+      "因此": null,
+      "稿件": null,
+      "请": null
+    }
+  },
+  {
+    "arm": "step8",
+    "system": true,
+    "probe": "after_shared27",
+    "chosen": "稿件",
+    "probabilities": {
+      "供热": null,
+      "根据": 0.1918114815622719,
+      "据": 0.009549731346282104,
+      "因此": null,
+      "稿件": 0.5213976958982544,
+      "请": 0.00012021337656402986
+    }
+  },
+  {
+    "arm": "step8",
+    "system": true,
+    "probe": "before_handback",
+    "chosen": "请",
+    "probabilities": {
+      "供热": null,
+      "根据": null,
+      "据": null,
+      "因此": null,
+      "稿件": 1.5516020029725416e-06,
+      "请": 0.9987778122082217
+    }
+  }
+]

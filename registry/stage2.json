@@ -1162,5 +1162,16 @@
     "uat_paused": true,
     "deployed": false,
     "pushed": false
+  },
+  "latest_minimal_path_diagnostic": {
+    "status": "COMPLETE",
+    "report": "stage2/diagnostics/min16-path-20261101-132917/REPORT.md",
+    "fixed_text_scores": 50,
+    "single_token_probes": 30,
+    "new_training": false,
+    "new_full_answers": 0,
+    "uat_paused": true,
+    "zero_lora_equal_in_scope": true,
+    "conclusion": "Base already supports echo continuation;step8 changes entry probabilities;aggregate echo regression not established."
   }
 }

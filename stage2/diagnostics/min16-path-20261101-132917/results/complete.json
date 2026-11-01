@@ -1,0 +1,9 @@
+{
+  "forwards": 50,
+  "returned_new_answer_tokens": 0,
+  "internal_completion_tokens": 50,
+  "optimizer_steps": 0,
+  "training": false,
+  "all_adapters_hash_verified": true,
+  "all_model_prompt_ids_verified": true
+}

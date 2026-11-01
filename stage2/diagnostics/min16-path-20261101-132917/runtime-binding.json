@@ -1,0 +1,106 @@
+{
+  "versions": {
+    "vllm": "0.25.1",
+    "transformers": "5.14.1",
+    "torch": "2.11.0+cu130"
+  },
+  "adapters": {
+    "step0": {
+      "path": "/models-work/t008-min16-20261101-130739/checkpoint-0",
+      "files": {
+        "adapter_config.json": {
+          "sha256": "41a6a7dd12c07e097d89a38e0409b2e23a3d7ebc2eb74308e0b92c52643f088c",
+          "bytes": 1135
+        },
+        "adapter_model.safetensors": {
+          "sha256": "8292ecdc85c14bf5430d61637aead2dea3c8dd677c60d1351b1f5a6a3673fb5c",
+          "bytes": 87360584
+        }
+      }
+    },
+    "step2": {
+      "path": "/models-work/t008-min16-20261101-130739/checkpoint-2",
+      "files": {
+        "adapter_config.json": {
+          "sha256": "41a6a7dd12c07e097d89a38e0409b2e23a3d7ebc2eb74308e0b92c52643f088c",
+          "bytes": 1135
+        },
+        "adapter_model.safetensors": {
+          "sha256": "0dbfef5afe86a7c0e98f8aaf019f757ee2df8a6b2d1149ba9e2a9ec553d7c00c",
+          "bytes": 87360584
+        }
+      }
+    },
+    "step4": {
+      "path": "/models-work/t008-min16-20261101-130739/checkpoint-4",
+      "files": {
+        "adapter_config.json": {
+          "sha256": "41a6a7dd12c07e097d89a38e0409b2e23a3d7ebc2eb74308e0b92c52643f088c",
+          "bytes": 1135
+        },
+        "adapter_model.safetensors": {
+          "sha256": "e985948151953e33f028cdc8b4e8d01741527a44a8706e023085b3098a94eec8",
+          "bytes": 87360584
+        }
+      }
+    },
+    "step8": {
+      "path": "/models-work/t008-min16-20261101-130739/checkpoint-8",
+      "files": {
+        "adapter_config.json": {
+          "sha256": "41a6a7dd12c07e097d89a38e0409b2e23a3d7ebc2eb74308e0b92c52643f088c",
+          "bytes": 1135
+        },
+        "adapter_model.safetensors": {
+          "sha256": "e047c2308fa9e8ef5e6e985c6b4ead55dd2491a7bc87d5b99ea4be4943947a91",
+          "bytes": 87360584
+        }
+      }
+    }
+  },
+  "aliases": {
+    "original_base": "octa-carbon-v1",
+    "step0": "min16-step0",
+    "step2": "min16-step2",
+    "step4": "min16-step4",
+    "step8": "min16-step8"
+  },
+  "server_argv": [
+    "python3",
+    "-m",
+    "vllm.entrypoints.openai.api_server",
+    "--model",
+    "/base",
+    "--served-model-name",
+    "octa-carbon-v1",
+    "--host",
+    "127.0.0.1",
+    "--port",
+    "8000",
+    "--gpu-memory-utilization",
+    "0.90",
+    "--max-model-len",
+    "8192",
+    "--trust-remote-code",
+    "--reasoning-parser",
+    "qwen3",
+    "--enable-auto-tool-choice",
+    "--tool-call-parser",
+    "hermes",
+    "--enable-lora",
+    "--max-lora-rank",
+    "8",
+    "--chat-template",
+    "/runwork/evaluation/thinking-prefill.jinja",
+    "--lora-modules",
+    "{\"name\": \"min16-step0\", \"path\": \"/models-work/t008-min16-20261101-130739/checkpoint-0\", \"base_model_name\": \"octa-carbon-v1\"}",
+    "{\"name\": \"min16-step2\", \"path\": \"/models-work/t008-min16-20261101-130739/checkpoint-2\", \"base_model_name\": \"octa-carbon-v1\"}",
+    "{\"name\": \"min16-step4\", \"path\": \"/models-work/t008-min16-20261101-130739/checkpoint-4\", \"base_model_name\": \"octa-carbon-v1\"}",
+    "{\"name\": \"min16-step8\", \"path\": \"/models-work/t008-min16-20261101-130739/checkpoint-8\", \"base_model_name\": \"octa-carbon-v1\"}",
+    "--max-cpu-loras",
+    "4"
+  ],
+  "training": false,
+  "english": false,
+  "total_missing": 208
+}

@@ -1,0 +1,92 @@
+[
+  {
+    "condition": false,
+    "arm": "original_base",
+    "index": 0,
+    "echo_entry_token": "供热",
+    "base_greedy_token": "根据",
+    "p_echo_entry": 0.13027621715468599,
+    "p_base_entry_same_logits": 0.2147891702892797
+  },
+  {
+    "condition": false,
+    "arm": "step0",
+    "index": 0,
+    "echo_entry_token": "供热",
+    "base_greedy_token": "根据",
+    "p_echo_entry": 0.13027621715468599,
+    "p_base_entry_same_logits": 0.2147891702892797
+  },
+  {
+    "condition": false,
+    "arm": "step2",
+    "index": 0,
+    "echo_entry_token": "供热",
+    "base_greedy_token": "根据",
+    "p_echo_entry": 0.12823656640967385,
+    "p_base_entry_same_logits": 0.2395774467898619
+  },
+  {
+    "condition": false,
+    "arm": "step4",
+    "index": 0,
+    "echo_entry_token": "供热",
+    "base_greedy_token": "根据",
+    "p_echo_entry": 0.1250736028807635,
+    "p_base_entry_same_logits": 0.26478081937638337
+  },
+  {
+    "condition": false,
+    "arm": "step8",
+    "index": 0,
+    "echo_entry_token": "供热",
+    "base_greedy_token": "根据",
+    "p_echo_entry": 0.28658295194629857,
+    "p_base_entry_same_logits": 0.1969653903569594
+  },
+  {
+    "condition": true,
+    "arm": "original_base",
+    "index": 1,
+    "echo_entry_token": "通报",
+    "base_greedy_token": "系统",
+    "p_echo_entry": 0.4997054302916341,
+    "p_base_entry_same_logits": 0.4997054302916341
+  },
+  {
+    "condition": true,
+    "arm": "step0",
+    "index": 1,
+    "echo_entry_token": "通报",
+    "base_greedy_token": "系统",
+    "p_echo_entry": 0.4997054302916341,
+    "p_base_entry_same_logits": 0.4997054302916341
+  },
+  {
+    "condition": true,
+    "arm": "step2",
+    "index": 1,
+    "echo_entry_token": "通报",
+    "base_greedy_token": "系统",
+    "p_echo_entry": 0.37737240423649676,
+    "p_base_entry_same_logits": 0.6221819098399594
+  },
+  {
+    "condition": true,
+    "arm": "step4",
+    "index": 1,
+    "echo_entry_token": "通报",
+    "base_greedy_token": "系统",
+    "p_echo_entry": 0.4997051324440762,
+    "p_base_entry_same_logits": 0.4997051324440762
+  },
+  {
+    "condition": true,
+    "arm": "step8",
+    "index": 1,
+    "echo_entry_token": "通报",
+    "base_greedy_token": "系统",
+    "p_echo_entry": 0.49976914396473215,
+    "p_base_entry_same_logits": 0.49976914396473215
+  }
+]

@@ -1,13 +1,13 @@
 {
   "schema": "t008-unified-current-state-v1",
-  "recorded_at_utc": "2026-11-01T13:21:50.718667+00:00",
+  "recorded_at_utc": "2026-11-01T13:39:58.073835+00:00",
   "timezone_for_user_dates": "America/Los_Angeles",
   "archive_version": "archive-v1.0.0",
   "task": "T-008 v1.5 section 15",
-  "current_workstream": "Completed16-row reference diagnostic;2 near echoes in step8 sampling; next probability-path inspection proposed only",
+  "current_workstream": "Completed one-question probability diagnosis; no training",
   "base_model": "Qwen/Qwen3-8B",
   "process": "v1.2 process-restore-R1",
-  "current_user_request": "开始吧：8步和176次已完成，UAT继续暂停。",
+  "current_user_request": "执行单题概率诊断：已完成50条固定文本评分和30次单Token读取；未训练，UAT继续暂停。",
   "source_of_current_direction": "User requested data simple enough to interpret regression, then authorized design only; prior v0.1.27 Full66 and208 generations remain complete.",
   "historical_training": "FULL_103_STEPS_COMPLETED",
   "candidate": "LoRA-v0.1.27-general-only-checkpoint-66",
@@ -579,8 +579,8 @@
   },
   "next_diagnostic_direction": {
     "status": "PROPOSED_NOT_STARTED",
-    "scope": "Probability-path and zero-LoRA numerical inspection on G007 with two System conditions; no additional training authorized",
-    "report": "stage2/runs/t008-min16-20261101-130739/RESULT.md"
+    "scope": "Compare existing severe-regression adapter v0.1.22 under same one-question short-prefix protocol; no training",
+    "report": "stage2/diagnostics/min16-path-20261101-132917/REPORT.md"
   },
   "pending_minimal_diagnostic_design": {
     "version": "minimal16-diagnostic-review-v0.1",
@@ -615,5 +615,16 @@
     "uat_paused": true,
     "deployed": false,
     "pushed": false
+  },
+  "latest_minimal_path_diagnostic": {
+    "status": "COMPLETE",
+    "report": "stage2/diagnostics/min16-path-20261101-132917/REPORT.md",
+    "fixed_text_scores": 50,
+    "single_token_probes": 30,
+    "new_training": false,
+    "new_full_answers": 0,
+    "uat_paused": true,
+    "zero_lora_equal_in_scope": true,
+    "conclusion": "Base already supports echo continuation;step8 changes entry probabilities;aggregate echo regression not established."
   }
 }

@@ -1,0 +1,33 @@
+{
+  "verified": true,
+  "utc": "2026-11-01T06:31:46.753692+00:00",
+  "data_rows": 1047,
+  "converted_exposures": 64,
+  "identity_exposures": 234,
+  "full_steps": 66,
+  "full_runs": 1,
+  "smoke_steps": 3,
+  "new_generations": 208,
+  "reused_responses": 624,
+  "reviewed_unique": 699,
+  "unreviewed_slots": 0,
+  "raw_request_response_pairs_verified": 208,
+  "server_input_matches": 80,
+  "technical_retries": 0,
+  "uat_restored": true,
+  "deployment_spec_equal": true,
+  "health_verified": true,
+  "model_deployed": false,
+  "external_judge_called": false,
+  "quality_accepted": false,
+  "files_sha256": {
+    "outputs/full/run_manifest.json": "9c260baade1fda5889b7bacbd231ae2e598f06f43e1e04bebdee0d1fce302063",
+    "evaluation/semantic-summary.json": "9d1d7456878d889b05934fa14d31e0992bf6056c32722bafd912e785f48afed0",
+    "evaluation/review-evidence.json": "bf61589de93abf6e3ff960d8c3457af49a2fb5c8e9ae96030d42a3dab32507c3",
+    "evaluation/thinking-empty-trace.json": "4a8955079bbe82347f724648c454809e8b46f8f8ade734218372a01ec39e0587",
+    "RESULT.md": "34261bc0f7b1e213c334c51fdb170f403150815122c1a5d805b120bb5b5493a3",
+    "uat-health-verification.json": "b4ce1a03785f3312d6d8f7b2ca83dd9f9204abde0010afda3a53effc4dcd64dc",
+    "raw-evidence-readback.json": "5bd33fd0ef17582bff93d4405e58b3327bcf236340392e7e5513bc71bc778207",
+    "final-runtime-readback.json": "cee7f41652162683e651dd243d5ae62ea37f179ffc250c8d49b80df8984aa8e1"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "run_id": "t008-v0123-20261101-060130",
+  "experiment_approved": true,
+  "uat_pause_approved": true,
+  "approved_data_sha256": "71df7fdc84f4144e91ee3d6f8df4710c21f55c50137f674f9e9de0c2dc6f2cef",
+  "window_start_utc": "2026-11-01T06:03:11.795765+00:00",
+  "window_end_utc": "2026-11-01T07:33:11.795765+00:00",
+  "restore_start_utc": "2026-11-01T07:18:11.795765+00:00",
+  "decision_ref": "Current user 你做吧 authorizes the agreed mode-allocation experiment: 64 existing Chinese general exposures become nonthinking, same answers, rows, identity234/loss3 and other parameters. One fresh-base Smoke3 and Full66, then 208 Chinese generations. Standing user permission 可无需授权就暂停UAT applies. Restore original UAT; no deployment or extra Full. 90-minute operational ceiling, not a user deadline.",
+  "restoration_owner": "Current implementation agent",
+  "uat_coordination": "Owner directly confirmed immediate pause",
+  "max_full_runs": 1
+}

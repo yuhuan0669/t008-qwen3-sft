@@ -1,0 +1,80 @@
+{
+  "object": "list",
+  "data": [
+    {
+      "id": "octa-carbon-v1",
+      "object": "model",
+      "created": 1793514164,
+      "owned_by": "vllm",
+      "root": "/models",
+      "parent": null,
+      "max_model_len": 8192,
+      "permission": [
+        {
+          "id": "modelperm-bae70c654cd43e55",
+          "object": "model_permission",
+          "created": 1793514164,
+          "allow_create_engine": false,
+          "allow_sampling": true,
+          "allow_logprobs": true,
+          "allow_search_indices": false,
+          "allow_view": true,
+          "allow_fine_tuning": false,
+          "organization": "*",
+          "group": null,
+          "is_blocking": false
+        }
+      ]
+    },
+    {
+      "id": "octa-carbon-sft-v0114",
+      "object": "model",
+      "created": 1793514164,
+      "owned_by": "vllm",
+      "root": "/adapters/octa-carbon-sft-v0114",
+      "parent": "octa-carbon-v1",
+      "max_model_len": null,
+      "permission": [
+        {
+          "id": "modelperm-a5eca0b3984cebb8",
+          "object": "model_permission",
+          "created": 1793514164,
+          "allow_create_engine": false,
+          "allow_sampling": true,
+          "allow_logprobs": true,
+          "allow_search_indices": false,
+          "allow_view": true,
+          "allow_fine_tuning": false,
+          "organization": "*",
+          "group": null,
+          "is_blocking": false
+        }
+      ]
+    },
+    {
+      "id": "octa-carbon-sft-v0116",
+      "object": "model",
+      "created": 1793514164,
+      "owned_by": "vllm",
+      "root": "/adapters/octa-carbon-sft-v0116",
+      "parent": "octa-carbon-v1",
+      "max_model_len": null,
+      "permission": [
+        {
+          "id": "modelperm-a0302590fbcecb4a",
+          "object": "model_permission",
+          "created": 1793514164,
+          "allow_create_engine": false,
+          "allow_sampling": true,
+          "allow_logprobs": true,
+          "allow_search_indices": false,
+          "allow_view": true,
+          "allow_fine_tuning": false,
+          "organization": "*",
+          "group": null,
+          "is_blocking": false
+        }
+      ]
+    }
+  ]
+}

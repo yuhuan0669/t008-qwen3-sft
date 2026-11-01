@@ -1,0 +1,8 @@
+inputs/
+results/
+results.tar.gz
+DETAILS.md
+REVIEW.md
+gpu.log
+cpu.log
+prepare_local.py

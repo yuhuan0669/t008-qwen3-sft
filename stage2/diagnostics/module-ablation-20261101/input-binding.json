@@ -1,0 +1,9 @@
+{
+  "manifest_sha256": "d9a8676dc4a3a0b647833e9b47f3c3db6182c8981944126602250599c41bffda",
+  "protocol_sha256": "512d5f4d8e71b0a4cb271e1965e41062d86a59da4bbdd7bbcd225cc2fb522679",
+  "cases_sha256": "d95d0bd534401ae75a33ac8ba087d1157175d597442fd34fbe5be08299f36378",
+  "script_sha256": "b9b5630246cfdc48c4e4ec1f95877f3e10d409a74c1d4c2c80a316f228a44295",
+  "source_adapter": "v0.1.22 identity loss3",
+  "scores": 256,
+  "generations": 128
+}

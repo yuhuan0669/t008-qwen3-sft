@@ -1,0 +1,6 @@
+{
+  "user_request": "继续",
+  "scope": "Existing v0.1.22 module contribution diagnostic; 256 fixed-reference scores and 128 generations; no training, deployment or external Judge.",
+  "uat_instruction": "暂停UAT后，不用恢复，直到我说恢复。",
+  "automatic_restore_authorized": false
+}

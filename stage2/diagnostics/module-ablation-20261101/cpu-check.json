@@ -1,0 +1,23 @@
+{
+  "verified": true,
+  "cases": 16,
+  "contexts": 32,
+  "scores": 256,
+  "generations": 128,
+  "versions": {
+    "ms-swift": "4.4.2",
+    "transformers": "5.14.1",
+    "peft": "0.20.0",
+    "torch": "2.11.0+cu130",
+    "tokenizers": "0.22.2",
+    "datasets": "4.8.4",
+    "modelscope": "1.38.1"
+  },
+  "all_hashes_match": true,
+  "BPE_boundaries_match": true,
+  "max_prompt_tokens": 485,
+  "system_sha256": "3ae02d520406f73e735752ef04ff395785f84fec7ee1619fd9d392d86cb92933",
+  "template_sha256": "ae8a1b27c3bac461eb5f6c78d5d39cbe29427ad91c9d2da8378e236b8a38448d",
+  "script_sha256": "b9b5630246cfdc48c4e4ec1f95877f3e10d409a74c1d4c2c80a316f228a44295",
+  "peft_forward_sha256": "ec0a80f5c5ce05f5dd90027952bb5d29aaf910e9d2ab40486a90e8a03c7e1cd9"
+}

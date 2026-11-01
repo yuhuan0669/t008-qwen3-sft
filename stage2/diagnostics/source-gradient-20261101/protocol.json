@@ -1,0 +1,130 @@
+{
+  "id": "source-gradient-20261101",
+  "data_version": "stage1-cpu-v0.1.22",
+  "dataset_sha256": "0087a3073bac5b36e3b865666ad9210a1d52ba04c32ecdaba83b4af4eb49b2bb",
+  "versions": {
+    "ms-swift": "4.4.2",
+    "transformers": "5.14.1",
+    "peft": "0.20.0",
+    "torch": "2.11.0+cu130",
+    "tokenizers": "0.22.2",
+    "datasets": "4.8.4",
+    "modelscope": "1.38.1"
+  },
+  "models": [
+    "step50",
+    "step66"
+  ],
+  "adapters": {
+    "step66": {
+      "path": "/models-work/t008-v0122-20261101-031736/outputs/full/checkpoints/v0-20261031-202027/checkpoint-66",
+      "files": {
+        "adapter_model.safetensors": {
+          "bytes": 87360584,
+          "sha256": "282cccdd3cf31ffe8df0ee412d674c1f3f78ca1502e3311470f8eebd0bece138"
+        },
+        "adapter_config.json": {
+          "bytes": 1135,
+          "sha256": "c46201debbde99418e3738fe12cca7bdab6257bf97b42e4947e9fe4f1b2f308a"
+        },
+        "optimizer.pt": {
+          "bytes": 175019531,
+          "sha256": "cf79b6a0556c8682b15b26d6c48c9446b76c214389474b62b5745a82e34ecde5"
+        },
+        "args.json": {
+          "bytes": 20569,
+          "sha256": "b6d0016201da415c4f0cf389d0e0facca0ed146c46782c1a58ca210c8e0d1f4b"
+        }
+      }
+    },
+    "step50": {
+      "path": "/models-work/t008-v0122-20261101-031736/outputs/full/checkpoints/v0-20261031-202027/checkpoint-50",
+      "files": {
+        "adapter_model.safetensors": {
+          "bytes": 87360584,
+          "sha256": "d359202d5c108ac834191b7d13f763babc569d9b815de7427c2ff48b8c8a3dde"
+        },
+        "adapter_config.json": {
+          "bytes": 1135,
+          "sha256": "c46201debbde99418e3738fe12cca7bdab6257bf97b42e4947e9fe4f1b2f308a"
+        },
+        "optimizer.pt": {
+          "bytes": 175019531,
+          "sha256": "e4d069ae4f5d48c91d53b7089ce76ca2134c14b14f1dcfe05f38a5268b99460c"
+        },
+        "args.json": {
+          "bytes": 20569,
+          "sha256": "b6d0016201da415c4f0cf389d0e0facca0ed146c46782c1a58ca210c8e0d1f4b"
+        }
+      }
+    }
+  },
+  "groups": {
+    "general": [
+      "swift/Qwen3-SFT-Mixin"
+    ],
+    "identity": [
+      "swift/self-cognition",
+      "t008/chinese-identity-v1",
+      "t008/company-facts-v1"
+    ],
+    "business": [
+      "t008/project-positioning-v1",
+      "t008/business-evidence-v1",
+      "t008/company-boundary-v1"
+    ],
+    "format": [
+      "t008/strict-json-v1",
+      "t008/general-nonthinking-v1",
+      "t008/general-nonthinking-v2"
+    ]
+  },
+  "expected_group_rows": {
+    "general": 752,
+    "identity": 234,
+    "business": 43,
+    "format": 18
+  },
+  "aggregate_other": [
+    "business",
+    "format"
+  ],
+  "all_exposures": 1047,
+  "all_valid_tokens": 928890,
+  "all_weighted_units": 946600.0,
+  "probe_cases": 15,
+  "probe_conditions": [
+    "no_system",
+    "system"
+  ],
+  "probe_positions": 30,
+  "sampling": {
+    "temperature": 0.7,
+    "top_p": 0.8,
+    "top_k": 20,
+    "repetition_penalty": 1.0,
+    "presence_penalty": 0.0,
+    "frequency_penalty": 0.0,
+    "min_p": 0.0,
+    "max_new_tokens": 2048,
+    "n": 1
+  },
+  "temperature_for_gradient": 1.0,
+  "source_gradient": "Sum exposure-weighted native weighted CE gradients divided by full-corpus unweighted valid token count. Deduplicate only identical encoding/group; retain multiplicity.",
+  "probe_score": "log P(first divergent bad token | same prefix) - log P(first divergent good token | same prefix). Positive is greater support for the selected undesired continuation only.",
+  "raw_effect": "-dot(grad_probe, grad_source)",
+  "adam_scaled_effect": "-dot(grad_probe, P * grad_source), P=1/(sqrt(saved exp_avg_sq bias-corrected)+epsilon). Fixed positive preconditioner; not a full Adam step.",
+  "dropout": "Disabled for deterministic local derivatives. Does not replay training dropout or chronological minibatches.",
+  "optimizer_updates": 0,
+  "new_generated_answers": 0,
+  "new_training_candidate": false,
+  "uat_policy": "KEEP_PAUSED_UNTIL_EXPLICIT_RESTORE",
+  "decision": "Choose a source to test by later ablation only if effects are coherent across contexts and both checkpoints; otherwise report inconclusive. No automatic training or attribution of all historical errors.",
+  "limits": [
+    "Two trained checkpoints give local directions, not historical causation or initial training trajectory.",
+    "Corpus token normalization is not the time-ordered sum of Adam updates with changing batch denominators.",
+    "The fixed Adam metric omits moment update, clipping, weight decay and learning-rate schedule; step66 saved learning rate is zero.",
+    "Probe tokens and conditional prefixes do not cover all valid answers or actual sequence-level quality.",
+    "Grouped gradients are parameterization-dependent and may cancel; token proportions are not gradient responsibility."
+  ]
+}

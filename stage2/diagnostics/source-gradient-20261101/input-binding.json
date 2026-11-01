@@ -1,0 +1,19 @@
+{
+  "manifest_sha256": "e01fe467d88ed5d8a47887ef6d1d4dab0dea143c533ec257632adcf353e2e6eb",
+  "dataset_sha256": "0087a3073bac5b36e3b865666ad9210a1d52ba04c32ecdaba83b4af4eb49b2bb",
+  "rows": 1047,
+  "source_group_rows": {
+    "general": 752,
+    "identity": 234,
+    "business": 43,
+    "format": 18
+  },
+  "checkpoints": [
+    "step50",
+    "step66"
+  ],
+  "probes": 15,
+  "conditions": 2,
+  "system_sha256": "3ae02d520406f73e735752ef04ff395785f84fec7ee1619fd9d392d86cb92933",
+  "template_sha256": "ae8a1b27c3bac461eb5f6c78d5d39cbe29427ad91c9d2da8378e236b8a38448d"
+}

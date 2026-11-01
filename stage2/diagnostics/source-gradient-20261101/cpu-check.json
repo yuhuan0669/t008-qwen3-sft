@@ -1,0 +1,79 @@
+{
+  "verified": true,
+  "versions": {
+    "ms-swift": "4.4.2",
+    "transformers": "5.14.1",
+    "peft": "0.20.0",
+    "torch": "2.11.0+cu130",
+    "tokenizers": "0.22.2",
+    "datasets": "4.8.4",
+    "modelscope": "1.38.1"
+  },
+  "rows": 1047,
+  "unique_encodings": 668,
+  "groups": {
+    "general": {
+      "rows": 752,
+      "valid_tokens": 917336,
+      "weighted_units": 917336.0,
+      "unique_encodings": 379
+    },
+    "identity": {
+      "rows": 234,
+      "valid_tokens": 8863,
+      "weighted_units": 26573.0,
+      "unique_encodings": 228
+    },
+    "business": {
+      "rows": 43,
+      "valid_tokens": 2073,
+      "weighted_units": 2073.0,
+      "unique_encodings": 43
+    },
+    "format": {
+      "rows": 18,
+      "valid_tokens": 618,
+      "weighted_units": 618.0,
+      "unique_encodings": 18
+    }
+  },
+  "probes": 30,
+  "max_train_tokens": 2041,
+  "max_probe_tokens": 594,
+  "source_hashes_match": true,
+  "native_masks_and_weights_match_all_rows": true,
+  "source_statistics": {
+    "general": {
+      "rows": 752,
+      "valid_tokens": 917336,
+      "weighted_units": 917336.0,
+      "unique_encodings": 379
+    },
+    "identity": {
+      "rows": 234,
+      "valid_tokens": 8863,
+      "weighted_units": 26573.0,
+      "unique_encodings": 228
+    },
+    "business": {
+      "rows": 43,
+      "valid_tokens": 2073,
+      "weighted_units": 2073.0,
+      "unique_encodings": 43
+    },
+    "format": {
+      "rows": 18,
+      "valid_tokens": 618,
+      "weighted_units": 618.0,
+      "unique_encodings": 18
+    }
+  },
+  "dataset_sha256": "0087a3073bac5b36e3b865666ad9210a1d52ba04c32ecdaba83b4af4eb49b2bb",
+  "system_sha256": "3ae02d520406f73e735752ef04ff395785f84fec7ee1619fd9d392d86cb92933",
+  "template_sha256": "ae8a1b27c3bac461eb5f6c78d5d39cbe29427ad91c9d2da8378e236b8a38448d",
+  "input_manifest_sha256": "e01fe467d88ed5d8a47887ef6d1d4dab0dea143c533ec257632adcf353e2e6eb",
+  "encoded_training_sha256": "e3df1f418b2aab439140750ef75a9202cb454766828df64a4e4dd56201235b72",
+  "encoded_probes_sha256": "7c8cbfd177ac204909f70246c7c5467174dbef98fce66fae3eee3548b0f6ba95",
+  "optimizer_steps": 0,
+  "new_generated_answers": 0
+}

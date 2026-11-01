@@ -1,0 +1,11 @@
+{
+  "mode": "gpu",
+  "utc": "2026-11-01T10:52:51.451166+00:00",
+  "pod": "t008-source-gradient-20261101",
+  "gpu_before": "NVIDIA GeForce RTX 4090, 1 MiB, 24564 MiB, 0 %",
+  "script_sha256": "a561a05e9a41c2b98c1aed8aa97211f41b4ae58f5bff937b1a949de8d785ea21",
+  "manifest_sha256": "e01fe467d88ed5d8a47887ef6d1d4dab0dea143c533ec257632adcf353e2e6eb",
+  "optimizer_steps": 0,
+  "new_generated_answers": 0,
+  "uat_restore": false
+}

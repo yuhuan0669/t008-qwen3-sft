@@ -1,0 +1,7 @@
+results/
+*.tar
+*.log
+historical-anchor.json
+encoded-parent.json
+uat-*.json
+TOKEN_COMPARISON.md

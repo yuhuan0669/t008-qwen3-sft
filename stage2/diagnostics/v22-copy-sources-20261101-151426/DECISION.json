@@ -1,0 +1,70 @@
+{
+  "metrics": {
+    "v22_50": {
+      "raw_sum": -2.354918132216767,
+      "entry_sum": -1.1402573883533478,
+      "sample_logp": -0.2945475920643012,
+      "excluded": [],
+      "missing": []
+    },
+    "v22_66": {
+      "raw_sum": -2.4126885723616738,
+      "entry_sum": -1.2012666761875153,
+      "sample_logp": -0.29454759206430103,
+      "excluded": [],
+      "missing": []
+    },
+    "v26": {
+      "raw_sum": -2.2360195461405894,
+      "entry_sum": -1.179272711277008,
+      "sample_logp": -0.29454757033998363,
+      "excluded": [],
+      "missing": []
+    },
+    "v27": {
+      "raw_sum": -2.552097093485145,
+      "entry_sum": -2.0805104225873947,
+      "sample_logp": -1.1980046320215902,
+      "excluded": [],
+      "missing": []
+    },
+    "v22_66_repeat": {
+      "raw_sum": -2.3514763840302635,
+      "entry_sum": -1.1381457149982452,
+      "sample_logp": -0.251929081345373,
+      "excluded": [],
+      "missing": []
+    }
+  },
+  "thresholds": {
+    "raw_sum": 0.30606094165705144,
+    "entry_sum": 0.3156048059463501
+  },
+  "decisions": [
+    {
+      "hypothesis": "late_training",
+      "delta": {
+        "raw_sum": -0.05777044014490684,
+        "entry_sum": -0.06100928783416748
+      },
+      "decision": "INCONCLUSIVE"
+    },
+    {
+      "hypothesis": "identity_off",
+      "delta": {
+        "raw_sum": 0.17666902622108438,
+        "entry_sum": 0.021993964910507202
+      },
+      "decision": "INCONCLUSIVE"
+    },
+    {
+      "hypothesis": "other61_off",
+      "delta": {
+        "raw_sum": -0.3160775473445554,
+        "entry_sum": -0.9012377113103867
+      },
+      "decision": "SUPPORT"
+    }
+  ],
+  "old_v22_max_abs_logp_drift": 0.014095425605773926
+}

@@ -4,7 +4,7 @@
   "timezone_for_user_dates": "America/Los_Angeles",
   "archive_version": "archive-v1.0.0",
   "task": "T-008 v1.5 section 15",
-  "current_workstream": "v22 actual verbatim-copy path verified: large early probability shifts, no new training",
+  "current_workstream": "Existing-checkpoint copy-path diagnosis complete: early path already strong at50; identity-off inconclusive; other61-off weakens entry",
   "base_model": "Qwen/Qwen3-8B",
   "process": "v1.2 process-restore-R1",
   "current_user_request": "完成v22单题概率检验，先更新判断，不自动训练。",
@@ -579,7 +579,7 @@
   },
   "next_diagnostic_direction": {
     "status": "PROPOSED_NOT_EXECUTED",
-    "scope": "Use existing v22 checkpoints and v26/v27 to localize observed copy-entry probability changes, no new training"
+    "scope": "Targeted inspection of business43/format18 using actual-copy entry evidence; no new training authorized"
   },
   "pending_minimal_diagnostic_design": {
     "version": "minimal16-diagnostic-review-v0.1",
@@ -643,5 +643,38 @@
     "exact_echo_v22": 9,
     "uat_paused": true,
     "training": false
+  },
+  "latest_copy_source_diagnostic": {
+    "report": "stage2/diagnostics/v22-copy-sources-20261101-151426/REPORT.md",
+    "prefix_probes": 195,
+    "new_full_answers": 0,
+    "training": false,
+    "uat_paused": true,
+    "decision": [
+      {
+        "hypothesis": "late_training",
+        "delta": {
+          "raw_sum": -0.05777044014490684,
+          "entry_sum": -0.06100928783416748
+        },
+        "decision": "INCONCLUSIVE"
+      },
+      {
+        "hypothesis": "identity_off",
+        "delta": {
+          "raw_sum": 0.17666902622108438,
+          "entry_sum": 0.021993964910507202
+        },
+        "decision": "INCONCLUSIVE"
+      },
+      {
+        "hypothesis": "other61_off",
+        "delta": {
+          "raw_sum": -0.3160775473445554,
+          "entry_sum": -0.9012377113103867
+        },
+        "decision": "SUPPORT"
+      }
+    ]
   }
 }

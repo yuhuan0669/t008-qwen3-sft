@@ -1,5 +1,7 @@
 # T-008 · Qwen3-8B 基础 SFT 统一版本库
 
+**下一项对照已准备，未开训。** 冻结v0.1.22数据及原SFT配方，仅在770条通用／格式样本上增加基座KL约束；身份与业务样本不加该约束。1047条CPU编码及小模型数值／梯度检查通过，真实8B显存和效果待验证。UAT继续暂停。[方案与配置](stage2/variants/base-retention-review/README.md) · [CPU检查](stage2/variants/base-retention-review/CPU_CHECK.json)。
+
 **v0.1.22模块消融诊断已完成，UAT继续暂停。** 同一LoRA仅做推理开关，128份回答及256项固定答案评分完成。MLP同时贡献身份收益与复述倾向；仅注意力身份0/16，仅MLP仍复述4/16，没有可直接采用的模块开关方案。未训练、未部署；用户明确要求恢复前保持暂停。[报告](stage2/diagnostics/module-ablation-20261101/REPORT.md) · [核验](stage2/diagnostics/module-ablation-20261101/verification.json)。下列为此前各轮记录，历史恢复状态不代表当前UAT状态。
 
 **v0.1.24 注意力 LoRA 对照已完成，UAT继续暂停。** 数据1047条及身份损失3倍不变，仅改q/k/v/o；一次66步Full、208份新回答完成。相较v0.1.22，带System复述23/48→12/48、循环12→1，但无System身份8/24→0/24，事实错误增加，不建议发布。用户明确要求“暂停UAT后，不用恢复，直到我说恢复”，不得自动恢复。[结果](stage2/runs/t008-v0124-attn-20261101-070053/RESULT.md) · [暂停状态](stage2/uat-pause-hold.json)。

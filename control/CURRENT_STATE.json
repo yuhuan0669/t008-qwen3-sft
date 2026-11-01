@@ -1,14 +1,14 @@
 {
   "schema": "t008-unified-current-state-v1",
-  "recorded_at_utc": "2026-11-01T08:01:52.182855+00:00",
+  "recorded_at_utc": "2026-11-01T08:36:02.123895+00:00",
   "timezone_for_user_dates": "America/Los_Angeles",
   "archive_version": "archive-v1.0.0",
   "task": "T-008 v1.5 section 15",
-  "current_workstream": "Completed v0.1.22 module-ablation inference diagnosis; identity benefit and echo persist together in MLP increments; no module switch accepted; UAT stays paused until explicit restoration",
+  "current_workstream": "Base-behavior retention KL single-factor proposal and CPU implementation checks complete; no real training; UAT held paused",
   "base_model": "Qwen/Qwen3-8B",
   "process": "v1.2 process-restore-R1",
   "current_user_request": "继续；沿用暂停UAT后不自动恢复的指令。",
-  "source_of_current_direction": "User continued the inference-only module diagnostic; no new training or deployment in this turn.",
+  "source_of_current_direction": "User continued preparation of the concrete behavior-retention configuration; CPU-only checks completed; no real training or deployment in this turn.",
   "historical_training": "FULL_103_STEPS_COMPLETED",
   "candidate": "LoRA-v0.1.24-attention-only-checkpoint-66",
   "candidate_quality": "TRAINED_DIAGNOSTIC_NOT_ACCEPTED",
@@ -18,7 +18,7 @@
   "node_A": "NOT_ACCEPTED",
   "industry_stage_2": "NOT_AUTHORIZED",
   "cloud_01_acceptance_receipt_for_this_round": "WRITTEN_AND_READBACK_VERIFIED_T008-ACK-RETRAIN-DISCUSSION-20261019-01",
-  "current_execution_phase": "MODULE_DIAGNOSIS_COMPLETE_UAT_INTENTIONALLY_PAUSED",
+  "current_execution_phase": "NEXT_EXPERIMENT_PREPARED_CPU_VERIFIED_NOT_TRAINED",
   "current_plan": {
     "version": "review-v0.4.1",
     "path": "docs/plans/SFT_MINIMAL_INTEGRATION_v0.4.1.md",
@@ -480,7 +480,7 @@
     "english_deferred": true,
     "status_scope": "Previous state pointer; v0.1.23 and stop-token diagnosis are separately preserved under stage2."
   },
-  "latest_uat_readonly_verification": "stage2/diagnostics/module-ablation-20261101/final-runtime.json",
+  "latest_uat_readonly_verification": "stage2/variants/base-retention-review/final-runtime.json",
   "active_execution": {
     "run_id": "t008-v0124-attn-20261101-070053",
     "model_version": "v0.1.24",
@@ -528,5 +528,24 @@
     "uat_restored": false,
     "completed_at_utc": "2026-11-01T07:57:31.191178+00:00",
     "next_training_authorized": false
+  },
+  "pending_experiment": {
+    "id": "base-retention-review",
+    "proposed_model_version": "v0.1.25",
+    "status": "PREPARED_CPU_VERIFIED_NOT_TRAINED",
+    "data_version": "stage1-cpu-v0.1.22",
+    "rows": 1047,
+    "identity_exposures": 234,
+    "retention_rows": 770,
+    "coefficient": 1.0,
+    "single_change": "Selective frozen-base forward KL added to native SFT loss",
+    "report": "stage2/variants/base-retention-review/README.md",
+    "cpu_report": "stage2/variants/base-retention-review/CPU_CHECK.json",
+    "manifest": "stage2/variants/base-retention-review/manifest.json",
+    "real_training_started": false,
+    "next_training_authorized": false,
+    "deployment_authorized": false,
+    "uat_paused": true,
+    "automatic_restore_authorized": false
   }
 }

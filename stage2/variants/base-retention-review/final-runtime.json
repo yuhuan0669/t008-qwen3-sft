@@ -1,0 +1,13 @@
+{
+  "checked_at_utc": "2026-11-01T08:35:29.298411+00:00",
+  "cpu_pod_deleted": true,
+  "cpu_pod_requested_gpu": false,
+  "uat_replicas": 0,
+  "uat_ready": 0,
+  "uat_spec_equal_except_paused_replicas": true,
+  "uat_restored": false,
+  "automatic_restore_authorized": false,
+  "training_started": false,
+  "new_answers_generated": 0,
+  "deployment": false
+}

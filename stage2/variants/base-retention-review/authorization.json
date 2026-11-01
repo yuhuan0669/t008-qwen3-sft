@@ -1,0 +1,9 @@
+{
+  "user_request": "继续",
+  "scope": "Prepare the concrete base-behavior-retention proposal, plugin and CPU checks before real training.",
+  "real_training_authorized": false,
+  "new_generation_authorized": false,
+  "deployment_authorized": false,
+  "uat_instruction": "暂停UAT后，不用恢复，直到我说恢复。",
+  "automatic_restore_authorized": false
+}

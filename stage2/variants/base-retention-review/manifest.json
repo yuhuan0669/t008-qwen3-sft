@@ -1,0 +1,23 @@
+{
+  "status": "PREPARED_CPU_VERIFIED_NOT_TRAINED",
+  "created_at_utc": "2026-11-01T08:36:02.123895+00:00",
+  "training_authorized": false,
+  "gpu_training_checked": false,
+  "files_sha256": {
+    ".gitignore": "e354fedeb4bbbff61722a6d70ed517ddf33b76e1fd9437e920004b3f3d5d7681",
+    "CPU_CHECK.json": "eac8513b203a2db5e39edec451511898fa7341bd8080b18ef25a7f879f1cbafb",
+    "README.md": "ba6ec831110dd4c9d19416a52874f840c97d8a55068bf9a45f86152947e0308c",
+    "authorization.json": "29c5579c10d7ddaf797e9ac055c63e10f818ce14983a49b084f9b9443b321093",
+    "check_cpu.py": "fe1568d2fc5e1935640a959becddb338aeebf18e30e3dbbd6a505fe9d0b5a887",
+    "config-diff.json": "607f2093bf4291e85c8402b6f650d079ab815e0f930ac0dba7f3b49142c29549",
+    "decision-plan.json": "a51cf4a1b750c1592baefe631f89760de9e2f4211fda4631355a4b21a661a486",
+    "evaluation-config.json": "3cdb95b1f8ffa4f7a6f3b38ddaf4b22dabb01295d2c9ef22cdf7ad9f8b14d74c",
+    "final-runtime.json": "1402f106a11e23f5bae559375ef49d3d6c3c905a7d76a7d319228c63a6edd71b",
+    "membership.json": "96dfc2a5f08601deea9fcc90fb3dca1fcf2030ec166dfefe40ad9f09b1d170a0",
+    "pod-cpu.json": "c76b533f845f78e2a1e10fa2862123dd204e0aa5960109537650aaf28bbc209e",
+    "retention-config.json": "190f83864c680998b589b0b7b066179a60d49b9e7e18507955e0357e04627fe4",
+    "retention.py": "0dfdd111e8e76c421917537a4838409ad4c0bf9262d68775ca34f2324e56e170",
+    "source-bindings.json": "e1677101b1871e97a4b4cb646c679946a86728184f07471e0bd969db816e72cb",
+    "training-config.json": "12ff8dcc9b9d52c64b3d58b5095c257d4b4f881ecc07578e105e316600e0a7a7"
+  }
+}

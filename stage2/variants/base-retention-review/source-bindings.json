@@ -1,0 +1,17 @@
+{
+  "data_version": "stage1-cpu-v0.1.22",
+  "files_sha256": {
+    "stage1/variants/stage1-cpu-v0.1.22/train.jsonl": "0087a3073bac5b36e3b865666ad9210a1d52ba04c32ecdaba83b4af4eb49b2bb",
+    "stage1/variants/stage1-cpu-v0.1.22/training-config.json": "a8dc308864aa0a792a08262bd6673f65f4bac49500c9791e44490d3cde6c121c",
+    "stage1/variants/stage1-cpu-v0.1.22/identity_loss3.py": "082510fc6fadc31eb179384299cc1425e6dfd98ae01ad95d463759c1a0627db8",
+    "stage1/variants/stage1-cpu-v0.1.22/identity-keys.json": "830b9abc743af4c98f249631c5ec4d5f7614bcee86a8f6f4a1e1b4d0083b4529",
+    "stage1/variants/stage1-cpu-v0.1.22/cpu-check/report.json": "e6b217868c6684f4a2a3d6fc08a1fe0a244ea03e3ef9e71cc0c945e21e808f19",
+    "stage1/variants/stage1-cpu-v0.1.22/inference-system.txt": "3ae02d520406f73e735752ef04ff395785f84fec7ee1619fd9d392d86cb92933",
+    "stage2/runs/t008-v0124-attn-20261101-070053/evaluation/cases.json": "dc6d11b67facceb60ad951d8cdb75faae10c44a6a3e649a29bc28d746abdca3b",
+    "stage2/runs/t008-v0124-attn-20261101-070053/evaluation/decision-plan.json": "1b563324d9007ddf6248f3a0e423ca36c0eb5f07bb0af363ee8eb8667877c7f4",
+    "stage2/runs/t008-v0124-attn-20261101-070053/evaluation/reuse-summary.json": "adc038e4b55587c75dc72024c1f36561e2ac930d10ff69adf96f8313f3e95155"
+  },
+  "web_reference": "https://github.com/modelscope/ms-swift/blob/main/docs/source_en/Instruction/Distillation.md",
+  "web_access_date": "2026-11-01",
+  "authority": "Installed 4.4.2 source and native CPU checks take precedence over online main documentation."
+}

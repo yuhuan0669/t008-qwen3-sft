@@ -1,0 +1,19 @@
+{
+  "semantic_change": "L_native_SFT + 1.0 * sum_general_token KL(P_base || P_LoRA) / native_unweighted_accumulation_token_denominator",
+  "unchanged": [
+    "v0.1.22 train.jsonl bytes / 1047 rows / exposures",
+    "234 identity exposures and identity loss3 plugin",
+    "all-linear / rank8 / alpha32 / dropout0.05",
+    "BF16 / lr1e-4 / batch1 x accumulation16 / epoch1 / 66 steps",
+    "max_length2048 / loss masks / preserve_thinking=false",
+    "training without System",
+    "inference System / corrected vLLM template / JSON Schema / decoding"
+  ],
+  "added_cli_plugin": "/work/stage2/variants/base-retention-review/retention.py",
+  "added_environment": {
+    "T008_RETENTION_CONFIG": "/work/stage2/variants/base-retention-review/retention-config.json"
+  },
+  "output_paths_changed_for_isolation": true,
+  "native_training_argv_otherwise_unchanged": true,
+  "next_training_authorized": false
+}

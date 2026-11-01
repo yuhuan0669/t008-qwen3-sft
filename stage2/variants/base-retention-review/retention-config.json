@@ -1,0 +1,18 @@
+{
+  "coefficient": 1.0,
+  "temperature": 1,
+  "direction": "KL(base || adapted)",
+  "chunk_tokens": 32,
+  "runtime_versions": {
+    "ms-swift": "4.4.2",
+    "transformers": "5.14.1",
+    "peft": "0.20.0",
+    "torch": "2.11.0+cu130"
+  },
+  "native_trainer_sha256": "28fe9cb927390ad423add8b98411a90fb2d1c801ead124b354802bdd0779ecf6",
+  "membership_file": "membership.json",
+  "membership_sha256": "96dfc2a5f08601deea9fcc90fb3dca1fcf2030ec166dfefe40ad9f09b1d170a0",
+  "dataset_sha256": "0087a3073bac5b36e3b865666ad9210a1d52ba04c32ecdaba83b4af4eb49b2bb",
+  "scope": "Frozen general sources only; unchanged native CE elsewhere",
+  "execution_authorized": false
+}

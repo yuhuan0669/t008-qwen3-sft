@@ -1,0 +1,32 @@
+{
+  "files": {
+    "base-files.json": {
+      "sha256": "a1b77d34bda8a913bc050ba2b8b343b6104f77fa701c8b5275a0b438baedfd56",
+      "bytes": 2350
+    },
+    "cases.json": {
+      "sha256": "945bdc1eabfbb95e3463900b0d2166a277798c01bfdf2cf43283a3eef7ca2761",
+      "bytes": 72826
+    },
+    "probes.json": {
+      "sha256": "c0cc7480bbabf299bfe268cf0acdf4b37307a9a157202751e16e61ab1112b537",
+      "bytes": 18423
+    },
+    "protocol.json": {
+      "sha256": "6712842b99a87f6e32fe55b5e8398a5fcbeba76e2b8cdaa7754a82bad5328ffd",
+      "bytes": 3091
+    },
+    "system.txt": {
+      "sha256": "3ae02d520406f73e735752ef04ff395785f84fec7ee1619fd9d392d86cb92933",
+      "bytes": 1812
+    },
+    "thinking-prefill.jinja": {
+      "sha256": "ae8a1b27c3bac461eb5f6c78d5d39cbe29427ad91c9d2da8378e236b8a38448d",
+      "bytes": 4211
+    },
+    "vllm_topk_topp_source.py": {
+      "sha256": "ef3ac3a5ef14df60b577f26df0013fcb3c46326fb68bdd76731200c7cb8e7610",
+      "bytes": 19563
+    }
+  }
+}

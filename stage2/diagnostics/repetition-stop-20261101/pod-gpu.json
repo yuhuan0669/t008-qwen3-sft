@@ -1,0 +1,147 @@
+{
+  "apiVersion": "v1",
+  "kind": "Pod",
+  "metadata": {
+    "name": "t008-repetition-stop-gpu-20261101",
+    "namespace": "swift",
+    "labels": {
+      "t008-diagnostic": "repetition-stop-20261101"
+    }
+  },
+  "spec": {
+    "restartPolicy": "Never",
+    "automountServiceAccountToken": false,
+    "serviceAccountName": "swift-trainer",
+    "nodeSelector": {
+      "kubernetes.io/hostname": "k8s-worker05"
+    },
+    "tolerations": [
+      {
+        "key": "dedicated",
+        "operator": "Equal",
+        "value": "gpu-rtx4090",
+        "effect": "NoSchedule"
+      }
+    ],
+    "terminationGracePeriodSeconds": 45,
+    "containers": [
+      {
+        "name": "diagnostic",
+        "image": "modelscope-registry.cn-hangzhou.cr.aliyuncs.com/modelscope-repo/modelscope@sha256:822d99beed4984a421c8d1da397993c6a8a5f88cdad7dde940bd52df0067d738",
+        "imagePullPolicy": "IfNotPresent",
+        "command": [
+          "python3",
+          "-c",
+          "from pathlib import Path;import time;Path('/tmp/diag').mkdir(exist_ok=True);time.sleep(7200)"
+        ],
+        "env": [
+          {
+            "name": "HF_HUB_OFFLINE",
+            "value": "1"
+          },
+          {
+            "name": "HF_HOME",
+            "value": "/tmp/hf"
+          },
+          {
+            "name": "XDG_CACHE_HOME",
+            "value": "/tmp/cache"
+          },
+          {
+            "name": "TOKENIZERS_PARALLELISM",
+            "value": "false"
+          },
+          {
+            "name": "PYTHONUNBUFFERED",
+            "value": "1"
+          },
+          {
+            "name": "OMP_NUM_THREADS",
+            "value": "4"
+          }
+        ],
+        "resources": {
+          "requests": {
+            "cpu": "4",
+            "memory": "16Gi",
+            "nvidia.com/gpu": "1"
+          },
+          "limits": {
+            "cpu": "8",
+            "memory": "32Gi",
+            "nvidia.com/gpu": "1"
+          }
+        },
+        "volumeMounts": [
+          {
+            "name": "base",
+            "mountPath": "/base",
+            "subPath": "Qwen3-8B",
+            "readOnly": true
+          },
+          {
+            "name": "work",
+            "mountPath": "/models-work",
+            "readOnly": true
+          },
+          {
+            "name": "data",
+            "mountPath": "/usr/local/lib/python3.12/site-packages/modelscope/utils/ast_index_file.py",
+            "subPath": "t008-v0116-20261028-130519/runtime-support/ast_index_file.py",
+            "readOnly": true
+          },
+          {
+            "name": "dshm",
+            "mountPath": "/dev/shm"
+          }
+        ],
+        "securityContext": {
+          "runAsUser": 10001,
+          "runAsGroup": 10001,
+          "runAsNonRoot": true,
+          "allowPrivilegeEscalation": false,
+          "capabilities": {
+            "drop": [
+              "ALL"
+            ]
+          }
+        }
+      }
+    ],
+    "volumes": [
+      {
+        "name": "base",
+        "persistentVolumeClaim": {
+          "claimName": "swift-base",
+          "readOnly": true
+        }
+      },
+      {
+        "name": "data",
+        "persistentVolumeClaim": {
+          "claimName": "swift-train-data",
+          "readOnly": true
+        }
+      },
+      {
+        "name": "work",
+        "persistentVolumeClaim": {
+          "claimName": "swift-work",
+          "readOnly": true
+        }
+      },
+      {
+        "name": "dshm",
+        "emptyDir": {
+          "medium": "Memory",
+          "sizeLimit": "8Gi"
+        }
+      }
+    ],
+    "securityContext": {
+      "seccompProfile": {
+        "type": "RuntimeDefault"
+      }
+    }
+  }
+}

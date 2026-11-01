@@ -1,0 +1,8 @@
+{
+  "uat_pause_approved": true,
+  "basis": "User 开始 accepts last proposed diagnostic. Standing user authorization 可无需授权就暂停UAT applies; restore original UAT afterward.",
+  "training": false,
+  "new_generated_answers": 0,
+  "judge_calls": 0,
+  "deployment": false
+}

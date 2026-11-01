@@ -1,0 +1,85 @@
+{
+  "cases": 8,
+  "positions": 21,
+  "alternatives_per_position": 3,
+  "models": [
+    "base",
+    "v0114",
+    "v0122_loss3",
+    "v0122_loss1"
+  ],
+  "expected_scores": 252,
+  "max_target_tokens": 48,
+  "max_context_tokens": 2048,
+  "adapters": {
+    "v0114": {
+      "path": "/models-work/t008-v0114-20261021-145454/outputs/full/checkpoints/v0-20261021-080130/checkpoint-83",
+      "files": {
+        "adapter_config.json": {
+          "sha256": "f9b14930e5f051b533839e8eff1062d1b25367f7f8d65877340cb348c77f1ce3",
+          "bytes": 1135
+        },
+        "adapter_model.safetensors": {
+          "sha256": "4aa84f85f45abc53374ddf26d0ed0c056dcdec9bbb3750e6530ab0ff3095f4cd",
+          "bytes": 87360584
+        }
+      }
+    },
+    "v0122_loss3": {
+      "path": "/models-work/t008-v0122-20261101-031736/outputs/full/checkpoints/v0-20261031-202027/checkpoint-66",
+      "files": {
+        "adapter_config.json": {
+          "sha256": "c46201debbde99418e3738fe12cca7bdab6257bf97b42e4947e9fe4f1b2f308a",
+          "bytes": 1135
+        },
+        "adapter_model.safetensors": {
+          "sha256": "282cccdd3cf31ffe8df0ee412d674c1f3f78ca1502e3311470f8eebd0bece138",
+          "bytes": 87360584
+        }
+      }
+    },
+    "v0122_loss1": {
+      "path": "/models-work/t008-v0122-loss1-20261101-040341/outputs/full/checkpoints/v0-20261031-210900/checkpoint-66",
+      "files": {
+        "adapter_config.json": {
+          "sha256": "ffded37e0ea34ccc0c0ac99df94756b0c5177a2b4216c0f3e53ba9012a0212e0",
+          "bytes": 1135
+        },
+        "adapter_model.safetensors": {
+          "sha256": "e28f845481f34184db378caf607cabc69c6a9ffe80b7fa24a6a20457e1f283f1",
+          "bytes": 87360584
+        }
+      }
+    }
+  },
+  "versions": {
+    "ms-swift": "4.4.2",
+    "transformers": "5.14.1",
+    "peft": "0.20.0",
+    "torch": "2.11.0+cu130",
+    "tokenizers": "0.22.2",
+    "datasets": "4.8.4",
+    "modelscope": "1.38.1"
+  },
+  "sampling_profiles": {
+    "nonthinking": {
+      "temperature": 0.7,
+      "top_p": 0.8,
+      "top_k": 20
+    },
+    "thinking": {
+      "temperature": 0.6,
+      "top_p": 0.95,
+      "top_k": 20
+    }
+  },
+  "repetition_penalty": 1,
+  "presence_penalty": 0,
+  "frequency_penalty": 0,
+  "min_p": 0,
+  "scope": "Fixed-reference probabilities only, no answer generation, training, Judge or deployment.",
+  "design": "Five failures and three normal controls selected from saved loss1 answers before scoring. Same exact prefixes and continuations for four weights; first-token distribution and teacher-forced prefix NLL are diagnostic, not population error rates or total semantic answer probabilities.",
+  "boundary": "Actual request and parsed response fields preserved verbatim; reconstruct thinking boundary using the removed </think> token. CPU requires each concatenated text to share exactly the same prefix tokenization. Correct references and EOS branches are researcher counterfactuals, never observed successful generations.",
+  "source_commit": "e540c9f",
+  "source_results_sha256": "ae3a9ebd03234c3106682a9a32bd8efff64e1b304f8f53d73e9b524a6e025d5e"
+}

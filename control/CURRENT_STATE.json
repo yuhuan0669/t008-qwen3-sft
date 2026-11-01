@@ -4,10 +4,10 @@
   "timezone_for_user_dates": "America/Los_Angeles",
   "archive_version": "archive-v1.0.0",
   "task": "T-008 v1.5 section 15",
-  "current_workstream": "Completed one-question probability diagnosis; no training",
+  "current_workstream": "v22 fixed-reference preference hypothesis opposed by predeclared metric; stop extrapolation, no training",
   "base_model": "Qwen/Qwen3-8B",
   "process": "v1.2 process-restore-R1",
-  "current_user_request": "执行单题概率诊断：已完成50条固定文本评分和30次单Token读取；未训练，UAT继续暂停。",
+  "current_user_request": "完成v22单题概率检验，先更新判断，不自动训练。",
   "source_of_current_direction": "User requested data simple enough to interpret regression, then authorized design only; prior v0.1.27 Full66 and208 generations remain complete.",
   "historical_training": "FULL_103_STEPS_COMPLETED",
   "candidate": "LoRA-v0.1.27-general-only-checkpoint-66",
@@ -578,9 +578,8 @@
     "execution_report": "stage2/runs/t008-v0125-kl-20261101-084231/RESULT.md"
   },
   "next_diagnostic_direction": {
-    "status": "PROPOSED_NOT_STARTED",
-    "scope": "Compare existing severe-regression adapter v0.1.22 under same one-question short-prefix protocol; no training",
-    "report": "stage2/diagnostics/min16-path-20261101-132917/REPORT.md"
+    "status": "PROPOSED_READ_ONLY_NOT_STARTED",
+    "scope": "Audit actual v22 verbatim-echo input/output path; any next intervention requires a separate preregistration"
   },
   "pending_minimal_diagnostic_design": {
     "version": "minimal16-diagnostic-review-v0.1",
@@ -626,5 +625,13 @@
     "uat_paused": true,
     "zero_lora_equal_in_scope": true,
     "conclusion": "Base already supports echo continuation;step8 changes entry probabilities;aggregate echo regression not established."
+  },
+  "latest_v22_path_hypothesis": {
+    "status": "COMPLETE_HYPOTHESIS_AGAINST",
+    "report": "stage2/diagnostics/v22-path-20261101-142828/REPORT.md",
+    "scores": 40,
+    "training": false,
+    "uat_paused": true,
+    "next": "Read existing exact-echo path/request evidence; no further GPU inference or training started"
   }
 }

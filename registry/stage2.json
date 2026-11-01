@@ -1173,5 +1173,13 @@
     "uat_paused": true,
     "zero_lora_equal_in_scope": true,
     "conclusion": "Base already supports echo continuation;step8 changes entry probabilities;aggregate echo regression not established."
+  },
+  "latest_v22_path_hypothesis": {
+    "status": "COMPLETE_HYPOTHESIS_AGAINST",
+    "report": "stage2/diagnostics/v22-path-20261101-142828/REPORT.md",
+    "scores": 40,
+    "training": false,
+    "uat_paused": true,
+    "next": "Read existing exact-echo path/request evidence; no further GPU inference or training started"
   }
 }

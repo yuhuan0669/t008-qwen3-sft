@@ -1,0 +1,91 @@
+{
+  "versions": {
+    "vllm": "0.25.1",
+    "transformers": "5.14.1",
+    "torch": "2.11.0+cu130"
+  },
+  "adapters": {
+    "step0": {
+      "path": "/models-work/t008-min16-20261101-130739/checkpoint-0",
+      "files": {
+        "adapter_config.json": {
+          "sha256": "41a6a7dd12c07e097d89a38e0409b2e23a3d7ebc2eb74308e0b92c52643f088c",
+          "bytes": 1135
+        },
+        "adapter_model.safetensors": {
+          "sha256": "8292ecdc85c14bf5430d61637aead2dea3c8dd677c60d1351b1f5a6a3673fb5c",
+          "bytes": 87360584
+        }
+      }
+    },
+    "step8": {
+      "path": "/models-work/t008-min16-20261101-130739/checkpoint-8",
+      "files": {
+        "adapter_config.json": {
+          "sha256": "41a6a7dd12c07e097d89a38e0409b2e23a3d7ebc2eb74308e0b92c52643f088c",
+          "bytes": 1135
+        },
+        "adapter_model.safetensors": {
+          "sha256": "e047c2308fa9e8ef5e6e985c6b4ead55dd2491a7bc87d5b99ea4be4943947a91",
+          "bytes": 87360584
+        }
+      }
+    },
+    "v22": {
+      "path": "/models-work/t008-v0122-20261101-031736/outputs/full/checkpoints/v0-20261031-202027/checkpoint-66",
+      "files": {
+        "adapter_config.json": {
+          "sha256": "c46201debbde99418e3738fe12cca7bdab6257bf97b42e4947e9fe4f1b2f308a",
+          "bytes": 1135
+        },
+        "adapter_model.safetensors": {
+          "sha256": "282cccdd3cf31ffe8df0ee412d674c1f3f78ca1502e3311470f8eebd0bece138",
+          "bytes": 87360584
+        }
+      }
+    }
+  },
+  "aliases": {
+    "step0": "min16-step0",
+    "step8": "min16-step8",
+    "v22": "diag-v22",
+    "step0_repeat": "min16-step0"
+  },
+  "server_argv": [
+    "python3",
+    "-m",
+    "vllm.entrypoints.openai.api_server",
+    "--model",
+    "/base",
+    "--served-model-name",
+    "octa-carbon-v1",
+    "--host",
+    "127.0.0.1",
+    "--port",
+    "8000",
+    "--gpu-memory-utilization",
+    "0.90",
+    "--max-model-len",
+    "8192",
+    "--trust-remote-code",
+    "--reasoning-parser",
+    "qwen3",
+    "--enable-auto-tool-choice",
+    "--tool-call-parser",
+    "hermes",
+    "--enable-lora",
+    "--max-lora-rank",
+    "8",
+    "--chat-template",
+    "/runwork/evaluation/thinking-prefill.jinja",
+    "--lora-modules",
+    "{\"name\": \"min16-step0\", \"path\": \"/models-work/t008-min16-20261101-130739/checkpoint-0\", \"base_model_name\": \"octa-carbon-v1\"}",
+    "{\"name\": \"min16-step8\", \"path\": \"/models-work/t008-min16-20261101-130739/checkpoint-8\", \"base_model_name\": \"octa-carbon-v1\"}",
+    "{\"name\": \"diag-v22\", \"path\": \"/models-work/t008-v0122-20261101-031736/outputs/full/checkpoints/v0-20261031-202027/checkpoint-66\", \"base_model_name\": \"octa-carbon-v1\"}",
+    "--max-cpu-loras",
+    "3"
+  ],
+  "training": false,
+  "english": false,
+  "total_missing": 208
+}

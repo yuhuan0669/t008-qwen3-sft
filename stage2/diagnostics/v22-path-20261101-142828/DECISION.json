@@ -1,0 +1,148 @@
+{
+  "zero_repeat_max_mean_nll_change": 0.0,
+  "threshold_nat_per_token": 0.01,
+  "results": [
+    {
+      "system": false,
+      "control": "step0",
+      "verdict": "AGAINST",
+      "comparisons": [
+        {
+          "error": "echo_no_system",
+          "correct": "correct",
+          "control_preference": 1.900744890239818,
+          "v22_preference": 0.6611398708013407,
+          "difference": -1.2396050194384773
+        },
+        {
+          "error": "echo_no_system",
+          "correct": "matched_correct",
+          "control_preference": 1.1846273626342592,
+          "v22_preference": 0.6365117484576377,
+          "difference": -0.5481156141766215
+        },
+        {
+          "error": "echo_system",
+          "correct": "correct",
+          "control_preference": 1.4566668248828802,
+          "v22_preference": 0.28461438759454505,
+          "difference": -1.1720524372883352
+        },
+        {
+          "error": "echo_system",
+          "correct": "matched_correct",
+          "control_preference": 0.7405492972773213,
+          "v22_preference": 0.259986265250842,
+          "difference": -0.4805630320264793
+        }
+      ]
+    },
+    {
+      "system": false,
+      "control": "step8",
+      "verdict": "AGAINST",
+      "comparisons": [
+        {
+          "error": "echo_no_system",
+          "correct": "correct",
+          "control_preference": 1.855235522860247,
+          "v22_preference": 0.6611398708013407,
+          "difference": -1.1940956520589063
+        },
+        {
+          "error": "echo_no_system",
+          "correct": "matched_correct",
+          "control_preference": 1.149295226094414,
+          "v22_preference": 0.6365117484576377,
+          "difference": -0.5127834776367763
+        },
+        {
+          "error": "echo_system",
+          "correct": "correct",
+          "control_preference": 1.4053252022682932,
+          "v22_preference": 0.28461438759454505,
+          "difference": -1.1207108146737481
+        },
+        {
+          "error": "echo_system",
+          "correct": "matched_correct",
+          "control_preference": 0.6993849055024601,
+          "v22_preference": 0.259986265250842,
+          "difference": -0.4393986402516181
+        }
+      ]
+    },
+    {
+      "system": true,
+      "control": "step0",
+      "verdict": "AGAINST",
+      "comparisons": [
+        {
+          "error": "echo_no_system",
+          "correct": "correct",
+          "control_preference": 1.5892305751421465,
+          "v22_preference": 0.2549678940391521,
+          "difference": -1.3342626811029943
+        },
+        {
+          "error": "echo_no_system",
+          "correct": "matched_correct",
+          "control_preference": 0.9098639736701156,
+          "v22_preference": 0.3504632508907414,
+          "difference": -0.5594007227793742
+        },
+        {
+          "error": "echo_system",
+          "correct": "correct",
+          "control_preference": 1.8849008339098996,
+          "v22_preference": 0.1882352755765757,
+          "difference": -1.6966655583333239
+        },
+        {
+          "error": "echo_system",
+          "correct": "matched_correct",
+          "control_preference": 1.2055342324378688,
+          "v22_preference": 0.283730632428165,
+          "difference": -0.9218036000097038
+        }
+      ]
+    },
+    {
+      "system": true,
+      "control": "step8",
+      "verdict": "AGAINST",
+      "comparisons": [
+        {
+          "error": "echo_no_system",
+          "correct": "correct",
+          "control_preference": 1.4552677430198973,
+          "v22_preference": 0.2549678940391521,
+          "difference": -1.200299848980745
+        },
+        {
+          "error": "echo_no_system",
+          "correct": "matched_correct",
+          "control_preference": 0.8822299417838845,
+          "v22_preference": 0.3504632508907414,
+          "difference": -0.5317666908931431
+        },
+        {
+          "error": "echo_system",
+          "correct": "correct",
+          "control_preference": 1.723626603258511,
+          "v22_preference": 0.1882352755765757,
+          "difference": -1.5353913276819353
+        },
+        {
+          "error": "echo_system",
+          "correct": "matched_correct",
+          "control_preference": 1.1505888020224984,
+          "v22_preference": 0.283730632428165,
+          "difference": -0.8668581695943334
+        }
+      ]
+    }
+  ],
+  "scoring_calls": 40,
+  "training": false
+}

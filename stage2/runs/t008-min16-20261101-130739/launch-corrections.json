@@ -1,0 +1,5 @@
+{
+  "attempt1": "CLI rejects truncation_strategy=raise; restored original delete with CPU53-token ceiling and exact membership guard. No optimizer steps.",
+  "attempt2": "Guard plugin was appended outside external_plugins argument list; fixed placement. No optimizer steps.",
+  "attempt3": "Only successful training;8 optimizer steps128exposures."
+}

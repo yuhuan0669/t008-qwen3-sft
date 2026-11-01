@@ -1,0 +1,1 @@
+{"pass": true, "rows": 16, "max_tokens": 53, "optimizer_steps": 0, "effective_masks_equal": true, "versions": {"ms-swift": "4.4.2", "torch": "2.11.0+cu130", "transformers": "5.14.1", "peft": "0.20.0"}}

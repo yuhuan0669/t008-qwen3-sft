@@ -1,0 +1,122 @@
+[
+  {
+    "review_id": 118,
+    "label": "near_echo",
+    "note": "近似复述题面并要求核实后修订，没有完成任务。",
+    "answer_sha256": "e6a6bf1631c5d03ae1b237c9284ef784f42f3c11e7a48010f4fe175604684d21",
+    "uses": [
+      {
+        "model": "step8",
+        "group": "sampling_False",
+        "repeat": 2,
+        "flags": {
+          "exact_echo": false,
+          "question_contained": false,
+          "empty": false,
+          "length_finish": false,
+          "repeated_30_chars": false
+        }
+      }
+    ]
+  },
+  {
+    "review_id": 142,
+    "label": "near_echo",
+    "note": "近似复述题面并要求修订通报，没有完成任务。",
+    "answer_sha256": "dacdffd4132d581f73c79b5c9bc5bef4e2ce1cedf5b86a08a8506c7d5eeac57b",
+    "uses": [
+      {
+        "model": "step8",
+        "group": "sampling_True",
+        "repeat": 3,
+        "flags": {
+          "exact_echo": false,
+          "question_contained": false,
+          "empty": false,
+          "length_finish": false,
+          "repeated_30_chars": false
+        }
+      }
+    ]
+  },
+  {
+    "review_id": 109,
+    "label": "correction_pass",
+    "note": "保留新风不足及临时保障，纠正原稿。",
+    "answer_sha256": "897d1fec6c104845356805afc0674b3825461e8e05d86e1773b5a195d662e2ef",
+    "uses": [
+      {
+        "model": "step8",
+        "group": "greedy_True",
+        "repeat": 1,
+        "flags": {
+          "exact_echo": false,
+          "question_contained": false,
+          "empty": false,
+          "length_finish": false,
+          "repeated_30_chars": false
+        }
+      }
+    ]
+  },
+  {
+    "review_id": 145,
+    "label": "correction_pass",
+    "note": "采样同样存在正确修订；结果有波动。",
+    "answer_sha256": "48acc00a8c596d26ffdb1a1a4030a161f83a37d8cceb3165ab711e0b836a4940",
+    "uses": [
+      {
+        "model": "step8",
+        "group": "sampling_True",
+        "repeat": 1,
+        "flags": {
+          "exact_echo": false,
+          "question_contained": false,
+          "empty": false,
+          "length_finish": false,
+          "repeated_30_chars": false
+        }
+      }
+    ]
+  },
+  {
+    "review_id": 110,
+    "label": "unsupported_additions",
+    "note": "新增具体规范及条款，并要求删除题设已授权留存的录音。",
+    "answer_sha256": "8e2aa59ac1259b906c50daea0fd021c9cd0928b7df85884bded4104da40ce37c",
+    "uses": [
+      {
+        "model": "step8",
+        "group": "greedy_True",
+        "repeat": 1,
+        "flags": {
+          "exact_echo": false,
+          "question_contained": false,
+          "empty": false,
+          "length_finish": false,
+          "repeated_30_chars": false
+        }
+      }
+    ]
+  },
+  {
+    "review_id": 123,
+    "label": "factual_error",
+    "note": "把普通停止按钮称为电气隔离或部分隔离。",
+    "answer_sha256": "2f20fb3d6d62ae78cc4d4543ece3caff72201a3a75b1080146870f070c88fe8f",
+    "uses": [
+      {
+        "model": "step8",
+        "group": "greedy_True",
+        "repeat": 1,
+        "flags": {
+          "exact_echo": false,
+          "question_contained": false,
+          "empty": false,
+          "length_finish": false,
+          "repeated_30_chars": false
+        }
+      }
+    ]
+  }
+]

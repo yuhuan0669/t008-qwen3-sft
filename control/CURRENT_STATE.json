@@ -1,13 +1,13 @@
 {
   "schema": "t008-unified-current-state-v1",
-  "recorded_at_utc": "2026-11-01T13:02:27.458474+00:00",
+  "recorded_at_utc": "2026-11-01T13:21:50.718667+00:00",
   "timezone_for_user_dates": "America/Los_Angeles",
   "archive_version": "archive-v1.0.0",
   "task": "T-008 v1.5 section 15",
-  "current_workstream": "Designing a16-row simple reference experiment after completed source-gradient and source-ablation diagnostics; no new execution",
+  "current_workstream": "Completed16-row reference diagnostic;2 near echoes in step8 sampling; next probability-path inspection proposed only",
   "base_model": "Qwen/Qwen3-8B",
   "process": "v1.2 process-restore-R1",
-  "current_user_request": "设计简单到可解释的训练对照；本轮不训练、不推理，UAT继续保持暂停。",
+  "current_user_request": "开始吧：8步和176次已完成，UAT继续暂停。",
   "source_of_current_direction": "User requested data simple enough to interpret regression, then authorized design only; prior v0.1.27 Full66 and208 generations remain complete.",
   "historical_training": "FULL_103_STEPS_COMPLETED",
   "candidate": "LoRA-v0.1.27-general-only-checkpoint-66",
@@ -578,18 +578,13 @@
     "execution_report": "stage2/runs/t008-v0125-kl-20261101-084231/RESULT.md"
   },
   "next_diagnostic_direction": {
-    "status": "DESIGN_DRAFT_NOT_EXECUTED",
-    "scope": "Simple16-row short nonthinking reference experiment; inspect supervision and early updates.",
-    "evidence": "stage2/variants/minimal16-diagnostic-review-v0.1/README.md",
-    "new_training": false,
-    "new_generation": false,
-    "next_training_authorized": false,
-    "previous_other61_split_proposal": "DEFERRED_UNTIL_MINIMAL_REFERENCE_RESULTS",
-    "previous_evidence": "stage2/runs/t008-v0127-generalonly-20261101-121120/RESULT.md"
+    "status": "PROPOSED_NOT_STARTED",
+    "scope": "Probability-path and zero-LoRA numerical inspection on G007 with two System conditions; no additional training authorized",
+    "report": "stage2/runs/t008-min16-20261101-130739/RESULT.md"
   },
   "pending_minimal_diagnostic_design": {
     "version": "minimal16-diagnostic-review-v0.1",
-    "status": "DESIGN_ONLY_PENDING_REVIEW",
+    "status": "EXECUTED_SEE_LATEST_MINIMAL_DIAGNOSTIC_EXECUTION",
     "report": "stage2/variants/minimal16-diagnostic-review-v0.1/README.md",
     "samples": "stage2/variants/minimal16-diagnostic-review-v0.1/SAMPLES.md",
     "data": "stage2/variants/minimal16-diagnostic-review-v0.1/train.jsonl",
@@ -605,5 +600,20 @@
     "training_started": false,
     "uat_modified": false,
     "sync_status": "LOCAL_GIT_ONLY"
+  },
+  "latest_minimal_diagnostic_execution": {
+    "run_id": "t008-min16-20261101-130739",
+    "status": "COMPLETED_DIAGNOSTIC_NOT_RELEASED",
+    "report": "stage2/runs/t008-min16-20261101-130739/RESULT.md",
+    "training_steps": 8,
+    "training_exposures": 128,
+    "generations": 176,
+    "technical_retries": 0,
+    "exact_echo": 0,
+    "confirmed_near_echo": 2,
+    "semantic_review": "Targeted content verification; not a full independent semantic pass-rate census",
+    "uat_paused": true,
+    "deployed": false,
+    "pushed": false
   }
 }

@@ -1,0 +1,69 @@
+{
+  "models": [
+    "original_base",
+    "step0",
+    "step2",
+    "step4",
+    "step8"
+  ],
+  "groups": [
+    {
+      "name": "greedy_False",
+      "mode": "greedy",
+      "system": false
+    },
+    {
+      "name": "greedy_True",
+      "mode": "greedy",
+      "system": true
+    },
+    {
+      "name": "sampling_False",
+      "mode": "sampling",
+      "system": false
+    },
+    {
+      "name": "sampling_True",
+      "mode": "sampling",
+      "system": true
+    }
+  ],
+  "request_modes": {
+    "greedy": {
+      "temperature": 0,
+      "top_p": 1,
+      "top_k": -1,
+      "max_tokens": 2048,
+      "min_p": 0,
+      "chat_template_kwargs": {
+        "enable_thinking": false
+      },
+      "repetition_penalty": 1,
+      "presence_penalty": 0,
+      "frequency_penalty": 0,
+      "n": 1,
+      "stream": false
+    },
+    "sampling": {
+      "temperature": 0.7,
+      "top_p": 0.8,
+      "top_k": 20,
+      "max_tokens": 2048,
+      "min_p": 0,
+      "chat_template_kwargs": {
+        "enable_thinking": false
+      },
+      "repetition_penalty": 1,
+      "presence_penalty": 0,
+      "frequency_penalty": 0,
+      "n": 1,
+      "stream": false
+    }
+  },
+  "concurrency": 8,
+  "cases_sha256": "3a4f78222a7f6aa12513775ae831e773c8527be2f522cc0468a37f63b3a498fb",
+  "system_sha256": "3ae02d520406f73e735752ef04ff395785f84fec7ee1619fd9d392d86cb92933",
+  "chat_template": {
+    "sha256": "ae8a1b27c3bac461eb5f6c78d5d39cbe29427ad91c9d2da8378e236b8a38448d"
+  }
+}

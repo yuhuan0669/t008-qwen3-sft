@@ -1,0 +1,14 @@
+{
+  "version": "minimal16-diagnostic-review-v0.1",
+  "status": "DESIGN_ONLY_NOT_TRAINING_ADMITTED",
+  "data_rows": 16,
+  "source": "New synthetic Chinese examples authored for this diagnostic design.",
+  "files_sha256": {
+    "train.jsonl": "8209a7c099f07724e979ca6c969f2c2132128bb28ec9faf4986baf2e5d778b8e",
+    "SAMPLES.md": "51f8e1c0a5e3b905b4a13b971f1c2fd530e1247c4f8c60c54b9a1dfedea69a9e",
+    "protocol.json": "832b6530611cbe9359392d8952903cbfae1fce1536db5f217f07de8e46432135",
+    "validation.json": "319e645a38079e8f6903fd6db838878831ecfdd6a009b3d78ad2d606c4a4f96d",
+    "build.py": "9653373e0ae7d679bee107fa07e24c520cfaeea57c2e37d400caa52697b04489",
+    "README.md": "b5137bd9f7de7cb054d580bbc571a60b07f59942bfe61dcaa963afa89e7308ef"
+  }
+}

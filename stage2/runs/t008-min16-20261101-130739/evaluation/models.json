@@ -1,0 +1,130 @@
+{
+  "object": "list",
+  "data": [
+    {
+      "id": "octa-carbon-v1",
+      "object": "model",
+      "created": 1793538876,
+      "owned_by": "vllm",
+      "root": "/base",
+      "parent": null,
+      "max_model_len": 8192,
+      "permission": [
+        {
+          "id": "modelperm-980f0830099a417b",
+          "object": "model_permission",
+          "created": 1793538876,
+          "allow_create_engine": false,
+          "allow_sampling": true,
+          "allow_logprobs": true,
+          "allow_search_indices": false,
+          "allow_view": true,
+          "allow_fine_tuning": false,
+          "organization": "*",
+          "group": null,
+          "is_blocking": false
+        }
+      ]
+    },
+    {
+      "id": "min16-step0",
+      "object": "model",
+      "created": 1793538876,
+      "owned_by": "vllm",
+      "root": "/models-work/t008-min16-20261101-130739/checkpoint-0",
+      "parent": "octa-carbon-v1",
+      "max_model_len": null,
+      "permission": [
+        {
+          "id": "modelperm-8d48f810abaf3594",
+          "object": "model_permission",
+          "created": 1793538876,
+          "allow_create_engine": false,
+          "allow_sampling": true,
+          "allow_logprobs": true,
+          "allow_search_indices": false,
+          "allow_view": true,
+          "allow_fine_tuning": false,
+          "organization": "*",
+          "group": null,
+          "is_blocking": false
+        }
+      ]
+    },
+    {
+      "id": "min16-step2",
+      "object": "model",
+      "created": 1793538876,
+      "owned_by": "vllm",
+      "root": "/models-work/t008-min16-20261101-130739/checkpoint-2",
+      "parent": "octa-carbon-v1",
+      "max_model_len": null,
+      "permission": [
+        {
+          "id": "modelperm-a23b7e4ce4c7f75d",
+          "object": "model_permission",
+          "created": 1793538876,
+          "allow_create_engine": false,
+          "allow_sampling": true,
+          "allow_logprobs": true,
+          "allow_search_indices": false,
+          "allow_view": true,
+          "allow_fine_tuning": false,
+          "organization": "*",
+          "group": null,
+          "is_blocking": false
+        }
+      ]
+    },
+    {
+      "id": "min16-step4",
+      "object": "model",
+      "created": 1793538876,
+      "owned_by": "vllm",
+      "root": "/models-work/t008-min16-20261101-130739/checkpoint-4",
+      "parent": "octa-carbon-v1",
+      "max_model_len": null,
+      "permission": [
+        {
+          "id": "modelperm-930d8c753e0bd40f",
+          "object": "model_permission",
+          "created": 1793538876,
+          "allow_create_engine": false,
+          "allow_sampling": true,
+          "allow_logprobs": true,
+          "allow_search_indices": false,
+          "allow_view": true,
+          "allow_fine_tuning": false,
+          "organization": "*",
+          "group": null,
+          "is_blocking": false
+        }
+      ]
+    },
+    {
+      "id": "min16-step8",
+      "object": "model",
+      "created": 1793538876,
+      "owned_by": "vllm",
+      "root": "/models-work/t008-min16-20261101-130739/checkpoint-8",
+      "parent": "octa-carbon-v1",
+      "max_model_len": null,
+      "permission": [
+        {
+          "id": "modelperm-9e81fffacb0e03f6",
+          "object": "model_permission",
+          "created": 1793538876,
+          "allow_create_engine": false,
+          "allow_sampling": true,
+          "allow_logprobs": true,
+          "allow_search_indices": false,
+          "allow_view": true,
+          "allow_fine_tuning": false,
+          "organization": "*",
+          "group": null,
+          "is_blocking": false
+        }
+      ]
+    }
+  ]
+}

@@ -1131,7 +1131,7 @@
   },
   "minimal_diagnostic_design": {
     "version": "minimal16-diagnostic-review-v0.1",
-    "status": "DESIGN_ONLY_PENDING_REVIEW",
+    "status": "EXECUTED",
     "report": "stage2/variants/minimal16-diagnostic-review-v0.1/README.md",
     "samples": "stage2/variants/minimal16-diagnostic-review-v0.1/SAMPLES.md",
     "data": "stage2/variants/minimal16-diagnostic-review-v0.1/train.jsonl",
@@ -1147,5 +1147,20 @@
     "training_started": false,
     "uat_modified": false,
     "sync_status": "LOCAL_GIT_ONLY"
+  },
+  "latest_minimal_diagnostic_execution": {
+    "run_id": "t008-min16-20261101-130739",
+    "status": "COMPLETED_DIAGNOSTIC_NOT_RELEASED",
+    "report": "stage2/runs/t008-min16-20261101-130739/RESULT.md",
+    "training_steps": 8,
+    "training_exposures": 128,
+    "generations": 176,
+    "technical_retries": 0,
+    "exact_echo": 0,
+    "confirmed_near_echo": 2,
+    "semantic_review": "Targeted content verification; not a full independent semantic pass-rate census",
+    "uat_paused": true,
+    "deployed": false,
+    "pushed": false
   }
 }

@@ -1,0 +1,9 @@
+{
+  "task_pods_removed": true,
+  "uat_spec_unchanged": true,
+  "uat_replicas": 0,
+  "restored": false,
+  "deployed": false,
+  "initial_delete_wait_timed_out": true,
+  "subsequent_readback_empty": true
+}

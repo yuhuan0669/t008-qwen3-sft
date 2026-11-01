@@ -1,0 +1,1058 @@
+[
+  {
+    "model": "original_base",
+    "group": "greedy_False",
+    "case_id": "T021-C900-B4-G007",
+    "repeat": 1
+  },
+  {
+    "model": "original_base",
+    "group": "greedy_False",
+    "case_id": "T021-P20-G0274",
+    "repeat": 1
+  },
+  {
+    "model": "original_base",
+    "group": "greedy_False",
+    "case_id": "T021-R3300-G1202",
+    "repeat": 1
+  },
+  {
+    "model": "original_base",
+    "group": "greedy_False",
+    "case_id": "T021-C900-B5-G152",
+    "repeat": 1
+  },
+  {
+    "model": "original_base",
+    "group": "greedy_False",
+    "case_id": "T021-R3300-G0670",
+    "repeat": 1
+  },
+  {
+    "model": "original_base",
+    "group": "greedy_False",
+    "case_id": "T021-R3300-G0243",
+    "repeat": 1
+  },
+  {
+    "model": "original_base",
+    "group": "greedy_False",
+    "case_id": "T021-C900-B3-N031",
+    "repeat": 1
+  },
+  {
+    "model": "original_base",
+    "group": "greedy_False",
+    "case_id": "T021-C900-B4-N045",
+    "repeat": 1
+  },
+  {
+    "model": "original_base",
+    "group": "greedy_True",
+    "case_id": "T021-C900-B4-G007",
+    "repeat": 1
+  },
+  {
+    "model": "original_base",
+    "group": "greedy_True",
+    "case_id": "T021-P20-G0274",
+    "repeat": 1
+  },
+  {
+    "model": "original_base",
+    "group": "greedy_True",
+    "case_id": "T021-R3300-G1202",
+    "repeat": 1
+  },
+  {
+    "model": "original_base",
+    "group": "greedy_True",
+    "case_id": "T021-C900-B5-G152",
+    "repeat": 1
+  },
+  {
+    "model": "original_base",
+    "group": "greedy_True",
+    "case_id": "T021-R3300-G0670",
+    "repeat": 1
+  },
+  {
+    "model": "original_base",
+    "group": "greedy_True",
+    "case_id": "T021-R3300-G0243",
+    "repeat": 1
+  },
+  {
+    "model": "original_base",
+    "group": "greedy_True",
+    "case_id": "T021-C900-B3-N031",
+    "repeat": 1
+  },
+  {
+    "model": "original_base",
+    "group": "greedy_True",
+    "case_id": "T021-C900-B4-N045",
+    "repeat": 1
+  },
+  {
+    "model": "original_base",
+    "group": "sampling_False",
+    "case_id": "T021-C900-B4-G007",
+    "repeat": 1
+  },
+  {
+    "model": "original_base",
+    "group": "sampling_False",
+    "case_id": "T021-C900-B4-G007",
+    "repeat": 2
+  },
+  {
+    "model": "original_base",
+    "group": "sampling_False",
+    "case_id": "T021-C900-B4-G007",
+    "repeat": 3
+  },
+  {
+    "model": "original_base",
+    "group": "sampling_False",
+    "case_id": "T021-P20-G0274",
+    "repeat": 1
+  },
+  {
+    "model": "original_base",
+    "group": "sampling_False",
+    "case_id": "T021-P20-G0274",
+    "repeat": 2
+  },
+  {
+    "model": "original_base",
+    "group": "sampling_False",
+    "case_id": "T021-P20-G0274",
+    "repeat": 3
+  },
+  {
+    "model": "original_base",
+    "group": "sampling_False",
+    "case_id": "T021-R3300-G1202",
+    "repeat": 1
+  },
+  {
+    "model": "original_base",
+    "group": "sampling_False",
+    "case_id": "T021-R3300-G1202",
+    "repeat": 2
+  },
+  {
+    "model": "original_base",
+    "group": "sampling_False",
+    "case_id": "T021-R3300-G1202",
+    "repeat": 3
+  },
+  {
+    "model": "original_base",
+    "group": "sampling_False",
+    "case_id": "T021-C900-B5-G152",
+    "repeat": 1
+  },
+  {
+    "model": "original_base",
+    "group": "sampling_False",
+    "case_id": "T021-C900-B5-G152",
+    "repeat": 2
+  },
+  {
+    "model": "original_base",
+    "group": "sampling_False",
+    "case_id": "T021-C900-B5-G152",
+    "repeat": 3
+  },
+  {
+    "model": "original_base",
+    "group": "sampling_False",
+    "case_id": "T021-R3300-G0670",
+    "repeat": 1
+  },
+  {
+    "model": "original_base",
+    "group": "sampling_False",
+    "case_id": "T021-R3300-G0670",
+    "repeat": 2
+  },
+  {
+    "model": "original_base",
+    "group": "sampling_False",
+    "case_id": "T021-R3300-G0670",
+    "repeat": 3
+  },
+  {
+    "model": "original_base",
+    "group": "sampling_False",
+    "case_id": "T021-R3300-G0243",
+    "repeat": 1
+  },
+  {
+    "model": "original_base",
+    "group": "sampling_False",
+    "case_id": "T021-R3300-G0243",
+    "repeat": 2
+  },
+  {
+    "model": "original_base",
+    "group": "sampling_False",
+    "case_id": "T021-R3300-G0243",
+    "repeat": 3
+  },
+  {
+    "model": "original_base",
+    "group": "sampling_False",
+    "case_id": "T021-C900-B3-N031",
+    "repeat": 1
+  },
+  {
+    "model": "original_base",
+    "group": "sampling_False",
+    "case_id": "T021-C900-B3-N031",
+    "repeat": 2
+  },
+  {
+    "model": "original_base",
+    "group": "sampling_False",
+    "case_id": "T021-C900-B3-N031",
+    "repeat": 3
+  },
+  {
+    "model": "original_base",
+    "group": "sampling_False",
+    "case_id": "T021-C900-B4-N045",
+    "repeat": 1
+  },
+  {
+    "model": "original_base",
+    "group": "sampling_False",
+    "case_id": "T021-C900-B4-N045",
+    "repeat": 2
+  },
+  {
+    "model": "original_base",
+    "group": "sampling_False",
+    "case_id": "T021-C900-B4-N045",
+    "repeat": 3
+  },
+  {
+    "model": "original_base",
+    "group": "sampling_True",
+    "case_id": "T021-C900-B4-G007",
+    "repeat": 1
+  },
+  {
+    "model": "original_base",
+    "group": "sampling_True",
+    "case_id": "T021-C900-B4-G007",
+    "repeat": 2
+  },
+  {
+    "model": "original_base",
+    "group": "sampling_True",
+    "case_id": "T021-C900-B4-G007",
+    "repeat": 3
+  },
+  {
+    "model": "original_base",
+    "group": "sampling_True",
+    "case_id": "T021-P20-G0274",
+    "repeat": 1
+  },
+  {
+    "model": "original_base",
+    "group": "sampling_True",
+    "case_id": "T021-P20-G0274",
+    "repeat": 2
+  },
+  {
+    "model": "original_base",
+    "group": "sampling_True",
+    "case_id": "T021-P20-G0274",
+    "repeat": 3
+  },
+  {
+    "model": "original_base",
+    "group": "sampling_True",
+    "case_id": "T021-R3300-G1202",
+    "repeat": 1
+  },
+  {
+    "model": "original_base",
+    "group": "sampling_True",
+    "case_id": "T021-R3300-G1202",
+    "repeat": 2
+  },
+  {
+    "model": "original_base",
+    "group": "sampling_True",
+    "case_id": "T021-R3300-G1202",
+    "repeat": 3
+  },
+  {
+    "model": "original_base",
+    "group": "sampling_True",
+    "case_id": "T021-C900-B5-G152",
+    "repeat": 1
+  },
+  {
+    "model": "original_base",
+    "group": "sampling_True",
+    "case_id": "T021-C900-B5-G152",
+    "repeat": 2
+  },
+  {
+    "model": "original_base",
+    "group": "sampling_True",
+    "case_id": "T021-C900-B5-G152",
+    "repeat": 3
+  },
+  {
+    "model": "original_base",
+    "group": "sampling_True",
+    "case_id": "T021-R3300-G0670",
+    "repeat": 1
+  },
+  {
+    "model": "original_base",
+    "group": "sampling_True",
+    "case_id": "T021-R3300-G0670",
+    "repeat": 2
+  },
+  {
+    "model": "original_base",
+    "group": "sampling_True",
+    "case_id": "T021-R3300-G0670",
+    "repeat": 3
+  },
+  {
+    "model": "original_base",
+    "group": "sampling_True",
+    "case_id": "T021-R3300-G0243",
+    "repeat": 1
+  },
+  {
+    "model": "original_base",
+    "group": "sampling_True",
+    "case_id": "T021-R3300-G0243",
+    "repeat": 2
+  },
+  {
+    "model": "original_base",
+    "group": "sampling_True",
+    "case_id": "T021-R3300-G0243",
+    "repeat": 3
+  },
+  {
+    "model": "original_base",
+    "group": "sampling_True",
+    "case_id": "T021-C900-B3-N031",
+    "repeat": 1
+  },
+  {
+    "model": "original_base",
+    "group": "sampling_True",
+    "case_id": "T021-C900-B3-N031",
+    "repeat": 2
+  },
+  {
+    "model": "original_base",
+    "group": "sampling_True",
+    "case_id": "T021-C900-B3-N031",
+    "repeat": 3
+  },
+  {
+    "model": "original_base",
+    "group": "sampling_True",
+    "case_id": "T021-C900-B4-N045",
+    "repeat": 1
+  },
+  {
+    "model": "original_base",
+    "group": "sampling_True",
+    "case_id": "T021-C900-B4-N045",
+    "repeat": 2
+  },
+  {
+    "model": "original_base",
+    "group": "sampling_True",
+    "case_id": "T021-C900-B4-N045",
+    "repeat": 3
+  },
+  {
+    "model": "step0",
+    "group": "greedy_False",
+    "case_id": "T021-C900-B4-G007",
+    "repeat": 1
+  },
+  {
+    "model": "step0",
+    "group": "greedy_False",
+    "case_id": "T021-P20-G0274",
+    "repeat": 1
+  },
+  {
+    "model": "step0",
+    "group": "greedy_False",
+    "case_id": "T021-R3300-G1202",
+    "repeat": 1
+  },
+  {
+    "model": "step0",
+    "group": "greedy_False",
+    "case_id": "T021-C900-B5-G152",
+    "repeat": 1
+  },
+  {
+    "model": "step0",
+    "group": "greedy_False",
+    "case_id": "T021-R3300-G0670",
+    "repeat": 1
+  },
+  {
+    "model": "step0",
+    "group": "greedy_False",
+    "case_id": "T021-R3300-G0243",
+    "repeat": 1
+  },
+  {
+    "model": "step0",
+    "group": "greedy_False",
+    "case_id": "T021-C900-B3-N031",
+    "repeat": 1
+  },
+  {
+    "model": "step0",
+    "group": "greedy_False",
+    "case_id": "T021-C900-B4-N045",
+    "repeat": 1
+  },
+  {
+    "model": "step0",
+    "group": "greedy_True",
+    "case_id": "T021-C900-B4-G007",
+    "repeat": 1
+  },
+  {
+    "model": "step0",
+    "group": "greedy_True",
+    "case_id": "T021-P20-G0274",
+    "repeat": 1
+  },
+  {
+    "model": "step0",
+    "group": "greedy_True",
+    "case_id": "T021-R3300-G1202",
+    "repeat": 1
+  },
+  {
+    "model": "step0",
+    "group": "greedy_True",
+    "case_id": "T021-C900-B5-G152",
+    "repeat": 1
+  },
+  {
+    "model": "step0",
+    "group": "greedy_True",
+    "case_id": "T021-R3300-G0670",
+    "repeat": 1
+  },
+  {
+    "model": "step0",
+    "group": "greedy_True",
+    "case_id": "T021-R3300-G0243",
+    "repeat": 1
+  },
+  {
+    "model": "step0",
+    "group": "greedy_True",
+    "case_id": "T021-C900-B3-N031",
+    "repeat": 1
+  },
+  {
+    "model": "step0",
+    "group": "greedy_True",
+    "case_id": "T021-C900-B4-N045",
+    "repeat": 1
+  },
+  {
+    "model": "step2",
+    "group": "greedy_False",
+    "case_id": "T021-C900-B4-G007",
+    "repeat": 1
+  },
+  {
+    "model": "step2",
+    "group": "greedy_False",
+    "case_id": "T021-P20-G0274",
+    "repeat": 1
+  },
+  {
+    "model": "step2",
+    "group": "greedy_False",
+    "case_id": "T021-R3300-G1202",
+    "repeat": 1
+  },
+  {
+    "model": "step2",
+    "group": "greedy_False",
+    "case_id": "T021-C900-B5-G152",
+    "repeat": 1
+  },
+  {
+    "model": "step2",
+    "group": "greedy_False",
+    "case_id": "T021-R3300-G0670",
+    "repeat": 1
+  },
+  {
+    "model": "step2",
+    "group": "greedy_False",
+    "case_id": "T021-R3300-G0243",
+    "repeat": 1
+  },
+  {
+    "model": "step2",
+    "group": "greedy_False",
+    "case_id": "T021-C900-B3-N031",
+    "repeat": 1
+  },
+  {
+    "model": "step2",
+    "group": "greedy_False",
+    "case_id": "T021-C900-B4-N045",
+    "repeat": 1
+  },
+  {
+    "model": "step2",
+    "group": "greedy_True",
+    "case_id": "T021-C900-B4-G007",
+    "repeat": 1
+  },
+  {
+    "model": "step2",
+    "group": "greedy_True",
+    "case_id": "T021-P20-G0274",
+    "repeat": 1
+  },
+  {
+    "model": "step2",
+    "group": "greedy_True",
+    "case_id": "T021-R3300-G1202",
+    "repeat": 1
+  },
+  {
+    "model": "step2",
+    "group": "greedy_True",
+    "case_id": "T021-C900-B5-G152",
+    "repeat": 1
+  },
+  {
+    "model": "step2",
+    "group": "greedy_True",
+    "case_id": "T021-R3300-G0670",
+    "repeat": 1
+  },
+  {
+    "model": "step2",
+    "group": "greedy_True",
+    "case_id": "T021-R3300-G0243",
+    "repeat": 1
+  },
+  {
+    "model": "step2",
+    "group": "greedy_True",
+    "case_id": "T021-C900-B3-N031",
+    "repeat": 1
+  },
+  {
+    "model": "step2",
+    "group": "greedy_True",
+    "case_id": "T021-C900-B4-N045",
+    "repeat": 1
+  },
+  {
+    "model": "step4",
+    "group": "greedy_False",
+    "case_id": "T021-C900-B4-G007",
+    "repeat": 1
+  },
+  {
+    "model": "step4",
+    "group": "greedy_False",
+    "case_id": "T021-P20-G0274",
+    "repeat": 1
+  },
+  {
+    "model": "step4",
+    "group": "greedy_False",
+    "case_id": "T021-R3300-G1202",
+    "repeat": 1
+  },
+  {
+    "model": "step4",
+    "group": "greedy_False",
+    "case_id": "T021-C900-B5-G152",
+    "repeat": 1
+  },
+  {
+    "model": "step4",
+    "group": "greedy_False",
+    "case_id": "T021-R3300-G0670",
+    "repeat": 1
+  },
+  {
+    "model": "step4",
+    "group": "greedy_False",
+    "case_id": "T021-R3300-G0243",
+    "repeat": 1
+  },
+  {
+    "model": "step4",
+    "group": "greedy_False",
+    "case_id": "T021-C900-B3-N031",
+    "repeat": 1
+  },
+  {
+    "model": "step4",
+    "group": "greedy_False",
+    "case_id": "T021-C900-B4-N045",
+    "repeat": 1
+  },
+  {
+    "model": "step4",
+    "group": "greedy_True",
+    "case_id": "T021-C900-B4-G007",
+    "repeat": 1
+  },
+  {
+    "model": "step4",
+    "group": "greedy_True",
+    "case_id": "T021-P20-G0274",
+    "repeat": 1
+  },
+  {
+    "model": "step4",
+    "group": "greedy_True",
+    "case_id": "T021-R3300-G1202",
+    "repeat": 1
+  },
+  {
+    "model": "step4",
+    "group": "greedy_True",
+    "case_id": "T021-C900-B5-G152",
+    "repeat": 1
+  },
+  {
+    "model": "step4",
+    "group": "greedy_True",
+    "case_id": "T021-R3300-G0670",
+    "repeat": 1
+  },
+  {
+    "model": "step4",
+    "group": "greedy_True",
+    "case_id": "T021-R3300-G0243",
+    "repeat": 1
+  },
+  {
+    "model": "step4",
+    "group": "greedy_True",
+    "case_id": "T021-C900-B3-N031",
+    "repeat": 1
+  },
+  {
+    "model": "step4",
+    "group": "greedy_True",
+    "case_id": "T021-C900-B4-N045",
+    "repeat": 1
+  },
+  {
+    "model": "step8",
+    "group": "greedy_False",
+    "case_id": "T021-C900-B4-G007",
+    "repeat": 1
+  },
+  {
+    "model": "step8",
+    "group": "greedy_False",
+    "case_id": "T021-P20-G0274",
+    "repeat": 1
+  },
+  {
+    "model": "step8",
+    "group": "greedy_False",
+    "case_id": "T021-R3300-G1202",
+    "repeat": 1
+  },
+  {
+    "model": "step8",
+    "group": "greedy_False",
+    "case_id": "T021-C900-B5-G152",
+    "repeat": 1
+  },
+  {
+    "model": "step8",
+    "group": "greedy_False",
+    "case_id": "T021-R3300-G0670",
+    "repeat": 1
+  },
+  {
+    "model": "step8",
+    "group": "greedy_False",
+    "case_id": "T021-R3300-G0243",
+    "repeat": 1
+  },
+  {
+    "model": "step8",
+    "group": "greedy_False",
+    "case_id": "T021-C900-B3-N031",
+    "repeat": 1
+  },
+  {
+    "model": "step8",
+    "group": "greedy_False",
+    "case_id": "T021-C900-B4-N045",
+    "repeat": 1
+  },
+  {
+    "model": "step8",
+    "group": "greedy_True",
+    "case_id": "T021-C900-B4-G007",
+    "repeat": 1
+  },
+  {
+    "model": "step8",
+    "group": "greedy_True",
+    "case_id": "T021-P20-G0274",
+    "repeat": 1
+  },
+  {
+    "model": "step8",
+    "group": "greedy_True",
+    "case_id": "T021-R3300-G1202",
+    "repeat": 1
+  },
+  {
+    "model": "step8",
+    "group": "greedy_True",
+    "case_id": "T021-C900-B5-G152",
+    "repeat": 1
+  },
+  {
+    "model": "step8",
+    "group": "greedy_True",
+    "case_id": "T021-R3300-G0670",
+    "repeat": 1
+  },
+  {
+    "model": "step8",
+    "group": "greedy_True",
+    "case_id": "T021-R3300-G0243",
+    "repeat": 1
+  },
+  {
+    "model": "step8",
+    "group": "greedy_True",
+    "case_id": "T021-C900-B3-N031",
+    "repeat": 1
+  },
+  {
+    "model": "step8",
+    "group": "greedy_True",
+    "case_id": "T021-C900-B4-N045",
+    "repeat": 1
+  },
+  {
+    "model": "step8",
+    "group": "sampling_False",
+    "case_id": "T021-C900-B4-G007",
+    "repeat": 1
+  },
+  {
+    "model": "step8",
+    "group": "sampling_False",
+    "case_id": "T021-C900-B4-G007",
+    "repeat": 2
+  },
+  {
+    "model": "step8",
+    "group": "sampling_False",
+    "case_id": "T021-C900-B4-G007",
+    "repeat": 3
+  },
+  {
+    "model": "step8",
+    "group": "sampling_False",
+    "case_id": "T021-P20-G0274",
+    "repeat": 1
+  },
+  {
+    "model": "step8",
+    "group": "sampling_False",
+    "case_id": "T021-P20-G0274",
+    "repeat": 2
+  },
+  {
+    "model": "step8",
+    "group": "sampling_False",
+    "case_id": "T021-P20-G0274",
+    "repeat": 3
+  },
+  {
+    "model": "step8",
+    "group": "sampling_False",
+    "case_id": "T021-R3300-G1202",
+    "repeat": 1
+  },
+  {
+    "model": "step8",
+    "group": "sampling_False",
+    "case_id": "T021-R3300-G1202",
+    "repeat": 2
+  },
+  {
+    "model": "step8",
+    "group": "sampling_False",
+    "case_id": "T021-R3300-G1202",
+    "repeat": 3
+  },
+  {
+    "model": "step8",
+    "group": "sampling_False",
+    "case_id": "T021-C900-B5-G152",
+    "repeat": 1
+  },
+  {
+    "model": "step8",
+    "group": "sampling_False",
+    "case_id": "T021-C900-B5-G152",
+    "repeat": 2
+  },
+  {
+    "model": "step8",
+    "group": "sampling_False",
+    "case_id": "T021-C900-B5-G152",
+    "repeat": 3
+  },
+  {
+    "model": "step8",
+    "group": "sampling_False",
+    "case_id": "T021-R3300-G0670",
+    "repeat": 1
+  },
+  {
+    "model": "step8",
+    "group": "sampling_False",
+    "case_id": "T021-R3300-G0670",
+    "repeat": 2
+  },
+  {
+    "model": "step8",
+    "group": "sampling_False",
+    "case_id": "T021-R3300-G0670",
+    "repeat": 3
+  },
+  {
+    "model": "step8",
+    "group": "sampling_False",
+    "case_id": "T021-R3300-G0243",
+    "repeat": 1
+  },
+  {
+    "model": "step8",
+    "group": "sampling_False",
+    "case_id": "T021-R3300-G0243",
+    "repeat": 2
+  },
+  {
+    "model": "step8",
+    "group": "sampling_False",
+    "case_id": "T021-R3300-G0243",
+    "repeat": 3
+  },
+  {
+    "model": "step8",
+    "group": "sampling_False",
+    "case_id": "T021-C900-B3-N031",
+    "repeat": 1
+  },
+  {
+    "model": "step8",
+    "group": "sampling_False",
+    "case_id": "T021-C900-B3-N031",
+    "repeat": 2
+  },
+  {
+    "model": "step8",
+    "group": "sampling_False",
+    "case_id": "T021-C900-B3-N031",
+    "repeat": 3
+  },
+  {
+    "model": "step8",
+    "group": "sampling_False",
+    "case_id": "T021-C900-B4-N045",
+    "repeat": 1
+  },
+  {
+    "model": "step8",
+    "group": "sampling_False",
+    "case_id": "T021-C900-B4-N045",
+    "repeat": 2
+  },
+  {
+    "model": "step8",
+    "group": "sampling_False",
+    "case_id": "T021-C900-B4-N045",
+    "repeat": 3
+  },
+  {
+    "model": "step8",
+    "group": "sampling_True",
+    "case_id": "T021-C900-B4-G007",
+    "repeat": 1
+  },
+  {
+    "model": "step8",
+    "group": "sampling_True",
+    "case_id": "T021-C900-B4-G007",
+    "repeat": 2
+  },
+  {
+    "model": "step8",
+    "group": "sampling_True",
+    "case_id": "T021-C900-B4-G007",
+    "repeat": 3
+  },
+  {
+    "model": "step8",
+    "group": "sampling_True",
+    "case_id": "T021-P20-G0274",
+    "repeat": 1
+  },
+  {
+    "model": "step8",
+    "group": "sampling_True",
+    "case_id": "T021-P20-G0274",
+    "repeat": 2
+  },
+  {
+    "model": "step8",
+    "group": "sampling_True",
+    "case_id": "T021-P20-G0274",
+    "repeat": 3
+  },
+  {
+    "model": "step8",
+    "group": "sampling_True",
+    "case_id": "T021-R3300-G1202",
+    "repeat": 1
+  },
+  {
+    "model": "step8",
+    "group": "sampling_True",
+    "case_id": "T021-R3300-G1202",
+    "repeat": 2
+  },
+  {
+    "model": "step8",
+    "group": "sampling_True",
+    "case_id": "T021-R3300-G1202",
+    "repeat": 3
+  },
+  {
+    "model": "step8",
+    "group": "sampling_True",
+    "case_id": "T021-C900-B5-G152",
+    "repeat": 1
+  },
+  {
+    "model": "step8",
+    "group": "sampling_True",
+    "case_id": "T021-C900-B5-G152",
+    "repeat": 2
+  },
+  {
+    "model": "step8",
+    "group": "sampling_True",
+    "case_id": "T021-C900-B5-G152",
+    "repeat": 3
+  },
+  {
+    "model": "step8",
+    "group": "sampling_True",
+    "case_id": "T021-R3300-G0670",
+    "repeat": 1
+  },
+  {
+    "model": "step8",
+    "group": "sampling_True",
+    "case_id": "T021-R3300-G0670",
+    "repeat": 2
+  },
+  {
+    "model": "step8",
+    "group": "sampling_True",
+    "case_id": "T021-R3300-G0670",
+    "repeat": 3
+  },
+  {
+    "model": "step8",
+    "group": "sampling_True",
+    "case_id": "T021-R3300-G0243",
+    "repeat": 1
+  },
+  {
+    "model": "step8",
+    "group": "sampling_True",
+    "case_id": "T021-R3300-G0243",
+    "repeat": 2
+  },
+  {
+    "model": "step8",
+    "group": "sampling_True",
+    "case_id": "T021-R3300-G0243",
+    "repeat": 3
+  },
+  {
+    "model": "step8",
+    "group": "sampling_True",
+    "case_id": "T021-C900-B3-N031",
+    "repeat": 1
+  },
+  {
+    "model": "step8",
+    "group": "sampling_True",
+    "case_id": "T021-C900-B3-N031",
+    "repeat": 2
+  },
+  {
+    "model": "step8",
+    "group": "sampling_True",
+    "case_id": "T021-C900-B3-N031",
+    "repeat": 3
+  },
+  {
+    "model": "step8",
+    "group": "sampling_True",
+    "case_id": "T021-C900-B4-N045",
+    "repeat": 1
+  },
+  {
+    "model": "step8",
+    "group": "sampling_True",
+    "case_id": "T021-C900-B4-N045",
+    "repeat": 2
+  },
+  {
+    "model": "step8",
+    "group": "sampling_True",
+    "case_id": "T021-C900-B4-N045",
+    "repeat": 3
+  }
+]

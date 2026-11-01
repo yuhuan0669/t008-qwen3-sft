@@ -1,0 +1,98 @@
+[
+  {
+    "case": "T021-C900-B4-G007",
+    "group": "greedy_False",
+    "request_equal_except_model": true,
+    "content_equal": true
+  },
+  {
+    "case": "T021-C900-B4-G007",
+    "group": "greedy_True",
+    "request_equal_except_model": true,
+    "content_equal": true
+  },
+  {
+    "case": "T021-R3300-G0670",
+    "group": "greedy_False",
+    "request_equal_except_model": true,
+    "content_equal": false
+  },
+  {
+    "case": "T021-C900-B4-N045",
+    "group": "greedy_False",
+    "request_equal_except_model": true,
+    "content_equal": true
+  },
+  {
+    "case": "T021-P20-G0274",
+    "group": "greedy_True",
+    "request_equal_except_model": true,
+    "content_equal": false
+  },
+  {
+    "case": "T021-R3300-G0243",
+    "group": "greedy_False",
+    "request_equal_except_model": true,
+    "content_equal": false
+  },
+  {
+    "case": "T021-R3300-G1202",
+    "group": "greedy_False",
+    "request_equal_except_model": true,
+    "content_equal": false
+  },
+  {
+    "case": "T021-C900-B3-N031",
+    "group": "greedy_False",
+    "request_equal_except_model": true,
+    "content_equal": true
+  },
+  {
+    "case": "T021-C900-B5-G152",
+    "group": "greedy_True",
+    "request_equal_except_model": true,
+    "content_equal": false
+  },
+  {
+    "case": "T021-C900-B3-N031",
+    "group": "greedy_True",
+    "request_equal_except_model": true,
+    "content_equal": true
+  },
+  {
+    "case": "T021-P20-G0274",
+    "group": "greedy_False",
+    "request_equal_except_model": true,
+    "content_equal": false
+  },
+  {
+    "case": "T021-R3300-G0670",
+    "group": "greedy_True",
+    "request_equal_except_model": true,
+    "content_equal": false
+  },
+  {
+    "case": "T021-C900-B4-N045",
+    "group": "greedy_True",
+    "request_equal_except_model": true,
+    "content_equal": false
+  },
+  {
+    "case": "T021-C900-B5-G152",
+    "group": "greedy_False",
+    "request_equal_except_model": true,
+    "content_equal": false
+  },
+  {
+    "case": "T021-R3300-G0243",
+    "group": "greedy_True",
+    "request_equal_except_model": true,
+    "content_equal": false
+  },
+  {
+    "case": "T021-R3300-G1202",
+    "group": "greedy_True",
+    "request_equal_except_model": true,
+    "content_equal": false
+  }
+]

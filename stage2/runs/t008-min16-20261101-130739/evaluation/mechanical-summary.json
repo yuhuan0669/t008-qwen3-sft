@@ -1,0 +1,114 @@
+{
+  "('original_base', 'greedy_False')": {
+    "count": 8,
+    "exact_echo": 0,
+    "question_contained": 1,
+    "empty": 0,
+    "length_finish": 0,
+    "repeated_30_chars": 0
+  },
+  "('original_base', 'greedy_True')": {
+    "count": 8,
+    "exact_echo": 0,
+    "question_contained": 0,
+    "empty": 0,
+    "length_finish": 0,
+    "repeated_30_chars": 0
+  },
+  "('original_base', 'sampling_False')": {
+    "count": 24,
+    "exact_echo": 0,
+    "question_contained": 1,
+    "empty": 0,
+    "length_finish": 0,
+    "repeated_30_chars": 0
+  },
+  "('original_base', 'sampling_True')": {
+    "count": 24,
+    "exact_echo": 0,
+    "question_contained": 0,
+    "empty": 0,
+    "length_finish": 0,
+    "repeated_30_chars": 0
+  },
+  "('step0', 'greedy_False')": {
+    "count": 8,
+    "exact_echo": 0,
+    "question_contained": 1,
+    "empty": 0,
+    "length_finish": 0,
+    "repeated_30_chars": 0
+  },
+  "('step0', 'greedy_True')": {
+    "count": 8,
+    "exact_echo": 0,
+    "question_contained": 0,
+    "empty": 0,
+    "length_finish": 0,
+    "repeated_30_chars": 0
+  },
+  "('step2', 'greedy_False')": {
+    "count": 8,
+    "exact_echo": 0,
+    "question_contained": 0,
+    "empty": 0,
+    "length_finish": 0,
+    "repeated_30_chars": 0
+  },
+  "('step2', 'greedy_True')": {
+    "count": 8,
+    "exact_echo": 0,
+    "question_contained": 0,
+    "empty": 0,
+    "length_finish": 0,
+    "repeated_30_chars": 0
+  },
+  "('step4', 'greedy_False')": {
+    "count": 8,
+    "exact_echo": 0,
+    "question_contained": 0,
+    "empty": 0,
+    "length_finish": 0,
+    "repeated_30_chars": 0
+  },
+  "('step4', 'greedy_True')": {
+    "count": 8,
+    "exact_echo": 0,
+    "question_contained": 0,
+    "empty": 0,
+    "length_finish": 0,
+    "repeated_30_chars": 0
+  },
+  "('step8', 'greedy_False')": {
+    "count": 8,
+    "exact_echo": 0,
+    "question_contained": 0,
+    "empty": 0,
+    "length_finish": 0,
+    "repeated_30_chars": 0
+  },
+  "('step8', 'greedy_True')": {
+    "count": 8,
+    "exact_echo": 0,
+    "question_contained": 0,
+    "empty": 0,
+    "length_finish": 0,
+    "repeated_30_chars": 0
+  },
+  "('step8', 'sampling_False')": {
+    "count": 24,
+    "exact_echo": 0,
+    "question_contained": 1,
+    "empty": 0,
+    "length_finish": 0,
+    "repeated_30_chars": 0
+  },
+  "('step8', 'sampling_True')": {
+    "count": 24,
+    "exact_echo": 0,
+    "question_contained": 0,
+    "empty": 0,
+    "length_finish": 0,
+    "repeated_30_chars": 0
+  }
+}

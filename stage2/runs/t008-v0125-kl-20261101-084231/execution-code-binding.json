@@ -1,0 +1,21 @@
+{
+  "source_git_commit": "1fc4482b03bdc4dd8d24e150e343c01648546db6",
+  "sha256": {
+    "execute.py": "b15b6d6257c773198686e9ec2fda064b305287b4ca9461a595e2a11492a2f3ee",
+    "window.py": "6c492f35c4bca31ad9e0d0e27431dc5c804745098374299639e3e241f62c9fa0",
+    "run_local_sft.py": "8626c016100b3382ae36cb64fc6000555409c384d7c5cfedbf657aba0767585e",
+    "prepare_remote.py": "7372b1720fc844f7885b312ad5a6577005709905aacc59038b47f8b5c2bcd917",
+    "stage_inputs.py": "1739e0d34016deeea7d4c7ad705f852246f532e6235fa174824348c657e7b998",
+    "training-config.json": "4f23bb7962ee7253d316d0f7a251395072fc6029c8fae9b1981aed01bf25aa17",
+    "expected-full-command.json": "5929a2377639a690ee067968b208106988bf05e54a5ba4eed4c4e29c12aea1ae",
+    "job-smoke.json": "fc5df1ac6ad65a4f2ec7980e592ea192b7ebe2c971198addf336992fa063ef78",
+    "job-full.json": "75ee66130112214db4ceb077166d35e0104f7436f98cdf05b7ff298c1e312140",
+    "eval-pod.json": "594abeb58ef9de0a9eae26ac9290e292b31988186ca1da42f0910200d356d199",
+    "evaluation/run.py": "b097b3709222dca4309634d446af1ae919665de274ec76108957c9ea0ea24696",
+    "evaluation/evaluation-config.json": "78ca9b9285ed652e910fa2654860ebd558b968f9f0b55687caa31bc30159d9f6",
+    "evaluation/decision-plan.json": "a51cf4a1b750c1592baefe631f89760de9e2f4211fda4631355a4b21a661a486",
+    "retention/retention.py": "0dfdd111e8e76c421917537a4838409ad4c0bf9262d68775ca34f2324e56e170",
+    "retention/retention-config.json": "190f83864c680998b589b0b7b066179a60d49b9e7e18507955e0357e04627fe4",
+    "retention/membership.json": "96dfc2a5f08601deea9fcc90fb3dca1fcf2030ec166dfefe40ad9f09b1d170a0"
+  }
+}

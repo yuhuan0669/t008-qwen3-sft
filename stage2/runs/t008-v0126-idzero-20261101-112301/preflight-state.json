@@ -1,0 +1,8 @@
+{
+  "checked_at_utc": "2026-11-01T11:24:18.499070+00:00",
+  "active_gpu_workloads": [],
+  "uat_replicas": 0,
+  "uat_paused": true,
+  "service_changed": false,
+  "physical_gpu_process_check": "Performed by smoke wrapper before weight loading"
+}

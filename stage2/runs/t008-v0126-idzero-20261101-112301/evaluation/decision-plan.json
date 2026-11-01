@@ -1,0 +1,16 @@
+{
+  "frozen_before_training": true,
+  "purpose": "Test whether identity-source supervision is necessary for observed task degradation, not release acceptance.",
+  "baseline": "candidate_v0.1.22; original_base andv0.1.14 contextual controls",
+  "primary": "Copy/loop occurrence and task/fact preservation, by same condition and same question; all first completed numbered slots retained.",
+  "secondary": "Identity as expected ablation effect, JSON validity versus JSON values, stop/empty/length; Thinking is separate.",
+  "interpretation": {
+    "echo_down_tasks_facts_recover": "Supports identity-source contribution or interaction in this recipe, not proof every identity row is flawed.",
+    "echo_persists": "234 identity-source rows are not necessary for all observed copying; remaining sources still need study.",
+    "echo_down_facts_or_tasks_worse": "Does not meet combination goal."
+  },
+  "limitations": "Historical unpaired no-seed responses and one training seed; failure-enriched diagnostic, not population error estimates.",
+  "new_generations": 208,
+  "automatic_extra_full": false,
+  "deployment": false
+}

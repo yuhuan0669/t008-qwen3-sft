@@ -1,0 +1,10 @@
+{
+  "user_instruction": "继续",
+  "scope": "Proceed step2 and3: identity-source zero supervision only, Smoke3, one fresh-base Full66 and208 Chinese responses; reuse historical controls. No deployment, external Judge, English, extra Full or auto-restore.",
+  "prior_pause_instruction": "暂停UAT后，不用恢复，直到我说恢复。",
+  "data_sha256": "0087a3073bac5b36e3b865666ad9210a1d52ba04c32ecdaba83b4af4eb49b2bb",
+  "uat_pause_authorized": true,
+  "automatic_restore_authorized": false,
+  "proposal_commit": "6d37b8f30d89205fcaaa3403ba7a0fc4eecfb8dc",
+  "proposal": "stage2/diagnostics/source-gradient-20261101/REPORT.md"
+}

@@ -1,0 +1,189 @@
+{
+  "status": "AUTHORIZED_FROZEN_EXECUTION",
+  "execution_authorized": true,
+  "models": [
+    "candidate_v0.1.26"
+  ],
+  "model_aliases": {
+    "candidate_v0.1.26": "t008-diagnostic-v0126"
+  },
+  "backend": "vllm",
+  "system_path": "stage1/variants/stage1-cpu-v0.1.22/inference-system.txt",
+  "system_sha256": "3ae02d520406f73e735752ef04ff395785f84fec7ee1619fd9d392d86cb92933",
+  "chat_template": {
+    "path": "stage2/diagnostics/thinking-chat-template-20261020/thinking-prefill.jinja",
+    "sha256": "ae8a1b27c3bac461eb5f6c78d5d39cbe29427ad91c9d2da8378e236b8a38448d"
+  },
+  "request_modes": {
+    "thinking": {
+      "temperature": 0.6,
+      "top_p": 0.95,
+      "top_k": 20,
+      "max_tokens": 4096,
+      "min_p": 0,
+      "chat_template_kwargs": {
+        "enable_thinking": true
+      },
+      "repetition_penalty": 1,
+      "presence_penalty": 0,
+      "frequency_penalty": 0,
+      "n": 1,
+      "stream": false
+    },
+    "nonthinking": {
+      "temperature": 0.7,
+      "top_p": 0.8,
+      "top_k": 20,
+      "max_tokens": 2048,
+      "min_p": 0,
+      "chat_template_kwargs": {
+        "enable_thinking": false
+      },
+      "repetition_penalty": 1,
+      "presence_penalty": 0,
+      "frequency_penalty": 0,
+      "n": 1,
+      "stream": false
+    }
+  },
+  "seed_policy": "Omit request seed, as in the five archived groups; select repeats by number, never by quality.",
+  "n": 1,
+  "concurrency": 8,
+  "max_model_len": 8192,
+  "cases_path": "stage2/runs/t008-v0126-idzero-20261101-112301/evaluation/cases.json",
+  "cases_sha256": "dc6d11b67facceb60ad951d8cdb75faae10c44a6a3e649a29bc28d746abdca3b",
+  "groups": [
+    {
+      "name": "nt_system",
+      "mode": "nonthinking",
+      "system": true,
+      "case_ids": [
+        "T021-R3300-G0980",
+        "T021-C900-B3-G035",
+        "T021-C900-B4-G007",
+        "T021-C900-B5-N031",
+        "T021-C900-B4-G115",
+        "T021-P20-G0274",
+        "T021-SP60-G10",
+        "T021-C900-B4-G033",
+        "T021-C900-B4-G103",
+        "T021-R3300-G0910",
+        "T021-P20-G0172",
+        "T021-R3300-G1202",
+        "T021-C900-B5-G152",
+        "T021-R3300-N0184",
+        "T021-R3300-G0670",
+        "T021-B8-N093",
+        "T021-R3300-G0243",
+        "T021-R3300-G1038",
+        "T021-R3300-G1403",
+        "T021-N300-N030",
+        "T021-B6-G129",
+        "T021-R3300-G0741",
+        "T021-B7-R237",
+        "T021-B7-R072",
+        "T021-C900-B3-N031",
+        "T021-C900-B4-N045",
+        "T021-B8-N009",
+        "T021-R3300-G0503",
+        "D16-05",
+        "D16-06",
+        "D16-07",
+        "D16-08",
+        "E17-ID05",
+        "E17-ID06",
+        "E17-ID07",
+        "E17-ID08",
+        "D16-11",
+        "D16-12",
+        "E17-J03",
+        "E17-J04"
+      ],
+      "repeats": 3
+    },
+    {
+      "name": "nt_no_system",
+      "mode": "nonthinking",
+      "system": false,
+      "case_ids": [
+        "T021-R3300-G0980",
+        "T021-C900-B3-G035",
+        "T021-C900-B4-G007",
+        "T021-C900-B5-N031",
+        "T021-C900-B4-G115",
+        "T021-P20-G0274",
+        "T021-SP60-G10",
+        "T021-C900-B4-G033",
+        "T021-C900-B4-G103",
+        "T021-R3300-G0910",
+        "T021-P20-G0172",
+        "T021-R3300-G1202",
+        "T021-C900-B5-G152",
+        "T021-R3300-N0184",
+        "T021-R3300-G0670",
+        "T021-B8-N093",
+        "D16-05",
+        "D16-06",
+        "D16-07",
+        "D16-08",
+        "E17-ID05",
+        "E17-ID06",
+        "E17-ID07",
+        "E17-ID08"
+      ],
+      "repeats": 3
+    },
+    {
+      "name": "thinking_system",
+      "mode": "thinking",
+      "system": true,
+      "case_ids": [
+        "T021-R3300-G0980",
+        "T021-C900-B3-G035",
+        "T021-C900-B4-G007",
+        "T021-C900-B5-N031",
+        "T021-C900-B4-G115",
+        "T021-P20-G0274",
+        "T021-SP60-G10",
+        "T021-C900-B4-G033",
+        "T021-C900-B4-G103",
+        "T021-R3300-G0910",
+        "D16-05",
+        "D16-06",
+        "D16-07",
+        "D16-08",
+        "D16-11",
+        "D16-12"
+      ],
+      "repeats": 1
+    }
+  ],
+  "json_schema_application": "Only JSON cases: same response_format=json_schema name/schema/strict=true on all models; score values separately.",
+  "score_axes": [
+    "exact_echo",
+    "near_echo_confirmed",
+    "repetitive_loop",
+    "task_completion",
+    "given_facts",
+    "unsupported_additions",
+    "chinese_identity",
+    "scope_and_harmful_help",
+    "json_schema",
+    "json_values",
+    "empty",
+    "truncated"
+  ],
+  "historical_judge": "Reuse labels only for identical case, condition and answer bytes; review new answers with the same criteria. No new external Judge calls.",
+  "no_system_native_identity": "Reference only; native model was not trained for the custom product name. Do not call its original identity a regression.",
+  "retries": "Only transport/technical failures. Retain first completed response for each numbered slot, including bad semantics or length finish.",
+  "selection": "Frozen before training: first16 existing echo cases, 12 task/fact/boundary/control cases (including prior loops), all8 identities and4 JSON; retain original16 Thinking probes. Failure-enriched diagnostic, not population acceptance.",
+  "baseline_reuse": "Only exact question, model weights, System bytes, rendered template and request settings match. Saved runs have different batching/times, not a same-seed causal experiment.",
+  "stop": "One final-epoch candidate. No result-driven extra Full, changed thresholds, selective seeds or automatic deployment.",
+  "planned_requests": {
+    "comparison_slots": 832,
+    "reusable_saved_slots": 624,
+    "new_generation_slots": 208
+  },
+  "reuse_manifest_path": "reuse-summary.json",
+  "authorization_ref": "../authorization.json"
+}

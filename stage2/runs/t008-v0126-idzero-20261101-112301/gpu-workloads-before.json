@@ -1,0 +1,38 @@
+[
+  {
+    "namespace": "risk31-calibration",
+    "name": "risk31-calibration-v14-20261007-cn9ps",
+    "phase": "Succeeded",
+    "node": "k8s-worker05"
+  },
+  {
+    "namespace": "risk31-independent-test",
+    "name": "risk31-independent-v14-20261007-9cftb",
+    "phase": "Succeeded",
+    "node": "k8s-worker05"
+  },
+  {
+    "namespace": "swift",
+    "name": "risk31-gpuval-20261009-8nxfk",
+    "phase": "Succeeded",
+    "node": "k8s-worker05"
+  },
+  {
+    "namespace": "swift",
+    "name": "risk31-gpuval-bcb43b7-rqrkp",
+    "phase": "Succeeded",
+    "node": "k8s-worker05"
+  },
+  {
+    "namespace": "swift",
+    "name": "risk31-reload-v14-diag-jvfqs",
+    "phase": "Succeeded",
+    "node": "k8s-worker05"
+  },
+  {
+    "namespace": "swift",
+    "name": "risk31-reload-v14-fixed-mhxcl",
+    "phase": "Succeeded",
+    "node": "k8s-worker05"
+  }
+]

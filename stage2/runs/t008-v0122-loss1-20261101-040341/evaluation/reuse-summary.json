@@ -1,0 +1,17 @@
+{
+  "source": "stage2/runs/t008-v0122-20261101-031736/evaluation/combined.jsonl",
+  "source_sha256": "f607ae66b85a6001df93bb7e64838cd088ee08ebb1196028f67c8472555c3246",
+  "selected_models": [
+    "original_base",
+    "v0.1.14",
+    "v0.1.16",
+    "candidate_v0.1.22"
+  ],
+  "slots": 2224,
+  "selected_sha256": "f607ae66b85a6001df93bb7e64838cd088ee08ebb1196028f67c8472555c3246",
+  "semantic_summary_path": "stage2/runs/t008-v0122-20261101-031736/evaluation/semantic-summary.json",
+  "semantic_summary_sha256": "eb0584e740ce98e909204a5432967424d0db1ea8fee971727ca065c69846c6b8",
+  "review_archive_index_path": "stage2/runs/t008-v0122-20261101-031736/evaluation/review-evidence.json",
+  "review_archive_index_sha256": "3794e0b595a27fe7d53651dc12ead0080f7e88092b8a2a68fde02ecfbb0fb3a9",
+  "caveat": "Same frozen protocol, no shared request seed; diagnostic comparison, not acceptance."
+}

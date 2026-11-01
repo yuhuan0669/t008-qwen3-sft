@@ -1,0 +1,30 @@
+{
+  "source_git_commit": "3973237951eb7eba3e42862725a68b96867660c2",
+  "source_commit_role": "Frozen loss3 source/data baseline; loss1 execution and plugin separately bound below.",
+  "new_slots": 556,
+  "full_steps": 66,
+  "only_training_change": "identity loss multiplier3->1",
+  "sha256": {
+    "stage_inputs.py": "217d412d363c2b81d754fc17b8a37adc4bf81802110237642ba54c2d35f03000",
+    "window.py": "75854a44f4c8817bac2af8c0638631025a2a0fef3318cbf27e8ff2da624bafcd",
+    "execute.py": "a067e5ea1e1c8e8b57ae82282eecf1bdcc984d05c64bb7246a1dfbdcb1cda569",
+    "collect_raw.py": "82ee7ca2fec170d20406cafa2a12f8ce1a3b231582d71df08ab4d5a991087dd7",
+    "collect_model.py": "d9e7e6647dfd35a2f48f49c772979232c171f300648987b5c37db1c86dea4211",
+    "check_cpu.py": "80199142445238e48dc8ded0c07ceb32543d539d7c93e0cf75ab86f15aeb2cd2",
+    "run_local_sft.py": "57583f38b3eba762837b64ce3b75b72afc044b66e42a5d3b67400971b6caf858",
+    "prepare_remote.py": "7372b1720fc844f7885b312ad5a6577005709905aacc59038b47f8b5c2bcd917",
+    "preflight.py": "a2f7869ffc1c9347874f1eb82c0d5d13623ae20951a3a4471ef03473794ef995",
+    "loss/identity_loss3.py": "50704a0053f4f2713ca6f751848df3da396af12e660db3e032e271dfab53ee73",
+    "loss/identity-keys.json": "830b9abc743af4c98f249631c5ec4d5f7614bcee86a8f6f4a1e1b4d0083b4529",
+    "cpu-report.json": "5311835be6d77590fc68f699d40c472cf34e10d05ed6ea7ca1935bbdf6dab95f",
+    "training-config.json": "4d592b821164c4fdfeb02a5e535eddd3e48c95e077cc7d297677857df108e22b",
+    "expected-full-command.json": "7d58a48552b70ec27a4e45c7f50ecef9621633928e45696b47611652de6d1ed2",
+    "evaluation/run.py": "a311a883e8e2afa58cebaa00244a3c72329f385ae61f1a41c82660dee60e9fce",
+    "evaluation/evaluation-config.json": "e2adb6dcacc2e136a685b15067ceb96a6dfbe1f9228583891d845ce6d0f0d144",
+    "evaluation/missing-slots.json": "accf57abc6ff9c40157b9a01cbce92cf15a08754c406f292b59a9f154bda4e18",
+    "eval-pod.json": "578201ac2caa09bfa0b869c3581b6280d589c73f8f736f99af9d11c69baac3e5",
+    "prep-pod.json": "601785e8835e499878a859319fbb1ea950fdffb6b1c5cb7c1f007e1b23c5760d",
+    "job-smoke.json": "361eed6ac29f15d43fecc2051ef0b063f1a6def1e8460ebece8249a96ed8bf8e",
+    "job-full.json": "0f65800d477e65665d90a117084615760b933920df98c334c37a15228a461098"
+  }
+}

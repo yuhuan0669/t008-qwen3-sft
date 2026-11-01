@@ -1,0 +1,9 @@
+{
+  "user_instruction": "继续",
+  "interpreted_against": "Previous response proposes identity loss3->1 on frozen v0.1.22, all other settings fixed.",
+  "standing_uat_instruction": "可无需授权就暂停UAT",
+  "scope": "One Smoke3, one fresh-base Full66, 556 new Chinese generations, reuse 2224 archived answers; restore UAT. No deployment or extra Full.",
+  "data_sha256": "0087a3073bac5b36e3b865666ad9210a1d52ba04c32ecdaba83b4af4eb49b2bb",
+  "dataset_version": "stage1-cpu-v0.1.22",
+  "english_optimization": false
+}

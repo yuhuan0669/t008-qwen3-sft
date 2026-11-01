@@ -1,0 +1,39 @@
+{
+  "source": {
+    "bytes": 28357334,
+    "sha256": "83cc040a8255cd97a8aa5b6fb1dace6e38ba71418e4d8bedc4d88b5ed072efbf"
+  },
+  "resumed_verified_prefix_bytes": 0,
+  "chunks": [
+    {
+      "offset": 0,
+      "bytes": 4194304
+    },
+    {
+      "offset": 4194304,
+      "bytes": 4194304
+    },
+    {
+      "offset": 8388608,
+      "bytes": 4194304
+    },
+    {
+      "offset": 12582912,
+      "bytes": 4194304
+    },
+    {
+      "offset": 16777216,
+      "bytes": 4194304
+    },
+    {
+      "offset": 20971520,
+      "bytes": 4194304
+    },
+    {
+      "offset": 25165824,
+      "bytes": 3191510
+    }
+  ],
+  "final_sha256": "83cc040a8255cd97a8aa5b6fb1dace6e38ba71418e4d8bedc4d88b5ed072efbf",
+  "verified": true
+}

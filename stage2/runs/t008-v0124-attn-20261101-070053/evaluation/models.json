@@ -1,0 +1,55 @@
+{
+  "object": "list",
+  "data": [
+    {
+      "id": "octa-carbon-v1",
+      "object": "model",
+      "created": 1793517455,
+      "owned_by": "vllm",
+      "root": "/base",
+      "parent": null,
+      "max_model_len": 8192,
+      "permission": [
+        {
+          "id": "modelperm-8f1f7a78d729d6f7",
+          "object": "model_permission",
+          "created": 1793517455,
+          "allow_create_engine": false,
+          "allow_sampling": true,
+          "allow_logprobs": true,
+          "allow_search_indices": false,
+          "allow_view": true,
+          "allow_fine_tuning": false,
+          "organization": "*",
+          "group": null,
+          "is_blocking": false
+        }
+      ]
+    },
+    {
+      "id": "t008-diagnostic-v0124",
+      "object": "model",
+      "created": 1793517455,
+      "owned_by": "vllm",
+      "root": "/models-work/t008-v0124-attn-20261101-070053/outputs/full/checkpoints/v0-20261101-000721/checkpoint-66",
+      "parent": "octa-carbon-v1",
+      "max_model_len": null,
+      "permission": [
+        {
+          "id": "modelperm-9e8d4380ac7fd95b",
+          "object": "model_permission",
+          "created": 1793517455,
+          "allow_create_engine": false,
+          "allow_sampling": true,
+          "allow_logprobs": true,
+          "allow_search_indices": false,
+          "allow_view": true,
+          "allow_fine_tuning": false,
+          "organization": "*",
+          "group": null,
+          "is_blocking": false
+        }
+      ]
+    }
+  ]
+}

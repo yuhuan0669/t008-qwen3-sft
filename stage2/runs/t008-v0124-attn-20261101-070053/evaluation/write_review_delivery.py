@@ -17,6 +17,8 @@ def sha(path):
 
 
 rows = jl(D / 'combined.jsonl')
+queue = json.loads((D / 'review-queue.json').read_text())
+summary = json.loads((D / 'semantic-summary.json').read_text())
 cases = {c['id']: c for c in json.loads((D / 'cases.json').read_text())['items']}
 labels = {}
 for path in sorted((D / 'review').glob('verdicts-*.jsonl')):
@@ -35,7 +37,7 @@ for row in rows:
 
 def render(case_ids, title):
     out = [f'# {title}', '',
-           '仅整理已有原始响应与判词，没有新调用。历史判词551份继承，本轮148份去重正文由主Agent全文复核；不属于独立盲审。',
+           f"仅整理已有原始响应与判词，没有新调用。历史判词{queue['inherited_unique_labels']}份继承，本轮{queue['new_unique_review_required']}份去重正文由主Agent全文复核；不属于独立盲审。",
            '模型为原版、v0.1.14、v0.1.22身份×3、v0.1.24。复述与循环分开；引用题面后正常作答不算复述。', '',
            '本文件包含完整诊断题和回答，仅本地保存。', '']
     for cid in case_ids:
@@ -55,7 +57,7 @@ def render(case_ids, title):
 
 (D / 'BY_QUESTION.md').write_text(render(by_case, '四模型同题回答对照'))
 examples = ['T021-C900-B3-G035', 'T021-R3300-G0670', 'T021-R3300-N0184',
-            'T021-C900-B4-G033', 'D16-07', 'E17-ID06']
+            'T021-C900-B4-G033', 'T021-B8-N009', 'D16-05', 'D16-07', 'E17-ID06']
 (D / 'EXAMPLES.md').write_text(render(examples, '典型问题完整对照'))
 
 files = [D / 'cases.json', D / 'combined.jsonl', D / 'results.jsonl',
@@ -68,10 +70,10 @@ with tarfile.open(archive, 'w:gz') as tar:
         tar.add(path, arcname=str(path.relative_to(D)))
 
 manifest = {
-    'slots': 832, 'unique_reviewed': 699, 'inherited_unique': 551,
-    'new_unique_root_read': 148, 'unreviewed_slots': 0,
+    'slots': len(rows), 'unique_reviewed': len(labels), 'inherited_unique': queue['inherited_unique_labels'],
+    'new_unique_root_read': queue['new_unique_review_required'], 'unreviewed_slots': summary['unreviewed_slots'],
     'review_type': 'Historical corrected labels plus nonblind root review; no external Judge or new subagents.',
-    'corrections': 1, 'archive': archive.name, 'archive_sha256': sha(archive),
+    'corrections': len(jl(D / 'review/root-corrections.jsonl')), 'archive': archive.name, 'archive_sha256': sha(archive),
     'files_sha256': {str(p.relative_to(D)): sha(p) for p in files},
     'raw_request_response_archive': 'raw-evidence.tar.gz',
 }

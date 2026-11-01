@@ -1,0 +1,40 @@
+{
+  "verified": true,
+  "utc": "2026-11-01T07:35:27.296770+00:00",
+  "data_rows": 1047,
+  "data_changed": false,
+  "identity_exposures": 234,
+  "identity_loss_multiplier": 3,
+  "full_steps": 66,
+  "full_runs": 1,
+  "smoke_steps": 3,
+  "trainable_parameters": 7667712,
+  "target_modules": [
+    "k_proj",
+    "o_proj",
+    "q_proj",
+    "v_proj"
+  ],
+  "new_generations": 208,
+  "reused_responses": 624,
+  "reviewed_unique": 715,
+  "unreviewed_slots": 0,
+  "raw_request_response_pairs_verified": 208,
+  "server_input_matches": 80,
+  "technical_retries": 0,
+  "uat_paused": true,
+  "uat_restored": false,
+  "deployment_spec_equal_except_replicas": true,
+  "automatic_restore_authorized": false,
+  "model_deployed": false,
+  "external_judge_called": false,
+  "quality_accepted": false,
+  "files_sha256": {
+    "outputs/full/run_manifest.json": "7d8cfea7641b9c05bce08146251d0367545b439fa9bf07e214f069896973767a",
+    "evaluation/semantic-summary.json": "b9f2c34f4ab1ede500a5e5d2dfaa8f70107fbdd9c9c45a82f58e550eadf6419c",
+    "evaluation/review-evidence.json": "b9b2b086838503563ab7ce022f26b1a952c41adb5844f0550e3d54fb588c94bb",
+    "RESULT.md": "a6a0def9239409785d7b8cf6d7505145d46fe7cfce8bfd804fd554cd56ade810",
+    "raw-evidence-readback.json": "9b1725b8a1c561c6bb4ff455fd43023c521f04146fddf44ba50b05629d48a26c",
+    "final-runtime-readback.json": "1d8eed6c4aef68a322c8bf2b8d3c7bb5bd07e098860c74fca6b9079bc3d7f857"
+  }
+}

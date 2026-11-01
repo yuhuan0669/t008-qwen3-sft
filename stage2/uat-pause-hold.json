@@ -1,0 +1,11 @@
+{
+  "active": true,
+  "run_id": "t008-v0124-attn-20261101-070053",
+  "started_at_utc": "2026-11-01T07:06:04.507489+00:00",
+  "instruction": "继续。暂停UAT后，不用恢复，直到我说恢复。",
+  "automatic_restore_authorized": false,
+  "deployment": "vllm/vllm",
+  "expected_replicas": 0,
+  "original_deployment_snapshot": "stage2/runs/t008-v0124-attn-20261101-070053/vllm-before.json",
+  "restore_condition": "Only after a new explicit user instruction to restore UAT."
+}

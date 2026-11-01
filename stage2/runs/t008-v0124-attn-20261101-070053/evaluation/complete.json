@@ -1,0 +1,9 @@
+{
+  "status": "COMPLETE",
+  "count": 208,
+  "attempts": 208,
+  "technical_retries": 0,
+  "results_sha256": "48e78ca5caf82c64347bb6b50742283a0863abd22026b79d820da4ea7b8c7ff9",
+  "seconds": 270.1315869987011,
+  "training": false
+}

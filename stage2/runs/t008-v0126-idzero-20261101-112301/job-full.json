@@ -131,7 +131,7 @@
               },
               {
                 "name": "SOURCE_GIT_COMMIT",
-                "value": "6d37b8f30d89205fcaaa3403ba7a0fc4eecfb8dc"
+                "value": "2fac30ea5d8f0520f76044eb9d79f843b06eb994"
               },
               {
                 "name": "OMP_NUM_THREADS",

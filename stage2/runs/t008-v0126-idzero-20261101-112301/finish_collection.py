@@ -6,6 +6,9 @@ D=Path(__file__).resolve().parent
 K=['kubectl','--context','lmas00-direct','--request-timeout=30s']
 state=json.loads((D/'window-state.json').read_text())
 assert state['paused'] and not state['restored'] and state['task_gpu_cleaned']
+for stage in ['smoke','full']:
+    remote='/work/'+D.name+'/outputs/'+stage+'/identity-zero-audit.jsonl'
+    (D/'outputs'/stage/'identity-zero-audit.jsonl').write_bytes(subprocess.check_output(K+['-n','swift','exec',D.name+'-prep','--','cat',remote]))
 if not (D/'model-local-copy.json').exists():
     subprocess.run([sys.executable,str(D/'collect_model.py')],check=True)
 subprocess.run([sys.executable,str(D/'collect_raw.py')],check=True)

@@ -1,0 +1,31 @@
+{
+  "recorded_at_utc": "2026-11-01T11:27:41.767124+00:00",
+  "new_answers_observed": 0,
+  "gradient_evidence": "stage2/diagnostics/source-gradient-20261101/REPORT.md",
+  "primary_hypothesis": "Identity-source supervision contributes to copy-entry errors or interactions in this recipe.",
+  "probe_specific_expectations": [
+    {
+      "case_ids": [
+        "T021-C900-B4-G007",
+        "T021-P20-G0274"
+      ],
+      "prior_local_effect": "Identity gradient increases selected copy-continuation relative logits both with and withoutSystem at checkpoints50/66.",
+      "check": "Do copy rates decrease after disabling identity CE? Local derivatives do not guarantee trajectory-level effect."
+    },
+    {
+      "case_ids": [
+        "T021-R3300-G0243",
+        "T021-R3300-G1038"
+      ],
+      "prior_local_effect": "Identity gradient decreases first-loop relative logits.",
+      "check": "Do not assume every loop improves when identity CE is removed."
+    }
+  ],
+  "interpretable_non_goals": [
+    "No expectation of custom identity success withoutSystem in this ablation.",
+    "A drop in copying without restored facts/task completion is not success.",
+    "One seed and historical generation controls cannot prove an exclusive universal cause."
+  ],
+  "protocol_locked": "evaluation/evaluation-config.json",
+  "outputs_before_change": false
+}

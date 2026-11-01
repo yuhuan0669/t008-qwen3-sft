@@ -1,0 +1,91 @@
+{
+  "source": {
+    "bytes": 80646762,
+    "sha256": "489a664fc32174bbc39da1e70475e1387f603e05513e1ec404942763a04f24ad"
+  },
+  "resumed_verified_prefix_bytes": 0,
+  "chunks": [
+    {
+      "offset": 0,
+      "bytes": 4194304
+    },
+    {
+      "offset": 4194304,
+      "bytes": 4194304
+    },
+    {
+      "offset": 8388608,
+      "bytes": 4194304
+    },
+    {
+      "offset": 12582912,
+      "bytes": 4194304
+    },
+    {
+      "offset": 16777216,
+      "bytes": 4194304
+    },
+    {
+      "offset": 20971520,
+      "bytes": 4194304
+    },
+    {
+      "offset": 25165824,
+      "bytes": 4194304
+    },
+    {
+      "offset": 29360128,
+      "bytes": 4194304
+    },
+    {
+      "offset": 33554432,
+      "bytes": 4194304
+    },
+    {
+      "offset": 37748736,
+      "bytes": 4194304
+    },
+    {
+      "offset": 41943040,
+      "bytes": 4194304
+    },
+    {
+      "offset": 46137344,
+      "bytes": 4194304
+    },
+    {
+      "offset": 50331648,
+      "bytes": 4194304
+    },
+    {
+      "offset": 54525952,
+      "bytes": 4194304
+    },
+    {
+      "offset": 58720256,
+      "bytes": 4194304
+    },
+    {
+      "offset": 62914560,
+      "bytes": 4194304
+    },
+    {
+      "offset": 67108864,
+      "bytes": 4194304
+    },
+    {
+      "offset": 71303168,
+      "bytes": 4194304
+    },
+    {
+      "offset": 75497472,
+      "bytes": 4194304
+    },
+    {
+      "offset": 79691776,
+      "bytes": 954986
+    }
+  ],
+  "final_sha256": "489a664fc32174bbc39da1e70475e1387f603e05513e1ec404942763a04f24ad",
+  "verified": true
+}

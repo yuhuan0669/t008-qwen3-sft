@@ -18,3 +18,5 @@ evaluation/EXAMPLES.md
 execution.log
 execution-pid.txt
 evaluation/semantic-review/
+evaluation/raw-evidence.tar.gz
+evaluation/semantic-evidence.tar.gz

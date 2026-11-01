@@ -1,5 +1,7 @@
 # T-008 · Qwen3-8B 基础 SFT 统一版本库
 
+**2026-10-31 v0.1.22训练与对照完成：** 冻结1047条、身份损失3倍及其他参数不变，一次66步Full和556份新回答完成。复用历史结果组成2224份四模型对照；非思考带System复述42/96，全部新回答循环39、截断26，不建议发布。UAT原配置及别名已恢复并健康。下一轮未启动，本轮结果仅本地Git管理。[结果与下一步](stage2/runs/t008-v0122-20261101-031736/RESULT.md) · [执行核验](stage2/runs/t008-v0122-20261101-031736/execution-verification.json)。
+
 **2026-10-31 v0.1.22已推送供外评：** 候选提交`ac3ae1ac46bcfc56a2f35f18d9e3dac5c404bb41`，分支`execution/gpu-v0.2`。局部修改14种通用及4条身份记录，涉及32次曝光；总量1047条、曝光、身份3倍损失、思考格式、System和训练超参数不变。原生CPU检查通过，训练策略调整仅登记，未训练、未暂停UAT。用户已确认保持仓库公开并推送本版；冻结目录中的“仅本地”保留成稿时状态，当前发布状态以本条为准。[评审上下文](stage1/variants/stage1-cpu-v0.1.22/REVIEW_CONTEXT.md) · [样本对照](stage1/variants/stage1-cpu-v0.1.22/SAMPLES.md) · [训练策略备忘](stage1/variants/stage1-cpu-v0.1.22/RECOMMENDATIONS.md)。
 
 **2026-10-31 v0.1.20数据清洗候选已准备：** 回到v0.1.14格式，通用记录修正216种、隔离128种，1,325→1,069条；身份及业务295行不变，无训练System。原生CPU编码通过，训练参数不变，预计83→67步。仅本地归档，待审阅；未训练、未暂停UAT。[审阅入口](stage1/variants/stage1-cpu-v0.1.20/README.md) · [全部处置](stage1/variants/stage1-cpu-v0.1.20/CHANGES.md) · [样本前后](stage1/variants/stage1-cpu-v0.1.20/SAMPLES.md)。

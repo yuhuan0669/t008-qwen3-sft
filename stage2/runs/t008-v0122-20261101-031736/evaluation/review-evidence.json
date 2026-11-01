@@ -1,0 +1,33 @@
+{
+  "archive": "evaluation/semantic-evidence.tar.gz",
+  "archive_sha256": "db41df4fb2014a9d087a547ce2db018bab324f73e4daa140377a70104fa9f8a6",
+  "bytes": 2782781,
+  "local_only": true,
+  "comparison_slots": 2224,
+  "reviewed_unique": 2040,
+  "files": {
+    "cases.json": "dc6d11b67facceb60ad951d8cdb75faae10c44a6a3e649a29bc28d746abdca3b",
+    "combined.jsonl": "f607ae66b85a6001df93bb7e64838cd088ee08ebb1196028f67c8472555c3246",
+    "results.jsonl": "88e56dd3da1be89ee660610d2f4c704d1cb357cec94aef079bd9a78e09cb1932",
+    "review-guidance.md": "ebae5f916d7e4d8a63e8f6feca129607e5e1eab95ad2698c8f4dd096b7c28fc0",
+    "BY_QUESTION.md": "bcd20f4e4491cd021ec6b9742cfcd8d6e15724bd0fccf0ba4dd88932f45d3bb9",
+    "EXAMPLES.md": "8727de4ae062a2970b78855077d77318dd0e99c5544f89c74fb800e360fc93b5",
+    "review/bundle-a.jsonl": "26b769a3ada3fe98e100252d874936c48558c64f6e6b5b8c942a09e787a73092",
+    "review/bundle-b.jsonl": "54cd1ce9694e801db15b4abe3206f3e090e6a7dbd1f141613dd80dd8ebfc382b",
+    "review/bundle-c.jsonl": "db46ccf5a293a2b7bbefeb6713d907ffc710d9e3cc6dac033d529aef33195c76",
+    "review/bundle-root.jsonl": "3d8c07020294b58e20d693409a27e15b4fb58470b36ac5b0ddab566b3554527a",
+    "review/notes-a.md": "5511114b54142d163a33a04e590c91395991c3d79ef06c203e91a4f301c96715",
+    "review/notes-b.md": "fb47e009fb8b16b010345ba5dfb81a4e7aa03f401cd0e8641a5206e53a1cd07b",
+    "review/notes-c.md": "6098427fb202466039de6a985d5c52b7b2ece9eb3328afeb57165ae9ae55453f",
+    "review/notes-root.md": "26ba4648a555149848009481fbfd0a908fdaad84b0c28d8eaab5f533934007f5",
+    "review/problem-slots.jsonl": "d6df4877e3e842c84b7ada5960b93a3f572841a031caea9aa7ee1db7566f12f5",
+    "review/root-audit.json": "c0dd0b658dffcbaf63a6847851db5eda2aac404694d4b4f607d9a60db4b3dc0c",
+    "review/root-corrections.jsonl": "40e048cbc0ff19be149597163a58b34736b4ad1f767a863865baf8ba3c14f7b7",
+    "review/root-near-screen.jsonl": "620bd4cb2c1b4b2ca8f6b7110c48c37083f0674f4ebdf22f89e417ad11c38bfd",
+    "review/verdicts-a.jsonl": "4c23af092997916701bbd18e8c19c112aaf1931c46254488c32549ffdcabbb5f",
+    "review/verdicts-b.jsonl": "82097736e0a2bcdf40814da4df5e000f5bb37dac94a7e619a8c774cc021172c2",
+    "review/verdicts-c.jsonl": "c249632bc976c8fe7b6b406508af649fda494ebed605bd93dac01e19216cd4ce",
+    "review/verdicts-inherited.jsonl": "54e13ab9c0fe198971bb6bb8dfb3194a8ee137b0b18ceb6b41dde4e1468b43d4",
+    "review/verdicts-root.jsonl": "0fc34e67f210cb13a7461d655c0c8aa5ed7419a9202b26b7c9ae314f03086890"
+  }
+}

@@ -88,7 +88,8 @@
   "private_materials": "REFERENCES_ONLY_ORIGINAL_CONTROLLED_STORAGE",
   "remote_backup": {
     "repository": "https://github.com/yuhuan0669/t008-qwen3-sft",
-    "visibility": "private",
+    "visibility": "public",
+    "visibility_confirmation": "2026-10-31: user explicitly confirmed keeping the repository public and pushing v0.1.22. No training authorized.",
     "release_tag": "archive-v1.0.0",
     "delivery_evidence": "Release attachment delivery-receipt.json records actual push/upload/readback; this pre-delivery commit does not claim upload success."
   },

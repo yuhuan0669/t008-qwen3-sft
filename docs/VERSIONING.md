@@ -32,7 +32,7 @@ git status --short
 
 本次交付一个Git bundle和一个对象库tar包，外部回执记录两者大小、SHA和Git提交；两件必须一起保存。先按交付回执核对文件SHA：
 
-已指定私有远端为 `https://github.com/yuhuan0669/t008-qwen3-sft`。可用已认证GitHub客户端取得归档发布附件：
+远端为 `https://github.com/yuhuan0669/t008-qwen3-sft`，当前公开。此前按私有仓库规划；2026-10-31核对实际可见性后，用户明确确认保持公开并推送v0.1.22。可用已认证GitHub客户端取得归档发布附件：
 
 ```sh
 gh release download archive-v1.0.0 --repo yuhuan0669/t008-qwen3-sft --dir /path/to/backup
@@ -80,7 +80,7 @@ git log --all --oneline --decorate
 - 7项private材料只有路径/hash索引，原始聊天和SSE不进入Git或备份包；核查这些材料仍需原受控存储。
 - 49项生成缓存只登记，不备份。
 - 16GB基座、远端完整checkpoint/优化器及运行镜像保留精确定位和历史hash清单；本次没有复制其全部远端字节，不构成完整环境灾备。
-- 本地离线包与本机仓库属于同一故障域；私有GitHub及其Release作为额外远端备份，实际上传、回读结果记录在Release交付回执。未在本机取得的远端基座/checkpoint不在这些附件中。
+- 本地离线包与本机仓库属于同一故障域；GitHub及其Release作为额外远端备份，实际上传、回读结果记录在Release交付回执。未在本机取得的远端基座/checkpoint不在这些附件中。
 - 归档可能包含内部基础设施地址与受控训练资料，不默认允许公开发布。
 
 ## review-v0.2 文档增量

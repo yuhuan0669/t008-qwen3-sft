@@ -1,0 +1,10 @@
+{
+  "train_sha256": "0087a3073bac5b36e3b865666ad9210a1d52ba04c32ecdaba83b4af4eb49b2bb",
+  "files": {
+    "SUMMARY.json": "524d7ea053886abf2967e0af484f34cd9ed2723e56cf82940340e28ed7b89b01",
+    "DETAILS.md": "1c3dcdccf157af7f689649772c2a63ecb58ed8aff374735d398a80700e86f805",
+    "REPORT.md": "fb72498b524766c1e34f0e60667ef35267388cea5d0eb8e75e3e1423c0e97ab9",
+    ".gitignore": "5f049770dc31592eda66eb701ca0a5e4f7e0d24ba2aa427160cc095d94a5afc4",
+    "ROWS.json": "5af95a7ca1e64c2c7e6829201cffa884d238bce1dd3ed426b50f46734b83f8df"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "format": 18,
+  "format_assistant_turns": 18,
+  "format_nonempty_think": 2,
+  "format_supervised_tokens": 618,
+  "business": 43,
+  "business_assistant_turns": 48,
+  "business_nonempty_think": 10,
+  "business_supervised_tokens": 2073
+}

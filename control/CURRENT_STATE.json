@@ -501,7 +501,7 @@
   "active_execution": {
     "run_id": "t008-v0127-generalonly-20261101-121120",
     "model_version": "v0.1.27",
-    "status": "CPU_PREFLIGHT_RUNNING",
+    "status": "SMOKE_THEN_ONE_FULL_AND208_GENERATIONS",
     "only_change": "relative to v0.1.26 additionally zero61 nonidentity nongeneral rows",
     "data_rows": 1047,
     "supervised_rows": 752,
@@ -511,7 +511,10 @@
     "uat_paused": true,
     "automatic_restore_authorized": false,
     "deployment_authorized": false,
-    "user_authorized": true
+    "user_authorized": true,
+    "cpu_report": "stage2/runs/t008-v0127-generalonly-20261101-121120/ablation-cpu-report.json",
+    "training_config": "stage2/runs/t008-v0127-generalonly-20261101-121120/training-config.json",
+    "report": "stage2/runs/t008-v0127-generalonly-20261101-121120/README.md"
   },
   "active_diagnostic": {
     "id": "source-gradient-20261101",

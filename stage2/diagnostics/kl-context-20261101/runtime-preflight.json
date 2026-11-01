@@ -1,0 +1,7 @@
+{
+  "utc": "2026-11-01T09:32:38.856260+00:00",
+  "uat_replicas": 0,
+  "uat_spec_equal_except_replicas": true,
+  "active_gpu_owners": [],
+  "automatic_restore_authorized": false
+}

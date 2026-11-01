@@ -55,12 +55,13 @@ general.sort()
 chosen = [general[i * (len(general) - 1) // 3][1] for i in range(4)]
 for source in ['t008/general-nonthinking-v1', 't008/strict-json-v1']:
     candidates = sorted((key, x) for key, x in unique.items()
-                        if x['row']['dataset'] == source and len(x['row']['messages']) == 2)
+                        if x['row']['dataset'] == source and len(x['row']['messages']) == 2
+                        and re.search(r'<think>\s*</think>', x['row']['messages'][-1]['content']))
     assert candidates, source
     chosen.append(candidates[0][1])
 assert len({x['line'] for x in chosen}) == 6
 save(I / 'training-controls.json', {'dataset_sha256': sha(V / 'train.jsonl'),
-    'selection': 'Four Chinese nonempty-think unique rows at hash-sorted quartiles; first hash-sorted general-nonthinking-v1 and strict-json-v1 rows. Selected before new scores.',
+    'selection': 'Four Chinese nonempty-think unique rows at hash-sorted quartiles; first hash-sorted empty-think general-nonthinking-v1 and strict-json-v1 rows. Selected before new scores.',
     'eligible_chinese_general_unique': len(general), 'rows': chosen})
 for name in ['identity_loss3.py', 'identity-keys.json']:
     shutil.copyfile(V / name, I / name)

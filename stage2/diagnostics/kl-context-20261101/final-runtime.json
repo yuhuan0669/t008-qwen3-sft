@@ -1,0 +1,11 @@
+{
+  "checked_at_utc": "2026-11-01T09:36:38.668647+00:00",
+  "replicas": 0,
+  "ready_replicas": 0,
+  "uat_spec_unchanged": true,
+  "task_pod_deleted": true,
+  "uat_restored": false,
+  "automatic_restore_authorized": false,
+  "archive_sha256": "51ea9fe303fa3cec0beeebbb96deaf55814ede0749fd40f023bd588c8b88db0f",
+  "archive_bytes": 237610
+}

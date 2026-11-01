@@ -1,0 +1,10 @@
+{
+  "utc": "2026-11-01T09:34:30.381877+00:00",
+  "pod": "t008-kl-context-20261101",
+  "script_sha256": "d2b45a8cde791d811d2f6fbc4e90da42f15a80441a9d6a3f856d917f55af6fa4",
+  "input_manifest_sha256": "d8af8022d21ce2d4683ebd43380cf82bf57bcb262761d7755237c902cb05a15d",
+  "attempt": 2,
+  "new_generated_answers": 0,
+  "training": false,
+  "uat_restore": false
+}

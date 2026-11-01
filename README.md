@@ -1,5 +1,7 @@
 # T-008 · Qwen3-8B 基础 SFT 统一版本库
 
+**KL上下文诊断已完成，未追加训练或生成。** 原版／v0.1.22／v0.1.25的174项固定文本评分表明：KL对实际非思考＋System入口有效，首token分布偏移均值减小29.1%，但复制路径及身份错误开头仍有残留，不能当作质量达标。UAT继续暂停。[诊断结果](stage2/diagnostics/kl-context-20261101/REPORT.md) · [核验](stage2/diagnostics/kl-context-20261101/verification.json)。
+
 **v0.1.25 基座行为保留对照已完成，不建议发布。** 一次Full66及208份新回答完成；相对v0.1.22，带System复述23/48→9/48、循环12/208→3/208，但业务事实失败20/84→35/84，无System身份9/24，组合目标未满足。冻结数据与曝光不变，未追加训练或部署；UAT继续保持暂停。[结果与下一步](stage2/runs/t008-v0125-kl-20261101-084231/RESULT.md) · [核验](stage2/runs/t008-v0125-kl-20261101-084231/execution-verification.json)。
 
 **v0.1.22模块消融诊断已完成，UAT继续暂停。** 同一LoRA仅做推理开关，128份回答及256项固定答案评分完成。MLP同时贡献身份收益与复述倾向；仅注意力身份0/16，仅MLP仍复述4/16，没有可直接采用的模块开关方案。未训练、未部署；用户明确要求恢复前保持暂停。[报告](stage2/diagnostics/module-ablation-20261101/REPORT.md) · [核验](stage2/diagnostics/module-ablation-20261101/verification.json)。下列为此前各轮记录，历史恢复状态不代表当前UAT状态。

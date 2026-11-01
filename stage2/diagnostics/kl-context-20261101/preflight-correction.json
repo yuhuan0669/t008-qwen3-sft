@@ -1,0 +1,11 @@
+{
+  "stage": "native-encoding-before-base-model-load",
+  "initial_exit_code": 1,
+  "initial_actual_paths": 59,
+  "expected_paths": 58,
+  "reason": "Hash-selected strict-json source row910 contained nonempty thinking, while protocol intended an empty-think JSON control.",
+  "correction": "Filter both nonthinking control sources for actual empty-think content before hash-order selection; development references unchanged.",
+  "training_data_changed": false,
+  "initial_model_scores": 0,
+  "initial_generated_answers": 0
+}

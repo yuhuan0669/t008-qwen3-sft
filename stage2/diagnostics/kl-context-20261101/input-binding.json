@@ -1,5 +1,5 @@
 {
-  "input_manifest_sha256": "76481f14a22669182e5ac7186f2c522d1f408ae5e12152580df191d6a2b98e7b",
+  "input_manifest_sha256": "d8af8022d21ce2d4683ebd43380cf82bf57bcb262761d7755237c902cb05a15d",
   "data_version": "stage1-cpu-v0.1.22",
   "dataset_sha256": "0087a3073bac5b36e3b865666ad9210a1d52ba04c32ecdaba83b4af4eb49b2bb",
   "training_control_lines": [
@@ -8,7 +8,7 @@
     293,
     812,
     846,
-    910
+    919
   ],
   "development_case_ids": [
     "T021-C900-B4-G007",

@@ -1,0 +1,13 @@
+{
+  "frozen_before_training": true,
+  "primary_comparison": "v0.1.26 general+61other vs v0.1.27 general only",
+  "hypothesis": "Are general-source supervision and the unchanged recipe sufficient for residual echo/task degradation without identity or61 other-source CE?",
+  "interpretation": {
+    "persists": "General supervision plus recipe can exhibit residual errors; does not prove all general data bad or unique cause.",
+    "recovers": "Prioritize61 other-source rows or their interaction with general; does not identify particular bad samples."
+  },
+  "new_generations": 208,
+  "automatic_extra_full": false,
+  "deployment": false,
+  "scope": "Failure-enriched development only; inspect echo,loop,task,facts separately."
+}

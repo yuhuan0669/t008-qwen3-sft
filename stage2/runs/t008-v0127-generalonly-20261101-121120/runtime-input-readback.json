@@ -1,0 +1,23 @@
+{
+  "run": "t008-v0127-generalonly-20261101-121120",
+  "file_hashes": {
+    "stage1/data/train.jsonl": "0087a3073bac5b36e3b865666ad9210a1d52ba04c32ecdaba83b4af4eb49b2bb",
+    "stage1/data/manifest.json": "2a266cb381c3c3b7550cca06031715ee032384b4e907205205faecb5b6b48997",
+    "stage1/training/run-spec.json": "f658b2bbdf7be6b9ae3123d9787569b0efeef92b573dac319f3432aa50a36a73",
+    "stage1/training/local_data_guard.py": "45ba3763667ece681ad9094786035e40043ed334a72c0e76b4fc413755901fa5",
+    "stage1/evidence/encoding-report.json": "e6b217868c6684f4a2a3d6fc08a1fe0a244ea03e3ef9e71cc0c945e21e808f19",
+    "stage2/scripts/run_local_sft.py": "28976ad8ae3086a4948a00591e19a75a1089f6bd4b07c2da29653c51ed4c92dd",
+    "stage1/variants/stage1-cpu-v0.1.22/identity_loss3.py": "082510fc6fadc31eb179384299cc1425e6dfd98ae01ad95d463759c1a0627db8",
+    "stage1/variants/stage1-cpu-v0.1.22/identity-keys.json": "830b9abc743af4c98f249631c5ec4d5f7614bcee86a8f6f4a1e1b4d0083b4529",
+    "ablation/identity_zero.py": "91f18240567e61311e76550bdca6e064f97254991098f84852e5efa230ac4c06",
+    "ablation/config.json": "24062885b658928217ab7e1a90930c73125f93555da2bf26a0fa401b7f854807",
+    "ablation/membership.json": "abcbac7b64ba127f477c96c66e5453486a8992bf5253099163f1e3c17091504f",
+    "evaluation/base-files.json": "a1b77d34bda8a913bc050ba2b8b343b6104f77fa701c8b5275a0b438baedfd56",
+    "evaluation/system.txt": "3ae02d520406f73e735752ef04ff395785f84fec7ee1619fd9d392d86cb92933",
+    "evaluation/thinking-prefill.jinja": "ae8a1b27c3bac461eb5f6c78d5d39cbe29427ad91c9d2da8378e236b8a38448d",
+    "evaluation/cases.json": "dc6d11b67facceb60ad951d8cdb75faae10c44a6a3e649a29bc28d746abdca3b",
+    "evaluation/evaluation-config.json": "24fc0dc2a15faa77f50480feb5651f30835e554ad0c05f92381d5b9bf8e5e88d"
+  },
+  "data_sha256": "0087a3073bac5b36e3b865666ad9210a1d52ba04c32ecdaba83b4af4eb49b2bb",
+  "rows": 1047
+}

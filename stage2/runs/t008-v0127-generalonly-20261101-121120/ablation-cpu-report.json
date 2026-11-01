@@ -1,0 +1,33 @@
+{
+  "verified": true,
+  "rows": 1047,
+  "identity_rows": 234,
+  "zeroed_rows": 295,
+  "supervised_rows": 752,
+  "totals": {
+    "rows": 1047,
+    "identity": 234,
+    "zeroed": 295,
+    "valid_tokens": 928890,
+    "weighted_before": 946600,
+    "weighted_after": 917336
+  },
+  "full_native_encoding_checked": true,
+  "all_labels_input_ids_masks_unchanged": true,
+  "all_native_denominators_preserved": true,
+  "identity_loss_gradient_zero_including_eos": true,
+  "identity_forward_rng_progression_unchanged": true,
+  "native_logits_to_keep_checked": true,
+  "same_seed_loader_order_reproduced": true,
+  "loader_order_sha256": "e012b7056192fd027d0e1b8ce031776cbe8f02754def31b7fc09ee47d146dd9a",
+  "old_full_minibatch_trace_available": false,
+  "runtime_microbatch_audit_required": true,
+  "native_trainer_sha256": "28fe9cb927390ad423add8b98411a90fb2d1c801ead124b354802bdd0779ecf6",
+  "plugin_sha256": "91f18240567e61311e76550bdca6e064f97254991098f84852e5efa230ac4c06",
+  "model_weights_loaded": false,
+  "tiny_random_model_only": true,
+  "optimizer_steps": 0,
+  "gpu_used": false,
+  "general_native_loss_gradient_rng_bitwise_equal": true,
+  "other_weight1_loss_gradient_zero": true
+}

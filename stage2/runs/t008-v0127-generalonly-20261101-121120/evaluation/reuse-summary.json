@@ -1,0 +1,12 @@
+{
+  "source": "stage2/runs/t008-v0126-idzero-20261101-112301/evaluation/combined.jsonl",
+  "source_sha256": "b04b4acce7244c42a4bb209c07dae977a7cc5e8758c586f31f8633b2c712dfed",
+  "models": [
+    "original_base",
+    "candidate_v0.1.22",
+    "candidate_v0.1.26"
+  ],
+  "slots": 624,
+  "selected_sha256": "82abef0e320572cca65956a3110cb1bc0a12a9e826a26e7c47ab8a176ec4a86a",
+  "caveat": "Historical unpaired sampled responses; no new baseline generation."
+}

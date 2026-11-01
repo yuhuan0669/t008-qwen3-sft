@@ -1,0 +1,16 @@
+{
+  "runtime_versions": {
+    "ms-swift": "4.4.2",
+    "transformers": "5.14.1",
+    "peft": "0.20.0",
+    "torch": "2.11.0+cu130"
+  },
+  "native_trainer_sha256": "28fe9cb927390ad423add8b98411a90fb2d1c801ead124b354802bdd0779ecf6",
+  "dataset_sha256": "0087a3073bac5b36e3b865666ad9210a1d52ba04c32ecdaba83b4af4eb49b2bb",
+  "membership_sha256": "abcbac7b64ba127f477c96c66e5453486a8992bf5253099163f1e3c17091504f",
+  "rows": 1047,
+  "identity_rows": 234,
+  "scope": "Relative to v0.1.26 keep234 identity-source CE zero and additionally zero61 other rows; only752 general rows contribute CE, native labels/denominator/schedule unchanged.",
+  "zeroed_rows": 295,
+  "supervised_rows": 752
+}

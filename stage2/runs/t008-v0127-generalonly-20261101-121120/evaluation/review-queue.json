@@ -1,0 +1,9 @@
+{
+  "slots": 832,
+  "new_slots": 208,
+  "inherited_unique_labels": 545,
+  "new_unique_review_required": 181,
+  "new_slots_with_inherited_label": 26,
+  "new_answer_characters": 100232,
+  "historical_summary_sha256": "0e15c0763239a698c1ccd9b61b9624331ca959fd73d2d1bf69bb8cdc205e50d6"
+}

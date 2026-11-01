@@ -38,7 +38,7 @@ for row in rows:
 def render(case_ids, title):
     out = [f'# {title}', '',
            f"仅整理已有原始响应与判词，没有新调用。历史判词{queue['inherited_unique_labels']}份继承，本轮{queue['new_unique_review_required']}份去重正文由主Agent全文复核；不属于独立盲审。",
-           '模型为原版、v0.1.14、v0.1.22身份×3、v0.1.27。复述与循环分开；引用题面后正常作答不算复述。', '',
+           '模型为原版、v0.1.22完整监督、v0.1.26关闭身份监督、v0.1.27仅通用监督。复述与循环分开；引用题面后正常作答不算复述。', '',
            '本文件包含完整诊断题和回答，仅本地保存。', '']
     for cid in case_ids:
         out += [f'## {cid}', '', cases[cid]['question'], '',
@@ -56,7 +56,7 @@ def render(case_ids, title):
 
 
 (D / 'BY_QUESTION.md').write_text(render(by_case, '四模型同题回答对照'))
-examples = ['T021-C900-B3-G035', 'T021-R3300-G0670', 'T021-R3300-N0184',
+examples = ['T021-C900-B4-G007', 'T021-P20-G0274', 'T021-C900-B5-G152', 'T021-C900-B3-G035', 'T021-R3300-G0670', 'T021-R3300-N0184',
             'T021-C900-B4-G033', 'T021-B8-N009', 'D16-05', 'D16-07', 'E17-ID06']
 (D / 'EXAMPLES.md').write_text(render(examples, '典型问题完整对照'))
 

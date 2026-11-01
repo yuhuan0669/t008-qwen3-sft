@@ -1,0 +1,61 @@
+{
+  "versions": {
+    "vllm": "0.25.1",
+    "transformers": "5.14.1",
+    "torch": "2.11.0+cu130"
+  },
+  "adapters": {
+    "candidate_v0.1.27": {
+      "path": "/models-work/t008-v0127-generalonly-20261101-121120/outputs/full/checkpoints/v0-20261101-041343/checkpoint-66",
+      "files": {
+        "adapter_config.json": {
+          "sha256": "fd1eb351c1559cf7234610cbcf3a12498cf3111daddea3f7a66580725f97233b",
+          "bytes": 1135
+        },
+        "adapter_model.safetensors": {
+          "sha256": "2787861d9061a4f048f4898971a65ed23ec4142a2d7d618b358fb3e0633068f9",
+          "bytes": 87360584
+        }
+      }
+    }
+  },
+  "aliases": {
+    "original_base": "octa-carbon-v1",
+    "candidate_v0.1.27": "t008-diagnostic-v0127"
+  },
+  "server_argv": [
+    "python3",
+    "-m",
+    "vllm.entrypoints.openai.api_server",
+    "--model",
+    "/base",
+    "--served-model-name",
+    "octa-carbon-v1",
+    "--host",
+    "127.0.0.1",
+    "--port",
+    "8000",
+    "--gpu-memory-utilization",
+    "0.90",
+    "--max-model-len",
+    "8192",
+    "--trust-remote-code",
+    "--reasoning-parser",
+    "qwen3",
+    "--enable-auto-tool-choice",
+    "--tool-call-parser",
+    "hermes",
+    "--enable-lora",
+    "--max-lora-rank",
+    "8",
+    "--chat-template",
+    "/runwork/evaluation/thinking-prefill.jinja",
+    "--lora-modules",
+    "{\"name\": \"t008-diagnostic-v0127\", \"path\": \"/models-work/t008-v0127-generalonly-20261101-121120/outputs/full/checkpoints/v0-20261101-041343/checkpoint-66\", \"base_model_name\": \"octa-carbon-v1\"}",
+    "--max-cpu-loras",
+    "3"
+  ],
+  "training": false,
+  "english": false,
+  "total_missing": 208
+}

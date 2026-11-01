@@ -46,7 +46,7 @@ for model in models:
     out['truncated_total'] = sum(out[g]['all']['truncated'] for g in out if isinstance(out[g], dict))
     results[model] = out
 
-parent = results['candidate_v0.1.22']
+parent = results['candidate_v0.1.26']
 candidate = results['candidate_v0.1.27']
 checks = {
     'nt_system_echo_decreased': candidate['nt_system']['echo_primary']['echo'] < parent['nt_system']['echo_primary']['echo'],
@@ -63,7 +63,7 @@ result = {
     'decision_plan_sha256': hashlib.sha256((D / 'decision-plan.json').read_bytes()).hexdigest(),
     'models': results, 'direction_checks': checks,
     'copy_task_fact_direction_checks_all_met': all(v for k,v in checks.items() if k!='no_system_identity_retained_reference_only'),
-    'recommendation': 'DIAGNOSTIC_ABLATION_ONLY; infer source contribution from results, not release eligibility. No automatic additional Full.',
+    'recommendation': 'GENERAL_ONLY_DIAGNOSTIC; infer source contribution from results, not release eligibility. No automatic additional Full.',
     'limits': summary['limits'],
     'counting_note': 'Failure dimensions overlap. Identity complete excludes uncertain, loop, empty, length and unsupported failure; sentence-count issues separate.',
 }

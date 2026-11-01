@@ -1,0 +1,108 @@
+{
+  "contrast": "v0.1.26 general+other61 versus v0.1.27 general-only; identity remains zero in both",
+  "data_rows": 1047,
+  "zeroed_sources": {
+    "identity": 234,
+    "business": 43,
+    "format": 18
+  },
+  "supervised_sources": {
+    "general": 752
+  },
+  "additional_removed_valid_tokens": 2691,
+  "fixed_denominator_tokens": 928890,
+  "nt_system_echo": [
+    16,
+    4
+  ],
+  "nt_no_system_echo": [
+    6,
+    0
+  ],
+  "nt_system_business_any_confirmed_failure": [
+    55,
+    49
+  ],
+  "nt_no_system_business_any_confirmed_failure": [
+    34,
+    36
+  ],
+  "supports": "Other61 supervision or its interaction with general contributes to copying in this recipe; general-only still exhibits copying with System.",
+  "does_not_prove": [
+    "Which of business43 or format18 contributes",
+    "Individual data defects are causal",
+    "All factual problems are new SFT regressions",
+    "General-only is safe to release",
+    "Historical v0.1.14/v0.1.16 exact source attribution"
+  ],
+  "noncopy_descriptive_counts": [
+    {
+      "model": "original_base",
+      "group": "nt_system",
+      "n": 84,
+      "task_fail": 29,
+      "facts_fail": 24,
+      "unsupported_fail": 20
+    },
+    {
+      "model": "original_base",
+      "group": "nt_no_system",
+      "n": 48,
+      "task_fail": 22,
+      "facts_fail": 21,
+      "unsupported_fail": 21
+    },
+    {
+      "model": "candidate_v0.1.22",
+      "group": "nt_system",
+      "n": 59,
+      "task_fail": 28,
+      "facts_fail": 20,
+      "unsupported_fail": 8
+    },
+    {
+      "model": "candidate_v0.1.22",
+      "group": "nt_no_system",
+      "n": 40,
+      "task_fail": 20,
+      "facts_fail": 11,
+      "unsupported_fail": 13
+    },
+    {
+      "model": "candidate_v0.1.26",
+      "group": "nt_system",
+      "n": 66,
+      "task_fail": 28,
+      "facts_fail": 21,
+      "unsupported_fail": 11
+    },
+    {
+      "model": "candidate_v0.1.26",
+      "group": "nt_no_system",
+      "n": 42,
+      "task_fail": 18,
+      "facts_fail": 19,
+      "unsupported_fail": 16
+    },
+    {
+      "model": "candidate_v0.1.27",
+      "group": "nt_system",
+      "n": 80,
+      "task_fail": 31,
+      "facts_fail": 32,
+      "unsupported_fail": 18
+    },
+    {
+      "model": "candidate_v0.1.27",
+      "group": "nt_no_system",
+      "n": 48,
+      "task_fail": 22,
+      "facts_fail": 23,
+      "unsupported_fail": 21
+    }
+  ],
+  "next_proposal": "Offline inspect61, then optionally restore only43 business CE relative to general-only; identity234 and format18 remain zero. One candidate only after confirmation.",
+  "next_training_authorized": false,
+  "root_review_independent": false,
+  "semantic_summary_sha256": "6ee6d4386a41e8e7b8018e4e17a0417bab427df611accba8893886ef1f8ae431"
+}

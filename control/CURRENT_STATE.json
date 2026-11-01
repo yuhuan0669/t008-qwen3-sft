@@ -1,24 +1,24 @@
 {
   "schema": "t008-unified-current-state-v1",
-  "recorded_at_utc": "2026-11-01T11:55:19.542019+00:00",
+  "recorded_at_utc": "2026-11-01T12:36:34.109407+00:00",
   "timezone_for_user_dates": "America/Los_Angeles",
   "archive_version": "archive-v1.0.0",
   "task": "T-008 v1.5 section 15",
-  "current_workstream": "Completed source-gradient diagnosis and identity-source CE ablation; next source contrast proposed only",
+  "current_workstream": "Completed source gradients and two source ablations; general-only narrows copying contribution to other61 and interaction",
   "base_model": "Qwen/Qwen3-8B",
   "process": "v1.2 process-restore-R1",
   "current_user_request": "继续：身份保持关闭，再关闭其他61次监督，仅保留通用监督",
-  "source_of_current_direction": "User authorized the three-step investigation and continuation. Source gradients, one identity-source-zero Full66, and208 new Chinese generations are complete.",
+  "source_of_current_direction": "User approved keeping identity disabled and additionally disabling other61; one Full66 and208 generations complete.",
   "historical_training": "FULL_103_STEPS_COMPLETED",
-  "candidate": "LoRA-v0.1.26-identity-source-zero-checkpoint-66",
+  "candidate": "LoRA-v0.1.27-general-only-checkpoint-66",
   "candidate_quality": "DIAGNOSTIC_ABLATION_NOT_FOR_RELEASE",
-  "forgetting": "Diagnostic only: NT+System echo23/48 to16/48 and loops12 to3; noSystem facts11/48 to21/48, identity8/24 to0/24. Identity supervision is not necessary for residual copying; no overall recovery.",
+  "forgetting": "General-only diagnostic: NT+System echo16/48 to4/48, noSystem6/48 to0/48; task/fact recovery incomplete. Prioritize other61 source interaction, not identity alone.",
   "snapshot_entrypoint": "LOCAL_DATA_GPU_WRAPPER_VERIFIED_SMOKE_AND_FULL",
   "evaluation_protocol": "PREPARED_BEFORE_TRAINING_FORMAL_HOLDOUT_SEPARATELY_HELD",
   "node_A": "NOT_ACCEPTED",
   "industry_stage_2": "NOT_AUTHORIZED",
   "cloud_01_acceptance_receipt_for_this_round": "WRITTEN_AND_READBACK_VERIFIED_T008-ACK-RETRAIN-DISCUSSION-20261019-01",
-  "current_execution_phase": "GENERAL_ONLY_SOURCE_ABLATION_PREPARING",
+  "current_execution_phase": "COMPLETED_GENERAL_ONLY_DIAGNOSTIC_UAT_PAUSED",
   "current_plan": {
     "version": "review-v0.4.1",
     "path": "docs/plans/SFT_MINIMAL_INTEGRATION_v0.4.1.md",
@@ -39,11 +39,11 @@
     "stage1_execution_approved": true,
     "identity_policy_amendment": "stage1/IDENTITY_UPDATE.md",
     "implementation_plan": "docs/plans/GPU_IMPLEMENTATION_REVIEW_v0.2.md",
-    "current_amendment": "stage2/runs/t008-v0126-idzero-20261101-112301/README.md",
-    "latest_run_report": "stage2/runs/t008-v0126-idzero-20261101-112301/RESULT.md",
+    "current_amendment": "stage2/runs/t008-v0127-generalonly-20261101-121120/README.md",
+    "latest_run_report": "stage2/runs/t008-v0127-generalonly-20261101-121120/RESULT.md",
     "latest_preparation_report": "stage1/variants/stage1-cpu-v0.1.22/README.md"
   },
-  "retraining_direction": "COMPLETED_ONE_IDENTITY_SOURCE_ZERO_DIAGNOSTIC",
+  "retraining_direction": "COMPLETED_ONE_GENERAL_ONLY_SOURCE_ABLATION",
   "retraining_start": {
     "base": "Qwen/Qwen3-8B",
     "adapter_strategy": "NEW_LORA_FROM_ORIGINAL_BASE",
@@ -192,14 +192,14 @@
     "training_system": null,
     "inference_system_path": "stage1/variants/stage1-cpu-v0.1.22/inference-system.txt",
     "estimated_steps": 66,
-    "frozen_manifest_status_scope": "Frozen v0.1.22 data and loss3 recipe; latest selective-KL runtime addition and completed evidence are in stage2/runs/t008-v0125-kl-20261101-084231/RESULT.md"
+    "frozen_manifest_status_scope": "Frozen v0.1.22 data and loss3 preparation; latest general-only runtime mask is documented in stage2/runs/t008-v0127-generalonly-20261101-121120/RESULT.md"
   },
   "next_training_authorized": false,
-  "proposed_training_config": "stage2/runs/t008-v0126-idzero-20261101-112301/training-config.json",
+  "proposed_training_config": "stage2/runs/t008-v0127-generalonly-20261101-121120/training-config.json",
   "current_training_run": {
-    "run_id": "t008-v0126-idzero-20261101-112301",
-    "model_version": "v0.1.26",
-    "status": "COMPLETED_IDENTITY_SOURCE_ABLATION_NOT_FOR_RELEASE_UAT_PAUSED",
+    "run_id": "t008-v0127-generalonly-20261101-121120",
+    "model_version": "v0.1.27",
+    "status": "COMPLETED_GENERAL_ONLY_ABLATION_NOT_FOR_RELEASE_UAT_PAUSED",
     "data_version": "stage1-cpu-v0.1.22",
     "data_sha256": "0087a3073bac5b36e3b865666ad9210a1d52ba04c32ecdaba83b4af4eb49b2bb",
     "rows": 1047,
@@ -208,13 +208,9 @@
     "training_system_rows": 0,
     "learning_rate": 0.0001,
     "identity_loss_multiplier": 0,
-    "identity_effective_loss_note": "Native identity3 encoding retained then all234 identity-source loss scales zeroed, including EOS; labels and denominator unchanged.",
-    "only_training_change": "Zero CE for234 identity-source rows; preserve1047 rows, native labels and unweighted batch denominator.",
-    "remaining_supervised_rows": 813,
-    "business_rows_still_mention_names": [
-      975,
-      994
-    ],
+    "identity_effective_loss_note": "All234 identity rows and61 other rows zeroed including EOS; native labels and denominator preserved.",
+    "only_training_change": "Relative to v0.1.26 additionally zero43 business and18 format rows; only752 general rows supervise.",
+    "remaining_supervised_rows": 752,
     "target_modules": [
       "down_proj",
       "gate_proj",
@@ -229,19 +225,19 @@
     "interrupted_full_attempts": 0,
     "global_step": 66,
     "epoch": 1.0,
-    "task_id": "6e629c98bf734fa7967dd33905dbe315",
-    "output_model_id": "5649b1c76fc046da94e1972fcdc5fbcb",
-    "adapter_package_sha256": "bd2b8d3c5a8678c09f16e3191042cc680937e6fbf9d113cf1499f55233a16697",
-    "local_model": "stage2/local-models/model-v0.1.26/adapter.zip",
-    "run_manifest": "stage2/runs/t008-v0126-idzero-20261101-112301/outputs/full/run_manifest.json",
-    "training_config": "stage2/runs/t008-v0126-idzero-20261101-112301/training-config.json",
-    "report": "stage2/runs/t008-v0126-idzero-20261101-112301/RESULT.md",
-    "verification": "stage2/runs/t008-v0126-idzero-20261101-112301/execution-verification.json",
-    "cpu_report": "stage2/runs/t008-v0126-idzero-20261101-112301/ablation-cpu-report.json",
-    "source_audit": "stage2/runs/t008-v0126-idzero-20261101-112301/outputs/full/identity-zero-audit.jsonl",
-    "semantic_summary": "stage2/runs/t008-v0126-idzero-20261101-112301/evaluation/semantic-summary.json",
-    "decision_result": "stage2/runs/t008-v0126-idzero-20261101-112301/evaluation/decision-result.json",
-    "hypothesis_result": "stage2/runs/t008-v0126-idzero-20261101-112301/evaluation/hypothesis-result.json",
+    "task_id": "5bb3f10f7e7e43469c78c04e4f4394ee",
+    "output_model_id": "d57814b0fb1b4555aa9a06a87905a5d5",
+    "adapter_package_sha256": "83e71b3aa16bbcb02821b90acb58d18252e9693e8a141e832dbd54a5a074cdb0",
+    "local_model": "stage2/local-models/model-v0.1.27/adapter.zip",
+    "run_manifest": "stage2/runs/t008-v0127-generalonly-20261101-121120/outputs/full/run_manifest.json",
+    "training_config": "stage2/runs/t008-v0127-generalonly-20261101-121120/training-config.json",
+    "report": "stage2/runs/t008-v0127-generalonly-20261101-121120/RESULT.md",
+    "verification": "stage2/runs/t008-v0127-generalonly-20261101-121120/execution-verification.json",
+    "cpu_report": "stage2/runs/t008-v0127-generalonly-20261101-121120/ablation-cpu-report.json",
+    "source_audit": "stage2/runs/t008-v0127-generalonly-20261101-121120/outputs/full/identity-zero-audit.jsonl",
+    "semantic_summary": "stage2/runs/t008-v0127-generalonly-20261101-121120/evaluation/semantic-summary.json",
+    "decision_result": "stage2/runs/t008-v0127-generalonly-20261101-121120/evaluation/decision-result.json",
+    "hypothesis_result": "stage2/runs/t008-v0127-generalonly-20261101-121120/evaluation/hypothesis-result.json",
     "uat_restored": false,
     "uat_paused": true,
     "automatic_restore_authorized": false,
@@ -251,16 +247,23 @@
     "reused_slots": 624,
     "new_generation_requests": 208,
     "technical_retries": 0,
-    "reviewed_unique": 710,
+    "reviewed_unique": 726,
     "unreviewed_slots": 0,
     "english_identity_evaluated": false,
     "next_training_authorized": false,
     "new_model_deployed": false,
     "external_judge_called": false,
     "sync_status": "LOCAL_GIT_ONLY_CLEARML_TRAINING_ARTIFACTS",
-    "selection": "Diagnostic only: NT+System echo23/48 to16/48 and loops12 to3; noSystem facts11/48 to21/48, identity8/24 to0/24. Identity supervision is not necessary for residual copying; no overall recovery.",
-    "training_completed_at_utc": "2026-11-01T11:36:32.274340+00:00",
-    "review_completed_at_utc": "2026-11-01T11:55:19.542019+00:00"
+    "selection": "General-only diagnostic: NT+System echo16/48 to4/48, noSystem6/48 to0/48; task/fact recovery incomplete. Prioritize other61 source interaction, not identity alone.",
+    "training_completed_at_utc": "2026-11-01T12:22:38.194587+00:00",
+    "review_completed_at_utc": "2026-11-01T12:36:34.109407+00:00",
+    "all_zeroed_rows": 295,
+    "business_supervised_rows": 0,
+    "format_supervised_rows": 0,
+    "formerly_supervised_business_name_rows_now_zeroed": [
+      975,
+      994
+    ]
   },
   "active_identity_loss3_execution": {
     "run_id": "t008-v018-loss3-20261020-180616",
@@ -316,12 +319,12 @@
     "training_system": null,
     "inference_system_path": "stage1/variants/stage1-cpu-v0.1.22/inference-system.txt",
     "estimated_steps": 66,
-    "frozen_manifest_status_scope": "Frozen v0.1.22 data and loss3 preparation; latest identity-source-zero runtime override is documented in stage2/runs/t008-v0126-idzero-20261101-112301/RESULT.md"
+    "frozen_manifest_status_scope": "Frozen v0.1.22 data and loss3 preparation; latest general-only runtime mask is documented in stage2/runs/t008-v0127-generalonly-20261101-121120/RESULT.md"
   },
   "current_review": {
-    "version": "v0.1.26",
-    "kind": "source_ablation_diagnostic_not_for_release",
-    "report": "stage2/runs/t008-v0126-idzero-20261101-112301/RESULT.md",
+    "version": "v0.1.27",
+    "kind": "general_only_source_ablation_diagnostic_not_for_release",
+    "report": "stage2/runs/t008-v0127-generalonly-20261101-121120/RESULT.md",
     "cpu_verified": true,
     "content_review_complete": true,
     "execution_completed": true,
@@ -393,11 +396,11 @@
   },
   "selection_recommendation": {
     "status": "DIAGNOSTIC_ONLY_DO_NOT_RELEASE_UAT_STAYS_PAUSED",
-    "report": "stage2/runs/t008-v0126-idzero-20261101-112301/RESULT.md",
-    "candidate": "v0.1.26",
+    "report": "stage2/runs/t008-v0127-generalonly-20261101-121120/RESULT.md",
+    "candidate": "v0.1.27",
     "quality_accepted": false,
     "next_training_authorized": false,
-    "scope": "Failure-enriched development; no population rates or formal acceptance. Residual copying without identity-source CE excludes it as sole necessary source."
+    "scope": "Failure-enriched development only. Other61 removal reduces copying, but general-only residual copying and factual/task errors remain. Not accepted."
   },
   "current_system_candidate": {
     "revision": "system-v0.1.16",
@@ -407,7 +410,7 @@
     "training_rows_with_system": 0,
     "inference_executed": true,
     "service_deployed": false,
-    "execution_report": "stage2/runs/t008-v0126-idzero-20261101-112301/RESULT.md",
+    "execution_report": "stage2/runs/t008-v0127-generalonly-20261101-121120/RESULT.md",
     "authorization_scope": "Frozen inference System used in diagnostic requests; no application change."
   },
   "manual_handoff": {
@@ -441,7 +444,7 @@
     "application_configuration_changed": false,
     "verification": "stage2/releases/t008-v0116-20261028-publish01/verification.json",
     "report": "stage2/releases/t008-v0116-20261028-publish01/REPORT.md",
-    "verified_at": "2026-11-01T11:54:43.068738+00:00",
+    "verified_at": "2026-11-01T12:29:38.306259+00:00",
     "current_model_names": [
       "octa-carbon-sft-v0114",
       "octa-carbon-sft-v0116",
@@ -453,7 +456,7 @@
       "octa-carbon-sft-v0116"
     ],
     "latest_restoration_verification": "stage2/runs/t008-v0122-20261101-031736/uat-health-verification.json",
-    "latest_readback": "stage2/runs/t008-v0126-idzero-20261101-112301/final-runtime-readback.json",
+    "latest_readback": "stage2/runs/t008-v0127-generalonly-20261101-121120/final-runtime-readback.json",
     "status": "PAUSED_BY_USER_DO_NOT_AUTO_RESTORE",
     "pause_hold": "stage2/uat-pause-hold.json",
     "status_scope": "Deployment aliases and configuration preserved; replicas0 by current user instruction. Historical release/restoration records are not current health.",
@@ -479,7 +482,7 @@
     "training": false
   },
   "current_execution_previous_state": "stage2/runs/t008-v0122-loss1-20261101-040341/current-state-before.json",
-  "current_execution_plan": "stage2/runs/t008-v0126-idzero-20261101-112301/README.md",
+  "current_execution_plan": "stage2/runs/t008-v0127-generalonly-20261101-121120/README.md",
   "latest_uat_restore_verification": {
     "run_id": "t008-v0122-loss1-20261101-040341",
     "verified": true,
@@ -491,17 +494,17 @@
     "status_scope": "Historical completed restoration, superseded by current UAT pause hold."
   },
   "previous_model_review": {
-    "version": "v0.1.25",
-    "report": "stage2/runs/t008-v0125-kl-20261101-084231/RESULT.md",
+    "version": "v0.1.26",
+    "report": "stage2/runs/t008-v0126-idzero-20261101-112301/RESULT.md",
     "execution_completed": true,
     "quality_accepted": false,
     "english_deferred": true
   },
-  "latest_uat_readonly_verification": "stage2/runs/t008-v0126-idzero-20261101-112301/final-runtime-readback.json",
+  "latest_uat_readonly_verification": "stage2/runs/t008-v0127-generalonly-20261101-121120/final-runtime-readback.json",
   "active_execution": {
     "run_id": "t008-v0127-generalonly-20261101-121120",
     "model_version": "v0.1.27",
-    "status": "SMOKE_THEN_ONE_FULL_AND208_GENERATIONS",
+    "status": "COMPLETE_AND_VERIFIED_UAT_PAUSED",
     "only_change": "relative to v0.1.26 additionally zero61 nonidentity nongeneral rows",
     "data_rows": 1047,
     "supervised_rows": 752,
@@ -514,7 +517,17 @@
     "user_authorized": true,
     "cpu_report": "stage2/runs/t008-v0127-generalonly-20261101-121120/ablation-cpu-report.json",
     "training_config": "stage2/runs/t008-v0127-generalonly-20261101-121120/training-config.json",
-    "report": "stage2/runs/t008-v0127-generalonly-20261101-121120/README.md"
+    "report": "stage2/runs/t008-v0127-generalonly-20261101-121120/RESULT.md",
+    "smoke_verified_steps": 3,
+    "training_completed_steps": 66,
+    "full_runs_executed": 1,
+    "identity_zero_audit_verified": true,
+    "other_sources_zeroed": 61,
+    "verification": "stage2/runs/t008-v0127-generalonly-20261101-121120/execution-verification.json",
+    "new_generations": 208,
+    "unreviewed_slots": 0,
+    "temporary_workloads_removed": true,
+    "next_training_authorized": false
   },
   "active_diagnostic": {
     "id": "source-gradient-20261101",
@@ -566,12 +579,12 @@
   },
   "next_diagnostic_direction": {
     "status": "PROPOSED_ONLY_NOT_STARTED",
-    "scope": "Complementary ablation: zero752 general-source CE; preserve234 identity and61 other rows, full1047 row stream, denominator and66-step recipe. Reuse208-response protocol.",
-    "hypothesis": "Remaining general-source supervision or interactions may cause residual task/echo degradation. If removing it restores tasks while retaining identity, prioritize general-source supervision; residual failures require examining common61 rows or recipe mechanisms.",
-    "evidence": "stage2/runs/t008-v0126-idzero-20261101-112301/RESULT.md",
+    "scope": "Inspect61 existing rows, then optionally restore only43 business CE to general-only; identity234 and format18 remain zero. Preserve1047 rows/denominator/66 steps.",
+    "hypothesis": "Separate business-source effects from format-source or interaction effects behind copying increase.",
+    "evidence": "stage2/runs/t008-v0127-generalonly-20261101-121120/RESULT.md",
     "proposed_control": [
-      "candidate_v0.1.22",
-      "candidate_v0.1.26"
+      "candidate_v0.1.26",
+      "candidate_v0.1.27"
     ],
     "new_training": false,
     "new_generation": false,

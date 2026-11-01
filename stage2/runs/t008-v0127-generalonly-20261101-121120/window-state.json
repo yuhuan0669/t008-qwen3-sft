@@ -1,0 +1,11 @@
+{
+  "started_at_utc": "2026-11-01T12:12:18.093179+00:00",
+  "paused": true,
+  "restored": false,
+  "automatic_restore": false,
+  "inherited_pause_run": "t008-v0124-attn-20261101-070053",
+  "new_pause_action": false,
+  "task_gpu_cleaned": true,
+  "uat_spec_equal_except_replicas": true,
+  "checked_at_utc": "2026-11-01T12:29:12.001339+00:00"
+}

@@ -1,0 +1,27 @@
+{
+  "source_git_commit": "440a0f636c975574e46ace9a10255727a903e959",
+  "new_slots": 208,
+  "full_steps": 66,
+  "uat_auto_restore": false,
+  "sha256": {
+    "stage_inputs.py": "20ba467bace1878356ea3c2b901a297b0002a795d9de2f95d38cce290cd50d29",
+    "window.py": "7705dab847c2bb1838130e7bb5223dc214cef4fb875d64ca23dbc11ddf18f552",
+    "execute.py": "cb5b150d3f8d7ab65d38c2cd229abfcb13aed2e7a3948288d1721157248f0f51",
+    "collect_raw.py": "1a564357f8301d75317b7a1c744b3c56122b7c51d9f607ee6439a4bcee876917",
+    "collect_model.py": "4d3b8e039ed489b90846448e402fae72ca85cf9355d649370822256b8301f35c",
+    "prepare.py": "2236ab11c38e3b392296eee04d6c7cb55acfa946a497b90f75addd3fd4c29fbc",
+    "run_local_sft.py": "7a7c675b558945ac16f0b12c7dbb0a0bc5efdd31b49c0d67d426228a6aaffa52",
+    "prepare_remote.py": "7372b1720fc844f7885b312ad5a6577005709905aacc59038b47f8b5c2bcd917",
+    "preflight.py": "a2f7869ffc1c9347874f1eb82c0d5d13623ae20951a3a4471ef03473794ef995",
+    "check_cpu_remote.py": "5403bb97dd7f64696d8115a003eacea301b42ff149cfed7c1517db3102f228f3",
+    "evaluation/run.py": "b097b3709222dca4309634d446af1ae919665de274ec76108957c9ea0ea24696",
+    "training-config.json": "276d2a9234f137b2e1d80948b4a0cd49a850e7c5045c8482fdfc9d551edbbd0b",
+    "evaluation/evaluation-config.json": "d0d34dab86052a5609d5d35318a1b22ed49580df557217485740ca4ebb2a41d7",
+    "evaluation/missing-slots.json": "b1c14746fb095b283c7552c9bd45a26f3afe2bd4ff18d045c0862235d309b534",
+    "eval-pod.json": "3138e94216907fc6e283f05f427b7f0097ce2af0ebdd5cba5e0b48b8f62f8ace",
+    "prep-pod.json": "47df82ec6c84233428a1e3c01153bdfe7f09f3332bd10ff5795d0bfdf8bc52b7",
+    "job-smoke.json": "1766fa19b89ea70329115abbd50db63dddd4c4f069d506b7a928807c206b8dbc",
+    "job-full.json": "2e23f921bbbeb519949f7864eda7904dc335a6e4d5329587aef5470848568a31"
+  },
+  "source_commit_role": "Preparation commit; final resource arguments independently hashed."
+}

@@ -1,0 +1,24 @@
+{
+  "verified": true,
+  "deployment_spec_equal": true,
+  "ready_replicas": 1,
+  "internal_health": 200,
+  "public_health_samples": [
+    {
+      "utc": "2026-11-01T04:31:44.070799+00:00",
+      "status": "200",
+      "exit_code": 0
+    },
+    {
+      "utc": "2026-11-01T04:31:49.119657+00:00",
+      "status": "200",
+      "exit_code": 0
+    }
+  ],
+  "pause_to_verified_restore_seconds": 1445.298776,
+  "aliases": [
+    "octa-carbon-v1",
+    "octa-carbon-sft-v0114",
+    "octa-carbon-sft-v0116"
+  ]
+}

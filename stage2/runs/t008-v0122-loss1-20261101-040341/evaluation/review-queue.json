@@ -1,0 +1,29 @@
+{
+  "slots": 2780,
+  "new_slots": 556,
+  "inherited_unique_labels": 2040,
+  "new_unique_review_required": 475,
+  "shards": {
+    "a": {
+      "questions": 42,
+      "unique_answers": 149,
+      "answer_characters": 78524
+    },
+    "b": {
+      "questions": 42,
+      "unique_answers": 145,
+      "answer_characters": 78513
+    },
+    "c": {
+      "questions": 42,
+      "unique_answers": 147,
+      "answer_characters": 78517
+    },
+    "root": {
+      "questions": 9,
+      "unique_answers": 34,
+      "answer_characters": 3883
+    }
+  },
+  "new_slots_with_inherited_label": 78
+}

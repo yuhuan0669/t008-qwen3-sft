@@ -1,0 +1,7 @@
+{
+  "at_utc": "2026-11-01T04:36:44.603431+00:00",
+  "ready_replicas": 1,
+  "spec_equal": true,
+  "remaining_task_workloads": [],
+  "note": "Final read-only refresh after CPU prep deletion; no generation or service mutation."
+}

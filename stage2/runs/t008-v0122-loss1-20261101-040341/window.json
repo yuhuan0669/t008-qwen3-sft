@@ -1,0 +1,13 @@
+{
+  "run_id": "t008-v0122-loss1-20261101-040341",
+  "experiment_approved": true,
+  "uat_pause_approved": true,
+  "approved_data_sha256": "0087a3073bac5b36e3b865666ad9210a1d52ba04c32ecdaba83b4af4eb49b2bb",
+  "window_start_utc": "2026-11-01T04:07:31.622749+00:00",
+  "window_end_utc": "2026-11-01T08:07:31.622749+00:00",
+  "restore_start_utc": "2026-11-01T07:27:31.622749+00:00",
+  "decision_ref": "Current user 继续 authorizes the proposed frozen-v0.1.22 identity loss3-to-loss1 comparison, otherwise unchanged, one fresh-base Full66; earlier standing permission permits pausing UAT without re-authorization. One 3-step Smoke and one fresh-base Full, plus 556 planned generations; restore existing UAT, no deployment. Four-hour operational recovery ceiling, not a user deadline.",
+  "restoration_owner": "Current implementation agent",
+  "uat_coordination": "Owner directly confirmed immediate pause",
+  "max_full_runs": 1
+}

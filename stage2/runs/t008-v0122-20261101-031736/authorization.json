@@ -1,0 +1,8 @@
+{
+  "user_instruction": "开始吧",
+  "standing_uat_instruction": "可无需授权就暂停UAT",
+  "scope": "One Smoke3, one fresh-base Full66 using frozen v0.1.22 and unchanged recipe; 556 Chinese generations; restore original UAT and verify health. No deployment or additional Full.",
+  "data_sha256": "0087a3073bac5b36e3b865666ad9210a1d52ba04c32ecdaba83b4af4eb49b2bb",
+  "dataset_version": "stage1-cpu-v0.1.22",
+  "english_optimization": false
+}

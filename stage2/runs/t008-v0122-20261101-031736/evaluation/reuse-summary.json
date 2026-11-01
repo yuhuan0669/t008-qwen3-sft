@@ -1,0 +1,14 @@
+{
+  "source": "stage2/runs/t008-v0117-20261031-100924/evaluation/combined.jsonl",
+  "source_sha256": "1616213e05ffad1a70506b6bcab8652424b272dc185ca07ef9b6e186f1366f9d",
+  "selected_models": [
+    "original_base",
+    "v0.1.14",
+    "v0.1.16"
+  ],
+  "slots": 1668,
+  "selected_sha256": "fde5bf8a36f80f3e01ffe6e49820d213c5e64c5969c9119326aa5350a9268962",
+  "review_coverage_path": "stage2/runs/t008-v0117-20261031-100924/evaluation/review-coverage.json",
+  "review_coverage_sha256": "46c65fc316826eaa956dea7661b68701de6f528b371754c32a47645e50842cfc",
+  "caveat": "Same frozen prompts/protocol; no shared request seed and different runtime batching. Diagnostic paired description, not independent acceptance."
+}

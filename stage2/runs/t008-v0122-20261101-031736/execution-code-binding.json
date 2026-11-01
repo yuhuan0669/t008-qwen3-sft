@@ -1,0 +1,25 @@
+{
+  "source_git_commit": "067d54eb0251750cfc72c05d4e676406d8d164fd",
+  "source_commit_role": "Frozen source/data baseline; execution scripts bound by the following file hashes.",
+  "new_slots": 556,
+  "full_steps": 66,
+  "training_recipe_unchanged": true,
+  "sha256": {
+    "stage_inputs.py": "74c00c40ba8c56ef57f1946e3030856d219751a2eaebf4f01f7367c6f5ce14f8",
+    "window.py": "65cf11eb42bb1fa80b534fdbde910cc3f1a6dca32beff5a6e95f880f5e0d3a36",
+    "execute.py": "02021a3863e962865ddd6090ee49b52011ffbbc13172049ea70cc3ee4995a166",
+    "collect_model.py": "e99987195798ec75b3a79e8c719aad3f1bae125881c37ac5c783b91ba4f8788d",
+    "prepare.py": "9e84b7b5120597d48dbfe6b0d57c413b823d650d0b4e8b7e16bb421243666054",
+    "run_local_sft.py": "65d78e369b5dfcd23cdc50d205395e45b6326d5c8a9d4103e9f3cecfc72ab9d0",
+    "prepare_remote.py": "7372b1720fc844f7885b312ad5a6577005709905aacc59038b47f8b5c2bcd917",
+    "preflight.py": "a2f7869ffc1c9347874f1eb82c0d5d13623ae20951a3a4471ef03473794ef995",
+    "evaluation/run.py": "a311a883e8e2afa58cebaa00244a3c72329f385ae61f1a41c82660dee60e9fce",
+    "training-config.json": "2a63ae9873ae8c36e6bcd8cdbe16e7b112bc3e072d58f185c3a869738c386f6b",
+    "evaluation/evaluation-config.json": "d0e0fd842378614c299ab5fcfc6c457085412c14da7a3851515cddb58c837a38",
+    "evaluation/missing-slots.json": "0ecd1516f57317aeb4077e5df36be80da634c3281f8c24ba096549908d8e4179",
+    "eval-pod.json": "509ead4c53041c3e2ef91ea6cfe5a82b11d4a431f652733ce30654260e19966b",
+    "prep-pod.json": "fbc6f1765ce56b40558c9026c0d882db3fc4db831cf1eaab70c0f5b763ca1765",
+    "job-smoke.json": "187dd02cc00cc38cbd7563aece6cf4ef812b4e976bc3c2effcd5d335488325a2",
+    "job-full.json": "2c447ee7add211c7858aab30a54069af250296b6255cd95e481c7352e0957741"
+  }
+}

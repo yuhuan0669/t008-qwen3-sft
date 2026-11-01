@@ -1,0 +1,18 @@
+{
+  "completed": true,
+  "scores": 252,
+  "models": [
+    "base",
+    "v0114",
+    "v0122_loss3",
+    "v0122_loss1"
+  ],
+  "elapsed_seconds": 22.919668473303318,
+  "scores_sha256": "7a5003f883db6d56be7fbc1024e827112ebd98eabd51cbae3592d6bffbeb7184",
+  "training": false,
+  "new_generated_answers": 0,
+  "judge_calls": 0,
+  "backward_calls": 0,
+  "gpu_peak_allocated_bytes": 17064551936,
+  "note": "Conditional probability diagnostics at fixed observed/counterfactual prefixes, not error rates or semantic answer probabilities."
+}

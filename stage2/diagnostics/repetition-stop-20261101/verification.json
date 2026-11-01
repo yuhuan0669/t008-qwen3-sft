@@ -1,0 +1,20 @@
+{
+  "validated": true,
+  "scores": 252,
+  "cases": 8,
+  "positions": 21,
+  "uat_ready_replicas": 1,
+  "uat_original_spec_equal": true,
+  "aliases_equal": true,
+  "external_consecutive_200": 2,
+  "temporary_pods_remaining": 0,
+  "window_seconds": 227.02365112304688,
+  "training_data_sha256": "0087a3073bac5b36e3b865666ad9210a1d52ba04c32ecdaba83b4af4eb49b2bb",
+  "frozen_inputs_verified": true,
+  "training": false,
+  "new_generated_answers": 0,
+  "judge_calls": 0,
+  "deployment": false,
+  "verified_at_epoch": 1793509646.634721,
+  "base_files_hashed": 16
+}

@@ -1,0 +1,4006 @@
+{
+  "validated_scores": 252,
+  "cases": 8,
+  "positions": 21,
+  "models": [
+    "base",
+    "v0114",
+    "v0122_loss3",
+    "v0122_loss1"
+  ],
+  "all_prefix_hashes_equal_across_models": true,
+  "same_first_distribution_for_all_alternatives": true,
+  "score_file_sha256": "7a5003f883db6d56be7fbc1024e827112ebd98eabd51cbae3592d6bffbeb7184",
+  "probes": [
+    {
+      "id": "T021-C900-B4-G007/start",
+      "case_id": "T021-C900-B4-G007",
+      "category": "echo",
+      "group": "nt_system",
+      "role": "answer_start",
+      "active_sampling": "nonthinking",
+      "models": {
+        "base": {
+          "stopping_raw": {
+            "im_end_probability": 1.2538361902827023e-15,
+            "im_end_rank": 21922,
+            "other_eos_probability": 3.367566755500153e-17,
+            "close_think_probability": 1.587858947881446e-16,
+            "close_think_rank": 47084
+          },
+          "stopping_filtered": {
+            "im_end_probability": 0.0,
+            "im_end_rank": 2,
+            "other_eos_probability": 0.0,
+            "close_think_probability": 0.0,
+            "close_think_rank": 2
+          },
+          "alternatives": {
+            "observed_copy": {
+              "first_token_id": 109903,
+              "raw_probability": 0.9999330043792725,
+              "raw_rank": 1,
+              "filtered_probability": 1.0,
+              "scored_tokens": 42,
+              "mean_nll": 0.8069680038424724,
+              "filtered_zero_tokens": 7
+            },
+            "correct_reference": {
+              "first_token_id": 16628,
+              "raw_probability": 7.507251070792975e-11,
+              "raw_rank": 183,
+              "filtered_probability": 0.0,
+              "scored_tokens": 31,
+              "mean_nll": 3.5165467797604717,
+              "filtered_zero_tokens": 10
+            },
+            "end_answer": {
+              "first_token_id": 151645,
+              "raw_probability": 1.2538361902827023e-15,
+              "raw_rank": 21922,
+              "filtered_probability": 0.0,
+              "scored_tokens": 1,
+              "mean_nll": 34.31256866455078,
+              "filtered_zero_tokens": 1
+            }
+          }
+        },
+        "v0114": {
+          "stopping_raw": {
+            "im_end_probability": 4.1885726886903285e-07,
+            "im_end_rank": 10495,
+            "other_eos_probability": 4.328041813828065e-10,
+            "close_think_probability": 6.323799084384518e-08,
+            "close_think_rank": 36736
+          },
+          "stopping_filtered": {
+            "im_end_probability": 0.0,
+            "im_end_rank": 2,
+            "other_eos_probability": 0.0,
+            "close_think_probability": 0.0,
+            "close_think_rank": 2
+          },
+          "alternatives": {
+            "observed_copy": {
+              "first_token_id": 109903,
+              "raw_probability": 0.7561727166175842,
+              "raw_rank": 1,
+              "filtered_probability": 1.0,
+              "scored_tokens": 42,
+              "mean_nll": 0.4115009786799289,
+              "filtered_zero_tokens": 3
+            },
+            "correct_reference": {
+              "first_token_id": 16628,
+              "raw_probability": 0.001210180576890707,
+              "raw_rank": 28,
+              "filtered_probability": 0.0,
+              "scored_tokens": 31,
+              "mean_nll": 1.5240260771907126,
+              "filtered_zero_tokens": 9
+            },
+            "end_answer": {
+              "first_token_id": 151645,
+              "raw_probability": 4.1885726886903285e-07,
+              "raw_rank": 10495,
+              "filtered_probability": 0.0,
+              "scored_tokens": 1,
+              "mean_nll": 14.685735702514648,
+              "filtered_zero_tokens": 1
+            }
+          }
+        },
+        "v0122_loss3": {
+          "stopping_raw": {
+            "im_end_probability": 8.230725825342233e-07,
+            "im_end_rank": 11308,
+            "other_eos_probability": 1.2867336085520265e-09,
+            "close_think_probability": 8.408215279587239e-08,
+            "close_think_rank": 50535
+          },
+          "stopping_filtered": {
+            "im_end_probability": 0.0,
+            "im_end_rank": 2,
+            "other_eos_probability": 0.0,
+            "close_think_probability": 0.0,
+            "close_think_rank": 2
+          },
+          "alternatives": {
+            "observed_copy": {
+              "first_token_id": 109903,
+              "raw_probability": 0.5298181176185608,
+              "raw_rank": 1,
+              "filtered_probability": 1.0,
+              "scored_tokens": 42,
+              "mean_nll": 0.2968901440022992,
+              "filtered_zero_tokens": 0
+            },
+            "correct_reference": {
+              "first_token_id": 16628,
+              "raw_probability": 0.00911602471023798,
+              "raw_rank": 8,
+              "filtered_probability": 0.0,
+              "scored_tokens": 31,
+              "mean_nll": 1.420753649118377,
+              "filtered_zero_tokens": 9
+            },
+            "end_answer": {
+              "first_token_id": 151645,
+              "raw_probability": 8.230725825342233e-07,
+              "raw_rank": 11308,
+              "filtered_probability": 0.0,
+              "scored_tokens": 1,
+              "mean_nll": 14.010221481323242,
+              "filtered_zero_tokens": 1
+            }
+          }
+        },
+        "v0122_loss1": {
+          "stopping_raw": {
+            "im_end_probability": 2.249158569611609e-06,
+            "im_end_rank": 7722,
+            "other_eos_probability": 1.3450558444816352e-09,
+            "close_think_probability": 1.9652929950098041e-07,
+            "close_think_rank": 40219
+          },
+          "stopping_filtered": {
+            "im_end_probability": 0.0,
+            "im_end_rank": 2,
+            "other_eos_probability": 0.0,
+            "close_think_probability": 0.0,
+            "close_think_rank": 2
+          },
+          "alternatives": {
+            "observed_copy": {
+              "first_token_id": 109903,
+              "raw_probability": 0.47003188729286194,
+              "raw_rank": 1,
+              "filtered_probability": 1.0,
+              "scored_tokens": 42,
+              "mean_nll": 0.3003059462692233,
+              "filtered_zero_tokens": 0
+            },
+            "correct_reference": {
+              "first_token_id": 16628,
+              "raw_probability": 0.011054090224206448,
+              "raw_rank": 7,
+              "filtered_probability": 0.0,
+              "scored_tokens": 31,
+              "mean_nll": 1.4047075663275468,
+              "filtered_zero_tokens": 10
+            },
+            "end_answer": {
+              "first_token_id": 151645,
+              "raw_probability": 2.249158569611609e-06,
+              "raw_rank": 7722,
+              "filtered_probability": 0.0,
+              "scored_tokens": 1,
+              "mean_nll": 13.00495433807373,
+              "filtered_zero_tokens": 1
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "T021-C900-B4-G007/wrong_continuation",
+      "case_id": "T021-C900-B4-G007",
+      "category": "echo",
+      "group": "nt_system",
+      "role": "observed_continuation",
+      "active_sampling": "nonthinking",
+      "models": {
+        "base": {
+          "stopping_raw": {
+            "im_end_probability": 2.028589698565425e-14,
+            "im_end_rank": 11280,
+            "other_eos_probability": 4.230469030641615e-10,
+            "close_think_probability": 3.707688203258687e-17,
+            "close_think_rank": 78388
+          },
+          "stopping_filtered": {
+            "im_end_probability": 0.0,
+            "im_end_rank": 3,
+            "other_eos_probability": 0.0,
+            "close_think_probability": 0.0,
+            "close_think_rank": 3
+          },
+          "alternatives": {
+            "observed_copy": {
+              "first_token_id": 82832,
+              "raw_probability": 0.23257586359977722,
+              "raw_rank": 2,
+              "filtered_probability": 0.22270016372203827,
+              "scored_tokens": 16,
+              "mean_nll": 0.7776038909795417,
+              "filtered_zero_tokens": 2
+            },
+            "correct_reference": {
+              "first_token_id": 101886,
+              "raw_probability": 1.0910523151608231e-08,
+              "raw_rank": 164,
+              "filtered_probability": 0.0,
+              "scored_tokens": 17,
+              "mean_nll": 6.585226745534061,
+              "filtered_zero_tokens": 9
+            },
+            "end_answer": {
+              "first_token_id": 151645,
+              "raw_probability": 2.028589698565425e-14,
+              "raw_rank": 11280,
+              "filtered_probability": 0.0,
+              "scored_tokens": 1,
+              "mean_nll": 31.528850555419922,
+              "filtered_zero_tokens": 1
+            }
+          }
+        },
+        "v0114": {
+          "stopping_raw": {
+            "im_end_probability": 2.837988176906947e-06,
+            "im_end_rank": 3074,
+            "other_eos_probability": 7.880808539084683e-07,
+            "close_think_probability": 4.1766753611227614e-08,
+            "close_think_rank": 49593
+          },
+          "stopping_filtered": {
+            "im_end_probability": 0.0,
+            "im_end_rank": 4,
+            "other_eos_probability": 0.0,
+            "close_think_probability": 0.0,
+            "close_think_rank": 4
+          },
+          "alternatives": {
+            "observed_copy": {
+              "first_token_id": 82832,
+              "raw_probability": 0.20496520400047302,
+              "raw_rank": 1,
+              "filtered_probability": 0.3525516092777252,
+              "scored_tokens": 16,
+              "mean_nll": 0.341232890843969,
+              "filtered_zero_tokens": 1
+            },
+            "correct_reference": {
+              "first_token_id": 101886,
+              "raw_probability": 0.00028948267572559416,
+              "raw_rank": 111,
+              "filtered_probability": 0.0,
+              "scored_tokens": 17,
+              "mean_nll": 2.9410825226520823,
+              "filtered_zero_tokens": 8
+            },
+            "end_answer": {
+              "first_token_id": 151645,
+              "raw_probability": 2.837988176906947e-06,
+              "raw_rank": 3074,
+              "filtered_probability": 0.0,
+              "scored_tokens": 1,
+              "mean_nll": 12.772415161132812,
+              "filtered_zero_tokens": 1
+            }
+          }
+        },
+        "v0122_loss3": {
+          "stopping_raw": {
+            "im_end_probability": 2.1265312170726247e-05,
+            "im_end_rank": 949,
+            "other_eos_probability": 1.0754102959253942e-06,
+            "close_think_probability": 1.3672307375145465e-07,
+            "close_think_rank": 36283
+          },
+          "stopping_filtered": {
+            "im_end_probability": 0.0,
+            "im_end_rank": 4,
+            "other_eos_probability": 0.0,
+            "close_think_probability": 0.0,
+            "close_think_rank": 4
+          },
+          "alternatives": {
+            "observed_copy": {
+              "first_token_id": 82832,
+              "raw_probability": 0.27535802125930786,
+              "raw_rank": 1,
+              "filtered_probability": 0.5042893886566162,
+              "scored_tokens": 16,
+              "mean_nll": 0.19866328836258162,
+              "filtered_zero_tokens": 0
+            },
+            "correct_reference": {
+              "first_token_id": 101886,
+              "raw_probability": 0.00019555217295419425,
+              "raw_rank": 176,
+              "filtered_probability": 0.0,
+              "scored_tokens": 17,
+              "mean_nll": 2.6352088441010837,
+              "filtered_zero_tokens": 8
+            },
+            "end_answer": {
+              "first_token_id": 151645,
+              "raw_probability": 2.1265312170726247e-05,
+              "raw_rank": 949,
+              "filtered_probability": 0.0,
+              "scored_tokens": 1,
+              "mean_nll": 10.75843334197998,
+              "filtered_zero_tokens": 1
+            }
+          }
+        },
+        "v0122_loss1": {
+          "stopping_raw": {
+            "im_end_probability": 1.032251566357445e-05,
+            "im_end_rank": 1625,
+            "other_eos_probability": 1.6332592167600524e-06,
+            "close_think_probability": 9.432736192138691e-08,
+            "close_think_rank": 43586
+          },
+          "stopping_filtered": {
+            "im_end_probability": 0.0,
+            "im_end_rank": 4,
+            "other_eos_probability": 0.0,
+            "close_think_probability": 0.0,
+            "close_think_rank": 4
+          },
+          "alternatives": {
+            "observed_copy": {
+              "first_token_id": 82832,
+              "raw_probability": 0.27425891160964966,
+              "raw_rank": 1,
+              "filtered_probability": 0.5236235857009888,
+              "scored_tokens": 16,
+              "mean_nll": 0.19103062495639733,
+              "filtered_zero_tokens": 0
+            },
+            "correct_reference": {
+              "first_token_id": 101886,
+              "raw_probability": 0.00017188531637657434,
+              "raw_rank": 197,
+              "filtered_probability": 0.0,
+              "scored_tokens": 17,
+              "mean_nll": 2.633090003310345,
+              "filtered_zero_tokens": 8
+            },
+            "end_answer": {
+              "first_token_id": 151645,
+              "raw_probability": 1.032251566357445e-05,
+              "raw_rank": 1625,
+              "filtered_probability": 0.0,
+              "scored_tokens": 1,
+              "mean_nll": 11.481183052062988,
+              "filtered_zero_tokens": 1
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "T021-C900-B4-G007/correct_end",
+      "case_id": "T021-C900-B4-G007",
+      "category": "echo",
+      "group": "nt_system",
+      "role": "counterfactual_complete_answer",
+      "active_sampling": "nonthinking",
+      "models": {
+        "base": {
+          "stopping_raw": {
+            "im_end_probability": 0.00024114262487273663,
+            "im_end_rank": 6,
+            "other_eos_probability": 5.995350700269131e-13,
+            "close_think_probability": 1.2161972817725797e-10,
+            "close_think_rank": 1658
+          },
+          "stopping_filtered": {
+            "im_end_probability": 0.0,
+            "im_end_rank": 2,
+            "other_eos_probability": 0.0,
+            "close_think_probability": 0.0,
+            "close_think_rank": 2
+          },
+          "alternatives": {
+            "end_answer": {
+              "first_token_id": 151645,
+              "raw_probability": 0.00024114262487273663,
+              "raw_rank": 6,
+              "filtered_probability": 0.0,
+              "scored_tokens": 1,
+              "mean_nll": 8.330121994018555,
+              "filtered_zero_tokens": 1
+            },
+            "repeat": {
+              "first_token_id": 16628,
+              "raw_probability": 2.2947956868080155e-09,
+              "raw_rank": 352,
+              "filtered_probability": 0.0,
+              "scored_tokens": 31,
+              "mean_nll": 1.5381653900143821,
+              "filtered_zero_tokens": 3
+            },
+            "extra_conclusion": {
+              "first_token_id": 70589,
+              "raw_probability": 6.640211935859952e-09,
+              "raw_rank": 241,
+              "filtered_probability": 0.0,
+              "scored_tokens": 9,
+              "mean_nll": 10.90597676972296,
+              "filtered_zero_tokens": 8
+            }
+          }
+        },
+        "v0114": {
+          "stopping_raw": {
+            "im_end_probability": 0.8352490663528442,
+            "im_end_rank": 1,
+            "other_eos_probability": 1.620675682545425e-08,
+            "close_think_probability": 3.792025745497085e-05,
+            "close_think_rank": 106
+          },
+          "stopping_filtered": {
+            "im_end_probability": 1.0,
+            "im_end_rank": 1,
+            "other_eos_probability": 0.0,
+            "close_think_probability": 0.0,
+            "close_think_rank": 2
+          },
+          "alternatives": {
+            "end_answer": {
+              "first_token_id": 151645,
+              "raw_probability": 0.8352490663528442,
+              "raw_rank": 1,
+              "filtered_probability": 1.0,
+              "scored_tokens": 1,
+              "mean_nll": 0.18002527952194214,
+              "filtered_zero_tokens": 0
+            },
+            "repeat": {
+              "first_token_id": 16628,
+              "raw_probability": 4.869057738687843e-05,
+              "raw_rank": 84,
+              "filtered_probability": 0.0,
+              "scored_tokens": 31,
+              "mean_nll": 0.6912991374825567,
+              "filtered_zero_tokens": 4
+            },
+            "extra_conclusion": {
+              "first_token_id": 70589,
+              "raw_probability": 3.1436997232958674e-05,
+              "raw_rank": 128,
+              "filtered_probability": 0.0,
+              "scored_tokens": 9,
+              "mean_nll": 5.2029605416788,
+              "filtered_zero_tokens": 6
+            }
+          }
+        },
+        "v0122_loss3": {
+          "stopping_raw": {
+            "im_end_probability": 0.8486480116844177,
+            "im_end_rank": 1,
+            "other_eos_probability": 8.6956298162022e-08,
+            "close_think_probability": 5.9674181102309376e-05,
+            "close_think_rank": 147
+          },
+          "stopping_filtered": {
+            "im_end_probability": 1.0,
+            "im_end_rank": 1,
+            "other_eos_probability": 0.0,
+            "close_think_probability": 0.0,
+            "close_think_rank": 2
+          },
+          "alternatives": {
+            "end_answer": {
+              "first_token_id": 151645,
+              "raw_probability": 0.8486480116844177,
+              "raw_rank": 1,
+              "filtered_probability": 1.0,
+              "scored_tokens": 1,
+              "mean_nll": 0.16411077976226807,
+              "filtered_zero_tokens": 0
+            },
+            "repeat": {
+              "first_token_id": 16628,
+              "raw_probability": 0.0003030505031347275,
+              "raw_rank": 28,
+              "filtered_probability": 0.0,
+              "scored_tokens": 31,
+              "mean_nll": 0.47515951383431987,
+              "filtered_zero_tokens": 2
+            },
+            "extra_conclusion": {
+              "first_token_id": 70589,
+              "raw_probability": 7.662316056666896e-05,
+              "raw_rank": 119,
+              "filtered_probability": 0.0,
+              "scored_tokens": 9,
+              "mean_nll": 4.864452931616041,
+              "filtered_zero_tokens": 6
+            }
+          }
+        },
+        "v0122_loss1": {
+          "stopping_raw": {
+            "im_end_probability": 0.7987267374992371,
+            "im_end_rank": 1,
+            "other_eos_probability": 1.1362512708501527e-07,
+            "close_think_probability": 7.440508488798514e-05,
+            "close_think_rank": 164
+          },
+          "stopping_filtered": {
+            "im_end_probability": 1.0,
+            "im_end_rank": 1,
+            "other_eos_probability": 0.0,
+            "close_think_probability": 0.0,
+            "close_think_rank": 2
+          },
+          "alternatives": {
+            "end_answer": {
+              "first_token_id": 151645,
+              "raw_probability": 0.7987267374992371,
+              "raw_rank": 1,
+              "filtered_probability": 1.0,
+              "scored_tokens": 1,
+              "mean_nll": 0.22473645210266113,
+              "filtered_zero_tokens": 0
+            },
+            "repeat": {
+              "first_token_id": 16628,
+              "raw_probability": 0.0005005834391340613,
+              "raw_rank": 23,
+              "filtered_probability": 0.0,
+              "scored_tokens": 31,
+              "mean_nll": 0.4477325201985863,
+              "filtered_zero_tokens": 2
+            },
+            "extra_conclusion": {
+              "first_token_id": 70589,
+              "raw_probability": 0.00010492799628991634,
+              "raw_rank": 124,
+              "filtered_probability": 0.0,
+              "scored_tokens": 9,
+              "mean_nll": 4.790080497662227,
+              "filtered_zero_tokens": 6
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "T021-P20-G0274/start",
+      "case_id": "T021-P20-G0274",
+      "category": "echo",
+      "group": "nt_system",
+      "role": "answer_start",
+      "active_sampling": "nonthinking",
+      "models": {
+        "base": {
+          "stopping_raw": {
+            "im_end_probability": 1.3589607346823843e-16,
+            "im_end_rank": 15182,
+            "other_eos_probability": 1.013695116868832e-17,
+            "close_think_probability": 7.344279405687829e-18,
+            "close_think_rank": 42232
+          },
+          "stopping_filtered": {
+            "im_end_probability": 0.0,
+            "im_end_rank": 2,
+            "other_eos_probability": 0.0,
+            "close_think_probability": 0.0,
+            "close_think_rank": 2
+          },
+          "alternatives": {
+            "observed_copy": {
+              "first_token_id": 101973,
+              "raw_probability": 8.586241892771795e-05,
+              "raw_rank": 12,
+              "filtered_probability": 0.0,
+              "scored_tokens": 48,
+              "mean_nll": 1.3114241392320918,
+              "filtered_zero_tokens": 8
+            },
+            "correct_reference": {
+              "first_token_id": 71137,
+              "raw_probability": 3.035880435930949e-09,
+              "raw_rank": 97,
+              "filtered_probability": 0.0,
+              "scored_tokens": 35,
+              "mean_nll": 5.183532201139024,
+              "filtered_zero_tokens": 17
+            },
+            "end_answer": {
+              "first_token_id": 151645,
+              "raw_probability": 1.3589607346823843e-16,
+              "raw_rank": 15182,
+              "filtered_probability": 0.0,
+              "scored_tokens": 1,
+              "mean_nll": 36.53464126586914,
+              "filtered_zero_tokens": 1
+            }
+          }
+        },
+        "v0114": {
+          "stopping_raw": {
+            "im_end_probability": 6.345961764964159e-07,
+            "im_end_rank": 9232,
+            "other_eos_probability": 3.066874532109409e-11,
+            "close_think_probability": 7.579169647442541e-08,
+            "close_think_rank": 28908
+          },
+          "stopping_filtered": {
+            "im_end_probability": 0.0,
+            "im_end_rank": 5,
+            "other_eos_probability": 0.0,
+            "close_think_probability": 0.0,
+            "close_think_rank": 5
+          },
+          "alternatives": {
+            "observed_copy": {
+              "first_token_id": 101973,
+              "raw_probability": 0.10656213760375977,
+              "raw_rank": 3,
+              "filtered_probability": 0.21720948815345764,
+              "scored_tokens": 48,
+              "mean_nll": 0.3685796593141883,
+              "filtered_zero_tokens": 1
+            },
+            "correct_reference": {
+              "first_token_id": 71137,
+              "raw_probability": 0.0006745079881511629,
+              "raw_rank": 104,
+              "filtered_probability": 0.0,
+              "scored_tokens": 35,
+              "mean_nll": 2.240006908498305,
+              "filtered_zero_tokens": 12
+            },
+            "end_answer": {
+              "first_token_id": 151645,
+              "raw_probability": 6.345961764964159e-07,
+              "raw_rank": 9232,
+              "filtered_probability": 0.0,
+              "scored_tokens": 1,
+              "mean_nll": 14.27027702331543,
+              "filtered_zero_tokens": 1
+            }
+          }
+        },
+        "v0122_loss3": {
+          "stopping_raw": {
+            "im_end_probability": 7.869145406402822e-07,
+            "im_end_rank": 12732,
+            "other_eos_probability": 2.899260276301163e-10,
+            "close_think_probability": 6.163596566466367e-08,
+            "close_think_rank": 52228
+          },
+          "stopping_filtered": {
+            "im_end_probability": 0.0,
+            "im_end_rank": 7,
+            "other_eos_probability": 0.0,
+            "close_think_probability": 0.0,
+            "close_think_rank": 7
+          },
+          "alternatives": {
+            "observed_copy": {
+              "first_token_id": 101973,
+              "raw_probability": 0.132139652967453,
+              "raw_rank": 1,
+              "filtered_probability": 0.5331200361251831,
+              "scored_tokens": 48,
+              "mean_nll": 0.27488990706297045,
+              "filtered_zero_tokens": 0
+            },
+            "correct_reference": {
+              "first_token_id": 71137,
+              "raw_probability": 0.0018848704639822245,
+              "raw_rank": 70,
+              "filtered_probability": 0.0,
+              "scored_tokens": 35,
+              "mean_nll": 2.0482357912031666,
+              "filtered_zero_tokens": 11
+            },
+            "end_answer": {
+              "first_token_id": 151645,
+              "raw_probability": 7.869145406402822e-07,
+              "raw_rank": 12732,
+              "filtered_probability": 0.0,
+              "scored_tokens": 1,
+              "mean_nll": 14.055146217346191,
+              "filtered_zero_tokens": 1
+            }
+          }
+        },
+        "v0122_loss1": {
+          "stopping_raw": {
+            "im_end_probability": 2.77159074357769e-06,
+            "im_end_rank": 8047,
+            "other_eos_probability": 4.675152487365608e-10,
+            "close_think_probability": 1.7173054800423415e-07,
+            "close_think_rank": 38356
+          },
+          "stopping_filtered": {
+            "im_end_probability": 0.0,
+            "im_end_rank": 7,
+            "other_eos_probability": 0.0,
+            "close_think_probability": 0.0,
+            "close_think_rank": 7
+          },
+          "alternatives": {
+            "observed_copy": {
+              "first_token_id": 101973,
+              "raw_probability": 0.13757452368736267,
+              "raw_rank": 1,
+              "filtered_probability": 0.606806218624115,
+              "scored_tokens": 48,
+              "mean_nll": 0.281685623221468,
+              "filtered_zero_tokens": 0
+            },
+            "correct_reference": {
+              "first_token_id": 71137,
+              "raw_probability": 0.0023671011440455914,
+              "raw_rank": 61,
+              "filtered_probability": 0.0,
+              "scored_tokens": 35,
+              "mean_nll": 2.0924234466760288,
+              "filtered_zero_tokens": 11
+            },
+            "end_answer": {
+              "first_token_id": 151645,
+              "raw_probability": 2.77159074357769e-06,
+              "raw_rank": 8047,
+              "filtered_probability": 0.0,
+              "scored_tokens": 1,
+              "mean_nll": 12.796089172363281,
+              "filtered_zero_tokens": 1
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "T021-P20-G0274/wrong_continuation",
+      "case_id": "T021-P20-G0274",
+      "category": "echo",
+      "group": "nt_system",
+      "role": "observed_continuation",
+      "active_sampling": "nonthinking",
+      "models": {
+        "base": {
+          "stopping_raw": {
+            "im_end_probability": 4.992153066797622e-13,
+            "im_end_rank": 18036,
+            "other_eos_probability": 1.6398193295862756e-13,
+            "close_think_probability": 8.069048460814226e-15,
+            "close_think_rank": 80172
+          },
+          "stopping_filtered": {
+            "im_end_probability": 0.0,
+            "im_end_rank": 2,
+            "other_eos_probability": 0.0,
+            "close_think_probability": 0.0,
+            "close_think_rank": 2
+          },
+          "alternatives": {
+            "observed_copy": {
+              "first_token_id": 99808,
+              "raw_probability": 0.831009566783905,
+              "raw_rank": 1,
+              "filtered_probability": 1.0,
+              "scored_tokens": 45,
+              "mean_nll": 0.3132621636462212,
+              "filtered_zero_tokens": 1
+            },
+            "correct_reference": {
+              "first_token_id": 101886,
+              "raw_probability": 0.0016042259521782398,
+              "raw_rank": 5,
+              "filtered_probability": 0.0,
+              "scored_tokens": 23,
+              "mean_nll": 5.257143058429432,
+              "filtered_zero_tokens": 14
+            },
+            "end_answer": {
+              "first_token_id": 151645,
+              "raw_probability": 4.992153066797622e-13,
+              "raw_rank": 18036,
+              "filtered_probability": 0.0,
+              "scored_tokens": 1,
+              "mean_nll": 28.32573890686035,
+              "filtered_zero_tokens": 1
+            }
+          }
+        },
+        "v0114": {
+          "stopping_raw": {
+            "im_end_probability": 7.847026495255705e-08,
+            "im_end_rank": 13118,
+            "other_eos_probability": 3.0729395916750946e-08,
+            "close_think_probability": 3.3678759780997325e-09,
+            "close_think_rank": 75064
+          },
+          "stopping_filtered": {
+            "im_end_probability": 0.0,
+            "im_end_rank": 2,
+            "other_eos_probability": 0.0,
+            "close_think_probability": 0.0,
+            "close_think_rank": 2
+          },
+          "alternatives": {
+            "observed_copy": {
+              "first_token_id": 99808,
+              "raw_probability": 0.7901397943496704,
+              "raw_rank": 1,
+              "filtered_probability": 1.0,
+              "scored_tokens": 45,
+              "mean_nll": 0.0632260641674697,
+              "filtered_zero_tokens": 0
+            },
+            "correct_reference": {
+              "first_token_id": 101886,
+              "raw_probability": 0.008777658455073833,
+              "raw_rank": 5,
+              "filtered_probability": 0.0,
+              "scored_tokens": 23,
+              "mean_nll": 2.258288359079692,
+              "filtered_zero_tokens": 8
+            },
+            "end_answer": {
+              "first_token_id": 151645,
+              "raw_probability": 7.847026495255705e-08,
+              "raw_rank": 13118,
+              "filtered_probability": 0.0,
+              "scored_tokens": 1,
+              "mean_nll": 16.360546112060547,
+              "filtered_zero_tokens": 1
+            }
+          }
+        },
+        "v0122_loss3": {
+          "stopping_raw": {
+            "im_end_probability": 1.430997826901148e-07,
+            "im_end_rank": 8770,
+            "other_eos_probability": 6.154645149081261e-08,
+            "close_think_probability": 2.969941181873992e-09,
+            "close_think_rank": 74548
+          },
+          "stopping_filtered": {
+            "im_end_probability": 0.0,
+            "im_end_rank": 2,
+            "other_eos_probability": 0.0,
+            "close_think_probability": 0.0,
+            "close_think_rank": 2
+          },
+          "alternatives": {
+            "observed_copy": {
+              "first_token_id": 99808,
+              "raw_probability": 0.9017001986503601,
+              "raw_rank": 1,
+              "filtered_probability": 1.0,
+              "scored_tokens": 45,
+              "mean_nll": 0.03297282784527245,
+              "filtered_zero_tokens": 0
+            },
+            "correct_reference": {
+              "first_token_id": 101886,
+              "raw_probability": 0.0008752743597142398,
+              "raw_rank": 15,
+              "filtered_probability": 0.0,
+              "scored_tokens": 23,
+              "mean_nll": 2.1969076085673724,
+              "filtered_zero_tokens": 6
+            },
+            "end_answer": {
+              "first_token_id": 151645,
+              "raw_probability": 1.430997826901148e-07,
+              "raw_rank": 8770,
+              "filtered_probability": 0.0,
+              "scored_tokens": 1,
+              "mean_nll": 15.759723663330078,
+              "filtered_zero_tokens": 1
+            }
+          }
+        },
+        "v0122_loss1": {
+          "stopping_raw": {
+            "im_end_probability": 2.1315197784588236e-07,
+            "im_end_rank": 8146,
+            "other_eos_probability": 8.090344039146657e-08,
+            "close_think_probability": 4.458529101469821e-09,
+            "close_think_rank": 71843
+          },
+          "stopping_filtered": {
+            "im_end_probability": 0.0,
+            "im_end_rank": 2,
+            "other_eos_probability": 0.0,
+            "close_think_probability": 0.0,
+            "close_think_rank": 2
+          },
+          "alternatives": {
+            "observed_copy": {
+              "first_token_id": 99808,
+              "raw_probability": 0.8947059512138367,
+              "raw_rank": 1,
+              "filtered_probability": 1.0,
+              "scored_tokens": 45,
+              "mean_nll": 0.03478424070894511,
+              "filtered_zero_tokens": 0
+            },
+            "correct_reference": {
+              "first_token_id": 101886,
+              "raw_probability": 0.0005969003541395068,
+              "raw_rank": 27,
+              "filtered_probability": 0.0,
+              "scored_tokens": 23,
+              "mean_nll": 2.2229743750725426,
+              "filtered_zero_tokens": 6
+            },
+            "end_answer": {
+              "first_token_id": 151645,
+              "raw_probability": 2.1315197784588236e-07,
+              "raw_rank": 8146,
+              "filtered_probability": 0.0,
+              "scored_tokens": 1,
+              "mean_nll": 15.361260414123535,
+              "filtered_zero_tokens": 1
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "T021-P20-G0274/correct_end",
+      "case_id": "T021-P20-G0274",
+      "category": "echo",
+      "group": "nt_system",
+      "role": "counterfactual_complete_answer",
+      "active_sampling": "nonthinking",
+      "models": {
+        "base": {
+          "stopping_raw": {
+            "im_end_probability": 1.489254515263383e-07,
+            "im_end_rank": 876,
+            "other_eos_probability": 4.358795546721694e-09,
+            "close_think_probability": 2.2042910552411143e-10,
+            "close_think_rank": 19336
+          },
+          "stopping_filtered": {
+            "im_end_probability": 0.0,
+            "im_end_rank": 3,
+            "other_eos_probability": 0.0,
+            "close_think_probability": 0.0,
+            "close_think_rank": 3
+          },
+          "alternatives": {
+            "end_answer": {
+              "first_token_id": 151645,
+              "raw_probability": 1.489254515263383e-07,
+              "raw_rank": 876,
+              "filtered_probability": 0.0,
+              "scored_tokens": 1,
+              "mean_nll": 15.719820022583008,
+              "filtered_zero_tokens": 1
+            },
+            "repeat": {
+              "first_token_id": 71137,
+              "raw_probability": 0.00018506193009670824,
+              "raw_rank": 42,
+              "filtered_probability": 0.0,
+              "scored_tokens": 35,
+              "mean_nll": 1.0357831664064217,
+              "filtered_zero_tokens": 6
+            },
+            "extra_conclusion": {
+              "first_token_id": 70589,
+              "raw_probability": 3.644085518317297e-05,
+              "raw_rank": 90,
+              "filtered_probability": 0.0,
+              "scored_tokens": 9,
+              "mean_nll": 6.2752033273896375,
+              "filtered_zero_tokens": 6
+            }
+          }
+        },
+        "v0114": {
+          "stopping_raw": {
+            "im_end_probability": 0.40243884921073914,
+            "im_end_rank": 1,
+            "other_eos_probability": 6.04681460458778e-08,
+            "close_think_probability": 8.188354695448652e-05,
+            "close_think_rank": 350
+          },
+          "stopping_filtered": {
+            "im_end_probability": 0.7448684573173523,
+            "im_end_rank": 1,
+            "other_eos_probability": 0.0,
+            "close_think_probability": 0.0,
+            "close_think_rank": 3
+          },
+          "alternatives": {
+            "end_answer": {
+              "first_token_id": 151645,
+              "raw_probability": 0.40243884921073914,
+              "raw_rank": 1,
+              "filtered_probability": 0.7448684573173523,
+              "scored_tokens": 1,
+              "mean_nll": 0.9102120995521545,
+              "filtered_zero_tokens": 0
+            },
+            "repeat": {
+              "first_token_id": 71137,
+              "raw_probability": 0.0028864957857877016,
+              "raw_rank": 21,
+              "filtered_probability": 0.0,
+              "scored_tokens": 35,
+              "mean_nll": 0.4586481648980485,
+              "filtered_zero_tokens": 2
+            },
+            "extra_conclusion": {
+              "first_token_id": 70589,
+              "raw_probability": 0.00047120751696638763,
+              "raw_rank": 81,
+              "filtered_probability": 0.0,
+              "scored_tokens": 9,
+              "mean_nll": 3.2345301331434815,
+              "filtered_zero_tokens": 5
+            }
+          }
+        },
+        "v0122_loss3": {
+          "stopping_raw": {
+            "im_end_probability": 0.4380916357040405,
+            "im_end_rank": 1,
+            "other_eos_probability": 1.4044471186025476e-07,
+            "close_think_probability": 0.00012969475938007236,
+            "close_think_rank": 339
+          },
+          "stopping_filtered": {
+            "im_end_probability": 1.0,
+            "im_end_rank": 1,
+            "other_eos_probability": 0.0,
+            "close_think_probability": 0.0,
+            "close_think_rank": 2
+          },
+          "alternatives": {
+            "end_answer": {
+              "first_token_id": 151645,
+              "raw_probability": 0.4380916357040405,
+              "raw_rank": 1,
+              "filtered_probability": 1.0,
+              "scored_tokens": 1,
+              "mean_nll": 0.8253272175788879,
+              "filtered_zero_tokens": 0
+            },
+            "repeat": {
+              "first_token_id": 71137,
+              "raw_probability": 0.0022988934069871902,
+              "raw_rank": 22,
+              "filtered_probability": 0.0,
+              "scored_tokens": 35,
+              "mean_nll": 0.3553404002005761,
+              "filtered_zero_tokens": 1
+            },
+            "extra_conclusion": {
+              "first_token_id": 70589,
+              "raw_probability": 0.0006187387625686824,
+              "raw_rank": 81,
+              "filtered_probability": 0.0,
+              "scored_tokens": 9,
+              "mean_nll": 2.921528840230571,
+              "filtered_zero_tokens": 5
+            }
+          }
+        },
+        "v0122_loss1": {
+          "stopping_raw": {
+            "im_end_probability": 0.4291907548904419,
+            "im_end_rank": 1,
+            "other_eos_probability": 1.4532528780364373e-07,
+            "close_think_probability": 0.00013525430404115468,
+            "close_think_rank": 350
+          },
+          "stopping_filtered": {
+            "im_end_probability": 1.0,
+            "im_end_rank": 1,
+            "other_eos_probability": 0.0,
+            "close_think_probability": 0.0,
+            "close_think_rank": 2
+          },
+          "alternatives": {
+            "end_answer": {
+              "first_token_id": 151645,
+              "raw_probability": 0.4291907548904419,
+              "raw_rank": 1,
+              "filtered_probability": 1.0,
+              "scored_tokens": 1,
+              "mean_nll": 0.8458538055419922,
+              "filtered_zero_tokens": 0
+            },
+            "repeat": {
+              "first_token_id": 71137,
+              "raw_probability": 0.0022521864157170057,
+              "raw_rank": 22,
+              "filtered_probability": 0.0,
+              "scored_tokens": 35,
+              "mean_nll": 0.36305412237727197,
+              "filtered_zero_tokens": 1
+            },
+            "extra_conclusion": {
+              "first_token_id": 70589,
+              "raw_probability": 0.0005694418796338141,
+              "raw_rank": 86,
+              "filtered_probability": 0.0,
+              "scored_tokens": 9,
+              "mean_nll": 2.9729231188280716,
+              "filtered_zero_tokens": 5
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "T021-R3300-G0243/after_1_cycles",
+      "case_id": "T021-R3300-G0243",
+      "category": "body_loop",
+      "group": "nt_system",
+      "role": "observed_loop",
+      "active_sampling": "nonthinking",
+      "models": {
+        "base": {
+          "stopping_raw": {
+            "im_end_probability": 5.881089365500358e-11,
+            "im_end_rank": 20592,
+            "other_eos_probability": 2.399851706247347e-10,
+            "close_think_probability": 3.4771120444726522e-12,
+            "close_think_rank": 75951
+          },
+          "stopping_filtered": {
+            "im_end_probability": 0.0,
+            "im_end_rank": 2,
+            "other_eos_probability": 0.0,
+            "close_think_probability": 0.0,
+            "close_think_rank": 2
+          },
+          "alternatives": {
+            "repeat": {
+              "first_token_id": 84184,
+              "raw_probability": 2.642846266098786e-05,
+              "raw_rank": 82,
+              "filtered_probability": 0.0,
+              "scored_tokens": 17,
+              "mean_nll": 1.4781409073403955,
+              "filtered_zero_tokens": 3
+            },
+            "correct_closure": {
+              "first_token_id": 101886,
+              "raw_probability": 0.846987783908844,
+              "raw_rank": 1,
+              "filtered_probability": 1.0,
+              "scored_tokens": 14,
+              "mean_nll": 3.26373866817604,
+              "filtered_zero_tokens": 7
+            },
+            "end_answer": {
+              "first_token_id": 151645,
+              "raw_probability": 5.881089365500358e-11,
+              "raw_rank": 20592,
+              "filtered_probability": 0.0,
+              "scored_tokens": 1,
+              "mean_nll": 23.55669403076172,
+              "filtered_zero_tokens": 1
+            }
+          }
+        },
+        "v0114": {
+          "stopping_raw": {
+            "im_end_probability": 3.2743439078330994e-05,
+            "im_end_rank": 1232,
+            "other_eos_probability": 4.276978771144968e-08,
+            "close_think_probability": 2.579350848463946e-07,
+            "close_think_rank": 25050
+          },
+          "stopping_filtered": {
+            "im_end_probability": 0.0,
+            "im_end_rank": 8,
+            "other_eos_probability": 0.0,
+            "close_think_probability": 0.0,
+            "close_think_rank": 8
+          },
+          "alternatives": {
+            "repeat": {
+              "first_token_id": 84184,
+              "raw_probability": 0.008528788574039936,
+              "raw_rank": 18,
+              "filtered_probability": 0.0,
+              "scored_tokens": 17,
+              "mean_nll": 0.7004255990226845,
+              "filtered_zero_tokens": 2
+            },
+            "correct_closure": {
+              "first_token_id": 101886,
+              "raw_probability": 0.1334126591682434,
+              "raw_rank": 1,
+              "filtered_probability": 0.4781738817691803,
+              "scored_tokens": 14,
+              "mean_nll": 2.0498770427490984,
+              "filtered_zero_tokens": 3
+            },
+            "end_answer": {
+              "first_token_id": 151645,
+              "raw_probability": 3.2743439078330994e-05,
+              "raw_rank": 1232,
+              "filtered_probability": 0.0,
+              "scored_tokens": 1,
+              "mean_nll": 10.326807975769043,
+              "filtered_zero_tokens": 1
+            }
+          }
+        },
+        "v0122_loss3": {
+          "stopping_raw": {
+            "im_end_probability": 0.013028460554778576,
+            "im_end_rank": 16,
+            "other_eos_probability": 6.33245278436334e-08,
+            "close_think_probability": 1.264663842448499e-05,
+            "close_think_rank": 2764
+          },
+          "stopping_filtered": {
+            "im_end_probability": 0.0,
+            "im_end_rank": 14,
+            "other_eos_probability": 0.0,
+            "close_think_probability": 0.0,
+            "close_think_rank": 14
+          },
+          "alternatives": {
+            "repeat": {
+              "first_token_id": 84184,
+              "raw_probability": 0.05152857303619385,
+              "raw_rank": 1,
+              "filtered_probability": 0.21458831429481506,
+              "scored_tokens": 17,
+              "mean_nll": 0.47914398308528366,
+              "filtered_zero_tokens": 0
+            },
+            "correct_closure": {
+              "first_token_id": 101886,
+              "raw_probability": 0.03125365823507309,
+              "raw_rank": 2,
+              "filtered_probability": 0.10504980385303497,
+              "scored_tokens": 14,
+              "mean_nll": 1.915620060038886,
+              "filtered_zero_tokens": 3
+            },
+            "end_answer": {
+              "first_token_id": 151645,
+              "raw_probability": 0.013028460554778576,
+              "raw_rank": 16,
+              "filtered_probability": 0.0,
+              "scored_tokens": 1,
+              "mean_nll": 4.340619087219238,
+              "filtered_zero_tokens": 1
+            }
+          }
+        },
+        "v0122_loss1": {
+          "stopping_raw": {
+            "im_end_probability": 0.010396122932434082,
+            "im_end_rank": 19,
+            "other_eos_probability": 7.467859575172042e-08,
+            "close_think_probability": 1.1798097148130182e-05,
+            "close_think_rank": 3042
+          },
+          "stopping_filtered": {
+            "im_end_probability": 0.0,
+            "im_end_rank": 14,
+            "other_eos_probability": 0.0,
+            "close_think_probability": 0.0,
+            "close_think_rank": 14
+          },
+          "alternatives": {
+            "repeat": {
+              "first_token_id": 84184,
+              "raw_probability": 0.056200895458459854,
+              "raw_rank": 1,
+              "filtered_probability": 0.24660885334014893,
+              "scored_tokens": 17,
+              "mean_nll": 0.4573362854519955,
+              "filtered_zero_tokens": 0
+            },
+            "correct_closure": {
+              "first_token_id": 101886,
+              "raw_probability": 0.026547424495220184,
+              "raw_rank": 2,
+              "filtered_probability": 0.08446803689002991,
+              "scored_tokens": 14,
+              "mean_nll": 1.9468954162938255,
+              "filtered_zero_tokens": 3
+            },
+            "end_answer": {
+              "first_token_id": 151645,
+              "raw_probability": 0.010396122932434082,
+              "raw_rank": 19,
+              "filtered_probability": 0.0,
+              "scored_tokens": 1,
+              "mean_nll": 4.566322326660156,
+              "filtered_zero_tokens": 1
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "T021-R3300-G0243/after_3_cycles",
+      "case_id": "T021-R3300-G0243",
+      "category": "body_loop",
+      "group": "nt_system",
+      "role": "observed_loop",
+      "active_sampling": "nonthinking",
+      "models": {
+        "base": {
+          "stopping_raw": {
+            "im_end_probability": 0.07359041273593903,
+            "im_end_rank": 2,
+            "other_eos_probability": 1.4503990231062858e-09,
+            "close_think_probability": 9.667503036325797e-06,
+            "close_think_rank": 245
+          },
+          "stopping_filtered": {
+            "im_end_probability": 0.0,
+            "im_end_rank": 2,
+            "other_eos_probability": 0.0,
+            "close_think_probability": 0.0,
+            "close_think_rank": 2
+          },
+          "alternatives": {
+            "repeat": {
+              "first_token_id": 84184,
+              "raw_probability": 0.7911716103553772,
+              "raw_rank": 1,
+              "filtered_probability": 1.0,
+              "scored_tokens": 17,
+              "mean_nll": 0.01845459934568585,
+              "filtered_zero_tokens": 0
+            },
+            "correct_closure": {
+              "first_token_id": 101886,
+              "raw_probability": 0.057312268763780594,
+              "raw_rank": 3,
+              "filtered_probability": 0.0,
+              "scored_tokens": 14,
+              "mean_nll": 2.9341861947974133,
+              "filtered_zero_tokens": 7
+            },
+            "end_answer": {
+              "first_token_id": 151645,
+              "raw_probability": 0.07359041273593903,
+              "raw_rank": 2,
+              "filtered_probability": 0.0,
+              "scored_tokens": 1,
+              "mean_nll": 2.6092405319213867,
+              "filtered_zero_tokens": 1
+            }
+          }
+        },
+        "v0114": {
+          "stopping_raw": {
+            "im_end_probability": 0.5854430198669434,
+            "im_end_rank": 1,
+            "other_eos_probability": 1.656297143881602e-07,
+            "close_think_probability": 9.87532694125548e-05,
+            "close_think_rank": 109
+          },
+          "stopping_filtered": {
+            "im_end_probability": 0.7094793319702148,
+            "im_end_rank": 1,
+            "other_eos_probability": 0.0,
+            "close_think_probability": 0.0,
+            "close_think_rank": 3
+          },
+          "alternatives": {
+            "repeat": {
+              "first_token_id": 84184,
+              "raw_probability": 0.31336510181427,
+              "raw_rank": 2,
+              "filtered_probability": 0.29052066802978516,
+              "scored_tokens": 17,
+              "mean_nll": 0.06996596353915491,
+              "filtered_zero_tokens": 0
+            },
+            "correct_closure": {
+              "first_token_id": 101886,
+              "raw_probability": 0.002247614087536931,
+              "raw_rank": 6,
+              "filtered_probability": 0.0,
+              "scored_tokens": 14,
+              "mean_nll": 2.321350792314791,
+              "filtered_zero_tokens": 4
+            },
+            "end_answer": {
+              "first_token_id": 151645,
+              "raw_probability": 0.5854430198669434,
+              "raw_rank": 1,
+              "filtered_probability": 0.7094793319702148,
+              "scored_tokens": 1,
+              "mean_nll": 0.535386323928833,
+              "filtered_zero_tokens": 0
+            }
+          }
+        },
+        "v0122_loss3": {
+          "stopping_raw": {
+            "im_end_probability": 0.3939914107322693,
+            "im_end_rank": 2,
+            "other_eos_probability": 1.7812129726735293e-07,
+            "close_think_probability": 9.6697207482066e-05,
+            "close_think_rank": 173
+          },
+          "stopping_filtered": {
+            "im_end_probability": 0.4554753005504608,
+            "im_end_rank": 2,
+            "other_eos_probability": 0.0,
+            "close_think_probability": 0.0,
+            "close_think_rank": 3
+          },
+          "alternatives": {
+            "repeat": {
+              "first_token_id": 84184,
+              "raw_probability": 0.446450799703598,
+              "raw_rank": 1,
+              "filtered_probability": 0.544524610042572,
+              "scored_tokens": 17,
+              "mean_nll": 0.04981710406312011,
+              "filtered_zero_tokens": 0
+            },
+            "correct_closure": {
+              "first_token_id": 101886,
+              "raw_probability": 0.0009174376027658582,
+              "raw_rank": 22,
+              "filtered_probability": 0.0,
+              "scored_tokens": 14,
+              "mean_nll": 2.1924656028194085,
+              "filtered_zero_tokens": 4
+            },
+            "end_answer": {
+              "first_token_id": 151645,
+              "raw_probability": 0.3939914107322693,
+              "raw_rank": 2,
+              "filtered_probability": 0.4554753005504608,
+              "scored_tokens": 1,
+              "mean_nll": 0.9314261674880981,
+              "filtered_zero_tokens": 0
+            }
+          }
+        },
+        "v0122_loss1": {
+          "stopping_raw": {
+            "im_end_probability": 0.39562857151031494,
+            "im_end_rank": 2,
+            "other_eos_probability": 1.9039700305256702e-07,
+            "close_think_probability": 0.00010336135164834559,
+            "close_think_rank": 159
+          },
+          "stopping_filtered": {
+            "im_end_probability": 0.4554753005504608,
+            "im_end_rank": 2,
+            "other_eos_probability": 0.0,
+            "close_think_probability": 0.0,
+            "close_think_rank": 3
+          },
+          "alternatives": {
+            "repeat": {
+              "first_token_id": 84184,
+              "raw_probability": 0.4483058750629425,
+              "raw_rank": 1,
+              "filtered_probability": 0.544524610042572,
+              "scored_tokens": 17,
+              "mean_nll": 0.049375998814331766,
+              "filtered_zero_tokens": 0
+            },
+            "correct_closure": {
+              "first_token_id": 101886,
+              "raw_probability": 0.0006740006501786411,
+              "raw_rank": 28,
+              "filtered_probability": 0.0,
+              "scored_tokens": 14,
+              "mean_nll": 2.2466192841529846,
+              "filtered_zero_tokens": 4
+            },
+            "end_answer": {
+              "first_token_id": 151645,
+              "raw_probability": 0.39562857151031494,
+              "raw_rank": 2,
+              "filtered_probability": 0.4554753005504608,
+              "scored_tokens": 1,
+              "mean_nll": 0.927279531955719,
+              "filtered_zero_tokens": 0
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "T021-R3300-G0243/correct_end",
+      "case_id": "T021-R3300-G0243",
+      "category": "body_loop",
+      "group": "nt_system",
+      "role": "counterfactual_complete_answer",
+      "active_sampling": "nonthinking",
+      "models": {
+        "base": {
+          "stopping_raw": {
+            "im_end_probability": 3.2484130940702016e-09,
+            "im_end_rank": 8027,
+            "other_eos_probability": 2.866714421401184e-09,
+            "close_think_probability": 3.688830491066497e-11,
+            "close_think_rank": 60826
+          },
+          "stopping_filtered": {
+            "im_end_probability": 0.0,
+            "im_end_rank": 7,
+            "other_eos_probability": 0.0,
+            "close_think_probability": 0.0,
+            "close_think_rank": 7
+          },
+          "alternatives": {
+            "end_answer": {
+              "first_token_id": 151645,
+              "raw_probability": 3.2484130940702016e-09,
+              "raw_rank": 8027,
+              "filtered_probability": 0.0,
+              "scored_tokens": 1,
+              "mean_nll": 19.54509925842285,
+              "filtered_zero_tokens": 1
+            },
+            "repeat": {
+              "first_token_id": 100714,
+              "raw_probability": 0.00034135131863877177,
+              "raw_rank": 58,
+              "filtered_probability": 0.0,
+              "scored_tokens": 28,
+              "mean_nll": 1.6951766971138205,
+              "filtered_zero_tokens": 6
+            },
+            "extra_conclusion": {
+              "first_token_id": 70589,
+              "raw_probability": 5.517430508916732e-06,
+              "raw_rank": 337,
+              "filtered_probability": 0.0,
+              "scored_tokens": 8,
+              "mean_nll": 7.569632699305657,
+              "filtered_zero_tokens": 5
+            }
+          }
+        },
+        "v0114": {
+          "stopping_raw": {
+            "im_end_probability": 0.08342234790325165,
+            "im_end_rank": 1,
+            "other_eos_probability": 8.302271226057201e-08,
+            "close_think_probability": 3.271787500125356e-05,
+            "close_think_rank": 1312
+          },
+          "stopping_filtered": {
+            "im_end_probability": 0.28879332542419434,
+            "im_end_rank": 1,
+            "other_eos_probability": 0.0,
+            "close_think_probability": 0.0,
+            "close_think_rank": 9
+          },
+          "alternatives": {
+            "end_answer": {
+              "first_token_id": 151645,
+              "raw_probability": 0.08342234790325165,
+              "raw_rank": 1,
+              "filtered_probability": 0.28879332542419434,
+              "scored_tokens": 1,
+              "mean_nll": 2.4838390350341797,
+              "filtered_zero_tokens": 0
+            },
+            "repeat": {
+              "first_token_id": 100714,
+              "raw_probability": 0.018614042550325394,
+              "raw_rank": 9,
+              "filtered_probability": 0.0,
+              "scored_tokens": 28,
+              "mean_nll": 0.7006701971571943,
+              "filtered_zero_tokens": 3
+            },
+            "extra_conclusion": {
+              "first_token_id": 70589,
+              "raw_probability": 0.00038632212090305984,
+              "raw_rank": 187,
+              "filtered_probability": 0.0,
+              "scored_tokens": 8,
+              "mean_nll": 4.401681990362704,
+              "filtered_zero_tokens": 5
+            }
+          }
+        },
+        "v0122_loss3": {
+          "stopping_raw": {
+            "im_end_probability": 0.14729563891887665,
+            "im_end_rank": 1,
+            "other_eos_probability": 1.8101449938967562e-07,
+            "close_think_probability": 4.2264469811925665e-05,
+            "close_think_rank": 1278
+          },
+          "stopping_filtered": {
+            "im_end_probability": 0.5804470181465149,
+            "im_end_rank": 1,
+            "other_eos_probability": 0.0,
+            "close_think_probability": 0.0,
+            "close_think_rank": 7
+          },
+          "alternatives": {
+            "end_answer": {
+              "first_token_id": 151645,
+              "raw_probability": 0.14729563891887665,
+              "raw_rank": 1,
+              "filtered_probability": 0.5804470181465149,
+              "scored_tokens": 1,
+              "mean_nll": 1.9153136014938354,
+              "filtered_zero_tokens": 0
+            },
+            "repeat": {
+              "first_token_id": 100714,
+              "raw_probability": 0.019934292882680893,
+              "raw_rank": 8,
+              "filtered_probability": 0.0,
+              "scored_tokens": 28,
+              "mean_nll": 0.5310971984296852,
+              "filtered_zero_tokens": 2
+            },
+            "extra_conclusion": {
+              "first_token_id": 70589,
+              "raw_probability": 0.0003222078667022288,
+              "raw_rank": 255,
+              "filtered_probability": 0.0,
+              "scored_tokens": 8,
+              "mean_nll": 4.310691488906741,
+              "filtered_zero_tokens": 5
+            }
+          }
+        },
+        "v0122_loss1": {
+          "stopping_raw": {
+            "im_end_probability": 0.12859156727790833,
+            "im_end_rank": 1,
+            "other_eos_probability": 1.9821241892259422e-07,
+            "close_think_probability": 4.3137661123182625e-05,
+            "close_think_rank": 1308
+          },
+          "stopping_filtered": {
+            "im_end_probability": 0.5202075242996216,
+            "im_end_rank": 1,
+            "other_eos_probability": 0.0,
+            "close_think_probability": 0.0,
+            "close_think_rank": 8
+          },
+          "alternatives": {
+            "end_answer": {
+              "first_token_id": 151645,
+              "raw_probability": 0.12859156727790833,
+              "raw_rank": 1,
+              "filtered_probability": 0.5202075242996216,
+              "scored_tokens": 1,
+              "mean_nll": 2.051114082336426,
+              "filtered_zero_tokens": 0
+            },
+            "repeat": {
+              "first_token_id": 100714,
+              "raw_probability": 0.017402974888682365,
+              "raw_rank": 9,
+              "filtered_probability": 0.0,
+              "scored_tokens": 28,
+              "mean_nll": 0.5239452141979167,
+              "filtered_zero_tokens": 2
+            },
+            "extra_conclusion": {
+              "first_token_id": 70589,
+              "raw_probability": 0.0003393039805814624,
+              "raw_rank": 254,
+              "filtered_probability": 0.0,
+              "scored_tokens": 8,
+              "mean_nll": 4.3037461675703526,
+              "filtered_zero_tokens": 5
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "T021-R3300-G1038/after_1_cycles",
+      "case_id": "T021-R3300-G1038",
+      "category": "body_loop",
+      "group": "nt_system",
+      "role": "observed_loop",
+      "active_sampling": "nonthinking",
+      "models": {
+        "base": {
+          "stopping_raw": {
+            "im_end_probability": 7.002509466377815e-14,
+            "im_end_rank": 26613,
+            "other_eos_probability": 9.403098247685437e-15,
+            "close_think_probability": 2.1988054162391498e-15,
+            "close_think_rank": 82713
+          },
+          "stopping_filtered": {
+            "im_end_probability": 0.0,
+            "im_end_rank": 4,
+            "other_eos_probability": 0.0,
+            "close_think_probability": 0.0,
+            "close_think_rank": 4
+          },
+          "alternatives": {
+            "repeat": {
+              "first_token_id": 94299,
+              "raw_probability": 0.0008295633015222847,
+              "raw_rank": 16,
+              "filtered_probability": 0.0,
+              "scored_tokens": 48,
+              "mean_nll": 0.23126505253411592,
+              "filtered_zero_tokens": 2
+            },
+            "correct_closure": {
+              "first_token_id": 101184,
+              "raw_probability": 0.3346697986125946,
+              "raw_rank": 1,
+              "filtered_probability": 0.4816684424877167,
+              "scored_tokens": 19,
+              "mean_nll": 4.55726312698597,
+              "filtered_zero_tokens": 8
+            },
+            "end_answer": {
+              "first_token_id": 151645,
+              "raw_probability": 7.002509466377815e-14,
+              "raw_rank": 26613,
+              "filtered_probability": 0.0,
+              "scored_tokens": 1,
+              "mean_nll": 30.2899227142334,
+              "filtered_zero_tokens": 1
+            }
+          }
+        },
+        "v0114": {
+          "stopping_raw": {
+            "im_end_probability": 1.6027080107505753e-08,
+            "im_end_rank": 28038,
+            "other_eos_probability": 1.0550378348739287e-09,
+            "close_think_probability": 2.3270287918819577e-09,
+            "close_think_rank": 83768
+          },
+          "stopping_filtered": {
+            "im_end_probability": 0.0,
+            "im_end_rank": 4,
+            "other_eos_probability": 0.0,
+            "close_think_probability": 0.0,
+            "close_think_rank": 4
+          },
+          "alternatives": {
+            "repeat": {
+              "first_token_id": 94299,
+              "raw_probability": 0.11443638056516647,
+              "raw_rank": 3,
+              "filtered_probability": 0.12451338768005371,
+              "scored_tokens": 48,
+              "mean_nll": 0.08549052229245409,
+              "filtered_zero_tokens": 0
+            },
+            "correct_closure": {
+              "first_token_id": 101184,
+              "raw_probability": 0.01366748008877039,
+              "raw_rank": 7,
+              "filtered_probability": 0.0,
+              "scored_tokens": 19,
+              "mean_nll": 2.328032890874678,
+              "filtered_zero_tokens": 8
+            },
+            "end_answer": {
+              "first_token_id": 151645,
+              "raw_probability": 1.6027080107505753e-08,
+              "raw_rank": 28038,
+              "filtered_probability": 0.0,
+              "scored_tokens": 1,
+              "mean_nll": 17.948986053466797,
+              "filtered_zero_tokens": 1
+            }
+          }
+        },
+        "v0122_loss3": {
+          "stopping_raw": {
+            "im_end_probability": 4.668651953920744e-08,
+            "im_end_rank": 23954,
+            "other_eos_probability": 2.7281175096760535e-09,
+            "close_think_probability": 6.123939133573231e-09,
+            "close_think_rank": 81395
+          },
+          "stopping_filtered": {
+            "im_end_probability": 0.0,
+            "im_end_rank": 4,
+            "other_eos_probability": 0.0,
+            "close_think_probability": 0.0,
+            "close_think_rank": 4
+          },
+          "alternatives": {
+            "repeat": {
+              "first_token_id": 94299,
+              "raw_probability": 0.15746356546878815,
+              "raw_rank": 3,
+              "filtered_probability": 0.21046431362628937,
+              "scored_tokens": 48,
+              "mean_nll": 0.06372003238898571,
+              "filtered_zero_tokens": 0
+            },
+            "correct_closure": {
+              "first_token_id": 101184,
+              "raw_probability": 0.00834526214748621,
+              "raw_rank": 10,
+              "filtered_probability": 0.0,
+              "scored_tokens": 19,
+              "mean_nll": 2.180392692594691,
+              "filtered_zero_tokens": 7
+            },
+            "end_answer": {
+              "first_token_id": 151645,
+              "raw_probability": 4.668651953920744e-08,
+              "raw_rank": 23954,
+              "filtered_probability": 0.0,
+              "scored_tokens": 1,
+              "mean_nll": 16.879810333251953,
+              "filtered_zero_tokens": 1
+            }
+          }
+        },
+        "v0122_loss1": {
+          "stopping_raw": {
+            "im_end_probability": 4.3056097354110534e-08,
+            "im_end_rank": 25188,
+            "other_eos_probability": 3.5480922644381963e-09,
+            "close_think_probability": 5.965192340084968e-09,
+            "close_think_rank": 82525
+          },
+          "stopping_filtered": {
+            "im_end_probability": 0.0,
+            "im_end_rank": 4,
+            "other_eos_probability": 0.0,
+            "close_think_probability": 0.0,
+            "close_think_rank": 4
+          },
+          "alternatives": {
+            "repeat": {
+              "first_token_id": 94299,
+              "raw_probability": 0.17245171964168549,
+              "raw_rank": 3,
+              "filtered_probability": 0.24166783690452576,
+              "scored_tokens": 48,
+              "mean_nll": 0.058838592836120064,
+              "filtered_zero_tokens": 0
+            },
+            "correct_closure": {
+              "first_token_id": 101184,
+              "raw_probability": 0.00858586560934782,
+              "raw_rank": 9,
+              "filtered_probability": 0.0,
+              "scored_tokens": 19,
+              "mean_nll": 2.1753514010924846,
+              "filtered_zero_tokens": 8
+            },
+            "end_answer": {
+              "first_token_id": 151645,
+              "raw_probability": 4.3056097354110534e-08,
+              "raw_rank": 25188,
+              "filtered_probability": 0.0,
+              "scored_tokens": 1,
+              "mean_nll": 16.96076202392578,
+              "filtered_zero_tokens": 1
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "T021-R3300-G1038/after_3_cycles",
+      "case_id": "T021-R3300-G1038",
+      "category": "body_loop",
+      "group": "nt_system",
+      "role": "observed_loop",
+      "active_sampling": "nonthinking",
+      "models": {
+        "base": {
+          "stopping_raw": {
+            "im_end_probability": 5.047864556906312e-11,
+            "im_end_rank": 19933,
+            "other_eos_probability": 1.1195832672408756e-12,
+            "close_think_probability": 6.268975356188422e-12,
+            "close_think_rank": 57388
+          },
+          "stopping_filtered": {
+            "im_end_probability": 0.0,
+            "im_end_rank": 2,
+            "other_eos_probability": 0.0,
+            "close_think_probability": 0.0,
+            "close_think_rank": 2
+          },
+          "alternatives": {
+            "repeat": {
+              "first_token_id": 94299,
+              "raw_probability": 0.9782689213752747,
+              "raw_rank": 1,
+              "filtered_probability": 1.0,
+              "scored_tokens": 48,
+              "mean_nll": 0.0006889572307076838,
+              "filtered_zero_tokens": 0
+            },
+            "correct_closure": {
+              "first_token_id": 101184,
+              "raw_probability": 0.0004774883564095944,
+              "raw_rank": 10,
+              "filtered_probability": 0.0,
+              "scored_tokens": 19,
+              "mean_nll": 4.6341004461666735,
+              "filtered_zero_tokens": 9
+            },
+            "end_answer": {
+              "first_token_id": 151645,
+              "raw_probability": 5.047864556906312e-11,
+              "raw_rank": 19933,
+              "filtered_probability": 0.0,
+              "scored_tokens": 1,
+              "mean_nll": 23.709470748901367,
+              "filtered_zero_tokens": 1
+            }
+          }
+        },
+        "v0114": {
+          "stopping_raw": {
+            "im_end_probability": 1.8908725696320516e-09,
+            "im_end_rank": 29958,
+            "other_eos_probability": 8.438745535688241e-11,
+            "close_think_probability": 4.387177288123212e-10,
+            "close_think_rank": 69258
+          },
+          "stopping_filtered": {
+            "im_end_probability": 0.0,
+            "im_end_rank": 2,
+            "other_eos_probability": 0.0,
+            "close_think_probability": 0.0,
+            "close_think_rank": 2
+          },
+          "alternatives": {
+            "repeat": {
+              "first_token_id": 94299,
+              "raw_probability": 0.9765521883964539,
+              "raw_rank": 1,
+              "filtered_probability": 1.0,
+              "scored_tokens": 48,
+              "mean_nll": 0.0007626799029064971,
+              "filtered_zero_tokens": 0
+            },
+            "correct_closure": {
+              "first_token_id": 101184,
+              "raw_probability": 9.991133265430108e-05,
+              "raw_rank": 20,
+              "filtered_probability": 0.0,
+              "scored_tokens": 19,
+              "mean_nll": 2.6565996472965803,
+              "filtered_zero_tokens": 8
+            },
+            "end_answer": {
+              "first_token_id": 151645,
+              "raw_probability": 1.8908725696320516e-09,
+              "raw_rank": 29958,
+              "filtered_probability": 0.0,
+              "scored_tokens": 1,
+              "mean_nll": 20.086227416992188,
+              "filtered_zero_tokens": 1
+            }
+          }
+        },
+        "v0122_loss3": {
+          "stopping_raw": {
+            "im_end_probability": 1.0657965177074402e-08,
+            "im_end_rank": 28898,
+            "other_eos_probability": 5.670621749942484e-10,
+            "close_think_probability": 2.165296608680478e-09,
+            "close_think_rank": 73843
+          },
+          "stopping_filtered": {
+            "im_end_probability": 0.0,
+            "im_end_rank": 2,
+            "other_eos_probability": 0.0,
+            "close_think_probability": 0.0,
+            "close_think_rank": 2
+          },
+          "alternatives": {
+            "repeat": {
+              "first_token_id": 94299,
+              "raw_probability": 0.9270868897438049,
+              "raw_rank": 1,
+              "filtered_probability": 1.0,
+              "scored_tokens": 48,
+              "mean_nll": 0.0023331602877606863,
+              "filtered_zero_tokens": 0
+            },
+            "correct_closure": {
+              "first_token_id": 101184,
+              "raw_probability": 0.0002744591038208455,
+              "raw_rank": 20,
+              "filtered_probability": 0.0,
+              "scored_tokens": 19,
+              "mean_nll": 2.381988929342601,
+              "filtered_zero_tokens": 8
+            },
+            "end_answer": {
+              "first_token_id": 151645,
+              "raw_probability": 1.0657965177074402e-08,
+              "raw_rank": 28898,
+              "filtered_probability": 0.0,
+              "scored_tokens": 1,
+              "mean_nll": 18.356958389282227,
+              "filtered_zero_tokens": 1
+            }
+          }
+        },
+        "v0122_loss1": {
+          "stopping_raw": {
+            "im_end_probability": 1.0044671761022528e-08,
+            "im_end_rank": 29124,
+            "other_eos_probability": 8.054169553517454e-10,
+            "close_think_probability": 2.040698721117451e-09,
+            "close_think_rank": 74057
+          },
+          "stopping_filtered": {
+            "im_end_probability": 0.0,
+            "im_end_rank": 2,
+            "other_eos_probability": 0.0,
+            "close_think_probability": 0.0,
+            "close_think_rank": 2
+          },
+          "alternatives": {
+            "repeat": {
+              "first_token_id": 94299,
+              "raw_probability": 0.9300898909568787,
+              "raw_rank": 1,
+              "filtered_probability": 1.0,
+              "scored_tokens": 48,
+              "mean_nll": 0.0021645729599211925,
+              "filtered_zero_tokens": 0
+            },
+            "correct_closure": {
+              "first_token_id": 101184,
+              "raw_probability": 0.00024299384676851332,
+              "raw_rank": 20,
+              "filtered_probability": 0.0,
+              "scored_tokens": 19,
+              "mean_nll": 2.4000930497484085,
+              "filtered_zero_tokens": 8
+            },
+            "end_answer": {
+              "first_token_id": 151645,
+              "raw_probability": 1.0044671761022528e-08,
+              "raw_rank": 29124,
+              "filtered_probability": 0.0,
+              "scored_tokens": 1,
+              "mean_nll": 18.416223526000977,
+              "filtered_zero_tokens": 1
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "T021-R3300-G1038/correct_end",
+      "case_id": "T021-R3300-G1038",
+      "category": "body_loop",
+      "group": "nt_system",
+      "role": "counterfactual_complete_answer",
+      "active_sampling": "nonthinking",
+      "models": {
+        "base": {
+          "stopping_raw": {
+            "im_end_probability": 0.9931302666664124,
+            "im_end_rank": 1,
+            "other_eos_probability": 6.788926365519643e-11,
+            "close_think_probability": 3.900881324625516e-07,
+            "close_think_rank": 68
+          },
+          "stopping_filtered": {
+            "im_end_probability": 1.0,
+            "im_end_rank": 1,
+            "other_eos_probability": 0.0,
+            "close_think_probability": 0.0,
+            "close_think_rank": 2
+          },
+          "alternatives": {
+            "end_answer": {
+              "first_token_id": 151645,
+              "raw_probability": 0.9931302666664124,
+              "raw_rank": 1,
+              "filtered_probability": 1.0,
+              "scored_tokens": 1,
+              "mean_nll": 0.006893423851579428,
+              "filtered_zero_tokens": 0
+            },
+            "repeat": {
+              "first_token_id": 52129,
+              "raw_probability": 5.109146150061861e-05,
+              "raw_rank": 9,
+              "filtered_probability": 0.0,
+              "scored_tokens": 46,
+              "mean_nll": 0.7233906295080788,
+              "filtered_zero_tokens": 3
+            },
+            "extra_conclusion": {
+              "first_token_id": 70589,
+              "raw_probability": 9.961249816115014e-07,
+              "raw_rank": 44,
+              "filtered_probability": 0.0,
+              "scored_tokens": 8,
+              "mean_nll": 10.309205340504377,
+              "filtered_zero_tokens": 5
+            }
+          }
+        },
+        "v0114": {
+          "stopping_raw": {
+            "im_end_probability": 0.9557382464408875,
+            "im_end_rank": 1,
+            "other_eos_probability": 5.0017348485198454e-08,
+            "close_think_probability": 5.5714455811539665e-05,
+            "close_think_rank": 60
+          },
+          "stopping_filtered": {
+            "im_end_probability": 1.0,
+            "im_end_rank": 1,
+            "other_eos_probability": 0.0,
+            "close_think_probability": 0.0,
+            "close_think_rank": 2
+          },
+          "alternatives": {
+            "end_answer": {
+              "first_token_id": 151645,
+              "raw_probability": 0.9557382464408875,
+              "raw_rank": 1,
+              "filtered_probability": 1.0,
+              "scored_tokens": 1,
+              "mean_nll": 0.04527123272418976,
+              "filtered_zero_tokens": 0
+            },
+            "repeat": {
+              "first_token_id": 52129,
+              "raw_probability": 0.0009875618852674961,
+              "raw_rank": 7,
+              "filtered_probability": 0.0,
+              "scored_tokens": 46,
+              "mean_nll": 0.26117155547586085,
+              "filtered_zero_tokens": 1
+            },
+            "extra_conclusion": {
+              "first_token_id": 70589,
+              "raw_probability": 8.629223884781823e-05,
+              "raw_rank": 45,
+              "filtered_probability": 0.0,
+              "scored_tokens": 8,
+              "mean_nll": 4.390661985147744,
+              "filtered_zero_tokens": 5
+            }
+          }
+        },
+        "v0122_loss3": {
+          "stopping_raw": {
+            "im_end_probability": 0.9345736503601074,
+            "im_end_rank": 1,
+            "other_eos_probability": 1.2686210482115712e-07,
+            "close_think_probability": 6.995453441049904e-05,
+            "close_think_rank": 89
+          },
+          "stopping_filtered": {
+            "im_end_probability": 1.0,
+            "im_end_rank": 1,
+            "other_eos_probability": 0.0,
+            "close_think_probability": 0.0,
+            "close_think_rank": 2
+          },
+          "alternatives": {
+            "end_answer": {
+              "first_token_id": 151645,
+              "raw_probability": 0.9345736503601074,
+              "raw_rank": 1,
+              "filtered_probability": 1.0,
+              "scored_tokens": 1,
+              "mean_nll": 0.06766482442617416,
+              "filtered_zero_tokens": 0
+            },
+            "repeat": {
+              "first_token_id": 52129,
+              "raw_probability": 0.00297454372048378,
+              "raw_rank": 3,
+              "filtered_probability": 0.0,
+              "scored_tokens": 46,
+              "mean_nll": 0.20720807793233204,
+              "filtered_zero_tokens": 1
+            },
+            "extra_conclusion": {
+              "first_token_id": 70589,
+              "raw_probability": 0.00015764497220516205,
+              "raw_rank": 41,
+              "filtered_probability": 0.0,
+              "scored_tokens": 8,
+              "mean_nll": 3.968140964221675,
+              "filtered_zero_tokens": 4
+            }
+          }
+        },
+        "v0122_loss1": {
+          "stopping_raw": {
+            "im_end_probability": 0.9292672872543335,
+            "im_end_rank": 1,
+            "other_eos_probability": 1.3853976099653664e-07,
+            "close_think_probability": 7.404344069072977e-05,
+            "close_think_rank": 88
+          },
+          "stopping_filtered": {
+            "im_end_probability": 1.0,
+            "im_end_rank": 1,
+            "other_eos_probability": 0.0,
+            "close_think_probability": 0.0,
+            "close_think_rank": 2
+          },
+          "alternatives": {
+            "end_answer": {
+              "first_token_id": 151645,
+              "raw_probability": 0.9292672872543335,
+              "raw_rank": 1,
+              "filtered_probability": 1.0,
+              "scored_tokens": 1,
+              "mean_nll": 0.07335889339447021,
+              "filtered_zero_tokens": 0
+            },
+            "repeat": {
+              "first_token_id": 52129,
+              "raw_probability": 0.003148406045511365,
+              "raw_rank": 3,
+              "filtered_probability": 0.0,
+              "scored_tokens": 46,
+              "mean_nll": 0.20724395651713223,
+              "filtered_zero_tokens": 1
+            },
+            "extra_conclusion": {
+              "first_token_id": 70589,
+              "raw_probability": 0.00014725296932738274,
+              "raw_rank": 45,
+              "filtered_probability": 0.0,
+              "scored_tokens": 8,
+              "mean_nll": 4.010346959228627,
+              "filtered_zero_tokens": 4
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "T021-SP60-G10/after_0_cycles",
+      "case_id": "T021-SP60-G10",
+      "category": "thinking_loop",
+      "group": "thinking_system",
+      "role": "observed_reasoning_loop",
+      "active_sampling": "thinking",
+      "models": {
+        "base": {
+          "stopping_raw": {
+            "im_end_probability": 1.4034770678961195e-08,
+            "im_end_rank": 19209,
+            "other_eos_probability": 1.650226955085543e-09,
+            "close_think_probability": 3.1315807724752176e-09,
+            "close_think_rank": 43330
+          },
+          "stopping_filtered": {
+            "im_end_probability": 0.0,
+            "im_end_rank": 8,
+            "other_eos_probability": 0.0,
+            "close_think_probability": 0.0,
+            "close_think_rank": 8
+          },
+          "alternatives": {
+            "repeat": {
+              "first_token_id": 85106,
+              "raw_probability": 0.09124300628900528,
+              "raw_rank": 3,
+              "filtered_probability": 0.10145341604948044,
+              "scored_tokens": 11,
+              "mean_nll": 1.4229370770467953,
+              "filtered_zero_tokens": 1
+            },
+            "close_think_then_answer": {
+              "first_token_id": 151668,
+              "raw_probability": 3.1315807724752176e-09,
+              "raw_rank": 43330,
+              "filtered_probability": 0.0,
+              "scored_tokens": 48,
+              "mean_nll": 1.948442617029805,
+              "filtered_zero_tokens": 10
+            },
+            "end_answer": {
+              "first_token_id": 151645,
+              "raw_probability": 1.4034770678961195e-08,
+              "raw_rank": 19209,
+              "filtered_probability": 0.0,
+              "scored_tokens": 1,
+              "mean_nll": 18.081727981567383,
+              "filtered_zero_tokens": 1
+            }
+          }
+        },
+        "v0114": {
+          "stopping_raw": {
+            "im_end_probability": 3.1890195373307506e-08,
+            "im_end_rank": 18675,
+            "other_eos_probability": 4.18308321314953e-09,
+            "close_think_probability": 5.628953747560672e-09,
+            "close_think_rank": 47134
+          },
+          "stopping_filtered": {
+            "im_end_probability": 0.0,
+            "im_end_rank": 9,
+            "other_eos_probability": 0.0,
+            "close_think_probability": 0.0,
+            "close_think_rank": 9
+          },
+          "alternatives": {
+            "repeat": {
+              "first_token_id": 85106,
+              "raw_probability": 0.13385900855064392,
+              "raw_rank": 2,
+              "filtered_probability": 0.22767025232315063,
+              "scored_tokens": 11,
+              "mean_nll": 1.3872325606644154,
+              "filtered_zero_tokens": 1
+            },
+            "close_think_then_answer": {
+              "first_token_id": 151668,
+              "raw_probability": 5.628953747560672e-09,
+              "raw_rank": 47134,
+              "filtered_probability": 0.0,
+              "scored_tokens": 48,
+              "mean_nll": 1.6141150671225664,
+              "filtered_zero_tokens": 8
+            },
+            "end_answer": {
+              "first_token_id": 151645,
+              "raw_probability": 3.1890195373307506e-08,
+              "raw_rank": 18675,
+              "filtered_probability": 0.0,
+              "scored_tokens": 1,
+              "mean_nll": 17.260967254638672,
+              "filtered_zero_tokens": 1
+            }
+          }
+        },
+        "v0122_loss3": {
+          "stopping_raw": {
+            "im_end_probability": 1.1668954158494671e-07,
+            "im_end_rank": 20782,
+            "other_eos_probability": 4.317350921212437e-09,
+            "close_think_probability": 1.7894921100491956e-08,
+            "close_think_rank": 59877
+          },
+          "stopping_filtered": {
+            "im_end_probability": 0.0,
+            "im_end_rank": 16,
+            "other_eos_probability": 0.0,
+            "close_think_probability": 0.0,
+            "close_think_rank": 16
+          },
+          "alternatives": {
+            "repeat": {
+              "first_token_id": 85106,
+              "raw_probability": 0.053263794630765915,
+              "raw_rank": 2,
+              "filtered_probability": 0.11957352608442307,
+              "scored_tokens": 11,
+              "mean_nll": 1.2697483636438847,
+              "filtered_zero_tokens": 0
+            },
+            "close_think_then_answer": {
+              "first_token_id": 151668,
+              "raw_probability": 1.7894921100491956e-08,
+              "raw_rank": 59877,
+              "filtered_probability": 0.0,
+              "scored_tokens": 48,
+              "mean_nll": 1.3596708650384433,
+              "filtered_zero_tokens": 6
+            },
+            "end_answer": {
+              "first_token_id": 151645,
+              "raw_probability": 1.1668954158494671e-07,
+              "raw_rank": 20782,
+              "filtered_probability": 0.0,
+              "scored_tokens": 1,
+              "mean_nll": 15.963748931884766,
+              "filtered_zero_tokens": 1
+            }
+          }
+        },
+        "v0122_loss1": {
+          "stopping_raw": {
+            "im_end_probability": 1.8371397914052068e-07,
+            "im_end_rank": 18898,
+            "other_eos_probability": 5.171007622095658e-09,
+            "close_think_probability": 2.7306644057034646e-08,
+            "close_think_rank": 55526
+          },
+          "stopping_filtered": {
+            "im_end_probability": 0.0,
+            "im_end_rank": 17,
+            "other_eos_probability": 0.0,
+            "close_think_probability": 0.0,
+            "close_think_rank": 17
+          },
+          "alternatives": {
+            "repeat": {
+              "first_token_id": 85106,
+              "raw_probability": 0.05086217448115349,
+              "raw_rank": 2,
+              "filtered_probability": 0.12126460671424866,
+              "scored_tokens": 11,
+              "mean_nll": 1.2613992162726142,
+              "filtered_zero_tokens": 0
+            },
+            "close_think_then_answer": {
+              "first_token_id": 151668,
+              "raw_probability": 2.7306644057034646e-08,
+              "raw_rank": 55526,
+              "filtered_probability": 0.0,
+              "scored_tokens": 48,
+              "mean_nll": 1.3584760131236635,
+              "filtered_zero_tokens": 6
+            },
+            "end_answer": {
+              "first_token_id": 151645,
+              "raw_probability": 1.8371397914052068e-07,
+              "raw_rank": 18898,
+              "filtered_probability": 0.0,
+              "scored_tokens": 1,
+              "mean_nll": 15.509885787963867,
+              "filtered_zero_tokens": 1
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "T021-SP60-G10/after_3_cycles",
+      "case_id": "T021-SP60-G10",
+      "category": "thinking_loop",
+      "group": "thinking_system",
+      "role": "observed_reasoning_loop",
+      "active_sampling": "thinking",
+      "models": {
+        "base": {
+          "stopping_raw": {
+            "im_end_probability": 5.317623390510562e-07,
+            "im_end_rank": 1202,
+            "other_eos_probability": 2.303643213685813e-11,
+            "close_think_probability": 1.6217835252518853e-07,
+            "close_think_rank": 2588
+          },
+          "stopping_filtered": {
+            "im_end_probability": 0.0,
+            "im_end_rank": 2,
+            "other_eos_probability": 0.0,
+            "close_think_probability": 0.0,
+            "close_think_rank": 2
+          },
+          "alternatives": {
+            "repeat": {
+              "first_token_id": 85106,
+              "raw_probability": 0.9304665327072144,
+              "raw_rank": 1,
+              "filtered_probability": 1.0,
+              "scored_tokens": 11,
+              "mean_nll": 0.03286942129337107,
+              "filtered_zero_tokens": 0
+            },
+            "close_think_then_answer": {
+              "first_token_id": 151668,
+              "raw_probability": 1.6217835252518853e-07,
+              "raw_rank": 2588,
+              "filtered_probability": 0.0,
+              "scored_tokens": 48,
+              "mean_nll": 1.8870621569332222,
+              "filtered_zero_tokens": 10
+            },
+            "end_answer": {
+              "first_token_id": 151645,
+              "raw_probability": 5.317623390510562e-07,
+              "raw_rank": 1202,
+              "filtered_probability": 0.0,
+              "scored_tokens": 1,
+              "mean_nll": 14.44706916809082,
+              "filtered_zero_tokens": 1
+            }
+          }
+        },
+        "v0114": {
+          "stopping_raw": {
+            "im_end_probability": 1.6476701603096444e-07,
+            "im_end_rank": 3694,
+            "other_eos_probability": 9.55033968574881e-11,
+            "close_think_probability": 3.244451818318339e-08,
+            "close_think_rank": 9422
+          },
+          "stopping_filtered": {
+            "im_end_probability": 0.0,
+            "im_end_rank": 2,
+            "other_eos_probability": 0.0,
+            "close_think_probability": 0.0,
+            "close_think_rank": 2
+          },
+          "alternatives": {
+            "repeat": {
+              "first_token_id": 85106,
+              "raw_probability": 0.9453182816505432,
+              "raw_rank": 1,
+              "filtered_probability": 1.0,
+              "scored_tokens": 11,
+              "mean_nll": 0.022782688751186567,
+              "filtered_zero_tokens": 0
+            },
+            "close_think_then_answer": {
+              "first_token_id": 151668,
+              "raw_probability": 3.244451818318339e-08,
+              "raw_rank": 9422,
+              "filtered_probability": 0.0,
+              "scored_tokens": 48,
+              "mean_nll": 1.5751143670740408,
+              "filtered_zero_tokens": 8
+            },
+            "end_answer": {
+              "first_token_id": 151645,
+              "raw_probability": 1.6476701603096444e-07,
+              "raw_rank": 3694,
+              "filtered_probability": 0.0,
+              "scored_tokens": 1,
+              "mean_nll": 15.618733406066895,
+              "filtered_zero_tokens": 1
+            }
+          }
+        },
+        "v0122_loss3": {
+          "stopping_raw": {
+            "im_end_probability": 1.7687594322524092e-07,
+            "im_end_rank": 10465,
+            "other_eos_probability": 5.371776912177495e-10,
+            "close_think_probability": 3.073643028983497e-08,
+            "close_think_rank": 25753
+          },
+          "stopping_filtered": {
+            "im_end_probability": 0.0,
+            "im_end_rank": 2,
+            "other_eos_probability": 0.0,
+            "close_think_probability": 0.0,
+            "close_think_rank": 2
+          },
+          "alternatives": {
+            "repeat": {
+              "first_token_id": 85106,
+              "raw_probability": 0.7903203368186951,
+              "raw_rank": 1,
+              "filtered_probability": 1.0,
+              "scored_tokens": 11,
+              "mean_nll": 0.044411785528154724,
+              "filtered_zero_tokens": 0
+            },
+            "close_think_then_answer": {
+              "first_token_id": 151668,
+              "raw_probability": 3.073643028983497e-08,
+              "raw_rank": 25753,
+              "filtered_probability": 0.0,
+              "scored_tokens": 48,
+              "mean_nll": 1.3384673338084667,
+              "filtered_zero_tokens": 5
+            },
+            "end_answer": {
+              "first_token_id": 151645,
+              "raw_probability": 1.7687594322524092e-07,
+              "raw_rank": 10465,
+              "filtered_probability": 0.0,
+              "scored_tokens": 1,
+              "mean_nll": 15.54781723022461,
+              "filtered_zero_tokens": 1
+            }
+          }
+        },
+        "v0122_loss1": {
+          "stopping_raw": {
+            "im_end_probability": 3.391559744159167e-07,
+            "im_end_rank": 7377,
+            "other_eos_probability": 5.019955562346468e-10,
+            "close_think_probability": 5.53657422130982e-08,
+            "close_think_rank": 20075
+          },
+          "stopping_filtered": {
+            "im_end_probability": 0.0,
+            "im_end_rank": 2,
+            "other_eos_probability": 0.0,
+            "close_think_probability": 0.0,
+            "close_think_rank": 2
+          },
+          "alternatives": {
+            "repeat": {
+              "first_token_id": 85106,
+              "raw_probability": 0.8111475706100464,
+              "raw_rank": 1,
+              "filtered_probability": 1.0,
+              "scored_tokens": 11,
+              "mean_nll": 0.04190857841182482,
+              "filtered_zero_tokens": 0
+            },
+            "close_think_then_answer": {
+              "first_token_id": 151668,
+              "raw_probability": 5.53657422130982e-08,
+              "raw_rank": 20075,
+              "filtered_probability": 0.0,
+              "scored_tokens": 48,
+              "mean_nll": 1.3272887815257945,
+              "filtered_zero_tokens": 5
+            },
+            "end_answer": {
+              "first_token_id": 151645,
+              "raw_probability": 3.391559744159167e-07,
+              "raw_rank": 7377,
+              "filtered_probability": 0.0,
+              "scored_tokens": 1,
+              "mean_nll": 14.896805763244629,
+              "filtered_zero_tokens": 1
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "T021-SP60-G10/after_20_cycles",
+      "case_id": "T021-SP60-G10",
+      "category": "thinking_loop",
+      "group": "thinking_system",
+      "role": "observed_reasoning_loop",
+      "active_sampling": "thinking",
+      "models": {
+        "base": {
+          "stopping_raw": {
+            "im_end_probability": 4.3190120924130326e-10,
+            "im_end_rank": 6707,
+            "other_eos_probability": 4.825464572193183e-13,
+            "close_think_probability": 1.317224246344395e-10,
+            "close_think_rank": 13137
+          },
+          "stopping_filtered": {
+            "im_end_probability": 0.0,
+            "im_end_rank": 2,
+            "other_eos_probability": 0.0,
+            "close_think_probability": 0.0,
+            "close_think_rank": 2
+          },
+          "alternatives": {
+            "repeat": {
+              "first_token_id": 85106,
+              "raw_probability": 0.9996758699417114,
+              "raw_rank": 1,
+              "filtered_probability": 1.0,
+              "scored_tokens": 11,
+              "mean_nll": 0.0017362267777514262,
+              "filtered_zero_tokens": 0
+            },
+            "close_think_then_answer": {
+              "first_token_id": 151668,
+              "raw_probability": 1.317224246344395e-10,
+              "raw_rank": 13137,
+              "filtered_probability": 0.0,
+              "scored_tokens": 48,
+              "mean_nll": 1.94444101186937,
+              "filtered_zero_tokens": 10
+            },
+            "end_answer": {
+              "first_token_id": 151645,
+              "raw_probability": 4.3190120924130326e-10,
+              "raw_rank": 6707,
+              "filtered_probability": 0.0,
+              "scored_tokens": 1,
+              "mean_nll": 21.562824249267578,
+              "filtered_zero_tokens": 1
+            }
+          }
+        },
+        "v0114": {
+          "stopping_raw": {
+            "im_end_probability": 1.857357184720243e-10,
+            "im_end_rank": 14748,
+            "other_eos_probability": 9.84363285327916e-12,
+            "close_think_probability": 3.227602907163174e-11,
+            "close_think_rank": 32663
+          },
+          "stopping_filtered": {
+            "im_end_probability": 0.0,
+            "im_end_rank": 2,
+            "other_eos_probability": 0.0,
+            "close_think_probability": 0.0,
+            "close_think_rank": 2
+          },
+          "alternatives": {
+            "repeat": {
+              "first_token_id": 85106,
+              "raw_probability": 0.9995547533035278,
+              "raw_rank": 1,
+              "filtered_probability": 1.0,
+              "scored_tokens": 11,
+              "mean_nll": 0.001073108878182955,
+              "filtered_zero_tokens": 0
+            },
+            "close_think_then_answer": {
+              "first_token_id": 151668,
+              "raw_probability": 3.227602907163174e-11,
+              "raw_rank": 32663,
+              "filtered_probability": 0.0,
+              "scored_tokens": 48,
+              "mean_nll": 1.6928843049823097,
+              "filtered_zero_tokens": 8
+            },
+            "end_answer": {
+              "first_token_id": 151645,
+              "raw_probability": 1.857357184720243e-10,
+              "raw_rank": 14748,
+              "filtered_probability": 0.0,
+              "scored_tokens": 1,
+              "mean_nll": 22.406696319580078,
+              "filtered_zero_tokens": 1
+            }
+          }
+        },
+        "v0122_loss3": {
+          "stopping_raw": {
+            "im_end_probability": 1.4551900795467532e-09,
+            "im_end_rank": 18100,
+            "other_eos_probability": 6.596615614862245e-11,
+            "close_think_probability": 2.302445040180956e-10,
+            "close_think_rank": 45608
+          },
+          "stopping_filtered": {
+            "im_end_probability": 0.0,
+            "im_end_rank": 2,
+            "other_eos_probability": 0.0,
+            "close_think_probability": 0.0,
+            "close_think_rank": 2
+          },
+          "alternatives": {
+            "repeat": {
+              "first_token_id": 85106,
+              "raw_probability": 0.9956295490264893,
+              "raw_rank": 1,
+              "filtered_probability": 1.0,
+              "scored_tokens": 11,
+              "mean_nll": 0.0021553173986500374,
+              "filtered_zero_tokens": 0
+            },
+            "close_think_then_answer": {
+              "first_token_id": 151668,
+              "raw_probability": 2.302445040180956e-10,
+              "raw_rank": 45608,
+              "filtered_probability": 0.0,
+              "scored_tokens": 48,
+              "mean_nll": 1.4141349072966822,
+              "filtered_zero_tokens": 5
+            },
+            "end_answer": {
+              "first_token_id": 151645,
+              "raw_probability": 1.4551900795467532e-09,
+              "raw_rank": 18100,
+              "filtered_probability": 0.0,
+              "scored_tokens": 1,
+              "mean_nll": 20.348129272460938,
+              "filtered_zero_tokens": 1
+            }
+          }
+        },
+        "v0122_loss1": {
+          "stopping_raw": {
+            "im_end_probability": 1.2080391131874535e-09,
+            "im_end_rank": 17386,
+            "other_eos_probability": 5.476239253732196e-11,
+            "close_think_probability": 2.0346697937601022e-10,
+            "close_think_rank": 42189
+          },
+          "stopping_filtered": {
+            "im_end_probability": 0.0,
+            "im_end_rank": 2,
+            "other_eos_probability": 0.0,
+            "close_think_probability": 0.0,
+            "close_think_rank": 2
+          },
+          "alternatives": {
+            "repeat": {
+              "first_token_id": 85106,
+              "raw_probability": 0.9969863891601562,
+              "raw_rank": 1,
+              "filtered_probability": 1.0,
+              "scored_tokens": 11,
+              "mean_nll": 0.0020281129584211817,
+              "filtered_zero_tokens": 0
+            },
+            "close_think_then_answer": {
+              "first_token_id": 151668,
+              "raw_probability": 2.0346697937601022e-10,
+              "raw_rank": 42189,
+              "filtered_probability": 0.0,
+              "scored_tokens": 48,
+              "mean_nll": 1.4216579837431595,
+              "filtered_zero_tokens": 5
+            },
+            "end_answer": {
+              "first_token_id": 151645,
+              "raw_probability": 1.2080391131874535e-09,
+              "raw_rank": 17386,
+              "filtered_probability": 0.0,
+              "scored_tokens": 1,
+              "mean_nll": 20.53426742553711,
+              "filtered_zero_tokens": 1
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "T021-B6-G159/start",
+      "case_id": "T021-B6-G159",
+      "category": "normal",
+      "group": "nt_system",
+      "role": "answer_start",
+      "active_sampling": "nonthinking",
+      "models": {
+        "base": {
+          "stopping_raw": {
+            "im_end_probability": 5.402526909452539e-15,
+            "im_end_rank": 27028,
+            "other_eos_probability": 2.014536839635325e-16,
+            "close_think_probability": 3.394046831846115e-15,
+            "close_think_rank": 31868
+          },
+          "stopping_filtered": {
+            "im_end_probability": 0.0,
+            "im_end_rank": 3,
+            "other_eos_probability": 0.0,
+            "close_think_probability": 0.0,
+            "close_think_rank": 3
+          },
+          "alternatives": {
+            "correct_reference": {
+              "first_token_id": 18397,
+              "raw_probability": 0.004248098935931921,
+              "raw_rank": 10,
+              "filtered_probability": 0.0,
+              "scored_tokens": 48,
+              "mean_nll": 2.7546693253563213,
+              "filtered_zero_tokens": 23
+            },
+            "question_copy": {
+              "first_token_id": 36667,
+              "raw_probability": 3.243463652324863e-05,
+              "raw_rank": 25,
+              "filtered_probability": 0.0,
+              "scored_tokens": 30,
+              "mean_nll": 1.5212689056651134,
+              "filtered_zero_tokens": 7
+            },
+            "end_answer": {
+              "first_token_id": 151645,
+              "raw_probability": 5.402526909452539e-15,
+              "raw_rank": 27028,
+              "filtered_probability": 0.0,
+              "scored_tokens": 1,
+              "mean_nll": 32.85190963745117,
+              "filtered_zero_tokens": 1
+            }
+          }
+        },
+        "v0114": {
+          "stopping_raw": {
+            "im_end_probability": 6.261122393880214e-07,
+            "im_end_rank": 14790,
+            "other_eos_probability": 4.1358746288855386e-11,
+            "close_think_probability": 2.2324718429445056e-07,
+            "close_think_rank": 26602
+          },
+          "stopping_filtered": {
+            "im_end_probability": 0.0,
+            "im_end_rank": 9,
+            "other_eos_probability": 0.0,
+            "close_think_probability": 0.0,
+            "close_think_rank": 9
+          },
+          "alternatives": {
+            "correct_reference": {
+              "first_token_id": 18397,
+              "raw_probability": 0.041172437369823456,
+              "raw_rank": 5,
+              "filtered_probability": 0.10727573931217194,
+              "scored_tokens": 48,
+              "mean_nll": 1.1724388745932401,
+              "filtered_zero_tokens": 5
+            },
+            "question_copy": {
+              "first_token_id": 36667,
+              "raw_probability": 0.011796101927757263,
+              "raw_rank": 15,
+              "filtered_probability": 0.0,
+              "scored_tokens": 30,
+              "mean_nll": 0.3360265760987204,
+              "filtered_zero_tokens": 2
+            },
+            "end_answer": {
+              "first_token_id": 151645,
+              "raw_probability": 6.261122393880214e-07,
+              "raw_rank": 14790,
+              "filtered_probability": 0.0,
+              "scored_tokens": 1,
+              "mean_nll": 14.283736228942871,
+              "filtered_zero_tokens": 1
+            }
+          }
+        },
+        "v0122_loss3": {
+          "stopping_raw": {
+            "im_end_probability": 1.280696324101882e-06,
+            "im_end_rank": 12929,
+            "other_eos_probability": 1.310285768774122e-10,
+            "close_think_probability": 2.3690499517670105e-07,
+            "close_think_rank": 35603
+          },
+          "stopping_filtered": {
+            "im_end_probability": 0.0,
+            "im_end_rank": 10,
+            "other_eos_probability": 0.0,
+            "close_think_probability": 0.0,
+            "close_think_rank": 10
+          },
+          "alternatives": {
+            "correct_reference": {
+              "first_token_id": 18397,
+              "raw_probability": 0.07203476876020432,
+              "raw_rank": 1,
+              "filtered_probability": 0.3430040180683136,
+              "scored_tokens": 48,
+              "mean_nll": 1.0515300835453065,
+              "filtered_zero_tokens": 0
+            },
+            "question_copy": {
+              "first_token_id": 36667,
+              "raw_probability": 0.014184484258294106,
+              "raw_rank": 9,
+              "filtered_probability": 0.033660124987363815,
+              "scored_tokens": 30,
+              "mean_nll": 0.26390589686834576,
+              "filtered_zero_tokens": 0
+            },
+            "end_answer": {
+              "first_token_id": 151645,
+              "raw_probability": 1.280696324101882e-06,
+              "raw_rank": 12929,
+              "filtered_probability": 0.0,
+              "scored_tokens": 1,
+              "mean_nll": 13.568106651306152,
+              "filtered_zero_tokens": 1
+            }
+          }
+        },
+        "v0122_loss1": {
+          "stopping_raw": {
+            "im_end_probability": 3.5698128613148583e-06,
+            "im_end_rank": 8872,
+            "other_eos_probability": 2.0487474217123491e-10,
+            "close_think_probability": 5.306052912601444e-07,
+            "close_think_rank": 28355
+          },
+          "stopping_filtered": {
+            "im_end_probability": 0.0,
+            "im_end_rank": 10,
+            "other_eos_probability": 0.0,
+            "close_think_probability": 0.0,
+            "close_think_rank": 10
+          },
+          "alternatives": {
+            "correct_reference": {
+              "first_token_id": 18397,
+              "raw_probability": 0.06725608557462692,
+              "raw_rank": 1,
+              "filtered_probability": 0.35627123713493347,
+              "scored_tokens": 48,
+              "mean_nll": 1.0588463404449915,
+              "filtered_zero_tokens": 0
+            },
+            "question_copy": {
+              "first_token_id": 36667,
+              "raw_probability": 0.01500685978680849,
+              "raw_rank": 9,
+              "filtered_probability": 0.041797466576099396,
+              "scored_tokens": 30,
+              "mean_nll": 0.24667748851200788,
+              "filtered_zero_tokens": 0
+            },
+            "end_answer": {
+              "first_token_id": 151645,
+              "raw_probability": 3.5698128613148583e-06,
+              "raw_rank": 8872,
+              "filtered_probability": 0.0,
+              "scored_tokens": 1,
+              "mean_nll": 12.542997360229492,
+              "filtered_zero_tokens": 1
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "T021-B6-G159/observed_end",
+      "case_id": "T021-B6-G159",
+      "category": "normal",
+      "group": "nt_system",
+      "role": "observed_complete_answer",
+      "active_sampling": "nonthinking",
+      "models": {
+        "base": {
+          "stopping_raw": {
+            "im_end_probability": 1.006984007290157e-06,
+            "im_end_rank": 147,
+            "other_eos_probability": 1.8655374467435593e-10,
+            "close_think_probability": 5.928665336440986e-10,
+            "close_think_rank": 4866
+          },
+          "stopping_filtered": {
+            "im_end_probability": 0.0,
+            "im_end_rank": 2,
+            "other_eos_probability": 0.0,
+            "close_think_probability": 0.0,
+            "close_think_rank": 2
+          },
+          "alternatives": {
+            "end_answer": {
+              "first_token_id": 151645,
+              "raw_probability": 1.006984007290157e-06,
+              "raw_rank": 147,
+              "filtered_probability": 0.0,
+              "scored_tokens": 1,
+              "mean_nll": 13.808550834655762,
+              "filtered_zero_tokens": 1
+            },
+            "repeat": {
+              "first_token_id": 18397,
+              "raw_probability": 0.00010933971498161554,
+              "raw_rank": 26,
+              "filtered_probability": 0.0,
+              "scored_tokens": 26,
+              "mean_nll": 1.1514349003309996,
+              "filtered_zero_tokens": 5
+            },
+            "extra_conclusion": {
+              "first_token_id": 70589,
+              "raw_probability": 1.465153218305204e-06,
+              "raw_rank": 129,
+              "filtered_probability": 0.0,
+              "scored_tokens": 8,
+              "mean_nll": 5.831321395933628,
+              "filtered_zero_tokens": 5
+            }
+          }
+        },
+        "v0114": {
+          "stopping_raw": {
+            "im_end_probability": 0.24900062382221222,
+            "im_end_rank": 1,
+            "other_eos_probability": 2.136237071681535e-07,
+            "close_think_probability": 4.7594196075806394e-05,
+            "close_think_rank": 185
+          },
+          "stopping_filtered": {
+            "im_end_probability": 0.4202664792537689,
+            "im_end_rank": 1,
+            "other_eos_probability": 0.0,
+            "close_think_probability": 0.0,
+            "close_think_rank": 5
+          },
+          "alternatives": {
+            "end_answer": {
+              "first_token_id": 151645,
+              "raw_probability": 0.24900062382221222,
+              "raw_rank": 1,
+              "filtered_probability": 0.4202664792537689,
+              "scored_tokens": 1,
+              "mean_nll": 1.390299916267395,
+              "filtered_zero_tokens": 0
+            },
+            "repeat": {
+              "first_token_id": 18397,
+              "raw_probability": 0.02465440146625042,
+              "raw_rank": 8,
+              "filtered_probability": 0.0,
+              "scored_tokens": 26,
+              "mean_nll": 0.49463588294264144,
+              "filtered_zero_tokens": 3
+            },
+            "extra_conclusion": {
+              "first_token_id": 70589,
+              "raw_probability": 0.00010725517495302483,
+              "raw_rank": 113,
+              "filtered_probability": 0.0,
+              "scored_tokens": 8,
+              "mean_nll": 3.875688824802637,
+              "filtered_zero_tokens": 4
+            }
+          }
+        },
+        "v0122_loss3": {
+          "stopping_raw": {
+            "im_end_probability": 0.5104125738143921,
+            "im_end_rank": 1,
+            "other_eos_probability": 3.630279934441205e-07,
+            "close_think_probability": 6.298991502262652e-05,
+            "close_think_rank": 124
+          },
+          "stopping_filtered": {
+            "im_end_probability": 0.8769960999488831,
+            "im_end_rank": 1,
+            "other_eos_probability": 0.0,
+            "close_think_probability": 0.0,
+            "close_think_rank": 3
+          },
+          "alternatives": {
+            "end_answer": {
+              "first_token_id": 151645,
+              "raw_probability": 0.5104125738143921,
+              "raw_rank": 1,
+              "filtered_probability": 0.8769960999488831,
+              "scored_tokens": 1,
+              "mean_nll": 0.6725359559059143,
+              "filtered_zero_tokens": 0
+            },
+            "repeat": {
+              "first_token_id": 18397,
+              "raw_probability": 0.018591776490211487,
+              "raw_rank": 6,
+              "filtered_probability": 0.0,
+              "scored_tokens": 26,
+              "mean_nll": 0.4051794991085514,
+              "filtered_zero_tokens": 2
+            },
+            "extra_conclusion": {
+              "first_token_id": 70589,
+              "raw_probability": 8.088065078482032e-05,
+              "raw_rank": 103,
+              "filtered_probability": 0.0,
+              "scored_tokens": 8,
+              "mean_nll": 3.806642983108759,
+              "filtered_zero_tokens": 4
+            }
+          }
+        },
+        "v0122_loss1": {
+          "stopping_raw": {
+            "im_end_probability": 0.41653627157211304,
+            "im_end_rank": 1,
+            "other_eos_probability": 4.0493796404916793e-07,
+            "close_think_probability": 5.8249093854101375e-05,
+            "close_think_rank": 142
+          },
+          "stopping_filtered": {
+            "im_end_probability": 0.7369359135627747,
+            "im_end_rank": 1,
+            "other_eos_probability": 0.0,
+            "close_think_probability": 0.0,
+            "close_think_rank": 4
+          },
+          "alternatives": {
+            "end_answer": {
+              "first_token_id": 151645,
+              "raw_probability": 0.41653627157211304,
+              "raw_rank": 1,
+              "filtered_probability": 0.7369359135627747,
+              "scored_tokens": 1,
+              "mean_nll": 0.875781774520874,
+              "filtered_zero_tokens": 0
+            },
+            "repeat": {
+              "first_token_id": 18397,
+              "raw_probability": 0.034191377460956573,
+              "raw_rank": 6,
+              "filtered_probability": 0.0,
+              "scored_tokens": 26,
+              "mean_nll": 0.3678741472792983,
+              "filtered_zero_tokens": 2
+            },
+            "extra_conclusion": {
+              "first_token_id": 70589,
+              "raw_probability": 8.475193317281082e-05,
+              "raw_rank": 106,
+              "filtered_probability": 0.0,
+              "scored_tokens": 8,
+              "mean_nll": 3.7746325209736824,
+              "filtered_zero_tokens": 4
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "T021-R3300-G0456/start",
+      "case_id": "T021-R3300-G0456",
+      "category": "normal",
+      "group": "nt_system",
+      "role": "answer_start",
+      "active_sampling": "nonthinking",
+      "models": {
+        "base": {
+          "stopping_raw": {
+            "im_end_probability": 1.4230701107437756e-17,
+            "im_end_rank": 19795,
+            "other_eos_probability": 4.061268210455704e-18,
+            "close_think_probability": 1.2955265530677955e-18,
+            "close_think_rank": 43266
+          },
+          "stopping_filtered": {
+            "im_end_probability": 0.0,
+            "im_end_rank": 2,
+            "other_eos_probability": 0.0,
+            "close_think_probability": 0.0,
+            "close_think_rank": 2
+          },
+          "alternatives": {
+            "correct_reference": {
+              "first_token_id": 75882,
+              "raw_probability": 0.9448245763778687,
+              "raw_rank": 1,
+              "filtered_probability": 1.0,
+              "scored_tokens": 45,
+              "mean_nll": 1.3322718481650453,
+              "filtered_zero_tokens": 11
+            },
+            "question_copy": {
+              "first_token_id": 105650,
+              "raw_probability": 0.028531230986118317,
+              "raw_rank": 2,
+              "filtered_probability": 0.0,
+              "scored_tokens": 48,
+              "mean_nll": 0.5130738413785475,
+              "filtered_zero_tokens": 2
+            },
+            "end_answer": {
+              "first_token_id": 151645,
+              "raw_probability": 1.4230701107437756e-17,
+              "raw_rank": 19795,
+              "filtered_probability": 0.0,
+              "scored_tokens": 1,
+              "mean_nll": 38.79113006591797,
+              "filtered_zero_tokens": 1
+            }
+          }
+        },
+        "v0114": {
+          "stopping_raw": {
+            "im_end_probability": 1.4751819890079787e-06,
+            "im_end_rank": 6036,
+            "other_eos_probability": 4.8998610724382274e-11,
+            "close_think_probability": 1.1375382769074349e-07,
+            "close_think_rank": 26228
+          },
+          "stopping_filtered": {
+            "im_end_probability": 0.0,
+            "im_end_rank": 6,
+            "other_eos_probability": 0.0,
+            "close_think_probability": 0.0,
+            "close_think_rank": 6
+          },
+          "alternatives": {
+            "correct_reference": {
+              "first_token_id": 75882,
+              "raw_probability": 0.12072630971670151,
+              "raw_rank": 2,
+              "filtered_probability": 0.2270323634147644,
+              "scored_tokens": 45,
+              "mean_nll": 0.9596744555152125,
+              "filtered_zero_tokens": 5
+            },
+            "question_copy": {
+              "first_token_id": 105650,
+              "raw_probability": 0.17565572261810303,
+              "raw_rank": 1,
+              "filtered_probability": 0.38792330026626587,
+              "scored_tokens": 48,
+              "mean_nll": 0.14293725352443212,
+              "filtered_zero_tokens": 1
+            },
+            "end_answer": {
+              "first_token_id": 151645,
+              "raw_probability": 1.4751819890079787e-06,
+              "raw_rank": 6036,
+              "filtered_probability": 0.0,
+              "scored_tokens": 1,
+              "mean_nll": 13.426729202270508,
+              "filtered_zero_tokens": 1
+            }
+          }
+        },
+        "v0122_loss3": {
+          "stopping_raw": {
+            "im_end_probability": 2.104733994201524e-06,
+            "im_end_rank": 7340,
+            "other_eos_probability": 1.813311029108533e-10,
+            "close_think_probability": 1.2251020109488309e-07,
+            "close_think_rank": 37618
+          },
+          "stopping_filtered": {
+            "im_end_probability": 0.0,
+            "im_end_rank": 5,
+            "other_eos_probability": 0.0,
+            "close_think_probability": 0.0,
+            "close_think_rank": 5
+          },
+          "alternatives": {
+            "correct_reference": {
+              "first_token_id": 75882,
+              "raw_probability": 0.031862612813711166,
+              "raw_rank": 3,
+              "filtered_probability": 0.047347694635391235,
+              "scored_tokens": 45,
+              "mean_nll": 1.061079319069783,
+              "filtered_zero_tokens": 0
+            },
+            "question_copy": {
+              "first_token_id": 105650,
+              "raw_probability": 0.0463598258793354,
+              "raw_rank": 2,
+              "filtered_probability": 0.08090141415596008,
+              "scored_tokens": 48,
+              "mean_nll": 0.11413933017764322,
+              "filtered_zero_tokens": 0
+            },
+            "end_answer": {
+              "first_token_id": 151645,
+              "raw_probability": 2.104733994201524e-06,
+              "raw_rank": 7340,
+              "filtered_probability": 0.0,
+              "scored_tokens": 1,
+              "mean_nll": 13.071321487426758,
+              "filtered_zero_tokens": 1
+            }
+          }
+        },
+        "v0122_loss1": {
+          "stopping_raw": {
+            "im_end_probability": 5.404684998211451e-06,
+            "im_end_rank": 4798,
+            "other_eos_probability": 2.694887923926359e-10,
+            "close_think_probability": 2.690834151053423e-07,
+            "close_think_rank": 28540
+          },
+          "stopping_filtered": {
+            "im_end_probability": 0.0,
+            "im_end_rank": 5,
+            "other_eos_probability": 0.0,
+            "close_think_probability": 0.0,
+            "close_think_rank": 5
+          },
+          "alternatives": {
+            "correct_reference": {
+              "first_token_id": 75882,
+              "raw_probability": 0.034107282757759094,
+              "raw_rank": 3,
+              "filtered_probability": 0.05323999002575874,
+              "scored_tokens": 45,
+              "mean_nll": 1.0814483165740967,
+              "filtered_zero_tokens": 0
+            },
+            "question_copy": {
+              "first_token_id": 105650,
+              "raw_probability": 0.03630701079964638,
+              "raw_rank": 2,
+              "filtered_probability": 0.05821218341588974,
+              "scored_tokens": 48,
+              "mean_nll": 0.11544832036888408,
+              "filtered_zero_tokens": 0
+            },
+            "end_answer": {
+              "first_token_id": 151645,
+              "raw_probability": 5.404684998211451e-06,
+              "raw_rank": 4798,
+              "filtered_probability": 0.0,
+              "scored_tokens": 1,
+              "mean_nll": 12.128244400024414,
+              "filtered_zero_tokens": 1
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "T021-R3300-G0456/observed_end",
+      "case_id": "T021-R3300-G0456",
+      "category": "normal",
+      "group": "nt_system",
+      "role": "observed_complete_answer",
+      "active_sampling": "nonthinking",
+      "models": {
+        "base": {
+          "stopping_raw": {
+            "im_end_probability": 2.4620965177746257e-06,
+            "im_end_rank": 100,
+            "other_eos_probability": 1.0177594877980312e-10,
+            "close_think_probability": 3.234432721654912e-10,
+            "close_think_rank": 8406
+          },
+          "stopping_filtered": {
+            "im_end_probability": 0.0,
+            "im_end_rank": 2,
+            "other_eos_probability": 0.0,
+            "close_think_probability": 0.0,
+            "close_think_rank": 2
+          },
+          "alternatives": {
+            "end_answer": {
+              "first_token_id": 151645,
+              "raw_probability": 2.4620965177746257e-06,
+              "raw_rank": 100,
+              "filtered_probability": 0.0,
+              "scored_tokens": 1,
+              "mean_nll": 12.914497375488281,
+              "filtered_zero_tokens": 1
+            },
+            "repeat": {
+              "first_token_id": 99259,
+              "raw_probability": 0.0004140611563343555,
+              "raw_rank": 15,
+              "filtered_probability": 0.0,
+              "scored_tokens": 20,
+              "mean_nll": 2.212914508835388,
+              "filtered_zero_tokens": 5
+            },
+            "extra_conclusion": {
+              "first_token_id": 70589,
+              "raw_probability": 5.847991815244313e-07,
+              "raw_rank": 184,
+              "filtered_probability": 0.0,
+              "scored_tokens": 8,
+              "mean_nll": 5.577585706942841,
+              "filtered_zero_tokens": 4
+            }
+          }
+        },
+        "v0114": {
+          "stopping_raw": {
+            "im_end_probability": 0.3469913899898529,
+            "im_end_rank": 1,
+            "other_eos_probability": 7.888068154215944e-08,
+            "close_think_probability": 3.550079418346286e-05,
+            "close_think_rank": 468
+          },
+          "stopping_filtered": {
+            "im_end_probability": 0.7094793319702148,
+            "im_end_rank": 1,
+            "other_eos_probability": 0.0,
+            "close_think_probability": 0.0,
+            "close_think_rank": 3
+          },
+          "alternatives": {
+            "end_answer": {
+              "first_token_id": 151645,
+              "raw_probability": 0.3469913899898529,
+              "raw_rank": 1,
+              "filtered_probability": 0.7094793319702148,
+              "scored_tokens": 1,
+              "mean_nll": 1.058455228805542,
+              "filtered_zero_tokens": 0
+            },
+            "repeat": {
+              "first_token_id": 99259,
+              "raw_probability": 0.007666036952286959,
+              "raw_rank": 11,
+              "filtered_probability": 0.0,
+              "scored_tokens": 20,
+              "mean_nll": 0.8500448900369519,
+              "filtered_zero_tokens": 2
+            },
+            "extra_conclusion": {
+              "first_token_id": 70589,
+              "raw_probability": 0.00016936480824369937,
+              "raw_rank": 141,
+              "filtered_probability": 0.0,
+              "scored_tokens": 8,
+              "mean_nll": 3.2321977387182415,
+              "filtered_zero_tokens": 3
+            }
+          }
+        },
+        "v0122_loss3": {
+          "stopping_raw": {
+            "im_end_probability": 0.506192147731781,
+            "im_end_rank": 1,
+            "other_eos_probability": 2.3245047486852854e-07,
+            "close_think_probability": 5.868428706889972e-05,
+            "close_think_rank": 512
+          },
+          "stopping_filtered": {
+            "im_end_probability": 1.0,
+            "im_end_rank": 1,
+            "other_eos_probability": 0.0,
+            "close_think_probability": 0.0,
+            "close_think_rank": 2
+          },
+          "alternatives": {
+            "end_answer": {
+              "first_token_id": 151645,
+              "raw_probability": 0.506192147731781,
+              "raw_rank": 1,
+              "filtered_probability": 1.0,
+              "scored_tokens": 1,
+              "mean_nll": 0.680838942527771,
+              "filtered_zero_tokens": 0
+            },
+            "repeat": {
+              "first_token_id": 99259,
+              "raw_probability": 0.020893042907118797,
+              "raw_rank": 5,
+              "filtered_probability": 0.0,
+              "scored_tokens": 20,
+              "mean_nll": 0.6081304791929142,
+              "filtered_zero_tokens": 2
+            },
+            "extra_conclusion": {
+              "first_token_id": 70589,
+              "raw_probability": 0.000592690019402653,
+              "raw_rank": 77,
+              "filtered_probability": 0.0,
+              "scored_tokens": 8,
+              "mean_nll": 2.8598300917074084,
+              "filtered_zero_tokens": 2
+            }
+          }
+        },
+        "v0122_loss1": {
+          "stopping_raw": {
+            "im_end_probability": 0.47672799229621887,
+            "im_end_rank": 1,
+            "other_eos_probability": 2.4806885789985245e-07,
+            "close_think_probability": 6.461529119405895e-05,
+            "close_think_rank": 517
+          },
+          "stopping_filtered": {
+            "im_end_probability": 1.0,
+            "im_end_rank": 1,
+            "other_eos_probability": 0.0,
+            "close_think_probability": 0.0,
+            "close_think_rank": 2
+          },
+          "alternatives": {
+            "end_answer": {
+              "first_token_id": 151645,
+              "raw_probability": 0.47672799229621887,
+              "raw_rank": 1,
+              "filtered_probability": 1.0,
+              "scored_tokens": 1,
+              "mean_nll": 0.7408092617988586,
+              "filtered_zero_tokens": 0
+            },
+            "repeat": {
+              "first_token_id": 99259,
+              "raw_probability": 0.025265660136938095,
+              "raw_rank": 3,
+              "filtered_probability": 0.0,
+              "scored_tokens": 20,
+              "mean_nll": 0.600445413084526,
+              "filtered_zero_tokens": 2
+            },
+            "extra_conclusion": {
+              "first_token_id": 70589,
+              "raw_probability": 0.0006325131980702281,
+              "raw_rank": 77,
+              "filtered_probability": 0.0,
+              "scored_tokens": 8,
+              "mean_nll": 2.8077728538773954,
+              "filtered_zero_tokens": 2
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "D16-05/reasoning_end",
+      "case_id": "D16-05",
+      "category": "normal",
+      "group": "thinking_system",
+      "role": "observed_reasoning_end",
+      "active_sampling": "thinking",
+      "models": {
+        "base": {
+          "stopping_raw": {
+            "im_end_probability": 3.6174372386454934e-09,
+            "im_end_rank": 18,
+            "other_eos_probability": 2.0642584863672653e-12,
+            "close_think_probability": 0.9999995231628418,
+            "close_think_rank": 1
+          },
+          "stopping_filtered": {
+            "im_end_probability": 0.0,
+            "im_end_rank": 2,
+            "other_eos_probability": 0.0,
+            "close_think_probability": 1.0,
+            "close_think_rank": 1
+          },
+          "alternatives": {
+            "close_think_then_answer": {
+              "first_token_id": 151668,
+              "raw_probability": 0.9999995231628418,
+              "raw_rank": 1,
+              "filtered_probability": 1.0,
+              "scored_tokens": 23,
+              "mean_nll": 0.32957788657783643,
+              "filtered_zero_tokens": 1
+            },
+            "repeat": {
+              "first_token_id": 82700,
+              "raw_probability": 8.690853592341341e-12,
+              "raw_rank": 4589,
+              "filtered_probability": 0.0,
+              "scored_tokens": 44,
+              "mean_nll": 0.7438806571278629,
+              "filtered_zero_tokens": 2
+            },
+            "end_answer": {
+              "first_token_id": 151645,
+              "raw_probability": 3.6174372386454934e-09,
+              "raw_rank": 18,
+              "filtered_probability": 0.0,
+              "scored_tokens": 1,
+              "mean_nll": 19.4375,
+              "filtered_zero_tokens": 1
+            }
+          }
+        },
+        "v0114": {
+          "stopping_raw": {
+            "im_end_probability": 2.3587800157542915e-08,
+            "im_end_rank": 169,
+            "other_eos_probability": 5.1012194468569305e-09,
+            "close_think_probability": 0.9999639987945557,
+            "close_think_rank": 1
+          },
+          "stopping_filtered": {
+            "im_end_probability": 0.0,
+            "im_end_rank": 2,
+            "other_eos_probability": 0.0,
+            "close_think_probability": 1.0,
+            "close_think_rank": 1
+          },
+          "alternatives": {
+            "close_think_then_answer": {
+              "first_token_id": 151668,
+              "raw_probability": 0.9999639987945557,
+              "raw_rank": 1,
+              "filtered_probability": 1.0,
+              "scored_tokens": 23,
+              "mean_nll": 0.09213743663212325,
+              "filtered_zero_tokens": 0
+            },
+            "repeat": {
+              "first_token_id": 82700,
+              "raw_probability": 1.0923317805833221e-10,
+              "raw_rank": 9672,
+              "filtered_probability": 0.0,
+              "scored_tokens": 44,
+              "mean_nll": 0.7190519887505928,
+              "filtered_zero_tokens": 2
+            },
+            "end_answer": {
+              "first_token_id": 151645,
+              "raw_probability": 2.3587800157542915e-08,
+              "raw_rank": 169,
+              "filtered_probability": 0.0,
+              "scored_tokens": 1,
+              "mean_nll": 17.562536239624023,
+              "filtered_zero_tokens": 1
+            }
+          }
+        },
+        "v0122_loss3": {
+          "stopping_raw": {
+            "im_end_probability": 2.535605858611234e-07,
+            "im_end_rank": 59,
+            "other_eos_probability": 4.501234940335053e-09,
+            "close_think_probability": 0.9998368620872498,
+            "close_think_rank": 1
+          },
+          "stopping_filtered": {
+            "im_end_probability": 0.0,
+            "im_end_rank": 2,
+            "other_eos_probability": 0.0,
+            "close_think_probability": 1.0,
+            "close_think_rank": 1
+          },
+          "alternatives": {
+            "close_think_then_answer": {
+              "first_token_id": 151668,
+              "raw_probability": 0.9998368620872498,
+              "raw_rank": 1,
+              "filtered_probability": 1.0,
+              "scored_tokens": 23,
+              "mean_nll": 0.06309681069111499,
+              "filtered_zero_tokens": 0
+            },
+            "repeat": {
+              "first_token_id": 82700,
+              "raw_probability": 1.570616414703352e-10,
+              "raw_rank": 17485,
+              "filtered_probability": 0.0,
+              "scored_tokens": 44,
+              "mean_nll": 0.6837613129402975,
+              "filtered_zero_tokens": 2
+            },
+            "end_answer": {
+              "first_token_id": 151645,
+              "raw_probability": 2.535605858611234e-07,
+              "raw_rank": 59,
+              "filtered_probability": 0.0,
+              "scored_tokens": 1,
+              "mean_nll": 15.187663078308105,
+              "filtered_zero_tokens": 1
+            }
+          }
+        },
+        "v0122_loss1": {
+          "stopping_raw": {
+            "im_end_probability": 1.974814693994631e-07,
+            "im_end_rank": 63,
+            "other_eos_probability": 3.850279206574214e-09,
+            "close_think_probability": 0.9998790621757507,
+            "close_think_rank": 1
+          },
+          "stopping_filtered": {
+            "im_end_probability": 0.0,
+            "im_end_rank": 2,
+            "other_eos_probability": 0.0,
+            "close_think_probability": 1.0,
+            "close_think_rank": 1
+          },
+          "alternatives": {
+            "close_think_then_answer": {
+              "first_token_id": 151668,
+              "raw_probability": 0.9998790621757507,
+              "raw_rank": 1,
+              "filtered_probability": 1.0,
+              "scored_tokens": 23,
+              "mean_nll": 0.11165282084638144,
+              "filtered_zero_tokens": 0
+            },
+            "repeat": {
+              "first_token_id": 82700,
+              "raw_probability": 8.244661203749004e-11,
+              "raw_rank": 21369,
+              "filtered_probability": 0.0,
+              "scored_tokens": 44,
+              "mean_nll": 0.6907950694523725,
+              "filtered_zero_tokens": 2
+            },
+            "end_answer": {
+              "first_token_id": 151645,
+              "raw_probability": 1.974814693994631e-07,
+              "raw_rank": 63,
+              "filtered_probability": 0.0,
+              "scored_tokens": 1,
+              "mean_nll": 15.437621116638184,
+              "filtered_zero_tokens": 1
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "D16-05/observed_end",
+      "case_id": "D16-05",
+      "category": "normal",
+      "group": "thinking_system",
+      "role": "observed_complete_answer",
+      "active_sampling": "thinking",
+      "models": {
+        "base": {
+          "stopping_raw": {
+            "im_end_probability": 1.0,
+            "im_end_rank": 1,
+            "other_eos_probability": 1.6586784029604118e-12,
+            "close_think_probability": 1.3440409674103648e-08,
+            "close_think_rank": 2
+          },
+          "stopping_filtered": {
+            "im_end_probability": 1.0,
+            "im_end_rank": 1,
+            "other_eos_probability": 0.0,
+            "close_think_probability": 0.0,
+            "close_think_rank": 2
+          },
+          "alternatives": {
+            "end_answer": {
+              "first_token_id": 151645,
+              "raw_probability": 1.0,
+              "raw_rank": 1,
+              "filtered_probability": 1.0,
+              "scored_tokens": 1,
+              "mean_nll": -0.0,
+              "filtered_zero_tokens": 0
+            },
+            "repeat": {
+              "first_token_id": 26232,
+              "raw_probability": 1.4953439690917197e-13,
+              "raw_rank": 1474,
+              "filtered_probability": 0.0,
+              "scored_tokens": 21,
+              "mean_nll": 1.5031368329210972,
+              "filtered_zero_tokens": 1
+            },
+            "extra_conclusion": {
+              "first_token_id": 102786,
+              "raw_probability": 9.559413942936482e-15,
+              "raw_rank": 15961,
+              "filtered_probability": 0.0,
+              "scored_tokens": 12,
+              "mean_nll": 6.336294554571698,
+              "filtered_zero_tokens": 4
+            }
+          }
+        },
+        "v0114": {
+          "stopping_raw": {
+            "im_end_probability": 0.9999866485595703,
+            "im_end_rank": 1,
+            "other_eos_probability": 2.3355619660492266e-09,
+            "close_think_probability": 6.893523618600739e-07,
+            "close_think_rank": 3
+          },
+          "stopping_filtered": {
+            "im_end_probability": 1.0,
+            "im_end_rank": 1,
+            "other_eos_probability": 0.0,
+            "close_think_probability": 0.0,
+            "close_think_rank": 2
+          },
+          "alternatives": {
+            "end_answer": {
+              "first_token_id": 151645,
+              "raw_probability": 0.9999866485595703,
+              "raw_rank": 1,
+              "filtered_probability": 1.0,
+              "scored_tokens": 1,
+              "mean_nll": 1.3351351299206726e-05,
+              "filtered_zero_tokens": 0
+            },
+            "repeat": {
+              "first_token_id": 26232,
+              "raw_probability": 7.73431807488123e-08,
+              "raw_rank": 11,
+              "filtered_probability": 0.0,
+              "scored_tokens": 21,
+              "mean_nll": 0.8445427925883713,
+              "filtered_zero_tokens": 1
+            },
+            "extra_conclusion": {
+              "first_token_id": 102786,
+              "raw_probability": 2.7894309084786073e-10,
+              "raw_rank": 4637,
+              "filtered_probability": 0.0,
+              "scored_tokens": 12,
+              "mean_nll": 3.1091049756942084,
+              "filtered_zero_tokens": 3
+            }
+          }
+        },
+        "v0122_loss3": {
+          "stopping_raw": {
+            "im_end_probability": 0.9998220801353455,
+            "im_end_rank": 1,
+            "other_eos_probability": 1.2235462421017473e-08,
+            "close_think_probability": 3.288173502369318e-06,
+            "close_think_rank": 3
+          },
+          "stopping_filtered": {
+            "im_end_probability": 1.0,
+            "im_end_rank": 1,
+            "other_eos_probability": 0.0,
+            "close_think_probability": 0.0,
+            "close_think_rank": 2
+          },
+          "alternatives": {
+            "end_answer": {
+              "first_token_id": 151645,
+              "raw_probability": 0.9998220801353455,
+              "raw_rank": 1,
+              "filtered_probability": 1.0,
+              "scored_tokens": 1,
+              "mean_nll": 0.00017796363681554794,
+              "filtered_zero_tokens": 0
+            },
+            "repeat": {
+              "first_token_id": 26232,
+              "raw_probability": 3.088953235419467e-06,
+              "raw_rank": 5,
+              "filtered_probability": 0.0,
+              "scored_tokens": 21,
+              "mean_nll": 0.6721680709304652,
+              "filtered_zero_tokens": 1
+            },
+            "extra_conclusion": {
+              "first_token_id": 102786,
+              "raw_probability": 9.831469860444031e-09,
+              "raw_rank": 1658,
+              "filtered_probability": 0.0,
+              "scored_tokens": 12,
+              "mean_nll": 2.6302517806955925,
+              "filtered_zero_tokens": 3
+            }
+          }
+        },
+        "v0122_loss1": {
+          "stopping_raw": {
+            "im_end_probability": 0.9998732805252075,
+            "im_end_rank": 1,
+            "other_eos_probability": 8.40973513049903e-09,
+            "close_think_probability": 2.7261319246463245e-06,
+            "close_think_rank": 3
+          },
+          "stopping_filtered": {
+            "im_end_probability": 1.0,
+            "im_end_rank": 1,
+            "other_eos_probability": 0.0,
+            "close_think_probability": 0.0,
+            "close_think_rank": 2
+          },
+          "alternatives": {
+            "end_answer": {
+              "first_token_id": 151645,
+              "raw_probability": 0.9998732805252075,
+              "raw_rank": 1,
+              "filtered_probability": 1.0,
+              "scored_tokens": 1,
+              "mean_nll": 0.0001267114421352744,
+              "filtered_zero_tokens": 0
+            },
+            "repeat": {
+              "first_token_id": 26232,
+              "raw_probability": 5.042837187829718e-07,
+              "raw_rank": 18,
+              "filtered_probability": 0.0,
+              "scored_tokens": 21,
+              "mean_nll": 0.7654205131568471,
+              "filtered_zero_tokens": 1
+            },
+            "extra_conclusion": {
+              "first_token_id": 102786,
+              "raw_probability": 5.779920542181571e-09,
+              "raw_rank": 2129,
+              "filtered_probability": 0.0,
+              "scored_tokens": 12,
+              "mean_nll": 2.875542801023888,
+              "filtered_zero_tokens": 3
+            }
+          }
+        }
+      }
+    }
+  ]
+}

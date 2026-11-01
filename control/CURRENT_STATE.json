@@ -4,7 +4,7 @@
   "timezone_for_user_dates": "America/Los_Angeles",
   "archive_version": "archive-v1.0.0",
   "task": "T-008 v1.5 section 15",
-  "current_workstream": "v22 fixed-reference preference hypothesis opposed by predeclared metric; stop extrapolation, no training",
+  "current_workstream": "v22 actual verbatim-copy path verified: large early probability shifts, no new training",
   "base_model": "Qwen/Qwen3-8B",
   "process": "v1.2 process-restore-R1",
   "current_user_request": "完成v22单题概率检验，先更新判断，不自动训练。",
@@ -578,8 +578,8 @@
     "execution_report": "stage2/runs/t008-v0125-kl-20261101-084231/RESULT.md"
   },
   "next_diagnostic_direction": {
-    "status": "PROPOSED_READ_ONLY_NOT_STARTED",
-    "scope": "Audit actual v22 verbatim-echo input/output path; any next intervention requires a separate preregistration"
+    "status": "PROPOSED_NOT_EXECUTED",
+    "scope": "Use existing v22 checkpoints and v26/v27 to localize observed copy-entry probability changes, no new training"
   },
   "pending_minimal_diagnostic_design": {
     "version": "minimal16-diagnostic-review-v0.1",
@@ -633,5 +633,15 @@
     "training": false,
     "uat_paused": true,
     "next": "Read existing exact-echo path/request evidence; no further GPU inference or training started"
+  },
+  "latest_v22_actual_path_diagnostic": {
+    "status": "COMPLETE",
+    "report": "stage2/diagnostics/v22-actual-20261101-150030/REPORT.md",
+    "generations": 20,
+    "single_token_probes": 117,
+    "exact_echo_zero": 0,
+    "exact_echo_v22": 9,
+    "uat_paused": true,
+    "training": false
   }
 }

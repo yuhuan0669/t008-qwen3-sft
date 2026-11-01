@@ -1,0 +1,3 @@
+{"versions": {"vllm": "0.25.1", "torch": "2.11.0+cu130", "transformers": "5.14.1", "peft": "0.20.0"}, "logprobs_mode_default": "raw_logprobs"}
+Modular Diffusers is currently an experimental feature under active development. The API is subject to breaking changes in future releases.
+[transformers] `Siglip2ImageProcessorFast` is deprecated. The `Fast` suffix for image processors has been removed; use `Siglip2ImageProcessor` instead.

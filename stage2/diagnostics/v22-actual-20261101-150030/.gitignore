@@ -1,0 +1,7 @@
+results/
+*.tar
+*.log
+historical-anchor.json
+uat-*.json
+ANSWERS.md
+TOKEN_COMPARISON.md

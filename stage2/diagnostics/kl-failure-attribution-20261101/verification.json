@@ -1,0 +1,30 @@
+{
+  "verified": true,
+  "checked_at_utc": "2026-11-01T10:06:26.743023+00:00",
+  "historical_input_hashes_unchanged": true,
+  "historical_labels_overwritten": false,
+  "question_comparisons": 28,
+  "existing_answer_slots": 336,
+  "targeted_full_text_reread": 75,
+  "original_counts_reproduced": true,
+  "raw_readback_references_and_text_hashes_verified": true,
+  "new_generation_requests": 0,
+  "external_judge_requests": 0,
+  "training": false,
+  "cluster_accessed": false,
+  "deployment": false,
+  "uat_restore": false,
+  "formal_acceptance": false,
+  "next_training_authorized": false,
+  "sync_status": "LOCAL_GIT_ONLY",
+  "files_sha256": {
+    "REPORT.md": "b14a1b9340bda6bda0a3b17ea89a7b7d81ed4e6d0a35f26794ac7c141bb748e2",
+    "SUMMARY.json": "995c66dac9f74abb7dd7788dba8392e14bfdf99f3de118ac6c5120d5e582390d",
+    "CASE_REVIEW.md": "af6f0fab4266b57e58cfb249887227bcae6f24f28b6d1196532fe9f2aa285908",
+    "review-notes.json": "8456bb013b1d2d22aa6488d480ddbfb8571379a366739358a4bb654d4f3c3162",
+    "analyze.py": "1d3a79435ba19ae939a02f291ae41168b28d6d21acb86a3996975e6c055ab08d",
+    "authorization.json": "d7d5231c94fea167886b2e34af2712ec0a56c9d8f32ada7da0defc4b79c21533",
+    "readback-evidence.json": "a01957e0dec2554e519c3e4f1ad12d6ce8182c4850c29e186ceb4928ee4a894e",
+    "DETAILS.md": "e2ee7371cec02a450c228ee60bf1cf59d6ba6fae2c001bd0b935bb3967d5b1e4"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "user_instruction": "继续",
+  "scope": "Analyze existing frozen answers to separate base-existing errors, observed LoRA regressions and post-copy substantive failures. Local reports/versioning only.",
+  "training": false,
+  "new_generation": false,
+  "external_judge": false,
+  "cluster_access": false,
+  "automatic_uat_restore": false
+}

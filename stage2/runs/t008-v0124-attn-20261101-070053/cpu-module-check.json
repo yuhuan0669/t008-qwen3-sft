@@ -1,0 +1,41 @@
+{
+  "verified": true,
+  "dataset_sha256": "0087a3073bac5b36e3b865666ad9210a1d52ba04c32ecdaba83b4af4eb49b2bb",
+  "rows": 1047,
+  "identity_exposures": 234,
+  "native_encoding_equal_rows": 1047,
+  "native_encoding_sha256": "1f335bf6b7584e86696c58b906b2c61e7436d0bb51f880a94e1a103fb2fa4421",
+  "totals": {
+    "input_tokens": 965311,
+    "supervised_tokens": 928890,
+    "weighted_token_units": 946600.0
+  },
+  "max_tokens": 2041,
+  "overlength_rows": 0,
+  "silent_dropped_rows": 0,
+  "system_rows": 0,
+  "target_modules": [
+    "k_proj",
+    "o_proj",
+    "q_proj",
+    "v_proj"
+  ],
+  "trainable_parameters": 7667712,
+  "trainable_tensor_count": 288,
+  "layer_count": 36,
+  "base_weights_loaded": false,
+  "model_device": "meta",
+  "gpu_used": false,
+  "training_started": false,
+  "versions": {
+    "ms-swift": "4.4.2",
+    "transformers": "5.14.1",
+    "peft": "0.20.0",
+    "torch": "2.11.0+cu130",
+    "tokenizers": "0.22.2",
+    "datasets": "4.8.4",
+    "modelscope": "1.38.1"
+  },
+  "identity_plugin_sha256": "082510fc6fadc31eb179384299cc1425e6dfd98ae01ad95d463759c1a0627db8",
+  "note": "Full native input_ids/labels/loss_scale equal to the frozen v0.1.22 template; only LoRA target modules change."
+}

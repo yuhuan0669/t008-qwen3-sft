@@ -1,0 +1,9 @@
+{
+  "user_instruction": "继续。暂停UAT后，不用恢复，直到我说恢复。",
+  "scope": "Original v0.1.22 data1047/identity234/loss3, only target_modules to attention q/k/v/o. Smoke3, fresh-base Full66, 208 Chinese responses. No deployment, extra Full, English or external Judge.",
+  "data_sha256": "0087a3073bac5b36e3b865666ad9210a1d52ba04c32ecdaba83b4af4eb49b2bb",
+  "dataset_version": "stage1-cpu-v0.1.22",
+  "uat_pause_authorized": true,
+  "automatic_restore_authorized": false,
+  "uat_policy": "KEEP_PAUSED_UNTIL_EXPLICIT_USER_RESTORE"
+}

@@ -1,0 +1,27 @@
+{
+  "semantic_change": "L_native_SFT + 1.0 * sum_general_token KL(P_base || P_LoRA) / native_unweighted_accumulation_token_denominator",
+  "unchanged": [
+    "v0.1.22 train.jsonl bytes / 1047 rows / exposures",
+    "234 identity exposures and identity loss3 plugin",
+    "all-linear / rank8 / alpha32 / dropout0.05",
+    "BF16 / lr1e-4 / batch1 x accumulation16 / epoch1 / 66 steps",
+    "max_length2048 / loss masks / preserve_thinking=false",
+    "training without System",
+    "inference System / corrected vLLM template / JSON Schema / decoding"
+  ],
+  "added_cli_plugin": "/work/stage2/variants/base-retention-review/retention.py",
+  "added_environment": {
+    "T008_RETENTION_CONFIG": "/work/stage2/variants/base-retention-review/retention-config.json"
+  },
+  "output_paths_changed_for_isolation": true,
+  "native_training_argv_otherwise_unchanged": true,
+  "next_training_authorized": true,
+  "unchanged_artifacts": {
+    "stage1/variants/stage1-cpu-v0.1.22/train.jsonl": "0087a3073bac5b36e3b865666ad9210a1d52ba04c32ecdaba83b4af4eb49b2bb",
+    "stage1/variants/stage1-cpu-v0.1.22/identity_loss3.py": "082510fc6fadc31eb179384299cc1425e6dfd98ae01ad95d463759c1a0627db8",
+    "stage1/variants/stage1-cpu-v0.1.22/identity-keys.json": "830b9abc743af4c98f249631c5ec4d5f7614bcee86a8f6f4a1e1b4d0083b4529",
+    "stage1/variants/stage1-cpu-v0.1.22/inference-system.txt": "3ae02d520406f73e735752ef04ff395785f84fec7ee1619fd9d392d86cb92933",
+    "stage1/variants/stage1-cpu-v0.1.22/cpu-check/report.json": "e6b217868c6684f4a2a3d6fc08a1fe0a244ea03e3ef9e71cc0c945e21e808f19",
+    "stage1/training/local_data_guard.py": "45ba3763667ece681ad9094786035e40043ed334a72c0e76b4fc413755901fa5"
+  }
+}

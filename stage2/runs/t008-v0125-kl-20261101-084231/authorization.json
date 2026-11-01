@@ -1,0 +1,10 @@
+{
+  "user_instruction": "继续",
+  "scope": "Approved concrete KL proposal: frozen v0.1.22 data1047/identity234/loss3 and all-linear; KL(base||LoRA) coefficient1 only for770 general/format rows. Smoke3, one fresh-base Full66, 208 Chinese responses. No deployment, English, external Judge or additional Full.",
+  "prior_pause_instruction": "暂停UAT后，不用恢复，直到我说恢复。",
+  "data_sha256": "0087a3073bac5b36e3b865666ad9210a1d52ba04c32ecdaba83b4af4eb49b2bb",
+  "uat_pause_authorized": true,
+  "automatic_restore_authorized": false,
+  "proposal_commit": "30dee5e02417be8821c24dec05930bcc13e73d0f",
+  "proposal": "stage2/variants/base-retention-review/README.md"
+}

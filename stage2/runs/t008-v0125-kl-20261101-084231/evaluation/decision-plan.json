@@ -1,0 +1,14 @@
+{
+  "primary": "Compare with both v0.1.22 loss3 and v0.1.14, not only the immediate parent.",
+  "promising_direction": "Echo and looping counts both decrease vs v0.1.22; task/fact failure counts do not increase; no-System complete identity does not decrease.",
+  "stop": "If task behavior improves but identity fails or harms increase, no release or automatic extra training.",
+  "acceptance": "208 failure-enriched outputs are directional diagnostics. Repeats are clustered by question; no formal significance or full acceptance claim.",
+  "review": "Root reviews new visible outputs against frozen case criteria. Reuse corrected existing verdicts only for identical question/condition/answer. JSON syntax and values distinct.",
+  "exclude": [
+    "New external Judge calls",
+    "English evaluation",
+    "Deployment",
+    "Additional Full"
+  ],
+  "interpretation": "Reuse the same 208-output directional comparison; no formal acceptance or automatic next training."
+}

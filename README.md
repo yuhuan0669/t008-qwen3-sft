@@ -1,5 +1,7 @@
 # T-008 · Qwen3-8B 基础 SFT 统一版本库
 
+**分来源调查三步已完成：v0.1.26仅关闭234次身份来源监督，仍有复述，不能作为修复方案。** 一次Full66及208份新回答与624份历史回答比较：带System复述23/48→16/48、循环12→3，但无System事实错误11/48→21/48，身份8/24→0/24。身份来源不是唯一原因；下一项通用来源消融仅为建议，未执行。UAT保持暂停，未发布或推送。[结果与下一步](stage2/runs/t008-v0126-idzero-20261101-112301/RESULT.md) · [来源梯度证据](stage2/diagnostics/source-gradient-20261101/REPORT.md)。
+
 **已有回答的逐题归因完成，未新增生成或训练。** 28道业务题共336份既有判词重算，定向全文回读75份。原版三次核心任务／事实均通过的11题中，v0.1.25仍有12/33份核心失败；事实失败增加不能全归为复述减少后的暴露。UAT暂停指令不变，本轮未操作集群。[结论与下一步](stage2/diagnostics/kl-failure-attribution-20261101/REPORT.md) · [28题对照](stage2/diagnostics/kl-failure-attribution-20261101/CASE_REVIEW.md)。
 
 **KL上下文诊断已完成，未追加训练或生成。** 原版／v0.1.22／v0.1.25的174项固定文本评分表明：KL对实际非思考＋System入口有效，首token分布偏移均值减小29.1%，但复制路径及身份错误开头仍有残留，不能当作质量达标。UAT继续暂停。[诊断结果](stage2/diagnostics/kl-context-20261101/REPORT.md) · [核验](stage2/diagnostics/kl-context-20261101/verification.json)。

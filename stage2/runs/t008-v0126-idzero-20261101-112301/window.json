@@ -1,0 +1,14 @@
+{
+  "run_id": "t008-v0126-idzero-20261101-112301",
+  "experiment_approved": true,
+  "uat_pause_approved": true,
+  "approved_data_sha256": "0087a3073bac5b36e3b865666ad9210a1d52ba04c32ecdaba83b4af4eb49b2bb",
+  "window_start_utc": "2026-11-01T11:26:00.754756+00:00",
+  "window_end_utc": "2026-11-01T12:56:00.754756+00:00",
+  "window_end_meaning": "Experiment ceiling only; UAT remains paused.",
+  "decision_ref": "继续；沿用暂停后不恢复直到用户要求恢复的指令。",
+  "uat_policy": "KEEP_PAUSED_UNTIL_EXPLICIT_USER_RESTORE",
+  "automatic_restore_authorized": false,
+  "inherited_pause_run": "t008-v0124-attn-20261101-070053",
+  "max_full_runs": 1
+}

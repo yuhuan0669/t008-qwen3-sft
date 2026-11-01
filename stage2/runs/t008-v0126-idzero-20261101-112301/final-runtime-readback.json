@@ -1,0 +1,12 @@
+{
+  "checked_at_utc": "2026-11-01T11:54:43.068738+00:00",
+  "spec_equal_except_replicas": true,
+  "replicas": 0,
+  "ready_replicas": 0,
+  "uat_paused": true,
+  "uat_restored": false,
+  "automatic_restore_authorized": false,
+  "remaining_task_workloads": [],
+  "uat_pods": [],
+  "restore_condition": "User explicitly requests restoration."
+}

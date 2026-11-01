@@ -1,0 +1,310 @@
+{
+  "frozen_hypothesis": "hypothesis-before-generation.json",
+  "items": [
+    {
+      "case_id": "T021-C900-B4-G007",
+      "group": "nt_system",
+      "models": {
+        "original_base": {
+          "n": 3,
+          "exact_echo": 0,
+          "echo": 0,
+          "loop": 0,
+          "task_fail": 0,
+          "facts_fail": 0
+        },
+        "v0.1.14": {
+          "n": 3,
+          "exact_echo": 0,
+          "echo": 1,
+          "loop": 0,
+          "task_fail": 3,
+          "facts_fail": 1
+        },
+        "candidate_v0.1.22": {
+          "n": 3,
+          "exact_echo": 3,
+          "echo": 3,
+          "loop": 0,
+          "task_fail": 3,
+          "facts_fail": 0
+        },
+        "candidate_v0.1.26": {
+          "n": 3,
+          "exact_echo": 3,
+          "echo": 3,
+          "loop": 0,
+          "task_fail": 3,
+          "facts_fail": 0
+        }
+      }
+    },
+    {
+      "case_id": "T021-C900-B4-G007",
+      "group": "nt_no_system",
+      "models": {
+        "original_base": {
+          "n": 3,
+          "exact_echo": 0,
+          "echo": 0,
+          "loop": 0,
+          "task_fail": 2,
+          "facts_fail": 2
+        },
+        "v0.1.14": {
+          "n": 3,
+          "exact_echo": 0,
+          "echo": 2,
+          "loop": 0,
+          "task_fail": 3,
+          "facts_fail": 2
+        },
+        "candidate_v0.1.22": {
+          "n": 3,
+          "exact_echo": 0,
+          "echo": 3,
+          "loop": 0,
+          "task_fail": 3,
+          "facts_fail": 0
+        },
+        "candidate_v0.1.26": {
+          "n": 3,
+          "exact_echo": 0,
+          "echo": 1,
+          "loop": 0,
+          "task_fail": 3,
+          "facts_fail": 3
+        }
+      }
+    },
+    {
+      "case_id": "T021-C900-B4-G007",
+      "group": "thinking_system",
+      "models": {
+        "original_base": {
+          "n": 1,
+          "exact_echo": 0,
+          "echo": 0,
+          "loop": 0,
+          "task_fail": 0,
+          "facts_fail": 0
+        },
+        "v0.1.14": {
+          "n": 1,
+          "exact_echo": 0,
+          "echo": 0,
+          "loop": 0,
+          "task_fail": 1,
+          "facts_fail": 1
+        },
+        "candidate_v0.1.22": {
+          "n": 1,
+          "exact_echo": 0,
+          "echo": 0,
+          "loop": 0,
+          "task_fail": 0,
+          "facts_fail": 1
+        },
+        "candidate_v0.1.26": {
+          "n": 1,
+          "exact_echo": 0,
+          "echo": 0,
+          "loop": 0,
+          "task_fail": 0,
+          "facts_fail": 0
+        }
+      }
+    },
+    {
+      "case_id": "T021-P20-G0274",
+      "group": "nt_system",
+      "models": {
+        "original_base": {
+          "n": 3,
+          "exact_echo": 0,
+          "echo": 0,
+          "loop": 0,
+          "task_fail": 0,
+          "facts_fail": 0
+        },
+        "v0.1.14": {
+          "n": 3,
+          "exact_echo": 0,
+          "echo": 0,
+          "loop": 0,
+          "task_fail": 0,
+          "facts_fail": 0
+        },
+        "candidate_v0.1.22": {
+          "n": 3,
+          "exact_echo": 1,
+          "echo": 1,
+          "loop": 0,
+          "task_fail": 1,
+          "facts_fail": 0
+        },
+        "candidate_v0.1.26": {
+          "n": 3,
+          "exact_echo": 2,
+          "echo": 2,
+          "loop": 0,
+          "task_fail": 2,
+          "facts_fail": 0
+        }
+      }
+    },
+    {
+      "case_id": "T021-P20-G0274",
+      "group": "nt_no_system",
+      "models": {
+        "original_base": {
+          "n": 3,
+          "exact_echo": 0,
+          "echo": 0,
+          "loop": 0,
+          "task_fail": 0,
+          "facts_fail": 2
+        },
+        "v0.1.14": {
+          "n": 3,
+          "exact_echo": 0,
+          "echo": 0,
+          "loop": 0,
+          "task_fail": 1,
+          "facts_fail": 0
+        },
+        "candidate_v0.1.22": {
+          "n": 3,
+          "exact_echo": 0,
+          "echo": 0,
+          "loop": 0,
+          "task_fail": 1,
+          "facts_fail": 0
+        },
+        "candidate_v0.1.26": {
+          "n": 3,
+          "exact_echo": 0,
+          "echo": 0,
+          "loop": 0,
+          "task_fail": 0,
+          "facts_fail": 0
+        }
+      }
+    },
+    {
+      "case_id": "T021-P20-G0274",
+      "group": "thinking_system",
+      "models": {
+        "original_base": {
+          "n": 1,
+          "exact_echo": 0,
+          "echo": 0,
+          "loop": 0,
+          "task_fail": 0,
+          "facts_fail": 0
+        },
+        "v0.1.14": {
+          "n": 1,
+          "exact_echo": 0,
+          "echo": 0,
+          "loop": 0,
+          "task_fail": 0,
+          "facts_fail": 0
+        },
+        "candidate_v0.1.22": {
+          "n": 1,
+          "exact_echo": 0,
+          "echo": 0,
+          "loop": 0,
+          "task_fail": 0,
+          "facts_fail": 0
+        },
+        "candidate_v0.1.26": {
+          "n": 1,
+          "exact_echo": 0,
+          "echo": 0,
+          "loop": 0,
+          "task_fail": 0,
+          "facts_fail": 0
+        }
+      }
+    },
+    {
+      "case_id": "T021-R3300-G0243",
+      "group": "nt_system",
+      "models": {
+        "original_base": {
+          "n": 3,
+          "exact_echo": 0,
+          "echo": 0,
+          "loop": 0,
+          "task_fail": 1,
+          "facts_fail": 0
+        },
+        "v0.1.14": {
+          "n": 3,
+          "exact_echo": 0,
+          "echo": 0,
+          "loop": 0,
+          "task_fail": 3,
+          "facts_fail": 3
+        },
+        "candidate_v0.1.22": {
+          "n": 3,
+          "exact_echo": 0,
+          "echo": 0,
+          "loop": 0,
+          "task_fail": 2,
+          "facts_fail": 2
+        },
+        "candidate_v0.1.26": {
+          "n": 3,
+          "exact_echo": 0,
+          "echo": 0,
+          "loop": 0,
+          "task_fail": 1,
+          "facts_fail": 2
+        }
+      }
+    },
+    {
+      "case_id": "T021-R3300-G1038",
+      "group": "nt_system",
+      "models": {
+        "original_base": {
+          "n": 3,
+          "exact_echo": 0,
+          "echo": 0,
+          "loop": 0,
+          "task_fail": 2,
+          "facts_fail": 3
+        },
+        "v0.1.14": {
+          "n": 3,
+          "exact_echo": 0,
+          "echo": 0,
+          "loop": 0,
+          "task_fail": 1,
+          "facts_fail": 3
+        },
+        "candidate_v0.1.22": {
+          "n": 3,
+          "exact_echo": 0,
+          "echo": 0,
+          "loop": 0,
+          "task_fail": 2,
+          "facts_fail": 1
+        },
+        "candidate_v0.1.26": {
+          "n": 3,
+          "exact_echo": 0,
+          "echo": 0,
+          "loop": 0,
+          "task_fail": 1,
+          "facts_fail": 1
+        }
+      }
+    }
+  ],
+  "note": "Question counts are descriptive. Fixed-position gradients are not predictions of whole trajectories; controls reused, sampled without paired request seeds."
+}

@@ -1,0 +1,188 @@
+{
+  "best_global_step": null,
+  "best_metric": null,
+  "best_model_checkpoint": null,
+  "epoch": 1.0,
+  "eval_steps": 500,
+  "global_step": 66,
+  "is_hyper_param_search": false,
+  "is_local_process_zero": true,
+  "is_world_process_zero": true,
+  "log_history": [
+    {
+      "epoch": 0.015281757402101241,
+      "grad_norm": 0.9858191609382629,
+      "learning_rate": 2.5e-05,
+      "loss": 1.5526328086853027,
+      "retention_kl_general_microbatch_mean": 0.0,
+      "retention_loss_accum_scaled": 0.0,
+      "sft_loss_accum_scaled": 0.1235199182040312,
+      "step": 1,
+      "token_acc": 0.6981201621820863
+    },
+    {
+      "epoch": 0.07640878701050621,
+      "grad_norm": 0.6269680261611938,
+      "learning_rate": 9.993582535855263e-05,
+      "loss": 1.191259741783142,
+      "retention_kl_general_microbatch_mean": 0.0007368135539225626,
+      "retention_loss_accum_scaled": 5.330238912634109e-05,
+      "sft_loss_accum_scaled": 0.08569255619005738,
+      "step": 5,
+      "token_acc": 0.7544432411772201
+    },
+    {
+      "epoch": 0.15281757402101243,
+      "grad_norm": 0.2594095766544342,
+      "learning_rate": 9.770696282000244e-05,
+      "loss": 1.2270944595336915,
+      "retention_kl_general_microbatch_mean": 0.031781366433980954,
+      "retention_loss_accum_scaled": 0.0017961923605119075,
+      "sft_loss_accum_scaled": 0.09479976783653624,
+      "step": 10,
+      "token_acc": 0.7387558615962236
+    },
+    {
+      "epoch": 0.22922636103151864,
+      "grad_norm": 0.5195059776306152,
+      "learning_rate": 9.243221287473756e-05,
+      "loss": 1.09507474899292,
+      "retention_kl_general_microbatch_mean": 0.060031632892787457,
+      "retention_loss_accum_scaled": 0.004264996823621914,
+      "sft_loss_accum_scaled": 0.0809481021327277,
+      "step": 15,
+      "token_acc": 0.7434828215853612
+    },
+    {
+      "epoch": 0.30563514804202485,
+      "grad_norm": 0.23806880414485931,
+      "learning_rate": 8.444834595378434e-05,
+      "loss": 1.0708964347839356,
+      "retention_kl_general_microbatch_mean": 0.052293408907165655,
+      "retention_loss_accum_scaled": 0.003267845146055742,
+      "sft_loss_accum_scaled": 0.08353192989894173,
+      "step": 20,
+      "token_acc": 0.7487279132185194
+    },
+    {
+      "epoch": 0.38204393505253104,
+      "grad_norm": 0.22455525398254395,
+      "learning_rate": 7.426509812655406e-05,
+      "loss": 1.0444293022155762,
+      "retention_kl_general_microbatch_mean": 0.05138769948721996,
+      "retention_loss_accum_scaled": 0.002645062178219502,
+      "sft_loss_accum_scaled": 0.08565366459359731,
+      "step": 25,
+      "token_acc": 0.7502259926291635
+    },
+    {
+      "epoch": 0.4584527220630373,
+      "grad_norm": 0.2754332721233368,
+      "learning_rate": 6.253262661293604e-05,
+      "loss": 1.1248529434204102,
+      "retention_kl_general_microbatch_mean": 0.06268937606364489,
+      "retention_loss_accum_scaled": 0.002441088274248283,
+      "sft_loss_accum_scaled": 0.09159570837986063,
+      "step": 30,
+      "token_acc": 0.7392704910031562
+    },
+    {
+      "epoch": 0.5348615090735435,
+      "grad_norm": 0.33879733085632324,
+      "learning_rate": 5e-05,
+      "loss": 1.1339115142822265,
+      "retention_kl_general_microbatch_mean": 0.061350057511750995,
+      "retention_loss_accum_scaled": 0.0029044327886116788,
+      "sft_loss_accum_scaled": 0.08927524129555015,
+      "step": 35,
+      "token_acc": 0.7360330192352621
+    },
+    {
+      "epoch": 0.6112702960840497,
+      "grad_norm": 0.18470898270606995,
+      "learning_rate": 3.746737338706397e-05,
+      "loss": 0.9493667602539062,
+      "retention_kl_general_microbatch_mean": 0.045671074534766376,
+      "retention_loss_accum_scaled": 0.0026603197111398913,
+      "sft_loss_accum_scaled": 0.06892770150079741,
+      "step": 40,
+      "token_acc": 0.7641819709518666
+    },
+    {
+      "epoch": 0.6876790830945558,
+      "grad_norm": 0.2764011323451996,
+      "learning_rate": 2.573490187344596e-05,
+      "loss": 0.9792963981628418,
+      "retention_kl_general_microbatch_mean": 0.05438974442621393,
+      "retention_loss_accum_scaled": 0.003468668609604074,
+      "sft_loss_accum_scaled": 0.07260041368652075,
+      "step": 45,
+      "token_acc": 0.7558074246242639
+    },
+    {
+      "epoch": 0.7640878701050621,
+      "grad_norm": 0.20595896244049072,
+      "learning_rate": 1.555165404621567e-05,
+      "loss": 1.0356664657592773,
+      "retention_kl_general_microbatch_mean": 0.06552960908376292,
+      "retention_loss_accum_scaled": 0.00360372071569503,
+      "sft_loss_accum_scaled": 0.0785554504579269,
+      "step": 50,
+      "token_acc": 0.7471752850162866
+    },
+    {
+      "epoch": 0.8404966571155683,
+      "grad_norm": 0.2311950922012329,
+      "learning_rate": 7.5677871252624485e-06,
+      "loss": 1.1237131118774415,
+      "retention_kl_general_microbatch_mean": 0.06325934271638592,
+      "retention_loss_accum_scaled": 0.003376478340942413,
+      "sft_loss_accum_scaled": 0.08602986673746879,
+      "step": 55,
+      "token_acc": 0.7366772137101174
+    },
+    {
+      "epoch": 0.9169054441260746,
+      "grad_norm": 0.2136065512895584,
+      "learning_rate": 2.2930371799975594e-06,
+      "loss": 1.0236791610717773,
+      "retention_kl_general_microbatch_mean": 0.05911087776245228,
+      "retention_loss_accum_scaled": 0.00319091905137235,
+      "sft_loss_accum_scaled": 0.08183107785978415,
+      "step": 60,
+      "token_acc": 0.7547062262496346
+    },
+    {
+      "epoch": 0.9933142311365807,
+      "grad_norm": 0.16694703698158264,
+      "learning_rate": 6.417464144736208e-08,
+      "loss": 1.0341898918151855,
+      "retention_kl_general_microbatch_mean": 0.05729920478382458,
+      "retention_loss_accum_scaled": 0.003071284720984598,
+      "sft_loss_accum_scaled": 0.08038778925935428,
+      "step": 65,
+      "token_acc": 0.7491658739511309
+    }
+  ],
+  "logging_steps": 5,
+  "max_steps": 66,
+  "num_input_tokens_seen": 0,
+  "num_train_epochs": 1,
+  "save_steps": 50,
+  "stateful_callbacks": {
+    "TrainerControl": {
+      "args": {
+        "should_epoch_stop": false,
+        "should_evaluate": false,
+        "should_log": false,
+        "should_save": true,
+        "should_training_stop": true
+      },
+      "attributes": {}
+    }
+  },
+  "total_flos": 4.396158923097907e+16,
+  "train_batch_size": 1,
+  "trial_name": null,
+  "trial_params": null
+}

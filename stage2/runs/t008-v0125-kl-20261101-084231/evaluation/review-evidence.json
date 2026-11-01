@@ -1,0 +1,23 @@
+{
+  "slots": 832,
+  "unique_reviewed": 712,
+  "inherited_unique": 545,
+  "new_unique_root_read": 167,
+  "unreviewed_slots": 0,
+  "review_type": "Historical corrected labels plus nonblind root review; no external Judge or new subagents.",
+  "corrections": 0,
+  "archive": "semantic-evidence.tar.gz",
+  "archive_sha256": "a86b51c3e86b5eefef51cf6720ff6baab2c15325b3643ee828242f6c42ca2d86",
+  "files_sha256": {
+    "cases.json": "dc6d11b67facceb60ad951d8cdb75faae10c44a6a3e649a29bc28d746abdca3b",
+    "combined.jsonl": "5ce987ffb04ddf606125d6a4141594475d29b6e9de870bdcb8b511bcce6a619d",
+    "results.jsonl": "a2a32124b5178c421496c500aa167da3b0c3899937f6d30793eeb49d4c125ce1",
+    "BY_QUESTION.md": "9eef64da8bd6ab799eea8c1efbf7a0e10ca6f5d5d552dc917c95c527f4e0f33d",
+    "EXAMPLES.md": "17b8a32481a089d93b309af7da8d86290f947ce32ef981a336196500abb43296",
+    "review/verdicts-inherited.jsonl": "aab3e5e58b9c32de6fd9653703378cca82afe25d33c049d59c613650500eef35",
+    "review/verdicts-root.jsonl": "eb58297d1ccdb7e3c2a1a6109b86cfed6e978874f83b0b8b15fd789ab1cf4350",
+    "review/root-corrections.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "review/bundle-root.jsonl": "fc0d0a6f7773dc4219c77a1cd7eef727352b59f2556408aba3b65cdb3c6e470f"
+  },
+  "raw_request_response_archive": "raw-evidence.tar.gz"
+}

@@ -1,0 +1,53 @@
+{"issue_id": 336, "sample_id": "全集", "category": "对冲句式增多", "status": "部分采纳", "reason": "只删G0204、G0281、G0380的重复表达；其他位置的风险、条件和证据边界保留，不设禁词表。", "changed_sample_ids": []}
+{"issue_id": 337, "sample_id": "G0159", "category": "对冲句式增多", "status": "不采纳", "reason": "结合thinking和正文逐处阅读，限定分别对应不同事实或条件；出现两次以上不等于可删除，不以句式频次替代语义判断。", "changed_sample_ids": []}
+{"issue_id": 338, "sample_id": "G0192", "category": "对冲句式增多", "status": "不采纳", "reason": "结合thinking和正文逐处阅读，限定分别对应不同事实或条件；出现两次以上不等于可删除，不以句式频次替代语义判断。", "changed_sample_ids": []}
+{"issue_id": 339, "sample_id": "G0204", "category": "对冲句式增多", "status": "采纳", "reason": "删去紧邻下一段P/R反例且重复表达的过渡段；数学反例和效用条件保留。；删去与结尾重复的限定段，不删任何计算或反例。；结尾合并重复限定，保留与随机基线数值相同不等于同一预测行为。", "changed_sample_ids": ["G0204"]}
+{"issue_id": 340, "sample_id": "G0242", "category": "对冲句式增多", "status": "不采纳", "reason": "结合thinking和正文逐处阅读，限定分别对应不同事实或条件；出现两次以上不等于可删除，不以句式频次替代语义判断。", "changed_sample_ids": []}
+{"issue_id": 341, "sample_id": "G0281", "category": "对冲句式增多", "status": "采纳", "reason": "前句已列明表现取决于体重、力量、技术及动作，删去重复概括。", "changed_sample_ids": ["G0281"]}
+{"issue_id": 342, "sample_id": "G0333", "category": "对冲句式增多", "status": "不采纳", "reason": "结合thinking和正文逐处阅读，限定分别对应不同事实或条件；出现两次以上不等于可删除，不以句式频次替代语义判断。", "changed_sample_ids": []}
+{"issue_id": 343, "sample_id": "G0365", "category": "对冲句式增多", "status": "不采纳", "reason": "结合thinking和正文逐处阅读，限定分别对应不同事实或条件；出现两次以上不等于可删除，不以句式频次替代语义判断。", "changed_sample_ids": []}
+{"issue_id": 344, "sample_id": "G0380", "category": "对冲句式增多", "status": "采纳", "reason": "第2节已解释泵耗电与节省量比较，删去结尾重复一句。", "changed_sample_ids": ["G0380"]}
+{"issue_id": 345, "sample_id": "G0496", "category": "对冲句式增多", "status": "不采纳", "reason": "结合thinking和正文逐处阅读，限定分别对应不同事实或条件；出现两次以上不等于可删除，不以句式频次替代语义判断。", "changed_sample_ids": []}
+{"issue_id": 346, "sample_id": "G0061", "category": "think 编辑指令口吻", "status": "不采纳", "reason": "所列句是在规划当前回答、检查假设或约束输出；没有引用清洗任务，不仅因祈使句式而重写正确推理。", "changed_sample_ids": []}
+{"issue_id": 347, "sample_id": "G0071", "category": "think 编辑指令口吻", "status": "采纳", "reason": "去掉不回答题外日期等编辑说明，保留评级与资格的区分。", "changed_sample_ids": ["G0071"]}
+{"issue_id": 348, "sample_id": "G0102", "category": "think 编辑指令口吻", "status": "不采纳", "reason": "所列句是在规划当前回答、检查假设或约束输出；没有引用清洗任务，不仅因祈使句式而重写正确推理。", "changed_sample_ids": []}
+{"issue_id": 349, "sample_id": "G0104", "category": "think 编辑指令口吻", "status": "不采纳", "reason": "所列句是在规划当前回答、检查假设或约束输出；没有引用清洗任务，不仅因祈使句式而重写正确推理。", "changed_sample_ids": []}
+{"issue_id": 350, "sample_id": "G0109", "category": "think 编辑指令口吻", "status": "采纳", "reason": "移除关于拼接免责句的编辑说明，保留模型风险内容。", "changed_sample_ids": ["G0109"]}
+{"issue_id": 351, "sample_id": "G0114", "category": "think 编辑指令口吻", "status": "不采纳", "reason": "所列句是在规划当前回答、检查假设或约束输出；没有引用清洗任务，不仅因祈使句式而重写正确推理。", "changed_sample_ids": []}
+{"issue_id": 352, "sample_id": "G0122", "category": "think 编辑指令口吻", "status": "采纳", "reason": "去掉修正时态的编辑指令；正文已有的假设标记和统一时态不变。", "changed_sample_ids": ["G0122"]}
+{"issue_id": 353, "sample_id": "G0125", "category": "think 编辑指令口吻", "status": "不采纳", "reason": "所列句是在规划当前回答、检查假设或约束输出；没有引用清洗任务，不仅因祈使句式而重写正确推理。", "changed_sample_ids": []}
+{"issue_id": 354, "sample_id": "G0130", "category": "think 编辑指令口吻", "status": "不采纳", "reason": "G0130已是用户需求、采购生产物流等自然推理；所引句不是外部编辑指令。", "changed_sample_ids": []}
+{"issue_id": 355, "sample_id": "G0134", "category": "think 编辑指令口吻", "status": "不采纳", "reason": "所列句是在规划当前回答、检查假设或约束输出；没有引用清洗任务，不仅因祈使句式而重写正确推理。", "changed_sample_ids": []}
+{"issue_id": 356, "sample_id": "G0138", "category": "think 编辑指令口吻", "status": "采纳", "reason": "删除审校者已核实口吻及被删旧例子的否定说明，保留学习机制。", "changed_sample_ids": ["G0138"]}
+{"issue_id": 357, "sample_id": "G0159", "category": "think 编辑指令口吻", "status": "不采纳", "reason": "所列句是在规划当前回答、检查假设或约束输出；没有引用清洗任务，不仅因祈使句式而重写正确推理。", "changed_sample_ids": []}
+{"issue_id": 358, "sample_id": "G0192", "category": "think 编辑指令口吻", "status": "不采纳", "reason": "所列句是在规划当前回答、检查假设或约束输出；没有引用清洗任务，不仅因祈使句式而重写正确推理。", "changed_sample_ids": []}
+{"issue_id": 359, "sample_id": "G0194", "category": "think 编辑指令口吻", "status": "不采纳", "reason": "所列句是在规划当前回答、检查假设或约束输出；没有引用清洗任务，不仅因祈使句式而重写正确推理。", "changed_sample_ids": []}
+{"issue_id": 360, "sample_id": "G0333", "category": "think 编辑指令口吻", "status": "不采纳", "reason": "所列句是在规划当前回答、检查假设或约束输出；没有引用清洗任务，不仅因祈使句式而重写正确推理。", "changed_sample_ids": []}
+{"issue_id": 361, "sample_id": "G0335", "category": "think 编辑指令口吻", "status": "不采纳", "reason": "所列句是在规划当前回答、检查假设或约束输出；没有引用清洗任务，不仅因祈使句式而重写正确推理。", "changed_sample_ids": []}
+{"issue_id": 362, "sample_id": "G0347", "category": "think 编辑指令口吻", "status": "采纳", "reason": "将保留旧稿设定的编辑措辞改为当前创作构思；大纲正文不动。", "changed_sample_ids": ["G0347"]}
+{"issue_id": 363, "sample_id": "G0351", "category": "think 编辑指令口吻", "status": "不采纳", "reason": "所列句是在规划当前回答、检查假设或约束输出；没有引用清洗任务，不仅因祈使句式而重写正确推理。", "changed_sample_ids": []}
+{"issue_id": 364, "sample_id": "G0390", "category": "think 编辑指令口吻", "status": "采纳", "reason": "删去对已删除排名的题外说明，保留原料与制造环节的区分。", "changed_sample_ids": ["G0390"]}
+{"issue_id": 365, "sample_id": "G0396", "category": "think 编辑指令口吻", "status": "不采纳", "reason": "所列句是在规划当前回答、检查假设或约束输出；没有引用清洗任务，不仅因祈使句式而重写正确推理。", "changed_sample_ids": []}
+{"issue_id": 366, "sample_id": "G0397", "category": "think 编辑指令口吻", "status": "采纳", "reason": "对齐正文已有的占位符语法示例和真实密码运行时输入建议。；明确首段代码只是占位符示例，与末尾真实密码处理及thinking保持一致；代码未变。", "changed_sample_ids": ["G0397"]}
+{"issue_id": 367, "sample_id": "G0398", "category": "think 编辑指令口吻", "status": "不采纳", "reason": "所列句是在规划当前回答、检查假设或约束输出；没有引用清洗任务，不仅因祈使句式而重写正确推理。", "changed_sample_ids": []}
+{"issue_id": 368, "sample_id": "G0403", "category": "think 编辑指令口吻", "status": "采纳", "reason": "删去旧稿里根本未再出现的人物支出说明，保留财政限制。", "changed_sample_ids": ["G0403"]}
+{"issue_id": 369, "sample_id": "G0406", "category": "think 编辑指令口吻", "status": "不采纳", "reason": "所列句是在规划当前回答、检查假设或约束输出；没有引用清洗任务，不仅因祈使句式而重写正确推理。", "changed_sample_ids": []}
+{"issue_id": 370, "sample_id": "G0407", "category": "think 编辑指令口吻", "status": "不采纳", "reason": "所列句是在规划当前回答、检查假设或约束输出；没有引用清洗任务，不仅因祈使句式而重写正确推理。", "changed_sample_ids": []}
+{"issue_id": 371, "sample_id": "G0409", "category": "think 编辑指令口吻", "status": "采纳", "reason": "去掉对免责句清单的编辑评论。；删除已核实口吻，具体例子与事实内容不变。", "changed_sample_ids": ["G0409"]}
+{"issue_id": 372, "sample_id": "G0411", "category": "think 编辑指令口吻", "status": "不采纳", "reason": "所列句是在规划当前回答、检查假设或约束输出；没有引用清洗任务，不仅因祈使句式而重写正确推理。", "changed_sample_ids": []}
+{"issue_id": 373, "sample_id": "G0428", "category": "think 编辑指令口吻", "status": "不采纳", "reason": "所列句是在规划当前回答、检查假设或约束输出；没有引用清洗任务，不仅因祈使句式而重写正确推理。", "changed_sample_ids": []}
+{"issue_id": 374, "sample_id": "G0440", "category": "think 编辑指令口吻", "status": "采纳", "reason": "去掉指向已删旧故事的编辑尾句，酒店归属及历史不确定性保留。", "changed_sample_ids": ["G0440"]}
+{"issue_id": 375, "sample_id": "G0445", "category": "think 编辑指令口吻", "status": "不采纳", "reason": "所列句是在规划当前回答、检查假设或约束输出；没有引用清洗任务，不仅因祈使句式而重写正确推理。", "changed_sample_ids": []}
+{"issue_id": 376, "sample_id": "G0475", "category": "think 编辑指令口吻", "status": "不采纳", "reason": "所列句是在规划当前回答、检查假设或约束输出；没有引用清洗任务，不仅因祈使句式而重写正确推理。", "changed_sample_ids": []}
+{"issue_id": 377, "sample_id": "G0496", "category": "think 编辑指令口吻", "status": "不采纳", "reason": "所列句是在规划当前回答、检查假设或约束输出；没有引用清洗任务，不仅因祈使句式而重写正确推理。", "changed_sample_ids": []}
+{"issue_id": 378, "sample_id": "G0102", "category": "think 自称核实来源", "status": "不采纳", "reason": "not verified policy表示未核实，未冒称查询过来源。", "changed_sample_ids": []}
+{"issue_id": 379, "sample_id": "G0342", "category": "think 自称核实来源", "status": "不采纳", "reason": "G0342是在引用已有设备文档知识，没有宣称本轮浏览或检索；条件性澄清与出处含义正确。", "changed_sample_ids": []}
+{"issue_id": 380, "sample_id": "G0452", "category": "think 自称核实来源", "status": "采纳", "reason": "删除已核实的审校口吻，不改法规名称或正文。", "changed_sample_ids": ["G0452"]}
+{"issue_id": 381, "sample_id": "G0475", "category": "think 自称核实来源", "status": "不采纳", "reason": "not a verified description是在限定示例，未冒称核实过生产实现。", "changed_sample_ids": []}
+{"issue_id": 382, "sample_id": "全集", "category": "偏离 Qwen 原文", "status": "部分采纳", "reason": "接受限制后续改写幅度；只修确定的局部问题，不将已纠正的事实恢复为错误源文。", "changed_sample_ids": []}
+{"issue_id": 383, "sample_id": "行 62", "category": "身份口径", "status": "采纳", "reason": "去掉对用户自称身份的附和；本模型与公司名称、业务范围均不变。", "changed_sample_ids": ["I0062"]}
+{"issue_id": 384, "sample_id": "行 140", "category": "身份口径", "status": "采纳", "reason": "去掉对用户自称身份的附和；本模型与公司名称、业务范围均不变。", "changed_sample_ids": ["I0140"]}
+{"issue_id": 385, "sample_id": "行 172", "category": "身份口径", "status": "采纳", "reason": "去掉对用户自称身份的附和；本模型与公司名称、业务范围均不变。", "changed_sample_ids": ["I0172"]}
+{"issue_id": 386, "sample_id": "行 203", "category": "身份口径", "status": "采纳", "reason": "去掉对用户自称身份的附和；本模型与公司名称、业务范围均不变。", "changed_sample_ids": ["I0203"]}
+{"issue_id": 387, "sample_id": "—", "category": "文档一致性", "status": "采纳", "reason": "冻结v0.1.21不改字节；新README及仓库当前入口记录父版已推送，区分成稿快照与后续发布。", "changed_sample_ids": []}
+{"issue_id": 388, "sample_id": "—", "category": "文档一致性", "status": "采纳", "reason": "新增REVIEW_CONTEXT.md，列明完整1047行、两份导出范围、另61行及损失和模板配置。", "changed_sample_ids": []}

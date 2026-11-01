@@ -1,0 +1,23 @@
+{
+  "verified": true,
+  "parent_frozen_files_verified": 68,
+  "rows": 1047,
+  "changed_exposures": 32,
+  "unchanged_bytewise_exposures": 1015,
+  "same_exposure_distribution": true,
+  "same_user_messages_and_roles": true,
+  "same_thinking_modes": true,
+  "same_loss_plugin": true,
+  "same_training_hyperparameters": true,
+  "same_inference_system_and_eval_config": true,
+  "native_cpu_verified": true,
+  "native_cpu_parent_runtime_identical": true,
+  "external_source_rows": 388,
+  "new_external_issue_dispositions": {
+    "部分采纳": 2,
+    "不采纳": 31,
+    "采纳": 20
+  },
+  "training_started": false,
+  "local_version_only": true
+}

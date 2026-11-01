@@ -1,0 +1,31 @@
+{
+  "rows": 1047,
+  "general_unique": 379,
+  "general_exposures": 752,
+  "identity_exposures": 234,
+  "other_unchanged_exposures": 61,
+  "changed_general_unique": 14,
+  "changed_identity_exposures": 4,
+  "changed_exposures": 32,
+  "unchanged_bytewise_exposures": 1015,
+  "source_exposures": {
+    "swift/Qwen3-SFT-Mixin": 752,
+    "swift/self-cognition": 216,
+    "t008/strict-json-v1": 4,
+    "t008/general-nonthinking-v1": 2,
+    "t008/project-positioning-v1": 23,
+    "t008/company-facts-v1": 2,
+    "t008/chinese-identity-v1": 16,
+    "t008/general-nonthinking-v2": 12,
+    "t008/business-evidence-v1": 8,
+    "t008/company-boundary-v1": 12
+  },
+  "added_rows": 0,
+  "removed_rows": 0,
+  "user_messages_changed": 0,
+  "mode_changes": 0,
+  "system_rows": 0,
+  "exposures_unchanged": true,
+  "hyperparameters_unchanged": true,
+  "optimizer_steps": 66
+}

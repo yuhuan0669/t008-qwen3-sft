@@ -1,5 +1,7 @@
 # T-008 · Qwen3-8B 基础 SFT 统一版本库
 
+**2026-10-31 v0.1.22最小修订候选已准备：** 基于已推送的v0.1.21（`66e8966`），局部修改14种通用及4条身份记录，涉及32次曝光；总量1047条、曝光、身份3倍损失、思考格式、System和训练超参数不变。原生CPU检查通过，未训练、未暂停UAT。本版仅本地提交。[审阅入口](stage1/variants/stage1-cpu-v0.1.22/README.md) · [样本对照](stage1/variants/stage1-cpu-v0.1.22/SAMPLES.md) · [两位评审建议](stage1/variants/stage1-cpu-v0.1.22/RECOMMENDATIONS.md)。
+
 **2026-10-31 v0.1.20数据清洗候选已准备：** 回到v0.1.14格式，通用记录修正216种、隔离128种，1,325→1,069条；身份及业务295行不变，无训练System。原生CPU编码通过，训练参数不变，预计83→67步。仅本地归档，待审阅；未训练、未暂停UAT。[审阅入口](stage1/variants/stage1-cpu-v0.1.20/README.md) · [全部处置](stage1/variants/stage1-cpu-v0.1.20/CHANGES.md) · [样本前后](stage1/variants/stage1-cpu-v0.1.20/SAMPLES.md)。
 
 **2026-10-31 v0.1.19 数据候选已准备：** 基于 v0.1.17，修正 5 种已确认问题记录、隔离 8 种；1,357→1,341 条，身份曝光 234 次及原训练超参数不变。最终 CPU 编码与独立内容复核完成，待审阅；尚未训练，UAT 未暂停。仅本地保存。[审阅入口](stage1/variants/stage1-cpu-v0.1.19/README.md) · [13 条修改对照](stage1/variants/stage1-cpu-v0.1.19/SAMPLES.md)。

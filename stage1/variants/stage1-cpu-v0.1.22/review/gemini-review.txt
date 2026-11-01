@@ -1,0 +1,94 @@
+基于 [`stage1-cpu-v0.1.21` 版本说明（README.md）](https://github.com/yuhuan0669/t008-qwen3-sft/blob/66e8966f59c7049ffa5fe12e6b7a48926e0f6a80/stage1/variants/stage1-cpu-v0.1.21/README.md)、[通用样本（general-reviewed.jsonl，379条）](https://github.com/yuhuan0669/t008-qwen3-sft/blob/66e8966f59c7049ffa5fe12e6b7a48926e0f6a80/stage1/variants/stage1-cpu-v0.1.21/general-reviewed.jsonl)、[自我认知样本（identity-reviewed.jsonl，234条）](https://github.com/yuhuan0669/t008-qwen3-sft/blob/66e8966f59c7049ffa5fe12e6b7a48926e0f6a80/stage1/variants/stage1-cpu-v0.1.21/identity-reviewed.jsonl) 及其配套核查文档，并对照 [Qwen3 官方 MS-SWIFT SFT 训练规范（ms_swift.md）](https://github.com/QwenLM/Qwen3/blob/main/docs/source/training/ms_swift.md?utm_source=chatgpt.com) 与 [MS-SWIFT Qwen3 最佳实践文档](https://swift.readthedocs.io/en/v4.5/BestPractices/Qwen3-Best-Practice.html)，评审结论如下：
+
+**总体评估**：`v0.1.21` 相比 `v0.1.20` 取得了实质性质量提升——**果断隔离了 11 条题干污染或无法修复的高危通用样本**，在 285 条通用样本中**清除了生硬拼接的“审校批注补丁”**（监督 Token 精简 19.0%，全量控制在 `2048` 长度上限内且 0 截断），并**修复了自我认知集中“文心一言不知研发方”“chatbot 泛称拒答”“L214 英文负向约束违背”等 18 处硬伤**。但受限于 `v0.1.21` 采取的“其余 216 条身份样本原字节不变”**策略及训练损失机制配置，当前候选集在**身份口径内部冲突、`<think>` 与 `/no_think` 监督信号交互、高倍率重复曝光诱发复述/退化三个方面仍存在明确隐患，尚不建议直接启动正式训练。
+
+### 一、 `v0.1.21` 已解决的核心问题（正向确认）
+
+1. **精准隔离 11 条高危与题干污染样本（[general-reviewed.jsonl](https://github.com/yuhuan0669/t008-qwen3-sft/blob/66e8966f59c7049ffa5fe12e6b7a48926e0f6a80/stage1/variants/stage1-cpu-v0.1.21/general-reviewed.jsonl) 由 390 条减至 379 条）**
+* 彻底剔除了题干混入助手回复或跨轮指令的 `G0129`、`G0374`，剔除了含拆词符与未核实统计的 `G0438`，剔除了生造词/未知接口诱发严重幻觉的 `G0497`（“钊zha几何裂纹扩展模”）、`G0515`（`SPO-of-One`），以及题干残缺或事实基准冲突的 `G0008`、`G0107`、`G0213`、`G0327`、`G0372`、`G0472`（共减少 22 行训练曝光）。
+
+
+2. **消除“打补丁式”审校元语言并对齐思考链**
+* 遵循 [README.md](https://github.com/yuhuan0669/t008-qwen3-sft/blob/66e8966f59c7049ffa5fe12e6b7a48926e0f6a80/stage1/variants/stage1-cpu-v0.1.21/README.md) 中 `“修订直接进入正文，并同步必要的thinking；不添加‘旧说法不对’补丁”` 的原则，重写了 275 条通用样本正文与 197 条思考链（如修复 `G0014` 标准输出/错误流区分、`G0456` 异步连接池函数封装与关闭、`G0463` 激光雷达公式与边界、`G0496` 安全核对清单表头、`G0504` 城市景点归属错位等），并将最大序列长度压缩至 `2041` Token（P99 为 `2029` Token），消除了 `max_length=2048` 下的截断风险。
+
+
+3. **修复 [identity-reviewed.jsonl](https://github.com/yuhuan0669/t008-qwen3-sft/blob/66e8966f59c7049ffa5fe12e6b7a48926e0f6a80/stage1/variants/stage1-cpu-v0.1.21/identity-reviewed.jsonl) 中的 18 处事实与指令硬伤**
+* 纠正了 `I0038`、`I0059`、`I0070`、`I0109`、`I0190`、`I0204` 共 6 条将“文心一言（Wenxin Yiyan）是谁研发的”错误拒答为“不知道”的缺陷（据实归属百度）。
+* 修正了 `I0077`、`I0089`、`I0096`、`I0110` 共 4 条关于 `chatbot是谁训练的` 的机械拒答，改为澄清 `chatbot` 为通用泛称。
+* 修复了 `I0214`（`Please give only the full name of the company...`）违背负向约束输出完整英文句子的缺陷，并删除了 `I0062`、`I0140`、`I0172`、`I0203` 中轻信用户自称 ChatGPT 而断言“双方均为 AI 模型”的表述。
+
+
+
+### 二、 `v0.1.21` 仍存在的残留缺陷与风险评审
+
+#### 1. 身份与业务口径一致性：216 条未改样本与 18 条修正/新增样本依然直接冲突
+
+由于 [README.md](https://github.com/yuhuan0669/t008-qwen3-sft/blob/66e8966f59c7049ffa5fe12e6b7a48926e0f6a80/stage1/variants/stage1-cpu-v0.1.21/README.md) 设定了 `“身份234次全部保留，其中修正18次；其余...原字节不变”`，导致 [identity-reviewed.jsonl](https://github.com/yuhuan0669/t008-qwen3-sft/blob/66e8966f59c7049ffa5fe12e6b7a48926e0f6a80/stage1/variants/stage1-cpu-v0.1.21/identity-reviewed.jsonl) 内部仍保留了多处同题异答与口径打架：
+
+| 冲突类别 | 严格口径样本（后18条及修正项） | 仍原样保留的旧模板样本（前216条未改项） | 对模型训练的直接负面影响 |
+| --- | --- | --- | --- |
+| **研发主体归属冲突** | `I0152`（`研发你的人是谁`）、`I0191`（`你的创作者是谁？`）、`I0222` 明确限定研发主体为公司全称 `能碳章鱼（湖北）人工智能科技有限公司`，不推测具体人员。 | `I0002`, `I0006`, `I0008`, `I0017`, `I0034`, `I0039`, `I0051`, `I0119`, `I0142`, `I0144`, `I0145`, `I0162`, `I0182`, `I0198`, `I0206` 共 **15条**仍回答 `“团队的工程师和研究人员”` 或 `“整个团队的成员们共同努力的结果”`。特别是 `I0039` 与 `I0092` 题干完全相同（`Who developed you /no_think`），答案却一繁一简。 | 模型在回答“谁研发了你”时会在“公司实体”与“工程师和研究人员”之间随机摇摆，违反严格身份考核标准。 |
+| **产品名称泛化与缺失** | `I0088`、`I0165`、`I0220`、`I0228`、`I0230`、`I0232` 严格规定正式名称为 `能碳章鱼垂直大模型`，不另起名称。 | 1. `I0111`, `I0120`, `I0180`, `I0200` 仍回答 `“您可以称呼我为AI助手或者能碳章鱼垂直大模型”`；<br>
+
+<br>2. `I0084`, `I0207`, `I0215`, `I0216` 仍自称 `“人工智能聊天机器人”`；<br>
+
+<br>3. `I0053`, `I0094`, `I0095`, `I0208` 在否认 OpenAI 研发时**完全漏掉了产品名称** `能碳章鱼垂直大模型`。 | 削弱垂直大模型品牌专属性，且在 `are you developed by OpenAI?`（`I0044` vs `I0094`、`I0046` vs `I0208`）上形成完全相同的 Prompt 对应两套不同答案的监督冲突。 |
+| **末尾9对同题样本题干完全重复** | `I0218`, `I0220`, `I0222`, `I0224`, `I0226`, `I0228`, `I0230`, `I0232`, `I0234`（共9条偶数行）不带 `/no_think` 且含非空 `<think>`。 | `I0217`, `I0219`, `I0221`, `I0223`, `I0225`, `I0227`, `I0229`, `I0231`, `I0233`（共9条奇数行）**同样不带 `/no_think**`，但 `<think>` 为空。 | 同一批中文身份核心题干连续两次出现完全相同的 `user` 输入，但助手格式一个带思考、一个空思考。 |
+| **同题异答（名字询问）** | `I0088`（`你好，我叫小黄，你的名字是什么呀`）与 `I0165`（`你叫什么名字呀！`）只回答名字（`我的名字是能碳章鱼垂直大模型。`）。 | 对应的 `/no_think` 孪生样本 `I0084` 与 `I0028` 却回答长句（含公司名称、聊天机器人定性及业务引导）。 | 使模型误以为开启 `/no_think` 时应当回答得更啰嗦，关闭 `/no_think` 时反而只答一句话。 |
+
+#### 2. 对照 [Qwen3 官方 MS-SWIFT SFT 规范](https://github.com/QwenLM/Qwen3/blob/main/docs/source/training/ms_swift.md?utm_source=chatgpt.com)：`<think>` / `/no_think` 与 `loss_scale` 机制存在结构性隐患
+
+根据 [Qwen3 官方 `ms_swift.md` 文档](https://github.com/QwenLM/Qwen3/blob/main/docs/source/training/ms_swift.md?utm_source=chatgpt.com) 及 [MS-SWIFT Qwen3 最佳实践](https://swift.readthedocs.io/en/v4.5/BestPractices/Qwen3-Best-Practice.html)，Qwen3 处理非思考数据（无思维链样本）以保护模型推理能力有两种规范方案：
+
+> * **Option 1（`--loss_scale ignore_empty_think`）**：针对**未标注思维链的常规指令数据**，将空的 `<think>\n\n</think>` 位置 Loss 权重设为 `0`，防止空思考标签覆盖模型原本的默认思考（Thinking）能力。
+> * **Option 2（在 User Query 末尾添加 `/no_think`）**：显式训练模型在看到 `/no_think` 指令时主动输出空的 `<think>\n\n</think>`（进入非思考模式）。
+> 
+> 
+
+对照 `v0.1.21` 的实现（见 [README.md](https://github.com/yuhuan0669/t008-qwen3-sft/blob/66e8966f59c7049ffa5fe12e6b7a48926e0f6a80/stage1/variants/stage1-cpu-v0.1.21/README.md) 中的 `STATISTICS.md` 与 `CPU_CHECK.md`），当前同时混用了这两种机制并产生以下碰撞：
+
+* **问题 A：`/no_think` 模式的终止标签丧失梯度监督**：`v0.1.21` 启用了 `t008_identity3_ignore_empty_think`（`用户位置和空 think 损失为 0`）。这意味着在 108 条带有 `/no_think` 的身份样本上，`<think>\n\n</think>` 的 Loss 也被置为 `0`，模型在 SFT 过程中从未收到“当输入含 `/no_think` 时必须立刻闭合 `</think>`”的正向梯度监督。
+* **问题 B：111 条不带 `/no_think` 的身份样本缺少 `<think>` 过程**：在 [identity-reviewed.jsonl](https://github.com/yuhuan0669/t008-qwen3-sft/blob/66e8966f59c7049ffa5fe12e6b7a48926e0f6a80/stage1/variants/stage1-cpu-v0.1.21/identity-reviewed.jsonl) 的 126 条不带 `/no_think` 的样本中，仅有 15 条包含非空 `<think>`，其余 111 条均为空 `<think>\n\n</think>`。虽然 `ignore_empty_think` 屏蔽了这 111 条样本空 `<think>` 自身的 Loss，但模型在这些样本上是从 `<think>\n\n</think>\n\n` 之后直接开始计算正文 Loss（且带 3 倍权重），而在另外 15 条同类型身份样本上又是从非空 `<think>...</think>` 开始计算 Loss，造成同一任务在 Thinking 模式下内部状态分布割裂。
+
+#### 3. 诱发复述与能力退化的核心根因排查（回应 [README.md](https://github.com/yuhuan0669/t008-qwen3-sft/blob/66e8966f59c7049ffa5fe12e6b7a48926e0f6a80/stage1/variants/stage1-cpu-v0.1.21/README.md) 末尾疑问）
+
+[README.md](https://github.com/yuhuan0669/t008-qwen3-sft/blob/66e8966f59c7049ffa5fe12e6b7a48926e0f6a80/stage1/variants/stage1-cpu-v0.1.21/README.md) 末尾提到：`“本候选处理已发现的数据缺陷，尚未证明复述或能力退化得到改善。v0.1.20未训练，其新引入的补丁问题不能倒推为v0.1.14/v0.1.16历史退化的原因。”` 结合 `PARAMETERS.md`、`STATISTICS.md` 与 [Qwen3 官方 `ms_swift.md](https://github.com/QwenLM/Qwen3/blob/main/docs/source/training/ms_swift.md?utm_source=chatgpt.com)` 对比，导致历史版本出现复述（Repetition）与能力退化（Capability Degradation）的真正结构性原因有三点，且在 `v0.1.21` 中尚未解除：
+
+1. **同一句身份套话承受超过 150 倍的等效梯度轰炸（诱发严重复述的头号元凶）**
+* 在 [Qwen3 官方 `ms_swift.md` 示例](https://github.com/QwenLM/Qwen3/blob/main/docs/source/training/ms_swift.md?utm_source=chatgpt.com) 中，官方使用 `--dataset 'swift/Qwen3-SFT-Mixin#2000' 'swift/self-cognition:qwen3#600'` 时，**并未对 `self-cognition` 施加 3 倍 Loss 放大**，且通用数据与自我认知数据比例约为 `2000 : 600`（单条无额外乘数）。
+* 而在 `v0.1.21` 中：首先，[identity-reviewed.jsonl](https://github.com/yuhuan0669/t008-qwen3-sft/blob/66e8966f59c7049ffa5fe12e6b7a48926e0f6a80/stage1/variants/stage1-cpu-v0.1.21/identity-reviewed.jsonl) 中有 **50 余条样本**的回答逐字完全相同（即 `“我是能碳章鱼垂直大模型，由能碳章鱼（湖北）人工智能科技有限公司研发，主要提供能源管理与碳排放管理方面的文字辅助。”`），另有 18 条（`I0217`–`I0234`）9对完全重复；其次，`identity_loss3.py` 又对这 234 条样本的助手输出及结束符施加了 **3 倍 Loss 权重（`loss_scale = 3`）**。
+* **量化后果**：仅这一句 49 字的短句及紧随其后的 `<|im_end|>`，在一个 Epoch（仅 66 步）内累计获得了 **`50+ 次曝光 × 3 倍权重 ≈ 150+ 倍`** 于单条普通样本的梯度更新！在 `lr=1e-4`、`target_modules=all-linear` 的 LoRA 训练下，这会导致特定短句的 Token 转移概率极度尖锐化，不仅使模型在日常回答中倾向于机械复读套话，还会破坏通用生成的局部熵分布。
+
+
+2. **训练无 System Prompt 与推理强制注入冻结 System Prompt 的分布偏移**
+* `PARAMETERS.md` 显示：`“训练仍不带System... 推理仍引用冻结的共同 System”`。
+* 当全线性层 LoRA（`all-linear`）在 `1047` 条**完全不含 `<|im_start|>system` 块**的样本上微调后，模型已经将身份认知与回复风格强绑定在 `<|im_start|>user` 直接开头的注意力分布上；推理时突然在最前端插入一段长 System Prompt，会改变 RoPE 相对位置编码与首段 Attention Sink，容易在长对话或复杂指令下诱发指令遵循退化或复述 System Prompt 中的词句。
+
+
+3. **通用集中保留的部分残缺题干仍存在“思行不一”或无上下文盲答（[general-reviewed.jsonl](https://github.com/yuhuan0669/t008-qwen3-sft/blob/66e8966f59c7049ffa5fe12e6b7a48926e0f6a80/stage1/variants/stage1-cpu-v0.1.21/general-reviewed.jsonl)）**
+* 在 `v0.1.21` 标记为“保留”或未隔离的通用样本中，仍包含 `G0031`（仅有一句 `"Clear, concise, and complete. I need a high level explanation, include some insight."` 却无解释对象）、`G0036`（问 `"What is the author's attitude..."` 却未给作者姓名）、`G0245`（`"解析一篇文章并生成该文章的摘要。"` 无文章）、`G0397`（半截说明 `"Then, run the script."`）、`G0422`（半截列表项 `"1.数量有限：..."`）。这类残缺 Prompt 留存在训练集中，会削弱模型对上下文完整性的判别力。
+
+
+
+### 三、 针对 `v0.1.21` 的有依据修改建议
+
+为彻底解决上述残留冲突并从根源上抑制复述与能力退化，建议在 `v0.1.22` 中执行以下四项调整：
+
+1. **解除“前 216 条身份样本原字节冻结”限制，全量对齐 [identity-reviewed.jsonl**](https://github.com/yuhuan0669/t008-qwen3-sft/blob/66e8966f59c7049ffa5fe12e6b7a48926e0f6a80/stage1/variants/stage1-cpu-v0.1.21/identity-reviewed.jsonl)
+* **消除研发主体矛盾**：将 `I0002`、`I0006`、`I0008`、`I0017`、`I0034`、`I0039`、`I0051`、`I0119`、`I0142`、`I0144`、`I0145`、`I0162`、`I0182`、`I0198`、`I0206` 中的 `“团队的工程师和研究人员”` 统一修改为 `“能碳章鱼（湖北）人工智能科技有限公司”`，与 `I0152`、`I0191` 保持 100% 一致。
+* **消除产品名泛化与遗漏**：移除 `I0111`、`I0120`、`I0180`、`I0200` 中的 `“AI助手或者”`；在 `I0053`、`I0094`、`I0095`、`I0208` 否认 OpenAI 的回答中补齐产品名 `能碳章鱼垂直大模型`；将 `I0028` 与 `I0165`、`I0084` 与 `I0088` 的同题回答对齐。
+* **修复 L217–L233 奇数行缺失的 `/no_think` 标记**：在 `I0217`、`I0219`、`I0221`、`I0223`、`I0225`、`I0227`、`I0229`、`I0231`、`I0233` 的 `user` 提问末尾补上 ` /no_think`，使其与偶数行（`I0218`–`I0234`）正式构成“非思考 vs 思考”模式对，消除同题冲突。
+
+
+2. **按 [Qwen3 官方 `ms_swift.md` 规范](https://github.com/QwenLM/Qwen3/blob/main/docs/source/training/ms_swift.md?utm_source=chatgpt.com) 二选一理顺 `<think>` 与 `/no_think` 监督策略**
+* **推荐方案（完全对齐 Qwen3 双模式切换规范）**：对 [identity-reviewed.jsonl](https://github.com/yuhuan0669/t008-qwen3-sft/blob/66e8966f59c7049ffa5fe12e6b7a48926e0f6a80/stage1/variants/stage1-cpu-v0.1.21/identity-reviewed.jsonl) 中所有**不带 `/no_think**` 的 117 条样本全部补齐简短 `<think>...</think>`（可直接使用上一轮为您生成的 `identity-234-cleaned.jsonl`），对所有**带 `/no_think**` 的 117 条样本保留空 `<think>\n\n</think>`；此时全量训练集中不再存在“无 `/no_think` 却空思考”的样本，即可关闭 `ignore_empty_think`，让模型在 `/no_think` 样本上正常学习输出空 `<think>\n\n</think>`。
+* **备选方案（若坚持不写思考链）**：若前 216 条身份样本坚持保持空 `<think>\n\n</think>` 且开启 `ignore_empty_think`，则应将那 15 条唯一带 `<think>` 的身份样本（`I0088`, `I0152`, `I0156`, `I0161`, `I0165`, `I0191`, `I0218`–`I0234` 偶数行）的 `<think>` 权重要么与通用样本保持相同（`loss_scale = 1` 而非 `3`），避免单句模板式 `<think>` 被 3 倍放大后污染通用长思维链。
+
+
+3. **下调身份样本的等效重复权重以根治复述与退化**
+* 既然训练集已保留了 234 次身份曝光（占总行数 `22.35%`，远高于自我认知微调所需的不同句式覆盖度），建议将 `identity_loss3.py` 的身份损失倍率从 **`3.0` 下调至 `1.0`–`1.5**`，或者将那 50 余条逐字雷同的 `“我是能碳章鱼垂直大模型，由能碳章鱼（湖北）人工智能科技有限公司研发，主要提供能源管理与碳排放管理方面的文字辅助。”` 改写为 4–5 种自然同义句式并统一升级为包含服务对象与四项能力的完整表述，防止单一 Token 序列在权重空间过度坍缩。
+* 同时建议在训练数据中按一定比例（如 30%–50% 样本）加入与推理一致的 `{"role": "system", "content": ...}`，消除训练与推理阶段的 System Prompt 分布不一致。
+
+
+4. **补充隔离或修复 [general-reviewed.jsonl](https://github.com/yuhuan0669/t008-qwen3-sft/blob/66e8966f59c7049ffa5fe12e6b7a48926e0f6a80/stage1/variants/stage1-cpu-v0.1.21/general-reviewed.jsonl) 中剩余的 5 条残缺题干样本**
+* 建议将题干严重残缺、无明确指向对象的 `G0031`、`G0036`、`G0397`、`G0422` 一并纳入隔离清单（或补全题干上下文），并核查 `G0245`（无文章求摘要）的 `thinking` 是否已与 `G0266` 一样同步为“识别到未提供文章并提示用户补充”，确保思考链与正文完全一致。

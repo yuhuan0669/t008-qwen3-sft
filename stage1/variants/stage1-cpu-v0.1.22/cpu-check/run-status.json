@@ -1,0 +1,7 @@
+{
+  "exit_code": 0,
+  "elapsed_seconds": 19.3,
+  "pod": "t008-v0122-cpu-20261031",
+  "gpu_requested": false,
+  "input_bundle_bytes": 3480500
+}

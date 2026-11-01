@@ -1,0 +1,12 @@
+{
+  "responses": 128,
+  "unique_reviewed": 122,
+  "review_type": "root nonblind; duplicated answers inherit exact-case/condition/text verdict; continuous literal repetition folded with exact string/count checks for reading",
+  "files_sha256": {
+    "results/generations.jsonl": "5e1be3ba823ee616f219e4c4e32d5c17284671861bf0424459999c93243a8380",
+    "results/scores.jsonl": "8e868983cf6f8f9eba5cdf89a314bca8d0f2175ed31257a7dbe7cf554572960b",
+    "results/verdicts.jsonl": "e357fab76edfdcc856288726894fa196b32f8ef40051ff5223a67ba5acad045f",
+    "DETAILS.md": "554be599a86852f0b1cd3f5044596d5b1e1c0b1c5ccaf2bb9e2c5f2d05babb88",
+    "inputs/cases.json": "d95d0bd534401ae75a33ac8ba087d1157175d597442fd34fbe5be08299f36378"
+  }
+}

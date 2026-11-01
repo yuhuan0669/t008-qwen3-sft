@@ -1,0 +1,29 @@
+{
+  "verified": true,
+  "scores": 256,
+  "generations": 128,
+  "same_prompt_and_target_tokens_for_all_arms": true,
+  "active_modules": {
+    "all_on": 252,
+    "attention_only": 144,
+    "mlp_only": 108,
+    "all_off": 0
+  },
+  "zero_scaling_matches_disabled_adapter": true,
+  "adapter_memory_unchanged": true,
+  "unique_reviewed": 122,
+  "unreviewed_slots": 0,
+  "uat_stays_paused": true,
+  "training": false,
+  "deployment": false,
+  "judge_calls": 0,
+  "task_pod_deleted": true,
+  "files_sha256": {
+    "results/completed.json": "ddf9f087eb2d35b31236b909b539d2a0fc7712c918d02f63313f4527c4084afb",
+    "results/verdicts.jsonl": "e357fab76edfdcc856288726894fa196b32f8ef40051ff5223a67ba5acad045f",
+    "SUMMARY.json": "09d32d59625b98d91f5d31dfeb220296347707531a38a66091fedc73dcb6d781",
+    "REPORT.md": "2f85d32a71625d077f2131e3cdf3dd8d10f0fb9469e7b8f68d58724b459d7ad0",
+    "final-runtime.json": "5b40b65fb7b895dec33db21d319971a0bccbcb044003a801bd57dae895bafbd0",
+    "results.tar.gz": "0b39ed1cc9a55877918a06a22db8b32454e29bd81bdce4576810d3a97cdfaf43"
+  }
+}

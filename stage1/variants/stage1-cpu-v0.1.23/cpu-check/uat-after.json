@@ -1,0 +1,9 @@
+{
+  "utc": "2026-11-01T06:01:09.397335+00:00",
+  "uid": "041c9a49-1693-45a5-8ff6-6136ba9e4074",
+  "generation": 102,
+  "spec_sha256": "f4ffab79610c257acfd917070cf9ec6a92051713715011dcd17a4c2c63f4bbc6",
+  "replicas": 1,
+  "ready": 1,
+  "available": 1
+}

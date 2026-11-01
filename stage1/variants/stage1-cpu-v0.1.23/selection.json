@@ -1,0 +1,584 @@
+{
+  "parent_version": "stage1-cpu-v0.1.22",
+  "record_count": 64,
+  "converted_exposures": 64,
+  "selection_note": "Chinese only; reuse 32 prior mode-conversion IDs and add 32 shorter facts, calculations, writing and task examples. Current cleaned v0.1.22 content only. No evaluation prompt enters training.",
+  "items": [
+    {
+      "sample_id": "G0007",
+      "retained_thinking_line_one_based": 8,
+      "converted_line_one_based": 197,
+      "question": "请帮我生成一个TF-IDFVectorizer的实例，指定stop_words参数为'english'，并设置ngram_range参数为(1, 3)。以此与现有文本数据集配合使用进行特征向量化。",
+      "visible_body_preserved": true,
+      "previous_v0117_selection": true,
+      "review": "Root read the full visible body: it can stand alone; calculations/code/qualifications needed by the answer remain in the body. Reuses v0.1.22 content review, not a new factual certification."
+    },
+    {
+      "sample_id": "G0013",
+      "retained_thinking_line_one_based": 15,
+      "converted_line_one_based": 546,
+      "question": "一个车速为60km/h的汽车，它的速度用m/s表示是多少？",
+      "visible_body_preserved": true,
+      "previous_v0117_selection": false,
+      "review": "Root read the full visible body: it can stand alone; calculations/code/qualifications needed by the answer remain in the body. Reuses v0.1.22 content review, not a new factual certification."
+    },
+    {
+      "sample_id": "G0020",
+      "retained_thinking_line_one_based": 24,
+      "converted_line_one_based": 250,
+      "question": "生成5个描述物体形状的随机句子。",
+      "visible_body_preserved": true,
+      "previous_v0117_selection": false,
+      "review": "Root read the full visible body: it can stand alone; calculations/code/qualifications needed by the answer remain in the body. Reuses v0.1.22 content review, not a new factual certification."
+    },
+    {
+      "sample_id": "G0022",
+      "retained_thinking_line_one_based": 25,
+      "converted_line_one_based": 181,
+      "question": "如果一个影响因子为5的科研论文有20个引用，那么它的实际影响因子会是多少？",
+      "visible_body_preserved": true,
+      "previous_v0117_selection": false,
+      "review": "Root read the full visible body: it can stand alone; calculations/code/qualifications needed by the answer remain in the body. Reuses v0.1.22 content review, not a new factual certification."
+    },
+    {
+      "sample_id": "G0023",
+      "retained_thinking_line_one_based": 26,
+      "converted_line_one_based": 486,
+      "question": "在一段程序代码中定义函数和调用函数有什么本质的区别？",
+      "visible_body_preserved": true,
+      "previous_v0117_selection": false,
+      "review": "Root read the full visible body: it can stand alone; calculations/code/qualifications needed by the answer remain in the body. Reuses v0.1.22 content review, not a new factual certification."
+    },
+    {
+      "sample_id": "G0028",
+      "retained_thinking_line_one_based": 34,
+      "converted_line_one_based": 376,
+      "question": "如何设置页面创建完成之后用js跳转到页面右侧",
+      "visible_body_preserved": true,
+      "previous_v0117_selection": true,
+      "review": "Root read the full visible body: it can stand alone; calculations/code/qualifications needed by the answer remain in the body. Reuses v0.1.22 content review, not a new factual certification."
+    },
+    {
+      "sample_id": "G0033",
+      "retained_thinking_line_one_based": 40,
+      "converted_line_one_based": 879,
+      "question": "两个相似的矛盾命题，能否被同时证明为真？",
+      "visible_body_preserved": true,
+      "previous_v0117_selection": false,
+      "review": "Root read the full visible body: it can stand alone; calculations/code/qualifications needed by the answer remain in the body. Reuses v0.1.22 content review, not a new factual certification."
+    },
+    {
+      "sample_id": "G0038",
+      "retained_thinking_line_one_based": 46,
+      "converted_line_one_based": 591,
+      "question": "请解释不同的热力学过程：等压过程，等温过程，等容过程，绝热过程。",
+      "visible_body_preserved": true,
+      "previous_v0117_selection": false,
+      "review": "Root read the full visible body: it can stand alone; calculations/code/qualifications needed by the answer remain in the body. Reuses v0.1.22 content review, not a new factual certification."
+    },
+    {
+      "sample_id": "G0039",
+      "retained_thinking_line_one_based": 47,
+      "converted_line_one_based": 453,
+      "question": "如何从Python的字典中获取所有键和值",
+      "visible_body_preserved": true,
+      "previous_v0117_selection": false,
+      "review": "Root read the full visible body: it can stand alone; calculations/code/qualifications needed by the answer remain in the body. Reuses v0.1.22 content review, not a new factual certification."
+    },
+    {
+      "sample_id": "G0047",
+      "retained_thinking_line_one_based": 58,
+      "converted_line_one_based": 496,
+      "question": "生成一个听起来像是古代智慧的寓言故事。",
+      "visible_body_preserved": true,
+      "previous_v0117_selection": false,
+      "review": "Root read the full visible body: it can stand alone; calculations/code/qualifications needed by the answer remain in the body. Reuses v0.1.22 content review, not a new factual certification."
+    },
+    {
+      "sample_id": "G0051",
+      "retained_thinking_line_one_based": 62,
+      "converted_line_one_based": 407,
+      "question": "根据你的了解，如果一部电影在烂番茄上的新鲜度目前是56%，这意味着什么？",
+      "visible_body_preserved": true,
+      "previous_v0117_selection": false,
+      "review": "Root read the full visible body: it can stand alone; calculations/code/qualifications needed by the answer remain in the body. Reuses v0.1.22 content review, not a new factual certification."
+    },
+    {
+      "sample_id": "G0059",
+      "retained_thinking_line_one_based": 69,
+      "converted_line_one_based": 641,
+      "question": "请问从技术的角度讲，机器人可以拥有超级力量吗？例如：超光速移动、穿透物体、瞬间传送到任意点。",
+      "visible_body_preserved": true,
+      "previous_v0117_selection": false,
+      "review": "Root read the full visible body: it can stand alone; calculations/code/qualifications needed by the answer remain in the body. Reuses v0.1.22 content review, not a new factual certification."
+    },
+    {
+      "sample_id": "G0064",
+      "retained_thinking_line_one_based": 76,
+      "converted_line_one_based": 223,
+      "question": "为下列项目名称创建一个合适的短语或标语。",
+      "visible_body_preserved": true,
+      "previous_v0117_selection": true,
+      "review": "Root read the full visible body: it can stand alone; calculations/code/qualifications needed by the answer remain in the body. Reuses v0.1.22 content review, not a new factual certification."
+    },
+    {
+      "sample_id": "G0070",
+      "retained_thinking_line_one_based": 80,
+      "converted_line_one_based": 728,
+      "question": "用数字标注下列每个人的年龄作为一个示例，你能把下面的陈述转化为JSON吗？",
+      "visible_body_preserved": true,
+      "previous_v0117_selection": true,
+      "review": "Root read the full visible body: it can stand alone; calculations/code/qualifications needed by the answer remain in the body. Reuses v0.1.22 content review, not a new factual certification."
+    },
+    {
+      "sample_id": "G0074",
+      "retained_thinking_line_one_based": 85,
+      "converted_line_one_based": 89,
+      "question": "生成一首原创的情诗。",
+      "visible_body_preserved": true,
+      "previous_v0117_selection": true,
+      "review": "Root read the full visible body: it can stand alone; calculations/code/qualifications needed by the answer remain in the body. Reuses v0.1.22 content review, not a new factual certification."
+    },
+    {
+      "sample_id": "G0075",
+      "retained_thinking_line_one_based": 87,
+      "converted_line_one_based": 205,
+      "question": "Hadoop中负责运行作业任务的MapReduce计算节点是______。",
+      "visible_body_preserved": true,
+      "previous_v0117_selection": false,
+      "review": "Root read the full visible body: it can stand alone; calculations/code/qualifications needed by the answer remain in the body. Reuses v0.1.22 content review, not a new factual certification."
+    },
+    {
+      "sample_id": "G0076",
+      "retained_thinking_line_one_based": 88,
+      "converted_line_one_based": 695,
+      "question": "javascript解析json，并处理好null成空字符串",
+      "visible_body_preserved": true,
+      "previous_v0117_selection": false,
+      "review": "Root read the full visible body: it can stand alone; calculations/code/qualifications needed by the answer remain in the body. Reuses v0.1.22 content review, not a new factual certification."
+    },
+    {
+      "sample_id": "G0081",
+      "retained_thinking_line_one_based": 93,
+      "converted_line_one_based": 597,
+      "question": "给我描述一朵向日葵。",
+      "visible_body_preserved": true,
+      "previous_v0117_selection": false,
+      "review": "Root read the full visible body: it can stand alone; calculations/code/qualifications needed by the answer remain in the body. Reuses v0.1.22 content review, not a new factual certification."
+    },
+    {
+      "sample_id": "G0083",
+      "retained_thinking_line_one_based": 94,
+      "converted_line_one_based": 948,
+      "question": "利用Python语言求出前20项斐波那契数列。",
+      "visible_body_preserved": true,
+      "previous_v0117_selection": true,
+      "review": "Root read the full visible body: it can stand alone; calculations/code/qualifications needed by the answer remain in the body. Reuses v0.1.22 content review, not a new factual certification."
+    },
+    {
+      "sample_id": "G0089",
+      "retained_thinking_line_one_based": 101,
+      "converted_line_one_based": 878,
+      "question": "设计一款运动潮牌的T恤，描述其款式、图案和颜色",
+      "visible_body_preserved": true,
+      "previous_v0117_selection": true,
+      "review": "Root read the full visible body: it can stand alone; calculations/code/qualifications needed by the answer remain in the body. Reuses v0.1.22 content review, not a new factual certification."
+    },
+    {
+      "sample_id": "G0093",
+      "retained_thinking_line_one_based": 103,
+      "converted_line_one_based": 386,
+      "question": "假设浏览器的自定义设置中规定无法使用任何内联的CSS。你该如何在这种限制下，使用外部CSS样式表或内部CSS来更改标题的颜色？",
+      "visible_body_preserved": true,
+      "previous_v0117_selection": true,
+      "review": "Root read the full visible body: it can stand alone; calculations/code/qualifications needed by the answer remain in the body. Reuses v0.1.22 content review, not a new factual certification."
+    },
+    {
+      "sample_id": "G0096",
+      "retained_thinking_line_one_based": 105,
+      "converted_line_one_based": 653,
+      "question": "小明有一张长方形纸张，他将纸张对折两次后，面积变为了原来的多少？",
+      "visible_body_preserved": true,
+      "previous_v0117_selection": false,
+      "review": "Root read the full visible body: it can stand alone; calculations/code/qualifications needed by the answer remain in the body. Reuses v0.1.22 content review, not a new factual certification."
+    },
+    {
+      "sample_id": "G0108",
+      "retained_thinking_line_one_based": 116,
+      "converted_line_one_based": 479,
+      "question": "回答问题：人们常称冬天的一个节气当天白天会缩短到最短，黑夜最长，但是并没有明确说是哪个节气，请问这个说法指的是哪个节气？并解释原因。",
+      "visible_body_preserved": true,
+      "previous_v0117_selection": false,
+      "review": "Root read the full visible body: it can stand alone; calculations/code/qualifications needed by the answer remain in the body. Reuses v0.1.22 content review, not a new factual certification."
+    },
+    {
+      "sample_id": "G0112",
+      "retained_thinking_line_one_based": 118,
+      "converted_line_one_based": 354,
+      "question": "修改下面的代码段，计算并打印出0到100之间的所有数字的总和，但要忽略那些既能被3整除也能被5整除的数字。",
+      "visible_body_preserved": true,
+      "previous_v0117_selection": true,
+      "review": "Root read the full visible body: it can stand alone; calculations/code/qualifications needed by the answer remain in the body. Reuses v0.1.22 content review, not a new factual certification."
+    },
+    {
+      "sample_id": "G0131",
+      "retained_thinking_line_one_based": 137,
+      "converted_line_one_based": 676,
+      "question": "指出中国四大发明中，哪一项直接影响了世界出版业的起步和发展。解析该发明的影响、发明的目的和传入西方的过程。",
+      "visible_body_preserved": true,
+      "previous_v0117_selection": false,
+      "review": "Root read the full visible body: it can stand alone; calculations/code/qualifications needed by the answer remain in the body. Reuses v0.1.22 content review, not a new factual certification."
+    },
+    {
+      "sample_id": "G0133",
+      "retained_thinking_line_one_based": 138,
+      "converted_line_one_based": 432,
+      "question": "在Python编辑器中如何生成一个长度为n的斐波那契数列？",
+      "visible_body_preserved": true,
+      "previous_v0117_selection": true,
+      "review": "Root read the full visible body: it can stand alone; calculations/code/qualifications needed by the answer remain in the body. Reuses v0.1.22 content review, not a new factual certification."
+    },
+    {
+      "sample_id": "G0136",
+      "retained_thinking_line_one_based": 141,
+      "converted_line_one_based": 161,
+      "question": "从以下三个词中找出三个不相关的词\"奶酪\", \"玉米\", \"生活必需品\"？",
+      "visible_body_preserved": true,
+      "previous_v0117_selection": false,
+      "review": "Root read the full visible body: it can stand alone; calculations/code/qualifications needed by the answer remain in the body. Reuses v0.1.22 content review, not a new factual certification."
+    },
+    {
+      "sample_id": "G0140",
+      "retained_thinking_line_one_based": 146,
+      "converted_line_one_based": 497,
+      "question": "形容一下频闪灯和孩子多次抬头看灯的现象。",
+      "visible_body_preserved": true,
+      "previous_v0117_selection": false,
+      "review": "Root read the full visible body: it can stand alone; calculations/code/qualifications needed by the answer remain in the body. Reuses v0.1.22 content review, not a new factual certification."
+    },
+    {
+      "sample_id": "G0151",
+      "retained_thinking_line_one_based": 157,
+      "converted_line_one_based": 518,
+      "question": "公司举办实习生交流论坛，请你根据你司实习生的情感、愿望和需求，写一段欢迎词。",
+      "visible_body_preserved": true,
+      "previous_v0117_selection": false,
+      "review": "Root read the full visible body: it can stand alone; calculations/code/qualifications needed by the answer remain in the body. Reuses v0.1.22 content review, not a new factual certification."
+    },
+    {
+      "sample_id": "G0155",
+      "retained_thinking_line_one_based": 163,
+      "converted_line_one_based": 237,
+      "question": "对于一个似乎被大家冷漠对待的同学，我们应该如何友善地对待他？",
+      "visible_body_preserved": true,
+      "previous_v0117_selection": true,
+      "review": "Root read the full visible body: it can stand alone; calculations/code/qualifications needed by the answer remain in the body. Reuses v0.1.22 content review, not a new factual certification."
+    },
+    {
+      "sample_id": "G0162",
+      "retained_thinking_line_one_based": 169,
+      "converted_line_one_based": 767,
+      "question": "从一个人的照片中推断出其个性是很困难的。",
+      "visible_body_preserved": true,
+      "previous_v0117_selection": false,
+      "review": "Root read the full visible body: it can stand alone; calculations/code/qualifications needed by the answer remain in the body. Reuses v0.1.22 content review, not a new factual certification."
+    },
+    {
+      "sample_id": "G0164",
+      "retained_thinking_line_one_based": 172,
+      "converted_line_one_based": 931,
+      "question": "Html中a标签中的某个参数为\"javascript:;\",请问这个参数是a标签的什么属性",
+      "visible_body_preserved": true,
+      "previous_v0117_selection": true,
+      "review": "Root read the full visible body: it can stand alone; calculations/code/qualifications needed by the answer remain in the body. Reuses v0.1.22 content review, not a new factual certification."
+    },
+    {
+      "sample_id": "G0165",
+      "retained_thinking_line_one_based": 173,
+      "converted_line_one_based": 413,
+      "question": "给定五个单词，将它们首字母大写，其余小写，并使用连字符（hyphen）连接成一个字符串。",
+      "visible_body_preserved": true,
+      "previous_v0117_selection": false,
+      "review": "Root read the full visible body: it can stand alone; calculations/code/qualifications needed by the answer remain in the body. Reuses v0.1.22 content review, not a new factual certification."
+    },
+    {
+      "sample_id": "G0170",
+      "retained_thinking_line_one_based": 178,
+      "converted_line_one_based": 183,
+      "question": "枫树能够在秋季变为红色的原因是什么？",
+      "visible_body_preserved": true,
+      "previous_v0117_selection": false,
+      "review": "Root read the full visible body: it can stand alone; calculations/code/qualifications needed by the answer remain in the body. Reuses v0.1.22 content review, not a new factual certification."
+    },
+    {
+      "sample_id": "G0173",
+      "retained_thinking_line_one_based": 185,
+      "converted_line_one_based": 196,
+      "question": "指出给定职位的R.O.B.（范围、所有权和盲点）",
+      "visible_body_preserved": true,
+      "previous_v0117_selection": true,
+      "review": "Root read the full visible body: it can stand alone; calculations/code/qualifications needed by the answer remain in the body. Reuses v0.1.22 content review, not a new factual certification."
+    },
+    {
+      "sample_id": "G0176",
+      "retained_thinking_line_one_based": 187,
+      "converted_line_one_based": 927,
+      "question": "# 我是一个英文初学者，请问一下 Pronoun Narcissism 这个词该怎么理解？",
+      "visible_body_preserved": true,
+      "previous_v0117_selection": false,
+      "review": "Root read the full visible body: it can stand alone; calculations/code/qualifications needed by the answer remain in the body. Reuses v0.1.22 content review, not a new factual certification."
+    },
+    {
+      "sample_id": "G0178",
+      "retained_thinking_line_one_based": 189,
+      "converted_line_one_based": 405,
+      "question": "跳舞最根本的核心是？好听的音乐？",
+      "visible_body_preserved": true,
+      "previous_v0117_selection": false,
+      "review": "Root read the full visible body: it can stand alone; calculations/code/qualifications needed by the answer remain in the body. Reuses v0.1.22 content review, not a new factual certification."
+    },
+    {
+      "sample_id": "G0184",
+      "retained_thinking_line_one_based": 198,
+      "converted_line_one_based": 941,
+      "question": "你想出去走走比较轻松，但你最近工作比较忙，经常加班，你也会考虑哪几个方面做出最后的决定？",
+      "visible_body_preserved": true,
+      "previous_v0117_selection": true,
+      "review": "Root read the full visible body: it can stand alone; calculations/code/qualifications needed by the answer remain in the body. Reuses v0.1.22 content review, not a new factual certification."
+    },
+    {
+      "sample_id": "G0189",
+      "retained_thinking_line_one_based": 203,
+      "converted_line_one_based": 647,
+      "question": "灵活性和思维敏捷之间的区别是什么？",
+      "visible_body_preserved": true,
+      "previous_v0117_selection": true,
+      "review": "Root read the full visible body: it can stand alone; calculations/code/qualifications needed by the answer remain in the body. Reuses v0.1.22 content review, not a new factual certification."
+    },
+    {
+      "sample_id": "G0211",
+      "retained_thinking_line_one_based": 232,
+      "converted_line_one_based": 789,
+      "question": "提供一个关于自我提升和成长的目标制定方案，我们需要具体的目标和方法，例如如何进行规划、执行和评估。",
+      "visible_body_preserved": true,
+      "previous_v0117_selection": false,
+      "review": "Root read the full visible body: it can stand alone; calculations/code/qualifications needed by the answer remain in the body. Reuses v0.1.22 content review, not a new factual certification."
+    },
+    {
+      "sample_id": "G0217",
+      "retained_thinking_line_one_based": 240,
+      "converted_line_one_based": 890,
+      "question": "将以下语句翻译成Python代码： \"如果温度大于20度，穿短袖；否则，穿长袖\"",
+      "visible_body_preserved": true,
+      "previous_v0117_selection": true,
+      "review": "Root read the full visible body: it can stand alone; calculations/code/qualifications needed by the answer remain in the body. Reuses v0.1.22 content review, not a new factual certification."
+    },
+    {
+      "sample_id": "G0221",
+      "retained_thinking_line_one_based": 243,
+      "converted_line_one_based": 494,
+      "question": "SQL是一种集数据______、数据操纵、数据控制及数据库维护功能于一体的数据库语言。",
+      "visible_body_preserved": true,
+      "previous_v0117_selection": false,
+      "review": "Root read the full visible body: it can stand alone; calculations/code/qualifications needed by the answer remain in the body. Reuses v0.1.22 content review, not a new factual certification."
+    },
+    {
+      "sample_id": "G0233",
+      "retained_thinking_line_one_based": 257,
+      "converted_line_one_based": 713,
+      "question": "请回答以下问题： 抛物线的焦点有何特性？",
+      "visible_body_preserved": true,
+      "previous_v0117_selection": false,
+      "review": "Root read the full visible body: it can stand alone; calculations/code/qualifications needed by the answer remain in the body. Reuses v0.1.22 content review, not a new factual certification."
+    },
+    {
+      "sample_id": "G0235",
+      "retained_thinking_line_one_based": 260,
+      "converted_line_one_based": 420,
+      "question": "一个方法重载意味着你在相同的名字下创建了两个不同的方法，每个方法的参数、数据类型、数量或顺序都不相同。编写一个C++程序，创建一个类`MathUtils`，其中有两个重载方法`add`，一个接受两个`int`参数并返回它们的和，另一个接受两个`float`参数并返回它们的和。",
+      "visible_body_preserved": true,
+      "previous_v0117_selection": true,
+      "review": "Root read the full visible body: it can stand alone; calculations/code/qualifications needed by the answer remain in the body. Reuses v0.1.22 content review, not a new factual certification."
+    },
+    {
+      "sample_id": "G0245",
+      "retained_thinking_line_one_based": 273,
+      "converted_line_one_based": 419,
+      "question": "解析一篇文章并生成该文章的摘要。",
+      "visible_body_preserved": true,
+      "previous_v0117_selection": true,
+      "review": "Root read the full visible body: it can stand alone; calculations/code/qualifications needed by the answer remain in the body. Reuses v0.1.22 content review, not a new factual certification."
+    },
+    {
+      "sample_id": "G0266",
+      "retained_thinking_line_one_based": 307,
+      "converted_line_one_based": 893,
+      "question": "将以下段落中的长难句简化，并重新表达，确保文义无损。",
+      "visible_body_preserved": true,
+      "previous_v0117_selection": true,
+      "review": "Root read the full visible body: it can stand alone; calculations/code/qualifications needed by the answer remain in the body. Reuses v0.1.22 content review, not a new factual certification."
+    },
+    {
+      "sample_id": "G0274",
+      "retained_thinking_line_one_based": 321,
+      "converted_line_one_based": 912,
+      "question": "人们对营销信函中的音乐的反应如何？这会对营销策略产生重大影响吗？",
+      "visible_body_preserved": true,
+      "previous_v0117_selection": false,
+      "review": "Root read the full visible body: it can stand alone; calculations/code/qualifications needed by the answer remain in the body. Reuses v0.1.22 content review, not a new factual certification."
+    },
+    {
+      "sample_id": "G0279",
+      "retained_thinking_line_one_based": 329,
+      "converted_line_one_based": 916,
+      "question": "你怎样避免出现bug？请介绍一下你通常的方法。",
+      "visible_body_preserved": true,
+      "previous_v0117_selection": true,
+      "review": "Root read the full visible body: it can stand alone; calculations/code/qualifications needed by the answer remain in the body. Reuses v0.1.22 content review, not a new factual certification."
+    },
+    {
+      "sample_id": "G0287",
+      "retained_thinking_line_one_based": 337,
+      "converted_line_one_based": 470,
+      "question": "DW检验仅当回归模型中解释变量个数大于等于3才有意义。",
+      "visible_body_preserved": true,
+      "previous_v0117_selection": false,
+      "review": "Root read the full visible body: it can stand alone; calculations/code/qualifications needed by the answer remain in the body. Reuses v0.1.22 content review, not a new factual certification."
+    },
+    {
+      "sample_id": "G0293",
+      "retained_thinking_line_one_based": 343,
+      "converted_line_one_based": 785,
+      "question": "对下面这段话进行归类，并详细解释归类的原因:我们家最爱去的景点是张北草原音乐节；悠扬的音乐主题，优美的舞蹈和运动场景，给人带来无尽的兴奋和幸福瞬间；同时音乐节也不乏独特的美食，这种心情也给了我们旅途的美妙享受。",
+      "visible_body_preserved": true,
+      "previous_v0117_selection": true,
+      "review": "Root read the full visible body: it can stand alone; calculations/code/qualifications needed by the answer remain in the body. Reuses v0.1.22 content review, not a new factual certification."
+    },
+    {
+      "sample_id": "G0316",
+      "retained_thinking_line_one_based": 377,
+      "converted_line_one_based": 484,
+      "question": "和chatbot交谈，让他编一个包含“爱情”、“贝壳”、“海洋”的故事。",
+      "visible_body_preserved": true,
+      "previous_v0117_selection": true,
+      "review": "Root read the full visible body: it can stand alone; calculations/code/qualifications needed by the answer remain in the body. Reuses v0.1.22 content review, not a new factual certification."
+    },
+    {
+      "sample_id": "G0318",
+      "retained_thinking_line_one_based": 382,
+      "converted_line_one_based": 915,
+      "question": "妈妈做生意亏了钱，远在家乡的我向她转账了1万元，怎么用温柔的语言和妈妈说这件事？",
+      "visible_body_preserved": true,
+      "previous_v0117_selection": true,
+      "review": "Root read the full visible body: it can stand alone; calculations/code/qualifications needed by the answer remain in the body. Reuses v0.1.22 content review, not a new factual certification."
+    },
+    {
+      "sample_id": "G0321",
+      "retained_thinking_line_one_based": 385,
+      "converted_line_one_based": 623,
+      "question": "基于错误的信念，假设海洋中所有的鱼类在月圆之夜都会聚到海面。描述以下情景：一只饥饿的海鸥在夜间飞过海面。",
+      "visible_body_preserved": true,
+      "previous_v0117_selection": false,
+      "review": "Root read the full visible body: it can stand alone; calculations/code/qualifications needed by the answer remain in the body. Reuses v0.1.22 content review, not a new factual certification."
+    },
+    {
+      "sample_id": "G0343",
+      "retained_thinking_line_one_based": 422,
+      "converted_line_one_based": 863,
+      "question": "根据本题要点(3)所提示的内容，下列表述中，正确的是____。",
+      "visible_body_preserved": true,
+      "previous_v0117_selection": true,
+      "review": "Root read the full visible body: it can stand alone; calculations/code/qualifications needed by the answer remain in the body. Reuses v0.1.22 content review, not a new factual certification."
+    },
+    {
+      "sample_id": "G0355",
+      "retained_thinking_line_one_based": 447,
+      "converted_line_one_based": 720,
+      "question": "制定一份大学生科技社团的活动计划。",
+      "visible_body_preserved": true,
+      "previous_v0117_selection": true,
+      "review": "Root read the full visible body: it can stand alone; calculations/code/qualifications needed by the answer remain in the body. Reuses v0.1.22 content review, not a new factual certification."
+    },
+    {
+      "sample_id": "G0359",
+      "retained_thinking_line_one_based": 454,
+      "converted_line_one_based": 857,
+      "question": "给出以下几何图形的平行四边形的定义，公式以及性质，请先定义平行四边形。",
+      "visible_body_preserved": true,
+      "previous_v0117_selection": true,
+      "review": "Root read the full visible body: it can stand alone; calculations/code/qualifications needed by the answer remain in the body. Reuses v0.1.22 content review, not a new factual certification."
+    },
+    {
+      "sample_id": "G0361",
+      "retained_thinking_line_one_based": 455,
+      "converted_line_one_based": 567,
+      "question": "写一个故事吧，要包括一个天使、一个小狗、一把可爱的伞和一个沮丧的人。",
+      "visible_body_preserved": true,
+      "previous_v0117_selection": false,
+      "review": "Root read the full visible body: it can stand alone; calculations/code/qualifications needed by the answer remain in the body. Reuses v0.1.22 content review, not a new factual certification."
+    },
+    {
+      "sample_id": "G0383",
+      "retained_thinking_line_one_based": 504,
+      "converted_line_one_based": 790,
+      "question": "为我编写一个Python代码，该代码可以计算离散值的香农熵。香农熵将使用二进制对数，并能够处理非数值输入。简而言之，如果你不知道如何处理字母或符号，就无法计算香农熵，而不仅仅是整数或浮点数。目前，我有一个装有数字的列表，如下所示：",
+      "visible_body_preserved": true,
+      "previous_v0117_selection": true,
+      "review": "Root read the full visible body: it can stand alone; calculations/code/qualifications needed by the answer remain in the body. Reuses v0.1.22 content review, not a new factual certification."
+    },
+    {
+      "sample_id": "G0386",
+      "retained_thinking_line_one_based": 513,
+      "converted_line_one_based": 674,
+      "question": "解释下面的句子：“他们混得不错。”",
+      "visible_body_preserved": true,
+      "previous_v0117_selection": true,
+      "review": "Root read the full visible body: it can stand alone; calculations/code/qualifications needed by the answer remain in the body. Reuses v0.1.22 content review, not a new factual certification."
+    },
+    {
+      "sample_id": "G0390",
+      "retained_thinking_line_one_based": 522,
+      "converted_line_one_based": 680,
+      "question": "用来制作电脑芯片的材料硅，是在哪里发现和提取的？",
+      "visible_body_preserved": true,
+      "previous_v0117_selection": false,
+      "review": "Root read the full visible body: it can stand alone; calculations/code/qualifications needed by the answer remain in the body. Reuses v0.1.22 content review, not a new factual certification."
+    },
+    {
+      "sample_id": "G0391",
+      "retained_thinking_line_one_based": 523,
+      "converted_line_one_based": 590,
+      "question": "实现以下算法：二分查找。并给出时间复杂度和空间复杂度。",
+      "visible_body_preserved": true,
+      "previous_v0117_selection": true,
+      "review": "Root read the full visible body: it can stand alone; calculations/code/qualifications needed by the answer remain in the body. Reuses v0.1.22 content review, not a new factual certification."
+    },
+    {
+      "sample_id": "G0394",
+      "retained_thinking_line_one_based": 527,
+      "converted_line_one_based": 911,
+      "question": "在一个学校的跑道上，甲和乙跑步的速度比为2比3，如果甲绕跑道一圈需要3分钟，那么乙绕同一跑道路一圈需要的时间是多少分钟？",
+      "visible_body_preserved": true,
+      "previous_v0117_selection": true,
+      "review": "Root read the full visible body: it can stand alone; calculations/code/qualifications needed by the answer remain in the body. Reuses v0.1.22 content review, not a new factual certification."
+    },
+    {
+      "sample_id": "G0410",
+      "retained_thinking_line_one_based": 553,
+      "converted_line_one_based": 735,
+      "question": "将列表元素添加到特定索引位置的python方法是什么？",
+      "visible_body_preserved": true,
+      "previous_v0117_selection": true,
+      "review": "Root read the full visible body: it can stand alone; calculations/code/qualifications needed by the answer remain in the body. Reuses v0.1.22 content review, not a new factual certification."
+    },
+    {
+      "sample_id": "G0460",
+      "retained_thinking_line_one_based": 663,
+      "converted_line_one_based": 697,
+      "question": "请用自己的话解释面向对象编程。",
+      "visible_body_preserved": true,
+      "previous_v0117_selection": true,
+      "review": "Root read the full visible body: it can stand alone; calculations/code/qualifications needed by the answer remain in the body. Reuses v0.1.22 content review, not a new factual certification."
+    }
+  ]
+}

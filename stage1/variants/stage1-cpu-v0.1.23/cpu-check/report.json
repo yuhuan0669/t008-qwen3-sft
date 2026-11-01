@@ -1,0 +1,451 @@
+{
+  "verified": true,
+  "data_version": "stage1-cpu-v0.1.23",
+  "dataset_sha256": "71df7fdc84f4144e91ee3d6f8df4710c21f55c50137f674f9e9de0c2dc6f2cef",
+  "parent_dataset_sha256": "0087a3073bac5b36e3b865666ad9210a1d52ba04c32ecdaba83b4af4eb49b2bb",
+  "parent_report_sha256": "e6b217868c6684f4a2a3d6fc08a1fe0a244ea03e3ef9e71cc0c945e21e808f19",
+  "rows": 1047,
+  "actual_loader_rows": 1047,
+  "actual_pipeline_rows": 1047,
+  "parent_rows": 1047,
+  "changed_rows": 64,
+  "quarantined_rows": 0,
+  "unchanged_full_encoding_rows": 983,
+  "identity_exposures": 234,
+  "identity_repaired_exposures": 0,
+  "max_tokens": 2041,
+  "p99_tokens": 2029,
+  "overlength_rows": 0,
+  "truncated_rows": 0,
+  "silent_dropped_rows": 0,
+  "empty_supervision_rows": 0,
+  "totals": {
+    "before": {
+      "input_tokens": 965311,
+      "supervised_tokens": 928890,
+      "weighted_token_units": 946600.0
+    },
+    "after": {
+      "input_tokens": 933623,
+      "supervised_tokens": 896946,
+      "weighted_token_units": 914656.0
+    }
+  },
+  "source_supervision": {
+    "before": {
+      "swift/Qwen3-SFT-Mixin": {
+        "rows": 752,
+        "input_tokens": 946739,
+        "supervised_tokens": 917336,
+        "weighted_token_units": 917336.0,
+        "supervised_token_share": 0.9875614981321793,
+        "weighted_token_share": 0.9690851468413268
+      },
+      "swift/self-cognition": {
+        "rows": 216,
+        "input_tokens": 12454,
+        "supervised_tokens": 8144,
+        "weighted_token_units": 24432.0,
+        "supervised_token_share": 0.008767453627447814,
+        "weighted_token_share": 0.025810268328755548
+      },
+      "t008/strict-json-v1": {
+        "rows": 4,
+        "input_tokens": 363,
+        "supervised_tokens": 155,
+        "weighted_token_units": 155.0,
+        "supervised_token_share": 0.00016686582910785993,
+        "weighted_token_share": 0.00016374392562856538
+      },
+      "t008/general-nonthinking-v1": {
+        "rows": 2,
+        "input_tokens": 335,
+        "supervised_tokens": 236,
+        "weighted_token_units": 236.0,
+        "supervised_token_share": 0.000254066681738419,
+        "weighted_token_share": 0.0002493133319247834
+      },
+      "t008/project-positioning-v1": {
+        "rows": 23,
+        "input_tokens": 1772,
+        "supervised_tokens": 1198,
+        "weighted_token_units": 1198.0,
+        "supervised_token_share": 0.0012897113759433303,
+        "weighted_token_share": 0.001265582083245299
+      },
+      "t008/company-facts-v1": {
+        "rows": 2,
+        "input_tokens": 94,
+        "supervised_tokens": 56,
+        "weighted_token_units": 168.0,
+        "supervised_token_share": 6.0287009226065516e-05,
+        "weighted_token_share": 0.0001774772871328967
+      },
+      "t008/chinese-identity-v1": {
+        "rows": 16,
+        "input_tokens": 1105,
+        "supervised_tokens": 663,
+        "weighted_token_units": 1973.0,
+        "supervised_token_share": 0.0007137551270871685,
+        "weighted_token_share": 0.002084301711388126
+      },
+      "t008/general-nonthinking-v2": {
+        "rows": 12,
+        "input_tokens": 677,
+        "supervised_tokens": 227,
+        "weighted_token_units": 227.0,
+        "supervised_token_share": 0.0002443776981128013,
+        "weighted_token_share": 0.00023980562011409253
+      },
+      "t008/business-evidence-v1": {
+        "rows": 8,
+        "input_tokens": 746,
+        "supervised_tokens": 424,
+        "weighted_token_units": 424.0,
+        "supervised_token_share": 0.00045645878414021036,
+        "weighted_token_share": 0.0004479188675258821
+      },
+      "t008/company-boundary-v1": {
+        "rows": 12,
+        "input_tokens": 1026,
+        "supervised_tokens": 451,
+        "weighted_token_units": 451.0,
+        "supervised_token_share": 0.0004855257350170634,
+        "weighted_token_share": 0.0004764420029579548
+      }
+    },
+    "after": {
+      "swift/Qwen3-SFT-Mixin": {
+        "rows": 752,
+        "input_tokens": 915051,
+        "supervised_tokens": 885392,
+        "weighted_token_units": 885392.0,
+        "supervised_token_share": 0.9871185110363389,
+        "weighted_token_share": 0.9680054577895952
+      },
+      "swift/self-cognition": {
+        "rows": 216,
+        "input_tokens": 12454,
+        "supervised_tokens": 8144,
+        "weighted_token_units": 24432.0,
+        "supervised_token_share": 0.009079699335300007,
+        "weighted_token_share": 0.026711681768883604
+      },
+      "t008/strict-json-v1": {
+        "rows": 4,
+        "input_tokens": 363,
+        "supervised_tokens": 155,
+        "weighted_token_units": 155.0,
+        "supervised_token_share": 0.00017280861947096036,
+        "weighted_token_share": 0.00016946261763985587
+      },
+      "t008/general-nonthinking-v1": {
+        "rows": 2,
+        "input_tokens": 335,
+        "supervised_tokens": 236,
+        "weighted_token_units": 236.0,
+        "supervised_token_share": 0.00026311505932352674,
+        "weighted_token_share": 0.0002580205016968128
+      },
+      "t008/project-positioning-v1": {
+        "rows": 23,
+        "input_tokens": 1772,
+        "supervised_tokens": 1198,
+        "weighted_token_units": 1198.0,
+        "supervised_token_share": 0.0013356433943626483,
+        "weighted_token_share": 0.0013097820382744988
+      },
+      "t008/company-facts-v1": {
+        "rows": 2,
+        "input_tokens": 94,
+        "supervised_tokens": 56,
+        "weighted_token_units": 168.0,
+        "supervised_token_share": 6.243408187337922e-05,
+        "weighted_token_share": 0.00018367561137739216
+      },
+      "t008/chinese-identity-v1": {
+        "rows": 16,
+        "input_tokens": 1105,
+        "supervised_tokens": 663,
+        "weighted_token_units": 1973.0,
+        "supervised_token_share": 0.0007391749336080433,
+        "weighted_token_share": 0.002157095126473778
+      },
+      "t008/general-nonthinking-v2": {
+        "rows": 12,
+        "input_tokens": 677,
+        "supervised_tokens": 227,
+        "weighted_token_units": 227.0,
+        "supervised_token_share": 0.00025308101045101933,
+        "weighted_token_share": 0.00024818073680159535
+      },
+      "t008/business-evidence-v1": {
+        "rows": 8,
+        "input_tokens": 746,
+        "supervised_tokens": 424,
+        "weighted_token_units": 424.0,
+        "supervised_token_share": 0.0004727151913270141,
+        "weighted_token_share": 0.00046356225728579926
+      },
+      "t008/company-boundary-v1": {
+        "rows": 12,
+        "input_tokens": 1026,
+        "supervised_tokens": 451,
+        "weighted_token_units": 451.0,
+        "supervised_token_share": 0.0005028173379445362,
+        "weighted_token_share": 0.0004930815519714515
+      }
+    }
+  },
+  "category_supervision": {
+    "before": {
+      "generic": {
+        "rows": 770,
+        "input_tokens": 948114,
+        "supervised_tokens": 917954,
+        "weighted_token_units": 917954.0,
+        "supervised_token_share": 0.9882268083411383,
+        "weighted_token_share": 0.9697380097189943
+      },
+      "identity": {
+        "rows": 234,
+        "input_tokens": 13653,
+        "supervised_tokens": 8863,
+        "weighted_token_units": 26573.0,
+        "supervised_token_share": 0.009541495763761048,
+        "weighted_token_share": 0.02807204732727657
+      },
+      "positioning": {
+        "rows": 43,
+        "input_tokens": 3544,
+        "supervised_tokens": 2073,
+        "weighted_token_units": 2073.0,
+        "supervised_token_share": 0.002231695895100604,
+        "weighted_token_share": 0.002189942953729136
+      }
+    },
+    "after": {
+      "generic": {
+        "rows": 770,
+        "input_tokens": 916426,
+        "supervised_tokens": 886010,
+        "weighted_token_units": 886010.0,
+        "supervised_token_share": 0.9878075157255843,
+        "weighted_token_share": 0.9686811216457335
+      },
+      "identity": {
+        "rows": 234,
+        "input_tokens": 13653,
+        "supervised_tokens": 8863,
+        "weighted_token_units": 26573.0,
+        "supervised_token_share": 0.00988130835078143,
+        "weighted_token_share": 0.02905245250673477
+      },
+      "positioning": {
+        "rows": 43,
+        "input_tokens": 3544,
+        "supervised_tokens": 2073,
+        "weighted_token_units": 2073.0,
+        "supervised_token_share": 0.0023111759236341986,
+        "weighted_token_share": 0.0022664258475317495
+      }
+    }
+  },
+  "mode_supervision": {
+    "before": {
+      "thinking": {
+        "rows": 779,
+        "input_tokens": 949022,
+        "supervised_tokens": 918928,
+        "weighted_token_units": 920418.0,
+        "supervised_token_share": 0.9892753716801774,
+        "weighted_token_share": 0.9723410099302768
+      },
+      "nonthinking": {
+        "rows": 268,
+        "input_tokens": 16289,
+        "supervised_tokens": 9962,
+        "weighted_token_units": 26182.0,
+        "supervised_token_share": 0.010724628319822583,
+        "weighted_token_share": 0.02765899006972322
+      }
+    },
+    "after": {
+      "thinking": {
+        "rows": 715,
+        "input_tokens": 884025,
+        "supervised_tokens": 855844,
+        "weighted_token_units": 857334.0,
+        "supervised_token_share": 0.954175613693578,
+        "weighted_token_share": 0.9373294440751495
+      },
+      "nonthinking": {
+        "rows": 332,
+        "input_tokens": 49598,
+        "supervised_tokens": 41102,
+        "weighted_token_units": 57322.0,
+        "supervised_token_share": 0.045824386306422014,
+        "weighted_token_share": 0.06267055592485044
+      }
+    }
+  },
+  "mode_definition": "Source contains a nonempty assistant think block in any turn, as in parent report; token counts use native masks.",
+  "category_definition": {
+    "identity": [
+      "swift/self-cognition",
+      "t008/chinese-identity-v1",
+      "t008/company-facts-v1"
+    ],
+    "positioning": [
+      "t008/business-evidence-v1",
+      "t008/company-boundary-v1",
+      "t008/project-positioning-v1"
+    ],
+    "generic": "All remaining source labels"
+  },
+  "segment_tokens": {
+    "before": {
+      "thinking_content": {
+        "supervised_tokens": 393091,
+        "weighted_token_units": 393787.0,
+        "supervised_token_share": 0.4231835847086307,
+        "weighted_token_share": 0.41600147897739276
+      },
+      "answer_content": {
+        "supervised_tokens": 533185,
+        "weighted_token_units": 549671.0,
+        "supervised_token_share": 0.5740023038249954,
+        "weighted_token_share": 0.5806792731882527
+      },
+      "structure": {
+        "supervised_tokens": 2614,
+        "weighted_token_units": 3142.0,
+        "supervised_token_share": 0.002814111466373844,
+        "weighted_token_share": 0.003319247834354532
+      }
+    },
+    "after": {
+      "thinking_content": {
+        "supervised_tokens": 361339,
+        "weighted_token_units": 362035.0,
+        "supervised_token_share": 0.4028547983936603,
+        "weighted_token_share": 0.3958154759822272
+      },
+      "answer_content": {
+        "supervised_tokens": 533121,
+        "weighted_token_units": 549607.0,
+        "supervised_token_share": 0.5943735743288894,
+        "weighted_token_share": 0.6008892960850856
+      },
+      "structure": {
+        "supervised_tokens": 2486,
+        "weighted_token_units": 3014.0,
+        "supervised_token_share": 0.0027716272774503704,
+        "weighted_token_share": 0.0032952279326872616
+      }
+    }
+  },
+  "segment_definition": "Supervised tokens between think tags are thinking_content; outside tags are answer_content; think/chat delimiter tokens are structure. Whitespace is retained.",
+  "weighted_share_note": "Token units after loss scaling, not measured loss or gradient contribution.",
+  "identity_weighted_token_units": {
+    "before": 26573.0,
+    "after": 26573.0
+  },
+  "unchanged_rows_compared_with_separate_parent_and_candidate_bindings": true,
+  "all_identity_answer_weights_verified3": true,
+  "prompt_and_empty_think_masked": true,
+  "all_visible_answers_supervised": true,
+  "collator_preserves_0_1_3_weights": true,
+  "native_dynamic_eos_supervised_token_counts_weight1": {
+    "before": {
+      "generic": 0,
+      "identity": 8,
+      "positioning": 10
+    },
+    "after": {
+      "generic": 0,
+      "identity": 8,
+      "positioning": 10
+    }
+  },
+  "native_dynamic_eos_note": "Native intermediate-turn terminators added after loss scaling have weight1; identity final suffix remains weight3 under unchanged plug-in.",
+  "identity_key_binding_sha256": "202de544ab89480d276934bdafd2f390bad63d1d6210576b9a4b08fa9bf17e32",
+  "parent_identity_key_binding_sha256": "830b9abc743af4c98f249631c5ec4d5f7614bcee86a8f6f4a1e1b4d0083b4529",
+  "native_identity_alias_evidence_sha256": "2b5e07f962bc3e1b45a21121d94ffeb7a02a225fd71a3b839f4b78c0079a8a83",
+  "raw_identity_matching_key_count": 228,
+  "native_identity_matching_key_count": 228,
+  "native_preprocessing_alias_count": 4,
+  "loss_plugin_sha256": "082510fc6fadc31eb179384299cc1425e6dfd98ae01ad95d463759c1a0627db8",
+  "loss_plugin_source_unchanged": true,
+  "normalization": "sum(weight * token CE) / unweighted valid token count across accumulated microbatches",
+  "normalization_source_hashes": {
+    "transformers.trainer": "92cbc62c76e98099323262cdae131e060601b029b0cbe1876036b38c30e4e993",
+    "swift.trainers.seq2seq_trainer": "28fe9cb927390ad423add8b98411a90fb2d1c801ead124b354802bdd0779ecf6",
+    "swift.loss_scale.base": "a03a7015a563b3295849b4458ae7d6091f7ddba9c24bebf697388649a1e4e28f",
+    "swift.loss_scale.mapping": "883e22e1986b9778b5878271b59f33bc771b9d3800b7ccdbaebb75c3fef19946",
+    "swift.loss_scale.other": "5e319a3eae46372a5bcb06e294cd76f39e0106c585c49c1631c7bddc8c1e4cee",
+    "swift.template.base": "cc1629c8a84b764b530895692e4e04322aa6732281be229efce9e98752e113cc",
+    "swift.template.templates.qwen": "d4a35ced472f7b10eb254cc334ec21db44f0793a750b68d5edeab105c7db15c3"
+  },
+  "tokenizer_config_sha256": {
+    "configuration.json": "f888421726665e8a84b738eed42a64875aed79de8be7daade851ac8bf4c0cef9",
+    "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+    "config.json": "f7c4eadfbbf522470667b797a3c89be2524832d2d599797248dc304fff447c30",
+    "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+    "model.safetensors.index.json": "f9fdbcb91c23971c13ec5d5f2573d2349e8f61f2f049371ec699281748fdb1bc",
+    "tokenizer_config.json": "d5d09f07b48c3086c508b30d1c9114bd1189145b74e982a265350c923acd8101",
+    "generation_config.json": "2325da0f15bb848e018c5ae071b7943332e9f871d6b60e2ed22ca97d4cb993d2"
+  },
+  "versions": {
+    "ms-swift": "4.4.2",
+    "transformers": "5.14.1",
+    "peft": "0.20.0",
+    "torch": "2.11.0+cu130",
+    "tokenizers": "0.22.2",
+    "datasets": "4.8.4",
+    "modelscope": "1.38.1"
+  },
+  "template_kwargs": {
+    "template_type": "qwen3",
+    "default_system": null,
+    "max_length": 2048,
+    "truncation_strategy": "raise",
+    "max_pixels": null,
+    "agent_template": null,
+    "norm_bbox": null,
+    "use_chat_template": true,
+    "remove_unused_columns": true,
+    "padding_side": "right",
+    "padding_free": false,
+    "loss_scale": "default+t008_identity3_ignore_empty_think",
+    "is_binary_loss_scale": null,
+    "sequence_parallel_size": 1,
+    "template_backend": "swift",
+    "response_prefix": null,
+    "enable_thinking": null,
+    "preserve_thinking": false,
+    "add_non_thinking_prefix": true
+  },
+  "cpu_overrides": [
+    "--use_cpu",
+    "true",
+    "--report_to",
+    "none",
+    "--add_version",
+    "false",
+    "--output_dir",
+    "/tmp/v0123-check/stage1/variants/stage1-cpu-v0.1.23/cpu-check/args-only",
+    "--dataset_num_proc",
+    "1"
+  ],
+  "training_hyperparameters_unchanged": true,
+  "estimated_full_optimizer_steps": 66,
+  "model_weights_loaded": false,
+  "trainer_created": false,
+  "optimizer_created": false,
+  "training_started": false,
+  "inference_executed": false,
+  "gpu_available": false,
+  "backward_called": false,
+  "clearml_task_created": false
+}

@@ -1,0 +1,16 @@
+{
+  "reference": "stage1/variants/stage1-cpu-v0.1.23/training-config.json",
+  "training_argv_unchanged": true,
+  "training_parameter_changes": [],
+  "dataset_rows": 1047,
+  "identity_exposures": 234,
+  "data_sha256": "71df7fdc84f4144e91ee3d6f8df4710c21f55c50137f674f9e9de0c2dc6f2cef",
+  "mode_changes": 64,
+  "unchanged_artifacts": {
+    "stage1/variants/stage1-cpu-v0.1.23/train.jsonl": "71df7fdc84f4144e91ee3d6f8df4710c21f55c50137f674f9e9de0c2dc6f2cef",
+    "stage1/variants/stage1-cpu-v0.1.23/identity_loss3.py": "082510fc6fadc31eb179384299cc1425e6dfd98ae01ad95d463759c1a0627db8",
+    "stage1/variants/stage1-cpu-v0.1.23/identity-keys.json": "202de544ab89480d276934bdafd2f390bad63d1d6210576b9a4b08fa9bf17e32",
+    "stage1/variants/stage1-cpu-v0.1.23/inference-system.txt": "3ae02d520406f73e735752ef04ff395785f84fec7ee1619fd9d392d86cb92933",
+    "stage1/training/local_data_guard.py": "45ba3763667ece681ad9094786035e40043ed334a72c0e76b4fc413755901fa5"
+  }
+}

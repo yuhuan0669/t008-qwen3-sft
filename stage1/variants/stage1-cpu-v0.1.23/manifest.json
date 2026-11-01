@@ -1,0 +1,16 @@
+{
+  "data_version": "stage1-cpu-v0.1.23",
+  "status": "PREPARED_CPU_VERIFIED",
+  "training_authorized": true,
+  "files_sha256": {
+    "train.jsonl": "71df7fdc84f4144e91ee3d6f8df4710c21f55c50137f674f9e9de0c2dc6f2cef",
+    "training-config.json": "dd12ed20fcda31014366a43b1c3346b5d8dd8d81700eea40488998ac12919747",
+    "identity_loss3.py": "082510fc6fadc31eb179384299cc1425e6dfd98ae01ad95d463759c1a0627db8",
+    "identity-keys.json": "202de544ab89480d276934bdafd2f390bad63d1d6210576b9a4b08fa9bf17e32",
+    "native-identity-key-aliases.json": "2b5e07f962bc3e1b45a21121d94ffeb7a02a225fd71a3b839f4b78c0079a8a83",
+    "inference-system.txt": "3ae02d520406f73e735752ef04ff395785f84fec7ee1619fd9d392d86cb92933",
+    "evaluation-config.json": "c2e0e63ab24a4dcf8d82cd08d217ea791644bf9d7b6b105e86993bdb0eb6a34e",
+    "cpu-check/report.json": "f5a6a82302c2c9cd581e56974d249b461a85fc987f8732919cbc17fd0bc9d912",
+    "verification.json": "89181d9a4c1a178744b10cb13a9b15184bbb3752fbf98fae5c29675a940bae0b"
+  }
+}

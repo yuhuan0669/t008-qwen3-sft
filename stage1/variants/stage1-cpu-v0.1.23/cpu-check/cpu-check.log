@@ -1,0 +1,28 @@
+Failed to load CPU gemm_4bit_forward from kernels-community: No module named 'kernels'. Please make sure you already `pip install kernels` and the kernels >= 0.11.1
+[INFO:swift] Successfully registered `/usr/local/lib/python3.12/site-packages/swift/dataset/data/dataset_info.json`.
+[INFO:swift] Successfully imported external_plugins: ['/tmp/v0123-check/stage1/training/local_data_guard.py', '/tmp/v0123-check/stage1/variants/stage1-cpu-v0.1.23/identity_loss3.py'].
+[INFO:swift] rank: -1, local_rank: -1, world_size: 1, local_world_size: 1
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+[INFO:swift] Setting args.lazy_tokenize: False
+[transformers] warmup_ratio is deprecated and will be removed in v5.2. Use `warmup_steps` instead.
+Generating train split: 0 examples [00:00, ? examples/s]Generating train split: 1047 examples [00:00, 113242.64 examples/s]
+Map (num_proc=1):   0%|          | 0/1047 [00:00<?, ? examples/s]Map (num_proc=1): 100%|██████████| 1047/1047 [00:00<00:00, 5611.21 examples/s]
+[INFO:swift] Setting torch_dtype: torch.bfloat16
+[INFO:swift] default_system: None
+[INFO:swift] max_length: 2048
+[INFO:swift] response_prefix: None
+[INFO:swift] agent_template: hermes
+[INFO:swift] default_system: None
+[INFO:swift] max_length: 2048
+[INFO:swift] response_prefix: None
+[INFO:swift] agent_template: hermes
+[INFO:swift] default_system: None
+[INFO:swift] max_length: 2048
+[INFO:swift] response_prefix: None
+[INFO:swift] agent_template: hermes
+[INFO:swift] default_system: None
+[INFO:swift] max_length: 2048
+[INFO:swift] response_prefix: None
+[INFO:swift] agent_template: hermes
+Map (num_proc=1):   0%|          | 0/1047 [00:00<?, ? examples/s]Map (num_proc=1):  96%|█████████▌| 1000/1047 [00:02<00:00, 357.40 examples/s]Map (num_proc=1): 100%|██████████| 1047/1047 [00:02<00:00, 362.57 examples/s]Map (num_proc=1): 100%|██████████| 1047/1047 [00:03<00:00, 347.78 examples/s]
+{"verified": true, "rows": 1047, "changed": 64, "identity_repairs": 0, "max_tokens": 2041, "native_aliases": 4, "totals": {"before": {"input_tokens": 965311, "supervised_tokens": 928890, "weighted_token_units": 946600.0}, "after": {"input_tokens": 933623, "supervised_tokens": 896946, "weighted_token_units": 914656.0}}}

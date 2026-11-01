@@ -1,0 +1,12 @@
+{
+  "source": "stage2/runs/t008-v0122-loss1-20261101-040341/evaluation/combined.jsonl",
+  "source_sha256": "1a3a26f0f6e5d0fc4170e7997507a8054dfb8f856d08bde4bbd88a20e71753a4",
+  "models": [
+    "original_base",
+    "v0.1.14",
+    "candidate_v0.1.22"
+  ],
+  "slots": 624,
+  "selected_sha256": "f8bcbd7781d90c36f53f68fd651454ab2b9474829814ed918e537c041eadc466",
+  "caveat": "Identical prompts, System, template and request settings. Different batches/times, no request seed. No new baseline calls."
+}

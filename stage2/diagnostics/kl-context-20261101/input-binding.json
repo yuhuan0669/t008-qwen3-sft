@@ -1,0 +1,30 @@
+{
+  "input_manifest_sha256": "76481f14a22669182e5ac7186f2c522d1f408ae5e12152580df191d6a2b98e7b",
+  "data_version": "stage1-cpu-v0.1.22",
+  "dataset_sha256": "0087a3073bac5b36e3b865666ad9210a1d52ba04c32ecdaba83b4af4eb49b2bb",
+  "training_control_lines": [
+    274,
+    337,
+    293,
+    812,
+    846,
+    910
+  ],
+  "development_case_ids": [
+    "T021-C900-B4-G007",
+    "T021-P20-G0274",
+    "T021-R3300-G1038",
+    "T021-C900-B3-G035",
+    "T021-C900-B4-G115",
+    "T021-C900-B4-G033",
+    "D16-05",
+    "D16-07",
+    "E17-ID06",
+    "E17-ID07",
+    "T021-R3300-G0503",
+    "T021-C900-B4-N045"
+  ],
+  "system_sha256": "3ae02d520406f73e735752ef04ff395785f84fec7ee1619fd9d392d86cb92933",
+  "template_sha256": "ae8a1b27c3bac461eb5f6c78d5d39cbe29427ad91c9d2da8378e236b8a38448d",
+  "scope": "174 fixed-text scores plus paired full-vocabulary KL; zero new generated answers"
+}

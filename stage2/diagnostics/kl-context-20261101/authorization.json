@@ -1,0 +1,7 @@
+{
+  "user_instruction": "继续，另外你这个过程是否需要用astra max？",
+  "scope": "Existing base/v0.1.22/v0.1.25 fixed-prefix probability and distribution diagnosis only; no training, new generated answers, deployment or external Judge.",
+  "uat_pause_continues": true,
+  "automatic_restore_authorized": false,
+  "new_subagents": false
+}
